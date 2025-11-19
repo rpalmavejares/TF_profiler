@@ -1,0 +1,267 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/BioQ_Mycobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MAB_2684c_p-54(bioB)     1.0000     17  MAB_2685_p-24(bioQ)      1.0000     17  
+MAB_2687c_p-24(bioF)     1.0000     17  Mflv_3624_p-61(bioB)     1.0000     17  
+Mflv_3625_p-30(bioQ)     1.0000     17  Mflv_3628_p-43(bioF)     1.0000     17  
+MSMEG_3194_p-52(bioB)    1.0000     17  MSMEG_3194_p-32(bioB)    1.0000     17  
+MSMEG_3193_p-30(bioQ)    1.0000     17  MSMEG_3189_p-133(bioF)   1.0000     17  
+Mjls_3090_p-110(bioB)    1.0000     17  Mjls_3094_p-43(bioF)     1.0000     17  
+Mjls_3091_p-30(bioQ)     1.0000     17  Mvan_2793_p-62(bioB)     1.0000     17  
+Mvan_2792_p-30(bioQ)     1.0000     17  Mvan_2789_p-109(bioF)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/BioQ_Mycobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/BioQ_Mycobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             272    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    272    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.239 C 0.265 G 0.25 T 0.246 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.239 C 0.264 G 0.25 T 0.246 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCTGAACRSYGTTCARK MEME-1	width =  17  sites =  16  llr = 301  E-value = 9.6e-099
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:::aa:4::::::a5:
+pos.-specific     C  98::::a:44:::9::1
+probability       G  :::a:::66:a::::56
+matrix            T  :3a::::::6:aa1::3
+
+         bits    2.1   ****    *** *  
+                 1.9   *****   *** *  
+                 1.7   *****   *****  
+                 1.4 * *****   *****  
+Relative         1.2 * *****   *****  
+Entropy          1.0 **************** 
+(27.1 bits)      0.8 *****************
+                 0.6 *****************
+                 0.4 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           CCTGAACGGTGTTCAAG
+consensus             T     ACC     GT
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Mflv_3628_p-43(bioF)          1  1.16e-10          . CCTGAACGGTGTTCAAG           
+Mflv_3624_p-61(bioB)          1  1.16e-10          . CCTGAACGGTGTTCAAG           
+MAB_2685_p-24(bioQ)           1  1.16e-10          . CCTGAACGGTGTTCAGG           
+Mvan_2793_p-62(bioB)          1  1.08e-09          . CCTGAACGGTGTTCAAT           
+Mjls_3094_p-43(bioF)          1  1.08e-09          . CCTGAACGGTGTTCAAT           
+Mjls_3090_p-110(bioB)         1  1.08e-09          . CCTGAACGGTGTTCAAT           
+MSMEG_3189_p-133(bioF)        1  1.08e-09          . CCTGAACGGTGTTCAAT           
+MSMEG_3194_p-52(bioB)         1  1.08e-09          . CCTGAACACCGTTCAAG           
+MAB_2687c_p-24(bioF)          1  1.08e-09          . CCTGAACACCGTTCAGG           
+MAB_2684c_p-54(bioB)          1  1.08e-09          . CCTGAACACCGTTCAGG           
+MSMEG_3193_p-30(bioQ)         1  1.54e-09          . CTTGAACGGTGTTCAGG           
+Mflv_3625_p-30(bioQ)          1  2.93e-09          . CTTGAACACCGTTCAGG           
+MSMEG_3194_p-32(bioB)         1  7.20e-09          . CCTGAACACCGTTCAGC           
+Mvan_2789_p-109(bioF)         1  8.07e-09          . CCTGAACGGTGTTTAAT           
+Mvan_2792_p-30(bioQ)          1  8.93e-09          . ATTGAACACCGTTCAGG           
+Mjls_3091_p-30(bioQ)          1  8.93e-09          . ATTGAACACCGTTCAGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mflv_3628_p-43(bioF)              1.2e-10  [+1]
+Mflv_3624_p-61(bioB)              1.2e-10  [+1]
+MAB_2685_p-24(bioQ)               1.2e-10  [+1]
+Mvan_2793_p-62(bioB)              1.1e-09  [+1]
+Mjls_3094_p-43(bioF)              1.1e-09  [+1]
+Mjls_3090_p-110(bioB)             1.1e-09  [+1]
+MSMEG_3189_p-133(bioF)            1.1e-09  [+1]
+MSMEG_3194_p-52(bioB)             1.1e-09  [+1]
+MAB_2687c_p-24(bioF)              1.1e-09  [+1]
+MAB_2684c_p-54(bioB)              1.1e-09  [+1]
+MSMEG_3193_p-30(bioQ)             1.5e-09  [+1]
+Mflv_3625_p-30(bioQ)              2.9e-09  [+1]
+MSMEG_3194_p-32(bioB)             7.2e-09  [+1]
+Mvan_2789_p-109(bioF)             8.1e-09  [+1]
+Mvan_2792_p-30(bioQ)              8.9e-09  [+1]
+Mjls_3091_p-30(bioQ)              8.9e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCTGAACRSYGTTCARK width=17 seqs=16
+Mflv_3628_p-43(bioF)     (    1) CCTGAACGGTGTTCAAG  1 
+Mflv_3624_p-61(bioB)     (    1) CCTGAACGGTGTTCAAG  1 
+MAB_2685_p-24(bioQ)      (    1) CCTGAACGGTGTTCAGG  1 
+Mvan_2793_p-62(bioB)     (    1) CCTGAACGGTGTTCAAT  1 
+Mjls_3094_p-43(bioF)     (    1) CCTGAACGGTGTTCAAT  1 
+Mjls_3090_p-110(bioB)    (    1) CCTGAACGGTGTTCAAT  1 
+MSMEG_3189_p-133(bioF)   (    1) CCTGAACGGTGTTCAAT  1 
+MSMEG_3194_p-52(bioB)    (    1) CCTGAACACCGTTCAAG  1 
+MAB_2687c_p-24(bioF)     (    1) CCTGAACACCGTTCAGG  1 
+MAB_2684c_p-54(bioB)     (    1) CCTGAACACCGTTCAGG  1 
+MSMEG_3193_p-30(bioQ)    (    1) CTTGAACGGTGTTCAGG  1 
+Mflv_3625_p-30(bioQ)     (    1) CTTGAACACCGTTCAGG  1 
+MSMEG_3194_p-32(bioB)    (    1) CCTGAACACCGTTCAGC  1 
+Mvan_2789_p-109(bioF)    (    1) CCTGAACGGTGTTTAAT  1 
+Mvan_2792_p-30(bioQ)     (    1) ATTGAACACCGTTCAGG  1 
+Mjls_3091_p-30(bioQ)     (    1) ATTGAACACCGTTCAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 16 bayes= 1.22239 E= 9.6e-099 
+   -94    173  -1064  -1064 
+ -1064    150  -1064      2 
+ -1064  -1064  -1064    202 
+ -1064  -1064    200  -1064 
+   206  -1064  -1064  -1064 
+   206  -1064  -1064  -1064 
+ -1064    192  -1064  -1064 
+    87  -1064    117  -1064 
+ -1064     73    117  -1064 
+ -1064     73  -1064    119 
+ -1064  -1064    200  -1064 
+ -1064  -1064  -1064    202 
+ -1064  -1064  -1064    202 
+ -1064    182  -1064   -198 
+   206  -1064  -1064  -1064 
+   106  -1064    100  -1064 
+ -1064   -208    132     34 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 16 E= 9.6e-099 
+ 0.125000  0.875000  0.000000  0.000000 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.437500  0.000000  0.562500  0.000000 
+ 0.000000  0.437500  0.562500  0.000000 
+ 0.000000  0.437500  0.000000  0.562500 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.937500  0.000000  0.062500 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.062500  0.625000  0.312500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACRSYGTTCARK MEME-1 regular expression
+--------------------------------------------------------------------------------
+C[CT]TGAAC[GA][GC][TC]GTTCA[AG][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MAB_2684c_p-54(bioB)             1.08e-09  [+1(1.08e-09)]
+MAB_2685_p-24(bioQ)              1.16e-10  [+1(1.16e-10)]
+MAB_2687c_p-24(bioF)             1.08e-09  [+1(1.08e-09)]
+Mflv_3624_p-61(bioB)             1.16e-10  [+1(1.16e-10)]
+Mflv_3625_p-30(bioQ)             2.93e-09  [+1(2.93e-09)]
+Mflv_3628_p-43(bioF)             1.16e-10  [+1(1.16e-10)]
+MSMEG_3194_p-52(bioB)            1.08e-09  [+1(1.08e-09)]
+MSMEG_3194_p-32(bioB)            7.20e-09  [+1(7.20e-09)]
+MSMEG_3193_p-30(bioQ)            1.54e-09  [+1(1.54e-09)]
+MSMEG_3189_p-133(bioF)           1.08e-09  [+1(1.08e-09)]
+Mjls_3090_p-110(bioB)            1.08e-09  [+1(1.08e-09)]
+Mjls_3094_p-43(bioF)             1.08e-09  [+1(1.08e-09)]
+Mjls_3091_p-30(bioQ)             8.93e-09  [+1(8.93e-09)]
+Mvan_2793_p-62(bioB)             1.08e-09  [+1(1.08e-09)]
+Mvan_2792_p-30(bioQ)             8.93e-09  [+1(8.93e-09)]
+Mvan_2789_p-109(bioF)            8.07e-09  [+1(8.07e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

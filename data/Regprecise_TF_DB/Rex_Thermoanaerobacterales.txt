@@ -1,0 +1,386 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rex_Thermoanaerobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Csac_1534_p-45(echA)     1.0000     18  Csac_1220_p-39(rex)      1.0000     18  
+Csac_1860_p-38(hydC)     1.0000     18  Csac_2425_p-187(n/a)     1.0000     18  
+Csac_0622_p-30(adhA3)    1.0000     18  Csac_0622_p-53(adhA3)    1.0000     18  
+Csac_0622_p-70(adhA3)    1.0000     18  Csac_0407_p-46(adhA2)    1.0000     18  
+TTE0695_p-96(adhB)       1.0000     18  TTE0695_p-63(adhB)       1.0000     18  
+TTE0694_p-116(fnorB)     1.0000     18  TTE0123_p-144(echA)      1.0000     18  
+TTE0696_p-213(adhA)      1.0000     18  TTE1568_p-93(hydG)       1.0000     18  
+TTE0890_p-82(hydC)       1.0000     18  TTE0696_p-246(adhA)      1.0000     18  
+TTE0543_p-60(rex)        1.0000     18  TTE0890_p-104(hydC)      1.0000     18  
+TTE0622_p-73(TTE0622)    1.0000     18  TTE2131_p-35(PF00724)    1.0000     18  
+TTE0545_p-33(bcd)        1.0000     18  TTE2486_p-58(ndh)        1.0000     18  
+TTE2486_p-34(ndh)        1.0000     18  TTE1884_p-107(noxE)      1.0000     18  
+TTE1884_p-158(noxE)      1.0000     18  TTE2157_p-94(COG4739)    1.0000     18  
+Teth514_0653_p-113(adhB) 1.0000     18  Teth514_0653_p-80(adhB)  1.0000     18  
+Teth514_0652_p-113(fnorB 1.0000     18  Teth514_0564_p-33(adhA)  1.0000     18  
+Teth514_0654_p-31(adhA)  1.0000     18  Teth514_0654_p-64(adhA)  1.0000     18  
+Teth514_0530_p-87(hydG)  1.0000     18  Teth514_2142_p-84(hydC)  1.0000     18  
+Teth514_2142_p-106(hydC) 1.0000     18  Teth514_0496_p-59(rex)   1.0000     18  
+Teth514_0252_p-74(TTE062 1.0000     18  Teth514_1131_p-162(noxE) 1.0000     18  
+Teth514_1131_p-112(noxE) 1.0000     18  Teth514_0627_p-151(adhE) 1.0000     18  
+Teth514_0627_p-32(adhE)  1.0000     18  Teth514_0970_p-98(COG473 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rex_Thermoanaerobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rex_Thermoanaerobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       42    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             756    N=              42
+sample: seed=            0    hsfrac=          0
+        searchsize=    756    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.47 C 0.0701 G 0.0767 T 0.384 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.468 C 0.0711 G 0.0776 T 0.383 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTGWTAAAAWWTTAACAA MEME-1	width =  18  sites =  42  llr = 430  E-value = 1.7e-146
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::4:9877553188:88
+pos.-specific     C  ::::2::::::::::9::
+probability       G  ::a::::::::::1::1:
+matrix            T  7a:581223557912111
+
+         bits    3.8   *               
+                 3.4   *            *  
+                 3.1   *            *  
+                 2.7   *            *  
+Relative         2.3   *            *  
+Entropy          1.9   *            *  
+(14.8 bits)      1.5  **            *  
+                 1.1  **         *  *  
+                 0.8  ** **      *  *  
+                 0.4 *** *** * ********
+                 0.0 ------------------
+
+Multilevel           TTGTTAAAAAATTAACAA
+consensus            A  A  TTTTTA      
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Teth514_0564_p-33(adhA)       1  2.81e-07          . TTGTTATAAATTTAACAA           
+Teth514_0530_p-87(hydG)       1  3.29e-07          . TTGTTGAAAAATTAACAA           
+TTE1568_p-93(hydG)            1  3.29e-07          . TTGTTGAAAATTTAACAA           
+TTE0123_p-144(echA)           1  3.29e-07          . TTGTTAAAATAATAACAA           
+Teth514_0970_p-98(COG473      1  8.37e-07          . TTGATAAAATTTTATCAA           
+TTE2157_p-94(COG4739)         1  8.37e-07          . TTGATAAAATTTTATCAA           
+Teth514_0652_p-113(fnorB      1  1.12e-06          . TTGGCAAAAAAATAACAA           
+TTE0694_p-116(fnorB)          1  1.31e-06          . TTGGTAAAAAAATAACAA           
+Teth514_0496_p-59(rex)        1  1.51e-06          . TTGACAAAAAATTTACAA           
+Csac_2425_p-187(n/a)          1  1.76e-06          . ATGTTATAATATTAACAA           
+Teth514_0627_p-32(adhE)       1  2.02e-06          . TTGTTAAATTATTAACAC           
+Csac_0407_p-46(adhA2)         1  2.27e-06          . ATGTTAAAATTATAACAA           
+TTE0622_p-73(TTE0622)         1  2.93e-06          . TTGATAAATATTTGACAT           
+TTE2131_p-35(PF00724)         1  3.31e-06          . CTGTTAATAAATTAACAA           
+TTE0695_p-96(adhB)            1  3.31e-06          . TTGACAAATTTTTAACTA           
+Teth514_0653_p-113(adhB)      1  3.74e-06          . TTGATAAATTTTTAACTA           
+Csac_1860_p-38(hydC)          1  3.74e-06          . ATGTTAAATTTCTAACAA           
+Teth514_0627_p-151(adhE)      1  4.76e-06          . TTGTTAAATGAATAACAA           
+Teth514_2142_p-84(hydC)       1  4.76e-06          . ATGATATAATATTGACGA           
+Teth514_0653_p-80(adhB)       1  4.76e-06          . TTGTAAAAAATTTAACAA           
+Teth514_0654_p-31(adhA)       1  5.36e-06          . TTGATATAAATTTTACAA           
+TTE0890_p-82(hydC)            1  5.36e-06          . ATGATATAATATTAACGA           
+TTE0696_p-213(adhA)           1  5.36e-06          . TTGATATAAATTTTACAA           
+TTE2486_p-58(ndh)             1  6.61e-06          . ATGATAAAATATTGACTA           
+TTE2486_p-34(ndh)             1  7.31e-06          . TTGTTATAATTATATCAA           
+TTE0543_p-60(rex)             1  8.06e-06          . TTGACAAGAAATTTACAA           
+Csac_1220_p-39(rex)           1  9.78e-06          . ATGTCAAAAAAATATCAA           
+TTE0545_p-33(bcd)             1  1.08e-05          . ATGTTAAAAAAATATCAA           
+Csac_0622_p-70(adhA3)         1  1.19e-05          . TTGACAAAAAACAAACAA           
+Teth514_0654_p-64(adhA)       1  1.32e-05          . TTGATTATTTTTTAACAA           
+TTE0696_p-246(adhA)           1  1.32e-05          . TTGATTATTTTTTAACAA           
+Teth514_2142_p-106(hydC)      1  1.45e-05          . TTGTTAAAAATTTAATAA           
+Teth514_1131_p-112(noxE)      1  1.74e-05          . TTGATATTTTATTGACAT           
+TTE1884_p-107(noxE)           1  1.74e-05          . TTGATATTTTATTGACAT           
+TTE0695_p-63(adhB)            1  1.74e-05          . TTGCAAAAAATTTAACAA           
+Csac_1534_p-45(echA)          1  1.74e-05          . TTGTTAACAAATTAACTT           
+Teth514_0252_p-74(TTE062      1  1.89e-05          . TTGATATTTATTTGACAT           
+Csac_0622_p-30(adhA3)         1  1.89e-05          . ATGTTAATTTTTTAACAG           
+TTE0890_p-104(hydC)           1  2.42e-05          . TTGTTAAAAAATTAATGA           
+TTE1884_p-158(noxE)           1  5.69e-05          . TTGTCAACAAAAAATCAA           
+Teth514_1131_p-162(noxE)      1  7.06e-05          . TTGTTAATAAAAAATCAA           
+Csac_0622_p-53(adhA3)         1  4.54e-04          . ATGTTTATATAATAATAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Teth514_0564_p-33(adhA)           2.8e-07  [+1]
+Teth514_0530_p-87(hydG)           3.3e-07  [+1]
+TTE1568_p-93(hydG)                3.3e-07  [+1]
+TTE0123_p-144(echA)               3.3e-07  [+1]
+Teth514_0970_p-98(COG473          8.4e-07  [+1]
+TTE2157_p-94(COG4739)             8.4e-07  [+1]
+Teth514_0652_p-113(fnorB          1.1e-06  [+1]
+TTE0694_p-116(fnorB)              1.3e-06  [+1]
+Teth514_0496_p-59(rex)            1.5e-06  [+1]
+Csac_2425_p-187(n/a)              1.8e-06  [+1]
+Teth514_0627_p-32(adhE)             2e-06  [+1]
+Csac_0407_p-46(adhA2)             2.3e-06  [+1]
+TTE0622_p-73(TTE0622)             2.9e-06  [+1]
+TTE2131_p-35(PF00724)             3.3e-06  [+1]
+TTE0695_p-96(adhB)                3.3e-06  [+1]
+Teth514_0653_p-113(adhB)          3.7e-06  [+1]
+Csac_1860_p-38(hydC)              3.7e-06  [+1]
+Teth514_0627_p-151(adhE)          4.8e-06  [+1]
+Teth514_2142_p-84(hydC)           4.8e-06  [+1]
+Teth514_0653_p-80(adhB)           4.8e-06  [+1]
+Teth514_0654_p-31(adhA)           5.4e-06  [+1]
+TTE0890_p-82(hydC)                5.4e-06  [+1]
+TTE0696_p-213(adhA)               5.4e-06  [+1]
+TTE2486_p-58(ndh)                 6.6e-06  [+1]
+TTE2486_p-34(ndh)                 7.3e-06  [+1]
+TTE0543_p-60(rex)                 8.1e-06  [+1]
+Csac_1220_p-39(rex)               9.8e-06  [+1]
+TTE0545_p-33(bcd)                 1.1e-05  [+1]
+Csac_0622_p-70(adhA3)             1.2e-05  [+1]
+Teth514_0654_p-64(adhA)           1.3e-05  [+1]
+TTE0696_p-246(adhA)               1.3e-05  [+1]
+Teth514_2142_p-106(hydC)          1.4e-05  [+1]
+Teth514_1131_p-112(noxE)          1.7e-05  [+1]
+TTE1884_p-107(noxE)               1.7e-05  [+1]
+TTE0695_p-63(adhB)                1.7e-05  [+1]
+Csac_1534_p-45(echA)              1.7e-05  [+1]
+Teth514_0252_p-74(TTE062          1.9e-05  [+1]
+Csac_0622_p-30(adhA3)             1.9e-05  [+1]
+TTE0890_p-104(hydC)               2.4e-05  [+1]
+TTE1884_p-158(noxE)               5.7e-05  [+1]
+Teth514_1131_p-162(noxE)          7.1e-05  [+1]
+Csac_0622_p-53(adhA3)             0.00045  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTGWTAAAAWWTTAACAA width=18 seqs=42
+Teth514_0564_p-33(adhA)  (    1) TTGTTATAAATTTAACAA  1 
+Teth514_0530_p-87(hydG)  (    1) TTGTTGAAAAATTAACAA  1 
+TTE1568_p-93(hydG)       (    1) TTGTTGAAAATTTAACAA  1 
+TTE0123_p-144(echA)      (    1) TTGTTAAAATAATAACAA  1 
+Teth514_0970_p-98(COG473 (    1) TTGATAAAATTTTATCAA  1 
+TTE2157_p-94(COG4739)    (    1) TTGATAAAATTTTATCAA  1 
+Teth514_0652_p-113(fnorB (    1) TTGGCAAAAAAATAACAA  1 
+TTE0694_p-116(fnorB)     (    1) TTGGTAAAAAAATAACAA  1 
+Teth514_0496_p-59(rex)   (    1) TTGACAAAAAATTTACAA  1 
+Csac_2425_p-187(n/a)     (    1) ATGTTATAATATTAACAA  1 
+Teth514_0627_p-32(adhE)  (    1) TTGTTAAATTATTAACAC  1 
+Csac_0407_p-46(adhA2)    (    1) ATGTTAAAATTATAACAA  1 
+TTE0622_p-73(TTE0622)    (    1) TTGATAAATATTTGACAT  1 
+TTE2131_p-35(PF00724)    (    1) CTGTTAATAAATTAACAA  1 
+TTE0695_p-96(adhB)       (    1) TTGACAAATTTTTAACTA  1 
+Teth514_0653_p-113(adhB) (    1) TTGATAAATTTTTAACTA  1 
+Csac_1860_p-38(hydC)     (    1) ATGTTAAATTTCTAACAA  1 
+Teth514_0627_p-151(adhE) (    1) TTGTTAAATGAATAACAA  1 
+Teth514_2142_p-84(hydC)  (    1) ATGATATAATATTGACGA  1 
+Teth514_0653_p-80(adhB)  (    1) TTGTAAAAAATTTAACAA  1 
+Teth514_0654_p-31(adhA)  (    1) TTGATATAAATTTTACAA  1 
+TTE0890_p-82(hydC)       (    1) ATGATATAATATTAACGA  1 
+TTE0696_p-213(adhA)      (    1) TTGATATAAATTTTACAA  1 
+TTE2486_p-58(ndh)        (    1) ATGATAAAATATTGACTA  1 
+TTE2486_p-34(ndh)        (    1) TTGTTATAATTATATCAA  1 
+TTE0543_p-60(rex)        (    1) TTGACAAGAAATTTACAA  1 
+Csac_1220_p-39(rex)      (    1) ATGTCAAAAAAATATCAA  1 
+TTE0545_p-33(bcd)        (    1) ATGTTAAAAAAATATCAA  1 
+Csac_0622_p-70(adhA3)    (    1) TTGACAAAAAACAAACAA  1 
+Teth514_0654_p-64(adhA)  (    1) TTGATTATTTTTTAACAA  1 
+TTE0696_p-246(adhA)      (    1) TTGATTATTTTTTAACAA  1 
+Teth514_2142_p-106(hydC) (    1) TTGTTAAAAATTTAATAA  1 
+Teth514_1131_p-112(noxE) (    1) TTGATATTTTATTGACAT  1 
+TTE1884_p-107(noxE)      (    1) TTGATATTTTATTGACAT  1 
+TTE0695_p-63(adhB)       (    1) TTGCAAAAAATTTAACAA  1 
+Csac_1534_p-45(echA)     (    1) TTGTTAACAAATTAACTT  1 
+Teth514_0252_p-74(TTE062 (    1) TTGATATTTATTTGACAT  1 
+Csac_0622_p-30(adhA3)    (    1) ATGTTAATTTTTTAACAG  1 
+TTE0890_p-104(hydC)      (    1) TTGTTAAAAAATTAATGA  1 
+TTE1884_p-158(noxE)      (    1) TTGTCAACAAAAAATCAA  1 
+Teth514_1131_p-162(noxE) (    1) TTGTTAATAAAAAATCAA  1 
+Csac_0622_p-53(adhA3)    (    1) ATGTTTATATAATAATAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 42 bayes= 1.67807 E= 1.7e-146 
+   -98   -158  -1204     95 
+ -1204  -1204  -1204    138 
+ -1204  -1204    369  -1204 
+   -13   -158    -70     38 
+  -330    123  -1204    104 
+    91  -1204    -70   -242 
+    70  -1204  -1204    -69 
+    61    -58   -170    -84 
+    61  -1204  -1204    -42 
+    16  -1204   -170     24 
+    23  -1204  -1204     24 
+   -84    -58  -1204     85 
+  -271  -1204  -1204    128 
+    70  -1204     88   -201 
+    83  -1204  -1204   -120 
+ -1204    371  -1204   -242 
+    83  -1204    -12   -201 
+    83   -158   -170   -168 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 42 E= 1.7e-146 
+ 0.238095  0.023810  0.000000  0.738095 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.428571  0.023810  0.047619  0.500000 
+ 0.047619  0.166667  0.000000  0.785714 
+ 0.880952  0.000000  0.047619  0.071429 
+ 0.761905  0.000000  0.000000  0.238095 
+ 0.714286  0.047619  0.023810  0.214286 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.523810  0.000000  0.023810  0.452381 
+ 0.547619  0.000000  0.000000  0.452381 
+ 0.261905  0.047619  0.000000  0.690476 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.761905  0.000000  0.142857  0.095238 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.000000  0.928571  0.000000  0.071429 
+ 0.833333  0.000000  0.071429  0.095238 
+ 0.833333  0.023810  0.023810  0.119048 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGWTAAAAWWTTAACAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TG[TA]TA[AT][AT][AT][AT][AT][TA]TAACAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Csac_1534_p-45(echA)             1.74e-05  [+1(1.74e-05)]
+Csac_1220_p-39(rex)              9.78e-06  [+1(9.78e-06)]
+Csac_1860_p-38(hydC)             3.74e-06  [+1(3.74e-06)]
+Csac_2425_p-187(n/a)             1.76e-06  [+1(1.76e-06)]
+Csac_0622_p-30(adhA3)            1.89e-05  [+1(1.89e-05)]
+Csac_0622_p-53(adhA3)            4.54e-04  18
+Csac_0622_p-70(adhA3)            1.19e-05  [+1(1.19e-05)]
+Csac_0407_p-46(adhA2)            2.27e-06  [+1(2.27e-06)]
+TTE0695_p-96(adhB)               3.31e-06  [+1(3.31e-06)]
+TTE0695_p-63(adhB)               1.74e-05  [+1(1.74e-05)]
+TTE0694_p-116(fnorB)             1.31e-06  [+1(1.31e-06)]
+TTE0123_p-144(echA)              3.29e-07  [+1(3.29e-07)]
+TTE0696_p-213(adhA)              5.36e-06  [+1(5.36e-06)]
+TTE1568_p-93(hydG)               3.29e-07  [+1(3.29e-07)]
+TTE0890_p-82(hydC)               5.36e-06  [+1(5.36e-06)]
+TTE0696_p-246(adhA)              1.32e-05  [+1(1.32e-05)]
+TTE0543_p-60(rex)                8.06e-06  [+1(8.06e-06)]
+TTE0890_p-104(hydC)              2.42e-05  [+1(2.42e-05)]
+TTE0622_p-73(TTE0622)            2.93e-06  [+1(2.93e-06)]
+TTE2131_p-35(PF00724)            3.31e-06  [+1(3.31e-06)]
+TTE0545_p-33(bcd)                1.08e-05  [+1(1.08e-05)]
+TTE2486_p-58(ndh)                6.61e-06  [+1(6.61e-06)]
+TTE2486_p-34(ndh)                7.31e-06  [+1(7.31e-06)]
+TTE1884_p-107(noxE)              1.74e-05  [+1(1.74e-05)]
+TTE1884_p-158(noxE)              5.69e-05  [+1(5.69e-05)]
+TTE2157_p-94(COG4739)            8.37e-07  [+1(8.37e-07)]
+Teth514_0653_p-113(adhB)         3.74e-06  [+1(3.74e-06)]
+Teth514_0653_p-80(adhB)          4.76e-06  [+1(4.76e-06)]
+Teth514_0652_p-113(fnorB         1.12e-06  [+1(1.12e-06)]
+Teth514_0564_p-33(adhA)          2.81e-07  [+1(2.81e-07)]
+Teth514_0654_p-31(adhA)          5.36e-06  [+1(5.36e-06)]
+Teth514_0654_p-64(adhA)          1.32e-05  [+1(1.32e-05)]
+Teth514_0530_p-87(hydG)          3.29e-07  [+1(3.29e-07)]
+Teth514_2142_p-84(hydC)          4.76e-06  [+1(4.76e-06)]
+Teth514_2142_p-106(hydC)         1.45e-05  [+1(1.45e-05)]
+Teth514_0496_p-59(rex)           1.51e-06  [+1(1.51e-06)]
+Teth514_0252_p-74(TTE062         1.89e-05  [+1(1.89e-05)]
+Teth514_1131_p-162(noxE)         7.06e-05  [+1(7.06e-05)]
+Teth514_1131_p-112(noxE)         1.74e-05  [+1(1.74e-05)]
+Teth514_0627_p-151(adhE)         4.76e-06  [+1(4.76e-06)]
+Teth514_0627_p-32(adhE)          2.02e-06  [+1(2.02e-06)]
+Teth514_0970_p-98(COG473         8.37e-07  [+1(8.37e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

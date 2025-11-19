@@ -1,0 +1,252 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/Zur_Thermotogales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TM0122_p-31(zur)         1.0000     23  TRQ2_0825_p-31(zur)      1.0000     23  
+CTN_0567_p-31(zur)       1.0000     23  Tpet_0802_p-31(zur)      1.0000     23  
+Tnap_0752_p-31(zur)      1.0000     23  THA_725_p-42(zur)        1.0000     23  
+Tmel_0432_p-37(zur)      1.0000     23  Fnod_0860_p-460(znuA)    1.0000     23  
+Pmob_0990_p-97(zur)      1.0000     23  Pmob_0990_p-80(zur)      1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/Zur_Thermotogales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/Zur_Thermotogales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             230    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    230    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.291 C 0.157 G 0.178 T 0.374 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.291 C 0.158 G 0.179 T 0.372 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTGCAAATGCTTTGCATTTGCAR MEME-1	width =  23  sites =  10  llr = 234  E-value = 4.1e-064
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4::199a113222::9:::::a4
+pos.-specific     C  :::9:::::7::::a:::::a::
+probability       G  ::a:::::9::::7:11::8::5
+matrix            T  6a::11:9::8883::9aa2::1
+
+         bits    2.7               *     *  
+                 2.4   *           *     *  
+                 2.1   **          *     *  
+                 1.9   **  * *     *     ** 
+Relative         1.6   **  * **    *    *** 
+Entropy          1.3  ****** **   *** ***** 
+(33.7 bits)      1.1  *********   ********* 
+                 0.8  **********************
+                 0.5 ***********************
+                 0.3 ***********************
+                 0.0 -----------------------
+
+Multilevel           TTGCAAATGCTTTGCATTTGCAG
+consensus            A        AAAAT     T  A
+sequence                                    
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+Tnap_0752_p-31(zur)           1  3.26e-14          . TTGCAAATGCTTTGCATTTGCAG           
+Tpet_0802_p-31(zur)           1  3.26e-14          . TTGCAAATGCTTTGCATTTGCAG           
+CTN_0567_p-31(zur)            1  3.26e-14          . TTGCAAATGCTTTGCATTTGCAG           
+TRQ2_0825_p-31(zur)           1  3.26e-14          . TTGCAAATGCTTTGCATTTGCAG           
+TM0122_p-31(zur)              1  3.26e-14          . TTGCAAATGCTTTGCATTTGCAG           
+THA_725_p-42(zur)             1  1.36e-12          . ATGCAAATGATTTGCATTTGCAA           
+Tmel_0432_p-37(zur)           1  1.48e-11          . ATGCAAATGATTTGCATTTTCAA           
+Fnod_0860_p-460(znuA)         1  4.02e-10          . ATGAAAATGATTTTCATTTTCAA           
+Pmob_0990_p-97(zur)           1  2.23e-09          . ATGCTTATGCAAATCAGTTGCAA           
+Pmob_0990_p-80(zur)           1  4.50e-09          . TTGCAAAAACAAATCGTTTGCAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tnap_0752_p-31(zur)               3.3e-14  [+1]
+Tpet_0802_p-31(zur)               3.3e-14  [+1]
+CTN_0567_p-31(zur)                3.3e-14  [+1]
+TRQ2_0825_p-31(zur)               3.3e-14  [+1]
+TM0122_p-31(zur)                  3.3e-14  [+1]
+THA_725_p-42(zur)                 1.4e-12  [+1]
+Tmel_0432_p-37(zur)               1.5e-11  [+1]
+Fnod_0860_p-460(znuA)               4e-10  [+1]
+Pmob_0990_p-97(zur)               2.2e-09  [+1]
+Pmob_0990_p-80(zur)               4.5e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTGCAAATGCTTTGCATTTGCAR width=23 seqs=10
+Tnap_0752_p-31(zur)      (    1) TTGCAAATGCTTTGCATTTGCAG  1 
+Tpet_0802_p-31(zur)      (    1) TTGCAAATGCTTTGCATTTGCAG  1 
+CTN_0567_p-31(zur)       (    1) TTGCAAATGCTTTGCATTTGCAG  1 
+TRQ2_0825_p-31(zur)      (    1) TTGCAAATGCTTTGCATTTGCAG  1 
+TM0122_p-31(zur)         (    1) TTGCAAATGCTTTGCATTTGCAG  1 
+THA_725_p-42(zur)        (    1) ATGCAAATGATTTGCATTTGCAA  1 
+Tmel_0432_p-37(zur)      (    1) ATGCAAATGATTTGCATTTTCAA  1 
+Fnod_0860_p-460(znuA)    (    1) ATGAAAATGATTTTCATTTTCAA  1 
+Pmob_0990_p-97(zur)      (    1) ATGCTTATGCAAATCAGTTGCAA  1 
+Pmob_0990_p-80(zur)      (    1) TTGCAAAAACAAATCGTTTGCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 10 bayes= 0.830075 E= 4.1e-064 
+    46   -997   -997     69 
+  -997   -997   -997    143 
+  -997   -997    248   -997 
+  -154    251   -997   -997 
+   163   -997   -997   -189 
+   163   -997   -997   -189 
+   178   -997   -997   -997 
+  -154   -997   -997    127 
+  -154   -997    232   -997 
+     5    215   -997   -997 
+   -54   -997   -997    110 
+   -54   -997   -997    110 
+   -54   -997   -997    110 
+  -997   -997    196    -31 
+  -997    266   -997   -997 
+   163   -997    -84   -997 
+  -997   -997    -84    127 
+  -997   -997   -997    143 
+  -997   -997   -997    143 
+  -997   -997    216    -89 
+  -997    266   -997   -997 
+   178   -997   -997   -997 
+    46   -997    148   -189 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 10 E= 4.1e-064 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.100000  0.900000  0.000000  0.000000 
+ 0.900000  0.000000  0.000000  0.100000 
+ 0.900000  0.000000  0.000000  0.100000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 0.100000  0.000000  0.900000  0.000000 
+ 0.300000  0.700000  0.000000  0.000000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.000000  0.700000  0.300000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  0.000000  0.100000  0.900000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.400000  0.000000  0.500000  0.100000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGCAAATGCTTTGCATTTGCAR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TGCAAATG[CA][TA][TA][TA][GT]CATTT[GT]CA[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TM0122_p-31(zur)                 3.26e-14  [+1(3.26e-14)]
+TRQ2_0825_p-31(zur)              3.26e-14  [+1(3.26e-14)]
+CTN_0567_p-31(zur)               3.26e-14  [+1(3.26e-14)]
+Tpet_0802_p-31(zur)              3.26e-14  [+1(3.26e-14)]
+Tnap_0752_p-31(zur)              3.26e-14  [+1(3.26e-14)]
+THA_725_p-42(zur)                1.36e-12  [+1(1.36e-12)]
+Tmel_0432_p-37(zur)              1.48e-11  [+1(1.48e-11)]
+Fnod_0860_p-460(znuA)            4.02e-10  [+1(4.02e-10)]
+Pmob_0990_p-97(zur)              2.23e-09  [+1(2.23e-09)]
+Pmob_0990_p-80(zur)              4.50e-09  [+1(4.50e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

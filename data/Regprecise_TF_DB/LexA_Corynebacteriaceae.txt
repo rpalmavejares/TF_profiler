@@ -1,0 +1,684 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LexA_Corynebacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+cg0470_p-201(cg0470)     1.0000     16  cg1080_p-30(cg1080)      1.0000     16  
+cg2733_p-88(cg2733)      1.0000     16  cg1288_p-79(blt)         1.0000     16  
+cg2950_p-48(radA)        1.0000     16  cg2034_p-22(cg2034)      1.0000     16  
+cg1427_p-63(n/a)         1.0000     16  cg2113_p-85(divS)        1.0000     16  
+cg2113_p-165(divS)       1.0000     16  cg1255_p-68(cg1255)      1.0000     16  
+cg1884_p-297(cg1884)     1.0000     16  cg0841_p-87(cg0841)      1.0000     16  
+cg2158_p-68(ftsK)        1.0000     16  cg0834_p-62(cg0834)      1.0000     16  
+cg0742_p-100(cg0742)     1.0000     16  cg0875_p-37(cg0875)      1.0000     16  
+cg2026_p-102(cg2026)     1.0000     16  cg1314_p-259(putP)       1.0000     16  
+cg0738_p-19(dnaE2)       1.0000     16  cg1602_p-49(recN)        1.0000     16  
+cg1318_p-117(sbcD)       1.0000     16  cg2114_p-270(lexA)       1.0000     16  
+cg2114_p-190(lexA)       1.0000     16  cg2381_p-122(cg2381)     1.0000     16  
+cg1871_p-104(ruvC)       1.0000     16  cg1560_p-66(uvrA)        1.0000     16  
+cg0713_p-40(cg0713)      1.0000     16  cg2141_p-240(recA)       1.0000     16  
+cg2504_p-69(cg2683)      1.0000     16  cg2683_p-58(cg2683)      1.0000     16  
+cg0898_p-76(pdxS)        1.0000     16  cg1059_p-103(cg2683)     1.0000     16  
+cg1059_p-72(cg2683)      1.0000     16  cg2504_p-121(cg2683)     1.0000     16  
+CE1507_p-76(uvrA)        1.0000     16  CE1018_p-200(cg1080)     1.0000     16  
+CE1207_p-80(blt)         1.0000     16  CE2524_p-35(radA)        1.0000     16  
+CE0781_p-41(cg0875)      1.0000     16  CE1262_p-300(putP)       1.0000     16  
+CE1360_p-128(n/a)        1.0000     16  CE1822_p-107(divS)       1.0000     16  
+CE1822_p-28(divS)        1.0000     16  CE1775_p-37(ruvC)        1.0000     16  
+CE0632_p-26(dnaE2)       1.0000     16  CE1548_p-107(recN)       1.0000     16  
+CE2064_p-6(cg2381)       1.0000     16  CE1265_p-140(sbcD)       1.0000     16  
+CE1823_p-130(lexA)       1.0000     16  CE1823_p-209(lexA)       1.0000     16  
+CE0627_p5(cg0713)        1.0000     16  CE1849_p-213(recA)       1.0000     16  
+DIP1159_p-145(uvrA)      1.0000     16  DIP1425_p-87(divS)       1.0000     16  
+DIP0612_p-32(dnaE2)      1.0000     16  DIP1182_p-47(recN)       1.0000     16  
+DIP1025_p-72(sbcD)       1.0000     16  DIP1426_p-268(lexA)      1.0000     16  
+DIP1609_p31(cg2381)      1.0000     16  DIP1377_p-123(ruvC)      1.0000     16  
+DIP1450_p-204(recA)      1.0000     16  jk1858_p-125(modC)       1.0000     16  
+jk1709_p-8(dnaE2)        1.0000     16  jk1360_p-122(sbcD)       1.0000     16  
+jk1106_p-164(lexA)       1.0000     16  jk1106_p-126(lexA)       1.0000     16  
+jk1106_p-84(lexA)        1.0000     16  jk0739_p-111(cg2381)     1.0000     16  
+jk1056_p-30(ruvC)        1.0000     16  jk1717_p-99(cg0713)      1.0000     16  
+jk1116_p-175(recA)       1.0000     16  cur_0885_p-145(divS)     1.0000     16  
+cur_0885_p-180(divS)     1.0000     16  cur_0412_p-36(dnaE2)     1.0000     16  
+cur_0934_p-52(ruvC)      1.0000     16  cur_0884_p-103(lexA)     1.0000     16  
+cur_0884_p-68(lexA)      1.0000     16  cur_1216_p-88(cg2381)    1.0000     16  
+cur_0403_p-165(cg0713)   1.0000     16  cur_0874_p-307(recA)     1.0000     16  
+cauri_1016_p-50(blt)     1.0000     16  cauri_1476_p-180(divS)   1.0000     16  
+cauri_1476_p-100(divS)   1.0000     16  cauri_0500_p-33(dnaE2)   1.0000     16  
+cauri_1419_p-10(ruvC)    1.0000     16  cauri_1681_p-145(cg2381) 1.0000     16  
+cauri_1477_p-124(lexA)   1.0000     16  cauri_1477_p-204(lexA)   1.0000     16  
+cauri_0492_p-16(cg0713)  1.0000     16  cauri_1500_p-211(recA)   1.0000     16  
+CORAM0001_0615_p-101(mod 1.0000     16  CORAM0001_0285_p-49(dnaE 1.0000     16  
+CORAM0001_2122_p-63(ruvC 1.0000     16  CORAM0001_1116_p-123(cg2 1.0000     16  
+CORAM0001_0623_p-141(hel 1.0000     16  CORAM0001_0857_p-227(lex 1.0000     16  
+CORAM0001_1690_p-79(uvrA 1.0000     16  CORAM0001_0838_p-140(rec 1.0000     16  
+CORAM0001_0278_p-89(cg07 1.0000     16  CORAM0001_0220_p-89(cg26 1.0000     16  
+CORAM0001_1381_p-134(cg2 1.0000     16  CORAM0001_1381_p-91(cg26 1.0000     16  
+ckrop_2122_p-52(divS)    1.0000     16  ckrop_1307_p-252(putP)   1.0000     16  
+ckrop_0333_p-191(dnaE2)  1.0000     16  ckrop_1305_p-117(helZ)   1.0000     16  
+ckrop_1088_p-213(lexA)   1.0000     16  ckrop_0735_p-179(cg2381) 1.0000     16  
+ckrop_1113_p-245(recA)   1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LexA_Corynebacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LexA_Corynebacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      109    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1744    N=             109
+sample: seed=            0    hsfrac=          0
+        searchsize=   1744    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.287 C 0.188 G 0.23 T 0.295 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.287 C 0.188 G 0.23 T 0.295 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TCGAACAYRTGTTCGA MEME-1	width =  16  sites = 109  llr = 1123  E-value = 5.1e-439
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :21892724::11::8
+pos.-specific     C  :6:1:6:311:::911
+probability       G  :19:::213:9:2:7:
+matrix            T  91:111:428197131
+
+         bits    2.4                 
+                 2.2                 
+                 1.9                 
+                 1.7   *          *  
+Relative         1.4   *       *  *  
+Entropy          1.2 * * *     *  *  
+(14.9 bits)      1.0 * ***    *** *  
+                 0.7 *******  *** ***
+                 0.5 *******  *******
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TCGAACATATGTTCGA
+consensus                 A CG   G T 
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+cur_1216_p-88(cg2381)         1  7.98e-09          . TAGAACACGTGTTCGA           
+ckrop_1305_p-117(helZ)        1  9.73e-09          . TCGAAAATATGTTCGA           
+CORAM0001_1116_p-123(cg2      1  9.73e-09          . TCGAACAGATGTGCGA           
+cur_0403_p-165(cg0713)        1  4.71e-08          . TAGAACACCTGTTCGA           
+jk1717_p-99(cg0713)           1  4.71e-08          . TAGAACACGTGTTCTA           
+cg0713_p-40(cg0713)           1  4.71e-08          . TGGAACAGGTGTTCGA           
+ckrop_1307_p-252(putP)        1  5.76e-08          . TCGAACATATTTTCGA           
+CE0627_p5(cg0713)             1  6.84e-08          . TGGAACACATGTTCTA           
+cur_0412_p-36(dnaE2)          1  8.04e-08          . TCGAATAGATGTTCGA           
+cur_0884_p-103(lexA)          1  9.35e-08          . TCGAACGGGTGTTCTA           
+jk0739_p-111(cg2381)          1  9.35e-08          . TGGAACATGTGTTCTA           
+cg1255_p-68(cg1255)           1  9.35e-08          . TCGAATAAATGTTCGA           
+CORAM0001_0623_p-141(hel      1  1.05e-07          . TCGAACACGCGTGCTA           
+cg0470_p-201(cg0470)          1  1.59e-07          . TGGAAAATATGTTCGA           
+cauri_0500_p-33(dnaE2)        1  2.87e-07          . TGGAATACATGTTCGA           
+cur_0885_p-145(divS)          1  2.87e-07          . TAGAACACCCGTTCGA           
+ckrop_0333_p-191(dnaE2)       1  3.30e-07          . TCGAACACGCGTACTA           
+CORAM0001_0615_p-101(mod      1  3.70e-07          . TCGAATGGATGTTCGA           
+cg2733_p-88(cg2733)           1  3.70e-07          . TCGAATAACTGTTCGA           
+DIP1609_p31(cg2381)           1  4.17e-07          . TCGAACAAACGTTCCA           
+cur_0934_p-52(ruvC)           1  4.73e-07          . TCGATCATGTGTGCTA           
+jk1360_p-122(sbcD)            1  5.34e-07          . TCGAACCTTTGTTCTA           
+CE1822_p-28(divS)             1  5.34e-07          . TCGAACATGTGAACGA           
+CORAM0001_0278_p-89(cg07      1  6.16e-07          . TCGAACGTACGTGCTA           
+cur_0885_p-180(divS)          1  6.16e-07          . TCGAACGTGCGTGCTA           
+CE1849_p-213(recA)            1  6.99e-07          . TCGAACAGTTGTGCGT           
+cg2141_p-240(recA)            1  6.99e-07          . TCGAACAGTTGTGCGT           
+CE1823_p-209(lexA)            1  8.01e-07          . TCGTTCACATGTTCGA           
+jk1106_p-164(lexA)            1  9.04e-07          . TAGATCACGTGTTCTA           
+DIP1426_p-268(lexA)           1  9.04e-07          . TCGACAACATGTTCGA           
+CORAM0001_0220_p-89(cg26      1  1.03e-06          . TCGAATGGGTGTGCGA           
+jk1709_p-8(dnaE2)             1  1.03e-06          . TAGAATATGTGTTCTA           
+cg1288_p-79(blt)              1  1.03e-06          . TCGATAATATGTTCTA           
+cauri_1681_p-145(cg2381)      1  1.16e-06          . TCGAACACCTGCTCTA           
+cg2381_p-122(cg2381)          1  1.16e-06          . TCAAATATGTGTTCGA           
+CORAM0001_0285_p-49(dnaE      1  1.84e-06          . TCGAAAATACGTTTGA           
+CE2064_p-6(cg2381)            1  1.84e-06          . TAGAAAGTGTGTTCTA           
+cg0738_p-19(dnaE2)            1  1.84e-06          . TGGAAAATTTGTTCTA           
+cg0875_p-37(cg0875)           1  1.84e-06          . TAGAACATATGTACCA           
+cauri_0492_p-16(cg0713)       1  2.08e-06          . TCAAACAGGTGTTCGT           
+DIP1425_p-87(divS)            1  2.08e-06          . TCGAACATGTTGTCGA           
+CE1207_p-80(blt)              1  2.08e-06          . TAGAAAACATGTTTGA           
+cur_0874_p-307(recA)          1  2.33e-06          . TCGAACAAAGGTTCGT           
+jk1116_p-175(recA)            1  2.33e-06          . TCGAACAAAGGTTCGT           
+jk1106_p-126(lexA)            1  2.33e-06          . TAGCACGCTTGTTCGA           
+CORAM0001_1381_p-91(cg26      1  2.61e-06          . TCGAATGGGTGTACGA           
+cauri_1476_p-100(divS)        1  2.61e-06          . TCGAACGGTTGGTCGA           
+DIP1450_p-204(recA)           1  2.61e-06          . TCGAACATGTATTCGT           
+CORAM0001_0857_p-227(lex      1  2.91e-06          . TCAAACGACTGTTCGA           
+CE1823_p-130(lexA)            1  2.91e-06          . TCGAACACTCGTACCA           
+cg2683_p-58(cg2683)           1  2.91e-06          . TCGAACACGTGAGCGG           
+cg2114_p-190(lexA)            1  2.91e-06          . TCGAACACTCGTACCA           
+ckrop_1113_p-245(recA)        1  3.26e-06          . TCGAACATACGTTTGC           
+ckrop_0735_p-179(cg2381)      1  3.26e-06          . TCGAATATAAGTTCGA           
+cur_0884_p-68(lexA)           1  3.26e-06          . TAGCACGCACGTTCGA           
+CORAM0001_1690_p-79(uvrA      1  3.63e-06          . CTGAACACATGTGCGA           
+cg1427_p-63(n/a)              1  3.63e-06          . TTGAACAAATGTTCGG           
+jk1056_p-30(ruvC)             1  4.05e-06          . TAAAACACGTGTGCTA           
+cauri_1500_p-211(recA)        1  4.52e-06          . TCGAACACTTGTGTGT           
+jk1106_p-84(lexA)             1  4.52e-06          . TCGAACACATATACTA           
+cauri_1016_p-50(blt)          1  5.03e-06          . TAGAACTATTGTTCGA           
+jk1858_p-125(modC)            1  5.03e-06          . TAGAGCATATGTTCTA           
+CE0632_p-26(dnaE2)            1  5.03e-06          . TGGAAAGAATGTTCTA           
+CE1822_p-107(divS)            1  5.03e-06          . TGGTACGAGTGTTCGA           
+cg2113_p-165(divS)            1  5.03e-06          . TGGTACGAGTGTTCGA           
+cauri_1477_p-204(lexA)        1  6.24e-06          . TCGACCAACCGTTCGA           
+DIP1182_p-47(recN)            1  6.24e-06          . TAGAACACCTGTTCCT           
+cg1884_p-297(cg1884)          1  6.92e-06          . TCGCACATTTTTTCTA           
+cauri_1419_p-10(ruvC)         1  8.47e-06          . TAGAACACATGTGTGT           
+cg2113_p-85(divS)             1  8.47e-06          . TCGAACATGTGAACGG           
+cauri_1476_p-180(divS)        1  1.15e-05          . AGGAAAAAATGTTCGA           
+CE2524_p-35(radA)             1  1.15e-05          . TCGAACATGTTTTTGT           
+cg1318_p-117(sbcD)            1  1.15e-05          . TTGAAGATATGTACGA           
+cg1602_p-49(recN)             1  1.15e-05          . TAGAAAAAACGTTCGC           
+cg1560_p-66(uvrA)             1  1.27e-05          . TCGATGCTATGTTCGA           
+cg2114_p-270(lexA)            1  1.27e-05          . CCGTTCACATGTTCGA           
+cg2026_p-102(cg2026)          1  1.27e-05          . TAGCACATATTTTCTA           
+CE1548_p-107(recN)            1  1.41e-05          . TCGGATGTGTGTGCGA           
+CORAM0001_2122_p-63(ruvC      1  1.71e-05          . ACAAACAGCTGTTCGA           
+cauri_1477_p-124(lexA)        1  1.71e-05          . TCGAACATTTTTTCCT           
+CE1262_p-300(putP)            1  1.71e-05          . TCGTATCCATGTGCGA           
+cg2504_p-69(cg2683)           1  1.71e-05          . TCGAAAATTTGATCGG           
+cg1314_p-259(putP)            1  2.27e-05          . TCGTAACCTTGTGCGA           
+CORAM0001_0838_p-140(rec      1  2.49e-05          . TCGAACAGGGTTTCGC           
+cg2504_p-121(cg2683)          1  2.49e-05          . TCGAACATGTGAGTGC           
+DIP1159_p-145(uvrA)           1  2.73e-05          . TCGGTAGTATGTTCGA           
+cg1059_p-103(cg2683)          1  2.73e-05          . TTGAATAAGTGTTTGA           
+cg2034_p-22(cg2034)           1  3.00e-05          . CCGATCAAATGTTTGA           
+DIP1377_p-123(ruvC)           1  3.61e-05          . TCGCAATTATGTGCTA           
+CE1775_p-37(ruvC)             1  3.61e-05          . TCGCAATTATGTGCTA           
+cg1871_p-104(ruvC)            1  3.61e-05          . TCGCAATTGTGTGCTA           
+cg2158_p-68(ftsK)             1  3.61e-05          . TAGAAAACTTGGACGA           
+cg0742_p-100(cg0742)          1  3.95e-05          . TCAAGCACCCGTTCGA           
+cg1059_p-72(cg2683)           1  4.32e-05          . TCGAAAGTGTGAGCGG           
+CE1507_p-76(uvrA)             1  4.71e-05          . TCGTTGGTATGTTCGA           
+CE1360_p-128(n/a)             1  5.62e-05          . CTGAACATATATTCGA           
+CE0781_p-41(cg0875)           1  5.62e-05          . TAGAACATACGTACAA           
+cg0898_p-76(pdxS)             1  5.62e-05          . TCAAAAAAGTGGTCTA           
+cg0841_p-87(cg0841)           1  5.62e-05          . TCGAAAGTATTTCCGA           
+CORAM0001_1381_p-134(cg2      1  6.68e-05          . TCGGAAAAAAGTTCGA           
+cg0834_p-62(cg0834)           1  6.68e-05          . ACACAAACGTGTTCGA           
+CE1265_p-140(sbcD)            1  7.28e-05          . TGGAACAGTTGCGCGC           
+CE1018_p-200(cg1080)          1  7.28e-05          . TGGAACCGATGATCCA           
+cg2950_p-48(radA)             1  7.28e-05          . TCGAACACCGTTTCTC           
+DIP1025_p-72(sbcD)            1  9.36e-05          . TCGAAGACATCTACTA           
+DIP0612_p-32(dnaE2)           1  1.02e-04          . GTGAACATGTGTGTGA           
+cg1080_p-30(cg1080)           1  2.25e-04          . ATGAAAATTTGTTTGA           
+ckrop_2122_p-52(divS)         1  2.83e-04          . GGGATGAGATGTTCGA           
+ckrop_1088_p-213(lexA)        1  4.71e-04          . TCGAACATGTGCGATC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+cur_1216_p-88(cg2381)               8e-09  [+1]
+ckrop_1305_p-117(helZ)            9.7e-09  [+1]
+CORAM0001_1116_p-123(cg2          9.7e-09  [+1]
+cur_0403_p-165(cg0713)            4.7e-08  [+1]
+jk1717_p-99(cg0713)               4.7e-08  [+1]
+cg0713_p-40(cg0713)               4.7e-08  [+1]
+ckrop_1307_p-252(putP)            5.8e-08  [+1]
+CE0627_p5(cg0713)                 6.8e-08  [+1]
+cur_0412_p-36(dnaE2)                8e-08  [+1]
+cur_0884_p-103(lexA)              9.3e-08  [+1]
+jk0739_p-111(cg2381)              9.3e-08  [+1]
+cg1255_p-68(cg1255)               9.3e-08  [+1]
+CORAM0001_0623_p-141(hel          1.1e-07  [+1]
+cg0470_p-201(cg0470)              1.6e-07  [+1]
+cauri_0500_p-33(dnaE2)            2.9e-07  [+1]
+cur_0885_p-145(divS)              2.9e-07  [+1]
+ckrop_0333_p-191(dnaE2)           3.3e-07  [+1]
+CORAM0001_0615_p-101(mod          3.7e-07  [+1]
+cg2733_p-88(cg2733)               3.7e-07  [+1]
+DIP1609_p31(cg2381)               4.2e-07  [+1]
+cur_0934_p-52(ruvC)               4.7e-07  [+1]
+jk1360_p-122(sbcD)                5.3e-07  [+1]
+CE1822_p-28(divS)                 5.3e-07  [+1]
+CORAM0001_0278_p-89(cg07          6.2e-07  [+1]
+cur_0885_p-180(divS)              6.2e-07  [+1]
+CE1849_p-213(recA)                  7e-07  [+1]
+cg2141_p-240(recA)                  7e-07  [+1]
+CE1823_p-209(lexA)                  8e-07  [+1]
+jk1106_p-164(lexA)                  9e-07  [+1]
+DIP1426_p-268(lexA)                 9e-07  [+1]
+CORAM0001_0220_p-89(cg26            1e-06  [+1]
+jk1709_p-8(dnaE2)                   1e-06  [+1]
+cg1288_p-79(blt)                    1e-06  [+1]
+cauri_1681_p-145(cg2381)          1.2e-06  [+1]
+cg2381_p-122(cg2381)              1.2e-06  [+1]
+CORAM0001_0285_p-49(dnaE          1.8e-06  [+1]
+CE2064_p-6(cg2381)                1.8e-06  [+1]
+cg0738_p-19(dnaE2)                1.8e-06  [+1]
+cg0875_p-37(cg0875)               1.8e-06  [+1]
+cauri_0492_p-16(cg0713)           2.1e-06  [+1]
+DIP1425_p-87(divS)                2.1e-06  [+1]
+CE1207_p-80(blt)                  2.1e-06  [+1]
+cur_0874_p-307(recA)              2.3e-06  [+1]
+jk1116_p-175(recA)                2.3e-06  [+1]
+jk1106_p-126(lexA)                2.3e-06  [+1]
+CORAM0001_1381_p-91(cg26          2.6e-06  [+1]
+cauri_1476_p-100(divS)            2.6e-06  [+1]
+DIP1450_p-204(recA)               2.6e-06  [+1]
+CORAM0001_0857_p-227(lex          2.9e-06  [+1]
+CE1823_p-130(lexA)                2.9e-06  [+1]
+cg2683_p-58(cg2683)               2.9e-06  [+1]
+cg2114_p-190(lexA)                2.9e-06  [+1]
+ckrop_1113_p-245(recA)            3.3e-06  [+1]
+ckrop_0735_p-179(cg2381)          3.3e-06  [+1]
+cur_0884_p-68(lexA)               3.3e-06  [+1]
+CORAM0001_1690_p-79(uvrA          3.6e-06  [+1]
+cg1427_p-63(n/a)                  3.6e-06  [+1]
+jk1056_p-30(ruvC)                 4.1e-06  [+1]
+cauri_1500_p-211(recA)            4.5e-06  [+1]
+jk1106_p-84(lexA)                 4.5e-06  [+1]
+cauri_1016_p-50(blt)                5e-06  [+1]
+jk1858_p-125(modC)                  5e-06  [+1]
+CE0632_p-26(dnaE2)                  5e-06  [+1]
+CE1822_p-107(divS)                  5e-06  [+1]
+cg2113_p-165(divS)                  5e-06  [+1]
+cauri_1477_p-204(lexA)            6.2e-06  [+1]
+DIP1182_p-47(recN)                6.2e-06  [+1]
+cg1884_p-297(cg1884)              6.9e-06  [+1]
+cauri_1419_p-10(ruvC)             8.5e-06  [+1]
+cg2113_p-85(divS)                 8.5e-06  [+1]
+cauri_1476_p-180(divS)            1.2e-05  [+1]
+CE2524_p-35(radA)                 1.2e-05  [+1]
+cg1318_p-117(sbcD)                1.2e-05  [+1]
+cg1602_p-49(recN)                 1.2e-05  [+1]
+cg1560_p-66(uvrA)                 1.3e-05  [+1]
+cg2114_p-270(lexA)                1.3e-05  [+1]
+cg2026_p-102(cg2026)              1.3e-05  [+1]
+CE1548_p-107(recN)                1.4e-05  [+1]
+CORAM0001_2122_p-63(ruvC          1.7e-05  [+1]
+cauri_1477_p-124(lexA)            1.7e-05  [+1]
+CE1262_p-300(putP)                1.7e-05  [+1]
+cg2504_p-69(cg2683)               1.7e-05  [+1]
+cg1314_p-259(putP)                2.3e-05  [+1]
+CORAM0001_0838_p-140(rec          2.5e-05  [+1]
+cg2504_p-121(cg2683)              2.5e-05  [+1]
+DIP1159_p-145(uvrA)               2.7e-05  [+1]
+cg1059_p-103(cg2683)              2.7e-05  [+1]
+cg2034_p-22(cg2034)                 3e-05  [+1]
+DIP1377_p-123(ruvC)               3.6e-05  [+1]
+CE1775_p-37(ruvC)                 3.6e-05  [+1]
+cg1871_p-104(ruvC)                3.6e-05  [+1]
+cg2158_p-68(ftsK)                 3.6e-05  [+1]
+cg0742_p-100(cg0742)              3.9e-05  [+1]
+cg1059_p-72(cg2683)               4.3e-05  [+1]
+CE1507_p-76(uvrA)                 4.7e-05  [+1]
+CE1360_p-128(n/a)                 5.6e-05  [+1]
+CE0781_p-41(cg0875)               5.6e-05  [+1]
+cg0898_p-76(pdxS)                 5.6e-05  [+1]
+cg0841_p-87(cg0841)               5.6e-05  [+1]
+CORAM0001_1381_p-134(cg2          6.7e-05  [+1]
+cg0834_p-62(cg0834)               6.7e-05  [+1]
+CE1265_p-140(sbcD)                7.3e-05  [+1]
+CE1018_p-200(cg1080)              7.3e-05  [+1]
+cg2950_p-48(radA)                 7.3e-05  [+1]
+DIP1025_p-72(sbcD)                9.4e-05  [+1]
+DIP0612_p-32(dnaE2)                0.0001  [+1]
+cg1080_p-30(cg1080)               0.00023  [+1]
+ckrop_2122_p-52(divS)             0.00028  [+1]
+ckrop_1088_p-213(lexA)            0.00047  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TCGAACAYRTGTTCGA width=16 seqs=109
+cur_1216_p-88(cg2381)    (    1) TAGAACACGTGTTCGA  1 
+ckrop_1305_p-117(helZ)   (    1) TCGAAAATATGTTCGA  1 
+CORAM0001_1116_p-123(cg2 (    1) TCGAACAGATGTGCGA  1 
+cur_0403_p-165(cg0713)   (    1) TAGAACACCTGTTCGA  1 
+jk1717_p-99(cg0713)      (    1) TAGAACACGTGTTCTA  1 
+cg0713_p-40(cg0713)      (    1) TGGAACAGGTGTTCGA  1 
+ckrop_1307_p-252(putP)   (    1) TCGAACATATTTTCGA  1 
+CE0627_p5(cg0713)        (    1) TGGAACACATGTTCTA  1 
+cur_0412_p-36(dnaE2)     (    1) TCGAATAGATGTTCGA  1 
+cur_0884_p-103(lexA)     (    1) TCGAACGGGTGTTCTA  1 
+jk0739_p-111(cg2381)     (    1) TGGAACATGTGTTCTA  1 
+cg1255_p-68(cg1255)      (    1) TCGAATAAATGTTCGA  1 
+CORAM0001_0623_p-141(hel (    1) TCGAACACGCGTGCTA  1 
+cg0470_p-201(cg0470)     (    1) TGGAAAATATGTTCGA  1 
+cauri_0500_p-33(dnaE2)   (    1) TGGAATACATGTTCGA  1 
+cur_0885_p-145(divS)     (    1) TAGAACACCCGTTCGA  1 
+ckrop_0333_p-191(dnaE2)  (    1) TCGAACACGCGTACTA  1 
+CORAM0001_0615_p-101(mod (    1) TCGAATGGATGTTCGA  1 
+cg2733_p-88(cg2733)      (    1) TCGAATAACTGTTCGA  1 
+DIP1609_p31(cg2381)      (    1) TCGAACAAACGTTCCA  1 
+cur_0934_p-52(ruvC)      (    1) TCGATCATGTGTGCTA  1 
+jk1360_p-122(sbcD)       (    1) TCGAACCTTTGTTCTA  1 
+CE1822_p-28(divS)        (    1) TCGAACATGTGAACGA  1 
+CORAM0001_0278_p-89(cg07 (    1) TCGAACGTACGTGCTA  1 
+cur_0885_p-180(divS)     (    1) TCGAACGTGCGTGCTA  1 
+CE1849_p-213(recA)       (    1) TCGAACAGTTGTGCGT  1 
+cg2141_p-240(recA)       (    1) TCGAACAGTTGTGCGT  1 
+CE1823_p-209(lexA)       (    1) TCGTTCACATGTTCGA  1 
+jk1106_p-164(lexA)       (    1) TAGATCACGTGTTCTA  1 
+DIP1426_p-268(lexA)      (    1) TCGACAACATGTTCGA  1 
+CORAM0001_0220_p-89(cg26 (    1) TCGAATGGGTGTGCGA  1 
+jk1709_p-8(dnaE2)        (    1) TAGAATATGTGTTCTA  1 
+cg1288_p-79(blt)         (    1) TCGATAATATGTTCTA  1 
+cauri_1681_p-145(cg2381) (    1) TCGAACACCTGCTCTA  1 
+cg2381_p-122(cg2381)     (    1) TCAAATATGTGTTCGA  1 
+CORAM0001_0285_p-49(dnaE (    1) TCGAAAATACGTTTGA  1 
+CE2064_p-6(cg2381)       (    1) TAGAAAGTGTGTTCTA  1 
+cg0738_p-19(dnaE2)       (    1) TGGAAAATTTGTTCTA  1 
+cg0875_p-37(cg0875)      (    1) TAGAACATATGTACCA  1 
+cauri_0492_p-16(cg0713)  (    1) TCAAACAGGTGTTCGT  1 
+DIP1425_p-87(divS)       (    1) TCGAACATGTTGTCGA  1 
+CE1207_p-80(blt)         (    1) TAGAAAACATGTTTGA  1 
+cur_0874_p-307(recA)     (    1) TCGAACAAAGGTTCGT  1 
+jk1116_p-175(recA)       (    1) TCGAACAAAGGTTCGT  1 
+jk1106_p-126(lexA)       (    1) TAGCACGCTTGTTCGA  1 
+CORAM0001_1381_p-91(cg26 (    1) TCGAATGGGTGTACGA  1 
+cauri_1476_p-100(divS)   (    1) TCGAACGGTTGGTCGA  1 
+DIP1450_p-204(recA)      (    1) TCGAACATGTATTCGT  1 
+CORAM0001_0857_p-227(lex (    1) TCAAACGACTGTTCGA  1 
+CE1823_p-130(lexA)       (    1) TCGAACACTCGTACCA  1 
+cg2683_p-58(cg2683)      (    1) TCGAACACGTGAGCGG  1 
+cg2114_p-190(lexA)       (    1) TCGAACACTCGTACCA  1 
+ckrop_1113_p-245(recA)   (    1) TCGAACATACGTTTGC  1 
+ckrop_0735_p-179(cg2381) (    1) TCGAATATAAGTTCGA  1 
+cur_0884_p-68(lexA)      (    1) TAGCACGCACGTTCGA  1 
+CORAM0001_1690_p-79(uvrA (    1) CTGAACACATGTGCGA  1 
+cg1427_p-63(n/a)         (    1) TTGAACAAATGTTCGG  1 
+jk1056_p-30(ruvC)        (    1) TAAAACACGTGTGCTA  1 
+cauri_1500_p-211(recA)   (    1) TCGAACACTTGTGTGT  1 
+jk1106_p-84(lexA)        (    1) TCGAACACATATACTA  1 
+cauri_1016_p-50(blt)     (    1) TAGAACTATTGTTCGA  1 
+jk1858_p-125(modC)       (    1) TAGAGCATATGTTCTA  1 
+CE0632_p-26(dnaE2)       (    1) TGGAAAGAATGTTCTA  1 
+CE1822_p-107(divS)       (    1) TGGTACGAGTGTTCGA  1 
+cg2113_p-165(divS)       (    1) TGGTACGAGTGTTCGA  1 
+cauri_1477_p-204(lexA)   (    1) TCGACCAACCGTTCGA  1 
+DIP1182_p-47(recN)       (    1) TAGAACACCTGTTCCT  1 
+cg1884_p-297(cg1884)     (    1) TCGCACATTTTTTCTA  1 
+cauri_1419_p-10(ruvC)    (    1) TAGAACACATGTGTGT  1 
+cg2113_p-85(divS)        (    1) TCGAACATGTGAACGG  1 
+cauri_1476_p-180(divS)   (    1) AGGAAAAAATGTTCGA  1 
+CE2524_p-35(radA)        (    1) TCGAACATGTTTTTGT  1 
+cg1318_p-117(sbcD)       (    1) TTGAAGATATGTACGA  1 
+cg1602_p-49(recN)        (    1) TAGAAAAAACGTTCGC  1 
+cg1560_p-66(uvrA)        (    1) TCGATGCTATGTTCGA  1 
+cg2114_p-270(lexA)       (    1) CCGTTCACATGTTCGA  1 
+cg2026_p-102(cg2026)     (    1) TAGCACATATTTTCTA  1 
+CE1548_p-107(recN)       (    1) TCGGATGTGTGTGCGA  1 
+CORAM0001_2122_p-63(ruvC (    1) ACAAACAGCTGTTCGA  1 
+cauri_1477_p-124(lexA)   (    1) TCGAACATTTTTTCCT  1 
+CE1262_p-300(putP)       (    1) TCGTATCCATGTGCGA  1 
+cg2504_p-69(cg2683)      (    1) TCGAAAATTTGATCGG  1 
+cg1314_p-259(putP)       (    1) TCGTAACCTTGTGCGA  1 
+CORAM0001_0838_p-140(rec (    1) TCGAACAGGGTTTCGC  1 
+cg2504_p-121(cg2683)     (    1) TCGAACATGTGAGTGC  1 
+DIP1159_p-145(uvrA)      (    1) TCGGTAGTATGTTCGA  1 
+cg1059_p-103(cg2683)     (    1) TTGAATAAGTGTTTGA  1 
+cg2034_p-22(cg2034)      (    1) CCGATCAAATGTTTGA  1 
+DIP1377_p-123(ruvC)      (    1) TCGCAATTATGTGCTA  1 
+CE1775_p-37(ruvC)        (    1) TCGCAATTATGTGCTA  1 
+cg1871_p-104(ruvC)       (    1) TCGCAATTGTGTGCTA  1 
+cg2158_p-68(ftsK)        (    1) TAGAAAACTTGGACGA  1 
+cg0742_p-100(cg0742)     (    1) TCAAGCACCCGTTCGA  1 
+cg1059_p-72(cg2683)      (    1) TCGAAAGTGTGAGCGG  1 
+CE1507_p-76(uvrA)        (    1) TCGTTGGTATGTTCGA  1 
+CE1360_p-128(n/a)        (    1) CTGAACATATATTCGA  1 
+CE0781_p-41(cg0875)      (    1) TAGAACATACGTACAA  1 
+cg0898_p-76(pdxS)        (    1) TCAAAAAAGTGGTCTA  1 
+cg0841_p-87(cg0841)      (    1) TCGAAAGTATTTCCGA  1 
+CORAM0001_1381_p-134(cg2 (    1) TCGGAAAAAAGTTCGA  1 
+cg0834_p-62(cg0834)      (    1) ACACAAACGTGTTCGA  1 
+CE1265_p-140(sbcD)       (    1) TGGAACAGTTGCGCGC  1 
+CE1018_p-200(cg1080)     (    1) TGGAACCGATGATCCA  1 
+cg2950_p-48(radA)        (    1) TCGAACACCGTTTCTC  1 
+DIP1025_p-72(sbcD)       (    1) TCGAAGACATCTACTA  1 
+DIP0612_p-32(dnaE2)      (    1) GTGAACATGTGTGTGA  1 
+cg1080_p-30(cg1080)      (    1) ATGAAAATTTGTTTGA  1 
+ckrop_2122_p-52(divS)    (    1) GGGATGAGATGTTCGA  1 
+ckrop_1088_p-213(lexA)   (    1) TCGAACATGTGCGATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 109 bayes= 1.8711 E= 5.1e-439 
+  -296   -236   -365    162 
+   -64    175    -95   -220 
+  -196  -1341    201  -1341 
+   154   -136   -306   -220 
+   160   -336   -365   -169 
+   -38    171   -233   -131 
+   137   -204    -40   -301 
+   -80     64    -65     42 
+    59   -104     48    -92 
+  -396    -45   -265    145 
+  -338   -436    194   -184 
+  -216   -277   -265    156 
+  -138   -436     -6    116 
+  -496    224  -1341   -155 
+  -496   -155    152    -15 
+   146   -155   -233   -155 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 109 E= 5.1e-439 
+ 0.036697  0.036697  0.018349  0.908257 
+ 0.183486  0.633028  0.119266  0.064220 
+ 0.073394  0.000000  0.926606  0.000000 
+ 0.834862  0.073394  0.027523  0.064220 
+ 0.871560  0.018349  0.018349  0.091743 
+ 0.220183  0.614679  0.045872  0.119266 
+ 0.743119  0.045872  0.174312  0.036697 
+ 0.165138  0.293578  0.146789  0.394495 
+ 0.431193  0.091743  0.321101  0.155963 
+ 0.018349  0.137615  0.036697  0.807339 
+ 0.027523  0.009174  0.880734  0.082569 
+ 0.064220  0.027523  0.036697  0.871560 
+ 0.110092  0.009174  0.220183  0.660550 
+ 0.009174  0.889908  0.000000  0.100917 
+ 0.009174  0.064220  0.660550  0.266055 
+ 0.788991  0.064220  0.045872  0.100917 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCGAACAYRTGTTCGA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TCGAA[CA]A[TC][AG]TGT[TG]C[GT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.25 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+cg0470_p-201(cg0470)             1.59e-07  [+1(1.59e-07)]
+cg1080_p-30(cg1080)              2.25e-04  16
+cg2733_p-88(cg2733)              3.70e-07  [+1(3.70e-07)]
+cg1288_p-79(blt)                 1.03e-06  [+1(1.03e-06)]
+cg2950_p-48(radA)                7.28e-05  [+1(7.28e-05)]
+cg2034_p-22(cg2034)              3.00e-05  [+1(3.00e-05)]
+cg1427_p-63(n/a)                 3.63e-06  [+1(3.63e-06)]
+cg2113_p-85(divS)                8.47e-06  [+1(8.47e-06)]
+cg2113_p-165(divS)               5.03e-06  [+1(5.03e-06)]
+cg1255_p-68(cg1255)              9.35e-08  [+1(9.35e-08)]
+cg1884_p-297(cg1884)             6.92e-06  [+1(6.92e-06)]
+cg0841_p-87(cg0841)              5.62e-05  [+1(5.62e-05)]
+cg2158_p-68(ftsK)                3.61e-05  [+1(3.61e-05)]
+cg0834_p-62(cg0834)              6.68e-05  [+1(6.68e-05)]
+cg0742_p-100(cg0742)             3.95e-05  [+1(3.95e-05)]
+cg0875_p-37(cg0875)              1.84e-06  [+1(1.84e-06)]
+cg2026_p-102(cg2026)             1.27e-05  [+1(1.27e-05)]
+cg1314_p-259(putP)               2.27e-05  [+1(2.27e-05)]
+cg0738_p-19(dnaE2)               1.84e-06  [+1(1.84e-06)]
+cg1602_p-49(recN)                1.15e-05  [+1(1.15e-05)]
+cg1318_p-117(sbcD)               1.15e-05  [+1(1.15e-05)]
+cg2114_p-270(lexA)               1.27e-05  [+1(1.27e-05)]
+cg2114_p-190(lexA)               2.91e-06  [+1(2.91e-06)]
+cg2381_p-122(cg2381)             1.16e-06  [+1(1.16e-06)]
+cg1871_p-104(ruvC)               3.61e-05  [+1(3.61e-05)]
+cg1560_p-66(uvrA)                1.27e-05  [+1(1.27e-05)]
+cg0713_p-40(cg0713)              4.71e-08  [+1(4.71e-08)]
+cg2141_p-240(recA)               6.99e-07  [+1(6.99e-07)]
+cg2504_p-69(cg2683)              1.71e-05  [+1(1.71e-05)]
+cg2683_p-58(cg2683)              2.91e-06  [+1(2.91e-06)]
+cg0898_p-76(pdxS)                5.62e-05  [+1(5.62e-05)]
+cg1059_p-103(cg2683)             2.73e-05  [+1(2.73e-05)]
+cg1059_p-72(cg2683)              4.32e-05  [+1(4.32e-05)]
+cg2504_p-121(cg2683)             2.49e-05  [+1(2.49e-05)]
+CE1507_p-76(uvrA)                4.71e-05  [+1(4.71e-05)]
+CE1018_p-200(cg1080)             7.28e-05  [+1(7.28e-05)]
+CE1207_p-80(blt)                 2.08e-06  [+1(2.08e-06)]
+CE2524_p-35(radA)                1.15e-05  [+1(1.15e-05)]
+CE0781_p-41(cg0875)              5.62e-05  [+1(5.62e-05)]
+CE1262_p-300(putP)               1.71e-05  [+1(1.71e-05)]
+CE1360_p-128(n/a)                5.62e-05  [+1(5.62e-05)]
+CE1822_p-107(divS)               5.03e-06  [+1(5.03e-06)]
+CE1822_p-28(divS)                5.34e-07  [+1(5.34e-07)]
+CE1775_p-37(ruvC)                3.61e-05  [+1(3.61e-05)]
+CE0632_p-26(dnaE2)               5.03e-06  [+1(5.03e-06)]
+CE1548_p-107(recN)               1.41e-05  [+1(1.41e-05)]
+CE2064_p-6(cg2381)               1.84e-06  [+1(1.84e-06)]
+CE1265_p-140(sbcD)               7.28e-05  [+1(7.28e-05)]
+CE1823_p-130(lexA)               2.91e-06  [+1(2.91e-06)]
+CE1823_p-209(lexA)               8.01e-07  [+1(8.01e-07)]
+CE0627_p5(cg0713)                6.84e-08  [+1(6.84e-08)]
+CE1849_p-213(recA)               6.99e-07  [+1(6.99e-07)]
+DIP1159_p-145(uvrA)              2.73e-05  [+1(2.73e-05)]
+DIP1425_p-87(divS)               2.08e-06  [+1(2.08e-06)]
+DIP0612_p-32(dnaE2)              1.02e-04  16
+DIP1182_p-47(recN)               6.24e-06  [+1(6.24e-06)]
+DIP1025_p-72(sbcD)               9.36e-05  [+1(9.36e-05)]
+DIP1426_p-268(lexA)              9.04e-07  [+1(9.04e-07)]
+DIP1609_p31(cg2381)              4.17e-07  [+1(4.17e-07)]
+DIP1377_p-123(ruvC)              3.61e-05  [+1(3.61e-05)]
+DIP1450_p-204(recA)              2.61e-06  [+1(2.61e-06)]
+jk1858_p-125(modC)               5.03e-06  [+1(5.03e-06)]
+jk1709_p-8(dnaE2)                1.03e-06  [+1(1.03e-06)]
+jk1360_p-122(sbcD)               5.34e-07  [+1(5.34e-07)]
+jk1106_p-164(lexA)               9.04e-07  [+1(9.04e-07)]
+jk1106_p-126(lexA)               2.33e-06  [+1(2.33e-06)]
+jk1106_p-84(lexA)                4.52e-06  [+1(4.52e-06)]
+jk0739_p-111(cg2381)             9.35e-08  [+1(9.35e-08)]
+jk1056_p-30(ruvC)                4.05e-06  [+1(4.05e-06)]
+jk1717_p-99(cg0713)              4.71e-08  [+1(4.71e-08)]
+jk1116_p-175(recA)               2.33e-06  [+1(2.33e-06)]
+cur_0885_p-145(divS)             2.87e-07  [+1(2.87e-07)]
+cur_0885_p-180(divS)             6.16e-07  [+1(6.16e-07)]
+cur_0412_p-36(dnaE2)             8.04e-08  [+1(8.04e-08)]
+cur_0934_p-52(ruvC)              4.73e-07  [+1(4.73e-07)]
+cur_0884_p-103(lexA)             9.35e-08  [+1(9.35e-08)]
+cur_0884_p-68(lexA)              3.26e-06  [+1(3.26e-06)]
+cur_1216_p-88(cg2381)            7.98e-09  [+1(7.98e-09)]
+cur_0403_p-165(cg0713)           4.71e-08  [+1(4.71e-08)]
+cur_0874_p-307(recA)             2.33e-06  [+1(2.33e-06)]
+cauri_1016_p-50(blt)             5.03e-06  [+1(5.03e-06)]
+cauri_1476_p-180(divS)           1.15e-05  [+1(1.15e-05)]
+cauri_1476_p-100(divS)           2.61e-06  [+1(2.61e-06)]
+cauri_0500_p-33(dnaE2)           2.87e-07  [+1(2.87e-07)]
+cauri_1419_p-10(ruvC)            8.47e-06  [+1(8.47e-06)]
+cauri_1681_p-145(cg2381)         1.16e-06  [+1(1.16e-06)]
+cauri_1477_p-124(lexA)           1.71e-05  [+1(1.71e-05)]
+cauri_1477_p-204(lexA)           6.24e-06  [+1(6.24e-06)]
+cauri_0492_p-16(cg0713)          2.08e-06  [+1(2.08e-06)]
+cauri_1500_p-211(recA)           4.52e-06  [+1(4.52e-06)]
+CORAM0001_0615_p-101(mod         3.70e-07  [+1(3.70e-07)]
+CORAM0001_0285_p-49(dnaE         1.84e-06  [+1(1.84e-06)]
+CORAM0001_2122_p-63(ruvC         1.71e-05  [+1(1.71e-05)]
+CORAM0001_1116_p-123(cg2         9.73e-09  [+1(9.73e-09)]
+CORAM0001_0623_p-141(hel         1.05e-07  [+1(1.05e-07)]
+CORAM0001_0857_p-227(lex         2.91e-06  [+1(2.91e-06)]
+CORAM0001_1690_p-79(uvrA         3.63e-06  [+1(3.63e-06)]
+CORAM0001_0838_p-140(rec         2.49e-05  [+1(2.49e-05)]
+CORAM0001_0278_p-89(cg07         6.16e-07  [+1(6.16e-07)]
+CORAM0001_0220_p-89(cg26         1.03e-06  [+1(1.03e-06)]
+CORAM0001_1381_p-134(cg2         6.68e-05  [+1(6.68e-05)]
+CORAM0001_1381_p-91(cg26         2.61e-06  [+1(2.61e-06)]
+ckrop_2122_p-52(divS)            2.83e-04  16
+ckrop_1307_p-252(putP)           5.76e-08  [+1(5.76e-08)]
+ckrop_0333_p-191(dnaE2)          3.30e-07  [+1(3.30e-07)]
+ckrop_1305_p-117(helZ)           9.73e-09  [+1(9.73e-09)]
+ckrop_1088_p-213(lexA)           4.71e-04  16
+ckrop_0735_p-179(cg2381)         3.26e-06  [+1(3.26e-06)]
+ckrop_1113_p-245(recA)           3.26e-06  [+1(3.26e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

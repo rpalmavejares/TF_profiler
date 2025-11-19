@@ -1,0 +1,361 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MntR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b0817_p-129(mntR)        1.0000     22  b2392_p-34(mntH)         1.0000     22  
+b1821_p-383(mntP)        1.0000     22  b1821_p-423(mntP)        1.0000     22  
+b0812_p-67(dps)          1.0000     22  STM0835_p-128(mntR)      1.0000     22  
+STM2408_p-34(mntH)       1.0000     22  STM2861_p-57(sitA)       1.0000     22  
+STM1834_p-308(mntP)      1.0000     22  STM1834_p-351(mntP)      1.0000     22  
+CKO_00404_p-16(mntH)     1.0000     22  CKO_04090_p-42(sitA)     1.0000     22  
+CKO_00940_p-88(sitA)     1.0000     22  CKO_02301_p-129(mntR)    1.0000     22  
+CKO_01156_p-373(mntP)    1.0000     22  CKO_01156_p-416(mntP)    1.0000     22  
+KPN_02743_p-35(mntH)     1.0000     22  KPN_03078_p-76(sitA)     1.0000     22  
+KPN_03078_p-57(sitA)     1.0000     22  KPN_00845_p-163(mntR)    1.0000     22  
+KPN_02337_p-449(mntP)    1.0000     22  KPN_02337_p-406(mntP)    1.0000     22  
+Ent638_2926_p-34(mntH)   1.0000     22  Ent638_1111_p-75(sitA)   1.0000     22  
+Ent638_1111_p-56(sitA)   1.0000     22  Ent638_1304_p-128(mntR)  1.0000     22  
+Ent638_2390_p-313(mntP)  1.0000     22  Ent638_2390_p-356(mntP)  1.0000     22  
+EAM_1275_p-137(mntR)     1.0000     22  EAM_2087_p-54(sitA)      1.0000     22  
+EAM_2087_p-73(sitA)      1.0000     22  EAM_2378_p-133(mntH)     1.0000     22  
+EAM_3371_p-168(mntP)     1.0000     22  Spro_1916_p-70(mntH)     1.0000     22  
+Spro_1915_p-181(mntR)    1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MntR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MntR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       35    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             770    N=              35
+sample: seed=            0    hsfrac=          0
+        searchsize=    770    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.361 C 0.155 G 0.171 T 0.313 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.36 C 0.155 G 0.172 T 0.313 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ARATATAGCMWAGGCTATATT MEME-1	width =  21  sites =  35  llr = 612  E-value = 1.0e-206
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  768:9:a::55611::a:711
+pos.-specific     C  :::3::::a3211:a::1:11
+probability       G  131:1::a::1269::::2::
+matrix            T  2116:a:::1213::a:9198
+
+         bits    2.7         *     *      
+                 2.4        **     *      
+                 2.2        **    **      
+                 1.9        **    **      
+Relative         1.6      * **    ***     
+Entropy          1.3      ****    *****   
+(25.2 bits)      1.1     *****    ***** * 
+                 0.8   *******   ****** **
+                 0.5 **********  *********
+                 0.3 ********** **********
+                 0.0 ---------------------
+
+Multilevel           AAATATAGCAAAGGCTATATT
+consensus            TG C     CT T     G  
+sequence                       C          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Ent638_1304_p-128(mntR)       1  1.09e-11          . AGATATAGCACAGGCTATATT G         
+KPN_00845_p-163(mntR)         1  1.09e-11          . AGATATAGCACAGGCTATATT T         
+CKO_02301_p-129(mntR)         1  1.09e-11          . AGATATAGCACAGGCTATATT A         
+b0817_p-129(mntR)             1  1.09e-11          . AGATATAGCACAGGCTATATT A         
+KPN_02743_p-35(mntH)          1  2.17e-11          . AAACATAGCAAAGGCTATATT T         
+STM0835_p-128(mntR)           1  3.19e-11          . AGATATAGCACAGGCTATGTT T         
+CKO_00404_p-16(mntH)          1  3.62e-11          . AAACATAGCAAAGGCTATGTT T         
+STM2408_p-34(mntH)            1  3.62e-11          . AAACATAGCAAAGGCTATGTT T         
+b2392_p-34(mntH)              1  3.62e-11          . AAACATAGCAAAGGCTATGTT T         
+CKO_04090_p-42(sitA)          1  1.13e-10          . TAACATAGCAAAGGCTATATT C         
+STM2861_p-57(sitA)            1  1.13e-10          . TAACATAGCAAAGGCTATATT C         
+CKO_01156_p-373(mntP)         1  1.60e-10          . AAACATAGCTAAGGCTATATT C         
+EAM_1275_p-137(mntR)          1  3.35e-10          . AGATATAGCACAGGCTATATC G         
+b1821_p-383(mntP)             1  3.35e-10          . AGACATAGCTTAGGCTATATT A         
+Ent638_2926_p-34(mntH)        1  3.89e-10          . AAACATAGCAAAGGCTATATC T         
+KPN_02337_p-449(mntP)         1  7.60e-10          . AAATATAGCCAGCGCTATATT A         
+STM1834_p-308(mntP)           1  7.60e-10          . TAATATAGCTAAGGCTATATT T         
+CKO_00940_p-88(sitA)          1  1.00e-09          . AAATATAGCCTGTGCTATGTT G         
+Ent638_2390_p-356(mntP)       1  1.24e-09          . AATTATAGCAGAGGCTATATT T         
+Ent638_1111_p-75(sitA)        1  3.28e-09          . AAATATAGCCTATGCTATATA A         
+KPN_02337_p-406(mntP)         1  3.98e-09          . TATTATAGCCACGGCTATATT T         
+EAM_2378_p-133(mntH)          1  7.75e-09          . AAGTATAGCAATTGCTATATT T         
+Ent638_2390_p-313(mntP)       1  1.84e-08          . ATATATAGCCATCGCTATATT C         
+EAM_3371_p-168(mntP)          1  2.95e-08          . AAGTATAGCCGATGCTATAAT C         
+b0812_p-67(dps)               1  3.68e-08          . ACACATAGCCGGTGCTATACT T         
+EAM_2087_p-73(sitA)           1  4.28e-08          . GGATATAGCCTGTGCTATATG T         
+CKO_01156_p-416(mntP)         1  6.08e-08          . AGATATAGCCTGAACTATGTT T         
+Spro_1916_p-70(mntH)          1  7.44e-08          . AAGTGTAGCCGATGCTACATT G         
+KPN_03078_p-57(sitA)          1  7.94e-08          . TAACATAGCAATGGCTATAAA C         
+STM1834_p-351(mntP)           1  8.49e-08          . AGATATAGCCTCAACTATGTT T         
+b1821_p-423(mntP)             1  8.49e-08          . GAATTTAGCCAAAGCTATGTT T         
+Ent638_1111_p-56(sitA)        1  2.48e-07          . TAAGATAGCACAGGCTAATTT T         
+Spro_1915_p-181(mntR)         1  3.58e-07          . CAATGTAGCATCGGCTACACT T         
+EAM_2087_p-54(sitA)           1  4.59e-07          . TGTTATAGCAATTGCTATTTA G         
+KPN_03078_p-76(sitA)          1  6.69e-07          . ATAAATAGCTTGTGCTATATA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ent638_1304_p-128(mntR)           1.1e-11  [+1]_1
+KPN_00845_p-163(mntR)             1.1e-11  [+1]_1
+CKO_02301_p-129(mntR)             1.1e-11  [+1]_1
+b0817_p-129(mntR)                 1.1e-11  [+1]_1
+KPN_02743_p-35(mntH)              2.2e-11  [+1]_1
+STM0835_p-128(mntR)               3.2e-11  [+1]_1
+CKO_00404_p-16(mntH)              3.6e-11  [+1]_1
+STM2408_p-34(mntH)                3.6e-11  [+1]_1
+b2392_p-34(mntH)                  3.6e-11  [+1]_1
+CKO_04090_p-42(sitA)              1.1e-10  [+1]_1
+STM2861_p-57(sitA)                1.1e-10  [+1]_1
+CKO_01156_p-373(mntP)             1.6e-10  [+1]_1
+EAM_1275_p-137(mntR)              3.4e-10  [+1]_1
+b1821_p-383(mntP)                 3.4e-10  [+1]_1
+Ent638_2926_p-34(mntH)            3.9e-10  [+1]_1
+KPN_02337_p-449(mntP)             7.6e-10  [+1]_1
+STM1834_p-308(mntP)               7.6e-10  [+1]_1
+CKO_00940_p-88(sitA)                1e-09  [+1]_1
+Ent638_2390_p-356(mntP)           1.2e-09  [+1]_1
+Ent638_1111_p-75(sitA)            3.3e-09  [+1]_1
+KPN_02337_p-406(mntP)               4e-09  [+1]_1
+EAM_2378_p-133(mntH)              7.7e-09  [+1]_1
+Ent638_2390_p-313(mntP)           1.8e-08  [+1]_1
+EAM_3371_p-168(mntP)              2.9e-08  [+1]_1
+b0812_p-67(dps)                   3.7e-08  [+1]_1
+EAM_2087_p-73(sitA)               4.3e-08  [+1]_1
+CKO_01156_p-416(mntP)             6.1e-08  [+1]_1
+Spro_1916_p-70(mntH)              7.4e-08  [+1]_1
+KPN_03078_p-57(sitA)              7.9e-08  [+1]_1
+STM1834_p-351(mntP)               8.5e-08  [+1]_1
+b1821_p-423(mntP)                 8.5e-08  [+1]_1
+Ent638_1111_p-56(sitA)            2.5e-07  [+1]_1
+Spro_1915_p-181(mntR)             3.6e-07  [+1]_1
+EAM_2087_p-54(sitA)               4.6e-07  [+1]_1
+KPN_03078_p-76(sitA)              6.7e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ARATATAGCMWAGGCTATATT width=21 seqs=35
+Ent638_1304_p-128(mntR)  (    1) AGATATAGCACAGGCTATATT  1 
+KPN_00845_p-163(mntR)    (    1) AGATATAGCACAGGCTATATT  1 
+CKO_02301_p-129(mntR)    (    1) AGATATAGCACAGGCTATATT  1 
+b0817_p-129(mntR)        (    1) AGATATAGCACAGGCTATATT  1 
+KPN_02743_p-35(mntH)     (    1) AAACATAGCAAAGGCTATATT  1 
+STM0835_p-128(mntR)      (    1) AGATATAGCACAGGCTATGTT  1 
+CKO_00404_p-16(mntH)     (    1) AAACATAGCAAAGGCTATGTT  1 
+STM2408_p-34(mntH)       (    1) AAACATAGCAAAGGCTATGTT  1 
+b2392_p-34(mntH)         (    1) AAACATAGCAAAGGCTATGTT  1 
+CKO_04090_p-42(sitA)     (    1) TAACATAGCAAAGGCTATATT  1 
+STM2861_p-57(sitA)       (    1) TAACATAGCAAAGGCTATATT  1 
+CKO_01156_p-373(mntP)    (    1) AAACATAGCTAAGGCTATATT  1 
+EAM_1275_p-137(mntR)     (    1) AGATATAGCACAGGCTATATC  1 
+b1821_p-383(mntP)        (    1) AGACATAGCTTAGGCTATATT  1 
+Ent638_2926_p-34(mntH)   (    1) AAACATAGCAAAGGCTATATC  1 
+KPN_02337_p-449(mntP)    (    1) AAATATAGCCAGCGCTATATT  1 
+STM1834_p-308(mntP)      (    1) TAATATAGCTAAGGCTATATT  1 
+CKO_00940_p-88(sitA)     (    1) AAATATAGCCTGTGCTATGTT  1 
+Ent638_2390_p-356(mntP)  (    1) AATTATAGCAGAGGCTATATT  1 
+Ent638_1111_p-75(sitA)   (    1) AAATATAGCCTATGCTATATA  1 
+KPN_02337_p-406(mntP)    (    1) TATTATAGCCACGGCTATATT  1 
+EAM_2378_p-133(mntH)     (    1) AAGTATAGCAATTGCTATATT  1 
+Ent638_2390_p-313(mntP)  (    1) ATATATAGCCATCGCTATATT  1 
+EAM_3371_p-168(mntP)     (    1) AAGTATAGCCGATGCTATAAT  1 
+b0812_p-67(dps)          (    1) ACACATAGCCGGTGCTATACT  1 
+EAM_2087_p-73(sitA)      (    1) GGATATAGCCTGTGCTATATG  1 
+CKO_01156_p-416(mntP)    (    1) AGATATAGCCTGAACTATGTT  1 
+Spro_1916_p-70(mntH)     (    1) AAGTGTAGCCGATGCTACATT  1 
+KPN_03078_p-57(sitA)     (    1) TAACATAGCAATGGCTATAAA  1 
+STM1834_p-351(mntP)      (    1) AGATATAGCCTCAACTATGTT  1 
+b1821_p-423(mntP)        (    1) GAATTTAGCCAAAGCTATGTT  1 
+Ent638_1111_p-56(sitA)   (    1) TAAGATAGCACAGGCTAATTT  1 
+Spro_1915_p-181(mntR)    (    1) CAATGTAGCATCGGCTACACT  1 
+EAM_2087_p-54(sitA)      (    1) TGTTATAGCAATTGCTATTTA  1 
+KPN_03078_p-76(sitA)     (    1) ATAAATAGCTTGTGCTATATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 70 bayes= 2.55158 E= 1.0e-206 
+    99   -244   -159    -64 
+    73   -244     87   -245 
+   120  -1177   -100   -187 
+  -365    102   -259    101 
+   134  -1177   -159   -345 
+ -1177  -1177  -1177    168 
+   147  -1177  -1177  -1177 
+ -1177  -1177    254  -1177 
+ -1177    269  -1177  -1177 
+    59    114  -1177   -145 
+    34     37    -59    -45 
+    80    -85      0   -145 
+  -207   -144    180    -28 
+  -266  -1177    246  -1177 
+ -1177    269  -1177  -1177 
+ -1177  -1177  -1177    168 
+   147  -1177  -1177  -1177 
+  -365   -144  -1177    155 
+    99  -1177     41   -245 
+  -266   -144  -1177    150 
+  -166   -144   -259    136 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 35 E= 1.0e-206 
+ 0.714286  0.028571  0.057143  0.200000 
+ 0.600000  0.028571  0.314286  0.057143 
+ 0.828571  0.000000  0.085714  0.085714 
+ 0.028571  0.314286  0.028571  0.628571 
+ 0.914286  0.000000  0.057143  0.028571 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.542857  0.342857  0.000000  0.114286 
+ 0.457143  0.200000  0.114286  0.228571 
+ 0.628571  0.085714  0.171429  0.114286 
+ 0.085714  0.057143  0.600000  0.257143 
+ 0.057143  0.000000  0.942857  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.028571  0.057143  0.000000  0.914286 
+ 0.714286  0.000000  0.228571  0.057143 
+ 0.057143  0.057143  0.000000  0.885714 
+ 0.114286  0.057143  0.028571  0.800000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARATATAGCMWAGGCTATATT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][AG]A[TC]ATAGC[AC][ATC]A[GT]GCTAT[AG]TT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b0817_p-129(mntR)                2.18e-11  [+1(1.09e-11)]_1
+b2392_p-34(mntH)                 7.24e-11  [+1(3.62e-11)]_1
+b1821_p-383(mntP)                6.70e-10  [+1(3.35e-10)]_1
+b1821_p-423(mntP)                1.70e-07  [+1(8.49e-08)]_1
+b0812_p-67(dps)                  7.37e-08  [+1(3.68e-08)]_1
+STM0835_p-128(mntR)              6.38e-11  [+1(3.19e-11)]_1
+STM2408_p-34(mntH)               7.24e-11  [+1(3.62e-11)]_1
+STM2861_p-57(sitA)               2.26e-10  [+1(1.13e-10)]_1
+STM1834_p-308(mntP)              1.52e-09  [+1(7.60e-10)]_1
+STM1834_p-351(mntP)              1.70e-07  [+1(8.49e-08)]_1
+CKO_00404_p-16(mntH)             7.24e-11  [+1(3.62e-11)]_1
+CKO_04090_p-42(sitA)             2.26e-10  [+1(1.13e-10)]_1
+CKO_00940_p-88(sitA)             2.00e-09  [+1(1.00e-09)]_1
+CKO_02301_p-129(mntR)            2.18e-11  [+1(1.09e-11)]_1
+CKO_01156_p-373(mntP)            3.20e-10  [+1(1.60e-10)]_1
+CKO_01156_p-416(mntP)            1.22e-07  [+1(6.08e-08)]_1
+KPN_02743_p-35(mntH)             4.35e-11  [+1(2.17e-11)]_1
+KPN_03078_p-76(sitA)             1.34e-06  [+1(6.69e-07)]_1
+KPN_03078_p-57(sitA)             1.59e-07  [+1(7.94e-08)]_1
+KPN_00845_p-163(mntR)            2.18e-11  [+1(1.09e-11)]_1
+KPN_02337_p-449(mntP)            1.52e-09  [+1(7.60e-10)]_1
+KPN_02337_p-406(mntP)            7.96e-09  [+1(3.98e-09)]_1
+Ent638_2926_p-34(mntH)           7.78e-10  [+1(3.89e-10)]_1
+Ent638_1111_p-75(sitA)           6.56e-09  [+1(3.28e-09)]_1
+Ent638_1111_p-56(sitA)           4.96e-07  [+1(2.48e-07)]_1
+Ent638_1304_p-128(mntR)          2.18e-11  [+1(1.09e-11)]_1
+Ent638_2390_p-313(mntP)          3.68e-08  [+1(1.84e-08)]_1
+Ent638_2390_p-356(mntP)          2.48e-09  [+1(1.24e-09)]_1
+EAM_1275_p-137(mntR)             6.70e-10  [+1(3.35e-10)]_1
+EAM_2087_p-54(sitA)              9.19e-07  [+1(4.59e-07)]_1
+EAM_2087_p-73(sitA)              8.55e-08  [+1(4.28e-08)]_1
+EAM_2378_p-133(mntH)             1.55e-08  [+1(7.75e-09)]_1
+EAM_3371_p-168(mntP)             5.89e-08  [+1(2.95e-08)]_1
+Spro_1916_p-70(mntH)             1.49e-07  [+1(7.44e-08)]_1
+Spro_1915_p-181(mntR)            7.17e-07  [+1(3.58e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

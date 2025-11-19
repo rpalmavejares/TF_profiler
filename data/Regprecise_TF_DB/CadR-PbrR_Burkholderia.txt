@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CadR-PbrR_Burkholderia.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL3378(cadA)Score=6.4, 1.0000     21  BMA2976(cadA)Score=6.4,P 1.0000     21  
+Bcep18194_A3304(cadA)Sco 1.0000     21  Bamb_0114(cadA)Score=6.1 1.0000     21  
+Bcep1808_0131(cadA)Score 1.0000     21  bglu_1g00910(cadA)Score= 1.0000     21  
+Bxe_B2911(czcD)Score=5.5 1.0000     21  Bxe_A1118(czcD)Score=5.5 1.0000     21  
+Bxe_C0883(czcD)Score=5.5 1.0000     21  Bxe_A2903(czcD)Score=5.5 1.0000     21  
+Bxe_A1104(czcD)Score=5.5 1.0000     21  Bxe_C0391(czcD)Score=5.5 1.0000     21  
+Bxe_A4439(cadA)Score=6,P 1.0000     21  Bxe_B1605(czcD)Score=5.5 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CadR-PbrR_Burkholderia.fasta -oc CadR-PbrR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           21
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             294    N=              14    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.241 C 0.167 G 0.221 T 0.371 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.242 C 0.168 G 0.221 T 0.369 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  21  sites =  14  llr = 327  E-value = 3.5e-103
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::51a::51::1:a25::
+pos.-specific     C  :aa:::::::::a::5:::::
+probability       G  :::::5::a:59:::::35a:
+matrix            T  :::aa:9::a:::a95:5::a
+
+         bits    2.6  **         *        
+                 2.3  **         *        
+                 2.1 ***    **   *   *  * 
+                 1.8 ***    **   *   *  * 
+Relative         1.5 *****  *** ***  *  **
+Entropy          1.3 *****  *** ***  *  **
+(33.7 bits)      1.0 ***************** ***
+                 0.8 ***************** ***
+                 0.5 ***************** ***
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTATAGTAGCTTCATAGT
+consensus                 G    G    T GG  
+sequence                              A   
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Bcep1808_0131(cadA)Score      1  2.21e-12          . ACCTTGTAGTGGCTTCAGGGT           
+Bamb_0114(cadA)Score=6.1      1  2.21e-12          . ACCTTGTAGTGGCTTCAGGGT           
+Bcep18194_A3304(cadA)Sco      1  2.21e-12          . ACCTTGTAGTGGCTTCAGGGT           
+Bxe_A4439(cadA)Score=6,P      1  6.94e-12          . ACCTTGTAGTGGCTTCAAGGT           
+Bxe_B1605(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_C0391(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_A1104(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_A2903(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_C0883(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_A1118(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+Bxe_B2911(czcD)Score=5.5      1  2.32e-11          . ACCTTATAGTAGCTTTATAGT           
+bglu_1g00910(cadA)Score=      1  4.51e-11          . ACCTTGAAGTGGCTTCAGGGT           
+BMA2976(cadA)Score=6.4,P      1  1.10e-10          . ACCTTGTAGTGACTACAAGGT           
+BPSL3378(cadA)Score=6.4,      1  1.10e-10          . ACCTTGTAGTGACTACAAGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bcep1808_0131(cadA)Score          2.2e-12  [+1]
+Bamb_0114(cadA)Score=6.1          2.2e-12  [+1]
+Bcep18194_A3304(cadA)Sco          2.2e-12  [+1]
+Bxe_A4439(cadA)Score=6,P          6.9e-12  [+1]
+Bxe_B1605(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_C0391(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_A1104(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_A2903(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_C0883(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_A1118(czcD)Score=5.5          2.3e-11  [+1]
+Bxe_B2911(czcD)Score=5.5          2.3e-11  [+1]
+bglu_1g00910(cadA)Score=          4.5e-11  [+1]
+BMA2976(cadA)Score=6.4,P          1.1e-10  [+1]
+BPSL3378(cadA)Score=6.4,          1.1e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=21 seqs=14
+Bcep1808_0131(cadA)Score (    1) ACCTTGTAGTGGCTTCAGGGT  1 
+Bamb_0114(cadA)Score=6.1 (    1) ACCTTGTAGTGGCTTCAGGGT  1 
+Bcep18194_A3304(cadA)Sco (    1) ACCTTGTAGTGGCTTCAGGGT  1 
+Bxe_A4439(cadA)Score=6,P (    1) ACCTTGTAGTGGCTTCAAGGT  1 
+Bxe_B1605(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_C0391(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_A1104(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_A2903(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_C0883(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_A1118(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Bxe_B2911(czcD)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+bglu_1g00910(cadA)Score= (    1) ACCTTGAAGTGGCTTCAGGGT  1 
+BMA2976(cadA)Score=6.4,P (    1) ACCTTGTAGTGACTACAAGGT  1 
+BPSL3378(cadA)Score=6.4, (    1) ACCTTGTAGTGACTACAAGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 14 bayes= 1.12553 E= 3.5e-103 
+   205  -1045  -1045  -1045 
+ -1045    257  -1045  -1045 
+ -1045    257  -1045  -1045 
+ -1045  -1045  -1045    144 
+ -1045  -1045  -1045    144 
+   105  -1045    117  -1045 
+  -176  -1045  -1045    133 
+   205  -1045  -1045  -1045 
+ -1045  -1045    217  -1045 
+ -1045  -1045  -1045    144 
+   105  -1045    117  -1045 
+   -76  -1045    195  -1045 
+ -1045    257  -1045  -1045 
+ -1045  -1045  -1045    144 
+   -76  -1045  -1045    121 
+ -1045    157  -1045     44 
+   205  -1045  -1045  -1045 
+   -17  -1045     37     44 
+   105  -1045    117  -1045 
+ -1045  -1045    217  -1045 
+ -1045  -1045  -1045    144 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 14 E= 3.5e-103 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.071429  0.000000  0.000000  0.928571 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.000000  0.500000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.214286  0.000000  0.285714  0.500000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+ACCTT[AG]TAGT[AG]GCTT[CT]A[TGA][AG]GT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL3378(cadA)Score=6.4,         1.10e-10  [+1(1.10e-10)]
+BMA2976(cadA)Score=6.4,P         1.10e-10  [+1(1.10e-10)]
+Bcep18194_A3304(cadA)Sco         2.21e-12  [+1(2.21e-12)]
+Bamb_0114(cadA)Score=6.1         2.21e-12  [+1(2.21e-12)]
+Bcep1808_0131(cadA)Score         2.21e-12  [+1(2.21e-12)]
+bglu_1g00910(cadA)Score=         4.51e-11  [+1(4.51e-11)]
+Bxe_B2911(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_A1118(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_C0883(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_A2903(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_A1104(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_C0391(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+Bxe_A4439(cadA)Score=6,P         6.94e-12  [+1(6.94e-12)]
+Bxe_B1605(czcD)Score=5.5         2.32e-11  [+1(2.32e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

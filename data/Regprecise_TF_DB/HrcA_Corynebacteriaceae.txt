@@ -1,0 +1,328 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/HrcA_Corynebacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CORAM0001_1328_p-249(gro 1.0000     27  CORAM0001_0268_p-154(gro 1.0000     27  
+CORAM0001_0268_p-131(gro 1.0000     27  CORAM0001_1328_p-213(gro 1.0000     27  
+cauri_0474_p-144(groS)   1.0000     27  cauri_2263_p-184(groL2)  1.0000     27  
+cauri_2263_p-149(groL2)  1.0000     27  DIP2020_p-218(groL2)     1.0000     27  
+DIP2020_p-184(groL2)     1.0000     27  DIP0575_p-124(groS)      1.0000     27  
+CE0601_p-134(groS)       1.0000     27  CE2561_p-182(groL2)      1.0000     27  
+CE2561_p-148(groL2)      1.0000     27  cg3011_p-148(groL2)      1.0000     27  
+cg3011_p-183(groL2)      1.0000     27  cg0690_p-147(groS)       1.0000     27  
+jk0267_p-181(groL2)      1.0000     27  jk0267_p-146(groL2)      1.0000     27  
+jk1729_p-145(groS)       1.0000     27  ckrop_1667_p-184(groL2)  1.0000     27  
+ckrop_1737_p-129(groS)   1.0000     27  ckrop_1737_p-152(groS)   1.0000     27  
+cur_1716_p-183(groL2)    1.0000     27  cur_1716_p-148(groL2)    1.0000     27  
+cur_0393_p-11(groS)      1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/HrcA_Corynebacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/HrcA_Corynebacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             675    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    675    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.221 C 0.233 G 0.296 T 0.25 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.221 C 0.233 G 0.296 T 0.25 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1	width =  27  sites =  25  llr = 535  E-value = 2.0e-177
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::6::a:::2342121:4:a:::::94
+pos.-specific     C  5:::a:917151321112::1::a4::
+probability       G  ::1a::1::51244662:a:9:a::16
+matrix            T  5a3::::9321213:164:::a::6::
+
+         bits    2.2     *              *       
+                 2.0  *  **             *   *   
+                 1.7  * ***             * ***   
+                 1.5  * *****          ** *** * 
+Relative         1.3  * *****          ****** * 
+Entropy          1.1 ** ******         ******** 
+(30.9 bits)      0.9 *********         *********
+                 0.7 *********         *********
+                 0.4 ********* *   *************
+                 0.2 ************ **************
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCGCAGGGGTAGAGTGCTAG
+consensus            C T     TAATCTA GT      C A
+sequence                        GAC             
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+CORAM0001_0268_p-131(gro      1  3.58e-14          . TTAGCACTTGCAGGGGTAGAGTGCTAA           
+cur_1716_p-148(groL2)         1  1.44e-13          . TTAGCACTTGCACTGGTTGAGTGCCAG           
+CORAM0001_1328_p-249(gro      1  3.16e-13          . CTTGCACTCGATGGGGTTGAGTGCTAG           
+jk1729_p-145(groS)            1  7.70e-13          . TTAGCACTTGCGAGGGTAGAGTGCCAG           
+cauri_0474_p-144(groS)        1  3.06e-12          . CTAGCAGTCGCGAGGGTAGAGTGCTAG           
+ckrop_1737_p-129(groS)        1  4.63e-12          . CTGGCACTCACACGGGTAGAGTGCCAA           
+DIP0575_p-124(groS)           1  6.85e-12          . CTGGCACTCTCAGGGGTAGAGTGCCAG           
+CORAM0001_1328_p-213(gro      1  1.26e-11          . TTAGCACTTGCTCTAATTGAGTGCTAA           
+cg3011_p-183(groL2)           1  1.42e-11          . CTTGCACTCACACCCCTTGAGTGCTAG           
+CE2561_p-182(groL2)           1  2.00e-11          . CTTGCACTCGACATGGGCGAGTGCTAG           
+cur_0393_p-11(groS)           1  2.24e-11          . TTAGCACTTGGGTGGGTAGAGTGCTAG           
+jk0267_p-181(groL2)           1  4.67e-11          . CTTGCAGTCGATGGGGGAGAGTGCTAA           
+DIP2020_p-184(groL2)          1  1.01e-10          . TTAGCACTCGATCTAACCGAGTGCTAA           
+cur_1716_p-183(groL2)         1  1.20e-10          . CTTGCACTCAAGGGGTGCGAGTGCTAA           
+DIP2020_p-218(groL2)          1  1.86e-10          . CTTGCACTCGTACCCGTAGACTGCTAA           
+cg0690_p-147(groS)            1  2.19e-10          . TTAGCACCCTCAACAGTTGAGTGCTGG           
+jk0267_p-146(groL2)           1  4.13e-10          . TTAGCACTTGAAGTAAGGGAGTGCCAG           
+CE0601_p-134(groS)            1  4.79e-10          . TTAGCACCCTTAGCGGTTGAGTGCTGG           
+ckrop_1737_p-152(groS)        1  5.97e-10          . TTAGCACTCCCGGTGGTTGAGAGCTGG           
+CORAM0001_0268_p-154(gro      1  6.41e-10          . TTAGCGCTCACTATGGTTGAGTGTTAG           
+CE2561_p-148(groL2)           1  6.88e-10          . TTAGCACTTACCTCGTATGAGTGCCAG           
+ckrop_1667_p-184(groL2)       1  9.06e-10          . CTTGCACTCTAAGCCCGAGACTGCTAA           
+cg3011_p-148(groL2)           1  1.04e-09          . TTAGCACTCAACTAATCAGAGTGCCAA           
+cauri_2263_p-184(groL2)       1  1.43e-09          . CTTGCAGTCGGTAGGCCTGAGTGCCAG           
+cauri_2263_p-149(groL2)       1  5.52e-09          . CTAGCACTTCCACATGGCAAGTGCCAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CORAM0001_0268_p-131(gro          3.6e-14  [+1]
+cur_1716_p-148(groL2)             1.4e-13  [+1]
+CORAM0001_1328_p-249(gro          3.2e-13  [+1]
+jk1729_p-145(groS)                7.7e-13  [+1]
+cauri_0474_p-144(groS)            3.1e-12  [+1]
+ckrop_1737_p-129(groS)            4.6e-12  [+1]
+DIP0575_p-124(groS)               6.8e-12  [+1]
+CORAM0001_1328_p-213(gro          1.3e-11  [+1]
+cg3011_p-183(groL2)               1.4e-11  [+1]
+CE2561_p-182(groL2)                 2e-11  [+1]
+cur_0393_p-11(groS)               2.2e-11  [+1]
+jk0267_p-181(groL2)               4.7e-11  [+1]
+DIP2020_p-184(groL2)                1e-10  [+1]
+cur_1716_p-183(groL2)             1.2e-10  [+1]
+DIP2020_p-218(groL2)              1.9e-10  [+1]
+cg0690_p-147(groS)                2.2e-10  [+1]
+jk0267_p-146(groL2)               4.1e-10  [+1]
+CE0601_p-134(groS)                4.8e-10  [+1]
+ckrop_1737_p-152(groS)              6e-10  [+1]
+CORAM0001_0268_p-154(gro          6.4e-10  [+1]
+CE2561_p-148(groL2)               6.9e-10  [+1]
+ckrop_1667_p-184(groL2)           9.1e-10  [+1]
+cg3011_p-148(groL2)                 1e-09  [+1]
+cauri_2263_p-184(groL2)           1.4e-09  [+1]
+cauri_2263_p-149(groL2)           5.5e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTWGCACTCGMWVBGGTWGAGTGCYAR width=27 seqs=25
+CORAM0001_0268_p-131(gro (    1) TTAGCACTTGCAGGGGTAGAGTGCTAA  1 
+cur_1716_p-148(groL2)    (    1) TTAGCACTTGCACTGGTTGAGTGCCAG  1 
+CORAM0001_1328_p-249(gro (    1) CTTGCACTCGATGGGGTTGAGTGCTAG  1 
+jk1729_p-145(groS)       (    1) TTAGCACTTGCGAGGGTAGAGTGCCAG  1 
+cauri_0474_p-144(groS)   (    1) CTAGCAGTCGCGAGGGTAGAGTGCTAG  1 
+ckrop_1737_p-129(groS)   (    1) CTGGCACTCACACGGGTAGAGTGCCAA  1 
+DIP0575_p-124(groS)      (    1) CTGGCACTCTCAGGGGTAGAGTGCCAG  1 
+CORAM0001_1328_p-213(gro (    1) TTAGCACTTGCTCTAATTGAGTGCTAA  1 
+cg3011_p-183(groL2)      (    1) CTTGCACTCACACCCCTTGAGTGCTAG  1 
+CE2561_p-182(groL2)      (    1) CTTGCACTCGACATGGGCGAGTGCTAG  1 
+cur_0393_p-11(groS)      (    1) TTAGCACTTGGGTGGGTAGAGTGCTAG  1 
+jk0267_p-181(groL2)      (    1) CTTGCAGTCGATGGGGGAGAGTGCTAA  1 
+DIP2020_p-184(groL2)     (    1) TTAGCACTCGATCTAACCGAGTGCTAA  1 
+cur_1716_p-183(groL2)    (    1) CTTGCACTCAAGGGGTGCGAGTGCTAA  1 
+DIP2020_p-218(groL2)     (    1) CTTGCACTCGTACCCGTAGACTGCTAA  1 
+cg0690_p-147(groS)       (    1) TTAGCACCCTCAACAGTTGAGTGCTGG  1 
+jk0267_p-146(groL2)      (    1) TTAGCACTTGAAGTAAGGGAGTGCCAG  1 
+CE0601_p-134(groS)       (    1) TTAGCACCCTTAGCGGTTGAGTGCTGG  1 
+ckrop_1737_p-152(groS)   (    1) TTAGCACTCCCGGTGGTTGAGAGCTGG  1 
+CORAM0001_0268_p-154(gro (    1) TTAGCGCTCACTATGGTTGAGTGTTAG  1 
+CE2561_p-148(groL2)      (    1) TTAGCACTTACCTCGTATGAGTGCCAG  1 
+ckrop_1667_p-184(groL2)  (    1) CTTGCACTCTAAGCCCGAGACTGCTAA  1 
+cg3011_p-148(groL2)      (    1) TTAGCACTCAACTAATCAGAGTGCCAA  1 
+cauri_2263_p-184(groL2)  (    1) CTTGCAGTCGGTAGGCCTGAGTGCCAG  1 
+cauri_2263_p-149(groL2)  (    1) CTAGCACTTCCACATGGCAAGTGCCAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 25 bayes= 1.47917 E= 2.0e-177 
+ -1129    104  -1129    105 
+ -1129  -1129  -1129    200 
+   144  -1129   -189     35 
+ -1129  -1129    176  -1129 
+ -1129    210  -1129  -1129 
+   212  -1129   -288  -1129 
+ -1129    192   -130  -1129 
+ -1129   -154  -1129    188 
+ -1129    155  -1129     35 
+    12   -154     81    -65 
+    53    116   -189   -164 
+    99    -95    -57     -6 
+    12     27     28   -106 
+  -146      4     43     16 
+   -14    -95    111   -264 
+   -88    -95    111   -106 
+  -246    -95    -30    126 
+    86    -54   -288     68 
+  -246  -1129    170  -1129 
+   218  -1129  -1129  -1129 
+ -1129   -154    164  -1129 
+  -246  -1129  -1129    194 
+ -1129  -1129    176  -1129 
+ -1129    204  -1129   -264 
+ -1129     63  -1129    135 
+   199  -1129   -130  -1129 
+    70  -1129    111  -1129 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 25 E= 2.0e-177 
+ 0.000000  0.480000  0.000000  0.520000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.600000  0.000000  0.080000  0.320000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.960000  0.000000  0.040000  0.000000 
+ 0.000000  0.880000  0.120000  0.000000 
+ 0.000000  0.080000  0.000000  0.920000 
+ 0.000000  0.680000  0.000000  0.320000 
+ 0.240000  0.080000  0.520000  0.160000 
+ 0.320000  0.520000  0.080000  0.080000 
+ 0.440000  0.120000  0.200000  0.240000 
+ 0.240000  0.280000  0.360000  0.120000 
+ 0.080000  0.240000  0.400000  0.280000 
+ 0.200000  0.120000  0.640000  0.040000 
+ 0.120000  0.120000  0.640000  0.120000 
+ 0.040000  0.120000  0.240000  0.600000 
+ 0.400000  0.160000  0.040000  0.400000 
+ 0.040000  0.000000  0.960000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.080000  0.920000  0.000000 
+ 0.040000  0.000000  0.000000  0.960000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.960000  0.000000  0.040000 
+ 0.000000  0.360000  0.000000  0.640000 
+ 0.880000  0.000000  0.120000  0.000000 
+ 0.360000  0.000000  0.640000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTWGCACTCGMWVBGGTWGAGTGCYAR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]T[AT]GCACT[CT][GA][CA][ATG][GCA][GTC][GA]G[TG][AT]GAGTGC[TC]A[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CORAM0001_1328_p-249(gro         3.16e-13  [+1(3.16e-13)]
+CORAM0001_0268_p-154(gro         6.41e-10  [+1(6.41e-10)]
+CORAM0001_0268_p-131(gro         3.58e-14  [+1(3.58e-14)]
+CORAM0001_1328_p-213(gro         1.26e-11  [+1(1.26e-11)]
+cauri_0474_p-144(groS)           3.06e-12  [+1(3.06e-12)]
+cauri_2263_p-184(groL2)          1.43e-09  [+1(1.43e-09)]
+cauri_2263_p-149(groL2)          5.52e-09  [+1(5.52e-09)]
+DIP2020_p-218(groL2)             1.86e-10  [+1(1.86e-10)]
+DIP2020_p-184(groL2)             1.01e-10  [+1(1.01e-10)]
+DIP0575_p-124(groS)              6.85e-12  [+1(6.85e-12)]
+CE0601_p-134(groS)               4.79e-10  [+1(4.79e-10)]
+CE2561_p-182(groL2)              2.00e-11  [+1(2.00e-11)]
+CE2561_p-148(groL2)              6.88e-10  [+1(6.88e-10)]
+cg3011_p-148(groL2)              1.04e-09  [+1(1.04e-09)]
+cg3011_p-183(groL2)              1.42e-11  [+1(1.42e-11)]
+cg0690_p-147(groS)               2.19e-10  [+1(2.19e-10)]
+jk0267_p-181(groL2)              4.67e-11  [+1(4.67e-11)]
+jk0267_p-146(groL2)              4.13e-10  [+1(4.13e-10)]
+jk1729_p-145(groS)               7.70e-13  [+1(7.70e-13)]
+ckrop_1667_p-184(groL2)          9.06e-10  [+1(9.06e-10)]
+ckrop_1737_p-129(groS)           4.63e-12  [+1(4.63e-12)]
+ckrop_1737_p-152(groS)           5.97e-10  [+1(5.97e-10)]
+cur_1716_p-183(groL2)            1.20e-10  [+1(1.20e-10)]
+cur_1716_p-148(groL2)            1.44e-13  [+1(1.44e-13)]
+cur_0393_p-11(groS)              2.24e-11  [+1(2.24e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

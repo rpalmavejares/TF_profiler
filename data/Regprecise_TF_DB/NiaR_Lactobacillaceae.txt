@@ -1,0 +1,221 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NiaR_Lactobacillaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LSEI_2277_p-45(niaP)     1.0000     22  lp_2770_p-121(niaR)      1.0000     22  
+lp_2771_p-46(pncB)       1.0000     22  LGG_02281_p-51(niaP)     1.0000     22  
+LSA1529_p-76(niaP)       1.0000     22  PEPE_0213_p-112(niaP)    1.0000     22  
+PEPE_0214_p-64(niaR)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NiaR_Lactobacillaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NiaR_Lactobacillaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             154    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    154    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.318 C 0.175 G 0.195 T 0.312 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.316 C 0.177 G 0.196 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTGTCWWGACACC MEME-1	width =  14  sites =   7  llr = 109  E-value = 4.1e-021
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  33::::66:a:a::
+pos.-specific     C  :::::9::::a:77
+probability       G  77:a:1::a:::::
+matrix            T  ::a:a:44::::33
+
+         bits    2.5           *   
+                 2.2    *    * *   
+                 2.0    * *  * *   
+                 1.7   ****  ****  
+Relative         1.5   ****  ******
+Entropy          1.2 ******  ******
+(22.5 bits)      1.0 ******  ******
+                 0.7 **************
+                 0.5 **************
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           GGTGTCAAGACACC
+consensus            AA    TT    TT
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+LGG_02281_p-51(niaP)          5  1.39e-09       TTAG GGTGTCAAGACACC TAAT      
+LSEI_2277_p-45(niaP)          5  1.39e-09       CTAG GGTGTCAAGACACC CTAA      
+lp_2771_p-46(pncB)            5  1.48e-08       CATA GGTGTCAAGACATC TAAA      
+lp_2770_p-121(niaR)           5  3.89e-08       TTTA GATGTCTTGACACC TATG      
+LSA1529_p-76(niaP)            5  4.81e-08       TTAA GGTGTGTTGACACC TGTA      
+PEPE_0213_p-112(niaP)         5  2.07e-07       TACA AGTGTCAAGACATT AATT      
+PEPE_0214_p-64(niaR)          5  2.93e-07       AATT AATGTCTTGACACT TGTA      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LGG_02281_p-51(niaP)              1.4e-09  4_[+1]_4
+LSEI_2277_p-45(niaP)              1.4e-09  4_[+1]_4
+lp_2771_p-46(pncB)                1.5e-08  4_[+1]_4
+lp_2770_p-121(niaR)               3.9e-08  4_[+1]_4
+LSA1529_p-76(niaP)                4.8e-08  4_[+1]_4
+PEPE_0213_p-112(niaP)             2.1e-07  4_[+1]_4
+PEPE_0214_p-64(niaR)              2.9e-07  4_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTGTCWWGACACC width=14 seqs=7
+LGG_02281_p-51(niaP)     (    5) GGTGTCAAGACACC  1 
+LSEI_2277_p-45(niaP)     (    5) GGTGTCAAGACACC  1 
+lp_2771_p-46(pncB)       (    5) GGTGTCAAGACATC  1 
+lp_2770_p-121(niaR)      (    5) GATGTCTTGACACC  1 
+LSA1529_p-76(niaP)       (    5) GGTGTGTTGACACC  1 
+PEPE_0213_p-112(niaP)    (    5) AGTGTCAAGACATT  1 
+PEPE_0214_p-64(niaR)     (    5) AATGTCTTGACACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 63 bayes= 4.32193 E= 4.1e-021 
+   -15   -945    186   -945 
+   -15   -945    186   -945 
+  -945   -945   -945    169 
+  -945   -945    235   -945 
+  -945   -945   -945    169 
+  -945    227    -46   -945 
+    85   -945   -945     47 
+    85   -945   -945     47 
+  -945   -945    235   -945 
+   166   -945   -945   -945 
+  -945    249   -945   -945 
+   166   -945   -945   -945 
+  -945    201   -945    -12 
+  -945    201   -945    -12 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 7 E= 4.1e-021 
+ 0.285714  0.000000  0.714286  0.000000 
+ 0.285714  0.000000  0.714286  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.857143  0.142857  0.000000 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.714286  0.000000  0.285714 
+ 0.000000  0.714286  0.000000  0.285714 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGTCWWGACACC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA][GA]TGTC[AT][AT]GACA[CT][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LSEI_2277_p-45(niaP)             1.25e-08  4_[+1(1.39e-09)]_4
+lp_2770_p-121(niaR)              3.51e-07  4_[+1(3.89e-08)]_4
+lp_2771_p-46(pncB)               1.33e-07  4_[+1(1.48e-08)]_4
+LGG_02281_p-51(niaP)             1.25e-08  4_[+1(1.39e-09)]_4
+LSA1529_p-76(niaP)               4.33e-07  4_[+1(4.81e-08)]_4
+PEPE_0213_p-112(niaP)            1.87e-06  4_[+1(2.07e-07)]_4
+PEPE_0214_p-64(niaR)             2.63e-06  4_[+1(2.93e-07)]_4
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

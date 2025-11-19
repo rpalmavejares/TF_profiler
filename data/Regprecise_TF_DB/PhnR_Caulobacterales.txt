@@ -1,0 +1,234 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/PhnR_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cseg_3204_p-40(COG3511)  1.0000     20  Cseg_3212_p-208(omp)     1.0000     20  
+Cseg_3212_p-37(omp)      1.0000     20  Cseg_3203_p-151(phnR)    1.0000     20  
+Caul_2987_p-39(COG3511)  1.0000     20  Caul_2987_p-115(COG3511) 1.0000     20  
+Caul_2995_p-35(omp)      1.0000     20  Caul_2985_p-40(Cseg_3202 1.0000     20  
+Caul_2986_p-165(phnR)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/PhnR_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/PhnR_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             180    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    180    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.317 C 0.206 G 0.189 T 0.289 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.315 C 0.207 G 0.19 T 0.288 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WYTGGTHYAKACCARA MEME-1	width =  16  sites =   9  llr = 144  E-value = 3.3e-031
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3::::13:a:9::a38
+pos.-specific     C  :6::::43:::aa:1:
+probability       G  :::aa::::6::::6:
+matrix            T  74a::927:41::::2
+
+         bits    2.4    **      **   
+                 2.2    **      **   
+                 1.9    **      **   
+                 1.7   ***   *  ***  
+Relative         1.4   ***   *  ***  
+Entropy          1.2   ****  ******  
+(23.2 bits)      1.0  ***** ******* *
+                 0.7 ****** *********
+                 0.5 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TCTGGTCTAGACCAGA
+consensus            AT    AC T    AT
+sequence                   T         
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Caul_2985_p-40(Cseg_3202      3  5.04e-10         GA TTTGGTCTAGACCAGA AC        
+Caul_2987_p-39(COG3511)       3  2.65e-09         AT TTTGGTCTATACCAGA AT        
+Cseg_3203_p-151(phnR)         3  3.14e-09         AG TTTGGTATAGACCAGA TT        
+Cseg_3204_p-40(COG3511)       3  7.14e-09         AA TCTGGTCTATACCAAA CT        
+Caul_2986_p-165(phnR)         3  8.12e-09         AT TCTGGTATAGACCAAA AT        
+Cseg_3212_p-37(omp)           3  8.12e-09         CC ACTGGTCCATACCAGA GT        
+Caul_2995_p-35(omp)           3  8.72e-08         CA ACTGGTTCATACCAGT TG        
+Cseg_3212_p-208(omp)          3  1.08e-07         GA TTTGGTATAGTCCAAA AT        
+Caul_2987_p-115(COG3511)      3  3.24e-07         CA ACTGGATCAGACCACT GA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Caul_2985_p-40(Cseg_3202            5e-10  2_[+1]_2
+Caul_2987_p-39(COG3511)           2.7e-09  2_[+1]_2
+Cseg_3203_p-151(phnR)             3.1e-09  2_[+1]_2
+Cseg_3204_p-40(COG3511)           7.1e-09  2_[+1]_2
+Caul_2986_p-165(phnR)             8.1e-09  2_[+1]_2
+Cseg_3212_p-37(omp)               8.1e-09  2_[+1]_2
+Caul_2995_p-35(omp)               8.7e-08  2_[+1]_2
+Cseg_3212_p-208(omp)              1.1e-07  2_[+1]_2
+Caul_2987_p-115(COG3511)          3.2e-07  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WYTGGTHYAKACCARA width=16 seqs=9
+Caul_2985_p-40(Cseg_3202 (    3) TTTGGTCTAGACCAGA  1 
+Caul_2987_p-39(COG3511)  (    3) TTTGGTCTATACCAGA  1 
+Cseg_3203_p-151(phnR)    (    3) TTTGGTATAGACCAGA  1 
+Cseg_3204_p-40(COG3511)  (    3) TCTGGTCTATACCAAA  1 
+Caul_2986_p-165(phnR)    (    3) TCTGGTATAGACCAAA  1 
+Cseg_3212_p-37(omp)      (    3) ACTGGTCCATACCAGA  1 
+Caul_2995_p-35(omp)      (    3) ACTGGTTCATACCAGT  1 
+Cseg_3212_p-208(omp)     (    3) TTTGGTATAGTCCAAA  1 
+Caul_2987_p-115(COG3511) (    3) ACTGGATCAGACCACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 45 bayes= 3.61298 E= 3.3e-031 
+     8   -982   -982    121 
+  -982    143   -982     63 
+  -982   -982   -982    179 
+  -982   -982    239   -982 
+  -982   -982    239   -982 
+  -150   -982   -982    162 
+     8    110   -982    -37 
+  -982     69   -982    121 
+   166   -982   -982   -982 
+  -982   -982    155     63 
+   149   -982   -982   -137 
+  -982    227   -982   -982 
+  -982    227   -982   -982 
+   166   -982   -982   -982 
+     8    -89    155   -982 
+   130   -982   -982    -37 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 9 E= 3.3e-031 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.555556  0.000000  0.444444 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.111111  0.000000  0.000000  0.888889 
+ 0.333333  0.444444  0.000000  0.222222 
+ 0.000000  0.333333  0.000000  0.666667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.555556  0.444444 
+ 0.888889  0.000000  0.000000  0.111111 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.111111  0.555556  0.000000 
+ 0.777778  0.000000  0.000000  0.222222 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYTGGTHYAKACCARA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][CT]TGGT[CAT][TC]A[GT]ACCA[GA][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cseg_3204_p-40(COG3511)          3.57e-08  2_[+1(7.14e-09)]_2
+Cseg_3212_p-208(omp)             5.40e-07  2_[+1(1.08e-07)]_2
+Cseg_3212_p-37(omp)              4.06e-08  2_[+1(8.12e-09)]_2
+Cseg_3203_p-151(phnR)            1.57e-08  2_[+1(3.14e-09)]_2
+Caul_2987_p-39(COG3511)          1.33e-08  2_[+1(2.65e-09)]_2
+Caul_2987_p-115(COG3511)         1.62e-06  2_[+1(3.24e-07)]_2
+Caul_2995_p-35(omp)              4.36e-07  2_[+1(8.72e-08)]_2
+Caul_2985_p-40(Cseg_3202         2.52e-09  2_[+1(5.04e-10)]_2
+Caul_2986_p-165(phnR)            4.06e-08  2_[+1(8.12e-09)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

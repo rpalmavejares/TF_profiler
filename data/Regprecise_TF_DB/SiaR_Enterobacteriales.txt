@@ -1,0 +1,260 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SiaR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+STM1130_p-32(nanM)       1.0000     19  STM1129_p-37(nanE)       1.0000     19  
+y1461_p-111(nanK)        1.0000     19  y1465_p-188(nanT)        1.0000     19  
+y1459_p-46(nanE)         1.0000     19  ETAE_0932_p-98(nanM)     1.0000     19  
+ETAE_0932_p-128(nanM)    1.0000     19  ETAE_0928_p-61(nanA)     1.0000     19  
+ETAE_0521_p-40(nanE)     1.0000     19  ETAE_0521_p-70(nanE)     1.0000     19  
+PMI2978_p-41(nanE)       1.0000     19  PMI2978_p-71(nanE)       1.0000     19  
+PMI2973_p-29(nanA)       1.0000     19  PMI2973_p-59(nanA)       1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SiaR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SiaR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             266    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    266    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.398 C 0.169 G 0.154 T 0.278 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.396 C 0.17 G 0.156 T 0.278 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATGGAGTWWAACTCCAWA MEME-1	width =  18  sites =  14  llr = 192  E-value = 3.0e-048
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8213a1:3669::1:957
+pos.-specific     C  :1::::3111:9:79::1
+probability       G  1:97:9:1::1::::1::
+matrix            T  16::::764311a21152
+
+         bits    2.7                   
+                 2.4                   
+                 2.1   *           *   
+                 1.9   *  *     ** *   
+Relative         1.6   *  *     ** *   
+Entropy          1.3   ****     ****   
+(19.7 bits)      1.1   *****    ****   
+                 0.8   *****   ******  
+                 0.5 *******   ********
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           ATGGAGTTAAACTCCAAA
+consensus             A A  CATT   T  TT
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+y1461_p-111(nanK)             2  3.56e-09          A AAGGAGTTTAACTCCAAA           
+ETAE_0928_p-61(nanA)          2  3.99e-09          A ATGGAGCCAAACTCCATA           
+y1459_p-46(nanE)              2  9.08e-09          A ATGGAGTTAAACTTCATT           
+ETAE_0521_p-70(nanE)          2  1.69e-08          G ATGGAGTATTGCTCCATA           
+PMI2973_p-59(nanA)            2  3.12e-08          T ATAGAGTTAAACTCCATA           
+y1465_p-188(nanT)             2  3.62e-08          A ATGGAGTTTTACTCCTTT           
+STM1130_p-32(nanM)            2  6.06e-08          G ATGAAGCTTTACTCCAAT           
+STM1129_p-37(nanE)            2  9.95e-08          A ACGGAGCAAAACTTCAAA           
+ETAE_0932_p-128(nanM)         2  1.81e-07          A TTGAAGTGTAACTCCAAA           
+ETAE_0521_p-40(nanE)          2  9.27e-07          T ATGGAGTTCAATTCTAAA           
+ETAE_0932_p-98(nanM)          2  9.27e-07          A ATGGAGCAATACTACAAC           
+PMI2978_p-41(nanE)            2  2.25e-06          T TCGGAGTTACATTTCAAA           
+PMI2973_p-29(nanA)            2  2.42e-06          A AAGAAATTAATCTCCATA           
+PMI2978_p-71(nanE)            2  7.86e-06          T GAGAAATAAAACTCCGTA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+y1461_p-111(nanK)                 3.6e-09  1_[+1]
+ETAE_0928_p-61(nanA)                4e-09  1_[+1]
+y1459_p-46(nanE)                  9.1e-09  1_[+1]
+ETAE_0521_p-70(nanE)              1.7e-08  1_[+1]
+PMI2973_p-59(nanA)                3.1e-08  1_[+1]
+y1465_p-188(nanT)                 3.6e-08  1_[+1]
+STM1130_p-32(nanM)                6.1e-08  1_[+1]
+STM1129_p-37(nanE)                9.9e-08  1_[+1]
+ETAE_0932_p-128(nanM)             1.8e-07  1_[+1]
+ETAE_0521_p-40(nanE)              9.3e-07  1_[+1]
+ETAE_0932_p-98(nanM)              9.3e-07  1_[+1]
+PMI2978_p-41(nanE)                2.2e-06  1_[+1]
+PMI2973_p-29(nanA)                2.4e-06  1_[+1]
+PMI2978_p-71(nanE)                7.9e-06  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATGGAGTWWAACTCCAWA width=18 seqs=14
+y1461_p-111(nanK)        (    2) AAGGAGTTTAACTCCAAA  1 
+ETAE_0928_p-61(nanA)     (    2) ATGGAGCCAAACTCCATA  1 
+y1459_p-46(nanE)         (    2) ATGGAGTTAAACTTCATT  1 
+ETAE_0521_p-70(nanE)     (    2) ATGGAGTATTGCTCCATA  1 
+PMI2973_p-59(nanA)       (    2) ATAGAGTTAAACTCCATA  1 
+y1465_p-188(nanT)        (    2) ATGGAGTTTTACTCCTTT  1 
+STM1130_p-32(nanM)       (    2) ATGAAGCTTTACTCCAAT  1 
+STM1129_p-37(nanE)       (    2) ACGGAGCAAAACTTCAAA  1 
+ETAE_0932_p-128(nanM)    (    2) TTGAAGTGTAACTCCAAA  1 
+ETAE_0521_p-40(nanE)     (    2) ATGGAGTTCAATTCTAAA  1 
+ETAE_0932_p-98(nanM)     (    2) ATGGAGCAATACTACAAC  1 
+PMI2978_p-41(nanE)       (    2) TCGGAGTTACATTTCAAA  1 
+PMI2973_p-29(nanA)       (    2) AAGAAATTAATCTCCATA  1 
+PMI2978_p-71(nanE)       (    2) GAGAAATAAAACTCCGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 28 bayes= 2.42321 E= 3.0e-048 
+    99  -1045   -112    -96 
+   -89    -25  -1045    121 
+  -247  -1045    258  -1045 
+   -47  -1045    220  -1045 
+   133  -1045  -1045  -1045 
+  -147  -1045    246  -1045 
+ -1045     75  -1045    136 
+   -47   -125   -112    104 
+    53   -125  -1045     36 
+    70   -125  -1045      4 
+   111  -1045   -112   -196 
+ -1045    233  -1045    -96 
+ -1045  -1045  -1045    185 
+  -247    207  -1045    -37 
+ -1045    245  -1045   -196 
+   111  -1045   -112   -196 
+    34  -1045  -1045     85 
+    85   -125  -1045    -37 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 14 E= 3.0e-048 
+ 0.785714  0.000000  0.071429  0.142857 
+ 0.214286  0.142857  0.000000  0.642857 
+ 0.071429  0.000000  0.928571  0.000000 
+ 0.285714  0.000000  0.714286  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.000000  0.285714  0.000000  0.714286 
+ 0.285714  0.071429  0.071429  0.571429 
+ 0.571429  0.071429  0.000000  0.357143 
+ 0.642857  0.071429  0.000000  0.285714 
+ 0.857143  0.000000  0.071429  0.071429 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.071429  0.714286  0.000000  0.214286 
+ 0.000000  0.928571  0.000000  0.071429 
+ 0.857143  0.000000  0.071429  0.071429 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.714286  0.071429  0.000000  0.214286 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGGAGTWWAACTCCAWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TA]G[GA]AG[TC][TA][AT][AT]ACT[CT]CA[AT][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+STM1130_p-32(nanM)               1.21e-07  1_[+1(6.06e-08)]
+STM1129_p-37(nanE)               1.99e-07  1_[+1(9.95e-08)]
+y1461_p-111(nanK)                7.12e-09  1_[+1(3.56e-09)]
+y1465_p-188(nanT)                7.24e-08  1_[+1(3.62e-08)]
+y1459_p-46(nanE)                 1.82e-08  1_[+1(9.08e-09)]
+ETAE_0932_p-98(nanM)             1.85e-06  1_[+1(9.27e-07)]
+ETAE_0932_p-128(nanM)            3.62e-07  1_[+1(1.81e-07)]
+ETAE_0928_p-61(nanA)             7.99e-09  1_[+1(3.99e-09)]
+ETAE_0521_p-40(nanE)             1.85e-06  1_[+1(9.27e-07)]
+ETAE_0521_p-70(nanE)             3.38e-08  1_[+1(1.69e-08)]
+PMI2978_p-41(nanE)               4.50e-06  1_[+1(2.25e-06)]
+PMI2978_p-71(nanE)               1.57e-05  1_[+1(7.86e-06)]
+PMI2973_p-29(nanA)               4.84e-06  1_[+1(2.42e-06)]
+PMI2973_p-59(nanA)               6.24e-08  1_[+1(3.12e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

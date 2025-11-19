@@ -1,0 +1,269 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/SahR_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HCH_01534_p-41(sahR)     1.0000     20  Maqu_3042_p-125(metK)    1.0000     20  
+Maqu_3041_p-62(sahR)     1.0000     20  MELB17_04852_p-126(metK) 1.0000     20  
+MELB17_04857_p-62(sahR)  1.0000     20  RED65_14437_p-61(sahR)   1.0000     20  
+Sde_0471_p-49(sahR)      1.0000     20  Sde_2010_p-42(metH)      1.0000     20  
+TERTU_3975_p-49(sahR)    1.0000     20  TERTU_2126_p-52(metH)    1.0000     20  
+CJA_0208_p-23(sahR)      1.0000     20  CJA_2542_p-63(metH)      1.0000     20  
+MED297_05504_p-61(sahR)  1.0000     20  MED297_01810_p-87(metH)  1.0000     20  
+ABO_2616_p-49(sahR)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/SahR_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/SahR_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             300    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    300    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.423 C 0.06 G 0.06 T 0.457 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.421 C 0.0625 G 0.0625 T 0.454 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATATCAAAAWATTTTGATAT MEME-1	width =  20  sites =  15  llr = 256  E-value = 6.6e-075
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a1a::9a8737:::::a:9:
+pos.-specific     C  ::::a::::111::::::::
+probability       G  :::::1::1::1:::a::::
+matrix            T  :9:a:::22639aaa::a1a
+
+         bits    4.0     *          *    
+                 3.6     *          *    
+                 3.2     *          *    
+                 2.8     *          *    
+Relative         2.4     *          *    
+Entropy          2.0     *          *    
+(24.6 bits)      1.6     *          *    
+                 1.2 * *****     ****** *
+                 0.8 *******    *********
+                 0.4 ********* **********
+                 0.0 --------------------
+
+Multilevel           ATATCAAAATATTTTGATAT
+consensus                   TTAT         
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+MED297_01810_p-87(metH)       1  1.33e-09          . ATATCAAAATATTTTGATAT           
+MED297_05504_p-61(sahR)       1  1.33e-09          . ATATCAAAATATTTTGATAT           
+RED65_14437_p-61(sahR)        1  1.33e-09          . ATATCAAAATATTTTGATAT           
+CJA_0208_p-23(sahR)           1  3.14e-09          . ATATCAAAAAATTTTGATAT           
+TERTU_2126_p-52(metH)         1  3.14e-09          . ATATCAAAGTATTTTGATAT           
+Maqu_3041_p-62(sahR)          1  3.14e-09          . ATATCAAAAAATTTTGATAT           
+Maqu_3042_p-125(metK)         1  4.05e-09          . ATATCAAAAACTTTTGATAT           
+MELB17_04857_p-62(sahR)       1  6.15e-09          . ATATCAAAAAACTTTGATAT           
+MELB17_04852_p-126(metK)      1  6.15e-09          . ATATCAAAAAAGTTTGATAT           
+TERTU_3975_p-49(sahR)         1  6.56e-09          . ATATCAAAACTTTTTGATAT           
+HCH_01534_p-41(sahR)          1  2.02e-08          . ATATCAAATTTTTTTGATAT           
+Sde_0471_p-49(sahR)           1  2.24e-08          . ATATCAATATTTTTTGATAT           
+Sde_2010_p-42(metH)           1  3.86e-08          . AAATCGAAATATTTTGATAT           
+CJA_2542_p-63(metH)           1  5.02e-08          . ATATCAATTTTTTTTGATAT           
+ABO_2616_p-49(sahR)           1  9.72e-08          . ATATCAATTTATTTTGATTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MED297_01810_p-87(metH)           1.3e-09  [+1]
+MED297_05504_p-61(sahR)           1.3e-09  [+1]
+RED65_14437_p-61(sahR)            1.3e-09  [+1]
+CJA_0208_p-23(sahR)               3.1e-09  [+1]
+TERTU_2126_p-52(metH)             3.1e-09  [+1]
+Maqu_3041_p-62(sahR)              3.1e-09  [+1]
+Maqu_3042_p-125(metK)               4e-09  [+1]
+MELB17_04857_p-62(sahR)           6.1e-09  [+1]
+MELB17_04852_p-126(metK)          6.1e-09  [+1]
+TERTU_3975_p-49(sahR)             6.6e-09  [+1]
+HCH_01534_p-41(sahR)                2e-08  [+1]
+Sde_0471_p-49(sahR)               2.2e-08  [+1]
+Sde_2010_p-42(metH)               3.9e-08  [+1]
+CJA_2542_p-63(metH)                 5e-08  [+1]
+ABO_2616_p-49(sahR)               9.7e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATATCAAAAWATTTTGATAT width=20 seqs=15
+MED297_01810_p-87(metH)  (    1) ATATCAAAATATTTTGATAT  1 
+MED297_05504_p-61(sahR)  (    1) ATATCAAAATATTTTGATAT  1 
+RED65_14437_p-61(sahR)   (    1) ATATCAAAATATTTTGATAT  1 
+CJA_0208_p-23(sahR)      (    1) ATATCAAAAAATTTTGATAT  1 
+TERTU_2126_p-52(metH)    (    1) ATATCAAAGTATTTTGATAT  1 
+Maqu_3041_p-62(sahR)     (    1) ATATCAAAAAATTTTGATAT  1 
+Maqu_3042_p-125(metK)    (    1) ATATCAAAAACTTTTGATAT  1 
+MELB17_04857_p-62(sahR)  (    1) ATATCAAAAAACTTTGATAT  1 
+MELB17_04852_p-126(metK) (    1) ATATCAAAAAAGTTTGATAT  1 
+TERTU_3975_p-49(sahR)    (    1) ATATCAAAACTTTTTGATAT  1 
+HCH_01534_p-41(sahR)     (    1) ATATCAAATTTTTTTGATAT  1 
+Sde_0471_p-49(sahR)      (    1) ATATCAATATTTTTTGATAT  1 
+Sde_2010_p-42(metH)      (    1) AAATCGAAATATTTTGATAT  1 
+CJA_2542_p-63(metH)      (    1) ATATCAATTTTTTTTGATAT  1 
+ABO_2616_p-49(sahR)      (    1) ATATCAATTTATTTTGATTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 15 bayes= 1.17688 E= 6.6e-075 
+   125  -1055  -1055  -1055 
+  -265  -1055  -1055    104 
+   125  -1055  -1055  -1055 
+ -1055  -1055  -1055    114 
+ -1055    400  -1055  -1055 
+   115  -1055      9  -1055 
+   125  -1055  -1055  -1055 
+    93  -1055  -1055   -118 
+    80  -1055      9   -118 
+   -34      9  -1055     40 
+    66      9  -1055    -77 
+ -1055      9      9     93 
+ -1055  -1055  -1055    114 
+ -1055  -1055  -1055    114 
+ -1055  -1055  -1055    114 
+ -1055  -1055    400  -1055 
+   125  -1055  -1055  -1055 
+ -1055  -1055  -1055    114 
+   115  -1055  -1055   -276 
+ -1055  -1055  -1055    114 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 15 E= 6.6e-075 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.066667  0.000000  0.000000  0.933333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.933333  0.000000  0.066667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.733333  0.000000  0.066667  0.200000 
+ 0.333333  0.066667  0.000000  0.600000 
+ 0.666667  0.066667  0.000000  0.266667 
+ 0.000000  0.066667  0.066667  0.866667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.933333  0.000000  0.000000  0.066667 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCAAAAWATTTTGATAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATATCAA[AT][AT][TA][AT]TTTTGATAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_01534_p-41(sahR)             2.02e-08  [+1(2.02e-08)]
+Maqu_3042_p-125(metK)            4.05e-09  [+1(4.05e-09)]
+Maqu_3041_p-62(sahR)             3.14e-09  [+1(3.14e-09)]
+MELB17_04852_p-126(metK)         6.15e-09  [+1(6.15e-09)]
+MELB17_04857_p-62(sahR)          6.15e-09  [+1(6.15e-09)]
+RED65_14437_p-61(sahR)           1.33e-09  [+1(1.33e-09)]
+Sde_0471_p-49(sahR)              2.24e-08  [+1(2.24e-08)]
+Sde_2010_p-42(metH)              3.86e-08  [+1(3.86e-08)]
+TERTU_3975_p-49(sahR)            6.56e-09  [+1(6.56e-09)]
+TERTU_2126_p-52(metH)            3.14e-09  [+1(3.14e-09)]
+CJA_0208_p-23(sahR)              3.14e-09  [+1(3.14e-09)]
+CJA_2542_p-63(metH)              5.02e-08  [+1(5.02e-08)]
+MED297_05504_p-61(sahR)          1.33e-09  [+1(1.33e-09)]
+MED297_01810_p-87(metH)          1.33e-09  [+1(1.33e-09)]
+ABO_2616_p-49(sahR)              9.72e-08  [+1(9.72e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

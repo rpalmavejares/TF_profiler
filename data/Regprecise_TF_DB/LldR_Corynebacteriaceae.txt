@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LldR_Corynebacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DIP0012_p-122(lldP)      1.0000     15  DIP1033_p-120(lldP)      1.0000     15  
+DIP0012_p-108(lldP)      1.0000     15  DIP1032_p-332(lldE)      1.0000     15  
+CE2753_p-119(ldhA)       1.0000     15  CE2761_p-14(n/a)         1.0000     15  
+CE2761_p-27(n/a)         1.0000     15  CE2754_p-75(CE2754)      1.0000     15  
+cg3219_p-137(ldhA)       1.0000     15  cg3226_p-77(cg3226)      1.0000     15  
+cg2118_p-110(fruR)       1.0000     15  cg3220_p-106(CE2754)     1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LldR_Corynebacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/LldR_Corynebacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             180    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    180    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.206 C 0.289 G 0.261 T 0.244 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.207 C 0.288 G 0.261 T 0.245 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTGGTCYGACCA MEME-1	width =  13  sites =  12  llr = 140  E-value = 4.8e-034
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  12:::::218::a
+pos.-specific     C  211::283:1aa:
+probability       G  :6:aa1:281:::
+matrix            T  829::82421:::
+
+         bits    2.3             *
+                 2.0    **       *
+                 1.8    **     ***
+                 1.6   ***     ***
+Relative         1.4   ***     ***
+Entropy          1.1   *** *   ***
+(16.9 bits)      0.9 * ***** *****
+                 0.7 * ***** *****
+                 0.5 ******* *****
+                 0.2 ******* *****
+                 0.0 -------------
+
+Multilevel           TGTGGTCTGACCA
+consensus                   C     
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+cg3226_p-77(cg3226)           1  1.71e-08          . TGTGGTCTGACCA TG        
+CE2761_p-27(n/a)              1  1.71e-08          . TGTGGTCTGACCA CA        
+cg3220_p-106(CE2754)          1  5.17e-08          . TGTGGTCAGACCA AG        
+DIP0012_p-108(lldP)           1  5.17e-08          . TGTGGTCAGACCA AC        
+DIP0012_p-122(lldP)           1  1.30e-07          . TGTGGTCTTACCA CT        
+cg3219_p-137(ldhA)            1  8.49e-07          . CTTGGTCTGACCA CA        
+CE2761_p-14(n/a)              1  3.75e-06          . CATGGCCTGACCA CA        
+CE2754_p-75(CE2754)           1  4.76e-06          . TCTGGCCGGACCA CT        
+CE2753_p-119(ldhA)            1  7.97e-06          . AGTGGTCCGGCCA GA        
+DIP1033_p-120(lldP)           1  7.97e-06          . TGTGGTCCACCCA AA        
+DIP1032_p-332(lldE)           1  1.28e-05          . TTTGGGTGGACCA CA        
+cg2118_p-110(fruR)            1  7.72e-05          . TACGGTTCTTCCA CA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+cg3226_p-77(cg3226)               1.7e-08  [+1]_2
+CE2761_p-27(n/a)                  1.7e-08  [+1]_2
+cg3220_p-106(CE2754)              5.2e-08  [+1]_2
+DIP0012_p-108(lldP)               5.2e-08  [+1]_2
+DIP0012_p-122(lldP)               1.3e-07  [+1]_2
+cg3219_p-137(ldhA)                8.5e-07  [+1]_2
+CE2761_p-14(n/a)                  3.8e-06  [+1]_2
+CE2754_p-75(CE2754)               4.8e-06  [+1]_2
+CE2753_p-119(ldhA)                  8e-06  [+1]_2
+DIP1033_p-120(lldP)                 8e-06  [+1]_2
+DIP1032_p-332(lldE)               1.3e-05  [+1]_2
+cg2118_p-110(fruR)                7.7e-05  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTGGTCYGACCA width=13 seqs=12
+cg3226_p-77(cg3226)      (    1) TGTGGTCTGACCA  1 
+CE2761_p-27(n/a)         (    1) TGTGGTCTGACCA  1 
+cg3220_p-106(CE2754)     (    1) TGTGGTCAGACCA  1 
+DIP0012_p-108(lldP)      (    1) TGTGGTCAGACCA  1 
+DIP0012_p-122(lldP)      (    1) TGTGGTCTTACCA  1 
+cg3219_p-137(ldhA)       (    1) CTTGGTCTGACCA  1 
+CE2761_p-14(n/a)         (    1) CATGGCCTGACCA  1 
+CE2754_p-75(CE2754)      (    1) TCTGGCCGGACCA  1 
+CE2753_p-119(ldhA)       (    1) AGTGGTCCGGCCA  1 
+DIP1033_p-120(lldP)      (    1) TGTGGTCCACCCA  1 
+DIP1032_p-332(lldE)      (    1) TTTGGGTGGACCA  1 
+cg2118_p-110(fruR)       (    1) TACGGTTCTTCCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 36 bayes= 3 E= 4.8e-034 
+  -131    -79  -1023    162 
+   -31   -179    116    -55 
+ -1023   -179  -1023    191 
+ -1023  -1023    194  -1023 
+ -1023  -1023    194  -1023 
+ -1023    -79   -164    162 
+ -1023    153  -1023    -55 
+   -31    -20    -65     77 
+  -131  -1023    152    -55 
+   186   -179   -164   -155 
+ -1023    179  -1023  -1023 
+ -1023    179  -1023  -1023 
+   227  -1023  -1023  -1023 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 12 E= 4.8e-034 
+ 0.083333  0.166667  0.000000  0.750000 
+ 0.166667  0.083333  0.583333  0.166667 
+ 0.000000  0.083333  0.000000  0.916667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.166667  0.083333  0.750000 
+ 0.000000  0.833333  0.000000  0.166667 
+ 0.166667  0.250000  0.166667  0.416667 
+ 0.083333  0.000000  0.750000  0.166667 
+ 0.750000  0.083333  0.083333  0.083333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGTCYGACCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTGGTC[TC]GACCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DIP0012_p-122(lldP)              3.91e-07  [+1(1.30e-07)]_2
+DIP1033_p-120(lldP)              2.39e-05  [+1(7.97e-06)]_2
+DIP0012_p-108(lldP)              1.55e-07  [+1(5.17e-08)]_2
+DIP1032_p-332(lldE)              3.84e-05  [+1(1.28e-05)]_2
+CE2753_p-119(ldhA)               2.39e-05  [+1(7.97e-06)]_2
+CE2761_p-14(n/a)                 1.13e-05  [+1(3.75e-06)]_2
+CE2761_p-27(n/a)                 5.13e-08  [+1(1.71e-08)]_2
+CE2754_p-75(CE2754)              1.43e-05  [+1(4.76e-06)]_2
+cg3219_p-137(ldhA)               2.55e-06  [+1(8.49e-07)]_2
+cg3226_p-77(cg3226)              5.13e-08  [+1(1.71e-08)]_2
+cg2118_p-110(fruR)               2.32e-04  [+1(7.72e-05)]_2
+cg3220_p-106(CE2754)             1.55e-07  [+1(5.17e-08)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

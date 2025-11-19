@@ -1,0 +1,270 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NrdR_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_2495_p-237(nrdJ)     1.0000     16  Pden_1384_p-168(nrdJ)    1.0000     16  
+Jann_2472_p-231(nrdJ)    1.0000     16  RB2654_04361_p-209(nrdJ) 1.0000     16  
+OG2516_03765_p-211(nrdJ) 1.0000     16  SKA53_03076_p-191(nrdJ)  1.0000     16  
+OB2597_03639_p-179(nrdJ) 1.0000     16  ISM_14850_p-249(nrdJ)    1.0000     16  
+ROS217_22582_p-185(nrdJ) 1.0000     16  EE36_16117_p-190(nrdJ)   1.0000     16  
+TM1040_1151_p-204(nrdJ)  1.0000     16  SPO2136_p-209(nrdJ)      1.0000     16  
+MED193_03787_p-204(nrdJ) 1.0000     16  HNE_0373_p-80(nrdB)      1.0000     16  
+HNE_0869_p-182(nrdA)     1.0000     16  OA2633_06714_p-102(nrdB) 1.0000     16  
+OA2633_06729_p-121(nrdA) 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NrdR_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NrdR_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             272    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    272    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.276 C 0.235 G 0.206 T 0.283 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.275 C 0.236 G 0.207 T 0.283 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCACHAYATVTDGTGK MEME-1	width =  16  sites =  17  llr = 233  E-value = 6.2e-072
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:a:591a:3:4:111
+pos.-specific     C  79:a2:3::5:1:1::
+probability       G  2:::::2::2:2a185
+matrix            T  :1::315:a:a4:714
+
+         bits    2.3             *   
+                 2.0    *        *   
+                 1.8   **   ** * *   
+                 1.6  *** * ** * *   
+Relative         1.4  *** * ** * *   
+Entropy          1.1 **** * ** * * * 
+(19.7 bits)      0.9 **** * ** * * **
+                 0.7 **** * ** * ****
+                 0.5 ****** **** ****
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           CCACAATATCTAGTGG
+consensus            G   T C  A T   T
+sequence                 C    G G    
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+ROS217_22582_p-185(nrdJ)      1  9.28e-09          . CCACAACATATAGTGG           
+RB2654_04361_p-209(nrdJ)      1  9.28e-09          . CCACAACATATAGTGG           
+OA2633_06714_p-102(nrdB)      1  3.09e-08          . GCACAATATCTTGTGT           
+Pden_1384_p-168(nrdJ)         1  3.70e-08          . CCACCAGATCTTGTGT           
+MED193_03787_p-204(nrdJ)      1  6.71e-08          . CCACAATATCTAGTTG           
+HNE_0373_p-80(nrdB)           1  1.09e-07          . GCACTATATGTGGTGT           
+TM1040_1151_p-204(nrdJ)       1  1.42e-07          . CCACAAGATCTAGTTG           
+EE36_16117_p-190(nrdJ)        1  2.68e-07          . CCACTACATCTGGTGA           
+ISM_14850_p-249(nrdJ)         1  2.68e-07          . CTACAATATATAGTGT           
+OA2633_06729_p-121(nrdA)      1  3.45e-07          . GCACTATATGTTGCGG           
+HNE_0869_p-182(nrdA)          1  3.78e-07          . ACACTATATCTTGTGT           
+OB2597_03639_p-179(nrdJ)      1  4.59e-07          . CCACCACATATTGAGG           
+OG2516_03765_p-211(nrdJ)      1  4.59e-07          . CCACTAGATGTGGTAG           
+SPO2136_p-209(nrdJ)           1  6.53e-07          . CCACAAAATCTGGTAG           
+SKA53_03076_p-191(nrdJ)       1  9.01e-07          . CCACCATATGTCGCGT           
+RSP_2495_p-237(nrdJ)          1  1.33e-06          . GCACATTATCTTGGGG           
+Jann_2472_p-231(nrdJ)         1  1.61e-06          . CTACCACATATAGGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ROS217_22582_p-185(nrdJ)          9.3e-09  [+1]
+RB2654_04361_p-209(nrdJ)          9.3e-09  [+1]
+OA2633_06714_p-102(nrdB)          3.1e-08  [+1]
+Pden_1384_p-168(nrdJ)             3.7e-08  [+1]
+MED193_03787_p-204(nrdJ)          6.7e-08  [+1]
+HNE_0373_p-80(nrdB)               1.1e-07  [+1]
+TM1040_1151_p-204(nrdJ)           1.4e-07  [+1]
+EE36_16117_p-190(nrdJ)            2.7e-07  [+1]
+ISM_14850_p-249(nrdJ)             2.7e-07  [+1]
+OA2633_06729_p-121(nrdA)          3.5e-07  [+1]
+HNE_0869_p-182(nrdA)              3.8e-07  [+1]
+OB2597_03639_p-179(nrdJ)          4.6e-07  [+1]
+OG2516_03765_p-211(nrdJ)          4.6e-07  [+1]
+SPO2136_p-209(nrdJ)               6.5e-07  [+1]
+SKA53_03076_p-191(nrdJ)             9e-07  [+1]
+RSP_2495_p-237(nrdJ)              1.3e-06  [+1]
+Jann_2472_p-231(nrdJ)             1.6e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCACHAYATVTDGTGK width=16 seqs=17
+ROS217_22582_p-185(nrdJ) (    1) CCACAACATATAGTGG  1 
+RB2654_04361_p-209(nrdJ) (    1) CCACAACATATAGTGG  1 
+OA2633_06714_p-102(nrdB) (    1) GCACAATATCTTGTGT  1 
+Pden_1384_p-168(nrdJ)    (    1) CCACCAGATCTTGTGT  1 
+MED193_03787_p-204(nrdJ) (    1) CCACAATATCTAGTTG  1 
+HNE_0373_p-80(nrdB)      (    1) GCACTATATGTGGTGT  1 
+TM1040_1151_p-204(nrdJ)  (    1) CCACAAGATCTAGTTG  1 
+EE36_16117_p-190(nrdJ)   (    1) CCACTACATCTGGTGA  1 
+ISM_14850_p-249(nrdJ)    (    1) CTACAATATATAGTGT  1 
+OA2633_06729_p-121(nrdA) (    1) GCACTATATGTTGCGG  1 
+HNE_0869_p-182(nrdA)     (    1) ACACTATATCTTGTGT  1 
+OB2597_03639_p-179(nrdJ) (    1) CCACCACATATTGAGG  1 
+OG2516_03765_p-211(nrdJ) (    1) CCACTAGATGTGGTAG  1 
+SPO2136_p-209(nrdJ)      (    1) CCACAAAATCTGGTAG  1 
+SKA53_03076_p-191(nrdJ)  (    1) CCACCATATGTCGCGT  1 
+RSP_2495_p-237(nrdJ)     (    1) GCACATTATCTTGGGG  1 
+Jann_2472_p-231(nrdJ)    (    1) CTACCACATATAGGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 17 bayes= 1.26303 E= 6.2e-072 
+  -222    158     19  -1073 
+ -1073    190  -1073   -126 
+   186  -1073  -1073  -1073 
+ -1073    209  -1073  -1073 
+    77      0  -1073      6 
+   177  -1073  -1073   -226 
+  -222     32    -23     74 
+   186  -1073  -1073  -1073 
+ -1073  -1073  -1073    182 
+    10    100     19  -1073 
+ -1073  -1073  -1073    182 
+    36   -200     19     32 
+ -1073  -1073    227  -1073 
+  -222   -100    -81    132 
+  -123  -1073    189   -126 
+  -222  -1073    136     54 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 17 E= 6.2e-072 
+ 0.058824  0.705882  0.235294  0.000000 
+ 0.000000  0.882353  0.000000  0.117647 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.470588  0.235294  0.000000  0.294118 
+ 0.941176  0.000000  0.000000  0.058824 
+ 0.058824  0.294118  0.176471  0.470588 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.294118  0.470588  0.235294  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.352941  0.058824  0.235294  0.352941 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.058824  0.117647  0.117647  0.705882 
+ 0.117647  0.000000  0.764706  0.117647 
+ 0.058824  0.000000  0.529412  0.411765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCACHAYATVTDGTGK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CG]CAC[ATC]A[TC]AT[CAG]T[ATG]GTG[GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_2495_p-237(nrdJ)             1.33e-06  [+1(1.33e-06)]
+Pden_1384_p-168(nrdJ)            3.70e-08  [+1(3.70e-08)]
+Jann_2472_p-231(nrdJ)            1.61e-06  [+1(1.61e-06)]
+RB2654_04361_p-209(nrdJ)         9.28e-09  [+1(9.28e-09)]
+OG2516_03765_p-211(nrdJ)         4.59e-07  [+1(4.59e-07)]
+SKA53_03076_p-191(nrdJ)          9.01e-07  [+1(9.01e-07)]
+OB2597_03639_p-179(nrdJ)         4.59e-07  [+1(4.59e-07)]
+ISM_14850_p-249(nrdJ)            2.68e-07  [+1(2.68e-07)]
+ROS217_22582_p-185(nrdJ)         9.28e-09  [+1(9.28e-09)]
+EE36_16117_p-190(nrdJ)           2.68e-07  [+1(2.68e-07)]
+TM1040_1151_p-204(nrdJ)          1.42e-07  [+1(1.42e-07)]
+SPO2136_p-209(nrdJ)              6.53e-07  [+1(6.53e-07)]
+MED193_03787_p-204(nrdJ)         6.71e-08  [+1(6.71e-08)]
+HNE_0373_p-80(nrdB)              1.09e-07  [+1(1.09e-07)]
+HNE_0869_p-182(nrdA)             3.78e-07  [+1(3.78e-07)]
+OA2633_06714_p-102(nrdB)         3.09e-08  [+1(3.09e-08)]
+OA2633_06729_p-121(nrdA)         3.45e-07  [+1(3.45e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

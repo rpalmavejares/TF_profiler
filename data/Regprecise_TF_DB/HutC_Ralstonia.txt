@@ -1,0 +1,296 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HutC_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RALTA_A2496_p-247(hisX)  1.0000     20  RALTA_A2496_p-93(hisX)   1.0000     20  
+RALTA_A2492_p-26(hutH)   1.0000     20  RALTA_A0654_p-83(hutU)   1.0000     20  
+H16_A3018_p-26(hutH)     1.0000     20  H16_A3022_p-93(hisX)     1.0000     20  
+H16_A3022_p-249(hisX)    1.0000     20  H16_A0695_p-83(hutU)     1.0000     20  
+Reut_A0896_p-94(hutU)    1.0000     20  Reut_A2720_p-94(hisX)    1.0000     20  
+Reut_A2716_p-40(hutH)    1.0000     20  Reut_A2720_p-249(hisX)   1.0000     20  
+Reut_B5636_p-94(hutU)    1.0000     20  Rmet_2859_p-114(hisX)    1.0000     20  
+Rmet_5048_p-88(hutU)     1.0000     20  Rmet_2855_p-59(hutH)     1.0000     20  
+Rmet_2859_p-271(hisX)    1.0000     20  Rpic_2882_p-114(hutC)    1.0000     20  
+Rpic_2881_p-60(hutU)     1.0000     20  Rpic_0834_p-126(hisT)    1.0000     20  
+RSc2647_p-53(hutU)       1.0000     20  RSc2648_p-99(hutC)       1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HutC_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HutC_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             440    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    440    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.343 C 0.18 G 0.157 T 0.32 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.342 C 0.18 G 0.158 T 0.32 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WSYTGTATATACARSAAY MEME-1	width =  18  sites =  22  llr = 347  E-value = 6.2e-104
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5:::::8:a:a:a4:752
+pos.-specific     C  :64:::2::::a::5124
+probability       G  14::a::::2:::64:::
+matrix            T  3:6a:a:a:8:::::124
+
+         bits    2.7     *             
+                 2.4     *      *      
+                 2.1     *      *      
+                 1.9     *      *      
+Relative         1.6    *** ** ***     
+Entropy          1.3  * *** ** ****    
+(22.7 bits)      1.1  * ************   
+                 0.8  **************   
+                 0.5  *************** *
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           ACTTGTATATACAGCAAC
+consensus            TGC          AG CT
+sequence                             T 
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+RALTA_A0654_p-83(hutU)        3  8.36e-10         GC ACTTGTATATACAGGAAT           
+Reut_A2716_p-40(hutH)         3  2.24e-09         TA AGCTGTATAGACAGGAAC           
+H16_A3018_p-26(hutH)          3  2.24e-09         TA AGCTGTATAGACAGGAAC           
+RALTA_A2492_p-26(hutH)        3  2.24e-09         TA AGCTGTATAGACAGGAAC           
+Reut_A2720_p-249(hisX)        3  3.22e-09         AC TCCTGTCTATACAGCAAC           
+RALTA_A2496_p-247(hisX)       3  3.22e-09         GA TCCTGTCTATACAGCAAC           
+Reut_A2720_p-94(hisX)         3  4.01e-09         TG ACTTGTATATACAGGATT           
+H16_A0695_p-83(hutU)          3  4.01e-09         AT GCCTGTATATACAGGACT           
+Rmet_2859_p-271(hisX)         3  4.70e-09         CT TGTTGTATATACAGCAAT           
+H16_A3022_p-93(hisX)          3  6.14e-09         TG ACTTGTATATACAGGTAC           
+RALTA_A2496_p-93(hisX)        3  1.27e-08         TG ACTTGTATATACAGGCAT           
+Rmet_2855_p-59(hutH)          3  1.78e-08         TA ACCTGTATAGACAGGCCC           
+Reut_B5636_p-94(hutU)         3  2.77e-08         AT GCTTGTATATACAACACT           
+Reut_A0896_p-94(hutU)         3  2.77e-08         AT GCTTGTATATACAACACT           
+H16_A3022_p-249(hisX)         3  3.03e-08         TG TCCTGTCTATACAGCAGC           
+Rmet_2859_p-114(hisX)         3  4.81e-08         TG ACTTGTATATACAGCGTT           
+Rpic_2881_p-60(hutU)          3  7.92e-08         TA AGTTGTATATACAACATA           
+Rpic_0834_p-126(hisT)         3  1.46e-07         CA TGATGTATATACAACAAC           
+Rmet_5048_p-88(hutU)          3  2.86e-07         CA ACTTGTCTATACAATACT           
+Rpic_2882_p-114(hutC)         3  3.01e-07         TA TGTTGTATATACAACTTA           
+RSc2647_p-53(hutU)            3  4.16e-07         TT ATTTGTATATACAACATA           
+RSc2648_p-99(hutC)            3  7.51e-07         TA TGTTGTATATACAAATAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_A0654_p-83(hutU)            8.4e-10  2_[+1]
+Reut_A2716_p-40(hutH)             2.2e-09  2_[+1]
+H16_A3018_p-26(hutH)              2.2e-09  2_[+1]
+RALTA_A2492_p-26(hutH)            2.2e-09  2_[+1]
+Reut_A2720_p-249(hisX)            3.2e-09  2_[+1]
+RALTA_A2496_p-247(hisX)           3.2e-09  2_[+1]
+Reut_A2720_p-94(hisX)               4e-09  2_[+1]
+H16_A0695_p-83(hutU)                4e-09  2_[+1]
+Rmet_2859_p-271(hisX)             4.7e-09  2_[+1]
+H16_A3022_p-93(hisX)              6.1e-09  2_[+1]
+RALTA_A2496_p-93(hisX)            1.3e-08  2_[+1]
+Rmet_2855_p-59(hutH)              1.8e-08  2_[+1]
+Reut_B5636_p-94(hutU)             2.8e-08  2_[+1]
+Reut_A0896_p-94(hutU)             2.8e-08  2_[+1]
+H16_A3022_p-249(hisX)               3e-08  2_[+1]
+Rmet_2859_p-114(hisX)             4.8e-08  2_[+1]
+Rpic_2881_p-60(hutU)              7.9e-08  2_[+1]
+Rpic_0834_p-126(hisT)             1.5e-07  2_[+1]
+Rmet_5048_p-88(hutU)              2.9e-07  2_[+1]
+Rpic_2882_p-114(hutC)               3e-07  2_[+1]
+RSc2647_p-53(hutU)                4.2e-07  2_[+1]
+RSc2648_p-99(hutC)                7.5e-07  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WSYTGTATATACARSAAY width=18 seqs=22
+RALTA_A0654_p-83(hutU)   (    3) ACTTGTATATACAGGAAT  1 
+Reut_A2716_p-40(hutH)    (    3) AGCTGTATAGACAGGAAC  1 
+H16_A3018_p-26(hutH)     (    3) AGCTGTATAGACAGGAAC  1 
+RALTA_A2492_p-26(hutH)   (    3) AGCTGTATAGACAGGAAC  1 
+Reut_A2720_p-249(hisX)   (    3) TCCTGTCTATACAGCAAC  1 
+RALTA_A2496_p-247(hisX)  (    3) TCCTGTCTATACAGCAAC  1 
+Reut_A2720_p-94(hisX)    (    3) ACTTGTATATACAGGATT  1 
+H16_A0695_p-83(hutU)     (    3) GCCTGTATATACAGGACT  1 
+Rmet_2859_p-271(hisX)    (    3) TGTTGTATATACAGCAAT  1 
+H16_A3022_p-93(hisX)     (    3) ACTTGTATATACAGGTAC  1 
+RALTA_A2496_p-93(hisX)   (    3) ACTTGTATATACAGGCAT  1 
+Rmet_2855_p-59(hutH)     (    3) ACCTGTATAGACAGGCCC  1 
+Reut_B5636_p-94(hutU)    (    3) GCTTGTATATACAACACT  1 
+Reut_A0896_p-94(hutU)    (    3) GCTTGTATATACAACACT  1 
+H16_A3022_p-249(hisX)    (    3) TCCTGTCTATACAGCAGC  1 
+Rmet_2859_p-114(hisX)    (    3) ACTTGTATATACAGCGTT  1 
+Rpic_2881_p-60(hutU)     (    3) AGTTGTATATACAACATA  1 
+Rpic_0834_p-126(hisT)    (    3) TGATGTATATACAACAAC  1 
+Rmet_5048_p-88(hutU)     (    3) ACTTGTCTATACAATACT  1 
+Rpic_2882_p-114(hutC)    (    3) TGTTGTATATACAACTTA  1 
+RSc2647_p-53(hutU)       (    3) ATTTGTATATACAACATA  1 
+RSc2648_p-99(hutC)       (    3) TGTTGTATATACAAATAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 66 bayes= 3.32193 E= 6.2e-104 
+    67  -1110    -21     -1 
+ -1110    171    121   -281 
+  -291    101  -1110     89 
+ -1110  -1110  -1110    164 
+ -1110  -1110    266  -1110 
+ -1110  -1110  -1110    164 
+   126      1  -1110  -1110 
+ -1110  -1110  -1110    164 
+   155  -1110  -1110  -1110 
+ -1110  -1110     21    135 
+   155  -1110  -1110  -1110 
+ -1110    247  -1110  -1110 
+   155  -1110  -1110  -1110 
+     9  -1110    201  -1110 
+  -291    147    138   -281 
+   109    -99   -179   -123 
+    55     33   -179    -49 
+   -91    118  -1110     36 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 22 E= 6.2e-104 
+ 0.545455  0.000000  0.136364  0.318182 
+ 0.000000  0.590909  0.363636  0.045455 
+ 0.045455  0.363636  0.000000  0.590909 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.818182  0.181818  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.181818  0.818182 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.363636  0.000000  0.636364  0.000000 
+ 0.045455  0.500000  0.409091  0.045455 
+ 0.727273  0.090909  0.045455  0.136364 
+ 0.500000  0.227273  0.045455  0.227273 
+ 0.181818  0.409091  0.000000  0.409091 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSYTGTATATACARSAAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][CG][TC]TGTATATACA[GA][CG]A[ACT][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_A2496_p-247(hisX)          9.67e-09  2_[+1(3.22e-09)]
+RALTA_A2496_p-93(hisX)           3.81e-08  2_[+1(1.27e-08)]
+RALTA_A2492_p-26(hutH)           6.71e-09  2_[+1(2.24e-09)]
+RALTA_A0654_p-83(hutU)           2.51e-09  2_[+1(8.36e-10)]
+H16_A3018_p-26(hutH)             6.71e-09  2_[+1(2.24e-09)]
+H16_A3022_p-93(hisX)             1.84e-08  2_[+1(6.14e-09)]
+H16_A3022_p-249(hisX)            9.09e-08  2_[+1(3.03e-08)]
+H16_A0695_p-83(hutU)             1.20e-08  2_[+1(4.01e-09)]
+Reut_A0896_p-94(hutU)            8.30e-08  2_[+1(2.77e-08)]
+Reut_A2720_p-94(hisX)            1.20e-08  2_[+1(4.01e-09)]
+Reut_A2716_p-40(hutH)            6.71e-09  2_[+1(2.24e-09)]
+Reut_A2720_p-249(hisX)           9.67e-09  2_[+1(3.22e-09)]
+Reut_B5636_p-94(hutU)            8.30e-08  2_[+1(2.77e-08)]
+Rmet_2859_p-114(hisX)            1.44e-07  2_[+1(4.81e-08)]
+Rmet_5048_p-88(hutU)             8.58e-07  2_[+1(2.86e-07)]
+Rmet_2855_p-59(hutH)             5.35e-08  2_[+1(1.78e-08)]
+Rmet_2859_p-271(hisX)            1.41e-08  2_[+1(4.70e-09)]
+Rpic_2882_p-114(hutC)            9.04e-07  2_[+1(3.01e-07)]
+Rpic_2881_p-60(hutU)             2.38e-07  2_[+1(7.92e-08)]
+Rpic_0834_p-126(hisT)            4.37e-07  2_[+1(1.46e-07)]
+RSc2647_p-53(hutU)               1.25e-06  2_[+1(4.16e-07)]
+RSc2648_p-99(hutC)               2.25e-06  2_[+1(7.51e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

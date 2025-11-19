@@ -1,0 +1,301 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/SiaR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HI0145_p-163(nanE)       1.0000     19  HI0146_p-205(siaP)       1.0000     19  
+NT05HA_0544_p-117(siaP)  1.0000     19  NT05HA_0544_p-156(siaP)  1.0000     19  
+NT05HA_0545_p-117(nanE)  1.0000     19  NT05HA_0545_p-156(nanE)  1.0000     19  
+PM0875_p-99(nagB)        1.0000     19  PM1709_p-125(siaP)       1.0000     19  
+PM1711_p-43(nanE)        1.0000     19  HSM_1505_p-56(nagB)      1.0000     19  
+HSM_1112_p-106(siaP)     1.0000     19  HSM_1112_p-156(siaP)     1.0000     19  
+HSM_1111_p-95(neuA)      1.0000     19  HSM_1111_p-145(neuA)     1.0000     19  
+APP7_1836_p-40(neuA)     1.0000     19  APP7_0749_p-86(yhcH)     1.0000     19  
+HD1852_p-125(nanE)       1.0000     19  HD1379_p-86(yhcH)        1.0000     19  
+HAPS_2072_p-42(nagB)     1.0000     19  HAPS_0408_p-80(yhcH)     1.0000     19  
+HAPS_0408_p-153(yhcH)    1.0000     19  HAPS_1216_p-43(nanE)     1.0000     19  
+HAPS_1216_p-191(nanE)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/SiaR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/SiaR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             437    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    437    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.364 C 0.103 G 0.124 T 0.41 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.363 C 0.104 G 0.125 T 0.408 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WWTGRARTAWWWYTTCAT MEME-1	width =  18  sites =  23  llr = 243  E-value = 1.6e-063
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  44::693175571:::83
+pos.-specific     C  :2:1::::::1:5:28::
+probability       G  :::94:6:1::::::1:1
+matrix            T  64a::1:92433498:27
+
+         bits    3.3                   
+                 2.9                   
+                 2.6                   
+                 2.3    *           *  
+Relative         2.0    *           *  
+Entropy          1.6    *           *  
+(15.2 bits)      1.3    *  *        *  
+                 1.0   *****     ****  
+                 0.7   ******    ***** 
+                 0.3 ********** *******
+                 0.0 ------------------
+
+Multilevel           TTTGAAGTAAAACTTCAT
+consensus            AA  G A TTTTT   TA
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+APP7_0749_p-86(yhcH)          1  3.66e-08          . ATTGAAGTATATCTTCAT T         
+HSM_1505_p-56(nagB)           1  3.66e-08          . TCTGAAATAAAACTTCAT T         
+PM1709_p-125(siaP)            1  6.98e-08          . TATGAAATAAAACTTCAT T         
+NT05HA_0544_p-117(siaP)       1  6.98e-08          . TTTGAAATAAAACTTCAT T         
+HSM_1111_p-95(neuA)           1  4.76e-07          . TCTGGAGTAAAACACCAA A         
+NT05HA_0545_p-117(nanE)       1  4.76e-07          . TTTGAAATATCACTTCAA A         
+HAPS_1216_p-43(nanE)          1  6.09e-07          . TTTGGAGTAAATTTTCTT T         
+PM1711_p-43(nanE)             1  6.09e-07          . ATTGGAGTCAATCTTCTT T         
+HAPS_0408_p-80(yhcH)          1  8.90e-07          . TATGGAGTATATTTTCTT T         
+NT05HA_0544_p-156(siaP)       1  1.97e-06          . TTTGAAGTGATATTTCAA A         
+HI0146_p-205(siaP)            1  2.71e-06          . TTTGAAGTGTTTTTTCAT A         
+HI0145_p-163(nanE)            1  2.71e-06          . TATGAAAAAACACTTCAA A         
+HAPS_2072_p-42(nagB)          1  3.67e-06          . AATGAAGTTTTATTTCAA A         
+NT05HA_0545_p-156(nanE)       1  3.67e-06          . AATGAAGTTTTATTTCAA A         
+HD1379_p-86(yhcH)             1  4.05e-06          . ATTGGAGTAGGTTTTCAT T         
+HSM_1112_p-156(siaP)          1  5.42e-06          . TTTGGTGTTTTACTCCAG A         
+HSM_1112_p-106(siaP)          1  1.02e-05          . TCTGAAATAAAACTCTAT A         
+APP7_1836_p-40(neuA)          1  2.32e-05          . AATGGTGTATTTATTCAT A         
+HSM_1111_p-145(neuA)          1  6.43e-05          . TATAGAGTTTTATTTCAG A         
+HAPS_0408_p-153(yhcH)         1  8.96e-05          . AATCAAGTAAATTGTGAT T         
+PM0875_p-99(nagB)             1  8.96e-05          . ATTGAAAAAAAAATTGAT G         
+HAPS_1216_p-191(nanE)         1  1.23e-04          . AATCGATTAAAACTCGTT T         
+HD1852_p-125(nanE)            1  1.30e-04          . ACAGAAAATTCACTTCTT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+APP7_0749_p-86(yhcH)              3.7e-08  [+1]_1
+HSM_1505_p-56(nagB)               3.7e-08  [+1]_1
+PM1709_p-125(siaP)                  7e-08  [+1]_1
+NT05HA_0544_p-117(siaP)             7e-08  [+1]_1
+HSM_1111_p-95(neuA)               4.8e-07  [+1]_1
+NT05HA_0545_p-117(nanE)           4.8e-07  [+1]_1
+HAPS_1216_p-43(nanE)              6.1e-07  [+1]_1
+PM1711_p-43(nanE)                 6.1e-07  [+1]_1
+HAPS_0408_p-80(yhcH)              8.9e-07  [+1]_1
+NT05HA_0544_p-156(siaP)             2e-06  [+1]_1
+HI0146_p-205(siaP)                2.7e-06  [+1]_1
+HI0145_p-163(nanE)                2.7e-06  [+1]_1
+HAPS_2072_p-42(nagB)              3.7e-06  [+1]_1
+NT05HA_0545_p-156(nanE)           3.7e-06  [+1]_1
+HD1379_p-86(yhcH)                   4e-06  [+1]_1
+HSM_1112_p-156(siaP)              5.4e-06  [+1]_1
+HSM_1112_p-106(siaP)                1e-05  [+1]_1
+APP7_1836_p-40(neuA)              2.3e-05  [+1]_1
+HSM_1111_p-145(neuA)              6.4e-05  [+1]_1
+HAPS_0408_p-153(yhcH)               9e-05  [+1]_1
+PM0875_p-99(nagB)                   9e-05  [+1]_1
+HAPS_1216_p-191(nanE)             0.00012  [+1]_1
+HD1852_p-125(nanE)                0.00013  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WWTGRARTAWWWYTTCAT width=18 seqs=23
+APP7_0749_p-86(yhcH)     (    1) ATTGAAGTATATCTTCAT  1 
+HSM_1505_p-56(nagB)      (    1) TCTGAAATAAAACTTCAT  1 
+PM1709_p-125(siaP)       (    1) TATGAAATAAAACTTCAT  1 
+NT05HA_0544_p-117(siaP)  (    1) TTTGAAATAAAACTTCAT  1 
+HSM_1111_p-95(neuA)      (    1) TCTGGAGTAAAACACCAA  1 
+NT05HA_0545_p-117(nanE)  (    1) TTTGAAATATCACTTCAA  1 
+HAPS_1216_p-43(nanE)     (    1) TTTGGAGTAAATTTTCTT  1 
+PM1711_p-43(nanE)        (    1) ATTGGAGTCAATCTTCTT  1 
+HAPS_0408_p-80(yhcH)     (    1) TATGGAGTATATTTTCTT  1 
+NT05HA_0544_p-156(siaP)  (    1) TTTGAAGTGATATTTCAA  1 
+HI0146_p-205(siaP)       (    1) TTTGAAGTGTTTTTTCAT  1 
+HI0145_p-163(nanE)       (    1) TATGAAAAAACACTTCAA  1 
+HAPS_2072_p-42(nagB)     (    1) AATGAAGTTTTATTTCAA  1 
+NT05HA_0545_p-156(nanE)  (    1) AATGAAGTTTTATTTCAA  1 
+HD1379_p-86(yhcH)        (    1) ATTGGAGTAGGTTTTCAT  1 
+HSM_1112_p-156(siaP)     (    1) TTTGGTGTTTTACTCCAG  1 
+HSM_1112_p-106(siaP)     (    1) TCTGAAATAAAACTCTAT  1 
+APP7_1836_p-40(neuA)     (    1) AATGGTGTATTTATTCAT  1 
+HSM_1111_p-145(neuA)     (    1) TATAGAGTTTTATTTCAG  1 
+HAPS_0408_p-153(yhcH)    (    1) AATCAAGTAAATTGTGAT  1 
+PM0875_p-99(nagB)        (    1) ATTGAAAAAAAAATTGAT  1 
+HAPS_1216_p-191(nanE)    (    1) AATCGATTAAAACTCGTT  1 
+HD1852_p-125(nanE)       (    1) ACAGAAAATTCACTTCTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 46 bayes= 2.68243 E= 1.6e-063 
+    26  -1117  -1117     47 
+    11     74  -1117      9 
+  -306  -1117  -1117    123 
+  -306    -26    280  -1117 
+    75  -1117    165  -1117 
+   133  -1117  -1117   -223 
+    -6  -1117    229   -323 
+  -147  -1117  -1117    109 
+    85   -126    -52    -91 
+    52  -1117   -152      9 
+    52     32   -152    -42 
+    85  -1117  -1117    -23 
+  -206    232  -1117     -6 
+  -306  -1117   -152    116 
+ -1117     74  -1117    102 
+ -1117    298      6   -323 
+   111  -1117  -1117    -91 
+   -48  -1117    -52     68 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 23 E= 1.6e-063 
+ 0.434783  0.000000  0.000000  0.565217 
+ 0.391304  0.173913  0.000000  0.434783 
+ 0.043478  0.000000  0.000000  0.956522 
+ 0.043478  0.086957  0.869565  0.000000 
+ 0.608696  0.000000  0.391304  0.000000 
+ 0.913043  0.000000  0.000000  0.086957 
+ 0.347826  0.000000  0.608696  0.043478 
+ 0.130435  0.000000  0.000000  0.869565 
+ 0.652174  0.043478  0.086957  0.217391 
+ 0.521739  0.000000  0.043478  0.434783 
+ 0.521739  0.130435  0.043478  0.304348 
+ 0.652174  0.000000  0.000000  0.347826 
+ 0.086957  0.521739  0.000000  0.391304 
+ 0.043478  0.000000  0.043478  0.913043 
+ 0.000000  0.173913  0.000000  0.826087 
+ 0.000000  0.826087  0.130435  0.043478 
+ 0.782609  0.000000  0.000000  0.217391 
+ 0.260870  0.000000  0.086957  0.652174 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGRARTAWWWYTTCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TA]TG[AG]A[GA]T[AT][AT][AT][AT][CT]TTC[AT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HI0145_p-163(nanE)               5.42e-06  [+1(2.71e-06)]_1
+HI0146_p-205(siaP)               5.42e-06  [+1(2.71e-06)]_1
+NT05HA_0544_p-117(siaP)          1.40e-07  [+1(6.98e-08)]_1
+NT05HA_0544_p-156(siaP)          3.94e-06  [+1(1.97e-06)]_1
+NT05HA_0545_p-117(nanE)          9.52e-07  [+1(4.76e-07)]_1
+NT05HA_0545_p-156(nanE)          7.34e-06  [+1(3.67e-06)]_1
+PM0875_p-99(nagB)                1.79e-04  [+1(8.96e-05)]_1
+PM1709_p-125(siaP)               1.40e-07  [+1(6.98e-08)]_1
+PM1711_p-43(nanE)                1.22e-06  [+1(6.09e-07)]_1
+HSM_1505_p-56(nagB)              7.32e-08  [+1(3.66e-08)]_1
+HSM_1112_p-106(siaP)             2.05e-05  [+1(1.02e-05)]_1
+HSM_1112_p-156(siaP)             1.08e-05  [+1(5.42e-06)]_1
+HSM_1111_p-95(neuA)              9.52e-07  [+1(4.76e-07)]_1
+HSM_1111_p-145(neuA)             1.29e-04  [+1(6.43e-05)]_1
+APP7_1836_p-40(neuA)             4.65e-05  [+1(2.32e-05)]_1
+APP7_0749_p-86(yhcH)             7.32e-08  [+1(3.66e-08)]_1
+HD1852_p-125(nanE)               2.61e-04  19
+HD1379_p-86(yhcH)                8.10e-06  [+1(4.05e-06)]_1
+HAPS_2072_p-42(nagB)             7.34e-06  [+1(3.67e-06)]_1
+HAPS_0408_p-80(yhcH)             1.78e-06  [+1(8.90e-07)]_1
+HAPS_0408_p-153(yhcH)            1.79e-04  [+1(8.96e-05)]_1
+HAPS_1216_p-43(nanE)             1.22e-06  [+1(6.09e-07)]_1
+HAPS_1216_p-191(nanE)            2.45e-04  19
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

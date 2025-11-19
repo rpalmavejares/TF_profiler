@@ -1,0 +1,337 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= HcpR_Clostridia-1.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CAC0758,Score=4.6,Pos=-1 1.0000     18  CA_C3428(hcp)Score=5.8,P 1.0000     18  
+CAC0885(frdX)Score=5.9Po 1.0000     18  CAC0884(hcpR)Score=5.9,P 1.0000     18  
+CA_C2750(hcp)Score=5.8,P 1.0000     18  CAC0362(Cbei_4355)Score= 1.0000     18  
+CBY_3927,Score=6.2,Pos=- 1.0000     18  Cbei_1845,Score=5.2,Pos= 1.0000     18  
+Cbei_1434(hcp)Score=5.5P 1.0000     18  Cbei_1434(hcp)Score=5.8, 1.0000     18  
+Cbei_2276(hcp)Score=5.2, 1.0000     18  Cbei_4355(Cbei_4355)Scor 1.0000     18  
+CBO1658,Score=5,Pos=-143 1.0000     18  CBO2922(frdX)Score=5.9,P 1.0000     18  
+CBO2923(hcpR)Score=5.9,P 1.0000     18  CBO2792(hcp)Score=6,Pos= 1.0000     18  
+CBO2926,Score=5.7Pos=-11 1.0000     18  CKL_0935(hcp)Score=4.8,P 1.0000     18  
+CKL_2419(frdX)Score=5.5, 1.0000     18  CKL_2420(hcpR)Score=5.5, 1.0000     18  
+NT01CX_0589(frdX)Score=5 1.0000     18  NT01CX_0590(hcpR)Score=5 1.0000     18  
+NT01CX_0591(hcp)Score=5. 1.0000     18  CPF_1730,Score=5.9,Pos=- 1.0000     18  
+CPF_2909(hcp)Score=5.6Po 1.0000     18  CTC01608,Score=5.7,Pos=- 1.0000     18  
+CTC00410(hcp)Score=6.1,P 1.0000     18  CTC01972(frdX)Score=5.6, 1.0000     18  
+CTC00896(hcpR)Score=5.4, 1.0000     18  CTC00439,Score=5.9,Pos=- 1.0000     18  
+CTC00897,Score=5.4,Pos=- 1.0000     18  CTC02534(Cbei_4355)Score 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna HcpR_Clostridia-1.fasta -oc HcpR_Clostridia-1 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           18
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             576    N=              32    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.321 C 0.161 G 0.184 T 0.333 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.321 C 0.162 G 0.184 T 0.333 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  16  sites =  32  llr = 481  E-value = 4.6e-160
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a9:4363:::a:61
+pos.-specific     C  ::::a2::1::::a21
+probability       G  a::::1::1a::::17
+matrix            T  :a:1:3834:aa::22
+
+         bits    2.6     *        *  
+                 2.4 *   *    *   *  
+                 2.1 *   *    *   *  
+                 1.8 *   *    *   *  
+Relative         1.6 *** *    * ***  
+Entropy          1.3 *****    *****  
+(21.7 bits)      1.1 *****    *****  
+                 0.8 ***** *  ***** *
+                 0.5 ***** ** ***** *
+                 0.3 ***** ** *******
+                 0.0 ----------------
+
+Multilevel           GTAACATATGTTACAG
+consensus                 TATA       
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+CPF_1730,Score=5.9,Pos=-      3  1.10e-09         AG GTAACCTATGTTACAG           
+CTC00439,Score=5.9,Pos=-      3  1.81e-09         TA GTAACATAAGTTACAG           
+CAC0362(Cbei_4355)Score=      3  1.81e-09         TA GTAACATAAGTTACAG           
+CBO2792(hcp)Score=6,Pos=      3  4.05e-09         TT GTAACATAGGTTACAG           
+CBY_3927,Score=6.2,Pos=-      3  4.05e-09         CT GTAACTTATGTTACAG           
+Cbei_1434(hcp)Score=5.8,      3  5.60e-09         TA GTAACGTATGTTACAG           
+CKL_2419(frdX)Score=5.5,      3  8.77e-09         GT GTAACGTAAGTTACAG           
+CBO2922(frdX)Score=5.9,P      3  8.77e-09         TG GTAACATTAGTTACAG           
+CTC01972(frdX)Score=5.6,      3  1.25e-08         AC GTAACATTCGTTACAG           
+CTC00410(hcp)Score=6.1,P      3  1.25e-08         TT GTAACATTTGTTACCG           
+CA_C3428(hcp)Score=5.8,P      3  1.44e-08         TA GTAACCAATGTTACAG           
+CAC0885(frdX)Score=5.9Po      3  1.70e-08         GT GTAACATATGTTACTG           
+Cbei_1434(hcp)Score=5.5P      3  3.36e-08         GC GTAACCATTGTTACAG           
+CPF_2909(hcp)Score=5.6Po      3  3.81e-08         AG GTAACTTTAGTTACCG           
+NT01CX_0591(hcp)Score=5.      3  3.81e-08         TG GTAACATAAGTTACAT           
+CAC0884(hcpR)Score=5.9,P      3  4.05e-08         CA GTAACATATGTTACAC           
+CBO2926,Score=5.7Pos=-11      3  5.35e-08         TA GTAACATTAGTTACTG           
+CBO1658,Score=5,Pos=-143      3  8.20e-08         GA GTAACATCCGTTACAG           
+NT01CX_0589(frdX)Score=5      3  1.01e-07         TG GTAACTTAGGTTACAT           
+Cbei_4355(Cbei_4355)Scor      3  1.11e-07         TT GTAACTTTTGTTACAT           
+Cbei_2276(hcp)Score=5.2,      3  1.11e-07         TA GTAACGTGTGTTACAG           
+CKL_2420(hcpR)Score=5.5,      3  1.32e-07         CT GTAACTTACGTTACAC           
+CTC01608,Score=5.7,Pos=-      3  1.61e-07         TG GTAACTAATGTTACAT           
+NT01CX_0590(hcpR)Score=5      3  1.61e-07         AT GTAACCTAAGTTACCA           
+CA_C2750(hcp)Score=5.8,P      3  1.61e-07         AA GTAACAATTGTTACGG           
+CTC02534(Cbei_4355)Score      3  1.88e-07         TC GTAACATACGTTACTT           
+CKL_0935(hcp)Score=4.8,P      3  1.88e-07         TC GTATCCTAAGTTACCG           
+CTC00897,Score=5.4,Pos=-      3  3.15e-07         TA GTAACTATGGTTACTG           
+CBO2923(hcpR)Score=5.9,P      3  3.81e-07         CT GTAACTAATGTTACCA           
+CTC00896(hcpR)Score=5.4,      3  8.02e-07         CA GTAACCATAGTTACTA           
+Cbei_1845,Score=5.2,Pos=      3  8.02e-07         TT GTATCATATGTTACGT           
+CAC0758,Score=4.6,Pos=-1      3  8.35e-07         TC GTAACGAAGGATACCG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CPF_1730,Score=5.9,Pos=-          1.1e-09  2_[+1]
+CTC00439,Score=5.9,Pos=-          1.8e-09  2_[+1]
+CAC0362(Cbei_4355)Score=          1.8e-09  2_[+1]
+CBO2792(hcp)Score=6,Pos=          4.1e-09  2_[+1]
+CBY_3927,Score=6.2,Pos=-          4.1e-09  2_[+1]
+Cbei_1434(hcp)Score=5.8,          5.6e-09  2_[+1]
+CKL_2419(frdX)Score=5.5,          8.8e-09  2_[+1]
+CBO2922(frdX)Score=5.9,P          8.8e-09  2_[+1]
+CTC01972(frdX)Score=5.6,          1.2e-08  2_[+1]
+CTC00410(hcp)Score=6.1,P          1.2e-08  2_[+1]
+CA_C3428(hcp)Score=5.8,P          1.4e-08  2_[+1]
+CAC0885(frdX)Score=5.9Po          1.7e-08  2_[+1]
+Cbei_1434(hcp)Score=5.5P          3.4e-08  2_[+1]
+CPF_2909(hcp)Score=5.6Po          3.8e-08  2_[+1]
+NT01CX_0591(hcp)Score=5.          3.8e-08  2_[+1]
+CAC0884(hcpR)Score=5.9,P          4.1e-08  2_[+1]
+CBO2926,Score=5.7Pos=-11          5.3e-08  2_[+1]
+CBO1658,Score=5,Pos=-143          8.2e-08  2_[+1]
+NT01CX_0589(frdX)Score=5            1e-07  2_[+1]
+Cbei_4355(Cbei_4355)Scor          1.1e-07  2_[+1]
+Cbei_2276(hcp)Score=5.2,          1.1e-07  2_[+1]
+CKL_2420(hcpR)Score=5.5,          1.3e-07  2_[+1]
+CTC01608,Score=5.7,Pos=-          1.6e-07  2_[+1]
+NT01CX_0590(hcpR)Score=5          1.6e-07  2_[+1]
+CA_C2750(hcp)Score=5.8,P          1.6e-07  2_[+1]
+CTC02534(Cbei_4355)Score          1.9e-07  2_[+1]
+CKL_0935(hcp)Score=4.8,P          1.9e-07  2_[+1]
+CTC00897,Score=5.4,Pos=-          3.2e-07  2_[+1]
+CBO2923(hcpR)Score=5.9,P          3.8e-07  2_[+1]
+CTC00896(hcpR)Score=5.4,            8e-07  2_[+1]
+Cbei_1845,Score=5.2,Pos=            8e-07  2_[+1]
+CAC0758,Score=4.6,Pos=-1          8.4e-07  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=16 seqs=32
+CPF_1730,Score=5.9,Pos=- (    3) GTAACCTATGTTACAG  1 
+CTC00439,Score=5.9,Pos=- (    3) GTAACATAAGTTACAG  1 
+CAC0362(Cbei_4355)Score= (    3) GTAACATAAGTTACAG  1 
+CBO2792(hcp)Score=6,Pos= (    3) GTAACATAGGTTACAG  1 
+CBY_3927,Score=6.2,Pos=- (    3) GTAACTTATGTTACAG  1 
+Cbei_1434(hcp)Score=5.8, (    3) GTAACGTATGTTACAG  1 
+CKL_2419(frdX)Score=5.5, (    3) GTAACGTAAGTTACAG  1 
+CBO2922(frdX)Score=5.9,P (    3) GTAACATTAGTTACAG  1 
+CTC01972(frdX)Score=5.6, (    3) GTAACATTCGTTACAG  1 
+CTC00410(hcp)Score=6.1,P (    3) GTAACATTTGTTACCG  1 
+CA_C3428(hcp)Score=5.8,P (    3) GTAACCAATGTTACAG  1 
+CAC0885(frdX)Score=5.9Po (    3) GTAACATATGTTACTG  1 
+Cbei_1434(hcp)Score=5.5P (    3) GTAACCATTGTTACAG  1 
+CPF_2909(hcp)Score=5.6Po (    3) GTAACTTTAGTTACCG  1 
+NT01CX_0591(hcp)Score=5. (    3) GTAACATAAGTTACAT  1 
+CAC0884(hcpR)Score=5.9,P (    3) GTAACATATGTTACAC  1 
+CBO2926,Score=5.7Pos=-11 (    3) GTAACATTAGTTACTG  1 
+CBO1658,Score=5,Pos=-143 (    3) GTAACATCCGTTACAG  1 
+NT01CX_0589(frdX)Score=5 (    3) GTAACTTAGGTTACAT  1 
+Cbei_4355(Cbei_4355)Scor (    3) GTAACTTTTGTTACAT  1 
+Cbei_2276(hcp)Score=5.2, (    3) GTAACGTGTGTTACAG  1 
+CKL_2420(hcpR)Score=5.5, (    3) GTAACTTACGTTACAC  1 
+CTC01608,Score=5.7,Pos=- (    3) GTAACTAATGTTACAT  1 
+NT01CX_0590(hcpR)Score=5 (    3) GTAACCTAAGTTACCA  1 
+CA_C2750(hcp)Score=5.8,P (    3) GTAACAATTGTTACGG  1 
+CTC02534(Cbei_4355)Score (    3) GTAACATACGTTACTT  1 
+CKL_0935(hcp)Score=4.8,P (    3) GTATCCTAAGTTACCG  1 
+CTC00897,Score=5.4,Pos=- (    3) GTAACTATGGTTACTG  1 
+CBO2923(hcpR)Score=5.9,P (    3) GTAACTAATGTTACCA  1 
+CTC00896(hcpR)Score=5.4, (    3) GTAACCATAGTTACTA  1 
+Cbei_1845,Score=5.2,Pos= (    3) GTATCATATGTTACGT  1 
+CAC0758,Score=4.6,Pos=-1 (    3) GTAACGAAGGATACCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 96 bayes= 3.45943 E= 4.6e-160 
+ -1164  -1164    244  -1164 
+ -1164  -1164  -1164    159 
+   164  -1164  -1164  -1164 
+   155  -1164  -1164   -241 
+ -1164    262  -1164  -1164 
+    45     21    -56    -41 
+   -36  -1164  -1164    117 
+    96   -237   -256     -9 
+    -4    -37    -56     39 
+ -1164  -1164    244  -1164 
+  -336  -1164  -1164    154 
+ -1164  -1164  -1164    159 
+   164  -1164  -1164  -1164 
+ -1164    262  -1164  -1164 
+    89     21   -156   -109 
+  -177   -137    183    -83 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 32 E= 4.6e-160 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.937500  0.000000  0.000000  0.062500 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.437500  0.187500  0.125000  0.250000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.625000  0.031250  0.031250  0.312500 
+ 0.312500  0.125000  0.125000  0.437500 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.031250  0.000000  0.000000  0.968750 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.593750  0.187500  0.062500  0.156250 
+ 0.093750  0.062500  0.656250  0.187500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+GTAAC[AT][TA][AT][TA]GTTACAG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CAC0758,Score=4.6,Pos=-1         2.51e-06  2_[+1(8.35e-07)]
+CA_C3428(hcp)Score=5.8,P         4.32e-08  2_[+1(1.44e-08)]
+CAC0885(frdX)Score=5.9Po         5.10e-08  2_[+1(1.70e-08)]
+CAC0884(hcpR)Score=5.9,P         1.22e-07  2_[+1(4.05e-08)]
+CA_C2750(hcp)Score=5.8,P         4.82e-07  2_[+1(1.61e-07)]
+CAC0362(Cbei_4355)Score=         5.42e-09  2_[+1(1.81e-09)]
+CBY_3927,Score=6.2,Pos=-         1.22e-08  2_[+1(4.05e-09)]
+Cbei_1845,Score=5.2,Pos=         2.41e-06  2_[+1(8.02e-07)]
+Cbei_1434(hcp)Score=5.5P         1.01e-07  2_[+1(3.36e-08)]
+Cbei_1434(hcp)Score=5.8,         1.68e-08  2_[+1(5.60e-09)]
+Cbei_2276(hcp)Score=5.2,         3.34e-07  2_[+1(1.11e-07)]
+Cbei_4355(Cbei_4355)Scor         3.34e-07  2_[+1(1.11e-07)]
+CBO1658,Score=5,Pos=-143         2.46e-07  2_[+1(8.20e-08)]
+CBO2922(frdX)Score=5.9,P         2.63e-08  2_[+1(8.77e-09)]
+CBO2923(hcpR)Score=5.9,P         1.14e-06  2_[+1(3.81e-07)]
+CBO2792(hcp)Score=6,Pos=         1.22e-08  2_[+1(4.05e-09)]
+CBO2926,Score=5.7Pos=-11         1.60e-07  2_[+1(5.35e-08)]
+CKL_0935(hcp)Score=4.8,P         5.65e-07  2_[+1(1.88e-07)]
+CKL_2419(frdX)Score=5.5,         2.63e-08  2_[+1(8.77e-09)]
+CKL_2420(hcpR)Score=5.5,         3.96e-07  2_[+1(1.32e-07)]
+NT01CX_0589(frdX)Score=5         3.04e-07  2_[+1(1.01e-07)]
+NT01CX_0590(hcpR)Score=5         4.82e-07  2_[+1(1.61e-07)]
+NT01CX_0591(hcp)Score=5.         1.14e-07  2_[+1(3.81e-08)]
+CPF_1730,Score=5.9,Pos=-         3.31e-09  2_[+1(1.10e-09)]
+CPF_2909(hcp)Score=5.6Po         1.14e-07  2_[+1(3.81e-08)]
+CTC01608,Score=5.7,Pos=-         4.82e-07  2_[+1(1.61e-07)]
+CTC00410(hcp)Score=6.1,P         3.75e-08  2_[+1(1.25e-08)]
+CTC01972(frdX)Score=5.6,         3.75e-08  2_[+1(1.25e-08)]
+CTC00896(hcpR)Score=5.4,         2.41e-06  2_[+1(8.02e-07)]
+CTC00439,Score=5.9,Pos=-         5.42e-09  2_[+1(1.81e-09)]
+CTC00897,Score=5.4,Pos=-         9.46e-07  2_[+1(3.15e-07)]
+CTC02534(Cbei_4355)Score         5.65e-07  2_[+1(1.88e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

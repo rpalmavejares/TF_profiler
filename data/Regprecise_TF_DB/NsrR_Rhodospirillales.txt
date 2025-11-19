@@ -1,0 +1,258 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/NsrR_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Magn03002343_p-41(nsrR)  1.0000     19  Magn03002343_p-81(nsrR)  1.0000     19  
+Magn03002344_p-72(hmp)   1.0000     19  Magn03002344_p-32(hmp)   1.0000     19  
+Gdia_1514_p-32(hmp)      1.0000     19  Gdia_1513_p-65(nsrR)     1.0000     19  
+APA01_21890_p22(hmp)     1.0000     19  APA01_05520_p-69(PF04343 1.0000     19  
+APA01_05530_p-31(nsrR)   1.0000     19  GOX0861_p-35(hmp)        1.0000     19  
+GOX0860_p-64(nsrR)       1.0000     19  GbCGDNIH1_1673_p-90(nsrR 1.0000     19  
+GbCGDNIH1_1674_p-62(hmp) 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/NsrR_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/NsrR_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             247    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    247    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.332 C 0.174 G 0.166 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.331 C 0.175 G 0.167 T 0.327 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GATGYATTTNAWATRCAYC MEME-1	width =  19  sites =  13  llr = 165  E-value = 4.4e-040
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  17:1:82223768:529::
+pos.-specific     C  ::::51:2121::1:7149
+probability       G  9317:1::2211:25::::
+matrix            T  ::925:86632328:1:61
+
+         bits    2.6                    
+                 2.3                    
+                 2.1 *                 *
+                 1.8 *                 *
+Relative         1.5 *                 *
+Entropy          1.3 * *             * *
+(18.3 bits)      1.0 *******       *****
+                 0.8 *******     *******
+                 0.5 ********  *********
+                 0.3 ********* *********
+                 0.0 -------------------
+
+Multilevel           GATGCATTTAAAATACATC
+consensus             G TT  A T TT GA C 
+sequence                      C         
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+GOX0861_p-35(hmp)             1  1.50e-08          . GATGTATTTCAAATAAACC           
+GOX0860_p-64(nsrR)            1  4.28e-08          . GGTTTATTTGAAATACATC           
+APA01_21890_p22(hmp)          1  1.85e-07          . GATGCATCGCATTGACACC           
+APA01_05530_p-31(nsrR)        1  3.41e-07          . GATGTGTTTTTAAGGCATC           
+Magn03002343_p-41(nsrR)       1  3.41e-07          . GATGCAATTAAAATATACC           
+Magn03002344_p-72(hmp)        1  3.74e-07          . GGTATATTTTAATTGCATC           
+APA01_05520_p-69(PF04343      1  5.39e-07          . GATGCCTTAAAAACACATC           
+Gdia_1514_p-32(hmp)           1  6.50e-07          . GATGCATCGTTTTTACATC           
+Magn03002344_p-32(hmp)        1  7.11e-07          . GGTTCATATCGAATGAACC           
+Magn03002343_p-81(nsrR)       1  7.11e-07          . GGTTCATTCGATATGAACC           
+GbCGDNIH1_1674_p-62(hmp)      1  1.28e-06          . GATGCATTTTATATACCTT           
+GbCGDNIH1_1673_p-90(nsrR      1  2.20e-06          . AAGGTATATAAAATGCATC           
+Gdia_1513_p-65(nsrR)          1  4.77e-06          . GATGTAAAAACGATGCATC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GOX0861_p-35(hmp)                 1.5e-08  [+1]
+GOX0860_p-64(nsrR)                4.3e-08  [+1]
+APA01_21890_p22(hmp)              1.8e-07  [+1]
+APA01_05530_p-31(nsrR)            3.4e-07  [+1]
+Magn03002343_p-41(nsrR)           3.4e-07  [+1]
+Magn03002344_p-72(hmp)            3.7e-07  [+1]
+APA01_05520_p-69(PF04343          5.4e-07  [+1]
+Gdia_1514_p-32(hmp)               6.5e-07  [+1]
+Magn03002344_p-32(hmp)            7.1e-07  [+1]
+Magn03002343_p-81(nsrR)           7.1e-07  [+1]
+GbCGDNIH1_1674_p-62(hmp)          1.3e-06  [+1]
+GbCGDNIH1_1673_p-90(nsrR          2.2e-06  [+1]
+Gdia_1513_p-65(nsrR)              4.8e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GATGYATTTNAWATRCAYC width=19 seqs=13
+GOX0861_p-35(hmp)        (    1) GATGTATTTCAAATAAACC  1 
+GOX0860_p-64(nsrR)       (    1) GGTTTATTTGAAATACATC  1 
+APA01_21890_p22(hmp)     (    1) GATGCATCGCATTGACACC  1 
+APA01_05530_p-31(nsrR)   (    1) GATGTGTTTTTAAGGCATC  1 
+Magn03002343_p-41(nsrR)  (    1) GATGCAATTAAAATATACC  1 
+Magn03002344_p-72(hmp)   (    1) GGTATATTTTAATTGCATC  1 
+APA01_05520_p-69(PF04343 (    1) GATGCCTTAAAAACACATC  1 
+Gdia_1514_p-32(hmp)      (    1) GATGCATCGTTTTTACATC  1 
+Magn03002344_p-32(hmp)   (    1) GGTTCATATCGAATGAACC  1 
+Magn03002343_p-81(nsrR)  (    1) GGTTCATTCGATATGAACC  1 
+GbCGDNIH1_1674_p-62(hmp) (    1) GATGCATTTTATATACCTT  1 
+GbCGDNIH1_1673_p-90(nsrR (    1) AAGGTATATAAAATGCATC  1 
+Gdia_1513_p-65(nsrR)     (    1) GATGTAAAAACGATGCATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 13 bayes= 1.06711 E= 4.4e-040 
+  -210  -1035    246  -1035 
+   107  -1035     88  -1035 
+ -1035  -1035   -112    150 
+  -210  -1035    205    -50 
+ -1035    162  -1035     50 
+   135   -119   -112  -1035 
+  -110  -1035  -1035    137 
+   -52    -19  -1035     91 
+  -110   -119    -12     91 
+   -10     40    -12     -9 
+   107   -119   -112   -109 
+    90  -1035   -112     -9 
+   122  -1035  -1035    -50 
+ -1035   -119    -12    123 
+    70  -1035    146  -1035 
+   -52    198  -1035   -208 
+   148   -119  -1035  -1035 
+ -1035    113  -1035     91 
+ -1035    240  -1035   -208 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 13 E= 4.4e-040 
+ 0.076923  0.000000  0.923077  0.000000 
+ 0.692308  0.000000  0.307692  0.000000 
+ 0.000000  0.000000  0.076923  0.923077 
+ 0.076923  0.000000  0.692308  0.230769 
+ 0.000000  0.538462  0.000000  0.461538 
+ 0.846154  0.076923  0.076923  0.000000 
+ 0.153846  0.000000  0.000000  0.846154 
+ 0.230769  0.153846  0.000000  0.615385 
+ 0.153846  0.076923  0.153846  0.615385 
+ 0.307692  0.230769  0.153846  0.307692 
+ 0.692308  0.076923  0.076923  0.153846 
+ 0.615385  0.000000  0.076923  0.307692 
+ 0.769231  0.000000  0.000000  0.230769 
+ 0.000000  0.076923  0.153846  0.769231 
+ 0.538462  0.000000  0.461538  0.000000 
+ 0.230769  0.692308  0.000000  0.076923 
+ 0.923077  0.076923  0.000000  0.000000 
+ 0.000000  0.384615  0.000000  0.615385 
+ 0.000000  0.923077  0.000000  0.076923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GATGYATTTNAWATRCAYC MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[AG]T[GT][CT]AT[TA]T[ATC]A[AT][AT]T[AG][CA]A[TC]C
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Magn03002343_p-41(nsrR)          3.41e-07  [+1(3.41e-07)]
+Magn03002343_p-81(nsrR)          7.11e-07  [+1(7.11e-07)]
+Magn03002344_p-72(hmp)           3.74e-07  [+1(3.74e-07)]
+Magn03002344_p-32(hmp)           7.11e-07  [+1(7.11e-07)]
+Gdia_1514_p-32(hmp)              6.50e-07  [+1(6.50e-07)]
+Gdia_1513_p-65(nsrR)             4.77e-06  [+1(4.77e-06)]
+APA01_21890_p22(hmp)             1.85e-07  [+1(1.85e-07)]
+APA01_05520_p-69(PF04343         5.39e-07  [+1(5.39e-07)]
+APA01_05530_p-31(nsrR)           3.41e-07  [+1(3.41e-07)]
+GOX0861_p-35(hmp)                1.50e-08  [+1(1.50e-08)]
+GOX0860_p-64(nsrR)               4.28e-08  [+1(4.28e-08)]
+GbCGDNIH1_1673_p-90(nsrR         2.20e-06  [+1(2.20e-06)]
+GbCGDNIH1_1674_p-62(hmp)         1.28e-06  [+1(1.28e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

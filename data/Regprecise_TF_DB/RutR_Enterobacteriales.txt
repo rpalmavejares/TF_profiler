@@ -1,0 +1,260 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RutR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b1013_p-124(rutR)        1.0000     20  b0032_p-294(carA)        1.0000     20  
+b1012_p-126(rutA)        1.0000     20  STM0066_p-294(carA)      1.0000     20  
+CKO_03351_p-268(carA)    1.0000     20  KPN_01039_p-123(rutR)    1.0000     20  
+KPN_01038_p-181(rutA)    1.0000     20  KPN_00040_p-267(carA)    1.0000     20  
+Ent638_1525_p-185(rutA)  1.0000     20  Ent638_0591_p-294(carA)  1.0000     20  
+EAM_0660_p-297(carA)     1.0000     20  Spro_1824_p-118(rutR)    1.0000     20  
+Spro_1823_p-187(rutA)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RutR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RutR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             260    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    260    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.231 C 0.231 G 0.177 T 0.362 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.231 C 0.231 G 0.178 T 0.36 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTTGACCATWTGGTCCACT MEME-1	width =  20  sites =  13  llr = 233  E-value = 7.0e-066
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  31:1:a::823:2:::2822
+pos.-specific     C  ::2:::a8::22:::a6:6:
+probability       G  :2:2a:::21::8a:::21:
+matrix            T  7888:::2:758::a:2:18
+
+         bits    2.5     *        *      
+                 2.2     *        *      
+                 2.0     ***      * *    
+                 1.7     ***     ** *    
+Relative         1.5     *****   **** *  
+Entropy          1.2     *****   **** *  
+(25.9 bits)      1.0   * *****   **** *  
+                 0.7 *********  ******* *
+                 0.5 ********** *********
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TTTTGACCATTTGGTCCACT
+consensus            A        AACA   A AA
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+b0032_p-294(carA)             1  4.64e-12          . TTTTGACCATTTGGTCCACT           
+STM0066_p-294(carA)           1  1.06e-11          . ATTTGACCATTTGGTCCACT           
+CKO_03351_p-268(carA)         1  2.34e-11          . TTTTGACCAAATGGTCCACT           
+KPN_00040_p-267(carA)         1  3.02e-11          . TTTTGACCATCTGGTCCACT           
+EAM_0660_p-297(carA)          1  7.02e-11          . TTCTGACCATTTGGTCCACT           
+Ent638_1525_p-185(rutA)       1  3.50e-10          . TTTTGACCATTCAGTCCACT           
+b1012_p-126(rutA)             1  9.81e-10          . TTTTGACCGTTTAGTCCACT           
+KPN_01038_p-181(rutA)         1  1.10e-09          . TTTTGACCATCCAGTCCACT           
+Ent638_0591_p-294(carA)       1  1.09e-08          . TTTTGACCATTTGGTCTGGT           
+Spro_1823_p-187(rutA)         1  3.02e-08          . TTTTGACCAAATGGTCTGTT           
+Spro_1824_p-118(rutR)         1  6.38e-08          . AACAGACCATTTGGTCAAAA           
+b1013_p-124(rutR)             1  7.42e-08          . AGTGGACTAAACGGTCAAAA           
+KPN_01039_p-123(rutR)         1  1.30e-07          . AGTGGACTGGATGGTCAAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b0032_p-294(carA)                 4.6e-12  [+1]
+STM0066_p-294(carA)               1.1e-11  [+1]
+CKO_03351_p-268(carA)             2.3e-11  [+1]
+KPN_00040_p-267(carA)               3e-11  [+1]
+EAM_0660_p-297(carA)                7e-11  [+1]
+Ent638_1525_p-185(rutA)           3.5e-10  [+1]
+b1012_p-126(rutA)                 9.8e-10  [+1]
+KPN_01038_p-181(rutA)             1.1e-09  [+1]
+Ent638_0591_p-294(carA)           1.1e-08  [+1]
+Spro_1823_p-187(rutA)               3e-08  [+1]
+Spro_1824_p-118(rutR)             6.4e-08  [+1]
+b1013_p-124(rutR)                 7.4e-08  [+1]
+KPN_01039_p-123(rutR)             1.3e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTTGACCATWTGGTCCACT width=20 seqs=13
+b0032_p-294(carA)        (    1) TTTTGACCATTTGGTCCACT  1 
+STM0066_p-294(carA)      (    1) ATTTGACCATTTGGTCCACT  1 
+CKO_03351_p-268(carA)    (    1) TTTTGACCAAATGGTCCACT  1 
+KPN_00040_p-267(carA)    (    1) TTTTGACCATCTGGTCCACT  1 
+EAM_0660_p-297(carA)     (    1) TTCTGACCATTTGGTCCACT  1 
+Ent638_1525_p-185(rutA)  (    1) TTTTGACCATTCAGTCCACT  1 
+b1012_p-126(rutA)        (    1) TTTTGACCGTTTAGTCCACT  1 
+KPN_01038_p-181(rutA)    (    1) TTTTGACCATCCAGTCCACT  1 
+Ent638_0591_p-294(carA)  (    1) TTTTGACCATTTGGTCTGGT  1 
+Spro_1823_p-187(rutA)    (    1) TTTTGACCAAATGGTCTGTT  1 
+Spro_1824_p-118(rutR)    (    1) AACAGACCATTTGGTCAAAA  1 
+b1013_p-124(rutR)        (    1) AGTGGACTAAACGGTCAAAA  1 
+KPN_01039_p-123(rutR)    (    1) AGTGGACTGGATGGTCAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 13 bayes= 1.06711 E= 7.0e-066 
+    41  -1035  -1035     94 
+  -158  -1035    -21    110 
+ -1035    -59  -1035    123 
+  -158  -1035    -21    110 
+ -1035  -1035    249  -1035 
+   211  -1035  -1035  -1035 
+ -1035    211  -1035  -1035 
+ -1035    187  -1035   -122 
+   187  -1035    -21  -1035 
+     0  -1035   -121     94 
+    41    -59  -1035     58 
+ -1035      0  -1035    110 
+     0  -1035    211  -1035 
+ -1035  -1035    249  -1035 
+ -1035  -1035  -1035    147 
+ -1035    211  -1035  -1035 
+     0    141  -1035   -122 
+   187  -1035    -21  -1035 
+     0    141   -121   -222 
+     0  -1035  -1035    110 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 13 E= 7.0e-066 
+ 0.307692  0.000000  0.000000  0.692308 
+ 0.076923  0.000000  0.153846  0.769231 
+ 0.000000  0.153846  0.000000  0.846154 
+ 0.076923  0.000000  0.153846  0.769231 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.846154  0.000000  0.153846 
+ 0.846154  0.000000  0.153846  0.000000 
+ 0.230769  0.000000  0.076923  0.692308 
+ 0.307692  0.153846  0.000000  0.538462 
+ 0.000000  0.230769  0.000000  0.769231 
+ 0.230769  0.000000  0.769231  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.230769  0.615385  0.000000  0.153846 
+ 0.846154  0.000000  0.153846  0.000000 
+ 0.230769  0.615385  0.076923  0.076923 
+ 0.230769  0.000000  0.000000  0.769231 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTGACCATWTGGTCCACT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TTTGACCA[TA][TA][TC][GA]GTC[CA]A[CA][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b1013_p-124(rutR)                7.42e-08  [+1(7.42e-08)]
+b0032_p-294(carA)                4.64e-12  [+1(4.64e-12)]
+b1012_p-126(rutA)                9.81e-10  [+1(9.81e-10)]
+STM0066_p-294(carA)              1.06e-11  [+1(1.06e-11)]
+CKO_03351_p-268(carA)            2.34e-11  [+1(2.34e-11)]
+KPN_01039_p-123(rutR)            1.30e-07  [+1(1.30e-07)]
+KPN_01038_p-181(rutA)            1.10e-09  [+1(1.10e-09)]
+KPN_00040_p-267(carA)            3.02e-11  [+1(3.02e-11)]
+Ent638_1525_p-185(rutA)          3.50e-10  [+1(3.50e-10)]
+Ent638_0591_p-294(carA)          1.09e-08  [+1(1.09e-08)]
+EAM_0660_p-297(carA)             7.02e-11  [+1(7.02e-11)]
+Spro_1824_p-118(rutR)            6.38e-08  [+1(6.38e-08)]
+Spro_1823_p-187(rutA)            3.02e-08  [+1(3.02e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

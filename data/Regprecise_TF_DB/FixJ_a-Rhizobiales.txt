@@ -1,0 +1,305 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= FixJ_a-Rhizobiales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AZC_4653(fixK)Score=4,Po 1.0000     18  AZC_4653(fixK)Score=4.6, 1.0000     18  
+AZC_4653(fixK)Score=3.7P 1.0000     18  AZC_1049(nifA)Score=3.1, 1.0000     18  
+bll2757(fixK)Score=5.1,P 1.0000     18  bll2757(fixK)Score=4.2,P 1.0000     18  
+BBta_2786(fixK)Score=4.5 1.0000     18  BBta_2786(fixK)Score=4.5 1.0000     18  
+mll6578(fixK)Score=4.9,P 1.0000     18  mll5857(nifA)Score=3.1,P 1.0000     18  
+Meso_2220(fixK)Score=5.2 1.0000     18  Nwi_1036(fixK)Score=4.6, 1.0000     18  
+Nwi_1036(fixK)Score=4,Po 1.0000     18  pRL100196(nifA)Score=3.5 1.0000     18  
+NGR_a01250(fixX)Score=3. 1.0000     18  NGR_b00800(fixK)Score=4. 1.0000     18  
+RPA4250(fixK)Score=5.1,P 1.0000     18  RPA4250(fixK)Score=4.7,P 1.0000     18  
+SMa0815(nifA)Score=3.1,P 1.0000     18  SMc03253(SMc03253)Score= 1.0000     18  
+SMa1225(fixK)Score=5.2,P 1.0000     18  SMa0762(fixK)Score=4.8,P 1.0000     18  
+Xaut_1746(fixK)Score=4.6 1.0000     18  Xaut_1746(fixK)Score=4.5 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna FixJ_a-Rhizobiales.fasta -oc FixJ_a-Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           18
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             432    N=              24    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.266 C 0.257 G 0.197 T 0.280 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.266 C 0.257 G 0.197 T 0.280 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  18  sites =  24  llr = 260  E-value = 3.5e-076
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::83115443::4:::a5
+pos.-specific     C  7:25:11113556811:1
+probability       G  1::294451:21::2::4
+matrix            T  2a1::4::5433:189::
+
+         bits    2.3                   
+                 2.1                   
+                 1.9  *  *           * 
+                 1.6  *  *           * 
+Relative         1.4  *  *           * 
+Entropy          1.2  *  *          ** 
+(15.6 bits)      0.9 *** *       ***** 
+                 0.7 *** * *     ***** 
+                 0.5 ********  ********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           CTACGGAGTTCCCCTTAA
+consensus            T  A TGAAATTA    G
+sequence                      C        
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Meso_2220(fixK)Score=5.2      1  2.19e-09          . CTACGTAGTTTCCCTTAG           
+SMc03253(SMc03253)Score=      1  1.71e-08          . CTAGGTAGTTTCCCTTAG           
+SMa1225(fixK)Score=5.2,P      1  2.04e-08          . CTAAGTAATTTCCCTTAG           
+RPA4250(fixK)Score=5.1,P      1  3.38e-08          . CTACGTAGACCTACTTAG           
+bll2757(fixK)Score=5.1,P      1  4.63e-08          . CTACGGGGTTCTACGTAA           
+SMa0762(fixK)Score=4.8,P      1  9.73e-08          . CTAAGTAGTTCCCTTTAG           
+mll6578(fixK)Score=4.9,P      1  1.12e-07          . CTAGGTAGTTTCCCGTAG           
+RPA4250(fixK)Score=4.7,P      1  3.71e-07          . TTAGGGGAACCCACTTAA           
+Nwi_1036(fixK)Score=4.6,      1  6.00e-07          . CTCCGTAAGACCCCTTAG           
+AZC_4653(fixK)Score=4.6,      1  6.73e-07          . CTACGCAATACTACTTAA           
+Xaut_1746(fixK)Score=4.6      1  7.54e-07          . CTCCGTAAAACTACTTAA           
+NGR_b00800(fixK)Score=4.      1  1.17e-06          . CTACGGGGAATCCCGCAA           
+BBta_2786(fixK)Score=4.5      1  1.95e-06          . GTAAGGGAACGTCCTTAA           
+BBta_2786(fixK)Score=4.5      1  4.18e-06          . CTACGTATATCTACGTAA           
+Xaut_1746(fixK)Score=4.5      1  5.47e-06          . TTAAGGGCACCGACTTAA           
+Nwi_1036(fixK)Score=4,Po      1  7.09e-06          . TTAGGAGGCTGCCCTTAG           
+bll2757(fixK)Score=4.2,P      1  1.16e-05          . GTAAGGCACCCCCCTTAA           
+AZC_4653(fixK)Score=4,Po      1  2.43e-05          . CTCCGTAAAATCACCTAC           
+pRL100196(nifA)Score=3.5      1  2.80e-05          . CTTAGGAATATGCGTTAG           
+mll5857(nifA)Score=3.1,P      1  6.81e-05          . CTTCGGCGTTCTCTTCAA           
+AZC_1049(nifA)Score=3.1,      1  7.21e-05          . CTCCGCGGTTTCCATTAT           
+AZC_4653(fixK)Score=3.7P      1  1.01e-04          . TTAAGGGCTGGGCCCTAA           
+NGR_a01250(fixX)Score=3.      1  1.38e-04          . CTAAAGGGGAGCATTGAG           
+SMa0815(nifA)Score=3.1,P      1  2.53e-04          . TTACAAGAACCAACTTAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Meso_2220(fixK)Score=5.2          2.2e-09  [+1]
+SMc03253(SMc03253)Score=          1.7e-08  [+1]
+SMa1225(fixK)Score=5.2,P            2e-08  [+1]
+RPA4250(fixK)Score=5.1,P          3.4e-08  [+1]
+bll2757(fixK)Score=5.1,P          4.6e-08  [+1]
+SMa0762(fixK)Score=4.8,P          9.7e-08  [+1]
+mll6578(fixK)Score=4.9,P          1.1e-07  [+1]
+RPA4250(fixK)Score=4.7,P          3.7e-07  [+1]
+Nwi_1036(fixK)Score=4.6,            6e-07  [+1]
+AZC_4653(fixK)Score=4.6,          6.7e-07  [+1]
+Xaut_1746(fixK)Score=4.6          7.5e-07  [+1]
+NGR_b00800(fixK)Score=4.          1.2e-06  [+1]
+BBta_2786(fixK)Score=4.5          1.9e-06  [+1]
+BBta_2786(fixK)Score=4.5          4.2e-06  [+1]
+Xaut_1746(fixK)Score=4.5          5.5e-06  [+1]
+Nwi_1036(fixK)Score=4,Po          7.1e-06  [+1]
+bll2757(fixK)Score=4.2,P          1.2e-05  [+1]
+AZC_4653(fixK)Score=4,Po          2.4e-05  [+1]
+pRL100196(nifA)Score=3.5          2.8e-05  [+1]
+mll5857(nifA)Score=3.1,P          6.8e-05  [+1]
+AZC_1049(nifA)Score=3.1,          7.2e-05  [+1]
+AZC_4653(fixK)Score=3.7P           0.0001  [+1]
+NGR_a01250(fixX)Score=3.          0.00014  [+1]
+SMa0815(nifA)Score=3.1,P          0.00025  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=18 seqs=24
+Meso_2220(fixK)Score=5.2 (    1) CTACGTAGTTTCCCTTAG  1 
+SMc03253(SMc03253)Score= (    1) CTAGGTAGTTTCCCTTAG  1 
+SMa1225(fixK)Score=5.2,P (    1) CTAAGTAATTTCCCTTAG  1 
+RPA4250(fixK)Score=5.1,P (    1) CTACGTAGACCTACTTAG  1 
+bll2757(fixK)Score=5.1,P (    1) CTACGGGGTTCTACGTAA  1 
+SMa0762(fixK)Score=4.8,P (    1) CTAAGTAGTTCCCTTTAG  1 
+mll6578(fixK)Score=4.9,P (    1) CTAGGTAGTTTCCCGTAG  1 
+RPA4250(fixK)Score=4.7,P (    1) TTAGGGGAACCCACTTAA  1 
+Nwi_1036(fixK)Score=4.6, (    1) CTCCGTAAGACCCCTTAG  1 
+AZC_4653(fixK)Score=4.6, (    1) CTACGCAATACTACTTAA  1 
+Xaut_1746(fixK)Score=4.6 (    1) CTCCGTAAAACTACTTAA  1 
+NGR_b00800(fixK)Score=4. (    1) CTACGGGGAATCCCGCAA  1 
+BBta_2786(fixK)Score=4.5 (    1) GTAAGGGAACGTCCTTAA  1 
+BBta_2786(fixK)Score=4.5 (    1) CTACGTATATCTACGTAA  1 
+Xaut_1746(fixK)Score=4.5 (    1) TTAAGGGCACCGACTTAA  1 
+Nwi_1036(fixK)Score=4,Po (    1) TTAGGAGGCTGCCCTTAG  1 
+bll2757(fixK)Score=4.2,P (    1) GTAAGGCACCCCCCTTAA  1 
+AZC_4653(fixK)Score=4,Po (    1) CTCCGTAAAATCACCTAC  1 
+pRL100196(nifA)Score=3.5 (    1) CTTAGGAATATGCGTTAG  1 
+mll5857(nifA)Score=3.1,P (    1) CTTCGGCGTTCTCTTCAA  1 
+AZC_1049(nifA)Score=3.1, (    1) CTCCGCGGTTTCCATTAT  1 
+AZC_4653(fixK)Score=3.7P (    1) TTAAGGGCTGGGCCCTAA  1 
+NGR_a01250(fixX)Score=3. (    1) CTAAAGGGGAGCATTGAG  1 
+SMa0815(nifA)Score=3.1,P (    1) TTACAAGAACCAACTTAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 24 bayes= 1.45943 E= 3.5e-076 
+ -1123    146   -124    -43 
+ -1123  -1123  -1123    184 
+   149    -62  -1123   -175 
+    33     96    -24  -1123 
+  -167  -1123    222  -1123 
+  -167   -162    108     57 
+    91   -162    108  -1123 
+    65   -162    122   -274 
+    49   -162   -124     71 
+    13     -4   -224     57 
+ -1123     96    -24     25 
+  -267    108    -66      6 
+    65    118  -1123  -1123 
+  -267    162   -224   -116 
+ -1123   -162    -24    142 
+ -1123   -162   -224    164 
+   191  -1123  -1123  -1123 
+    78   -162    108   -274 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 24 E= 3.5e-076 
+ 0.000000  0.708333  0.083333  0.208333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.750000  0.166667  0.000000  0.083333 
+ 0.333333  0.500000  0.166667  0.000000 
+ 0.083333  0.000000  0.916667  0.000000 
+ 0.083333  0.083333  0.416667  0.416667 
+ 0.500000  0.083333  0.416667  0.000000 
+ 0.416667  0.083333  0.458333  0.041667 
+ 0.375000  0.083333  0.083333  0.458333 
+ 0.291667  0.250000  0.041667  0.416667 
+ 0.000000  0.500000  0.166667  0.333333 
+ 0.041667  0.541667  0.125000  0.291667 
+ 0.416667  0.583333  0.000000  0.000000 
+ 0.041667  0.791667  0.041667  0.125000 
+ 0.000000  0.083333  0.166667  0.750000 
+ 0.000000  0.083333  0.041667  0.875000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.458333  0.083333  0.416667  0.041667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CT]TA[CA]G[GT][AG][GA][TA][TAC][CT][CT][CA]CTTA[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AZC_4653(fixK)Score=4,Po         2.43e-05  [+1(2.43e-05)]
+AZC_4653(fixK)Score=4.6,         6.73e-07  [+1(6.73e-07)]
+AZC_4653(fixK)Score=3.7P         1.01e-04  18
+AZC_1049(nifA)Score=3.1,         7.21e-05  [+1(7.21e-05)]
+bll2757(fixK)Score=5.1,P         4.63e-08  [+1(4.63e-08)]
+bll2757(fixK)Score=4.2,P         1.16e-05  [+1(1.16e-05)]
+BBta_2786(fixK)Score=4.5         4.18e-06  [+1(4.18e-06)]
+BBta_2786(fixK)Score=4.5         1.95e-06  [+1(1.95e-06)]
+mll6578(fixK)Score=4.9,P         1.12e-07  [+1(1.12e-07)]
+mll5857(nifA)Score=3.1,P         6.81e-05  [+1(6.81e-05)]
+Meso_2220(fixK)Score=5.2         2.19e-09  [+1(2.19e-09)]
+Nwi_1036(fixK)Score=4.6,         6.00e-07  [+1(6.00e-07)]
+Nwi_1036(fixK)Score=4,Po         7.09e-06  [+1(7.09e-06)]
+pRL100196(nifA)Score=3.5         2.80e-05  [+1(2.80e-05)]
+NGR_a01250(fixX)Score=3.         1.38e-04  18
+NGR_b00800(fixK)Score=4.         1.17e-06  [+1(1.17e-06)]
+RPA4250(fixK)Score=5.1,P         3.38e-08  [+1(3.38e-08)]
+RPA4250(fixK)Score=4.7,P         3.71e-07  [+1(3.71e-07)]
+SMa0815(nifA)Score=3.1,P         2.53e-04  18
+SMc03253(SMc03253)Score=         1.71e-08  [+1(1.71e-08)]
+SMa1225(fixK)Score=5.2,P         2.04e-08  [+1(2.04e-08)]
+SMa0762(fixK)Score=4.8,P         9.73e-08  [+1(9.73e-08)]
+Xaut_1746(fixK)Score=4.6         7.54e-07  [+1(7.54e-07)]
+Xaut_1746(fixK)Score=4.5         5.47e-06  [+1(5.47e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

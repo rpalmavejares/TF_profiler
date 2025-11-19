@@ -1,0 +1,237 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HutC_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HCH_04169_p-47(hutI)     1.0000     20  HCH_04169_p-291(hutI)    1.0000     20  
+Mmwyl1_2465_p-4(COG3314) 1.0000     20  Mmwyl1_2465_p-212(COG331 1.0000     20  
+Mmwyl1_3903_p-65(hutF)   1.0000     20  Mmwyl1_3903_p-249(hutF)  1.0000     20  
+Mmwyl1_3905_p-73(hutC)   1.0000     20  Mmwyl1_3902_p-257(hutU)  1.0000     20  
+Mmwyl1_3902_p-73(hutU)   1.0000     20  MED297_04904_p-35(hutI)  1.0000     20  
+MED297_04899_p-52(hutC)  1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HutC_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HutC_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             220    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    220    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.382 C 0.105 G 0.118 T 0.395 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.379 C 0.107 G 0.121 T 0.393 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTATATACAWBT MEME-1	width =  13  sites =  11  llr = 143  E-value = 3.9e-031
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a:a:a:a5:1
+pos.-specific     C  ::::::::a::32
+probability       G  :a::::2::::4:
+matrix            T  a:a:a:8:::547
+
+         bits    3.2         *    
+                 2.9  *      *    
+                 2.6  *      *    
+                 2.3  *      *    
+Relative         1.9  *      *    
+Entropy          1.6  *      *    
+(18.8 bits)      1.3 ****** ***   
+                 1.0 ********** * 
+                 0.6 ********** **
+                 0.3 *************
+                 0.0 -------------
+
+Multilevel           TGTATATACAAGT
+consensus                      TT 
+sequence                        C 
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+Mmwyl1_3902_p-257(hutU)       6  1.15e-07      TATAA TGTATATACAAGT AT        
+MED297_04899_p-52(hutC)       6  2.48e-07      TTAGT TGTATATACAACT TG        
+MED297_04904_p-35(hutI)       6  2.48e-07      CAAGT TGTATATACAACT AA        
+Mmwyl1_3902_p-73(hutU)        6  3.94e-07      GTAAT TGTATATACATGT TC        
+Mmwyl1_2465_p-4(COG3314)      6  3.94e-07      TAATA TGTATATACATGT TG        
+Mmwyl1_3905_p-73(hutC)        6  4.62e-07      CTAGA TGTATAGACAAGT TG        
+Mmwyl1_2465_p-212(COG331      6  6.82e-07      TGCTA TGTATAGACAACC TT        
+Mmwyl1_3903_p-249(hutF)       6  1.11e-06      GAACA TGTATATACAATT AC        
+HCH_04169_p-47(hutI)          6  1.59e-06      TTAAA TGTATATACATTT AT        
+HCH_04169_p-291(hutI)         6  1.81e-06      AAATT TGTATATACATTC AA        
+Mmwyl1_3903_p-65(hutF)        6  3.29e-06      ATACT TGTATATACATTA TA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mmwyl1_3902_p-257(hutU)           1.1e-07  5_[+1]_2
+MED297_04899_p-52(hutC)           2.5e-07  5_[+1]_2
+MED297_04904_p-35(hutI)           2.5e-07  5_[+1]_2
+Mmwyl1_3902_p-73(hutU)            3.9e-07  5_[+1]_2
+Mmwyl1_2465_p-4(COG3314)          3.9e-07  5_[+1]_2
+Mmwyl1_3905_p-73(hutC)            4.6e-07  5_[+1]_2
+Mmwyl1_2465_p-212(COG331          6.8e-07  5_[+1]_2
+Mmwyl1_3903_p-249(hutF)           1.1e-06  5_[+1]_2
+HCH_04169_p-47(hutI)              1.6e-06  5_[+1]_2
+HCH_04169_p-291(hutI)             1.8e-06  5_[+1]_2
+Mmwyl1_3903_p-65(hutF)            3.3e-06  5_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTATATACAWBT width=13 seqs=11
+Mmwyl1_3902_p-257(hutU)  (    6) TGTATATACAAGT  1 
+MED297_04899_p-52(hutC)  (    6) TGTATATACAACT  1 
+MED297_04904_p-35(hutI)  (    6) TGTATATACAACT  1 
+Mmwyl1_3902_p-73(hutU)   (    6) TGTATATACATGT  1 
+Mmwyl1_2465_p-4(COG3314) (    6) TGTATATACATGT  1 
+Mmwyl1_3905_p-73(hutC)   (    6) TGTATAGACAAGT  1 
+Mmwyl1_2465_p-212(COG331 (    6) TGTATAGACAACC  1 
+Mmwyl1_3903_p-249(hutF)  (    6) TGTATATACAATT  1 
+HCH_04169_p-47(hutI)     (    6) TGTATATACATTT  1 
+HCH_04169_p-291(hutI)    (    6) TGTATATACATTC  1 
+Mmwyl1_3903_p-65(hutF)   (    6) TGTATATACATTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 88 bayes= 3.93511 E= 3.9e-031 
+ -1010  -1010  -1010    135 
+ -1010  -1010    305  -1010 
+ -1010  -1010  -1010    135 
+   140  -1010  -1010  -1010 
+ -1010  -1010  -1010    135 
+   140  -1010  -1010  -1010 
+ -1010  -1010     59    106 
+   140  -1010  -1010  -1010 
+ -1010    322  -1010  -1010 
+   140  -1010  -1010  -1010 
+    52  -1010  -1010     21 
+ -1010    135    159    -11 
+  -206     76  -1010     89 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 11 E= 3.9e-031 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.181818  0.818182 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.545455  0.000000  0.000000  0.454545 
+ 0.000000  0.272727  0.363636  0.363636 
+ 0.090909  0.181818  0.000000  0.727273 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWBT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTATATACA[AT][GTC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_04169_p-47(hutI)             1.28e-05  5_[+1(1.59e-06)]_2
+HCH_04169_p-291(hutI)            1.45e-05  5_[+1(1.81e-06)]_2
+Mmwyl1_2465_p-4(COG3314)         3.16e-06  5_[+1(3.94e-07)]_2
+Mmwyl1_2465_p-212(COG331         5.46e-06  5_[+1(6.82e-07)]_2
+Mmwyl1_3903_p-65(hutF)           2.63e-05  5_[+1(3.29e-06)]_2
+Mmwyl1_3903_p-249(hutF)          8.85e-06  5_[+1(1.11e-06)]_2
+Mmwyl1_3905_p-73(hutC)           3.70e-06  5_[+1(4.62e-07)]_2
+Mmwyl1_3902_p-257(hutU)          9.19e-07  5_[+1(1.15e-07)]_2
+Mmwyl1_3902_p-73(hutU)           3.16e-06  5_[+1(3.94e-07)]_2
+MED297_04904_p-35(hutI)          1.98e-06  5_[+1(2.48e-07)]_2
+MED297_04899_p-52(hutC)          1.98e-06  5_[+1(2.48e-07)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

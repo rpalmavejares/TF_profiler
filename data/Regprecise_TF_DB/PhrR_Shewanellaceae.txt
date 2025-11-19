@@ -1,0 +1,304 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/PhrR_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SO3386_p-70(COG3272)     1.0000     25  SO3386_p-18(COG3272)     1.0000     25  
+SO3420_p-70(SO3420)      1.0000     25  Sputcn32_2716_p-70(COG32 1.0000     25  
+Sputcn32_2716_p-18(COG32 1.0000     25  Sputcn32_2738_p-70(SO342 1.0000     25  
+Sputw3181_1296_p-70(COG3 1.0000     25  Sputw3181_1296_p-18(COG3 1.0000     25  
+Sputw3181_1274_p-70(SO34 1.0000     25  Shewana3_1164_p-70(COG32 1.0000     25  
+Shewana3_1164_p-18(COG32 1.0000     25  Shewana3_1135_p-70(SO342 1.0000     25  
+Shewmr4_1163_p-70(COG327 1.0000     25  Shewmr4_1163_p-18(COG327 1.0000     25  
+Shewmr4_1134_p-70(SO3420 1.0000     25  Shewmr7_1234_p-70(COG327 1.0000     25  
+Shewmr7_1234_p-18(COG327 1.0000     25  Shewmr7_1205_p-70(SO3420 1.0000     25  
+Sbal_3056_p-70(COG3272)  1.0000     25  Sbal_3056_p-18(COG3272)  1.0000     25  
+Sbal_1223_p-70(SO3420)   1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/PhrR_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/PhrR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           25
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             525    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    525    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.373 C 0.135 G 0.164 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.372 C 0.136 G 0.164 T 0.327 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RTACAWDRASTTRATTTDTGTACA MEME-1	width =  24  sites =  21  llr = 442  E-value = 5.5e-137
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4:a:a735a2:1473::3:::a:a
+pos.-specific     C  :::a::1::3:2:2:32:::::9:
+probability       G  6:::::35:5::51:::3:a::::
+matrix            T  :a:::32:::a7::7783a:a:1:
+
+         bits    2.9    *                    
+                 2.6    *               *    
+                 2.3    *               *  * 
+                 2.0    *               *  * 
+Relative         1.7  * *      *       *** * 
+Entropy          1.4  ****   * *       ******
+(30.4 bits)      1.2 *****   * *    ** ******
+                 0.9 *****  **** *  ** ******
+                 0.6 ****** ********** ******
+                 0.3 ************************
+                 0.0 ------------------------
+
+Multilevel           GTACAAAAAGTTGATTTATGTACA
+consensus            A    TGG C  A ACCG      
+sequence                              T      
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+Sputw3181_1296_p-70(COG3      2  6.73e-12          T GTACAAAAACTTGATCTTTGTACA           
+Sputcn32_2716_p-70(COG32      2  6.73e-12          T GTACAAAAACTTGATCTTTGTACA           
+Shewmr7_1234_p-70(COG327      2  1.17e-11          T GTACAAAAACTTGATCCTTGTACA           
+Shewmr4_1163_p-70(COG327      2  1.17e-11          T GTACAAAAACTTGATCCTTGTACA           
+Shewana3_1164_p-70(COG32      2  1.17e-11          T GTACAAAAACTTGATCCTTGTACA           
+SO3386_p-70(COG3272)          2  1.17e-11          T GTACAAAAACTTGATCCTTGTACA           
+Shewmr7_1205_p-70(SO3420      2  1.94e-11          A GTACATTGAGTTAATTTGTGTACA           
+Shewmr4_1134_p-70(SO3420      2  1.94e-11          A GTACATTGAGTTAATTTGTGTACA           
+Shewana3_1135_p-70(SO342      2  1.94e-11          A GTACATTGAGTTAATTTGTGTACA           
+Sbal_1223_p-70(SO3420)        2  2.26e-11          A GTACATCAAGTTAATTTGTGTACA           
+Sputw3181_1274_p-70(SO34      2  2.26e-11          A GTACATCAAGTTAATTTGTGTACA           
+Sputcn32_2738_p-70(SO342      2  2.26e-11          A GTACATCAAGTTAATTTGTGTACA           
+SO3420_p-70(SO3420)           2  5.33e-11          A GTACATTAAGTTAATTTGTGTACA           
+Sbal_3056_p-70(COG3272)       2  7.77e-11          T ATACAAAAACTTGATCCTTGTACA           
+Sbal_3056_p-18(COG3272)       2  1.67e-10          G ATACAAGGAGTCGACTTATGTACA           
+Shewmr7_1234_p-18(COG327      2  1.18e-09          G ATACAAGGAATAGCATTATGTACA           
+Shewmr4_1163_p-18(COG327      2  1.18e-09          G ATACAAGGAATAGCATTATGTACA           
+Shewana3_1164_p-18(COG32      2  1.18e-09          G ATACAAGGAATAGCATTATGTACA           
+SO3386_p-18(COG3272)          2  2.81e-09          G ATACAAGGAATCTCATTATGTACA           
+Sputw3181_1296_p-18(COG3      2  2.92e-09          T ATACAAGGAGTCAGATTATGTATA           
+Sputcn32_2716_p-18(COG32      2  2.92e-09          T ATACAAGGAGTCAGATTATGTATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputw3181_1296_p-70(COG3          6.7e-12  1_[+1]
+Sputcn32_2716_p-70(COG32          6.7e-12  1_[+1]
+Shewmr7_1234_p-70(COG327          1.2e-11  1_[+1]
+Shewmr4_1163_p-70(COG327          1.2e-11  1_[+1]
+Shewana3_1164_p-70(COG32          1.2e-11  1_[+1]
+SO3386_p-70(COG3272)              1.2e-11  1_[+1]
+Shewmr7_1205_p-70(SO3420          1.9e-11  1_[+1]
+Shewmr4_1134_p-70(SO3420          1.9e-11  1_[+1]
+Shewana3_1135_p-70(SO342          1.9e-11  1_[+1]
+Sbal_1223_p-70(SO3420)            2.3e-11  1_[+1]
+Sputw3181_1274_p-70(SO34          2.3e-11  1_[+1]
+Sputcn32_2738_p-70(SO342          2.3e-11  1_[+1]
+SO3420_p-70(SO3420)               5.3e-11  1_[+1]
+Sbal_3056_p-70(COG3272)           7.8e-11  1_[+1]
+Sbal_3056_p-18(COG3272)           1.7e-10  1_[+1]
+Shewmr7_1234_p-18(COG327          1.2e-09  1_[+1]
+Shewmr4_1163_p-18(COG327          1.2e-09  1_[+1]
+Shewana3_1164_p-18(COG32          1.2e-09  1_[+1]
+SO3386_p-18(COG3272)              2.8e-09  1_[+1]
+Sputw3181_1296_p-18(COG3          2.9e-09  1_[+1]
+Sputcn32_2716_p-18(COG32          2.9e-09  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RTACAWDRASTTRATTTDTGTACA width=24 seqs=21
+Sputw3181_1296_p-70(COG3 (    2) GTACAAAAACTTGATCTTTGTACA  1 
+Sputcn32_2716_p-70(COG32 (    2) GTACAAAAACTTGATCTTTGTACA  1 
+Shewmr7_1234_p-70(COG327 (    2) GTACAAAAACTTGATCCTTGTACA  1 
+Shewmr4_1163_p-70(COG327 (    2) GTACAAAAACTTGATCCTTGTACA  1 
+Shewana3_1164_p-70(COG32 (    2) GTACAAAAACTTGATCCTTGTACA  1 
+SO3386_p-70(COG3272)     (    2) GTACAAAAACTTGATCCTTGTACA  1 
+Shewmr7_1205_p-70(SO3420 (    2) GTACATTGAGTTAATTTGTGTACA  1 
+Shewmr4_1134_p-70(SO3420 (    2) GTACATTGAGTTAATTTGTGTACA  1 
+Shewana3_1135_p-70(SO342 (    2) GTACATTGAGTTAATTTGTGTACA  1 
+Sbal_1223_p-70(SO3420)   (    2) GTACATCAAGTTAATTTGTGTACA  1 
+Sputw3181_1274_p-70(SO34 (    2) GTACATCAAGTTAATTTGTGTACA  1 
+Sputcn32_2738_p-70(SO342 (    2) GTACATCAAGTTAATTTGTGTACA  1 
+SO3420_p-70(SO3420)      (    2) GTACATTAAGTTAATTTGTGTACA  1 
+Sbal_3056_p-70(COG3272)  (    2) ATACAAAAACTTGATCCTTGTACA  1 
+Sbal_3056_p-18(COG3272)  (    2) ATACAAGGAGTCGACTTATGTACA  1 
+Shewmr7_1234_p-18(COG327 (    2) ATACAAGGAATAGCATTATGTACA  1 
+Shewmr4_1163_p-18(COG327 (    2) ATACAAGGAATAGCATTATGTACA  1 
+Shewana3_1164_p-18(COG32 (    2) ATACAAGGAATAGCATTATGTACA  1 
+SO3386_p-18(COG3272)     (    2) ATACAAGGAATCTCATTATGTACA  1 
+Sputw3181_1296_p-18(COG3 (    2) ATACAAGGAGTCAGATTATGTATA  1 
+Sputcn32_2716_p-18(COG32 (    2) ATACAAGGAGTCAGATTATGTATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 42 bayes= 2.64186 E= 5.5e-137 
+     3  -1104    191  -1104 
+ -1104  -1104  -1104    161 
+   142  -1104  -1104  -1104 
+ -1104    288  -1104  -1104 
+   142  -1104  -1104  -1104 
+    84  -1104  -1104      3 
+   -16      7    102    -78 
+    49  -1104    153  -1104 
+   142  -1104  -1104  -1104 
+   -97    129    153  -1104 
+ -1104  -1104  -1104    161 
+  -138     48  -1104    103 
+    20  -1104    167   -278 
+    94     48    -79  -1104 
+   -38   -151  -1104    103 
+ -1104    129  -1104    103 
+ -1104     81  -1104    122 
+   -16  -1104    102      3 
+ -1104  -1104  -1104    161 
+ -1104  -1104    260  -1104 
+ -1104  -1104  -1104    161 
+   142  -1104  -1104  -1104 
+ -1104    273  -1104   -178 
+   142  -1104  -1104  -1104 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 21 E= 5.5e-137 
+ 0.380952  0.000000  0.619048  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.333333  0.142857  0.333333  0.190476 
+ 0.523810  0.000000  0.476190  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.190476  0.333333  0.476190  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.142857  0.190476  0.000000  0.666667 
+ 0.428571  0.000000  0.523810  0.047619 
+ 0.714286  0.190476  0.095238  0.000000 
+ 0.285714  0.047619  0.000000  0.666667 
+ 0.000000  0.333333  0.000000  0.666667 
+ 0.000000  0.238095  0.000000  0.761905 
+ 0.333333  0.000000  0.333333  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.904762  0.000000  0.095238 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTACAWDRASTTRATTTDTGTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]TACA[AT][AG][AG]A[GC]TT[GA]A[TA][TC][TC][AGT]TGTACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SO3386_p-70(COG3272)             2.33e-11  1_[+1(1.17e-11)]
+SO3386_p-18(COG3272)             5.62e-09  1_[+1(2.81e-09)]
+SO3420_p-70(SO3420)              1.07e-10  1_[+1(5.33e-11)]
+Sputcn32_2716_p-70(COG32         1.35e-11  1_[+1(6.73e-12)]
+Sputcn32_2716_p-18(COG32         5.85e-09  1_[+1(2.92e-09)]
+Sputcn32_2738_p-70(SO342         4.52e-11  1_[+1(2.26e-11)]
+Sputw3181_1296_p-70(COG3         1.35e-11  1_[+1(6.73e-12)]
+Sputw3181_1296_p-18(COG3         5.85e-09  1_[+1(2.92e-09)]
+Sputw3181_1274_p-70(SO34         4.52e-11  1_[+1(2.26e-11)]
+Shewana3_1164_p-70(COG32         2.33e-11  1_[+1(1.17e-11)]
+Shewana3_1164_p-18(COG32         2.36e-09  1_[+1(1.18e-09)]
+Shewana3_1135_p-70(SO342         3.87e-11  1_[+1(1.94e-11)]
+Shewmr4_1163_p-70(COG327         2.33e-11  1_[+1(1.17e-11)]
+Shewmr4_1163_p-18(COG327         2.36e-09  1_[+1(1.18e-09)]
+Shewmr4_1134_p-70(SO3420         3.87e-11  1_[+1(1.94e-11)]
+Shewmr7_1234_p-70(COG327         2.33e-11  1_[+1(1.17e-11)]
+Shewmr7_1234_p-18(COG327         2.36e-09  1_[+1(1.18e-09)]
+Shewmr7_1205_p-70(SO3420         3.87e-11  1_[+1(1.94e-11)]
+Sbal_3056_p-70(COG3272)          1.55e-10  1_[+1(7.77e-11)]
+Sbal_3056_p-18(COG3272)          3.35e-10  1_[+1(1.67e-10)]
+Sbal_1223_p-70(SO3420)           4.52e-11  1_[+1(2.26e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

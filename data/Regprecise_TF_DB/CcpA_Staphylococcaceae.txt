@@ -1,0 +1,1953 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/CcpA_Staphylococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SA1718_p-137(putP)       1.0000     16  SA2320_p-76(pfoR)        1.0000     16  
+SA1585_p-71(putA)        1.0000     16  SA0225_p-86(SA0225)      1.0000     16  
+SA0184_p-63(SA0184)      1.0000     16  SA0818_p-150(rocD)       1.0000     16  
+SA0260_p-86(rbsU)        1.0000     16  SA2341_p-112(rocA)       1.0000     16  
+SA1162_p-27(SA1162)      1.0000     16  SA0873_p-62(SA0873)      1.0000     16  
+SA0299_p-93(SA0299)      1.0000     16  SA0511_p-97(SA0511)      1.0000     16  
+SA1437_p-50(SA1437)      1.0000     16  SA1975_p-128(SA1975)     1.0000     16  
+SA2105_p-117(SA2105)     1.0000     16  SA2109_p-122(SA2109)     1.0000     16  
+SAS074_p-64(SAS074)      1.0000     16  SA2167_p-127(scrA)       1.0000     16  
+SA2167_p-61(scrA)        1.0000     16  SA1847_p-65(scrR)        1.0000     16  
+SA1732_p-162(sdcS)       1.0000     16  SA0994_p-235(sdhC)       1.0000     16  
+SA0107_p-237(spa)        1.0000     16  SA0432_p-68(treP)        1.0000     16  
+SA1819_p-39(tst)         1.0000     16  SA0214_p-61(uhpT)        1.0000     16  
+SA0760_p-152(yusH)       1.0000     16  SA0218_p-59(pflB)        1.0000     16  
+SA1521_p-151(pfkA)       1.0000     16  SA1609_p-44(pckA)        1.0000     16  
+SA0479_p-63(nupC)        1.0000     16  SA0305_p-109(nanK)       1.0000     16  
+SA0304_p-64(nanA)        1.0000     16  SA2334_p-123(mvaS)       1.0000     16  
+SA2333_p-147(mvaA)       1.0000     16  SA2433_p-45(manR)        1.0000     16  
+SA2434_p-37(manP)        1.0000     16  SA0206_p-130(msmX)       1.0000     16  
+SA1339_p-43(malR)        1.0000     16  SA2463_p-137(lip)        1.0000     16  
+SA0508_p-79(kbl)         1.0000     16  SA0182_p-97(ipdC)        1.0000     16  
+SA2122_p-57(hutU)        1.0000     16  SA0008_p-59(hutH)        1.0000     16  
+SA1007_p-334(hla)        1.0000     16  SA2300_p-148(gudP)       1.0000     16  
+SA0819_p-42(gudB)        1.0000     16  SA0819_p-84(gudB)        1.0000     16  
+SA2295_p-79(gntR)        1.0000     16  SA2115_p-241(glvR)       1.0000     16  
+SA2114_p-104(glvC)       1.0000     16  SA2135_p-64(gltS)        1.0000     16  
+SA0325_p-76(glpT)        1.0000     16  SA1140_p-133(glpF)       1.0000     16  
+SA0183_p-269(glcA)       1.0000     16  SA0653_p-43(fruR)        1.0000     16  
+SA1553_p-130(fhs)        1.0000     16  SA2304_p-83(fbp)         1.0000     16  
+SA1927_p-142(fbaA)       1.0000     16  SA0227_p-64(fadX)        1.0000     16  
+SA1633_p-38(SA1633)      1.0000     16  SA2480_p-84(drp35)       1.0000     16  
+SA1939_p-115(dra2)       1.0000     16  SA0605_p-64(dhaK)        1.0000     16  
+SA1518_p-43(citZ)        1.0000     16  SA1184_p-103(citB)       1.0000     16  
+SA1557_p-71(ccpA)        1.0000     16  SA1968_p-51(arg)         1.0000     16  
+SA2428_p-62(arcA)        1.0000     16  SA0510_p-53(araB)        1.0000     16  
+SA0162_p-103(aldA)       1.0000     16  SA1531_p-52(ald)         1.0000     16  
+SA1555_p-147(acuA)       1.0000     16  SA1554_p-37(acsA)        1.0000     16  
+SA2226_p-54(aapA)        1.0000     16  STACA0001_0466_p-75(SSP0 1.0000     16  
+STACA0001_1120_p-267(SE1 1.0000     16  STACA0001_0048_p-61(SE02 1.0000     16  
+STACA0001_2159_p-286(sdh 1.0000     16  STACA0001_2124_p-67(scrR 1.0000     16  
+STACA0001_1097_p-34(scrA 1.0000     16  STACA0001_1097_p-63(scrA 1.0000     16  
+STACA0001_1305_p-62(SAS0 1.0000     16  STACA0001_1171_p-119(n/a 1.0000     16  
+STACA0001_1178_p-131(SA2 1.0000     16  STACA0001_1306_p-131(SA1 1.0000     16  
+STACA0001_1569_p-30(SA11 1.0000     16  STACA0001_0121_p-62(SA08 1.0000     16  
+STACA0001_0477_p-98(SA05 1.0000     16  STACA0001_1175_p-63(SA01 1.0000     16  
+STACA0001_0943_p-128(roc 1.0000     16  STACA0001_0169_p-184(roc 1.0000     16  
+STACA0001_0973_p-84(rbsU 1.0000     16  STACA0001_0978_p-68(pfoR 1.0000     16  
+STACA0001_0618_p-168(pta 1.0000     16  STACA0001_0618_p-48(ptaA 1.0000     16  
+STACA0001_0658_p-81(putA 1.0000     16  STACA0001_1955_p-134(put 1.0000     16  
+STACA0001_0978_p-221(pfo 1.0000     16  STACA0001_0592_p-107(pfk 1.0000     16  
+STACA0001_0678_p-44(pckA 1.0000     16  STACA0001_0514_p-61(nupC 1.0000     16  
+STACA0001_0950_p-121(mva 1.0000     16  STACA0001_0627_p-154(acu 1.0000     16  
+STACA0001_0626_p-35(acsA 1.0000     16  STACA0001_1050_p-45(aapA 1.0000     16  
+STACA0001_1147_p-81(araB 1.0000     16  STACA0001_0602_p-52(ald) 1.0000     16  
+STACA0001_0986_p-85(aldA 1.0000     16  STACA0001_1844_p-93(arcB 1.0000     16  
+STACA0001_0865_p-51(arg) 1.0000     16  STACA0001_0629_p-26(ccpA 1.0000     16  
+STACA0001_1597_p-103(cit 1.0000     16  STACA0001_0995_p-66(fbp) 1.0000     16  
+STACA0001_0829_p-144(fba 1.0000     16  STACA0001_1804_p-151(cit 1.0000     16  
+STACA0001_0589_p-43(citZ 1.0000     16  STACA0001_1139_p-75(gltS 1.0000     16  
+STACA0001_0331_p-46(fruR 1.0000     16  STACA0001_1544_p-132(glp 1.0000     16  
+STACA0001_1166_p-113(glv 1.0000     16  STACA0001_1165_p-115(glv 1.0000     16  
+STACA0001_0168_p-41(gudB 1.0000     16  STACA0001_1009_p-83(gntR 1.0000     16  
+STACA0001_0168_p-84(gudB 1.0000     16  STACA0001_0483_p-73(kbl) 1.0000     16  
+STACA0001_1003_p-166(gud 1.0000     16  STACA0001_1368_p-57(hutH 1.0000     16  
+STACA0001_0951_p-137(mva 1.0000     16  STACA0001_1121_p-93(mqo) 1.0000     16  
+STACA0001_1505_p-48(manR 1.0000     16  STACA0001_1506_p-40(manP 1.0000     16  
+STACA0001_0084_p-170(lip 1.0000     16  SE0164_p-61(uhpT)        1.0000     16  
+SE1944_p-245(SE1944)     1.0000     16  SE0247_p2(SE0247)        1.0000     16  
+SE0840_p-270(sdhC)       1.0000     16  SE1959_p-58(scrA)        1.0000     16  
+SE1763_p-15(SAS074)      1.0000     16  SE1763_p-62(SAS074)      1.0000     16  
+SE1885_p-130(SA2105)     1.0000     16  SE1762_p-130(SA1975)     1.0000     16  
+SE1007_p-29(SA1162)      1.0000     16  SE0715_p-62(SA0873)      1.0000     16  
+SE0653_p-180(rocD)       1.0000     16  SE2116_p-149(rocA)       1.0000     16  
+SE2088_p-87(rbsU)        1.0000     16  SE1437_p-80(putA)        1.0000     16  
+SE1403_p-131(ptaA)       1.0000     16  SE2082_p-68(pfoR)        1.0000     16  
+SE0214_p-37(pflB)        1.0000     16  SE1374_p-152(pfkA)       1.0000     16  
+SE1459_p-41(pckA)        1.0000     16  SE0283_p-63(nupC)        1.0000     16  
+SE2110_p-123(mvaS)       1.0000     16  SE2109_p-137(mvaA)       1.0000     16  
+SE1943_p-81(mqo)         1.0000     16  SE2227_p-45(manR)        1.0000     16  
+SE2228_p-45(manP)        1.0000     16  SE1191_p-117(n/a)        1.0000     16  
+SE2056_p-164(gudP)       1.0000     16  SE0654_p-41(gudB)        1.0000     16  
+SE0654_p-74(gudB)        1.0000     16  SE2046_p-83(gntR)        1.0000     16  
+SE1898_p-109(glvR)       1.0000     16  SE1897_p-104(glvC)       1.0000     16  
+SE1924_p-71(gltS)        1.0000     16  SE2047_p-85(glpT)        1.0000     16  
+SE0977_p-130(glpF)       1.0000     16  SE2102_p-178(glcA)       1.0000     16  
+SE2063_p-66(fbp)         1.0000     16  SE1723_p-143(fbaA)       1.0000     16  
+SE0235_p-146(SE0235)     1.0000     16  SE1371_p-43(citZ)        1.0000     16  
+SE1032_p-103(citB)       1.0000     16  SE1409_p-71(ccpA)        1.0000     16  
+SE0106_p-50(arcA2)       1.0000     16  SE2217_p-304(arcA)       1.0000     16  
+SE1914_p-101(n/a)        1.0000     16  SE2071_p-68(aldA)        1.0000     16  
+SE0253_p-37(acoL)        1.0000     16  SE2004_p-41(aapA)        1.0000     16  
+Sca_2095_p-85(xylB)      1.0000     16  Sca_2095_p-116(xylB)     1.0000     16  
+Sca_0108_p-71(treP)      1.0000     16  Sca_0882_p-163(sucC)     1.0000     16  
+Sca_2418_p-151(SSP0523)  1.0000     16  Sca_2373_p-60(SH0372)    1.0000     16  
+Sca_1866_p-254(SE1944)   1.0000     16  Sca_1871_p-47(SE0247)    1.0000     16  
+Sca_0765_p-291(sdhC)     1.0000     16  Sca_1495_p-138(sdcS)     1.0000     16  
+Sca_1673_p-64(SAS074)    1.0000     16  Sca_1812_p-249(SA2109)   1.0000     16  
+Sca_1807_p-119(SA2105)   1.0000     16  Sca_1672_p-141(SA1975)   1.0000     16  
+Sca_2042_p-292(SA1437)   1.0000     16  Sca_0968_p-30(SA1162)    1.0000     16  
+Sca_0617_p-64(SA0873)    1.0000     16  Sca_0213_p-144(SA0511)   1.0000     16  
+Sca_2408_p-63(SA0225)    1.0000     16  Sca_2140_p-85(SA0184)    1.0000     16  
+Sca_0564_p-49(rocA)      1.0000     16  Sca_2421_p-101(rbsU)     1.0000     16  
+Sca_1474_p-137(putP)     1.0000     16  Sca_1371_p-71(putA)      1.0000     16  
+Sca_1332_p-44(ptaA)      1.0000     16  Sca_1982_p-79(pfoR)      1.0000     16  
+Sca_2017_p-58(pflB)      1.0000     16  Sca_1304_p-103(pfkA)     1.0000     16  
+Sca_1390_p-54(pckA)      1.0000     16  Sca_2258_p-64(nhaC)      1.0000     16  
+Sca_2390_p-152(nanK)     1.0000     16  Sca_2389_p-109(nanA)     1.0000     16  
+Sca_1865_p-85(mqo)       1.0000     16  Sca_2440_p6(manP)        1.0000     16  
+Sca_2440_p-39(manP)      1.0000     16  Sca_2166_p-52(ipdC)      1.0000     16  
+Sca_2466_p-58(hutH)      1.0000     16  Sca_2417_p-40(gutB)      1.0000     16  
+Sca_1960_p-94(gudP)      1.0000     16  Sca_1950_p-53(gntR)      1.0000     16  
+Sca_1820_p-70(glpT)      1.0000     16  Sca_0948_p-126(glpF)     1.0000     16  
+Sca_0346_p-44(fruR)      1.0000     16  Sca_1964_p-123(fbp)      1.0000     16  
+Sca_1628_p-102(fbaA)     1.0000     16  Sca_1628_p-143(fbaA)     1.0000     16  
+Sca_2406_p-61(fadX)      1.0000     16  Sca_2309_p-64(cstA)      1.0000     16  
+Sca_1301_p-42(citZ)      1.0000     16  Sca_0991_p-68(citB)      1.0000     16  
+Sca_2257_p-49(argF)      1.0000     16  Sca_2085_p-47(arcA)      1.0000     16  
+Sca_2103_p-113(aldA)     1.0000     16  Sca_1314_p-54(ald)       1.0000     16  
+Sca_1338_p-34(acsA)      1.0000     16  Sca_1339_p-213(acuA)     1.0000     16  
+SH0300_p-97(drp35)       1.0000     16  SH2244_p-64(dhaK)        1.0000     16  
+SH1230_p-42(citZ)        1.0000     16  SH0421_p-56(citM)        1.0000     16  
+SH1186_p-26(ccpA)        1.0000     16  SH0367_p-50(arcA)        1.0000     16  
+SH0547_p-77(aldA)        1.0000     16  SH1216_p-52(ald)         1.0000     16  
+SH1188_p-144(acuA)       1.0000     16  SH1189_p-36(acsA)        1.0000     16  
+SH0227_p-91(acoL2)       1.0000     16  SH0223_p-103(acoL)       1.0000     16  
+SH0623_p-61(aapA)        1.0000     16  SH0208_p-37(xylB)        1.0000     16  
+SH0208_p-95(xylB)        1.0000     16  SH2538_p-69(treP)        1.0000     16  
+SH0371_p-29(SH0371)      1.0000     16  SH0692_p-248(SE1944)     1.0000     16  
+SH1814_p-61(sdhC)        1.0000     16  SH1814_p-285(sdhC)       1.0000     16  
+SH0671_p-63(scrA)        1.0000     16  SH0868_p-63(SAS074)      1.0000     16  
+SH0739_p-173(SA2109)     1.0000     16  SH0745_p-127(SA2105)     1.0000     16  
+SH0869_p-129(SA1975)     1.0000     16  SH1310_p-189(SA1437)     1.0000     16  
+SH1581_p-29(SA1162)      1.0000     16  SH1944_p-93(SA0873)      1.0000     16  
+SH2450_p-101(SA0511)     1.0000     16  SH0743_p-33(SA0184)      1.0000     16  
+SH0500_p-128(rocA)       1.0000     16  SH1993_p-161(rocD)       1.0000     16  
+SH0174_p-31(rbsR2)       1.0000     16  SH1157_p-81(putA)        1.0000     16  
+SH1198_p-101(ptaA)       1.0000     16  SH0537_p-116(pfoR)       1.0000     16  
+SH0537_p-270(pfoR)       1.0000     16  SH1226_p-152(pfkA)       1.0000     16  
+SH1137_p-53(pckA)        1.0000     16  SH0281_p-150(nanK)       1.0000     16  
+SH0282_p-108(nanA)       1.0000     16  SH0693_p-77(mqo)         1.0000     16  
+SH1407_p-159(malR)       1.0000     16  SH0168_p-169(lip)        1.0000     16  
+SH2457_p-74(kbl)         1.0000     16  SH0376_p-41(ipdC)        1.0000     16  
+SH0566_p-241(gudP)       1.0000     16  SH1992_p-35(gudB)        1.0000     16  
+SH1992_p-77(gudB)        1.0000     16  SH0574_p-81(gntR)        1.0000     16  
+SH0731_p-115(glvR)       1.0000     16  SH0731_p-142(glvR)       1.0000     16  
+SH0732_p-121(glvC)       1.0000     16  SH0713_p-64(gltS)        1.0000     16  
+SH1614_p-128(glpF)       1.0000     16  SH0521_p-171(glcA)       1.0000     16  
+SH2196_p-45(fruR)        1.0000     16  SH0559_p-64(fbp)         1.0000     16  
+SH1190_p-138(fhs)        1.0000     16  SSP0975_p-43(pckA)       1.0000     16  
+SSP2235_p-65(nupC)       1.0000     16  SSP0374_p-157(nanK)      1.0000     16  
+SSP0375_p-182(nanA)      1.0000     16  SSP0539_p-90(mqo)        1.0000     16  
+SSP2297_p-145(lip)       1.0000     16  SSP2205_p-100(kbl)       1.0000     16  
+SSP0008_p-56(hutH)       1.0000     16  SSP0524_p-37(gutB)       1.0000     16  
+SSP0231_p-112(csbX)      1.0000     16  SSP0401_p-86(gudP)       1.0000     16  
+SSP0410_p-83(gntR)       1.0000     16  SSP0582_p-113(glvR)      1.0000     16  
+SSP0583_p-117(glvC)      1.0000     16  SSP0557_p-74(gltS)       1.0000     16  
+SSP0178_p-28(glpK)       1.0000     16  SSP1461_p-145(glpF)      1.0000     16  
+SSP2019_p-44(fruR)       1.0000     16  SSP1031_p-147(fhs)       1.0000     16  
+SSP0759_p-101(fbaA)      1.0000     16  SSP2427_p-91(fadX)       1.0000     16  
+SSP0327_p-57(drp35)      1.0000     16  SSP2070_p-67(dhaK)       1.0000     16  
+SSP2440_p-39(cstA)       1.0000     16  SSP1071_p-42(citZ)       1.0000     16  
+SSP1027_p-26(ccpA)       1.0000     16  SSP0563_p-73(araB2)      1.0000     16  
+SSP2178_p-38(araB)       1.0000     16  SSP2178_p-149(araB)      1.0000     16  
+SSP1057_p-52(ald)        1.0000     16  SSP1029_p-162(acuA)      1.0000     16  
+SSP1030_p-33(acsA)       1.0000     16  SSP1869_p-124(yusH)      1.0000     16  
+SSP2179_p-65(xltD)       1.0000     16  SSP2179_p-176(xltD)      1.0000     16  
+SSP2282_p-81(treP)       1.0000     16  SSP1332_p-44(SSP1332)    1.0000     16  
+SSP0617_p-37(n/a)        1.0000     16  SSP0523_p-151(SSP0523)   1.0000     16  
+SSP0245_p-40(n/a)        1.0000     16  SSP0245_p-158(n/a)       1.0000     16  
+SSP0230_p-79(n/a)        1.0000     16  SSP0206_p-72(SSP0206)    1.0000     16  
+SSP0114_p-65(n/a)        1.0000     16  SSP0236_p-56(SH0372)     1.0000     16  
+SSP0538_p-318(SE1944)    1.0000     16  SSP0532_p-47(SE0247)     1.0000     16  
+SSP1648_p-232(sdhC)      1.0000     16  SSP0875_p-100(sdcS)      1.0000     16  
+SSP0836_p-68(n/a)        1.0000     16  SSP0512_p-66(scrA)       1.0000     16  
+SSP0714_p-64(SAS074)     1.0000     16  SSP0591_p-114(SA2109)    1.0000     16  
+SSP0598_p-109(SA2105)    1.0000     16  SSP0715_p-128(SA1975)    1.0000     16  
+SSP1440_p-33(SA1162)     1.0000     16  SSP2164_p-98(SA0511)     1.0000     16  
+SSP2164_p-164(SA0511)    1.0000     16  SSP2425_p-36(SA0225)     1.0000     16  
+SSP0596_p-35(SA0184)     1.0000     16  SSP0311_p-101(rocA)      1.0000     16  
+SSP1818_p-198(rocD)      1.0000     16  SSP1395_p-33(rbsD)       1.0000     16  
+SSP1396_p-30(rbsR2)      1.0000     16  SSP1396_p-302(rbsR2)     1.0000     16  
+SSP0889_p-137(putP)      1.0000     16  SSP0999_p-80(putA)       1.0000     16  
+SSP1068_p-148(pfkA)      1.0000     16  SSP1037_p-86(ptaA)       1.0000     16  
+MCCL_1409_p0(acsA)       1.0000     16  MCCL_1938_p-49(treP)     1.0000     16  
+MCCL_1319_p-85(sdhC)     1.0000     16  MCCL_0079_p-103(SA2109)  1.0000     16  
+MCCL_1856_p-94(SA0511)   1.0000     16  MCCL_0582_p-44(rocA)     1.0000     16  
+MCCL_0348_p-34(rbsR2)    1.0000     16  MCCL_0348_p-65(rbsR2)    1.0000     16  
+MCCL_1639_p-94(putP)     1.0000     16  MCCL_1451_p-52(putA)     1.0000     16  
+MCCL_0434_p-94(pflB)     1.0000     16  MCCL_1365_p-100(pfkA)    1.0000     16  
+MCCL_1890_p-70(nupC)     1.0000     16  MCCL_1807_p-34(nhaC)     1.0000     16  
+MCCL_0353_p-43(mdxE)     1.0000     16  MCCL_1800_p-82(gudP)     1.0000     16  
+MCCL_0584_p-93(gudB)     1.0000     16  MCCL_0405_p-325(gntR)    1.0000     16  
+MCCL_0370_p-82(glpT)     1.0000     16  MCCL_0891_p-133(glpF)    1.0000     16  
+MCCL_0452_p-28(fruR)     1.0000     16  MCCL_1408_p-62(fhs)      1.0000     16  
+MCCL_1362_p0(citZ)       1.0000     16  MCCL_1413_p-25(ccpA)     1.0000     16  
+MCCL_1008_p-36(citB)     1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/CcpA_Staphylococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/CcpA_Staphylococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      391    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            6256    N=             391
+sample: seed=            0    hsfrac=          0
+        searchsize=   6256    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.336 C 0.159 G 0.168 T 0.337 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.335 C 0.159 G 0.168 T 0.337 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTGWAARCGYTTWCAW MEME-1	width =  16  sites = 391  llr = 4343  E-value = 2.9e-1806
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  52:59a4::1114174
+pos.-specific     C  :::::::914:::9:1
+probability       G  1:91::5191::1:::
+matrix            T  48141:1::4995:25
+
+         bits    2.7                 
+                 2.4                 
+                 2.1        **    *  
+                 1.9   *    **    *  
+Relative         1.6   *    **    *  
+Entropy          1.3   *  * **    *  
+(16.0 bits)      1.1   * ** ** ** *  
+                 0.8  ** ** ** ** *  
+                 0.5  ** ******** ** 
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           ATGAAAGCGCTTTCAT
+consensus            T  T  A  T  A TA
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Sca_2408_p-63(SA0225)         1  2.79e-08          . ATGTAAGCGTTTACAA           
+SA0299_p-93(SA0299)           1  2.79e-08          . ATGTAAGCGTTTACAA           
+Sca_2373_p-60(SH0372)         1  3.28e-08          . TTGTAAGCGTTTACAT           
+SH0371_p-29(SH0371)           1  3.89e-08          . ATGAAAACGTTTTCAT           
+SE0253_p-37(acoL)             1  3.89e-08          . AAGAAAGCGCTTACAA           
+SSP0114_p-65(n/a)             1  6.27e-08          . TTGTAAGCGCTTACTA           
+SSP0524_p-37(gutB)            1  6.27e-08          . ATGAAAGCGTTTTCTA           
+MCCL_1807_p-34(nhaC)          1  7.66e-08          . AAGAAAGCGTTTTCAT           
+SSP0598_p-109(SA2105)         1  7.66e-08          . ATGTAAGCGTTTTCTT           
+SSP2297_p-145(lip)            1  7.66e-08          . ATGTAAGCGTTTTCTT           
+Sca_2140_p-85(SA0184)         1  7.66e-08          . ATGAAAGCGATTACAA           
+SSP0617_p-37(n/a)             1  9.22e-08          . ATGAAAGCGCATACAT           
+Sca_1807_p-119(SA2105)        1  9.22e-08          . ATGTAAGCGTTTACTT           
+Sca_1812_p-249(SA2109)        1  9.22e-08          . ATGAAAGCGCATACAT           
+SE1437_p-80(putA)             1  9.22e-08          . ATGTAAACGCTTTCTT           
+STACA0001_1050_p-45(aapA      1  9.22e-08          . AAGAAAACGCTTTCAT           
+STACA0001_1569_p-30(SA11      1  9.22e-08          . ATGAAAGCGCTTGCTT           
+SA0206_p-130(msmX)            1  1.10e-07          . ATGTAAACGTTTACAA           
+SSP1332_p-44(SSP1332)         1  1.32e-07          . TTGAAAGCGATTACAA           
+SSP2179_p-65(xltD)            1  1.32e-07          . ATGTAAGCGTTTACTA           
+SSP2440_p-39(cstA)            1  1.32e-07          . AAGAAAACGCTTTCAA           
+SSP0401_p-86(gudP)            1  1.32e-07          . TTGTAAGCGATTTCAT           
+SH1407_p-159(malR)            1  1.32e-07          . TTGAAAGCGTTTACTA           
+SH1157_p-81(putA)             1  1.32e-07          . TTGAAAACGCTTTCTA           
+SH0174_p-31(rbsR2)            1  1.32e-07          . ATGTAAGCGGTTACAT           
+SH0623_p-61(aapA)             1  1.32e-07          . AAGAAAGCGTTTACAA           
+SE1897_p-104(glvC)            1  1.32e-07          . ATGTAAGCGTTTACTA           
+STACA0001_1166_p-113(glv      1  1.32e-07          . ATGTAAGCGTTTACTA           
+SA1732_p-162(sdcS)            1  1.32e-07          . TTGAAAGCGCATTCAT           
+SSP0523_p-151(SSP0523)        1  1.54e-07          . TAGAAAACGCTTTCAT           
+Sca_2309_p-64(cstA)           1  1.54e-07          . AAGTAAGCGTTTACAT           
+SE2004_p-41(aapA)             1  1.54e-07          . AAGTAAACGCTTTCAT           
+SE2116_p-149(rocA)            1  1.54e-07          . ATGTAAGCGTTTGCAA           
+SA0162_p-103(aldA)            1  1.54e-07          . ATGTAAACGCTTACTA           
+MCCL_0353_p-43(mdxE)          1  1.77e-07          . ATGAAAACGTTTTCTT           
+SSP1818_p-198(rocD)           1  1.77e-07          . ATGTAAGGGCTTACAT           
+SSP0236_p-56(SH0372)          1  1.77e-07          . TTGTAAACGTTTACAA           
+SSP2427_p-91(fadX)            1  1.77e-07          . ATGTAAGGGCTTACAT           
+SH0547_p-77(aldA)             1  1.77e-07          . AAGTAAACGCTTACAT           
+Sca_0968_p-30(SA1162)         1  1.77e-07          . TTGTAAGCGCTTACTC           
+SE2071_p-68(aldA)             1  1.77e-07          . AaGtAAaCGCTTaCAT           
+SE1459_p-41(pckA)             1  1.77e-07          . ATGTAAGGGCTTACAT           
+SE0653_p-180(rocD)            1  1.77e-07          . ATGTAAGGGCTTACAT           
+SE1885_p-130(SA2105)          1  1.77e-07          . TTGTAAGCGTTTTCTA           
+STACA0001_1844_p-93(arcB      1  1.77e-07          . ATGAAAtCGCTTTCAa           
+STACA0001_1178_p-131(SA2      1  1.77e-07          . TTGTAAGCGTTTTCTA           
+SA1633_p-38(SA1633)           1  1.77e-07          . TTGTAAACGTTTACAA           
+SSP1396_p-302(rbsR2)          1  2.04e-07          . TAGAAAACGCTTTCAA           
+SSP0245_p-40(n/a)             1  2.04e-07          . TAGAAAGCGTTTACAA           
+Sca_2440_p-39(manP)           1  2.04e-07          . ATGTTAGCGCTTACAA           
+Sca_0765_p-291(sdhC)          1  2.04e-07          . TTGTAAACGCTTTCTA           
+SE2046_p-83(gntR)             1  2.04e-07          . AAGAAAGCGCTTGCAA           
+STACA0001_1009_p-83(gntR      1  2.04e-07          . AAGAAAGCGCTTGCAA           
+SA2295_p-79(gntR)             1  2.04e-07          . AAGAAAGCGCTTGCAA           
+SA0225_p-86(SA0225)           1  2.04e-07          . GTGTAAGCGTTTACAA           
+SA1585_p-71(putA)             1  2.04e-07          . ATGAAAACGCTTTCTC           
+SH0421_p-56(citM)             1  2.31e-07          . ATGAAAACGTTTTCTA           
+Sca_1338_p-34(acsA)           1  2.31e-07          . ATGAAAACGATTTCAA           
+SSP1396_p-30(rbsR2)           1  2.69e-07          . ATGAAAACGGTTACAT           
+SSP2178_p-149(araB)           1  2.69e-07          . TAGTAAACGCTTACAT           
+Sca_2421_p-101(rbsU)          1  2.69e-07          . ATGAAAGCGTATACAT           
+SE1898_p-109(glvR)            1  2.69e-07          . TAGTAAACGCTTACAT           
+STACA0001_1165_p-115(glv      1  2.69e-07          . TAGTAAACGCTTACAT           
+SA1554_p-37(acsA)             1  2.69e-07          . AAGAAAGCGTTTTCAC           
+SA1819_p-39(tst)              1  2.69e-07          . ATGTAAACGTTTACAC           
+SA2320_p-76(pfoR)             1  2.69e-07          . TTGAAAACGTTTTCTT           
+SH0168_p-169(lip)             1  3.11e-07          . ATGTAAACGCTTTCTC           
+SH1189_p-36(acsA)             1  3.11e-07          . AAGAAAGCGATTTCAT           
+SH0300_p-97(drp35)            1  3.11e-07          . TTGAAAACGATTACAT           
+STACA0001_1804_p-151(cit      1  3.11e-07          . TGGAAAGCGCTTACAA           
+STACA0001_0626_p-35(acsA      1  3.11e-07          . AAGAAAGCGATTTCAT           
+STACA0001_0658_p-81(putA      1  3.11e-07          . ATGTAAACGCTTTCTC           
+STACA0001_0169_p-184(roc      1  3.11e-07          . TTGTAAGGGCTTTCAA           
+SA2463_p-137(lip)             1  3.11e-07          . ATGTAAACGCTTTCTC           
+SA2105_p-117(SA2105)          1  3.11e-07          . ATGTAAGCGTTTTCCA           
+SA0184_p-63(SA0184)           1  3.11e-07          . ATGTAAGCGATTACAC           
+SSP1648_p-232(sdhC)           1  3.60e-07          . ATGGAAGCGTTTTCTA           
+SSP0206_p-72(SSP0206)         1  3.60e-07          . TTGATAGCGTTTTCAT           
+SH0566_p-241(gudP)            1  3.60e-07          . TTGAAAACGATTTCAA           
+SH0282_p-108(nanA)            1  3.60e-07          . ATGATAGCGTTTACAA           
+SH0745_p-127(SA2105)          1  3.60e-07          . TTGTAAGCGTTTTCCT           
+SH0739_p-173(SA2109)          1  3.60e-07          . ATGGAAGCGATTTCAA           
+SH1814_p-285(sdhC)            1  3.60e-07          . ATGGAAGCGTTTTCTA           
+Sca_2389_p-109(nanA)          1  3.60e-07          . ATGATAGCGTTTACAA           
+Sca_1673_p-64(SAS074)         1  3.60e-07          . TTGAAAACGTTTTCTA           
+SE0840_p-270(sdhC)            1  3.60e-07          . ATGGAAGCGTTTTCTA           
+STACA0001_1305_p-62(SAS0      1  3.60e-07          . TTGAAAACGATTTCAA           
+SA2226_p-54(aapA)             1  3.60e-07          . AAGAAAACGCTTACAC           
+SA1555_p-147(acuA)            1  3.60e-07          . GTGAAAACGCTTTCTT           
+SA0304_p-64(nanA)             1  3.60e-07          . ATGATAGCGTTTACAA           
+SA2341_p-112(rocA)            1  3.60e-07          . ATGAAAGCGATTGCAA           
+SSP0999_p-80(putA)            1  4.26e-07          . TTGTAAACGATTTCAT           
+SSP0311_p-101(rocA)           1  4.26e-07          . ATGTAAGCGATTGCAT           
+Sca_2258_p-64(nhaC)           1  4.26e-07          . TTGAAAGCGGTTTCTT           
+STACA0001_0048_p-61(SE02      1  4.26e-07          . ATTAAAACGCTTTCAT           
+SA0760_p-152(yusH)            1  4.26e-07          . ATGTAAACGTTTACTA           
+SAS074_p-64(SAS074)           1  4.26e-07          . TTGAAAACGATTACAA           
+SSP0557_p-74(gltS)            1  4.94e-07          . TTGTAAACGTTTACTT           
+SH1188_p-144(acuA)            1  4.94e-07          . ATGAAATCGCTTTCTT           
+STACA0001_0986_p-85(aldA      1  4.94e-07          . AAGTAAACGTTTACAT           
+STACA0001_0627_p-154(acu      1  4.94e-07          . ATGAAATCGCTTTCTT           
+STACA0001_0466_p-75(SSP0      1  4.94e-07          . ATGTTAGCGCTTACAC           
+MCCL_1451_p-52(putA)          1  5.71e-07          . TTTAAAGCGTTTTCAT           
+SSP1440_p-33(SA1162)          1  5.71e-07          . TTGGAAACGCTTACTT           
+SSP0178_p-28(glpK)            1  5.71e-07          . ATGAAATCGTTTACAA           
+SSP0582_p-113(glvR)           1  5.71e-07          . AAGGAAACGCTTACAT           
+SH0574_p-81(gntR)             1  5.71e-07          . AAGAAAGCGTTTGCAA           
+SH0500_p-128(rocA)            1  5.71e-07          . ATGTAAGCGATTGCAA           
+SH1310_p-189(SA1437)          1  5.71e-07          . AAGTAAGCGATTACAT           
+SH0208_p-95(xylB)             1  5.71e-07          . TAGAAAACGCTTTCTT           
+Sca_1339_p-213(acuA)          1  5.71e-07          . TTGAAATCGTTTTCAT           
+Sca_2257_p-49(argF)           1  5.71e-07          . AAGGAAGCGCTTACAC           
+Sca_1865_p-85(mqo)            1  5.71e-07          . TAGAAAGCGCTTTCTC           
+Sca_0564_p-49(rocA)           1  5.71e-07          . ATGTAAGGGCTTTCTT           
+Sca_1672_p-141(SA1975)        1  5.71e-07          . TAGAAAACGTTTTCAA           
+STACA0001_0678_p-44(pckA      1  5.71e-07          . ATGTAAAGGCTTACAT           
+STACA0001_0943_p-128(roc      1  5.71e-07          . ATGTAAGCGATTGCAA           
+SA2300_p-148(gudP)            1  5.71e-07          . TTGTAAACGCTTTCCA           
+SA1609_p-44(pckA)             1  5.71e-07          . ATGTAAAGGCTTACAT           
+SA1162_p-27(SA1162)           1  5.71e-07          . GTGAAAGCGCTTGCTT           
+SA0818_p-150(rocD)            1  5.71e-07          . ATGTAAGGGTTTTCAA           
+MCCL_1409_p0(acsA)            1  6.56e-07          . ATGAAAACGATTACAC           
+SH2538_p-69(treP)             1  6.56e-07          . ATGAAAGCCTTTACAA           
+SH0223_p-103(acoL)            1  6.56e-07          . GAGAAAACGCTTACAT           
+STACA0001_1120_p-267(SE1      1  6.56e-07          . ATTAAAGCGCTTTCTA           
+SA0510_p-53(araB)             1  6.56e-07          . AAGAAAACGCTTGCAA           
+SA2334_p-123(mvaS)            1  6.56e-07          . ATTAAAACGCTTACAA           
+SSP2205_p-100(kbl)            1  7.41e-07          . TAGAAAACGCTTTCTA           
+SH0732_p-121(glvC)            1  7.41e-07          . GTGTAAGCGTTTACTA           
+SH1137_p-53(pckA)             1  7.41e-07          . ATGTAAAGGCTTACAA           
+SH0208_p-37(xylB)             1  7.41e-07          . ATGATAACGTTTTCAT           
+Sca_2406_p-61(fadX)           1  7.41e-07          . TTGTAAGGGTTTACAT           
+Sca_0948_p-126(glpF)          1  7.41e-07          . TTGACAACGCTTTCAT           
+Sca_1950_p-53(gntR)           1  7.41e-07          . ATGTAAGCGGTTGCAA           
+Sca_1390_p-54(pckA)           1  7.41e-07          . ATGTAAAGGCTTACAA           
+Sca_0108_p-71(treP)           1  7.41e-07          . TTGAAAGCCTTTACAT           
+Sca_2095_p-116(xylB)          1  7.41e-07          . TTGACAACGCTTTCAT           
+SE2082_p-68(pfoR)             1  7.41e-07          . TTGAAATCGCTTTCTT           
+SE1007_p-29(SA1162)           1  7.41e-07          . GTGAAAGCGCTTGCTA           
+STACA0001_0978_p-68(pfoR      1  7.41e-07          . TTGAAATCGCTTTCTT           
+STACA0001_1306_p-131(SA1      1  7.41e-07          . TTGAAATCGTTTTCAA           
+SA1140_p-133(glpF)            1  7.41e-07          . TTGACAACGCTTTCAT           
+SA0325_p-76(glpT)             1  7.41e-07          . TTGACAACGCTTTCAT           
+SA2114_p-104(glvC)            1  7.41e-07          . GTGTAAGCGTTTACTA           
+SA0432_p-68(treP)             1  7.41e-07          . TTGAAAGCCTTTACAT           
+SSP0591_p-114(SA2109)         1  8.39e-07          . ATGTAAACCCTTACAT           
+SSP0230_p-79(n/a)             1  8.39e-07          . ATGAATGCGTTTACAA           
+SSP0975_p-43(pckA)            1  8.39e-07          . TTGTAAAGGCTTACAT           
+SH0731_p-115(glvR)            1  8.39e-07          . TAGTAAACGCTTACAC           
+Sca_1866_p-254(SE1944)        1  8.39e-07          . GAGAAAGCGCTTTCTA           
+SE1191_p-117(n/a)             1  8.39e-07          . ATGTAAACGTTTTCTC           
+SA2115_p-241(glvR)            1  8.39e-07          . TAGTAAACGCTTACAC           
+MCCL_1639_p-94(putP)          1  9.42e-07          . ATGAAAACGCTTAAAT           
+SSP0532_p-47(SE0247)          1  9.42e-07          . ATGAAAGCGTATACTT           
+SSP2179_p-176(xltD)           1  9.42e-07          . AAGAAAACGCTTTCCT           
+SH0281_p-150(nanK)            1  9.42e-07          . TTGTAAACGCTATCAT           
+SH1581_p-29(SA1162)           1  9.42e-07          . ATGAAAGCGTTTCCTT           
+SH0868_p-63(SAS074)           1  9.42e-07          . TTGAAAACGATTACAC           
+Sca_2390_p-152(nanK)          1  9.42e-07          . TTGTAAACGCTATCAT           
+Sca_1871_p-47(SE0247)         1  9.42e-07          . ATGAAAGCGTATACTT           
+SE1763_p-62(SAS074)           1  9.42e-07          . TTGAAAACGATTACAC           
+SA0305_p-109(nanK)            1  9.42e-07          . TTGTAAACGCTATCAT           
+SSP1461_p-145(glpF)           1  1.06e-06          . TTGACAACGCTTACAA           
+SH1614_p-128(glpF)            1  1.06e-06          . TTGACAACGCTTACAA           
+SE0977_p-130(glpF)            1  1.06e-06          . TTGACAACGCTTACAA           
+STACA0001_1544_p-132(glp      1  1.06e-06          . TTGACAACGCTTACAA           
+SA1975_p-128(SA1975)          1  1.06e-06          . TTGTAATCGTTTTCAA           
+MCCL_1408_p-62(fhs)           1  1.21e-06          . ATGAAAGCGTTATCTT           
+SSP2178_p-38(araB)            1  1.21e-06          . AGGAAAGCGTTTTCTT           
+SSP0231_p-112(csbX)           1  1.21e-06          . ATGAAATCGTTTTCTT           
+SH0367_p-50(arcA)             1  1.21e-06          . ATGAAAGCGCTTTATA           
+SE2228_p-45(manP)             1  1.21e-06          . ATGTATGCGTTTACAA           
+STACA0001_1955_p-134(put      1  1.21e-06          . GAGTAAGCGCTTTCTA           
+SA0605_p-64(dhaK)             1  1.21e-06          . ATGATAGCGCATTCAT           
+SA0218_p-59(pflB)             1  1.21e-06          . ATGAAAACGTTAACAT           
+SA0260_p-86(rbsU)             1  1.21e-06          . ATGAAAACGCATGCAT           
+MCCL_0405_p-325(gntR)         1  1.37e-06          . AcGAAAGCGtTTaCAa           
+SSP1071_p-42(citZ)            1  1.37e-06          . ATGAAAGCCATTTCAT           
+SSP0583_p-117(glvC)           1  1.37e-06          . ATGTAAGCGTTTCCTT           
+SH0692_p-248(SE1944)          1  1.37e-06          . ATTAAAACGCTTTCTT           
+SH0227_p-91(acoL2)            1  1.37e-06          . ATAAAAGCGCTTACAA           
+SH2244_p-64(dhaK)             1  1.37e-06          . ATGATAGCGCATACAT           
+Sca_2466_p-58(hutH)           1  1.37e-06          . ATGTAAGCGTATACTT           
+SE1944_p-245(SE1944)          1  1.37e-06          . ATTAAAGCGCTTTCTC           
+SA2122_p-57(hutU)             1  1.37e-06          . ATGTAAGCGTTTTAAA           
+SA1339_p-43(malR)             1  1.37e-06          . TTGGAAGCGTTTTCCA           
+MCCL_1365_p-100(pfkA)         1  1.56e-06          . TTTAAAACGTTTTCAT           
+SSP0714_p-64(SAS074)          1  1.56e-06          . TTGAAAACGATTGCAA           
+SSP0375_p-182(nanA)           1  1.56e-06          . ATGGTAGCGTTTACAA           
+Sca_1371_p-71(putA)           1  1.56e-06          . TTGTTAACGTTTTCAT           
+Sca_2042_p-292(SA1437)        1  1.56e-06          . ATGGAAAGGCTTACAT           
+SA0183_p-269(glcA)            1  1.56e-06          . TTGAAAACGCATACTT           
+SA0182_p-97(ipdC)             1  1.56e-06          . TTGTTAGCGTTTTCAC           
+SA2333_p-147(mvaA)            1  1.56e-06          . TTGTAAGCGTTTTAAT           
+MCCL_0582_p-44(rocA)          1  1.78e-06          . ATGTAAGGGTTTTCTA           
+SSP1068_p-148(pfkA)           1  1.78e-06          . TTTAAAACGTTTACAT           
+SSP2282_p-81(treP)            1  1.78e-06          . ATGAAAACCTTTACAA           
+SSP0410_p-83(gntR)            1  1.78e-06          . TTGCAAGCGCTTGCAA           
+SH0537_p-270(pfoR)            1  1.78e-06          . TTGAAAAGGTTTACAA           
+SH0537_p-116(pfoR)            1  1.78e-06          . TTGAAATCGTTTTCTT           
+Sca_1301_p-42(citZ)           1  1.78e-06          . ATGAAAGCCATTTCAA           
+Sca_1960_p-94(gudP)           1  1.78e-06          . TTGTAAACGATTTCTA           
+SE0235_p-146(SE0235)          1  1.78e-06          . TTGAAAGCGTATACTA           
+SE1374_p-152(pfkA)            1  1.78e-06          . TTTAAAACGTTTACAT           
+SE0164_p-61(uhpT)             1  1.78e-06          . TATTAAGCGCTTACAT           
+STACA0001_1505_p-48(manR      1  1.78e-06          . TAGTAAGCGTTTTCCT           
+STACA0001_0592_p-107(pfk      1  1.78e-06          . TTTAAAACGTTTACAT           
+STACA0001_2159_p-286(sdh      1  1.78e-06          . GTGGAAGCGTTTTCTA           
+SA1521_p-151(pfkA)            1  1.78e-06          . TTTAAAACGTTTACAT           
+SA0994_p-235(sdhC)            1  1.78e-06          . GTGGAAGCGTTTTCTA           
+MCCL_0891_p-133(glpF)         1  2.02e-06          . TTGACAACGTTTACAT           
+MCCL_0584_p-93(gudB)          1  2.02e-06          . TTGGTAGCGTTTTCAA           
+SSP1029_p-162(acuA)           1  2.02e-06          . ATGAAATCGCTTGCTT           
+SSP1031_p-147(fhs)            1  2.02e-06          . TTGAAAGCGCTATCTC           
+Sca_1964_p-123(fbp)           1  2.02e-06          . TTGAAATCGTTTACTT           
+SE1371_p-43(citZ)             1  2.02e-06          . TTGAAAGCCATTTCAT           
+SE2056_p-164(gudP)            1  2.02e-06          . TTGTAACCGTTTACAC           
+STACA0001_1121_p-93(mqo)      1  2.02e-06          . TAGAAAGCGCTTTAAT           
+STACA0001_2124_p-67(scrR      1  2.02e-06          . TTTAAAGCGATTACAT           
+SA1518_p-43(citZ)             1  2.02e-06          . TTGAAAGCCATTTCAT           
+SA0227_p-64(fadX)             1  2.02e-06          . TTGTAAGGGTTTACAC           
+SA0107_p-237(spa)             1  2.02e-06          . ATTAAACCGCTTTCAT           
+MCCL_0370_p-82(glpT)          1  2.27e-06          . TTGTAAAGGCTTTCTT           
+SSP1027_p-26(ccpA)            1  2.27e-06          . AAGAAATCGTTTTCAA           
+Sca_1628_p-143(fbaA)          1  2.27e-06          . TTGAATACGTTTTCAT           
+SE0214_p-37(pflB)             1  2.27e-06          . TTGAAAACGTTAACAA           
+MCCL_1800_p-82(gudP)          1  2.55e-06          . TTGTAATCGATTTCAT           
+MCCL_0434_p-94(pflB)          1  2.55e-06          . TTTTAAACGTTTACAT           
+MCCL_0348_p-65(rbsR2)         1  2.55e-06          . TTGTAATCGATTTCAT           
+SSP2425_p-36(SA0225)          1  2.55e-06          . ATGTAAGCGCAATCAT           
+Sca_1314_p-54(ald)            1  2.55e-06          . ATGATTGCGCTTTCAT           
+Sca_1495_p-138(sdcS)          1  2.55e-06          . ATGTATACGTTTACAT           
+Sca_2418_p-151(SSP0523)       1  2.55e-06          . ACGAAAACGTTTTCAT           
+SE2047_p-85(glpT)             1  2.55e-06          . TTGACAACGCTTACTT           
+SE2088_p-87(rbsU)             1  2.55e-06          . GTGTAAGCGTATACAA           
+STACA0001_1368_p-57(hutH      1  2.55e-06          . ATGAAAACGTATACTT           
+SA0008_p-59(hutH)             1  2.55e-06          . ATGAAAACGTATACTT           
+SH1186_p-26(ccpA)             1  2.83e-06          . AATAAAACGCTTACAA           
+SE1403_p-131(ptaA)            1  2.83e-06          . AATTAAGCGTTTACAT           
+STACA0001_1506_p-40(manP      1  2.83e-06          . TTGAATACGCTTACAC           
+SA1007_p-334(hla)             1  2.83e-06          . TTGTAATCGATTACAT           
+SH0693_p-77(mqo)              1  3.16e-06          . AAGAAAGCGTTTTAAT           
+SH1944_p-93(SA0873)           1  3.16e-06          . TTGTAAACCTTTTCAA           
+SH0869_p-129(SA1975)          1  3.16e-06          . GTGTAATCGTTTTCAA           
+Sca_2417_p-40(gutB)           1  3.16e-06          . ATGAAAACGTTTTCGT           
+Sca_0213_p-144(SA0511)        1  3.16e-06          . ATGTAAGCGCTTTACT           
+SE2227_p-45(manR)             1  3.16e-06          . ATTAAAGCGTTTTCTC           
+SE1762_p-130(SA1975)          1  3.16e-06          . GTGTAATCGTTTTCAA           
+STACA0001_0602_p-52(ald)      1  3.16e-06          . ATGATTGCGCTTTCAA           
+SA2304_p-83(fbp)              1  3.16e-06          . ATGTTAACGTTTTCTT           
+SSP1057_p-52(ald)             1  3.53e-06          . TTGATTGCGCTTTCAT           
+SSP0759_p-101(fbaA)           1  3.53e-06          . ATAAAAACGCTTACAA           
+SSP0008_p-56(hutH)            1  3.53e-06          . ATGTAAGCGTATACTC           
+SH0713_p-64(gltS)             1  3.53e-06          . TTTATAGCGCTTACAA           
+STACA0001_0483_p-73(kbl)      1  3.53e-06          . ATGATAAGGCTTTCAT           
+SA1939_p-115(dra2)            1  3.53e-06          . ATGTATGCGGTTACAT           
+SA1553_p-130(fhs)             1  3.53e-06          . ATGAAAGCGCTAACCC           
+SE0106_p-50(arcA2)            1  3.93e-06          . TTGAAAGCGTTTTATA           
+SE2109_p-137(mvaA)            1  3.93e-06          . ATGTAAGCGCTTTACA           
+SE2110_p-123(mvaS)            1  3.93e-06          . TGTAAAGCGCTTACAT           
+STACA0001_1147_p-81(araB      1  3.93e-06          . TTGAAAGCCCTATCAT           
+SA1968_p-51(arg)              1  3.93e-06          . TGGTAAGCGCATACAT           
+SH0521_p-171(glcA)            1  4.41e-06          . TTGAAAACGCTTTATA           
+Sca_1332_p-44(ptaA)           1  4.41e-06          . AATAAAACGTTTTCAT           
+SA1531_p-52(ald)              1  4.41e-06          . TTGATTGCGCTTTCAA           
+SA2480_p-84(drp35)            1  4.41e-06          . ATGAAACCGTTATCAT           
+SA0508_p-79(kbl)              1  4.41e-06          . ATGATAAGGCTTTCAA           
+SA0214_p-61(uhpT)             1  4.41e-06          . TATTAAGCGCTTACAC           
+SA2167_p-127(scrA)            1  4.41e-06          . ATGAATGCGCTATCAA           
+SH2450_p-101(SA0511)          1  4.95e-06          . AAGAAAGCGCTTTTAT           
+SE2102_p-178(glcA)            1  4.95e-06          . TTGTAAACGCTTTATT           
+STACA0001_0618_p-168(pta      1  4.95e-06          . AATAAAACGTTTACAT           
+STACA0001_0477_p-98(SA05      1  4.95e-06          . AAGAAAGCGCTTTTAT           
+SA0511_p-97(SA0511)           1  4.95e-06          . AAGAAAGCGCTTTTAT           
+Sca_2085_p-47(arcA)           1  5.53e-06          . TTGCAAGGGCTTACAA           
+SE1943_p-81(mqo)              1  5.53e-06          . GAGAAAGCGCTTTAAT           
+STACA0001_0331_p-46(fruR      1  5.53e-06          . ATGTAAGCGCACTCAT           
+STACA0001_0589_p-43(citZ      1  5.53e-06          . GTGAAAGCCATTTCAT           
+MCCL_1362_p0(citZ)            1  6.19e-06          . GTGAAAGCCATTACAT           
+MCCL_0348_p-34(rbsR2)         1  6.19e-06          . ATGTAATCGGTTACAC           
+MCCL_1319_p-85(sdhC)          1  6.19e-06          . ATGTAATCGGTTTCTT           
+SH0731_p-142(glvR)            1  6.19e-06          . ATAAAAGCGTTTTCTT           
+SH1993_p-161(rocD)            1  6.19e-06          . CTGTAAGGGCTTTCAT           
+SE1409_p-71(ccpA)             1  6.19e-06          . AATAAAACGTTTACAA           
+SE1032_p-103(citB)            1  6.19e-06          . AATAAAGCGTTTTCTA           
+STACA0001_0084_p-170(lip      1  6.19e-06          . TTGGAAACGCTTTCTG           
+STACA0001_1597_p-103(cit      1  6.19e-06          . AATAAAGCGTTTTCTA           
+STACA0001_0865_p-51(arg)      1  6.19e-06          . ATGCAAGCGTATACAT           
+SA1557_p-71(ccpA)             1  6.19e-06          . AATAAAACGTTTACAA           
+SA1847_p-65(scrR)             1  6.19e-06          . TTTAAAGCGGTTACAC           
+SA0873_p-62(SA0873)           1  6.19e-06          . ATGTAACGGTTTTCAA           
+SSP1030_p-33(acsA)            1  6.87e-06          . AAGCAAGCGATTTCAT           
+SH1190_p-138(fhs)             1  6.87e-06          . TTGGAAACGCTCTCAA           
+SH1226_p-152(pfkA)            1  6.87e-06          . TATAAAACGTTTACAT           
+Sca_1304_p-103(pfkA)          1  6.87e-06          . TATAAAACGTTTACAT           
+SE0247_p2(SE0247)             1  6.87e-06          . GTTGAAACGCTTTCAT           
+STACA0001_1139_p-75(gltS      1  6.87e-06          . TTTATAACGCTTACAT           
+STACA0001_1171_p-119(n/a      1  6.87e-06          . GTGTAATCGATTTCAT           
+SA2135_p-64(gltS)             1  6.87e-06          . TTTATAACGCTTACAT           
+SH1230_p-42(citZ)             1  7.63e-06          . TTGGAAGCCATTACAT           
+Sca_1982_p-79(pfoR)           1  7.63e-06          . TTGAAAACGCTTTACT           
+Sca_1474_p-137(putP)          1  7.63e-06          . ATGTAAACGCTTTACT           
+SA1927_p-142(fbaA)            1  7.63e-06          . ATGTATACGTTTGCAT           
+MCCL_1938_p-49(treP)          1  8.44e-06          . TTGAAAACCCTTTCAG           
+SSP0512_p-66(scrA)            1  8.44e-06          . TTGGAACCGGTTACAA           
+SH0671_p-63(scrA)             1  8.44e-06          . TTGGAACCGGTTACAA           
+SE2217_p-304(arcA)            1  8.44e-06          . tgGtAAGCGtaTaCAT           
+SE1959_p-58(scrA)             1  8.44e-06          . TTGGAACCGGTTACAA           
+STACA0001_0951_p-137(mva      1  8.44e-06          . ATGTAAGCGTTTTACA           
+STACA0001_1097_p-63(scrA      1  8.44e-06          . TTGGAACCGGTTACAA           
+SA1184_p-103(citB)            1  8.44e-06          . AATTAAGCGTTTTCTA           
+SA0819_p-84(gudB)             1  8.44e-06          . TTGTAAGGGCTTTAAA           
+SA2167_p-61(scrA)             1  8.44e-06          . TTGGAACCGGTTACAA           
+SSP0875_p-100(sdcS)           1  9.30e-06          . ATGTAAACGATTTAAA           
+SSP0374_p-157(nanK)           1  9.30e-06          . TTGTAAACGCTACCAT           
+STACA0001_0829_p-144(fba      1  9.30e-06          . ATGAATGCGGTTGCAA           
+STACA0001_0629_p-26(ccpA      1  9.30e-06          . AATGAAACGCTTACAA           
+STACA0001_0950_p-121(mva      1  9.30e-06          . TGTAAAACGCTTACAT           
+SA2433_p-45(manR)             1  9.30e-06          . TTAAAAACGCTTACAC           
+SA1437_p-50(SA1437)           1  9.30e-06          . ATGAAAAGGTATTCAA           
+SSP0889_p-137(putP)           1  1.03e-05          . ATGGAAGCGCTTAACA           
+SH1992_p-35(gudB)             1  1.03e-05          . ATGAAAGCGAAATCAT           
+SH2457_p-74(kbl)              1  1.03e-05          . ATGATAGTGCTTTCAT           
+Sca_0617_p-64(SA0873)         1  1.03e-05          . TTGGTAACGATTTCAT           
+SE0654_p-41(gudB)             1  1.03e-05          . ATGAAAGCGAAATCAT           
+MCCL_0079_p-103(SA2109)       1  1.14e-05          . GTGAAAACGTTTTCGT           
+SSP0596_p-35(SA0184)          1  1.14e-05          . ATGAAACCGATTACAG           
+SE2063_p-66(fbp)              1  1.14e-05          . ATGTAAGCGCATTATT           
+SSP0715_p-128(SA1975)         1  1.26e-05          . TTGCAATCGTTTTCAA           
+SSP1869_p-124(yusH)           1  1.26e-05          . ATGAAAACGCTTTACC           
+SH0559_p-64(fbp)              1  1.26e-05          . ATGTAAGCGGTTTTAT           
+SH2196_p-45(fruR)             1  1.26e-05          . ATGTAAGCGTACACAT           
+STACA0001_0514_p-61(nupC      1  1.26e-05          . ATGTTAGCGCGTTCAT           
+Sca_1628_p-102(fbaA)          1  1.39e-05          . TTAAAACCGCTTACAT           
+SE1914_p-101(n/a)             1  1.39e-05          . TTGTAAACACTTACAT           
+STACA0001_0168_p-41(gudB      1  1.39e-05          . TTGAAAGCGAAATCAT           
+STACA0001_1175_p-63(SA01      1  1.39e-05          . TTGTAAACGTTTAATA           
+STACA0001_1097_p-34(scrA      1  1.39e-05          . ATGGAACCGGTTTCTA           
+SA0819_p-42(gudB)             1  1.39e-05          . TTGAAAGCGAAATCAT           
+SA2434_p-37(manP)             1  1.39e-05          . GAGAATACGCTTACAA           
+SA1718_p-137(putP)            1  1.39e-05          . ACGAAAGCGCTTCCTA           
+SSP0836_p-68(n/a)             1  1.54e-05          . TTTAAAGCGATTCCAT           
+SSP0327_p-57(drp35)           1  1.54e-05          . ATGAAAGGCTTTGCAT           
+SSP2019_p-44(fruR)            1  1.54e-05          . AAGAAAGCGTAAACAT           
+Sca_2103_p-113(aldA)          1  1.54e-05          . ATGTAAACGTTTTACT           
+Sca_0991_p-68(citB)           1  1.54e-05          . TTGTAATCCCTTACTT           
+Sca_2440_p6(manP)             1  1.54e-05          . ATTTTAGCGATTACAT           
+Sca_2017_p-58(pflB)           1  1.54e-05          . GTGAAAACGGTAACAT           
+SSP1395_p-33(rbsD)            1  1.69e-05          . ATGTAACGGGTTACAT           
+SSP0538_p-318(SE1944)         1  1.69e-05          . AGTAAAGCGTTTTCTA           
+SH1992_p-77(gudB)             1  1.87e-05          . TTGAAAACCCTTTAAA           
+Sca_0346_p-44(fruR)           1  1.87e-05          . ATGTAAGCGGAAACAT           
+STACA0001_0978_p-221(pfo      1  1.87e-05          . ATAATAGCGTTTACAT           
+STACA0001_0973_p-84(rbsU      1  1.87e-05          . GTGTAAGCGTATACAG           
+SE0715_p-62(SA0873)           1  2.05e-05          . AAGTAACGGTTTTCAA           
+STACA0001_0121_p-62(SA08      1  2.05e-05          . AAGTAACGGTTTTCAA           
+SSP2235_p-65(nupC)            1  2.25e-05          . ATGTAAGTGCTATCAA           
+STACA0001_0995_p-66(fbp)      1  2.25e-05          . ATGTAAGCGCATTACT           
+SA0479_p-63(nupC)             1  2.25e-05          . ATGTTAGCCCTTCCAT           
+SSP2070_p-67(dhaK)            1  2.47e-05          . ATATTAGCGTTTACAT           
+SSP0539_p-90(mqo)             1  2.47e-05          . TAGAAAACGCTTTACT           
+SE0283_p-63(nupC)             1  2.47e-05          . ATGTTAGCGTGTTCAT           
+STACA0001_0168_p-84(gudB      1  2.47e-05          . TTGTAAACCCTTTAAA           
+Sca_2166_p-52(ipdC)           1  2.70e-05          . AGGAAAGCGTTATCCT           
+SA0653_p-43(fruR)             1  2.70e-05          . GTGAAAGCGTACTCAT           
+SA2109_p-122(SA2109)          1  2.70e-05          . CTGTAAACGATTGCAT           
+SSP2164_p-164(SA0511)         1  2.96e-05          . TTGAAATCGCAATCAA           
+MCCL_1890_p-70(nupC)          1  3.25e-05          . TGTTTAGCGCTTTCAT           
+SH1198_p-101(ptaA)            1  3.25e-05          . TCAAAAGCGCTTACAT           
+Sca_1820_p-70(glpT)           1  3.25e-05          . ATGGAAGCGTTGTCTT           
+STACA0001_0618_p-48(ptaA      1  3.25e-05          . ATGAAAAGCATTTCAA           
+SA2428_p-62(arcA)             1  3.25e-05          . ATGtAAGCGtTTgaAg           
+MCCL_1413_p-25(ccpA)          1  3.55e-05          . AATAAAACGTTTTCAG           
+MCCL_1856_p-94(SA0511)        1  3.55e-05          . ATGTAAGCGTTTCTAA           
+SSP0563_p-73(araB2)           1  3.55e-05          . ATGTAAGCACTATCAT           
+SE1763_p-15(SAS074)           1  3.55e-05          . AAGGAAGTGTTTTCAA           
+SE1723_p-143(fbaA)            1  4.25e-05          . ATGTATTCGCTTCCAA           
+STACA0001_1003_p-166(gud      1  4.25e-05          . TTGTAACCGTTTTCGC           
+SH1216_p-52(ald)              1  4.63e-05          . CTGATTGCGCTTTCAT           
+SE0654_p-74(gudB)             1  4.63e-05          . TTTAAAATGCTTTCAA           
+SSP1037_p-86(ptaA)            1  5.05e-05          . AGTAAATCGTTTACAT           
+MCCL_1008_p-36(citB)          1  5.50e-05          . ATGTAAAGGCTTTATC           
+Sca_2095_p-85(xylB)           1  5.99e-05          . ATGTAAACGATTGTAT           
+MCCL_0452_p-28(fruR)          1  6.52e-05          . ATGAAAGTGTTCACAA           
+SSP2164_p-98(SA0511)          1  7.70e-05          . AATAAAGCGTTTTTAT           
+SH0743_p-33(SA0184)           1  7.70e-05          . ATGTAAGTGATTACAG           
+SE1924_p-71(gltS)             1  8.37e-05          . TTTATAAGGTTTACAT           
+SH0376_p-41(ipdC)             1  9.07e-05          . TTGTAAGTGTATTCTA           
+Sca_0882_p-163(sucC)          1  9.84e-05          . ATGAAAACTGTTTCAA           
+SSP0245_p-158(n/a)            1  1.07e-04          . TATAAAACGATATCAT           
+SH1814_p-61(sdhC)             1  1.25e-04          . TTGAAAAGACTTTCTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sca_2408_p-63(SA0225)             2.8e-08  [+1]
+SA0299_p-93(SA0299)               2.8e-08  [+1]
+Sca_2373_p-60(SH0372)             3.3e-08  [+1]
+SH0371_p-29(SH0371)               3.9e-08  [+1]
+SE0253_p-37(acoL)                 3.9e-08  [+1]
+SSP0114_p-65(n/a)                 6.3e-08  [+1]
+SSP0524_p-37(gutB)                6.3e-08  [+1]
+MCCL_1807_p-34(nhaC)              7.7e-08  [+1]
+SSP0598_p-109(SA2105)             7.7e-08  [+1]
+SSP2297_p-145(lip)                7.7e-08  [+1]
+Sca_2140_p-85(SA0184)             7.7e-08  [+1]
+SSP0617_p-37(n/a)                 9.2e-08  [+1]
+Sca_1807_p-119(SA2105)            9.2e-08  [+1]
+Sca_1812_p-249(SA2109)            9.2e-08  [+1]
+SE1437_p-80(putA)                 9.2e-08  [+1]
+STACA0001_1050_p-45(aapA          9.2e-08  [+1]
+STACA0001_1569_p-30(SA11          9.2e-08  [+1]
+SA0206_p-130(msmX)                1.1e-07  [+1]
+SSP1332_p-44(SSP1332)             1.3e-07  [+1]
+SSP2179_p-65(xltD)                1.3e-07  [+1]
+SSP2440_p-39(cstA)                1.3e-07  [+1]
+SSP0401_p-86(gudP)                1.3e-07  [+1]
+SH1407_p-159(malR)                1.3e-07  [+1]
+SH1157_p-81(putA)                 1.3e-07  [+1]
+SH0174_p-31(rbsR2)                1.3e-07  [+1]
+SH0623_p-61(aapA)                 1.3e-07  [+1]
+SE1897_p-104(glvC)                1.3e-07  [+1]
+STACA0001_1166_p-113(glv          1.3e-07  [+1]
+SA1732_p-162(sdcS)                1.3e-07  [+1]
+SSP0523_p-151(SSP0523)            1.5e-07  [+1]
+Sca_2309_p-64(cstA)               1.5e-07  [+1]
+SE2004_p-41(aapA)                 1.5e-07  [+1]
+SE2116_p-149(rocA)                1.5e-07  [+1]
+SA0162_p-103(aldA)                1.5e-07  [+1]
+MCCL_0353_p-43(mdxE)              1.8e-07  [+1]
+SSP1818_p-198(rocD)               1.8e-07  [+1]
+SSP0236_p-56(SH0372)              1.8e-07  [+1]
+SSP2427_p-91(fadX)                1.8e-07  [+1]
+SH0547_p-77(aldA)                 1.8e-07  [+1]
+Sca_0968_p-30(SA1162)             1.8e-07  [+1]
+SE2071_p-68(aldA)                 1.8e-07  [+1]
+SE1459_p-41(pckA)                 1.8e-07  [+1]
+SE0653_p-180(rocD)                1.8e-07  [+1]
+SE1885_p-130(SA2105)              1.8e-07  [+1]
+STACA0001_1844_p-93(arcB          1.8e-07  [+1]
+STACA0001_1178_p-131(SA2          1.8e-07  [+1]
+SA1633_p-38(SA1633)               1.8e-07  [+1]
+SSP1396_p-302(rbsR2)                2e-07  [+1]
+SSP0245_p-40(n/a)                   2e-07  [+1]
+Sca_2440_p-39(manP)                 2e-07  [+1]
+Sca_0765_p-291(sdhC)                2e-07  [+1]
+SE2046_p-83(gntR)                   2e-07  [+1]
+STACA0001_1009_p-83(gntR            2e-07  [+1]
+SA2295_p-79(gntR)                   2e-07  [+1]
+SA0225_p-86(SA0225)                 2e-07  [+1]
+SA1585_p-71(putA)                   2e-07  [+1]
+SH0421_p-56(citM)                 2.3e-07  [+1]
+Sca_1338_p-34(acsA)               2.3e-07  [+1]
+SSP1396_p-30(rbsR2)               2.7e-07  [+1]
+SSP2178_p-149(araB)               2.7e-07  [+1]
+Sca_2421_p-101(rbsU)              2.7e-07  [+1]
+SE1898_p-109(glvR)                2.7e-07  [+1]
+STACA0001_1165_p-115(glv          2.7e-07  [+1]
+SA1554_p-37(acsA)                 2.7e-07  [+1]
+SA1819_p-39(tst)                  2.7e-07  [+1]
+SA2320_p-76(pfoR)                 2.7e-07  [+1]
+SH0168_p-169(lip)                 3.1e-07  [+1]
+SH1189_p-36(acsA)                 3.1e-07  [+1]
+SH0300_p-97(drp35)                3.1e-07  [+1]
+STACA0001_1804_p-151(cit          3.1e-07  [+1]
+STACA0001_0626_p-35(acsA          3.1e-07  [+1]
+STACA0001_0658_p-81(putA          3.1e-07  [+1]
+STACA0001_0169_p-184(roc          3.1e-07  [+1]
+SA2463_p-137(lip)                 3.1e-07  [+1]
+SA2105_p-117(SA2105)              3.1e-07  [+1]
+SA0184_p-63(SA0184)               3.1e-07  [+1]
+SSP1648_p-232(sdhC)               3.6e-07  [+1]
+SSP0206_p-72(SSP0206)             3.6e-07  [+1]
+SH0566_p-241(gudP)                3.6e-07  [+1]
+SH0282_p-108(nanA)                3.6e-07  [+1]
+SH0745_p-127(SA2105)              3.6e-07  [+1]
+SH0739_p-173(SA2109)              3.6e-07  [+1]
+SH1814_p-285(sdhC)                3.6e-07  [+1]
+Sca_2389_p-109(nanA)              3.6e-07  [+1]
+Sca_1673_p-64(SAS074)             3.6e-07  [+1]
+SE0840_p-270(sdhC)                3.6e-07  [+1]
+STACA0001_1305_p-62(SAS0          3.6e-07  [+1]
+SA2226_p-54(aapA)                 3.6e-07  [+1]
+SA1555_p-147(acuA)                3.6e-07  [+1]
+SA0304_p-64(nanA)                 3.6e-07  [+1]
+SA2341_p-112(rocA)                3.6e-07  [+1]
+SSP0999_p-80(putA)                4.3e-07  [+1]
+SSP0311_p-101(rocA)               4.3e-07  [+1]
+Sca_2258_p-64(nhaC)               4.3e-07  [+1]
+STACA0001_0048_p-61(SE02          4.3e-07  [+1]
+SA0760_p-152(yusH)                4.3e-07  [+1]
+SAS074_p-64(SAS074)               4.3e-07  [+1]
+SSP0557_p-74(gltS)                4.9e-07  [+1]
+SH1188_p-144(acuA)                4.9e-07  [+1]
+STACA0001_0986_p-85(aldA          4.9e-07  [+1]
+STACA0001_0627_p-154(acu          4.9e-07  [+1]
+STACA0001_0466_p-75(SSP0          4.9e-07  [+1]
+MCCL_1451_p-52(putA)              5.7e-07  [+1]
+SSP1440_p-33(SA1162)              5.7e-07  [+1]
+SSP0178_p-28(glpK)                5.7e-07  [+1]
+SSP0582_p-113(glvR)               5.7e-07  [+1]
+SH0574_p-81(gntR)                 5.7e-07  [+1]
+SH0500_p-128(rocA)                5.7e-07  [+1]
+SH1310_p-189(SA1437)              5.7e-07  [+1]
+SH0208_p-95(xylB)                 5.7e-07  [+1]
+Sca_1339_p-213(acuA)              5.7e-07  [+1]
+Sca_2257_p-49(argF)               5.7e-07  [+1]
+Sca_1865_p-85(mqo)                5.7e-07  [+1]
+Sca_0564_p-49(rocA)               5.7e-07  [+1]
+Sca_1672_p-141(SA1975)            5.7e-07  [+1]
+STACA0001_0678_p-44(pckA          5.7e-07  [+1]
+STACA0001_0943_p-128(roc          5.7e-07  [+1]
+SA2300_p-148(gudP)                5.7e-07  [+1]
+SA1609_p-44(pckA)                 5.7e-07  [+1]
+SA1162_p-27(SA1162)               5.7e-07  [+1]
+SA0818_p-150(rocD)                5.7e-07  [+1]
+MCCL_1409_p0(acsA)                6.6e-07  [+1]
+SH2538_p-69(treP)                 6.6e-07  [+1]
+SH0223_p-103(acoL)                6.6e-07  [+1]
+STACA0001_1120_p-267(SE1          6.6e-07  [+1]
+SA0510_p-53(araB)                 6.6e-07  [+1]
+SA2334_p-123(mvaS)                6.6e-07  [+1]
+SSP2205_p-100(kbl)                7.4e-07  [+1]
+SH0732_p-121(glvC)                7.4e-07  [+1]
+SH1137_p-53(pckA)                 7.4e-07  [+1]
+SH0208_p-37(xylB)                 7.4e-07  [+1]
+Sca_2406_p-61(fadX)               7.4e-07  [+1]
+Sca_0948_p-126(glpF)              7.4e-07  [+1]
+Sca_1950_p-53(gntR)               7.4e-07  [+1]
+Sca_1390_p-54(pckA)               7.4e-07  [+1]
+Sca_0108_p-71(treP)               7.4e-07  [+1]
+Sca_2095_p-116(xylB)              7.4e-07  [+1]
+SE2082_p-68(pfoR)                 7.4e-07  [+1]
+SE1007_p-29(SA1162)               7.4e-07  [+1]
+STACA0001_0978_p-68(pfoR          7.4e-07  [+1]
+STACA0001_1306_p-131(SA1          7.4e-07  [+1]
+SA1140_p-133(glpF)                7.4e-07  [+1]
+SA0325_p-76(glpT)                 7.4e-07  [+1]
+SA2114_p-104(glvC)                7.4e-07  [+1]
+SA0432_p-68(treP)                 7.4e-07  [+1]
+SSP0591_p-114(SA2109)             8.4e-07  [+1]
+SSP0230_p-79(n/a)                 8.4e-07  [+1]
+SSP0975_p-43(pckA)                8.4e-07  [+1]
+SH0731_p-115(glvR)                8.4e-07  [+1]
+Sca_1866_p-254(SE1944)            8.4e-07  [+1]
+SE1191_p-117(n/a)                 8.4e-07  [+1]
+SA2115_p-241(glvR)                8.4e-07  [+1]
+MCCL_1639_p-94(putP)              9.4e-07  [+1]
+SSP0532_p-47(SE0247)              9.4e-07  [+1]
+SSP2179_p-176(xltD)               9.4e-07  [+1]
+SH0281_p-150(nanK)                9.4e-07  [+1]
+SH1581_p-29(SA1162)               9.4e-07  [+1]
+SH0868_p-63(SAS074)               9.4e-07  [+1]
+Sca_2390_p-152(nanK)              9.4e-07  [+1]
+Sca_1871_p-47(SE0247)             9.4e-07  [+1]
+SE1763_p-62(SAS074)               9.4e-07  [+1]
+SA0305_p-109(nanK)                9.4e-07  [+1]
+SSP1461_p-145(glpF)               1.1e-06  [+1]
+SH1614_p-128(glpF)                1.1e-06  [+1]
+SE0977_p-130(glpF)                1.1e-06  [+1]
+STACA0001_1544_p-132(glp          1.1e-06  [+1]
+SA1975_p-128(SA1975)              1.1e-06  [+1]
+MCCL_1408_p-62(fhs)               1.2e-06  [+1]
+SSP2178_p-38(araB)                1.2e-06  [+1]
+SSP0231_p-112(csbX)               1.2e-06  [+1]
+SH0367_p-50(arcA)                 1.2e-06  [+1]
+SE2228_p-45(manP)                 1.2e-06  [+1]
+STACA0001_1955_p-134(put          1.2e-06  [+1]
+SA0605_p-64(dhaK)                 1.2e-06  [+1]
+SA0218_p-59(pflB)                 1.2e-06  [+1]
+SA0260_p-86(rbsU)                 1.2e-06  [+1]
+MCCL_0405_p-325(gntR)             1.4e-06  [+1]
+SSP1071_p-42(citZ)                1.4e-06  [+1]
+SSP0583_p-117(glvC)               1.4e-06  [+1]
+SH0692_p-248(SE1944)              1.4e-06  [+1]
+SH0227_p-91(acoL2)                1.4e-06  [+1]
+SH2244_p-64(dhaK)                 1.4e-06  [+1]
+Sca_2466_p-58(hutH)               1.4e-06  [+1]
+SE1944_p-245(SE1944)              1.4e-06  [+1]
+SA2122_p-57(hutU)                 1.4e-06  [+1]
+SA1339_p-43(malR)                 1.4e-06  [+1]
+MCCL_1365_p-100(pfkA)             1.6e-06  [+1]
+SSP0714_p-64(SAS074)              1.6e-06  [+1]
+SSP0375_p-182(nanA)               1.6e-06  [+1]
+Sca_1371_p-71(putA)               1.6e-06  [+1]
+Sca_2042_p-292(SA1437)            1.6e-06  [+1]
+SA0183_p-269(glcA)                1.6e-06  [+1]
+SA0182_p-97(ipdC)                 1.6e-06  [+1]
+SA2333_p-147(mvaA)                1.6e-06  [+1]
+MCCL_0582_p-44(rocA)              1.8e-06  [+1]
+SSP1068_p-148(pfkA)               1.8e-06  [+1]
+SSP2282_p-81(treP)                1.8e-06  [+1]
+SSP0410_p-83(gntR)                1.8e-06  [+1]
+SH0537_p-270(pfoR)                1.8e-06  [+1]
+SH0537_p-116(pfoR)                1.8e-06  [+1]
+Sca_1301_p-42(citZ)               1.8e-06  [+1]
+Sca_1960_p-94(gudP)               1.8e-06  [+1]
+SE0235_p-146(SE0235)              1.8e-06  [+1]
+SE1374_p-152(pfkA)                1.8e-06  [+1]
+SE0164_p-61(uhpT)                 1.8e-06  [+1]
+STACA0001_1505_p-48(manR          1.8e-06  [+1]
+STACA0001_0592_p-107(pfk          1.8e-06  [+1]
+STACA0001_2159_p-286(sdh          1.8e-06  [+1]
+SA1521_p-151(pfkA)                1.8e-06  [+1]
+SA0994_p-235(sdhC)                1.8e-06  [+1]
+MCCL_0891_p-133(glpF)               2e-06  [+1]
+MCCL_0584_p-93(gudB)                2e-06  [+1]
+SSP1029_p-162(acuA)                 2e-06  [+1]
+SSP1031_p-147(fhs)                  2e-06  [+1]
+Sca_1964_p-123(fbp)                 2e-06  [+1]
+SE1371_p-43(citZ)                   2e-06  [+1]
+SE2056_p-164(gudP)                  2e-06  [+1]
+STACA0001_1121_p-93(mqo)            2e-06  [+1]
+STACA0001_2124_p-67(scrR            2e-06  [+1]
+SA1518_p-43(citZ)                   2e-06  [+1]
+SA0227_p-64(fadX)                   2e-06  [+1]
+SA0107_p-237(spa)                   2e-06  [+1]
+MCCL_0370_p-82(glpT)              2.3e-06  [+1]
+SSP1027_p-26(ccpA)                2.3e-06  [+1]
+Sca_1628_p-143(fbaA)              2.3e-06  [+1]
+SE0214_p-37(pflB)                 2.3e-06  [+1]
+MCCL_1800_p-82(gudP)              2.5e-06  [+1]
+MCCL_0434_p-94(pflB)              2.5e-06  [+1]
+MCCL_0348_p-65(rbsR2)             2.5e-06  [+1]
+SSP2425_p-36(SA0225)              2.5e-06  [+1]
+Sca_1314_p-54(ald)                2.5e-06  [+1]
+Sca_1495_p-138(sdcS)              2.5e-06  [+1]
+Sca_2418_p-151(SSP0523)           2.5e-06  [+1]
+SE2047_p-85(glpT)                 2.5e-06  [+1]
+SE2088_p-87(rbsU)                 2.5e-06  [+1]
+STACA0001_1368_p-57(hutH          2.5e-06  [+1]
+SA0008_p-59(hutH)                 2.5e-06  [+1]
+SH1186_p-26(ccpA)                 2.8e-06  [+1]
+SE1403_p-131(ptaA)                2.8e-06  [+1]
+STACA0001_1506_p-40(manP          2.8e-06  [+1]
+SA1007_p-334(hla)                 2.8e-06  [+1]
+SH0693_p-77(mqo)                  3.2e-06  [+1]
+SH1944_p-93(SA0873)               3.2e-06  [+1]
+SH0869_p-129(SA1975)              3.2e-06  [+1]
+Sca_2417_p-40(gutB)               3.2e-06  [+1]
+Sca_0213_p-144(SA0511)            3.2e-06  [+1]
+SE2227_p-45(manR)                 3.2e-06  [+1]
+SE1762_p-130(SA1975)              3.2e-06  [+1]
+STACA0001_0602_p-52(ald)          3.2e-06  [+1]
+SA2304_p-83(fbp)                  3.2e-06  [+1]
+SSP1057_p-52(ald)                 3.5e-06  [+1]
+SSP0759_p-101(fbaA)               3.5e-06  [+1]
+SSP0008_p-56(hutH)                3.5e-06  [+1]
+SH0713_p-64(gltS)                 3.5e-06  [+1]
+STACA0001_0483_p-73(kbl)          3.5e-06  [+1]
+SA1939_p-115(dra2)                3.5e-06  [+1]
+SA1553_p-130(fhs)                 3.5e-06  [+1]
+SE0106_p-50(arcA2)                3.9e-06  [+1]
+SE2109_p-137(mvaA)                3.9e-06  [+1]
+SE2110_p-123(mvaS)                3.9e-06  [+1]
+STACA0001_1147_p-81(araB          3.9e-06  [+1]
+SA1968_p-51(arg)                  3.9e-06  [+1]
+SH0521_p-171(glcA)                4.4e-06  [+1]
+Sca_1332_p-44(ptaA)               4.4e-06  [+1]
+SA1531_p-52(ald)                  4.4e-06  [+1]
+SA2480_p-84(drp35)                4.4e-06  [+1]
+SA0508_p-79(kbl)                  4.4e-06  [+1]
+SA0214_p-61(uhpT)                 4.4e-06  [+1]
+SA2167_p-127(scrA)                4.4e-06  [+1]
+SH2450_p-101(SA0511)                5e-06  [+1]
+SE2102_p-178(glcA)                  5e-06  [+1]
+STACA0001_0618_p-168(pta            5e-06  [+1]
+STACA0001_0477_p-98(SA05            5e-06  [+1]
+SA0511_p-97(SA0511)                 5e-06  [+1]
+Sca_2085_p-47(arcA)               5.5e-06  [+1]
+SE1943_p-81(mqo)                  5.5e-06  [+1]
+STACA0001_0331_p-46(fruR          5.5e-06  [+1]
+STACA0001_0589_p-43(citZ          5.5e-06  [+1]
+MCCL_1362_p0(citZ)                6.2e-06  [+1]
+MCCL_0348_p-34(rbsR2)             6.2e-06  [+1]
+MCCL_1319_p-85(sdhC)              6.2e-06  [+1]
+SH0731_p-142(glvR)                6.2e-06  [+1]
+SH1993_p-161(rocD)                6.2e-06  [+1]
+SE1409_p-71(ccpA)                 6.2e-06  [+1]
+SE1032_p-103(citB)                6.2e-06  [+1]
+STACA0001_0084_p-170(lip          6.2e-06  [+1]
+STACA0001_1597_p-103(cit          6.2e-06  [+1]
+STACA0001_0865_p-51(arg)          6.2e-06  [+1]
+SA1557_p-71(ccpA)                 6.2e-06  [+1]
+SA1847_p-65(scrR)                 6.2e-06  [+1]
+SA0873_p-62(SA0873)               6.2e-06  [+1]
+SSP1030_p-33(acsA)                6.9e-06  [+1]
+SH1190_p-138(fhs)                 6.9e-06  [+1]
+SH1226_p-152(pfkA)                6.9e-06  [+1]
+Sca_1304_p-103(pfkA)              6.9e-06  [+1]
+SE0247_p2(SE0247)                 6.9e-06  [+1]
+STACA0001_1139_p-75(gltS          6.9e-06  [+1]
+STACA0001_1171_p-119(n/a          6.9e-06  [+1]
+SA2135_p-64(gltS)                 6.9e-06  [+1]
+SH1230_p-42(citZ)                 7.6e-06  [+1]
+Sca_1982_p-79(pfoR)               7.6e-06  [+1]
+Sca_1474_p-137(putP)              7.6e-06  [+1]
+SA1927_p-142(fbaA)                7.6e-06  [+1]
+MCCL_1938_p-49(treP)              8.4e-06  [+1]
+SSP0512_p-66(scrA)                8.4e-06  [+1]
+SH0671_p-63(scrA)                 8.4e-06  [+1]
+SE2217_p-304(arcA)                8.4e-06  [+1]
+SE1959_p-58(scrA)                 8.4e-06  [+1]
+STACA0001_0951_p-137(mva          8.4e-06  [+1]
+STACA0001_1097_p-63(scrA          8.4e-06  [+1]
+SA1184_p-103(citB)                8.4e-06  [+1]
+SA0819_p-84(gudB)                 8.4e-06  [+1]
+SA2167_p-61(scrA)                 8.4e-06  [+1]
+SSP0875_p-100(sdcS)               9.3e-06  [+1]
+SSP0374_p-157(nanK)               9.3e-06  [+1]
+STACA0001_0829_p-144(fba          9.3e-06  [+1]
+STACA0001_0629_p-26(ccpA          9.3e-06  [+1]
+STACA0001_0950_p-121(mva          9.3e-06  [+1]
+SA2433_p-45(manR)                 9.3e-06  [+1]
+SA1437_p-50(SA1437)               9.3e-06  [+1]
+SSP0889_p-137(putP)                 1e-05  [+1]
+SH1992_p-35(gudB)                   1e-05  [+1]
+SH2457_p-74(kbl)                    1e-05  [+1]
+Sca_0617_p-64(SA0873)               1e-05  [+1]
+SE0654_p-41(gudB)                   1e-05  [+1]
+MCCL_0079_p-103(SA2109)           1.1e-05  [+1]
+SSP0596_p-35(SA0184)              1.1e-05  [+1]
+SE2063_p-66(fbp)                  1.1e-05  [+1]
+SSP0715_p-128(SA1975)             1.3e-05  [+1]
+SSP1869_p-124(yusH)               1.3e-05  [+1]
+SH0559_p-64(fbp)                  1.3e-05  [+1]
+SH2196_p-45(fruR)                 1.3e-05  [+1]
+STACA0001_0514_p-61(nupC          1.3e-05  [+1]
+Sca_1628_p-102(fbaA)              1.4e-05  [+1]
+SE1914_p-101(n/a)                 1.4e-05  [+1]
+STACA0001_0168_p-41(gudB          1.4e-05  [+1]
+STACA0001_1175_p-63(SA01          1.4e-05  [+1]
+STACA0001_1097_p-34(scrA          1.4e-05  [+1]
+SA0819_p-42(gudB)                 1.4e-05  [+1]
+SA2434_p-37(manP)                 1.4e-05  [+1]
+SA1718_p-137(putP)                1.4e-05  [+1]
+SSP0836_p-68(n/a)                 1.5e-05  [+1]
+SSP0327_p-57(drp35)               1.5e-05  [+1]
+SSP2019_p-44(fruR)                1.5e-05  [+1]
+Sca_2103_p-113(aldA)              1.5e-05  [+1]
+Sca_0991_p-68(citB)               1.5e-05  [+1]
+Sca_2440_p6(manP)                 1.5e-05  [+1]
+Sca_2017_p-58(pflB)               1.5e-05  [+1]
+SSP1395_p-33(rbsD)                1.7e-05  [+1]
+SSP0538_p-318(SE1944)             1.7e-05  [+1]
+SH1992_p-77(gudB)                 1.9e-05  [+1]
+Sca_0346_p-44(fruR)               1.9e-05  [+1]
+STACA0001_0978_p-221(pfo          1.9e-05  [+1]
+STACA0001_0973_p-84(rbsU          1.9e-05  [+1]
+SE0715_p-62(SA0873)                 2e-05  [+1]
+STACA0001_0121_p-62(SA08            2e-05  [+1]
+SSP2235_p-65(nupC)                2.2e-05  [+1]
+STACA0001_0995_p-66(fbp)          2.2e-05  [+1]
+SA0479_p-63(nupC)                 2.2e-05  [+1]
+SSP2070_p-67(dhaK)                2.5e-05  [+1]
+SSP0539_p-90(mqo)                 2.5e-05  [+1]
+SE0283_p-63(nupC)                 2.5e-05  [+1]
+STACA0001_0168_p-84(gudB          2.5e-05  [+1]
+Sca_2166_p-52(ipdC)               2.7e-05  [+1]
+SA0653_p-43(fruR)                 2.7e-05  [+1]
+SA2109_p-122(SA2109)              2.7e-05  [+1]
+SSP2164_p-164(SA0511)               3e-05  [+1]
+MCCL_1890_p-70(nupC)              3.2e-05  [+1]
+SH1198_p-101(ptaA)                3.2e-05  [+1]
+Sca_1820_p-70(glpT)               3.2e-05  [+1]
+STACA0001_0618_p-48(ptaA          3.2e-05  [+1]
+SA2428_p-62(arcA)                 3.2e-05  [+1]
+MCCL_1413_p-25(ccpA)              3.6e-05  [+1]
+MCCL_1856_p-94(SA0511)            3.6e-05  [+1]
+SSP0563_p-73(araB2)               3.6e-05  [+1]
+SE1763_p-15(SAS074)               3.6e-05  [+1]
+SE1723_p-143(fbaA)                4.2e-05  [+1]
+STACA0001_1003_p-166(gud          4.2e-05  [+1]
+SH1216_p-52(ald)                  4.6e-05  [+1]
+SE0654_p-74(gudB)                 4.6e-05  [+1]
+SSP1037_p-86(ptaA)                5.1e-05  [+1]
+MCCL_1008_p-36(citB)              5.5e-05  [+1]
+Sca_2095_p-85(xylB)                 6e-05  [+1]
+MCCL_0452_p-28(fruR)              6.5e-05  [+1]
+SSP2164_p-98(SA0511)              7.7e-05  [+1]
+SH0743_p-33(SA0184)               7.7e-05  [+1]
+SE1924_p-71(gltS)                 8.4e-05  [+1]
+SH0376_p-41(ipdC)                 9.1e-05  [+1]
+Sca_0882_p-163(sucC)              9.8e-05  [+1]
+SSP0245_p-158(n/a)                0.00011  [+1]
+SH1814_p-61(sdhC)                 0.00012  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTGWAARCGYTTWCAW width=16 seqs=391
+Sca_2408_p-63(SA0225)    (    1) ATGTAAGCGTTTACAA  1 
+SA0299_p-93(SA0299)      (    1) ATGTAAGCGTTTACAA  1 
+Sca_2373_p-60(SH0372)    (    1) TTGTAAGCGTTTACAT  1 
+SH0371_p-29(SH0371)      (    1) ATGAAAACGTTTTCAT  1 
+SE0253_p-37(acoL)        (    1) AAGAAAGCGCTTACAA  1 
+SSP0114_p-65(n/a)        (    1) TTGTAAGCGCTTACTA  1 
+SSP0524_p-37(gutB)       (    1) ATGAAAGCGTTTTCTA  1 
+MCCL_1807_p-34(nhaC)     (    1) AAGAAAGCGTTTTCAT  1 
+SSP0598_p-109(SA2105)    (    1) ATGTAAGCGTTTTCTT  1 
+SSP2297_p-145(lip)       (    1) ATGTAAGCGTTTTCTT  1 
+Sca_2140_p-85(SA0184)    (    1) ATGAAAGCGATTACAA  1 
+SSP0617_p-37(n/a)        (    1) ATGAAAGCGCATACAT  1 
+Sca_1807_p-119(SA2105)   (    1) ATGTAAGCGTTTACTT  1 
+Sca_1812_p-249(SA2109)   (    1) ATGAAAGCGCATACAT  1 
+SE1437_p-80(putA)        (    1) ATGTAAACGCTTTCTT  1 
+STACA0001_1050_p-45(aapA (    1) AAGAAAACGCTTTCAT  1 
+STACA0001_1569_p-30(SA11 (    1) ATGAAAGCGCTTGCTT  1 
+SA0206_p-130(msmX)       (    1) ATGTAAACGTTTACAA  1 
+SSP1332_p-44(SSP1332)    (    1) TTGAAAGCGATTACAA  1 
+SSP2179_p-65(xltD)       (    1) ATGTAAGCGTTTACTA  1 
+SSP2440_p-39(cstA)       (    1) AAGAAAACGCTTTCAA  1 
+SSP0401_p-86(gudP)       (    1) TTGTAAGCGATTTCAT  1 
+SH1407_p-159(malR)       (    1) TTGAAAGCGTTTACTA  1 
+SH1157_p-81(putA)        (    1) TTGAAAACGCTTTCTA  1 
+SH0174_p-31(rbsR2)       (    1) ATGTAAGCGGTTACAT  1 
+SH0623_p-61(aapA)        (    1) AAGAAAGCGTTTACAA  1 
+SE1897_p-104(glvC)       (    1) ATGTAAGCGTTTACTA  1 
+STACA0001_1166_p-113(glv (    1) ATGTAAGCGTTTACTA  1 
+SA1732_p-162(sdcS)       (    1) TTGAAAGCGCATTCAT  1 
+SSP0523_p-151(SSP0523)   (    1) TAGAAAACGCTTTCAT  1 
+Sca_2309_p-64(cstA)      (    1) AAGTAAGCGTTTACAT  1 
+SE2004_p-41(aapA)        (    1) AAGTAAACGCTTTCAT  1 
+SE2116_p-149(rocA)       (    1) ATGTAAGCGTTTGCAA  1 
+SA0162_p-103(aldA)       (    1) ATGTAAACGCTTACTA  1 
+MCCL_0353_p-43(mdxE)     (    1) ATGAAAACGTTTTCTT  1 
+SSP1818_p-198(rocD)      (    1) ATGTAAGGGCTTACAT  1 
+SSP0236_p-56(SH0372)     (    1) TTGTAAACGTTTACAA  1 
+SSP2427_p-91(fadX)       (    1) ATGTAAGGGCTTACAT  1 
+SH0547_p-77(aldA)        (    1) AAGTAAACGCTTACAT  1 
+Sca_0968_p-30(SA1162)    (    1) TTGTAAGCGCTTACTC  1 
+SE2071_p-68(aldA)        (    1) AAGTAAACGCTTACAT  1 
+SE1459_p-41(pckA)        (    1) ATGTAAGGGCTTACAT  1 
+SE0653_p-180(rocD)       (    1) ATGTAAGGGCTTACAT  1 
+SE1885_p-130(SA2105)     (    1) TTGTAAGCGTTTTCTA  1 
+STACA0001_1844_p-93(arcB (    1) ATGAAATCGCTTTCAA  1 
+STACA0001_1178_p-131(SA2 (    1) TTGTAAGCGTTTTCTA  1 
+SA1633_p-38(SA1633)      (    1) TTGTAAACGTTTACAA  1 
+SSP1396_p-302(rbsR2)     (    1) TAGAAAACGCTTTCAA  1 
+SSP0245_p-40(n/a)        (    1) TAGAAAGCGTTTACAA  1 
+Sca_2440_p-39(manP)      (    1) ATGTTAGCGCTTACAA  1 
+Sca_0765_p-291(sdhC)     (    1) TTGTAAACGCTTTCTA  1 
+SE2046_p-83(gntR)        (    1) AAGAAAGCGCTTGCAA  1 
+STACA0001_1009_p-83(gntR (    1) AAGAAAGCGCTTGCAA  1 
+SA2295_p-79(gntR)        (    1) AAGAAAGCGCTTGCAA  1 
+SA0225_p-86(SA0225)      (    1) GTGTAAGCGTTTACAA  1 
+SA1585_p-71(putA)        (    1) ATGAAAACGCTTTCTC  1 
+SH0421_p-56(citM)        (    1) ATGAAAACGTTTTCTA  1 
+Sca_1338_p-34(acsA)      (    1) ATGAAAACGATTTCAA  1 
+SSP1396_p-30(rbsR2)      (    1) ATGAAAACGGTTACAT  1 
+SSP2178_p-149(araB)      (    1) TAGTAAACGCTTACAT  1 
+Sca_2421_p-101(rbsU)     (    1) ATGAAAGCGTATACAT  1 
+SE1898_p-109(glvR)       (    1) TAGTAAACGCTTACAT  1 
+STACA0001_1165_p-115(glv (    1) TAGTAAACGCTTACAT  1 
+SA1554_p-37(acsA)        (    1) AAGAAAGCGTTTTCAC  1 
+SA1819_p-39(tst)         (    1) ATGTAAACGTTTACAC  1 
+SA2320_p-76(pfoR)        (    1) TTGAAAACGTTTTCTT  1 
+SH0168_p-169(lip)        (    1) ATGTAAACGCTTTCTC  1 
+SH1189_p-36(acsA)        (    1) AAGAAAGCGATTTCAT  1 
+SH0300_p-97(drp35)       (    1) TTGAAAACGATTACAT  1 
+STACA0001_1804_p-151(cit (    1) TGGAAAGCGCTTACAA  1 
+STACA0001_0626_p-35(acsA (    1) AAGAAAGCGATTTCAT  1 
+STACA0001_0658_p-81(putA (    1) ATGTAAACGCTTTCTC  1 
+STACA0001_0169_p-184(roc (    1) TTGTAAGGGCTTTCAA  1 
+SA2463_p-137(lip)        (    1) ATGTAAACGCTTTCTC  1 
+SA2105_p-117(SA2105)     (    1) ATGTAAGCGTTTTCCA  1 
+SA0184_p-63(SA0184)      (    1) ATGTAAGCGATTACAC  1 
+SSP1648_p-232(sdhC)      (    1) ATGGAAGCGTTTTCTA  1 
+SSP0206_p-72(SSP0206)    (    1) TTGATAGCGTTTTCAT  1 
+SH0566_p-241(gudP)       (    1) TTGAAAACGATTTCAA  1 
+SH0282_p-108(nanA)       (    1) ATGATAGCGTTTACAA  1 
+SH0745_p-127(SA2105)     (    1) TTGTAAGCGTTTTCCT  1 
+SH0739_p-173(SA2109)     (    1) ATGGAAGCGATTTCAA  1 
+SH1814_p-285(sdhC)       (    1) ATGGAAGCGTTTTCTA  1 
+Sca_2389_p-109(nanA)     (    1) ATGATAGCGTTTACAA  1 
+Sca_1673_p-64(SAS074)    (    1) TTGAAAACGTTTTCTA  1 
+SE0840_p-270(sdhC)       (    1) ATGGAAGCGTTTTCTA  1 
+STACA0001_1305_p-62(SAS0 (    1) TTGAAAACGATTTCAA  1 
+SA2226_p-54(aapA)        (    1) AAGAAAACGCTTACAC  1 
+SA1555_p-147(acuA)       (    1) GTGAAAACGCTTTCTT  1 
+SA0304_p-64(nanA)        (    1) ATGATAGCGTTTACAA  1 
+SA2341_p-112(rocA)       (    1) ATGAAAGCGATTGCAA  1 
+SSP0999_p-80(putA)       (    1) TTGTAAACGATTTCAT  1 
+SSP0311_p-101(rocA)      (    1) ATGTAAGCGATTGCAT  1 
+Sca_2258_p-64(nhaC)      (    1) TTGAAAGCGGTTTCTT  1 
+STACA0001_0048_p-61(SE02 (    1) ATTAAAACGCTTTCAT  1 
+SA0760_p-152(yusH)       (    1) ATGTAAACGTTTACTA  1 
+SAS074_p-64(SAS074)      (    1) TTGAAAACGATTACAA  1 
+SSP0557_p-74(gltS)       (    1) TTGTAAACGTTTACTT  1 
+SH1188_p-144(acuA)       (    1) ATGAAATCGCTTTCTT  1 
+STACA0001_0986_p-85(aldA (    1) AAGTAAACGTTTACAT  1 
+STACA0001_0627_p-154(acu (    1) ATGAAATCGCTTTCTT  1 
+STACA0001_0466_p-75(SSP0 (    1) ATGTTAGCGCTTACAC  1 
+MCCL_1451_p-52(putA)     (    1) TTTAAAGCGTTTTCAT  1 
+SSP1440_p-33(SA1162)     (    1) TTGGAAACGCTTACTT  1 
+SSP0178_p-28(glpK)       (    1) ATGAAATCGTTTACAA  1 
+SSP0582_p-113(glvR)      (    1) AAGGAAACGCTTACAT  1 
+SH0574_p-81(gntR)        (    1) AAGAAAGCGTTTGCAA  1 
+SH0500_p-128(rocA)       (    1) ATGTAAGCGATTGCAA  1 
+SH1310_p-189(SA1437)     (    1) AAGTAAGCGATTACAT  1 
+SH0208_p-95(xylB)        (    1) TAGAAAACGCTTTCTT  1 
+Sca_1339_p-213(acuA)     (    1) TTGAAATCGTTTTCAT  1 
+Sca_2257_p-49(argF)      (    1) AAGGAAGCGCTTACAC  1 
+Sca_1865_p-85(mqo)       (    1) TAGAAAGCGCTTTCTC  1 
+Sca_0564_p-49(rocA)      (    1) ATGTAAGGGCTTTCTT  1 
+Sca_1672_p-141(SA1975)   (    1) TAGAAAACGTTTTCAA  1 
+STACA0001_0678_p-44(pckA (    1) ATGTAAAGGCTTACAT  1 
+STACA0001_0943_p-128(roc (    1) ATGTAAGCGATTGCAA  1 
+SA2300_p-148(gudP)       (    1) TTGTAAACGCTTTCCA  1 
+SA1609_p-44(pckA)        (    1) ATGTAAAGGCTTACAT  1 
+SA1162_p-27(SA1162)      (    1) GTGAAAGCGCTTGCTT  1 
+SA0818_p-150(rocD)       (    1) ATGTAAGGGTTTTCAA  1 
+MCCL_1409_p0(acsA)       (    1) ATGAAAACGATTACAC  1 
+SH2538_p-69(treP)        (    1) ATGAAAGCCTTTACAA  1 
+SH0223_p-103(acoL)       (    1) GAGAAAACGCTTACAT  1 
+STACA0001_1120_p-267(SE1 (    1) ATTAAAGCGCTTTCTA  1 
+SA0510_p-53(araB)        (    1) AAGAAAACGCTTGCAA  1 
+SA2334_p-123(mvaS)       (    1) ATTAAAACGCTTACAA  1 
+SSP2205_p-100(kbl)       (    1) TAGAAAACGCTTTCTA  1 
+SH0732_p-121(glvC)       (    1) GTGTAAGCGTTTACTA  1 
+SH1137_p-53(pckA)        (    1) ATGTAAAGGCTTACAA  1 
+SH0208_p-37(xylB)        (    1) ATGATAACGTTTTCAT  1 
+Sca_2406_p-61(fadX)      (    1) TTGTAAGGGTTTACAT  1 
+Sca_0948_p-126(glpF)     (    1) TTGACAACGCTTTCAT  1 
+Sca_1950_p-53(gntR)      (    1) ATGTAAGCGGTTGCAA  1 
+Sca_1390_p-54(pckA)      (    1) ATGTAAAGGCTTACAA  1 
+Sca_0108_p-71(treP)      (    1) TTGAAAGCCTTTACAT  1 
+Sca_2095_p-116(xylB)     (    1) TTGACAACGCTTTCAT  1 
+SE2082_p-68(pfoR)        (    1) TTGAAATCGCTTTCTT  1 
+SE1007_p-29(SA1162)      (    1) GTGAAAGCGCTTGCTA  1 
+STACA0001_0978_p-68(pfoR (    1) TTGAAATCGCTTTCTT  1 
+STACA0001_1306_p-131(SA1 (    1) TTGAAATCGTTTTCAA  1 
+SA1140_p-133(glpF)       (    1) TTGACAACGCTTTCAT  1 
+SA0325_p-76(glpT)        (    1) TTGACAACGCTTTCAT  1 
+SA2114_p-104(glvC)       (    1) GTGTAAGCGTTTACTA  1 
+SA0432_p-68(treP)        (    1) TTGAAAGCCTTTACAT  1 
+SSP0591_p-114(SA2109)    (    1) ATGTAAACCCTTACAT  1 
+SSP0230_p-79(n/a)        (    1) ATGAATGCGTTTACAA  1 
+SSP0975_p-43(pckA)       (    1) TTGTAAAGGCTTACAT  1 
+SH0731_p-115(glvR)       (    1) TAGTAAACGCTTACAC  1 
+Sca_1866_p-254(SE1944)   (    1) GAGAAAGCGCTTTCTA  1 
+SE1191_p-117(n/a)        (    1) ATGTAAACGTTTTCTC  1 
+SA2115_p-241(glvR)       (    1) TAGTAAACGCTTACAC  1 
+MCCL_1639_p-94(putP)     (    1) ATGAAAACGCTTAAAT  1 
+SSP0532_p-47(SE0247)     (    1) ATGAAAGCGTATACTT  1 
+SSP2179_p-176(xltD)      (    1) AAGAAAACGCTTTCCT  1 
+SH0281_p-150(nanK)       (    1) TTGTAAACGCTATCAT  1 
+SH1581_p-29(SA1162)      (    1) ATGAAAGCGTTTCCTT  1 
+SH0868_p-63(SAS074)      (    1) TTGAAAACGATTACAC  1 
+Sca_2390_p-152(nanK)     (    1) TTGTAAACGCTATCAT  1 
+Sca_1871_p-47(SE0247)    (    1) ATGAAAGCGTATACTT  1 
+SE1763_p-62(SAS074)      (    1) TTGAAAACGATTACAC  1 
+SA0305_p-109(nanK)       (    1) TTGTAAACGCTATCAT  1 
+SSP1461_p-145(glpF)      (    1) TTGACAACGCTTACAA  1 
+SH1614_p-128(glpF)       (    1) TTGACAACGCTTACAA  1 
+SE0977_p-130(glpF)       (    1) TTGACAACGCTTACAA  1 
+STACA0001_1544_p-132(glp (    1) TTGACAACGCTTACAA  1 
+SA1975_p-128(SA1975)     (    1) TTGTAATCGTTTTCAA  1 
+MCCL_1408_p-62(fhs)      (    1) ATGAAAGCGTTATCTT  1 
+SSP2178_p-38(araB)       (    1) AGGAAAGCGTTTTCTT  1 
+SSP0231_p-112(csbX)      (    1) ATGAAATCGTTTTCTT  1 
+SH0367_p-50(arcA)        (    1) ATGAAAGCGCTTTATA  1 
+SE2228_p-45(manP)        (    1) ATGTATGCGTTTACAA  1 
+STACA0001_1955_p-134(put (    1) GAGTAAGCGCTTTCTA  1 
+SA0605_p-64(dhaK)        (    1) ATGATAGCGCATTCAT  1 
+SA0218_p-59(pflB)        (    1) ATGAAAACGTTAACAT  1 
+SA0260_p-86(rbsU)        (    1) ATGAAAACGCATGCAT  1 
+MCCL_0405_p-325(gntR)    (    1) ACGAAAGCGTTTACAA  1 
+SSP1071_p-42(citZ)       (    1) ATGAAAGCCATTTCAT  1 
+SSP0583_p-117(glvC)      (    1) ATGTAAGCGTTTCCTT  1 
+SH0692_p-248(SE1944)     (    1) ATTAAAACGCTTTCTT  1 
+SH0227_p-91(acoL2)       (    1) ATAAAAGCGCTTACAA  1 
+SH2244_p-64(dhaK)        (    1) ATGATAGCGCATACAT  1 
+Sca_2466_p-58(hutH)      (    1) ATGTAAGCGTATACTT  1 
+SE1944_p-245(SE1944)     (    1) ATTAAAGCGCTTTCTC  1 
+SA2122_p-57(hutU)        (    1) ATGTAAGCGTTTTAAA  1 
+SA1339_p-43(malR)        (    1) TTGGAAGCGTTTTCCA  1 
+MCCL_1365_p-100(pfkA)    (    1) TTTAAAACGTTTTCAT  1 
+SSP0714_p-64(SAS074)     (    1) TTGAAAACGATTGCAA  1 
+SSP0375_p-182(nanA)      (    1) ATGGTAGCGTTTACAA  1 
+Sca_1371_p-71(putA)      (    1) TTGTTAACGTTTTCAT  1 
+Sca_2042_p-292(SA1437)   (    1) ATGGAAAGGCTTACAT  1 
+SA0183_p-269(glcA)       (    1) TTGAAAACGCATACTT  1 
+SA0182_p-97(ipdC)        (    1) TTGTTAGCGTTTTCAC  1 
+SA2333_p-147(mvaA)       (    1) TTGTAAGCGTTTTAAT  1 
+MCCL_0582_p-44(rocA)     (    1) ATGTAAGGGTTTTCTA  1 
+SSP1068_p-148(pfkA)      (    1) TTTAAAACGTTTACAT  1 
+SSP2282_p-81(treP)       (    1) ATGAAAACCTTTACAA  1 
+SSP0410_p-83(gntR)       (    1) TTGCAAGCGCTTGCAA  1 
+SH0537_p-270(pfoR)       (    1) TTGAAAAGGTTTACAA  1 
+SH0537_p-116(pfoR)       (    1) TTGAAATCGTTTTCTT  1 
+Sca_1301_p-42(citZ)      (    1) ATGAAAGCCATTTCAA  1 
+Sca_1960_p-94(gudP)      (    1) TTGTAAACGATTTCTA  1 
+SE0235_p-146(SE0235)     (    1) TTGAAAGCGTATACTA  1 
+SE1374_p-152(pfkA)       (    1) TTTAAAACGTTTACAT  1 
+SE0164_p-61(uhpT)        (    1) TATTAAGCGCTTACAT  1 
+STACA0001_1505_p-48(manR (    1) TAGTAAGCGTTTTCCT  1 
+STACA0001_0592_p-107(pfk (    1) TTTAAAACGTTTACAT  1 
+STACA0001_2159_p-286(sdh (    1) GTGGAAGCGTTTTCTA  1 
+SA1521_p-151(pfkA)       (    1) TTTAAAACGTTTACAT  1 
+SA0994_p-235(sdhC)       (    1) GTGGAAGCGTTTTCTA  1 
+MCCL_0891_p-133(glpF)    (    1) TTGACAACGTTTACAT  1 
+MCCL_0584_p-93(gudB)     (    1) TTGGTAGCGTTTTCAA  1 
+SSP1029_p-162(acuA)      (    1) ATGAAATCGCTTGCTT  1 
+SSP1031_p-147(fhs)       (    1) TTGAAAGCGCTATCTC  1 
+Sca_1964_p-123(fbp)      (    1) TTGAAATCGTTTACTT  1 
+SE1371_p-43(citZ)        (    1) TTGAAAGCCATTTCAT  1 
+SE2056_p-164(gudP)       (    1) TTGTAACCGTTTACAC  1 
+STACA0001_1121_p-93(mqo) (    1) TAGAAAGCGCTTTAAT  1 
+STACA0001_2124_p-67(scrR (    1) TTTAAAGCGATTACAT  1 
+SA1518_p-43(citZ)        (    1) TTGAAAGCCATTTCAT  1 
+SA0227_p-64(fadX)        (    1) TTGTAAGGGTTTACAC  1 
+SA0107_p-237(spa)        (    1) ATTAAACCGCTTTCAT  1 
+MCCL_0370_p-82(glpT)     (    1) TTGTAAAGGCTTTCTT  1 
+SSP1027_p-26(ccpA)       (    1) AAGAAATCGTTTTCAA  1 
+Sca_1628_p-143(fbaA)     (    1) TTGAATACGTTTTCAT  1 
+SE0214_p-37(pflB)        (    1) TTGAAAACGTTAACAA  1 
+MCCL_1800_p-82(gudP)     (    1) TTGTAATCGATTTCAT  1 
+MCCL_0434_p-94(pflB)     (    1) TTTTAAACGTTTACAT  1 
+MCCL_0348_p-65(rbsR2)    (    1) TTGTAATCGATTTCAT  1 
+SSP2425_p-36(SA0225)     (    1) ATGTAAGCGCAATCAT  1 
+Sca_1314_p-54(ald)       (    1) ATGATTGCGCTTTCAT  1 
+Sca_1495_p-138(sdcS)     (    1) ATGTATACGTTTACAT  1 
+Sca_2418_p-151(SSP0523)  (    1) ACGAAAACGTTTTCAT  1 
+SE2047_p-85(glpT)        (    1) TTGACAACGCTTACTT  1 
+SE2088_p-87(rbsU)        (    1) GTGTAAGCGTATACAA  1 
+STACA0001_1368_p-57(hutH (    1) ATGAAAACGTATACTT  1 
+SA0008_p-59(hutH)        (    1) ATGAAAACGTATACTT  1 
+SH1186_p-26(ccpA)        (    1) AATAAAACGCTTACAA  1 
+SE1403_p-131(ptaA)       (    1) AATTAAGCGTTTACAT  1 
+STACA0001_1506_p-40(manP (    1) TTGAATACGCTTACAC  1 
+SA1007_p-334(hla)        (    1) TTGTAATCGATTACAT  1 
+SH0693_p-77(mqo)         (    1) AAGAAAGCGTTTTAAT  1 
+SH1944_p-93(SA0873)      (    1) TTGTAAACCTTTTCAA  1 
+SH0869_p-129(SA1975)     (    1) GTGTAATCGTTTTCAA  1 
+Sca_2417_p-40(gutB)      (    1) ATGAAAACGTTTTCGT  1 
+Sca_0213_p-144(SA0511)   (    1) ATGTAAGCGCTTTACT  1 
+SE2227_p-45(manR)        (    1) ATTAAAGCGTTTTCTC  1 
+SE1762_p-130(SA1975)     (    1) GTGTAATCGTTTTCAA  1 
+STACA0001_0602_p-52(ald) (    1) ATGATTGCGCTTTCAA  1 
+SA2304_p-83(fbp)         (    1) ATGTTAACGTTTTCTT  1 
+SSP1057_p-52(ald)        (    1) TTGATTGCGCTTTCAT  1 
+SSP0759_p-101(fbaA)      (    1) ATAAAAACGCTTACAA  1 
+SSP0008_p-56(hutH)       (    1) ATGTAAGCGTATACTC  1 
+SH0713_p-64(gltS)        (    1) TTTATAGCGCTTACAA  1 
+STACA0001_0483_p-73(kbl) (    1) ATGATAAGGCTTTCAT  1 
+SA1939_p-115(dra2)       (    1) ATGTATGCGGTTACAT  1 
+SA1553_p-130(fhs)        (    1) ATGAAAGCGCTAACCC  1 
+SE0106_p-50(arcA2)       (    1) TTGAAAGCGTTTTATA  1 
+SE2109_p-137(mvaA)       (    1) ATGTAAGCGCTTTACA  1 
+SE2110_p-123(mvaS)       (    1) TGTAAAGCGCTTACAT  1 
+STACA0001_1147_p-81(araB (    1) TTGAAAGCCCTATCAT  1 
+SA1968_p-51(arg)         (    1) TGGTAAGCGCATACAT  1 
+SH0521_p-171(glcA)       (    1) TTGAAAACGCTTTATA  1 
+Sca_1332_p-44(ptaA)      (    1) AATAAAACGTTTTCAT  1 
+SA1531_p-52(ald)         (    1) TTGATTGCGCTTTCAA  1 
+SA2480_p-84(drp35)       (    1) ATGAAACCGTTATCAT  1 
+SA0508_p-79(kbl)         (    1) ATGATAAGGCTTTCAA  1 
+SA0214_p-61(uhpT)        (    1) TATTAAGCGCTTACAC  1 
+SA2167_p-127(scrA)       (    1) ATGAATGCGCTATCAA  1 
+SH2450_p-101(SA0511)     (    1) AAGAAAGCGCTTTTAT  1 
+SE2102_p-178(glcA)       (    1) TTGTAAACGCTTTATT  1 
+STACA0001_0618_p-168(pta (    1) AATAAAACGTTTACAT  1 
+STACA0001_0477_p-98(SA05 (    1) AAGAAAGCGCTTTTAT  1 
+SA0511_p-97(SA0511)      (    1) AAGAAAGCGCTTTTAT  1 
+Sca_2085_p-47(arcA)      (    1) TTGCAAGGGCTTACAA  1 
+SE1943_p-81(mqo)         (    1) GAGAAAGCGCTTTAAT  1 
+STACA0001_0331_p-46(fruR (    1) ATGTAAGCGCACTCAT  1 
+STACA0001_0589_p-43(citZ (    1) GTGAAAGCCATTTCAT  1 
+MCCL_1362_p0(citZ)       (    1) GTGAAAGCCATTACAT  1 
+MCCL_0348_p-34(rbsR2)    (    1) ATGTAATCGGTTACAC  1 
+MCCL_1319_p-85(sdhC)     (    1) ATGTAATCGGTTTCTT  1 
+SH0731_p-142(glvR)       (    1) ATAAAAGCGTTTTCTT  1 
+SH1993_p-161(rocD)       (    1) CTGTAAGGGCTTTCAT  1 
+SE1409_p-71(ccpA)        (    1) AATAAAACGTTTACAA  1 
+SE1032_p-103(citB)       (    1) AATAAAGCGTTTTCTA  1 
+STACA0001_0084_p-170(lip (    1) TTGGAAACGCTTTCTG  1 
+STACA0001_1597_p-103(cit (    1) AATAAAGCGTTTTCTA  1 
+STACA0001_0865_p-51(arg) (    1) ATGCAAGCGTATACAT  1 
+SA1557_p-71(ccpA)        (    1) AATAAAACGTTTACAA  1 
+SA1847_p-65(scrR)        (    1) TTTAAAGCGGTTACAC  1 
+SA0873_p-62(SA0873)      (    1) ATGTAACGGTTTTCAA  1 
+SSP1030_p-33(acsA)       (    1) AAGCAAGCGATTTCAT  1 
+SH1190_p-138(fhs)        (    1) TTGGAAACGCTCTCAA  1 
+SH1226_p-152(pfkA)       (    1) TATAAAACGTTTACAT  1 
+Sca_1304_p-103(pfkA)     (    1) TATAAAACGTTTACAT  1 
+SE0247_p2(SE0247)        (    1) GTTGAAACGCTTTCAT  1 
+STACA0001_1139_p-75(gltS (    1) TTTATAACGCTTACAT  1 
+STACA0001_1171_p-119(n/a (    1) GTGTAATCGATTTCAT  1 
+SA2135_p-64(gltS)        (    1) TTTATAACGCTTACAT  1 
+SH1230_p-42(citZ)        (    1) TTGGAAGCCATTACAT  1 
+Sca_1982_p-79(pfoR)      (    1) TTGAAAACGCTTTACT  1 
+Sca_1474_p-137(putP)     (    1) ATGTAAACGCTTTACT  1 
+SA1927_p-142(fbaA)       (    1) ATGTATACGTTTGCAT  1 
+MCCL_1938_p-49(treP)     (    1) TTGAAAACCCTTTCAG  1 
+SSP0512_p-66(scrA)       (    1) TTGGAACCGGTTACAA  1 
+SH0671_p-63(scrA)        (    1) TTGGAACCGGTTACAA  1 
+SE2217_p-304(arcA)       (    1) TGGTAAGCGTATACAT  1 
+SE1959_p-58(scrA)        (    1) TTGGAACCGGTTACAA  1 
+STACA0001_0951_p-137(mva (    1) ATGTAAGCGTTTTACA  1 
+STACA0001_1097_p-63(scrA (    1) TTGGAACCGGTTACAA  1 
+SA1184_p-103(citB)       (    1) AATTAAGCGTTTTCTA  1 
+SA0819_p-84(gudB)        (    1) TTGTAAGGGCTTTAAA  1 
+SA2167_p-61(scrA)        (    1) TTGGAACCGGTTACAA  1 
+SSP0875_p-100(sdcS)      (    1) ATGTAAACGATTTAAA  1 
+SSP0374_p-157(nanK)      (    1) TTGTAAACGCTACCAT  1 
+STACA0001_0829_p-144(fba (    1) ATGAATGCGGTTGCAA  1 
+STACA0001_0629_p-26(ccpA (    1) AATGAAACGCTTACAA  1 
+STACA0001_0950_p-121(mva (    1) TGTAAAACGCTTACAT  1 
+SA2433_p-45(manR)        (    1) TTAAAAACGCTTACAC  1 
+SA1437_p-50(SA1437)      (    1) ATGAAAAGGTATTCAA  1 
+SSP0889_p-137(putP)      (    1) ATGGAAGCGCTTAACA  1 
+SH1992_p-35(gudB)        (    1) ATGAAAGCGAAATCAT  1 
+SH2457_p-74(kbl)         (    1) ATGATAGTGCTTTCAT  1 
+Sca_0617_p-64(SA0873)    (    1) TTGGTAACGATTTCAT  1 
+SE0654_p-41(gudB)        (    1) ATGAAAGCGAAATCAT  1 
+MCCL_0079_p-103(SA2109)  (    1) GTGAAAACGTTTTCGT  1 
+SSP0596_p-35(SA0184)     (    1) ATGAAACCGATTACAG  1 
+SE2063_p-66(fbp)         (    1) ATGTAAGCGCATTATT  1 
+SSP0715_p-128(SA1975)    (    1) TTGCAATCGTTTTCAA  1 
+SSP1869_p-124(yusH)      (    1) ATGAAAACGCTTTACC  1 
+SH0559_p-64(fbp)         (    1) ATGTAAGCGGTTTTAT  1 
+SH2196_p-45(fruR)        (    1) ATGTAAGCGTACACAT  1 
+STACA0001_0514_p-61(nupC (    1) ATGTTAGCGCGTTCAT  1 
+Sca_1628_p-102(fbaA)     (    1) TTAAAACCGCTTACAT  1 
+SE1914_p-101(n/a)        (    1) TTGTAAACACTTACAT  1 
+STACA0001_0168_p-41(gudB (    1) TTGAAAGCGAAATCAT  1 
+STACA0001_1175_p-63(SA01 (    1) TTGTAAACGTTTAATA  1 
+STACA0001_1097_p-34(scrA (    1) ATGGAACCGGTTTCTA  1 
+SA0819_p-42(gudB)        (    1) TTGAAAGCGAAATCAT  1 
+SA2434_p-37(manP)        (    1) GAGAATACGCTTACAA  1 
+SA1718_p-137(putP)       (    1) ACGAAAGCGCTTCCTA  1 
+SSP0836_p-68(n/a)        (    1) TTTAAAGCGATTCCAT  1 
+SSP0327_p-57(drp35)      (    1) ATGAAAGGCTTTGCAT  1 
+SSP2019_p-44(fruR)       (    1) AAGAAAGCGTAAACAT  1 
+Sca_2103_p-113(aldA)     (    1) ATGTAAACGTTTTACT  1 
+Sca_0991_p-68(citB)      (    1) TTGTAATCCCTTACTT  1 
+Sca_2440_p6(manP)        (    1) ATTTTAGCGATTACAT  1 
+Sca_2017_p-58(pflB)      (    1) GTGAAAACGGTAACAT  1 
+SSP1395_p-33(rbsD)       (    1) ATGTAACGGGTTACAT  1 
+SSP0538_p-318(SE1944)    (    1) AGTAAAGCGTTTTCTA  1 
+SH1992_p-77(gudB)        (    1) TTGAAAACCCTTTAAA  1 
+Sca_0346_p-44(fruR)      (    1) ATGTAAGCGGAAACAT  1 
+STACA0001_0978_p-221(pfo (    1) ATAATAGCGTTTACAT  1 
+STACA0001_0973_p-84(rbsU (    1) GTGTAAGCGTATACAG  1 
+SE0715_p-62(SA0873)      (    1) AAGTAACGGTTTTCAA  1 
+STACA0001_0121_p-62(SA08 (    1) AAGTAACGGTTTTCAA  1 
+SSP2235_p-65(nupC)       (    1) ATGTAAGTGCTATCAA  1 
+STACA0001_0995_p-66(fbp) (    1) ATGTAAGCGCATTACT  1 
+SA0479_p-63(nupC)        (    1) ATGTTAGCCCTTCCAT  1 
+SSP2070_p-67(dhaK)       (    1) ATATTAGCGTTTACAT  1 
+SSP0539_p-90(mqo)        (    1) TAGAAAACGCTTTACT  1 
+SE0283_p-63(nupC)        (    1) ATGTTAGCGTGTTCAT  1 
+STACA0001_0168_p-84(gudB (    1) TTGTAAACCCTTTAAA  1 
+Sca_2166_p-52(ipdC)      (    1) AGGAAAGCGTTATCCT  1 
+SA0653_p-43(fruR)        (    1) GTGAAAGCGTACTCAT  1 
+SA2109_p-122(SA2109)     (    1) CTGTAAACGATTGCAT  1 
+SSP2164_p-164(SA0511)    (    1) TTGAAATCGCAATCAA  1 
+MCCL_1890_p-70(nupC)     (    1) TGTTTAGCGCTTTCAT  1 
+SH1198_p-101(ptaA)       (    1) TCAAAAGCGCTTACAT  1 
+Sca_1820_p-70(glpT)      (    1) ATGGAAGCGTTGTCTT  1 
+STACA0001_0618_p-48(ptaA (    1) ATGAAAAGCATTTCAA  1 
+SA2428_p-62(arcA)        (    1) ATGTAAGCGTTTGAAG  1 
+MCCL_1413_p-25(ccpA)     (    1) AATAAAACGTTTTCAG  1 
+MCCL_1856_p-94(SA0511)   (    1) ATGTAAGCGTTTCTAA  1 
+SSP0563_p-73(araB2)      (    1) ATGTAAGCACTATCAT  1 
+SE1763_p-15(SAS074)      (    1) AAGGAAGTGTTTTCAA  1 
+SE1723_p-143(fbaA)       (    1) ATGTATTCGCTTCCAA  1 
+STACA0001_1003_p-166(gud (    1) TTGTAACCGTTTTCGC  1 
+SH1216_p-52(ald)         (    1) CTGATTGCGCTTTCAT  1 
+SE0654_p-74(gudB)        (    1) TTTAAAATGCTTTCAA  1 
+SSP1037_p-86(ptaA)       (    1) AGTAAATCGTTTACAT  1 
+MCCL_1008_p-36(citB)     (    1) ATGTAAAGGCTTTATC  1 
+Sca_2095_p-85(xylB)      (    1) ATGTAAACGATTGTAT  1 
+MCCL_0452_p-28(fruR)     (    1) ATGAAAGTGTTCACAA  1 
+SSP2164_p-98(SA0511)     (    1) AATAAAGCGTTTTTAT  1 
+SH0743_p-33(SA0184)      (    1) ATGTAAGTGATTACAG  1 
+SE1924_p-71(gltS)        (    1) TTTATAAGGTTTACAT  1 
+SH0376_p-41(ipdC)        (    1) TTGTAAGTGTATTCTA  1 
+Sca_0882_p-163(sucC)     (    1) ATGAAAACTGTTTCAA  1 
+SSP0245_p-158(n/a)       (    1) TATAAAACGATATCAT  1 
+SH1814_p-61(sdhC)        (    1) TTGAAAAGACTTTCTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 391 bayes= 1.96338 E= 2.9e-1806 
+    69   -437   -145     21 
+   -91   -396   -272    122 
+  -403  -1525    236   -152 
+    66   -364   -123     19 
+   140   -264  -1525   -196 
+   152  -1525  -1525   -304 
+    21   -196    158   -229 
+ -1525    250    -99   -424 
+  -545   -157    248   -704 
+  -139    140   -172     25 
+  -191  -1525   -504    142 
+  -239   -364   -604    145 
+    33   -296   -145     56 
+  -223    252  -1525   -424 
+   106   -179   -445    -46 
+    18    -87   -323     61 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 391 E= 2.9e-1806 
+ 0.539642  0.007673  0.061381  0.391304 
+ 0.179028  0.010230  0.025575  0.785166 
+ 0.020460  0.000000  0.861893  0.117647 
+ 0.529412  0.012788  0.071611  0.386189 
+ 0.887468  0.025575  0.000000  0.086957 
+ 0.959079  0.000000  0.000000  0.040921 
+ 0.388747  0.040921  0.501279  0.069054 
+ 0.000000  0.897698  0.084399  0.017903 
+ 0.007673  0.053708  0.936061  0.002558 
+ 0.127877  0.419437  0.051151  0.401535 
+ 0.089514  0.000000  0.005115  0.905371 
+ 0.063939  0.012788  0.002558  0.920716 
+ 0.421995  0.020460  0.061381  0.496164 
+ 0.071611  0.910486  0.000000  0.017903 
+ 0.700767  0.046036  0.007673  0.245524 
+ 0.381074  0.086957  0.017903  0.514066 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGWAARCGYTTWCAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]TG[AT]AA[GA]CG[CT]TT[TA]C[AT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  5.55 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SA1718_p-137(putP)               1.39e-05  [+1(1.39e-05)]
+SA2320_p-76(pfoR)                2.69e-07  [+1(2.69e-07)]
+SA1585_p-71(putA)                2.04e-07  [+1(2.04e-07)]
+SA0225_p-86(SA0225)              2.04e-07  [+1(2.04e-07)]
+SA0184_p-63(SA0184)              3.11e-07  [+1(3.11e-07)]
+SA0818_p-150(rocD)               5.71e-07  [+1(5.71e-07)]
+SA0260_p-86(rbsU)                1.21e-06  [+1(1.21e-06)]
+SA2341_p-112(rocA)               3.60e-07  [+1(3.60e-07)]
+SA1162_p-27(SA1162)              5.71e-07  [+1(5.71e-07)]
+SA0873_p-62(SA0873)              6.19e-06  [+1(6.19e-06)]
+SA0299_p-93(SA0299)              2.79e-08  [+1(2.79e-08)]
+SA0511_p-97(SA0511)              4.95e-06  [+1(4.95e-06)]
+SA1437_p-50(SA1437)              9.30e-06  [+1(9.30e-06)]
+SA1975_p-128(SA1975)             1.06e-06  [+1(1.06e-06)]
+SA2105_p-117(SA2105)             3.11e-07  [+1(3.11e-07)]
+SA2109_p-122(SA2109)             2.70e-05  [+1(2.70e-05)]
+SAS074_p-64(SAS074)              4.26e-07  [+1(4.26e-07)]
+SA2167_p-127(scrA)               4.41e-06  [+1(4.41e-06)]
+SA2167_p-61(scrA)                8.44e-06  [+1(8.44e-06)]
+SA1847_p-65(scrR)                6.19e-06  [+1(6.19e-06)]
+SA1732_p-162(sdcS)               1.32e-07  [+1(1.32e-07)]
+SA0994_p-235(sdhC)               1.78e-06  [+1(1.78e-06)]
+SA0107_p-237(spa)                2.02e-06  [+1(2.02e-06)]
+SA0432_p-68(treP)                7.41e-07  [+1(7.41e-07)]
+SA1819_p-39(tst)                 2.69e-07  [+1(2.69e-07)]
+SA0214_p-61(uhpT)                4.41e-06  [+1(4.41e-06)]
+SA0760_p-152(yusH)               4.26e-07  [+1(4.26e-07)]
+SA0218_p-59(pflB)                1.21e-06  [+1(1.21e-06)]
+SA1521_p-151(pfkA)               1.78e-06  [+1(1.78e-06)]
+SA1609_p-44(pckA)                5.71e-07  [+1(5.71e-07)]
+SA0479_p-63(nupC)                2.25e-05  [+1(2.25e-05)]
+SA0305_p-109(nanK)               9.42e-07  [+1(9.42e-07)]
+SA0304_p-64(nanA)                3.60e-07  [+1(3.60e-07)]
+SA2334_p-123(mvaS)               6.56e-07  [+1(6.56e-07)]
+SA2333_p-147(mvaA)               1.56e-06  [+1(1.56e-06)]
+SA2433_p-45(manR)                9.30e-06  [+1(9.30e-06)]
+SA2434_p-37(manP)                1.39e-05  [+1(1.39e-05)]
+SA0206_p-130(msmX)               1.10e-07  [+1(1.10e-07)]
+SA1339_p-43(malR)                1.37e-06  [+1(1.37e-06)]
+SA2463_p-137(lip)                3.11e-07  [+1(3.11e-07)]
+SA0508_p-79(kbl)                 4.41e-06  [+1(4.41e-06)]
+SA0182_p-97(ipdC)                1.56e-06  [+1(1.56e-06)]
+SA2122_p-57(hutU)                1.37e-06  [+1(1.37e-06)]
+SA0008_p-59(hutH)                2.55e-06  [+1(2.55e-06)]
+SA1007_p-334(hla)                2.83e-06  [+1(2.83e-06)]
+SA2300_p-148(gudP)               5.71e-07  [+1(5.71e-07)]
+SA0819_p-42(gudB)                1.39e-05  [+1(1.39e-05)]
+SA0819_p-84(gudB)                8.44e-06  [+1(8.44e-06)]
+SA2295_p-79(gntR)                2.04e-07  [+1(2.04e-07)]
+SA2115_p-241(glvR)               8.39e-07  [+1(8.39e-07)]
+SA2114_p-104(glvC)               7.41e-07  [+1(7.41e-07)]
+SA2135_p-64(gltS)                6.87e-06  [+1(6.87e-06)]
+SA0325_p-76(glpT)                7.41e-07  [+1(7.41e-07)]
+SA1140_p-133(glpF)               7.41e-07  [+1(7.41e-07)]
+SA0183_p-269(glcA)               1.56e-06  [+1(1.56e-06)]
+SA0653_p-43(fruR)                2.70e-05  [+1(2.70e-05)]
+SA1553_p-130(fhs)                3.53e-06  [+1(3.53e-06)]
+SA2304_p-83(fbp)                 3.16e-06  [+1(3.16e-06)]
+SA1927_p-142(fbaA)               7.63e-06  [+1(7.63e-06)]
+SA0227_p-64(fadX)                2.02e-06  [+1(2.02e-06)]
+SA1633_p-38(SA1633)              1.77e-07  [+1(1.77e-07)]
+SA2480_p-84(drp35)               4.41e-06  [+1(4.41e-06)]
+SA1939_p-115(dra2)               3.53e-06  [+1(3.53e-06)]
+SA0605_p-64(dhaK)                1.21e-06  [+1(1.21e-06)]
+SA1518_p-43(citZ)                2.02e-06  [+1(2.02e-06)]
+SA1184_p-103(citB)               8.44e-06  [+1(8.44e-06)]
+SA1557_p-71(ccpA)                6.19e-06  [+1(6.19e-06)]
+SA1968_p-51(arg)                 3.93e-06  [+1(3.93e-06)]
+SA2428_p-62(arcA)                3.25e-05  [+1(3.25e-05)]
+SA0510_p-53(araB)                6.56e-07  [+1(6.56e-07)]
+SA0162_p-103(aldA)               1.54e-07  [+1(1.54e-07)]
+SA1531_p-52(ald)                 4.41e-06  [+1(4.41e-06)]
+SA1555_p-147(acuA)               3.60e-07  [+1(3.60e-07)]
+SA1554_p-37(acsA)                2.69e-07  [+1(2.69e-07)]
+SA2226_p-54(aapA)                3.60e-07  [+1(3.60e-07)]
+STACA0001_0466_p-75(SSP0         4.94e-07  [+1(4.94e-07)]
+STACA0001_1120_p-267(SE1         6.56e-07  [+1(6.56e-07)]
+STACA0001_0048_p-61(SE02         4.26e-07  [+1(4.26e-07)]
+STACA0001_2159_p-286(sdh         1.78e-06  [+1(1.78e-06)]
+STACA0001_2124_p-67(scrR         2.02e-06  [+1(2.02e-06)]
+STACA0001_1097_p-34(scrA         1.39e-05  [+1(1.39e-05)]
+STACA0001_1097_p-63(scrA         8.44e-06  [+1(8.44e-06)]
+STACA0001_1305_p-62(SAS0         3.60e-07  [+1(3.60e-07)]
+STACA0001_1171_p-119(n/a         6.87e-06  [+1(6.87e-06)]
+STACA0001_1178_p-131(SA2         1.77e-07  [+1(1.77e-07)]
+STACA0001_1306_p-131(SA1         7.41e-07  [+1(7.41e-07)]
+STACA0001_1569_p-30(SA11         9.22e-08  [+1(9.22e-08)]
+STACA0001_0121_p-62(SA08         2.05e-05  [+1(2.05e-05)]
+STACA0001_0477_p-98(SA05         4.95e-06  [+1(4.95e-06)]
+STACA0001_1175_p-63(SA01         1.39e-05  [+1(1.39e-05)]
+STACA0001_0943_p-128(roc         5.71e-07  [+1(5.71e-07)]
+STACA0001_0169_p-184(roc         3.11e-07  [+1(3.11e-07)]
+STACA0001_0973_p-84(rbsU         1.87e-05  [+1(1.87e-05)]
+STACA0001_0978_p-68(pfoR         7.41e-07  [+1(7.41e-07)]
+STACA0001_0618_p-168(pta         4.95e-06  [+1(4.95e-06)]
+STACA0001_0618_p-48(ptaA         3.25e-05  [+1(3.25e-05)]
+STACA0001_0658_p-81(putA         3.11e-07  [+1(3.11e-07)]
+STACA0001_1955_p-134(put         1.21e-06  [+1(1.21e-06)]
+STACA0001_0978_p-221(pfo         1.87e-05  [+1(1.87e-05)]
+STACA0001_0592_p-107(pfk         1.78e-06  [+1(1.78e-06)]
+STACA0001_0678_p-44(pckA         5.71e-07  [+1(5.71e-07)]
+STACA0001_0514_p-61(nupC         1.26e-05  [+1(1.26e-05)]
+STACA0001_0950_p-121(mva         9.30e-06  [+1(9.30e-06)]
+STACA0001_0627_p-154(acu         4.94e-07  [+1(4.94e-07)]
+STACA0001_0626_p-35(acsA         3.11e-07  [+1(3.11e-07)]
+STACA0001_1050_p-45(aapA         9.22e-08  [+1(9.22e-08)]
+STACA0001_1147_p-81(araB         3.93e-06  [+1(3.93e-06)]
+STACA0001_0602_p-52(ald)         3.16e-06  [+1(3.16e-06)]
+STACA0001_0986_p-85(aldA         4.94e-07  [+1(4.94e-07)]
+STACA0001_1844_p-93(arcB         1.77e-07  [+1(1.77e-07)]
+STACA0001_0865_p-51(arg)         6.19e-06  [+1(6.19e-06)]
+STACA0001_0629_p-26(ccpA         9.30e-06  [+1(9.30e-06)]
+STACA0001_1597_p-103(cit         6.19e-06  [+1(6.19e-06)]
+STACA0001_0995_p-66(fbp)         2.25e-05  [+1(2.25e-05)]
+STACA0001_0829_p-144(fba         9.30e-06  [+1(9.30e-06)]
+STACA0001_1804_p-151(cit         3.11e-07  [+1(3.11e-07)]
+STACA0001_0589_p-43(citZ         5.53e-06  [+1(5.53e-06)]
+STACA0001_1139_p-75(gltS         6.87e-06  [+1(6.87e-06)]
+STACA0001_0331_p-46(fruR         5.53e-06  [+1(5.53e-06)]
+STACA0001_1544_p-132(glp         1.06e-06  [+1(1.06e-06)]
+STACA0001_1166_p-113(glv         1.32e-07  [+1(1.32e-07)]
+STACA0001_1165_p-115(glv         2.69e-07  [+1(2.69e-07)]
+STACA0001_0168_p-41(gudB         1.39e-05  [+1(1.39e-05)]
+STACA0001_1009_p-83(gntR         2.04e-07  [+1(2.04e-07)]
+STACA0001_0168_p-84(gudB         2.47e-05  [+1(2.47e-05)]
+STACA0001_0483_p-73(kbl)         3.53e-06  [+1(3.53e-06)]
+STACA0001_1003_p-166(gud         4.25e-05  [+1(4.25e-05)]
+STACA0001_1368_p-57(hutH         2.55e-06  [+1(2.55e-06)]
+STACA0001_0951_p-137(mva         8.44e-06  [+1(8.44e-06)]
+STACA0001_1121_p-93(mqo)         2.02e-06  [+1(2.02e-06)]
+STACA0001_1505_p-48(manR         1.78e-06  [+1(1.78e-06)]
+STACA0001_1506_p-40(manP         2.83e-06  [+1(2.83e-06)]
+STACA0001_0084_p-170(lip         6.19e-06  [+1(6.19e-06)]
+SE0164_p-61(uhpT)                1.78e-06  [+1(1.78e-06)]
+SE1944_p-245(SE1944)             1.37e-06  [+1(1.37e-06)]
+SE0247_p2(SE0247)                6.87e-06  [+1(6.87e-06)]
+SE0840_p-270(sdhC)               3.60e-07  [+1(3.60e-07)]
+SE1959_p-58(scrA)                8.44e-06  [+1(8.44e-06)]
+SE1763_p-15(SAS074)              3.55e-05  [+1(3.55e-05)]
+SE1763_p-62(SAS074)              9.42e-07  [+1(9.42e-07)]
+SE1885_p-130(SA2105)             1.77e-07  [+1(1.77e-07)]
+SE1762_p-130(SA1975)             3.16e-06  [+1(3.16e-06)]
+SE1007_p-29(SA1162)              7.41e-07  [+1(7.41e-07)]
+SE0715_p-62(SA0873)              2.05e-05  [+1(2.05e-05)]
+SE0653_p-180(rocD)               1.77e-07  [+1(1.77e-07)]
+SE2116_p-149(rocA)               1.54e-07  [+1(1.54e-07)]
+SE2088_p-87(rbsU)                2.55e-06  [+1(2.55e-06)]
+SE1437_p-80(putA)                9.22e-08  [+1(9.22e-08)]
+SE1403_p-131(ptaA)               2.83e-06  [+1(2.83e-06)]
+SE2082_p-68(pfoR)                7.41e-07  [+1(7.41e-07)]
+SE0214_p-37(pflB)                2.27e-06  [+1(2.27e-06)]
+SE1374_p-152(pfkA)               1.78e-06  [+1(1.78e-06)]
+SE1459_p-41(pckA)                1.77e-07  [+1(1.77e-07)]
+SE0283_p-63(nupC)                2.47e-05  [+1(2.47e-05)]
+SE2110_p-123(mvaS)               3.93e-06  [+1(3.93e-06)]
+SE2109_p-137(mvaA)               3.93e-06  [+1(3.93e-06)]
+SE1943_p-81(mqo)                 5.53e-06  [+1(5.53e-06)]
+SE2227_p-45(manR)                3.16e-06  [+1(3.16e-06)]
+SE2228_p-45(manP)                1.21e-06  [+1(1.21e-06)]
+SE1191_p-117(n/a)                8.39e-07  [+1(8.39e-07)]
+SE2056_p-164(gudP)               2.02e-06  [+1(2.02e-06)]
+SE0654_p-41(gudB)                1.03e-05  [+1(1.03e-05)]
+SE0654_p-74(gudB)                4.63e-05  [+1(4.63e-05)]
+SE2046_p-83(gntR)                2.04e-07  [+1(2.04e-07)]
+SE1898_p-109(glvR)               2.69e-07  [+1(2.69e-07)]
+SE1897_p-104(glvC)               1.32e-07  [+1(1.32e-07)]
+SE1924_p-71(gltS)                8.37e-05  [+1(8.37e-05)]
+SE2047_p-85(glpT)                2.55e-06  [+1(2.55e-06)]
+SE0977_p-130(glpF)               1.06e-06  [+1(1.06e-06)]
+SE2102_p-178(glcA)               4.95e-06  [+1(4.95e-06)]
+SE2063_p-66(fbp)                 1.14e-05  [+1(1.14e-05)]
+SE1723_p-143(fbaA)               4.25e-05  [+1(4.25e-05)]
+SE0235_p-146(SE0235)             1.78e-06  [+1(1.78e-06)]
+SE1371_p-43(citZ)                2.02e-06  [+1(2.02e-06)]
+SE1032_p-103(citB)               6.19e-06  [+1(6.19e-06)]
+SE1409_p-71(ccpA)                6.19e-06  [+1(6.19e-06)]
+SE0106_p-50(arcA2)               3.93e-06  [+1(3.93e-06)]
+SE2217_p-304(arcA)               8.44e-06  [+1(8.44e-06)]
+SE1914_p-101(n/a)                1.39e-05  [+1(1.39e-05)]
+SE2071_p-68(aldA)                1.77e-07  [+1(1.77e-07)]
+SE0253_p-37(acoL)                3.89e-08  [+1(3.89e-08)]
+SE2004_p-41(aapA)                1.54e-07  [+1(1.54e-07)]
+Sca_2095_p-85(xylB)              5.99e-05  [+1(5.99e-05)]
+Sca_2095_p-116(xylB)             7.41e-07  [+1(7.41e-07)]
+Sca_0108_p-71(treP)              7.41e-07  [+1(7.41e-07)]
+Sca_0882_p-163(sucC)             9.84e-05  [+1(9.84e-05)]
+Sca_2418_p-151(SSP0523)          2.55e-06  [+1(2.55e-06)]
+Sca_2373_p-60(SH0372)            3.28e-08  [+1(3.28e-08)]
+Sca_1866_p-254(SE1944)           8.39e-07  [+1(8.39e-07)]
+Sca_1871_p-47(SE0247)            9.42e-07  [+1(9.42e-07)]
+Sca_0765_p-291(sdhC)             2.04e-07  [+1(2.04e-07)]
+Sca_1495_p-138(sdcS)             2.55e-06  [+1(2.55e-06)]
+Sca_1673_p-64(SAS074)            3.60e-07  [+1(3.60e-07)]
+Sca_1812_p-249(SA2109)           9.22e-08  [+1(9.22e-08)]
+Sca_1807_p-119(SA2105)           9.22e-08  [+1(9.22e-08)]
+Sca_1672_p-141(SA1975)           5.71e-07  [+1(5.71e-07)]
+Sca_2042_p-292(SA1437)           1.56e-06  [+1(1.56e-06)]
+Sca_0968_p-30(SA1162)            1.77e-07  [+1(1.77e-07)]
+Sca_0617_p-64(SA0873)            1.03e-05  [+1(1.03e-05)]
+Sca_0213_p-144(SA0511)           3.16e-06  [+1(3.16e-06)]
+Sca_2408_p-63(SA0225)            2.79e-08  [+1(2.79e-08)]
+Sca_2140_p-85(SA0184)            7.66e-08  [+1(7.66e-08)]
+Sca_0564_p-49(rocA)              5.71e-07  [+1(5.71e-07)]
+Sca_2421_p-101(rbsU)             2.69e-07  [+1(2.69e-07)]
+Sca_1474_p-137(putP)             7.63e-06  [+1(7.63e-06)]
+Sca_1371_p-71(putA)              1.56e-06  [+1(1.56e-06)]
+Sca_1332_p-44(ptaA)              4.41e-06  [+1(4.41e-06)]
+Sca_1982_p-79(pfoR)              7.63e-06  [+1(7.63e-06)]
+Sca_2017_p-58(pflB)              1.54e-05  [+1(1.54e-05)]
+Sca_1304_p-103(pfkA)             6.87e-06  [+1(6.87e-06)]
+Sca_1390_p-54(pckA)              7.41e-07  [+1(7.41e-07)]
+Sca_2258_p-64(nhaC)              4.26e-07  [+1(4.26e-07)]
+Sca_2390_p-152(nanK)             9.42e-07  [+1(9.42e-07)]
+Sca_2389_p-109(nanA)             3.60e-07  [+1(3.60e-07)]
+Sca_1865_p-85(mqo)               5.71e-07  [+1(5.71e-07)]
+Sca_2440_p6(manP)                1.54e-05  [+1(1.54e-05)]
+Sca_2440_p-39(manP)              2.04e-07  [+1(2.04e-07)]
+Sca_2166_p-52(ipdC)              2.70e-05  [+1(2.70e-05)]
+Sca_2466_p-58(hutH)              1.37e-06  [+1(1.37e-06)]
+Sca_2417_p-40(gutB)              3.16e-06  [+1(3.16e-06)]
+Sca_1960_p-94(gudP)              1.78e-06  [+1(1.78e-06)]
+Sca_1950_p-53(gntR)              7.41e-07  [+1(7.41e-07)]
+Sca_1820_p-70(glpT)              3.25e-05  [+1(3.25e-05)]
+Sca_0948_p-126(glpF)             7.41e-07  [+1(7.41e-07)]
+Sca_0346_p-44(fruR)              1.87e-05  [+1(1.87e-05)]
+Sca_1964_p-123(fbp)              2.02e-06  [+1(2.02e-06)]
+Sca_1628_p-102(fbaA)             1.39e-05  [+1(1.39e-05)]
+Sca_1628_p-143(fbaA)             2.27e-06  [+1(2.27e-06)]
+Sca_2406_p-61(fadX)              7.41e-07  [+1(7.41e-07)]
+Sca_2309_p-64(cstA)              1.54e-07  [+1(1.54e-07)]
+Sca_1301_p-42(citZ)              1.78e-06  [+1(1.78e-06)]
+Sca_0991_p-68(citB)              1.54e-05  [+1(1.54e-05)]
+Sca_2257_p-49(argF)              5.71e-07  [+1(5.71e-07)]
+Sca_2085_p-47(arcA)              5.53e-06  [+1(5.53e-06)]
+Sca_2103_p-113(aldA)             1.54e-05  [+1(1.54e-05)]
+Sca_1314_p-54(ald)               2.55e-06  [+1(2.55e-06)]
+Sca_1338_p-34(acsA)              2.31e-07  [+1(2.31e-07)]
+Sca_1339_p-213(acuA)             5.71e-07  [+1(5.71e-07)]
+SH0300_p-97(drp35)               3.11e-07  [+1(3.11e-07)]
+SH2244_p-64(dhaK)                1.37e-06  [+1(1.37e-06)]
+SH1230_p-42(citZ)                7.63e-06  [+1(7.63e-06)]
+SH0421_p-56(citM)                2.31e-07  [+1(2.31e-07)]
+SH1186_p-26(ccpA)                2.83e-06  [+1(2.83e-06)]
+SH0367_p-50(arcA)                1.21e-06  [+1(1.21e-06)]
+SH0547_p-77(aldA)                1.77e-07  [+1(1.77e-07)]
+SH1216_p-52(ald)                 4.63e-05  [+1(4.63e-05)]
+SH1188_p-144(acuA)               4.94e-07  [+1(4.94e-07)]
+SH1189_p-36(acsA)                3.11e-07  [+1(3.11e-07)]
+SH0227_p-91(acoL2)               1.37e-06  [+1(1.37e-06)]
+SH0223_p-103(acoL)               6.56e-07  [+1(6.56e-07)]
+SH0623_p-61(aapA)                1.32e-07  [+1(1.32e-07)]
+SH0208_p-37(xylB)                7.41e-07  [+1(7.41e-07)]
+SH0208_p-95(xylB)                5.71e-07  [+1(5.71e-07)]
+SH2538_p-69(treP)                6.56e-07  [+1(6.56e-07)]
+SH0371_p-29(SH0371)              3.89e-08  [+1(3.89e-08)]
+SH0692_p-248(SE1944)             1.37e-06  [+1(1.37e-06)]
+SH1814_p-61(sdhC)                1.25e-04  16
+SH1814_p-285(sdhC)               3.60e-07  [+1(3.60e-07)]
+SH0671_p-63(scrA)                8.44e-06  [+1(8.44e-06)]
+SH0868_p-63(SAS074)              9.42e-07  [+1(9.42e-07)]
+SH0739_p-173(SA2109)             3.60e-07  [+1(3.60e-07)]
+SH0745_p-127(SA2105)             3.60e-07  [+1(3.60e-07)]
+SH0869_p-129(SA1975)             3.16e-06  [+1(3.16e-06)]
+SH1310_p-189(SA1437)             5.71e-07  [+1(5.71e-07)]
+SH1581_p-29(SA1162)              9.42e-07  [+1(9.42e-07)]
+SH1944_p-93(SA0873)              3.16e-06  [+1(3.16e-06)]
+SH2450_p-101(SA0511)             4.95e-06  [+1(4.95e-06)]
+SH0743_p-33(SA0184)              7.70e-05  [+1(7.70e-05)]
+SH0500_p-128(rocA)               5.71e-07  [+1(5.71e-07)]
+SH1993_p-161(rocD)               6.19e-06  [+1(6.19e-06)]
+SH0174_p-31(rbsR2)               1.32e-07  [+1(1.32e-07)]
+SH1157_p-81(putA)                1.32e-07  [+1(1.32e-07)]
+SH1198_p-101(ptaA)               3.25e-05  [+1(3.25e-05)]
+SH0537_p-116(pfoR)               1.78e-06  [+1(1.78e-06)]
+SH0537_p-270(pfoR)               1.78e-06  [+1(1.78e-06)]
+SH1226_p-152(pfkA)               6.87e-06  [+1(6.87e-06)]
+SH1137_p-53(pckA)                7.41e-07  [+1(7.41e-07)]
+SH0281_p-150(nanK)               9.42e-07  [+1(9.42e-07)]
+SH0282_p-108(nanA)               3.60e-07  [+1(3.60e-07)]
+SH0693_p-77(mqo)                 3.16e-06  [+1(3.16e-06)]
+SH1407_p-159(malR)               1.32e-07  [+1(1.32e-07)]
+SH0168_p-169(lip)                3.11e-07  [+1(3.11e-07)]
+SH2457_p-74(kbl)                 1.03e-05  [+1(1.03e-05)]
+SH0376_p-41(ipdC)                9.07e-05  [+1(9.07e-05)]
+SH0566_p-241(gudP)               3.60e-07  [+1(3.60e-07)]
+SH1992_p-35(gudB)                1.03e-05  [+1(1.03e-05)]
+SH1992_p-77(gudB)                1.87e-05  [+1(1.87e-05)]
+SH0574_p-81(gntR)                5.71e-07  [+1(5.71e-07)]
+SH0731_p-115(glvR)               8.39e-07  [+1(8.39e-07)]
+SH0731_p-142(glvR)               6.19e-06  [+1(6.19e-06)]
+SH0732_p-121(glvC)               7.41e-07  [+1(7.41e-07)]
+SH0713_p-64(gltS)                3.53e-06  [+1(3.53e-06)]
+SH1614_p-128(glpF)               1.06e-06  [+1(1.06e-06)]
+SH0521_p-171(glcA)               4.41e-06  [+1(4.41e-06)]
+SH2196_p-45(fruR)                1.26e-05  [+1(1.26e-05)]
+SH0559_p-64(fbp)                 1.26e-05  [+1(1.26e-05)]
+SH1190_p-138(fhs)                6.87e-06  [+1(6.87e-06)]
+SSP0975_p-43(pckA)               8.39e-07  [+1(8.39e-07)]
+SSP2235_p-65(nupC)               2.25e-05  [+1(2.25e-05)]
+SSP0374_p-157(nanK)              9.30e-06  [+1(9.30e-06)]
+SSP0375_p-182(nanA)              1.56e-06  [+1(1.56e-06)]
+SSP0539_p-90(mqo)                2.47e-05  [+1(2.47e-05)]
+SSP2297_p-145(lip)               7.66e-08  [+1(7.66e-08)]
+SSP2205_p-100(kbl)               7.41e-07  [+1(7.41e-07)]
+SSP0008_p-56(hutH)               3.53e-06  [+1(3.53e-06)]
+SSP0524_p-37(gutB)               6.27e-08  [+1(6.27e-08)]
+SSP0231_p-112(csbX)              1.21e-06  [+1(1.21e-06)]
+SSP0401_p-86(gudP)               1.32e-07  [+1(1.32e-07)]
+SSP0410_p-83(gntR)               1.78e-06  [+1(1.78e-06)]
+SSP0582_p-113(glvR)              5.71e-07  [+1(5.71e-07)]
+SSP0583_p-117(glvC)              1.37e-06  [+1(1.37e-06)]
+SSP0557_p-74(gltS)               4.94e-07  [+1(4.94e-07)]
+SSP0178_p-28(glpK)               5.71e-07  [+1(5.71e-07)]
+SSP1461_p-145(glpF)              1.06e-06  [+1(1.06e-06)]
+SSP2019_p-44(fruR)               1.54e-05  [+1(1.54e-05)]
+SSP1031_p-147(fhs)               2.02e-06  [+1(2.02e-06)]
+SSP0759_p-101(fbaA)              3.53e-06  [+1(3.53e-06)]
+SSP2427_p-91(fadX)               1.77e-07  [+1(1.77e-07)]
+SSP0327_p-57(drp35)              1.54e-05  [+1(1.54e-05)]
+SSP2070_p-67(dhaK)               2.47e-05  [+1(2.47e-05)]
+SSP2440_p-39(cstA)               1.32e-07  [+1(1.32e-07)]
+SSP1071_p-42(citZ)               1.37e-06  [+1(1.37e-06)]
+SSP1027_p-26(ccpA)               2.27e-06  [+1(2.27e-06)]
+SSP0563_p-73(araB2)              3.55e-05  [+1(3.55e-05)]
+SSP2178_p-38(araB)               1.21e-06  [+1(1.21e-06)]
+SSP2178_p-149(araB)              2.69e-07  [+1(2.69e-07)]
+SSP1057_p-52(ald)                3.53e-06  [+1(3.53e-06)]
+SSP1029_p-162(acuA)              2.02e-06  [+1(2.02e-06)]
+SSP1030_p-33(acsA)               6.87e-06  [+1(6.87e-06)]
+SSP1869_p-124(yusH)              1.26e-05  [+1(1.26e-05)]
+SSP2179_p-65(xltD)               1.32e-07  [+1(1.32e-07)]
+SSP2179_p-176(xltD)              9.42e-07  [+1(9.42e-07)]
+SSP2282_p-81(treP)               1.78e-06  [+1(1.78e-06)]
+SSP1332_p-44(SSP1332)            1.32e-07  [+1(1.32e-07)]
+SSP0617_p-37(n/a)                9.22e-08  [+1(9.22e-08)]
+SSP0523_p-151(SSP0523)           1.54e-07  [+1(1.54e-07)]
+SSP0245_p-40(n/a)                2.04e-07  [+1(2.04e-07)]
+SSP0245_p-158(n/a)               1.07e-04  16
+SSP0230_p-79(n/a)                8.39e-07  [+1(8.39e-07)]
+SSP0206_p-72(SSP0206)            3.60e-07  [+1(3.60e-07)]
+SSP0114_p-65(n/a)                6.27e-08  [+1(6.27e-08)]
+SSP0236_p-56(SH0372)             1.77e-07  [+1(1.77e-07)]
+SSP0538_p-318(SE1944)            1.69e-05  [+1(1.69e-05)]
+SSP0532_p-47(SE0247)             9.42e-07  [+1(9.42e-07)]
+SSP1648_p-232(sdhC)              3.60e-07  [+1(3.60e-07)]
+SSP0875_p-100(sdcS)              9.30e-06  [+1(9.30e-06)]
+SSP0836_p-68(n/a)                1.54e-05  [+1(1.54e-05)]
+SSP0512_p-66(scrA)               8.44e-06  [+1(8.44e-06)]
+SSP0714_p-64(SAS074)             1.56e-06  [+1(1.56e-06)]
+SSP0591_p-114(SA2109)            8.39e-07  [+1(8.39e-07)]
+SSP0598_p-109(SA2105)            7.66e-08  [+1(7.66e-08)]
+SSP0715_p-128(SA1975)            1.26e-05  [+1(1.26e-05)]
+SSP1440_p-33(SA1162)             5.71e-07  [+1(5.71e-07)]
+SSP2164_p-98(SA0511)             7.70e-05  [+1(7.70e-05)]
+SSP2164_p-164(SA0511)            2.96e-05  [+1(2.96e-05)]
+SSP2425_p-36(SA0225)             2.55e-06  [+1(2.55e-06)]
+SSP0596_p-35(SA0184)             1.14e-05  [+1(1.14e-05)]
+SSP0311_p-101(rocA)              4.26e-07  [+1(4.26e-07)]
+SSP1818_p-198(rocD)              1.77e-07  [+1(1.77e-07)]
+SSP1395_p-33(rbsD)               1.69e-05  [+1(1.69e-05)]
+SSP1396_p-30(rbsR2)              2.69e-07  [+1(2.69e-07)]
+SSP1396_p-302(rbsR2)             2.04e-07  [+1(2.04e-07)]
+SSP0889_p-137(putP)              1.03e-05  [+1(1.03e-05)]
+SSP0999_p-80(putA)               4.26e-07  [+1(4.26e-07)]
+SSP1068_p-148(pfkA)              1.78e-06  [+1(1.78e-06)]
+SSP1037_p-86(ptaA)               5.05e-05  [+1(5.05e-05)]
+MCCL_1409_p0(acsA)               6.56e-07  [+1(6.56e-07)]
+MCCL_1938_p-49(treP)             8.44e-06  [+1(8.44e-06)]
+MCCL_1319_p-85(sdhC)             6.19e-06  [+1(6.19e-06)]
+MCCL_0079_p-103(SA2109)          1.14e-05  [+1(1.14e-05)]
+MCCL_1856_p-94(SA0511)           3.55e-05  [+1(3.55e-05)]
+MCCL_0582_p-44(rocA)             1.78e-06  [+1(1.78e-06)]
+MCCL_0348_p-34(rbsR2)            6.19e-06  [+1(6.19e-06)]
+MCCL_0348_p-65(rbsR2)            2.55e-06  [+1(2.55e-06)]
+MCCL_1639_p-94(putP)             9.42e-07  [+1(9.42e-07)]
+MCCL_1451_p-52(putA)             5.71e-07  [+1(5.71e-07)]
+MCCL_0434_p-94(pflB)             2.55e-06  [+1(2.55e-06)]
+MCCL_1365_p-100(pfkA)            1.56e-06  [+1(1.56e-06)]
+MCCL_1890_p-70(nupC)             3.25e-05  [+1(3.25e-05)]
+MCCL_1807_p-34(nhaC)             7.66e-08  [+1(7.66e-08)]
+MCCL_0353_p-43(mdxE)             1.77e-07  [+1(1.77e-07)]
+MCCL_1800_p-82(gudP)             2.55e-06  [+1(2.55e-06)]
+MCCL_0584_p-93(gudB)             2.02e-06  [+1(2.02e-06)]
+MCCL_0405_p-325(gntR)            1.37e-06  [+1(1.37e-06)]
+MCCL_0370_p-82(glpT)             2.27e-06  [+1(2.27e-06)]
+MCCL_0891_p-133(glpF)            2.02e-06  [+1(2.02e-06)]
+MCCL_0452_p-28(fruR)             6.52e-05  [+1(6.52e-05)]
+MCCL_1408_p-62(fhs)              1.21e-06  [+1(1.21e-06)]
+MCCL_1362_p0(citZ)               6.19e-06  [+1(6.19e-06)]
+MCCL_1413_p-25(ccpA)             3.55e-05  [+1(3.55e-05)]
+MCCL_1008_p-36(citB)             5.50e-05  [+1(5.50e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

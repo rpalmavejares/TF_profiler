@@ -1,0 +1,345 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermococcales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PAB1835_p-37(thiB)       1.0000     13  PAB1930_p-38(thiC)       1.0000     13  
+PAB0536_p-47(thi4)       1.0000     13  PAB1641_p-70(tenA1)      1.0000     13  
+PAB0536_p-26(thi4)       1.0000     13  PF1530_p-93(thi4)        1.0000     13  
+PF1530_p-48(thi4)        1.0000     13  PF1530_p-27(thi4)        1.0000     13  
+PF1751_p-45(thiB)        1.0000     13  PF1531_p-114(thiC)       1.0000     13  
+PF1531_p-93(thiC)        1.0000     13  PF1531_p-48(thiC)        1.0000     13  
+PF1338_p-68(tenA1)       1.0000     13  PH1161_p-214(tenA1)      1.0000     13  
+PH1357_p-18(thi4)        1.0000     13  PH1349_p-42(thiB)        1.0000     13  
+PH1161_p-61(tenA1)       1.0000     13  PH1349_p-63(thiB)        1.0000     13  
+PH1357_p-39(thi4)        1.0000     13  TGAM_1270_p-45(thi4)     1.0000     13  
+TGAM_1269_p-41(thiC)     1.0000     13  TGAM_1269_p-62(thiC)     1.0000     13  
+TGAM_1706_p-16(thiB)     1.0000     13  TGAM_1270_p-66(thi4)     1.0000     13  
+TK0434_p-45(thi4)        1.0000     13  TK0433_p-63(thiC)        1.0000     13  
+TK0434_p-66(thi4)        1.0000     13  TK0433_p-42(thiC)        1.0000     13  
+TK2197_p-25(thiR)        1.0000     13  TON_1959_p-17(thiP)      1.0000     13  
+TON_1436_p-24(thiR)      1.0000     13  TSIB_0369_p-15(thiB)     1.0000     13  
+TSIB_0198_p-37(thiR)     1.0000     13  TSIB_0369_p-36(thiB)     1.0000     13  
+TSIB_0467_p-70(cytX)     1.0000     13  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermococcales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermococcales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           13
+nsites: minsites=        2    maxsites=       35    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             455    N=              35
+sample: seed=            0    hsfrac=          0
+        searchsize=    455    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.371 C 0.0967 G 0.119 T 0.413 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.37 C 0.098 G 0.12 T 0.412 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWAACTWAGTTTT MEME-1	width =  13  sites =  35  llr = 352  E-value = 2.1e-125
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a699:236:::1:
+pos.-specific     C  ::::921::::::
+probability       G  :1::::22a::1:
+matrix            T  :41:1541:aa8a
+
+         bits    3.4              
+                 3.0              
+                 2.7     *   *    
+                 2.3     *   *    
+Relative         2.0     *   *    
+Entropy          1.7     *   *    
+(14.5 bits)      1.3 *   *   *** *
+                 1.0 * ***   *** *
+                 0.7 * ***   *****
+                 0.3 ****** ******
+                 0.0 -------------
+
+Multilevel           AAAACTTAGTTTT
+consensus             T   AAG     
+sequence                  C       
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+TON_1436_p-24(thiR)           1  4.46e-07          . ATAACCGGGTTTT           
+PF1531_p-48(thiC)             1  4.46e-07          . AAAACCAAGTTTT           
+PF1531_p-114(thiC)            1  4.46e-07          . AAAACTGAGTTTT           
+PF1530_p-93(thi4)             1  7.45e-07          . AAAACTTGGTTTT           
+TK0433_p-63(thiC)             1  1.64e-06          . AAAACTAAGTTTT           
+TK0434_p-45(thi4)             1  1.64e-06          . AAAACTTAGTTTT           
+TGAM_1269_p-62(thiC)          1  1.64e-06          . AAAACTAAGTTTT           
+TGAM_1270_p-45(thi4)          1  1.64e-06          . AAAACTTAGTTTT           
+PAB0536_p-26(thi4)            1  1.64e-06          . AAAACTAAGTTTT           
+TSIB_0198_p-37(thiR)          1  2.07e-06          . ATAACTGAGTTTT           
+PF1530_p-27(thi4)             1  2.07e-06          . AAAACTCAGTTTT           
+PAB1641_p-70(tenA1)           1  2.07e-06          . ATAACCAAGTTTT           
+TSIB_0467_p-70(cytX)          1  2.52e-06          . ATAACTTGGTTTT           
+PF1338_p-68(tenA1)            1  2.52e-06          . ATAACTTGGTTTT           
+TON_1959_p-17(thiP)           1  3.74e-06          . AAAACCGAGTTGT           
+PF1530_p-48(thi4)             1  4.51e-06          . AAAACAAAGTTTT           
+TGAM_1706_p-16(thiB)          1  4.86e-06          . AAAACCGCGTTTT           
+TK0434_p-66(thi4)             1  6.44e-06          . ATAACAAAGTTTT           
+TGAM_1270_p-66(thi4)          1  6.44e-06          . ATAACAAAGTTTT           
+PH1357_p-39(thi4)             1  6.44e-06          . ATAACAAAGTTTT           
+PAB0536_p-47(thi4)            1  6.44e-06          . ATAACAAAGTTTT           
+TK2197_p-25(thiR)             1  7.71e-06          . ATAACCTGGTTGT           
+PF1531_p-93(thiC)             1  1.09e-05          . AAAACTTTGTTTT           
+PF1751_p-45(thiB)             1  1.28e-05          . AGAACACAGTTTT           
+PH1161_p-214(tenA1)           1  1.45e-05          . AAACCTCAGTTTT           
+PH1349_p-42(thiB)             1  2.14e-05          . ATAGCTTGGTTTT           
+PH1349_p-63(thiB)             1  2.30e-05          . AATACTTAGTTTT           
+PH1161_p-61(tenA1)            1  2.43e-05          . ATAACAAGGTTAT           
+PAB1930_p-38(thiC)            1  2.88e-05          . ATTACTTGGTTTT           
+TSIB_0369_p-36(thiB)          1  3.05e-05          . AGAACAGAGTTAT           
+TK0433_p-42(thiC)             1  3.69e-05          . AAAACTTTGTTAT           
+TGAM_1269_p-41(thiC)          1  3.69e-05          . AAAACTTTGTTAT           
+TSIB_0369_p-15(thiB)          1  8.10e-05          . AAAAATTAGTTTT           
+PH1357_p-18(thi4)             1  1.42e-04          . AAAATGAAGTTTT           
+PAB1835_p-37(thiB)            1  1.12e-03          . AAAATCTTATTTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TON_1436_p-24(thiR)               4.5e-07  [+1]
+PF1531_p-48(thiC)                 4.5e-07  [+1]
+PF1531_p-114(thiC)                4.5e-07  [+1]
+PF1530_p-93(thi4)                 7.5e-07  [+1]
+TK0433_p-63(thiC)                 1.6e-06  [+1]
+TK0434_p-45(thi4)                 1.6e-06  [+1]
+TGAM_1269_p-62(thiC)              1.6e-06  [+1]
+TGAM_1270_p-45(thi4)              1.6e-06  [+1]
+PAB0536_p-26(thi4)                1.6e-06  [+1]
+TSIB_0198_p-37(thiR)              2.1e-06  [+1]
+PF1530_p-27(thi4)                 2.1e-06  [+1]
+PAB1641_p-70(tenA1)               2.1e-06  [+1]
+TSIB_0467_p-70(cytX)              2.5e-06  [+1]
+PF1338_p-68(tenA1)                2.5e-06  [+1]
+TON_1959_p-17(thiP)               3.7e-06  [+1]
+PF1530_p-48(thi4)                 4.5e-06  [+1]
+TGAM_1706_p-16(thiB)              4.9e-06  [+1]
+TK0434_p-66(thi4)                 6.4e-06  [+1]
+TGAM_1270_p-66(thi4)              6.4e-06  [+1]
+PH1357_p-39(thi4)                 6.4e-06  [+1]
+PAB0536_p-47(thi4)                6.4e-06  [+1]
+TK2197_p-25(thiR)                 7.7e-06  [+1]
+PF1531_p-93(thiC)                 1.1e-05  [+1]
+PF1751_p-45(thiB)                 1.3e-05  [+1]
+PH1161_p-214(tenA1)               1.5e-05  [+1]
+PH1349_p-42(thiB)                 2.1e-05  [+1]
+PH1349_p-63(thiB)                 2.3e-05  [+1]
+PH1161_p-61(tenA1)                2.4e-05  [+1]
+PAB1930_p-38(thiC)                2.9e-05  [+1]
+TSIB_0369_p-36(thiB)              3.1e-05  [+1]
+TK0433_p-42(thiC)                 3.7e-05  [+1]
+TGAM_1269_p-41(thiC)              3.7e-05  [+1]
+TSIB_0369_p-15(thiB)              8.1e-05  [+1]
+PH1357_p-18(thi4)                 0.00014  [+1]
+PAB1835_p-37(thiB)                 0.0011  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWAACTWAGTTTT width=13 seqs=35
+TON_1436_p-24(thiR)      (    1) ATAACCGGGTTTT  1 
+PF1531_p-48(thiC)        (    1) AAAACCAAGTTTT  1 
+PF1531_p-114(thiC)       (    1) AAAACTGAGTTTT  1 
+PF1530_p-93(thi4)        (    1) AAAACTTGGTTTT  1 
+TK0433_p-63(thiC)        (    1) AAAACTAAGTTTT  1 
+TK0434_p-45(thi4)        (    1) AAAACTTAGTTTT  1 
+TGAM_1269_p-62(thiC)     (    1) AAAACTAAGTTTT  1 
+TGAM_1270_p-45(thi4)     (    1) AAAACTTAGTTTT  1 
+PAB0536_p-26(thi4)       (    1) AAAACTAAGTTTT  1 
+TSIB_0198_p-37(thiR)     (    1) ATAACTGAGTTTT  1 
+PF1530_p-27(thi4)        (    1) AAAACTCAGTTTT  1 
+PAB1641_p-70(tenA1)      (    1) ATAACCAAGTTTT  1 
+TSIB_0467_p-70(cytX)     (    1) ATAACTTGGTTTT  1 
+PF1338_p-68(tenA1)       (    1) ATAACTTGGTTTT  1 
+TON_1959_p-17(thiP)      (    1) AAAACCGAGTTGT  1 
+PF1530_p-48(thi4)        (    1) AAAACAAAGTTTT  1 
+TGAM_1706_p-16(thiB)     (    1) AAAACCGCGTTTT  1 
+TK0434_p-66(thi4)        (    1) ATAACAAAGTTTT  1 
+TGAM_1270_p-66(thi4)     (    1) ATAACAAAGTTTT  1 
+PH1357_p-39(thi4)        (    1) ATAACAAAGTTTT  1 
+PAB0536_p-47(thi4)       (    1) ATAACAAAGTTTT  1 
+TK2197_p-25(thiR)        (    1) ATAACCTGGTTGT  1 
+PF1531_p-93(thiC)        (    1) AAAACTTTGTTTT  1 
+PF1751_p-45(thiB)        (    1) AGAACACAGTTTT  1 
+PH1161_p-214(tenA1)      (    1) AAACCTCAGTTTT  1 
+PH1349_p-42(thiB)        (    1) ATAGCTTGGTTTT  1 
+PH1349_p-63(thiB)        (    1) AATACTTAGTTTT  1 
+PH1161_p-61(tenA1)       (    1) ATAACAAGGTTAT  1 
+PAB1930_p-38(thiC)       (    1) ATTACTTGGTTTT  1 
+TSIB_0369_p-36(thiB)     (    1) AGAACAGAGTTAT  1 
+TK0433_p-42(thiC)        (    1) AAAACTTTGTTAT  1 
+TGAM_1269_p-41(thiC)     (    1) AAAACTTTGTTAT  1 
+TSIB_0369_p-15(thiB)     (    1) AAAAATTAGTTTT  1 
+PH1357_p-18(thi4)        (    1) AAAATGAAGTTTT  1 
+PAB1835_p-37(thiB)       (    1) AAAATCTTATTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 35 bayes= 1.61813 E= 2.1e-125 
+   143  -1177  -1177  -1177 
+    63  -1177   -107    -15 
+   135  -1177  -1177   -285 
+   135   -178   -207  -1177 
+  -369    322  -1177   -285 
+   -70    103   -207     40 
+   -11    -19     52     -4 
+    76   -178     93   -185 
+  -369  -1177    302  -1177 
+ -1177  -1177  -1177    128 
+ -1177  -1177  -1177    128 
+  -170  -1177   -107    101 
+ -1177  -1177  -1177    128 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 35 E= 2.1e-125 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.571429  0.000000  0.057143  0.371429 
+ 0.942857  0.000000  0.000000  0.057143 
+ 0.942857  0.028571  0.028571  0.000000 
+ 0.028571  0.914286  0.000000  0.057143 
+ 0.228571  0.200000  0.028571  0.542857 
+ 0.342857  0.085714  0.171429  0.400000 
+ 0.628571  0.028571  0.228571  0.114286 
+ 0.028571  0.000000  0.971429  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.114286  0.000000  0.057143  0.828571 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAACTWAGTTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT]AAC[TAC][TA][AG]GTTTT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PAB1835_p-37(thiB)               1.12e-03  13
+PAB1930_p-38(thiC)               2.88e-05  [+1(2.88e-05)]
+PAB0536_p-47(thi4)               6.44e-06  [+1(6.44e-06)]
+PAB1641_p-70(tenA1)              2.07e-06  [+1(2.07e-06)]
+PAB0536_p-26(thi4)               1.64e-06  [+1(1.64e-06)]
+PF1530_p-93(thi4)                7.45e-07  [+1(7.45e-07)]
+PF1530_p-48(thi4)                4.51e-06  [+1(4.51e-06)]
+PF1530_p-27(thi4)                2.07e-06  [+1(2.07e-06)]
+PF1751_p-45(thiB)                1.28e-05  [+1(1.28e-05)]
+PF1531_p-114(thiC)               4.46e-07  [+1(4.46e-07)]
+PF1531_p-93(thiC)                1.09e-05  [+1(1.09e-05)]
+PF1531_p-48(thiC)                4.46e-07  [+1(4.46e-07)]
+PF1338_p-68(tenA1)               2.52e-06  [+1(2.52e-06)]
+PH1161_p-214(tenA1)              1.45e-05  [+1(1.45e-05)]
+PH1357_p-18(thi4)                1.42e-04  13
+PH1349_p-42(thiB)                2.14e-05  [+1(2.14e-05)]
+PH1161_p-61(tenA1)               2.43e-05  [+1(2.43e-05)]
+PH1349_p-63(thiB)                2.30e-05  [+1(2.30e-05)]
+PH1357_p-39(thi4)                6.44e-06  [+1(6.44e-06)]
+TGAM_1270_p-45(thi4)             1.64e-06  [+1(1.64e-06)]
+TGAM_1269_p-41(thiC)             3.69e-05  [+1(3.69e-05)]
+TGAM_1269_p-62(thiC)             1.64e-06  [+1(1.64e-06)]
+TGAM_1706_p-16(thiB)             4.86e-06  [+1(4.86e-06)]
+TGAM_1270_p-66(thi4)             6.44e-06  [+1(6.44e-06)]
+TK0434_p-45(thi4)                1.64e-06  [+1(1.64e-06)]
+TK0433_p-63(thiC)                1.64e-06  [+1(1.64e-06)]
+TK0434_p-66(thi4)                6.44e-06  [+1(6.44e-06)]
+TK0433_p-42(thiC)                3.69e-05  [+1(3.69e-05)]
+TK2197_p-25(thiR)                7.71e-06  [+1(7.71e-06)]
+TON_1959_p-17(thiP)              3.74e-06  [+1(3.74e-06)]
+TON_1436_p-24(thiR)              4.46e-07  [+1(4.46e-07)]
+TSIB_0369_p-15(thiB)             8.10e-05  [+1(8.10e-05)]
+TSIB_0198_p-37(thiR)             2.07e-06  [+1(2.07e-06)]
+TSIB_0369_p-36(thiB)             3.05e-05  [+1(3.05e-05)]
+TSIB_0467_p-70(cytX)             2.52e-06  [+1(2.52e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,283 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HrcA_Thermoanaerobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Athe_2138_p-54(groS)     1.0000     27  Athe_1553_p-43(hrcA)     1.0000     27  
+Csac_1291_p-54(groS)     1.0000     27  Csac_1750_p-43(hrcA)     1.0000     27  
+CHY_0806_p-67(groS)      1.0000     27  CHY_0412_p-46(hrcA)      1.0000     27  
+Teth514_0512_p-53(groS)  1.0000     27  Teth514_2081_p-47(hrcA)  1.0000     27  
+Thit_0563_p-53(groS)     1.0000     27  Thit_0892_p-47(hrcA)     1.0000     27  
+TTE0579_p-54(groS)       1.0000     27  TTE0953_p-47(hrcA)       1.0000     27  
+Moth_0545_p-61(groS)     1.0000     27  Moth_2130_p-50(groS)     1.0000     27  
+Moth_0583_p-46(hrcA)     1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HrcA_Thermoanaerobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HrcA_Thermoanaerobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             405    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    405    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.338 C 0.188 G 0.202 T 0.272 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.337 C 0.188 G 0.203 T 0.271 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1	width =  27  sites =  15  llr = 399  E-value = 2.5e-125
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::a:::7433675151a:::::aa
+pos.-specific     C  1:::a:a:9:33212::::::::a:::
+probability       G  :::a:::::11121135:9:a:a::::
+matrix            T  9a:::::a113431:245:::a::a::
+
+         bits    2.4    ** *             * **   
+                 2.2    ** *             * **   
+                 1.9  * ** ***         * *****  
+                 1.7  ********         *********
+Relative         1.4 *********         *********
+Entropy          1.2 *********         *********
+(38.4 bits)      1.0 *********         *********
+                 0.7 **********      ***********
+                 0.5 **********    *************
+                 0.2 ********** * **************
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCAATAAAAGTGAGTGCTAA
+consensus                      CAT CGTA         
+sequence                       TCC  T           
+                                 G              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+Athe_2138_p-54(groS)          1  8.26e-15          . TTAGCACTCATTGAAAGTGAGTGCTAA           
+CHY_0412_p-46(hrcA)           1  1.97e-14          . TTAGCACTCAACAAAAGAGAGTGCTAA           
+Thit_0563_p-53(groS)          1  3.56e-14          . TTAGCACTCACATAAGTTGAGTGCTAA           
+Teth514_0512_p-53(groS)       1  3.56e-14          . TTAGCACTCACATAAGTTGAGTGCTAA           
+TTE0579_p-54(groS)            1  7.48e-14          . TTAGCACTCATAGAAGTTGAGTGCTAA           
+Csac_1750_p-43(hrcA)          1  1.03e-13          . TTAGCACTCATCAAATGAGAGTGCTAA           
+Athe_1553_p-43(hrcA)          1  1.03e-13          . TTAGCACTCATCAACAGAGAGTGCTAA           
+Teth514_2081_p-47(hrcA)       1  1.60e-13          . TTAGCACTCAATCGAGTAGAGTGCTAA           
+TTE0953_p-47(hrcA)            1  3.41e-13          . TTAGCACTCAATGAGTGAGAGTGCTAA           
+CHY_0806_p-67(groS)           1  4.65e-13          . TTAGCACTCTATCGAAGTGAGTGCTAA           
+Thit_0892_p-47(hrcA)          1  7.99e-13          . TTAGCACTCAACTTGATTGAGTGCTAA           
+Csac_1291_p-54(groS)          1  1.28e-12          . TTAGCACTCACTCTCAATGAGTGCTAA           
+Moth_0583_p-46(hrcA)          1  9.11e-12          . TTAGCACTCGGAACATAAGAGTGCTAA           
+Moth_0545_p-61(groS)          1  1.02e-11          . TTAGCACTTGAGTCCGGTGAGTGCTAA           
+Moth_2130_p-50(groS)          1  1.20e-11          . CTAGCACTCTCTAAAATAAAGTGCTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Athe_2138_p-54(groS)              8.3e-15  [+1]
+CHY_0412_p-46(hrcA)                 2e-14  [+1]
+Thit_0563_p-53(groS)              3.6e-14  [+1]
+Teth514_0512_p-53(groS)           3.6e-14  [+1]
+TTE0579_p-54(groS)                7.5e-14  [+1]
+Csac_1750_p-43(hrcA)                1e-13  [+1]
+Athe_1553_p-43(hrcA)                1e-13  [+1]
+Teth514_2081_p-47(hrcA)           1.6e-13  [+1]
+TTE0953_p-47(hrcA)                3.4e-13  [+1]
+CHY_0806_p-67(groS)               4.7e-13  [+1]
+Thit_0892_p-47(hrcA)                8e-13  [+1]
+Csac_1291_p-54(groS)              1.3e-12  [+1]
+Moth_0583_p-46(hrcA)              9.1e-12  [+1]
+Moth_0545_p-61(groS)                1e-11  [+1]
+Moth_2130_p-50(groS)              1.2e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTAGCACTCAHHNAARKWGAGTGCTAA width=27 seqs=15
+Athe_2138_p-54(groS)     (    1) TTAGCACTCATTGAAAGTGAGTGCTAA  1 
+CHY_0412_p-46(hrcA)      (    1) TTAGCACTCAACAAAAGAGAGTGCTAA  1 
+Thit_0563_p-53(groS)     (    1) TTAGCACTCACATAAGTTGAGTGCTAA  1 
+Teth514_0512_p-53(groS)  (    1) TTAGCACTCACATAAGTTGAGTGCTAA  1 
+TTE0579_p-54(groS)       (    1) TTAGCACTCATAGAAGTTGAGTGCTAA  1 
+Csac_1750_p-43(hrcA)     (    1) TTAGCACTCATCAAATGAGAGTGCTAA  1 
+Athe_1553_p-43(hrcA)     (    1) TTAGCACTCATCAACAGAGAGTGCTAA  1 
+Teth514_2081_p-47(hrcA)  (    1) TTAGCACTCAATCGAGTAGAGTGCTAA  1 
+TTE0953_p-47(hrcA)       (    1) TTAGCACTCAATGAGTGAGAGTGCTAA  1 
+CHY_0806_p-67(groS)      (    1) TTAGCACTCTATCGAAGTGAGTGCTAA  1 
+Thit_0892_p-47(hrcA)     (    1) TTAGCACTCAACTTGATTGAGTGCTAA  1 
+Csac_1291_p-54(groS)     (    1) TTAGCACTCACTCTCAATGAGTGCTAA  1 
+Moth_0583_p-46(hrcA)     (    1) TTAGCACTCGGAACATAAGAGTGCTAA  1 
+Moth_0545_p-61(groS)     (    1) TTAGCACTTGAGTCCGGTGAGTGCTAA  1 
+Moth_2130_p-50(groS)     (    1) CTAGCACTCTCTAAAATAAAGTGCTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 15 bayes= 1.17688 E= 2.5e-125 
+ -1055   -150  -1055    178 
+ -1055  -1055  -1055    188 
+   157  -1055  -1055  -1055 
+ -1055  -1055    230  -1055 
+ -1055    241  -1055  -1055 
+   157  -1055  -1055  -1055 
+ -1055    241  -1055  -1055 
+ -1055  -1055  -1055    188 
+ -1055    231  -1055   -202 
+   112  -1055    -61   -102 
+    25     50   -160     -3 
+   -34     50   -160     56 
+    -2      9     -2     -3 
+    83    -50    -61   -102 
+    98      9    -61  -1055 
+    47  -1055     72    -44 
+  -134  -1055    120     56 
+    47  -1055  -1055     97 
+  -234  -1055    220  -1055 
+   157  -1055  -1055  -1055 
+ -1055  -1055    230  -1055 
+ -1055  -1055  -1055    188 
+ -1055  -1055    230  -1055 
+ -1055    241  -1055  -1055 
+ -1055  -1055  -1055    188 
+   157  -1055  -1055  -1055 
+   157  -1055  -1055  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 15 E= 2.5e-125 
+ 0.000000  0.066667  0.000000  0.933333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.933333  0.000000  0.066667 
+ 0.733333  0.000000  0.133333  0.133333 
+ 0.400000  0.266667  0.066667  0.266667 
+ 0.266667  0.266667  0.066667  0.400000 
+ 0.333333  0.200000  0.200000  0.266667 
+ 0.600000  0.133333  0.133333  0.133333 
+ 0.666667  0.200000  0.133333  0.000000 
+ 0.466667  0.000000  0.333333  0.200000 
+ 0.133333  0.000000  0.466667  0.400000 
+ 0.466667  0.000000  0.000000  0.533333 
+ 0.066667  0.000000  0.933333  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAHHNAARKWGAGTGCTAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACTCA[ACT][TAC][ATCG]A[AC][AGT][GT][TA]GAGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Athe_2138_p-54(groS)             8.26e-15  [+1(8.26e-15)]
+Athe_1553_p-43(hrcA)             1.03e-13  [+1(1.03e-13)]
+Csac_1291_p-54(groS)             1.28e-12  [+1(1.28e-12)]
+Csac_1750_p-43(hrcA)             1.03e-13  [+1(1.03e-13)]
+CHY_0806_p-67(groS)              4.65e-13  [+1(4.65e-13)]
+CHY_0412_p-46(hrcA)              1.97e-14  [+1(1.97e-14)]
+Teth514_0512_p-53(groS)          3.56e-14  [+1(3.56e-14)]
+Teth514_2081_p-47(hrcA)          1.60e-13  [+1(1.60e-13)]
+Thit_0563_p-53(groS)             3.56e-14  [+1(3.56e-14)]
+Thit_0892_p-47(hrcA)             7.99e-13  [+1(7.99e-13)]
+TTE0579_p-54(groS)               7.48e-14  [+1(7.48e-14)]
+TTE0953_p-47(hrcA)               3.41e-13  [+1(3.41e-13)]
+Moth_0545_p-61(groS)             1.02e-11  [+1(1.02e-11)]
+Moth_2130_p-50(groS)             1.20e-11  [+1(1.20e-11)]
+Moth_0583_p-46(hrcA)             9.11e-12  [+1(9.11e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

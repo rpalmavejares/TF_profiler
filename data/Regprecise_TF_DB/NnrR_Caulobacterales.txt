@@ -1,0 +1,247 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NnrR_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cseg_3038_p-83(nirK)     1.0000     18  Cseg_3035_p-92(COG3794)  1.0000     18  
+Cseg_3031_p-92(norB)     1.0000     18  Cseg_3035_p-146(COG3794) 1.0000     18  
+Cseg_3038_p-185(nirK)    1.0000     18  Cseg_3039_p-153(dnrN)    1.0000     18  
+PHZ_c0617_p-99(COG3794)  1.0000     18  PHZ_c0619_p-96(norB)     1.0000     18  
+PHZ_c0618_p-198(nnrR)    1.0000     18  PHZ_c0614_p-85(nirK)     1.0000     18  
+PHZ_c1196_p-64(dnrN)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NnrR_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NnrR_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             198    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    198    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.217 C 0.232 G 0.313 T 0.237 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.218 C 0.233 G 0.312 T 0.238 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GDTTGHBCNDGCGCAAMG MEME-1	width =  18  sites =  11  llr = 135  E-value = 6.4e-031
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :2:::3:132:32:9a51
+pos.-specific     C  11:1:4472116:a::32
+probability       G  84::a:3124816:1:27
+matrix            T  14a9:441441:2:::1:
+
+         bits    2.2              * *  
+                 2.0   *          * *  
+                 1.8   * *        ***  
+                 1.5   ***        ***  
+Relative         1.3   ***        ***  
+Entropy          1.1   ***        ***  
+(17.7 bits)      0.9 * ***  *  ** ***  
+                 0.7 * ***  *  ** *** *
+                 0.4 * ******  ****** *
+                 0.2 ******** *********
+                 0.0 ------------------
+
+Multilevel           GGTTGCCCTGGCGCAAAG
+consensus             T   TT AT A    C 
+sequence                  AG           
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PHZ_c0617_p-99(COG3794)       1  2.21e-09          . GATTGTTCTGGCGCAAAG           
+Cseg_3038_p-83(nirK)          1  3.61e-09          . GTTTGTCCATGCACAAAG           
+PHZ_c1196_p-64(dnrN)          1  5.47e-09          . GTTTGTCCGGGCGCAAAG           
+PHZ_c0614_p-85(nirK)          1  1.42e-07          . GGTTGACCGTGCGCAATG           
+Cseg_3031_p-92(norB)          1  3.10e-07          . GGTTGCTCCCGAGCAACG           
+PHZ_c0619_p-96(norB)          1  3.83e-07          . GGTTGCGCAAGATCAACG           
+PHZ_c0618_p-198(nnrR)         1  4.69e-07          . CGTTGATCTTGCGCAACC           
+Cseg_3035_p-92(COG3794)       1  2.63e-06          . GCTTGCTTTGGAGCAAGG           
+Cseg_3039_p-153(dnrN)         1  1.34e-05          . GTTCGAGACAGCGCAAAA           
+Cseg_3038_p-185(nirK)         1  2.68e-05          . TTTTGCGCTGTCTCGAAC           
+Cseg_3035_p-146(COG3794)      1  2.79e-05          . GATTGTCGATCGACAAGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PHZ_c0617_p-99(COG3794)           2.2e-09  [+1]
+Cseg_3038_p-83(nirK)              3.6e-09  [+1]
+PHZ_c1196_p-64(dnrN)              5.5e-09  [+1]
+PHZ_c0614_p-85(nirK)              1.4e-07  [+1]
+Cseg_3031_p-92(norB)              3.1e-07  [+1]
+PHZ_c0619_p-96(norB)              3.8e-07  [+1]
+PHZ_c0618_p-198(nnrR)             4.7e-07  [+1]
+Cseg_3035_p-92(COG3794)           2.6e-06  [+1]
+Cseg_3039_p-153(dnrN)             1.3e-05  [+1]
+Cseg_3038_p-185(nirK)             2.7e-05  [+1]
+Cseg_3035_p-146(COG3794)          2.8e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GDTTGHBCNDGCGCAAMG width=18 seqs=11
+PHZ_c0617_p-99(COG3794)  (    1) GATTGTTCTGGCGCAAAG  1 
+Cseg_3038_p-83(nirK)     (    1) GTTTGTCCATGCACAAAG  1 
+PHZ_c1196_p-64(dnrN)     (    1) GTTTGTCCGGGCGCAAAG  1 
+PHZ_c0614_p-85(nirK)     (    1) GGTTGACCGTGCGCAATG  1 
+Cseg_3031_p-92(norB)     (    1) GGTTGCTCCCGAGCAACG  1 
+PHZ_c0619_p-96(norB)     (    1) GGTTGCGCAAGATCAACG  1 
+PHZ_c0618_p-198(nnrR)    (    1) CGTTGATCTTGCGCAACC  1 
+Cseg_3035_p-92(COG3794)  (    1) GCTTGCTTTGGAGCAAGG  1 
+Cseg_3039_p-153(dnrN)    (    1) GTTCGAGACAGCGCAAAA  1 
+Cseg_3038_p-185(nirK)    (    1) TTTTGCGCTGTCTCGAAC  1 
+Cseg_3035_p-146(COG3794) (    1) GATTGTCGATCGACAAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 11 bayes= 0.921997 E= 6.4e-031 
+ -1010   -135    139   -138 
+   -26   -135     22     61 
+ -1010  -1010  -1010    207 
+ -1010   -135  -1010    193 
+ -1010  -1010    168  -1010 
+    32     64  -1010     61 
+ -1010     64    -19     61 
+  -126    164   -178   -138 
+    32    -36    -78     61 
+   -26   -135     22     61 
+ -1010   -135    139   -138 
+    32    145   -178  -1010 
+   -26  -1010    103    -39 
+ -1010    210  -1010  -1010 
+   206  -1010   -178  -1010 
+   220  -1010  -1010  -1010 
+   106     23    -78   -138 
+  -126    -36    122  -1010 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 11 E= 6.4e-031 
+ 0.000000  0.090909  0.818182  0.090909 
+ 0.181818  0.090909  0.363636  0.363636 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.090909  0.000000  0.909091 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.272727  0.363636  0.000000  0.363636 
+ 0.000000  0.363636  0.272727  0.363636 
+ 0.090909  0.727273  0.090909  0.090909 
+ 0.272727  0.181818  0.181818  0.363636 
+ 0.181818  0.090909  0.363636  0.363636 
+ 0.000000  0.090909  0.818182  0.090909 
+ 0.272727  0.636364  0.090909  0.000000 
+ 0.181818  0.000000  0.636364  0.181818 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.909091  0.000000  0.090909  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.454545  0.272727  0.181818  0.090909 
+ 0.090909  0.181818  0.727273  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GDTTGHBCNDGCGCAAMG MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[GT]TTG[CTA][CTG]C[TA][GT]G[CA]GCAA[AC]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cseg_3038_p-83(nirK)             3.61e-09  [+1(3.61e-09)]
+Cseg_3035_p-92(COG3794)          2.63e-06  [+1(2.63e-06)]
+Cseg_3031_p-92(norB)             3.10e-07  [+1(3.10e-07)]
+Cseg_3035_p-146(COG3794)         2.79e-05  [+1(2.79e-05)]
+Cseg_3038_p-185(nirK)            2.68e-05  [+1(2.68e-05)]
+Cseg_3039_p-153(dnrN)            1.34e-05  [+1(1.34e-05)]
+PHZ_c0617_p-99(COG3794)          2.21e-09  [+1(2.21e-09)]
+PHZ_c0619_p-96(norB)             3.83e-07  [+1(3.83e-07)]
+PHZ_c0618_p-198(nnrR)            4.69e-07  [+1(4.69e-07)]
+PHZ_c0614_p-85(nirK)             1.42e-07  [+1(1.42e-07)]
+PHZ_c1196_p-64(dnrN)             5.47e-09  [+1(5.47e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

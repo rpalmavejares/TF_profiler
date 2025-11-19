@@ -1,0 +1,317 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NagR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CPS_1026_p-70(nagK)      1.0000     18  CPS_1019_p-138(nagR)     1.0000     18  
+CPS_1020_p-135(pgi2)     1.0000     18  CPS_1008_p-116(nagB)     1.0000     18  
+CPS_1021_p-109(omp_nag)  1.0000     18  CPS_2381_p-283(nagS2)    1.0000     18  
+CPS_2379_p-70(bglX)      1.0000     18  CPS_2383_p-132(CPS_2383) 1.0000     18  
+CPS_2359_p-111(omp_nag)  1.0000     18  CPS_0413_p-55(nagX)      1.0000     18  
+CPS_2358_p2(n/a)         1.0000     18  ATW7_01315_p-103(nagK)   1.0000     18  
+ATW7_01300_p-130(omp_nag 1.0000     18  ATW7_17462_p-202(pckA)   1.0000     18  
+ATW7_17462_p-171(pckA)   1.0000     18  PTD2_17650_p-73(omp_nag) 1.0000     18  
+PTD2_17625_p-204(nagR)   1.0000     18  PTD2_17625_p-237(nagR)   1.0000     18  
+PTD2_17670_p-71(omp_nag) 1.0000     18  PTD2_18190_p-117(nagK)   1.0000     18  
+PTD2_07429_p-158(nagP)   1.0000     18  PTD2_17630_p-162(pgi2)   1.0000     18  
+PTD2_17630_p-129(pgi2)   1.0000     18  PTD2_17660_p-262(trpX)   1.0000     18  
+PTD2_18205_p-139(nagB)   1.0000     18  PTD2_16786_p-201(pckA)   1.0000     18  
+PTD2_16786_p-169(pckA)   1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NagR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NagR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             486    N=              27
+sample: seed=            0    hsfrac=          0
+        searchsize=    486    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.29 C 0.198 G 0.214 T 0.298 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.198 G 0.214 T 0.298 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AATGACAVCGYTGTCAT MEME-1	width =  17  sites =  27  llr = 468  E-value = 4.0e-160
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  67::a:a4::1:2::a2
+pos.-specific     C  :::::8:2a:4:::a::
+probability       G  3::a:::4:a2:8::::
+matrix            T  13a::2:1::3a:a::8
+
+         bits    2.3    *    **    *  
+                 2.1    *    **    *  
+                 1.9    ** * **    *  
+                 1.6   ***** ** * *** 
+Relative         1.4   ***** ** ***** 
+Entropy          1.2   ***** ** ***** 
+(25.0 bits)      0.9   ***** ** ******
+                 0.7  ****** ** ******
+                 0.5 ******* ** ******
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           AATGACAACGCTGTCAT
+consensus            GT     G  T     A
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PTD2_18190_p-117(nagK)        1  1.23e-10          . AATGACAACGCTGTCAT T         
+ATW7_01300_p-130(omp_nag      1  1.23e-10          . AATGACAACGCTGTCAT G         
+ATW7_01315_p-103(nagK)        1  1.23e-10          . AATGACAACGCTGTCAT T         
+CPS_1026_p-70(nagK)           1  1.23e-10          . AATGACAACGCTGTCAT T         
+PTD2_18205_p-139(nagB)        1  2.88e-10          . AATGACAGCGTTGTCAT A         
+CPS_1008_p-116(nagB)          1  3.94e-10          . ATTGACAGCGCTGTCAT T         
+CPS_1020_p-135(pgi2)          1  3.94e-10          . ATTGACAGCGCTGTCAT T         
+PTD2_17650_p-73(omp_nag)      1  7.23e-10          . GATGACAGCGTTGTCAT C         
+CPS_1019_p-138(nagR)          1  8.50e-10          . AATGACAGCGCTGTCAA T         
+PTD2_17625_p-237(nagR)        1  1.33e-09          . AATGACAACGCTGTCAA C         
+PTD2_17630_p-129(pgi2)        1  2.45e-09          . GTTGACAGCGTTGTCAT T         
+PTD2_17670_p-71(omp_nag)      1  2.45e-09          . TATGACAGCGTTGTCAT G         
+CPS_1021_p-109(omp_nag)       1  2.45e-09          . TATGACAGCGTTGTCAT T         
+PTD2_17630_p-162(pgi2)        1  7.22e-09          . GATGACAACGGTGTCAA A         
+PTD2_07429_p-158(nagP)        1  9.56e-09          . TATGATAGCGCTGTCAT T         
+PTD2_17660_p-262(trpX)        1  1.04e-08          . GGTGACAACGCTGTCAT C         
+ATW7_17462_p-171(pckA)        1  1.14e-08          . AATGACACCGGTATCAT T         
+PTD2_16786_p-201(pckA)        1  1.24e-08          . AATGATACCGGTGTCAT G         
+PTD2_17625_p-204(nagR)        1  1.24e-08          . TTTGACACCGTTGTCAT C         
+PTD2_16786_p-169(pckA)        1  1.66e-08          . GATGACACCGGTATCAT G         
+ATW7_17462_p-202(pckA)        1  1.80e-08          . GATGATACCGGTGTCAT A         
+CPS_2358_p2(n/a)              1  1.95e-08          . GTTGACAACGTTATCAT G         
+CPS_2379_p-70(bglX)           1  3.67e-08          . ATTGACAACGATATCAT T         
+CPS_2381_p-283(nagS2)         1  5.67e-08          . AATGATATCGTTGTCAA T         
+CPS_2359_p-111(omp_nag)       1  7.19e-08          . ATTGACAACGATATCAA T         
+CPS_0413_p-55(nagX)           1  8.25e-08          . AAAGACAGCGCTGTCTT T         
+CPS_2383_p-132(CPS_2383)      1  8.61e-08          . ATTGATATCGTTGTCAA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PTD2_18190_p-117(nagK)            1.2e-10  [+1]_1
+ATW7_01300_p-130(omp_nag          1.2e-10  [+1]_1
+ATW7_01315_p-103(nagK)            1.2e-10  [+1]_1
+CPS_1026_p-70(nagK)               1.2e-10  [+1]_1
+PTD2_18205_p-139(nagB)            2.9e-10  [+1]_1
+CPS_1008_p-116(nagB)              3.9e-10  [+1]_1
+CPS_1020_p-135(pgi2)              3.9e-10  [+1]_1
+PTD2_17650_p-73(omp_nag)          7.2e-10  [+1]_1
+CPS_1019_p-138(nagR)              8.5e-10  [+1]_1
+PTD2_17625_p-237(nagR)            1.3e-09  [+1]_1
+PTD2_17630_p-129(pgi2)            2.4e-09  [+1]_1
+PTD2_17670_p-71(omp_nag)          2.4e-09  [+1]_1
+CPS_1021_p-109(omp_nag)           2.4e-09  [+1]_1
+PTD2_17630_p-162(pgi2)            7.2e-09  [+1]_1
+PTD2_07429_p-158(nagP)            9.6e-09  [+1]_1
+PTD2_17660_p-262(trpX)              1e-08  [+1]_1
+ATW7_17462_p-171(pckA)            1.1e-08  [+1]_1
+PTD2_16786_p-201(pckA)            1.2e-08  [+1]_1
+PTD2_17625_p-204(nagR)            1.2e-08  [+1]_1
+PTD2_16786_p-169(pckA)            1.7e-08  [+1]_1
+ATW7_17462_p-202(pckA)            1.8e-08  [+1]_1
+CPS_2358_p2(n/a)                    2e-08  [+1]_1
+CPS_2379_p-70(bglX)               3.7e-08  [+1]_1
+CPS_2381_p-283(nagS2)             5.7e-08  [+1]_1
+CPS_2359_p-111(omp_nag)           7.2e-08  [+1]_1
+CPS_0413_p-55(nagX)               8.2e-08  [+1]_1
+CPS_2383_p-132(CPS_2383)          8.6e-08  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AATGACAVCGYTGTCAT width=17 seqs=27
+PTD2_18190_p-117(nagK)   (    1) AATGACAACGCTGTCAT  1 
+ATW7_01300_p-130(omp_nag (    1) AATGACAACGCTGTCAT  1 
+ATW7_01315_p-103(nagK)   (    1) AATGACAACGCTGTCAT  1 
+CPS_1026_p-70(nagK)      (    1) AATGACAACGCTGTCAT  1 
+PTD2_18205_p-139(nagB)   (    1) AATGACAGCGTTGTCAT  1 
+CPS_1008_p-116(nagB)     (    1) ATTGACAGCGCTGTCAT  1 
+CPS_1020_p-135(pgi2)     (    1) ATTGACAGCGCTGTCAT  1 
+PTD2_17650_p-73(omp_nag) (    1) GATGACAGCGTTGTCAT  1 
+CPS_1019_p-138(nagR)     (    1) AATGACAGCGCTGTCAA  1 
+PTD2_17625_p-237(nagR)   (    1) AATGACAACGCTGTCAA  1 
+PTD2_17630_p-129(pgi2)   (    1) GTTGACAGCGTTGTCAT  1 
+PTD2_17670_p-71(omp_nag) (    1) TATGACAGCGTTGTCAT  1 
+CPS_1021_p-109(omp_nag)  (    1) TATGACAGCGTTGTCAT  1 
+PTD2_17630_p-162(pgi2)   (    1) GATGACAACGGTGTCAA  1 
+PTD2_07429_p-158(nagP)   (    1) TATGATAGCGCTGTCAT  1 
+PTD2_17660_p-262(trpX)   (    1) GGTGACAACGCTGTCAT  1 
+ATW7_17462_p-171(pckA)   (    1) AATGACACCGGTATCAT  1 
+PTD2_16786_p-201(pckA)   (    1) AATGATACCGGTGTCAT  1 
+PTD2_17625_p-204(nagR)   (    1) TTTGACACCGTTGTCAT  1 
+PTD2_16786_p-169(pckA)   (    1) GATGACACCGGTATCAT  1 
+ATW7_17462_p-202(pckA)   (    1) GATGATACCGGTGTCAT  1 
+CPS_2358_p2(n/a)         (    1) GTTGACAACGTTATCAT  1 
+CPS_2379_p-70(bglX)      (    1) ATTGACAACGATATCAT  1 
+CPS_2381_p-283(nagS2)    (    1) AATGATATCGTTGTCAA  1 
+CPS_2359_p-111(omp_nag)  (    1) ATTGACAACGATATCAA  1 
+CPS_0413_p-55(nagX)      (    1) AAAGACAGCGCTGTCTT  1 
+CPS_2383_p-132(CPS_2383) (    1) ATTGATATCGTTGTCAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 54 bayes= 2.74723 E= 4.0e-160 
+   103  -1140     27   -101 
+   120  -1140   -253     -1 
+  -296  -1140  -1140    169 
+ -1140  -1140    222  -1140 
+   179  -1140  -1140  -1140 
+ -1140    204  -1140    -69 
+   179  -1140  -1140  -1140 
+    35    -10     79   -201 
+ -1140    234  -1140  -1140 
+ -1140  -1140    222  -1140 
+  -197    104    -21     16 
+ -1140  -1140  -1140    175 
+   -65  -1140    193  -1140 
+ -1140  -1140  -1140    175 
+ -1140    234  -1140  -1140 
+   173  -1140  -1140   -300 
+   -38  -1140  -1140    138 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 27 E= 4.0e-160 
+ 0.592593  0.000000  0.259259  0.148148 
+ 0.666667  0.000000  0.037037  0.296296 
+ 0.037037  0.000000  0.000000  0.962963 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.814815  0.000000  0.185185 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.370370  0.185185  0.370370  0.074074 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.074074  0.407407  0.185185  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.185185  0.000000  0.814815  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.962963  0.000000  0.000000  0.037037 
+ 0.222222  0.000000  0.000000  0.777778 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGACAVCGYTGTCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][AT]TGACA[AG]CG[CT]TGTCA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CPS_1026_p-70(nagK)              2.46e-10  [+1(1.23e-10)]_1
+CPS_1019_p-138(nagR)             1.70e-09  [+1(8.50e-10)]_1
+CPS_1020_p-135(pgi2)             7.87e-10  [+1(3.94e-10)]_1
+CPS_1008_p-116(nagB)             7.87e-10  [+1(3.94e-10)]_1
+CPS_1021_p-109(omp_nag)          4.90e-09  [+1(2.45e-09)]_1
+CPS_2381_p-283(nagS2)            1.13e-07  [+1(5.67e-08)]_1
+CPS_2379_p-70(bglX)              7.33e-08  [+1(3.67e-08)]_1
+CPS_2383_p-132(CPS_2383)         1.72e-07  [+1(8.61e-08)]_1
+CPS_2359_p-111(omp_nag)          1.44e-07  [+1(7.19e-08)]_1
+CPS_0413_p-55(nagX)              1.65e-07  [+1(8.25e-08)]_1
+CPS_2358_p2(n/a)                 3.91e-08  [+1(1.95e-08)]_1
+ATW7_01315_p-103(nagK)           2.46e-10  [+1(1.23e-10)]_1
+ATW7_01300_p-130(omp_nag         2.46e-10  [+1(1.23e-10)]_1
+ATW7_17462_p-202(pckA)           3.61e-08  [+1(1.80e-08)]_1
+ATW7_17462_p-171(pckA)           2.27e-08  [+1(1.14e-08)]_1
+PTD2_17650_p-73(omp_nag)         1.45e-09  [+1(7.23e-10)]_1
+PTD2_17625_p-204(nagR)           2.48e-08  [+1(1.24e-08)]_1
+PTD2_17625_p-237(nagR)           2.67e-09  [+1(1.33e-09)]_1
+PTD2_17670_p-71(omp_nag)         4.90e-09  [+1(2.45e-09)]_1
+PTD2_18190_p-117(nagK)           2.46e-10  [+1(1.23e-10)]_1
+PTD2_07429_p-158(nagP)           1.91e-08  [+1(9.56e-09)]_1
+PTD2_17630_p-162(pgi2)           1.44e-08  [+1(7.22e-09)]_1
+PTD2_17630_p-129(pgi2)           4.90e-09  [+1(2.45e-09)]_1
+PTD2_17660_p-262(trpX)           2.08e-08  [+1(1.04e-08)]_1
+PTD2_18205_p-139(nagB)           5.76e-10  [+1(2.88e-10)]_1
+PTD2_16786_p-201(pckA)           2.48e-08  [+1(1.24e-08)]_1
+PTD2_16786_p-169(pckA)           3.32e-08  [+1(1.66e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

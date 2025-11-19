@@ -1,0 +1,227 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/NrdR_Chloroflexia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cagg_2767_p-137(nrdJ2)   1.0000     16  Cagg_2767_p-282(nrdJ2)   1.0000     16  
+Cagg_2767_p-294(nrdJ2)   1.0000     16  Chy400_1894_p-137(nrdJ2) 1.0000     16  
+RoseRS_4577_p-213(nrdJ)  1.0000     16  Rcas_0124_p-219(nrdJ)    1.0000     16  
+Rcas_0124_p-334(nrdJ)    1.0000     16  Haur_4766_p-326(nrdJ)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/NrdR_Chloroflexia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/NrdR_Chloroflexia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             128    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    128    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.32 C 0.141 G 0.219 T 0.32 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.318 C 0.144 G 0.22 T 0.318 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RYRCYAKATWTAGKA MEME-1	width =  15  sites =   8  llr = 102  E-value = 1.2e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:6::8:a:4:6::8
+pos.-specific     C  :5:a4::::::::::
+probability       G  4:4::36::1:3a41
+matrix            T  :5::6:4:a5a1:61
+
+         bits    2.8    *           
+                 2.5    *           
+                 2.2    *        *  
+                 2.0    *        *  
+Relative         1.7    *   ** * *  
+Entropy          1.4    *   ** * *  
+(18.4 bits)      1.1  * ** *** * *  
+                 0.8 ********* * ** 
+                 0.6 ********* *****
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           ACACTAGATTTAGTA
+consensus            GTG CGT  A G G 
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Chy400_1894_p-137(nrdJ2)      1  3.78e-08          . ACACTAGATATAGTA T         
+Rcas_0124_p-219(nrdJ)         1  1.32e-07          . GCGCCATATTTAGGA A         
+Cagg_2767_p-137(nrdJ2)        1  2.42e-07          . ACACTAGATGTAGTA C         
+RoseRS_4577_p-213(nrdJ)       1  2.83e-07          . GCGCTATATTTAGGA A         
+Cagg_2767_p-294(nrdJ2)        1  1.41e-06          . ATACCAGATTTGGTG C         
+Cagg_2767_p-282(nrdJ2)        1  1.54e-06          . GTGCTGGATATGGTA A         
+Rcas_0124_p-334(nrdJ)         1  2.27e-06          . ATACCGGATTTAGTT C         
+Haur_4766_p-326(nrdJ)         1  3.26e-06          . ATACTATATATTGGA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Chy400_1894_p-137(nrdJ2)          3.8e-08  [+1]_1
+Rcas_0124_p-219(nrdJ)             1.3e-07  [+1]_1
+Cagg_2767_p-137(nrdJ2)            2.4e-07  [+1]_1
+RoseRS_4577_p-213(nrdJ)           2.8e-07  [+1]_1
+Cagg_2767_p-294(nrdJ2)            1.4e-06  [+1]_1
+Cagg_2767_p-282(nrdJ2)            1.5e-06  [+1]_1
+Rcas_0124_p-334(nrdJ)             2.3e-06  [+1]_1
+Haur_4766_p-326(nrdJ)             3.3e-06  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RYRCYAKATWTAGKA width=15 seqs=8
+Chy400_1894_p-137(nrdJ2) (    1) ACACTAGATATAGTA  1 
+Rcas_0124_p-219(nrdJ)    (    1) GCGCCATATTTAGGA  1 
+Cagg_2767_p-137(nrdJ2)   (    1) ACACTAGATGTAGTA  1 
+RoseRS_4577_p-213(nrdJ)  (    1) GCGCTATATTTAGGA  1 
+Cagg_2767_p-294(nrdJ2)   (    1) ATACCAGATTTGGTG  1 
+Cagg_2767_p-282(nrdJ2)   (    1) GTGCTGGATATGGTA  1 
+Rcas_0124_p-334(nrdJ)    (    1) ATACCGGATTTAGTT  1 
+Haur_4766_p-326(nrdJ)    (    1) ATACTATATATTGGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16 bayes= 2 E= 1.2e-019 
+    97   -965     77   -965 
+  -965    180   -965     65 
+    97   -965     77   -965 
+  -965    279   -965   -965 
+  -965    138   -965     97 
+   124   -965     19   -965 
+  -965   -965    151     24 
+   165   -965   -965   -965 
+  -965   -965   -965    165 
+    24   -965    -81     65 
+  -965   -965   -965    165 
+    97   -965     19   -135 
+  -965   -965    219   -965 
+  -965   -965     77     97 
+   124   -965    -81   -135 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 8 E= 1.2e-019 
+ 0.625000  0.000000  0.375000  0.000000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.625000  0.000000  0.375000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.375000  0.000000  0.625000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.000000  0.000000  0.625000  0.375000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.375000  0.000000  0.125000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.625000  0.000000  0.250000  0.125000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.375000  0.625000 
+ 0.750000  0.000000  0.125000  0.125000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RYRCYAKATWTAGKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][CT][AG]C[TC][AG][GT]AT[TA]T[AG]G[TG]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cagg_2767_p-137(nrdJ2)           4.85e-07  [+1(2.42e-07)]_1
+Cagg_2767_p-282(nrdJ2)           3.09e-06  [+1(1.54e-06)]_1
+Cagg_2767_p-294(nrdJ2)           2.83e-06  [+1(1.41e-06)]_1
+Chy400_1894_p-137(nrdJ2)         7.55e-08  [+1(3.78e-08)]_1
+RoseRS_4577_p-213(nrdJ)          5.65e-07  [+1(2.83e-07)]_1
+Rcas_0124_p-219(nrdJ)            2.65e-07  [+1(1.32e-07)]_1
+Rcas_0124_p-334(nrdJ)            4.54e-06  [+1(2.27e-06)]_1
+Haur_4766_p-326(nrdJ)            6.52e-06  [+1(3.26e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

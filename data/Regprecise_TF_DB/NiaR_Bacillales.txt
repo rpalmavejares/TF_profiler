@@ -1,0 +1,322 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/NiaR_Bacillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BSU02950_p-63(niaP)      1.0000     22  BSU27880_p-83(nifS)      1.0000     22  
+BSU27870_p-41(nadB)      1.0000     22  RBAM_003210_p-61(niaP)   1.0000     22  
+RBAM_024930_p-84(nifS)   1.0000     22  RBAM_024920_p-43(nadB)   1.0000     22  
+BPUM_2427_p-38(nadB)     1.0000     22  BLi00841_p-71(niaP)      1.0000     22  
+BLi02915_p-80(nifS)      1.0000     22  BLi02914_p-42(nadB)      1.0000     22  
+Aflv_0702_p-29(nifS)     1.0000     22  Aflv_0702_p-41(nifS)     1.0000     22  
+Aflv_0703_p-37(nadB)     1.0000     22  Aflv_0703_p-49(nadB)     1.0000     22  
+GK3433_p-39(niaP)        1.0000     22  GK2602_p-86(nifS)        1.0000     22  
+GK2601_p-41(nadB)        1.0000     22  BC5418_p-37(niaP)        1.0000     22  
+BC4424_p-127(nifS)       1.0000     22  BC4423_p-47(nadB)        1.0000     22  
+BH1217_p-102(nifS)       1.0000     22  BH1218_p-39(nadB)        1.0000     22  
+BH3254_p-85(niaY)        1.0000     22  ABC1546_p-73(nifS)       1.0000     22  
+ABC1547_p-36(nadB)       1.0000     22  ABC2773_p-76(niaY)       1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/NiaR_Bacillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/NiaR_Bacillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       26    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             572    N=              26
+sample: seed=            0    hsfrac=          0
+        searchsize=    572    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.334 C 0.156 G 0.199 T 0.311 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.333 C 0.156 G 0.2 T 0.311 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TAHAKGTGTCWWGACABSTRTA MEME-1	width =  22  sites =  26  llr = 427  E-value = 2.6e-139
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  283a22:::255:9:a:2:419
+pos.-specific     C  :23:22:::8::::a:34::::
+probability       G  1:::35:a::::9:::43:61:
+matrix            T  714:3:a:a:5511::219:8:
+
+         bits    2.7                       
+                 2.4               *       
+                 2.1        *      *       
+                 1.9        * *  * *       
+Relative         1.6       ** *  * **      
+Entropy          1.3    *  ****  * **  *   
+(23.7 bits)      1.1    *  ****  ****  * **
+                 0.8  * *  ****  ****  ****
+                 0.5  * * *****************
+                 0.3 **********************
+                 0.0 ----------------------
+
+Multilevel           TATAGGTGTCAAGACAGCTGTA
+consensus              C TC    TT    CG A  
+sequence               A             T     
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+RBAM_024920_p-43(nadB)        1  4.09e-12          . TATAGGTGTCAAGACAGGTGTA           
+BSU27870_p-41(nadB)           1  4.09e-12          . TATAGGTGTCAAGACAGGTGTA           
+BLi02915_p-80(nifS)           1  1.92e-11          . TACATGTGTCTTGACACCTATA           
+BLi02914_p-42(nadB)           1  6.43e-11          . TATAGGTGTCAAGACACATGTA           
+RBAM_024930_p-84(nifS)        1  6.43e-11          . TACACCTGTCTTGACACCTATA           
+BSU27880_p-83(nifS)           1  6.43e-11          . TACACCTGTCTTGACACCTATA           
+BPUM_2427_p-38(nadB)          1  1.45e-10          . GATATGTGTCAAGACAGGTGTA           
+BC4424_p-127(nifS)            1  7.75e-10          . TCCAACTGTCTTGACACCTATA           
+BH1217_p-102(nifS)            1  9.84e-10          . TACATATGTCTTGACATCTATA           
+BC4423_p-47(nadB)             1  1.79e-09          . TATAGGTGTCAAGACAGTTGGA           
+BH1218_p-39(nadB)             1  2.27e-09          . TATAGATGTCAAGACATATGTA           
+GK2601_p-41(nadB)             1  2.82e-09          . TATAGATGTCAAGACAGGTGAA           
+GK2602_p-86(nifS)             1  5.36e-09          . TTCACCTGTCTTGACATCTATA           
+ABC1546_p-73(nifS)            1  8.87e-09          . TACAGTTGTCTTGTCACCTATA           
+RBAM_003210_p-61(niaP)        1  9.78e-09          . ACAATGTGTAAAGACAGGTGTA           
+BSU02950_p-63(niaP)           1  9.78e-09          . ACAATGTGTAAAGACAGGTGTA           
+BH3254_p-85(niaY)             1  1.08e-08          . GAAATGTGTCTTGTCATGTGTA           
+ABC1547_p-36(nadB)            1  1.72e-08          . TATAGGTGACAAGACAACTGTA           
+BLi00841_p-71(niaP)           1  2.26e-08          . CAAAAGTGTAAAGACAGGTGTA           
+Aflv_0702_p-41(nifS)          1  4.91e-08          . TCATACTGTCTTGACACCTATA           
+ABC2773_p-76(niaY)            1  2.41e-07          . AAAAAGTGTCTTGTCACATGAA           
+Aflv_0703_p-37(nadB)          1  4.73e-07          . TATAGGTGTCAAGACAGTATGA           
+BC5418_p-37(niaP)             1  5.37e-07          . ATGATGTGTAAAGACACCTGTG           
+GK3433_p-39(niaP)             1  1.33e-06          . TAAATATGTCTTTACATTGATA           
+Aflv_0703_p-49(nadB)          1  2.08e-06          . AATATATGTCAATATAGGTGTC           
+Aflv_0702_p-29(nifS)          1  5.48e-06          . GACACCTATATTGACATATATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RBAM_024920_p-43(nadB)            4.1e-12  [+1]
+BSU27870_p-41(nadB)               4.1e-12  [+1]
+BLi02915_p-80(nifS)               1.9e-11  [+1]
+BLi02914_p-42(nadB)               6.4e-11  [+1]
+RBAM_024930_p-84(nifS)            6.4e-11  [+1]
+BSU27880_p-83(nifS)               6.4e-11  [+1]
+BPUM_2427_p-38(nadB)              1.4e-10  [+1]
+BC4424_p-127(nifS)                7.8e-10  [+1]
+BH1217_p-102(nifS)                9.8e-10  [+1]
+BC4423_p-47(nadB)                 1.8e-09  [+1]
+BH1218_p-39(nadB)                 2.3e-09  [+1]
+GK2601_p-41(nadB)                 2.8e-09  [+1]
+GK2602_p-86(nifS)                 5.4e-09  [+1]
+ABC1546_p-73(nifS)                8.9e-09  [+1]
+RBAM_003210_p-61(niaP)            9.8e-09  [+1]
+BSU02950_p-63(niaP)               9.8e-09  [+1]
+BH3254_p-85(niaY)                 1.1e-08  [+1]
+ABC1547_p-36(nadB)                1.7e-08  [+1]
+BLi00841_p-71(niaP)               2.3e-08  [+1]
+Aflv_0702_p-41(nifS)              4.9e-08  [+1]
+ABC2773_p-76(niaY)                2.4e-07  [+1]
+Aflv_0703_p-37(nadB)              4.7e-07  [+1]
+BC5418_p-37(niaP)                 5.4e-07  [+1]
+GK3433_p-39(niaP)                 1.3e-06  [+1]
+Aflv_0703_p-49(nadB)              2.1e-06  [+1]
+Aflv_0702_p-29(nifS)              5.5e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TAHAKGTGTCWWGACABSTRTA width=22 seqs=26
+RBAM_024920_p-43(nadB)   (    1) TATAGGTGTCAAGACAGGTGTA  1 
+BSU27870_p-41(nadB)      (    1) TATAGGTGTCAAGACAGGTGTA  1 
+BLi02915_p-80(nifS)      (    1) TACATGTGTCTTGACACCTATA  1 
+BLi02914_p-42(nadB)      (    1) TATAGGTGTCAAGACACATGTA  1 
+RBAM_024930_p-84(nifS)   (    1) TACACCTGTCTTGACACCTATA  1 
+BSU27880_p-83(nifS)      (    1) TACACCTGTCTTGACACCTATA  1 
+BPUM_2427_p-38(nadB)     (    1) GATATGTGTCAAGACAGGTGTA  1 
+BC4424_p-127(nifS)       (    1) TCCAACTGTCTTGACACCTATA  1 
+BH1217_p-102(nifS)       (    1) TACATATGTCTTGACATCTATA  1 
+BC4423_p-47(nadB)        (    1) TATAGGTGTCAAGACAGTTGGA  1 
+BH1218_p-39(nadB)        (    1) TATAGATGTCAAGACATATGTA  1 
+GK2601_p-41(nadB)        (    1) TATAGATGTCAAGACAGGTGAA  1 
+GK2602_p-86(nifS)        (    1) TTCACCTGTCTTGACATCTATA  1 
+ABC1546_p-73(nifS)       (    1) TACAGTTGTCTTGTCACCTATA  1 
+RBAM_003210_p-61(niaP)   (    1) ACAATGTGTAAAGACAGGTGTA  1 
+BSU02950_p-63(niaP)      (    1) ACAATGTGTAAAGACAGGTGTA  1 
+BH3254_p-85(niaY)        (    1) GAAATGTGTCTTGTCATGTGTA  1 
+ABC1547_p-36(nadB)       (    1) TATAGGTGACAAGACAACTGTA  1 
+BLi00841_p-71(niaP)      (    1) CAAAAGTGTAAAGACAGGTGTA  1 
+Aflv_0702_p-41(nifS)     (    1) TCATACTGTCTTGACACCTATA  1 
+ABC2773_p-76(niaY)       (    1) AAAAAGTGTCTTGTCACATGAA  1 
+Aflv_0703_p-37(nadB)     (    1) TATAGGTGTCAAGACAGTATGA  1 
+BC5418_p-37(niaP)        (    1) ATGATGTGTAAAGACACCTGTG  1 
+GK3433_p-39(niaP)        (    1) TAAATATGTCTTTACATTGATA  1 
+Aflv_0703_p-49(nadB)     (    1) AATATATGTCAATATAGGTGTC  1 
+Aflv_0702_p-29(nifS)     (    1) GACACCTATATTGACATATATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 26 bayes= 1.4975 E= 2.6e-139 
+   -79   -202    -79    107 
+   121     -2  -1134   -201 
+   -31     98   -237     31 
+   153  -1134  -1134   -301 
+  -111     -2     79     16 
+   -79     56    143   -301 
+ -1134  -1134  -1134    169 
+  -311  -1134    227  -1134 
+  -311  -1134  -1134    163 
+   -79    237  -1134  -1134 
+    69  -1134  -1134     57 
+    69  -1134  -1134     57 
+ -1134  -1134    221   -201 
+   141  -1134  -1134   -143 
+ -1134    262  -1134   -301 
+   158  -1134  -1134  -1134 
+  -311    115     95    -43 
+  -111    130     79   -143 
+  -311  -1134   -237    157 
+    21  -1134    153   -301 
+  -211  -1134   -138    144 
+   141   -202   -237   -301 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 26 E= 2.6e-139 
+ 0.192308  0.038462  0.115385  0.653846 
+ 0.769231  0.153846  0.000000  0.076923 
+ 0.269231  0.307692  0.038462  0.384615 
+ 0.961538  0.000000  0.000000  0.038462 
+ 0.153846  0.153846  0.346154  0.346154 
+ 0.192308  0.230769  0.538462  0.038462 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.038462  0.000000  0.961538  0.000000 
+ 0.038462  0.000000  0.000000  0.961538 
+ 0.192308  0.807692  0.000000  0.000000 
+ 0.538462  0.000000  0.000000  0.461538 
+ 0.538462  0.000000  0.000000  0.461538 
+ 0.000000  0.000000  0.923077  0.076923 
+ 0.884615  0.000000  0.000000  0.115385 
+ 0.000000  0.961538  0.000000  0.038462 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.038462  0.346154  0.384615  0.230769 
+ 0.153846  0.384615  0.346154  0.115385 
+ 0.038462  0.000000  0.038462  0.923077 
+ 0.384615  0.000000  0.576923  0.038462 
+ 0.076923  0.000000  0.076923  0.846154 
+ 0.884615  0.038462  0.038462  0.038462 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAHAKGTGTCWWGACABSTRTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TA[TCA]A[GT][GC]TGTC[AT][AT]GACA[GCT][CG]T[GA]TA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BSU02950_p-63(niaP)              9.78e-09  [+1(9.78e-09)]
+BSU27880_p-83(nifS)              6.43e-11  [+1(6.43e-11)]
+BSU27870_p-41(nadB)              4.09e-12  [+1(4.09e-12)]
+RBAM_003210_p-61(niaP)           9.78e-09  [+1(9.78e-09)]
+RBAM_024930_p-84(nifS)           6.43e-11  [+1(6.43e-11)]
+RBAM_024920_p-43(nadB)           4.09e-12  [+1(4.09e-12)]
+BPUM_2427_p-38(nadB)             1.45e-10  [+1(1.45e-10)]
+BLi00841_p-71(niaP)              2.26e-08  [+1(2.26e-08)]
+BLi02915_p-80(nifS)              1.92e-11  [+1(1.92e-11)]
+BLi02914_p-42(nadB)              6.43e-11  [+1(6.43e-11)]
+Aflv_0702_p-29(nifS)             5.48e-06  [+1(5.48e-06)]
+Aflv_0702_p-41(nifS)             4.91e-08  [+1(4.91e-08)]
+Aflv_0703_p-37(nadB)             4.73e-07  [+1(4.73e-07)]
+Aflv_0703_p-49(nadB)             2.08e-06  [+1(2.08e-06)]
+GK3433_p-39(niaP)                1.33e-06  [+1(1.33e-06)]
+GK2602_p-86(nifS)                5.36e-09  [+1(5.36e-09)]
+GK2601_p-41(nadB)                2.82e-09  [+1(2.82e-09)]
+BC5418_p-37(niaP)                5.37e-07  [+1(5.37e-07)]
+BC4424_p-127(nifS)               7.75e-10  [+1(7.75e-10)]
+BC4423_p-47(nadB)                1.79e-09  [+1(1.79e-09)]
+BH1217_p-102(nifS)               9.84e-10  [+1(9.84e-10)]
+BH1218_p-39(nadB)                2.27e-09  [+1(2.27e-09)]
+BH3254_p-85(niaY)                1.08e-08  [+1(1.08e-08)]
+ABC1546_p-73(nifS)               8.87e-09  [+1(8.87e-09)]
+ABC1547_p-36(nadB)               1.72e-08  [+1(1.72e-08)]
+ABC2773_p-76(niaY)               2.41e-07  [+1(2.41e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

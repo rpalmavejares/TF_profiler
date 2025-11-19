@@ -1,0 +1,278 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HrcA_Staphylococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SA1411_p-38(hrcA)        1.0000     27  SA1837_p-54(groES)       1.0000     27  
+STACA0001_1890_p-40(hrcA 1.0000     27  STACA0001_1993_p-54(groE 1.0000     27  
+SE1630_p-54(groES)       1.0000     27  SE1269_p-38(hrcA)        1.0000     27  
+Sca_1204_p-38(hrcA)      1.0000     27  Sca_1541_p-98(groES)     1.0000     27  
+SH1001_p-55(groES)       1.0000     27  SH1334_p-40(hrcA)        1.0000     27  
+SSP0847_p-56(groES)      1.0000     27  SSP1175_p-40(hrcA)       1.0000     27  
+MCCL_1234_p-37(hrcA)     1.0000     27  MCCL_1711_p-61(groES)    1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HrcA_Staphylococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HrcA_Staphylococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             378    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    378    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.376 C 0.14 G 0.19 T 0.294 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.374 C 0.141 G 0.191 T 0.293 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1	width =  27  sites =  14  llr = 360  E-value = 1.6e-108
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::a::13719376484a:::::aa
+pos.-specific     C  ::::a:a:4::::1111::::::a:::
+probability       G  :::a:::::41411112:6:a:a::::
+matrix            T  aa:::::a5324141342:::a::a::
+
+         bits    2.8     * *                *   
+                 2.5     * *                *   
+                 2.3    ** *             * **   
+                 2.0    ** *             * **   
+Relative         1.7 ** ** **            *****  
+Entropy          1.4 ********           ********
+(37.1 bits)      1.1 ********          *********
+                 0.8 *********   *    **********
+                 0.6 ********* ***    **********
+                 0.3 ************* ** **********
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTTGAGATAAAAGAGTGCTAA
+consensus                    CATT A TTTA        
+sequence                      T      G          
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+SE1269_p-38(hrcA)             1  4.71e-15          . TTAGCACTTGAGATAAAAGAGTGCTAA           
+Sca_1204_p-38(hrcA)           1  1.74e-14          . TTAGCACTTGAGAGAAGAGAGTGCTAA           
+STACA0001_1890_p-40(hrcA      1  2.69e-14          . TTAGCACTTGAGAGAAAAGAGTGCTAA           
+SA1411_p-38(hrcA)             1  4.90e-14          . TTAGCACTTGAGATAAGTGAGTGCTAA           
+SSP1175_p-40(hrcA)            1  3.79e-13          . TTAGCACTTGAAACAAAAGAGTGCTAA           
+SH1334_p-40(hrcA)             1  1.22e-12          . TTAGCACTTAGGACAAAAGAGTGCTAA           
+SE1630_p-54(groES)            1  1.22e-12          . TTAGCACTCTATATATCAAAGTGCTAA           
+MCCL_1711_p-61(groES)         1  1.50e-12          . TTAGCACTATATATAAGAGAGTGCTAA           
+MCCL_1234_p-37(hrcA)          1  1.50e-12          . TTAGCACTTGAGGTGATAGAGTGCTAA           
+Sca_1541_p-98(groES)          1  3.08e-12          . TTAGCACTCAATAATCAAGAGTGCTAA           
+SH1001_p-55(groES)            1  4.54e-12          . TTAGCACTCATTATATTTAAGTGCTAA           
+SSP0847_p-56(groES)           1  8.72e-12          . TTAGCACTCATTAACTTAAAGTGCTAA           
+STACA0001_1993_p-54(groE      1  1.59e-11          . TTAGCACTCTAATAATTAAAGTGCTAA           
+SA1837_p-54(groES)            1  2.18e-11          . TTAGCACTCTTTAATGTTAAGTGCTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SE1269_p-38(hrcA)                 4.7e-15  [+1]
+Sca_1204_p-38(hrcA)               1.7e-14  [+1]
+STACA0001_1890_p-40(hrcA          2.7e-14  [+1]
+SA1411_p-38(hrcA)                 4.9e-14  [+1]
+SSP1175_p-40(hrcA)                3.8e-13  [+1]
+SH1334_p-40(hrcA)                 1.2e-12  [+1]
+SE1630_p-54(groES)                1.2e-12  [+1]
+MCCL_1711_p-61(groES)             1.5e-12  [+1]
+MCCL_1234_p-37(hrcA)              1.5e-12  [+1]
+Sca_1541_p-98(groES)              3.1e-12  [+1]
+SH1001_p-55(groES)                4.5e-12  [+1]
+SSP0847_p-56(groES)               8.7e-12  [+1]
+STACA0001_1993_p-54(groE          1.6e-11  [+1]
+SA1837_p-54(groES)                2.2e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTAGCACTYDAKAWAWDARAGTGCTAA width=27 seqs=14
+SE1269_p-38(hrcA)        (    1) TTAGCACTTGAGATAAAAGAGTGCTAA  1 
+Sca_1204_p-38(hrcA)      (    1) TTAGCACTTGAGAGAAGAGAGTGCTAA  1 
+STACA0001_1890_p-40(hrcA (    1) TTAGCACTTGAGAGAAAAGAGTGCTAA  1 
+SA1411_p-38(hrcA)        (    1) TTAGCACTTGAGATAAGTGAGTGCTAA  1 
+SSP1175_p-40(hrcA)       (    1) TTAGCACTTGAAACAAAAGAGTGCTAA  1 
+SH1334_p-40(hrcA)        (    1) TTAGCACTTAGGACAAAAGAGTGCTAA  1 
+SE1630_p-54(groES)       (    1) TTAGCACTCTATATATCAAAGTGCTAA  1 
+MCCL_1711_p-61(groES)    (    1) TTAGCACTATATATAAGAGAGTGCTAA  1 
+MCCL_1234_p-37(hrcA)     (    1) TTAGCACTTGAGGTGATAGAGTGCTAA  1 
+Sca_1541_p-98(groES)     (    1) TTAGCACTCAATAATCAAGAGTGCTAA  1 
+SH1001_p-55(groES)       (    1) TTAGCACTCATTATATTTAAGTGCTAA  1 
+SSP0847_p-56(groES)      (    1) TTAGCACTCATTAACTTAAAGTGCTAA  1 
+STACA0001_1993_p-54(groE (    1) TTAGCACTCTAATAATTAAAGTGCTAA  1 
+SA1837_p-54(groES)       (    1) TTAGCACTCTTTAATGTTAAGTGCTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 14 bayes= 1.12553 E= 1.6e-108 
+ -1045  -1045  -1045    177 
+ -1045  -1045  -1045    177 
+   142  -1045  -1045  -1045 
+ -1045  -1045    239  -1045 
+ -1045    282  -1045  -1045 
+   142  -1045  -1045  -1045 
+ -1045    282  -1045  -1045 
+ -1045  -1045  -1045    177 
+  -239    160  -1045     77 
+   -39  -1045    116     -4 
+    93  -1045   -142    -45 
+  -139  -1045    116     55 
+   119  -1045   -142   -203 
+   -39      2    -42     55 
+    93    -98   -142   -104 
+    61    -98   -142     -4 
+    -7    -98     17     28 
+   107  -1045  -1045    -45 
+    -7  -1045    175  -1045 
+   142  -1045  -1045  -1045 
+ -1045  -1045    239  -1045 
+ -1045  -1045  -1045    177 
+ -1045  -1045    239  -1045 
+ -1045    282  -1045  -1045 
+ -1045  -1045  -1045    177 
+   142  -1045  -1045  -1045 
+   142  -1045  -1045  -1045 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 14 E= 1.6e-108 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.071429  0.428571  0.000000  0.500000 
+ 0.285714  0.000000  0.428571  0.285714 
+ 0.714286  0.000000  0.071429  0.214286 
+ 0.142857  0.000000  0.428571  0.428571 
+ 0.857143  0.000000  0.071429  0.071429 
+ 0.285714  0.142857  0.142857  0.428571 
+ 0.714286  0.071429  0.071429  0.142857 
+ 0.571429  0.071429  0.071429  0.285714 
+ 0.357143  0.071429  0.214286  0.357143 
+ 0.785714  0.000000  0.000000  0.214286 
+ 0.357143  0.000000  0.642857  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTYDAKAWAWDARAGTGCTAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACT[TC][GAT][AT][GT]A[TA]A[AT][ATG][AT][GA]AGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SA1411_p-38(hrcA)                4.90e-14  [+1(4.90e-14)]
+SA1837_p-54(groES)               2.18e-11  [+1(2.18e-11)]
+STACA0001_1890_p-40(hrcA         2.69e-14  [+1(2.69e-14)]
+STACA0001_1993_p-54(groE         1.59e-11  [+1(1.59e-11)]
+SE1630_p-54(groES)               1.22e-12  [+1(1.22e-12)]
+SE1269_p-38(hrcA)                4.71e-15  [+1(4.71e-15)]
+Sca_1204_p-38(hrcA)              1.74e-14  [+1(1.74e-14)]
+Sca_1541_p-98(groES)             3.08e-12  [+1(3.08e-12)]
+SH1001_p-55(groES)               4.54e-12  [+1(4.54e-12)]
+SH1334_p-40(hrcA)                1.22e-12  [+1(1.22e-12)]
+SSP0847_p-56(groES)              8.72e-12  [+1(8.72e-12)]
+SSP1175_p-40(hrcA)               3.79e-13  [+1(3.79e-13)]
+MCCL_1234_p-37(hrcA)             1.50e-12  [+1(1.50e-12)]
+MCCL_1711_p-61(groES)            1.50e-12  [+1(1.50e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

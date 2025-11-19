@@ -1,0 +1,275 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NadQ_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC3430_p-73(proA)        1.0000     21  CC2912_p-85(nadA)        1.0000     21  
+CC2912_p-2(nadA)         1.0000     21  CC3619_p-39(nadE)        1.0000     21  
+Cseg_0251_p-41(proA)     1.0000     21  Cseg_3422_p-32(nadA)     1.0000     21  
+Cseg_4105_p-33(nadE)     1.0000     21  Cseg_3422_p-103(nadA)    1.0000     21  
+Caul_4914_p-40(nadE)     1.0000     21  Caul_4717_p-39(proA)     1.0000     21  
+Caul_4308_p-117(nadA)    1.0000     21  Caul_4308_p-32(nadA)     1.0000     21  
+PHZ_c1931_p-46(nadE)     1.0000     21  PHZ_c0252_p-28(proA)     1.0000     21  
+PHZ_c2607_p-98(nadA)     1.0000     21  PHZ_c2607_p-33(nadA)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NadQ_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NadQ_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             336    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    336    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.327 C 0.205 G 0.146 T 0.321 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.326 C 0.206 G 0.147 T 0.321 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TWATGCTCAVTTTSAGCATAA MEME-1	width =  21  sites =  16  llr = 322  E-value = 2.3e-100
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  358:::::9311::a::a198
+pos.-specific     C  ::::1a:a1422:3::a::::
+probability       G  ::129::::3:1:6:a:::::
+matrix            T  7518::a::177a1::::912
+
+         bits    2.8                *     
+                 2.5                *     
+                 2.2     ** *       **    
+                 1.9     ** *       **    
+Relative         1.7     ****    * ****   
+Entropy          1.4     *****   ****** * 
+(29.1 bits)      1.1    ******   ******** 
+                 0.8 * *******   *********
+                 0.6 *********************
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TAATGCTCACTTTGAGCATAA
+consensus            AT       A   C       
+sequence                      G           
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Cseg_3422_p-32(nadA)          1  4.97e-12          . AAATGCTCACTTTGAGCATAA           
+CC2912_p-2(nadA)              1  4.97e-12          . AAATGCTCACTTTGAGCATAA           
+Cseg_4105_p-33(nadE)          1  1.21e-11          . TTATGCTCACTTTCAGCATAA           
+CC2912_p-85(nadA)             1  1.21e-11          . TTATGCTCACTTTCAGCATAA           
+Caul_4308_p-32(nadA)          1  1.33e-11          . AAATGCTCAGTTTGAGCATAA           
+Cseg_3422_p-103(nadA)         1  1.63e-11          . TTATGCTCAGTTTCAGCATAA           
+CC3619_p-39(nadE)             1  1.63e-11          . TTATGCTCAGTTTCAGCATAA           
+PHZ_c2607_p-33(nadA)          1  7.62e-11          . TAATGCTCACTATGAGCATAA           
+Caul_4717_p-39(proA)          1  1.56e-10          . TAAGGCTCACTCTGAGCATAT           
+Caul_4308_p-117(nadA)         1  4.09e-10          . TTTTGCTCAATTTCAGCATAA           
+Caul_4914_p-40(nadE)          1  1.60e-09          . TTATGCTCATTTTTAGCATAA           
+Cseg_0251_p-41(proA)          1  2.10e-09          . TAAGCCTCAACCTGAGCATAA           
+CC3430_p-73(proA)             1  2.10e-09          . TAAGCCTCAACCTGAGCATAA           
+PHZ_c0252_p-28(proA)          1  4.13e-09          . AAGTGCTCACCTTGAGCAAAT           
+PHZ_c2607_p-98(nadA)          1  8.07e-09          . TTTTGCTCCGATTGAGCAAAA           
+PHZ_c1931_p-46(nadE)          1  1.46e-08          . ATATGCTCAAAGTGAGCATTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cseg_3422_p-32(nadA)                5e-12  [+1]
+CC2912_p-2(nadA)                    5e-12  [+1]
+Cseg_4105_p-33(nadE)              1.2e-11  [+1]
+CC2912_p-85(nadA)                 1.2e-11  [+1]
+Caul_4308_p-32(nadA)              1.3e-11  [+1]
+Cseg_3422_p-103(nadA)             1.6e-11  [+1]
+CC3619_p-39(nadE)                 1.6e-11  [+1]
+PHZ_c2607_p-33(nadA)              7.6e-11  [+1]
+Caul_4717_p-39(proA)              1.6e-10  [+1]
+Caul_4308_p-117(nadA)             4.1e-10  [+1]
+Caul_4914_p-40(nadE)              1.6e-09  [+1]
+Cseg_0251_p-41(proA)              2.1e-09  [+1]
+CC3430_p-73(proA)                 2.1e-09  [+1]
+PHZ_c0252_p-28(proA)              4.1e-09  [+1]
+PHZ_c2607_p-98(nadA)              8.1e-09  [+1]
+PHZ_c1931_p-46(nadE)              1.5e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TWATGCTCAVTTTSAGCATAA width=21 seqs=16
+Cseg_3422_p-32(nadA)     (    1) AAATGCTCACTTTGAGCATAA  1 
+CC2912_p-2(nadA)         (    1) AAATGCTCACTTTGAGCATAA  1 
+Cseg_4105_p-33(nadE)     (    1) TTATGCTCACTTTCAGCATAA  1 
+CC2912_p-85(nadA)        (    1) TTATGCTCACTTTCAGCATAA  1 
+Caul_4308_p-32(nadA)     (    1) AAATGCTCAGTTTGAGCATAA  1 
+Cseg_3422_p-103(nadA)    (    1) TTATGCTCAGTTTCAGCATAA  1 
+CC3619_p-39(nadE)        (    1) TTATGCTCAGTTTCAGCATAA  1 
+PHZ_c2607_p-33(nadA)     (    1) TAATGCTCACTATGAGCATAA  1 
+Caul_4717_p-39(proA)     (    1) TAAGGCTCACTCTGAGCATAT  1 
+Caul_4308_p-117(nadA)    (    1) TTTTGCTCAATTTCAGCATAA  1 
+Caul_4914_p-40(nadE)     (    1) TTATGCTCATTTTTAGCATAA  1 
+Cseg_0251_p-41(proA)     (    1) TAAGCCTCAACCTGAGCATAA  1 
+CC3430_p-73(proA)        (    1) TAAGCCTCAACCTGAGCATAA  1 
+PHZ_c0252_p-28(proA)     (    1) AAGTGCTCACCTTGAGCAAAT  1 
+PHZ_c2607_p-98(nadA)     (    1) TTTTGCTCCGATTGAGCAAAA  1 
+PHZ_c1931_p-46(nadE)     (    1) ATATGCTCAAAGTGAGCATTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 16 bayes= 1.22239 E= 2.3e-100 
+    -6  -1064  -1064    110 
+    61  -1064  -1064     64 
+   131  -1064   -123   -136 
+ -1064  -1064     35    134 
+ -1064    -72    257  -1064 
+ -1064    228  -1064  -1064 
+ -1064  -1064  -1064    164 
+ -1064    228  -1064  -1064 
+   152   -172  -1064  -1064 
+   -38    109     77   -236 
+  -138    -13  -1064    110 
+  -238    -13   -123    110 
+ -1064  -1064  -1064    164 
+ -1064     60    209   -236 
+   161  -1064  -1064  -1064 
+ -1064  -1064    276  -1064 
+ -1064    228  -1064  -1064 
+   161  -1064  -1064  -1064 
+  -138  -1064  -1064    145 
+   152  -1064  -1064   -236 
+   131  -1064  -1064    -77 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 16 E= 2.3e-100 
+ 0.312500  0.000000  0.000000  0.687500 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.812500  0.000000  0.062500  0.125000 
+ 0.000000  0.000000  0.187500  0.812500 
+ 0.000000  0.125000  0.875000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.937500  0.062500  0.000000  0.000000 
+ 0.250000  0.437500  0.250000  0.062500 
+ 0.125000  0.187500  0.000000  0.687500 
+ 0.062500  0.187500  0.062500  0.687500 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.312500  0.625000  0.062500 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.937500  0.000000  0.000000  0.062500 
+ 0.812500  0.000000  0.000000  0.187500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWATGCTCAVTTTSAGCATAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][AT]ATGCTCA[CAG]TTT[GC]AGCATAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC3430_p-73(proA)                2.10e-09  [+1(2.10e-09)]
+CC2912_p-85(nadA)                1.21e-11  [+1(1.21e-11)]
+CC2912_p-2(nadA)                 4.97e-12  [+1(4.97e-12)]
+CC3619_p-39(nadE)                1.63e-11  [+1(1.63e-11)]
+Cseg_0251_p-41(proA)             2.10e-09  [+1(2.10e-09)]
+Cseg_3422_p-32(nadA)             4.97e-12  [+1(4.97e-12)]
+Cseg_4105_p-33(nadE)             1.21e-11  [+1(1.21e-11)]
+Cseg_3422_p-103(nadA)            1.63e-11  [+1(1.63e-11)]
+Caul_4914_p-40(nadE)             1.60e-09  [+1(1.60e-09)]
+Caul_4717_p-39(proA)             1.56e-10  [+1(1.56e-10)]
+Caul_4308_p-117(nadA)            4.09e-10  [+1(4.09e-10)]
+Caul_4308_p-32(nadA)             1.33e-11  [+1(1.33e-11)]
+PHZ_c1931_p-46(nadE)             1.46e-08  [+1(1.46e-08)]
+PHZ_c0252_p-28(proA)             4.13e-09  [+1(4.13e-09)]
+PHZ_c2607_p-98(nadA)             8.07e-09  [+1(8.07e-09)]
+PHZ_c2607_p-33(nadA)             7.62e-11  [+1(7.62e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

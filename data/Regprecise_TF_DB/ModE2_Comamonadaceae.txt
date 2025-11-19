@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE2_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CtesDRAFT_0891_p-50(COG1 1.0000     28  CtesDRAFT_0892_p-68(modA 1.0000     28  
+Daci_4259_p-60(modE2)    1.0000     28  Daci_3883_p-75(modA)     1.0000     28  
+Bpro_2496_p-103(modE2)   1.0000     28  Bpro_2497_p-99(modA)     1.0000     28  
+Vapar_4070_p-14(modB)    1.0000     28  Veis_3515_p-212(modE2)   1.0000     28  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE2_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE2_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           28
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             224    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    224    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.304 C 0.174 G 0.174 T 0.348 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.303 C 0.175 G 0.175 T 0.346 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CGYTRTATTYVATBRAATATDDCG MEME-1	width =  24  sites =   8  llr = 145  E-value = 2.1e-021
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1::5:a:1:361:489:a:54:3
+pos.-specific     C  9:43::::354134:::1:1::a:
+probability       G  :9::5::1:131:3611:::34:8
+matrix            T  1:68:a:9641164:1:9:933::
+
+         bits    2.5                       * 
+                 2.3                       * 
+                 2.0                       * 
+                 1.8 **    *           *   * 
+Relative         1.5 **   **           *   **
+Entropy          1.3 **   **       * * *   **
+(26.1 bits)      1.0 ********      * ****  **
+                 0.8 ******** *    ******  **
+                 0.5 **********  ******** ***
+                 0.3 ************************
+                 0.0 ------------------------
+
+Multilevel           CGTTATATTCCATCGAATATAACG
+consensus              CCG   CTA CTA     GG A
+sequence                       G  G      TT  
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+Bpro_2497_p-99(modA)          3  8.38e-12         TT CGCTATATTCCATTAAATATAGCG AA        
+Bpro_2496_p-103(modE2)        3  2.69e-11         TT CGCTATATTTAATGGAATATAGCG AA        
+Veis_3515_p-212(modE2)        3  4.31e-10         TA CGTCGTATTCCATCGGATATGTCA AA        
+CtesDRAFT_0891_p-50(COG1      3  5.38e-10         CA CGTTATATTTGACGGAATATAACA CT        
+CtesDRAFT_0892_p-68(modA      3  2.15e-09         AG TGTTATATTCCGTCAAATATAACG TG        
+Daci_3883_p-75(modA)          3  7.86e-09         TT CATCGTATACGATTGAATATTTCG TA        
+Vapar_4070_p-14(modB)         3  1.56e-08         TG CGTTGTATCTTCATGAATACGACG AA        
+Daci_4259_p-60(modE2)         3  1.61e-07         TT CGCTGTAGCGATCCATGCATTGCG TA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bpro_2497_p-99(modA)              8.4e-12  2_[+1]_2
+Bpro_2496_p-103(modE2)            2.7e-11  2_[+1]_2
+Veis_3515_p-212(modE2)            4.3e-10  2_[+1]_2
+CtesDRAFT_0891_p-50(COG1          5.4e-10  2_[+1]_2
+CtesDRAFT_0892_p-68(modA          2.1e-09  2_[+1]_2
+Daci_3883_p-75(modA)              7.9e-09  2_[+1]_2
+Vapar_4070_p-14(modB)             1.6e-08  2_[+1]_2
+Daci_4259_p-60(modE2)             1.6e-07  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CGYTRTATTYVATBRAATATDDCG width=24 seqs=8
+Bpro_2497_p-99(modA)     (    3) CGCTATATTCCATTAAATATAGCG  1 
+Bpro_2496_p-103(modE2)   (    3) CGCTATATTTAATGGAATATAGCG  1 
+Veis_3515_p-212(modE2)   (    3) CGTCGTATTCCATCGGATATGTCA  1 
+CtesDRAFT_0891_p-50(COG1 (    3) CGTTATATTTGACGGAATATAACA  1 
+CtesDRAFT_0892_p-68(modA (    3) TGTTATATTCCGTCAAATATAACG  1 
+Daci_3883_p-75(modA)     (    3) CATCGTATACGATTGAATATTTCG  1 
+Vapar_4070_p-14(modB)    (    3) CGTTGTATCTTCATGAATACGACG  1 
+Daci_4259_p-60(modE2)    (    3) CGCTGTAGCGATCCATGCATTGCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 40 bayes= 3.52356 E= 2.1e-021 
+  -965    232   -965   -147 
+  -127   -965    232   -965 
+  -965    109   -965     85 
+  -965     51   -965    111 
+    72   -965    151   -965 
+  -965   -965   -965    153 
+   172   -965   -965   -965 
+  -965   -965    -49    134 
+  -127     51   -965     85 
+  -965    151    -49     11 
+   -28    109     51   -147 
+   105    -49    -49   -147 
+  -127     51   -965     85 
+  -965    109     51     11 
+    31   -965    183   -965 
+   131   -965    -49   -147 
+   153   -965    -49   -965 
+  -965    -49   -965    134 
+   172   -965   -965   -965 
+  -965    -49   -965    134 
+    72   -965     51    -47 
+    31   -965    109    -47 
+  -965    251   -965   -965 
+   -28   -965    209   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 8 E= 2.1e-021 
+ 0.000000  0.875000  0.000000  0.125000 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.000000  0.375000  0.000000  0.625000 
+ 0.000000  0.250000  0.000000  0.750000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.125000  0.250000  0.000000  0.625000 
+ 0.000000  0.500000  0.125000  0.375000 
+ 0.250000  0.375000  0.250000  0.125000 
+ 0.625000  0.125000  0.125000  0.125000 
+ 0.125000  0.250000  0.000000  0.625000 
+ 0.000000  0.375000  0.250000  0.375000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 0.750000  0.000000  0.125000  0.125000 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.500000  0.000000  0.250000  0.250000 
+ 0.375000  0.000000  0.375000  0.250000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.750000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYTRTATTYVATBRAATATDDCG MEME-1 regular expression
+--------------------------------------------------------------------------------
+CG[TC][TC][AG]TAT[TC][CT][CAG]A[TC][CTG][GA]AATAT[AGT][AGT]C[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CtesDRAFT_0891_p-50(COG1         2.69e-09  2_[+1(5.38e-10)]_2
+CtesDRAFT_0892_p-68(modA         1.07e-08  2_[+1(2.15e-09)]_2
+Daci_4259_p-60(modE2)            8.04e-07  2_[+1(1.61e-07)]_2
+Daci_3883_p-75(modA)             3.93e-08  2_[+1(7.86e-09)]_2
+Bpro_2496_p-103(modE2)           1.34e-10  2_[+1(2.69e-11)]_2
+Bpro_2497_p-99(modA)             4.19e-11  2_[+1(8.38e-12)]_2
+Vapar_4070_p-14(modB)            7.81e-08  2_[+1(1.56e-08)]_2
+Veis_3515_p-212(modE2)           2.16e-09  2_[+1(4.31e-10)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

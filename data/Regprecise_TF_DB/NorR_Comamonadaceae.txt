@@ -1,0 +1,308 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NorR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ajs_0093_p-21(norR2)     1.0000     19  Ajs_0093_p-1(norR2)      1.0000     19  
+Ajs_0092_p-155(norB)     1.0000     19  Ajs_0092_p-135(norB)     1.0000     19  
+Ajs_0092_p-110(norB)     1.0000     19  Ajs_1895_p-114(hmp)      1.0000     19  
+CtesDRAFT_3303_p-56(norR 1.0000     19  CtesDRAFT_3303_p-31(norR 1.0000     19  
+CtesDRAFT_3303_p-10(norR 1.0000     19  CtesDRAFT_3302_p-122(hmp 1.0000     19  
+CtesDRAFT_3302_p-147(hmp 1.0000     19  CtesDRAFT_3302_p-168(hmp 1.0000     19  
+Daci_1078_p-56(norR)     1.0000     19  Daci_1078_p-10(norR)     1.0000     19  
+Daci_1079_p-129(hmp)     1.0000     19  Daci_1079_p-83(hmp)      1.0000     19  
+Pnap_1305_p-232(norR)    1.0000     19  Pnap_1304_p23(hmp)       1.0000     19  
+Bpro_3407_p-226(norR)    1.0000     19  Bpro_3408_p23(hmp)       1.0000     19  
+Vapar_6323_p-10(norR)    1.0000     19  Vapar_6323_p11(norR)     1.0000     19  
+Vapar_6324_p-121(hmp)    1.0000     19  Vapar_6324_p-147(hmp)    1.0000     19  
+Vapar_6324_p-168(hmp)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NorR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NorR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             475    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    475    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.286 C 0.206 G 0.202 T 0.305 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.286 C 0.207 G 0.203 T 0.305 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RBKGTCAWWWTGACMAY MEME-1	width =  17  sites =  25  llr = 257  E-value = 4.6e-066
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  521::264451:a:341
+pos.-specific     C  :22::7::::21:a524
+probability       G  424a:12::::7::22:
+matrix            T  143:a:256572::124
+
+         bits    2.3    *         *   
+                 2.1    *         *   
+                 1.8    *        **   
+                 1.6    *        **   
+Relative         1.4    **       **   
+Entropy          1.2    **      ***   
+(14.8 bits)      0.9    ***     ***   
+                 0.7 *  *** *******   
+                 0.5 *  ************ *
+                 0.2 * ************* *
+                 0.0 -----------------
+
+Multilevel           ATGGTCATTATGACCAC
+consensus            GCT   GAATCT  ACT
+sequence              G             G 
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+CtesDRAFT_3303_p-10(norR      2  2.62e-07          C GCTGTCGTTATGACAAC T         
+CtesDRAFT_3302_p-168(hmp      2  7.46e-07          A GTTGTCATAACGACAGC G         
+Ajs_0093_p-1(norR2)           2  7.46e-07          A ATGGTAGTTATGACCAT A         
+Ajs_0092_p-155(norB)          2  9.79e-07          T ATGGTCATAACTACCAT T         
+Daci_1078_p-10(norR)          2  1.45e-06          C GCAGTCTTTATGACCAC A         
+CtesDRAFT_3303_p-31(norR      2  1.64e-06          T GCTGTCTTTTTGACACC T         
+Vapar_6323_p-10(norR)         2  2.36e-06          T GTTGTATTTATGACCAC A         
+Vapar_6323_p11(norR)          2  3.32e-06          C AGTGTCAGTTCGACCAC A         
+Bpro_3407_p-226(norR)         2  3.71e-06          T ACGGTGGATTTGACGAT G         
+Pnap_1305_p-232(norR)         2  3.71e-06          G ACGGTGGATTTGACGAT G         
+CtesDRAFT_3302_p-147(hmp      2  3.71e-06          A GGTGTCAAAAAGACAGC A         
+Daci_1079_p-83(hmp)           2  4.13e-06          G AAGGTCATATTGACGCA T         
+Vapar_6324_p-147(hmp)         2  4.59e-06          T GTGGTCATAAATACAAC A         
+Daci_1079_p-129(hmp)          2  5.09e-06          T GTGGTCATAAAGACTGC G         
+Vapar_6324_p-168(hmp)         2  7.60e-06          T GTGGTCGAACTGACACT G         
+Daci_1078_p-56(norR)          2  7.60e-06          A TGCGTCAATATGACCTT C         
+CtesDRAFT_3302_p-122(hmp      2  8.36e-06          C AATGTCATATTGACGCA T         
+Vapar_6324_p-121(hmp)         2  1.10e-05          T GTTGCGAATTTGACCAC G         
+Bpro_3408_p23(hmp)            2  1.32e-05          C ATCGTCAAATCCACCGT A         
+Pnap_1304_p23(hmp)            2  1.32e-05          C ATCGTCAAATCCACCGT C         
+CtesDRAFT_3303_p-56(norR      2  1.71e-05          A TGCGTCAATATGACATT G         
+Ajs_1895_p-114(hmp)           2  2.18e-05          A AGAGTCTTTTTGACTAC T         
+Ajs_0092_p-135(norB)          2  2.18e-05          A AAGGTAATTTTTACCTT A         
+Ajs_0093_p-21(norR2)          2  2.54e-05          T AAGGTAAAAATTACCTT T         
+Ajs_0092_p-110(norB)          2  2.06e-04          T ACGGTTCATTTTACCCA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CtesDRAFT_3303_p-10(norR          2.6e-07  1_[+1]_1
+CtesDRAFT_3302_p-168(hmp          7.5e-07  1_[+1]_1
+Ajs_0093_p-1(norR2)               7.5e-07  1_[+1]_1
+Ajs_0092_p-155(norB)              9.8e-07  1_[+1]_1
+Daci_1078_p-10(norR)              1.5e-06  1_[+1]_1
+CtesDRAFT_3303_p-31(norR          1.6e-06  1_[+1]_1
+Vapar_6323_p-10(norR)             2.4e-06  1_[+1]_1
+Vapar_6323_p11(norR)              3.3e-06  1_[+1]_1
+Bpro_3407_p-226(norR)             3.7e-06  1_[+1]_1
+Pnap_1305_p-232(norR)             3.7e-06  1_[+1]_1
+CtesDRAFT_3302_p-147(hmp          3.7e-06  1_[+1]_1
+Daci_1079_p-83(hmp)               4.1e-06  1_[+1]_1
+Vapar_6324_p-147(hmp)             4.6e-06  1_[+1]_1
+Daci_1079_p-129(hmp)              5.1e-06  1_[+1]_1
+Vapar_6324_p-168(hmp)             7.6e-06  1_[+1]_1
+Daci_1078_p-56(norR)              7.6e-06  1_[+1]_1
+CtesDRAFT_3302_p-122(hmp          8.4e-06  1_[+1]_1
+Vapar_6324_p-121(hmp)             1.1e-05  1_[+1]_1
+Bpro_3408_p23(hmp)                1.3e-05  1_[+1]_1
+Pnap_1304_p23(hmp)                1.3e-05  1_[+1]_1
+CtesDRAFT_3303_p-56(norR          1.7e-05  1_[+1]_1
+Ajs_1895_p-114(hmp)               2.2e-05  1_[+1]_1
+Ajs_0092_p-135(norB)              2.2e-05  1_[+1]_1
+Ajs_0093_p-21(norR2)              2.5e-05  1_[+1]_1
+Ajs_0092_p-110(norB)              0.00021  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RBKGTCAWWWTGACMAY width=17 seqs=25
+CtesDRAFT_3303_p-10(norR (    2) GCTGTCGTTATGACAAC  1 
+CtesDRAFT_3302_p-168(hmp (    2) GTTGTCATAACGACAGC  1 
+Ajs_0093_p-1(norR2)      (    2) ATGGTAGTTATGACCAT  1 
+Ajs_0092_p-155(norB)     (    2) ATGGTCATAACTACCAT  1 
+Daci_1078_p-10(norR)     (    2) GCAGTCTTTATGACCAC  1 
+CtesDRAFT_3303_p-31(norR (    2) GCTGTCTTTTTGACACC  1 
+Vapar_6323_p-10(norR)    (    2) GTTGTATTTATGACCAC  1 
+Vapar_6323_p11(norR)     (    2) AGTGTCAGTTCGACCAC  1 
+Bpro_3407_p-226(norR)    (    2) ACGGTGGATTTGACGAT  1 
+Pnap_1305_p-232(norR)    (    2) ACGGTGGATTTGACGAT  1 
+CtesDRAFT_3302_p-147(hmp (    2) GGTGTCAAAAAGACAGC  1 
+Daci_1079_p-83(hmp)      (    2) AAGGTCATATTGACGCA  1 
+Vapar_6324_p-147(hmp)    (    2) GTGGTCATAAATACAAC  1 
+Daci_1079_p-129(hmp)     (    2) GTGGTCATAAAGACTGC  1 
+Vapar_6324_p-168(hmp)    (    2) GTGGTCGAACTGACACT  1 
+Daci_1078_p-56(norR)     (    2) TGCGTCAATATGACCTT  1 
+CtesDRAFT_3302_p-122(hmp (    2) AATGTCATATTGACGCA  1 
+Vapar_6324_p-121(hmp)    (    2) GTTGCGAATTTGACCAC  1 
+Bpro_3408_p23(hmp)       (    2) ATCGTCAAATCCACCGT  1 
+Pnap_1304_p23(hmp)       (    2) ATCGTCAAATCCACCGT  1 
+CtesDRAFT_3303_p-56(norR (    2) TGCGTCAATATGACATT  1 
+Ajs_1895_p-114(hmp)      (    2) AGAGTCTTTTTGACTAC  1 
+Ajs_0092_p-135(norB)     (    2) AAGGTAATTTTTACCTT  1 
+Ajs_0093_p-21(norR2)     (    2) AAGGTAAAAATTACCTT  1 
+Ajs_0092_p-110(norB)     (    2) ACGGTTCATTTTACCCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 75 bayes= 3.37346 E= 4.6e-066 
+    86  -1129     98   -193 
+   -84     22     -2     39 
+  -184    -37    112      7 
+ -1129  -1129    230  -1129 
+ -1129   -237  -1129    165 
+   -84    172    -75   -293 
+   107   -237     -2    -93 
+    62  -1129   -234     77 
+    62  -1129  -1129     88 
+    75   -237  -1129     65 
+  -125     -5  -1129    116 
+ -1129   -137    183    -61 
+   181  -1129  -1129  -1129 
+ -1129    227  -1129  -1129 
+    -3    122    -34   -193 
+    62     -5     -2    -93 
+  -125    109  -1129     53 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 25 E= 4.6e-066 
+ 0.520000  0.000000  0.400000  0.080000 
+ 0.160000  0.240000  0.200000  0.400000 
+ 0.080000  0.160000  0.440000  0.320000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.040000  0.000000  0.960000 
+ 0.160000  0.680000  0.120000  0.040000 
+ 0.600000  0.040000  0.200000  0.160000 
+ 0.440000  0.000000  0.040000  0.520000 
+ 0.440000  0.000000  0.000000  0.560000 
+ 0.480000  0.040000  0.000000  0.480000 
+ 0.120000  0.200000  0.000000  0.680000 
+ 0.000000  0.080000  0.720000  0.200000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.280000  0.480000  0.160000  0.080000 
+ 0.440000  0.200000  0.200000  0.160000 
+ 0.120000  0.440000  0.000000  0.440000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBKGTCAWWWTGACMAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][TCG][GT]GTC[AG][TA][TA][AT][TC][GT]AC[CA][ACG][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ajs_0093_p-21(norR2)             7.62e-05  1_[+1(2.54e-05)]_1
+Ajs_0093_p-1(norR2)              2.24e-06  1_[+1(7.46e-07)]_1
+Ajs_0092_p-155(norB)             2.94e-06  1_[+1(9.79e-07)]_1
+Ajs_0092_p-135(norB)             6.53e-05  1_[+1(2.18e-05)]_1
+Ajs_0092_p-110(norB)             6.17e-04  19
+Ajs_1895_p-114(hmp)              6.53e-05  1_[+1(2.18e-05)]_1
+CtesDRAFT_3303_p-56(norR         5.12e-05  1_[+1(1.71e-05)]_1
+CtesDRAFT_3303_p-31(norR         4.93e-06  1_[+1(1.64e-06)]_1
+CtesDRAFT_3303_p-10(norR         7.86e-07  1_[+1(2.62e-07)]_1
+CtesDRAFT_3302_p-122(hmp         2.51e-05  1_[+1(8.36e-06)]_1
+CtesDRAFT_3302_p-147(hmp         1.11e-05  1_[+1(3.71e-06)]_1
+CtesDRAFT_3302_p-168(hmp         2.24e-06  1_[+1(7.46e-07)]_1
+Daci_1078_p-56(norR)             2.28e-05  1_[+1(7.60e-06)]_1
+Daci_1078_p-10(norR)             4.35e-06  1_[+1(1.45e-06)]_1
+Daci_1079_p-129(hmp)             1.53e-05  1_[+1(5.09e-06)]_1
+Daci_1079_p-83(hmp)              1.24e-05  1_[+1(4.13e-06)]_1
+Pnap_1305_p-232(norR)            1.11e-05  1_[+1(3.71e-06)]_1
+Pnap_1304_p23(hmp)               3.96e-05  1_[+1(1.32e-05)]_1
+Bpro_3407_p-226(norR)            1.11e-05  1_[+1(3.71e-06)]_1
+Bpro_3408_p23(hmp)               3.96e-05  1_[+1(1.32e-05)]_1
+Vapar_6323_p-10(norR)            7.07e-06  1_[+1(2.36e-06)]_1
+Vapar_6323_p11(norR)             9.95e-06  1_[+1(3.32e-06)]_1
+Vapar_6324_p-121(hmp)            3.31e-05  1_[+1(1.10e-05)]_1
+Vapar_6324_p-147(hmp)            1.38e-05  1_[+1(4.59e-06)]_1
+Vapar_6324_p-168(hmp)            2.28e-05  1_[+1(7.60e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

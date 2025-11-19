@@ -1,0 +1,447 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NtrC_Desulfuromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Gmet_2561_p-46(nifR)     1.0000     17  Gmet_1186_p-152(gdhA)    1.0000     17  
+Gmet_0669_p-217(nifEN)   1.0000     17  Gmet_0693_p-349(Gmet_069 1.0000     17  
+Gmet_1351_p-259(glnB)    1.0000     17  GSU1005_p-41(nifR)       1.0000     17  
+GSU1305_p-151(gdhA)      1.0000     17  GSU1305_p-110(gdhA)      1.0000     17  
+GSU1305_p-88(gdhA)       1.0000     17  GSU2806_p-215(nifEN)     1.0000     17  
+GSU0938_p-329(Gmet_0693) 1.0000     17  GSU1836_p-266(glnB)      1.0000     17  
+GSU1836_p-253(glnB)      1.0000     17  Gura_0914_p9(nifR)       1.0000     17  
+Gura_2800_p-168(gdhA)    1.0000     17  Gura_2800_p-118(gdhA)    1.0000     17  
+Gura_1201_p-228(nifEN)   1.0000     17  Gura_2229_p-266(glnB)    1.0000     17  
+Gura_2229_p-234(glnB)    1.0000     17  Geob_1718_p-42(nifR)     1.0000     17  
+Geob_2399_p-191(gdhA)    1.0000     17  Geob_2399_p-172(gdhA)    1.0000     17  
+Geob_2399_p-98(gdhA)     1.0000     17  Geob_2581_p-219(nifEN)   1.0000     17  
+Geob_1817_p-323(Gmet_069 1.0000     17  Geob_2994_p-255(glnB)    1.0000     17  
+Geob_2994_p-224(glnB)    1.0000     17  GM21_1403_p-36(nifR)     1.0000     17  
+GM21_0175_p-143(gdhA)    1.0000     17  GM21_0175_p-100(gdhA)    1.0000     17  
+GM21_3137_p-311(Gmet_069 1.0000     17  GM21_1183_p-158(glnB)    1.0000     17  
+Glov_0573_p-136(gdhA)    1.0000     17  Glov_0573_p-103(gdhA)    1.0000     17  
+Glov_0573_p-84(gdhA)     1.0000     17  Glov_3332_p-268(Gmet_069 1.0000     17  
+Glov_3332_p-213(Gmet_069 1.0000     17  Glov_1879_p-154(glnB)    1.0000     17  
+Ppro_3077_p-66(nifR)     1.0000     17  Ppro_3497_p-101(gdhA)    1.0000     17  
+Ppro_3491_p-230(nifEN)   1.0000     17  Ppro_0484_p-332(Gmet_069 1.0000     17  
+Ppro_0484_p-241(Gmet_069 1.0000     17  Ppro_1680_p-238(glnB)    1.0000     17  
+Ppro_1680_p-207(glnB)    1.0000     17  Pcar_2589_p-263(amtB)    1.0000     17  
+Pcar_2589_p-242(amtB)    1.0000     17  Pcar_1021_p-241(glnK2)   1.0000     17  
+Pcar_1500_p-306(glnB)    1.0000     17  Pcar_1500_p-274(glnB)    1.0000     17  
+Dace_0518_p-10(nifR)     1.0000     17  Dace_2426_p-126(gdhA)    1.0000     17  
+Dace_0726_p-310(nifEN)   1.0000     17  Dace_1145_p-219(amtB)    1.0000     17  
+Dace_1046_p-254(glnB)    1.0000     17  Dace_1046_p-222(glnB)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NtrC_Desulfuromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NtrC_Desulfuromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       56    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             952    N=              56
+sample: seed=            0    hsfrac=          0
+        searchsize=    952    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.171 G 0.209 T 0.324 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.296 C 0.172 G 0.209 T 0.323 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGCHTAWWWWWTRKGCA MEME-1	width =  17  sites =  56  llr = 651  E-value = 3.1e-239
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::13:866454:42::9
+pos.-specific     C  ::85311:1::1:::a:
+probability       G  :a::11:::111659::
+matrix            T  a:136:345558:31:1
+
+         bits    2.5                * 
+                 2.3  *             * 
+                 2.0  *            ** 
+                 1.8  *            ** 
+Relative         1.5 ***           ** 
+Entropy          1.3 ***           ** 
+(16.8 bits)      1.0 ***           ***
+                 0.8 ***  *     ** ***
+                 0.5 ********** ** ***
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           TGCCTAAATATTGGGCA
+consensus               TC TTATA AT   
+sequence                A         A   
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Gura_1201_p-228(nifEN)        1  2.33e-09          . TGCCCAATAATTGGGCA           
+Ppro_3077_p-66(nifR)          1  3.10e-09          . TGCCCAAATTTTAGGCA           
+Geob_2581_p-219(nifEN)        1  4.94e-09          . TGCCCAAATTATAGGCA           
+Geob_1718_p-42(nifR)          1  4.94e-09          . TGCCCAAAATTTAGGCA           
+Gura_0914_p9(nifR)            1  6.36e-09          . TGCCCAAAAAATAGGCA           
+Dace_0518_p-10(nifR)          1  8.20e-09          . TGCCTAAATAATGAGCA           
+GSU0938_p-329(Gmet_0693)      1  1.05e-08          . TGCATAAATAATGGGCA           
+GSU1005_p-41(nifR)            1  2.40e-08          . TGCCTAAATTTTAAGCA           
+Ppro_1680_p-238(glnB)         1  3.49e-08          . TGCCTAATTAAGGGGCA           
+Pcar_1500_p-274(glnB)         1  9.36e-08          . TGTCTAAATATTGGGCA           
+Geob_2994_p-224(glnB)         1  9.36e-08          . TGCCTAATTTATGGGCT           
+GSU2806_p-215(nifEN)          1  1.09e-07          . TGCATAAAAAATGAGCA           
+Gmet_0693_p-349(Gmet_069      1  1.67e-07          . TGCTTATATAATGTGCA           
+Gmet_2561_p-46(nifR)          1  1.67e-07          . TGCTTAAATTTTAAGCA           
+GM21_1403_p-36(nifR)          1  2.19e-07          . TGCTCATTTTTTAGGCA           
+Gura_2800_p-118(gdhA)         1  2.84e-07          . TGCCTATTTATGGTGCA           
+Gmet_0669_p-217(nifEN)        1  2.84e-07          . TGCATAAAATGTGTGCA           
+Pcar_2589_p-263(amtB)         1  4.60e-07          . TGCCTCCATTATGGGCA           
+Dace_0726_p-310(nifEN)        1  5.77e-07          . TGCTTAAACTTTGAGCA           
+GSU1305_p-151(gdhA)           1  6.46e-07          . TGCCGATAAATCAGGCA           
+Glov_1879_p-154(glnB)         1  8.05e-07          . TGCCTAATTTGTGTGCT           
+GSU1305_p-88(gdhA)            1  8.05e-07          . TGCATAAAATGCAGGCA           
+Dace_1145_p-219(amtB)         1  1.00e-06          . TGCCCGTTTTTCAGGCA           
+Gmet_1186_p-152(gdhA)         1  1.11e-06          . TGCCGCAAATTCGGGCA           
+Geob_2399_p-98(gdhA)          1  1.24e-06          . TGCCTGTTTATGGTGCA           
+GSU1836_p-266(glnB)           1  1.24e-06          . TGCCTGATAATTGTGCT           
+GM21_0175_p-143(gdhA)         1  1.52e-06          . TGCATGTTTTTCGGGCA           
+Pcar_2589_p-242(amtB)         1  2.27e-06          . TGCCTATTTTGGAAGCA           
+Ppro_3497_p-101(gdhA)         1  2.27e-06          . TGCCGATAAAATGTGCT           
+Gura_2229_p-266(glnB)         1  2.27e-06          . TGCCCATCCATTGGGCA           
+GM21_1183_p-158(glnB)         1  2.50e-06          . TGCCGGAATGTTGTGCA           
+Ppro_0484_p-332(Gmet_069      1  2.75e-06          . TGCCTGTTTTTTGCGCA           
+Gura_2800_p-168(gdhA)         1  2.75e-06          . TGCTTAATATTTAAGCT           
+Ppro_0484_p-241(Gmet_069      1  3.31e-06          . TGTATAAAAAATATGCA           
+GM21_3137_p-311(Gmet_069      1  3.31e-06          . TGCACAAACAATAGGCT           
+Gura_2229_p-234(glnB)         1  3.31e-06          . TGCTCAATTTATAAGCT           
+Dace_2426_p-126(gdhA)         1  3.63e-06          . TGTTTATAAAATGTGCA           
+Geob_2994_p-255(glnB)         1  3.63e-06          . TGGTTATATATTGGGCA           
+Geob_2399_p-191(gdhA)         1  3.63e-06          . TGAATAATTAATGTGCA           
+Ppro_3491_p-230(nifEN)        1  4.35e-06          . TGCAAAAAAAACAGGCA           
+Pcar_1021_p-241(glnK2)        1  7.33e-06          . TGCTCAAAATTTAAGCC           
+Glov_3332_p-213(Gmet_069      1  7.33e-06          . TGCTGAATAAATGGTCA           
+Glov_0573_p-103(gdhA)         1  7.33e-06          . TGTATATTTAATATGCA           
+Dace_1046_p-254(glnB)         1  7.96e-06          . TGCTTAAAATGTCAGCA           
+Geob_1817_p-323(Gmet_069      1  7.96e-06          . TGCACAAAAAATAATCA           
+GSU1836_p-253(glnB)           1  8.63e-06          . TGCTCATTTGGTATGCA           
+Glov_0573_p-136(gdhA)         1  1.10e-05          . TGTCTGCTTTTTGTGCA           
+GSU1305_p-110(gdhA)           1  1.28e-05          . TGCACAGTTTTGGTGCA           
+Glov_0573_p-84(gdhA)          1  1.38e-05          . TGACTTAATATTAGGCA           
+Glov_3332_p-268(Gmet_069      1  1.49e-05          . TGCAAGATAGTTGGGCA           
+Dace_1046_p-222(glnB)         1  1.61e-05          . TGAGTAAATAATGTGCA           
+Ppro_1680_p-207(glnB)         1  1.73e-05          . TGCCTATAATCAAGGCA           
+Pcar_1500_p-306(glnB)         1  1.86e-05          . TGTTTAAATAATAGTCA           
+Gmet_1351_p-259(glnB)         1  1.86e-05          . TGCTTCTGATTTGTGCA           
+Geob_2399_p-172(gdhA)         1  2.31e-05          . TGCTTCTTGTTTGAGCA           
+GM21_0175_p-100(gdhA)         1  2.65e-05          . TGCATACAAATGTGGCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gura_1201_p-228(nifEN)            2.3e-09  [+1]
+Ppro_3077_p-66(nifR)              3.1e-09  [+1]
+Geob_2581_p-219(nifEN)            4.9e-09  [+1]
+Geob_1718_p-42(nifR)              4.9e-09  [+1]
+Gura_0914_p9(nifR)                6.4e-09  [+1]
+Dace_0518_p-10(nifR)              8.2e-09  [+1]
+GSU0938_p-329(Gmet_0693)            1e-08  [+1]
+GSU1005_p-41(nifR)                2.4e-08  [+1]
+Ppro_1680_p-238(glnB)             3.5e-08  [+1]
+Pcar_1500_p-274(glnB)             9.4e-08  [+1]
+Geob_2994_p-224(glnB)             9.4e-08  [+1]
+GSU2806_p-215(nifEN)              1.1e-07  [+1]
+Gmet_0693_p-349(Gmet_069          1.7e-07  [+1]
+Gmet_2561_p-46(nifR)              1.7e-07  [+1]
+GM21_1403_p-36(nifR)              2.2e-07  [+1]
+Gura_2800_p-118(gdhA)             2.8e-07  [+1]
+Gmet_0669_p-217(nifEN)            2.8e-07  [+1]
+Pcar_2589_p-263(amtB)             4.6e-07  [+1]
+Dace_0726_p-310(nifEN)            5.8e-07  [+1]
+GSU1305_p-151(gdhA)               6.5e-07  [+1]
+Glov_1879_p-154(glnB)               8e-07  [+1]
+GSU1305_p-88(gdhA)                  8e-07  [+1]
+Dace_1145_p-219(amtB)               1e-06  [+1]
+Gmet_1186_p-152(gdhA)             1.1e-06  [+1]
+Geob_2399_p-98(gdhA)              1.2e-06  [+1]
+GSU1836_p-266(glnB)               1.2e-06  [+1]
+GM21_0175_p-143(gdhA)             1.5e-06  [+1]
+Pcar_2589_p-242(amtB)             2.3e-06  [+1]
+Ppro_3497_p-101(gdhA)             2.3e-06  [+1]
+Gura_2229_p-266(glnB)             2.3e-06  [+1]
+GM21_1183_p-158(glnB)             2.5e-06  [+1]
+Ppro_0484_p-332(Gmet_069          2.7e-06  [+1]
+Gura_2800_p-168(gdhA)             2.7e-06  [+1]
+Ppro_0484_p-241(Gmet_069          3.3e-06  [+1]
+GM21_3137_p-311(Gmet_069          3.3e-06  [+1]
+Gura_2229_p-234(glnB)             3.3e-06  [+1]
+Dace_2426_p-126(gdhA)             3.6e-06  [+1]
+Geob_2994_p-255(glnB)             3.6e-06  [+1]
+Geob_2399_p-191(gdhA)             3.6e-06  [+1]
+Ppro_3491_p-230(nifEN)            4.4e-06  [+1]
+Pcar_1021_p-241(glnK2)            7.3e-06  [+1]
+Glov_3332_p-213(Gmet_069          7.3e-06  [+1]
+Glov_0573_p-103(gdhA)             7.3e-06  [+1]
+Dace_1046_p-254(glnB)               8e-06  [+1]
+Geob_1817_p-323(Gmet_069            8e-06  [+1]
+GSU1836_p-253(glnB)               8.6e-06  [+1]
+Glov_0573_p-136(gdhA)             1.1e-05  [+1]
+GSU1305_p-110(gdhA)               1.3e-05  [+1]
+Glov_0573_p-84(gdhA)              1.4e-05  [+1]
+Glov_3332_p-268(Gmet_069          1.5e-05  [+1]
+Dace_1046_p-222(glnB)             1.6e-05  [+1]
+Ppro_1680_p-207(glnB)             1.7e-05  [+1]
+Pcar_1500_p-306(glnB)             1.9e-05  [+1]
+Gmet_1351_p-259(glnB)             1.9e-05  [+1]
+Geob_2399_p-172(gdhA)             2.3e-05  [+1]
+GM21_0175_p-100(gdhA)             2.7e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGCHTAWWWWWTRKGCA width=17 seqs=56
+Gura_1201_p-228(nifEN)   (    1) TGCCCAATAATTGGGCA  1 
+Ppro_3077_p-66(nifR)     (    1) TGCCCAAATTTTAGGCA  1 
+Geob_2581_p-219(nifEN)   (    1) TGCCCAAATTATAGGCA  1 
+Geob_1718_p-42(nifR)     (    1) TGCCCAAAATTTAGGCA  1 
+Gura_0914_p9(nifR)       (    1) TGCCCAAAAAATAGGCA  1 
+Dace_0518_p-10(nifR)     (    1) TGCCTAAATAATGAGCA  1 
+GSU0938_p-329(Gmet_0693) (    1) TGCATAAATAATGGGCA  1 
+GSU1005_p-41(nifR)       (    1) TGCCTAAATTTTAAGCA  1 
+Ppro_1680_p-238(glnB)    (    1) TGCCTAATTAAGGGGCA  1 
+Pcar_1500_p-274(glnB)    (    1) TGTCTAAATATTGGGCA  1 
+Geob_2994_p-224(glnB)    (    1) TGCCTAATTTATGGGCT  1 
+GSU2806_p-215(nifEN)     (    1) TGCATAAAAAATGAGCA  1 
+Gmet_0693_p-349(Gmet_069 (    1) TGCTTATATAATGTGCA  1 
+Gmet_2561_p-46(nifR)     (    1) TGCTTAAATTTTAAGCA  1 
+GM21_1403_p-36(nifR)     (    1) TGCTCATTTTTTAGGCA  1 
+Gura_2800_p-118(gdhA)    (    1) TGCCTATTTATGGTGCA  1 
+Gmet_0669_p-217(nifEN)   (    1) TGCATAAAATGTGTGCA  1 
+Pcar_2589_p-263(amtB)    (    1) TGCCTCCATTATGGGCA  1 
+Dace_0726_p-310(nifEN)   (    1) TGCTTAAACTTTGAGCA  1 
+GSU1305_p-151(gdhA)      (    1) TGCCGATAAATCAGGCA  1 
+Glov_1879_p-154(glnB)    (    1) TGCCTAATTTGTGTGCT  1 
+GSU1305_p-88(gdhA)       (    1) TGCATAAAATGCAGGCA  1 
+Dace_1145_p-219(amtB)    (    1) TGCCCGTTTTTCAGGCA  1 
+Gmet_1186_p-152(gdhA)    (    1) TGCCGCAAATTCGGGCA  1 
+Geob_2399_p-98(gdhA)     (    1) TGCCTGTTTATGGTGCA  1 
+GSU1836_p-266(glnB)      (    1) TGCCTGATAATTGTGCT  1 
+GM21_0175_p-143(gdhA)    (    1) TGCATGTTTTTCGGGCA  1 
+Pcar_2589_p-242(amtB)    (    1) TGCCTATTTTGGAAGCA  1 
+Ppro_3497_p-101(gdhA)    (    1) TGCCGATAAAATGTGCT  1 
+Gura_2229_p-266(glnB)    (    1) TGCCCATCCATTGGGCA  1 
+GM21_1183_p-158(glnB)    (    1) TGCCGGAATGTTGTGCA  1 
+Ppro_0484_p-332(Gmet_069 (    1) TGCCTGTTTTTTGCGCA  1 
+Gura_2800_p-168(gdhA)    (    1) TGCTTAATATTTAAGCT  1 
+Ppro_0484_p-241(Gmet_069 (    1) TGTATAAAAAATATGCA  1 
+GM21_3137_p-311(Gmet_069 (    1) TGCACAAACAATAGGCT  1 
+Gura_2229_p-234(glnB)    (    1) TGCTCAATTTATAAGCT  1 
+Dace_2426_p-126(gdhA)    (    1) TGTTTATAAAATGTGCA  1 
+Geob_2994_p-255(glnB)    (    1) TGGTTATATATTGGGCA  1 
+Geob_2399_p-191(gdhA)    (    1) TGAATAATTAATGTGCA  1 
+Ppro_3491_p-230(nifEN)   (    1) TGCAAAAAAAACAGGCA  1 
+Pcar_1021_p-241(glnK2)   (    1) TGCTCAAAATTTAAGCC  1 
+Glov_3332_p-213(Gmet_069 (    1) TGCTGAATAAATGGTCA  1 
+Glov_0573_p-103(gdhA)    (    1) TGTATATTTAATATGCA  1 
+Dace_1046_p-254(glnB)    (    1) TGCTTAAAATGTCAGCA  1 
+Geob_1817_p-323(Gmet_069 (    1) TGCACAAAAAATAATCA  1 
+GSU1836_p-253(glnB)      (    1) TGCTCATTTGGTATGCA  1 
+Glov_0573_p-136(gdhA)    (    1) TGTCTGCTTTTTGTGCA  1 
+GSU1305_p-110(gdhA)      (    1) TGCACAGTTTTGGTGCA  1 
+Glov_0573_p-84(gdhA)     (    1) TGACTTAATATTAGGCA  1 
+Glov_3332_p-268(Gmet_069 (    1) TGCAAGATAGTTGGGCA  1 
+Dace_1046_p-222(glnB)    (    1) TGAGTAAATAATGTGCA  1 
+Ppro_1680_p-207(glnB)    (    1) TGCCTATAATCAAGGCA  1 
+Pcar_1500_p-306(glnB)    (    1) TGTTTAAATAATAGTCA  1 
+Gmet_1351_p-259(glnB)    (    1) TGCTTCTGATTTGTGCA  1 
+Geob_2399_p-172(gdhA)    (    1) TGCTTCTTGTTTGAGCA  1 
+GM21_0175_p-100(gdhA)    (    1) TGCATACAAATGTGGCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 56 bayes= 1.75489 E= 3.1e-239 
+ -1245  -1245  -1245    163 
+ -1245  -1245    226  -1245 
+  -247    226   -355   -159 
+   -24    144   -355    -27 
+  -305     54   -123     95 
+   137   -126    -55   -417 
+   104   -168   -355     -1 
+    95   -326   -355     28 
+    41   -168   -355     73 
+    70  -1245   -196     52 
+    34   -326    -97     63 
+  -405    -68    -97    125 
+    47   -326    140   -417 
+   -47   -326    115     -9 
+ -1245  -1245    218   -259 
+ -1245    254  -1245  -1245 
+   153   -326  -1245   -137 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 56 E= 3.1e-239 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.053571  0.821429  0.017857  0.107143 
+ 0.250000  0.464286  0.017857  0.267857 
+ 0.035714  0.250000  0.089286  0.625000 
+ 0.767857  0.071429  0.142857  0.017857 
+ 0.607143  0.053571  0.017857  0.321429 
+ 0.571429  0.017857  0.017857  0.392857 
+ 0.392857  0.053571  0.017857  0.535714 
+ 0.482143  0.000000  0.053571  0.464286 
+ 0.375000  0.017857  0.107143  0.500000 
+ 0.017857  0.107143  0.107143  0.767857 
+ 0.410714  0.017857  0.553571  0.017857 
+ 0.214286  0.017857  0.464286  0.303571 
+ 0.000000  0.000000  0.946429  0.053571 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.857143  0.017857  0.000000  0.125000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCHTAWWWWWTRKGCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGC[CTA][TC]A[AT][AT][TA][AT][TA]T[GA][GTA]GCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gmet_2561_p-46(nifR)             1.67e-07  [+1(1.67e-07)]
+Gmet_1186_p-152(gdhA)            1.11e-06  [+1(1.11e-06)]
+Gmet_0669_p-217(nifEN)           2.84e-07  [+1(2.84e-07)]
+Gmet_0693_p-349(Gmet_069         1.67e-07  [+1(1.67e-07)]
+Gmet_1351_p-259(glnB)            1.86e-05  [+1(1.86e-05)]
+GSU1005_p-41(nifR)               2.40e-08  [+1(2.40e-08)]
+GSU1305_p-151(gdhA)              6.46e-07  [+1(6.46e-07)]
+GSU1305_p-110(gdhA)              1.28e-05  [+1(1.28e-05)]
+GSU1305_p-88(gdhA)               8.05e-07  [+1(8.05e-07)]
+GSU2806_p-215(nifEN)             1.09e-07  [+1(1.09e-07)]
+GSU0938_p-329(Gmet_0693)         1.05e-08  [+1(1.05e-08)]
+GSU1836_p-266(glnB)              1.24e-06  [+1(1.24e-06)]
+GSU1836_p-253(glnB)              8.63e-06  [+1(8.63e-06)]
+Gura_0914_p9(nifR)               6.36e-09  [+1(6.36e-09)]
+Gura_2800_p-168(gdhA)            2.75e-06  [+1(2.75e-06)]
+Gura_2800_p-118(gdhA)            2.84e-07  [+1(2.84e-07)]
+Gura_1201_p-228(nifEN)           2.33e-09  [+1(2.33e-09)]
+Gura_2229_p-266(glnB)            2.27e-06  [+1(2.27e-06)]
+Gura_2229_p-234(glnB)            3.31e-06  [+1(3.31e-06)]
+Geob_1718_p-42(nifR)             4.94e-09  [+1(4.94e-09)]
+Geob_2399_p-191(gdhA)            3.63e-06  [+1(3.63e-06)]
+Geob_2399_p-172(gdhA)            2.31e-05  [+1(2.31e-05)]
+Geob_2399_p-98(gdhA)             1.24e-06  [+1(1.24e-06)]
+Geob_2581_p-219(nifEN)           4.94e-09  [+1(4.94e-09)]
+Geob_1817_p-323(Gmet_069         7.96e-06  [+1(7.96e-06)]
+Geob_2994_p-255(glnB)            3.63e-06  [+1(3.63e-06)]
+Geob_2994_p-224(glnB)            9.36e-08  [+1(9.36e-08)]
+GM21_1403_p-36(nifR)             2.19e-07  [+1(2.19e-07)]
+GM21_0175_p-143(gdhA)            1.52e-06  [+1(1.52e-06)]
+GM21_0175_p-100(gdhA)            2.65e-05  [+1(2.65e-05)]
+GM21_3137_p-311(Gmet_069         3.31e-06  [+1(3.31e-06)]
+GM21_1183_p-158(glnB)            2.50e-06  [+1(2.50e-06)]
+Glov_0573_p-136(gdhA)            1.10e-05  [+1(1.10e-05)]
+Glov_0573_p-103(gdhA)            7.33e-06  [+1(7.33e-06)]
+Glov_0573_p-84(gdhA)             1.38e-05  [+1(1.38e-05)]
+Glov_3332_p-268(Gmet_069         1.49e-05  [+1(1.49e-05)]
+Glov_3332_p-213(Gmet_069         7.33e-06  [+1(7.33e-06)]
+Glov_1879_p-154(glnB)            8.05e-07  [+1(8.05e-07)]
+Ppro_3077_p-66(nifR)             3.10e-09  [+1(3.10e-09)]
+Ppro_3497_p-101(gdhA)            2.27e-06  [+1(2.27e-06)]
+Ppro_3491_p-230(nifEN)           4.35e-06  [+1(4.35e-06)]
+Ppro_0484_p-332(Gmet_069         2.75e-06  [+1(2.75e-06)]
+Ppro_0484_p-241(Gmet_069         3.31e-06  [+1(3.31e-06)]
+Ppro_1680_p-238(glnB)            3.49e-08  [+1(3.49e-08)]
+Ppro_1680_p-207(glnB)            1.73e-05  [+1(1.73e-05)]
+Pcar_2589_p-263(amtB)            4.60e-07  [+1(4.60e-07)]
+Pcar_2589_p-242(amtB)            2.27e-06  [+1(2.27e-06)]
+Pcar_1021_p-241(glnK2)           7.33e-06  [+1(7.33e-06)]
+Pcar_1500_p-306(glnB)            1.86e-05  [+1(1.86e-05)]
+Pcar_1500_p-274(glnB)            9.36e-08  [+1(9.36e-08)]
+Dace_0518_p-10(nifR)             8.20e-09  [+1(8.20e-09)]
+Dace_2426_p-126(gdhA)            3.63e-06  [+1(3.63e-06)]
+Dace_0726_p-310(nifEN)           5.77e-07  [+1(5.77e-07)]
+Dace_1145_p-219(amtB)            1.00e-06  [+1(1.00e-06)]
+Dace_1046_p-254(glnB)            7.96e-06  [+1(7.96e-06)]
+Dace_1046_p-222(glnB)            1.61e-05  [+1(1.61e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,303 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/FnrN_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NAP1_15803_p-72(ccoN)    1.0000     20  NAP1_15793_p-238(ompW)   1.0000     20  
+NAP1_15848_p-52(hemN)    1.0000     20  NAP1_15798_p-3(fnrN)     1.0000     20  
+NAP1_01820_p-70(uspA)    1.0000     20  Saro_2578_p-144(ccoN)    1.0000     20  
+Saro_2578_p-77(ccoN)     1.0000     20  Saro_2579_p-179(ompW)    1.0000     20  
+Saro_2579_p-112(ompW)    1.0000     20  Saro_2581_p-232(fnrN)    1.0000     20  
+Saro_2569_p-68(hemN)     1.0000     20  Saro_0571_p-71(uspA)     1.0000     20  
+SJA_C2-00670_p-74(ccoN)  1.0000     20  SJA_C2-00650_p-103(ompW) 1.0000     20  
+SJA_C2-00650_p-81(ompW)  1.0000     20  SJA_C2-00660_p10(fnrN)   1.0000     20  
+Swit_1801_p-200(ccoN)    1.0000     20  Sala_1676_p-112(ccoN)    1.0000     20  
+Sala_1676_p-90(ccoN)     1.0000     20  Sala_1677_p-97(ompW)     1.0000     20  
+Sala_1677_p-75(ompW)     1.0000     20  Sala_1679_p-69(uspA)     1.0000     20  
+Sala_1668_p-51(hemN)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/FnrN_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/FnrN_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             460    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    460    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.272 C 0.213 G 0.246 T 0.27 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.213 G 0.246 T 0.269 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MWTTGAYCYRGVTCAAWGH MEME-1	width =  19  sites =  23  llr = 303  E-value = 1.2e-087
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  43:::8:2:313::aa313
+pos.-specific     C  41:::2463213:a::114
+probability       G  11::a:2225742:::17:
+matrix            T  14aa::4:5:1:8:::512
+
+         bits    2.2              *     
+                 2.0     *        *     
+                 1.8   ***        **    
+                 1.6   ***        ***   
+Relative         1.3   ****       ***   
+Entropy          1.1   ****      ****   
+(19.0 bits)      0.9   ****      ****   
+                 0.7   **** *  * **** * 
+                 0.4 * ****** ******* * 
+                 0.2 *******************
+                 0.0 -------------------
+
+Multilevel           CTTTGATCTGGGTCAATGC
+consensus            AA    CGCA AG   A A
+sequence                     GC C      T
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+NAP1_15793_p-238(ompW)        2  4.72e-11          G CATTGACCTGGATCAATGC           
+NAP1_01820_p-70(uspA)         2  2.57e-10          A AATTGATCTGGATCAATGC           
+NAP1_15798_p-3(fnrN)          2  1.11e-09          G CATTGATCCAGGTCAATGC           
+SJA_C2-00670_p-74(ccoN)       2  1.86e-08          G CTTTGACAGAGGTCAATGC           
+Swit_1801_p-200(ccoN)         2  2.15e-08          G ATTTGATCTGGCGCAAGGC           
+NAP1_15848_p-52(hemN)         2  2.15e-08          G ATTTGATCTGGCGCAAAGA           
+Sala_1676_p-90(ccoN)          2  2.48e-08          T CGTTGATCCCGGTCAATGT           
+Sala_1677_p-97(ompW)          2  2.85e-08          A CATTGACCGGGATCAACGA           
+Sala_1668_p-51(hemN)          2  4.87e-08          C CGTTGATGCCGATCAATGC           
+Sala_1679_p-69(uspA)          2  2.72e-07          G ATTTGATGCGAATCAATGA           
+Saro_2578_p-77(ccoN)          2  3.31e-07          T ATTTGACAAGGGTCAATGT           
+SJA_C2-00650_p-81(ompW)       2  7.58e-07          C GGTTGCGCGGGATCAATGC           
+SJA_C2-00650_p-103(ompW)      2  8.25e-07          A CATTGAGCCAGGTCAAATT           
+Saro_2569_p-68(hemN)          2  9.74e-07          A ATTTGCCATATCTCAATGC           
+Saro_0571_p-71(uspA)          2  1.68e-06          A ATTTGACGTGGATCATGGT           
+Saro_2581_p-232(fnrN)         2  1.80e-06          G TTTTGACATCCGTCAACGC           
+SJA_C2-00660_p10(fnrN)        2  1.94e-06          G ATTTGATCTGGCGCAAAAG           
+Saro_2579_p-112(ompW)         2  2.08e-06          T TTTTGCGCTCCGTCAATGT           
+NAP1_15803_p-72(ccoN)         2  2.08e-06          A ACTTGATCTGAGTCAAACA           
+Sala_1677_p-75(ompW)          2  3.11e-06          T GCTTGCGCTCCATCAATGC           
+Saro_2578_p-144(ccoN)         2  3.11e-06          A CATTGACGGAGCGCAAAAA           
+Sala_1676_p-112(ccoN)         2  3.98e-06          G CATTGATGGAGCGCAAGCA           
+Saro_2579_p-179(ompW)         2  5.91e-06          A CATTGACCCTTGTCAAATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NAP1_15793_p-238(ompW)            4.7e-11  1_[+1]
+NAP1_01820_p-70(uspA)             2.6e-10  1_[+1]
+NAP1_15798_p-3(fnrN)              1.1e-09  1_[+1]
+SJA_C2-00670_p-74(ccoN)           1.9e-08  1_[+1]
+Swit_1801_p-200(ccoN)             2.2e-08  1_[+1]
+NAP1_15848_p-52(hemN)             2.2e-08  1_[+1]
+Sala_1676_p-90(ccoN)              2.5e-08  1_[+1]
+Sala_1677_p-97(ompW)              2.8e-08  1_[+1]
+Sala_1668_p-51(hemN)              4.9e-08  1_[+1]
+Sala_1679_p-69(uspA)              2.7e-07  1_[+1]
+Saro_2578_p-77(ccoN)              3.3e-07  1_[+1]
+SJA_C2-00650_p-81(ompW)           7.6e-07  1_[+1]
+SJA_C2-00650_p-103(ompW)          8.2e-07  1_[+1]
+Saro_2569_p-68(hemN)              9.7e-07  1_[+1]
+Saro_0571_p-71(uspA)              1.7e-06  1_[+1]
+Saro_2581_p-232(fnrN)             1.8e-06  1_[+1]
+SJA_C2-00660_p10(fnrN)            1.9e-06  1_[+1]
+Saro_2579_p-112(ompW)             2.1e-06  1_[+1]
+NAP1_15803_p-72(ccoN)             2.1e-06  1_[+1]
+Sala_1677_p-75(ompW)              3.1e-06  1_[+1]
+Saro_2578_p-144(ccoN)             3.1e-06  1_[+1]
+Sala_1676_p-112(ccoN)               4e-06  1_[+1]
+Saro_2579_p-179(ompW)             5.9e-06  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MWTTGAYCYRGVTCAAWGH width=19 seqs=23
+NAP1_15793_p-238(ompW)   (    2) CATTGACCTGGATCAATGC  1 
+NAP1_01820_p-70(uspA)    (    2) AATTGATCTGGATCAATGC  1 
+NAP1_15798_p-3(fnrN)     (    2) CATTGATCCAGGTCAATGC  1 
+SJA_C2-00670_p-74(ccoN)  (    2) CTTTGACAGAGGTCAATGC  1 
+Swit_1801_p-200(ccoN)    (    2) ATTTGATCTGGCGCAAGGC  1 
+NAP1_15848_p-52(hemN)    (    2) ATTTGATCTGGCGCAAAGA  1 
+Sala_1676_p-90(ccoN)     (    2) CGTTGATCCCGGTCAATGT  1 
+Sala_1677_p-97(ompW)     (    2) CATTGACCGGGATCAACGA  1 
+Sala_1668_p-51(hemN)     (    2) CGTTGATGCCGATCAATGC  1 
+Sala_1679_p-69(uspA)     (    2) ATTTGATGCGAATCAATGA  1 
+Saro_2578_p-77(ccoN)     (    2) ATTTGACAAGGGTCAATGT  1 
+SJA_C2-00650_p-81(ompW)  (    2) GGTTGCGCGGGATCAATGC  1 
+SJA_C2-00650_p-103(ompW) (    2) CATTGAGCCAGGTCAAATT  1 
+Saro_2569_p-68(hemN)     (    2) ATTTGCCATATCTCAATGC  1 
+Saro_0571_p-71(uspA)     (    2) ATTTGACGTGGATCATGGT  1 
+Saro_2581_p-232(fnrN)    (    2) TTTTGACATCCGTCAACGC  1 
+SJA_C2-00660_p10(fnrN)   (    2) ATTTGATCTGGCGCAAAAG  1 
+Saro_2579_p-112(ompW)    (    2) TTTTGCGCTCCGTCAATGT  1 
+NAP1_15803_p-72(ccoN)    (    2) ACTTGATCTGAGTCAAACA  1 
+Sala_1677_p-75(ompW)     (    2) GCTTGCGCTCCATCAATGC  1 
+Saro_2578_p-144(ccoN)    (    2) CATTGACGGAGCGCAAAAA  1 
+Sala_1676_p-112(ccoN)    (    2) CATTGATGGAGCGCAAGCA  1 
+Saro_2579_p-179(ompW)    (    2) CATTGACCCTTGTCAAATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 46 bayes= 2.68243 E= 1.2e-087 
+    53    103   -150   -163 
+    36   -129    -91     69 
+ -1117  -1117  -1117    189 
+ -1117  -1117  -1117    189 
+ -1117  -1117    202  -1117 
+   160    -29  -1117  -1117 
+ -1117     87    -50     69 
+   -64    151    -18  -1117 
+  -264     29    -18     83 
+    -6      3     96   -263 
+  -164    -71    150   -163 
+    36     29     67  -1117 
+ -1117  -1117    -18    154 
+ -1117    223  -1117  -1117 
+   188  -1117  -1117  -1117 
+   182  -1117  -1117   -263 
+    -6   -129    -91     95 
+  -164   -129    159   -163 
+    16    103   -250    -31 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 23 E= 1.2e-087 
+ 0.391304  0.434783  0.086957  0.086957 
+ 0.347826  0.086957  0.130435  0.434783 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.826087  0.173913  0.000000  0.000000 
+ 0.000000  0.391304  0.173913  0.434783 
+ 0.173913  0.608696  0.217391  0.000000 
+ 0.043478  0.260870  0.217391  0.478261 
+ 0.260870  0.217391  0.478261  0.043478 
+ 0.086957  0.130435  0.695652  0.086957 
+ 0.347826  0.260870  0.391304  0.000000 
+ 0.000000  0.000000  0.217391  0.782609 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.956522  0.000000  0.000000  0.043478 
+ 0.260870  0.086957  0.130435  0.521739 
+ 0.086957  0.086957  0.739130  0.086957 
+ 0.304348  0.434783  0.043478  0.217391 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWTTGAYCYRGVTCAAWGH MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CA][TA]TTGA[TC][CG][TCG][GAC]G[GAC][TG]CAA[TA]G[CAT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NAP1_15803_p-72(ccoN)            4.16e-06  1_[+1(2.08e-06)]
+NAP1_15793_p-238(ompW)           9.45e-11  1_[+1(4.72e-11)]
+NAP1_15848_p-52(hemN)            4.31e-08  1_[+1(2.15e-08)]
+NAP1_15798_p-3(fnrN)             2.22e-09  1_[+1(1.11e-09)]
+NAP1_01820_p-70(uspA)            5.15e-10  1_[+1(2.57e-10)]
+Saro_2578_p-144(ccoN)            6.22e-06  1_[+1(3.11e-06)]
+Saro_2578_p-77(ccoN)             6.63e-07  1_[+1(3.31e-07)]
+Saro_2579_p-179(ompW)            1.18e-05  1_[+1(5.91e-06)]
+Saro_2579_p-112(ompW)            4.16e-06  1_[+1(2.08e-06)]
+Saro_2581_p-232(fnrN)            3.61e-06  1_[+1(1.80e-06)]
+Saro_2569_p-68(hemN)             1.95e-06  1_[+1(9.74e-07)]
+Saro_0571_p-71(uspA)             3.35e-06  1_[+1(1.68e-06)]
+SJA_C2-00670_p-74(ccoN)          3.71e-08  1_[+1(1.86e-08)]
+SJA_C2-00650_p-103(ompW)         1.65e-06  1_[+1(8.25e-07)]
+SJA_C2-00650_p-81(ompW)          1.52e-06  1_[+1(7.58e-07)]
+SJA_C2-00660_p10(fnrN)           3.88e-06  1_[+1(1.94e-06)]
+Swit_1801_p-200(ccoN)            4.31e-08  1_[+1(2.15e-08)]
+Sala_1676_p-112(ccoN)            7.96e-06  1_[+1(3.98e-06)]
+Sala_1676_p-90(ccoN)             4.97e-08  1_[+1(2.48e-08)]
+Sala_1677_p-97(ompW)             5.69e-08  1_[+1(2.85e-08)]
+Sala_1677_p-75(ompW)             6.22e-06  1_[+1(3.11e-06)]
+Sala_1679_p-69(uspA)             5.43e-07  1_[+1(2.72e-07)]
+Sala_1668_p-51(hemN)             9.74e-08  1_[+1(4.87e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

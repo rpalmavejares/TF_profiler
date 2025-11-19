@@ -1,0 +1,341 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfovibrionales/SahR_Desulfovibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DVU0997_p-87(metF)       1.0000     20  DVU0606_p-52(sahR)       1.0000     20  
+DVU2448_p-18(panC)       1.0000     20  DVU3371_p-341(metE)      1.0000     20  
+DvMF_2579_p-103(sahR)    1.0000     20  DvMF_2942_p-18(panC)     1.0000     20  
+DvMF_3034_p-208(metF)    1.0000     20  Dde_2525_p-69(metF)      1.0000     20  
+Dde_2328_p-293(metE)     1.0000     20  Dde_2525_p-45(metF)      1.0000     20  
+Dde_3135_p63(sahR)       1.0000     20  Dde_1498_p-18(panC)      1.0000     20  
+Dde_2476_p-131(metT)     1.0000     20  Ddes_0040_p-57(sahR)     1.0000     20  
+Ddes_0040_p-35(sahR)     1.0000     20  Ddes_2286_p-18(panC)     1.0000     20  
+Ddes_2286_p-10(panC)     1.0000     20  Ddes_2008_p-80(metF)     1.0000     20  
+DESPIG_01931_p-83(sahR)  1.0000     20  DESPIG_01931_p-61(sahR)  1.0000     20  
+DESPIG_02490_p-73(metF)  1.0000     20  DESPIG_01871_p-18(panC)  1.0000     20  
+DESPIG_01871_p-10(panC)  1.0000     20  Desal_0813_p-282(metE)   1.0000     20  
+Desal_0813_p-274(metE)   1.0000     20  Desal_1278_p-111(metK)   1.0000     20  
+Desal_3078_p-39(sahR)    1.0000     20  DMR_43430_p-18(sahR)     1.0000     20  
+Dbac_2305_p-45(sahR)     1.0000     20  Dret_2302_p-172(sahR)    1.0000     20  
+Dret_2255_p-102(bhmT)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfovibrionales/SahR_Desulfovibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfovibrionales/SahR_Desulfovibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             620    N=              31
+sample: seed=            0    hsfrac=          0
+        searchsize=    620    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.347 C 0.113 G 0.123 T 0.418 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.346 C 0.114 G 0.123 T 0.417 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATATCARGATATCTTGATAT MEME-1	width =  20  sites =  31  llr = 386  E-value = 2.4e-123
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:a:175261812:1:a:8:
+pos.-specific     C  :1:162121::152:::::1
+probability       G  1:::1:351::22::9::1:
+matrix            T  19:9111229262891:a19
+
+         bits    3.1                     
+                 2.8                     
+                 2.5                *    
+                 2.2                *    
+Relative         1.9                *    
+Entropy          1.6   *            **   
+(18.0 bits)      1.3   * *          **   
+                 0.9 *****    *  ** *** *
+                 0.6 *****  * ** ********
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           ATATCAAGATATCTTGATAT
+consensus                  G T T         
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Dbac_2305_p-45(sahR)          1  1.31e-11          . ATATCAGGATATCTTGATAT           
+DMR_43430_p-18(sahR)          1  1.31e-11          . ATATCAGGATATCTTGATAT           
+DvMF_3034_p-208(metF)         1  8.45e-11          . ATATCAAGATAGCTTGATAT           
+DESPIG_01871_p-18(panC)       1  1.78e-09          . ATATCACCATACCTTGATAT           
+DESPIG_01931_p-83(sahR)       1  2.36e-09          . ATATCCAGATAGGCTGATAT           
+Dret_2255_p-102(bhmT)         1  3.26e-09          . ATATCAAAATATCTTGATAT           
+Ddes_2286_p-18(panC)          1  9.81e-09          . ATATCACAATACCTTGATAT           
+DVU0997_p-87(metF)            1  1.32e-08          . ATATCAATCTATCTTGATAT           
+Dde_2525_p-45(metF)           1  1.51e-08          . ATATAAGGCTATCTTGATAT           
+Ddes_2008_p-80(metF)          1  2.62e-08          . ATATCAATTTATCTTGATAT           
+Ddes_0040_p-57(sahR)          1  3.01e-08          . ATATGCGGATAACTTGATAC           
+Dde_1498_p-18(panC)           1  5.07e-08          . ATATGCGGATACATTGATAT           
+DvMF_2942_p-18(panC)          1  5.07e-08          . ATATTCGGATAACTTGATAT           
+DVU2448_p-18(panC)            1  6.50e-08          . ATATGTGGATAGGTTGATAT           
+DVU3371_p-341(metE)           1  8.34e-08          . ATATCAGTATTTCCTGATGT           
+DVU0606_p-52(sahR)            1  2.67e-07          . ACATCAAGTTTTCTTGATTT           
+DESPIG_02490_p-73(metF)       1  3.70e-07          . TTATCAAGTTATATTGATAT           
+DvMF_2579_p-103(sahR)         1  9.30e-07          . AAATCAAGTTTTCTTGATGT           
+Dde_2476_p-131(metT)          1  1.37e-06          . TTATCAACTTAGTTTGATAT           
+Dde_3135_p63(sahR)            1  1.81e-06          . ACATCAACTTTTCTTGATTC           
+Ddes_0040_p-35(sahR)          1  2.17e-06          . GTATCAGCATAAATTGATTT           
+Dde_2525_p-69(metF)           1  4.73e-06          . ATATTACAATAGGTCGATAT           
+DESPIG_01871_p-10(panC)       1  5.13e-06          . ATACCTTGATATGCAGATAT           
+Ddes_2286_p-10(panC)          1  5.13e-06          . ATACCTTGATATGCAGATAT           
+DESPIG_01931_p-61(sahR)       1  1.88e-05          . GCATCAAGCAAATTTGATAC           
+Dret_2302_p-172(sahR)         1  2.47e-05          . TTATCAACTTTTTCAGATAT           
+Dde_2328_p-293(metE)          1  3.02e-05          . ATATTGATGAATCTTGATAT           
+Desal_1278_p-111(metK)        1  3.23e-05          . ATATGCAAATTTATTTATAT           
+Desal_0813_p-282(metE)        1  3.44e-05          . ATATAACAATATTTTTATAT           
+Desal_3078_p-39(sahR)         1  2.15e-04          . ATATAAAGGTTTTGTTATGT           
+Desal_0813_p-274(metE)        1  4.68e-04          . ATATTTTTATATATTGAATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Dbac_2305_p-45(sahR)              1.3e-11  [+1]
+DMR_43430_p-18(sahR)              1.3e-11  [+1]
+DvMF_3034_p-208(metF)             8.5e-11  [+1]
+DESPIG_01871_p-18(panC)           1.8e-09  [+1]
+DESPIG_01931_p-83(sahR)           2.4e-09  [+1]
+Dret_2255_p-102(bhmT)             3.3e-09  [+1]
+Ddes_2286_p-18(panC)              9.8e-09  [+1]
+DVU0997_p-87(metF)                1.3e-08  [+1]
+Dde_2525_p-45(metF)               1.5e-08  [+1]
+Ddes_2008_p-80(metF)              2.6e-08  [+1]
+Ddes_0040_p-57(sahR)                3e-08  [+1]
+Dde_1498_p-18(panC)               5.1e-08  [+1]
+DvMF_2942_p-18(panC)              5.1e-08  [+1]
+DVU2448_p-18(panC)                6.5e-08  [+1]
+DVU3371_p-341(metE)               8.3e-08  [+1]
+DVU0606_p-52(sahR)                2.7e-07  [+1]
+DESPIG_02490_p-73(metF)           3.7e-07  [+1]
+DvMF_2579_p-103(sahR)             9.3e-07  [+1]
+Dde_2476_p-131(metT)              1.4e-06  [+1]
+Dde_3135_p63(sahR)                1.8e-06  [+1]
+Ddes_0040_p-35(sahR)              2.2e-06  [+1]
+Dde_2525_p-69(metF)               4.7e-06  [+1]
+DESPIG_01871_p-10(panC)           5.1e-06  [+1]
+Ddes_2286_p-10(panC)              5.1e-06  [+1]
+DESPIG_01931_p-61(sahR)           1.9e-05  [+1]
+Dret_2302_p-172(sahR)             2.5e-05  [+1]
+Dde_2328_p-293(metE)                3e-05  [+1]
+Desal_1278_p-111(metK)            3.2e-05  [+1]
+Desal_0813_p-282(metE)            3.4e-05  [+1]
+Desal_3078_p-39(sahR)             0.00021  [+1]
+Desal_0813_p-274(metE)            0.00047  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATATCARGATATCTTGATAT width=20 seqs=31
+Dbac_2305_p-45(sahR)     (    1) ATATCAGGATATCTTGATAT  1 
+DMR_43430_p-18(sahR)     (    1) ATATCAGGATATCTTGATAT  1 
+DvMF_3034_p-208(metF)    (    1) ATATCAAGATAGCTTGATAT  1 
+DESPIG_01871_p-18(panC)  (    1) ATATCACCATACCTTGATAT  1 
+DESPIG_01931_p-83(sahR)  (    1) ATATCCAGATAGGCTGATAT  1 
+Dret_2255_p-102(bhmT)    (    1) ATATCAAAATATCTTGATAT  1 
+Ddes_2286_p-18(panC)     (    1) ATATCACAATACCTTGATAT  1 
+DVU0997_p-87(metF)       (    1) ATATCAATCTATCTTGATAT  1 
+Dde_2525_p-45(metF)      (    1) ATATAAGGCTATCTTGATAT  1 
+Ddes_2008_p-80(metF)     (    1) ATATCAATTTATCTTGATAT  1 
+Ddes_0040_p-57(sahR)     (    1) ATATGCGGATAACTTGATAC  1 
+Dde_1498_p-18(panC)      (    1) ATATGCGGATACATTGATAT  1 
+DvMF_2942_p-18(panC)     (    1) ATATTCGGATAACTTGATAT  1 
+DVU2448_p-18(panC)       (    1) ATATGTGGATAGGTTGATAT  1 
+DVU3371_p-341(metE)      (    1) ATATCAGTATTTCCTGATGT  1 
+DVU0606_p-52(sahR)       (    1) ACATCAAGTTTTCTTGATTT  1 
+DESPIG_02490_p-73(metF)  (    1) TTATCAAGTTATATTGATAT  1 
+DvMF_2579_p-103(sahR)    (    1) AAATCAAGTTTTCTTGATGT  1 
+Dde_2476_p-131(metT)     (    1) TTATCAACTTAGTTTGATAT  1 
+Dde_3135_p63(sahR)       (    1) ACATCAACTTTTCTTGATTC  1 
+Ddes_0040_p-35(sahR)     (    1) GTATCAGCATAAATTGATTT  1 
+Dde_2525_p-69(metF)      (    1) ATATTACAATAGGTCGATAT  1 
+DESPIG_01871_p-10(panC)  (    1) ATACCTTGATATGCAGATAT  1 
+Ddes_2286_p-10(panC)     (    1) ATACCTTGATATGCAGATAT  1 
+DESPIG_01931_p-61(sahR)  (    1) GCATCAAGCAAATTTGATAC  1 
+Dret_2302_p-172(sahR)    (    1) TTATCAACTTTTTCAGATAT  1 
+Dde_2328_p-293(metE)     (    1) ATATTGATGAATCTTGATAT  1 
+Desal_1278_p-111(metK)   (    1) ATATGCAAATTTATTTATAT  1 
+Desal_0813_p-282(metE)   (    1) ATATAACAATATTTTTATAT  1 
+Desal_3078_p-39(sahR)    (    1) ATATAAAGGTTTTGTTATGT  1 
+Desal_0813_p-274(metE)   (    1) ATATTTTTATATATTGAATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 31 bayes= 1.57258 E= 2.4e-123 
+   128  -1160    -94   -210 
+  -342    -23  -1160    106 
+   153  -1160  -1160  -1160 
+ -1160    -82  -1160    117 
+  -184    250      6   -169 
+    97     50   -193   -169 
+    48     18    123   -210 
+  -110     50    206   -137 
+    82    -23    -94    -88 
+  -242  -1160  -1160    117 
+   116  -1160  -1160    -88 
+  -142    -23     39     56 
+  -110    218     39   -137 
+ -1160     50   -193     95 
+  -184   -182  -1160    106 
+ -1160  -1160    287   -210 
+   153  -1160  -1160  -1160 
+  -342  -1160  -1160    122 
+   116  -1160    -35   -169 
+ -1160    -23  -1160    112 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 31 E= 2.4e-123 
+ 0.838710  0.000000  0.064516  0.096774 
+ 0.032258  0.096774  0.000000  0.870968 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.064516  0.000000  0.935484 
+ 0.096774  0.645161  0.129032  0.129032 
+ 0.677419  0.161290  0.032258  0.129032 
+ 0.483871  0.129032  0.290323  0.096774 
+ 0.161290  0.161290  0.516129  0.161290 
+ 0.612903  0.096774  0.064516  0.225806 
+ 0.064516  0.000000  0.000000  0.935484 
+ 0.774194  0.000000  0.000000  0.225806 
+ 0.129032  0.096774  0.161290  0.612903 
+ 0.161290  0.516129  0.161290  0.161290 
+ 0.000000  0.161290  0.032258  0.806452 
+ 0.096774  0.032258  0.000000  0.870968 
+ 0.000000  0.000000  0.903226  0.096774 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.032258  0.000000  0.000000  0.967742 
+ 0.774194  0.000000  0.096774  0.129032 
+ 0.000000  0.096774  0.000000  0.903226 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATCARGATATCTTGATAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATATCA[AG]G[AT]T[AT]TCTTGATAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DVU0997_p-87(metF)               1.32e-08  [+1(1.32e-08)]
+DVU0606_p-52(sahR)               2.67e-07  [+1(2.67e-07)]
+DVU2448_p-18(panC)               6.50e-08  [+1(6.50e-08)]
+DVU3371_p-341(metE)              8.34e-08  [+1(8.34e-08)]
+DvMF_2579_p-103(sahR)            9.30e-07  [+1(9.30e-07)]
+DvMF_2942_p-18(panC)             5.07e-08  [+1(5.07e-08)]
+DvMF_3034_p-208(metF)            8.45e-11  [+1(8.45e-11)]
+Dde_2525_p-69(metF)              4.73e-06  [+1(4.73e-06)]
+Dde_2328_p-293(metE)             3.02e-05  [+1(3.02e-05)]
+Dde_2525_p-45(metF)              1.51e-08  [+1(1.51e-08)]
+Dde_3135_p63(sahR)               1.81e-06  [+1(1.81e-06)]
+Dde_1498_p-18(panC)              5.07e-08  [+1(5.07e-08)]
+Dde_2476_p-131(metT)             1.37e-06  [+1(1.37e-06)]
+Ddes_0040_p-57(sahR)             3.01e-08  [+1(3.01e-08)]
+Ddes_0040_p-35(sahR)             2.17e-06  [+1(2.17e-06)]
+Ddes_2286_p-18(panC)             9.81e-09  [+1(9.81e-09)]
+Ddes_2286_p-10(panC)             5.13e-06  [+1(5.13e-06)]
+Ddes_2008_p-80(metF)             2.62e-08  [+1(2.62e-08)]
+DESPIG_01931_p-83(sahR)          2.36e-09  [+1(2.36e-09)]
+DESPIG_01931_p-61(sahR)          1.88e-05  [+1(1.88e-05)]
+DESPIG_02490_p-73(metF)          3.70e-07  [+1(3.70e-07)]
+DESPIG_01871_p-18(panC)          1.78e-09  [+1(1.78e-09)]
+DESPIG_01871_p-10(panC)          5.13e-06  [+1(5.13e-06)]
+Desal_0813_p-282(metE)           3.44e-05  [+1(3.44e-05)]
+Desal_0813_p-274(metE)           4.68e-04  20
+Desal_1278_p-111(metK)           3.23e-05  [+1(3.23e-05)]
+Desal_3078_p-39(sahR)            2.15e-04  20
+DMR_43430_p-18(sahR)             1.31e-11  [+1(1.31e-11)]
+Dbac_2305_p-45(sahR)             1.31e-11  [+1(1.31e-11)]
+Dret_2302_p-172(sahR)            2.47e-05  [+1(2.47e-05)]
+Dret_2255_p-102(bhmT)            3.26e-09  [+1(3.26e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

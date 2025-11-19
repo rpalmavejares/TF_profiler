@@ -1,0 +1,463 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/FruR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VCA0518_p-266(fruB)      1.0000     16  VCA0518_p-244(fruB)      1.0000     16  
+VCA0518_p-117(fruB)      1.0000     16  VCA0519_p-237(fruR)      1.0000     16  
+VCA0519_p-110(fruR)      1.0000     16  VCA0519_p-88(fruR)       1.0000     16  
+VV20200_p-365(fruB)      1.0000     16  VV20200_p-387(fruB)      1.0000     16  
+VV20200_p-215(fruB)      1.0000     16  VV20201_p-258(fruR)      1.0000     16  
+VV20201_p-108(fruR)      1.0000     16  VV20201_p-86(fruR)       1.0000     16  
+VIBHAR_05958_p-324(fruB) 1.0000     16  VIBHAR_05958_p-302(fruB) 1.0000     16  
+VIBHAR_05958_p-144(fruB) 1.0000     16  VIBHAR_05957_p-266(fruR) 1.0000     16  
+VIBHAR_05957_p-108(fruR) 1.0000     16  VIBHAR_05957_p-86(fruR)  1.0000     16  
+VPA0813_p-294(fruB)      1.0000     16  VPA0813_p-272(fruB)      1.0000     16  
+VPA0813_p-114(fruB)      1.0000     16  VPA0814_p-266(fruR)      1.0000     16  
+VPA0814_p-108(fruR)      1.0000     16  VPA0814_p-86(fruR)       1.0000     16  
+VSAK1_22774_p-84(fruR)   1.0000     16  VSAK1_22769_p-243(fruB)  1.0000     16  
+VSAK1_22769_p-221(fruB)  1.0000     16  VSAK1_22769_p-75(fruB)   1.0000     16  
+VSAK1_22774_p-252(fruR)  1.0000     16  VSAK1_22774_p-106(fruR)  1.0000     16  
+VS_II1031_p72(fruR)      1.0000     16  VS_II1031_p50(fruR)      1.0000     16  
+VS_II1032_p-320(fruB)    1.0000     16  VS_II1032_p-298(fruB)    1.0000     16  
+VS_II1032_p-109(fruB)    1.0000     16  VS_II1031_p-139(fruR)    1.0000     16  
+VF_A0942_p-212(fruB)     1.0000     16  VF_A0942_p-190(fruB)     1.0000     16  
+VF_A0942_p-81(fruB)      1.0000     16  VF_A0943_p-220(fruR)     1.0000     16  
+VF_A0943_p-111(fruR)     1.0000     16  VF_A0943_p-89(fruR)      1.0000     16  
+VSAL_II0090_p-198(fruB)  1.0000     16  VSAL_II0090_p-176(fruB)  1.0000     16  
+VSAL_II0090_p-70(fruB)   1.0000     16  VSAL_II0089_p-216(fruR)  1.0000     16  
+VSAL_II0089_p-110(fruR)  1.0000     16  VSAL_II0089_p-88(fruR)   1.0000     16  
+VAS14_01981_p-127(fruB)  1.0000     16  VAS14_01976_p-195(fruR)  1.0000     16  
+VAS14_01981_p-52(fruB)   1.0000     16  VAS14_01981_p-149(fruB)  1.0000     16  
+VAS14_01976_p-270(fruR)  1.0000     16  VAS14_01976_p-173(fruR)  1.0000     16  
+PBPRA1573_p-240(fruB)    1.0000     16  PBPRA1573_p-218(fruB)    1.0000     16  
+PBPRA1573_p-151(fruB)    1.0000     16  PBPRA1572_p-205(fruR)    1.0000     16  
+PBPRA1572_p-138(fruR)    1.0000     16  PBPRA1572_p-116(fruR)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/FruR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/FruR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       60    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             960    N=              60
+sample: seed=            0    hsfrac=          0
+        searchsize=    960    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.258 C 0.242 G 0.242 T 0.258 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.258 C 0.242 G 0.242 T 0.258 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCTGAAWCGWTTCAGC MEME-1	width =  16  sites =  60  llr = 1103  E-value = 1.3e-438
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::aa3::6:::a::
+pos.-specific     C  :a::::182:::a::8
+probability       G  8::a:::281::::a:
+matrix            T  ::a:::6::3aa:::2
+
+         bits    2.0  *****    ***** 
+                 1.8  *****    ***** 
+                 1.6  *****    ***** 
+                 1.4  ***** ** ***** 
+Relative         1.2 ****** ** ******
+Entropy          1.0 ****** ** ******
+(26.5 bits)      0.8 ****** ** ******
+                 0.6 ****************
+                 0.4 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           GCTGAATCGATTCAGC
+consensus            A     A  T     T
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+VIBHAR_05957_p-266(fruR)      1  2.31e-10          . GCTGAATCGATTCAGC           
+VIBHAR_05958_p-144(fruB)      1  2.31e-10          . GCTGAATCGATTCAGC           
+PBPRA1572_p-205(fruR)         1  6.93e-10          . GCTGAATCGTTTCAGC           
+PBPRA1573_p-151(fruB)         1  6.93e-10          . GCTGAAACGATTCAGC           
+VAS14_01976_p-270(fruR)       1  6.93e-10          . GCTGAATCGTTTCAGC           
+VAS14_01981_p-52(fruB)        1  6.93e-10          . GCTGAAACGATTCAGC           
+VSAL_II0089_p-216(fruR)       1  6.93e-10          . GCTGAATCGTTTCAGC           
+VSAL_II0090_p-70(fruB)        1  6.93e-10          . GCTGAAACGATTCAGC           
+VF_A0943_p-89(fruR)           1  1.19e-09          . ACTGAATCGATTCAGC           
+VF_A0943_p-220(fruR)          1  1.19e-09          . ACTGAATCGATTCAGC           
+VF_A0942_p-81(fruB)           1  1.19e-09          . GCTGAATCGATTCAGT           
+VF_A0942_p-212(fruB)          1  1.19e-09          . GCTGAATCGATTCAGT           
+VS_II1032_p-320(fruB)         1  1.19e-09          . GCTGAATCGATTCAGT           
+VS_II1031_p72(fruR)           1  1.19e-09          . ACTGAATCGATTCAGC           
+VSAK1_22774_p-252(fruR)       1  1.19e-09          . ACTGAATCGATTCAGC           
+VSAK1_22769_p-75(fruB)        1  1.19e-09          . GCTGAATCGATTCAGT           
+VPA0814_p-266(fruR)           1  1.19e-09          . ACTGAATCGATTCAGC           
+VPA0813_p-114(fruB)           1  1.19e-09          . GCTGAATCGATTCAGT           
+VV20201_p-86(fruR)            1  1.19e-09          . ACTGAATCGATTCAGC           
+VV20200_p-387(fruB)           1  1.19e-09          . GCTGAATCGATTCAGt           
+VCA0519_p-88(fruR)            1  1.19e-09          . ACTGAATCGATTCAGC           
+VCA0518_p-266(fruB)           1  1.19e-09          . GCTGAATCGATTCAGT           
+VS_II1031_p-139(fruR)         1  2.31e-09          . GCTGAATCGGTTCAGC           
+VS_II1032_p-109(fruB)         1  2.31e-09          . GCTGAACCGATTCAGC           
+VV20201_p-258(fruR)           1  2.31e-09          . GCTGAACCGATTCAGC           
+VV20200_p-215(fruB)           1  2.31e-09          . GCTGAATCGGTTCAGC           
+VCA0519_p-237(fruR)           1  2.31e-09          . GCTGAATCGGTTCAGC           
+VCA0518_p-117(fruB)           1  2.31e-09          . GCTGAACCGATTCAGC           
+PBPRA1572_p-116(fruR)         1  3.30e-09          . ACTGAATCGTTTCAGC           
+PBPRA1573_p-240(fruB)         1  3.30e-09          . GCTGAAACGATTCAGT           
+VAS14_01976_p-173(fruR)       1  3.30e-09          . ACTGAATCGTTTCAGC           
+VAS14_01981_p-149(fruB)       1  3.30e-09          . GCTGAAACGATTCAGT           
+VSAL_II0089_p-88(fruR)        1  3.30e-09          . ACTGAAACGATTCAGC           
+VSAL_II0090_p-198(fruB)       1  3.30e-09          . GCTGAATCGTTTCAGT           
+VSAL_II0089_p-110(fruR)       1  4.22e-09          . GCTGAATCCTTTCAGC           
+VSAL_II0090_p-176(fruB)       1  4.22e-09          . GCTGAAAGGATTCAGC           
+VF_A0943_p-111(fruR)          1  4.22e-09          . GCTGAATCCTTTCAGC           
+VF_A0942_p-190(fruB)          1  4.22e-09          . GCTGAAAGGATTCAGC           
+VS_II1032_p-298(fruB)         1  4.22e-09          . GCTGAAAGGATTCAGC           
+VS_II1031_p50(fruR)           1  4.22e-09          . GCTGAATCCTTTCAGC           
+VSAK1_22774_p-106(fruR)       1  4.22e-09          . GCTGAATCCTTTCAGC           
+VSAK1_22769_p-221(fruB)       1  4.22e-09          . GCTGAAAGGATTCAGC           
+VPA0814_p-108(fruR)           1  4.22e-09          . GCTGAATCCTTTCAGC           
+VPA0813_p-272(fruB)           1  4.22e-09          . GCTGAAAGGATTCAGC           
+VIBHAR_05957_p-108(fruR)      1  4.22e-09          . GCTGAATCCTTTCAGC           
+VIBHAR_05958_p-302(fruB)      1  4.22e-09          . GCTGAAAGGATTCAGC           
+VV20201_p-108(fruR)           1  4.22e-09          . GCTGAATCCTTTCAGC           
+VV20200_p-365(fruB)           1  4.22e-09          . GCTGAAagGATTCAGC           
+VCA0519_p-110(fruR)           1  4.22e-09          . GCTGAATCCTTTCAGC           
+VCA0518_p-244(fruB)           1  4.22e-09          . GCTGAAAGGATTCAGC           
+VSAK1_22769_p-243(fruB)       1  7.32e-09          . GCTGAATCGGTTCAGT           
+VSAK1_22774_p-84(fruR)        1  7.32e-09          . ACTGAACCGATTCAGC           
+VPA0814_p-86(fruR)            1  7.32e-09          . ACTGAATCGGTTCAGC           
+VPA0813_p-294(fruB)           1  7.32e-09          . GCTGAACCGATTCAGT           
+VIBHAR_05957_p-86(fruR)       1  7.32e-09          . ACTGAATCGGTTCAGC           
+VIBHAR_05958_p-324(fruB)      1  7.32e-09          . GCTGAACCGATTCAGT           
+PBPRA1572_p-138(fruR)         1  7.78e-09          . GCTGAAACCTTTCAGC           
+PBPRA1573_p-218(fruB)         1  7.78e-09          . GCTGAAAGGTTTCAGC           
+VAS14_01976_p-195(fruR)       1  1.61e-08          . GCTGAAACCTTTCAGT           
+VAS14_01981_p-127(fruB)       1  1.61e-08          . ACTGAAAGGTTTCAGC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VIBHAR_05957_p-266(fruR)          2.3e-10  [+1]
+VIBHAR_05958_p-144(fruB)          2.3e-10  [+1]
+PBPRA1572_p-205(fruR)             6.9e-10  [+1]
+PBPRA1573_p-151(fruB)             6.9e-10  [+1]
+VAS14_01976_p-270(fruR)           6.9e-10  [+1]
+VAS14_01981_p-52(fruB)            6.9e-10  [+1]
+VSAL_II0089_p-216(fruR)           6.9e-10  [+1]
+VSAL_II0090_p-70(fruB)            6.9e-10  [+1]
+VF_A0943_p-89(fruR)               1.2e-09  [+1]
+VF_A0943_p-220(fruR)              1.2e-09  [+1]
+VF_A0942_p-81(fruB)               1.2e-09  [+1]
+VF_A0942_p-212(fruB)              1.2e-09  [+1]
+VS_II1032_p-320(fruB)             1.2e-09  [+1]
+VS_II1031_p72(fruR)               1.2e-09  [+1]
+VSAK1_22774_p-252(fruR)           1.2e-09  [+1]
+VSAK1_22769_p-75(fruB)            1.2e-09  [+1]
+VPA0814_p-266(fruR)               1.2e-09  [+1]
+VPA0813_p-114(fruB)               1.2e-09  [+1]
+VV20201_p-86(fruR)                1.2e-09  [+1]
+VV20200_p-387(fruB)               1.2e-09  [+1]
+VCA0519_p-88(fruR)                1.2e-09  [+1]
+VCA0518_p-266(fruB)               1.2e-09  [+1]
+VS_II1031_p-139(fruR)             2.3e-09  [+1]
+VS_II1032_p-109(fruB)             2.3e-09  [+1]
+VV20201_p-258(fruR)               2.3e-09  [+1]
+VV20200_p-215(fruB)               2.3e-09  [+1]
+VCA0519_p-237(fruR)               2.3e-09  [+1]
+VCA0518_p-117(fruB)               2.3e-09  [+1]
+PBPRA1572_p-116(fruR)             3.3e-09  [+1]
+PBPRA1573_p-240(fruB)             3.3e-09  [+1]
+VAS14_01976_p-173(fruR)           3.3e-09  [+1]
+VAS14_01981_p-149(fruB)           3.3e-09  [+1]
+VSAL_II0089_p-88(fruR)            3.3e-09  [+1]
+VSAL_II0090_p-198(fruB)           3.3e-09  [+1]
+VSAL_II0089_p-110(fruR)           4.2e-09  [+1]
+VSAL_II0090_p-176(fruB)           4.2e-09  [+1]
+VF_A0943_p-111(fruR)              4.2e-09  [+1]
+VF_A0942_p-190(fruB)              4.2e-09  [+1]
+VS_II1032_p-298(fruB)             4.2e-09  [+1]
+VS_II1031_p50(fruR)               4.2e-09  [+1]
+VSAK1_22774_p-106(fruR)           4.2e-09  [+1]
+VSAK1_22769_p-221(fruB)           4.2e-09  [+1]
+VPA0814_p-108(fruR)               4.2e-09  [+1]
+VPA0813_p-272(fruB)               4.2e-09  [+1]
+VIBHAR_05957_p-108(fruR)          4.2e-09  [+1]
+VIBHAR_05958_p-302(fruB)          4.2e-09  [+1]
+VV20201_p-108(fruR)               4.2e-09  [+1]
+VV20200_p-365(fruB)               4.2e-09  [+1]
+VCA0519_p-110(fruR)               4.2e-09  [+1]
+VCA0518_p-244(fruB)               4.2e-09  [+1]
+VSAK1_22769_p-243(fruB)           7.3e-09  [+1]
+VSAK1_22774_p-84(fruR)            7.3e-09  [+1]
+VPA0814_p-86(fruR)                7.3e-09  [+1]
+VPA0813_p-294(fruB)               7.3e-09  [+1]
+VIBHAR_05957_p-86(fruR)           7.3e-09  [+1]
+VIBHAR_05958_p-324(fruB)          7.3e-09  [+1]
+PBPRA1572_p-138(fruR)             7.8e-09  [+1]
+PBPRA1573_p-218(fruB)             7.8e-09  [+1]
+VAS14_01976_p-195(fruR)           1.6e-08  [+1]
+VAS14_01981_p-127(fruB)           1.6e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCTGAAWCGWTTCAGC width=16 seqs=60
+VIBHAR_05957_p-266(fruR) (    1) GCTGAATCGATTCAGC  1 
+VIBHAR_05958_p-144(fruB) (    1) GCTGAATCGATTCAGC  1 
+PBPRA1572_p-205(fruR)    (    1) GCTGAATCGTTTCAGC  1 
+PBPRA1573_p-151(fruB)    (    1) GCTGAAACGATTCAGC  1 
+VAS14_01976_p-270(fruR)  (    1) GCTGAATCGTTTCAGC  1 
+VAS14_01981_p-52(fruB)   (    1) GCTGAAACGATTCAGC  1 
+VSAL_II0089_p-216(fruR)  (    1) GCTGAATCGTTTCAGC  1 
+VSAL_II0090_p-70(fruB)   (    1) GCTGAAACGATTCAGC  1 
+VF_A0943_p-89(fruR)      (    1) ACTGAATCGATTCAGC  1 
+VF_A0943_p-220(fruR)     (    1) ACTGAATCGATTCAGC  1 
+VF_A0942_p-81(fruB)      (    1) GCTGAATCGATTCAGT  1 
+VF_A0942_p-212(fruB)     (    1) GCTGAATCGATTCAGT  1 
+VS_II1032_p-320(fruB)    (    1) GCTGAATCGATTCAGT  1 
+VS_II1031_p72(fruR)      (    1) ACTGAATCGATTCAGC  1 
+VSAK1_22774_p-252(fruR)  (    1) ACTGAATCGATTCAGC  1 
+VSAK1_22769_p-75(fruB)   (    1) GCTGAATCGATTCAGT  1 
+VPA0814_p-266(fruR)      (    1) ACTGAATCGATTCAGC  1 
+VPA0813_p-114(fruB)      (    1) GCTGAATCGATTCAGT  1 
+VV20201_p-86(fruR)       (    1) ACTGAATCGATTCAGC  1 
+VV20200_p-387(fruB)      (    1) GCTGAATCGATTCAGT  1 
+VCA0519_p-88(fruR)       (    1) ACTGAATCGATTCAGC  1 
+VCA0518_p-266(fruB)      (    1) GCTGAATCGATTCAGT  1 
+VS_II1031_p-139(fruR)    (    1) GCTGAATCGGTTCAGC  1 
+VS_II1032_p-109(fruB)    (    1) GCTGAACCGATTCAGC  1 
+VV20201_p-258(fruR)      (    1) GCTGAACCGATTCAGC  1 
+VV20200_p-215(fruB)      (    1) GCTGAATCGGTTCAGC  1 
+VCA0519_p-237(fruR)      (    1) GCTGAATCGGTTCAGC  1 
+VCA0518_p-117(fruB)      (    1) GCTGAACCGATTCAGC  1 
+PBPRA1572_p-116(fruR)    (    1) ACTGAATCGTTTCAGC  1 
+PBPRA1573_p-240(fruB)    (    1) GCTGAAACGATTCAGT  1 
+VAS14_01976_p-173(fruR)  (    1) ACTGAATCGTTTCAGC  1 
+VAS14_01981_p-149(fruB)  (    1) GCTGAAACGATTCAGT  1 
+VSAL_II0089_p-88(fruR)   (    1) ACTGAAACGATTCAGC  1 
+VSAL_II0090_p-198(fruB)  (    1) GCTGAATCGTTTCAGT  1 
+VSAL_II0089_p-110(fruR)  (    1) GCTGAATCCTTTCAGC  1 
+VSAL_II0090_p-176(fruB)  (    1) GCTGAAAGGATTCAGC  1 
+VF_A0943_p-111(fruR)     (    1) GCTGAATCCTTTCAGC  1 
+VF_A0942_p-190(fruB)     (    1) GCTGAAAGGATTCAGC  1 
+VS_II1032_p-298(fruB)    (    1) GCTGAAAGGATTCAGC  1 
+VS_II1031_p50(fruR)      (    1) GCTGAATCCTTTCAGC  1 
+VSAK1_22774_p-106(fruR)  (    1) GCTGAATCCTTTCAGC  1 
+VSAK1_22769_p-221(fruB)  (    1) GCTGAAAGGATTCAGC  1 
+VPA0814_p-108(fruR)      (    1) GCTGAATCCTTTCAGC  1 
+VPA0813_p-272(fruB)      (    1) GCTGAAAGGATTCAGC  1 
+VIBHAR_05957_p-108(fruR) (    1) GCTGAATCCTTTCAGC  1 
+VIBHAR_05958_p-302(fruB) (    1) GCTGAAAGGATTCAGC  1 
+VV20201_p-108(fruR)      (    1) GCTGAATCCTTTCAGC  1 
+VV20200_p-365(fruB)      (    1) GCTGAAAGGATTCAGC  1 
+VCA0519_p-110(fruR)      (    1) GCTGAATCCTTTCAGC  1 
+VCA0518_p-244(fruB)      (    1) GCTGAAAGGATTCAGC  1 
+VSAK1_22769_p-243(fruB)  (    1) GCTGAATCGGTTCAGT  1 
+VSAK1_22774_p-84(fruR)   (    1) ACTGAACCGATTCAGC  1 
+VPA0814_p-86(fruR)       (    1) ACTGAATCGGTTCAGC  1 
+VPA0813_p-294(fruB)      (    1) GCTGAACCGATTCAGT  1 
+VIBHAR_05957_p-86(fruR)  (    1) ACTGAATCGGTTCAGC  1 
+VIBHAR_05958_p-324(fruB) (    1) GCTGAACCGATTCAGT  1 
+PBPRA1572_p-138(fruR)    (    1) GCTGAAACCTTTCAGC  1 
+PBPRA1573_p-218(fruB)    (    1) GCTGAAAGGTTTCAGC  1 
+VAS14_01976_p-195(fruR)  (    1) GCTGAAACCTTTCAGT  1 
+VAS14_01981_p-127(fruB)  (    1) ACTGAAAGGTTTCAGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 60 bayes= 1.77052 E= 1.3e-438 
+   -15  -1255    167  -1255 
+ -1255    205  -1255  -1255 
+ -1255  -1255  -1255    195 
+ -1255  -1255    205  -1255 
+   195  -1255  -1255  -1255 
+   195  -1255  -1255  -1255 
+    22   -127  -1255    122 
+ -1255    179    -54  -1255 
+ -1255    -54    179  -1255 
+   122  -1255   -127     22 
+ -1255  -1255  -1255    195 
+ -1255  -1255  -1255    195 
+ -1255    205  -1255  -1255 
+   195  -1255  -1255  -1255 
+ -1255  -1255    205  -1255 
+ -1255    167  -1255    -15 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 60 E= 1.3e-438 
+ 0.233333  0.000000  0.766667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.300000  0.100000  0.000000  0.600000 
+ 0.000000  0.833333  0.166667  0.000000 
+ 0.000000  0.166667  0.833333  0.000000 
+ 0.600000  0.000000  0.100000  0.300000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.766667  0.000000  0.233333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]CTGAA[TA]CG[AT]TTCAG[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0518_p-266(fruB)              1.19e-09  [+1(1.19e-09)]
+VCA0518_p-244(fruB)              4.22e-09  [+1(4.22e-09)]
+VCA0518_p-117(fruB)              2.31e-09  [+1(2.31e-09)]
+VCA0519_p-237(fruR)              2.31e-09  [+1(2.31e-09)]
+VCA0519_p-110(fruR)              4.22e-09  [+1(4.22e-09)]
+VCA0519_p-88(fruR)               1.19e-09  [+1(1.19e-09)]
+VV20200_p-365(fruB)              4.22e-09  [+1(4.22e-09)]
+VV20200_p-387(fruB)              1.19e-09  [+1(1.19e-09)]
+VV20200_p-215(fruB)              2.31e-09  [+1(2.31e-09)]
+VV20201_p-258(fruR)              2.31e-09  [+1(2.31e-09)]
+VV20201_p-108(fruR)              4.22e-09  [+1(4.22e-09)]
+VV20201_p-86(fruR)               1.19e-09  [+1(1.19e-09)]
+VIBHAR_05958_p-324(fruB)         7.32e-09  [+1(7.32e-09)]
+VIBHAR_05958_p-302(fruB)         4.22e-09  [+1(4.22e-09)]
+VIBHAR_05958_p-144(fruB)         2.31e-10  [+1(2.31e-10)]
+VIBHAR_05957_p-266(fruR)         2.31e-10  [+1(2.31e-10)]
+VIBHAR_05957_p-108(fruR)         4.22e-09  [+1(4.22e-09)]
+VIBHAR_05957_p-86(fruR)          7.32e-09  [+1(7.32e-09)]
+VPA0813_p-294(fruB)              7.32e-09  [+1(7.32e-09)]
+VPA0813_p-272(fruB)              4.22e-09  [+1(4.22e-09)]
+VPA0813_p-114(fruB)              1.19e-09  [+1(1.19e-09)]
+VPA0814_p-266(fruR)              1.19e-09  [+1(1.19e-09)]
+VPA0814_p-108(fruR)              4.22e-09  [+1(4.22e-09)]
+VPA0814_p-86(fruR)               7.32e-09  [+1(7.32e-09)]
+VSAK1_22774_p-84(fruR)           7.32e-09  [+1(7.32e-09)]
+VSAK1_22769_p-243(fruB)          7.32e-09  [+1(7.32e-09)]
+VSAK1_22769_p-221(fruB)          4.22e-09  [+1(4.22e-09)]
+VSAK1_22769_p-75(fruB)           1.19e-09  [+1(1.19e-09)]
+VSAK1_22774_p-252(fruR)          1.19e-09  [+1(1.19e-09)]
+VSAK1_22774_p-106(fruR)          4.22e-09  [+1(4.22e-09)]
+VS_II1031_p72(fruR)              1.19e-09  [+1(1.19e-09)]
+VS_II1031_p50(fruR)              4.22e-09  [+1(4.22e-09)]
+VS_II1032_p-320(fruB)            1.19e-09  [+1(1.19e-09)]
+VS_II1032_p-298(fruB)            4.22e-09  [+1(4.22e-09)]
+VS_II1032_p-109(fruB)            2.31e-09  [+1(2.31e-09)]
+VS_II1031_p-139(fruR)            2.31e-09  [+1(2.31e-09)]
+VF_A0942_p-212(fruB)             1.19e-09  [+1(1.19e-09)]
+VF_A0942_p-190(fruB)             4.22e-09  [+1(4.22e-09)]
+VF_A0942_p-81(fruB)              1.19e-09  [+1(1.19e-09)]
+VF_A0943_p-220(fruR)             1.19e-09  [+1(1.19e-09)]
+VF_A0943_p-111(fruR)             4.22e-09  [+1(4.22e-09)]
+VF_A0943_p-89(fruR)              1.19e-09  [+1(1.19e-09)]
+VSAL_II0090_p-198(fruB)          3.30e-09  [+1(3.30e-09)]
+VSAL_II0090_p-176(fruB)          4.22e-09  [+1(4.22e-09)]
+VSAL_II0090_p-70(fruB)           6.93e-10  [+1(6.93e-10)]
+VSAL_II0089_p-216(fruR)          6.93e-10  [+1(6.93e-10)]
+VSAL_II0089_p-110(fruR)          4.22e-09  [+1(4.22e-09)]
+VSAL_II0089_p-88(fruR)           3.30e-09  [+1(3.30e-09)]
+VAS14_01981_p-127(fruB)          1.61e-08  [+1(1.61e-08)]
+VAS14_01976_p-195(fruR)          1.61e-08  [+1(1.61e-08)]
+VAS14_01981_p-52(fruB)           6.93e-10  [+1(6.93e-10)]
+VAS14_01981_p-149(fruB)          3.30e-09  [+1(3.30e-09)]
+VAS14_01976_p-270(fruR)          6.93e-10  [+1(6.93e-10)]
+VAS14_01976_p-173(fruR)          3.30e-09  [+1(3.30e-09)]
+PBPRA1573_p-240(fruB)            3.30e-09  [+1(3.30e-09)]
+PBPRA1573_p-218(fruB)            7.78e-09  [+1(7.78e-09)]
+PBPRA1573_p-151(fruB)            6.93e-10  [+1(6.93e-10)]
+PBPRA1572_p-205(fruR)            6.93e-10  [+1(6.93e-10)]
+PBPRA1572_p-138(fruR)            7.78e-09  [+1(7.78e-09)]
+PBPRA1572_p-116(fruR)            3.30e-09  [+1(3.30e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

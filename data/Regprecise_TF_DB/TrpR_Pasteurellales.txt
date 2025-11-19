@@ -1,0 +1,354 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TrpR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HI0830_p-36(trpR)        1.0000     20  HI0287_p-41(mtr)         1.0000     20  
+HI1547_p-81(aroG)        1.0000     20  HI1430_p-46(COG4221)     1.0000     20  
+HI1387_p-45(trpE)        1.0000     20  NT05HA_1280_p-31(trpR)   1.0000     20  
+NT05HA_0824_p-102(COG422 1.0000     20  NT05HA_0807_p-51(trpE)   1.0000     20  
+NT05HA_1570_p-44(mtr)    1.0000     20  PM0563_p-123(aroG)       1.0000     20  
+PM0581_p-57(trpD)        1.0000     20  PM0578_p-93(trpB)        1.0000     20  
+PM1192_p-61(mtr)         1.0000     20  PM0584_p-51(trpE)        1.0000     20  
+MS1153_p-52(trpB)        1.0000     20  MS1566_p-42(trpR)        1.0000     20  
+MS1184_p-90(aroG)        1.0000     20  MS1895_p1(mtr)           1.0000     20  
+MS1149_p-50(trpE)        1.0000     20  Asuc_1556_p-33(trpR)     1.0000     20  
+Asuc_1478_p-52(trpB)     1.0000     20  Asuc_1428_p-176(aroG)    1.0000     20  
+Asuc_0628_p-44(mtr)      1.0000     20  Asuc_1272_p-46(trpE)     1.0000     20  
+HSM_1416_p-104(aroG)     1.0000     20  HSM_1017_p-29(trpR)      1.0000     20  
+HSM_1315_p-52(trpE)      1.0000     20  HSM_0462_p-49(mtr)       1.0000     20  
+APP7_1221_p-48(trpE)     1.0000     20  APP7_0546_p-47(trpB)     1.0000     20  
+APP7_0666_p-106(aroG)    1.0000     20  HAPS_1997_p-47(trpE)     1.0000     20  
+HAPS_1139_p-26(HAPS_1139 1.0000     20  HAPS_0395_p-52(HAPS_0395 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TrpR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TrpR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       34    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             680    N=              34
+sample: seed=            0    hsfrac=          0
+        searchsize=    680    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.341 C 0.118 G 0.156 T 0.385 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.341 C 0.118 G 0.156 T 0.385 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTACTAGTTTAATAGTRCA MEME-1	width =  20  sites =  34  llr = 616  E-value = 2.5e-222
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :22a::a::21a8:a::4:8
+pos.-specific     C  1:2:a::1::::2::::17:
+probability       G  :8:::::7:::::::a:4:1
+matrix            T  9:6::a:1a79::a::a231
+
+         bits    3.1                     
+                 2.8     *               
+                 2.5     *          *    
+                 2.2     *          *    
+Relative         1.8  *  *          *    
+Entropy          1.5  * ** **   *  **  * 
+(26.1 bits)      1.2  * ******  * **** * 
+                 0.9  * ****** ******* **
+                 0.6 ** ************** **
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TGTACTAGTTTAATAGTACA
+consensus             AC      A       GT 
+sequence               A                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Asuc_1272_p-46(trpE)          1  8.18e-12          . TGTACTAGTTTAATAGTGCA           
+MS1149_p-50(trpE)             1  8.18e-12          . TGTACTAGTTTAATAGTGCA           
+NT05HA_0807_p-51(trpE)        1  8.18e-12          . TGTACTAGTTTAATAGTGCA           
+HI1387_p-45(trpE)             1  1.30e-11          . TGCACTAGTTTAATAGTACA           
+PM0578_p-93(trpB)             1  3.76e-11          . TGAACTAGTTTAATAGTGCA           
+Asuc_1428_p-176(aroG)         1  6.67e-11          . TGAACTAGTTTACTAGTGCA           
+Asuc_1556_p-33(trpR)          1  1.28e-10          . TGCACTAGTTTAATAGTGTA           
+HI0830_p-36(trpR)             1  1.28e-10          . TGCACTAGTTTAATAGTGTA           
+HSM_1315_p-52(trpE)           1  2.98e-10          . CGCACTAGTTTAATAGTTCA           
+Asuc_0628_p-44(mtr)           1  2.98e-10          . TGCACTACTATAATAGTGCA           
+HI1430_p-46(COG4221)          1  2.98e-10          . TGTACTACTTTAATAGTACA           
+APP7_0546_p-47(trpB)          1  4.07e-10          . TGTACTATTTTAATAGTGCA           
+MS1153_p-52(trpB)             1  5.08e-10          . TGTACTAGTTTAATAGTATA           
+HI0287_p-41(mtr)              1  5.08e-10          . TGTACTACTATAATAGTGCA           
+HAPS_1997_p-47(trpE)          1  5.85e-10          . TATACTAGTTTAATAGTACA           
+HI1547_p-81(aroG)             1  7.49e-10          . CGAACTAGTTTACTAGTACA           
+HAPS_0395_p-52(HAPS_0395      1  9.62e-10          . TGTACTATTTTAATAGTACA           
+NT05HA_1280_p-31(trpR)        1  1.06e-09          . CGCACTAGTTTAATAGTATA           
+APP7_1221_p-48(trpE)          1  1.62e-09          . TATACTAGTTTAATAGTACG           
+MS1895_p1(mtr)                1  2.79e-09          . TGTACTACTATAATAGTTCA           
+PM0584_p-51(trpE)             1  3.50e-09          . TAAACTAGTTTAATAGTTCA           
+APP7_0666_p-106(aroG)         1  3.87e-09          . TGTACTAGTAAAATAGTTCA           
+NT05HA_1570_p-44(mtr)         1  5.91e-09          . TGTACTATTATAATAGTCCA           
+PM1192_p-61(mtr)              1  6.59e-09          . TGCACTATTAAAATAGTGCA           
+MS1566_p-42(trpR)             1  9.40e-09          . TATACTAGTTTAATAGTATG           
+HSM_0462_p-49(mtr)            1  1.28e-08          . TGAACTATTATAATAGTTCA           
+Asuc_1478_p-52(trpB)          1  1.28e-08          . TGTACTAGTTAACTAGTATG           
+PM0581_p-57(trpD)             1  1.64e-08          . TGTACTAGTTTAATAGTTTT           
+MS1184_p-90(aroG)             1  2.71e-08          . TGTACTAGTTTACCAATGCA           
+HSM_1017_p-29(trpR)           1  6.11e-08          . TACACTAGTTTAATAGTCAG           
+HAPS_1139_p-26(HAPS_1139      1  6.50e-08          . TGTACTAGTAAAATAGTATT           
+PM0563_p-123(aroG)            1  6.90e-08          . AAAACTAGTTTACTAGTGTA           
+NT05HA_0824_p-102(COG422      1  6.90e-08          . TGTACTAGTGTAGTAGTATG           
+HSM_1416_p-104(aroG)          1  3.00e-07          . GAAATTAGTTTACTAGTACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Asuc_1272_p-46(trpE)              8.2e-12  [+1]
+MS1149_p-50(trpE)                 8.2e-12  [+1]
+NT05HA_0807_p-51(trpE)            8.2e-12  [+1]
+HI1387_p-45(trpE)                 1.3e-11  [+1]
+PM0578_p-93(trpB)                 3.8e-11  [+1]
+Asuc_1428_p-176(aroG)             6.7e-11  [+1]
+Asuc_1556_p-33(trpR)              1.3e-10  [+1]
+HI0830_p-36(trpR)                 1.3e-10  [+1]
+HSM_1315_p-52(trpE)                 3e-10  [+1]
+Asuc_0628_p-44(mtr)                 3e-10  [+1]
+HI1430_p-46(COG4221)                3e-10  [+1]
+APP7_0546_p-47(trpB)              4.1e-10  [+1]
+MS1153_p-52(trpB)                 5.1e-10  [+1]
+HI0287_p-41(mtr)                  5.1e-10  [+1]
+HAPS_1997_p-47(trpE)              5.9e-10  [+1]
+HI1547_p-81(aroG)                 7.5e-10  [+1]
+HAPS_0395_p-52(HAPS_0395          9.6e-10  [+1]
+NT05HA_1280_p-31(trpR)            1.1e-09  [+1]
+APP7_1221_p-48(trpE)              1.6e-09  [+1]
+MS1895_p1(mtr)                    2.8e-09  [+1]
+PM0584_p-51(trpE)                 3.5e-09  [+1]
+APP7_0666_p-106(aroG)             3.9e-09  [+1]
+NT05HA_1570_p-44(mtr)             5.9e-09  [+1]
+PM1192_p-61(mtr)                  6.6e-09  [+1]
+MS1566_p-42(trpR)                 9.4e-09  [+1]
+HSM_0462_p-49(mtr)                1.3e-08  [+1]
+Asuc_1478_p-52(trpB)              1.3e-08  [+1]
+PM0581_p-57(trpD)                 1.6e-08  [+1]
+MS1184_p-90(aroG)                 2.7e-08  [+1]
+HSM_1017_p-29(trpR)               6.1e-08  [+1]
+HAPS_1139_p-26(HAPS_1139          6.5e-08  [+1]
+PM0563_p-123(aroG)                6.9e-08  [+1]
+NT05HA_0824_p-102(COG422          6.9e-08  [+1]
+HSM_1416_p-104(aroG)                3e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTACTAGTTTAATAGTRCA width=20 seqs=34
+Asuc_1272_p-46(trpE)     (    1) TGTACTAGTTTAATAGTGCA  1 
+MS1149_p-50(trpE)        (    1) TGTACTAGTTTAATAGTGCA  1 
+NT05HA_0807_p-51(trpE)   (    1) TGTACTAGTTTAATAGTGCA  1 
+HI1387_p-45(trpE)        (    1) TGCACTAGTTTAATAGTACA  1 
+PM0578_p-93(trpB)        (    1) TGAACTAGTTTAATAGTGCA  1 
+Asuc_1428_p-176(aroG)    (    1) TGAACTAGTTTACTAGTGCA  1 
+Asuc_1556_p-33(trpR)     (    1) TGCACTAGTTTAATAGTGTA  1 
+HI0830_p-36(trpR)        (    1) TGCACTAGTTTAATAGTGTA  1 
+HSM_1315_p-52(trpE)      (    1) CGCACTAGTTTAATAGTTCA  1 
+Asuc_0628_p-44(mtr)      (    1) TGCACTACTATAATAGTGCA  1 
+HI1430_p-46(COG4221)     (    1) TGTACTACTTTAATAGTACA  1 
+APP7_0546_p-47(trpB)     (    1) TGTACTATTTTAATAGTGCA  1 
+MS1153_p-52(trpB)        (    1) TGTACTAGTTTAATAGTATA  1 
+HI0287_p-41(mtr)         (    1) TGTACTACTATAATAGTGCA  1 
+HAPS_1997_p-47(trpE)     (    1) TATACTAGTTTAATAGTACA  1 
+HI1547_p-81(aroG)        (    1) CGAACTAGTTTACTAGTACA  1 
+HAPS_0395_p-52(HAPS_0395 (    1) TGTACTATTTTAATAGTACA  1 
+NT05HA_1280_p-31(trpR)   (    1) CGCACTAGTTTAATAGTATA  1 
+APP7_1221_p-48(trpE)     (    1) TATACTAGTTTAATAGTACG  1 
+MS1895_p1(mtr)           (    1) TGTACTACTATAATAGTTCA  1 
+PM0584_p-51(trpE)        (    1) TAAACTAGTTTAATAGTTCA  1 
+APP7_0666_p-106(aroG)    (    1) TGTACTAGTAAAATAGTTCA  1 
+NT05HA_1570_p-44(mtr)    (    1) TGTACTATTATAATAGTCCA  1 
+PM1192_p-61(mtr)         (    1) TGCACTATTAAAATAGTGCA  1 
+MS1566_p-42(trpR)        (    1) TATACTAGTTTAATAGTATG  1 
+HSM_0462_p-49(mtr)       (    1) TGAACTATTATAATAGTTCA  1 
+Asuc_1478_p-52(trpB)     (    1) TGTACTAGTTAACTAGTATG  1 
+PM0581_p-57(trpD)        (    1) TGTACTAGTTTAATAGTTTT  1 
+MS1184_p-90(aroG)        (    1) TGTACTAGTTTACCAATGCA  1 
+HSM_1017_p-29(trpR)      (    1) TACACTAGTTTAATAGTCAG  1 
+HAPS_1139_p-26(HAPS_1139 (    1) TGTACTAGTAAAATAGTATT  1 
+PM0563_p-123(aroG)       (    1) AAAACTAGTTTACTAGTGTA  1 
+NT05HA_0824_p-102(COG422 (    1) TGTACTAGTGTAGTAGTATG  1 
+HSM_1416_p-104(aroG)     (    1) GAAATTAGTTTACTAGTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 34 bayes= 1.60768 E= 2.5e-222 
+  -353    -42   -241    115 
+   -73  -1173    234  -1173 
+   -73     99  -1173     54 
+   155  -1173  -1173  -1173 
+ -1173    303  -1173   -370 
+ -1173  -1173  -1173    138 
+   155  -1173  -1173  -1173 
+ -1173     -1    223   -139 
+ -1173  -1173  -1173    138 
+   -53  -1173   -241     94 
+  -153  -1173  -1173    120 
+   155  -1173  -1173  -1173 
+   122     58   -241  -1173 
+ -1173   -201  -1173    134 
+   155  -1173  -1173  -1173 
+  -353  -1173    263  -1173 
+ -1173  -1173  -1173    138 
+    17   -101    129   -112 
+  -353    251  -1173    -39 
+   122  -1173     -9   -271 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 34 E= 2.5e-222 
+ 0.029412  0.088235  0.029412  0.852941 
+ 0.205882  0.000000  0.794118  0.000000 
+ 0.205882  0.235294  0.000000  0.558824 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.970588  0.000000  0.029412 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.117647  0.735294  0.147059 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.235294  0.000000  0.029412  0.735294 
+ 0.117647  0.000000  0.000000  0.882353 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.794118  0.176471  0.029412  0.000000 
+ 0.000000  0.029412  0.000000  0.970588 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.029412  0.000000  0.970588  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.382353  0.058824  0.382353  0.176471 
+ 0.029412  0.676471  0.000000  0.294118 
+ 0.794118  0.000000  0.147059  0.058824 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTACTAGTTTAATAGTRCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GA][TCA]ACTAGT[TA]TAATAGT[AG][CT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HI0830_p-36(trpR)                1.28e-10  [+1(1.28e-10)]
+HI0287_p-41(mtr)                 5.08e-10  [+1(5.08e-10)]
+HI1547_p-81(aroG)                7.49e-10  [+1(7.49e-10)]
+HI1430_p-46(COG4221)             2.98e-10  [+1(2.98e-10)]
+HI1387_p-45(trpE)                1.30e-11  [+1(1.30e-11)]
+NT05HA_1280_p-31(trpR)           1.06e-09  [+1(1.06e-09)]
+NT05HA_0824_p-102(COG422         6.90e-08  [+1(6.90e-08)]
+NT05HA_0807_p-51(trpE)           8.18e-12  [+1(8.18e-12)]
+NT05HA_1570_p-44(mtr)            5.91e-09  [+1(5.91e-09)]
+PM0563_p-123(aroG)               6.90e-08  [+1(6.90e-08)]
+PM0581_p-57(trpD)                1.64e-08  [+1(1.64e-08)]
+PM0578_p-93(trpB)                3.76e-11  [+1(3.76e-11)]
+PM1192_p-61(mtr)                 6.59e-09  [+1(6.59e-09)]
+PM0584_p-51(trpE)                3.50e-09  [+1(3.50e-09)]
+MS1153_p-52(trpB)                5.08e-10  [+1(5.08e-10)]
+MS1566_p-42(trpR)                9.40e-09  [+1(9.40e-09)]
+MS1184_p-90(aroG)                2.71e-08  [+1(2.71e-08)]
+MS1895_p1(mtr)                   2.79e-09  [+1(2.79e-09)]
+MS1149_p-50(trpE)                8.18e-12  [+1(8.18e-12)]
+Asuc_1556_p-33(trpR)             1.28e-10  [+1(1.28e-10)]
+Asuc_1478_p-52(trpB)             1.28e-08  [+1(1.28e-08)]
+Asuc_1428_p-176(aroG)            6.67e-11  [+1(6.67e-11)]
+Asuc_0628_p-44(mtr)              2.98e-10  [+1(2.98e-10)]
+Asuc_1272_p-46(trpE)             8.18e-12  [+1(8.18e-12)]
+HSM_1416_p-104(aroG)             3.00e-07  [+1(3.00e-07)]
+HSM_1017_p-29(trpR)              6.11e-08  [+1(6.11e-08)]
+HSM_1315_p-52(trpE)              2.98e-10  [+1(2.98e-10)]
+HSM_0462_p-49(mtr)               1.28e-08  [+1(1.28e-08)]
+APP7_1221_p-48(trpE)             1.62e-09  [+1(1.62e-09)]
+APP7_0546_p-47(trpB)             4.07e-10  [+1(4.07e-10)]
+APP7_0666_p-106(aroG)            3.87e-09  [+1(3.87e-09)]
+HAPS_1997_p-47(trpE)             5.85e-10  [+1(5.85e-10)]
+HAPS_1139_p-26(HAPS_1139         6.50e-08  [+1(6.50e-08)]
+HAPS_0395_p-52(HAPS_0395         9.62e-10  [+1(9.62e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

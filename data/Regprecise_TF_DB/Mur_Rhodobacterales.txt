@@ -1,0 +1,323 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Mur_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_0904_p-40(sitA)      1.0000     19  Pden_1260_p-35(mur)      1.0000     19  
+Pden_1259_p-89(sitA)     1.0000     19  Pden_1259_p-60(sitA)     1.0000     19  
+Pden_1260_p-64(mur)      1.0000     19  Jann_2080_p-88(sitA)     1.0000     19  
+Jann_2080_p-58(sitA)     1.0000     19  RB2654_19543_p-117(sitA) 1.0000     19  
+RB2654_19538_p-79(mur)   1.0000     19  RB2654_19538_p-127(mur)  1.0000     19  
+RB2654_19543_p-165(sitA) 1.0000     19  OG2516_13601_p-39(mntX)  1.0000     19  
+SKA53_08116_p-63(sitA)   1.0000     19  OB2597_13568_p-91(sitA)  1.0000     19  
+OB2597_13568_p-60(sitA)  1.0000     19  ISM_02005_p-29(mntX)     1.0000     19  
+ROS217_05129_p-28(sitA)  1.0000     19  EE36_12418_p-110(sitA)   1.0000     19  
+EE36_12413_p-109(mur)    1.0000     19  TM1040_0098_p-95(sitA)   1.0000     19  
+TM1040_0098_p-64(sitA)   1.0000     19  TM1040_0183_p-75(irr)    1.0000     19  
+SPO3366_p-84(sitA)       1.0000     19  SPOA0445_p-76(irr)       1.0000     19  
+SPO3366_p-53(sitA)       1.0000     19  MED193_12968_p-56(sitA)  1.0000     19  
+MED193_12968_p-87(sitA)  1.0000     19  MED193_17849_p-40(irr)   1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Mur_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Mur_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             532    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    532    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.282 C 0.188 G 0.201 T 0.329 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.282 C 0.188 G 0.201 T 0.328 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTTGCGAATVATTCKCAW MEME-1	width =  18  sites =  28  llr = 411  E-value = 6.4e-132
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  22::23a8:361::::a4
+pos.-specific     C  1:::8::11311:8:a::
+probability       G  51:a:8::1321::6::1
+matrix            T  27a::::191:7a24::5
+
+         bits    2.4    *              
+                 2.2    *           *  
+                 1.9    *  *        ** 
+                 1.7   **  *        ** 
+Relative         1.4   *****     ** ** 
+Entropy          1.2   *****     ** ** 
+(21.2 bits)      1.0   *******   ***** 
+                 0.7   ******* * ***** 
+                 0.5 ********* ******* 
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           GTTGCGAATGATTCGCAT
+consensus            T   AA   AG  TT  A
+sequence                      C        
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+OB2597_13568_p-60(sitA)       1  1.19e-10          . GTTGCGAATGGTTCGCAT C         
+OB2597_13568_p-91(sitA)       1  1.19e-10          . GTTGCGAATGGTTCGCAT T         
+ROS217_05129_p-28(sitA)       1  3.59e-10          . GTTGCGAATAATTCTCAT A         
+SPO3366_p-53(sitA)            1  7.03e-10          . GTTGCGAATGGTTCTCAT A         
+MED193_12968_p-87(sitA)       1  6.95e-09          . GTTGAGAATAATTCTCAT T         
+OG2516_13601_p-39(mntX)       1  1.02e-08          . ATTGCGAATTATTCGCAA T         
+MED193_12968_p-56(sitA)       1  1.17e-08          . GTTGAGAATCGTTCTCAT A         
+SPO3366_p-84(sitA)            1  1.32e-08          . CTTGCGAATAATTCTCAA T         
+TM1040_0098_p-64(sitA)        1  1.68e-08          . GTTGCGAAGCGTTCTCAT A         
+Jann_2080_p-58(sitA)          1  1.89e-08          . CTTGCGAATAAGTCGCAT A         
+ISM_02005_p-29(mntX)          1  2.14e-08          . ATTGAGAATAATTCGCAA T         
+SKA53_08116_p-63(sitA)        1  2.14e-08          . GTTGCGAACGCTTCTCAT T         
+RB2654_19538_p-127(mur)       1  2.14e-08          . GTTGCGAATGAATTGCAA C         
+RB2654_19543_p-117(sitA)      1  2.38e-08          . GTTGCAATTCATTCGCAA C         
+Pden_1259_p-60(sitA)          1  2.38e-08          . GTTGAGAATGGTTCGCAG A         
+RSP_0904_p-40(sitA)           1  3.34e-08          . TTTGCGAATGCCTCGCAT T         
+EE36_12418_p-110(sitA)        1  8.40e-08          . TATGCGACTAATTCGCAT T         
+RB2654_19543_p-165(sitA)      1  1.12e-07          . GTTGCAAATGATTTGCAC T         
+EE36_12413_p-109(mur)         1  1.47e-07          . AATGCGAATTAGTCGCAT A         
+TM1040_0098_p-95(sitA)        1  2.45e-07          . TGTGAGAATAATTCTCAT T         
+Pden_1260_p-35(mur)           1  2.66e-07          . GTTGCAATTTCTTCGCAT C         
+RB2654_19538_p-79(mur)        1  4.22e-07          . AGTGCAAATCATTTGCAA C         
+Jann_2080_p-88(sitA)          1  4.22e-07          . TTTGCAACTCACTCGCAA G         
+Pden_1260_p-64(mur)           1  4.22e-07          . TCTGCGAACCATTCTCAA C         
+Pden_1259_p-89(sitA)          1  6.95e-07          . GATGCGAAGAAATTGCAA C         
+MED193_17849_p-40(irr)        1  8.49e-07          . AATGCAATTCATTCGCAG T         
+SPOA0445_p-76(irr)            1  3.82e-06          . GATGAGAATGAAATTCAT T         
+TM1040_0183_p-75(irr)         1  6.70e-06          . TTTGCAAATCCGTTTGAA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OB2597_13568_p-60(sitA)           1.2e-10  [+1]_1
+OB2597_13568_p-91(sitA)           1.2e-10  [+1]_1
+ROS217_05129_p-28(sitA)           3.6e-10  [+1]_1
+SPO3366_p-53(sitA)                  7e-10  [+1]_1
+MED193_12968_p-87(sitA)           6.9e-09  [+1]_1
+OG2516_13601_p-39(mntX)             1e-08  [+1]_1
+MED193_12968_p-56(sitA)           1.2e-08  [+1]_1
+SPO3366_p-84(sitA)                1.3e-08  [+1]_1
+TM1040_0098_p-64(sitA)            1.7e-08  [+1]_1
+Jann_2080_p-58(sitA)              1.9e-08  [+1]_1
+ISM_02005_p-29(mntX)              2.1e-08  [+1]_1
+SKA53_08116_p-63(sitA)            2.1e-08  [+1]_1
+RB2654_19538_p-127(mur)           2.1e-08  [+1]_1
+RB2654_19543_p-117(sitA)          2.4e-08  [+1]_1
+Pden_1259_p-60(sitA)              2.4e-08  [+1]_1
+RSP_0904_p-40(sitA)               3.3e-08  [+1]_1
+EE36_12418_p-110(sitA)            8.4e-08  [+1]_1
+RB2654_19543_p-165(sitA)          1.1e-07  [+1]_1
+EE36_12413_p-109(mur)             1.5e-07  [+1]_1
+TM1040_0098_p-95(sitA)            2.5e-07  [+1]_1
+Pden_1260_p-35(mur)               2.7e-07  [+1]_1
+RB2654_19538_p-79(mur)            4.2e-07  [+1]_1
+Jann_2080_p-88(sitA)              4.2e-07  [+1]_1
+Pden_1260_p-64(mur)               4.2e-07  [+1]_1
+Pden_1259_p-89(sitA)              6.9e-07  [+1]_1
+MED193_17849_p-40(irr)            8.5e-07  [+1]_1
+SPOA0445_p-76(irr)                3.8e-06  [+1]_1
+TM1040_0183_p-75(irr)             6.7e-06  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTTGCGAATVATTCKCAW width=18 seqs=28
+OB2597_13568_p-60(sitA)  (    1) GTTGCGAATGGTTCGCAT  1 
+OB2597_13568_p-91(sitA)  (    1) GTTGCGAATGGTTCGCAT  1 
+ROS217_05129_p-28(sitA)  (    1) GTTGCGAATAATTCTCAT  1 
+SPO3366_p-53(sitA)       (    1) GTTGCGAATGGTTCTCAT  1 
+MED193_12968_p-87(sitA)  (    1) GTTGAGAATAATTCTCAT  1 
+OG2516_13601_p-39(mntX)  (    1) ATTGCGAATTATTCGCAA  1 
+MED193_12968_p-56(sitA)  (    1) GTTGAGAATCGTTCTCAT  1 
+SPO3366_p-84(sitA)       (    1) CTTGCGAATAATTCTCAA  1 
+TM1040_0098_p-64(sitA)   (    1) GTTGCGAAGCGTTCTCAT  1 
+Jann_2080_p-58(sitA)     (    1) CTTGCGAATAAGTCGCAT  1 
+ISM_02005_p-29(mntX)     (    1) ATTGAGAATAATTCGCAA  1 
+SKA53_08116_p-63(sitA)   (    1) GTTGCGAACGCTTCTCAT  1 
+RB2654_19538_p-127(mur)  (    1) GTTGCGAATGAATTGCAA  1 
+RB2654_19543_p-117(sitA) (    1) GTTGCAATTCATTCGCAA  1 
+Pden_1259_p-60(sitA)     (    1) GTTGAGAATGGTTCGCAG  1 
+RSP_0904_p-40(sitA)      (    1) TTTGCGAATGCCTCGCAT  1 
+EE36_12418_p-110(sitA)   (    1) TATGCGACTAATTCGCAT  1 
+RB2654_19543_p-165(sitA) (    1) GTTGCAAATGATTTGCAC  1 
+EE36_12413_p-109(mur)    (    1) AATGCGAATTAGTCGCAT  1 
+TM1040_0098_p-95(sitA)   (    1) TGTGAGAATAATTCTCAT  1 
+Pden_1260_p-35(mur)      (    1) GTTGCAATTTCTTCGCAT  1 
+RB2654_19538_p-79(mur)   (    1) AGTGCAAATCATTTGCAA  1 
+Jann_2080_p-88(sitA)     (    1) TTTGCAACTCACTCGCAA  1 
+Pden_1260_p-64(mur)      (    1) TCTGCGAACCATTCTCAA  1 
+Pden_1259_p-89(sitA)     (    1) GATGCGAAGAAATTGCAA  1 
+MED193_17849_p-40(irr)   (    1) AATGCAATTCATTCGCAG  1 
+SPOA0445_p-76(irr)       (    1) GATGAGAATGAAATTCAT  1 
+TM1040_0183_p-75(irr)    (    1) TTTGCAAATCCGTTTGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 56 bayes= 2.76081 E= 6.4e-132 
+   -66   -140    141    -62 
+   -66   -240   -150    112 
+ -1145  -1145  -1145    161 
+ -1145  -1145    231  -1145 
+   -39    206  -1145  -1145 
+   -17  -1145    190  -1145 
+   183  -1145  -1145  -1145 
+   154   -140  -1145   -161 
+ -1145   -140   -150    138 
+     2     60     67   -161 
+   119    -40      9  -1145 
+  -139   -140    -91    112 
+  -298  -1145  -1145    155 
+ -1145    206  -1145    -62 
+ -1145  -1145    159     26 
+ -1145    235   -249  -1145 
+   183  -1145  -1145  -1145 
+    34   -240   -150     71 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 28 E= 6.4e-132 
+ 0.178571  0.071429  0.535714  0.214286 
+ 0.178571  0.035714  0.071429  0.714286 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.214286  0.785714  0.000000  0.000000 
+ 0.250000  0.000000  0.750000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.821429  0.071429  0.000000  0.107143 
+ 0.000000  0.071429  0.071429  0.857143 
+ 0.285714  0.285714  0.321429  0.107143 
+ 0.642857  0.142857  0.214286  0.000000 
+ 0.107143  0.071429  0.107143  0.714286 
+ 0.035714  0.000000  0.000000  0.964286 
+ 0.000000  0.785714  0.000000  0.214286 
+ 0.000000  0.000000  0.607143  0.392857 
+ 0.000000  0.964286  0.035714  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.357143  0.035714  0.071429  0.535714 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCGAATVATTCKCAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT]TTG[CA][GA]AAT[GAC][AG]TT[CT][GT]CA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_0904_p-40(sitA)              6.68e-08  [+1(3.34e-08)]_1
+Pden_1260_p-35(mur)              5.32e-07  [+1(2.66e-07)]_1
+Pden_1259_p-89(sitA)             1.39e-06  [+1(6.95e-07)]_1
+Pden_1259_p-60(sitA)             4.76e-08  [+1(2.38e-08)]_1
+Pden_1260_p-64(mur)              8.45e-07  [+1(4.22e-07)]_1
+Jann_2080_p-88(sitA)             8.45e-07  [+1(4.22e-07)]_1
+Jann_2080_p-58(sitA)             3.78e-08  [+1(1.89e-08)]_1
+RB2654_19543_p-117(sitA)         4.76e-08  [+1(2.38e-08)]_1
+RB2654_19538_p-79(mur)           8.45e-07  [+1(4.22e-07)]_1
+RB2654_19538_p-127(mur)          4.28e-08  [+1(2.14e-08)]_1
+RB2654_19543_p-165(sitA)         2.23e-07  [+1(1.12e-07)]_1
+OG2516_13601_p-39(mntX)          2.05e-08  [+1(1.02e-08)]_1
+SKA53_08116_p-63(sitA)           4.28e-08  [+1(2.14e-08)]_1
+OB2597_13568_p-91(sitA)          2.38e-10  [+1(1.19e-10)]_1
+OB2597_13568_p-60(sitA)          2.38e-10  [+1(1.19e-10)]_1
+ISM_02005_p-29(mntX)             4.28e-08  [+1(2.14e-08)]_1
+ROS217_05129_p-28(sitA)          7.17e-10  [+1(3.59e-10)]_1
+EE36_12418_p-110(sitA)           1.68e-07  [+1(8.40e-08)]_1
+EE36_12413_p-109(mur)            2.93e-07  [+1(1.47e-07)]_1
+TM1040_0098_p-95(sitA)           4.90e-07  [+1(2.45e-07)]_1
+TM1040_0098_p-64(sitA)           3.35e-08  [+1(1.68e-08)]_1
+TM1040_0183_p-75(irr)            1.34e-05  [+1(6.70e-06)]_1
+SPO3366_p-84(sitA)               2.63e-08  [+1(1.32e-08)]_1
+SPOA0445_p-76(irr)               7.63e-06  [+1(3.82e-06)]_1
+SPO3366_p-53(sitA)               1.41e-09  [+1(7.03e-10)]_1
+MED193_12968_p-56(sitA)          2.34e-08  [+1(1.17e-08)]_1
+MED193_12968_p-87(sitA)          1.39e-08  [+1(6.95e-09)]_1
+MED193_17849_p-40(irr)           1.70e-06  [+1(8.49e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

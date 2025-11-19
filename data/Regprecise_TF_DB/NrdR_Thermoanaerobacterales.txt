@@ -1,0 +1,274 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/NrdR_Thermoanaerobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Athe_0548_p-127(nrdD)    1.0000     16  Athe_0548_p-95(nrdD)     1.0000     16  
+Csac_0774_p-83(nrdD)     1.0000     16  Csac_0774_p-115(nrdD)    1.0000     16  
+CHY_2052_p-28(nrdR)      1.0000     16  CHY_2052_p-60(nrdR)      1.0000     16  
+Teth514_0821_p-41(nrdJ)  1.0000     16  Teth514_0821_p-72(nrdJ)  1.0000     16  
+Teth514_1144_p-378(nrdD) 1.0000     16  Teth514_1144_p-347(nrdD) 1.0000     16  
+Thit_2029_p-72(nrdJ)     1.0000     16  Thit_2029_p-41(nrdJ)     1.0000     16  
+Thit_1661_p-378(nrdD)    1.0000     16  Thit_1661_p-347(nrdD)    1.0000     16  
+TTE2336_p-139(nrdJ)      1.0000     16  TTE2336_p-171(nrdJ)      1.0000     16  
+TTE1850_p-88(nrdD)       1.0000     16  TTE1850_p-57(nrdD)       1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/NrdR_Thermoanaerobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/NrdR_Thermoanaerobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             288    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    288    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.417 C 0.111 G 0.142 T 0.33 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.414 C 0.113 G 0.144 T 0.329 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AYACWAWATATTGTRK MEME-1	width =  16  sites =  18  llr = 232  E-value = 1.6e-070
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:a:7a4a2822:13:
+pos.-specific     C  26:9::1::::::::1
+probability       G  ::::::1:::::a274
+matrix            T  :4:13:5:8288:8:6
+
+         bits    3.1                 
+                 2.8             *   
+                 2.5    *        *   
+                 2.2    *        *   
+Relative         1.9    *        *   
+Entropy          1.6  * *        *   
+(18.6 bits)      1.3  *** * *    * * 
+                 0.9 **** * ** * ****
+                 0.6 **** * *********
+                 0.3 ****** *********
+                 0.0 ----------------
+
+Multilevel           ACACAATATATTGTGT
+consensus             T  T A    A  AG
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Teth514_0821_p-41(nrdJ)       1  4.15e-09          . ACACAAAATATTGTGG           
+Thit_2029_p-41(nrdJ)          1  1.25e-08          . CCACAAAATATTGTGT           
+Csac_0774_p-83(nrdD)          1  1.64e-08          . ACACAATATATAGTGG           
+Athe_0548_p-95(nrdD)          1  1.64e-08          . ACACAATATATAGTGG           
+TTE2336_p-139(nrdJ)           1  1.02e-07          . ATACAAAATATTGTGT           
+CHY_2052_p-28(nrdR)           1  1.92e-07          . ACACAAAATATAGGGT           
+Thit_1661_p-347(nrdD)         1  3.18e-07          . ACACTATATTTTGTAG           
+Thit_1661_p-378(nrdD)         1  3.18e-07          . ATACTAAATATTGGGT           
+Teth514_1144_p-347(nrdD)      1  3.18e-07          . ACACTATATTTTGTAG           
+Teth514_1144_p-378(nrdD)      1  3.18e-07          . ATACTAAATATTGGGT           
+TTE1850_p-57(nrdD)            1  6.57e-07          . CTACTATATTTTGTGT           
+CHY_2052_p-60(nrdR)           1  9.21e-07          . ACACAAGATATAGTAG           
+Csac_0774_p-115(nrdD)         1  1.61e-06          . ATATAATATATTGTGT           
+TTE1850_p-88(nrdD)            1  1.73e-06          . ATACTAAATATTGAGG           
+Thit_2029_p-72(nrdJ)          1  2.78e-06          . ACACAATAAAATGTAT           
+Teth514_0821_p-72(nrdJ)       1  3.38e-06          . CCACAATAAAATGTAT           
+Athe_0548_p-127(nrdD)         1  4.02e-06          . ATATAATATATTGTGC           
+TTE2336_p-171(nrdJ)           1  5.95e-06          . ACACAACAAAATGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Teth514_0821_p-41(nrdJ)           4.2e-09  [+1]
+Thit_2029_p-41(nrdJ)              1.2e-08  [+1]
+Csac_0774_p-83(nrdD)              1.6e-08  [+1]
+Athe_0548_p-95(nrdD)              1.6e-08  [+1]
+TTE2336_p-139(nrdJ)                 1e-07  [+1]
+CHY_2052_p-28(nrdR)               1.9e-07  [+1]
+Thit_1661_p-347(nrdD)             3.2e-07  [+1]
+Thit_1661_p-378(nrdD)             3.2e-07  [+1]
+Teth514_1144_p-347(nrdD)          3.2e-07  [+1]
+Teth514_1144_p-378(nrdD)          3.2e-07  [+1]
+TTE1850_p-57(nrdD)                6.6e-07  [+1]
+CHY_2052_p-60(nrdR)               9.2e-07  [+1]
+Csac_0774_p-115(nrdD)             1.6e-06  [+1]
+TTE1850_p-88(nrdD)                1.7e-06  [+1]
+Thit_2029_p-72(nrdJ)              2.8e-06  [+1]
+Teth514_0821_p-72(nrdJ)           3.4e-06  [+1]
+Athe_0548_p-127(nrdD)               4e-06  [+1]
+TTE2336_p-171(nrdJ)                 6e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AYACWAWATATTGTRK width=16 seqs=18
+Teth514_0821_p-41(nrdJ)  (    1) ACACAAAATATTGTGG  1 
+Thit_2029_p-41(nrdJ)     (    1) CCACAAAATATTGTGT  1 
+Csac_0774_p-83(nrdD)     (    1) ACACAATATATAGTGG  1 
+Athe_0548_p-95(nrdD)     (    1) ACACAATATATAGTGG  1 
+TTE2336_p-139(nrdJ)      (    1) ATACAAAATATTGTGT  1 
+CHY_2052_p-28(nrdR)      (    1) ACACAAAATATAGGGT  1 
+Thit_1661_p-347(nrdD)    (    1) ACACTATATTTTGTAG  1 
+Thit_1661_p-378(nrdD)    (    1) ATACTAAATATTGGGT  1 
+Teth514_1144_p-347(nrdD) (    1) ACACTATATTTTGTAG  1 
+Teth514_1144_p-378(nrdD) (    1) ATACTAAATATTGGGT  1 
+TTE1850_p-57(nrdD)       (    1) CTACTATATTTTGTGT  1 
+CHY_2052_p-60(nrdR)      (    1) ACACAAGATATAGTAG  1 
+Csac_0774_p-115(nrdD)    (    1) ATATAATATATTGTGT  1 
+TTE1850_p-88(nrdD)       (    1) ATACTAAATATTGAGG  1 
+Thit_2029_p-72(nrdJ)     (    1) ACACAATAAAATGTAT  1 
+Teth514_0821_p-72(nrdJ)  (    1) CCACAATAAAATGTAT  1 
+Athe_0548_p-127(nrdD)    (    1) ATATAATATATTGTGC  1 
+TTE2336_p-171(nrdJ)      (    1) ACACAACAAAATGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 18 bayes= 1.29956 E= 1.6e-070 
+   101     56  -1081  -1081 
+ -1081    243  -1081     24 
+   127  -1081  -1081  -1081 
+ -1081    297  -1081   -156 
+    69  -1081  -1081      2 
+   127  -1081  -1081  -1081 
+    -9   -102   -137     60 
+   127  -1081  -1081  -1081 
+  -131  -1081  -1081    134 
+   101  -1081  -1081    -98 
+  -131  -1081  -1081    134 
+   -90  -1081  -1081    124 
+ -1081  -1081    280  -1081 
+  -289  -1081     21    124 
+   -31  -1081    221  -1081 
+ -1081   -102    143     76 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 18 E= 1.6e-070 
+ 0.833333  0.166667  0.000000  0.000000 
+ 0.000000  0.611111  0.000000  0.388889 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.888889  0.000000  0.111111 
+ 0.666667  0.000000  0.000000  0.333333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.388889  0.055556  0.055556  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.222222  0.000000  0.000000  0.777778 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.055556  0.000000  0.166667  0.777778 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.000000  0.055556  0.388889  0.555556 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYACWAWATATTGTRK MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CT]AC[AT]A[TA]ATAT[TA]GT[GA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Athe_0548_p-127(nrdD)            4.02e-06  [+1(4.02e-06)]
+Athe_0548_p-95(nrdD)             1.64e-08  [+1(1.64e-08)]
+Csac_0774_p-83(nrdD)             1.64e-08  [+1(1.64e-08)]
+Csac_0774_p-115(nrdD)            1.61e-06  [+1(1.61e-06)]
+CHY_2052_p-28(nrdR)              1.92e-07  [+1(1.92e-07)]
+CHY_2052_p-60(nrdR)              9.21e-07  [+1(9.21e-07)]
+Teth514_0821_p-41(nrdJ)          4.15e-09  [+1(4.15e-09)]
+Teth514_0821_p-72(nrdJ)          3.38e-06  [+1(3.38e-06)]
+Teth514_1144_p-378(nrdD)         3.18e-07  [+1(3.18e-07)]
+Teth514_1144_p-347(nrdD)         3.18e-07  [+1(3.18e-07)]
+Thit_2029_p-72(nrdJ)             2.78e-06  [+1(2.78e-06)]
+Thit_2029_p-41(nrdJ)             1.25e-08  [+1(1.25e-08)]
+Thit_1661_p-378(nrdD)            3.18e-07  [+1(3.18e-07)]
+Thit_1661_p-347(nrdD)            3.18e-07  [+1(3.18e-07)]
+TTE2336_p-139(nrdJ)              1.02e-07  [+1(1.02e-07)]
+TTE2336_p-171(nrdJ)              5.95e-06  [+1(5.95e-06)]
+TTE1850_p-88(nrdD)               1.73e-06  [+1(1.73e-06)]
+TTE1850_p-57(nrdD)               6.57e-07  [+1(6.57e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,337 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= LiuR_Various_betaproteobacteria.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ebA1206(acsA)Score=5.3,P 1.0000     18  ebA5126(paaH)Score=5.9,P 1.0000     18  
+Tmz1t_2272(ebA6516)Score 1.0000     18  Tmz1t_1162(acsA)Score=5, 1.0000     18  
+Tmz1t_2954,Score=5.9,Pos 1.0000     18  Tmz1t_2954,Score=5.5,Pos 1.0000     18  
+Tmz1t_2954,Score=5.2,Pos 1.0000     18  Tmz1t_1274(paaH)Score=5. 1.0000     18  
+Tmz1t_2996(liuR)Score=6. 1.0000     18  Tmz1t_0730(paaI)Score=5. 1.0000     18  
+Daro_0101(paaI)Score=5.4 1.0000     18  Daro_0101(paaI)Score=6.5 1.0000     18  
+CV2086(ivdG)Score=5.5,Po 1.0000     18  CV2086(ivdG)Score=6.1,Po 1.0000     18  
+CV0303,Score=6.2,Pos=-26 1.0000     18  CV0303Score=5.8,Pos=-268 1.0000     18  
+CV2087(liuR)Score=5.5,Po 1.0000     18  CV2087(liuR)Score=6.4,Po 1.0000     18  
+CV1779(liuR)Score=5,Pos= 1.0000     18  CV1779(liuR)Score=6.1,Po 1.0000     18  
+CV1766(liuA)Score=6.5,Po 1.0000     18  CV1766(liuA)Score=5.3,Po 1.0000     18  
+CV1780(aacS2)Score=5.8,P 1.0000     18  CV1780(aacS2)Score=4.8Po 1.0000     18  
+LHK_00209(lcfA)Score=5.4 1.0000     18  LHK_00208(ivdG)Score=4.8 1.0000     18  
+LHK_00208(ivdG)Score=6.6 1.0000     18  LHK_00206(ivdA)Score=5.1 1.0000     18  
+LHK_02055(liuA)Score=6.1 1.0000     18  LHK_00207(liuR)Score=5.6 1.0000     18  
+LHK_00207(liuR)Score=5.7 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna LiuR_Various_betaproteobacteria.fasta -oc LiuR_Various_betaproteobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           18
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             558    N=              31    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.312 C 0.192 G 0.199 T 0.297 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.311 C 0.192 G 0.199 T 0.297 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  18  sites =  31  llr = 509  E-value = 2.6e-181
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  21:1a:::35a:::6991
+pos.-specific     C  1::::a:111:a::3::7
+probability       G  7::5::a::2::a:::1:
+matrix            T  :9a4:::863:::a1::2
+
+         bits    2.4      **    **     
+                 2.1      **    **     
+                 1.9      **    **     
+                 1.7      **    ***    
+Relative         1.4   * ***   ****    
+Entropy          1.2  ** ****  **** *  
+(23.7 bits)      1.0 *** ****  **** ***
+                 0.7 ********  **** ***
+                 0.5 ********* ********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           GTTGACGTTAACGTAAAC
+consensus               T    AT    C  T
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Daro_0101(paaI)Score=6.5      1  2.32e-11          . GTTGACGTTAACGTAAAC           
+CV2086(ivdG)Score=6.1,Po      1  7.46e-11          . GTTGACGTTGACGTAAAC           
+CV0303,Score=6.2,Pos=-26      1  1.56e-10          . GTTGACGTAAACGTAAAC           
+ebA5126(paaH)Score=5.9,P      1  1.56e-10          . GTTGACGTTGACGTCAAC           
+LHK_02055(liuA)Score=6.1      1  4.19e-10          . GTTGACGTTCACGTAAAC           
+LHK_00208(ivdG)Score=6.6      1  5.69e-10          . ATTGACGTTAACGTAAAC           
+CV2087(liuR)Score=5.5,Po      1  1.22e-09          . GTTTACGTCAACGTCAAC           
+LHK_00207(liuR)Score=5.7      1  1.55e-09          . GTTTACGTTAACGTCAAT           
+CV2087(liuR)Score=6.4,Po      1  3.08e-09          . CTTGACGTTTACGTCAAC           
+CV1766(liuA)Score=6.5,Po      1  6.46e-09          . ATTGACGCTTACGTAAAC           
+LHK_00209(lcfA)Score=5.4      1  7.36e-09          . GTTTACGTTCACGTAAAT           
+Tmz1t_2954,Score=5.9,Pos      1  8.05e-09          . GTTGACGCGAACGTAAAC           
+Tmz1t_2954,Score=5.5,Pos      1  8.80e-09          . GTTGACGCAAACGTCAAT           
+CV0303Score=5.8,Pos=-268      1  9.55e-09          . TTTGACGTTGACGTAAAC           
+CV2086(ivdG)Score=5.5,Po      1  9.55e-09          . GTTGACGTAAACGTCAAG           
+Tmz1t_2996(liuR)Score=6.      1  1.05e-08          . GTTGACGTTTACGTTAGC           
+Tmz1t_2954,Score=5.2,Pos      1  1.16e-08          . GTTTACGTTGACGCAAAC           
+Tmz1t_0730(paaI)Score=5.      1  1.28e-08          . GATTACGTTAACGTTAAC           
+Daro_0101(paaI)Score=5.4      1  1.43e-08          . GTTAACGTAAACGTAAAT           
+Tmz1t_1274(paaH)Score=5.      1  2.91e-08          . ATTGACGCCTACGTCAAC           
+CV1779(liuR)Score=5,Pos=      1  3.17e-08          . GATTACGTAAACGTAAAT           
+ebA1206(acsA)Score=5.3,P      1  3.17e-08          . CATGACGTTGACGTCAAC           
+CV1779(liuR)Score=6.1,Po      1  3.74e-08          . ATTGACGATTACGTAAAC           
+Tmz1t_1162(acsA)Score=5,      1  6.53e-08          . GTTAACGTCAACGTAAAA           
+CV1780(aacS2)Score=5.8,P      1  7.04e-08          . ATTTACGTTTACGTAATC           
+CV1766(liuA)Score=5.3,Po      1  8.90e-08          . GCTTACGTAAACGTAAGC           
+CV1780(aacS2)Score=4.8Po      1  9.57e-08          . GTTTACGTAATCGTCAAT           
+LHK_00206(ivdA)Score=5.1      1  1.19e-07          . GTTTCCGTTTACGTAAAA           
+Tmz1t_2272(ebA6516)Score      1  1.28e-07          . GTTGACGTTAACGTTGCC           
+LHK_00208(ivdG)Score=4.8      1  2.06e-07          . GTTAACGTAAACGTATAT           
+LHK_00207(liuR)Score=5.6      1  2.20e-07          . ATATACGTTTACGTTAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Daro_0101(paaI)Score=6.5          2.3e-11  [+1]
+CV2086(ivdG)Score=6.1,Po          7.5e-11  [+1]
+CV0303,Score=6.2,Pos=-26          1.6e-10  [+1]
+ebA5126(paaH)Score=5.9,P          1.6e-10  [+1]
+LHK_02055(liuA)Score=6.1          4.2e-10  [+1]
+LHK_00208(ivdG)Score=6.6          5.7e-10  [+1]
+CV2087(liuR)Score=5.5,Po          1.2e-09  [+1]
+LHK_00207(liuR)Score=5.7          1.5e-09  [+1]
+CV2087(liuR)Score=6.4,Po          3.1e-09  [+1]
+CV1766(liuA)Score=6.5,Po          6.5e-09  [+1]
+LHK_00209(lcfA)Score=5.4          7.4e-09  [+1]
+Tmz1t_2954,Score=5.9,Pos            8e-09  [+1]
+Tmz1t_2954,Score=5.5,Pos          8.8e-09  [+1]
+CV0303Score=5.8,Pos=-268          9.5e-09  [+1]
+CV2086(ivdG)Score=5.5,Po          9.5e-09  [+1]
+Tmz1t_2996(liuR)Score=6.          1.1e-08  [+1]
+Tmz1t_2954,Score=5.2,Pos          1.2e-08  [+1]
+Tmz1t_0730(paaI)Score=5.          1.3e-08  [+1]
+Daro_0101(paaI)Score=5.4          1.4e-08  [+1]
+Tmz1t_1274(paaH)Score=5.          2.9e-08  [+1]
+CV1779(liuR)Score=5,Pos=          3.2e-08  [+1]
+ebA1206(acsA)Score=5.3,P          3.2e-08  [+1]
+CV1779(liuR)Score=6.1,Po          3.7e-08  [+1]
+Tmz1t_1162(acsA)Score=5,          6.5e-08  [+1]
+CV1780(aacS2)Score=5.8,P            7e-08  [+1]
+CV1766(liuA)Score=5.3,Po          8.9e-08  [+1]
+CV1780(aacS2)Score=4.8Po          9.6e-08  [+1]
+LHK_00206(ivdA)Score=5.1          1.2e-07  [+1]
+Tmz1t_2272(ebA6516)Score          1.3e-07  [+1]
+LHK_00208(ivdG)Score=4.8          2.1e-07  [+1]
+LHK_00207(liuR)Score=5.6          2.2e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=18 seqs=31
+Daro_0101(paaI)Score=6.5 (    1) GTTGACGTTAACGTAAAC  1 
+CV2086(ivdG)Score=6.1,Po (    1) GTTGACGTTGACGTAAAC  1 
+CV0303,Score=6.2,Pos=-26 (    1) GTTGACGTAAACGTAAAC  1 
+ebA5126(paaH)Score=5.9,P (    1) GTTGACGTTGACGTCAAC  1 
+LHK_02055(liuA)Score=6.1 (    1) GTTGACGTTCACGTAAAC  1 
+LHK_00208(ivdG)Score=6.6 (    1) ATTGACGTTAACGTAAAC  1 
+CV2087(liuR)Score=5.5,Po (    1) GTTTACGTCAACGTCAAC  1 
+LHK_00207(liuR)Score=5.7 (    1) GTTTACGTTAACGTCAAT  1 
+CV2087(liuR)Score=6.4,Po (    1) CTTGACGTTTACGTCAAC  1 
+CV1766(liuA)Score=6.5,Po (    1) ATTGACGCTTACGTAAAC  1 
+LHK_00209(lcfA)Score=5.4 (    1) GTTTACGTTCACGTAAAT  1 
+Tmz1t_2954,Score=5.9,Pos (    1) GTTGACGCGAACGTAAAC  1 
+Tmz1t_2954,Score=5.5,Pos (    1) GTTGACGCAAACGTCAAT  1 
+CV0303Score=5.8,Pos=-268 (    1) TTTGACGTTGACGTAAAC  1 
+CV2086(ivdG)Score=5.5,Po (    1) GTTGACGTAAACGTCAAG  1 
+Tmz1t_2996(liuR)Score=6. (    1) GTTGACGTTTACGTTAGC  1 
+Tmz1t_2954,Score=5.2,Pos (    1) GTTTACGTTGACGCAAAC  1 
+Tmz1t_0730(paaI)Score=5. (    1) GATTACGTTAACGTTAAC  1 
+Daro_0101(paaI)Score=5.4 (    1) GTTAACGTAAACGTAAAT  1 
+Tmz1t_1274(paaH)Score=5. (    1) ATTGACGCCTACGTCAAC  1 
+CV1779(liuR)Score=5,Pos= (    1) GATTACGTAAACGTAAAT  1 
+ebA1206(acsA)Score=5.3,P (    1) CATGACGTTGACGTCAAC  1 
+CV1779(liuR)Score=6.1,Po (    1) ATTGACGATTACGTAAAC  1 
+Tmz1t_1162(acsA)Score=5, (    1) GTTAACGTCAACGTAAAA  1 
+CV1780(aacS2)Score=5.8,P (    1) ATTTACGTTTACGTAATC  1 
+CV1766(liuA)Score=5.3,Po (    1) GCTTACGTAAACGTAAGC  1 
+CV1780(aacS2)Score=4.8Po (    1) GTTTACGTAATCGTCAAT  1 
+LHK_00206(ivdA)Score=5.1 (    1) GTTTCCGTTTACGTAAAA  1 
+Tmz1t_2272(ebA6516)Score (    1) GTTGACGTTAACGTTGCC  1 
+LHK_00208(ivdG)Score=4.8 (    1) GTTAACGTAAACGTATAT  1 
+LHK_00207(liuR)Score=5.6 (    1) ATATACGTTTACGTTAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 31 bayes= 1.57258 E= 2.6e-181 
+   -69   -157    183   -320 
+  -168   -257  -1160    155 
+  -327  -1160  -1160    170 
+  -168  -1160    146     26 
+   164   -257  -1160  -1160 
+ -1160    238  -1160  -1160 
+ -1160  -1160    233  -1160 
+  -327    -57  -1160    150 
+   -27    -99   -262    104 
+    73   -157    -31    -20 
+   164  -1160  -1160   -320 
+ -1160    238  -1160  -1160 
+ -1160  -1160    233  -1160 
+ -1160   -257  -1160    170 
+    90     60  -1160   -120 
+   159  -1160   -262   -320 
+   148   -257   -163   -320 
+  -227    182   -262    -40 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 31 E= 2.6e-181 
+ 0.193548  0.064516  0.709677  0.032258 
+ 0.096774  0.032258  0.000000  0.870968 
+ 0.032258  0.000000  0.000000  0.967742 
+ 0.096774  0.000000  0.548387  0.354839 
+ 0.967742  0.032258  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.032258  0.129032  0.000000  0.838710 
+ 0.258065  0.096774  0.032258  0.612903 
+ 0.516129  0.064516  0.161290  0.258065 
+ 0.967742  0.000000  0.000000  0.032258 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.032258  0.000000  0.967742 
+ 0.580645  0.290323  0.000000  0.129032 
+ 0.935484  0.000000  0.032258  0.032258 
+ 0.870968  0.032258  0.064516  0.032258 
+ 0.064516  0.677419  0.032258  0.225806 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+GTT[GT]ACGT[TA][AT]ACGT[AC]AA[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ebA1206(acsA)Score=5.3,P         3.17e-08  [+1(3.17e-08)]
+ebA5126(paaH)Score=5.9,P         1.56e-10  [+1(1.56e-10)]
+Tmz1t_2272(ebA6516)Score         1.28e-07  [+1(1.28e-07)]
+Tmz1t_1162(acsA)Score=5,         6.53e-08  [+1(6.53e-08)]
+Tmz1t_2954,Score=5.9,Pos         8.05e-09  [+1(8.05e-09)]
+Tmz1t_2954,Score=5.5,Pos         8.80e-09  [+1(8.80e-09)]
+Tmz1t_2954,Score=5.2,Pos         1.16e-08  [+1(1.16e-08)]
+Tmz1t_1274(paaH)Score=5.         2.91e-08  [+1(2.91e-08)]
+Tmz1t_2996(liuR)Score=6.         1.05e-08  [+1(1.05e-08)]
+Tmz1t_0730(paaI)Score=5.         1.28e-08  [+1(1.28e-08)]
+Daro_0101(paaI)Score=5.4         1.43e-08  [+1(1.43e-08)]
+Daro_0101(paaI)Score=6.5         2.32e-11  [+1(2.32e-11)]
+CV2086(ivdG)Score=5.5,Po         9.55e-09  [+1(9.55e-09)]
+CV2086(ivdG)Score=6.1,Po         7.46e-11  [+1(7.46e-11)]
+CV0303,Score=6.2,Pos=-26         1.56e-10  [+1(1.56e-10)]
+CV0303Score=5.8,Pos=-268         9.55e-09  [+1(9.55e-09)]
+CV2087(liuR)Score=5.5,Po         1.22e-09  [+1(1.22e-09)]
+CV2087(liuR)Score=6.4,Po         3.08e-09  [+1(3.08e-09)]
+CV1779(liuR)Score=5,Pos=         3.17e-08  [+1(3.17e-08)]
+CV1779(liuR)Score=6.1,Po         3.74e-08  [+1(3.74e-08)]
+CV1766(liuA)Score=6.5,Po         6.46e-09  [+1(6.46e-09)]
+CV1766(liuA)Score=5.3,Po         8.90e-08  [+1(8.90e-08)]
+CV1780(aacS2)Score=5.8,P         7.04e-08  [+1(7.04e-08)]
+CV1780(aacS2)Score=4.8Po         9.57e-08  [+1(9.57e-08)]
+LHK_00209(lcfA)Score=5.4         7.36e-09  [+1(7.36e-09)]
+LHK_00208(ivdG)Score=4.8         2.06e-07  [+1(2.06e-07)]
+LHK_00208(ivdG)Score=6.6         5.69e-10  [+1(5.69e-10)]
+LHK_00206(ivdA)Score=5.1         1.19e-07  [+1(1.19e-07)]
+LHK_02055(liuA)Score=6.1         4.19e-10  [+1(4.19e-10)]
+LHK_00207(liuR)Score=5.6         2.20e-07  [+1(2.20e-07)]
+LHK_00207(liuR)Score=5.7         1.55e-09  [+1(1.55e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

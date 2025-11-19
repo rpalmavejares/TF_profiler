@@ -1,0 +1,270 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Phr_Methanobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+mru_2037_p-149(phr)      1.0000     23  mru_2037_p-238(phr)      1.0000     23  
+mru_2038_p-448(grpE)     1.0000     23  mru_2038_p-414(grpE)     1.0000     23  
+Msm_1107_p-46(phr)       1.0000     23  Msm_1108_p-217(grpE)     1.0000     23  
+METSMIALI_01034_p-46(phr 1.0000     23  METSMIALI_01035_p-217(gr 1.0000     23  
+Msp_1518_p-122(grpE)     1.0000     23  Msp_1518_p-156(grpE)     1.0000     23  
+Msp_1519_p-187(phr)      1.0000     23  Msp_1519_p-153(phr)      1.0000     23  
+MTH1288_p-42(phr)        1.0000     23  MTH1289_p-88(grpE)       1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Phr_Methanobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Phr_Methanobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             322    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    322    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.441 C 0.0652 G 0.0714 T 0.422 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.439 C 0.0675 G 0.0736 T 0.42 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTWWRTAACWWWWWGTTAYWWAA MEME-1	width =  23  sites =  14  llr = 195  E-value = 2.5e-047
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  13465:9a:65554::1a15679
+pos.-specific     C  ::::1:::a1::::::::4::::
+probability       G  ::::4::::::::1a:::1::::
+matrix            T  9764:a1::45556:a9:45431
+
+         bits    3.9         *     *        
+                 3.5         *     *        
+                 3.1         *     *        
+                 2.7         *     *        
+Relative         2.3         *     *        
+Entropy          1.9         *     *        
+(20.1 bits)      1.6         *     *        
+                 1.2     ** **     ** *     
+                 0.8 *   *****     *****   *
+                 0.4 ********* *** *********
+                 0.0 -----------------------
+
+Multilevel           TTTAATAACAAAATGTTATAAAA
+consensus             AATG    TTTTA    CTTT 
+sequence                                    
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+mru_2038_p-414(grpE)          1  6.99e-09          . TTATATAACATTTTGTTACTAAA           
+mru_2037_p-238(phr)           1  1.43e-08          . TTTAGTAACAAAATGTTATATAA           
+Msp_1519_p-153(phr)           1  1.70e-08          . TTTAATAACTTTTAGTTACAAAA           
+Msp_1518_p-156(grpE)          1  3.55e-08          . TTTTGTAACTAAAAGTTATTAAA           
+METSMIALI_01035_p-217(gr      1  6.01e-08          . TTATATAACTTTTTGTTACTATA           
+Msm_1108_p-217(grpE)          1  6.01e-08          . TTATATAACTTTTTGTTACTATA           
+METSMIALI_01034_p-46(phr      1  9.85e-08          . TATAGTAACAAAAAGTTATATAA           
+Msm_1107_p-46(phr)            1  9.85e-08          . TATAGTAACAAAAAGTTATATAA           
+Msp_1518_p-122(grpE)          1  2.42e-07          . ATATATAACATTTTGTTACTAAA           
+Msp_1519_p-187(phr)           1  3.23e-07          . TTTAGTAACAAAATGTTATATAT           
+mru_2037_p-149(phr)           1  3.23e-07          . TTTAGTAACAAAAAGTTAATATA           
+MTH1289_p-88(grpE)            1  8.03e-07          . TTATATAACCTTTTGTAAGTATA           
+MTH1288_p-42(phr)             1  1.78e-06          . TATACTTACAAAAGGTTATATAA           
+mru_2038_p-448(grpE)          1  2.46e-06          . TAAAATTACTTTTTGTAAGAAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+mru_2038_p-414(grpE)                7e-09  [+1]
+mru_2037_p-238(phr)               1.4e-08  [+1]
+Msp_1519_p-153(phr)               1.7e-08  [+1]
+Msp_1518_p-156(grpE)              3.6e-08  [+1]
+METSMIALI_01035_p-217(gr            6e-08  [+1]
+Msm_1108_p-217(grpE)                6e-08  [+1]
+METSMIALI_01034_p-46(phr          9.8e-08  [+1]
+Msm_1107_p-46(phr)                9.8e-08  [+1]
+Msp_1518_p-122(grpE)              2.4e-07  [+1]
+Msp_1519_p-187(phr)               3.2e-07  [+1]
+mru_2037_p-149(phr)               3.2e-07  [+1]
+MTH1289_p-88(grpE)                  8e-07  [+1]
+MTH1288_p-42(phr)                 1.8e-06  [+1]
+mru_2038_p-448(grpE)              2.5e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTWWRTAACWWWWWGTTAYWWAA width=23 seqs=14
+mru_2038_p-414(grpE)     (    1) TTATATAACATTTTGTTACTAAA  1 
+mru_2037_p-238(phr)      (    1) TTTAGTAACAAAATGTTATATAA  1 
+Msp_1519_p-153(phr)      (    1) TTTAATAACTTTTAGTTACAAAA  1 
+Msp_1518_p-156(grpE)     (    1) TTTTGTAACTAAAAGTTATTAAA  1 
+METSMIALI_01035_p-217(gr (    1) TTATATAACTTTTTGTTACTATA  1 
+Msm_1108_p-217(grpE)     (    1) TTATATAACTTTTTGTTACTATA  1 
+METSMIALI_01034_p-46(phr (    1) TATAGTAACAAAAAGTTATATAA  1 
+Msm_1107_p-46(phr)       (    1) TATAGTAACAAAAAGTTATATAA  1 
+Msp_1518_p-122(grpE)     (    1) ATATATAACATTTTGTTACTAAA  1 
+Msp_1519_p-187(phr)      (    1) TTTAGTAACAAAATGTTATATAT  1 
+mru_2037_p-149(phr)      (    1) TTTAGTAACAAAAAGTTAATATA  1 
+MTH1289_p-88(grpE)       (    1) TTATATAACCTTTTGTAAGTATA  1 
+MTH1288_p-42(phr)        (    1) TATACTTACAAAAGGTTATATAA  1 
+mru_2038_p-448(grpE)     (    1) TAAAATTACTTTTTGTAAGAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 14 bayes= 1.12553 E= 2.5e-047 
+  -261  -1045  -1045    114 
+   -62  -1045  -1045     76 
+    -3  -1045  -1045     44 
+    38  -1045  -1045      3 
+    19      8    254  -1045 
+ -1045  -1045  -1045    125 
+    97  -1045  -1045   -155 
+   119  -1045  -1045  -1045 
+ -1045    389  -1045  -1045 
+    38      8  -1045    -23 
+    19  -1045  -1045     25 
+    19  -1045  -1045     25 
+    19  -1045  -1045     25 
+   -30  -1045     -4     44 
+ -1045  -1045    376  -1045 
+ -1045  -1045  -1045    125 
+  -162  -1045  -1045    103 
+   119  -1045  -1045  -1045 
+  -261    240     96      3 
+    19  -1045  -1045     25 
+    55  -1045  -1045    -23 
+    70  -1045  -1045    -56 
+   108  -1045  -1045   -255 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 14 E= 2.5e-047 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.285714  0.000000  0.000000  0.714286 
+ 0.428571  0.000000  0.000000  0.571429 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.500000  0.071429  0.428571  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.000000  0.000000  0.142857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.571429  0.071429  0.000000  0.357143 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.357143  0.000000  0.071429  0.571429 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.142857  0.000000  0.000000  0.857143 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.071429  0.357143  0.142857  0.428571 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.642857  0.000000  0.000000  0.357143 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.928571  0.000000  0.000000  0.071429 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWWRTAACWWWWWGTTAYWWAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[TA][TA][AT][AG]TAAC[AT][AT][AT][AT][TA]GTTA[TC][AT][AT][AT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+mru_2037_p-149(phr)              3.23e-07  [+1(3.23e-07)]
+mru_2037_p-238(phr)              1.43e-08  [+1(1.43e-08)]
+mru_2038_p-448(grpE)             2.46e-06  [+1(2.46e-06)]
+mru_2038_p-414(grpE)             6.99e-09  [+1(6.99e-09)]
+Msm_1107_p-46(phr)               9.85e-08  [+1(9.85e-08)]
+Msm_1108_p-217(grpE)             6.01e-08  [+1(6.01e-08)]
+METSMIALI_01034_p-46(phr         9.85e-08  [+1(9.85e-08)]
+METSMIALI_01035_p-217(gr         6.01e-08  [+1(6.01e-08)]
+Msp_1518_p-122(grpE)             2.42e-07  [+1(2.42e-07)]
+Msp_1518_p-156(grpE)             3.55e-08  [+1(3.55e-08)]
+Msp_1519_p-187(phr)              3.23e-07  [+1(3.23e-07)]
+Msp_1519_p-153(phr)              1.70e-08  [+1(1.70e-08)]
+MTH1288_p-42(phr)                1.78e-06  [+1(1.78e-06)]
+MTH1289_p-88(grpE)               8.03e-07  [+1(8.03e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

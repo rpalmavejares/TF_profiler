@@ -1,0 +1,248 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NagQ_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SMc02874_p-43(murQ)      1.0000     18  SMc02875_p-174(nagK)     1.0000     18  
+NGR_c35300_p-42(murQ)    1.0000     18  NGR_c35310_p-172(nagK)   1.0000     18  
+RL3360_p-187(nagK)       1.0000     18  RHE_CH02899_p-186(nagK)  1.0000     18  
+Atu2606_p-233(nagQ)      1.0000     18  Atu2604_p-236(nagD1)     1.0000     18  
+Atu2604_p-225(nagD1)     1.0000     18  Atu2606_p-222(nagQ)      1.0000     18  
+mll4769_p-186(nagK)      1.0000     18  mll4769_p-175(nagK)      1.0000     18  
+mlr4770_p-30(murQ)       1.0000     18  mlr4770_p-41(murQ)       1.0000     18  
+BMEII0756_p-132(nagK)    1.0000     18  BMEII0755_p-219(nagT)    1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NagQ_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NagQ_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             288    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    288    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.375 C 0.167 G 0.149 T 0.309 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.373 C 0.168 G 0.151 T 0.308 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AATRCCAAAAAAATACCA MEME-1	width =  18  sites =   9  llr = 172  E-value = 1.0e-041
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9a:3::a9aa899:9::a
+pos.-specific     C  ::::aa::::21:1:aa:
+probability       G  1:17:::1::::1:1:::
+matrix            T  ::9::::::::::9::::
+
+         bits    2.7                   
+                 2.5     **         ** 
+                 2.2     **         ** 
+                 1.9     **         ** 
+Relative         1.6     **         ** 
+Entropy          1.4  ****** **   * ***
+(27.6 bits)      1.1 ********** *******
+                 0.8 ******************
+                 0.5 ******************
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           AATGCCAAAAAAATACCA
+consensus               A      C       
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+RL3360_p-187(nagK)            1  2.22e-10          . AATGCCAAAAAAATACCA           
+NGR_c35310_p-172(nagK)        1  2.22e-10          . AATGCCAAAAAAATACCA           
+SMc02875_p-174(nagK)          1  2.22e-10          . AATGCCAAAAAAATACCA           
+RHE_CH02899_p-186(nagK)       1  8.90e-10          . AAGGCCAAAAAAATACCA           
+mll4769_p-175(nagK)           1  1.72e-09          . AATACCAAAAAAATACCA           
+Atu2606_p-233(nagQ)           1  1.72e-09          . GATGCCAAAACAATACCA           
+Atu2606_p-222(nagQ)           1  3.90e-09          . AATACCAAAAAAATGCCA           
+mll4769_p-186(nagK)           1  5.49e-09          . AATACCAGAACAATACCA           
+BMEII0756_p-132(nagK)         1  7.03e-09          . AATGCCAAAAACGCACCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RL3360_p-187(nagK)                2.2e-10  [+1]
+NGR_c35310_p-172(nagK)            2.2e-10  [+1]
+SMc02875_p-174(nagK)              2.2e-10  [+1]
+RHE_CH02899_p-186(nagK)           8.9e-10  [+1]
+mll4769_p-175(nagK)               1.7e-09  [+1]
+Atu2606_p-233(nagQ)               1.7e-09  [+1]
+Atu2606_p-222(nagQ)               3.9e-09  [+1]
+mll4769_p-186(nagK)               5.5e-09  [+1]
+BMEII0756_p-132(nagK)               7e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AATRCCAAAAAAATACCA width=18 seqs=9
+RL3360_p-187(nagK)       (    1) AATGCCAAAAAAATACCA  1 
+NGR_c35310_p-172(nagK)   (    1) AATGCCAAAAAAATACCA  1 
+SMc02875_p-174(nagK)     (    1) AATGCCAAAAAAATACCA  1 
+RHE_CH02899_p-186(nagK)  (    1) AAGGCCAAAAAAATACCA  1 
+mll4769_p-175(nagK)      (    1) AATACCAAAAAAATACCA  1 
+Atu2606_p-233(nagQ)      (    1) GATGCCAAAACAATACCA  1 
+Atu2606_p-222(nagQ)      (    1) AATACCAAAAAAATGCCA  1 
+mll4769_p-186(nagK)      (    1) AATACCAGAACAATACCA  1 
+BMEII0756_p-132(nagK)    (    1) AATGCCAAAAACGCACCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 16 bayes= -0.0721498 E= 1.0e-041 
+   125   -982    -44   -982 
+   142   -982   -982   -982 
+  -982   -982    -44    153 
+   -16   -982    214   -982 
+  -982    257   -982   -982 
+  -982    257   -982   -982 
+   142   -982   -982   -982 
+   125   -982    -44   -982 
+   142   -982   -982   -982 
+   142   -982   -982   -982 
+   106     40   -982   -982 
+   125    -59   -982   -982 
+   125   -982    -44   -982 
+  -982    -59   -982    153 
+   125   -982    -44   -982 
+  -982    257   -982   -982 
+  -982    257   -982   -982 
+   142   -982   -982   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 9 E= 1.0e-041 
+ 0.888889  0.000000  0.111111  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.111111  0.888889 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.888889  0.000000  0.111111  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.777778  0.222222  0.000000  0.000000 
+ 0.888889  0.111111  0.000000  0.000000 
+ 0.888889  0.000000  0.111111  0.000000 
+ 0.000000  0.111111  0.000000  0.888889 
+ 0.888889  0.000000  0.111111  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATRCCAAAAAAATACCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+AAT[GA]CCAAAA[AC]AATACCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc02874_p-43(murQ)              9.99e-01  18
+SMc02875_p-174(nagK)             2.22e-10  [+1(2.22e-10)]
+NGR_c35300_p-42(murQ)            9.99e-01  18
+NGR_c35310_p-172(nagK)           2.22e-10  [+1(2.22e-10)]
+RL3360_p-187(nagK)               2.22e-10  [+1(2.22e-10)]
+RHE_CH02899_p-186(nagK)          8.90e-10  [+1(8.90e-10)]
+Atu2606_p-233(nagQ)              1.72e-09  [+1(1.72e-09)]
+Atu2604_p-236(nagD1)             9.99e-01  18
+Atu2604_p-225(nagD1)             9.93e-01  18
+Atu2606_p-222(nagQ)              3.90e-09  [+1(3.90e-09)]
+mll4769_p-186(nagK)              5.49e-09  [+1(5.49e-09)]
+mll4769_p-175(nagK)              1.72e-09  [+1(1.72e-09)]
+mlr4770_p-30(murQ)               9.71e-01  18
+mlr4770_p-41(murQ)               9.99e-01  18
+BMEII0756_p-132(nagK)            7.03e-09  [+1(7.03e-09)]
+BMEII0755_p-219(nagT)            9.90e-01  18
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,575 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/LiuR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SMc00977_p-73(acdH2)     1.0000     18  SMc02229_p-135(acdH)     1.0000     18  
+SMc02229_p-129(acdH)     1.0000     18  SMc02479_p-164(mdh)      1.0000     18  
+SMc01260_p-58(liuR1)     1.0000     18  SMc02377_p-163(etfD)     1.0000     18  
+SMc02377_p-157(etfD)     1.0000     18  SMc02162_p-147(fadD)     1.0000     18  
+SMc02150_p-45(PF03060)   1.0000     18  SMc02150_p-39(PF03060)   1.0000     18  
+SMc00041_p-44(SMc00041)  1.0000     18  SMc00041_p-38(SMc00041)  1.0000     18  
+SMc02391_p-148(PF09917)  1.0000     18  SMc00729_p-187(etfB)     1.0000     18  
+NGR_c04900_p-187(acdH2)  1.0000     18  NGR_c01690_p-135(acdH)   1.0000     18  
+NGR_c01690_p-129(acdH)   1.0000     18  NGR_c31300_p-162(mdh)    1.0000     18  
+NGR_c12400_p-58(liuR1)   1.0000     18  NGR_c07940_p-125(etfD)   1.0000     18  
+NGR_c07940_p-119(etfD)   1.0000     18  NGR_c01180_p-147(fadD)   1.0000     18  
+NGR_c07190_p-44(SMc00041 1.0000     18  NGR_c07190_p-38(SMc00041 1.0000     18  
+NGR_c01400_p-41(PF03060) 1.0000     18  NGR_c08080_p-118(PF09917 1.0000     18  
+NGR_c01400_p-47(PF03060) 1.0000     18  NGR_c26900_p-167(etfB)   1.0000     18  
+RL0965_p-82(acdH2)       1.0000     18  RL1479_p-61(PF09917)     1.0000     18  
+RL0591_p-87(acdH)        1.0000     18  RL4439_p-159(mdh)        1.0000     18  
+RL2550_p-53(liuR1)       1.0000     18  RL1457_p-164(etfD)       1.0000     18  
+RL0505_p-159(fadD)       1.0000     18  RL4319_p-180(etfB)       1.0000     18  
+RL1312_p-34(SMc00041)    1.0000     18  RL0537_p-37(PF03060)     1.0000     18  
+RL1312_p-40(SMc00041)    1.0000     18  RHE_CH00905_p-83(acdH2)  1.0000     18  
+RHE_CH00557_p-87(acdH)   1.0000     18  RHE_CH03891_p-156(mdh)   1.0000     18  
+RHE_CH02217_p-53(liuR1)  1.0000     18  RHE_CH01308_p-158(etfD)  1.0000     18  
+RHE_CH00478_p-159(fadD)  1.0000     18  RHE_CH01182_p-35(SMc0004 1.0000     18  
+RHE_CH01182_p-41(SMc0004 1.0000     18  RHE_CH00505_p-37(PF03060 1.0000     18  
+RHE_CH03792_p-177(etfB)  1.0000     18  Atu0732_p-71(acdH2)      1.0000     18  
+Atu1009_p-208(PF09917)   1.0000     18  Atu0501_p-84(acdH)       1.0000     18  
+Atu0501_p-78(acdH)       1.0000     18  Atu2639_p-160(mdh)       1.0000     18  
+Atu1546_p-56(liuR1)      1.0000     18  Atu1546_p-50(liuR1)      1.0000     18  
+Atu0994_p-231(etfD)      1.0000     18  Atu0405_p-243(fadD)      1.0000     18  
+Atu0415_p-37(PF03060)    1.0000     18  Atu3595_p-160(etfB)      1.0000     18  
+Meso_0723_p-93(acdH2)    1.0000     18  Meso_0023_p-77(acdH)     1.0000     18  
+Meso_3395_p-182(mdh)     1.0000     18  Meso_1259_p-63(liuR1)    1.0000     18  
+mlr7452_p-109(acdH2)     1.0000     18  mlr5624_p-115(acdH)      1.0000     18  
+mll4308_p-203(mdh)       1.0000     18  mll1317_p-127(liuR1)     1.0000     18  
+mll7718_p-69(PF09917)    1.0000     18  mlr5623_p-154(liuR2)     1.0000     18  
+BMEI1521_p-112(acdH2)    1.0000     18  BMEI0304_p-84(n/a)       1.0000     18  
+BMEI1315_p-148(PF09917)  1.0000     18  BMEI1315_p-154(PF09917)  1.0000     18  
+BMEI1320_p-244(etfD)     1.0000     18  BMEII0495_p-193(acdH)    1.0000     18  
+BMEII0495_p-187(acdH)    1.0000     18  BMEI0137_p-179(mdh)      1.0000     18  
+BMEI0808_p-65(liuR1)     1.0000     18  BMEII0460_p10(PF03060)   1.0000     18  
+BMEI0096_p-176(etfB)     1.0000     18  BMEI1320_p-238(etfD)     1.0000     18  
+BMEI1371_p37(SMc00041)   1.0000     18  BQ13450_p-279(mdh)       1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/LiuR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/LiuR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       84    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1512    N=              84
+sample: seed=            0    hsfrac=          0
+        searchsize=   1512    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.304 C 0.179 G 0.177 T 0.341 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.303 C 0.179 G 0.177 T 0.34 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DTTKACGTTTACGTAAAM MEME-1	width =  18  sites =  84  llr = 1235  E-value = 1.1e-485
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  41::a:::129:::6975
+pos.-specific     C  :1:::a11:1:a:121:4
+probability       G  3::5::8:11::a:::21
+matrix            T  38a4::1986:::91::1
+
+         bits    2.5      *      *     
+                 2.2      *     **     
+                 2.0      *     **     
+                 1.7     **     **     
+Relative         1.5   * ***    **     
+Entropy          1.2   * ***   ***  *  
+(21.2 bits)      1.0   ******  **** ** 
+                 0.7  ******** **** ** 
+                 0.5  ******** ********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           ATTGACGTTTACGTAAAA
+consensus            T  T     A    C GC
+sequence             G                 
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+NGR_c04900_p-187(acdH2)       1  1.54e-10          . GTTGACGTTTACGTAAAA           
+Atu0732_p-71(acdH2)           1  2.53e-10          . ATTGACGTTTACGTAAAA           
+RHE_CH00905_p-83(acdH2)       1  2.53e-10          . ATTGACGTTTACGTAAAA           
+RL0965_p-82(acdH2)            1  2.53e-10          . ATTGACGTTTACGTAAAA           
+SMc02162_p-147(fadD)          1  3.01e-10          . GTTGACGTTTACGTCAAA           
+mlr7452_p-109(acdH2)          1  4.38e-10          . TTTGACGTTTACGTAAAA           
+NGR_c01180_p-147(fadD)        1  4.84e-10          . ATTGACGTTTACGTCAAA           
+SMc00977_p-73(acdH2)          1  1.95e-09          . GTTGACGTTCACGTAAAA           
+mlr5624_p-115(acdH)           1  2.17e-09          . ATTGACGTTTACGCAAAC           
+RHE_CH01182_p-35(SMc0004      1  2.17e-09          . GTTGACGTTAACGTCAAA           
+RL1312_p-34(SMc00041)         1  2.17e-09          . GTTGACGTTAACGTCAAA           
+NGR_c01400_p-47(PF03060)      1  2.17e-09          . ATTGACGTTTACGCAAAC           
+RHE_CH01308_p-158(etfD)       1  2.63e-09          . ATTGACGTTAACGTAAGC           
+RL0591_p-87(acdH)             1  2.94e-09          . TTTGACGTTTACGCAAAC           
+NGR_c01690_p-135(acdH)        1  2.94e-09          . TTTGACGTTTACGCAAAC           
+SMc02229_p-135(acdH)          1  2.94e-09          . TTTGACGTTTACGCAAAC           
+RHE_CH03792_p-177(etfB)       1  3.60e-09          . GTTGACGTATACGTAAAC           
+RHE_CH00478_p-159(fadD)       1  3.95e-09          . GTTGACGTTTACGTCAAG           
+Atu3595_p-160(etfB)           1  5.28e-09          . ATTTACGTTAACGTCAAC           
+RL4319_p-180(etfB)            1  6.34e-09          . ATTGACGTGAACGTAAAC           
+RL1457_p-164(etfD)            1  6.34e-09          . ATTGACGTTGACGTAAGC           
+Meso_0723_p-93(acdH2)         1  1.09e-08          . TTTGACCTTTACGTAAGC           
+Atu0405_p-243(fadD)           1  1.09e-08          . ATTGACGTTTACGTTAGA           
+BMEI0096_p-176(etfB)          1  1.22e-08          . ATTGACGTGCACGTCAAC           
+RHE_CH00557_p-87(acdH)        1  1.56e-08          . TCTGACGTTTACGCAAAC           
+BMEII0495_p-193(acdH)         1  1.81e-08          . TTTGACGTTTACGGAAAC           
+BMEI0137_p-179(mdh)           1  2.29e-08          . TCTTACGTTTACGTAAGA           
+mll4308_p-203(mdh)            1  2.29e-08          . TTTGACGTTTACGTAAGT           
+Atu2639_p-160(mdh)            1  2.29e-08          . TCTTACGTTTACGTAAGA           
+RHE_CH03891_p-156(mdh)        1  2.29e-08          . TCTTACGTTTACGTAAGA           
+RL0505_p-159(fadD)            1  2.29e-08          . GTTGACGTTTACGTTAAG           
+SMc02479_p-164(mdh)           1  2.29e-08          . TCTTACGTTTACGTAAGA           
+mlr5623_p-154(liuR2)          1  2.88e-08          . ATTGACGTAAACGTAAAA           
+NGR_c26900_p-167(etfB)        1  2.88e-08          . TCTTACGTGTACGTAAAC           
+NGR_c12400_p-58(liuR1)        1  2.88e-08          . TTTGACTTTTACGTCAAA           
+SMc01260_p-58(liuR1)          1  2.88e-08          . TTTGACTTTTACGTCAAA           
+RHE_CH00505_p-37(PF03060      1  3.21e-08          . ATTGACGTTTTCGTAAAC           
+RL0537_p-37(PF03060)          1  3.21e-08          . ATTGACGTTTTCGTAAAC           
+BMEI1320_p-244(etfD)          1  3.62e-08          . TTTGACGTTTACGTTAAG           
+BMEI1315_p-148(PF09917)       1  4.02e-08          . GTTTACGTTTGCGTAAGC           
+BMEI1521_p-112(acdH2)         1  4.02e-08          . ATTGACGTTTACGTAATA           
+BQ13450_p-279(mdh)            1  4.52e-08          . ATTTACCTTCACGTAAAC           
+Atu1009_p-208(PF09917)        1  5.03e-08          . TTTTACGTGAACGTCAAA           
+SMc00729_p-187(etfB)          1  5.63e-08          . TTTTACCTGTACGTAAAC           
+RL4439_p-159(mdh)             1  7.69e-08          . TATTACGTTTACGTAAGA           
+SMc00041_p-38(SMc00041)       1  8.50e-08          . CTTGACGTTAACGTCAAA           
+NGR_c07940_p-125(etfD)        1  9.41e-08          . ATTTACGTTTACGTTCAA           
+BMEI0808_p-65(liuR1)          1  1.39e-07          . ATTGACTTTTACGTAAAT           
+mll7718_p-69(PF09917)         1  1.39e-07          . GCTTACGTTTGCGTAAGC           
+mll1317_p-127(liuR1)          1  1.39e-07          . ATTGACTTTTACGTAAAT           
+NGR_c08080_p-118(PF09917      1  1.39e-07          . ATTTACCTTTACGTACGC           
+SMc02391_p-148(PF09917)       1  1.39e-07          . ATTTACCTTTACGTACGC           
+BMEI1320_p-238(etfD)          1  1.52e-07          . GTTTACGTTAAGGTAAAA           
+BMEI0304_p-84(n/a)            1  1.52e-07          . ATTTACCTTTACGTAAAT           
+NGR_c31300_p-162(mdh)         1  1.52e-07          . TCTTACCTTTACGTAAGA           
+Meso_0023_p-77(acdH)          1  1.83e-07          . TTTGACGTTTACGCGCAC           
+Atu0501_p-84(acdH)            1  1.83e-07          . TTTGACGTTTACGCGCAC           
+NGR_c07190_p-38(SMc00041      1  1.83e-07          . TTTGACGTCAACGTCAAA           
+NGR_c07190_p-44(SMc00041      1  1.83e-07          . ATTTACTTTGACGTCAAC           
+Atu0501_p-78(acdH)            1  2.63e-07          . GTTTACGCGCACGTCAAA           
+SMc02377_p-163(etfD)          1  2.88e-07          . GTTTACGTTTACGTTCAG           
+Meso_1259_p-63(liuR1)         1  3.12e-07          . ATTGACTTTTACGTAATC           
+RHE_CH02217_p-53(liuR1)       1  3.12e-07          . ATTGACTATTACGTAAAA           
+RL2550_p-53(liuR1)            1  3.12e-07          . ATTGACTATTACGTAAAA           
+SMc00041_p-44(SMc00041)       1  3.12e-07          . ATTTACCTTGACGTTAAC           
+SMc02150_p-45(PF03060)        1  3.42e-07          . TTTGACGTTTACGAGAAC           
+BMEII0460_p10(PF03060)        1  4.05e-07          . TATTACGTTTACGGAAAC           
+Atu0994_p-231(etfD)           1  4.05e-07          . TATTACGTGCACGTAAAA           
+Atu1546_p-56(liuR1)           1  4.05e-07          . ATTGACTTTTACGTGAAG           
+NGR_c01400_p-41(PF03060)      1  4.38e-07          . GTTTACGCAAACGTCAAA           
+NGR_c01690_p-129(acdH)        1  4.38e-07          . GTTTACGCAAACGTCAAA           
+SMc02229_p-129(acdH)          1  4.38e-07          . GTTTACGCAAACGTCAAA           
+SMc02150_p-39(PF03060)        1  5.16e-07          . GTTTACGAGAACGTCAAA           
+RL1479_p-61(PF09917)          1  5.62e-07          . ATTTACCTTTACGTTCGC           
+RL1312_p-40(SMc00041)         1  6.05e-07          . ATTAACGTTGACGTTAAC           
+BMEI1315_p-154(PF09917)       1  7.69e-07          . GTTTACGTTTACGTTTGC           
+Atu0415_p-37(PF03060)         1  7.69e-07          . ACTTACGTGCGCGTAAAC           
+Atu1546_p-50(liuR1)           1  7.69e-07          . TTTTACGTGAAGGTCAAA           
+BMEI1371_p37(SMc00041)        1  1.04e-06          . TATTACGTAAACGTAAGA           
+NGR_c07940_p-119(etfD)        1  1.04e-06          . GTTTACGTTCAAGTAAGA           
+BMEII0495_p-187(acdH)         1  1.39e-06          . GTTTACGGAAACGTCAAA           
+Meso_3395_p-182(mdh)          1  1.60e-06          . GCTTACCCTTACGTAAAT           
+SMc02377_p-157(etfD)          1  2.40e-06          . GTTTACGTTCAGGTAACA           
+RHE_CH01182_p-41(SMc0004      1  3.11e-06          . AATAACGTTGACGTTAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NGR_c04900_p-187(acdH2)           1.5e-10  [+1]
+Atu0732_p-71(acdH2)               2.5e-10  [+1]
+RHE_CH00905_p-83(acdH2)           2.5e-10  [+1]
+RL0965_p-82(acdH2)                2.5e-10  [+1]
+SMc02162_p-147(fadD)                3e-10  [+1]
+mlr7452_p-109(acdH2)              4.4e-10  [+1]
+NGR_c01180_p-147(fadD)            4.8e-10  [+1]
+SMc00977_p-73(acdH2)              1.9e-09  [+1]
+mlr5624_p-115(acdH)               2.2e-09  [+1]
+RHE_CH01182_p-35(SMc0004          2.2e-09  [+1]
+RL1312_p-34(SMc00041)             2.2e-09  [+1]
+NGR_c01400_p-47(PF03060)          2.2e-09  [+1]
+RHE_CH01308_p-158(etfD)           2.6e-09  [+1]
+RL0591_p-87(acdH)                 2.9e-09  [+1]
+NGR_c01690_p-135(acdH)            2.9e-09  [+1]
+SMc02229_p-135(acdH)              2.9e-09  [+1]
+RHE_CH03792_p-177(etfB)           3.6e-09  [+1]
+RHE_CH00478_p-159(fadD)           3.9e-09  [+1]
+Atu3595_p-160(etfB)               5.3e-09  [+1]
+RL4319_p-180(etfB)                6.3e-09  [+1]
+RL1457_p-164(etfD)                6.3e-09  [+1]
+Meso_0723_p-93(acdH2)             1.1e-08  [+1]
+Atu0405_p-243(fadD)               1.1e-08  [+1]
+BMEI0096_p-176(etfB)              1.2e-08  [+1]
+RHE_CH00557_p-87(acdH)            1.6e-08  [+1]
+BMEII0495_p-193(acdH)             1.8e-08  [+1]
+BMEI0137_p-179(mdh)               2.3e-08  [+1]
+mll4308_p-203(mdh)                2.3e-08  [+1]
+Atu2639_p-160(mdh)                2.3e-08  [+1]
+RHE_CH03891_p-156(mdh)            2.3e-08  [+1]
+RL0505_p-159(fadD)                2.3e-08  [+1]
+SMc02479_p-164(mdh)               2.3e-08  [+1]
+mlr5623_p-154(liuR2)              2.9e-08  [+1]
+NGR_c26900_p-167(etfB)            2.9e-08  [+1]
+NGR_c12400_p-58(liuR1)            2.9e-08  [+1]
+SMc01260_p-58(liuR1)              2.9e-08  [+1]
+RHE_CH00505_p-37(PF03060          3.2e-08  [+1]
+RL0537_p-37(PF03060)              3.2e-08  [+1]
+BMEI1320_p-244(etfD)              3.6e-08  [+1]
+BMEI1315_p-148(PF09917)             4e-08  [+1]
+BMEI1521_p-112(acdH2)               4e-08  [+1]
+BQ13450_p-279(mdh)                4.5e-08  [+1]
+Atu1009_p-208(PF09917)              5e-08  [+1]
+SMc00729_p-187(etfB)              5.6e-08  [+1]
+RL4439_p-159(mdh)                 7.7e-08  [+1]
+SMc00041_p-38(SMc00041)           8.5e-08  [+1]
+NGR_c07940_p-125(etfD)            9.4e-08  [+1]
+BMEI0808_p-65(liuR1)              1.4e-07  [+1]
+mll7718_p-69(PF09917)             1.4e-07  [+1]
+mll1317_p-127(liuR1)              1.4e-07  [+1]
+NGR_c08080_p-118(PF09917          1.4e-07  [+1]
+SMc02391_p-148(PF09917)           1.4e-07  [+1]
+BMEI1320_p-238(etfD)              1.5e-07  [+1]
+BMEI0304_p-84(n/a)                1.5e-07  [+1]
+NGR_c31300_p-162(mdh)             1.5e-07  [+1]
+Meso_0023_p-77(acdH)              1.8e-07  [+1]
+Atu0501_p-84(acdH)                1.8e-07  [+1]
+NGR_c07190_p-38(SMc00041          1.8e-07  [+1]
+NGR_c07190_p-44(SMc00041          1.8e-07  [+1]
+Atu0501_p-78(acdH)                2.6e-07  [+1]
+SMc02377_p-163(etfD)              2.9e-07  [+1]
+Meso_1259_p-63(liuR1)             3.1e-07  [+1]
+RHE_CH02217_p-53(liuR1)           3.1e-07  [+1]
+RL2550_p-53(liuR1)                3.1e-07  [+1]
+SMc00041_p-44(SMc00041)           3.1e-07  [+1]
+SMc02150_p-45(PF03060)            3.4e-07  [+1]
+BMEII0460_p10(PF03060)            4.1e-07  [+1]
+Atu0994_p-231(etfD)               4.1e-07  [+1]
+Atu1546_p-56(liuR1)               4.1e-07  [+1]
+NGR_c01400_p-41(PF03060)          4.4e-07  [+1]
+NGR_c01690_p-129(acdH)            4.4e-07  [+1]
+SMc02229_p-129(acdH)              4.4e-07  [+1]
+SMc02150_p-39(PF03060)            5.2e-07  [+1]
+RL1479_p-61(PF09917)              5.6e-07  [+1]
+RL1312_p-40(SMc00041)             6.1e-07  [+1]
+BMEI1315_p-154(PF09917)           7.7e-07  [+1]
+Atu0415_p-37(PF03060)             7.7e-07  [+1]
+Atu1546_p-50(liuR1)               7.7e-07  [+1]
+BMEI1371_p37(SMc00041)              1e-06  [+1]
+NGR_c07940_p-119(etfD)              1e-06  [+1]
+BMEII0495_p-187(acdH)             1.4e-06  [+1]
+Meso_3395_p-182(mdh)              1.6e-06  [+1]
+SMc02377_p-157(etfD)              2.4e-06  [+1]
+RHE_CH01182_p-41(SMc0004          3.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DTTKACGTTTACGTAAAM width=18 seqs=84
+NGR_c04900_p-187(acdH2)  (    1) GTTGACGTTTACGTAAAA  1 
+Atu0732_p-71(acdH2)      (    1) ATTGACGTTTACGTAAAA  1 
+RHE_CH00905_p-83(acdH2)  (    1) ATTGACGTTTACGTAAAA  1 
+RL0965_p-82(acdH2)       (    1) ATTGACGTTTACGTAAAA  1 
+SMc02162_p-147(fadD)     (    1) GTTGACGTTTACGTCAAA  1 
+mlr7452_p-109(acdH2)     (    1) TTTGACGTTTACGTAAAA  1 
+NGR_c01180_p-147(fadD)   (    1) ATTGACGTTTACGTCAAA  1 
+SMc00977_p-73(acdH2)     (    1) GTTGACGTTCACGTAAAA  1 
+mlr5624_p-115(acdH)      (    1) ATTGACGTTTACGCAAAC  1 
+RHE_CH01182_p-35(SMc0004 (    1) GTTGACGTTAACGTCAAA  1 
+RL1312_p-34(SMc00041)    (    1) GTTGACGTTAACGTCAAA  1 
+NGR_c01400_p-47(PF03060) (    1) ATTGACGTTTACGCAAAC  1 
+RHE_CH01308_p-158(etfD)  (    1) ATTGACGTTAACGTAAGC  1 
+RL0591_p-87(acdH)        (    1) TTTGACGTTTACGCAAAC  1 
+NGR_c01690_p-135(acdH)   (    1) TTTGACGTTTACGCAAAC  1 
+SMc02229_p-135(acdH)     (    1) TTTGACGTTTACGCAAAC  1 
+RHE_CH03792_p-177(etfB)  (    1) GTTGACGTATACGTAAAC  1 
+RHE_CH00478_p-159(fadD)  (    1) GTTGACGTTTACGTCAAG  1 
+Atu3595_p-160(etfB)      (    1) ATTTACGTTAACGTCAAC  1 
+RL4319_p-180(etfB)       (    1) ATTGACGTGAACGTAAAC  1 
+RL1457_p-164(etfD)       (    1) ATTGACGTTGACGTAAGC  1 
+Meso_0723_p-93(acdH2)    (    1) TTTGACCTTTACGTAAGC  1 
+Atu0405_p-243(fadD)      (    1) ATTGACGTTTACGTTAGA  1 
+BMEI0096_p-176(etfB)     (    1) ATTGACGTGCACGTCAAC  1 
+RHE_CH00557_p-87(acdH)   (    1) TCTGACGTTTACGCAAAC  1 
+BMEII0495_p-193(acdH)    (    1) TTTGACGTTTACGGAAAC  1 
+BMEI0137_p-179(mdh)      (    1) TCTTACGTTTACGTAAGA  1 
+mll4308_p-203(mdh)       (    1) TTTGACGTTTACGTAAGT  1 
+Atu2639_p-160(mdh)       (    1) TCTTACGTTTACGTAAGA  1 
+RHE_CH03891_p-156(mdh)   (    1) TCTTACGTTTACGTAAGA  1 
+RL0505_p-159(fadD)       (    1) GTTGACGTTTACGTTAAG  1 
+SMc02479_p-164(mdh)      (    1) TCTTACGTTTACGTAAGA  1 
+mlr5623_p-154(liuR2)     (    1) ATTGACGTAAACGTAAAA  1 
+NGR_c26900_p-167(etfB)   (    1) TCTTACGTGTACGTAAAC  1 
+NGR_c12400_p-58(liuR1)   (    1) TTTGACTTTTACGTCAAA  1 
+SMc01260_p-58(liuR1)     (    1) TTTGACTTTTACGTCAAA  1 
+RHE_CH00505_p-37(PF03060 (    1) ATTGACGTTTTCGTAAAC  1 
+RL0537_p-37(PF03060)     (    1) ATTGACGTTTTCGTAAAC  1 
+BMEI1320_p-244(etfD)     (    1) TTTGACGTTTACGTTAAG  1 
+BMEI1315_p-148(PF09917)  (    1) GTTTACGTTTGCGTAAGC  1 
+BMEI1521_p-112(acdH2)    (    1) ATTGACGTTTACGTAATA  1 
+BQ13450_p-279(mdh)       (    1) ATTTACCTTCACGTAAAC  1 
+Atu1009_p-208(PF09917)   (    1) TTTTACGTGAACGTCAAA  1 
+SMc00729_p-187(etfB)     (    1) TTTTACCTGTACGTAAAC  1 
+RL4439_p-159(mdh)        (    1) TATTACGTTTACGTAAGA  1 
+SMc00041_p-38(SMc00041)  (    1) CTTGACGTTAACGTCAAA  1 
+NGR_c07940_p-125(etfD)   (    1) ATTTACGTTTACGTTCAA  1 
+BMEI0808_p-65(liuR1)     (    1) ATTGACTTTTACGTAAAT  1 
+mll7718_p-69(PF09917)    (    1) GCTTACGTTTGCGTAAGC  1 
+mll1317_p-127(liuR1)     (    1) ATTGACTTTTACGTAAAT  1 
+NGR_c08080_p-118(PF09917 (    1) ATTTACCTTTACGTACGC  1 
+SMc02391_p-148(PF09917)  (    1) ATTTACCTTTACGTACGC  1 
+BMEI1320_p-238(etfD)     (    1) GTTTACGTTAAGGTAAAA  1 
+BMEI0304_p-84(n/a)       (    1) ATTTACCTTTACGTAAAT  1 
+NGR_c31300_p-162(mdh)    (    1) TCTTACCTTTACGTAAGA  1 
+Meso_0023_p-77(acdH)     (    1) TTTGACGTTTACGCGCAC  1 
+Atu0501_p-84(acdH)       (    1) TTTGACGTTTACGCGCAC  1 
+NGR_c07190_p-38(SMc00041 (    1) TTTGACGTCAACGTCAAA  1 
+NGR_c07190_p-44(SMc00041 (    1) ATTTACTTTGACGTCAAC  1 
+Atu0501_p-78(acdH)       (    1) GTTTACGCGCACGTCAAA  1 
+SMc02377_p-163(etfD)     (    1) GTTTACGTTTACGTTCAG  1 
+Meso_1259_p-63(liuR1)    (    1) ATTGACTTTTACGTAATC  1 
+RHE_CH02217_p-53(liuR1)  (    1) ATTGACTATTACGTAAAA  1 
+RL2550_p-53(liuR1)       (    1) ATTGACTATTACGTAAAA  1 
+SMc00041_p-44(SMc00041)  (    1) ATTTACCTTGACGTTAAC  1 
+SMc02150_p-45(PF03060)   (    1) TTTGACGTTTACGAGAAC  1 
+BMEII0460_p10(PF03060)   (    1) TATTACGTTTACGGAAAC  1 
+Atu0994_p-231(etfD)      (    1) TATTACGTGCACGTAAAA  1 
+Atu1546_p-56(liuR1)      (    1) ATTGACTTTTACGTGAAG  1 
+NGR_c01400_p-41(PF03060) (    1) GTTTACGCAAACGTCAAA  1 
+NGR_c01690_p-129(acdH)   (    1) GTTTACGCAAACGTCAAA  1 
+SMc02229_p-129(acdH)     (    1) GTTTACGCAAACGTCAAA  1 
+SMc02150_p-39(PF03060)   (    1) GTTTACGAGAACGTCAAA  1 
+RL1479_p-61(PF09917)     (    1) ATTTACCTTTACGTTCGC  1 
+RL1312_p-40(SMc00041)    (    1) ATTAACGTTGACGTTAAC  1 
+BMEI1315_p-154(PF09917)  (    1) GTTTACGTTTACGTTTGC  1 
+Atu0415_p-37(PF03060)    (    1) ACTTACGTGCGCGTAAAC  1 
+Atu1546_p-50(liuR1)      (    1) TTTTACGTGAAGGTCAAA  1 
+BMEI1371_p37(SMc00041)   (    1) TATTACGTAAACGTAAGA  1 
+NGR_c07940_p-119(etfD)   (    1) GTTTACGTTCAAGTAAGA  1 
+BMEII0495_p-187(acdH)    (    1) GTTTACGGAAACGTCAAA  1 
+Meso_3395_p-182(mdh)     (    1) GCTTACCCTTACGTAAAT  1 
+SMc02377_p-157(etfD)     (    1) GTTTACGTTCAGGTAACA  1 
+RHE_CH01182_p-41(SMc0004 (    1) AATAACGTTGACGTTAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 84 bayes= 1.83399 E= 1.1e-485 
+    37   -391     56     -3 
+  -235    -59  -1304    127 
+ -1304  -1304  -1304    155 
+  -367  -1304    159     37 
+   172  -1304  -1304  -1304 
+ -1304    248  -1304  -1304 
+ -1304    -59    212   -167 
+  -309   -159   -390    139 
+  -186   -391    -58    121 
+   -58    -91   -158     92 
+   163  -1304   -231   -384 
+  -467    241   -231  -1304 
+ -1304  -1304    249  -1304 
+  -467    -91   -290    135 
+    97     41   -190   -152 
+   158   -110  -1304   -483 
+   128   -391     35   -384 
+    61    122   -158   -251 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 84 E= 1.1e-485 
+ 0.392857  0.011905  0.261905  0.333333 
+ 0.059524  0.119048  0.000000  0.821429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.023810  0.000000  0.535714  0.440476 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.119048  0.773810  0.107143 
+ 0.035714  0.059524  0.011905  0.892857 
+ 0.083333  0.011905  0.119048  0.785714 
+ 0.202381  0.095238  0.059524  0.642857 
+ 0.940476  0.000000  0.035714  0.023810 
+ 0.011905  0.952381  0.035714  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.011905  0.095238  0.023810  0.869048 
+ 0.595238  0.238095  0.047619  0.119048 
+ 0.904762  0.083333  0.000000  0.011905 
+ 0.738095  0.011905  0.226190  0.023810 
+ 0.464286  0.416667  0.059524  0.059524 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DTTKACGTTTACGTAAAM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[ATG]TT[GT]ACGTT[TA]ACGT[AC]A[AG][AC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.19 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc00977_p-73(acdH2)             1.95e-09  [+1(1.95e-09)]
+SMc02229_p-135(acdH)             2.94e-09  [+1(2.94e-09)]
+SMc02229_p-129(acdH)             4.38e-07  [+1(4.38e-07)]
+SMc02479_p-164(mdh)              2.29e-08  [+1(2.29e-08)]
+SMc01260_p-58(liuR1)             2.88e-08  [+1(2.88e-08)]
+SMc02377_p-163(etfD)             2.88e-07  [+1(2.88e-07)]
+SMc02377_p-157(etfD)             2.40e-06  [+1(2.40e-06)]
+SMc02162_p-147(fadD)             3.01e-10  [+1(3.01e-10)]
+SMc02150_p-45(PF03060)           3.42e-07  [+1(3.42e-07)]
+SMc02150_p-39(PF03060)           5.16e-07  [+1(5.16e-07)]
+SMc00041_p-44(SMc00041)          3.12e-07  [+1(3.12e-07)]
+SMc00041_p-38(SMc00041)          8.50e-08  [+1(8.50e-08)]
+SMc02391_p-148(PF09917)          1.39e-07  [+1(1.39e-07)]
+SMc00729_p-187(etfB)             5.63e-08  [+1(5.63e-08)]
+NGR_c04900_p-187(acdH2)          1.54e-10  [+1(1.54e-10)]
+NGR_c01690_p-135(acdH)           2.94e-09  [+1(2.94e-09)]
+NGR_c01690_p-129(acdH)           4.38e-07  [+1(4.38e-07)]
+NGR_c31300_p-162(mdh)            1.52e-07  [+1(1.52e-07)]
+NGR_c12400_p-58(liuR1)           2.88e-08  [+1(2.88e-08)]
+NGR_c07940_p-125(etfD)           9.41e-08  [+1(9.41e-08)]
+NGR_c07940_p-119(etfD)           1.04e-06  [+1(1.04e-06)]
+NGR_c01180_p-147(fadD)           4.84e-10  [+1(4.84e-10)]
+NGR_c07190_p-44(SMc00041         1.83e-07  [+1(1.83e-07)]
+NGR_c07190_p-38(SMc00041         1.83e-07  [+1(1.83e-07)]
+NGR_c01400_p-41(PF03060)         4.38e-07  [+1(4.38e-07)]
+NGR_c08080_p-118(PF09917         1.39e-07  [+1(1.39e-07)]
+NGR_c01400_p-47(PF03060)         2.17e-09  [+1(2.17e-09)]
+NGR_c26900_p-167(etfB)           2.88e-08  [+1(2.88e-08)]
+RL0965_p-82(acdH2)               2.53e-10  [+1(2.53e-10)]
+RL1479_p-61(PF09917)             5.62e-07  [+1(5.62e-07)]
+RL0591_p-87(acdH)                2.94e-09  [+1(2.94e-09)]
+RL4439_p-159(mdh)                7.69e-08  [+1(7.69e-08)]
+RL2550_p-53(liuR1)               3.12e-07  [+1(3.12e-07)]
+RL1457_p-164(etfD)               6.34e-09  [+1(6.34e-09)]
+RL0505_p-159(fadD)               2.29e-08  [+1(2.29e-08)]
+RL4319_p-180(etfB)               6.34e-09  [+1(6.34e-09)]
+RL1312_p-34(SMc00041)            2.17e-09  [+1(2.17e-09)]
+RL0537_p-37(PF03060)             3.21e-08  [+1(3.21e-08)]
+RL1312_p-40(SMc00041)            6.05e-07  [+1(6.05e-07)]
+RHE_CH00905_p-83(acdH2)          2.53e-10  [+1(2.53e-10)]
+RHE_CH00557_p-87(acdH)           1.56e-08  [+1(1.56e-08)]
+RHE_CH03891_p-156(mdh)           2.29e-08  [+1(2.29e-08)]
+RHE_CH02217_p-53(liuR1)          3.12e-07  [+1(3.12e-07)]
+RHE_CH01308_p-158(etfD)          2.63e-09  [+1(2.63e-09)]
+RHE_CH00478_p-159(fadD)          3.95e-09  [+1(3.95e-09)]
+RHE_CH01182_p-35(SMc0004         2.17e-09  [+1(2.17e-09)]
+RHE_CH01182_p-41(SMc0004         3.11e-06  [+1(3.11e-06)]
+RHE_CH00505_p-37(PF03060         3.21e-08  [+1(3.21e-08)]
+RHE_CH03792_p-177(etfB)          3.60e-09  [+1(3.60e-09)]
+Atu0732_p-71(acdH2)              2.53e-10  [+1(2.53e-10)]
+Atu1009_p-208(PF09917)           5.03e-08  [+1(5.03e-08)]
+Atu0501_p-84(acdH)               1.83e-07  [+1(1.83e-07)]
+Atu0501_p-78(acdH)               2.63e-07  [+1(2.63e-07)]
+Atu2639_p-160(mdh)               2.29e-08  [+1(2.29e-08)]
+Atu1546_p-56(liuR1)              4.05e-07  [+1(4.05e-07)]
+Atu1546_p-50(liuR1)              7.69e-07  [+1(7.69e-07)]
+Atu0994_p-231(etfD)              4.05e-07  [+1(4.05e-07)]
+Atu0405_p-243(fadD)              1.09e-08  [+1(1.09e-08)]
+Atu0415_p-37(PF03060)            7.69e-07  [+1(7.69e-07)]
+Atu3595_p-160(etfB)              5.28e-09  [+1(5.28e-09)]
+Meso_0723_p-93(acdH2)            1.09e-08  [+1(1.09e-08)]
+Meso_0023_p-77(acdH)             1.83e-07  [+1(1.83e-07)]
+Meso_3395_p-182(mdh)             1.60e-06  [+1(1.60e-06)]
+Meso_1259_p-63(liuR1)            3.12e-07  [+1(3.12e-07)]
+mlr7452_p-109(acdH2)             4.38e-10  [+1(4.38e-10)]
+mlr5624_p-115(acdH)              2.17e-09  [+1(2.17e-09)]
+mll4308_p-203(mdh)               2.29e-08  [+1(2.29e-08)]
+mll1317_p-127(liuR1)             1.39e-07  [+1(1.39e-07)]
+mll7718_p-69(PF09917)            1.39e-07  [+1(1.39e-07)]
+mlr5623_p-154(liuR2)             2.88e-08  [+1(2.88e-08)]
+BMEI1521_p-112(acdH2)            4.02e-08  [+1(4.02e-08)]
+BMEI0304_p-84(n/a)               1.52e-07  [+1(1.52e-07)]
+BMEI1315_p-148(PF09917)          4.02e-08  [+1(4.02e-08)]
+BMEI1315_p-154(PF09917)          7.69e-07  [+1(7.69e-07)]
+BMEI1320_p-244(etfD)             3.62e-08  [+1(3.62e-08)]
+BMEII0495_p-193(acdH)            1.81e-08  [+1(1.81e-08)]
+BMEII0495_p-187(acdH)            1.39e-06  [+1(1.39e-06)]
+BMEI0137_p-179(mdh)              2.29e-08  [+1(2.29e-08)]
+BMEI0808_p-65(liuR1)             1.39e-07  [+1(1.39e-07)]
+BMEII0460_p10(PF03060)           4.05e-07  [+1(4.05e-07)]
+BMEI0096_p-176(etfB)             1.22e-08  [+1(1.22e-08)]
+BMEI1320_p-238(etfD)             1.52e-07  [+1(1.52e-07)]
+BMEI1371_p37(SMc00041)           1.04e-06  [+1(1.04e-06)]
+BQ13450_p-279(mdh)               4.52e-08  [+1(4.52e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

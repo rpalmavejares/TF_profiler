@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/CsoR_Corynebacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CORAM0001_1740_p-27(copZ 1.0000     17  cauri_2433_p-66(copZ)    1.0000     17  
+CE0407_p-65(copA)        1.0000     17  cg0464_p-58(copA)        1.0000     17  
+cg3282_p-222(copY)       1.0000     17  jk0638_p-26(copA)        1.0000     17  
+jk1430_p-93(copY)        1.0000     17  jk1430_p-67(copY)        1.0000     17  
+ckrop_2049_p-51(copZ)    1.0000     17  ckrop_2049_p-17(copZ)    1.0000     17  
+ckrop_1942_p-65(copY)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/CsoR_Corynebacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/CsoR_Corynebacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             187    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    187    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.241 C 0.257 G 0.294 T 0.209 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.241 C 0.257 G 0.293 T 0.209 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATACCCCHDGGGGGTAT MEME-1	width =  17  sites =  11  llr = 217  E-value = 8.5e-067
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:a:::23331::::a:
+pos.-specific     C  :::aaa851::::::::
+probability       G  ::::::::479aaa:::
+matrix            T  :a:::::33:::::a:a
+
+         bits    2.3  *            * *
+                 2.0 ******        ***
+                 1.8 ******     ******
+                 1.6 ******     ******
+Relative         1.4 *******   *******
+Entropy          1.1 *******   *******
+(28.4 bits)      0.9 *******  ********
+                 0.7 *******  ********
+                 0.5 ******** ********
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ATACCCCCGGGGGGTAT
+consensus                   AAA       
+sequence                    TT        
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+jk1430_p-67(copY)             1  6.47e-11          . ATACCCCCTGGGGGTAT           
+ckrop_1942_p-65(copY)         1  1.55e-10          . ATACCCCCGGGGGGTAT           
+jk1430_p-93(copY)             1  2.30e-10          . ATACCCCCAGGGGGTAT           
+cg0464_p-58(copA)             1  4.77e-10          . ATACCCCTAGGGGGTAT           
+cauri_2433_p-66(copZ)         1  5.62e-10          . ATACCCCAGGGGGGTAT           
+jk0638_p-26(copA)             1  6.86e-10          . ATACCCCCTAGGGGTAT           
+cg3282_p-222(copY)            1  1.03e-09          . ATACCCCATAGGGGTAT           
+ckrop_2049_p-51(copZ)         1  1.71e-09          . ATACCCATGGGGGGTAT           
+CORAM0001_1740_p-27(copZ      1  1.82e-09          . ATACCCATAGGGGGTAT           
+CE0407_p-65(copA)             1  2.03e-09          . ATACCCCCCAGGGGTAT           
+ckrop_2049_p-17(copZ)         1  2.98e-09          . ATACCCCAGGAGGGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+jk1430_p-67(copY)                 6.5e-11  [+1]
+ckrop_1942_p-65(copY)             1.6e-10  [+1]
+jk1430_p-93(copY)                 2.3e-10  [+1]
+cg0464_p-58(copA)                 4.8e-10  [+1]
+cauri_2433_p-66(copZ)             5.6e-10  [+1]
+jk0638_p-26(copA)                 6.9e-10  [+1]
+cg3282_p-222(copY)                  1e-09  [+1]
+ckrop_2049_p-51(copZ)             1.7e-09  [+1]
+CORAM0001_1740_p-27(copZ          1.8e-09  [+1]
+CE0407_p-65(copA)                   2e-09  [+1]
+ckrop_2049_p-17(copZ)               3e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATACCCCHDGGGGGTAT width=17 seqs=11
+jk1430_p-67(copY)        (    1) ATACCCCCTGGGGGTAT  1 
+ckrop_1942_p-65(copY)    (    1) ATACCCCCGGGGGGTAT  1 
+jk1430_p-93(copY)        (    1) ATACCCCCAGGGGGTAT  1 
+cg0464_p-58(copA)        (    1) ATACCCCTAGGGGGTAT  1 
+cauri_2433_p-66(copZ)    (    1) ATACCCCAGGGGGGTAT  1 
+jk0638_p-26(copA)        (    1) ATACCCCCTAGGGGTAT  1 
+cg3282_p-222(copY)       (    1) ATACCCCATAGGGGTAT  1 
+ckrop_2049_p-51(copZ)    (    1) ATACCCATGGGGGGTAT  1 
+CORAM0001_1740_p-27(copZ (    1) ATACCCATAGGGGGTAT  1 
+CE0407_p-65(copA)        (    1) ATACCCCCCAGGGGTAT  1 
+ckrop_2049_p-17(copZ)    (    1) ATACCCCAGGAGGGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 11 bayes= 0.921997 E= 8.5e-067 
+   205  -1010  -1010  -1010 
+ -1010  -1010  -1010    225 
+   205  -1010  -1010  -1010 
+ -1010    196  -1010  -1010 
+ -1010    196  -1010  -1010 
+ -1010    196  -1010  -1010 
+   -41    167  -1010  -1010 
+    18     82  -1010     38 
+    18   -149     31     38 
+    18  -1010    131  -1010 
+  -140  -1010    163  -1010 
+ -1010  -1010    177  -1010 
+ -1010  -1010    177  -1010 
+ -1010  -1010    177  -1010 
+ -1010  -1010  -1010    225 
+   205  -1010  -1010  -1010 
+ -1010  -1010  -1010    225 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 11 E= 8.5e-067 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.181818  0.818182  0.000000  0.000000 
+ 0.272727  0.454545  0.000000  0.272727 
+ 0.272727  0.090909  0.363636  0.272727 
+ 0.272727  0.000000  0.727273  0.000000 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCCHDGGGGGTAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATACCCC[CAT][GAT][GA]GGGGTAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CORAM0001_1740_p-27(copZ         1.82e-09  [+1(1.82e-09)]
+cauri_2433_p-66(copZ)            5.62e-10  [+1(5.62e-10)]
+CE0407_p-65(copA)                2.03e-09  [+1(2.03e-09)]
+cg0464_p-58(copA)                4.77e-10  [+1(4.77e-10)]
+cg3282_p-222(copY)               1.03e-09  [+1(1.03e-09)]
+jk0638_p-26(copA)                6.86e-10  [+1(6.86e-10)]
+jk1430_p-93(copY)                2.30e-10  [+1(2.30e-10)]
+jk1430_p-67(copY)                6.47e-11  [+1(6.47e-11)]
+ckrop_2049_p-51(copZ)            1.71e-09  [+1(1.71e-09)]
+ckrop_2049_p-17(copZ)            2.98e-09  [+1(2.98e-09)]
+ckrop_1942_p-65(copY)            1.55e-10  [+1(1.55e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

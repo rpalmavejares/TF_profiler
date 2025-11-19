@@ -1,0 +1,278 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/AraR_Lactobacillaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LVIS_1743_p-212(araE)    1.0000     20  LVIS_1743_p-183(araE)    1.0000     20  
+LAF_1558_p-77(araK)      1.0000     20  LAF_1555_p-153(araE)     1.0000     20  
+LAF_1554_p-105(araA)     1.0000     20  lp_3557_p-166(araE)      1.0000     20  
+lp_3558_p-234(araR)      1.0000     20  lp_3557_p-195(araE)      1.0000     20  
+LAR_0467_p-103(araE)     1.0000     20  LSA1860_p-250(araE)      1.0000     20  
+LSA1860_p-150(araE)      1.0000     20  LSA1860_p-121(araE)      1.0000     20  
+LEUM_0852_p-136(araA)    1.0000     20  OEOE_0227_p-149(araK)    1.0000     20  
+OEOE_0227_p-179(araK)    1.0000     20  OEOE_0227_p-192(araK)    1.0000     20  
+PEPE_0162_p-121(araE)    1.0000     20  PEPE_0162_p-89(araE)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/AraR_Lactobacillaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/AraR_Lactobacillaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             360    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    360    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.414 C 0.103 G 0.122 T 0.361 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.412 C 0.104 G 0.124 T 0.36 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WKATTTATMCGDAYAAAT MEME-1	width =  18  sites =  18  llr = 214  E-value = 4.4e-052
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  32a1:17:4113a18a83
+pos.-specific     C  :::1:1::39:::41:1:
+probability       G  :5:::22:2:83::1:::
+matrix            T  73:8a71a2114:5::17
+
+         bits    3.3                   
+                 2.9                   
+                 2.6                   
+                 2.3          *        
+Relative         2.0          **       
+Entropy          1.6     *  * **       
+(17.2 bits)      1.3   * *  * ** *  *  
+                 1.0   * *  * ** *  *  
+                 0.7 ****** * ** ******
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           TGATTTATACGTATAAAT
+consensus            AT      C  A C   A
+sequence              A         G      
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+LAR_0467_p-103(araE)          1  1.46e-10          . TGATTTATCCGTACAAAT AT        
+LVIS_1743_p-183(araE)         1  8.97e-10          . TGATTTATGCGTACAAAT AT        
+LEUM_0852_p-136(araA)         1  2.94e-09          . TGACTTATACGGACAAAT GT        
+LAF_1558_p-77(araK)           1  5.52e-09          . TGATTTATACGGACAAAA AA        
+PEPE_0162_p-89(araE)          1  1.73e-08          . TGACTTGTCCGTATAAAT AT        
+lp_3557_p-166(araE)           1  1.73e-08          . TGATTTATACGTATAAAT AT        
+LAF_1554_p-105(araA)          1  5.64e-08          . TGAATTGTACGGACAAAT AT        
+lp_3558_p-234(araR)           1  6.32e-08          . TTATTGATGCGGATAAAT TG        
+LSA1860_p-121(araE)           1  7.11e-07          . TGATTTATTCGAATGAAA GT        
+OEOE_0227_p-149(araK)         1  1.96e-06          . TGATTTATATGTACGAAT GT        
+PEPE_0162_p-121(araE)         1  4.13e-06          . AAATTCATCCTAACAAAT TT        
+lp_3557_p-195(araE)           1  7.10e-06          . TAATTTGTGCTGATAAAA CA        
+LSA1860_p-250(araE)           1  7.69e-06          . ATAATTATTCGAATAAAT AA        
+OEOE_0227_p-179(araK)         1  8.22e-06          . AAATTCATACGTAAAACT AA        
+LSA1860_p-150(araE)           1  1.19e-05          . ATATTGATTCGAATCAAA AA        
+LVIS_1743_p-212(araE)         1  1.37e-05          . AAATTAATCCGAATAACA AA        
+LAF_1555_p-153(araE)          1  9.01e-05          . ATATTGTTCAGTATAATT TA        
+OEOE_0227_p-192(araK)         1  2.14e-04          . TTATTTTTACAAAAAATT CA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LAR_0467_p-103(araE)              1.5e-10  [+1]_2
+LVIS_1743_p-183(araE)               9e-10  [+1]_2
+LEUM_0852_p-136(araA)             2.9e-09  [+1]_2
+LAF_1558_p-77(araK)               5.5e-09  [+1]_2
+PEPE_0162_p-89(araE)              1.7e-08  [+1]_2
+lp_3557_p-166(araE)               1.7e-08  [+1]_2
+LAF_1554_p-105(araA)              5.6e-08  [+1]_2
+lp_3558_p-234(araR)               6.3e-08  [+1]_2
+LSA1860_p-121(araE)               7.1e-07  [+1]_2
+OEOE_0227_p-149(araK)               2e-06  [+1]_2
+PEPE_0162_p-121(araE)             4.1e-06  [+1]_2
+lp_3557_p-195(araE)               7.1e-06  [+1]_2
+LSA1860_p-250(araE)               7.7e-06  [+1]_2
+OEOE_0227_p-179(araK)             8.2e-06  [+1]_2
+LSA1860_p-150(araE)               1.2e-05  [+1]_2
+LVIS_1743_p-212(araE)             1.4e-05  [+1]_2
+LAF_1555_p-153(araE)                9e-05  [+1]_2
+OEOE_0227_p-192(araK)             0.00021  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WKATTTATMCGDAYAAAT width=18 seqs=18
+LAR_0467_p-103(araE)     (    1) TGATTTATCCGTACAAAT  1 
+LVIS_1743_p-183(araE)    (    1) TGATTTATGCGTACAAAT  1 
+LEUM_0852_p-136(araA)    (    1) TGACTTATACGGACAAAT  1 
+LAF_1558_p-77(araK)      (    1) TGATTTATACGGACAAAA  1 
+PEPE_0162_p-89(araE)     (    1) TGACTTGTCCGTATAAAT  1 
+lp_3557_p-166(araE)      (    1) TGATTTATACGTATAAAT  1 
+LAF_1554_p-105(araA)     (    1) TGAATTGTACGGACAAAT  1 
+lp_3558_p-234(araR)      (    1) TTATTGATGCGGATAAAT  1 
+LSA1860_p-121(araE)      (    1) TGATTTATTCGAATGAAA  1 
+OEOE_0227_p-149(araK)    (    1) TGATTTATATGTACGAAT  1 
+PEPE_0162_p-121(araE)    (    1) AAATTCATCCTAACAAAT  1 
+lp_3557_p-195(araE)      (    1) TAATTTGTGCTGATAAAA  1 
+LSA1860_p-250(araE)      (    1) ATAATTATTCGAATAAAT  1 
+OEOE_0227_p-179(araK)    (    1) AAATTCATACGTAAAACT  1 
+LSA1860_p-150(araE)      (    1) ATATTGATTCGAATCAAA  1 
+LVIS_1743_p-212(araE)    (    1) AAATTAATCCGAATAACA  1 
+LAF_1555_p-153(araE)     (    1) ATATTGTTCAGTATAATT  1 
+OEOE_0227_p-192(araK)    (    1) TTATTTTTACAAAAAATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 54 bayes= 3.2303 E= 4.4e-052 
+   -31  -1081  -1081     89 
+   -89  -1081    202    -37 
+   128  -1081  -1081  -1081 
+  -189      9  -1081    111 
+ -1081  -1081  -1081    147 
+  -289      9     43     89 
+    81  -1081     43   -169 
+ -1081  -1081  -1081    147 
+    -8    141     43   -111 
+  -289    309  -1081   -269 
+  -289  -1081    275   -169 
+   -31  -1081    117     11 
+   128  -1081  -1081  -1081 
+  -189    190  -1081     47 
+   102    -91    -15  -1081 
+   128  -1081  -1081  -1081 
+    92      9  -1081   -169 
+   -57  -1081  -1081    100 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 18 E= 4.4e-052 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.222222  0.000000  0.500000  0.277778 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.111111  0.111111  0.000000  0.777778 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.055556  0.111111  0.166667  0.666667 
+ 0.722222  0.000000  0.166667  0.111111 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.388889  0.277778  0.166667  0.166667 
+ 0.055556  0.888889  0.000000  0.055556 
+ 0.055556  0.000000  0.833333  0.111111 
+ 0.333333  0.000000  0.277778  0.388889 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.111111  0.388889  0.000000  0.500000 
+ 0.833333  0.055556  0.111111  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.777778  0.111111  0.000000  0.111111 
+ 0.277778  0.000000  0.000000  0.722222 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKATTTATMCGDAYAAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][GTA]ATTTAT[AC]CG[TAG]A[TC]AAA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LVIS_1743_p-212(araE)            4.10e-05  [+1(1.37e-05)]_2
+LVIS_1743_p-183(araE)            2.69e-09  [+1(8.97e-10)]_2
+LAF_1558_p-77(araK)              1.65e-08  [+1(5.52e-09)]_2
+LAF_1555_p-153(araE)             2.70e-04  [+1(9.01e-05)]_2
+LAF_1554_p-105(araA)             1.69e-07  [+1(5.64e-08)]_2
+lp_3557_p-166(araE)              5.18e-08  [+1(1.73e-08)]_2
+lp_3558_p-234(araR)              1.90e-07  [+1(6.32e-08)]_2
+lp_3557_p-195(araE)              2.13e-05  [+1(7.10e-06)]_2
+LAR_0467_p-103(araE)             4.37e-10  [+1(1.46e-10)]_2
+LSA1860_p-250(araE)              2.31e-05  [+1(7.69e-06)]_2
+LSA1860_p-150(araE)              3.57e-05  [+1(1.19e-05)]_2
+LSA1860_p-121(araE)              2.13e-06  [+1(7.11e-07)]_2
+LEUM_0852_p-136(araA)            8.83e-09  [+1(2.94e-09)]_2
+OEOE_0227_p-149(araK)            5.87e-06  [+1(1.96e-06)]_2
+OEOE_0227_p-179(araK)            2.47e-05  [+1(8.22e-06)]_2
+OEOE_0227_p-192(araK)            6.41e-04  20
+PEPE_0162_p-121(araE)            1.24e-05  [+1(4.13e-06)]_2
+PEPE_0162_p-89(araE)             5.18e-08  [+1(1.73e-08)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,286 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermoproteales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Pars_2195_p-33(thiT)     1.0000     13  Pars_2186_p-33(tenA1)    1.0000     13  
+Pcal_1316_p-33(tenA1)    1.0000     13  Pcal_0348_p-33(thiT)     1.0000     13  
+Pcal_1890_p-33(tenA2)    1.0000     13  PAE0175_p-33(thi4)       1.0000     13  
+PAE0175_p-66(thi4)       1.0000     13  PAE2535_p-36(thiDN)      1.0000     13  
+PAE0176_p-33(thiT)       1.0000     13  PAE0176_p-66(thiT)       1.0000     13  
+PAE0170_p-33(tenA1)      1.0000     13  PAE0333_p-18(thiC)       1.0000     13  
+Pisl_1974_p-33(tenA1)    1.0000     13  Pisl_1450_p-33(thiC)     1.0000     13  
+Pisl_1973_p-35(thiT)     1.0000     13  Pisl_1998_p3(thi4)       1.0000     13  
+Pisl_1419_p-11(thiDN)    1.0000     13  Tneu_1074_p-33(tenA1)    1.0000     13  
+Tneu_1052_p-33(thi4)     1.0000     13  Tneu_1075_p-35(thiT)     1.0000     13  
+Tneu_0530_p6(thiC)       1.0000     13  Tneu_1881_p-51(thiDN)    1.0000     13  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermoproteales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Thermoproteales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           13
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             286    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    286    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.465 C 0.028 G 0.021 T 0.486 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.462 C 0.031 G 0.0241 T 0.483 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWAAWATTTTTAT MEME-1	width =  13  sites =  22  llr = 130  E-value = 1.7e-035
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a5aa55331::8:
+pos.-specific     C  ::::12:::::::
+probability       G  :::::2:::::::
+matrix            T  :5::31779aa2a
+
+         bits    5.4              
+                 4.8              
+                 4.3              
+                 3.8              
+Relative         3.2              
+Entropy          2.7              
+(8.5 bits)       2.1              
+                 1.6              
+                 1.1 * ** *   *  *
+                 0.5 * ** *  *****
+                 0.0 -------------
+
+Multilevel           AAAAAATTTTTAT
+consensus             T  T AA     
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+Tneu_1881_p-51(thiDN)         1  4.56e-07          . AAAACGTTTTTAT           
+Tneu_0530_p6(thiC)            1  1.04e-06          . AAAACCTTTTTAT           
+Pars_2186_p-33(tenA1)         1  1.06e-05          . ATAAAGTTTTTAT           
+Pcal_1890_p-33(tenA2)         1  1.99e-05          . AAAAACCTTTTAT           
+Pisl_1450_p-33(thiC)          1  6.34e-05          . AAAATCTTTTTAT           
+Pcal_0348_p-33(thiT)          1  1.26e-04          . ATAATGTATTTAT           
+Pisl_1419_p-11(thiDN)         1  1.39e-04          . AAAAAATTGTTAT           
+Tneu_1074_p-33(tenA1)         1  2.73e-04          . AAAAAATTTTTAT           
+Pisl_1974_p-33(tenA1)         1  2.73e-04          . AAAAAATTTTTAT           
+PAE0170_p-33(tenA1)           1  2.73e-04          . ATAAAATTTTTAT           
+Tneu_1052_p-33(thi4)          1  2.93e-04          . AAAATCTATTTAT           
+Pisl_1998_p3(thi4)            1  3.38e-04          . AAAAGATATTTAT           
+PAE0175_p-33(thi4)            1  5.51e-04          . ATAATATTTTTAT           
+Pcal_1316_p-33(tenA1)         1  1.75e-03          . TTAATGTTTTTAT           
+PAE0333_p-18(thiC)            1  1.95e-03          . AAAACTAATTTAT           
+Tneu_1075_p-35(thiT)          1  2.41e-03          . ATAAAAATTTTTT           
+Pisl_1973_p-35(thiT)          1  2.41e-03          . ATAAAAATTTTTT           
+PAE2535_p-36(thiDN)           1  2.41e-03          . ATAAAAATTTTTT           
+PAE0176_p-66(thiT)            1  3.62e-03          . ATAAAAATATTAT           
+Pars_2195_p-33(thiT)          1  6.04e-03          . ATAAAATATTAAT           
+PAE0176_p-33(thiT)            1  6.43e-03          . AAAAATTTATTAT           
+PAE0175_p-66(thi4)            1  6.62e-03          . ATAATAAATTTTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tneu_1881_p-51(thiDN)             4.6e-07  [+1]
+Tneu_0530_p6(thiC)                  1e-06  [+1]
+Pars_2186_p-33(tenA1)             1.1e-05  [+1]
+Pcal_1890_p-33(tenA2)               2e-05  [+1]
+Pisl_1450_p-33(thiC)              6.3e-05  [+1]
+Pcal_0348_p-33(thiT)              0.00013  [+1]
+Pisl_1419_p-11(thiDN)             0.00014  [+1]
+Tneu_1074_p-33(tenA1)             0.00027  [+1]
+Pisl_1974_p-33(tenA1)             0.00027  [+1]
+PAE0170_p-33(tenA1)               0.00027  [+1]
+Tneu_1052_p-33(thi4)              0.00029  [+1]
+Pisl_1998_p3(thi4)                0.00034  [+1]
+PAE0175_p-33(thi4)                0.00055  [+1]
+Pcal_1316_p-33(tenA1)              0.0018  [+1]
+PAE0333_p-18(thiC)                  0.002  [+1]
+Tneu_1075_p-35(thiT)               0.0024  [+1]
+Pisl_1973_p-35(thiT)               0.0024  [+1]
+PAE2535_p-36(thiDN)                0.0024  [+1]
+PAE0176_p-66(thiT)                 0.0036  [+1]
+Pars_2195_p-33(thiT)                0.006  [+1]
+PAE0176_p-33(thiT)                 0.0064  [+1]
+PAE0175_p-66(thi4)                 0.0066  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWAAWATTTTTAT width=13 seqs=22
+Tneu_1881_p-51(thiDN)    (    1) AAAACGTTTTTAT  1 
+Tneu_0530_p6(thiC)       (    1) AAAACCTTTTTAT  1 
+Pars_2186_p-33(tenA1)    (    1) ATAAAGTTTTTAT  1 
+Pcal_1890_p-33(tenA2)    (    1) AAAAACCTTTTAT  1 
+Pisl_1450_p-33(thiC)     (    1) AAAATCTTTTTAT  1 
+Pcal_0348_p-33(thiT)     (    1) ATAATGTATTTAT  1 
+Pisl_1419_p-11(thiDN)    (    1) AAAAAATTGTTAT  1 
+Tneu_1074_p-33(tenA1)    (    1) AAAAAATTTTTAT  1 
+Pisl_1974_p-33(tenA1)    (    1) AAAAAATTTTTAT  1 
+PAE0170_p-33(tenA1)      (    1) ATAAAATTTTTAT  1 
+Tneu_1052_p-33(thi4)     (    1) AAAATCTATTTAT  1 
+Pisl_1998_p3(thi4)       (    1) AAAAGATATTTAT  1 
+PAE0175_p-33(thi4)       (    1) ATAATATTTTTAT  1 
+Pcal_1316_p-33(tenA1)    (    1) TTAATGTTTTTAT  1 
+PAE0333_p-18(thiC)       (    1) AAAACTAATTTAT  1 
+Tneu_1075_p-35(thiT)     (    1) ATAAAAATTTTTT  1 
+Pisl_1973_p-35(thiT)     (    1) ATAAAAATTTTTT  1 
+PAE2535_p-36(thiDN)      (    1) ATAAAAATTTTTT  1 
+PAE0176_p-66(thiT)       (    1) ATAAAAATATTAT  1 
+Pars_2195_p-33(thiT)     (    1) ATAAAATATTAAT  1 
+PAE0176_p-33(thiT)       (    1) AAAAATTTATTAT  1 
+PAE0175_p-66(thi4)       (    1) ATAATAAATTTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 22 bayes= 1.41504 E= 1.7e-035 
+   105  -1110  -1110   -340 
+    11  -1110  -1110      5 
+   111  -1110  -1110  -1110 
+   111  -1110  -1110  -1110 
+    24    214     91    -82 
+    24    255    291   -241 
+   -76     55  -1110     50 
+   -76  -1110  -1110     59 
+  -234  -1110     91     84 
+ -1110  -1110  -1110    105 
+  -334  -1110  -1110     98 
+    82  -1110  -1110   -141 
+ -1110  -1110  -1110    105 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 22 E= 1.7e-035 
+ 0.954545  0.000000  0.000000  0.045455 
+ 0.500000  0.000000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.545455  0.136364  0.045455  0.272727 
+ 0.545455  0.181818  0.181818  0.090909 
+ 0.272727  0.045455  0.000000  0.681818 
+ 0.272727  0.000000  0.000000  0.727273 
+ 0.090909  0.000000  0.045455  0.863636 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.045455  0.000000  0.000000  0.954545 
+ 0.818182  0.000000  0.000000  0.181818 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAAWATTTTTAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT]AA[AT]A[TA][TA]TTTAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pars_2195_p-33(thiT)             6.04e-03  13
+Pars_2186_p-33(tenA1)            1.06e-05  [+1(1.06e-05)]
+Pcal_1316_p-33(tenA1)            1.75e-03  13
+Pcal_0348_p-33(thiT)             1.26e-04  13
+Pcal_1890_p-33(tenA2)            1.99e-05  [+1(1.99e-05)]
+PAE0175_p-33(thi4)               5.51e-04  13
+PAE0175_p-66(thi4)               6.62e-03  13
+PAE2535_p-36(thiDN)              2.41e-03  13
+PAE0176_p-33(thiT)               6.43e-03  13
+PAE0176_p-66(thiT)               3.62e-03  13
+PAE0170_p-33(tenA1)              2.73e-04  13
+PAE0333_p-18(thiC)               1.95e-03  13
+Pisl_1974_p-33(tenA1)            2.73e-04  13
+Pisl_1450_p-33(thiC)             6.34e-05  [+1(6.34e-05)]
+Pisl_1973_p-35(thiT)             2.41e-03  13
+Pisl_1998_p3(thi4)               3.38e-04  13
+Pisl_1419_p-11(thiDN)            1.39e-04  13
+Tneu_1074_p-33(tenA1)            2.73e-04  13
+Tneu_1052_p-33(thi4)             2.93e-04  13
+Tneu_1075_p-35(thiT)             2.41e-03  13
+Tneu_0530_p6(thiC)               1.04e-06  [+1(1.04e-06)]
+Tneu_1881_p-51(thiDN)            4.56e-07  [+1(4.56e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

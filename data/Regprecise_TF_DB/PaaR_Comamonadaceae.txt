@@ -1,0 +1,264 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PaaR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Daci_0809_p-59(paaK)     1.0000     22  Daci_0809_p-63(paaK)     1.0000     22  
+Daci_0568_p-71(paaF)     1.0000     22  Daci_0808_p-111(paaZ)    1.0000     22  
+Lcho_2406_p-115(paaY2)   1.0000     22  Lcho_3574_p-48(paaA)     1.0000     22  
+Lcho_2405_p-42(paaF)     1.0000     22  Mpe_A0984_p-85(paaF)     1.0000     22  
+Mpe_A0983_p-78(paaY2)    1.0000     22  Vapar_1238_p-48(paaF)    1.0000     22  
+Vapar_1239_p-101(paaY2)  1.0000     22  Vapar_1238_p-52(paaF)    1.0000     22  
+Veis_3942_p-102(paaF)    1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PaaR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PaaR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             286    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    286    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.238 C 0.273 G 0.252 T 0.238 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.238 C 0.272 G 0.252 T 0.238 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATYKACCGACCGGTCGGTMRAT MEME-1	width =  22  sites =  13  llr = 255  E-value = 1.1e-070
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  71229:::82:2:21:::4681
+pos.-specific     C  113::9a:189::29:::6::1
+probability       G  1::3:::81::88::aa::421
+matrix            T  285511:21:1:26:::a:::8
+
+         bits    2.1                ***    
+                 1.9       *        ***    
+                 1.7     * *        ***    
+                 1.4     ***   **  ****    
+Relative         1.2  *  **** **** ****  * 
+Entropy          1.0  *  **** **** ******* 
+(28.3 bits)      0.8  *  ********* ********
+                 0.6 **********************
+                 0.4 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ATTTACCGACCGGTCGGTCAAT
+consensus              CG   T    TA    AGG 
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+Lcho_3574_p-48(paaA)          1  4.56e-13          . ATTTACCGACCGGACGGTCAAT           
+Daci_0568_p-71(paaF)          1  1.95e-11          . ATTTACCGACCATTCGGTAAAT           
+Lcho_2405_p-42(paaF)          1  3.08e-11          . ATTTACCTACCGGTCGGTCAAG           
+Vapar_1239_p-101(paaY2)       1  6.90e-11          . ATTGACCGACCGTCCGGTAGAT           
+Vapar_1238_p-48(paaF)         1  1.27e-10          . ATCTACCGGACGGTCGGTCAAT           
+Veis_3942_p-102(paaF)         1  1.41e-10          . ATCTACCGCACGGTCGGTCAAT           
+Mpe_A0984_p-85(paaF)          1  3.04e-10          . GTCTACCGACTGGTCGGTCAAT           
+Mpe_A0983_p-78(paaY2)         1  3.64e-10          . ATTGACCGACCAGTCGGTAGAC           
+Lcho_2406_p-115(paaY2)        1  4.35e-10          . CTTGACCGACCGGTAGGTAAAT           
+Daci_0808_p-111(paaZ)         1  6.14e-10          . ATTGACCGACCGGACGGTAGGA           
+Daci_0809_p-59(paaK)          1  1.62e-09          . TCCTACCGTCCGGTCGGTCAAT           
+Daci_0809_p-63(paaK)          1  2.15e-08          . ATAATCCTACCGTCCGGTCGGT           
+Vapar_1238_p-52(paaF)         1  7.20e-08          . TAAAATCTACCGGACGGTCGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Lcho_3574_p-48(paaA)              4.6e-13  [+1]
+Daci_0568_p-71(paaF)              1.9e-11  [+1]
+Lcho_2405_p-42(paaF)              3.1e-11  [+1]
+Vapar_1239_p-101(paaY2)           6.9e-11  [+1]
+Vapar_1238_p-48(paaF)             1.3e-10  [+1]
+Veis_3942_p-102(paaF)             1.4e-10  [+1]
+Mpe_A0984_p-85(paaF)                3e-10  [+1]
+Mpe_A0983_p-78(paaY2)             3.6e-10  [+1]
+Lcho_2406_p-115(paaY2)            4.4e-10  [+1]
+Daci_0808_p-111(paaZ)             6.1e-10  [+1]
+Daci_0809_p-59(paaK)              1.6e-09  [+1]
+Daci_0809_p-63(paaK)              2.2e-08  [+1]
+Vapar_1238_p-52(paaF)             7.2e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATYKACCGACCGGTCGGTMRAT width=22 seqs=13
+Lcho_3574_p-48(paaA)     (    1) ATTTACCGACCGGACGGTCAAT  1 
+Daci_0568_p-71(paaF)     (    1) ATTTACCGACCATTCGGTAAAT  1 
+Lcho_2405_p-42(paaF)     (    1) ATTTACCTACCGGTCGGTCAAG  1 
+Vapar_1239_p-101(paaY2)  (    1) ATTGACCGACCGTCCGGTAGAT  1 
+Vapar_1238_p-48(paaF)    (    1) ATCTACCGGACGGTCGGTCAAT  1 
+Veis_3942_p-102(paaF)    (    1) ATCTACCGCACGGTCGGTCAAT  1 
+Mpe_A0984_p-85(paaF)     (    1) GTCTACCGACTGGTCGGTCAAT  1 
+Mpe_A0983_p-78(paaY2)    (    1) ATTGACCGACCAGTCGGTAGAC  1 
+Lcho_2406_p-115(paaY2)   (    1) CTTGACCGACCGGTAGGTAAAT  1 
+Daci_0808_p-111(paaZ)    (    1) ATTGACCGACCGGACGGTAGGA  1 
+Daci_0809_p-59(paaK)     (    1) TCCTACCGTCCGGTCGGTCAAT  1 
+Daci_0809_p-63(paaK)     (    1) ATAATCCTACCGTCCGGTCGGT  1 
+Vapar_1238_p-52(paaF)    (    1) TAAAATCTACCGGACGGTCGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 13 bayes= 1.06711 E= 1.1e-070 
+   154   -182   -171    -63 
+  -163   -182  -1035    183 
+   -63     18  -1035    118 
+   -63  -1035     29    118 
+   196  -1035  -1035   -163 
+ -1035    176  -1035   -163 
+ -1035    188  -1035  -1035 
+ -1035  -1035    161     -4 
+   169   -182   -171   -163 
+   -63    163  -1035  -1035 
+ -1035    176  -1035   -163 
+   -63  -1035    175  -1035 
+ -1035  -1035    161     -4 
+    -4    -82  -1035    137 
+  -163    176  -1035  -1035 
+ -1035  -1035    199  -1035 
+ -1035  -1035    199  -1035 
+ -1035  -1035  -1035    207 
+    69    118  -1035  -1035 
+   137  -1035     61  -1035 
+   169  -1035    -13  -1035 
+  -163   -182   -171    169 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 13 E= 1.1e-070 
+ 0.692308  0.076923  0.076923  0.153846 
+ 0.076923  0.076923  0.000000  0.846154 
+ 0.153846  0.307692  0.000000  0.538462 
+ 0.153846  0.000000  0.307692  0.538462 
+ 0.923077  0.000000  0.000000  0.076923 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.769231  0.230769 
+ 0.769231  0.076923  0.076923  0.076923 
+ 0.153846  0.846154  0.000000  0.000000 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.153846  0.000000  0.846154  0.000000 
+ 0.000000  0.000000  0.769231  0.230769 
+ 0.230769  0.153846  0.000000  0.615385 
+ 0.076923  0.923077  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.384615  0.615385  0.000000  0.000000 
+ 0.615385  0.000000  0.384615  0.000000 
+ 0.769231  0.000000  0.230769  0.000000 
+ 0.076923  0.076923  0.076923  0.769231 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYKACCGACCGGTCGGTMRAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[TC][TG]ACC[GT]ACCG[GT][TA]CGGT[CA][AG][AG]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Daci_0809_p-59(paaK)             1.62e-09  [+1(1.62e-09)]
+Daci_0809_p-63(paaK)             2.15e-08  [+1(2.15e-08)]
+Daci_0568_p-71(paaF)             1.95e-11  [+1(1.95e-11)]
+Daci_0808_p-111(paaZ)            6.14e-10  [+1(6.14e-10)]
+Lcho_2406_p-115(paaY2)           4.35e-10  [+1(4.35e-10)]
+Lcho_3574_p-48(paaA)             4.56e-13  [+1(4.56e-13)]
+Lcho_2405_p-42(paaF)             3.08e-11  [+1(3.08e-11)]
+Mpe_A0984_p-85(paaF)             3.04e-10  [+1(3.04e-10)]
+Mpe_A0983_p-78(paaY2)            3.64e-10  [+1(3.64e-10)]
+Vapar_1238_p-48(paaF)            1.27e-10  [+1(1.27e-10)]
+Vapar_1239_p-101(paaY2)          6.90e-11  [+1(6.90e-11)]
+Vapar_1238_p-52(paaF)            7.20e-08  [+1(7.20e-08)]
+Veis_3942_p-102(paaF)            1.41e-10  [+1(1.41e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

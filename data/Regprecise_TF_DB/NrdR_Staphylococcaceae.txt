@@ -1,0 +1,328 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/NrdR_Staphylococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SA0685_p-212(nrdI)       1.0000     16  SA0685_p-364(nrdI)       1.0000     16  
+SA0685_p-396(nrdI)       1.0000     16  SA2410_p-26(nrdD)        1.0000     16  
+SA2410_p-59(nrdD)        1.0000     16  STACA0001_0298_p-197(nrd 1.0000     16  
+STACA0001_0298_p-350(nrd 1.0000     16  STACA0001_0298_p-382(nrd 1.0000     16  
+STACA0001_1801_p-26(nrdD 1.0000     16  STACA0001_1801_p-58(nrdD 1.0000     16  
+SE2172_p-58(nrdD)        1.0000     16  SE2172_p-26(nrdD)        1.0000     16  
+SE0512_p-366(nrdI)       1.0000     16  SE0512_p-334(nrdI)       1.0000     16  
+SE0512_p-182(nrdI)       1.0000     16  Sca_1845_p-64(nrdD)      1.0000     16  
+Sca_1845_p-32(nrdD)      1.0000     16  Sca_0378_p-433(nrdI)     1.0000     16  
+Sca_0378_p-192(nrdI)     1.0000     16  SH2163_p-360(nrdI)       1.0000     16  
+SH2163_p-328(nrdI)       1.0000     16  SH2163_p-176(nrdI)       1.0000     16  
+SSP0144_p-60(nrdD)       1.0000     16  SSP0144_p-28(nrdD)       1.0000     16  
+SSP1987_p-322(nrdI)      1.0000     16  SSP1987_p-290(nrdI)      1.0000     16  
+SSP1987_p-137(nrdI)      1.0000     16  MCCL_1815_p-66(nrdD)     1.0000     16  
+MCCL_1815_p-35(nrdD)     1.0000     16  MCCL_0482_p-150(nrdI)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/NrdR_Staphylococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/NrdR_Staphylococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             480    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    480    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.392 C 0.131 G 0.144 T 0.333 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.39 C 0.132 G 0.145 T 0.333 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACACWATATATAGTGK MEME-1	width =  16  sites =  30  llr = 401  E-value = 9.1e-140
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:a:482a:8:7:132
+pos.-specific     C  17:a1:1::::::1::
+probability       G  :::::1:::2::a:73
+matrix            T  13::517:a:a3:8:5
+
+         bits    2.9    *        *   
+                 2.6    *        *   
+                 2.3    *        *   
+                 2.0    *        *   
+Relative         1.8  * *        *   
+Entropy          1.5  ***   ** * * * 
+(19.3 bits)      1.2  ***   ** * * * 
+                 0.9  ***   **** *** 
+                 0.6 **** ********** 
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           ACACTATATATAGTGT
+consensus             T  A      T  AG
+sequence                            A
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+SE0512_p-334(nrdI)            1  2.52e-09          . ACACTATATATAGTGT           
+STACA0001_0298_p-350(nrd      1  2.52e-09          . ACACTATATATAGTGT           
+SSP0144_p-60(nrdD)            1  6.02e-09          . ACACAATATATAGTGT           
+Sca_0378_p-433(nrdI)          1  1.76e-08          . ACACTATATGTTGTGG           
+SSP1987_p-290(nrdI)           1  1.98e-08          . ACACAATATATTGTGT           
+SE0512_p-182(nrdI)            1  1.98e-08          . CCACTATATATTGTGG           
+MCCL_0482_p-150(nrdI)         1  2.81e-08          . CCACTATATATTGTGT           
+SH2163_p-176(nrdI)            1  2.81e-08          . ACACTACATGTAGTGG           
+SA2410_p-59(nrdD)             1  2.81e-08          . ATACTATATATAGTGG           
+STACA0001_1801_p-58(nrdD      1  4.39e-08          . ATACTATATATAGTGT           
+Sca_0378_p-192(nrdI)          1  4.54e-08          . CCACAATATGTAGTGT           
+SE2172_p-26(nrdD)             1  1.24e-07          . ACACTATATATAGCGA           
+SSP1987_p-137(nrdI)           1  1.95e-07          . TCACTATATATTGTGG           
+MCCL_1815_p-66(nrdD)          1  2.44e-07          . ACACCTTATATAGTGT           
+Sca_1845_p-32(nrdD)           1  3.02e-07          . ACACAATATATAGTAA           
+SA0685_p-364(nrdI)            1  3.40e-07          . ACACAATATCTTGTGT           
+SH2163_p-328(nrdI)            1  3.64e-07          . CCACAACATGTTGTGG           
+SE2172_p-58(nrdD)             1  4.19e-07          . ATACTATATATAGTAT           
+SA0685_p-212(nrdI)            1  4.50e-07          . ATACTACATATAGTGA           
+SA0685_p-396(nrdI)            1  6.71e-07          . ACACATAATATAGTGT           
+MCCL_1815_p-35(nrdD)          1  7.31e-07          . ATACTATATATAGCGA           
+STACA0001_0298_p-197(nrd      1  7.88e-07          . GTACTATATGTAGTGG           
+Sca_1845_p-64(nrdD)           1  1.02e-06          . TTACTATATATTGTGG           
+SH2163_p-360(nrdI)            1  1.63e-06          . ACACAGAATATAGTAT           
+SE0512_p-366(nrdI)            1  1.63e-06          . ACACAGAATATAGTAT           
+STACA0001_0298_p-382(nrd      1  1.63e-06          . ACACAGAATATAGTAT           
+SA2410_p-26(nrdD)             1  2.30e-06          . ACACAATATATAGGAA           
+SSP1987_p-322(nrdI)           1  2.80e-06          . ACACATAATATAGTAT           
+SSP0144_p-28(nrdD)            1  5.43e-06          . ATACTATATATAGAAA           
+STACA0001_1801_p-26(nrdD      1  8.92e-06          . ATACCATATATAGAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SE0512_p-334(nrdI)                2.5e-09  [+1]
+STACA0001_0298_p-350(nrd          2.5e-09  [+1]
+SSP0144_p-60(nrdD)                  6e-09  [+1]
+Sca_0378_p-433(nrdI)              1.8e-08  [+1]
+SSP1987_p-290(nrdI)                 2e-08  [+1]
+SE0512_p-182(nrdI)                  2e-08  [+1]
+MCCL_0482_p-150(nrdI)             2.8e-08  [+1]
+SH2163_p-176(nrdI)                2.8e-08  [+1]
+SA2410_p-59(nrdD)                 2.8e-08  [+1]
+STACA0001_1801_p-58(nrdD          4.4e-08  [+1]
+Sca_0378_p-192(nrdI)              4.5e-08  [+1]
+SE2172_p-26(nrdD)                 1.2e-07  [+1]
+SSP1987_p-137(nrdI)               1.9e-07  [+1]
+MCCL_1815_p-66(nrdD)              2.4e-07  [+1]
+Sca_1845_p-32(nrdD)                 3e-07  [+1]
+SA0685_p-364(nrdI)                3.4e-07  [+1]
+SH2163_p-328(nrdI)                3.6e-07  [+1]
+SE2172_p-58(nrdD)                 4.2e-07  [+1]
+SA0685_p-212(nrdI)                4.5e-07  [+1]
+SA0685_p-396(nrdI)                6.7e-07  [+1]
+MCCL_1815_p-35(nrdD)              7.3e-07  [+1]
+STACA0001_0298_p-197(nrd          7.9e-07  [+1]
+Sca_1845_p-64(nrdD)                 1e-06  [+1]
+SH2163_p-360(nrdI)                1.6e-06  [+1]
+SE0512_p-366(nrdI)                1.6e-06  [+1]
+STACA0001_0298_p-382(nrd          1.6e-06  [+1]
+SA2410_p-26(nrdD)                 2.3e-06  [+1]
+SSP1987_p-322(nrdI)               2.8e-06  [+1]
+SSP0144_p-28(nrdD)                5.4e-06  [+1]
+STACA0001_1801_p-26(nrdD          8.9e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACACWATATATAGTGK width=16 seqs=30
+SE0512_p-334(nrdI)       (    1) ACACTATATATAGTGT  1 
+STACA0001_0298_p-350(nrd (    1) ACACTATATATAGTGT  1 
+SSP0144_p-60(nrdD)       (    1) ACACAATATATAGTGT  1 
+Sca_0378_p-433(nrdI)     (    1) ACACTATATGTTGTGG  1 
+SSP1987_p-290(nrdI)      (    1) ACACAATATATTGTGT  1 
+SE0512_p-182(nrdI)       (    1) CCACTATATATTGTGG  1 
+MCCL_0482_p-150(nrdI)    (    1) CCACTATATATTGTGT  1 
+SH2163_p-176(nrdI)       (    1) ACACTACATGTAGTGG  1 
+SA2410_p-59(nrdD)        (    1) ATACTATATATAGTGG  1 
+STACA0001_1801_p-58(nrdD (    1) ATACTATATATAGTGT  1 
+Sca_0378_p-192(nrdI)     (    1) CCACAATATGTAGTGT  1 
+SE2172_p-26(nrdD)        (    1) ACACTATATATAGCGA  1 
+SSP1987_p-137(nrdI)      (    1) TCACTATATATTGTGG  1 
+MCCL_1815_p-66(nrdD)     (    1) ACACCTTATATAGTGT  1 
+Sca_1845_p-32(nrdD)      (    1) ACACAATATATAGTAA  1 
+SA0685_p-364(nrdI)       (    1) ACACAATATCTTGTGT  1 
+SH2163_p-328(nrdI)       (    1) CCACAACATGTTGTGG  1 
+SE2172_p-58(nrdD)        (    1) ATACTATATATAGTAT  1 
+SA0685_p-212(nrdI)       (    1) ATACTACATATAGTGA  1 
+SA0685_p-396(nrdI)       (    1) ACACATAATATAGTGT  1 
+MCCL_1815_p-35(nrdD)     (    1) ATACTATATATAGCGA  1 
+STACA0001_0298_p-197(nrd (    1) GTACTATATGTAGTGG  1 
+Sca_1845_p-64(nrdD)      (    1) TTACTATATATTGTGG  1 
+SH2163_p-360(nrdI)       (    1) ACACAGAATATAGTAT  1 
+SE0512_p-366(nrdI)       (    1) ACACAGAATATAGTAT  1 
+STACA0001_0298_p-382(nrd (    1) ACACAGAATATAGTAT  1 
+SA2410_p-26(nrdD)        (    1) ACACAATATATAGGAA  1 
+SSP1987_p-322(nrdI)      (    1) ACACATAATATAGTAT  1 
+SSP0144_p-28(nrdD)       (    1) ATACTATATATAGAAA  1 
+STACA0001_1801_p-26(nrdD (    1) ATACCATATATAGAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 30 bayes= 1.55943 E= 9.1e-140 
+    97      1   -212   -232 
+ -1155    240  -1155    -15 
+   136  -1155  -1155  -1155 
+ -1155    292  -1155  -1155 
+     3    -99  -1155     68 
+   103  -1155    -53   -173 
+  -123    -40  -1155    114 
+   136  -1155  -1155  -1155 
+ -1155  -1155  -1155    159 
+   103   -199     20  -1155 
+ -1155  -1155  -1155    159 
+    91  -1155  -1155    -32 
+ -1155  -1155    279  -1155 
+  -255    -99   -212    132 
+   -38  -1155    227  -1155 
+   -74  -1155     88     59 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 30 E= 9.1e-140 
+ 0.766667  0.133333  0.033333  0.066667 
+ 0.000000  0.700000  0.000000  0.300000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.400000  0.066667  0.000000  0.533333 
+ 0.800000  0.000000  0.100000  0.100000 
+ 0.166667  0.100000  0.000000  0.733333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.800000  0.033333  0.166667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.733333  0.000000  0.000000  0.266667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.066667  0.066667  0.033333  0.833333 
+ 0.300000  0.000000  0.700000  0.000000 
+ 0.233333  0.000000  0.266667  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATATAGTGK MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CT]AC[TA]ATATAT[AT]GT[GA][TGA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SA0685_p-212(nrdI)               4.50e-07  [+1(4.50e-07)]
+SA0685_p-364(nrdI)               3.40e-07  [+1(3.40e-07)]
+SA0685_p-396(nrdI)               6.71e-07  [+1(6.71e-07)]
+SA2410_p-26(nrdD)                2.30e-06  [+1(2.30e-06)]
+SA2410_p-59(nrdD)                2.81e-08  [+1(2.81e-08)]
+STACA0001_0298_p-197(nrd         7.88e-07  [+1(7.88e-07)]
+STACA0001_0298_p-350(nrd         2.52e-09  [+1(2.52e-09)]
+STACA0001_0298_p-382(nrd         1.63e-06  [+1(1.63e-06)]
+STACA0001_1801_p-26(nrdD         8.92e-06  [+1(8.92e-06)]
+STACA0001_1801_p-58(nrdD         4.39e-08  [+1(4.39e-08)]
+SE2172_p-58(nrdD)                4.19e-07  [+1(4.19e-07)]
+SE2172_p-26(nrdD)                1.24e-07  [+1(1.24e-07)]
+SE0512_p-366(nrdI)               1.63e-06  [+1(1.63e-06)]
+SE0512_p-334(nrdI)               2.52e-09  [+1(2.52e-09)]
+SE0512_p-182(nrdI)               1.98e-08  [+1(1.98e-08)]
+Sca_1845_p-64(nrdD)              1.02e-06  [+1(1.02e-06)]
+Sca_1845_p-32(nrdD)              3.02e-07  [+1(3.02e-07)]
+Sca_0378_p-433(nrdI)             1.76e-08  [+1(1.76e-08)]
+Sca_0378_p-192(nrdI)             4.54e-08  [+1(4.54e-08)]
+SH2163_p-360(nrdI)               1.63e-06  [+1(1.63e-06)]
+SH2163_p-328(nrdI)               3.64e-07  [+1(3.64e-07)]
+SH2163_p-176(nrdI)               2.81e-08  [+1(2.81e-08)]
+SSP0144_p-60(nrdD)               6.02e-09  [+1(6.02e-09)]
+SSP0144_p-28(nrdD)               5.43e-06  [+1(5.43e-06)]
+SSP1987_p-322(nrdI)              2.80e-06  [+1(2.80e-06)]
+SSP1987_p-290(nrdI)              1.98e-08  [+1(1.98e-08)]
+SSP1987_p-137(nrdI)              1.95e-07  [+1(1.95e-07)]
+MCCL_1815_p-66(nrdD)             2.44e-07  [+1(2.44e-07)]
+MCCL_1815_p-35(nrdD)             7.31e-07  [+1(7.31e-07)]
+MCCL_0482_p-150(nrdI)            2.81e-08  [+1(2.81e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,291 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/HutC_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC1205_p-45(hutI)        1.0000     20  VC1206_p-40(hutC)        1.0000     20  
+VV1_2392_p-47(hutI)      1.0000     20  VV1_2393_p-30(hutC)      1.0000     20  
+VIBHAR_02075_p-47(hutI)  1.0000     20  VIBHAR_02076_p-32(hutC)  1.0000     20  
+VP1276_p-48(hutI)        1.0000     20  VP1277_p-32(hutC)        1.0000     20  
+VSAK1_17057_p-34(hutI)   1.0000     20  VSAK1_17047_p-38(hutC)   1.0000     20  
+VS_1219_p-38(hutI)       1.0000     20  VS_1220_p-29(hutC)       1.0000     20  
+VF_A0453_p-59(hutI)      1.0000     20  VF_A0454_p-33(hutC)      1.0000     20  
+VSAL_II0705_p-52(hutI)   1.0000     20  VSAL_II0704_p-33(hutC)   1.0000     20  
+VAS14_08550_p-40(hutI)   1.0000     20  VAS14_08555_p-34(hutC)   1.0000     20  
+PBPRA2170_p-68(hutI)     1.0000     20  PBPRA2169_p-32(hutC)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/HutC_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/HutC_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             400    N=              20
+sample: seed=            0    hsfrac=          0
+        searchsize=    400    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.343 C 0.07 G 0.095 T 0.492 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.342 C 0.0718 G 0.0965 T 0.49 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTATTTGTATAKWCAWTTWA MEME-1	width =  20  sites =  20  llr = 312  E-value = 1.8e-096
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  11a:::::a:a:6:a53168
+pos.-specific     C  21::::::1::::a:1::::
+probability       G  11::::a::::41:::::12
+matrix            T  78:aaa:a:a:64::57941
+
+         bits    3.8              *      
+                 3.4       *      *      
+                 3.0       *      *      
+                 2.7       *      *      
+Relative         2.3       *      *      
+Entropy          1.9       *      *      
+(22.5 bits)      1.5   *   * * *  **     
+                 1.1   ********** **     
+                 0.8   ********** **  * *
+                 0.4 ********************
+                 0.0 --------------------
+
+Multilevel           TTATTTGTATATACAATTAA
+consensus            C          GT  TA TG
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+VIBHAR_02076_p-32(hutC)       1  5.50e-10          . CTATTTGTATAGTCAATTAA           
+VV1_2393_p-30(hutC)           1  6.33e-10          . CTATTTGTATAGTCAATTAG           
+VS_1220_p-29(hutC)            1  1.95e-09          . CTATTTGTATAGTCAAATAA           
+VSAL_II0704_p-33(hutC)        1  1.21e-08          . TTATTTGTATAGTCAATTTA           
+VF_A0454_p-33(hutC)           1  1.21e-08          . TTATTTGTATAGTCAATTTA           
+VS_1219_p-38(hutI)            1  1.55e-08          . TTATTTGTATATACATTTAA           
+VP1276_p-48(hutI)             1  1.55e-08          . TTATTTGTATATACATTTAA           
+VIBHAR_02075_p-47(hutI)       1  1.55e-08          . TTATTTGTATATACATTTAA           
+VV1_2392_p-47(hutI)           1  1.87e-08          . TTATTTGTATATACATTTAG           
+VAS14_08550_p-40(hutI)        1  2.90e-08          . ACATTTGTATAGACATTTAA           
+VC1205_p-45(hutI)             1  2.90e-08          . TTATTTGTATATACATTTGA           
+VSAK1_17047_p-38(hutC)        1  3.24e-08          . CCATTTGTATATTCAATTTA           
+VF_A0453_p-59(hutI)           1  3.54e-08          . TTATTTGTATATACATATAG           
+VP1277_p-32(hutC)             1  4.63e-08          . GTATTTGTATAGTCAATTTA           
+VSAL_II0705_p-52(hutI)        1  7.49e-08          . TTATTTGTATATACATATTA           
+PBPRA2170_p-68(hutI)          1  8.16e-08          . TTATTTGTATATACATATTG           
+PBPRA2169_p-32(hutC)          1  1.03e-07          . TTATTTGTATAGGCAATTAT           
+VSAK1_17057_p-34(hutI)        1  2.10e-07          . ATATTTGTATATACAATAAA           
+VC1206_p-40(hutC)             1  2.60e-07          . TGATTTGTCTATGCAAATGA           
+VAS14_08555_p-34(hutC)        1  6.08e-07          . TAATTTGTATATACACAATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VIBHAR_02076_p-32(hutC)           5.5e-10  [+1]
+VV1_2393_p-30(hutC)               6.3e-10  [+1]
+VS_1220_p-29(hutC)                  2e-09  [+1]
+VSAL_II0704_p-33(hutC)            1.2e-08  [+1]
+VF_A0454_p-33(hutC)               1.2e-08  [+1]
+VS_1219_p-38(hutI)                1.6e-08  [+1]
+VP1276_p-48(hutI)                 1.6e-08  [+1]
+VIBHAR_02075_p-47(hutI)           1.6e-08  [+1]
+VV1_2392_p-47(hutI)               1.9e-08  [+1]
+VAS14_08550_p-40(hutI)            2.9e-08  [+1]
+VC1205_p-45(hutI)                 2.9e-08  [+1]
+VSAK1_17047_p-38(hutC)            3.2e-08  [+1]
+VF_A0453_p-59(hutI)               3.5e-08  [+1]
+VP1277_p-32(hutC)                 4.6e-08  [+1]
+VSAL_II0705_p-52(hutI)            7.5e-08  [+1]
+PBPRA2170_p-68(hutI)              8.2e-08  [+1]
+PBPRA2169_p-32(hutC)                1e-07  [+1]
+VSAK1_17057_p-34(hutI)            2.1e-07  [+1]
+VC1206_p-40(hutC)                 2.6e-07  [+1]
+VAS14_08555_p-34(hutC)            6.1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTATTTGTATAKWCAWTTWA width=20 seqs=20
+VIBHAR_02076_p-32(hutC)  (    1) CTATTTGTATAGTCAATTAA  1 
+VV1_2393_p-30(hutC)      (    1) CTATTTGTATAGTCAATTAG  1 
+VS_1220_p-29(hutC)       (    1) CTATTTGTATAGTCAAATAA  1 
+VSAL_II0704_p-33(hutC)   (    1) TTATTTGTATAGTCAATTTA  1 
+VF_A0454_p-33(hutC)      (    1) TTATTTGTATAGTCAATTTA  1 
+VS_1219_p-38(hutI)       (    1) TTATTTGTATATACATTTAA  1 
+VP1276_p-48(hutI)        (    1) TTATTTGTATATACATTTAA  1 
+VIBHAR_02075_p-47(hutI)  (    1) TTATTTGTATATACATTTAA  1 
+VV1_2392_p-47(hutI)      (    1) TTATTTGTATATACATTTAG  1 
+VAS14_08550_p-40(hutI)   (    1) ACATTTGTATAGACATTTAA  1 
+VC1205_p-45(hutI)        (    1) TTATTTGTATATACATTTGA  1 
+VSAK1_17047_p-38(hutC)   (    1) CCATTTGTATATTCAATTTA  1 
+VF_A0453_p-59(hutI)      (    1) TTATTTGTATATACATATAG  1 
+VP1277_p-32(hutC)        (    1) GTATTTGTATAGTCAATTTA  1 
+VSAL_II0705_p-52(hutI)   (    1) TTATTTGTATATACATATTA  1 
+PBPRA2170_p-68(hutI)     (    1) TTATTTGTATATACATATTG  1 
+PBPRA2169_p-32(hutC)     (    1) TTATTTGTATAGGCAATTAT  1 
+VSAK1_17057_p-34(hutI)   (    1) ATATTTGTATATACAATAAA  1 
+VC1206_p-40(hutC)        (    1) TGATTTGTCTATGCAAATGA  1 
+VAS14_08555_p-34(hutC)   (    1) TAATTTGTATATACACAATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 20 bayes= 1.36257 E= 1.8e-096 
+  -177    148    -95     41 
+  -277     48    -95     71 
+   155  -1097  -1097  -1097 
+ -1097  -1097  -1097    103 
+ -1097  -1097  -1097    103 
+ -1097  -1097  -1097    103 
+ -1097  -1097    337  -1097 
+ -1097  -1097  -1097    103 
+   148    -52  -1097  -1097 
+ -1097  -1097  -1097    103 
+   155  -1097  -1097  -1097 
+ -1097  -1097    205     29 
+    69  -1097      5    -49 
+ -1097    380  -1097  -1097 
+   155  -1097  -1097  -1097 
+    55    -52  -1097    -12 
+   -19  -1097  -1097     51 
+  -177  -1097  -1097     88 
+    69  -1097      5    -49 
+   113  -1097    105   -329 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 20 E= 1.8e-096 
+ 0.100000  0.200000  0.050000  0.650000 
+ 0.050000  0.100000  0.050000  0.800000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.950000  0.050000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.400000  0.600000 
+ 0.550000  0.000000  0.100000  0.350000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.050000  0.000000  0.450000 
+ 0.300000  0.000000  0.000000  0.700000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 0.550000  0.000000  0.100000  0.350000 
+ 0.750000  0.000000  0.200000  0.050000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATTTGTATAKWCAWTTWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]TATTTGTATA[TG][AT]CA[AT][TA]T[AT][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC1205_p-45(hutI)                2.90e-08  [+1(2.90e-08)]
+VC1206_p-40(hutC)                2.60e-07  [+1(2.60e-07)]
+VV1_2392_p-47(hutI)              1.87e-08  [+1(1.87e-08)]
+VV1_2393_p-30(hutC)              6.33e-10  [+1(6.33e-10)]
+VIBHAR_02075_p-47(hutI)          1.55e-08  [+1(1.55e-08)]
+VIBHAR_02076_p-32(hutC)          5.50e-10  [+1(5.50e-10)]
+VP1276_p-48(hutI)                1.55e-08  [+1(1.55e-08)]
+VP1277_p-32(hutC)                4.63e-08  [+1(4.63e-08)]
+VSAK1_17057_p-34(hutI)           2.10e-07  [+1(2.10e-07)]
+VSAK1_17047_p-38(hutC)           3.24e-08  [+1(3.24e-08)]
+VS_1219_p-38(hutI)               1.55e-08  [+1(1.55e-08)]
+VS_1220_p-29(hutC)               1.95e-09  [+1(1.95e-09)]
+VF_A0453_p-59(hutI)              3.54e-08  [+1(3.54e-08)]
+VF_A0454_p-33(hutC)              1.21e-08  [+1(1.21e-08)]
+VSAL_II0705_p-52(hutI)           7.49e-08  [+1(7.49e-08)]
+VSAL_II0704_p-33(hutC)           1.21e-08  [+1(1.21e-08)]
+VAS14_08550_p-40(hutI)           2.90e-08  [+1(2.90e-08)]
+VAS14_08555_p-34(hutC)           6.08e-07  [+1(6.08e-07)]
+PBPRA2170_p-68(hutI)             8.16e-08  [+1(8.16e-08)]
+PBPRA2169_p-32(hutC)             1.03e-07  [+1(1.03e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

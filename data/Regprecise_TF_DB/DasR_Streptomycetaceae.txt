@@ -1,0 +1,999 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/DasR_Streptomycetaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SAV_3022_p-232(dasA)     1.0000     16  SAV_3022_p-86(dasA)      1.0000     16  
+SAV_3022_p-62(dasA)      1.0000     16  SAV_5131_p-139(SCO2946)  1.0000     16  
+SAV_3017_p-469(pdtaS)    1.0000     16  SAV_3017_p-254(pdtaS)    1.0000     16  
+SAV_3939_p-84(SCO4286)   1.0000     16  SAV_3939_p-66(SCO4286)   1.0000     16  
+SAV_3940_p-100(nagK)     1.0000     16  SAV_3940_p-82(nagK)      1.0000     16  
+SAV_3962_p-91(SCO4240)   1.0000     16  SAV_2585_p-79(chiA)      1.0000     16  
+SAV_2585_p-61(chiA)      1.0000     16  SAV_3018_p-284(nagB)     1.0000     16  
+SAV_3018_p-69(nagB)      1.0000     16  SAV_5169_p-135(nagF)     1.0000     16  
+SAV_2878_p-125(chiC)     1.0000     16  SAV_2878_p-104(chiC)     1.0000     16  
+SAV_5168_p-50(nagE)      1.0000     16  SAV_5167_p-102(nagE2)    1.0000     16  
+SAV_3023_p-331(dasR)     1.0000     16  SAV_3023_p-307(dasR)     1.0000     16  
+SAV_3023_p-161(dasR)     1.0000     16  SAV_7069_p-113(SCO1262)  1.0000     16  
+SAV_2418_p-42(ptsH)      1.0000     16  SAV_5167_p-119(nagE2)    1.0000     16  
+SAV_1289_p7(SCO7069)     1.0000     16  SAV_5223_p-110(chb)      1.0000     16  
+SAV_5223_p-70(chb)       1.0000     16  SAV_1751_p-70(chiA4)     1.0000     16  
+SAV_1751_p-111(chiA4)    1.0000     16  SAV_3258_p-93(chiA1)     1.0000     16  
+SAV_3258_p-111(chiA1)    1.0000     16  SAV_2251_p-209(SCO6005)  1.0000     16  
+SAV_7442_p-122(lamA2)    1.0000     16  SAV_5268_p-88(hex3)      1.0000     16  
+SAV_6918_p-114(chiE)     1.0000     16  SAV_6918_p-92(chiE)      1.0000     16  
+SAV_7329_p-99(SCO0914)   1.0000     16  SAV_5636_p-87(chiB)      1.0000     16  
+SAV_5636_p-66(chiB)      1.0000     16  SCO6300_p-130(hex5)      1.0000     16  
+SCO5232_p-322(dasA)      1.0000     16  SCO5232_p-130(dasA)      1.0000     16  
+SCO2946_p-111(SCO2946)   1.0000     16  SCO7263_p-155(chiF)      1.0000     16  
+SCO7263_p-172(chiF)      1.0000     16  SCO5232_p-106(dasA)      1.0000     16  
+SCO5239_p-335(pdtaS)     1.0000     16  SCO4286_p-81(SCO4286)    1.0000     16  
+SCO4286_p-63(SCO4286)    1.0000     16  SCO4285_p-100(nagK)      1.0000     16  
+SCO4285_p-82(nagK)       1.0000     16  SCO4240_p-74(SCO4240)    1.0000     16  
+SCO5003_p-107(chiA)      1.0000     16  SCO5003_p-76(chiA)       1.0000     16  
+SCO6012_p-110(SCO6012)   1.0000     16  SCO5673_p-63(chiA)       1.0000     16  
+SCO5236_p-67(nagB)       1.0000     16  SCO2905_p-133(nagF)      1.0000     16  
+SCO5376_p-108(chiC)      1.0000     16  SCO5376_p-87(chiC)       1.0000     16  
+SCO1444_p-53(chiD)       1.0000     16  SCO6012_p-183(SCO6012)   1.0000     16  
+SCO6012_p-126(SCO6012)   1.0000     16  SCO1444_p-75(chiD)       1.0000     16  
+SCO2907_p-49(nagE2)      1.0000     16  SCO2906_p-41(nagE)       1.0000     16  
+SCO1390_p-130(ptsA)      1.0000     16  SCO5231_p-365(dasR)      1.0000     16  
+SCO5231_p-341(dasR)      1.0000     16  SCO5231_p-149(dasR)      1.0000     16  
+SCO2907_p-32(nagE2)      1.0000     16  SCO1262_p-112(SCO1262)   1.0000     16  
+SCO5841_p-65(ptsH)       1.0000     16  SCO5841_p-50(ptsH)       1.0000     16  
+SCO7069_p-60(SCO7069)    1.0000     16  SCO2833_p-69(chb)        1.0000     16  
+SCO6005_p-334(SCO6005)   1.0000     16  SCO6300_p-115(hex5)      1.0000     16  
+SCO0481_p-201(chb2)      1.0000     16  SCO2786_p-69(hex3)       1.0000     16  
+SCO1429_p-118(chiE)      1.0000     16  SCO1429_p-96(chiE)       1.0000     16  
+SCO0914_p-126(SCO0914)   1.0000     16  SCO5954_p-95(chiA3)      1.0000     16  
+SCO7225_p-168(chb3)      1.0000     16  SCO7225_p-55(chb3)       1.0000     16  
+SCO7225_p-34(chb3)       1.0000     16  SCO6345_p-114(chb3)      1.0000     16  
+SCO6345_p-94(chb3)       1.0000     16  SCO2503_p-99(chiB)       1.0000     16  
+SCO2503_p-78(chiB)       1.0000     16  SCO6032_p-153(hex4)      1.0000     16  
+SCO6032_p-39(hex4)       1.0000     16  SGR_2458_p-125(chiA2)    1.0000     16  
+SGR_2281_p-122(dasA)     1.0000     16  SGR_2281_p-98(dasA)      1.0000     16  
+SGR_3400_p-88(chiF)      1.0000     16  SGR_4588_p-111(SCO2946)  1.0000     16  
+SGR_3400_p-104(chiF)     1.0000     16  SGR_3401_p-170(chiF)     1.0000     16  
+SGR_2276_p-248(nagB2)    1.0000     16  SGR_2275_p-161(pdtaS)    1.0000     16  
+SGR_4057_p-367(SCO4286)  1.0000     16  SGR_4057_p-245(SCO4286)  1.0000     16  
+SGR_4057_p-145(SCO4286)  1.0000     16  SGR_6104_p-121(chiE)     1.0000     16  
+SGR_6104_p-143(chiE)     1.0000     16  SGR_4056_p-305(nagK)     1.0000     16  
+SGR_4056_p-205(nagK)     1.0000     16  SGR_4056_p-83(nagK)      1.0000     16  
+SGR_4024_p-67(SCO4240)   1.0000     16  SGR_1831_p-79(chiA)      1.0000     16  
+SGR_1831_p-61(chiA)      1.0000     16  SGR_2277_p-46(nagB)      1.0000     16  
+SGR_4637_p-177(nagF)     1.0000     16  SGR_2160_p-151(chiC)     1.0000     16  
+SGR_2160_p-130(chiC)     1.0000     16  SGR_3401_p-186(chiF)     1.0000     16  
+SGR_4636_p-58(nagE)      1.0000     16  SGR_2282_p-197(dasR)     1.0000     16  
+SGR_2282_p-173(dasR)     1.0000     16  SGR_6265_p-106(SCO1262)  1.0000     16  
+SGR_1684_p-39(ptsH)      1.0000     16  SGR_1301_p-25(SCO7069)   1.0000     16  
+SGR_4707_p-156(chb)      1.0000     16  SGR_4707_p-116(chb)      1.0000     16  
+SGR_6088_p-133(chiD)     1.0000     16  SGR_6088_p-155(chiD)     1.0000     16  
+SGR_4635_p-112(nagE2)    1.0000     16  SGR_2533_p-274(chiA1)    1.0000     16  
+SGR_2533_p-292(chiA1)    1.0000     16  SGR_4635_p-95(nagE2)     1.0000     16  
+SGR_1502_p-255(SCO6005)  1.0000     16  SGR_4740_p-83(chb2)      1.0000     16  
+SGR_2956_p-134(chb2)     1.0000     16  SGR_6489_p-112(lamA2)    1.0000     16  
+SGR_6855_p-171(chb2)     1.0000     16  SGR_701_p-103(SCO0914)   1.0000     16  
+SGR_6727_p-128(chiB)     1.0000     16  SGR_6727_p-107(chiB)     1.0000     16  
+SCAB_55981_p-121(SCO2946 1.0000     16  SCAB_30191_p-115(dasA)   1.0000     16  
+SCAB_30191_p-139(dasA)   1.0000     16  SCAB_30191_p-314(dasA)   1.0000     16  
+SCAB_30141_p-516(pdtaS)  1.0000     16  SCAB_30141_p-329(pdtaS)  1.0000     16  
+SCAB_50351_p-155(SCO4286 1.0000     16  SCAB_50351_p-131(SCO4286 1.0000     16  
+SCAB_50351_p-117(SCO4286 1.0000     16  SCAB_50341_p-81(nagK)    1.0000     16  
+SCAB_50341_p-67(nagK)    1.0000     16  SCAB_50341_p-43(nagK)    1.0000     16  
+SCAB_50161_p-95(SCO4240) 1.0000     16  SCAB_33851_p-1(chiA)     1.0000     16  
+SCAB_30151_p-272(nagB)   1.0000     16  SCAB_30151_p-85(nagB)    1.0000     16  
+SCAB_85231_p-177(chiF)   1.0000     16  SCAB_56721_p-83(nagF)    1.0000     16  
+SCAB_85231_p-160(chiF)   1.0000     16  SCAB_28731_p-83(chiC)    1.0000     16  
+SCAB_28731_p-62(chiC)    1.0000     16  SCAB_76211_p-89(ptsA)    1.0000     16  
+SCAB_56581_p-34(nagE2)   1.0000     16  SCAB_56581_p-51(nagE2)   1.0000     16  
+SCAB_30201_p-271(dasR)   1.0000     16  SCAB_30201_p-247(dasR)   1.0000     16  
+SCAB_30201_p-72(dasR)    1.0000     16  SCAB_78011_p-139(SCO1262 1.0000     16  
+SCAB_24231_p-65(ptsH)    1.0000     16  SCAB_24231_p-51(ptsH)    1.0000     16  
+SCAB_83771_p-50(SCO7069) 1.0000     16  SCAB_57371_p-88(chb)     1.0000     16  
+SCAB_57371_p-48(chb)     1.0000     16  SCAB_21061_p-212(SCO6005 1.0000     16  
+SCAB_57911_p-58(hex3)    1.0000     16  SCAB_75761_p-190(chiE)   1.0000     16  
+SCAB_75761_p-168(chiE)   1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/DasR_Streptomycetaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/DasR_Streptomycetaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      179    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2864    N=             179
+sample: seed=            0    hsfrac=          0
+        searchsize=   2864    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.245 C 0.258 G 0.234 T 0.263 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.245 C 0.258 G 0.234 T 0.263 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ANTGGTCTAGACCANT MEME-1	width =  16  sites = 179  llr = 2133  E-value = 3.4e-874
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  622::1::8:9:1631
+pos.-specific     C  13::::82:1:a9:42
+probability       G  13:aa:1:28::::22
+matrix            T  238::9:7:11::325
+
+         bits    2.1     *           
+                 1.9    **      *    
+                 1.7    **      **   
+                 1.5    **     ***   
+Relative         1.3   ****  * ***   
+Entropy          1.0   ******* ***   
+(17.2 bits)      0.8   ************  
+                 0.6   ************  
+                 0.4 * ************  
+                 0.2 * ************ *
+                 0.0 ----------------
+
+Multilevel           ATTGGTCTAGACCACT
+consensus             G     C     TA 
+sequence              C              
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+SGR_4635_p-95(nagE2)          1  3.55e-08          . AGTGGTCCAGACCACG           
+SCO5376_p-108(chiC)           1  3.55e-08          . ATTGGTCCAGACCTAT           
+SGR_4635_p-112(nagE2)         1  4.25e-08          . ACTGGTCTACACCACT           
+SCO1390_p-130(ptsA)           1  4.25e-08          . TGTGGTCTAGACCTCT           
+SAV_2878_p-125(chiC)          1  4.25e-08          . ACTGGTCCAGACCTAT           
+SGR_2533_p-274(chiA1)         1  4.84e-08          . ATTGGTCTGGACCAGT           
+SAV_3258_p-93(chiA1)          1  4.84e-08          . ATTGGTCTGGACCAGT           
+SCO5841_p-50(ptsH)            1  7.83e-08          . ACTGGTCTAGACAACT           
+SCAB_76211_p-89(ptsA)         1  9.17e-08          . GGTGGTCTAGACCTCT           
+SCAB_56721_p-83(nagF)         1  9.17e-08          . AGTGGTGTAGACCAGT           
+SGR_4636_p-58(nagE)           1  9.17e-08          . ACTGGTCTACACCAGT           
+SCO2906_p-41(nagE)            1  9.17e-08          . ACTGGTCTACACCAGT           
+SCO5003_p-76(chiA)            1  9.17e-08          . ATTGGTCTGGACCACC           
+SCAB_50341_p-43(nagK)         1  1.07e-07          . AGTGGACTAGACCTCT           
+SCAB_30191_p-115(dasA)        1  1.07e-07          . ACTGGTCTACACCATT           
+SGR_2956_p-134(chb2)          1  1.07e-07          . CTTGGTCTAGACCAAG           
+SGR_4740_p-83(chb2)           1  1.07e-07          . CTTGGTCTAGACCAAG           
+SGR_4637_p-177(nagF)          1  1.07e-07          . ACTGGTGTAGACCAGT           
+SCO2905_p-133(nagF)           1  1.07e-07          . ACTGGTGTAGACCAGT           
+SCO4285_p-82(nagK)            1  1.07e-07          . AGTGGACTAGACCTCT           
+SCO5232_p-106(dasA)           1  1.07e-07          . ACTGGTCTACACCATT           
+SAV_3940_p-82(nagK)           1  1.07e-07          . AGTGGACTAGACCTCT           
+SAV_3022_p-62(dasA)           1  1.07e-07          . ACTGGTCTACACCATT           
+SCAB_75761_p-168(chiE)        1  1.21e-07          . AGTGGTCTAGTCCTCT           
+SAV_2585_p-61(chiA)           1  1.21e-07          . ATTGGTCTGGACCAAG           
+SGR_6088_p-133(chiD)          1  1.42e-07          . ACTGGTCTAGTCCTCT           
+SGR_4024_p-67(SCO4240)        1  1.42e-07          . AGTGGACCAGACCACT           
+SGR_2458_p-125(chiA2)         1  1.42e-07          . TATGGTCCAGACCAAT           
+SCO1444_p-53(chiD)            1  1.42e-07          . ACTGGTCTAGTCCTCT           
+SCAB_30201_p-271(dasR)        1  1.66e-07          . AATGGTGTAGACCAGT           
+SCAB_56581_p-34(nagE2)        1  1.66e-07          . AGTGGTGTAGACCACC           
+SGR_2160_p-151(chiC)          1  1.66e-07          . TTTGGTCCAGACCTCT           
+SCO2907_p-32(nagE2)           1  1.66e-07          . AGTGGTGTAGACCACC           
+SCO5231_p-365(dasR)           1  1.66e-07          . AATGGTGTAGACCAGT           
+SCO6012_p-110(SCO6012)        1  1.66e-07          . TCTGGTCCAGACCATT           
+SAV_3023_p-331(dasR)          1  1.66e-07          . AATGGTGTAGACCAGT           
+SAV_5167_p-102(nagE2)         1  1.66e-07          . AGTGGTGTAGACCACG           
+SAV_5168_p-50(nagE)           1  1.66e-07          . ACTGGTCTACACCACC           
+SCAB_33851_p-1(chiA)          1  1.89e-07          . ATTGGTCTGGACCAGC           
+SGR_6727_p-128(chiB)          1  1.89e-07          . TCTGGTCCAGACCTCT           
+SCO5673_p-63(chiA)            1  1.89e-07          . ATTGGTCTGGACCAAA           
+SCAB_30151_p-85(nagB)         1  2.15e-07          . ATTGGTCTACACCACA           
+SGR_1831_p-61(chiA)           1  2.15e-07          . ATTGGTCTGGACCATG           
+SCO2503_p-99(chiB)            1  2.15e-07          . CTTGGTCCAGACCTCT           
+SGR_2160_p-130(chiC)          1  2.48e-07          . ATTGGTCCAGACCTTC           
+SGR_2277_p-46(nagB)           1  2.48e-07          . ATTGGTCTATACCACC           
+SGR_4056_p-83(nagK)           1  2.48e-07          . AGTGGACTAGACCTTT           
+SCO5954_p-95(chiA3)           1  2.48e-07          . ATTGGTCCAGACCTTC           
+SCO5239_p-335(pdtaS)          1  2.48e-07          . AGTGGTCTAGTCCACA           
+SAV_5636_p-87(chiB)           1  2.48e-07          . TCTGGTCCAGACCTAT           
+SCAB_24231_p-65(ptsH)         1  2.82e-07          . ACTGGTCTAGACAACC           
+SCAB_56581_p-51(nagE2)        1  2.82e-07          . ACAGGTCTACACCACT           
+SCAB_50351_p-155(SCO4286      1  2.82e-07          . AGAGGTCTAGTCCACT           
+SGR_1684_p-39(ptsH)           1  2.82e-07          . ACTGGTCTAGACAACC           
+SGR_2275_p-161(pdtaS)         1  2.82e-07          . TGTGGACTAGACCAAT           
+SCO2907_p-49(nagE2)           1  2.82e-07          . ACAGGTCTACACCACT           
+SCO4286_p-81(SCO4286)         1  2.82e-07          . AGAGGTCTAGTCCACT           
+SAV_5167_p-119(nagE2)         1  2.82e-07          . ACAGGTCTACACCACT           
+SAV_2418_p-42(ptsH)           1  2.82e-07          . ACTGGTCTAGACAACC           
+SAV_3939_p-84(SCO4286)        1  2.82e-07          . AGAGGTCTAGTCCACT           
+SCAB_30141_p-516(pdtaS)       1  3.22e-07          . TGTGGTGTAGACCAAT           
+SGR_2281_p-98(dasA)           1  3.22e-07          . ACTGGTCTAAACCATT           
+SCO6032_p-153(hex4)           1  3.22e-07          . AATGGACTAGACCAAG           
+SAV_7442_p-122(lamA2)         1  3.69e-07          . ACTGGTCCGGACCACC           
+SCAB_57371_p-48(chb)          1  4.14e-07          . CTTGGTCTAGACCTGG           
+SGR_6088_p-155(chiD)          1  4.14e-07          . AAAGGTCCAGACCTAT           
+SGR_1301_p-25(SCO7069)        1  4.14e-07          . ACAGGTCTGGACCATT           
+SGR_3401_p-186(chiF)          1  4.14e-07          . TCTGGTCTAGACCTTG           
+SCO2833_p-69(chb)             1  4.14e-07          . CTTGGTCTAGACCTGC           
+SGR_4056_p-205(nagK)          1  4.70e-07          . CTTGGTCCAGACCTTT           
+SGR_4057_p-367(SCO4286)       1  4.70e-07          . AAAGGTCTAGTCCACT           
+SGR_4588_p-111(SCO2946)       1  4.70e-07          . AGTGGTCGAGACCACT           
+SCO1429_p-96(chiE)            1  4.70e-07          . ACTGGTCTAGTCCTCC           
+SCO7069_p-60(SCO7069)         1  4.70e-07          . ATTGGTCCGGACCTGT           
+SAV_6918_p-92(chiE)           1  4.70e-07          . ACTGGTCTAGTCCTCC           
+SGR_2282_p-197(dasR)          1  5.36e-07          . AATGGTTTAGACCAGT           
+SCAB_78011_p-139(SCO1262      1  5.99e-07          . ATTGGTCTTGACCAAG           
+SCAB_28731_p-62(chiC)         1  5.99e-07          . TATGGTCCAGACCTTT           
+SGR_6265_p-106(SCO1262)       1  5.99e-07          . ATTGGTCTTGACCAAG           
+SGR_3400_p-88(chiF)           1  5.99e-07          . ACAGGTCCAGACCATC           
+SCO7225_p-34(chb3)            1  5.99e-07          . TCAGGTCTAGACCTGT           
+SCO1262_p-112(SCO1262)        1  5.99e-07          . ATTGGTCTTGACCAAG           
+SCO5376_p-87(chiC)            1  5.99e-07          . TATGGTCCAGACCTTT           
+SCO5236_p-67(nagB)            1  5.99e-07          . ATTGGTCTAAACCACA           
+SAV_5223_p-70(chb)            1  5.99e-07          . CTTGGTCTAGACCTGA           
+SAV_7069_p-113(SCO1262)       1  5.99e-07          . ATTGGTCTTGACCAAG           
+SAV_2878_p-104(chiC)          1  5.99e-07          . TATGGTCCAGACCTTT           
+SAV_3018_p-69(nagB)           1  5.99e-07          . ATTGGTCTAAACCACA           
+SCAB_28731_p-83(chiC)         1  6.71e-07          . ACTGGTCCAGACCCAT           
+SAV_3018_p-284(nagB)          1  6.71e-07          . TGTGGACTAGACCACG           
+SCO7225_p-55(chb3)            1  7.58e-07          . TATGGTCTAGACCTGA           
+SCO5841_p-65(ptsH)            1  7.58e-07          . ACTGGTCTAGACAAGA           
+SCO1444_p-75(chiD)            1  7.58e-07          . ATTGGTCCATACCTAT           
+SAV_5169_p-135(nagF)          1  8.54e-07          . GGTGGTGTAGACCAGT           
+SGR_6104_p-121(chiE)          1  9.54e-07          . ACTGGTCTAGTCCTTC           
+SAV_1751_p-70(chiA4)          1  9.54e-07          . ATTGGTCCATACCAAC           
+SAV_3017_p-469(pdtaS)         1  9.54e-07          . TGTGGTTTAGACCAAT           
+SGR_4057_p-245(SCO4286)       1  1.07e-06          . AAAGGTCTGGACCAAG           
+SGR_3400_p-104(chiF)          1  1.07e-06          . GATGGTCTAGACCTTG           
+SAV_5636_p-66(chiB)           1  1.07e-06          . AAAGGTCTGGACCAAG           
+SGR_2276_p-248(nagB2)         1  1.19e-06          . GGTGGTATAGACCAAT           
+SCO2503_p-78(chiB)            1  1.19e-06          . AAAGGTCTGGACCACA           
+SCO2946_p-111(SCO2946)        1  1.19e-06          . ATTGGTTCAGACCTCT           
+SCAB_57911_p-58(hex3)         1  1.33e-06          . GATGGTCTAGACCTGA           
+SCO5231_p-149(dasR)           1  1.33e-06          . TATGGACTAGACCAAG           
+SAV_7329_p-99(SCO0914)        1  1.33e-06          . ATTGGTCCATACCAAA           
+SAV_3017_p-254(pdtaS)         1  1.33e-06          . CGTGGTCTAGTCCACA           
+SAV_3022_p-232(dasA)          1  1.33e-06          . GTTGGTCTAGTCCACC           
+SCAB_30201_p-72(dasR)         1  1.49e-06          . CGTGGACTAGACCAGC           
+SCAB_85231_p-160(chiF)        1  1.49e-06          . ACTGGTACAGACCAAG           
+SCAB_30191_p-314(dasA)        1  1.49e-06          . GCTGGTCTAGTCCACG           
+SGR_6855_p-171(chb2)          1  1.49e-06          . TATGGTCTAGTCCAAG           
+SCO0481_p-201(chb2)           1  1.49e-06          . TATGGTCTAGTCCAAC           
+SAV_3023_p-161(dasR)          1  1.49e-06          . GGTGGACTAGACCAAC           
+SCO6032_p-39(hex4)            1  1.65e-06          . CTTGGTCTATACCAAG           
+SCO6012_p-126(SCO6012)        1  1.83e-06          . ATTGGTCTAGTCCCAT           
+SAV_3962_p-91(SCO4240)        1  1.83e-06          . TGTGGACTACACCACT           
+SGR_701_p-103(SCO0914)        1  2.03e-06          . AATGGTCCATACCAAA           
+SGR_4707_p-156(chb)           1  2.03e-06          . ATTGGTCTGGACATGT           
+SCO0914_p-126(SCO0914)        1  2.03e-06          . AATGGTCCATACCAAA           
+SCO7263_p-155(chiF)           1  2.03e-06          . ACTGGTACAGACCAAA           
+SCO6345_p-114(chb3)           1  2.26e-06          . TAAGGTCTAGACCTGC           
+SAV_1289_p7(SCO7069)          1  2.26e-06          . ACAGGTACAGACCAAT           
+SCO6345_p-94(chb3)            1  2.49e-06          . GTAGGTCTAGACCTGC           
+SCO5232_p-322(dasA)           1  2.49e-06          . CTTGGTCTAGTCCATA           
+SAV_5268_p-88(hex3)           1  2.49e-06          . AGTGGTCTATACCCAT           
+SCAB_21061_p-212(SCO6005      1  2.76e-06          . AGTGGACTATACCTGT           
+SCAB_85231_p-177(chiF)        1  2.76e-06          . ACTGGTCTACACCCTT           
+SGR_1502_p-255(SCO6005)       1  2.76e-06          . AGTGGACTATACCTGT           
+SCO7225_p-168(chb3)           1  2.76e-06          . CCTTGTCTAGACCAAT           
+SCO6005_p-334(SCO6005)        1  2.76e-06          . AGTGGACTATACCTGT           
+SCO7263_p-172(chiF)           1  2.76e-06          . ACTGGTCTACACCCTT           
+SAV_2251_p-209(SCO6005)       1  2.76e-06          . AGTGGACTATACCTGT           
+SAV_1751_p-111(chiA4)         1  2.76e-06          . ACCGGTCTGGACCAAT           
+SCAB_30141_p-329(pdtaS)       1  3.04e-06          . AGTGGTCTAGTCAACA           
+SCO6300_p-115(hex5)           1  3.35e-06          . TTTTGTCTAGACCTCT           
+SCO6012_p-183(SCO6012)        1  3.35e-06          . GGTGGTCCAGTCCACC           
+SCAB_50351_p-131(SCO4286      1  3.70e-06          . CGTGGTGTAGACCTTG           
+SGR_6727_p-107(chiB)          1  3.70e-06          . GAAGGTCTGGACCATT           
+SCAB_75761_p-190(chiE)        1  4.07e-06          . ATTGGTCCGAACCATT           
+SCAB_50351_p-117(SCO4286      1  4.07e-06          . TGTGGTGTAGACCTTA           
+SGR_6104_p-143(chiE)          1  4.07e-06          . ATTGGTCCGAACCATT           
+SCO4285_p-100(nagK)           1  4.07e-06          . TAAGGTCTACACCACC           
+SCO6300_p-130(hex5)           1  4.07e-06          . TTTTGTCTAGACCTAT           
+SAV_6918_p-114(chiE)          1  4.07e-06          . ATTGGTCCGAACCATT           
+SAV_3940_p-100(nagK)          1  4.07e-06          . TAAGGTCTACACCACG           
+SCO4240_p-74(SCO4240)         1  4.45e-06          . TGTGGACTACACCACC           
+SCAB_24231_p-51(ptsH)         1  4.89e-06          . CCCGGTCCAGACCACT           
+SCAB_50341_p-67(nagK)         1  4.89e-06          . CAAGGTCTACACCACG           
+SCAB_55981_p-121(SCO2946      1  4.89e-06          . GGTGGTACAGACCTCT           
+SGR_4057_p-145(SCO4286)       1  4.89e-06          . GGTGGTGTAGACCTTC           
+SCO5231_p-341(dasR)           1  4.89e-06          . CTTGGCCCAGACCAAT           
+SCO5232_p-130(dasA)           1  4.89e-06          . ATTGGTCTGGGCCAAG           
+SAV_3023_p-307(dasR)          1  4.89e-06          . CTTGGCCCAGACCAAT           
+SAV_3939_p-66(SCO4286)        1  4.89e-06          . CGTGGTGTAGACCTTA           
+SAV_3022_p-86(dasA)           1  4.89e-06          . ATTGGTCTGGGCCAAG           
+SCAB_50161_p-95(SCO4240)      1  5.36e-06          . CGTGGACTACACCACC           
+SCAB_50341_p-81(nagK)         1  5.36e-06          . TAAGGTCTACACCACA           
+SGR_2282_p-173(dasR)          1  5.86e-06          . CTTGGCCTAGACCTTT           
+SGR_2281_p-122(dasA)          1  5.86e-06          . AAAGGTCTAGGCCAAG           
+SCO1429_p-118(chiE)           1  5.86e-06          . AATGGTCCGAACCATT           
+SGR_4056_p-305(nagK)          1  6.41e-06          . GAAGGTCTACACCACC           
+SCO4286_p-63(SCO4286)         1  6.41e-06          . GGTGGTGTAGACCTTA           
+SCAB_83771_p-50(SCO7069)      1  7.00e-06          . TCAGGTACAGACCAAT           
+SGR_2533_p-292(chiA1)         1  7.00e-06          . AGAGGTCTTGACAACT           
+SCAB_30151_p-272(nagB)        1  9.06e-06          . TGTTGACTAGACCACT           
+SGR_3401_p-170(chiF)          1  9.83e-06          . ACAGGTTCAGACCATG           
+SGR_4707_p-116(chb)           1  1.16e-05          . CTTGGTCTAGACCGCA           
+SGR_1831_p-79(chiA)           1  1.48e-05          . AGAGGTCTTGACAACC           
+SAV_3258_p-111(chiA1)         1  1.48e-05          . AGAGGTCTTGACAACC           
+SAV_5131_p-139(SCO2946)       1  1.48e-05          . ATTGGTTGAGACCTCT           
+SCAB_57371_p-88(chb)          1  1.86e-05          . ATTGGTATGGACATGT           
+SCO2786_p-69(hex3)            1  1.86e-05          . AGTGGTCCGCACCCGT           
+SAV_5223_p-110(chb)           1  1.86e-05          . ATTGGTATGGACATGT           
+SGR_6489_p-112(lamA2)         1  2.16e-05          . TCCGGTCTGGACCAGG           
+SCO5003_p-107(chiA)           1  2.51e-05          . CTTGGTCCGTACCTAC           
+SCAB_30191_p-139(dasA)        1  4.97e-05          . AATGGTCTGAGCCAAG           
+SAV_2585_p-79(chiA)           1  4.97e-05          . GGAGGTCTTGACAACC           
+SCAB_30201_p-247(dasR)        1  5.65e-05          . CTTGGCTCAGACCATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SGR_4635_p-95(nagE2)              3.6e-08  [+1]
+SCO5376_p-108(chiC)               3.6e-08  [+1]
+SGR_4635_p-112(nagE2)             4.2e-08  [+1]
+SCO1390_p-130(ptsA)               4.2e-08  [+1]
+SAV_2878_p-125(chiC)              4.2e-08  [+1]
+SGR_2533_p-274(chiA1)             4.8e-08  [+1]
+SAV_3258_p-93(chiA1)              4.8e-08  [+1]
+SCO5841_p-50(ptsH)                7.8e-08  [+1]
+SCAB_76211_p-89(ptsA)             9.2e-08  [+1]
+SCAB_56721_p-83(nagF)             9.2e-08  [+1]
+SGR_4636_p-58(nagE)               9.2e-08  [+1]
+SCO2906_p-41(nagE)                9.2e-08  [+1]
+SCO5003_p-76(chiA)                9.2e-08  [+1]
+SCAB_50341_p-43(nagK)             1.1e-07  [+1]
+SCAB_30191_p-115(dasA)            1.1e-07  [+1]
+SGR_2956_p-134(chb2)              1.1e-07  [+1]
+SGR_4740_p-83(chb2)               1.1e-07  [+1]
+SGR_4637_p-177(nagF)              1.1e-07  [+1]
+SCO2905_p-133(nagF)               1.1e-07  [+1]
+SCO4285_p-82(nagK)                1.1e-07  [+1]
+SCO5232_p-106(dasA)               1.1e-07  [+1]
+SAV_3940_p-82(nagK)               1.1e-07  [+1]
+SAV_3022_p-62(dasA)               1.1e-07  [+1]
+SCAB_75761_p-168(chiE)            1.2e-07  [+1]
+SAV_2585_p-61(chiA)               1.2e-07  [+1]
+SGR_6088_p-133(chiD)              1.4e-07  [+1]
+SGR_4024_p-67(SCO4240)            1.4e-07  [+1]
+SGR_2458_p-125(chiA2)             1.4e-07  [+1]
+SCO1444_p-53(chiD)                1.4e-07  [+1]
+SCAB_30201_p-271(dasR)            1.7e-07  [+1]
+SCAB_56581_p-34(nagE2)            1.7e-07  [+1]
+SGR_2160_p-151(chiC)              1.7e-07  [+1]
+SCO2907_p-32(nagE2)               1.7e-07  [+1]
+SCO5231_p-365(dasR)               1.7e-07  [+1]
+SCO6012_p-110(SCO6012)            1.7e-07  [+1]
+SAV_3023_p-331(dasR)              1.7e-07  [+1]
+SAV_5167_p-102(nagE2)             1.7e-07  [+1]
+SAV_5168_p-50(nagE)               1.7e-07  [+1]
+SCAB_33851_p-1(chiA)              1.9e-07  [+1]
+SGR_6727_p-128(chiB)              1.9e-07  [+1]
+SCO5673_p-63(chiA)                1.9e-07  [+1]
+SCAB_30151_p-85(nagB)             2.1e-07  [+1]
+SGR_1831_p-61(chiA)               2.1e-07  [+1]
+SCO2503_p-99(chiB)                2.1e-07  [+1]
+SGR_2160_p-130(chiC)              2.5e-07  [+1]
+SGR_2277_p-46(nagB)               2.5e-07  [+1]
+SGR_4056_p-83(nagK)               2.5e-07  [+1]
+SCO5954_p-95(chiA3)               2.5e-07  [+1]
+SCO5239_p-335(pdtaS)              2.5e-07  [+1]
+SAV_5636_p-87(chiB)               2.5e-07  [+1]
+SCAB_24231_p-65(ptsH)             2.8e-07  [+1]
+SCAB_56581_p-51(nagE2)            2.8e-07  [+1]
+SCAB_50351_p-155(SCO4286          2.8e-07  [+1]
+SGR_1684_p-39(ptsH)               2.8e-07  [+1]
+SGR_2275_p-161(pdtaS)             2.8e-07  [+1]
+SCO2907_p-49(nagE2)               2.8e-07  [+1]
+SCO4286_p-81(SCO4286)             2.8e-07  [+1]
+SAV_5167_p-119(nagE2)             2.8e-07  [+1]
+SAV_2418_p-42(ptsH)               2.8e-07  [+1]
+SAV_3939_p-84(SCO4286)            2.8e-07  [+1]
+SCAB_30141_p-516(pdtaS)           3.2e-07  [+1]
+SGR_2281_p-98(dasA)               3.2e-07  [+1]
+SCO6032_p-153(hex4)               3.2e-07  [+1]
+SAV_7442_p-122(lamA2)             3.7e-07  [+1]
+SCAB_57371_p-48(chb)              4.1e-07  [+1]
+SGR_6088_p-155(chiD)              4.1e-07  [+1]
+SGR_1301_p-25(SCO7069)            4.1e-07  [+1]
+SGR_3401_p-186(chiF)              4.1e-07  [+1]
+SCO2833_p-69(chb)                 4.1e-07  [+1]
+SGR_4056_p-205(nagK)              4.7e-07  [+1]
+SGR_4057_p-367(SCO4286)           4.7e-07  [+1]
+SGR_4588_p-111(SCO2946)           4.7e-07  [+1]
+SCO1429_p-96(chiE)                4.7e-07  [+1]
+SCO7069_p-60(SCO7069)             4.7e-07  [+1]
+SAV_6918_p-92(chiE)               4.7e-07  [+1]
+SGR_2282_p-197(dasR)              5.4e-07  [+1]
+SCAB_78011_p-139(SCO1262            6e-07  [+1]
+SCAB_28731_p-62(chiC)               6e-07  [+1]
+SGR_6265_p-106(SCO1262)             6e-07  [+1]
+SGR_3400_p-88(chiF)                 6e-07  [+1]
+SCO7225_p-34(chb3)                  6e-07  [+1]
+SCO1262_p-112(SCO1262)              6e-07  [+1]
+SCO5376_p-87(chiC)                  6e-07  [+1]
+SCO5236_p-67(nagB)                  6e-07  [+1]
+SAV_5223_p-70(chb)                  6e-07  [+1]
+SAV_7069_p-113(SCO1262)             6e-07  [+1]
+SAV_2878_p-104(chiC)                6e-07  [+1]
+SAV_3018_p-69(nagB)                 6e-07  [+1]
+SCAB_28731_p-83(chiC)             6.7e-07  [+1]
+SAV_3018_p-284(nagB)              6.7e-07  [+1]
+SCO7225_p-55(chb3)                7.6e-07  [+1]
+SCO5841_p-65(ptsH)                7.6e-07  [+1]
+SCO1444_p-75(chiD)                7.6e-07  [+1]
+SAV_5169_p-135(nagF)              8.5e-07  [+1]
+SGR_6104_p-121(chiE)              9.5e-07  [+1]
+SAV_1751_p-70(chiA4)              9.5e-07  [+1]
+SAV_3017_p-469(pdtaS)             9.5e-07  [+1]
+SGR_4057_p-245(SCO4286)           1.1e-06  [+1]
+SGR_3400_p-104(chiF)              1.1e-06  [+1]
+SAV_5636_p-66(chiB)               1.1e-06  [+1]
+SGR_2276_p-248(nagB2)             1.2e-06  [+1]
+SCO2503_p-78(chiB)                1.2e-06  [+1]
+SCO2946_p-111(SCO2946)            1.2e-06  [+1]
+SCAB_57911_p-58(hex3)             1.3e-06  [+1]
+SCO5231_p-149(dasR)               1.3e-06  [+1]
+SAV_7329_p-99(SCO0914)            1.3e-06  [+1]
+SAV_3017_p-254(pdtaS)             1.3e-06  [+1]
+SAV_3022_p-232(dasA)              1.3e-06  [+1]
+SCAB_30201_p-72(dasR)             1.5e-06  [+1]
+SCAB_85231_p-160(chiF)            1.5e-06  [+1]
+SCAB_30191_p-314(dasA)            1.5e-06  [+1]
+SGR_6855_p-171(chb2)              1.5e-06  [+1]
+SCO0481_p-201(chb2)               1.5e-06  [+1]
+SAV_3023_p-161(dasR)              1.5e-06  [+1]
+SCO6032_p-39(hex4)                1.7e-06  [+1]
+SCO6012_p-126(SCO6012)            1.8e-06  [+1]
+SAV_3962_p-91(SCO4240)            1.8e-06  [+1]
+SGR_701_p-103(SCO0914)              2e-06  [+1]
+SGR_4707_p-156(chb)                 2e-06  [+1]
+SCO0914_p-126(SCO0914)              2e-06  [+1]
+SCO7263_p-155(chiF)                 2e-06  [+1]
+SCO6345_p-114(chb3)               2.3e-06  [+1]
+SAV_1289_p7(SCO7069)              2.3e-06  [+1]
+SCO6345_p-94(chb3)                2.5e-06  [+1]
+SCO5232_p-322(dasA)               2.5e-06  [+1]
+SAV_5268_p-88(hex3)               2.5e-06  [+1]
+SCAB_21061_p-212(SCO6005          2.8e-06  [+1]
+SCAB_85231_p-177(chiF)            2.8e-06  [+1]
+SGR_1502_p-255(SCO6005)           2.8e-06  [+1]
+SCO7225_p-168(chb3)               2.8e-06  [+1]
+SCO6005_p-334(SCO6005)            2.8e-06  [+1]
+SCO7263_p-172(chiF)               2.8e-06  [+1]
+SAV_2251_p-209(SCO6005)           2.8e-06  [+1]
+SAV_1751_p-111(chiA4)             2.8e-06  [+1]
+SCAB_30141_p-329(pdtaS)             3e-06  [+1]
+SCO6300_p-115(hex5)               3.4e-06  [+1]
+SCO6012_p-183(SCO6012)            3.4e-06  [+1]
+SCAB_50351_p-131(SCO4286          3.7e-06  [+1]
+SGR_6727_p-107(chiB)              3.7e-06  [+1]
+SCAB_75761_p-190(chiE)            4.1e-06  [+1]
+SCAB_50351_p-117(SCO4286          4.1e-06  [+1]
+SGR_6104_p-143(chiE)              4.1e-06  [+1]
+SCO4285_p-100(nagK)               4.1e-06  [+1]
+SCO6300_p-130(hex5)               4.1e-06  [+1]
+SAV_6918_p-114(chiE)              4.1e-06  [+1]
+SAV_3940_p-100(nagK)              4.1e-06  [+1]
+SCO4240_p-74(SCO4240)             4.5e-06  [+1]
+SCAB_24231_p-51(ptsH)             4.9e-06  [+1]
+SCAB_50341_p-67(nagK)             4.9e-06  [+1]
+SCAB_55981_p-121(SCO2946          4.9e-06  [+1]
+SGR_4057_p-145(SCO4286)           4.9e-06  [+1]
+SCO5231_p-341(dasR)               4.9e-06  [+1]
+SCO5232_p-130(dasA)               4.9e-06  [+1]
+SAV_3023_p-307(dasR)              4.9e-06  [+1]
+SAV_3939_p-66(SCO4286)            4.9e-06  [+1]
+SAV_3022_p-86(dasA)               4.9e-06  [+1]
+SCAB_50161_p-95(SCO4240)          5.4e-06  [+1]
+SCAB_50341_p-81(nagK)             5.4e-06  [+1]
+SGR_2282_p-173(dasR)              5.9e-06  [+1]
+SGR_2281_p-122(dasA)              5.9e-06  [+1]
+SCO1429_p-118(chiE)               5.9e-06  [+1]
+SGR_4056_p-305(nagK)              6.4e-06  [+1]
+SCO4286_p-63(SCO4286)             6.4e-06  [+1]
+SCAB_83771_p-50(SCO7069)            7e-06  [+1]
+SGR_2533_p-292(chiA1)               7e-06  [+1]
+SCAB_30151_p-272(nagB)            9.1e-06  [+1]
+SGR_3401_p-170(chiF)              9.8e-06  [+1]
+SGR_4707_p-116(chb)               1.2e-05  [+1]
+SGR_1831_p-79(chiA)               1.5e-05  [+1]
+SAV_3258_p-111(chiA1)             1.5e-05  [+1]
+SAV_5131_p-139(SCO2946)           1.5e-05  [+1]
+SCAB_57371_p-88(chb)              1.9e-05  [+1]
+SCO2786_p-69(hex3)                1.9e-05  [+1]
+SAV_5223_p-110(chb)               1.9e-05  [+1]
+SGR_6489_p-112(lamA2)             2.2e-05  [+1]
+SCO5003_p-107(chiA)               2.5e-05  [+1]
+SCAB_30191_p-139(dasA)              5e-05  [+1]
+SAV_2585_p-79(chiA)                 5e-05  [+1]
+SCAB_30201_p-247(dasR)            5.6e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ANTGGTCTAGACCANT width=16 seqs=179
+SGR_4635_p-95(nagE2)     (    1) AGTGGTCCAGACCACG  1 
+SCO5376_p-108(chiC)      (    1) ATTGGTCCAGACCTAT  1 
+SGR_4635_p-112(nagE2)    (    1) ACTGGTCTACACCACT  1 
+SCO1390_p-130(ptsA)      (    1) TGTGGTCTAGACCTCT  1 
+SAV_2878_p-125(chiC)     (    1) ACTGGTCCAGACCTAT  1 
+SGR_2533_p-274(chiA1)    (    1) ATTGGTCTGGACCAGT  1 
+SAV_3258_p-93(chiA1)     (    1) ATTGGTCTGGACCAGT  1 
+SCO5841_p-50(ptsH)       (    1) ACTGGTCTAGACAACT  1 
+SCAB_76211_p-89(ptsA)    (    1) GGTGGTCTAGACCTCT  1 
+SCAB_56721_p-83(nagF)    (    1) AGTGGTGTAGACCAGT  1 
+SGR_4636_p-58(nagE)      (    1) ACTGGTCTACACCAGT  1 
+SCO2906_p-41(nagE)       (    1) ACTGGTCTACACCAGT  1 
+SCO5003_p-76(chiA)       (    1) ATTGGTCTGGACCACC  1 
+SCAB_50341_p-43(nagK)    (    1) AGTGGACTAGACCTCT  1 
+SCAB_30191_p-115(dasA)   (    1) ACTGGTCTACACCATT  1 
+SGR_2956_p-134(chb2)     (    1) CTTGGTCTAGACCAAG  1 
+SGR_4740_p-83(chb2)      (    1) CTTGGTCTAGACCAAG  1 
+SGR_4637_p-177(nagF)     (    1) ACTGGTGTAGACCAGT  1 
+SCO2905_p-133(nagF)      (    1) ACTGGTGTAGACCAGT  1 
+SCO4285_p-82(nagK)       (    1) AGTGGACTAGACCTCT  1 
+SCO5232_p-106(dasA)      (    1) ACTGGTCTACACCATT  1 
+SAV_3940_p-82(nagK)      (    1) AGTGGACTAGACCTCT  1 
+SAV_3022_p-62(dasA)      (    1) ACTGGTCTACACCATT  1 
+SCAB_75761_p-168(chiE)   (    1) AGTGGTCTAGTCCTCT  1 
+SAV_2585_p-61(chiA)      (    1) ATTGGTCTGGACCAAG  1 
+SGR_6088_p-133(chiD)     (    1) ACTGGTCTAGTCCTCT  1 
+SGR_4024_p-67(SCO4240)   (    1) AGTGGACCAGACCACT  1 
+SGR_2458_p-125(chiA2)    (    1) TATGGTCCAGACCAAT  1 
+SCO1444_p-53(chiD)       (    1) ACTGGTCTAGTCCTCT  1 
+SCAB_30201_p-271(dasR)   (    1) AATGGTGTAGACCAGT  1 
+SCAB_56581_p-34(nagE2)   (    1) AGTGGTGTAGACCACC  1 
+SGR_2160_p-151(chiC)     (    1) TTTGGTCCAGACCTCT  1 
+SCO2907_p-32(nagE2)      (    1) AGTGGTGTAGACCACC  1 
+SCO5231_p-365(dasR)      (    1) AATGGTGTAGACCAGT  1 
+SCO6012_p-110(SCO6012)   (    1) TCTGGTCCAGACCATT  1 
+SAV_3023_p-331(dasR)     (    1) AATGGTGTAGACCAGT  1 
+SAV_5167_p-102(nagE2)    (    1) AGTGGTGTAGACCACG  1 
+SAV_5168_p-50(nagE)      (    1) ACTGGTCTACACCACC  1 
+SCAB_33851_p-1(chiA)     (    1) ATTGGTCTGGACCAGC  1 
+SGR_6727_p-128(chiB)     (    1) TCTGGTCCAGACCTCT  1 
+SCO5673_p-63(chiA)       (    1) ATTGGTCTGGACCAAA  1 
+SCAB_30151_p-85(nagB)    (    1) ATTGGTCTACACCACA  1 
+SGR_1831_p-61(chiA)      (    1) ATTGGTCTGGACCATG  1 
+SCO2503_p-99(chiB)       (    1) CTTGGTCCAGACCTCT  1 
+SGR_2160_p-130(chiC)     (    1) ATTGGTCCAGACCTTC  1 
+SGR_2277_p-46(nagB)      (    1) ATTGGTCTATACCACC  1 
+SGR_4056_p-83(nagK)      (    1) AGTGGACTAGACCTTT  1 
+SCO5954_p-95(chiA3)      (    1) ATTGGTCCAGACCTTC  1 
+SCO5239_p-335(pdtaS)     (    1) AGTGGTCTAGTCCACA  1 
+SAV_5636_p-87(chiB)      (    1) TCTGGTCCAGACCTAT  1 
+SCAB_24231_p-65(ptsH)    (    1) ACTGGTCTAGACAACC  1 
+SCAB_56581_p-51(nagE2)   (    1) ACAGGTCTACACCACT  1 
+SCAB_50351_p-155(SCO4286 (    1) AGAGGTCTAGTCCACT  1 
+SGR_1684_p-39(ptsH)      (    1) ACTGGTCTAGACAACC  1 
+SGR_2275_p-161(pdtaS)    (    1) TGTGGACTAGACCAAT  1 
+SCO2907_p-49(nagE2)      (    1) ACAGGTCTACACCACT  1 
+SCO4286_p-81(SCO4286)    (    1) AGAGGTCTAGTCCACT  1 
+SAV_5167_p-119(nagE2)    (    1) ACAGGTCTACACCACT  1 
+SAV_2418_p-42(ptsH)      (    1) ACTGGTCTAGACAACC  1 
+SAV_3939_p-84(SCO4286)   (    1) AGAGGTCTAGTCCACT  1 
+SCAB_30141_p-516(pdtaS)  (    1) TGTGGTGTAGACCAAT  1 
+SGR_2281_p-98(dasA)      (    1) ACTGGTCTAAACCATT  1 
+SCO6032_p-153(hex4)      (    1) AATGGACTAGACCAAG  1 
+SAV_7442_p-122(lamA2)    (    1) ACTGGTCCGGACCACC  1 
+SCAB_57371_p-48(chb)     (    1) CTTGGTCTAGACCTGG  1 
+SGR_6088_p-155(chiD)     (    1) AAAGGTCCAGACCTAT  1 
+SGR_1301_p-25(SCO7069)   (    1) ACAGGTCTGGACCATT  1 
+SGR_3401_p-186(chiF)     (    1) TCTGGTCTAGACCTTG  1 
+SCO2833_p-69(chb)        (    1) CTTGGTCTAGACCTGC  1 
+SGR_4056_p-205(nagK)     (    1) CTTGGTCCAGACCTTT  1 
+SGR_4057_p-367(SCO4286)  (    1) AAAGGTCTAGTCCACT  1 
+SGR_4588_p-111(SCO2946)  (    1) AGTGGTCGAGACCACT  1 
+SCO1429_p-96(chiE)       (    1) ACTGGTCTAGTCCTCC  1 
+SCO7069_p-60(SCO7069)    (    1) ATTGGTCCGGACCTGT  1 
+SAV_6918_p-92(chiE)      (    1) ACTGGTCTAGTCCTCC  1 
+SGR_2282_p-197(dasR)     (    1) AATGGTTTAGACCAGT  1 
+SCAB_78011_p-139(SCO1262 (    1) ATTGGTCTTGACCAAG  1 
+SCAB_28731_p-62(chiC)    (    1) TATGGTCCAGACCTTT  1 
+SGR_6265_p-106(SCO1262)  (    1) ATTGGTCTTGACCAAG  1 
+SGR_3400_p-88(chiF)      (    1) ACAGGTCCAGACCATC  1 
+SCO7225_p-34(chb3)       (    1) TCAGGTCTAGACCTGT  1 
+SCO1262_p-112(SCO1262)   (    1) ATTGGTCTTGACCAAG  1 
+SCO5376_p-87(chiC)       (    1) TATGGTCCAGACCTTT  1 
+SCO5236_p-67(nagB)       (    1) ATTGGTCTAAACCACA  1 
+SAV_5223_p-70(chb)       (    1) CTTGGTCTAGACCTGA  1 
+SAV_7069_p-113(SCO1262)  (    1) ATTGGTCTTGACCAAG  1 
+SAV_2878_p-104(chiC)     (    1) TATGGTCCAGACCTTT  1 
+SAV_3018_p-69(nagB)      (    1) ATTGGTCTAAACCACA  1 
+SCAB_28731_p-83(chiC)    (    1) ACTGGTCCAGACCCAT  1 
+SAV_3018_p-284(nagB)     (    1) TGTGGACTAGACCACG  1 
+SCO7225_p-55(chb3)       (    1) TATGGTCTAGACCTGA  1 
+SCO5841_p-65(ptsH)       (    1) ACTGGTCTAGACAAGA  1 
+SCO1444_p-75(chiD)       (    1) ATTGGTCCATACCTAT  1 
+SAV_5169_p-135(nagF)     (    1) GGTGGTGTAGACCAGT  1 
+SGR_6104_p-121(chiE)     (    1) ACTGGTCTAGTCCTTC  1 
+SAV_1751_p-70(chiA4)     (    1) ATTGGTCCATACCAAC  1 
+SAV_3017_p-469(pdtaS)    (    1) TGTGGTTTAGACCAAT  1 
+SGR_4057_p-245(SCO4286)  (    1) AAAGGTCTGGACCAAG  1 
+SGR_3400_p-104(chiF)     (    1) GATGGTCTAGACCTTG  1 
+SAV_5636_p-66(chiB)      (    1) AAAGGTCTGGACCAAG  1 
+SGR_2276_p-248(nagB2)    (    1) GGTGGTATAGACCAAT  1 
+SCO2503_p-78(chiB)       (    1) AAAGGTCTGGACCACA  1 
+SCO2946_p-111(SCO2946)   (    1) ATTGGTTCAGACCTCT  1 
+SCAB_57911_p-58(hex3)    (    1) GATGGTCTAGACCTGA  1 
+SCO5231_p-149(dasR)      (    1) TATGGACTAGACCAAG  1 
+SAV_7329_p-99(SCO0914)   (    1) ATTGGTCCATACCAAA  1 
+SAV_3017_p-254(pdtaS)    (    1) CGTGGTCTAGTCCACA  1 
+SAV_3022_p-232(dasA)     (    1) GTTGGTCTAGTCCACC  1 
+SCAB_30201_p-72(dasR)    (    1) CGTGGACTAGACCAGC  1 
+SCAB_85231_p-160(chiF)   (    1) ACTGGTACAGACCAAG  1 
+SCAB_30191_p-314(dasA)   (    1) GCTGGTCTAGTCCACG  1 
+SGR_6855_p-171(chb2)     (    1) TATGGTCTAGTCCAAG  1 
+SCO0481_p-201(chb2)      (    1) TATGGTCTAGTCCAAC  1 
+SAV_3023_p-161(dasR)     (    1) GGTGGACTAGACCAAC  1 
+SCO6032_p-39(hex4)       (    1) CTTGGTCTATACCAAG  1 
+SCO6012_p-126(SCO6012)   (    1) ATTGGTCTAGTCCCAT  1 
+SAV_3962_p-91(SCO4240)   (    1) TGTGGACTACACCACT  1 
+SGR_701_p-103(SCO0914)   (    1) AATGGTCCATACCAAA  1 
+SGR_4707_p-156(chb)      (    1) ATTGGTCTGGACATGT  1 
+SCO0914_p-126(SCO0914)   (    1) AATGGTCCATACCAAA  1 
+SCO7263_p-155(chiF)      (    1) ACTGGTACAGACCAAA  1 
+SCO6345_p-114(chb3)      (    1) TAAGGTCTAGACCTGC  1 
+SAV_1289_p7(SCO7069)     (    1) ACAGGTACAGACCAAT  1 
+SCO6345_p-94(chb3)       (    1) GTAGGTCTAGACCTGC  1 
+SCO5232_p-322(dasA)      (    1) CTTGGTCTAGTCCATA  1 
+SAV_5268_p-88(hex3)      (    1) AGTGGTCTATACCCAT  1 
+SCAB_21061_p-212(SCO6005 (    1) AGTGGACTATACCTGT  1 
+SCAB_85231_p-177(chiF)   (    1) ACTGGTCTACACCCTT  1 
+SGR_1502_p-255(SCO6005)  (    1) AGTGGACTATACCTGT  1 
+SCO7225_p-168(chb3)      (    1) CCTTGTCTAGACCAAT  1 
+SCO6005_p-334(SCO6005)   (    1) AGTGGACTATACCTGT  1 
+SCO7263_p-172(chiF)      (    1) ACTGGTCTACACCCTT  1 
+SAV_2251_p-209(SCO6005)  (    1) AGTGGACTATACCTGT  1 
+SAV_1751_p-111(chiA4)    (    1) ACCGGTCTGGACCAAT  1 
+SCAB_30141_p-329(pdtaS)  (    1) AGTGGTCTAGTCAACA  1 
+SCO6300_p-115(hex5)      (    1) TTTTGTCTAGACCTCT  1 
+SCO6012_p-183(SCO6012)   (    1) GGTGGTCCAGTCCACC  1 
+SCAB_50351_p-131(SCO4286 (    1) CGTGGTGTAGACCTTG  1 
+SGR_6727_p-107(chiB)     (    1) GAAGGTCTGGACCATT  1 
+SCAB_75761_p-190(chiE)   (    1) ATTGGTCCGAACCATT  1 
+SCAB_50351_p-117(SCO4286 (    1) TGTGGTGTAGACCTTA  1 
+SGR_6104_p-143(chiE)     (    1) ATTGGTCCGAACCATT  1 
+SCO4285_p-100(nagK)      (    1) TAAGGTCTACACCACC  1 
+SCO6300_p-130(hex5)      (    1) TTTTGTCTAGACCTAT  1 
+SAV_6918_p-114(chiE)     (    1) ATTGGTCCGAACCATT  1 
+SAV_3940_p-100(nagK)     (    1) TAAGGTCTACACCACG  1 
+SCO4240_p-74(SCO4240)    (    1) TGTGGACTACACCACC  1 
+SCAB_24231_p-51(ptsH)    (    1) CCCGGTCCAGACCACT  1 
+SCAB_50341_p-67(nagK)    (    1) CAAGGTCTACACCACG  1 
+SCAB_55981_p-121(SCO2946 (    1) GGTGGTACAGACCTCT  1 
+SGR_4057_p-145(SCO4286)  (    1) GGTGGTGTAGACCTTC  1 
+SCO5231_p-341(dasR)      (    1) CTTGGCCCAGACCAAT  1 
+SCO5232_p-130(dasA)      (    1) ATTGGTCTGGGCCAAG  1 
+SAV_3023_p-307(dasR)     (    1) CTTGGCCCAGACCAAT  1 
+SAV_3939_p-66(SCO4286)   (    1) CGTGGTGTAGACCTTA  1 
+SAV_3022_p-86(dasA)      (    1) ATTGGTCTGGGCCAAG  1 
+SCAB_50161_p-95(SCO4240) (    1) CGTGGACTACACCACC  1 
+SCAB_50341_p-81(nagK)    (    1) TAAGGTCTACACCACA  1 
+SGR_2282_p-173(dasR)     (    1) CTTGGCCTAGACCTTT  1 
+SGR_2281_p-122(dasA)     (    1) AAAGGTCTAGGCCAAG  1 
+SCO1429_p-118(chiE)      (    1) AATGGTCCGAACCATT  1 
+SGR_4056_p-305(nagK)     (    1) GAAGGTCTACACCACC  1 
+SCO4286_p-63(SCO4286)    (    1) GGTGGTGTAGACCTTA  1 
+SCAB_83771_p-50(SCO7069) (    1) TCAGGTACAGACCAAT  1 
+SGR_2533_p-292(chiA1)    (    1) AGAGGTCTTGACAACT  1 
+SCAB_30151_p-272(nagB)   (    1) TGTTGACTAGACCACT  1 
+SGR_3401_p-170(chiF)     (    1) ACAGGTTCAGACCATG  1 
+SGR_4707_p-116(chb)      (    1) CTTGGTCTAGACCGCA  1 
+SGR_1831_p-79(chiA)      (    1) AGAGGTCTTGACAACC  1 
+SAV_3258_p-111(chiA1)    (    1) AGAGGTCTTGACAACC  1 
+SAV_5131_p-139(SCO2946)  (    1) ATTGGTTGAGACCTCT  1 
+SCAB_57371_p-88(chb)     (    1) ATTGGTATGGACATGT  1 
+SCO2786_p-69(hex3)       (    1) AGTGGTCCGCACCCGT  1 
+SAV_5223_p-110(chb)      (    1) ATTGGTATGGACATGT  1 
+SGR_6489_p-112(lamA2)    (    1) TCCGGTCTGGACCAGG  1 
+SCO5003_p-107(chiA)      (    1) CTTGGTCCGTACCTAC  1 
+SCAB_30191_p-139(dasA)   (    1) AATGGTCTGAGCCAAG  1 
+SAV_2585_p-79(chiA)      (    1) GGAGGTCTTGACAACC  1 
+SCAB_30201_p-247(dasR)   (    1) CTTGGCTCAGACCATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 179 bayes= 1.92071 E= 3.4e-874 
+   131   -101   -139    -60 
+   -46     -4     23     17 
+   -55   -395  -1413    164 
+ -1413  -1413    206   -355 
+ -1413  -1413    210  -1413 
+  -121   -353  -1413    173 
+  -246    169   -139   -297 
+ -1413     -7   -439    150 
+   170  -1413    -58   -255 
+  -246   -107    170   -185 
+   182  -1413   -339   -123 
+ -1413    195  -1413  -1413 
+  -175    184  -1413  -1413 
+   140   -295   -538     25 
+    10     49    -34    -47 
+  -100    -44    -43     97 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 179 E= 3.4e-874 
+ 0.608939  0.128492  0.089385  0.173184 
+ 0.178771  0.251397  0.273743  0.296089 
+ 0.167598  0.016760  0.000000  0.815642 
+ 0.000000  0.000000  0.977654  0.022346 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.106145  0.022346  0.000000  0.871508 
+ 0.044693  0.832402  0.089385  0.033520 
+ 0.000000  0.245810  0.011173  0.743017 
+ 0.798883  0.000000  0.156425  0.044693 
+ 0.044693  0.122905  0.759777  0.072626 
+ 0.865922  0.000000  0.022346  0.111732 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.072626  0.927374  0.000000  0.000000 
+ 0.648045  0.033520  0.005587  0.312849 
+ 0.262570  0.363128  0.184358  0.189944 
+ 0.122905  0.189944  0.173184  0.513966 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANTGGTCTAGACCANT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TGC]TGGTC[TC]AGACC[AT][CA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.69 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SAV_3022_p-232(dasA)             1.33e-06  [+1(1.33e-06)]
+SAV_3022_p-86(dasA)              4.89e-06  [+1(4.89e-06)]
+SAV_3022_p-62(dasA)              1.07e-07  [+1(1.07e-07)]
+SAV_5131_p-139(SCO2946)          1.48e-05  [+1(1.48e-05)]
+SAV_3017_p-469(pdtaS)            9.54e-07  [+1(9.54e-07)]
+SAV_3017_p-254(pdtaS)            1.33e-06  [+1(1.33e-06)]
+SAV_3939_p-84(SCO4286)           2.82e-07  [+1(2.82e-07)]
+SAV_3939_p-66(SCO4286)           4.89e-06  [+1(4.89e-06)]
+SAV_3940_p-100(nagK)             4.07e-06  [+1(4.07e-06)]
+SAV_3940_p-82(nagK)              1.07e-07  [+1(1.07e-07)]
+SAV_3962_p-91(SCO4240)           1.83e-06  [+1(1.83e-06)]
+SAV_2585_p-79(chiA)              4.97e-05  [+1(4.97e-05)]
+SAV_2585_p-61(chiA)              1.21e-07  [+1(1.21e-07)]
+SAV_3018_p-284(nagB)             6.71e-07  [+1(6.71e-07)]
+SAV_3018_p-69(nagB)              5.99e-07  [+1(5.99e-07)]
+SAV_5169_p-135(nagF)             8.54e-07  [+1(8.54e-07)]
+SAV_2878_p-125(chiC)             4.25e-08  [+1(4.25e-08)]
+SAV_2878_p-104(chiC)             5.99e-07  [+1(5.99e-07)]
+SAV_5168_p-50(nagE)              1.66e-07  [+1(1.66e-07)]
+SAV_5167_p-102(nagE2)            1.66e-07  [+1(1.66e-07)]
+SAV_3023_p-331(dasR)             1.66e-07  [+1(1.66e-07)]
+SAV_3023_p-307(dasR)             4.89e-06  [+1(4.89e-06)]
+SAV_3023_p-161(dasR)             1.49e-06  [+1(1.49e-06)]
+SAV_7069_p-113(SCO1262)          5.99e-07  [+1(5.99e-07)]
+SAV_2418_p-42(ptsH)              2.82e-07  [+1(2.82e-07)]
+SAV_5167_p-119(nagE2)            2.82e-07  [+1(2.82e-07)]
+SAV_1289_p7(SCO7069)             2.26e-06  [+1(2.26e-06)]
+SAV_5223_p-110(chb)              1.86e-05  [+1(1.86e-05)]
+SAV_5223_p-70(chb)               5.99e-07  [+1(5.99e-07)]
+SAV_1751_p-70(chiA4)             9.54e-07  [+1(9.54e-07)]
+SAV_1751_p-111(chiA4)            2.76e-06  [+1(2.76e-06)]
+SAV_3258_p-93(chiA1)             4.84e-08  [+1(4.84e-08)]
+SAV_3258_p-111(chiA1)            1.48e-05  [+1(1.48e-05)]
+SAV_2251_p-209(SCO6005)          2.76e-06  [+1(2.76e-06)]
+SAV_7442_p-122(lamA2)            3.69e-07  [+1(3.69e-07)]
+SAV_5268_p-88(hex3)              2.49e-06  [+1(2.49e-06)]
+SAV_6918_p-114(chiE)             4.07e-06  [+1(4.07e-06)]
+SAV_6918_p-92(chiE)              4.70e-07  [+1(4.70e-07)]
+SAV_7329_p-99(SCO0914)           1.33e-06  [+1(1.33e-06)]
+SAV_5636_p-87(chiB)              2.48e-07  [+1(2.48e-07)]
+SAV_5636_p-66(chiB)              1.07e-06  [+1(1.07e-06)]
+SCO6300_p-130(hex5)              4.07e-06  [+1(4.07e-06)]
+SCO5232_p-322(dasA)              2.49e-06  [+1(2.49e-06)]
+SCO5232_p-130(dasA)              4.89e-06  [+1(4.89e-06)]
+SCO2946_p-111(SCO2946)           1.19e-06  [+1(1.19e-06)]
+SCO7263_p-155(chiF)              2.03e-06  [+1(2.03e-06)]
+SCO7263_p-172(chiF)              2.76e-06  [+1(2.76e-06)]
+SCO5232_p-106(dasA)              1.07e-07  [+1(1.07e-07)]
+SCO5239_p-335(pdtaS)             2.48e-07  [+1(2.48e-07)]
+SCO4286_p-81(SCO4286)            2.82e-07  [+1(2.82e-07)]
+SCO4286_p-63(SCO4286)            6.41e-06  [+1(6.41e-06)]
+SCO4285_p-100(nagK)              4.07e-06  [+1(4.07e-06)]
+SCO4285_p-82(nagK)               1.07e-07  [+1(1.07e-07)]
+SCO4240_p-74(SCO4240)            4.45e-06  [+1(4.45e-06)]
+SCO5003_p-107(chiA)              2.51e-05  [+1(2.51e-05)]
+SCO5003_p-76(chiA)               9.17e-08  [+1(9.17e-08)]
+SCO6012_p-110(SCO6012)           1.66e-07  [+1(1.66e-07)]
+SCO5673_p-63(chiA)               1.89e-07  [+1(1.89e-07)]
+SCO5236_p-67(nagB)               5.99e-07  [+1(5.99e-07)]
+SCO2905_p-133(nagF)              1.07e-07  [+1(1.07e-07)]
+SCO5376_p-108(chiC)              3.55e-08  [+1(3.55e-08)]
+SCO5376_p-87(chiC)               5.99e-07  [+1(5.99e-07)]
+SCO1444_p-53(chiD)               1.42e-07  [+1(1.42e-07)]
+SCO6012_p-183(SCO6012)           3.35e-06  [+1(3.35e-06)]
+SCO6012_p-126(SCO6012)           1.83e-06  [+1(1.83e-06)]
+SCO1444_p-75(chiD)               7.58e-07  [+1(7.58e-07)]
+SCO2907_p-49(nagE2)              2.82e-07  [+1(2.82e-07)]
+SCO2906_p-41(nagE)               9.17e-08  [+1(9.17e-08)]
+SCO1390_p-130(ptsA)              4.25e-08  [+1(4.25e-08)]
+SCO5231_p-365(dasR)              1.66e-07  [+1(1.66e-07)]
+SCO5231_p-341(dasR)              4.89e-06  [+1(4.89e-06)]
+SCO5231_p-149(dasR)              1.33e-06  [+1(1.33e-06)]
+SCO2907_p-32(nagE2)              1.66e-07  [+1(1.66e-07)]
+SCO1262_p-112(SCO1262)           5.99e-07  [+1(5.99e-07)]
+SCO5841_p-65(ptsH)               7.58e-07  [+1(7.58e-07)]
+SCO5841_p-50(ptsH)               7.83e-08  [+1(7.83e-08)]
+SCO7069_p-60(SCO7069)            4.70e-07  [+1(4.70e-07)]
+SCO2833_p-69(chb)                4.14e-07  [+1(4.14e-07)]
+SCO6005_p-334(SCO6005)           2.76e-06  [+1(2.76e-06)]
+SCO6300_p-115(hex5)              3.35e-06  [+1(3.35e-06)]
+SCO0481_p-201(chb2)              1.49e-06  [+1(1.49e-06)]
+SCO2786_p-69(hex3)               1.86e-05  [+1(1.86e-05)]
+SCO1429_p-118(chiE)              5.86e-06  [+1(5.86e-06)]
+SCO1429_p-96(chiE)               4.70e-07  [+1(4.70e-07)]
+SCO0914_p-126(SCO0914)           2.03e-06  [+1(2.03e-06)]
+SCO5954_p-95(chiA3)              2.48e-07  [+1(2.48e-07)]
+SCO7225_p-168(chb3)              2.76e-06  [+1(2.76e-06)]
+SCO7225_p-55(chb3)               7.58e-07  [+1(7.58e-07)]
+SCO7225_p-34(chb3)               5.99e-07  [+1(5.99e-07)]
+SCO6345_p-114(chb3)              2.26e-06  [+1(2.26e-06)]
+SCO6345_p-94(chb3)               2.49e-06  [+1(2.49e-06)]
+SCO2503_p-99(chiB)               2.15e-07  [+1(2.15e-07)]
+SCO2503_p-78(chiB)               1.19e-06  [+1(1.19e-06)]
+SCO6032_p-153(hex4)              3.22e-07  [+1(3.22e-07)]
+SCO6032_p-39(hex4)               1.65e-06  [+1(1.65e-06)]
+SGR_2458_p-125(chiA2)            1.42e-07  [+1(1.42e-07)]
+SGR_2281_p-122(dasA)             5.86e-06  [+1(5.86e-06)]
+SGR_2281_p-98(dasA)              3.22e-07  [+1(3.22e-07)]
+SGR_3400_p-88(chiF)              5.99e-07  [+1(5.99e-07)]
+SGR_4588_p-111(SCO2946)          4.70e-07  [+1(4.70e-07)]
+SGR_3400_p-104(chiF)             1.07e-06  [+1(1.07e-06)]
+SGR_3401_p-170(chiF)             9.83e-06  [+1(9.83e-06)]
+SGR_2276_p-248(nagB2)            1.19e-06  [+1(1.19e-06)]
+SGR_2275_p-161(pdtaS)            2.82e-07  [+1(2.82e-07)]
+SGR_4057_p-367(SCO4286)          4.70e-07  [+1(4.70e-07)]
+SGR_4057_p-245(SCO4286)          1.07e-06  [+1(1.07e-06)]
+SGR_4057_p-145(SCO4286)          4.89e-06  [+1(4.89e-06)]
+SGR_6104_p-121(chiE)             9.54e-07  [+1(9.54e-07)]
+SGR_6104_p-143(chiE)             4.07e-06  [+1(4.07e-06)]
+SGR_4056_p-305(nagK)             6.41e-06  [+1(6.41e-06)]
+SGR_4056_p-205(nagK)             4.70e-07  [+1(4.70e-07)]
+SGR_4056_p-83(nagK)              2.48e-07  [+1(2.48e-07)]
+SGR_4024_p-67(SCO4240)           1.42e-07  [+1(1.42e-07)]
+SGR_1831_p-79(chiA)              1.48e-05  [+1(1.48e-05)]
+SGR_1831_p-61(chiA)              2.15e-07  [+1(2.15e-07)]
+SGR_2277_p-46(nagB)              2.48e-07  [+1(2.48e-07)]
+SGR_4637_p-177(nagF)             1.07e-07  [+1(1.07e-07)]
+SGR_2160_p-151(chiC)             1.66e-07  [+1(1.66e-07)]
+SGR_2160_p-130(chiC)             2.48e-07  [+1(2.48e-07)]
+SGR_3401_p-186(chiF)             4.14e-07  [+1(4.14e-07)]
+SGR_4636_p-58(nagE)              9.17e-08  [+1(9.17e-08)]
+SGR_2282_p-197(dasR)             5.36e-07  [+1(5.36e-07)]
+SGR_2282_p-173(dasR)             5.86e-06  [+1(5.86e-06)]
+SGR_6265_p-106(SCO1262)          5.99e-07  [+1(5.99e-07)]
+SGR_1684_p-39(ptsH)              2.82e-07  [+1(2.82e-07)]
+SGR_1301_p-25(SCO7069)           4.14e-07  [+1(4.14e-07)]
+SGR_4707_p-156(chb)              2.03e-06  [+1(2.03e-06)]
+SGR_4707_p-116(chb)              1.16e-05  [+1(1.16e-05)]
+SGR_6088_p-133(chiD)             1.42e-07  [+1(1.42e-07)]
+SGR_6088_p-155(chiD)             4.14e-07  [+1(4.14e-07)]
+SGR_4635_p-112(nagE2)            4.25e-08  [+1(4.25e-08)]
+SGR_2533_p-274(chiA1)            4.84e-08  [+1(4.84e-08)]
+SGR_2533_p-292(chiA1)            7.00e-06  [+1(7.00e-06)]
+SGR_4635_p-95(nagE2)             3.55e-08  [+1(3.55e-08)]
+SGR_1502_p-255(SCO6005)          2.76e-06  [+1(2.76e-06)]
+SGR_4740_p-83(chb2)              1.07e-07  [+1(1.07e-07)]
+SGR_2956_p-134(chb2)             1.07e-07  [+1(1.07e-07)]
+SGR_6489_p-112(lamA2)            2.16e-05  [+1(2.16e-05)]
+SGR_6855_p-171(chb2)             1.49e-06  [+1(1.49e-06)]
+SGR_701_p-103(SCO0914)           2.03e-06  [+1(2.03e-06)]
+SGR_6727_p-128(chiB)             1.89e-07  [+1(1.89e-07)]
+SGR_6727_p-107(chiB)             3.70e-06  [+1(3.70e-06)]
+SCAB_55981_p-121(SCO2946         4.89e-06  [+1(4.89e-06)]
+SCAB_30191_p-115(dasA)           1.07e-07  [+1(1.07e-07)]
+SCAB_30191_p-139(dasA)           4.97e-05  [+1(4.97e-05)]
+SCAB_30191_p-314(dasA)           1.49e-06  [+1(1.49e-06)]
+SCAB_30141_p-516(pdtaS)          3.22e-07  [+1(3.22e-07)]
+SCAB_30141_p-329(pdtaS)          3.04e-06  [+1(3.04e-06)]
+SCAB_50351_p-155(SCO4286         2.82e-07  [+1(2.82e-07)]
+SCAB_50351_p-131(SCO4286         3.70e-06  [+1(3.70e-06)]
+SCAB_50351_p-117(SCO4286         4.07e-06  [+1(4.07e-06)]
+SCAB_50341_p-81(nagK)            5.36e-06  [+1(5.36e-06)]
+SCAB_50341_p-67(nagK)            4.89e-06  [+1(4.89e-06)]
+SCAB_50341_p-43(nagK)            1.07e-07  [+1(1.07e-07)]
+SCAB_50161_p-95(SCO4240)         5.36e-06  [+1(5.36e-06)]
+SCAB_33851_p-1(chiA)             1.89e-07  [+1(1.89e-07)]
+SCAB_30151_p-272(nagB)           9.06e-06  [+1(9.06e-06)]
+SCAB_30151_p-85(nagB)            2.15e-07  [+1(2.15e-07)]
+SCAB_85231_p-177(chiF)           2.76e-06  [+1(2.76e-06)]
+SCAB_56721_p-83(nagF)            9.17e-08  [+1(9.17e-08)]
+SCAB_85231_p-160(chiF)           1.49e-06  [+1(1.49e-06)]
+SCAB_28731_p-83(chiC)            6.71e-07  [+1(6.71e-07)]
+SCAB_28731_p-62(chiC)            5.99e-07  [+1(5.99e-07)]
+SCAB_76211_p-89(ptsA)            9.17e-08  [+1(9.17e-08)]
+SCAB_56581_p-34(nagE2)           1.66e-07  [+1(1.66e-07)]
+SCAB_56581_p-51(nagE2)           2.82e-07  [+1(2.82e-07)]
+SCAB_30201_p-271(dasR)           1.66e-07  [+1(1.66e-07)]
+SCAB_30201_p-247(dasR)           5.65e-05  [+1(5.65e-05)]
+SCAB_30201_p-72(dasR)            1.49e-06  [+1(1.49e-06)]
+SCAB_78011_p-139(SCO1262         5.99e-07  [+1(5.99e-07)]
+SCAB_24231_p-65(ptsH)            2.82e-07  [+1(2.82e-07)]
+SCAB_24231_p-51(ptsH)            4.89e-06  [+1(4.89e-06)]
+SCAB_83771_p-50(SCO7069)         7.00e-06  [+1(7.00e-06)]
+SCAB_57371_p-88(chb)             1.86e-05  [+1(1.86e-05)]
+SCAB_57371_p-48(chb)             4.14e-07  [+1(4.14e-07)]
+SCAB_21061_p-212(SCO6005         2.76e-06  [+1(2.76e-06)]
+SCAB_57911_p-58(hex3)            1.33e-06  [+1(1.33e-06)]
+SCAB_75761_p-190(chiE)           4.07e-06  [+1(4.07e-06)]
+SCAB_75761_p-168(chiE)           1.21e-07  [+1(1.21e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

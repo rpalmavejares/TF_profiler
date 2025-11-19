@@ -1,0 +1,231 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptococcaceae/NrtR_Streptococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SGO_1997_p-121(nadR)     1.0000     21  SGO_1997_p-60(nadR)      1.0000     21  
+smi_2044_p-47(nadR)      1.0000     21  smi_2044_p-84(nadR)      1.0000     21  
+SSA_2195_p-61(nadR)      1.0000     21  SSU05_1974_p-90(nadR)    1.0000     21  
+str0429_p-26(nadR)       1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptococcaceae/NrtR_Streptococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptococcaceae/NrtR_Streptococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             147    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    147    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.537 C 0.0476 G 0.0476 T 0.367 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.53 C 0.053 G 0.053 T 0.364 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TAKTTTATWATAAAAAYAT MEME-1	width =  19  sites =   7  llr = 72  E-value = 7.1e-007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :9113191673aaaa7:9:
+pos.-specific     C  :11:::::::::::::41:
+probability       G  ::4::1:1:::::::11::
+matrix            T  a:397717437::::14:a
+
+         bits    4.2                    
+                 3.8                    
+                 3.4                    
+                 3.0                    
+Relative         2.5                    
+Entropy          2.1                    
+(14.9 bits)      1.7                 *  
+                 1.3 * *             * *
+                 0.8 ****       **** ***
+                 0.4 ********  *********
+                 0.0 -------------------
+
+Multilevel           TAGTTTATAATAAAAACAT
+consensus              T A   TTA     T  
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+SGO_1997_p-60(nadR)           2  1.55e-08          A TAGTTTATAATAAAAACAT A         
+SSA_2195_p-61(nadR)           2  1.11e-07          A TAGTTTATAATAAAATCAT A         
+smi_2044_p-47(nadR)           2  3.53e-07          A TAGTTTATAATAAAAATAT C         
+SGO_1997_p-121(nadR)          2  5.50e-06          A TATTTGAGTTTAAAAATAT T         
+str0429_p-26(nadR)            2  8.86e-06          T TACTATATTTAAAAAGGAT A         
+SSU05_1974_p-90(nadR)         2  1.49e-04          A TCTTTTTATAAAAAAATAT A         
+smi_2044_p-84(nadR)           2  1.49e-04          A TAAAAAATAATAAAAACCT A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SGO_1997_p-60(nadR)               1.6e-08  1_[+1]_1
+SSA_2195_p-61(nadR)               1.1e-07  1_[+1]_1
+smi_2044_p-47(nadR)               3.5e-07  1_[+1]_1
+SGO_1997_p-121(nadR)              5.5e-06  1_[+1]_1
+str0429_p-26(nadR)                8.9e-06  1_[+1]_1
+SSU05_1974_p-90(nadR)             0.00015  1_[+1]_1
+smi_2044_p-84(nadR)               0.00015  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TAKTTTATWATAAAAAYAT width=19 seqs=7
+SGO_1997_p-60(nadR)      (    2) TAGTTTATAATAAAAACAT  1 
+SSA_2195_p-61(nadR)      (    2) TAGTTTATAATAAAATCAT  1 
+smi_2044_p-47(nadR)      (    2) TAGTTTATAATAAAAATAT  1 
+SGO_1997_p-121(nadR)     (    2) TATTTGAGTTTAAAAATAT  1 
+str0429_p-26(nadR)       (    2) TACTATATTTAAAAAGGAT  1 
+SSU05_1974_p-90(nadR)    (    2) TCTTTTTATAAAAAAATAT  1 
+smi_2044_p-84(nadR)      (    2) TAAAAAATAATAAAAACCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 21 bayes= 2.58496 E= 7.1e-007 
+  -945   -945   -945    146 
+    69    143   -945   -945 
+  -189    143    301    -35 
+  -189   -945   -945    123 
+   -89   -945   -945     97 
+  -189   -945    143     97 
+    69   -945   -945   -135 
+  -189   -945    143     97 
+    11   -945   -945     23 
+    43   -945   -945    -35 
+   -89   -945   -945     97 
+    92   -945   -945   -945 
+    92   -945   -945   -945 
+    92   -945   -945   -945 
+    92   -945   -945   -945 
+    43   -945    143   -135 
+  -945    301    143     23 
+    69    143   -945   -945 
+  -945   -945   -945    146 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 7 E= 7.1e-007 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.142857  0.000000  0.000000 
+ 0.142857  0.142857  0.428571  0.285714 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.285714  0.000000  0.000000  0.714286 
+ 0.142857  0.000000  0.142857  0.714286 
+ 0.857143  0.000000  0.000000  0.142857 
+ 0.142857  0.000000  0.142857  0.714286 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.285714  0.000000  0.000000  0.714286 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.714286  0.000000  0.142857  0.142857 
+ 0.000000  0.428571  0.142857  0.428571 
+ 0.857143  0.142857  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTTTATWATAAAAAYAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TA[GT]T[TA]TAT[AT][AT][TA]AAAAA[CT]AT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SGO_1997_p-121(nadR)             1.65e-05  1_[+1(5.50e-06)]_1
+SGO_1997_p-60(nadR)              4.65e-08  1_[+1(1.55e-08)]_1
+smi_2044_p-47(nadR)              1.06e-06  1_[+1(3.53e-07)]_1
+smi_2044_p-84(nadR)              4.48e-04  21
+SSA_2195_p-61(nadR)              3.33e-07  1_[+1(1.11e-07)]_1
+SSU05_1974_p-90(nadR)            4.48e-04  21
+str0429_p-26(nadR)               2.66e-05  1_[+1(8.86e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

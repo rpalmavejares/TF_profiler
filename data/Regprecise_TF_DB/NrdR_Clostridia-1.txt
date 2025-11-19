@@ -1,0 +1,331 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= NrdR_Clostridia-1.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CAC0480(nrdD)Score=4.5,P 1.0000     16  CAC1047(nrdJ)Score=5.9,P 1.0000     16  
+CAC1047(nrdJ)Score=5.3Po 1.0000     16  CAC1195(ligA2)Score=5.5, 1.0000     16  
+CAC3277(nrdA)Score=4.4,P 1.0000     16  CAC0480(nrdD)Score=5,Pos 1.0000     16  
+CAC1195(ligA2)Score=5.5, 1.0000     16  CAC3277(nrdA)Score=5.4,P 1.0000     16  
+Cbei_0068(nrdD)Score=4.8 1.0000     16  Cbei_0068(nrdD)Score=5.5 1.0000     16  
+Cbei_0194(nrdA)Score=5.2 1.0000     16  Cbei_0194(nrdA)Score=5.4 1.0000     16  
+CBO2814(nrdA)Score=5.5Po 1.0000     16  CBO2814(nrdA)Score=5.4,P 1.0000     16  
+CBO0094(nrdD)Score=5.4,P 1.0000     16  CBO0094(nrdD)Score=4.8Po 1.0000     16  
+CBY_2237(nrdD)Score=5.5, 1.0000     16  CBY_2237(nrdD)Score=4.8, 1.0000     16  
+CBY_2909(nrdA)Score=5.2, 1.0000     16  CBY_2909(nrdA)Score=5.1, 1.0000     16  
+CKL_3757(nrdD)Score=5.6P 1.0000     16  CKL_3757(nrdD)Score=4.6, 1.0000     16  
+NT01CX_2366(nrdA)Score=4 1.0000     16  NT01CX_1076(nrdD)Score=5 1.0000     16  
+CPF_2830(nrdD)Score=4.8, 1.0000     16  CPF_2830(nrdD)Score=4.6, 1.0000     16  
+CPF_2671(nrdA)Score=5.3, 1.0000     16  CTC00257(nrdD)Score=5.7, 1.0000     16  
+CTC00257(nrdD)Score=4.9, 1.0000     16  CTC00574(nrdJ)Score=4.5, 1.0000     16  
+CTC00574(nrdJ)Score=5.9, 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna NrdR_Clostridia-1.fasta -oc NrdR_Clostridia-1 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           16
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             496    N=              31    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.351 C 0.091 G 0.179 T 0.379 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.350 C 0.092 G 0.180 T 0.378 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  15  sites =  31  llr = 384  E-value = 3.0e-124
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  817:4a:a:6:4::4
+pos.-specific     C  12:a::1::::::::
+probability       G  1:3:1:1::4::a:6
+matrix            T  17::5:8:a:a6:a:
+
+         bits    3.4    *           
+                 3.1    *           
+                 2.8    *           
+                 2.4    *        *  
+Relative         2.1    *        *  
+Entropy          1.7    *        *  
+(17.8 bits)      1.4    * * ** * *  
+                 1.0   ** * ** * ***
+                 0.7 **** ****** ***
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           ATACTATATATTGTG
+consensus              G A    G A  A
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Cbei_0068(nrdD)Score=5.5      1  3.65e-08          . ATACTATATATTGTG C         
+CBY_2237(nrdD)Score=4.8,      1  4.73e-08          . ATGCTATATGTTGTG A         
+CBO0094(nrdD)Score=4.8Po      1  4.73e-08          . ATGCTATATGTTGTG A         
+Cbei_0068(nrdD)Score=4.8      1  4.73e-08          . ATGCTATATGTTGTG A         
+CBY_2237(nrdD)Score=5.5,      1  6.44e-08          . ATACAATATATTGTG C         
+CAC1195(ligA2)Score=5.5,      1  1.29e-07          . ATACTATATATAGTG C         
+CAC3277(nrdA)Score=5.4,P      1  1.47e-07          . ATACTACATATTGTG G         
+CPF_2830(nrdD)Score=4.6,      1  1.70e-07          . ATGCTACATGTTGTG A         
+CKL_3757(nrdD)Score=4.6,      1  1.70e-07          . ATGCTACATGTTGTG A         
+CBO2814(nrdA)Score=5.5Po      1  1.70e-07          . ATACAATATATAGTG A         
+CAC1047(nrdJ)Score=5.9,P      1  1.70e-07          . ATACAATATATAGTG T         
+CTC00574(nrdJ)Score=5.9,      1  3.36e-07          . ATACTATATATTGTA T         
+CTC00257(nrdD)Score=4.9,      1  3.81e-07          . ATGCTATATGTTGTA A         
+CBO0094(nrdD)Score=5.4,P      1  3.81e-07          . ACACAATATGTTGTA G         
+CTC00257(nrdD)Score=5.7,      1  4.51e-07          . ATACAATATATTGTA G         
+NT01CX_1076(nrdD)Score=5      1  4.51e-07          . GTACAATATGTTGTG G         
+Cbei_0194(nrdA)Score=5.4      1  7.31e-07          . ACACAATATGTAGTA G         
+CBY_2909(nrdA)Score=5.2,      1  8.33e-07          . ATACGATATGTTGTA T         
+Cbei_0194(nrdA)Score=5.2      1  8.33e-07          . ATACGATATGTTGTA T         
+CAC1195(ligA2)Score=5.5,      1  8.33e-07          . AAACTATATATTGTG T         
+CKL_3757(nrdD)Score=5.6P      1  9.06e-07          . ACACAATATATAGTA G         
+CBY_2909(nrdA)Score=5.1,      1  9.87e-07          . ACACAAGATATAGTG G         
+CPF_2671(nrdA)Score=5.3,      1  1.33e-06          . TTACTATATATTGTG G         
+CAC3277(nrdA)Score=4.4,P      1  2.17e-06          . AAGCGATATATTGTG G         
+CPF_2830(nrdD)Score=4.8,      1  2.77e-06          . GTACAAGATATAGTG G         
+CAC0480(nrdD)Score=5,Pos      1  2.77e-06          . GTACAAGATATAGTG T         
+CBO2814(nrdA)Score=5.4,P      1  4.04e-06          . ATACAATATATAGAG T         
+CAC0480(nrdD)Score=4.5,P      1  7.35e-06          . ATGCTAAATGTAGTA A         
+CAC1047(nrdJ)Score=5.3Po      1  9.25e-06          . CCACTATATATAGTT T         
+CTC00574(nrdJ)Score=4.5,      1  2.64e-05          . TAACTATACATTGTA T         
+NT01CX_2366(nrdA)Score=4      1  3.61e-05          . CTACTTTATTTTGTA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cbei_0068(nrdD)Score=5.5          3.7e-08  [+1]_1
+CBY_2237(nrdD)Score=4.8,          4.7e-08  [+1]_1
+CBO0094(nrdD)Score=4.8Po          4.7e-08  [+1]_1
+Cbei_0068(nrdD)Score=4.8          4.7e-08  [+1]_1
+CBY_2237(nrdD)Score=5.5,          6.4e-08  [+1]_1
+CAC1195(ligA2)Score=5.5,          1.3e-07  [+1]_1
+CAC3277(nrdA)Score=5.4,P          1.5e-07  [+1]_1
+CPF_2830(nrdD)Score=4.6,          1.7e-07  [+1]_1
+CKL_3757(nrdD)Score=4.6,          1.7e-07  [+1]_1
+CBO2814(nrdA)Score=5.5Po          1.7e-07  [+1]_1
+CAC1047(nrdJ)Score=5.9,P          1.7e-07  [+1]_1
+CTC00574(nrdJ)Score=5.9,          3.4e-07  [+1]_1
+CTC00257(nrdD)Score=4.9,          3.8e-07  [+1]_1
+CBO0094(nrdD)Score=5.4,P          3.8e-07  [+1]_1
+CTC00257(nrdD)Score=5.7,          4.5e-07  [+1]_1
+NT01CX_1076(nrdD)Score=5          4.5e-07  [+1]_1
+Cbei_0194(nrdA)Score=5.4          7.3e-07  [+1]_1
+CBY_2909(nrdA)Score=5.2,          8.3e-07  [+1]_1
+Cbei_0194(nrdA)Score=5.2          8.3e-07  [+1]_1
+CAC1195(ligA2)Score=5.5,          8.3e-07  [+1]_1
+CKL_3757(nrdD)Score=5.6P          9.1e-07  [+1]_1
+CBY_2909(nrdA)Score=5.1,          9.9e-07  [+1]_1
+CPF_2671(nrdA)Score=5.3,          1.3e-06  [+1]_1
+CAC3277(nrdA)Score=4.4,P          2.2e-06  [+1]_1
+CPF_2830(nrdD)Score=4.8,          2.8e-06  [+1]_1
+CAC0480(nrdD)Score=5,Pos          2.8e-06  [+1]_1
+CBO2814(nrdA)Score=5.4,P            4e-06  [+1]_1
+CAC0480(nrdD)Score=4.5,P          7.3e-06  [+1]_1
+CAC1047(nrdJ)Score=5.3Po          9.2e-06  [+1]_1
+CTC00574(nrdJ)Score=4.5,          2.6e-05  [+1]_1
+NT01CX_2366(nrdA)Score=4          3.6e-05  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=15 seqs=31
+Cbei_0068(nrdD)Score=5.5 (    1) ATACTATATATTGTG  1 
+CBY_2237(nrdD)Score=4.8, (    1) ATGCTATATGTTGTG  1 
+CBO0094(nrdD)Score=4.8Po (    1) ATGCTATATGTTGTG  1 
+Cbei_0068(nrdD)Score=4.8 (    1) ATGCTATATGTTGTG  1 
+CBY_2237(nrdD)Score=5.5, (    1) ATACAATATATTGTG  1 
+CAC1195(ligA2)Score=5.5, (    1) ATACTATATATAGTG  1 
+CAC3277(nrdA)Score=5.4,P (    1) ATACTACATATTGTG  1 
+CPF_2830(nrdD)Score=4.6, (    1) ATGCTACATGTTGTG  1 
+CKL_3757(nrdD)Score=4.6, (    1) ATGCTACATGTTGTG  1 
+CBO2814(nrdA)Score=5.5Po (    1) ATACAATATATAGTG  1 
+CAC1047(nrdJ)Score=5.9,P (    1) ATACAATATATAGTG  1 
+CTC00574(nrdJ)Score=5.9, (    1) ATACTATATATTGTA  1 
+CTC00257(nrdD)Score=4.9, (    1) ATGCTATATGTTGTA  1 
+CBO0094(nrdD)Score=5.4,P (    1) ACACAATATGTTGTA  1 
+CTC00257(nrdD)Score=5.7, (    1) ATACAATATATTGTA  1 
+NT01CX_1076(nrdD)Score=5 (    1) GTACAATATGTTGTG  1 
+Cbei_0194(nrdA)Score=5.4 (    1) ACACAATATGTAGTA  1 
+CBY_2909(nrdA)Score=5.2, (    1) ATACGATATGTTGTA  1 
+Cbei_0194(nrdA)Score=5.2 (    1) ATACGATATGTTGTA  1 
+CAC1195(ligA2)Score=5.5, (    1) AAACTATATATTGTG  1 
+CKL_3757(nrdD)Score=5.6P (    1) ACACAATATATAGTA  1 
+CBY_2909(nrdA)Score=5.1, (    1) ACACAAGATATAGTG  1 
+CPF_2671(nrdA)Score=5.3, (    1) TTACTATATATTGTG  1 
+CAC3277(nrdA)Score=4.4,P (    1) AAGCGATATATTGTG  1 
+CPF_2830(nrdD)Score=4.8, (    1) GTACAAGATATAGTG  1 
+CAC0480(nrdD)Score=5,Pos (    1) GTACAAGATATAGTG  1 
+CBO2814(nrdA)Score=5.4,P (    1) ATACAATATATAGAG  1 
+CAC0480(nrdD)Score=4.5,P (    1) ATGCTAAATGTAGTA  1 
+CAC1047(nrdJ)Score=5.3Po (    1) CCACTATATATAGTT  1 
+CTC00574(nrdJ)Score=4.5, (    1) TAACTATACATTGTA  1 
+NT01CX_2366(nrdA)Score=4 (    1) CTACTTTATTTTGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 62 bayes= 2.79675 E= 3.0e-124 
+   115    -51    -89   -255 
+  -185     81  -1160     97 
+   108  -1160     52  -1160 
+ -1160    344  -1160  -1160 
+    15  -1160    -89     45 
+   147  -1160  -1160   -355 
+  -344      7    -89    103 
+   151  -1160  -1160  -1160 
+ -1160   -151  -1160    136 
+    73  -1160    110   -355 
+ -1160  -1160  -1160    140 
+     2  -1160  -1160     77 
+ -1160  -1160    247  -1160 
+  -344  -1160  -1160    136 
+     2  -1160    177   -355 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 31 E= 3.0e-124 
+ 0.774194  0.064516  0.096774  0.064516 
+ 0.096774  0.161290  0.000000  0.741935 
+ 0.741935  0.000000  0.258065  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.387097  0.000000  0.096774  0.516129 
+ 0.967742  0.000000  0.000000  0.032258 
+ 0.032258  0.096774  0.096774  0.774194 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.032258  0.000000  0.967742 
+ 0.580645  0.000000  0.387097  0.032258 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.354839  0.000000  0.000000  0.645161 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.032258  0.000000  0.000000  0.967742 
+ 0.354839  0.000000  0.612903  0.032258 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+AT[AG]C[TA]ATAT[AG]T[TA]GT[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CAC0480(nrdD)Score=4.5,P         1.47e-05  [+1(7.35e-06)]_1
+CAC1047(nrdJ)Score=5.9,P         3.40e-07  [+1(1.70e-07)]_1
+CAC1047(nrdJ)Score=5.3Po         1.85e-05  [+1(9.25e-06)]_1
+CAC1195(ligA2)Score=5.5,         2.59e-07  [+1(1.29e-07)]_1
+CAC3277(nrdA)Score=4.4,P         4.34e-06  [+1(2.17e-06)]_1
+CAC0480(nrdD)Score=5,Pos         5.55e-06  [+1(2.77e-06)]_1
+CAC1195(ligA2)Score=5.5,         1.67e-06  [+1(8.33e-07)]_1
+CAC3277(nrdA)Score=5.4,P         2.95e-07  [+1(1.47e-07)]_1
+Cbei_0068(nrdD)Score=4.8         9.46e-08  [+1(4.73e-08)]_1
+Cbei_0068(nrdD)Score=5.5         7.30e-08  [+1(3.65e-08)]_1
+Cbei_0194(nrdA)Score=5.2         1.67e-06  [+1(8.33e-07)]_1
+Cbei_0194(nrdA)Score=5.4         1.46e-06  [+1(7.31e-07)]_1
+CBO2814(nrdA)Score=5.5Po         3.40e-07  [+1(1.70e-07)]_1
+CBO2814(nrdA)Score=5.4,P         8.08e-06  [+1(4.04e-06)]_1
+CBO0094(nrdD)Score=5.4,P         7.63e-07  [+1(3.81e-07)]_1
+CBO0094(nrdD)Score=4.8Po         9.46e-08  [+1(4.73e-08)]_1
+CBY_2237(nrdD)Score=5.5,         1.29e-07  [+1(6.44e-08)]_1
+CBY_2237(nrdD)Score=4.8,         9.46e-08  [+1(4.73e-08)]_1
+CBY_2909(nrdA)Score=5.2,         1.67e-06  [+1(8.33e-07)]_1
+CBY_2909(nrdA)Score=5.1,         1.97e-06  [+1(9.87e-07)]_1
+CKL_3757(nrdD)Score=5.6P         1.81e-06  [+1(9.06e-07)]_1
+CKL_3757(nrdD)Score=4.6,         3.40e-07  [+1(1.70e-07)]_1
+NT01CX_2366(nrdA)Score=4         7.22e-05  [+1(3.61e-05)]_1
+NT01CX_1076(nrdD)Score=5         9.02e-07  [+1(4.51e-07)]_1
+CPF_2830(nrdD)Score=4.8,         5.55e-06  [+1(2.77e-06)]_1
+CPF_2830(nrdD)Score=4.6,         3.40e-07  [+1(1.70e-07)]_1
+CPF_2671(nrdA)Score=5.3,         2.66e-06  [+1(1.33e-06)]_1
+CTC00257(nrdD)Score=5.7,         9.02e-07  [+1(4.51e-07)]_1
+CTC00257(nrdD)Score=4.9,         7.63e-07  [+1(3.81e-07)]_1
+CTC00574(nrdJ)Score=4.5,         5.28e-05  [+1(2.64e-05)]_1
+CTC00574(nrdJ)Score=5.9,         6.72e-07  [+1(3.36e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

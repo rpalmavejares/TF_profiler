@@ -1,0 +1,250 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/ModE_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA1863_p-84(modA)        1.0000     24  PSEEN2286_p-55(modA)     1.0000     24  
+PP3828_p-46(modA)        1.0000     24  PSPTO2973_p-128(modA)    1.0000     24  
+PFL_3412_p-101(modA)     1.0000     24  Pmen_4339_p-74(modA)     1.0000     24  
+PST_1348_p-168(modE)     1.0000     24  Avin_50680_p-46(modE)    1.0000     24  
+Avin_50680_p-164(modE)   1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/ModE_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/ModE_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           24
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             216    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    216    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.37 C 0.204 G 0.144 T 0.282 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.368 C 0.205 G 0.145 T 0.282 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CGCTATATAHWHMAVGMYATARCG MEME-1	width =  24  sites =   9  llr = 176  E-value = 1.5e-040
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::a:a:823447327:a1a42:
+pos.-specific     C  a:9:::::13123:4:33::::8:
+probability       G  :9:::::::1::1226:::::4:9
+matrix            T  :11a:a:a136311:2:7:9:1:1
+
+         bits    2.8                         
+                 2.5                         
+                 2.2 **                     *
+                 1.9 ** * * *               *
+Relative         1.7 **** * *               *
+Entropy          1.4 ********          *** **
+(28.3 bits)      1.1 ********         **** **
+                 0.8 ********       ****** **
+                 0.6 *********    ***********
+                 0.3 ********* **************
+                 0.0 ------------------------
+
+Multilevel           CGCTATATACTAAACGATATAACG
+consensus                     TATCGAACC   GA 
+sequence                      A C  GT        
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+PST_1348_p-168(modE)          1  7.82e-13          . CGCTATATACAAAACGATATAGCG           
+PSEEN2286_p-55(modA)          1  3.19e-12          . CGCTATATATTCCACGACATAACG           
+PFL_3412_p-101(modA)          1  8.21e-12          . CGCTATATATTCCGCTATATAGCG           
+PP3828_p-46(modA)             1  1.28e-11          . CGCTATATAGTTAAGGCTATAACG           
+PSPTO2973_p-128(modA)         1  3.74e-11          . CGCTATATATTTAAATATATAGCG           
+PA1863_p-84(modA)             1  2.46e-10          . CGCTATATTCCAAAAGCCATAGCG           
+Pmen_4339_p-74(modA)          1  6.68e-10          . CGCTATATACAAGAAAACATAACG           
+Avin_50680_p-164(modE)        1  3.90e-08          . CGCTATATCATTTGCACTATAAAT           
+Avin_50680_p-46(modE)         1  1.92e-07          . CTTTATATAAAACTGGATAAATAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PST_1348_p-168(modE)              7.8e-13  [+1]
+PSEEN2286_p-55(modA)              3.2e-12  [+1]
+PFL_3412_p-101(modA)              8.2e-12  [+1]
+PP3828_p-46(modA)                 1.3e-11  [+1]
+PSPTO2973_p-128(modA)             3.7e-11  [+1]
+PA1863_p-84(modA)                 2.5e-10  [+1]
+Pmen_4339_p-74(modA)              6.7e-10  [+1]
+Avin_50680_p-164(modE)            3.9e-08  [+1]
+Avin_50680_p-46(modE)             1.9e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CGCTATATAHWHMAVGMYATARCG width=24 seqs=9
+PST_1348_p-168(modE)     (    1) CGCTATATACAAAACGATATAGCG  1 
+PSEEN2286_p-55(modA)     (    1) CGCTATATATTCCACGACATAACG  1 
+PFL_3412_p-101(modA)     (    1) CGCTATATATTCCGCTATATAGCG  1 
+PP3828_p-46(modA)        (    1) CGCTATATAGTTAAGGCTATAACG  1 
+PSPTO2973_p-128(modA)    (    1) CGCTATATATTTAAATATATAGCG  1 
+PA1863_p-84(modA)        (    1) CGCTATATTCCAAAAGCCATAGCG  1 
+Pmen_4339_p-74(modA)     (    1) CGCTATATACAAGAAAACATAACG  1 
+Avin_50680_p-164(modE)   (    1) CGCTATATCATTTGCACTATAAAT  1 
+Avin_50680_p-46(modE)    (    1) CTTTATATAAAACTGGATAAATAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 9 bayes= 0.719892 E= 1.5e-040 
+  -982    229   -982   -982 
+  -982   -982    261   -134 
+  -982    212   -982   -134 
+  -982   -982   -982    183 
+   144   -982   -982   -982 
+  -982   -982   -982    183 
+   144   -982   -982   -982 
+  -982   -982   -982    183 
+   108    -88   -982   -134 
+   -73     70    -39     24 
+   -14    -88   -982     98 
+    27     12   -982     24 
+    27     70    -39   -134 
+    86   -982     61   -134 
+   -14    112     61   -982 
+   -73   -982    193    -34 
+    86     70   -982   -982 
+  -982     70   -982    124 
+   144   -982   -982   -982 
+  -172   -982   -982    166 
+   144   -982   -982   -982 
+    27   -982    161   -134 
+   -73    193   -982   -982 
+  -982   -982    261   -134 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 9 E= 1.5e-040 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.888889  0.111111 
+ 0.000000  0.888889  0.000000  0.111111 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.777778  0.111111  0.000000  0.111111 
+ 0.222222  0.333333  0.111111  0.333333 
+ 0.333333  0.111111  0.000000  0.555556 
+ 0.444444  0.222222  0.000000  0.333333 
+ 0.444444  0.333333  0.111111  0.111111 
+ 0.666667  0.000000  0.222222  0.111111 
+ 0.333333  0.444444  0.222222  0.000000 
+ 0.222222  0.000000  0.555556  0.222222 
+ 0.666667  0.333333  0.000000  0.000000 
+ 0.000000  0.333333  0.000000  0.666667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.111111  0.000000  0.000000  0.888889 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.444444  0.000000  0.444444  0.111111 
+ 0.222222  0.777778  0.000000  0.000000 
+ 0.000000  0.000000  0.888889  0.111111 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGCTATATAHWHMAVGMYATARCG MEME-1 regular expression
+--------------------------------------------------------------------------------
+CGCTATATA[CTA][TA][ATC][AC][AG][CAG][GAT][AC][TC]ATA[AG][CA]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA1863_p-84(modA)                2.46e-10  [+1(2.46e-10)]
+PSEEN2286_p-55(modA)             3.19e-12  [+1(3.19e-12)]
+PP3828_p-46(modA)                1.28e-11  [+1(1.28e-11)]
+PSPTO2973_p-128(modA)            3.74e-11  [+1(3.74e-11)]
+PFL_3412_p-101(modA)             8.21e-12  [+1(8.21e-12)]
+Pmen_4339_p-74(modA)             6.68e-10  [+1(6.68e-10)]
+PST_1348_p-168(modE)             7.82e-13  [+1(7.82e-13)]
+Avin_50680_p-46(modE)            1.92e-07  [+1(1.92e-07)]
+Avin_50680_p-164(modE)           3.90e-08  [+1(3.90e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

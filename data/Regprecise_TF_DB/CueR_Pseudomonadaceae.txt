@@ -1,0 +1,289 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/CueR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA3523_p-89(n/a)         1.0000     21  PA3920_p-97(copA)        1.0000     21  
+PSEEN0671_p-56(copZ)     1.0000     21  PSEEN0669_p-55(copA)     1.0000     21  
+PP5393_p-71(copZ2)       1.0000     21  PP0588_p-56(copZ)        1.0000     21  
+PP0586_p-53(copA)        1.0000     21  PSPTO0752_p-59(copZ)     1.0000     21  
+PSPTO0750_p-59(copA)     1.0000     21  PFL_0712_p-56(copZ)      1.0000     21  
+PFL_0710_p-56(copA)      1.0000     21  Pmen_2225_p-72(copZ)     1.0000     21  
+Pmen_0821_p-57(copA)     1.0000     21  Pmen_0823_p-8(copZ)      1.0000     21  
+PST_3613_p-58(copA)      1.0000     21  PST_3386_p-65(copZ2)     1.0000     21  
+PST_2713_p-67(copZ2)     1.0000     21  PST_3612_p-58(copZ)      1.0000     21  
+Avin_10070_p-59(copZ)    1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/CueR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/CueR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             399    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    399    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.198 C 0.278 G 0.293 T 0.231 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.199 C 0.278 G 0.293 T 0.231 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTGCCABGGTGKCAAGGT MEME-1	width =  21  sites =  19  llr = 411  E-value = 1.8e-138
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:::::1:6113::::aa::1
+pos.-specific     C  :aa:::8a32311::9:::21
+probability       G  :::::a::13672a6:::a8:
+matrix            T  :::aa:1:141:8:41::::9
+
+         bits    2.3 *               **   
+                 2.1 *  **           **   
+                 1.9 ****** *     *  ***  
+                 1.6 ****** *     * **** *
+Relative         1.4 ****** *     * **** *
+Entropy          1.2 ****** *    ** **** *
+(31.2 bits)      0.9 ********   **********
+                 0.7 *********  **********
+                 0.5 *********  **********
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTGCCATGGTGGCAAGGT
+consensus                    CGCA  T    C 
+sequence                      C           
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+PSPTO0752_p-59(copZ)          1  7.84e-13          . ACCTTGCCATGATGGCAAGGT           
+Pmen_2225_p-72(copZ)          1  3.04e-12          . ACCTTGCCATCGTGTCAAGGT           
+Pmen_0823_p-8(copZ)           1  3.91e-12          . ACCTTGCCATGGTGGCAAGCT           
+PA3523_p-89(n/a)              1  6.45e-12          . ACCTTGCCAAGGTGTCAAGGT           
+PST_3612_p-58(copZ)           1  1.24e-11          . ACCTTGCCAGGGTGGCAAGCT           
+Pmen_0821_p-57(copA)          1  1.55e-11          . ACCTTGCCATGGGGTCAAGGT           
+PSEEN0671_p-56(copZ)          1  2.71e-11          . ACCTTGCCCCGATGGCAAGGT           
+PP5393_p-71(copZ2)            1  3.87e-11          . ACCTTGTCATCGTGTCAAGGT           
+PST_2713_p-67(copZ2)          1  5.78e-11          . ACCTTGCCATGGCGTCAAGGT           
+PFL_0710_p-56(copA)           1  5.78e-11          . ACCTTGCCTGCGTGGCAAGGT           
+PP0586_p-53(copA)             1  5.78e-11          . ACCTTGCCTGCGTGGCAAGGT           
+PFL_0712_p-56(copZ)           1  7.45e-11          . ACCTTGCCACGGTGGCAAGGA           
+PSPTO0750_p-59(copA)          1  1.03e-10          . ACCTTGCCCATGTGGCAAGGT           
+PP0588_p-56(copZ)             1  2.47e-10          . ACCTTGTCCTGATGGCAAGCT           
+Avin_10070_p-59(copZ)         1  2.68e-10          . ACCTTGCCCGGGGGGCAAGCT           
+PSEEN0669_p-55(copA)          1  2.68e-10          . ACCTTGACCGCATGGCAAGGT           
+PA3920_p-97(copA)             1  8.95e-10          . ACCTTGACACGATGTCAAGGC           
+PST_3613_p-58(copA)           1  1.05e-09          . ACCTTGCCATAGGGTTAAGGT           
+PST_3386_p-65(copZ2)          1  1.56e-09          . ACCTTGCCGCTCTGGCAAGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSPTO0752_p-59(copZ)              7.8e-13  [+1]
+Pmen_2225_p-72(copZ)                3e-12  [+1]
+Pmen_0823_p-8(copZ)               3.9e-12  [+1]
+PA3523_p-89(n/a)                  6.4e-12  [+1]
+PST_3612_p-58(copZ)               1.2e-11  [+1]
+Pmen_0821_p-57(copA)              1.6e-11  [+1]
+PSEEN0671_p-56(copZ)              2.7e-11  [+1]
+PP5393_p-71(copZ2)                3.9e-11  [+1]
+PST_2713_p-67(copZ2)              5.8e-11  [+1]
+PFL_0710_p-56(copA)               5.8e-11  [+1]
+PP0586_p-53(copA)                 5.8e-11  [+1]
+PFL_0712_p-56(copZ)               7.5e-11  [+1]
+PSPTO0750_p-59(copA)                1e-10  [+1]
+PP0588_p-56(copZ)                 2.5e-10  [+1]
+Avin_10070_p-59(copZ)             2.7e-10  [+1]
+PSEEN0669_p-55(copA)              2.7e-10  [+1]
+PA3920_p-97(copA)                   9e-10  [+1]
+PST_3613_p-58(copA)               1.1e-09  [+1]
+PST_3386_p-65(copZ2)              1.6e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTGCCABGGTGKCAAGGT width=21 seqs=19
+PSPTO0752_p-59(copZ)     (    1) ACCTTGCCATGATGGCAAGGT  1 
+Pmen_2225_p-72(copZ)     (    1) ACCTTGCCATCGTGTCAAGGT  1 
+Pmen_0823_p-8(copZ)      (    1) ACCTTGCCATGGTGGCAAGCT  1 
+PA3523_p-89(n/a)         (    1) ACCTTGCCAAGGTGTCAAGGT  1 
+PST_3612_p-58(copZ)      (    1) ACCTTGCCAGGGTGGCAAGCT  1 
+Pmen_0821_p-57(copA)     (    1) ACCTTGCCATGGGGTCAAGGT  1 
+PSEEN0671_p-56(copZ)     (    1) ACCTTGCCCCGATGGCAAGGT  1 
+PP5393_p-71(copZ2)       (    1) ACCTTGTCATCGTGTCAAGGT  1 
+PST_2713_p-67(copZ2)     (    1) ACCTTGCCATGGCGTCAAGGT  1 
+PFL_0710_p-56(copA)      (    1) ACCTTGCCTGCGTGGCAAGGT  1 
+PP0586_p-53(copA)        (    1) ACCTTGCCTGCGTGGCAAGGT  1 
+PFL_0712_p-56(copZ)      (    1) ACCTTGCCACGGTGGCAAGGA  1 
+PSPTO0750_p-59(copA)     (    1) ACCTTGCCCATGTGGCAAGGT  1 
+PP0588_p-56(copZ)        (    1) ACCTTGTCCTGATGGCAAGCT  1 
+Avin_10070_p-59(copZ)    (    1) ACCTTGCCCGGGGGGCAAGCT  1 
+PSEEN0669_p-55(copA)     (    1) ACCTTGACCGCATGGCAAGGT  1 
+PA3920_p-97(copA)        (    1) ACCTTGACACGATGTCAAGGC  1 
+PST_3613_p-58(copA)      (    1) ACCTTGCCATAGGGTTAAGGT  1 
+PST_3386_p-65(copZ2)     (    1) ACCTTGCCGCTCTGGCAAGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 19 bayes= 1.33258 E= 1.8e-138 
+   233  -1089  -1089  -1089 
+ -1089    185  -1089  -1089 
+ -1089    185  -1089  -1089 
+ -1089  -1089  -1089    211 
+ -1089  -1089  -1089    211 
+ -1089  -1089    177  -1089 
+   -91    151  -1089   -113 
+ -1089    185  -1089  -1089 
+   154     -8   -247   -113 
+   -91    -40    -15     87 
+  -191     -8     98   -113 
+    41   -240    122  -1089 
+ -1089   -240    -89    177 
+ -1089  -1089    177  -1089 
+ -1089  -1089    111     67 
+ -1089    177  -1089   -213 
+   233  -1089  -1089  -1089 
+   233  -1089  -1089  -1089 
+ -1089  -1089    177  -1089 
+ -1089    -40    143  -1089 
+  -191   -240  -1089    195 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 19 E= 1.8e-138 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.105263  0.789474  0.000000  0.105263 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.578947  0.263158  0.052632  0.105263 
+ 0.105263  0.210526  0.263158  0.421053 
+ 0.052632  0.263158  0.578947  0.105263 
+ 0.263158  0.052632  0.684211  0.000000 
+ 0.000000  0.052632  0.157895  0.789474 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.631579  0.368421 
+ 0.000000  0.947368  0.000000  0.052632 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.210526  0.789474  0.000000 
+ 0.052632  0.052632  0.000000  0.894737 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTGCCABGGTGKCAAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTTGCC[AC][TGC][GC][GA]TG[GT]CAAG[GC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA3523_p-89(n/a)                 6.45e-12  [+1(6.45e-12)]
+PA3920_p-97(copA)                8.95e-10  [+1(8.95e-10)]
+PSEEN0671_p-56(copZ)             2.71e-11  [+1(2.71e-11)]
+PSEEN0669_p-55(copA)             2.68e-10  [+1(2.68e-10)]
+PP5393_p-71(copZ2)               3.87e-11  [+1(3.87e-11)]
+PP0588_p-56(copZ)                2.47e-10  [+1(2.47e-10)]
+PP0586_p-53(copA)                5.78e-11  [+1(5.78e-11)]
+PSPTO0752_p-59(copZ)             7.84e-13  [+1(7.84e-13)]
+PSPTO0750_p-59(copA)             1.03e-10  [+1(1.03e-10)]
+PFL_0712_p-56(copZ)              7.45e-11  [+1(7.45e-11)]
+PFL_0710_p-56(copA)              5.78e-11  [+1(5.78e-11)]
+Pmen_2225_p-72(copZ)             3.04e-12  [+1(3.04e-12)]
+Pmen_0821_p-57(copA)             1.55e-11  [+1(1.55e-11)]
+Pmen_0823_p-8(copZ)              3.91e-12  [+1(3.91e-12)]
+PST_3613_p-58(copA)              1.05e-09  [+1(1.05e-09)]
+PST_3386_p-65(copZ2)             1.56e-09  [+1(1.56e-09)]
+PST_2713_p-67(copZ2)             5.78e-11  [+1(5.78e-11)]
+PST_3612_p-58(copZ)              1.24e-11  [+1(1.24e-11)]
+Avin_10070_p-59(copZ)            2.68e-10  [+1(2.68e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

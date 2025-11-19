@@ -1,0 +1,300 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/SoxR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SMc03095_p-59(n/a)       1.0000     20  SMc00183_p-67(PF03358)   1.0000     20  
+SMc01217_p-62(PF07690)   1.0000     20  SMc00182_p-31(soxR)      1.0000     20  
+NGR_c15730_p-63(PF07690) 1.0000     20  NGR_c16770_p-68(PF03358) 1.0000     20  
+NGR_c16780_p-31(soxR)    1.0000     20  RL3412_p-63(PF03992)     1.0000     20  
+RL4165_p-69(PF00903)     1.0000     20  RL4398_p-74(PF03358)     1.0000     20  
+RL4397_p-29(soxR)        1.0000     20  RHE_CH02961_p-60(PF03992 1.0000     20  
+RHE_CH03863_p-29(soxR)   1.0000     20  Atu2361_p-56(PF07690)    1.0000     20  
+Atu0942_p-78(PF07690)    1.0000     20  Atu4583_p-96(sodB)       1.0000     20  
+Atu3915_p-91(soxR)       1.0000     20  mlr3125_p-161(PF07690)   1.0000     20  
+mlr7819_p-75(PF03992)    1.0000     20  mlr2720_p-37(soxR)       1.0000     20  
+Xaut_1054_p-145(n/a)     1.0000     20  Xaut_1053_p26(soxR)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/SoxR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/SoxR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             440    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    440    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.286 C 0.223 G 0.232 T 0.259 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.286 C 0.223 G 0.232 T 0.259 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTCAACYRHRSTTGAGGT MEME-1	width =  20  sites =  22  llr = 436  E-value = 3.9e-150
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::aa:15351:::a::2
+pos.-specific     C  :9a:a::73:2:3:::::::
+probability       G  :1:::::3:3:45::a:aa:
+matrix            T  :::a::::5251:aa::::8
+
+         bits    2.2   *              *  
+                 1.9   ***        *   *  
+                 1.7 *****        ****** 
+                 1.5 *******      ****** 
+Relative         1.3 *******      *******
+Entropy          1.1 ********     *******
+(28.6 bits)      0.9 ********     *******
+                 0.6 ********    ********
+                 0.4 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTCAACTATAGTTGAGGT
+consensus                   GCGAGC       
+sequence                      TC         
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+SMc00182_p-31(soxR)           1  2.14e-12          . ACCTCAACTATAGTTGAGGT           
+SMc00183_p-67(PF03358)        1  2.14e-12          . ACCTCAACTATAGTTGAGGT           
+NGR_c16770_p-68(PF03358)      1  2.35e-11          . ACCTCAACTAAGCTTGAGGT           
+Atu2361_p-56(PF07690)         1  7.06e-11          . ACCTCAACTATGGTTGAGGA           
+SMc03095_p-59(n/a)            1  7.06e-11          . ACCTCAAGTACGGTTGAGGT           
+Atu3915_p-91(soxR)            1  7.99e-11          . ACCTCAACTATAGTTGAGGA           
+RHE_CH02961_p-60(PF03992      1  1.14e-10          . ACCTCAACCATAGTTGAGGA           
+RL4397_p-29(soxR)             1  1.45e-10          . ACCTCAACTAATCTTGAGGT           
+NGR_c16780_p-31(soxR)         1  1.45e-10          . ACCTCAAGCTTAGTTGAGGT           
+Atu4583_p-96(sodB)            1  1.75e-10          . ACCTCAACCGTGATTGAGGT           
+RL4165_p-69(PF00903)          1  2.01e-10          . ACCTCAACCGATGTTGAGGT           
+SMc01217_p-62(PF07690)        1  3.12e-10          . ACCTCAACCGCGATTGAGGT           
+RHE_CH03863_p-29(soxR)        1  4.34e-10          . ACCTCAACTAATATTGAGGT           
+RL4398_p-74(PF03358)          1  4.34e-10          . ACCTCAAGATTAGTTGAGGT           
+mlr3125_p-161(PF07690)        1  6.26e-10          . AGCTCAACCGCGGTTGAGGT           
+NGR_c15730_p-63(PF07690)      1  8.14e-10          . ACCTCAAGAGCGCTTGAGGT           
+mlr7819_p-75(PF03992)         1  1.40e-09          . ACCTCAACTTAAGTTGAGAT           
+mlr2720_p-37(soxR)            1  2.80e-09          . AGCTCAACATAACTTGAGGT           
+Atu0942_p-78(PF07690)         1  6.03e-09          . ACCTCAATGGCGCTTGAGGT           
+Xaut_1053_p26(soxR)           1  7.53e-09          . ACCTCGAGTATGGTTTAGGT           
+Xaut_1054_p-145(n/a)          1  7.95e-09          . ACCTAAACCATACTCGAGGT           
+RL3412_p-63(PF03992)          1  8.38e-09          . ACCTCAGGTTAACTTGAGGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc00182_p-31(soxR)               2.1e-12  [+1]
+SMc00183_p-67(PF03358)            2.1e-12  [+1]
+NGR_c16770_p-68(PF03358)          2.3e-11  [+1]
+Atu2361_p-56(PF07690)             7.1e-11  [+1]
+SMc03095_p-59(n/a)                7.1e-11  [+1]
+Atu3915_p-91(soxR)                  8e-11  [+1]
+RHE_CH02961_p-60(PF03992          1.1e-10  [+1]
+RL4397_p-29(soxR)                 1.4e-10  [+1]
+NGR_c16780_p-31(soxR)             1.4e-10  [+1]
+Atu4583_p-96(sodB)                1.7e-10  [+1]
+RL4165_p-69(PF00903)                2e-10  [+1]
+SMc01217_p-62(PF07690)            3.1e-10  [+1]
+RHE_CH03863_p-29(soxR)            4.3e-10  [+1]
+RL4398_p-74(PF03358)              4.3e-10  [+1]
+mlr3125_p-161(PF07690)            6.3e-10  [+1]
+NGR_c15730_p-63(PF07690)          8.1e-10  [+1]
+mlr7819_p-75(PF03992)             1.4e-09  [+1]
+mlr2720_p-37(soxR)                2.8e-09  [+1]
+Atu0942_p-78(PF07690)               6e-09  [+1]
+Xaut_1053_p26(soxR)               7.5e-09  [+1]
+Xaut_1054_p-145(n/a)                8e-09  [+1]
+RL3412_p-63(PF03992)              8.4e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTCAACYRHRSTTGAGGT width=20 seqs=22
+SMc00182_p-31(soxR)      (    1) ACCTCAACTATAGTTGAGGT  1 
+SMc00183_p-67(PF03358)   (    1) ACCTCAACTATAGTTGAGGT  1 
+NGR_c16770_p-68(PF03358) (    1) ACCTCAACTAAGCTTGAGGT  1 
+Atu2361_p-56(PF07690)    (    1) ACCTCAACTATGGTTGAGGA  1 
+SMc03095_p-59(n/a)       (    1) ACCTCAAGTACGGTTGAGGT  1 
+Atu3915_p-91(soxR)       (    1) ACCTCAACTATAGTTGAGGA  1 
+RHE_CH02961_p-60(PF03992 (    1) ACCTCAACCATAGTTGAGGA  1 
+RL4397_p-29(soxR)        (    1) ACCTCAACTAATCTTGAGGT  1 
+NGR_c16780_p-31(soxR)    (    1) ACCTCAAGCTTAGTTGAGGT  1 
+Atu4583_p-96(sodB)       (    1) ACCTCAACCGTGATTGAGGT  1 
+RL4165_p-69(PF00903)     (    1) ACCTCAACCGATGTTGAGGT  1 
+SMc01217_p-62(PF07690)   (    1) ACCTCAACCGCGATTGAGGT  1 
+RHE_CH03863_p-29(soxR)   (    1) ACCTCAACTAATATTGAGGT  1 
+RL4398_p-74(PF03358)     (    1) ACCTCAAGATTAGTTGAGGT  1 
+mlr3125_p-161(PF07690)   (    1) AGCTCAACCGCGGTTGAGGT  1 
+NGR_c15730_p-63(PF07690) (    1) ACCTCAAGAGCGCTTGAGGT  1 
+mlr7819_p-75(PF03992)    (    1) ACCTCAACTTAAGTTGAGAT  1 
+mlr2720_p-37(soxR)       (    1) AGCTCAACATAACTTGAGGT  1 
+Atu0942_p-78(PF07690)    (    1) ACCTCAATGGCGCTTGAGGT  1 
+Xaut_1053_p26(soxR)      (    1) ACCTCGAGTATGGTTTAGGT  1 
+Xaut_1054_p-145(n/a)     (    1) ACCTAAACCATACTCGAGGT  1 
+RL3412_p-63(PF03992)     (    1) ACCTCAGGTTAACTTGAGGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 22 bayes= 1.41504 E= 3.9e-150 
+   181  -1110  -1110  -1110 
+ -1110    203   -135  -1110 
+ -1110    216  -1110  -1110 
+ -1110  -1110  -1110    195 
+  -265    210  -1110  -1110 
+   174  -1110   -235  -1110 
+   174  -1110   -235  -1110 
+ -1110    161     23   -251 
+  -107     51   -235     95 
+    81  -1110     23    -19 
+    15      3  -1110     81 
+    67  -1110     82    -92 
+  -107     51    123  -1110 
+ -1110  -1110  -1110    195 
+ -1110   -229  -1110    188 
+ -1110  -1110    204   -251 
+   181  -1110  -1110  -1110 
+ -1110  -1110    211  -1110 
+  -265  -1110    204  -1110 
+   -65  -1110  -1110    166 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 22 E= 3.9e-150 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.909091  0.090909  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.045455  0.954545  0.000000  0.000000 
+ 0.954545  0.000000  0.045455  0.000000 
+ 0.954545  0.000000  0.045455  0.000000 
+ 0.000000  0.681818  0.272727  0.045455 
+ 0.136364  0.318182  0.045455  0.500000 
+ 0.500000  0.000000  0.272727  0.227273 
+ 0.318182  0.227273  0.000000  0.454545 
+ 0.454545  0.000000  0.409091  0.136364 
+ 0.136364  0.318182  0.545455  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.045455  0.000000  0.954545 
+ 0.000000  0.000000  0.954545  0.045455 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.045455  0.000000  0.954545  0.000000 
+ 0.181818  0.000000  0.000000  0.818182 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAACYRHRSTTGAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTCAA[CG][TC][AGT][TAC][AG][GC]TTGAGGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc03095_p-59(n/a)               7.06e-11  [+1(7.06e-11)]
+SMc00183_p-67(PF03358)           2.14e-12  [+1(2.14e-12)]
+SMc01217_p-62(PF07690)           3.12e-10  [+1(3.12e-10)]
+SMc00182_p-31(soxR)              2.14e-12  [+1(2.14e-12)]
+NGR_c15730_p-63(PF07690)         8.14e-10  [+1(8.14e-10)]
+NGR_c16770_p-68(PF03358)         2.35e-11  [+1(2.35e-11)]
+NGR_c16780_p-31(soxR)            1.45e-10  [+1(1.45e-10)]
+RL3412_p-63(PF03992)             8.38e-09  [+1(8.38e-09)]
+RL4165_p-69(PF00903)             2.01e-10  [+1(2.01e-10)]
+RL4398_p-74(PF03358)             4.34e-10  [+1(4.34e-10)]
+RL4397_p-29(soxR)                1.45e-10  [+1(1.45e-10)]
+RHE_CH02961_p-60(PF03992         1.14e-10  [+1(1.14e-10)]
+RHE_CH03863_p-29(soxR)           4.34e-10  [+1(4.34e-10)]
+Atu2361_p-56(PF07690)            7.06e-11  [+1(7.06e-11)]
+Atu0942_p-78(PF07690)            6.03e-09  [+1(6.03e-09)]
+Atu4583_p-96(sodB)               1.75e-10  [+1(1.75e-10)]
+Atu3915_p-91(soxR)               7.99e-11  [+1(7.99e-11)]
+mlr3125_p-161(PF07690)           6.26e-10  [+1(6.26e-10)]
+mlr7819_p-75(PF03992)            1.40e-09  [+1(1.40e-09)]
+mlr2720_p-37(soxR)               2.80e-09  [+1(2.80e-09)]
+Xaut_1054_p-145(n/a)             7.95e-09  [+1(7.95e-09)]
+Xaut_1053_p26(soxR)              7.53e-09  [+1(7.53e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

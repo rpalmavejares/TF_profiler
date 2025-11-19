@@ -1,0 +1,260 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/MntR_Mycobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MSMEG_5589_p-53(mntH)    1.0000     20  MSMEG_5329_p-311(COG2119 1.0000     20  
+MMAR_4584_p-54(mntH)     1.0000     20  MMAR_5398_p-216(COG2119) 1.0000     20  
+Mflv_3168_p-35(mtsA)     1.0000     20  Mflv_1822_p-54(mntH)     1.0000     20  
+MAV_1044_p-52(mntH)      1.0000     20  MAB_1031c_p-53(mntH)     1.0000     20  
+Mjls_4747_p-51(mntH)     1.0000     20  Mjls_5425_p-218(COG2119) 1.0000     20  
+Rv3848_p-217(COG2119)    1.0000     20  Mvan_3371_p-61(mtsA)     1.0000     20  
+Mvan_4708_p-293(COG2119) 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/MntR_Mycobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/MntR_Mycobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             260    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    260    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.215 C 0.269 G 0.215 T 0.3 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.216 C 0.269 G 0.216 T 0.299 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RDTTTCGGCTASCCKAACTT MEME-1	width =  20  sites =  13  llr = 218  E-value = 1.4e-059
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  42212::1::72::18a22:
+pos.-specific     C  :::::9::72:59a:2:8:2
+probability       G  551::1a82133::5:::::
+matrix            T  13798::128:11:5:::88
+
+         bits    2.2       *         *   
+                 2.0       *      *  *   
+                 1.8       *      *  *   
+                 1.5      **     ** **   
+Relative         1.3    * ***  * ** ***  
+Entropy          1.1    *****  * ** *****
+(24.2 bits)      0.9 *  ***** ** ** *****
+                 0.7 * ********* ********
+                 0.4 *********** ********
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           GGTTTCGGCTACCCGAACTT
+consensus            ATA A     GG  T    C
+sequence              A                  
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Mjls_4747_p-51(mntH)          1  1.67e-10          . GTTTTCGGCTAACCTAACTT           
+MSMEG_5589_p-53(mntH)         1  1.67e-10          . GATTTCGGCTAACCTAACTT           
+MAB_1031c_p-53(mntH)          1  1.36e-09          . AGTTTCGGCTACTCTAACTT           
+MMAR_5398_p-216(COG2119)      1  3.26e-09          . GGATACGGCCGCCCGAACTT           
+Mflv_1822_p-54(mntH)          1  4.04e-09          . GGTTTCGTCTGGCCTAACTT           
+Mflv_3168_p-35(mtsA)          1  7.84e-09          . AGTTTCGGCGACCCGAAATC           
+MMAR_4584_p-54(mntH)          1  7.84e-09          . TGTTTCGGCTAGCCTCACTT           
+Rv3848_p-217(COG2119)         1  1.03e-08          . AAATACGGGTGGCCGAACTT           
+MSMEG_5329_p-311(COG2119      1  1.34e-08          . AGTATCGGTTACCCGAACAT           
+Mvan_4708_p-293(COG2119)      1  1.58e-08          . GTTTTGGGGTAGCCGAACTC           
+Mvan_3371_p-61(mtsA)          1  1.58e-08          . GTTTTCGGTCACCCAAACTT           
+MAV_1044_p-52(mntH)           1  8.30e-08          . ATGTTCGACTACCCTCACTT           
+Mjls_5425_p-218(COG2119)      1  2.17e-07          . GAATACGGCTGTCCGAAAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mjls_4747_p-51(mntH)              1.7e-10  [+1]
+MSMEG_5589_p-53(mntH)             1.7e-10  [+1]
+MAB_1031c_p-53(mntH)              1.4e-09  [+1]
+MMAR_5398_p-216(COG2119)          3.3e-09  [+1]
+Mflv_1822_p-54(mntH)                4e-09  [+1]
+Mflv_3168_p-35(mtsA)              7.8e-09  [+1]
+MMAR_4584_p-54(mntH)              7.8e-09  [+1]
+Rv3848_p-217(COG2119)               1e-08  [+1]
+MSMEG_5329_p-311(COG2119          1.3e-08  [+1]
+Mvan_4708_p-293(COG2119)          1.6e-08  [+1]
+Mvan_3371_p-61(mtsA)              1.6e-08  [+1]
+MAV_1044_p-52(mntH)               8.3e-08  [+1]
+Mjls_5425_p-218(COG2119)          2.2e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RDTTTCGGCTASCCKAACTT width=20 seqs=13
+Mjls_4747_p-51(mntH)     (    1) GTTTTCGGCTAACCTAACTT  1 
+MSMEG_5589_p-53(mntH)    (    1) GATTTCGGCTAACCTAACTT  1 
+MAB_1031c_p-53(mntH)     (    1) AGTTTCGGCTACTCTAACTT  1 
+MMAR_5398_p-216(COG2119) (    1) GGATACGGCCGCCCGAACTT  1 
+Mflv_1822_p-54(mntH)     (    1) GGTTTCGTCTGGCCTAACTT  1 
+Mflv_3168_p-35(mtsA)     (    1) AGTTTCGGCGACCCGAAATC  1 
+MMAR_4584_p-54(mntH)     (    1) TGTTTCGGCTAGCCTCACTT  1 
+Rv3848_p-217(COG2119)    (    1) AAATACGGGTGGCCGAACTT  1 
+MSMEG_5329_p-311(COG2119 (    1) AGTATCGGTTACCCGAACAT  1 
+Mvan_4708_p-293(COG2119) (    1) GTTTTGGGGTAGCCGAACTC  1 
+Mvan_3371_p-61(mtsA)     (    1) GTTTTCGGTCACCCAAACTT  1 
+MAV_1044_p-52(mntH)      (    1) ATGTTCGACTACCCTCACTT  1 
+Mjls_5425_p-218(COG2119) (    1) GAATACGGCTGTCCGAAAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 13 bayes= 1.06711 E= 1.4e-059 
+    83  -1035    132   -196 
+    10  -1035    110      4 
+    10  -1035   -149    121 
+  -149  -1035  -1035    162 
+    10  -1035  -1035    136 
+ -1035    178   -149  -1035 
+ -1035  -1035    221  -1035 
+  -149  -1035    197   -196 
+ -1035    136    -49    -96 
+ -1035    -80   -149    136 
+   168  -1035     51  -1035 
+   -49     78     51   -196 
+ -1035    178  -1035   -196 
+ -1035    189  -1035  -1035 
+  -149  -1035    110     62 
+   197    -80  -1035  -1035 
+   221  -1035  -1035  -1035 
+   -49    165  -1035  -1035 
+   -49  -1035  -1035    150 
+ -1035    -22  -1035    136 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 13 E= 1.4e-059 
+ 0.384615  0.000000  0.538462  0.076923 
+ 0.230769  0.000000  0.461538  0.307692 
+ 0.230769  0.000000  0.076923  0.692308 
+ 0.076923  0.000000  0.000000  0.923077 
+ 0.230769  0.000000  0.000000  0.769231 
+ 0.000000  0.923077  0.076923  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.076923  0.000000  0.846154  0.076923 
+ 0.000000  0.692308  0.153846  0.153846 
+ 0.000000  0.153846  0.076923  0.769231 
+ 0.692308  0.000000  0.307692  0.000000 
+ 0.153846  0.461538  0.307692  0.076923 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.076923  0.000000  0.461538  0.461538 
+ 0.846154  0.153846  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.153846  0.846154  0.000000  0.000000 
+ 0.153846  0.000000  0.000000  0.846154 
+ 0.000000  0.230769  0.000000  0.769231 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RDTTTCGGCTASCCKAACTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA][GTA][TA]T[TA]CGGCT[AG][CG]CC[GT]AACT[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MSMEG_5589_p-53(mntH)            1.67e-10  [+1(1.67e-10)]
+MSMEG_5329_p-311(COG2119         1.34e-08  [+1(1.34e-08)]
+MMAR_4584_p-54(mntH)             7.84e-09  [+1(7.84e-09)]
+MMAR_5398_p-216(COG2119)         3.26e-09  [+1(3.26e-09)]
+Mflv_3168_p-35(mtsA)             7.84e-09  [+1(7.84e-09)]
+Mflv_1822_p-54(mntH)             4.04e-09  [+1(4.04e-09)]
+MAV_1044_p-52(mntH)              8.30e-08  [+1(8.30e-08)]
+MAB_1031c_p-53(mntH)             1.36e-09  [+1(1.36e-09)]
+Mjls_4747_p-51(mntH)             1.67e-10  [+1(1.67e-10)]
+Mjls_5425_p-218(COG2119)         2.17e-07  [+1(2.17e-07)]
+Rv3848_p-217(COG2119)            1.03e-08  [+1(1.03e-08)]
+Mvan_3371_p-61(mtsA)             1.58e-08  [+1(1.58e-08)]
+Mvan_4708_p-293(COG2119)         1.58e-08  [+1(1.58e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

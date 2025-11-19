@@ -1,0 +1,355 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NorR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RS02290_p-36(norR)       1.0000     19  RS02290_p-62(norR)       1.0000     19  
+RS02289_p-122(norA)      1.0000     19  RS02289_p-148(norA)      1.0000     19  
+RS02289_p-168(norA)      1.0000     19  Rpic_4656_p-36(norR)     1.0000     19  
+Rpic_4656_p-62(norR)     1.0000     19  Rpic_4655_p-121(norA)    1.0000     19  
+Rpic_4655_p-147(norA)    1.0000     19  Rpic_4655_p-167(norA)    1.0000     19  
+Rmet_3166_p-35(norR)     1.0000     19  Rmet_3166_p-60(norR)     1.0000     19  
+Rmet_3167_p-119(norB)    1.0000     19  Rmet_3167_p-144(norB)    1.0000     19  
+Rmet_3167_p-163(norB)    1.0000     19  Reut_B5057_p-29(norR)    1.0000     19  
+Reut_B5057_p-55(norR)    1.0000     19  Reut_B5056_p-106(norA)   1.0000     19  
+Reut_B5056_p-132(norA)   1.0000     19  Reut_B5056_p-151(norA)   1.0000     19  
+H16_B2325_p-34(norR)     1.0000     19  H16_B2325_p-60(norR)     1.0000     19  
+PHG246_p-35(norR)        1.0000     19  PHG246_p-61(norR)        1.0000     19  
+PHG245_p-108(norA)       1.0000     19  H16_B2324_p-154(norA)    1.0000     19  
+H16_B2324_p-136(norA)    1.0000     19  H16_B2324_p-110(norA)    1.0000     19  
+PHG245_p-153(norA)       1.0000     19  PHG245_p-134(norA)       1.0000     19  
+RALTA_B2088_p-136(norA)  1.0000     19  RALTA_B2088_p-155(norA)  1.0000     19  
+RALTA_B2089_p-35(norR)   1.0000     19  RALTA_B2089_p-61(norR)   1.0000     19  
+RALTA_B2088_p-110(norA)  1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NorR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NorR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       35    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             665    N=              35
+sample: seed=            0    hsfrac=          0
+        searchsize=    665    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.29 C 0.221 G 0.221 T 0.268 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.221 G 0.221 T 0.268 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CABGGTRAWWWWTACCST MEME-1	width =  18  sites =  35  llr = 414  E-value = 1.1e-130
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  271:::4656531a::11
+pos.-specific     C  513:::21:::12:aa42
+probability       G  124aa:31:::11:::31
+matrix            T  212::a1244455:::26
+
+         bits    2.2     *         *   
+                 2.0    ***        **  
+                 1.7    ***       ***  
+                 1.5    ***       ***  
+Relative         1.3    ***       ***  
+Entropy          1.1    ***       ***  
+(17.1 bits)      0.9    ***   *   ***  
+                 0.7  * ***  ***  ***  
+                 0.4  * ***  ***  *****
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           CAGGGTAAAAATTACCCT
+consensus            T C   GTTTTAC   GC
+sequence               T               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Rmet_3167_p-119(norB)         1  1.74e-08          . CACGGTGAATATTACCGC G         
+H16_B2324_p-110(norA)         1  5.40e-08          . TAGGGTATTAATTACCGT C         
+H16_B2325_p-60(norR)          1  6.44e-08          . GACGGTAATTAATACCCT A         
+H16_B2324_p-154(norA)         1  7.61e-08          . CATGGTTAAAAATACCGT A         
+Rmet_3166_p-60(norR)          1  8.98e-08          . CGCGGTAATATTCACCGT G         
+RALTA_B2088_p-110(norA)       1  1.94e-07          . TAGGGTAGTTAATACCCT T         
+RALTA_B2089_p-35(norR)        1  1.94e-07          . CGCGGTACTAATTACCCT T         
+PHG245_p-153(norA)            1  1.94e-07          . CATGGTGATAAATACCGG T         
+Rpic_4656_p-62(norR)          1  2.23e-07          . CGGGGTAGAATTCACCGT C         
+PHG246_p-61(norR)             1  2.56e-07          . TACGGTCATATTTACCTT A         
+Reut_B5056_p-151(norA)        1  2.93e-07          . TAGGGTCATAAATACCTT A         
+RALTA_B2089_p-61(norR)        1  3.80e-07          . AAGGGTATTAACTACCCT A         
+Rpic_4655_p-167(norA)         1  6.21e-07          . CATGGTTGAAATGACCCT G         
+H16_B2325_p-34(norR)          1  6.98e-07          . CGCGGTACTTATCACCCT T         
+Reut_B5057_p-29(norR)         1  6.98e-07          . CGCGGTGTAATTTACCCG T         
+H16_B2324_p-136(norA)         1  7.83e-07          . AAGGGTGATAAGTACCGC G         
+Rpic_4655_p-121(norA)         1  7.83e-07          . GACGGTGAATTCTACCCC G         
+RALTA_B2088_p-136(norA)       1  9.76e-07          . AAGGGTAATTAGTACCGC G         
+PHG245_p-108(norA)            1  9.76e-07          . TAAGGTAAATATGACCGT A         
+Rmet_3167_p-163(norB)         1  9.76e-07          . CATGGTCAAAACAACCCT A         
+PHG246_p-35(norR)             1  1.33e-06          . CATGGTATATTTGACCCG G         
+Reut_B5056_p-106(norA)        1  1.79e-06          . GTGGGTGAATTATACCGT T         
+RALTA_B2088_p-155(norA)       1  2.37e-06          . CATGGTGAAAAAAACCTC A         
+Rpic_4655_p-147(norA)         1  3.35e-06          . AAGGGTGAAAGATACCTT G         
+Reut_B5057_p-55(norR)         1  3.64e-06          . AACGGTATAATTCACCCA C         
+RS02289_p-148(norA)           1  3.64e-06          . GAGGGTGAAAAGAACCTT G         
+RS02290_p-36(norR)            1  3.64e-06          . CAAGGTTCTTTTCACCCT C         
+PHG245_p-134(norA)            1  3.95e-06          . CCGGGTCAAATATACCAT G         
+RS02290_p-62(norR)            1  5.40e-06          . CTGGGTAAAATCGACCGC A         
+Reut_B5056_p-132(norA)        1  6.26e-06          . ACGGGTAAATTACACCGC G         
+Rpic_4656_p-36(norR)          1  6.72e-06          . CAAGGTATCTTTCACCCT T         
+RS02289_p-122(norA)           1  9.49e-06          . TGCGGTCGATTTTACCCA G         
+Rmet_3167_p-144(norB)         1  1.30e-05          . GATAGTCAAAAACACCCT A         
+RS02289_p-168(norA)           1  1.85e-05          . CATGGTTGGAATTACCTG A         
+Rmet_3166_p-35(norR)          1  4.64e-05          . TAGGGTGTTTTTGACTAT C         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_3167_p-119(norB)             1.7e-08  [+1]_1
+H16_B2324_p-110(norA)             5.4e-08  [+1]_1
+H16_B2325_p-60(norR)              6.4e-08  [+1]_1
+H16_B2324_p-154(norA)             7.6e-08  [+1]_1
+Rmet_3166_p-60(norR)                9e-08  [+1]_1
+RALTA_B2088_p-110(norA)           1.9e-07  [+1]_1
+RALTA_B2089_p-35(norR)            1.9e-07  [+1]_1
+PHG245_p-153(norA)                1.9e-07  [+1]_1
+Rpic_4656_p-62(norR)              2.2e-07  [+1]_1
+PHG246_p-61(norR)                 2.6e-07  [+1]_1
+Reut_B5056_p-151(norA)            2.9e-07  [+1]_1
+RALTA_B2089_p-61(norR)            3.8e-07  [+1]_1
+Rpic_4655_p-167(norA)             6.2e-07  [+1]_1
+H16_B2325_p-34(norR)                7e-07  [+1]_1
+Reut_B5057_p-29(norR)               7e-07  [+1]_1
+H16_B2324_p-136(norA)             7.8e-07  [+1]_1
+Rpic_4655_p-121(norA)             7.8e-07  [+1]_1
+RALTA_B2088_p-136(norA)           9.8e-07  [+1]_1
+PHG245_p-108(norA)                9.8e-07  [+1]_1
+Rmet_3167_p-163(norB)             9.8e-07  [+1]_1
+PHG246_p-35(norR)                 1.3e-06  [+1]_1
+Reut_B5056_p-106(norA)            1.8e-06  [+1]_1
+RALTA_B2088_p-155(norA)           2.4e-06  [+1]_1
+Rpic_4655_p-147(norA)             3.4e-06  [+1]_1
+Reut_B5057_p-55(norR)             3.6e-06  [+1]_1
+RS02289_p-148(norA)               3.6e-06  [+1]_1
+RS02290_p-36(norR)                3.6e-06  [+1]_1
+PHG245_p-134(norA)                  4e-06  [+1]_1
+RS02290_p-62(norR)                5.4e-06  [+1]_1
+Reut_B5056_p-132(norA)            6.3e-06  [+1]_1
+Rpic_4656_p-36(norR)              6.7e-06  [+1]_1
+RS02289_p-122(norA)               9.5e-06  [+1]_1
+Rmet_3167_p-144(norB)             1.3e-05  [+1]_1
+RS02289_p-168(norA)               1.8e-05  [+1]_1
+Rmet_3166_p-35(norR)              4.6e-05  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CABGGTRAWWWWTACCST width=18 seqs=35
+Rmet_3167_p-119(norB)    (    1) CACGGTGAATATTACCGC  1 
+H16_B2324_p-110(norA)    (    1) TAGGGTATTAATTACCGT  1 
+H16_B2325_p-60(norR)     (    1) GACGGTAATTAATACCCT  1 
+H16_B2324_p-154(norA)    (    1) CATGGTTAAAAATACCGT  1 
+Rmet_3166_p-60(norR)     (    1) CGCGGTAATATTCACCGT  1 
+RALTA_B2088_p-110(norA)  (    1) TAGGGTAGTTAATACCCT  1 
+RALTA_B2089_p-35(norR)   (    1) CGCGGTACTAATTACCCT  1 
+PHG245_p-153(norA)       (    1) CATGGTGATAAATACCGG  1 
+Rpic_4656_p-62(norR)     (    1) CGGGGTAGAATTCACCGT  1 
+PHG246_p-61(norR)        (    1) TACGGTCATATTTACCTT  1 
+Reut_B5056_p-151(norA)   (    1) TAGGGTCATAAATACCTT  1 
+RALTA_B2089_p-61(norR)   (    1) AAGGGTATTAACTACCCT  1 
+Rpic_4655_p-167(norA)    (    1) CATGGTTGAAATGACCCT  1 
+H16_B2325_p-34(norR)     (    1) CGCGGTACTTATCACCCT  1 
+Reut_B5057_p-29(norR)    (    1) CGCGGTGTAATTTACCCG  1 
+H16_B2324_p-136(norA)    (    1) AAGGGTGATAAGTACCGC  1 
+Rpic_4655_p-121(norA)    (    1) GACGGTGAATTCTACCCC  1 
+RALTA_B2088_p-136(norA)  (    1) AAGGGTAATTAGTACCGC  1 
+PHG245_p-108(norA)       (    1) TAAGGTAAATATGACCGT  1 
+Rmet_3167_p-163(norB)    (    1) CATGGTCAAAACAACCCT  1 
+PHG246_p-35(norR)        (    1) CATGGTATATTTGACCCG  1 
+Reut_B5056_p-106(norA)   (    1) GTGGGTGAATTATACCGT  1 
+RALTA_B2088_p-155(norA)  (    1) CATGGTGAAAAAAACCTC  1 
+Rpic_4655_p-147(norA)    (    1) AAGGGTGAAAGATACCTT  1 
+Reut_B5057_p-55(norR)    (    1) AACGGTATAATTCACCCA  1 
+RS02289_p-148(norA)      (    1) GAGGGTGAAAAGAACCTT  1 
+RS02290_p-36(norR)       (    1) CAAGGTTCTTTTCACCCT  1 
+PHG245_p-134(norA)       (    1) CCGGGTCAAATATACCAT  1 
+RS02290_p-62(norR)       (    1) CTGGGTAAAATCGACCGC  1 
+Reut_B5056_p-132(norA)   (    1) ACGGGTAAATTACACCGC  1 
+Rpic_4656_p-36(norR)     (    1) CAAGGTATCTTTCACCCT  1 
+RS02289_p-122(norA)      (    1) TGCGGTCGATTTTACCCA  1 
+Rmet_3167_p-144(norB)    (    1) GATAGTCAAAAACACCCT  1 
+RS02289_p-168(norA)      (    1) CATGGTTGGAATTACCTG  1 
+Rmet_3166_p-35(norR)     (    1) TAGGGTGTTTTTGACTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 70 bayes= 2.83583 E= 1.1e-130 
+   -76    113    -63    -42 
+   130   -195    -37   -223 
+  -176     37     85    -23 
+  -334  -1177    213  -1177 
+ -1177  -1177    218  -1177 
+ -1177  -1177  -1177    190 
+    56    -37     37   -123 
+    98   -137    -63    -42 
+    90   -295   -295     58 
+   105  -1177  -1177     58 
+    90  -1177   -295     68 
+    12    -95   -137     86 
+  -176      5    -63    102 
+   179  -1177  -1177  -1177 
+ -1177    218  -1177  -1177 
+ -1177    213  -1177   -322 
+  -234     95     63    -64 
+  -234    -15    -95    123 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 35 E= 1.1e-130 
+ 0.171429  0.485714  0.142857  0.200000 
+ 0.714286  0.057143  0.171429  0.057143 
+ 0.085714  0.285714  0.400000  0.228571 
+ 0.028571  0.000000  0.971429  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.428571  0.171429  0.285714  0.114286 
+ 0.571429  0.085714  0.142857  0.200000 
+ 0.542857  0.028571  0.028571  0.400000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.542857  0.000000  0.028571  0.428571 
+ 0.314286  0.114286  0.085714  0.485714 
+ 0.085714  0.228571  0.142857  0.542857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.971429  0.000000  0.028571 
+ 0.057143  0.428571  0.342857  0.171429 
+ 0.057143  0.200000  0.114286  0.628571 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CABGGTRAWWWWTACCST MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT]A[GCT]GGT[AG][AT][AT][AT][AT][TA][TC]ACC[CG][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RS02290_p-36(norR)               7.29e-06  [+1(3.64e-06)]_1
+RS02290_p-62(norR)               1.08e-05  [+1(5.40e-06)]_1
+RS02289_p-122(norA)              1.90e-05  [+1(9.49e-06)]_1
+RS02289_p-148(norA)              7.29e-06  [+1(3.64e-06)]_1
+RS02289_p-168(norA)              3.69e-05  [+1(1.85e-05)]_1
+Rpic_4656_p-36(norR)             1.34e-05  [+1(6.72e-06)]_1
+Rpic_4656_p-62(norR)             4.47e-07  [+1(2.23e-07)]_1
+Rpic_4655_p-121(norA)            1.57e-06  [+1(7.83e-07)]_1
+Rpic_4655_p-147(norA)            6.71e-06  [+1(3.35e-06)]_1
+Rpic_4655_p-167(norA)            1.24e-06  [+1(6.21e-07)]_1
+Rmet_3166_p-35(norR)             9.27e-05  [+1(4.64e-05)]_1
+Rmet_3166_p-60(norR)             1.80e-07  [+1(8.98e-08)]_1
+Rmet_3167_p-119(norB)            3.49e-08  [+1(1.74e-08)]_1
+Rmet_3167_p-144(norB)            2.60e-05  [+1(1.30e-05)]_1
+Rmet_3167_p-163(norB)            1.95e-06  [+1(9.76e-07)]_1
+Reut_B5057_p-29(norR)            1.40e-06  [+1(6.98e-07)]_1
+Reut_B5057_p-55(norR)            7.29e-06  [+1(3.64e-06)]_1
+Reut_B5056_p-106(norA)           3.58e-06  [+1(1.79e-06)]_1
+Reut_B5056_p-132(norA)           1.25e-05  [+1(6.26e-06)]_1
+Reut_B5056_p-151(norA)           5.87e-07  [+1(2.93e-07)]_1
+H16_B2325_p-34(norR)             1.40e-06  [+1(6.98e-07)]_1
+H16_B2325_p-60(norR)             1.29e-07  [+1(6.44e-08)]_1
+PHG246_p-35(norR)                2.67e-06  [+1(1.33e-06)]_1
+PHG246_p-61(norR)                5.13e-07  [+1(2.56e-07)]_1
+PHG245_p-108(norA)               1.95e-06  [+1(9.76e-07)]_1
+H16_B2324_p-154(norA)            1.52e-07  [+1(7.61e-08)]_1
+H16_B2324_p-136(norA)            1.57e-06  [+1(7.83e-07)]_1
+H16_B2324_p-110(norA)            1.08e-07  [+1(5.40e-08)]_1
+PHG245_p-153(norA)               3.88e-07  [+1(1.94e-07)]_1
+PHG245_p-134(norA)               7.91e-06  [+1(3.95e-06)]_1
+RALTA_B2088_p-136(norA)          1.95e-06  [+1(9.76e-07)]_1
+RALTA_B2088_p-155(norA)          4.73e-06  [+1(2.37e-06)]_1
+RALTA_B2089_p-35(norR)           3.88e-07  [+1(1.94e-07)]_1
+RALTA_B2089_p-61(norR)           7.60e-07  [+1(3.80e-07)]_1
+RALTA_B2088_p-110(norA)          3.88e-07  [+1(1.94e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,376 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/PaaR_Micrococcineae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AAur_3243_p-42(paaI)     1.0000     22  AAur_3260_p-63(paaJ)     1.0000     22  
+AAur_3246_p-61(paaZ)     1.0000     22  AAur_2544_p-70(paaT)     1.0000     22  
+AAur_3226_p-36(paaA)     1.0000     22  Achl_3049_p-32(paaR)     1.0000     22  
+Achl_3047_p-42(paaI)     1.0000     22  Achl_3063_p-83(paaJ)     1.0000     22  
+Achl_3063_p-87(paaJ)     1.0000     22  Achl_3053_p-82(paaZ)     1.0000     22  
+Achl_2302_p-73(paaT)     1.0000     22  Achl_2964_p-64(paaA)     1.0000     22  
+Achl_3054_p-70(paaY)     1.0000     22  Achl_3054_p-66(paaY)     1.0000     22  
+Arth_3248_p-32(paaR)     1.0000     22  Arth_3246_p-42(paaI)     1.0000     22  
+Arth_3268_p-83(paaJ)     1.0000     22  Arth_2568_p-87(paaT)     1.0000     22  
+Arth_3255_p-72(paaZ)     1.0000     22  Arth_3218_p-49(paaA)     1.0000     22  
+Arth_3256_p-132(paaY)    1.0000     22  Arth_3256_p-128(paaY)    1.0000     22  
+BlinB01000711_p-101(paaZ 1.0000     22  BlinB01000721_p-138(paaI 1.0000     22  
+BlinB01000710_p-191(paaT 1.0000     22  BlinB01000722_p-101(paaA 1.0000     22  
+KRH_02200_p-48(paaZ)     1.0000     22  KRH_02160_p-38(paaI)     1.0000     22  
+KRH_02160_p-181(paaI)    1.0000     22  KRH_02210_p-268(paaY)    1.0000     22  
+KRH_02310_p-81(paaT)     1.0000     22  KRH_02150_p-210(paaA)    1.0000     22  
+KRH_02150_p-67(paaA)     1.0000     22  KRH_02210_p-264(paaY)    1.0000     22  
+RSal33209_2690_p-46(paaJ 1.0000     22  RSal33209_2682_p-91(n/a) 1.0000     22  
+RSal33209_2662_p-66(paaA 1.0000     22  RSal33209_2662_p-62(paaA 1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/PaaR_Micrococcineae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/PaaR_Micrococcineae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       38    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             836    N=              38
+sample: seed=            0    hsfrac=          0
+        searchsize=    836    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.291 C 0.218 G 0.236 T 0.256 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.218 G 0.236 T 0.256 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACTKAMCGAMCGKTCGGTMADT MEME-1	width =  22  sites =  38  llr = 589  E-value = 5.7e-204
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6222941195:121:2::5831
+pos.-specific     C  151::67::39:11a:::3:::
+probability       G  1::5:::9:::94::881:24:
+matrix            T  1273::3:121:38:1291138
+
+         bits    2.2                       
+                 2.0               *       
+                 1.8           *   *       
+                 1.5     *  *  **  *       
+Relative         1.3     *  ** **  * **    
+Entropy          1.1     ***** ** *****   *
+(22.4 bits)      0.9   * ***** ** ***** * *
+                 0.7  ******** ** ***** * *
+                 0.4 ************ *********
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ACTGACCGAACGGTCGGTAAGT
+consensus             A T AT  C  T     C A 
+sequence              T                  T 
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+Achl_3063_p-83(paaJ)          1  3.58e-11          . ACAGAACGAACGGTCGGTAAGT           
+Achl_2964_p-64(paaA)          1  4.24e-11          . CCTGAACGAACGGTCGGTAAAT           
+Arth_3218_p-49(paaA)          1  5.04e-11          . CCTGAACGAACGGTCGGTAATT           
+AAur_3226_p-36(paaA)          1  5.96e-11          . TCTGAACGAACGGTCGGTAATT           
+RSal33209_2662_p-62(paaA      1  1.14e-10          . ACTGAACGAACGGTCAGTAATT           
+Arth_3268_p-83(paaJ)          1  3.19e-10          . ATAGAACGAACGGTCGGTAAAT           
+Arth_2568_p-87(paaT)          1  1.36e-09          . ACTGACCGTTCGATCGGTAATT           
+Arth_3256_p-128(paaY)         1  2.22e-09          . ACTGACCGTCCGTTCGGTAATA           
+Achl_3054_p-66(paaY)          1  2.22e-09          . ACTGACCGTCCGTTCGGTAATA           
+Arth_3255_p-72(paaZ)          1  2.81e-09          . TATTACCGAACGGACGGTCAGT           
+Achl_3053_p-82(paaZ)          1  2.81e-09          . TATTACCGAACGGACGGTCAGT           
+AAur_3246_p-61(paaZ)          1  2.81e-09          . TATTACCGAACGGCCGGTCAGT           
+BlinB01000710_p-191(paaT      1  8.54e-09          . ACTAACCAATCGGTCGGTTATT           
+AAur_3260_p-63(paaJ)          1  8.54e-09          . ATAGAACGAACGGTCGGTATAT           
+Arth_3246_p-42(paaI)          1  1.59e-08          . ACCTAATGAACATTCGGTAAAT           
+Achl_3047_p-42(paaI)          1  1.59e-08          . ACCTAATGAACATTCGGTAAAT           
+AAur_3243_p-42(paaI)          1  1.59e-08          . ACCTAATGAACATTCGGTAAAT           
+RSal33209_2690_p-46(paaJ      1  2.59e-08          . ATTGAACGATTGGTCAGTAAAT           
+KRH_02160_p-38(paaI)          1  2.86e-08          . ACTGACCGATCGTTCTGAAAAT           
+KRH_02310_p-81(paaT)          1  3.14e-08          . CAAGACCAATCGGTCGGTAAAT           
+RSal33209_2662_p-66(paaA      1  3.79e-08          . ATATACTGAACGAACGGTCAGT           
+AAur_2544_p-70(paaT)          1  5.47e-08          . CCTAACTGACCGTTCTGTCGGT           
+Achl_2302_p-73(paaT)          1  6.53e-08          . ACCAACTGACCGTTCTGTCGGT           
+KRH_02150_p-67(paaA)          1  7.79e-08          . TCTGAACGAGCGGTCAGTTATT           
+KRH_02210_p-268(paaY)         1  9.27e-08          . GTTAGCCGAACGATCGGTCAGT           
+RSal33209_2682_p-91(n/a)      1  1.20e-07          . AATTACTGACCACTCGTTCAGT           
+BlinB01000711_p-101(paaZ      1  1.20e-07          . AATAACCGACCGATTGGTTAGT           
+KRH_02150_p-210(paaA)         1  1.30e-07          . ATTTTCAGAACGATCGGTCAGT           
+Achl_3063_p-87(paaJ)          1  1.30e-07          . ATTTACAGAACGAACGGTCGGT           
+KRH_02200_p-48(paaZ)          1  1.66e-07          . ACTGACCGATCGTTCGGCTAAC           
+BlinB01000722_p-101(paaA      1  1.66e-07          . ACAGAACAAATGGTCAGTAAAT           
+KRH_02160_p-181(paaI)         1  1.80e-07          . AATAACTGACCGCTCGTTCAGA           
+Arth_3256_p-132(paaY)         1  2.29e-07          . CATTACTGACCGTCCGTTCGGT           
+Achl_3054_p-70(paaY)          1  2.90e-07          . GATTACTGACCGTCCGTTCGGT           
+Achl_3049_p-32(paaR)          1  2.90e-07          . GCTGACCGACCGTTCGTGAGAA           
+Arth_3248_p-32(paaR)          1  5.27e-07          . ATTGACCGAACGTTCATGAGAA           
+BlinB01000721_p-138(paaI      1  1.39e-06          . ATTGACCAGATGGTCGTTTATT           
+KRH_02210_p-264(paaY)         1  2.61e-06          . GCCGAACGATCGGTCAGTATTG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Achl_3063_p-83(paaJ)              3.6e-11  [+1]
+Achl_2964_p-64(paaA)              4.2e-11  [+1]
+Arth_3218_p-49(paaA)                5e-11  [+1]
+AAur_3226_p-36(paaA)                6e-11  [+1]
+RSal33209_2662_p-62(paaA          1.1e-10  [+1]
+Arth_3268_p-83(paaJ)              3.2e-10  [+1]
+Arth_2568_p-87(paaT)              1.4e-09  [+1]
+Arth_3256_p-128(paaY)             2.2e-09  [+1]
+Achl_3054_p-66(paaY)              2.2e-09  [+1]
+Arth_3255_p-72(paaZ)              2.8e-09  [+1]
+Achl_3053_p-82(paaZ)              2.8e-09  [+1]
+AAur_3246_p-61(paaZ)              2.8e-09  [+1]
+BlinB01000710_p-191(paaT          8.5e-09  [+1]
+AAur_3260_p-63(paaJ)              8.5e-09  [+1]
+Arth_3246_p-42(paaI)              1.6e-08  [+1]
+Achl_3047_p-42(paaI)              1.6e-08  [+1]
+AAur_3243_p-42(paaI)              1.6e-08  [+1]
+RSal33209_2690_p-46(paaJ          2.6e-08  [+1]
+KRH_02160_p-38(paaI)              2.9e-08  [+1]
+KRH_02310_p-81(paaT)              3.1e-08  [+1]
+RSal33209_2662_p-66(paaA          3.8e-08  [+1]
+AAur_2544_p-70(paaT)              5.5e-08  [+1]
+Achl_2302_p-73(paaT)              6.5e-08  [+1]
+KRH_02150_p-67(paaA)              7.8e-08  [+1]
+KRH_02210_p-268(paaY)             9.3e-08  [+1]
+RSal33209_2682_p-91(n/a)          1.2e-07  [+1]
+BlinB01000711_p-101(paaZ          1.2e-07  [+1]
+KRH_02150_p-210(paaA)             1.3e-07  [+1]
+Achl_3063_p-87(paaJ)              1.3e-07  [+1]
+KRH_02200_p-48(paaZ)              1.7e-07  [+1]
+BlinB01000722_p-101(paaA          1.7e-07  [+1]
+KRH_02160_p-181(paaI)             1.8e-07  [+1]
+Arth_3256_p-132(paaY)             2.3e-07  [+1]
+Achl_3054_p-70(paaY)              2.9e-07  [+1]
+Achl_3049_p-32(paaR)              2.9e-07  [+1]
+Arth_3248_p-32(paaR)              5.3e-07  [+1]
+BlinB01000721_p-138(paaI          1.4e-06  [+1]
+KRH_02210_p-264(paaY)             2.6e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACTKAMCGAMCGKTCGGTMADT width=22 seqs=38
+Achl_3063_p-83(paaJ)     (    1) ACAGAACGAACGGTCGGTAAGT  1 
+Achl_2964_p-64(paaA)     (    1) CCTGAACGAACGGTCGGTAAAT  1 
+Arth_3218_p-49(paaA)     (    1) CCTGAACGAACGGTCGGTAATT  1 
+AAur_3226_p-36(paaA)     (    1) TCTGAACGAACGGTCGGTAATT  1 
+RSal33209_2662_p-62(paaA (    1) ACTGAACGAACGGTCAGTAATT  1 
+Arth_3268_p-83(paaJ)     (    1) ATAGAACGAACGGTCGGTAAAT  1 
+Arth_2568_p-87(paaT)     (    1) ACTGACCGTTCGATCGGTAATT  1 
+Arth_3256_p-128(paaY)    (    1) ACTGACCGTCCGTTCGGTAATA  1 
+Achl_3054_p-66(paaY)     (    1) ACTGACCGTCCGTTCGGTAATA  1 
+Arth_3255_p-72(paaZ)     (    1) TATTACCGAACGGACGGTCAGT  1 
+Achl_3053_p-82(paaZ)     (    1) TATTACCGAACGGACGGTCAGT  1 
+AAur_3246_p-61(paaZ)     (    1) TATTACCGAACGGCCGGTCAGT  1 
+BlinB01000710_p-191(paaT (    1) ACTAACCAATCGGTCGGTTATT  1 
+AAur_3260_p-63(paaJ)     (    1) ATAGAACGAACGGTCGGTATAT  1 
+Arth_3246_p-42(paaI)     (    1) ACCTAATGAACATTCGGTAAAT  1 
+Achl_3047_p-42(paaI)     (    1) ACCTAATGAACATTCGGTAAAT  1 
+AAur_3243_p-42(paaI)     (    1) ACCTAATGAACATTCGGTAAAT  1 
+RSal33209_2690_p-46(paaJ (    1) ATTGAACGATTGGTCAGTAAAT  1 
+KRH_02160_p-38(paaI)     (    1) ACTGACCGATCGTTCTGAAAAT  1 
+KRH_02310_p-81(paaT)     (    1) CAAGACCAATCGGTCGGTAAAT  1 
+RSal33209_2662_p-66(paaA (    1) ATATACTGAACGAACGGTCAGT  1 
+AAur_2544_p-70(paaT)     (    1) CCTAACTGACCGTTCTGTCGGT  1 
+Achl_2302_p-73(paaT)     (    1) ACCAACTGACCGTTCTGTCGGT  1 
+KRH_02150_p-67(paaA)     (    1) TCTGAACGAGCGGTCAGTTATT  1 
+KRH_02210_p-268(paaY)    (    1) GTTAGCCGAACGATCGGTCAGT  1 
+RSal33209_2682_p-91(n/a) (    1) AATTACTGACCACTCGTTCAGT  1 
+BlinB01000711_p-101(paaZ (    1) AATAACCGACCGATTGGTTAGT  1 
+KRH_02150_p-210(paaA)    (    1) ATTTTCAGAACGATCGGTCAGT  1 
+Achl_3063_p-87(paaJ)     (    1) ATTTACAGAACGAACGGTCGGT  1 
+KRH_02200_p-48(paaZ)     (    1) ACTGACCGATCGTTCGGCTAAC  1 
+BlinB01000722_p-101(paaA (    1) ACAGAACAAATGGTCAGTAAAT  1 
+KRH_02160_p-181(paaI)    (    1) AATAACTGACCGCTCGTTCAGA  1 
+Arth_3256_p-132(paaY)    (    1) CATTACTGACCGTCCGTTCGGT  1 
+Achl_3054_p-70(paaY)     (    1) GATTACTGACCGTCCGTTCGGT  1 
+Achl_3049_p-32(paaR)     (    1) GCTGACCGACCGTTCGTGAGAA  1 
+Arth_3248_p-32(paaR)     (    1) ATTGACCGAACGTTCATGAGAA  1 
+BlinB01000721_p-138(paaI (    1) ATTGACCAGATGGTCGTTTATT  1 
+KRH_02210_p-264(paaY)    (    1) GCCGAACGATCGGTCAGTATTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 38 bayes= 1.64636 E= 5.7e-204 
+   112    -73   -116    -96 
+   -29    127  -1189    -11 
+   -88    -73  -1189    147 
+   -88  -1189    116     30 
+   171  -1189   -316   -328 
+    34    154  -1189  -1189 
+  -246    165  -1189      4 
+  -146  -1189    192  -1189 
+   162  -1189   -316   -170 
+    86     27   -316    -47 
+ -1189    208  -1189   -170 
+  -146  -1189    192  -1189 
+   -88   -205     92     42 
+  -146   -146  -1189    167 
+ -1189    216  -1189   -328 
+   -88  -1189    169   -170 
+ -1189  -1189    179    -47 
+  -346   -305   -216    181 
+    86     65  -1189    -96 
+   139  -1189    -36   -228 
+    24  -1189     74      4 
+  -114   -305   -316    167 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 38 E= 5.7e-204 
+ 0.631579  0.131579  0.105263  0.131579 
+ 0.236842  0.526316  0.000000  0.236842 
+ 0.157895  0.131579  0.000000  0.710526 
+ 0.157895  0.000000  0.526316  0.315789 
+ 0.947368  0.000000  0.026316  0.026316 
+ 0.368421  0.631579  0.000000  0.000000 
+ 0.052632  0.684211  0.000000  0.263158 
+ 0.105263  0.000000  0.894737  0.000000 
+ 0.894737  0.000000  0.026316  0.078947 
+ 0.526316  0.263158  0.026316  0.184211 
+ 0.000000  0.921053  0.000000  0.078947 
+ 0.105263  0.000000  0.894737  0.000000 
+ 0.157895  0.052632  0.447368  0.342105 
+ 0.105263  0.078947  0.000000  0.815789 
+ 0.000000  0.973684  0.000000  0.026316 
+ 0.157895  0.000000  0.763158  0.078947 
+ 0.000000  0.000000  0.815789  0.184211 
+ 0.026316  0.026316  0.052632  0.894737 
+ 0.526316  0.342105  0.000000  0.131579 
+ 0.763158  0.000000  0.184211  0.052632 
+ 0.342105  0.000000  0.394737  0.263158 
+ 0.131579  0.026316  0.026316  0.815789 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTKAMCGAMCGKTCGGTMADT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CAT]T[GT]A[CA][CT]GA[AC]CG[GT]TCGGT[AC]A[GAT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AAur_3243_p-42(paaI)             1.59e-08  [+1(1.59e-08)]
+AAur_3260_p-63(paaJ)             8.54e-09  [+1(8.54e-09)]
+AAur_3246_p-61(paaZ)             2.81e-09  [+1(2.81e-09)]
+AAur_2544_p-70(paaT)             5.47e-08  [+1(5.47e-08)]
+AAur_3226_p-36(paaA)             5.96e-11  [+1(5.96e-11)]
+Achl_3049_p-32(paaR)             2.90e-07  [+1(2.90e-07)]
+Achl_3047_p-42(paaI)             1.59e-08  [+1(1.59e-08)]
+Achl_3063_p-83(paaJ)             3.58e-11  [+1(3.58e-11)]
+Achl_3063_p-87(paaJ)             1.30e-07  [+1(1.30e-07)]
+Achl_3053_p-82(paaZ)             2.81e-09  [+1(2.81e-09)]
+Achl_2302_p-73(paaT)             6.53e-08  [+1(6.53e-08)]
+Achl_2964_p-64(paaA)             4.24e-11  [+1(4.24e-11)]
+Achl_3054_p-70(paaY)             2.90e-07  [+1(2.90e-07)]
+Achl_3054_p-66(paaY)             2.22e-09  [+1(2.22e-09)]
+Arth_3248_p-32(paaR)             5.27e-07  [+1(5.27e-07)]
+Arth_3246_p-42(paaI)             1.59e-08  [+1(1.59e-08)]
+Arth_3268_p-83(paaJ)             3.19e-10  [+1(3.19e-10)]
+Arth_2568_p-87(paaT)             1.36e-09  [+1(1.36e-09)]
+Arth_3255_p-72(paaZ)             2.81e-09  [+1(2.81e-09)]
+Arth_3218_p-49(paaA)             5.04e-11  [+1(5.04e-11)]
+Arth_3256_p-132(paaY)            2.29e-07  [+1(2.29e-07)]
+Arth_3256_p-128(paaY)            2.22e-09  [+1(2.22e-09)]
+BlinB01000711_p-101(paaZ         1.20e-07  [+1(1.20e-07)]
+BlinB01000721_p-138(paaI         1.39e-06  [+1(1.39e-06)]
+BlinB01000710_p-191(paaT         8.54e-09  [+1(8.54e-09)]
+BlinB01000722_p-101(paaA         1.66e-07  [+1(1.66e-07)]
+KRH_02200_p-48(paaZ)             1.66e-07  [+1(1.66e-07)]
+KRH_02160_p-38(paaI)             2.86e-08  [+1(2.86e-08)]
+KRH_02160_p-181(paaI)            1.80e-07  [+1(1.80e-07)]
+KRH_02210_p-268(paaY)            9.27e-08  [+1(9.27e-08)]
+KRH_02310_p-81(paaT)             3.14e-08  [+1(3.14e-08)]
+KRH_02150_p-210(paaA)            1.30e-07  [+1(1.30e-07)]
+KRH_02150_p-67(paaA)             7.79e-08  [+1(7.79e-08)]
+KRH_02210_p-264(paaY)            2.61e-06  [+1(2.61e-06)]
+RSal33209_2690_p-46(paaJ         2.59e-08  [+1(2.59e-08)]
+RSal33209_2682_p-91(n/a)         1.20e-07  [+1(1.20e-07)]
+RSal33209_2662_p-66(paaA         3.79e-08  [+1(3.79e-08)]
+RSal33209_2662_p-62(paaA         1.14e-10  [+1(1.14e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

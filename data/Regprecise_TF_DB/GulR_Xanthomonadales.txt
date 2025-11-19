@@ -1,0 +1,186 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/GulR_Xanthomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+XCC3245_p-101(kdgD)      1.0000     23  XCC3246_p-219(gulR)      1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/GulR_Xanthomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/GulR_Xanthomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=        2    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              46    N=               2
+sample: seed=            0    hsfrac=          0
+        searchsize=     46    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.391 C 0.109 G 0.109 T 0.391 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.38 C 0.12 G 0.12 T 0.38 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATYGAWTC MEME-1	width =   8  sites =   2  llr = 18  E-value = 2.7e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:::a5::
+pos.-specific     C  ::5::::a
+probability       G  :::a::::
+matrix            T  :a5::5a:
+
+         bits    3.1    *   *
+                 2.8    *   *
+                 2.4    *   *
+                 2.1    *   *
+Relative         1.8    *   *
+Entropy          1.5 ** ** **
+(13.3 bits)      1.2 ***** **
+                 0.9 ***** **
+                 0.6 ***** **
+                 0.3 ********
+                 0.0 --------
+
+Multilevel           ATCGAATC
+consensus              T  T  
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+XCC3245_p-101(kdgD)           1  2.74e-05          . ATCGATTC AATTTATGTA
+XCC3246_p-219(gulR)          13  1.14e-04 TGATACATAA ATTGAATC GAT       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XCC3245_p-101(kdgD)               2.7e-05  [+1]_15
+XCC3246_p-219(gulR)               0.00011  12_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATYGAWTC width=8 seqs=2
+XCC3245_p-101(kdgD)      (    1) ATCGATTC  1 
+XCC3246_p-219(gulR)      (   13) ATTGAATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 32 bayes= 3.90689 E= 2.7e+001 
+   139   -765   -765   -765 
+  -765   -765   -765    139 
+  -765    205   -765     39 
+  -765   -765    305   -765 
+   139   -765   -765   -765 
+    39   -765   -765     39 
+  -765   -765   -765    139 
+  -765    305   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 2 E= 2.7e+001 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYGAWTC MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[CT]GA[AT]TC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.00 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XCC3245_p-101(kdgD)              4.38e-04  [+1(2.74e-05)]_15
+XCC3246_p-219(gulR)              1.82e-03  23
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

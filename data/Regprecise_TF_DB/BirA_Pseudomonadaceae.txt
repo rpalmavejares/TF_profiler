@@ -1,0 +1,293 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Pseudomonadaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA0500(bioB)Score=7.5,Po 1.0000     32  PSEEN5121(bioB)Score=8.1 1.0000     32  
+PSEEN5122(COG1040)Score= 1.0000     32  PP0362(bioB)Score=8.6,Po 1.0000     32  
+PP0361(COG1040)Score=8.6 1.0000     32  PSPTO0494(bioB)Score=8.8 1.0000     32  
+PSPTO0493(COG1040)Score= 1.0000     32  PFL_5693(bioB)Score=8.8, 1.0000     32  
+PFL_5694(COG1040)Score=8 1.0000     32  Pmen_4089,Score=8.2,Pos= 1.0000     32  
+Pmen_4088(bioB)Score=8.2 1.0000     32  PST_3867(COG1040)Score=9 1.0000     32  
+PST_3866(bioB)Score=9,Po 1.0000     32  Avin_05970(COG1040)Score 1.0000     32  
+Avin_05980(bioB)Score=9, 1.0000     32  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Pseudomonadaceae.fasta -oc BirA_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           32
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             480    N=              15    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.259 C 0.236 G 0.243 T 0.261 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.259 C 0.237 G 0.243 T 0.261 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  32  sites =  15  llr = 294  E-value = 1.2e-079
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::599::333333333333331::::a:93
+pos.-specific     C  51::5::a922222222222222::1:::a::
+probability       G  ::a::11::222222222222229a::6::15
+matrix            T  39:a::1:133333333333333::9a4:::1
+
+         bits    2.1   *    *                *    *  
+                 1.9   **   *                * * **  
+                 1.7  *** * **              **** *** 
+                 1.5  *** * **              **** *** 
+Relative         1.2  *** ****              **** *** 
+Entropy          1.0  ********              ******** 
+(28.2 bits)      0.8  ********              ******** 
+                 0.6  ********              *********
+                 0.4 *********              *********
+                 0.2 *********              *********
+                 0.0 --------------------------------
+
+Multilevel           CTGTCAACCTTTTTTTTTTTTTTGGTTGACAG
+consensus            T   A    AAAAAAAAAAAAAA    T   A
+sequence             A        GGGGGGGGGGGGGG         
+                              CCCCCCCCCCCCCC         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site            
+-------------             ----- ---------            --------------------------------
+Avin_05980(bioB)Score=9,      1  8.65e-11          . TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+PST_3866(bioB)Score=9,Po      1  8.65e-11          . TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+Avin_05970(COG1040)Score      1  1.78e-10          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA           
+PST_3867(COG1040)Score=9      1  1.78e-10          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA           
+PFL_5693(bioB)Score=8.8,      1  1.94e-10          . ATGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+PSPTO0494(bioB)Score=8.8      1  1.94e-10          . ATGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+PFL_5694(COG1040)Score=8      1  4.21e-10          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACAT           
+PSPTO0493(COG1040)Score=      1  4.21e-10          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACAT           
+Pmen_4088(bioB)Score=8.2      1  8.83e-10          . TCGTCAACCNNNNNNNNNNNNNNGGTTGACAG           
+Pmen_4089,Score=8.2,Pos=      1  1.03e-09          . CTGTCAACCNNNNNNNNNNNNNNGGTTGACGA           
+PSEEN5121(bioB)Score=8.1      1  1.08e-09          . TTGTAAGCCNNNNNNNNNNNNNNGGTTGACAG           
+PP0362(bioB)Score=8.6,Po      1  1.54e-09          . TTGTAAACCNNNNNNNNNNNNNNAGTTGACAG           
+PSEEN5122(COG1040)Score=      1  1.88e-09          . CTGTCAACCNNNNNNNNNNNNNNGGCTTACAA           
+PP0361(COG1040)Score=8.6      1  2.26e-09          . CTGTCAACTNNNNNNNNNNNNNNGGTTTACAA           
+PA0500(bioB)Score=7.5,Po      1  9.74e-09          . ATGTAGTCCNNNNNNNNNNNNNNGGTTGACAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Avin_05980(bioB)Score=9,          8.6e-11  [+1]
+PST_3866(bioB)Score=9,Po          8.6e-11  [+1]
+Avin_05970(COG1040)Score          1.8e-10  [+1]
+PST_3867(COG1040)Score=9          1.8e-10  [+1]
+PFL_5693(bioB)Score=8.8,          1.9e-10  [+1]
+PSPTO0494(bioB)Score=8.8          1.9e-10  [+1]
+PFL_5694(COG1040)Score=8          4.2e-10  [+1]
+PSPTO0493(COG1040)Score=          4.2e-10  [+1]
+Pmen_4088(bioB)Score=8.2          8.8e-10  [+1]
+Pmen_4089,Score=8.2,Pos=            1e-09  [+1]
+PSEEN5121(bioB)Score=8.1          1.1e-09  [+1]
+PP0362(bioB)Score=8.6,Po          1.5e-09  [+1]
+PSEEN5122(COG1040)Score=          1.9e-09  [+1]
+PP0361(COG1040)Score=8.6          2.3e-09  [+1]
+PA0500(bioB)Score=7.5,Po          9.7e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=32 seqs=15
+Avin_05980(bioB)Score=9, (    1) TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+PST_3866(bioB)Score=9,Po (    1) TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+Avin_05970(COG1040)Score (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA  1 
+PST_3867(COG1040)Score=9 (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA  1 
+PFL_5693(bioB)Score=8.8, (    1) ATGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+PSPTO0494(bioB)Score=8.8 (    1) ATGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+PFL_5694(COG1040)Score=8 (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACAT  1 
+PSPTO0493(COG1040)Score= (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACAT  1 
+Pmen_4088(bioB)Score=8.2 (    1) TCGTCAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+Pmen_4089,Score=8.2,Pos= (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTGACGA  1 
+PSEEN5121(bioB)Score=8.1 (    1) TTGTAAGCCNNNNNNNNNNNNNNGGTTGACAG  1 
+PP0362(bioB)Score=8.6,Po (    1) TTGTAAACCNNNNNNNNNNNNNNAGTTGACAG  1 
+PSEEN5122(COG1040)Score= (    1) CTGTCAACCNNNNNNNNNNNNNNGGCTTACAA  1 
+PP0361(COG1040)Score=8.6 (    1) CTGTCAACTNNNNNNNNNNNNNNGGTTTACAA  1 
+PA0500(bioB)Score=7.5,Po (    1) ATGTAGTCCNNNNNNNNNNNNNNGGTTGACAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 32 n= 15 bayes= 1.17688 E= 1.2e-079 
+   -37     98  -1055     35 
+ -1055   -182  -1055    184 
+ -1055  -1055    204  -1055 
+ -1055  -1055  -1055    194 
+    85    117  -1055  -1055 
+   185  -1055   -186  -1055 
+   174  -1055   -186   -197 
+ -1055    208  -1055  -1055 
+ -1055    198  -1055   -197 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+  -196  -1055    194  -1055 
+ -1055  -1055    204  -1055 
+ -1055   -182  -1055    184 
+ -1055  -1055  -1055    194 
+ -1055  -1055    130     61 
+   195  -1055  -1055  -1055 
+ -1055    208  -1055  -1055 
+   185  -1055   -186  -1055 
+    36  -1055    113    -97 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 32 nsites= 15 E= 1.2e-079 
+ 0.200000  0.466667  0.000000  0.333333 
+ 0.000000  0.066667  0.000000  0.933333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.466667  0.533333  0.000000  0.000000 
+ 0.933333  0.000000  0.066667  0.000000 
+ 0.866667  0.000000  0.066667  0.066667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.933333  0.000000  0.066667 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.259298  0.236570  0.242769  0.261364 
+ 0.066667  0.000000  0.933333  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.066667  0.000000  0.933333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.600000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.933333  0.000000  0.066667  0.000000 
+ 0.333333  0.000000  0.533333  0.133333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CTA]TGT[CA]AACC[TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC]GGTT[GT]ACA[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA0500(bioB)Score=7.5,Po         9.74e-09  [+1(9.74e-09)]
+PSEEN5121(bioB)Score=8.1         1.08e-09  [+1(1.08e-09)]
+PSEEN5122(COG1040)Score=         1.88e-09  [+1(1.88e-09)]
+PP0362(bioB)Score=8.6,Po         1.54e-09  [+1(1.54e-09)]
+PP0361(COG1040)Score=8.6         2.26e-09  [+1(2.26e-09)]
+PSPTO0494(bioB)Score=8.8         1.94e-10  [+1(1.94e-10)]
+PSPTO0493(COG1040)Score=         4.21e-10  [+1(4.21e-10)]
+PFL_5693(bioB)Score=8.8,         1.94e-10  [+1(1.94e-10)]
+PFL_5694(COG1040)Score=8         4.21e-10  [+1(4.21e-10)]
+Pmen_4089,Score=8.2,Pos=         1.03e-09  [+1(1.03e-09)]
+Pmen_4088(bioB)Score=8.2         8.83e-10  [+1(8.83e-10)]
+PST_3867(COG1040)Score=9         1.78e-10  [+1(1.78e-10)]
+PST_3866(bioB)Score=9,Po         8.65e-11  [+1(8.65e-11)]
+Avin_05970(COG1040)Score         1.78e-10  [+1(1.78e-10)]
+Avin_05980(bioB)Score=9,         8.65e-11  [+1(8.65e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

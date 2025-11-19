@@ -1,0 +1,301 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermoproteales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PAE2986_p-18(ribB)       1.0000     18  PAE2983_p-82(arfB)       1.0000     18  
+PAE2986_p-51(ribB)       1.0000     18  PAE2983_p-49(arfB)       1.0000     18  
+PAE2984_p-22(arfA)       1.0000     18  PAE2984_p-55(arfA)       1.0000     18  
+Pars_1353_p-36(ribB)     1.0000     18  Pars_1353_p-68(ribB)     1.0000     18  
+Pars_1350_p-81(arfB)     1.0000     18  Pars_1351_p-56(arfA)     1.0000     18  
+Pars_1351_p-23(arfA)     1.0000     18  Pcal_1123_p-54(arfA)     1.0000     18  
+Pcal_1124_p-50(arfB)     1.0000     18  Pcal_1121_p-51(ribB)     1.0000     18  
+Pcal_1121_p-19(ribB)     1.0000     18  Pisl_0384_p-56(arfA)     1.0000     18  
+Pisl_0383_p-50(arfB)     1.0000     18  Pisl_0386_p-51(ribB)     1.0000     18  
+Tneu_1743_p-56(arfA)     1.0000     18  Tneu_1744_p-84(arfB)     1.0000     18  
+Tneu_1744_p-51(arfB)     1.0000     18  Tneu_1741_p-32(ribB)     1.0000     18  
+Tneu_1743_p-23(arfA)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermoproteales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermoproteales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             414    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    414    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.377 C 0.145 G 0.157 T 0.321 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.376 C 0.146 G 0.158 T 0.321 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAAACWWWAGTTTACA MEME-1	width =  18  sites =  23  llr = 268  E-value = 3.0e-082
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  22:78925437::119:7
+pos.-specific     C  1::2:17::2::::::91
+probability       G  :81:::::21:a::3:::
+matrix            T  7:8:1::4343:a96:11
+
+         bits    2.8            *      
+                 2.5            *      
+                 2.2            *    * 
+                 1.9            *    * 
+Relative         1.7  *         *    * 
+Entropy          1.4  *    *    **   * 
+(16.8 bits)      1.1  *   **    *** ** 
+                 0.8  **  **    *** ** 
+                 0.6 *******   ******* 
+                 0.3 ********  ********
+                 0.0 ------------------
+
+Multilevel           TGTAAACAATAGTTTACA
+consensus            A  C  ATTAT   G   
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Tneu_1741_p-32(ribB)          1  2.13e-09          . TGTAAACAATAGTTTACA           
+Pisl_0386_p-51(ribB)          1  2.13e-09          . TGTAAACATTAGTTTACA           
+Tneu_1743_p-56(arfA)          1  5.39e-09          . TGTAAACAGAAGTTTACA           
+Tneu_1744_p-51(arfB)          1  8.15e-09          . TGTAAACTTCTGTTTACA           
+PAE2983_p-49(arfB)            1  2.37e-08          . TGTAAACATCAGTTGACT           
+Pisl_0384_p-56(arfA)          1  3.30e-08          . CGTAAACTAAAGTTTACA           
+Pisl_0383_p-50(arfB)          1  5.08e-08          . TGTAAACTTTAGTTTACG           
+Pars_1353_p-68(ribB)          1  5.84e-08          . TGTAAAAATCAGTTGACA           
+Pcal_1121_p-51(ribB)          1  7.04e-08          . TGTAAAAAATAGTTTACA           
+PAE2984_p-55(arfA)            1  1.41e-07          . AGTCAACTGATGTTTACA           
+Pcal_1123_p-54(arfA)          1  1.10e-06          . AGTCTCCAAGAGTTTACA           
+Pars_1350_p-81(arfB)          1  1.10e-06          . TGTAAACAAAAGTTACCA           
+Pars_1351_p-56(arfA)          1  1.63e-06          . TGGTAACTTTTGTTTACA           
+Pcal_1121_p-19(ribB)          1  3.03e-06          . CCTCACCTAGAGTTGACA           
+Tneu_1743_p-23(arfA)          1  6.46e-06          . TATCTACTAAGGTTTACA           
+Tneu_1744_p-84(arfB)          1  1.04e-05          . TGTAAACCTTAGTAGATA           
+PAE2986_p-51(ribB)            1  1.39e-05          . AGTGTAAAAAAGTTGACA           
+PAE2986_p-18(ribB)            1  1.72e-05          . TAGAAAATTAAGTTTACC           
+Pcal_1124_p-50(arfB)          1  2.96e-05          . TGTAAACTCTTGGAGACT           
+PAE2984_p-22(arfA)            1  3.59e-05          . TACACACTGTTGTTGACT           
+Pars_1351_p-23(arfA)          1  4.32e-05          . TATAGCGAGTTGTTTACA           
+PAE2983_p-82(arfB)            1  4.88e-05          . AGTCAACAACAGTGTGTA           
+Pars_1353_p-36(ribB)          1  9.62e-05          . AGAAAAAAAGAGTTAACC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tneu_1741_p-32(ribB)              2.1e-09  [+1]
+Pisl_0386_p-51(ribB)              2.1e-09  [+1]
+Tneu_1743_p-56(arfA)              5.4e-09  [+1]
+Tneu_1744_p-51(arfB)              8.2e-09  [+1]
+PAE2983_p-49(arfB)                2.4e-08  [+1]
+Pisl_0384_p-56(arfA)              3.3e-08  [+1]
+Pisl_0383_p-50(arfB)              5.1e-08  [+1]
+Pars_1353_p-68(ribB)              5.8e-08  [+1]
+Pcal_1121_p-51(ribB)                7e-08  [+1]
+PAE2984_p-55(arfA)                1.4e-07  [+1]
+Pcal_1123_p-54(arfA)              1.1e-06  [+1]
+Pars_1350_p-81(arfB)              1.1e-06  [+1]
+Pars_1351_p-56(arfA)              1.6e-06  [+1]
+Pcal_1121_p-19(ribB)                3e-06  [+1]
+Tneu_1743_p-23(arfA)              6.5e-06  [+1]
+Tneu_1744_p-84(arfB)                1e-05  [+1]
+PAE2986_p-51(ribB)                1.4e-05  [+1]
+PAE2986_p-18(ribB)                1.7e-05  [+1]
+Pcal_1124_p-50(arfB)                3e-05  [+1]
+PAE2984_p-22(arfA)                3.6e-05  [+1]
+Pars_1351_p-23(arfA)              4.3e-05  [+1]
+PAE2983_p-82(arfB)                4.9e-05  [+1]
+Pars_1353_p-36(ribB)              9.6e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAAACWWWAGTTTACA width=18 seqs=23
+Tneu_1741_p-32(ribB)     (    1) TGTAAACAATAGTTTACA  1 
+Pisl_0386_p-51(ribB)     (    1) TGTAAACATTAGTTTACA  1 
+Tneu_1743_p-56(arfA)     (    1) TGTAAACAGAAGTTTACA  1 
+Tneu_1744_p-51(arfB)     (    1) TGTAAACTTCTGTTTACA  1 
+PAE2983_p-49(arfB)       (    1) TGTAAACATCAGTTGACT  1 
+Pisl_0384_p-56(arfA)     (    1) CGTAAACTAAAGTTTACA  1 
+Pisl_0383_p-50(arfB)     (    1) TGTAAACTTTAGTTTACG  1 
+Pars_1353_p-68(ribB)     (    1) TGTAAAAATCAGTTGACA  1 
+Pcal_1121_p-51(ribB)     (    1) TGTAAAAAATAGTTTACA  1 
+PAE2984_p-55(arfA)       (    1) AGTCAACTGATGTTTACA  1 
+Pcal_1123_p-54(arfA)     (    1) AGTCTCCAAGAGTTTACA  1 
+Pars_1350_p-81(arfB)     (    1) TGTAAACAAAAGTTACCA  1 
+Pars_1351_p-56(arfA)     (    1) TGGTAACTTTTGTTTACA  1 
+Pcal_1121_p-19(ribB)     (    1) CCTCACCTAGAGTTGACA  1 
+Tneu_1743_p-23(arfA)     (    1) TATCTACTAAGGTTTACA  1 
+Tneu_1744_p-84(arfB)     (    1) TGTAAACCTTAGTAGATA  1 
+PAE2986_p-51(ribB)       (    1) AGTGTAAAAAAGTTGACA  1 
+PAE2986_p-18(ribB)       (    1) TAGAAAATTAAGTTTACC  1 
+Pcal_1124_p-50(arfB)     (    1) TGTAAACTCTTGGAGACT  1 
+PAE2984_p-22(arfA)       (    1) TACACACTGTTGTTGACT  1 
+Pars_1351_p-23(arfA)     (    1) TATAGCGAGTTGTTTACA  1 
+PAE2983_p-82(arfB)       (    1) AGTCAACAACAGTGTGTA  1 
+Pars_1353_p-36(ribB)     (    1) AGAAAAAAAGAGTTAACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 23 bayes= 1.43812 E= 3.0e-082 
+   -79    -75  -1117    112 
+  -111   -175    231  -1117 
+  -311   -175    -86    137 
+    89     57   -186   -288 
+   106   -175   -186   -130 
+   121    -16  -1117  -1117 
+   -79    234   -186  -1117 
+    47   -175  -1117     44 
+    21   -175     14     12 
+   -30     25    -28     29 
+    89  -1117   -186    -30 
+ -1117  -1117    266  -1117 
+ -1117  -1117   -186    158 
+  -211  -1117   -186    144 
+  -211  -1117     95     92 
+   128   -175   -186  -1117 
+ -1117    264  -1117   -188 
+    98    -75   -186   -130 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 23 E= 3.0e-082 
+ 0.217391  0.086957  0.000000  0.695652 
+ 0.173913  0.043478  0.782609  0.000000 
+ 0.043478  0.043478  0.086957  0.826087 
+ 0.695652  0.217391  0.043478  0.043478 
+ 0.782609  0.043478  0.043478  0.130435 
+ 0.869565  0.130435  0.000000  0.000000 
+ 0.217391  0.739130  0.043478  0.000000 
+ 0.521739  0.043478  0.000000  0.434783 
+ 0.434783  0.043478  0.173913  0.347826 
+ 0.304348  0.173913  0.130435  0.391304 
+ 0.695652  0.000000  0.043478  0.260870 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.043478  0.956522 
+ 0.086957  0.000000  0.043478  0.869565 
+ 0.086957  0.000000  0.304348  0.608696 
+ 0.913043  0.043478  0.043478  0.000000 
+ 0.000000  0.913043  0.000000  0.086957 
+ 0.739130  0.086957  0.043478  0.130435 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAACWWWAGTTTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]GT[AC]AA[CA][AT][AT][TA][AT]GTT[TG]ACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PAE2986_p-18(ribB)               1.72e-05  [+1(1.72e-05)]
+PAE2983_p-82(arfB)               4.88e-05  [+1(4.88e-05)]
+PAE2986_p-51(ribB)               1.39e-05  [+1(1.39e-05)]
+PAE2983_p-49(arfB)               2.37e-08  [+1(2.37e-08)]
+PAE2984_p-22(arfA)               3.59e-05  [+1(3.59e-05)]
+PAE2984_p-55(arfA)               1.41e-07  [+1(1.41e-07)]
+Pars_1353_p-36(ribB)             9.62e-05  [+1(9.62e-05)]
+Pars_1353_p-68(ribB)             5.84e-08  [+1(5.84e-08)]
+Pars_1350_p-81(arfB)             1.10e-06  [+1(1.10e-06)]
+Pars_1351_p-56(arfA)             1.63e-06  [+1(1.63e-06)]
+Pars_1351_p-23(arfA)             4.32e-05  [+1(4.32e-05)]
+Pcal_1123_p-54(arfA)             1.10e-06  [+1(1.10e-06)]
+Pcal_1124_p-50(arfB)             2.96e-05  [+1(2.96e-05)]
+Pcal_1121_p-51(ribB)             7.04e-08  [+1(7.04e-08)]
+Pcal_1121_p-19(ribB)             3.03e-06  [+1(3.03e-06)]
+Pisl_0384_p-56(arfA)             3.30e-08  [+1(3.30e-08)]
+Pisl_0383_p-50(arfB)             5.08e-08  [+1(5.08e-08)]
+Pisl_0386_p-51(ribB)             2.13e-09  [+1(2.13e-09)]
+Tneu_1743_p-56(arfA)             5.39e-09  [+1(5.39e-09)]
+Tneu_1744_p-84(arfB)             1.04e-05  [+1(1.04e-05)]
+Tneu_1744_p-51(arfB)             8.15e-09  [+1(8.15e-09)]
+Tneu_1741_p-32(ribB)             2.13e-09  [+1(2.13e-09)]
+Tneu_1743_p-23(arfA)             6.46e-06  [+1(6.46e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

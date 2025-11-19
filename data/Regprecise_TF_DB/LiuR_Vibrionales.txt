@@ -1,0 +1,368 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/LiuR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VV20495_p-112(liuR)      1.0000     18  VV20474_p-156(etfB)      1.0000     18  
+VV20476_p-82(etfD)       1.0000     18  VV20494_p-72(ivdA)       1.0000     18  
+VV20494_p-101(ivdA)      1.0000     18  VV20495_p-141(liuR)      1.0000     18  
+VIBHAR_05481_p-141(liuR) 1.0000     18  VIBHAR_05548_p-193(etfB) 1.0000     18  
+VIBHAR_05481_p-170(liuR) 1.0000     18  VIBHAR_05546_p-101(etfD) 1.0000     18  
+VIBHAR_05482_p-149(ivdA) 1.0000     18  VIBHAR_05482_p-178(ivdA) 1.0000     18  
+VPA1124_p-66(liuR)       1.0000     18  VPA1124_p-166(liuR)      1.0000     18  
+VPA1124_p-195(liuR)      1.0000     18  VPA1156_p-79(etfB)       1.0000     18  
+VPA0619_p-129(liuR)      1.0000     18  VPA0643_p-86(etfD2)      1.0000     18  
+VPA1155_p-77(etfD1)      1.0000     18  VPA1153_p-110(livG)      1.0000     18  
+VPA1123_p-161(ivdA2)     1.0000     18  VPA0620_p-147(ivdA1)     1.0000     18  
+VPA1123_p-32(ivdA2)      1.0000     18  VPA1123_p-61(ivdA2)      1.0000     18  
+VSAK1_15212_p-74(etfB)   1.0000     18  VSAK1_15217_p-94(etfD)   1.0000     18  
+VSAK1_15257_p-107(ivdA)  1.0000     18  VSAK1_15262_p-155(liuR)  1.0000     18  
+VAS14_11639_p-94(etfB)   1.0000     18  VAS14_11634_p-55(etfD)   1.0000     18  
+VAS14_10944_p-107(ivdA)  1.0000     18  VAS14_10939_p-115(liuR)  1.0000     18  
+PBPRB1098_p-168(etfB)    1.0000     18  PBPRB1099_p-66(etfD)     1.0000     18  
+PBPRB1112_p-117(ivdA)    1.0000     18  PBPRB1113_p-203(liuR)    1.0000     18  
+PBPRB1112_p-88(ivdA)     1.0000     18  PBPRB1113_p-174(liuR)    1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/LiuR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/LiuR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       38    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             684    N=              38
+sample: seed=            0    hsfrac=          0
+        searchsize=    684    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.322 C 0.178 G 0.175 T 0.325 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.321 C 0.179 G 0.176 T 0.324 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VTTKACGTWWACGTMAAS MEME-1	width =  18  sites =  38  llr = 647  E-value = 1.9e-238
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3::1a:::45a:::6a9:
+pos.-specific     C  31:::a:::::a::3::5
+probability       G  4::4::a:::::a:::13
+matrix            T  :9a6:::a65:::a1::2
+
+         bits    2.5                   
+                 2.3      **    **     
+                 2.0      **    **     
+                 1.8     ***    **  *  
+Relative         1.5   * ****  **** *  
+Entropy          1.3   * ****  **** *  
+(24.6 bits)      1.0  ** ****  **** ** 
+                 0.8  ** **************
+                 0.5 ******************
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           GTTTACGTTAACGTAAAC
+consensus            C  G    AT    C  G
+sequence             A                T
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+VSAK1_15217_p-94(etfD)        1  2.24e-10          . GTTTACGTTTACGTCAAC           
+VSAK1_15212_p-74(etfB)        1  2.24e-10          . GTTGACGTAAACGTAAAC           
+VIBHAR_05546_p-101(etfD)      1  2.24e-10          . GTTTACGTTTACGTCAAC           
+VIBHAR_05548_p-193(etfB)      1  2.24e-10          . GTTGACGTAAACGTAAAC           
+VV20476_p-82(etfD)            1  2.24e-10          . GTTTACGTTTACGTCAAC           
+VV20474_p-156(etfB)           1  2.24e-10          . GTTGACGTAAACGTAAAC           
+VPA1153_p-110(livG)           1  1.49e-09          . ATTGACGTTTACGTAAAC           
+PBPRB1099_p-66(etfD)          1  1.87e-09          . ATTTACGTTTACGTCAAC           
+VAS14_11634_p-55(etfD)        1  1.87e-09          . ATTTACGTTTACGTCAAC           
+PBPRB1098_p-168(etfB)         1  3.10e-09          . GTTGACGTAAACGTAAAT           
+VAS14_11639_p-94(etfB)        1  3.10e-09          . GTTGACGTAAACGTAAAT           
+VPA1124_p-166(liuR)           1  3.10e-09          . ATTTACGTTAACGTCAAG           
+VPA1123_p-61(ivdA2)           1  3.47e-09          . CTTGACGTTAACGTAAAT           
+PBPRB1113_p-203(liuR)         1  3.86e-09          . CTTGACGTTTACGTAAGC           
+VPA0619_p-129(liuR)           1  3.86e-09          . CTTGACGTTTACGTAAGC           
+VIBHAR_05481_p-170(liuR)      1  3.86e-09          . CTTGACGTTTACGTAAGC           
+VV20495_p-141(liuR)           1  3.86e-09          . CTTGACGTTTACGTAAGC           
+PBPRB1113_p-174(liuR)         1  4.39e-09          . ATTTACGTAAACGTAAAG           
+VSAK1_15262_p-155(liuR)       1  4.39e-09          . ATTTACGTAAACGTAAAG           
+VIBHAR_05481_p-141(liuR)      1  4.39e-09          . ATTTACGTAAACGTAAAG           
+VV20495_p-112(liuR)           1  4.39e-09          . ATTTACGTAAACGTAAAG           
+PBPRB1112_p-117(ivdA)         1  4.89e-09          . CTTTACGTTTACGTAAAT           
+VSAK1_15257_p-107(ivdA)       1  4.89e-09          . CTTTACGTTTACGTAAAT           
+VIBHAR_05482_p-178(ivdA)      1  4.89e-09          . CTTTACGTTTACGTAAAT           
+VV20494_p-101(ivdA)           1  4.89e-09          . CTTTACGTTTACGTAAAT           
+PBPRB1112_p-88(ivdA)          1  5.88e-09          . GCTTACGTAAACGTCAAG           
+VPA0620_p-147(ivdA1)          1  5.88e-09          . GCTTACGTAAACGTCAAG           
+VIBHAR_05482_p-149(ivdA)      1  5.88e-09          . GCTTACGTAAACGTCAAG           
+VV20494_p-72(ivdA)            1  5.88e-09          . GCTTACGTAAACGTCAAG           
+VAS14_10939_p-115(liuR)       1  2.09e-08          . ATTTACGTAAACGTTAAG           
+VAS14_10944_p-107(ivdA)       1  2.89e-08          . CTTAACGTTTACGTAAAT           
+VPA0643_p-86(etfD2)           1  7.28e-08          . ATTCACGTTTACGTTAAC           
+VPA1124_p-66(liuR)            1  1.09e-07          . GTTTACTTTAACGTTAAC           
+VPA1123_p-161(ivdA2)          1  1.27e-07          . GTTAACGTTAAAGTAAAC           
+VPA1124_p-195(liuR)           1  1.59e-07          . GTTGACGTTTACGTCATA           
+VPA1123_p-32(ivdA2)           1  1.69e-07          . TATGACGTAAACGTCAAC           
+VPA1155_p-77(etfD1)           1  2.49e-07          . CTTTACGTTTGCATCAAC           
+VPA1156_p-79(etfB)            1  2.61e-07          . GTTGATGCAAACGTAAAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VSAK1_15217_p-94(etfD)            2.2e-10  [+1]
+VSAK1_15212_p-74(etfB)            2.2e-10  [+1]
+VIBHAR_05546_p-101(etfD)          2.2e-10  [+1]
+VIBHAR_05548_p-193(etfB)          2.2e-10  [+1]
+VV20476_p-82(etfD)                2.2e-10  [+1]
+VV20474_p-156(etfB)               2.2e-10  [+1]
+VPA1153_p-110(livG)               1.5e-09  [+1]
+PBPRB1099_p-66(etfD)              1.9e-09  [+1]
+VAS14_11634_p-55(etfD)            1.9e-09  [+1]
+PBPRB1098_p-168(etfB)             3.1e-09  [+1]
+VAS14_11639_p-94(etfB)            3.1e-09  [+1]
+VPA1124_p-166(liuR)               3.1e-09  [+1]
+VPA1123_p-61(ivdA2)               3.5e-09  [+1]
+PBPRB1113_p-203(liuR)             3.9e-09  [+1]
+VPA0619_p-129(liuR)               3.9e-09  [+1]
+VIBHAR_05481_p-170(liuR)          3.9e-09  [+1]
+VV20495_p-141(liuR)               3.9e-09  [+1]
+PBPRB1113_p-174(liuR)             4.4e-09  [+1]
+VSAK1_15262_p-155(liuR)           4.4e-09  [+1]
+VIBHAR_05481_p-141(liuR)          4.4e-09  [+1]
+VV20495_p-112(liuR)               4.4e-09  [+1]
+PBPRB1112_p-117(ivdA)             4.9e-09  [+1]
+VSAK1_15257_p-107(ivdA)           4.9e-09  [+1]
+VIBHAR_05482_p-178(ivdA)          4.9e-09  [+1]
+VV20494_p-101(ivdA)               4.9e-09  [+1]
+PBPRB1112_p-88(ivdA)              5.9e-09  [+1]
+VPA0620_p-147(ivdA1)              5.9e-09  [+1]
+VIBHAR_05482_p-149(ivdA)          5.9e-09  [+1]
+VV20494_p-72(ivdA)                5.9e-09  [+1]
+VAS14_10939_p-115(liuR)           2.1e-08  [+1]
+VAS14_10944_p-107(ivdA)           2.9e-08  [+1]
+VPA0643_p-86(etfD2)               7.3e-08  [+1]
+VPA1124_p-66(liuR)                1.1e-07  [+1]
+VPA1123_p-161(ivdA2)              1.3e-07  [+1]
+VPA1124_p-195(liuR)               1.6e-07  [+1]
+VPA1123_p-32(ivdA2)               1.7e-07  [+1]
+VPA1155_p-77(etfD1)               2.5e-07  [+1]
+VPA1156_p-79(etfB)                2.6e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VTTKACGTWWACGTMAAS width=18 seqs=38
+VSAK1_15217_p-94(etfD)   (    1) GTTTACGTTTACGTCAAC  1 
+VSAK1_15212_p-74(etfB)   (    1) GTTGACGTAAACGTAAAC  1 
+VIBHAR_05546_p-101(etfD) (    1) GTTTACGTTTACGTCAAC  1 
+VIBHAR_05548_p-193(etfB) (    1) GTTGACGTAAACGTAAAC  1 
+VV20476_p-82(etfD)       (    1) GTTTACGTTTACGTCAAC  1 
+VV20474_p-156(etfB)      (    1) GTTGACGTAAACGTAAAC  1 
+VPA1153_p-110(livG)      (    1) ATTGACGTTTACGTAAAC  1 
+PBPRB1099_p-66(etfD)     (    1) ATTTACGTTTACGTCAAC  1 
+VAS14_11634_p-55(etfD)   (    1) ATTTACGTTTACGTCAAC  1 
+PBPRB1098_p-168(etfB)    (    1) GTTGACGTAAACGTAAAT  1 
+VAS14_11639_p-94(etfB)   (    1) GTTGACGTAAACGTAAAT  1 
+VPA1124_p-166(liuR)      (    1) ATTTACGTTAACGTCAAG  1 
+VPA1123_p-61(ivdA2)      (    1) CTTGACGTTAACGTAAAT  1 
+PBPRB1113_p-203(liuR)    (    1) CTTGACGTTTACGTAAGC  1 
+VPA0619_p-129(liuR)      (    1) CTTGACGTTTACGTAAGC  1 
+VIBHAR_05481_p-170(liuR) (    1) CTTGACGTTTACGTAAGC  1 
+VV20495_p-141(liuR)      (    1) CTTGACGTTTACGTAAGC  1 
+PBPRB1113_p-174(liuR)    (    1) ATTTACGTAAACGTAAAG  1 
+VSAK1_15262_p-155(liuR)  (    1) ATTTACGTAAACGTAAAG  1 
+VIBHAR_05481_p-141(liuR) (    1) ATTTACGTAAACGTAAAG  1 
+VV20495_p-112(liuR)      (    1) ATTTACGTAAACGTAAAG  1 
+PBPRB1112_p-117(ivdA)    (    1) CTTTACGTTTACGTAAAT  1 
+VSAK1_15257_p-107(ivdA)  (    1) CTTTACGTTTACGTAAAT  1 
+VIBHAR_05482_p-178(ivdA) (    1) CTTTACGTTTACGTAAAT  1 
+VV20494_p-101(ivdA)      (    1) CTTTACGTTTACGTAAAT  1 
+PBPRB1112_p-88(ivdA)     (    1) GCTTACGTAAACGTCAAG  1 
+VPA0620_p-147(ivdA1)     (    1) GCTTACGTAAACGTCAAG  1 
+VIBHAR_05482_p-149(ivdA) (    1) GCTTACGTAAACGTCAAG  1 
+VV20494_p-72(ivdA)       (    1) GCTTACGTAAACGTCAAG  1 
+VAS14_10939_p-115(liuR)  (    1) ATTTACGTAAACGTTAAG  1 
+VAS14_10944_p-107(ivdA)  (    1) CTTAACGTTTACGTAAAT  1 
+VPA0643_p-86(etfD2)      (    1) ATTCACGTTTACGTTAAC  1 
+VPA1124_p-66(liuR)       (    1) GTTTACTTTAACGTTAAC  1 
+VPA1123_p-161(ivdA2)     (    1) GTTAACGTTAAAGTAAAC  1 
+VPA1124_p-195(liuR)      (    1) GTTGACGTTTACGTCATA  1 
+VPA1123_p-32(ivdA2)      (    1) TATGACGTAAACGTCAAC  1 
+VPA1155_p-77(etfD1)      (    1) CTTTACGTTTGCATCAAC  1 
+VPA1156_p-79(etfB)       (    1) GTTGATGCAAACGTAAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 38 bayes= 1.64636 E= 1.9e-238 
+   -29     70    126   -362 
+  -361    -76  -1189    142 
+ -1189  -1189  -1189    163 
+  -261   -276    107     77 
+   164  -1189  -1189  -1189 
+ -1189    244  -1189   -362 
+ -1189  -1189    247   -362 
+ -1189   -276  -1189    159 
+    39  -1189  -1189     84 
+    71  -1189  -1189     55 
+   160  -1189   -274  -1189 
+  -361    244  -1189  -1189 
+  -361  -1189    247  -1189 
+ -1189  -1189  -1189    163 
+    85     94  -1189   -204 
+   164  -1189  -1189  -1189 
+   143  -1189    -74   -362 
+  -361    141     72    -62 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 38 E= 1.9e-238 
+ 0.263158  0.289474  0.421053  0.026316 
+ 0.026316  0.105263  0.000000  0.868421 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.052632  0.026316  0.368421  0.552632 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.973684  0.000000  0.026316 
+ 0.000000  0.000000  0.973684  0.026316 
+ 0.000000  0.026316  0.000000  0.973684 
+ 0.421053  0.000000  0.000000  0.578947 
+ 0.526316  0.000000  0.000000  0.473684 
+ 0.973684  0.000000  0.026316  0.000000 
+ 0.026316  0.973684  0.000000  0.000000 
+ 0.026316  0.000000  0.973684  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.578947  0.342105  0.000000  0.078947 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.868421  0.000000  0.105263  0.026316 
+ 0.026316  0.473684  0.289474  0.210526 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VTTKACGTWWACGTMAAS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GCA]TT[TG]ACGT[TA][AT]ACGT[AC]AA[CGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VV20495_p-112(liuR)              4.39e-09  [+1(4.39e-09)]
+VV20474_p-156(etfB)              2.24e-10  [+1(2.24e-10)]
+VV20476_p-82(etfD)               2.24e-10  [+1(2.24e-10)]
+VV20494_p-72(ivdA)               5.88e-09  [+1(5.88e-09)]
+VV20494_p-101(ivdA)              4.89e-09  [+1(4.89e-09)]
+VV20495_p-141(liuR)              3.86e-09  [+1(3.86e-09)]
+VIBHAR_05481_p-141(liuR)         4.39e-09  [+1(4.39e-09)]
+VIBHAR_05548_p-193(etfB)         2.24e-10  [+1(2.24e-10)]
+VIBHAR_05481_p-170(liuR)         3.86e-09  [+1(3.86e-09)]
+VIBHAR_05546_p-101(etfD)         2.24e-10  [+1(2.24e-10)]
+VIBHAR_05482_p-149(ivdA)         5.88e-09  [+1(5.88e-09)]
+VIBHAR_05482_p-178(ivdA)         4.89e-09  [+1(4.89e-09)]
+VPA1124_p-66(liuR)               1.09e-07  [+1(1.09e-07)]
+VPA1124_p-166(liuR)              3.10e-09  [+1(3.10e-09)]
+VPA1124_p-195(liuR)              1.59e-07  [+1(1.59e-07)]
+VPA1156_p-79(etfB)               2.61e-07  [+1(2.61e-07)]
+VPA0619_p-129(liuR)              3.86e-09  [+1(3.86e-09)]
+VPA0643_p-86(etfD2)              7.28e-08  [+1(7.28e-08)]
+VPA1155_p-77(etfD1)              2.49e-07  [+1(2.49e-07)]
+VPA1153_p-110(livG)              1.49e-09  [+1(1.49e-09)]
+VPA1123_p-161(ivdA2)             1.27e-07  [+1(1.27e-07)]
+VPA0620_p-147(ivdA1)             5.88e-09  [+1(5.88e-09)]
+VPA1123_p-32(ivdA2)              1.69e-07  [+1(1.69e-07)]
+VPA1123_p-61(ivdA2)              3.47e-09  [+1(3.47e-09)]
+VSAK1_15212_p-74(etfB)           2.24e-10  [+1(2.24e-10)]
+VSAK1_15217_p-94(etfD)           2.24e-10  [+1(2.24e-10)]
+VSAK1_15257_p-107(ivdA)          4.89e-09  [+1(4.89e-09)]
+VSAK1_15262_p-155(liuR)          4.39e-09  [+1(4.39e-09)]
+VAS14_11639_p-94(etfB)           3.10e-09  [+1(3.10e-09)]
+VAS14_11634_p-55(etfD)           1.87e-09  [+1(1.87e-09)]
+VAS14_10944_p-107(ivdA)          2.89e-08  [+1(2.89e-08)]
+VAS14_10939_p-115(liuR)          2.09e-08  [+1(2.09e-08)]
+PBPRB1098_p-168(etfB)            3.10e-09  [+1(3.10e-09)]
+PBPRB1099_p-66(etfD)             1.87e-09  [+1(1.87e-09)]
+PBPRB1112_p-117(ivdA)            4.89e-09  [+1(4.89e-09)]
+PBPRB1113_p-203(liuR)            3.86e-09  [+1(3.86e-09)]
+PBPRB1112_p-88(ivdA)             5.88e-09  [+1(5.88e-09)]
+PBPRB1113_p-174(liuR)            4.39e-09  [+1(4.39e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

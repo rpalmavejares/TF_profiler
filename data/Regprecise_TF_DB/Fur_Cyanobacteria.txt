@@ -1,0 +1,951 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Fur_Cyanobacteria.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SYNPCC7002_A2347_p-126(c 1.0000     19  SYNPCC7002_G0137_p-279(e 1.0000     19  
+SYNPCC7002_G0099_p-94(pc 1.0000     19  SYNPCC7002_G0006_p-38(iu 1.0000     19  
+SYNPCC7002_A1631_p-257(a 1.0000     19  SYNPCC7002_A0913_p-146(S 1.0000     19  
+SYNPCC7002_A0913_p-68(SY 1.0000     19  SYNPCC7002_A1018_p-57(ch 1.0000     19  
+SYNPCC7002_A1443_p-165(n 1.0000     19  SYNPCC7002_A0871_p-83(af 1.0000     19  
+SYNPCC7002_A2351_p-216(S 1.0000     19  SYNPCC7002_A1961_p-206(p 1.0000     19  
+SYNPCC7002_G0061_p-62(SY 1.0000     19  SYNPCC7002_A1649_p-88(fu 1.0000     19  
+SYNPCC7002_G0138_p-67(iu 1.0000     19  SYNPCC7002_G0090_p-83(SY 1.0000     19  
+SYNPCC7002_G0104_p-68(pc 1.0000     19  SYNPCC7002_G0103_p-46(fh 1.0000     19  
+slr0749_p-173(chlL)      1.0000     19  ssr2333_p-31(feoA)       1.0000     19  
+sll1406_p-38(fhuA)       1.0000     19  sll1404_p-110(exbB)      1.0000     19  
+slr1490_p-86(fhuA)       1.0000     19  slr1484_p-255(SYNPCC7002 1.0000     19  
+slr1318_p-176(fecE)      1.0000     19  slr1485_p-9(SYNPCC7002_G 1.0000     19  
+slr1316_p-78(fecC)       1.0000     19  slr1485_p-42(SYNPCC7002_ 1.0000     19  
+sll1404_p-64(exbB)       1.0000     19  sll1404_p-286(exbB)      1.0000     19  
+slr1295_p-44(sufA)       1.0000     19  sll1911_p-59(SYNPCC7002_ 1.0000     19  
+slr0513_p-240(sufA)      1.0000     19  slr0513_p-187(sufA)      1.0000     19  
+sll0849_p-298(psbD)      1.0000     19  slr1181_p-242(psbA)      1.0000     19  
+slr1181_p-182(psbA)      1.0000     19  sll1867_p-124(psbA)      1.0000     19  
+slr1738_p-194(perR)      1.0000     19  sll0247_p-269(isiA)      1.0000     19  
+ssr2333_p-69(feoA)       1.0000     19  slr1392_p-278(feoB)      1.0000     19  
+cce_4533_p-118(cce_4533) 1.0000     19  cce_0033_p-47(feoA)      1.0000     19  
+cce_0033_p-298(feoA)     1.0000     19  cce_0660_p-298(psbD)     1.0000     19  
+cce_0479_p-144(dpsA)     1.0000     19  cce_2632_p-20(sufA)      1.0000     19  
+cce_4358_p-183(chlH)     1.0000     19  cce_4358_p-138(chlH)     1.0000     19  
+cce_3801_p-163(afuC)     1.0000     19  cce_0989_p-205(psaA)     1.0000     19  
+cce_3809_p-132(SYNPCC700 1.0000     19  cce_1977_p-136(coxB)     1.0000     19  
+cce_0019_p-75(SYNPCC7002 1.0000     19  cce_1944_p-151(apcF)     1.0000     19  
+cce_3895_p16(SYNPCC7002_ 1.0000     19  cce_0892_p-29(fdx)       1.0000     19  
+cce_1785_p-18(isiA)      1.0000     19  cce_3031_p-66(isiB)      1.0000     19  
+cce_2330_p-96(fur)       1.0000     19  PCC8801_0791_p-242(chlL) 1.0000     19  
+PCC8801_2575_p-247(SYNPC 1.0000     19  PCC8801_0349_p-107(sll14 1.0000     19  
+PCC8801_0256_p-185(ctaA) 1.0000     19  PCC8801_2812_p-67(SYNPCC 1.0000     19  
+PCC8801_4320_p-186(chlH) 1.0000     19  PCC8801_0567_p-152(coxB) 1.0000     19  
+PCC8801_3918_p-67(nifJ)  1.0000     19  PCC8801_1443_p-90(sufA)  1.0000     19  
+PCC8801_1928_p-184(SYNPC 1.0000     19  PCC8801_2860_p-49(fdx)   1.0000     19  
+PCC8801_0870_p-97(fur)   1.0000     19  PCC8801_3039_p-89(SYNPCC 1.0000     19  
+PCC8801_3017_p-38(exbB)  1.0000     19  Cyan7425_2411_p-71(pchR) 1.0000     19  
+Cyan7425_2410_p-56(fhuA) 1.0000     19  Cyan7425_2418_p-264(exbB 1.0000     19  
+Cyan7425_2438_p-37(pchR) 1.0000     19  Cyan7425_2439_p-66(fhuA) 1.0000     19  
+Cyan7425_1597_p-88(perR) 1.0000     19  Cyan7425_5031_p-91(psbD) 1.0000     19  
+Cyan7425_4671_p-292(psaA 1.0000     19  Cyan7425_3510_p-60(afuC) 1.0000     19  
+Cyan7425_3510_p-105(afuC 1.0000     19  Cyan7425_1838_p-245(apcF 1.0000     19  
+Cyan7425_1059_p-182(psbA 1.0000     19  Cyan7425_2984_p-78(cce_4 1.0000     19  
+Cyan7425_2984_p-48(cce_4 1.0000     19  Cyan7425_2434_p-61(isiA) 1.0000     19  
+Cyan7425_3508_p-165(sufA 1.0000     19  MAE_16250_p-107(chlN)    1.0000     19  
+MAE_16230_p-150(chlL)    1.0000     19  MAE_12190_p-247(chlH)    1.0000     19  
+MAE_41160_p-274(psbD)    1.0000     19  MAE_47560_p-297(psaA)    1.0000     19  
+MAE_22930_p-216(coxB)    1.0000     19  MAE_38140_p-292(nifJ)    1.0000     19  
+MAE_12460_p-117(afuC)    1.0000     19  MAE_56680_p-61(sufA)     1.0000     19  
+MAE_22920_p-282(ctaA)    1.0000     19  all4365_p-272(chlH)      1.0000     19  
+all4365_p-232(chlH)      1.0000     19  alr5154_p-177(psaA)      1.0000     19  
+alr0950_p-134(coxB)      1.0000     19  alr2803_p-92(nifJ)       1.0000     19  
+alr3808_p-204(dpsA)      1.0000     19  alr2514_p-190(coxB)      1.0000     19  
+all4001_p-161(isiA)      1.0000     19  alr3727_p-105(psbA)      1.0000     19  
+alr4592_p-28(psbA)       1.0000     19  asl0884_p-90(fdx)        1.0000     19  
+alr3155_p-98(SYNPCC7002_ 1.0000     19  all3903_p-47(cce_4396)   1.0000     19  
+all2367_p-181(all2367)   1.0000     19  alr2405_p-235(isiB)      1.0000     19  
+all1691_p-94(fur)        1.0000     19  all1692_p-320(sigC)      1.0000     19  
+all2158_p-62(fhuA)       1.0000     19  alr2175_p-120(fhuE)      1.0000     19  
+alr2626_p-106(fhuE)      1.0000     19  all2586_p-100(fecC)      1.0000     19  
+all2586_p-32(fecC)       1.0000     19  all2237_p-40(pchR)       1.0000     19  
+all2235_p12(fecB)        1.0000     19  all1101_p-238(fhuA)      1.0000     19  
+all4924_p-32(fhuE)       1.0000     19  all5047_p-102(exbB)      1.0000     19  
+alr2184_p-39(pchR)       1.0000     19  alr2185_p-69(fhuE)       1.0000     19  
+alr2211_p-272(fhuA)      1.0000     19  all2580_p-48(pchR)       1.0000     19  
+alr2174_p-96(pchR)       1.0000     19  Tery_2879_p-270(feoA)    1.0000     19  
+Tery_2644_p-122(SYNPCC70 1.0000     19  Tery_4282_p-285(dpsA)    1.0000     19  
+Tery_0513_p-195(psbC)    1.0000     19  Tery_1780_p-167(ctaA)    1.0000     19  
+Tery_4773_p-64(SYNPCC700 1.0000     19  Tery_3224_p-65(chlH)     1.0000     19  
+Tery_1781_p-41(ctaB)     1.0000     19  Tery_4669_p-80(psaA)     1.0000     19  
+Tery_3222_p-94(afuC)     1.0000     19  Tery_2878_p-43(feoB)     1.0000     19  
+Tery_3377_p-97(sufA)     1.0000     19  Tery_1667_p-156(isiA)    1.0000     19  
+Tery_4504_p-35(fdx)      1.0000     19  Tery_1958_p-44(fur)      1.0000     19  
+Tery_1780_p-278(ctaA)    1.0000     19  Synpcc7942_2601_p-158(ct 1.0000     19  
+Synpcc7942_1406_p-81(afu 1.0000     19  Synpcc7942_0938_p-30(cce 1.0000     19  
+Synpcc7942_1542_p-45(isi 1.0000     19  Synpcc7942_2049_p-296(ps 1.0000     19  
+PMT1340_p-30(ctaA)       1.0000     19  CYA_2647_p-106(psbD)     1.0000     19  
+CYA_2794_p-26(afuC)      1.0000     19  CYA_0643_p-92(fdx)       1.0000     19  
+gvip470_p-195(psaA)      1.0000     19  glr3733_p-58(perR)       1.0000     19  
+gll1014_p-64(afuA)       1.0000     19  null_p-211(chlL)         1.0000     19  
+null_p-135(psbA)         1.0000     19  null_p-157(apcF)         1.0000     19  
+null_p-45(cce_4396)      1.0000     19  null_p-121(isiA)         1.0000     19  
+null_p-59(fur)           1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Fur_Cyanobacteria.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Fur_Cyanobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=      167    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            3173    N=             167
+sample: seed=            0    hsfrac=          0
+        searchsize=   3173    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.371 C 0.0719 G 0.0829 T 0.474 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.371 C 0.0721 G 0.0831 T 0.474 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTDAKAAWWWTTTTYAAT MEME-1	width =  19  sites = 167  llr = 959  E-value = 7.0e-351
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  62:3628843611212981
+pos.-specific     C  ::::11:::1:1:2:4::2
+probability       G  1::413:::::1:12::1:
+matrix            T  38a3241265479675117
+
+         bits    3.8                    
+                 3.4                    
+                 3.0                    
+                 2.7                    
+Relative         2.3                    
+Entropy          1.9                    
+(8.3 bits)       1.5                    
+                 1.1                    
+                 0.8   *   *     *  *** 
+                 0.4 ********   ********
+                 0.0 -------------------
+
+Multilevel           ATTGATAATTATTTTTAAT
+consensus            T  TTG TAAT  CGC   
+sequence                A A             
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+slr1392_p-278(feoB)           1  2.72e-09          . GTTGAGAATTATTTGCAGT           
+ssr2333_p-31(feoA)            1  2.72e-09          . GTTGAGAATTATTTGCAGT           
+sll1404_p-64(exbB)            1  2.01e-08          . ATTGAGAATTACTCTTAAC           
+cce_3031_p-66(isiB)           1  1.09e-07          . ATTGAGAATTATTCTAAAC           
+slr1490_p-86(fhuA)            1  1.37e-07          . TTTGAGAATTAGTTGCAGT           
+PCC8801_0870_p-97(fur)        1  2.13e-07          . GTTGCAAATTATTTGCAAT           
+Synpcc7942_1406_p-81(afu      1  2.68e-07          . ATTGAGAATAAATCGCAGA           
+cce_2330_p-96(fur)            1  3.34e-07          . GTTGCTAATTATTTTCAAT           
+alr2175_p-120(fhuE)           1  4.12e-07          . GTTAATAATCTTTCGCAAT           
+Cyan7425_3510_p-105(afuC      1  4.12e-07          . ATTGAGAATAATTTTCAAA           
+Cyan7425_2438_p-37(pchR)      1  4.12e-07          . ATTAAGAATAAGTCTCAGT           
+PCC8801_3017_p-38(exbB)       1  5.09e-07          . ATTGATAACTTTTCTCAAT           
+gll1014_p-64(afuA)            1  6.30e-07          . ATTGACAATTAATTGCAGC           
+all4001_p-161(isiA)           1  7.81e-07          . ATTAAGAATCTTTTTCAAT           
+SYNPCC7002_G0104_p-68(pc      1  7.81e-07          . ATTGAGAATAATTAGTAAT           
+all2158_p-62(fhuA)            1  9.57e-07          . ATTAAGAATTATTAGCAGT           
+MAE_56680_p-61(sufA)          1  9.57e-07          . GATAAGAATTATTCTCAAT           
+slr1484_p-255(SYNPCC7002      1  1.16e-06          . ATTGATAACTATTTTCAAT           
+PCC8801_1443_p-90(sufA)       1  1.70e-06          . ATTAGGAATAATTAGCAAC           
+Tery_3377_p-97(sufA)          1  2.07e-06          . ATTAAGAATAAATTGCAAT           
+Cyan7425_2434_p-61(isiA)      1  2.50e-06          . ATTGAGTTTATTTCTCAAC           
+CYA_2794_p-26(afuC)           1  3.59e-06          . AGTGAAAATCTTTTGCAAC           
+Synpcc7942_1542_p-45(isi      1  3.59e-06          . ATTGAGAATTATTGTAAAT           
+SYNPCC7002_G0006_p-38(iu      1  3.59e-06          . TTTGAGAATTATTTTTAGT           
+SYNPCC7002_G0138_p-67(iu      1  4.30e-06          . ATTGAGATAATCTCTTAAT           
+Tery_1958_p-44(fur)           1  6.23e-06          . ATTGTGTATCATTGTCAAT           
+Cyan7425_2410_p-56(fhuA)      1  6.23e-06          . ATTGAGAATAATTCTTATT           
+SYNPCC7002_A0871_p-83(af      1  6.23e-06          . GTTGAGAATAGTTCTTAAT           
+null_p-121(isiA)              1  7.42e-06          . AATGCTATTAATTCTCAAT           
+all1691_p-94(fur)             1  7.42e-06          . TTTAATAAATATTCTCAAT           
+alr3808_p-204(dpsA)           1  7.42e-06          . GTTTAGAAATTATTGCAAT           
+PCC8801_3039_p-89(SYNPCC      1  7.42e-06          . GTTGACAAAAATTCTCATT           
+slr1316_p-78(fecC)            1  8.78e-06          . ATTGATAATCTTTCCTAGT           
+Cyan7425_2418_p-264(exbB      1  1.04e-05          . ATTGATGATTATTTTCAAC           
+all5047_p-102(exbB)           1  1.46e-05          . TTTGATAATAATTTGCATC           
+cce_0033_p-47(feoA)           1  1.46e-05          . GATAAGAATTATTCTTAAT           
+slr0513_p-240(sufA)           1  1.46e-05          . AATAATAATCTCTTGCAAT           
+slr0513_p-187(sufA)           1  1.72e-05          . ATTGCACTTTATTTGCAAT           
+all4924_p-32(fhuE)            1  2.02e-05          . ATTGAGAATTTTTATCTAT           
+cce_0479_p-144(dpsA)          1  2.02e-05          . GATGCAATATATTCTCAAT           
+slr1295_p-44(sufA)            1  2.36e-05          . ATTGAGAATTACTTTTATT           
+slr1318_p-176(fecE)           1  2.76e-05          . ATTCCTAATTATTCTTAAC           
+MAE_12460_p-117(afuC)         1  3.23e-05          . TTTGAGAAAGTTTCCTAAT           
+PCC8801_3918_p-67(nifJ)       1  3.77e-05          . TTTGTCAATAATTTGTAAC           
+Cyan7425_3508_p-165(sufA      1  5.08e-05          . ATTAGGAATGAATCGTAAT           
+Cyan7425_1597_p-88(perR)      1  5.08e-05          . TTTGAGAATTATACTAAAT           
+cce_1785_p-18(isiA)           1  5.08e-05          . ATTGCAAATCTTTTTAAAT           
+SYNPCC7002_A1649_p-88(fu      1  5.89e-05          . GTTAGTATTTATTTGCAAT           
+alr2174_p-96(pchR)            1  6.83e-05          . ATTGATAAATACTATCATT           
+Tery_4669_p-80(psaA)          1  7.91e-05          . ATTGATAATTCTTTACAAC           
+all2580_p-48(pchR)            1  7.91e-05          . ATTGAGAAATAATATCATT           
+SYNPCC7002_G0103_p-46(fh      1  7.91e-05          . ATTAAGAACTTTTTGAAGT           
+Cyan7425_5031_p-91(psbD)      1  9.13e-05          . GTTTATAAACTTTCGTAAA           
+Cyan7425_2411_p-71(pchR)      1  1.05e-04          . ATTGTTAATCTTTTTCATT           
+all2586_p-32(fecC)            1  1.20e-04          . AATGACTATATTTTTCAAT           
+Cyan7425_3510_p-60(afuC)      1  1.20e-04          . GTTGAATAATAGTCTTAAT           
+sll1404_p-110(exbB)           1  1.20e-04          . ATTGAAAATAGTTATCAAT           
+Tery_3222_p-94(afuC)          1  1.38e-04          . AATGAAAAAAATATTCAAT           
+Tery_2879_p-270(feoA)         1  1.38e-04          . TTTTCCAAATTTTTTCAGT           
+cce_0033_p-298(feoA)          1  1.38e-04          . ATTAAAAAATACTGTTAAC           
+SYNPCC7002_G0061_p-62(SY      1  1.38e-04          . ATTGATAAATAATTTAAGT           
+Synpcc7942_2601_p-158(ct      1  1.58e-04          . GATGACAATATTTTTCGAT           
+alr2185_p-69(fhuE)            1  1.58e-04          . TTTGCAAAAAATTATTAAC           
+SYNPCC7002_G0137_p-279(e      1  1.58e-04          . ATTAAGAGATTATCTCAAT           
+Tery_1781_p-41(ctaB)          1  1.81e-04          . AATTATAACCAGTTTCAAT           
+PCC8801_4320_p-186(chlH)      1  1.81e-04          . ATTTGTCAATATTTGTAAC           
+cce_4358_p-138(chlH)          1  1.81e-04          . ATTTGTCAATATTTGTAAC           
+alr2405_p-235(isiB)           1  2.06e-04          . ATTGAAATAAATATTCAAT           
+MAE_47560_p-297(psaA)         1  2.34e-04          . ATTAATAAACTTTTGTAAA           
+Tery_0513_p-195(psbC)         1  2.66e-04          . TTTACAAAAAATTTGTAAT           
+all2237_p-40(pchR)            1  2.66e-04          . TTTGAGAAAGTTTATCTAT           
+ssr2333_p-69(feoA)            1  3.02e-04          . TTTGATATTTATTCTGAAC           
+SYNPCC7002_A0913_p-68(SY      1  3.02e-04          . AATGAGAAAATTTTGATAT           
+SYNPCC7002_A2347_p-126(c      1  3.02e-04          . TTTTATAAAAACTCTAAGT           
+Synpcc7942_0938_p-30(cce      1  3.43e-04          . AATAAAAAAGTTTCGTAAT           
+all2586_p-100(fecC)           1  3.88e-04          . TCTTATATTAATTCTCAAT           
+cce_3895_p16(SYNPCC7002_      1  3.88e-04          . GTTTAAAAATTCTTTTAGT           
+cce_2632_p-20(sufA)           1  3.88e-04          . ATCAATAATAATTTTCAAT           
+all3903_p-47(cce_4396)        1  4.37e-04          . TTTAATATAAATTGTCAAT           
+alr4592_p-28(psbA)            1  4.37e-04          . ATAAATAATTAATCGCAAT           
+Cyan7425_2439_p-66(fhuA)      1  4.37e-04          . ATTGAGAGTATTTCTTATT           
+sll1911_p-59(SYNPCC7002_      1  4.37e-04          . GTTGTTAAAATTTAACAAT           
+asl0884_p-90(fdx)             1  4.93e-04          . ATTCTTAATTTTTTGTAAT           
+cce_3801_p-163(afuC)          1  4.93e-04          . ATTGAAAATTAATGCTAAT           
+slr1485_p-42(SYNPCC7002_      1  4.93e-04          . ACTGTGAAATTTATTTAAC           
+alr2184_p-39(pchR)            1  5.56e-04          . ATTGAGAAATAATATTATT           
+Cyan7425_1059_p-182(psbA      1  5.56e-04          . ATTATTAATAAGTTTCAAA           
+sll1406_p-38(fhuA)            1  5.56e-04          . ATTAATAAAACTTTTTAAC           
+alr3155_p-98(SYNPCC7002_      1  6.25e-04          . ATTACGAATTAATATAAAT           
+alr5154_p-177(psaA)           1  6.25e-04          . ATTTTGAATTATTGTTAAA           
+sll1867_p-124(psbA)           1  6.25e-04          . ATTTACAAATTGTTACAAT           
+SYNPCC7002_G0090_p-83(SY      1  6.25e-04          . ATTGAAATAAATTCTTATT           
+Cyan7425_2984_p-78(cce_4      1  7.01e-04          . TATATGAATATCTTGTAAT           
+cce_0660_p-298(psbD)          1  7.01e-04          . ATTGTAAATTTTTTGCTAA           
+glr3733_p-58(perR)            1  7.86e-04          . AATTAGATCTATTCTAAAT           
+PCC8801_2860_p-49(fdx)        1  7.86e-04          . ATTGTAAAAAAATATTAAC           
+cce_1977_p-136(coxB)          1  7.86e-04          . AATTTCAATCAATTTCAAT           
+null_p-59(fur)                1  8.79e-04          . CATTGTAATTATTCTCAAT           
+Tery_1780_p-278(ctaA)         1  8.79e-04          . ATTGTTAAAATTATGAAAT           
+cce_3809_p-132(SYNPCC700      1  8.79e-04          . GTTTTTATTTTCTGTCAAT           
+alr2803_p-92(nifJ)            1  1.22e-03          . ATTTTTAATCAGTATTAAT           
+all2235_p12(fecB)             1  1.36e-03          . TTTTATTATCATATTCAAC           
+Synpcc7942_2049_p-296(ps      1  1.51e-03          . TCTTTGAATTATTGTTAAT           
+MAE_16230_p-150(chlL)         1  1.51e-03          . ATTTATATAATTTTTAAGC           
+Cyan7425_2984_p-48(cce_4      1  1.51e-03          . ATTGCAATTATATTACAAT           
+sll0849_p-298(psbD)           1  1.51e-03          . AATGTAAAATATTTGCTAA           
+MAE_41160_p-274(psbD)         1  1.67e-03          . ATTTGTAATTTTTTGCTAA           
+Cyan7425_1838_p-245(apcF      1  1.67e-03          . TTTTATATTATCTTTTAAC           
+SYNPCC7002_A1443_p-165(n      1  1.67e-03          . TTTTCTTATAACTTTTAGC           
+alr2626_p-106(fhuE)           1  1.85e-03          . TTTGATATTAATTACTAAT           
+all1101_p-238(fhuA)           1  2.05e-03          . ATTAATATTAAATCCTAAT           
+Tery_1667_p-156(isiA)         1  2.27e-03          . TTTTATAATTTCTTTTAAA           
+cce_1944_p-151(apcF)          1  2.27e-03          . ATTGCTAAAATCTATAATT           
+CYA_2647_p-106(psbD)          1  2.50e-03          . TTTATTAATTTTTCGTAAG           
+null_p-157(apcF)              1  2.76e-03          . AATTATGAACTTTTGTAAT           
+null_p-135(psbA)              1  2.76e-03          . ATTTAGTTTTACTAACAAT           
+Tery_2644_p-122(SYNPCC70      1  2.76e-03          . AATTAGATTAATTTTGAAT           
+PCC8801_0567_p-152(coxB)      1  3.03e-03          . TTTGTTTATTATTTGTTAC           
+Tery_4504_p-35(fdx)           1  3.34e-03          . GTTAATATTTTTTTATAAC           
+Tery_3224_p-65(chlH)          1  3.34e-03          . GTTTAAAATTTTTTGATAT           
+sll0247_p-269(isiA)           1  3.34e-03          . ATTTCTTAATAATTTTAGT           
+all2367_p-181(all2367)        1  3.66e-03          . TATTGTAATATCTTTTAAT           
+Cyan7425_4671_p-292(psaA      1  3.66e-03          . TCTATGAATTTTTATTAAT           
+PCC8801_2812_p-67(SYNPCC      1  3.66e-03          . TATGATAAAATTTATTAAA           
+slr0749_p-173(chlL)           1  3.66e-03          . ATTTTATTTTTGTCTCAAT           
+SYNPCC7002_A1961_p-206(p      1  3.66e-03          . AGTTTTAAATATTGTTAAT           
+all4365_p-232(chlH)           1  4.02e-03          . AATATTAATTTTTCTTTAC           
+cce_0892_p-29(fdx)            1  4.02e-03          . TTTCTTATAATTTCTTAAC           
+sll1404_p-286(exbB)           1  4.02e-03          . TATGTGAAATATTATTATT           
+alr0950_p-134(coxB)           1  4.81e-03          . TTTACTCAAGATTATTAAT           
+all4365_p-272(chlH)           1  4.81e-03          . GTTTTTTATTTTTTTCATC           
+cce_4533_p-118(cce_4533)      1  4.81e-03          . TTTGAGTTTTATTTAAAAT           
+null_p-45(cce_4396)           1  5.26e-03          . AATTAAAATTATATTCATC           
+PCC8801_0791_p-242(chlL)      1  5.26e-03          . ATTTAGTAAATTTTAAAGT           
+Tery_4282_p-285(dpsA)         1  5.74e-03          . ATTTTTTAACAATTGAAAT           
+MAE_38140_p-292(nifJ)         1  5.74e-03          . ATTCTGAATATTAATTAAT           
+MAE_16250_p-107(chlN)         1  5.74e-03          . ATTAAGTAATTCTTTATAT           
+PCC8801_2575_p-247(SYNPC      1  5.74e-03          . ATTTCTCCTTATTTTTAAT           
+Tery_1780_p-167(ctaA)         1  6.25e-03          . ATTAAAAAAAAATTTAAAA           
+slr1181_p-182(psbA)           1  6.25e-03          . TTAAAGAAATATTATTAAT           
+MAE_22930_p-216(coxB)         1  8.04e-03          . TTTTAGATATTCTTTAGAT           
+SYNPCC7002_A1018_p-57(ch      1  8.04e-03          . ATAGTTATAAATTTTTAAT           
+MAE_22920_p-282(ctaA)         1  8.72e-03          . TCTTTTCAATATTTTTAAT           
+Tery_4773_p-64(SYNPCC700      1  9.45e-03          . TTTATGAAATATTTATGAT           
+cce_0019_p-75(SYNPCC7002      1  9.45e-03          . TTTTTTAATATTTTTTGAT           
+cce_4358_p-183(chlH)          1  9.45e-03          . AATAAATAATTTTTGTAAA           
+SYNPCC7002_A1631_p-257(a      1  1.02e-02          . TTTTATTATTTTTTTTAAA           
+cce_0989_p-205(psaA)          1  1.11e-02          . AATTTTAATTATTGTTAAG           
+SYNPCC7002_A2351_p-216(S      1  1.11e-02          . TTTATTATTGTTTTTTAGT           
+SYNPCC7002_G0099_p-94(pc      1  1.11e-02          . ATTTCTTATTAATATAAAT           
+SYNPCC7002_A0913_p-146(S      1  1.20e-02          . TTTTTACAACATTTTTAAA           
+CYA_0643_p-92(fdx)            1  1.29e-02          . ATTAAAAATATGATTTAAA           
+slr1181_p-242(psbA)           1  1.29e-02          . ATTAAAATCTTTTTTTTAC           
+alr3727_p-105(psbA)           1  1.39e-02          . TTTAGTAATATTAATTAAT           
+slr1485_p-9(SYNPCC7002_G      1  1.50e-02          . GTTTTAATAATGTTTAAAT           
+all1692_p-320(sigC)           1  1.86e-02          . AATAAACATAATTTTTACT           
+PCC8801_0349_p-107(sll14      1  2.00e-02          . AATAATTAATTTTTTTTAT           
+PCC8801_0256_p-185(ctaA)      1  2.14e-02          . TTTTATTAACTTATGTAAA           
+MAE_12190_p-247(chlH)         1  2.29e-02          . ATTAAATATTAATTTTTGT           
+alr2211_p-272(fhuA)           1  2.45e-02          . ATTTATTTAATTATTTAGT           
+null_p-211(chlL)              1  2.62e-02          . TTTTGTATTTTTGTTTAAT           
+slr1738_p-194(perR)           1  2.98e-02          . ATTAATATTTTTTTTATAA           
+gvip470_p-195(psaA)           1  3.59e-02          . TTTTTAAAAATTGTTAAGT           
+PMT1340_p-30(ctaA)            1  4.06e-02          . ATTTAAATTATTTTATTGT           
+alr2514_p-190(coxB)           1  5.71e-02          . AgTTAaAAagtTaaTaAgT           
+PCC8801_1928_p-184(SYNPC      1  5.71e-02          . AATATTTTATATTTATAGT           
+Tery_2878_p-43(feoB)          1  6.03e-02          . TATTACATAATTTTTATAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+slr1392_p-278(feoB)               2.7e-09  [+1]
+ssr2333_p-31(feoA)                2.7e-09  [+1]
+sll1404_p-64(exbB)                  2e-08  [+1]
+cce_3031_p-66(isiB)               1.1e-07  [+1]
+slr1490_p-86(fhuA)                1.4e-07  [+1]
+PCC8801_0870_p-97(fur)            2.1e-07  [+1]
+Synpcc7942_1406_p-81(afu          2.7e-07  [+1]
+cce_2330_p-96(fur)                3.3e-07  [+1]
+alr2175_p-120(fhuE)               4.1e-07  [+1]
+Cyan7425_3510_p-105(afuC          4.1e-07  [+1]
+Cyan7425_2438_p-37(pchR)          4.1e-07  [+1]
+PCC8801_3017_p-38(exbB)           5.1e-07  [+1]
+gll1014_p-64(afuA)                6.3e-07  [+1]
+all4001_p-161(isiA)               7.8e-07  [+1]
+SYNPCC7002_G0104_p-68(pc          7.8e-07  [+1]
+all2158_p-62(fhuA)                9.6e-07  [+1]
+MAE_56680_p-61(sufA)              9.6e-07  [+1]
+slr1484_p-255(SYNPCC7002          1.2e-06  [+1]
+PCC8801_1443_p-90(sufA)           1.7e-06  [+1]
+Tery_3377_p-97(sufA)              2.1e-06  [+1]
+Cyan7425_2434_p-61(isiA)          2.5e-06  [+1]
+CYA_2794_p-26(afuC)               3.6e-06  [+1]
+Synpcc7942_1542_p-45(isi          3.6e-06  [+1]
+SYNPCC7002_G0006_p-38(iu          3.6e-06  [+1]
+SYNPCC7002_G0138_p-67(iu          4.3e-06  [+1]
+Tery_1958_p-44(fur)               6.2e-06  [+1]
+Cyan7425_2410_p-56(fhuA)          6.2e-06  [+1]
+SYNPCC7002_A0871_p-83(af          6.2e-06  [+1]
+null_p-121(isiA)                  7.4e-06  [+1]
+all1691_p-94(fur)                 7.4e-06  [+1]
+alr3808_p-204(dpsA)               7.4e-06  [+1]
+PCC8801_3039_p-89(SYNPCC          7.4e-06  [+1]
+slr1316_p-78(fecC)                8.8e-06  [+1]
+Cyan7425_2418_p-264(exbB            1e-05  [+1]
+all5047_p-102(exbB)               1.5e-05  [+1]
+cce_0033_p-47(feoA)               1.5e-05  [+1]
+slr0513_p-240(sufA)               1.5e-05  [+1]
+slr0513_p-187(sufA)               1.7e-05  [+1]
+all4924_p-32(fhuE)                  2e-05  [+1]
+cce_0479_p-144(dpsA)                2e-05  [+1]
+slr1295_p-44(sufA)                2.4e-05  [+1]
+slr1318_p-176(fecE)               2.8e-05  [+1]
+MAE_12460_p-117(afuC)             3.2e-05  [+1]
+PCC8801_3918_p-67(nifJ)           3.8e-05  [+1]
+Cyan7425_3508_p-165(sufA          5.1e-05  [+1]
+Cyan7425_1597_p-88(perR)          5.1e-05  [+1]
+cce_1785_p-18(isiA)               5.1e-05  [+1]
+SYNPCC7002_A1649_p-88(fu          5.9e-05  [+1]
+alr2174_p-96(pchR)                6.8e-05  [+1]
+Tery_4669_p-80(psaA)              7.9e-05  [+1]
+all2580_p-48(pchR)                7.9e-05  [+1]
+SYNPCC7002_G0103_p-46(fh          7.9e-05  [+1]
+Cyan7425_5031_p-91(psbD)          9.1e-05  [+1]
+Cyan7425_2411_p-71(pchR)           0.0001  [+1]
+all2586_p-32(fecC)                0.00012  [+1]
+Cyan7425_3510_p-60(afuC)          0.00012  [+1]
+sll1404_p-110(exbB)               0.00012  [+1]
+Tery_3222_p-94(afuC)              0.00014  [+1]
+Tery_2879_p-270(feoA)             0.00014  [+1]
+cce_0033_p-298(feoA)              0.00014  [+1]
+SYNPCC7002_G0061_p-62(SY          0.00014  [+1]
+Synpcc7942_2601_p-158(ct          0.00016  [+1]
+alr2185_p-69(fhuE)                0.00016  [+1]
+SYNPCC7002_G0137_p-279(e          0.00016  [+1]
+Tery_1781_p-41(ctaB)              0.00018  [+1]
+PCC8801_4320_p-186(chlH)          0.00018  [+1]
+cce_4358_p-138(chlH)              0.00018  [+1]
+alr2405_p-235(isiB)               0.00021  [+1]
+MAE_47560_p-297(psaA)             0.00023  [+1]
+Tery_0513_p-195(psbC)             0.00027  [+1]
+all2237_p-40(pchR)                0.00027  [+1]
+ssr2333_p-69(feoA)                 0.0003  [+1]
+SYNPCC7002_A0913_p-68(SY           0.0003  [+1]
+SYNPCC7002_A2347_p-126(c           0.0003  [+1]
+Synpcc7942_0938_p-30(cce          0.00034  [+1]
+all2586_p-100(fecC)               0.00039  [+1]
+cce_3895_p16(SYNPCC7002_          0.00039  [+1]
+cce_2632_p-20(sufA)               0.00039  [+1]
+all3903_p-47(cce_4396)            0.00044  [+1]
+alr4592_p-28(psbA)                0.00044  [+1]
+Cyan7425_2439_p-66(fhuA)          0.00044  [+1]
+sll1911_p-59(SYNPCC7002_          0.00044  [+1]
+asl0884_p-90(fdx)                 0.00049  [+1]
+cce_3801_p-163(afuC)              0.00049  [+1]
+slr1485_p-42(SYNPCC7002_          0.00049  [+1]
+alr2184_p-39(pchR)                0.00056  [+1]
+Cyan7425_1059_p-182(psbA          0.00056  [+1]
+sll1406_p-38(fhuA)                0.00056  [+1]
+alr3155_p-98(SYNPCC7002_          0.00062  [+1]
+alr5154_p-177(psaA)               0.00062  [+1]
+sll1867_p-124(psbA)               0.00062  [+1]
+SYNPCC7002_G0090_p-83(SY          0.00062  [+1]
+Cyan7425_2984_p-78(cce_4           0.0007  [+1]
+cce_0660_p-298(psbD)               0.0007  [+1]
+glr3733_p-58(perR)                0.00079  [+1]
+PCC8801_2860_p-49(fdx)            0.00079  [+1]
+cce_1977_p-136(coxB)              0.00079  [+1]
+null_p-59(fur)                    0.00088  [+1]
+Tery_1780_p-278(ctaA)             0.00088  [+1]
+cce_3809_p-132(SYNPCC700          0.00088  [+1]
+alr2803_p-92(nifJ)                 0.0012  [+1]
+all2235_p12(fecB)                  0.0014  [+1]
+Synpcc7942_2049_p-296(ps           0.0015  [+1]
+MAE_16230_p-150(chlL)              0.0015  [+1]
+Cyan7425_2984_p-48(cce_4           0.0015  [+1]
+sll0849_p-298(psbD)                0.0015  [+1]
+MAE_41160_p-274(psbD)              0.0017  [+1]
+Cyan7425_1838_p-245(apcF           0.0017  [+1]
+SYNPCC7002_A1443_p-165(n           0.0017  [+1]
+alr2626_p-106(fhuE)                0.0019  [+1]
+all1101_p-238(fhuA)                0.0021  [+1]
+Tery_1667_p-156(isiA)              0.0023  [+1]
+cce_1944_p-151(apcF)               0.0023  [+1]
+CYA_2647_p-106(psbD)               0.0025  [+1]
+null_p-157(apcF)                   0.0028  [+1]
+null_p-135(psbA)                   0.0028  [+1]
+Tery_2644_p-122(SYNPCC70           0.0028  [+1]
+PCC8801_0567_p-152(coxB)            0.003  [+1]
+Tery_4504_p-35(fdx)                0.0033  [+1]
+Tery_3224_p-65(chlH)               0.0033  [+1]
+sll0247_p-269(isiA)                0.0033  [+1]
+all2367_p-181(all2367)             0.0037  [+1]
+Cyan7425_4671_p-292(psaA           0.0037  [+1]
+PCC8801_2812_p-67(SYNPCC           0.0037  [+1]
+slr0749_p-173(chlL)                0.0037  [+1]
+SYNPCC7002_A1961_p-206(p           0.0037  [+1]
+all4365_p-232(chlH)                 0.004  [+1]
+cce_0892_p-29(fdx)                  0.004  [+1]
+sll1404_p-286(exbB)                 0.004  [+1]
+alr0950_p-134(coxB)                0.0048  [+1]
+all4365_p-272(chlH)                0.0048  [+1]
+cce_4533_p-118(cce_4533)           0.0048  [+1]
+null_p-45(cce_4396)                0.0053  [+1]
+PCC8801_0791_p-242(chlL)           0.0053  [+1]
+Tery_4282_p-285(dpsA)              0.0057  [+1]
+MAE_38140_p-292(nifJ)              0.0057  [+1]
+MAE_16250_p-107(chlN)              0.0057  [+1]
+PCC8801_2575_p-247(SYNPC           0.0057  [+1]
+Tery_1780_p-167(ctaA)              0.0063  [+1]
+slr1181_p-182(psbA)                0.0063  [+1]
+MAE_22930_p-216(coxB)               0.008  [+1]
+SYNPCC7002_A1018_p-57(ch            0.008  [+1]
+MAE_22920_p-282(ctaA)              0.0087  [+1]
+Tery_4773_p-64(SYNPCC700           0.0095  [+1]
+cce_0019_p-75(SYNPCC7002           0.0095  [+1]
+cce_4358_p-183(chlH)               0.0095  [+1]
+SYNPCC7002_A1631_p-257(a             0.01  [+1]
+cce_0989_p-205(psaA)                0.011  [+1]
+SYNPCC7002_A2351_p-216(S            0.011  [+1]
+SYNPCC7002_G0099_p-94(pc            0.011  [+1]
+SYNPCC7002_A0913_p-146(S            0.012  [+1]
+CYA_0643_p-92(fdx)                  0.013  [+1]
+slr1181_p-242(psbA)                 0.013  [+1]
+alr3727_p-105(psbA)                 0.014  [+1]
+slr1485_p-9(SYNPCC7002_G            0.015  [+1]
+all1692_p-320(sigC)                 0.019  [+1]
+PCC8801_0349_p-107(sll14             0.02  [+1]
+PCC8801_0256_p-185(ctaA)            0.021  [+1]
+MAE_12190_p-247(chlH)               0.023  [+1]
+alr2211_p-272(fhuA)                 0.024  [+1]
+null_p-211(chlL)                    0.026  [+1]
+slr1738_p-194(perR)                  0.03  [+1]
+gvip470_p-195(psaA)                 0.036  [+1]
+PMT1340_p-30(ctaA)                  0.041  [+1]
+alr2514_p-190(coxB)                 0.057  [+1]
+PCC8801_1928_p-184(SYNPC            0.057  [+1]
+Tery_2878_p-43(feoB)                 0.06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTDAKAAWWWTTTTYAAT width=19 seqs=167
+slr1392_p-278(feoB)      (    1) GTTGAGAATTATTTGCAGT  1 
+ssr2333_p-31(feoA)       (    1) GTTGAGAATTATTTGCAGT  1 
+sll1404_p-64(exbB)       (    1) ATTGAGAATTACTCTTAAC  1 
+cce_3031_p-66(isiB)      (    1) ATTGAGAATTATTCTAAAC  1 
+slr1490_p-86(fhuA)       (    1) TTTGAGAATTAGTTGCAGT  1 
+PCC8801_0870_p-97(fur)   (    1) GTTGCAAATTATTTGCAAT  1 
+Synpcc7942_1406_p-81(afu (    1) ATTGAGAATAAATCGCAGA  1 
+cce_2330_p-96(fur)       (    1) GTTGCTAATTATTTTCAAT  1 
+alr2175_p-120(fhuE)      (    1) GTTAATAATCTTTCGCAAT  1 
+Cyan7425_3510_p-105(afuC (    1) ATTGAGAATAATTTTCAAA  1 
+Cyan7425_2438_p-37(pchR) (    1) ATTAAGAATAAGTCTCAGT  1 
+PCC8801_3017_p-38(exbB)  (    1) ATTGATAACTTTTCTCAAT  1 
+gll1014_p-64(afuA)       (    1) ATTGACAATTAATTGCAGC  1 
+all4001_p-161(isiA)      (    1) ATTAAGAATCTTTTTCAAT  1 
+SYNPCC7002_G0104_p-68(pc (    1) ATTGAGAATAATTAGTAAT  1 
+all2158_p-62(fhuA)       (    1) ATTAAGAATTATTAGCAGT  1 
+MAE_56680_p-61(sufA)     (    1) GATAAGAATTATTCTCAAT  1 
+slr1484_p-255(SYNPCC7002 (    1) ATTGATAACTATTTTCAAT  1 
+PCC8801_1443_p-90(sufA)  (    1) ATTAGGAATAATTAGCAAC  1 
+Tery_3377_p-97(sufA)     (    1) ATTAAGAATAAATTGCAAT  1 
+Cyan7425_2434_p-61(isiA) (    1) ATTGAGTTTATTTCTCAAC  1 
+CYA_2794_p-26(afuC)      (    1) AGTGAAAATCTTTTGCAAC  1 
+Synpcc7942_1542_p-45(isi (    1) ATTGAGAATTATTGTAAAT  1 
+SYNPCC7002_G0006_p-38(iu (    1) TTTGAGAATTATTTTTAGT  1 
+SYNPCC7002_G0138_p-67(iu (    1) ATTGAGATAATCTCTTAAT  1 
+Tery_1958_p-44(fur)      (    1) ATTGTGTATCATTGTCAAT  1 
+Cyan7425_2410_p-56(fhuA) (    1) ATTGAGAATAATTCTTATT  1 
+SYNPCC7002_A0871_p-83(af (    1) GTTGAGAATAGTTCTTAAT  1 
+null_p-121(isiA)         (    1) AATGCTATTAATTCTCAAT  1 
+all1691_p-94(fur)        (    1) TTTAATAAATATTCTCAAT  1 
+alr3808_p-204(dpsA)      (    1) GTTTAGAAATTATTGCAAT  1 
+PCC8801_3039_p-89(SYNPCC (    1) GTTGACAAAAATTCTCATT  1 
+slr1316_p-78(fecC)       (    1) ATTGATAATCTTTCCTAGT  1 
+Cyan7425_2418_p-264(exbB (    1) ATTGATGATTATTTTCAAC  1 
+all5047_p-102(exbB)      (    1) TTTGATAATAATTTGCATC  1 
+cce_0033_p-47(feoA)      (    1) GATAAGAATTATTCTTAAT  1 
+slr0513_p-240(sufA)      (    1) AATAATAATCTCTTGCAAT  1 
+slr0513_p-187(sufA)      (    1) ATTGCACTTTATTTGCAAT  1 
+all4924_p-32(fhuE)       (    1) ATTGAGAATTTTTATCTAT  1 
+cce_0479_p-144(dpsA)     (    1) GATGCAATATATTCTCAAT  1 
+slr1295_p-44(sufA)       (    1) ATTGAGAATTACTTTTATT  1 
+slr1318_p-176(fecE)      (    1) ATTCCTAATTATTCTTAAC  1 
+MAE_12460_p-117(afuC)    (    1) TTTGAGAAAGTTTCCTAAT  1 
+PCC8801_3918_p-67(nifJ)  (    1) TTTGTCAATAATTTGTAAC  1 
+Cyan7425_3508_p-165(sufA (    1) ATTAGGAATGAATCGTAAT  1 
+Cyan7425_1597_p-88(perR) (    1) TTTGAGAATTATACTAAAT  1 
+cce_1785_p-18(isiA)      (    1) ATTGCAAATCTTTTTAAAT  1 
+SYNPCC7002_A1649_p-88(fu (    1) GTTAGTATTTATTTGCAAT  1 
+alr2174_p-96(pchR)       (    1) ATTGATAAATACTATCATT  1 
+Tery_4669_p-80(psaA)     (    1) ATTGATAATTCTTTACAAC  1 
+all2580_p-48(pchR)       (    1) ATTGAGAAATAATATCATT  1 
+SYNPCC7002_G0103_p-46(fh (    1) ATTAAGAACTTTTTGAAGT  1 
+Cyan7425_5031_p-91(psbD) (    1) GTTTATAAACTTTCGTAAA  1 
+Cyan7425_2411_p-71(pchR) (    1) ATTGTTAATCTTTTTCATT  1 
+all2586_p-32(fecC)       (    1) AATGACTATATTTTTCAAT  1 
+Cyan7425_3510_p-60(afuC) (    1) GTTGAATAATAGTCTTAAT  1 
+sll1404_p-110(exbB)      (    1) ATTGAAAATAGTTATCAAT  1 
+Tery_3222_p-94(afuC)     (    1) AATGAAAAAAATATTCAAT  1 
+Tery_2879_p-270(feoA)    (    1) TTTTCCAAATTTTTTCAGT  1 
+cce_0033_p-298(feoA)     (    1) ATTAAAAAATACTGTTAAC  1 
+SYNPCC7002_G0061_p-62(SY (    1) ATTGATAAATAATTTAAGT  1 
+Synpcc7942_2601_p-158(ct (    1) GATGACAATATTTTTCGAT  1 
+alr2185_p-69(fhuE)       (    1) TTTGCAAAAAATTATTAAC  1 
+SYNPCC7002_G0137_p-279(e (    1) ATTAAGAGATTATCTCAAT  1 
+Tery_1781_p-41(ctaB)     (    1) AATTATAACCAGTTTCAAT  1 
+PCC8801_4320_p-186(chlH) (    1) ATTTGTCAATATTTGTAAC  1 
+cce_4358_p-138(chlH)     (    1) ATTTGTCAATATTTGTAAC  1 
+alr2405_p-235(isiB)      (    1) ATTGAAATAAATATTCAAT  1 
+MAE_47560_p-297(psaA)    (    1) ATTAATAAACTTTTGTAAA  1 
+Tery_0513_p-195(psbC)    (    1) TTTACAAAAAATTTGTAAT  1 
+all2237_p-40(pchR)       (    1) TTTGAGAAAGTTTATCTAT  1 
+ssr2333_p-69(feoA)       (    1) TTTGATATTTATTCTGAAC  1 
+SYNPCC7002_A0913_p-68(SY (    1) AATGAGAAAATTTTGATAT  1 
+SYNPCC7002_A2347_p-126(c (    1) TTTTATAAAAACTCTAAGT  1 
+Synpcc7942_0938_p-30(cce (    1) AATAAAAAAGTTTCGTAAT  1 
+all2586_p-100(fecC)      (    1) TCTTATATTAATTCTCAAT  1 
+cce_3895_p16(SYNPCC7002_ (    1) GTTTAAAAATTCTTTTAGT  1 
+cce_2632_p-20(sufA)      (    1) ATCAATAATAATTTTCAAT  1 
+all3903_p-47(cce_4396)   (    1) TTTAATATAAATTGTCAAT  1 
+alr4592_p-28(psbA)       (    1) ATAAATAATTAATCGCAAT  1 
+Cyan7425_2439_p-66(fhuA) (    1) ATTGAGAGTATTTCTTATT  1 
+sll1911_p-59(SYNPCC7002_ (    1) GTTGTTAAAATTTAACAAT  1 
+asl0884_p-90(fdx)        (    1) ATTCTTAATTTTTTGTAAT  1 
+cce_3801_p-163(afuC)     (    1) ATTGAAAATTAATGCTAAT  1 
+slr1485_p-42(SYNPCC7002_ (    1) ACTGTGAAATTTATTTAAC  1 
+alr2184_p-39(pchR)       (    1) ATTGAGAAATAATATTATT  1 
+Cyan7425_1059_p-182(psbA (    1) ATTATTAATAAGTTTCAAA  1 
+sll1406_p-38(fhuA)       (    1) ATTAATAAAACTTTTTAAC  1 
+alr3155_p-98(SYNPCC7002_ (    1) ATTACGAATTAATATAAAT  1 
+alr5154_p-177(psaA)      (    1) ATTTTGAATTATTGTTAAA  1 
+sll1867_p-124(psbA)      (    1) ATTTACAAATTGTTACAAT  1 
+SYNPCC7002_G0090_p-83(SY (    1) ATTGAAATAAATTCTTATT  1 
+Cyan7425_2984_p-78(cce_4 (    1) TATATGAATATCTTGTAAT  1 
+cce_0660_p-298(psbD)     (    1) ATTGTAAATTTTTTGCTAA  1 
+glr3733_p-58(perR)       (    1) AATTAGATCTATTCTAAAT  1 
+PCC8801_2860_p-49(fdx)   (    1) ATTGTAAAAAAATATTAAC  1 
+cce_1977_p-136(coxB)     (    1) AATTTCAATCAATTTCAAT  1 
+null_p-59(fur)           (    1) CATTGTAATTATTCTCAAT  1 
+Tery_1780_p-278(ctaA)    (    1) ATTGTTAAAATTATGAAAT  1 
+cce_3809_p-132(SYNPCC700 (    1) GTTTTTATTTTCTGTCAAT  1 
+alr2803_p-92(nifJ)       (    1) ATTTTTAATCAGTATTAAT  1 
+all2235_p12(fecB)        (    1) TTTTATTATCATATTCAAC  1 
+Synpcc7942_2049_p-296(ps (    1) TCTTTGAATTATTGTTAAT  1 
+MAE_16230_p-150(chlL)    (    1) ATTTATATAATTTTTAAGC  1 
+Cyan7425_2984_p-48(cce_4 (    1) ATTGCAATTATATTACAAT  1 
+sll0849_p-298(psbD)      (    1) AATGTAAAATATTTGCTAA  1 
+MAE_41160_p-274(psbD)    (    1) ATTTGTAATTTTTTGCTAA  1 
+Cyan7425_1838_p-245(apcF (    1) TTTTATATTATCTTTTAAC  1 
+SYNPCC7002_A1443_p-165(n (    1) TTTTCTTATAACTTTTAGC  1 
+alr2626_p-106(fhuE)      (    1) TTTGATATTAATTACTAAT  1 
+all1101_p-238(fhuA)      (    1) ATTAATATTAAATCCTAAT  1 
+Tery_1667_p-156(isiA)    (    1) TTTTATAATTTCTTTTAAA  1 
+cce_1944_p-151(apcF)     (    1) ATTGCTAAAATCTATAATT  1 
+CYA_2647_p-106(psbD)     (    1) TTTATTAATTTTTCGTAAG  1 
+null_p-157(apcF)         (    1) AATTATGAACTTTTGTAAT  1 
+null_p-135(psbA)         (    1) ATTTAGTTTTACTAACAAT  1 
+Tery_2644_p-122(SYNPCC70 (    1) AATTAGATTAATTTTGAAT  1 
+PCC8801_0567_p-152(coxB) (    1) TTTGTTTATTATTTGTTAC  1 
+Tery_4504_p-35(fdx)      (    1) GTTAATATTTTTTTATAAC  1 
+Tery_3224_p-65(chlH)     (    1) GTTTAAAATTTTTTGATAT  1 
+sll0247_p-269(isiA)      (    1) ATTTCTTAATAATTTTAGT  1 
+all2367_p-181(all2367)   (    1) TATTGTAATATCTTTTAAT  1 
+Cyan7425_4671_p-292(psaA (    1) TCTATGAATTTTTATTAAT  1 
+PCC8801_2812_p-67(SYNPCC (    1) TATGATAAAATTTATTAAA  1 
+slr0749_p-173(chlL)      (    1) ATTTTATTTTTGTCTCAAT  1 
+SYNPCC7002_A1961_p-206(p (    1) AGTTTTAAATATTGTTAAT  1 
+all4365_p-232(chlH)      (    1) AATATTAATTTTTCTTTAC  1 
+cce_0892_p-29(fdx)       (    1) TTTCTTATAATTTCTTAAC  1 
+sll1404_p-286(exbB)      (    1) TATGTGAAATATTATTATT  1 
+alr0950_p-134(coxB)      (    1) TTTACTCAAGATTATTAAT  1 
+all4365_p-272(chlH)      (    1) GTTTTTTATTTTTTTCATC  1 
+cce_4533_p-118(cce_4533) (    1) TTTGAGTTTTATTTAAAAT  1 
+null_p-45(cce_4396)      (    1) AATTAAAATTATATTCATC  1 
+PCC8801_0791_p-242(chlL) (    1) ATTTAGTAAATTTTAAAGT  1 
+Tery_4282_p-285(dpsA)    (    1) ATTTTTTAACAATTGAAAT  1 
+MAE_38140_p-292(nifJ)    (    1) ATTCTGAATATTAATTAAT  1 
+MAE_16250_p-107(chlN)    (    1) ATTAAGTAATTCTTTATAT  1 
+PCC8801_2575_p-247(SYNPC (    1) ATTTCTCCTTATTTTTAAT  1 
+Tery_1780_p-167(ctaA)    (    1) ATTAAAAAAAAATTTAAAA  1 
+slr1181_p-182(psbA)      (    1) TTAAAGAAATATTATTAAT  1 
+MAE_22930_p-216(coxB)    (    1) TTTTAGATATTCTTTAGAT  1 
+SYNPCC7002_A1018_p-57(ch (    1) ATAGTTATAAATTTTTAAT  1 
+MAE_22920_p-282(ctaA)    (    1) TCTTTTCAATATTTTTAAT  1 
+Tery_4773_p-64(SYNPCC700 (    1) TTTATGAAATATTTATGAT  1 
+cce_0019_p-75(SYNPCC7002 (    1) TTTTTTAATATTTTTTGAT  1 
+cce_4358_p-183(chlH)     (    1) AATAAATAATTTTTGTAAA  1 
+SYNPCC7002_A1631_p-257(a (    1) TTTTATTATTTTTTTTAAA  1 
+cce_0989_p-205(psaA)     (    1) AATTTTAATTATTGTTAAG  1 
+SYNPCC7002_A2351_p-216(S (    1) TTTATTATTGTTTTTTAGT  1 
+SYNPCC7002_G0099_p-94(pc (    1) ATTTCTTATTAATATAAAT  1 
+SYNPCC7002_A0913_p-146(S (    1) TTTTTACAACATTTTTAAA  1 
+CYA_0643_p-92(fdx)       (    1) ATTAAAAATATGATTTAAA  1 
+slr1181_p-242(psbA)      (    1) ATTAAAATCTTTTTTTTAC  1 
+alr3727_p-105(psbA)      (    1) TTTAGTAATATTAATTAAT  1 
+slr1485_p-9(SYNPCC7002_G (    1) GTTTTAATAATGTTTAAAT  1 
+all1692_p-320(sigC)      (    1) AATAAACATAATTTTTACT  1 
+PCC8801_0349_p-107(sll14 (    1) AATAATTAATTTTTTTTAT  1 
+PCC8801_0256_p-185(ctaA) (    1) TTTTATTAACTTATGTAAA  1 
+MAE_12190_p-247(chlH)    (    1) ATTAAATATTAATTTTTGT  1 
+alr2211_p-272(fhuA)      (    1) ATTTATTTAATTATTTAGT  1 
+null_p-211(chlL)         (    1) TTTTGTATTTTTGTTTAAT  1 
+slr1738_p-194(perR)      (    1) ATTAATATTTTTTTTATAA  1 
+gvip470_p-195(psaA)      (    1) TTTTTAAAAATTGTTAAGT  1 
+PMT1340_p-30(ctaA)       (    1) ATTTAAATTATTTTATTGT  1 
+alr2514_p-190(coxB)      (    1) AGTTAAAAAGTTAATAAGT  1 
+PCC8801_1928_p-184(SYNPC (    1) AATATTTTATATTTATAGT  1 
+Tery_2878_p-43(feoB)     (    1) TATTACATAATTTTTATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 167 bayes= 1.91511 E= 7.0e-351 
+    69   -359     66    -85 
+  -110   -127   -221     72 
+  -437   -359  -1403    104 
+   -46   -159    227    -63 
+    70     58    -47   -106 
+   -87    -42    191    -14 
+   111    -59   -279   -178 
+   106   -359   -279   -118 
+     5   -100  -1403     29 
+   -10     58    -99      9 
+    57   -259   -279    -16 
+  -156     58    -47     58 
+  -225  -1403   -279     94 
+  -125    166    -47     23 
+  -249   -127    156     48 
+  -125    239   -279     -6 
+   125  -1403   -179   -231 
+   104   -359     85   -250 
+  -178    132   -279     56 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 167 E= 7.0e-351 
+ 0.598802  0.005988  0.131737  0.263473 
+ 0.173653  0.029940  0.017964  0.778443 
+ 0.017964  0.005988  0.000000  0.976048 
+ 0.269461  0.023952  0.401198  0.305389 
+ 0.604790  0.107784  0.059880  0.227545 
+ 0.203593  0.053892  0.311377  0.431138 
+ 0.802395  0.047904  0.011976  0.137725 
+ 0.772455  0.005988  0.011976  0.209581 
+ 0.383234  0.035928  0.000000  0.580838 
+ 0.347305  0.107784  0.041916  0.502994 
+ 0.550898  0.011976  0.011976  0.425150 
+ 0.125749  0.107784  0.059880  0.706587 
+ 0.077844  0.000000  0.011976  0.910180 
+ 0.155689  0.227545  0.059880  0.556886 
+ 0.065868  0.029940  0.245509  0.658683 
+ 0.155689  0.377246  0.011976  0.455090 
+ 0.880240  0.000000  0.023952  0.095808 
+ 0.760479  0.005988  0.149701  0.083832 
+ 0.107784  0.179641  0.011976  0.700599 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTDAKAAWWWTTTTYAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]TT[GTA][AT][TGA]A[AT][TA][TA][AT]TT[TC][TG][TC]AAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.97 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SYNPCC7002_A2347_p-126(c         3.02e-04  19
+SYNPCC7002_G0137_p-279(e         1.58e-04  19
+SYNPCC7002_G0099_p-94(pc         1.11e-02  19
+SYNPCC7002_G0006_p-38(iu         3.59e-06  [+1(3.59e-06)]
+SYNPCC7002_A1631_p-257(a         1.02e-02  19
+SYNPCC7002_A0913_p-146(S         1.20e-02  19
+SYNPCC7002_A0913_p-68(SY         3.02e-04  19
+SYNPCC7002_A1018_p-57(ch         8.04e-03  19
+SYNPCC7002_A1443_p-165(n         1.67e-03  19
+SYNPCC7002_A0871_p-83(af         6.23e-06  [+1(6.23e-06)]
+SYNPCC7002_A2351_p-216(S         1.11e-02  19
+SYNPCC7002_A1961_p-206(p         3.66e-03  19
+SYNPCC7002_G0061_p-62(SY         1.38e-04  19
+SYNPCC7002_A1649_p-88(fu         5.89e-05  [+1(5.89e-05)]
+SYNPCC7002_G0138_p-67(iu         4.30e-06  [+1(4.30e-06)]
+SYNPCC7002_G0090_p-83(SY         6.25e-04  19
+SYNPCC7002_G0104_p-68(pc         7.81e-07  [+1(7.81e-07)]
+SYNPCC7002_G0103_p-46(fh         7.91e-05  [+1(7.91e-05)]
+slr0749_p-173(chlL)              3.66e-03  19
+ssr2333_p-31(feoA)               2.72e-09  [+1(2.72e-09)]
+sll1406_p-38(fhuA)               5.56e-04  19
+sll1404_p-110(exbB)              1.20e-04  19
+slr1490_p-86(fhuA)               1.37e-07  [+1(1.37e-07)]
+slr1484_p-255(SYNPCC7002         1.16e-06  [+1(1.16e-06)]
+slr1318_p-176(fecE)              2.76e-05  [+1(2.76e-05)]
+slr1485_p-9(SYNPCC7002_G         1.50e-02  19
+slr1316_p-78(fecC)               8.78e-06  [+1(8.78e-06)]
+slr1485_p-42(SYNPCC7002_         4.93e-04  19
+sll1404_p-64(exbB)               2.01e-08  [+1(2.01e-08)]
+sll1404_p-286(exbB)              4.02e-03  19
+slr1295_p-44(sufA)               2.36e-05  [+1(2.36e-05)]
+sll1911_p-59(SYNPCC7002_         4.37e-04  19
+slr0513_p-240(sufA)              1.46e-05  [+1(1.46e-05)]
+slr0513_p-187(sufA)              1.72e-05  [+1(1.72e-05)]
+sll0849_p-298(psbD)              1.51e-03  19
+slr1181_p-242(psbA)              1.29e-02  19
+slr1181_p-182(psbA)              6.25e-03  19
+sll1867_p-124(psbA)              6.25e-04  19
+slr1738_p-194(perR)              2.98e-02  19
+sll0247_p-269(isiA)              3.34e-03  19
+ssr2333_p-69(feoA)               3.02e-04  19
+slr1392_p-278(feoB)              2.72e-09  [+1(2.72e-09)]
+cce_4533_p-118(cce_4533)         4.81e-03  19
+cce_0033_p-47(feoA)              1.46e-05  [+1(1.46e-05)]
+cce_0033_p-298(feoA)             1.38e-04  19
+cce_0660_p-298(psbD)             7.01e-04  19
+cce_0479_p-144(dpsA)             2.02e-05  [+1(2.02e-05)]
+cce_2632_p-20(sufA)              3.88e-04  19
+cce_4358_p-183(chlH)             9.45e-03  19
+cce_4358_p-138(chlH)             1.81e-04  19
+cce_3801_p-163(afuC)             4.93e-04  19
+cce_0989_p-205(psaA)             1.11e-02  19
+cce_3809_p-132(SYNPCC700         8.79e-04  19
+cce_1977_p-136(coxB)             7.86e-04  19
+cce_0019_p-75(SYNPCC7002         9.45e-03  19
+cce_1944_p-151(apcF)             2.27e-03  19
+cce_3895_p16(SYNPCC7002_         3.88e-04  19
+cce_0892_p-29(fdx)               4.02e-03  19
+cce_1785_p-18(isiA)              5.08e-05  [+1(5.08e-05)]
+cce_3031_p-66(isiB)              1.09e-07  [+1(1.09e-07)]
+cce_2330_p-96(fur)               3.34e-07  [+1(3.34e-07)]
+PCC8801_0791_p-242(chlL)         5.26e-03  19
+PCC8801_2575_p-247(SYNPC         5.74e-03  19
+PCC8801_0349_p-107(sll14         2.00e-02  19
+PCC8801_0256_p-185(ctaA)         2.14e-02  19
+PCC8801_2812_p-67(SYNPCC         3.66e-03  19
+PCC8801_4320_p-186(chlH)         1.81e-04  19
+PCC8801_0567_p-152(coxB)         3.03e-03  19
+PCC8801_3918_p-67(nifJ)          3.77e-05  [+1(3.77e-05)]
+PCC8801_1443_p-90(sufA)          1.70e-06  [+1(1.70e-06)]
+PCC8801_1928_p-184(SYNPC         5.71e-02  19
+PCC8801_2860_p-49(fdx)           7.86e-04  19
+PCC8801_0870_p-97(fur)           2.13e-07  [+1(2.13e-07)]
+PCC8801_3039_p-89(SYNPCC         7.42e-06  [+1(7.42e-06)]
+PCC8801_3017_p-38(exbB)          5.09e-07  [+1(5.09e-07)]
+Cyan7425_2411_p-71(pchR)         1.05e-04  19
+Cyan7425_2410_p-56(fhuA)         6.23e-06  [+1(6.23e-06)]
+Cyan7425_2418_p-264(exbB         1.04e-05  [+1(1.04e-05)]
+Cyan7425_2438_p-37(pchR)         4.12e-07  [+1(4.12e-07)]
+Cyan7425_2439_p-66(fhuA)         4.37e-04  19
+Cyan7425_1597_p-88(perR)         5.08e-05  [+1(5.08e-05)]
+Cyan7425_5031_p-91(psbD)         9.13e-05  [+1(9.13e-05)]
+Cyan7425_4671_p-292(psaA         3.66e-03  19
+Cyan7425_3510_p-60(afuC)         1.20e-04  19
+Cyan7425_3510_p-105(afuC         4.12e-07  [+1(4.12e-07)]
+Cyan7425_1838_p-245(apcF         1.67e-03  19
+Cyan7425_1059_p-182(psbA         5.56e-04  19
+Cyan7425_2984_p-78(cce_4         7.01e-04  19
+Cyan7425_2984_p-48(cce_4         1.51e-03  19
+Cyan7425_2434_p-61(isiA)         2.50e-06  [+1(2.50e-06)]
+Cyan7425_3508_p-165(sufA         5.08e-05  [+1(5.08e-05)]
+MAE_16250_p-107(chlN)            5.74e-03  19
+MAE_16230_p-150(chlL)            1.51e-03  19
+MAE_12190_p-247(chlH)            2.29e-02  19
+MAE_41160_p-274(psbD)            1.67e-03  19
+MAE_47560_p-297(psaA)            2.34e-04  19
+MAE_22930_p-216(coxB)            8.04e-03  19
+MAE_38140_p-292(nifJ)            5.74e-03  19
+MAE_12460_p-117(afuC)            3.23e-05  [+1(3.23e-05)]
+MAE_56680_p-61(sufA)             9.57e-07  [+1(9.57e-07)]
+MAE_22920_p-282(ctaA)            8.72e-03  19
+all4365_p-272(chlH)              4.81e-03  19
+all4365_p-232(chlH)              4.02e-03  19
+alr5154_p-177(psaA)              6.25e-04  19
+alr0950_p-134(coxB)              4.81e-03  19
+alr2803_p-92(nifJ)               1.22e-03  19
+alr3808_p-204(dpsA)              7.42e-06  [+1(7.42e-06)]
+alr2514_p-190(coxB)              5.71e-02  19
+all4001_p-161(isiA)              7.81e-07  [+1(7.81e-07)]
+alr3727_p-105(psbA)              1.39e-02  19
+alr4592_p-28(psbA)               4.37e-04  19
+asl0884_p-90(fdx)                4.93e-04  19
+alr3155_p-98(SYNPCC7002_         6.25e-04  19
+all3903_p-47(cce_4396)           4.37e-04  19
+all2367_p-181(all2367)           3.66e-03  19
+alr2405_p-235(isiB)              2.06e-04  19
+all1691_p-94(fur)                7.42e-06  [+1(7.42e-06)]
+all1692_p-320(sigC)              1.86e-02  19
+all2158_p-62(fhuA)               9.57e-07  [+1(9.57e-07)]
+alr2175_p-120(fhuE)              4.12e-07  [+1(4.12e-07)]
+alr2626_p-106(fhuE)              1.85e-03  19
+all2586_p-100(fecC)              3.88e-04  19
+all2586_p-32(fecC)               1.20e-04  19
+all2237_p-40(pchR)               2.66e-04  19
+all2235_p12(fecB)                1.36e-03  19
+all1101_p-238(fhuA)              2.05e-03  19
+all4924_p-32(fhuE)               2.02e-05  [+1(2.02e-05)]
+all5047_p-102(exbB)              1.46e-05  [+1(1.46e-05)]
+alr2184_p-39(pchR)               5.56e-04  19
+alr2185_p-69(fhuE)               1.58e-04  19
+alr2211_p-272(fhuA)              2.45e-02  19
+all2580_p-48(pchR)               7.91e-05  [+1(7.91e-05)]
+alr2174_p-96(pchR)               6.83e-05  [+1(6.83e-05)]
+Tery_2879_p-270(feoA)            1.38e-04  19
+Tery_2644_p-122(SYNPCC70         2.76e-03  19
+Tery_4282_p-285(dpsA)            5.74e-03  19
+Tery_0513_p-195(psbC)            2.66e-04  19
+Tery_1780_p-167(ctaA)            6.25e-03  19
+Tery_4773_p-64(SYNPCC700         9.45e-03  19
+Tery_3224_p-65(chlH)             3.34e-03  19
+Tery_1781_p-41(ctaB)             1.81e-04  19
+Tery_4669_p-80(psaA)             7.91e-05  [+1(7.91e-05)]
+Tery_3222_p-94(afuC)             1.38e-04  19
+Tery_2878_p-43(feoB)             6.03e-02  19
+Tery_3377_p-97(sufA)             2.07e-06  [+1(2.07e-06)]
+Tery_1667_p-156(isiA)            2.27e-03  19
+Tery_4504_p-35(fdx)              3.34e-03  19
+Tery_1958_p-44(fur)              6.23e-06  [+1(6.23e-06)]
+Tery_1780_p-278(ctaA)            8.79e-04  19
+Synpcc7942_2601_p-158(ct         1.58e-04  19
+Synpcc7942_1406_p-81(afu         2.68e-07  [+1(2.68e-07)]
+Synpcc7942_0938_p-30(cce         3.43e-04  19
+Synpcc7942_1542_p-45(isi         3.59e-06  [+1(3.59e-06)]
+Synpcc7942_2049_p-296(ps         1.51e-03  19
+PMT1340_p-30(ctaA)               4.06e-02  19
+CYA_2647_p-106(psbD)             2.50e-03  19
+CYA_2794_p-26(afuC)              3.59e-06  [+1(3.59e-06)]
+CYA_0643_p-92(fdx)               1.29e-02  19
+gvip470_p-195(psaA)              3.59e-02  19
+glr3733_p-58(perR)               7.86e-04  19
+gll1014_p-64(afuA)               6.30e-07  [+1(6.30e-07)]
+null_p-211(chlL)                 2.62e-02  19
+null_p-135(psbA)                 2.76e-03  19
+null_p-157(apcF)                 2.76e-03  19
+null_p-45(cce_4396)              5.26e-03  19
+null_p-121(isiA)                 7.42e-06  [+1(7.42e-06)]
+null_p-59(fur)                   8.79e-04  19
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,204 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/UxuR_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Mmwyl1_2784_p-136(uxuP)  1.0000     18  Mmwyl1_2783_p-90(uxuQ)   1.0000     18  
+Mmwyl1_2784_p-114(uxuP)  1.0000     18  Mmwyl1_2783_p-112(uxuQ)  1.0000     18  
+Mmwyl1_3059_p-163(bglX)  1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/UxuR_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/UxuR_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              90    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=     90    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.356 C 0.144 G 0.167 T 0.333 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.351 C 0.149 G 0.17 T 0.33 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTBRACCAA MEME-1	width =  10  sites =   5  llr = 58  E-value = 5.6e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::4a::aa
+pos.-specific     C  :::4::a8::
+probability       G  8a:26:::::
+matrix            T  ::a4:::2::
+
+         bits    2.7       *   
+                 2.5  *    *   
+                 2.2  *    *   
+                 1.9  *    **  
+Relative         1.6 ***   **  
+Entropy          1.4 ***  *****
+(16.7 bits)      1.1 *** ******
+                 0.8 **********
+                 0.5 **********
+                 0.3 **********
+                 0.0 ----------
+
+Multilevel           GGTCGACCAA
+consensus            A  TA  T  
+sequence                G      
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+Mmwyl1_3059_p-163(bglX)       6  1.01e-06      TTAAA GGTGGACCAA ATT       
+Mmwyl1_2784_p-114(uxuP)       6  1.01e-06      AGATT GGTTGACCAA ATT       
+Mmwyl1_2783_p-112(uxuQ)       6  1.49e-06      AATTT GGTCAACCAA TCT       
+Mmwyl1_2783_p-90(uxuQ)        6  5.70e-06      AAGTT AGTTGACCAA AAT       
+Mmwyl1_2784_p-136(uxuP)       6  9.47e-06      ATTTT GGTCAACTAA CTT       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mmwyl1_3059_p-163(bglX)             1e-06  5_[+1]_3
+Mmwyl1_2784_p-114(uxuP)             1e-06  5_[+1]_3
+Mmwyl1_2783_p-112(uxuQ)           1.5e-06  5_[+1]_3
+Mmwyl1_2783_p-90(uxuQ)            5.7e-06  5_[+1]_3
+Mmwyl1_2784_p-136(uxuP)           9.5e-06  5_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTBRACCAA width=10 seqs=5
+Mmwyl1_3059_p-163(bglX)  (    6) GGTGGACCAA  1 
+Mmwyl1_2784_p-114(uxuP)  (    6) GGTTGACCAA  1 
+Mmwyl1_2783_p-112(uxuQ)  (    6) GGTCAACCAA  1 
+Mmwyl1_2783_p-90(uxuQ)   (    6) AGTTGACCAA  1 
+Mmwyl1_2784_p-136(uxuP)  (    6) GGTCAACTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 45 bayes= 4.02748 E= 5.6e-008 
+   -81   -897    223   -897 
+  -897   -897    255   -897 
+  -897   -897   -897    160 
+  -897    142     23     28 
+    19   -897    182   -897 
+   151   -897   -897   -897 
+  -897    274   -897   -897 
+  -897    242   -897    -72 
+   151   -897   -897   -897 
+   151   -897   -897   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 5 E= 5.6e-008 
+ 0.200000  0.000000  0.800000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.400000  0.200000  0.400000 
+ 0.400000  0.000000  0.600000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.800000  0.000000  0.200000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTBRACCAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]GT[CTG][GA]AC[CT]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mmwyl1_2784_p-136(uxuP)          8.52e-05  5_[+1(9.47e-06)]_3
+Mmwyl1_2783_p-90(uxuQ)           5.13e-05  5_[+1(5.70e-06)]_3
+Mmwyl1_2784_p-114(uxuP)          9.09e-06  5_[+1(1.01e-06)]_3
+Mmwyl1_2783_p-112(uxuQ)          1.34e-05  5_[+1(1.49e-06)]_3
+Mmwyl1_3059_p-163(bglX)          9.09e-06  5_[+1(1.01e-06)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HypR2_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Pden_1183_p-178(hypR2)   1.0000     14  Pden_1184_p-50(hypY)     1.0000     14  
+MED193_09635_p-86(hypR2) 1.0000     14  MED193_08463_p-39(hypY)  1.0000     14  
+MED193_09625_p-151(hypD) 1.0000     14  ISM_08240_p-59(hypH)     1.0000     14  
+ISM_08255_p-165(hypD)    1.0000     14  ISM_08245_p-13(hypR2)    1.0000     14  
+TM1040_3324_p-129(hypR2) 1.0000     14  TM1040_3323_p-127(hypS)  1.0000     14  
+TM1040_3323_p-41(hypS)   1.0000     14  TM1040_3198_p-158(hypD)  1.0000     14  
+TM1040_3324_p-43(hypR2)  1.0000     14  TM1040_3325_p-55(hypH)   1.0000     14  
+SPOA0261_p-38(hypR2)     1.0000     14  SPOA0267_p-172(hypD)     1.0000     14  
+SPOA0260_p-64(hypH)      1.0000     14  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HypR2_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HypR2_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           14
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             238    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    238    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.361 C 0.13 G 0.13 T 0.378 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.36 C 0.132 G 0.132 T 0.376 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TWTTGKATMCAWWA MEME-1	width =  14  sites =  17  llr = 183  E-value = 7.9e-054
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2421::a:5:7649
+pos.-specific     C  ::12::::5a::1:
+probability       G  11::a5::::2:::
+matrix            T  8568:5:a::1461
+
+         bits    2.9     *    *    
+                 2.6     *    *    
+                 2.3     *    *    
+                 2.0     *    *    
+Relative         1.8     *    *    
+Entropy          1.5     * ** *    
+(15.6 bits)      1.2     ******   *
+                 0.9     ******   *
+                 0.6 *  ********* *
+                 0.3 **************
+                 0.0 --------------
+
+Multilevel           TTTTGTATACAATA
+consensus             AA  G  C GTA 
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+TM1040_3198_p-158(hypD)       1  5.66e-07          . TTTTGGATACAAAA           
+SPOA0260_p-64(hypH)           1  8.39e-07          . TTTTGGATACATTA           
+ISM_08240_p-59(hypH)          1  8.39e-07          . TTTTGGATACATTA           
+TM1040_3323_p-127(hypS)       1  1.03e-06          . TTTTGGATACGTTA           
+ISM_08255_p-165(hypD)         1  1.03e-06          . TTTTGTATCCATTA           
+MED193_09625_p-151(hypD)      1  1.03e-06          . AATTGGATCCAATA           
+SPOA0267_p-172(hypD)          1  2.23e-06          . TTCTGTATCCAAAA           
+ISM_08245_p-13(hypR2)         1  4.19e-06          . TAATGTATCCAAAA           
+MED193_08463_p-39(hypY)       1  4.19e-06          . GATTGGATACAATA           
+TM1040_3324_p-43(hypR2)       1  6.17e-06          . TAACGTATCCAAAA           
+MED193_09635_p-86(hypR2)      1  6.79e-06          . TATTGGATCCAATT           
+TM1040_3323_p-41(hypS)        1  7.38e-06          . TGATGTATCCGATA           
+TM1040_3324_p-129(hypR2)      1  8.68e-06          . TATCGGATACATCA           
+SPOA0261_p-38(hypR2)          1  1.10e-05          . ATCTGTATCCGAAA           
+Pden_1183_p-178(hypR2)        1  2.32e-05          . TTTCGTATACTATA           
+TM1040_3325_p-55(hypH)        1  2.48e-05          . ATATGTATACATTA           
+Pden_1184_p-50(hypY)          1  2.89e-05          . TATAGTATACGAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TM1040_3198_p-158(hypD)           5.7e-07  [+1]
+SPOA0260_p-64(hypH)               8.4e-07  [+1]
+ISM_08240_p-59(hypH)              8.4e-07  [+1]
+TM1040_3323_p-127(hypS)             1e-06  [+1]
+ISM_08255_p-165(hypD)               1e-06  [+1]
+MED193_09625_p-151(hypD)            1e-06  [+1]
+SPOA0267_p-172(hypD)              2.2e-06  [+1]
+ISM_08245_p-13(hypR2)             4.2e-06  [+1]
+MED193_08463_p-39(hypY)           4.2e-06  [+1]
+TM1040_3324_p-43(hypR2)           6.2e-06  [+1]
+MED193_09635_p-86(hypR2)          6.8e-06  [+1]
+TM1040_3323_p-41(hypS)            7.4e-06  [+1]
+TM1040_3324_p-129(hypR2)          8.7e-06  [+1]
+SPOA0261_p-38(hypR2)              1.1e-05  [+1]
+Pden_1183_p-178(hypR2)            2.3e-05  [+1]
+TM1040_3325_p-55(hypH)            2.5e-05  [+1]
+Pden_1184_p-50(hypY)              2.9e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TWTTGKATMCAWWA width=14 seqs=17
+TM1040_3198_p-158(hypD)  (    1) TTTTGGATACAAAA  1 
+SPOA0260_p-64(hypH)      (    1) TTTTGGATACATTA  1 
+ISM_08240_p-59(hypH)     (    1) TTTTGGATACATTA  1 
+TM1040_3323_p-127(hypS)  (    1) TTTTGGATACGTTA  1 
+ISM_08255_p-165(hypD)    (    1) TTTTGTATCCATTA  1 
+MED193_09625_p-151(hypD) (    1) AATTGGATCCAATA  1 
+SPOA0267_p-172(hypD)     (    1) TTCTGTATCCAAAA  1 
+ISM_08245_p-13(hypR2)    (    1) TAATGTATCCAAAA  1 
+MED193_08463_p-39(hypY)  (    1) GATTGGATACAATA  1 
+TM1040_3324_p-43(hypR2)  (    1) TAACGTATCCAAAA  1 
+MED193_09635_p-86(hypR2) (    1) TATTGGATCCAATT  1 
+TM1040_3323_p-41(hypS)   (    1) TGATGTATCCGATA  1 
+TM1040_3324_p-129(hypR2) (    1) TATCGGATACATCA  1 
+SPOA0261_p-38(hypR2)     (    1) ATCTGTATCCGAAA  1 
+Pden_1183_p-178(hypR2)   (    1) TTTCGTATACTATA  1 
+TM1040_3325_p-55(hypH)   (    1) ATATGTATACATTA  1 
+Pden_1184_p-50(hypY)     (    1) TATAGTATACGAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 17 bayes= 1.26303 E= 7.9e-054 
+  -103  -1073   -117    102 
+    20  -1073   -117     49 
+   -61    -17  -1073     78 
+  -261     42  -1073    102 
+ -1073  -1073    292  -1073 
+ -1073  -1073    183     49 
+   148  -1073  -1073  -1073 
+ -1073  -1073  -1073    141 
+    56    183  -1073  -1073 
+ -1073    292  -1073  -1073 
+    97  -1073     83   -267 
+    85  -1073  -1073     -9 
+    -3   -117  -1073     65 
+   139  -1073  -1073   -267 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 17 E= 7.9e-054 
+ 0.176471  0.000000  0.058824  0.764706 
+ 0.411765  0.000000  0.058824  0.529412 
+ 0.235294  0.117647  0.000000  0.647059 
+ 0.058824  0.176471  0.000000  0.764706 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.470588  0.529412 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.529412  0.470588  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.705882  0.000000  0.235294  0.058824 
+ 0.647059  0.000000  0.000000  0.352941 
+ 0.352941  0.058824  0.000000  0.588235 
+ 0.941176  0.000000  0.000000  0.058824 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWTTGKATMCAWWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[TA][TA]TG[TG]AT[AC]C[AG][AT][TA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pden_1183_p-178(hypR2)           2.32e-05  [+1(2.32e-05)]
+Pden_1184_p-50(hypY)             2.89e-05  [+1(2.89e-05)]
+MED193_09635_p-86(hypR2)         6.79e-06  [+1(6.79e-06)]
+MED193_08463_p-39(hypY)          4.19e-06  [+1(4.19e-06)]
+MED193_09625_p-151(hypD)         1.03e-06  [+1(1.03e-06)]
+ISM_08240_p-59(hypH)             8.39e-07  [+1(8.39e-07)]
+ISM_08255_p-165(hypD)            1.03e-06  [+1(1.03e-06)]
+ISM_08245_p-13(hypR2)            4.19e-06  [+1(4.19e-06)]
+TM1040_3324_p-129(hypR2)         8.68e-06  [+1(8.68e-06)]
+TM1040_3323_p-127(hypS)          1.03e-06  [+1(1.03e-06)]
+TM1040_3323_p-41(hypS)           7.38e-06  [+1(7.38e-06)]
+TM1040_3198_p-158(hypD)          5.66e-07  [+1(5.66e-07)]
+TM1040_3324_p-43(hypR2)          6.17e-06  [+1(6.17e-06)]
+TM1040_3325_p-55(hypH)           2.48e-05  [+1(2.48e-05)]
+SPOA0261_p-38(hypR2)             1.10e-05  [+1(1.10e-05)]
+SPOA0267_p-172(hypD)             2.23e-06  [+1(2.23e-06)]
+SPOA0260_p-64(hypH)              8.39e-07  [+1(8.39e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

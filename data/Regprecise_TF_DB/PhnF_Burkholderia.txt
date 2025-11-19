@@ -1,0 +1,273 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnF_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL2850_p-61(phnC)      1.0000     22  BPSL2850_p-53(phnC)      1.0000     22  
+BPSL2857_p-66(phnG)      1.0000     22  BPSL2858_p-88(phnF)      1.0000     22  
+BMA2407_p-109(phnC)      1.0000     22  BMA2407_p-101(phnC)      1.0000     22  
+BMA2400_p-66(phnG)       1.0000     22  BMA2399_p-130(phnF)      1.0000     22  
+Bxe_B2179_p-68(phnG)     1.0000     22  Bxe_B2178_p-135(phnF)    1.0000     22  
+Bxe_B0839_p-104(phnC)    1.0000     22  Bphy_4623_p-111(phnC)    1.0000     22  
+Bphy_3773_p-90(phnG)     1.0000     22  Bphy_3772_p-128(phnF)    1.0000     22  
+Bphy_4623_p-103(phnC)    1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnF_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnF_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             330    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    330    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.33 C 0.173 G 0.194 T 0.303 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.329 C 0.174 G 0.195 T 0.302 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TMTARACGTCTAGACGTWTAKA MEME-1	width =  22  sites =  15  llr = 303  E-value = 1.3e-091
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :51a69:2:2:a:9:::3:7:9
+pos.-specific     C  151:::9::8::::9::2:11:
+probability       G  11::4:18::::9::a1:1151
+matrix            T  8:7::1::a:a:111:95913:
+
+         bits    2.5                       
+                 2.3       *        *      
+                 2.0       *       **      
+                 1.8       * * * * **      
+Relative         1.5    *  ******* **      
+Entropy          1.3    *  *********** *  *
+(29.1 bits)      1.0 *  ************** *  *
+                 0.8 ***************** * **
+                 0.5 ******************* **
+                 0.3 **********************
+                 0.0 ----------------------
+
+Multilevel           TATAAACGTCTAGACGTTTAGA
+consensus             C  G  A A       A  T 
+sequence                              C    
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+BMA2400_p-66(phnG)            1  4.60e-13          . TATAGACGTCTAGACGTTTAGA           
+BPSL2857_p-66(phnG)           1  4.60e-13          . TATAGACGTCTAGACGTTTAGA           
+BMA2399_p-130(phnF)           1  2.44e-12          . TCTAAACGTCTAGACGTCTATA           
+BPSL2858_p-88(phnF)           1  2.44e-12          . TCTAAACGTCTAGACGTCTATA           
+Bphy_3773_p-90(phnG)          1  5.74e-12          . TACAAACGTCTAGACGTTTAGA           
+Bxe_B2179_p-68(phnG)          1  6.89e-12          . CCTAAACGTCTAGACGTTTAGA           
+Bxe_B2178_p-135(phnF)         1  9.90e-12          . TCTAAACGTCTAGACGTTTAGG           
+Bphy_3772_p-128(phnF)         1  2.27e-11          . TCTAAACGTCTAGACGTTTGTA           
+Bxe_B0839_p-104(phnC)         1  2.65e-10          . TATAGTCGTCTAGACGTTGCGA           
+BMA2407_p-109(phnC)           1  2.51e-09          . GAAAAACATCTAGACGTATATA           
+BPSL2850_p-61(phnC)           1  2.51e-09          . GAAAAACATCTAGACGTATATA           
+Bphy_4623_p-103(phnC)         1  3.93e-09          . TATAGTCGTCTAGATGTTGCGA           
+BMA2407_p-101(phnC)           1  8.68e-09          . TCTAGACGTATATACGGATTCA           
+BPSL2850_p-53(phnC)           1  8.68e-09          . TCTAGACGTATATACGGATTCA           
+Bphy_4623_p-111(phnC)         1  5.43e-08          . TGCAAAGATATAGTCGTCTAGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BMA2400_p-66(phnG)                4.6e-13  [+1]
+BPSL2857_p-66(phnG)               4.6e-13  [+1]
+BMA2399_p-130(phnF)               2.4e-12  [+1]
+BPSL2858_p-88(phnF)               2.4e-12  [+1]
+Bphy_3773_p-90(phnG)              5.7e-12  [+1]
+Bxe_B2179_p-68(phnG)              6.9e-12  [+1]
+Bxe_B2178_p-135(phnF)             9.9e-12  [+1]
+Bphy_3772_p-128(phnF)             2.3e-11  [+1]
+Bxe_B0839_p-104(phnC)             2.6e-10  [+1]
+BMA2407_p-109(phnC)               2.5e-09  [+1]
+BPSL2850_p-61(phnC)               2.5e-09  [+1]
+Bphy_4623_p-103(phnC)             3.9e-09  [+1]
+BMA2407_p-101(phnC)               8.7e-09  [+1]
+BPSL2850_p-53(phnC)               8.7e-09  [+1]
+Bphy_4623_p-111(phnC)             5.4e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TMTARACGTCTAGACGTWTAKA width=22 seqs=15
+BMA2400_p-66(phnG)       (    1) TATAGACGTCTAGACGTTTAGA  1 
+BPSL2857_p-66(phnG)      (    1) TATAGACGTCTAGACGTTTAGA  1 
+BMA2399_p-130(phnF)      (    1) TCTAAACGTCTAGACGTCTATA  1 
+BPSL2858_p-88(phnF)      (    1) TCTAAACGTCTAGACGTCTATA  1 
+Bphy_3773_p-90(phnG)     (    1) TACAAACGTCTAGACGTTTAGA  1 
+Bxe_B2179_p-68(phnG)     (    1) CCTAAACGTCTAGACGTTTAGA  1 
+Bxe_B2178_p-135(phnF)    (    1) TCTAAACGTCTAGACGTTTAGG  1 
+Bphy_3772_p-128(phnF)    (    1) TCTAAACGTCTAGACGTTTGTA  1 
+Bxe_B0839_p-104(phnC)    (    1) TATAGTCGTCTAGACGTTGCGA  1 
+BMA2407_p-109(phnC)      (    1) GAAAAACATCTAGACGTATATA  1 
+BPSL2850_p-61(phnC)      (    1) GAAAAACATCTAGACGTATATA  1 
+Bphy_4623_p-103(phnC)    (    1) TATAGTCGTCTAGATGTTGCGA  1 
+BMA2407_p-101(phnC)      (    1) TCTAGACGTATATACGGATTCA  1 
+BPSL2850_p-53(phnC)      (    1) TCTAGACGTATATACGGATTCA  1 
+Bphy_4623_p-111(phnC)    (    1) TGCAAAGATATAGTCGTCTAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 15 bayes= 1.17688 E= 1.3e-091 
+ -1055   -138    -55    140 
+    50    143   -154  -1055 
+  -130    -38  -1055    128 
+   160  -1055  -1055  -1055 
+    86  -1055    104  -1055 
+   140  -1055  -1055   -118 
+ -1055    243   -154  -1055 
+   -72  -1055    204  -1055 
+ -1055  -1055  -1055    172 
+   -72    220  -1055  -1055 
+ -1055  -1055  -1055    172 
+   160  -1055  -1055  -1055 
+ -1055  -1055    215   -118 
+   150  -1055  -1055   -218 
+ -1055    243  -1055   -218 
+ -1055  -1055    236  -1055 
+ -1055  -1055    -55    152 
+   -30     20  -1055     82 
+ -1055  -1055    -55    152 
+   102    -38   -154   -118 
+ -1055    -38    145     14 
+   150  -1055   -154  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 15 E= 1.3e-091 
+ 0.000000  0.066667  0.133333  0.800000 
+ 0.466667  0.466667  0.066667  0.000000 
+ 0.133333  0.133333  0.000000  0.733333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.400000  0.000000 
+ 0.866667  0.000000  0.000000  0.133333 
+ 0.000000  0.933333  0.066667  0.000000 
+ 0.200000  0.000000  0.800000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.866667  0.133333 
+ 0.933333  0.000000  0.000000  0.066667 
+ 0.000000  0.933333  0.000000  0.066667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.133333  0.866667 
+ 0.266667  0.200000  0.000000  0.533333 
+ 0.000000  0.000000  0.133333  0.866667 
+ 0.666667  0.133333  0.066667  0.133333 
+ 0.000000  0.133333  0.533333  0.333333 
+ 0.933333  0.000000  0.066667  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMTARACGTCTAGACGTWTAKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AC]TA[AG]AC[GA]T[CA]TAGACGT[TAC]TA[GT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL2850_p-61(phnC)              2.51e-09  [+1(2.51e-09)]
+BPSL2850_p-53(phnC)              8.68e-09  [+1(8.68e-09)]
+BPSL2857_p-66(phnG)              4.60e-13  [+1(4.60e-13)]
+BPSL2858_p-88(phnF)              2.44e-12  [+1(2.44e-12)]
+BMA2407_p-109(phnC)              2.51e-09  [+1(2.51e-09)]
+BMA2407_p-101(phnC)              8.68e-09  [+1(8.68e-09)]
+BMA2400_p-66(phnG)               4.60e-13  [+1(4.60e-13)]
+BMA2399_p-130(phnF)              2.44e-12  [+1(2.44e-12)]
+Bxe_B2179_p-68(phnG)             6.89e-12  [+1(6.89e-12)]
+Bxe_B2178_p-135(phnF)            9.90e-12  [+1(9.90e-12)]
+Bxe_B0839_p-104(phnC)            2.65e-10  [+1(2.65e-10)]
+Bphy_4623_p-111(phnC)            5.43e-08  [+1(5.43e-08)]
+Bphy_3773_p-90(phnG)             5.74e-12  [+1(5.74e-12)]
+Bphy_3772_p-128(phnF)            2.27e-11  [+1(2.27e-11)]
+Bphy_4623_p-103(phnC)            3.93e-09  [+1(3.93e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

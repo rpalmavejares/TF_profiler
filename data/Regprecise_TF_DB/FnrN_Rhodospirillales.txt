@@ -1,0 +1,282 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/FnrN_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+APA01_25650_p-207(fnrN)  1.0000     20  APA01_25640_p-90(ompW)   1.0000     20  
+AZL_003350_p-192(ccoN)   1.0000     20  AZL_003210_p-138(hemA)   1.0000     20  
+Gdia_1984_p-126(fnrN)    1.0000     20  Gdia_1985_p-94(ompW)     1.0000     20  
+GOX0973_p-75(ompW)       1.0000     20  GOX0974_p-90(fnrN)       1.0000     20  
+amb0883_p-78(cycA)       1.0000     20  Magn03010752_p-77(cycA)  1.0000     20  
+Magn03010411_p-161(ccoN) 1.0000     20  RC1_1280_p-190(ccoN)     1.0000     20  
+RC1_1607_p-121(ompW)     1.0000     20  RC1_0996_p-164(hemA)     1.0000     20  
+RC1_1280_p-120(ccoN)     1.0000     20  RC1_2984_p-305(fnrN)     1.0000     20  
+Rru_A3332_p-324(ccoN)    1.0000     20  Rru_A3322_p-119(fnrN)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/FnrN_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/FnrN_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             360    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    360    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.281 C 0.208 G 0.214 T 0.297 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.28 C 0.209 G 0.214 T 0.297 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GMNTTGAYYTAGATCAAKGC MEME-1	width =  20  sites =  18  llr = 275  E-value = 3.8e-082
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  242:::a:1:626::a922:
+pos.-specific     C  143::::443111:a::1:7
+probability       G  722::a::11263:::1371
+matrix            T  1:2aa::64721:a:::422
+
+         bits    2.3      *        *     
+                 2.0      *        *     
+                 1.8    ****      ***    
+                 1.6    ****      ****   
+Relative         1.4    ****      ****   
+Entropy          1.1    ****      ****  *
+(22.0 bits)      0.9    *****     **** **
+                 0.7 ** ***** *  ***** **
+                 0.5 ** ************** **
+                 0.2 ** *****************
+                 0.0 --------------------
+
+Multilevel           GCCTTGATCTAGATCAATGC
+consensus             AA    CTC AG    G  
+sequence               G                 
+                       T                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+APA01_25640_p-90(ompW)        1  1.29e-09          . GATTTGATCTAAATCAAGGC           
+Magn03010752_p-77(cycA)       1  3.17e-09          . GACTTGACCTTGCTCAATGC           
+amb0883_p-78(cycA)            1  3.17e-09          . GACTTGACCTTGCTCAATGC           
+APA01_25650_p-207(fnrN)       1  3.17e-09          . GCCTTGATTTAGATCAAATC           
+Gdia_1984_p-126(fnrN)         1  5.38e-09          . GCATTGATTCAGATCAATTC           
+AZL_003210_p-138(hemA)        1  6.13e-09          . GGCTTGATTTCGATCAATGC           
+Rru_A3332_p-324(ccoN)         1  1.79e-08          . GATTTGATCTAAATCAATGG           
+RC1_1280_p-120(ccoN)          1  1.79e-08          . CCGTTGATTCAAATCAATGC           
+RC1_2984_p-305(fnrN)          1  2.75e-08          . ACCTTGACTTGGATCAAGAC           
+GOX0973_p-75(ompW)            1  2.75e-08          . GACTTGATTCAGGTCAACGT           
+RC1_1607_p-121(ompW)          1  3.05e-08          . GAATTGATCCAGGTCAGGGC           
+RC1_0996_p-164(hemA)          1  8.61e-08          . GAATTGACCGACATCAACGC           
+GOX0974_p-90(fnrN)            1  1.02e-07          . ACGTTGACCTGAATCAAGTC           
+Gdia_1985_p-94(ompW)          1  1.79e-07          . CGGTTGATTCATGTCAAGGC           
+Rru_A3322_p-119(fnrN)         1  2.57e-07          . GGTTTGACCTGGATCAAAAT           
+AZL_003350_p-192(ccoN)        1  2.57e-07          . TCGTTGACGTAGATCAATGT           
+RC1_1280_p-190(ccoN)          1  5.48e-07          . GCATTGACATTCGTCAAAAC           
+Magn03010411_p-161(ccoN)      1  6.13e-07          . ACTTTGATATATGTCAATGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+APA01_25640_p-90(ompW)            1.3e-09  [+1]
+Magn03010752_p-77(cycA)           3.2e-09  [+1]
+amb0883_p-78(cycA)                3.2e-09  [+1]
+APA01_25650_p-207(fnrN)           3.2e-09  [+1]
+Gdia_1984_p-126(fnrN)             5.4e-09  [+1]
+AZL_003210_p-138(hemA)            6.1e-09  [+1]
+Rru_A3332_p-324(ccoN)             1.8e-08  [+1]
+RC1_1280_p-120(ccoN)              1.8e-08  [+1]
+RC1_2984_p-305(fnrN)              2.8e-08  [+1]
+GOX0973_p-75(ompW)                2.8e-08  [+1]
+RC1_1607_p-121(ompW)              3.1e-08  [+1]
+RC1_0996_p-164(hemA)              8.6e-08  [+1]
+GOX0974_p-90(fnrN)                  1e-07  [+1]
+Gdia_1985_p-94(ompW)              1.8e-07  [+1]
+Rru_A3322_p-119(fnrN)             2.6e-07  [+1]
+AZL_003350_p-192(ccoN)            2.6e-07  [+1]
+RC1_1280_p-190(ccoN)              5.5e-07  [+1]
+Magn03010411_p-161(ccoN)          6.1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GMNTTGAYYTAGATCAAKGC width=20 seqs=18
+APA01_25640_p-90(ompW)   (    1) GATTTGATCTAAATCAAGGC  1 
+Magn03010752_p-77(cycA)  (    1) GACTTGACCTTGCTCAATGC  1 
+amb0883_p-78(cycA)       (    1) GACTTGACCTTGCTCAATGC  1 
+APA01_25650_p-207(fnrN)  (    1) GCCTTGATTTAGATCAAATC  1 
+Gdia_1984_p-126(fnrN)    (    1) GCATTGATTCAGATCAATTC  1 
+AZL_003210_p-138(hemA)   (    1) GGCTTGATTTCGATCAATGC  1 
+Rru_A3332_p-324(ccoN)    (    1) GATTTGATCTAAATCAATGG  1 
+RC1_1280_p-120(ccoN)     (    1) CCGTTGATTCAAATCAATGC  1 
+RC1_2984_p-305(fnrN)     (    1) ACCTTGACTTGGATCAAGAC  1 
+GOX0973_p-75(ompW)       (    1) GACTTGATTCAGGTCAACGT  1 
+RC1_1607_p-121(ompW)     (    1) GAATTGATCCAGGTCAGGGC  1 
+RC1_0996_p-164(hemA)     (    1) GAATTGACCGACATCAACGC  1 
+GOX0974_p-90(fnrN)       (    1) ACGTTGACCTGAATCAAGTC  1 
+Gdia_1985_p-94(ompW)     (    1) CGGTTGATTCATGTCAAGGC  1 
+Rru_A3322_p-119(fnrN)    (    1) GGTTTGACCTGGATCAAAAT  1 
+AZL_003350_p-192(ccoN)   (    1) TCGTTGACGTAGATCAATGT  1 
+RC1_1280_p-190(ccoN)     (    1) GCATTGACATTCGTCAAAAC  1 
+Magn03010411_p-161(ccoN) (    1) ACTTTGATATATGTCAATGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 18 bayes= 1.29956 E= 3.8e-082 
+   -75    -91    164   -241 
+    47    109    -36  -1081 
+   -33     67      5    -42 
+ -1081  -1081  -1081    175 
+ -1081  -1081  -1081    175 
+ -1081  -1081    222  -1081 
+   183  -1081  -1081  -1081 
+ -1081    109  -1081     90 
+  -133    109   -195     39 
+ -1081     41   -195    117 
+   112   -191    -36    -83 
+   -33    -91    137   -142 
+   112    -91     37  -1081 
+ -1081  -1081  -1081    175 
+ -1081    226  -1081  -1081 
+   183  -1081  -1081  -1081 
+   175  -1081   -195  -1081 
+   -75    -91     37     58 
+   -75  -1081    164    -83 
+ -1081    179    -95    -83 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 18 E= 3.8e-082 
+ 0.166667  0.111111  0.666667  0.055556 
+ 0.388889  0.444444  0.166667  0.000000 
+ 0.222222  0.333333  0.222222  0.222222 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.444444  0.000000  0.555556 
+ 0.111111  0.444444  0.055556  0.388889 
+ 0.000000  0.277778  0.055556  0.666667 
+ 0.611111  0.055556  0.166667  0.166667 
+ 0.222222  0.111111  0.555556  0.111111 
+ 0.611111  0.111111  0.277778  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.944444  0.000000  0.055556  0.000000 
+ 0.166667  0.111111  0.277778  0.444444 
+ 0.166667  0.000000  0.666667  0.166667 
+ 0.000000  0.722222  0.111111  0.166667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GMNTTGAYYTAGATCAAKGC MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[CA][CAGT]TTGA[TC][CT][TC]A[GA][AG]TCAA[TG]GC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+APA01_25650_p-207(fnrN)          3.17e-09  [+1(3.17e-09)]
+APA01_25640_p-90(ompW)           1.29e-09  [+1(1.29e-09)]
+AZL_003350_p-192(ccoN)           2.57e-07  [+1(2.57e-07)]
+AZL_003210_p-138(hemA)           6.13e-09  [+1(6.13e-09)]
+Gdia_1984_p-126(fnrN)            5.38e-09  [+1(5.38e-09)]
+Gdia_1985_p-94(ompW)             1.79e-07  [+1(1.79e-07)]
+GOX0973_p-75(ompW)               2.75e-08  [+1(2.75e-08)]
+GOX0974_p-90(fnrN)               1.02e-07  [+1(1.02e-07)]
+amb0883_p-78(cycA)               3.17e-09  [+1(3.17e-09)]
+Magn03010752_p-77(cycA)          3.17e-09  [+1(3.17e-09)]
+Magn03010411_p-161(ccoN)         6.13e-07  [+1(6.13e-07)]
+RC1_1280_p-190(ccoN)             5.48e-07  [+1(5.48e-07)]
+RC1_1607_p-121(ompW)             3.05e-08  [+1(3.05e-08)]
+RC1_0996_p-164(hemA)             8.61e-08  [+1(8.61e-08)]
+RC1_1280_p-120(ccoN)             1.79e-08  [+1(1.79e-08)]
+RC1_2984_p-305(fnrN)             2.75e-08  [+1(2.75e-08)]
+Rru_A3332_p-324(ccoN)            1.79e-08  [+1(1.79e-08)]
+Rru_A3322_p-119(fnrN)            2.57e-07  [+1(2.57e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

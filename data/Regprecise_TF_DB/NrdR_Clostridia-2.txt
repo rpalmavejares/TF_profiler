@@ -1,0 +1,243 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= NrdR_Clostridia-2.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CLOBAR_00583(nrdD2)Score 1.0000     16  CLOBAR_00583(nrdD2)Score 1.0000     16  
+CLOBAR_00514(nrdD)Score= 1.0000     16  CLOBAR_00514(nrdD)Score= 1.0000     16  
+CLOBAR_02374(nrdE)Score= 1.0000     16  CLOBAR_02374(nrdE)Score= 1.0000     16  
+CD2995(nrdE)Score=5.6,Po 1.0000     16  CD0108(nrdD)Score=5.6,Po 1.0000     16  
+CD2995(nrdE)Score=4.4,Po 1.0000     16  CD0108(nrdD)Score=5.4,Po 1.0000     16  
+CLOHIR_00659(nrdD)Score= 1.0000     16  CLOHIR_00659(nrdD)Score= 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna NrdR_Clostridia-2.fasta -oc NrdR_Clostridia-2 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           16
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             192    N=              12    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.359 C 0.115 G 0.167 T 0.359 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.357 C 0.117 G 0.168 T 0.357 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  14  sites =  12  llr = 161  E-value = 1.0e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a:39:a:8:8::4
+pos.-specific     C  4:a::1::::::::
+probability       G  1:::1:::3:2a:5
+matrix            T  5::8:9:a:a1:a1
+
+         bits    3.1   *           
+                 2.8   *           
+                 2.5   *        *  
+                 2.2   *        *  
+Relative         1.9   *        *  
+Entropy          1.5  **   ** * ** 
+(19.3 bits)      1.2  ** **** * ** 
+                 0.9 *** ****** ** 
+                 0.6 **************
+                 0.3 **************
+                 0.0 --------------
+
+Multilevel           TACTATATATAGTG
+consensus            C  A    G    A
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+CLOHIR_00659(nrdD)Score=      2  1.30e-08          A CACTATATATAGTG G         
+CLOBAR_00583(nrdD2)Score      2  1.30e-08          G CACTATATATAGTG C         
+CLOBAR_00583(nrdD2)Score      2  1.96e-07          C CACAATATATGGTG T         
+CLOBAR_00514(nrdD)Score=      2  4.02e-07          C CACTATATATTGTG G         
+CD0108(nrdD)Score=5.4,Po      2  4.24e-07          A TACTACATATAGTG G         
+CD2995(nrdE)Score=4.4,Po      2  4.81e-07          T GACTATATGTAGTG C         
+CD2995(nrdE)Score=5.6,Po      2  4.81e-07          A TACTATATGTAGTA T         
+CLOBAR_00514(nrdD)Score=      2  4.81e-07          A TACTATATGTAGTA T         
+CLOBAR_02374(nrdE)Score=      2  6.46e-07          A TACTATATATGGTA T         
+CD0108(nrdD)Score=5.6,Po      2  8.88e-07          A TACAATATATAGTA A         
+CLOHIR_00659(nrdD)Score=      2  1.26e-06          A TACTATATATAGTT G         
+CLOBAR_02374(nrdE)Score=      2  1.44e-06          G CACAGTATATAGTA G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CLOHIR_00659(nrdD)Score=          1.3e-08  1_[+1]_1
+CLOBAR_00583(nrdD2)Score          1.3e-08  1_[+1]_1
+CLOBAR_00583(nrdD2)Score            2e-07  1_[+1]_1
+CLOBAR_00514(nrdD)Score=            4e-07  1_[+1]_1
+CD0108(nrdD)Score=5.4,Po          4.2e-07  1_[+1]_1
+CD2995(nrdE)Score=4.4,Po          4.8e-07  1_[+1]_1
+CD2995(nrdE)Score=5.6,Po          4.8e-07  1_[+1]_1
+CLOBAR_00514(nrdD)Score=          4.8e-07  1_[+1]_1
+CLOBAR_02374(nrdE)Score=          6.5e-07  1_[+1]_1
+CD0108(nrdD)Score=5.6,Po          8.9e-07  1_[+1]_1
+CLOHIR_00659(nrdD)Score=          1.3e-06  1_[+1]_1
+CLOBAR_02374(nrdE)Score=          1.4e-06  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=14 seqs=12
+CLOHIR_00659(nrdD)Score= (    2) CACTATATATAGTG  1 
+CLOBAR_00583(nrdD2)Score (    2) CACTATATATAGTG  1 
+CLOBAR_00583(nrdD2)Score (    2) CACAATATATGGTG  1 
+CLOBAR_00514(nrdD)Score= (    2) CACTATATATTGTG  1 
+CD0108(nrdD)Score=5.4,Po (    2) TACTACATATAGTG  1 
+CD2995(nrdE)Score=4.4,Po (    2) GACTATATGTAGTG  1 
+CD2995(nrdE)Score=5.6,Po (    2) TACTATATGTAGTA  1 
+CLOBAR_00514(nrdD)Score= (    2) TACTATATGTAGTA  1 
+CLOBAR_02374(nrdE)Score= (    2) TACTATATATGGTA  1 
+CD0108(nrdD)Score=5.6,Po (    2) TACAATATATAGTA  1 
+CLOHIR_00659(nrdD)Score= (    2) TACTATATATAGTT  1 
+CLOBAR_02374(nrdE)Score= (    2) CACAGTATATAGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 36 bayes= 3 E= 1.0e-039 
+ -1023    183   -101     49 
+   148  -1023  -1023  -1023 
+ -1023    309  -1023  -1023 
+   -51  -1023  -1023    107 
+   136  -1023   -101  -1023 
+ -1023    -49  -1023    136 
+   148  -1023  -1023  -1023 
+ -1023  -1023  -1023    148 
+   107  -1023     57  -1023 
+ -1023  -1023  -1023    148 
+   107  -1023     -1   -210 
+ -1023  -1023    257  -1023 
+ -1023  -1023  -1023    148 
+    22  -1023    157   -210 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 12 E= 1.0e-039 
+ 0.000000  0.416667  0.083333  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.083333  0.000000  0.916667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.750000  0.000000  0.166667  0.083333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.416667  0.000000  0.500000  0.083333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[TC]AC[TA]ATAT[AG]TAGT[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CLOBAR_00583(nrdD2)Score         3.90e-08  1_[+1(1.30e-08)]_1
+CLOBAR_00583(nrdD2)Score         5.89e-07  1_[+1(1.96e-07)]_1
+CLOBAR_00514(nrdD)Score=         1.44e-06  1_[+1(4.81e-07)]_1
+CLOBAR_00514(nrdD)Score=         1.21e-06  1_[+1(4.02e-07)]_1
+CLOBAR_02374(nrdE)Score=         4.31e-06  1_[+1(1.44e-06)]_1
+CLOBAR_02374(nrdE)Score=         1.94e-06  1_[+1(6.46e-07)]_1
+CD2995(nrdE)Score=5.6,Po         1.44e-06  1_[+1(4.81e-07)]_1
+CD0108(nrdD)Score=5.6,Po         2.66e-06  1_[+1(8.88e-07)]_1
+CD2995(nrdE)Score=4.4,Po         1.44e-06  1_[+1(4.81e-07)]_1
+CD0108(nrdD)Score=5.4,Po         1.27e-06  1_[+1(4.24e-07)]_1
+CLOHIR_00659(nrdD)Score=         3.90e-08  1_[+1(1.30e-08)]_1
+CLOHIR_00659(nrdD)Score=         3.79e-06  1_[+1(1.26e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

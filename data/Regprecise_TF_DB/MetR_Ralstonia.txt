@@ -1,0 +1,249 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MetR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSp0677_p-38(metR)       1.0000     17  RSp0676_p-94(metE)       1.0000     17  
+Rpic_4541_p-32(metR)     1.0000     17  Rpic_4542_p-105(metE)    1.0000     17  
+Rmet_4563_p-36(metR)     1.0000     17  Rmet_4564_p-102(metE)    1.0000     17  
+Reut_B4244_p-54(metR)    1.0000     17  Reut_B4245_p-66(metE)    1.0000     17  
+H16_B1580_p-51(metR)     1.0000     17  H16_B1581_p-96(metE)     1.0000     17  
+RALTA_B1419_p-51(metR)   1.0000     17  RALTA_B1420_p-96(metE)   1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MetR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MetR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             204    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    204    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.397 C 0.103 G 0.103 T 0.397 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.394 C 0.106 G 0.106 T 0.394 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATGAATTWAATTCATA MEME-1	width =  17  sites =  12  llr = 162  E-value = 4.4e-042
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  18::aa3:368:::a28
+pos.-specific     C  :::::::223:::a:11
+probability       G  11:a:::322:::::::
+matrix            T  82a:::863:3aa::81
+
+         bits    3.2    *         *   
+                 2.9    *         *   
+                 2.6    *         *   
+                 2.3    *         *   
+Relative         1.9    *         *   
+Entropy          1.6    *         *   
+(19.4 bits)      1.3   ****     ****  
+                 1.0   ****     ****  
+                 0.6 * ****** ****** *
+                 0.3 ******** ********
+                 0.0 -----------------
+
+Multilevel           TATGAATTAAATTCATA
+consensus                  AGTCT      
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+H16_B1581_p-96(metE)          1  1.31e-07          . TATGAAACTCATTCATA           
+H16_B1580_p-51(metR)          1  1.31e-07          . TATGAATGAGTTTCATA           
+Reut_B4245_p-66(metE)         1  1.53e-07          . TATGAAATTCATTCATA           
+Reut_B4244_p-54(metR)         1  1.53e-07          . TATGAATGAATTTCATA           
+Rpic_4542_p-105(metE)         1  1.79e-07          . TATGAATTGAATTCAAA           
+Rpic_4541_p-32(metR)          1  1.79e-07          . TTTGAATTCAATTCATA           
+RALTA_B1420_p-96(metE)        1  2.65e-07          . TATGAAATTGATTCATA           
+RALTA_B1419_p-51(metR)        1  2.65e-07          . TATGAATCAATTTCATA           
+RSp0676_p-94(metE)            1  5.73e-07          . TATGAATTCAATTCAAC           
+RSp0677_p-38(metR)            1  5.73e-07          . GTTGAATTGAATTCATA           
+Rmet_4564_p-102(metE)         1  1.23e-06          . TATGAATTTCATTCACT           
+Rmet_4563_p-36(metR)          1  1.23e-06          . AGTGAATGAAATTCATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H16_B1581_p-96(metE)              1.3e-07  [+1]
+H16_B1580_p-51(metR)              1.3e-07  [+1]
+Reut_B4245_p-66(metE)             1.5e-07  [+1]
+Reut_B4244_p-54(metR)             1.5e-07  [+1]
+Rpic_4542_p-105(metE)             1.8e-07  [+1]
+Rpic_4541_p-32(metR)              1.8e-07  [+1]
+RALTA_B1420_p-96(metE)            2.7e-07  [+1]
+RALTA_B1419_p-51(metR)            2.7e-07  [+1]
+RSp0676_p-94(metE)                5.7e-07  [+1]
+RSp0677_p-38(metR)                5.7e-07  [+1]
+Rmet_4564_p-102(metE)             1.2e-06  [+1]
+Rmet_4563_p-36(metR)              1.2e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATGAATTWAATTCATA width=17 seqs=12
+H16_B1581_p-96(metE)     (    1) TATGAAACTCATTCATA  1 
+H16_B1580_p-51(metR)     (    1) TATGAATGAGTTTCATA  1 
+Reut_B4245_p-66(metE)    (    1) TATGAAATTCATTCATA  1 
+Reut_B4244_p-54(metR)    (    1) TATGAATGAATTTCATA  1 
+Rpic_4542_p-105(metE)    (    1) TATGAATTGAATTCAAA  1 
+Rpic_4541_p-32(metR)     (    1) TTTGAATTCAATTCATA  1 
+RALTA_B1420_p-96(metE)   (    1) TATGAAATTGATTCATA  1 
+RALTA_B1419_p-51(metR)   (    1) TATGAATCAATTTCATA  1 
+RSp0676_p-94(metE)       (    1) TATGAATTCAATTCAAC  1 
+RSp0677_p-38(metR)       (    1) GTTGAATTGAATTCATA  1 
+Rmet_4564_p-102(metE)    (    1) TATGAATTTCATTCACT  1 
+Rmet_4563_p-36(metR)     (    1) AGTGAATGAAATTCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 12 bayes= 1 E= 4.4e-042 
+  -224  -1023    -34    108 
+    93  -1023    -34   -124 
+ -1023  -1023  -1023    134 
+ -1023  -1023    324  -1023 
+   134  -1023  -1023  -1023 
+   134  -1023  -1023  -1023 
+   -66  -1023  -1023     93 
+ -1023     66    124     56 
+   -24     66     66    -24 
+    56    124     66  -1023 
+    93  -1023  -1023    -66 
+ -1023  -1023  -1023    134 
+ -1023  -1023  -1023    134 
+ -1023    324  -1023  -1023 
+   134  -1023  -1023  -1023 
+  -124    -34  -1023     93 
+   108    -34  -1023   -224 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 12 E= 4.4e-042 
+ 0.083333  0.000000  0.083333  0.833333 
+ 0.750000  0.000000  0.083333  0.166667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.000000  0.166667  0.250000  0.583333 
+ 0.333333  0.166667  0.166667  0.333333 
+ 0.583333  0.250000  0.166667  0.000000 
+ 0.750000  0.000000  0.000000  0.250000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.166667  0.083333  0.000000  0.750000 
+ 0.833333  0.083333  0.000000  0.083333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGAATTWAATTCATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TATGAA[TA][TG][AT][AC][AT]TTCATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSp0677_p-38(metR)               5.73e-07  [+1(5.73e-07)]
+RSp0676_p-94(metE)               5.73e-07  [+1(5.73e-07)]
+Rpic_4541_p-32(metR)             1.79e-07  [+1(1.79e-07)]
+Rpic_4542_p-105(metE)            1.79e-07  [+1(1.79e-07)]
+Rmet_4563_p-36(metR)             1.23e-06  [+1(1.23e-06)]
+Rmet_4564_p-102(metE)            1.23e-06  [+1(1.23e-06)]
+Reut_B4244_p-54(metR)            1.53e-07  [+1(1.53e-07)]
+Reut_B4245_p-66(metE)            1.53e-07  [+1(1.53e-07)]
+H16_B1580_p-51(metR)             1.31e-07  [+1(1.31e-07)]
+H16_B1581_p-96(metE)             1.31e-07  [+1(1.31e-07)]
+RALTA_B1419_p-51(metR)           2.65e-07  [+1(2.65e-07)]
+RALTA_B1420_p-96(metE)           2.65e-07  [+1(2.65e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

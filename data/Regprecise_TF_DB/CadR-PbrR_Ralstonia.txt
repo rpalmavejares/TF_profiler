@@ -1,0 +1,298 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CadR-PbrR_Ralstonia.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+1RS05448(cadA)Score=5.6, 1.0000     21  2Rpic_1752(Rpic_1752)Sco 1.0000     21  
+3Rpic_1816(pbrR)Score=6. 1.0000     21  4Rpic_1642(pbrR)Score=6. 1.0000     21  
+5Rpic_4809(cadA)Score=5. 1.0000     21  6Rpic_1815(pbrA)Score=6. 1.0000     21  
+7Rpic_1643(pbrA)Score=6. 1.0000     21  8Rmet_4594(cadA)Score=6. 1.0000     21  
+9Rmet_5946(pbrR)Score=6. 1.0000     21  10Rmet_3456(cadR)Score=5 1.0000     21  
+11Rmet_5969(Rpic_1752)Sc 1.0000     21  12pMOL30_092(pbrR)Score= 1.0000     21  
+13Rmet_2303(pbrA)Score=4 1.0000     21  14Rmet_5947(pbrA)Score=6 1.0000     21  
+15pMOL30_091(pbrA)Score= 1.0000     21  16Reut_A3299(cadR)Score= 1.0000     21  
+17Reut_B3972(cadA)Score= 1.0000     21  18H16_A3607(cadR)Score=6 1.0000     21  
+19H16_B1644(cadA)Score=6 1.0000     21  20RALTA_A3062(cadR)Score 1.0000     21  
+21RALTA_B1454(cadA)Score 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CadR-PbrR_Ralstonia.fasta -oc CadR-PbrR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           21
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             441    N=              21    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.272 C 0.231 G 0.215 T 0.281 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.272 C 0.231 G 0.216 T 0.281 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  21  sites =  21  llr = 428  E-value = 1.7e-144
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::3:a::26::9:a:4:1
+pos.-specific     C  :a5a:1:::33:9::5:::1:
+probability       G  :::::61:9:13:::1:a69:
+matrix            T  ::5:a:9::74:1a13::::9
+
+         bits    2.2  * *             *   
+                 2.0  * *             *   
+                 1.8 ** *   *     *  **   
+                 1.5 ** **  **   **  ** * 
+Relative         1.3 ** ** ***   *** ** **
+Entropy          1.1 ** ** ****  *** *****
+(29.4 bits)      0.9 **********  *** *****
+                 0.7 ********** **** *****
+                 0.4 ********** **********
+                 0.2 ********** **********
+                 0.0 ---------------------
+
+Multilevel           ACCCTGTAGTTACTACAGGGT
+consensus              T  A   CCG   T  A  
+sequence                       A          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+21RALTA_B1454(cadA)Score      1  5.06e-12          . ACTCTGTAGCCACTACAGGGT           
+19H16_B1644(cadA)Score=6      1  5.06e-12          . ACTCTGTAGTCGCTACAGGGT           
+17Reut_B3972(cadA)Score=      1  6.30e-11          . ACTCTGTAGCGGCTACAGGGT           
+15pMOL30_091(pbrA)Score=      1  6.94e-11          . ACTCTATAGTAACTAGAGGGT           
+14Rmet_5947(pbrA)Score=6      1  6.94e-11          . ACTCTATAGTAACTAGAGGGT           
+11Rmet_5969(Rpic_1752)Sc      1  8.50e-11          . ACCCTGTAGTCACTACAGACT           
+2Rpic_1752(Rpic_1752)Sco      1  8.50e-11          . ACCCTGTAGTCACTACAGACT           
+4Rpic_1642(pbrR)Score=6.      1  9.30e-11          . ACTCTATAGCTACTATAGAGT           
+3Rpic_1816(pbrR)Score=6.      1  9.30e-11          . ACTCTATAGCTACTATAGAGT           
+20RALTA_A3062(cadR)Score      1  1.04e-10          . ACCCTGTAGTCGTTACAGGGT           
+12pMOL30_092(pbrR)Score=      1  1.27e-10          . ACCCTCTAGTTACTATAGAGT           
+9Rmet_5946(pbrR)Score=6.      1  1.27e-10          . ACCCTCTAGTTACTATAGAGT           
+18H16_A3607(cadR)Score=6      1  1.56e-10          . ACCCTGTAGTAGTTACAGGGT           
+7Rpic_1643(pbrA)Score=6.      1  1.56e-10          . ACTCTATAGTAGCTATAGAGT           
+6Rpic_1815(pbrA)Score=6.      1  1.56e-10          . ACTCTATAGTAGCTATAGAGT           
+8Rmet_4594(cadA)Score=6.      1  4.04e-10          . ACCCTGTAGCGACTAAAGGGT           
+10Rmet_3456(cadR)Score=5      1  1.02e-09          . ACCCTGTAATTACTACAGGGA           
+16Reut_A3299(cadR)Score=      1  1.26e-09          . ACCCCGTAGTCACTACAGAGA           
+1RS05448(cadA)Score=5.6,      1  2.47e-09          . ACCCTGGAGTTCCTTCAGGGT           
+5Rpic_4809(cadA)Score=5.      1  4.01e-09          . ACCCTGGAGCTTCTTCAGGGT           
+13Rmet_2303(pbrA)Score=4      1  1.05e-08          . ACTCTATATCTACTAGAGGTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+21RALTA_B1454(cadA)Score          5.1e-12  [+1]
+19H16_B1644(cadA)Score=6          5.1e-12  [+1]
+17Reut_B3972(cadA)Score=          6.3e-11  [+1]
+15pMOL30_091(pbrA)Score=          6.9e-11  [+1]
+14Rmet_5947(pbrA)Score=6          6.9e-11  [+1]
+11Rmet_5969(Rpic_1752)Sc          8.5e-11  [+1]
+2Rpic_1752(Rpic_1752)Sco          8.5e-11  [+1]
+4Rpic_1642(pbrR)Score=6.          9.3e-11  [+1]
+3Rpic_1816(pbrR)Score=6.          9.3e-11  [+1]
+20RALTA_A3062(cadR)Score            1e-10  [+1]
+12pMOL30_092(pbrR)Score=          1.3e-10  [+1]
+9Rmet_5946(pbrR)Score=6.          1.3e-10  [+1]
+18H16_A3607(cadR)Score=6          1.6e-10  [+1]
+7Rpic_1643(pbrA)Score=6.          1.6e-10  [+1]
+6Rpic_1815(pbrA)Score=6.          1.6e-10  [+1]
+8Rmet_4594(cadA)Score=6.            4e-10  [+1]
+10Rmet_3456(cadR)Score=5            1e-09  [+1]
+16Reut_A3299(cadR)Score=          1.3e-09  [+1]
+1RS05448(cadA)Score=5.6,          2.5e-09  [+1]
+5Rpic_4809(cadA)Score=5.            4e-09  [+1]
+13Rmet_2303(pbrA)Score=4          1.1e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=21 seqs=21
+21RALTA_B1454(cadA)Score (    1) ACTCTGTAGCCACTACAGGGT  1 
+19H16_B1644(cadA)Score=6 (    1) ACTCTGTAGTCGCTACAGGGT  1 
+17Reut_B3972(cadA)Score= (    1) ACTCTGTAGCGGCTACAGGGT  1 
+15pMOL30_091(pbrA)Score= (    1) ACTCTATAGTAACTAGAGGGT  1 
+14Rmet_5947(pbrA)Score=6 (    1) ACTCTATAGTAACTAGAGGGT  1 
+11Rmet_5969(Rpic_1752)Sc (    1) ACCCTGTAGTCACTACAGACT  1 
+2Rpic_1752(Rpic_1752)Sco (    1) ACCCTGTAGTCACTACAGACT  1 
+4Rpic_1642(pbrR)Score=6. (    1) ACTCTATAGCTACTATAGAGT  1 
+3Rpic_1816(pbrR)Score=6. (    1) ACTCTATAGCTACTATAGAGT  1 
+20RALTA_A3062(cadR)Score (    1) ACCCTGTAGTCGTTACAGGGT  1 
+12pMOL30_092(pbrR)Score= (    1) ACCCTCTAGTTACTATAGAGT  1 
+9Rmet_5946(pbrR)Score=6. (    1) ACCCTCTAGTTACTATAGAGT  1 
+18H16_A3607(cadR)Score=6 (    1) ACCCTGTAGTAGTTACAGGGT  1 
+7Rpic_1643(pbrA)Score=6. (    1) ACTCTATAGTAGCTATAGAGT  1 
+6Rpic_1815(pbrA)Score=6. (    1) ACTCTATAGTAGCTATAGAGT  1 
+8Rmet_4594(cadA)Score=6. (    1) ACCCTGTAGCGACTAAAGGGT  1 
+10Rmet_3456(cadR)Score=5 (    1) ACCCTGTAATTACTACAGGGA  1 
+16Reut_A3299(cadR)Score= (    1) ACCCCGTAGTCACTACAGAGA  1 
+1RS05448(cadA)Score=5.6, (    1) ACCCTGGAGTTCCTTCAGGGT  1 
+5Rpic_4809(cadA)Score=5. (    1) ACCCTGGAGCTTCTTCAGGGT  1 
+13Rmet_2303(pbrA)Score=4 (    1) ACTCTATATCTACTAGAGGTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 21 bayes= 1.38995 E= 1.7e-144 
+   188  -1104  -1104  -1104 
+ -1104    211  -1104  -1104 
+ -1104    118  -1104     76 
+ -1104    211  -1104  -1104 
+ -1104   -228  -1104    176 
+    29   -128    140  -1104 
+ -1104  -1104   -118    169 
+   188  -1104  -1104  -1104 
+  -251  -1104    207   -256 
+ -1104     53  -1104    125 
+   -19     30   -118     44 
+   119   -228     41   -256 
+ -1104    197  -1104   -156 
+ -1104  -1104  -1104    183 
+   173  -1104  -1104   -156 
+  -251    118    -59      2 
+   188  -1104  -1104  -1104 
+ -1104  -1104    221  -1104 
+    66  -1104    140  -1104 
+ -1104   -128    199   -256 
+  -151  -1104  -1104    169 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 21 E= 1.7e-144 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.523810  0.000000  0.476190 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.047619  0.000000  0.952381 
+ 0.333333  0.095238  0.571429  0.000000 
+ 0.000000  0.000000  0.095238  0.904762 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.047619  0.000000  0.904762  0.047619 
+ 0.000000  0.333333  0.000000  0.666667 
+ 0.238095  0.285714  0.095238  0.380952 
+ 0.619048  0.047619  0.285714  0.047619 
+ 0.000000  0.904762  0.000000  0.095238 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.904762  0.000000  0.000000  0.095238 
+ 0.047619  0.523810  0.142857  0.285714 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.428571  0.000000  0.571429  0.000000 
+ 0.000000  0.095238  0.857143  0.047619 
+ 0.095238  0.000000  0.000000  0.904762 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+AC[CT]CT[GA]TAG[TC][TCA][AG]CTA[CT]AG[GA]GT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+1RS05448(cadA)Score=5.6,         2.47e-09  [+1(2.47e-09)]
+2Rpic_1752(Rpic_1752)Sco         8.50e-11  [+1(8.50e-11)]
+3Rpic_1816(pbrR)Score=6.         9.30e-11  [+1(9.30e-11)]
+4Rpic_1642(pbrR)Score=6.         9.30e-11  [+1(9.30e-11)]
+5Rpic_4809(cadA)Score=5.         4.01e-09  [+1(4.01e-09)]
+6Rpic_1815(pbrA)Score=6.         1.56e-10  [+1(1.56e-10)]
+7Rpic_1643(pbrA)Score=6.         1.56e-10  [+1(1.56e-10)]
+8Rmet_4594(cadA)Score=6.         4.04e-10  [+1(4.04e-10)]
+9Rmet_5946(pbrR)Score=6.         1.27e-10  [+1(1.27e-10)]
+10Rmet_3456(cadR)Score=5         1.02e-09  [+1(1.02e-09)]
+11Rmet_5969(Rpic_1752)Sc         8.50e-11  [+1(8.50e-11)]
+12pMOL30_092(pbrR)Score=         1.27e-10  [+1(1.27e-10)]
+13Rmet_2303(pbrA)Score=4         1.05e-08  [+1(1.05e-08)]
+14Rmet_5947(pbrA)Score=6         6.94e-11  [+1(6.94e-11)]
+15pMOL30_091(pbrA)Score=         6.94e-11  [+1(6.94e-11)]
+16Reut_A3299(cadR)Score=         1.26e-09  [+1(1.26e-09)]
+17Reut_B3972(cadA)Score=         6.30e-11  [+1(6.30e-11)]
+18H16_A3607(cadR)Score=6         1.56e-10  [+1(1.56e-10)]
+19H16_B1644(cadA)Score=6         5.06e-12  [+1(5.06e-12)]
+20RALTA_A3062(cadR)Score         1.04e-10  [+1(1.04e-10)]
+21RALTA_B1454(cadA)Score         5.06e-12  [+1(5.06e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

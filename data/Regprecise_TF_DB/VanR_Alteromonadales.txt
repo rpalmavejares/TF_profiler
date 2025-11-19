@@ -1,0 +1,235 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/VanR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_0858_p-200(Patl_085 1.0000     12  Patl_0858_p-164(Patl_085 1.0000     12  
+Patl_0852_p-260(n/a)     1.0000     12  Patl_0845_p-242(vanR)    1.0000     12  
+Patl_0844_p-85(vanA)     1.0000     12  Patl_0844_p-32(vanA)     1.0000     12  
+Patl_0852_p-63(n/a)      1.0000     12  Patl_0867_p-1(n/a)       1.0000     12  
+Patl_0869_p-94(vanB)     1.0000     12  Patl_0845_p-72(vanR)     1.0000     12  
+Patl_0844_p-202(vanA)    1.0000     12  Patl_0845_p-189(vanR)    1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/VanR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/VanR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             144    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    144    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.278 C 0.194 G 0.174 T 0.354 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.277 C 0.196 G 0.176 T 0.351 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGGATCCAAT MEME-1	width =  10  sites =  12  llr = 128  E-value = 3.1e-034
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::9:::a8:
+pos.-specific     C  :111:8a::2
+probability       G  :88::2::1:
+matrix            T  a11:a:::28
+
+         bits    2.5           
+                 2.3       *   
+                 2.0       *   
+                 1.8      ***  
+Relative         1.5 ********  
+Entropy          1.3 ********  
+(15.4 bits)      1.0 ******** *
+                 0.8 **********
+                 0.5 **********
+                 0.3 **********
+                 0.0 ----------
+
+Multilevel           TGGATCCAAT
+consensus                      
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+Patl_0845_p-189(vanR)         3  1.09e-06         AT TGGATCCAAT           
+Patl_0844_p-202(vanA)         3  1.09e-06         AT TGGATCCAAT           
+Patl_0845_p-72(vanR)          3  1.09e-06         AT TGGATCCAAT           
+Patl_0844_p-85(vanA)          3  1.09e-06         AT TGGATCCAAT           
+Patl_0858_p-200(Patl_085      3  1.09e-06         TT TGGATCCAAT           
+Patl_0844_p-32(vanA)          3  1.70e-06         AA TGGATCCAAC           
+Patl_0845_p-242(vanR)         3  4.77e-06         GT TGGATCCATT           
+Patl_0869_p-94(vanB)          3  1.64e-05         TG TGGATGCAGT           
+Patl_0852_p-260(n/a)          3  1.77e-05         CT TCGATCCAAC           
+Patl_0858_p-164(Patl_085      3  1.84e-05         TT TGGCTGCAAT           
+Patl_0867_p-1(n/a)            3  4.59e-05         TA TGTATCCATT           
+Patl_0852_p-63(n/a)           3  5.98e-05         TA TTCATCCAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_0845_p-189(vanR)             1.1e-06  2_[+1]
+Patl_0844_p-202(vanA)             1.1e-06  2_[+1]
+Patl_0845_p-72(vanR)              1.1e-06  2_[+1]
+Patl_0844_p-85(vanA)              1.1e-06  2_[+1]
+Patl_0858_p-200(Patl_085          1.1e-06  2_[+1]
+Patl_0844_p-32(vanA)              1.7e-06  2_[+1]
+Patl_0845_p-242(vanR)             4.8e-06  2_[+1]
+Patl_0869_p-94(vanB)              1.6e-05  2_[+1]
+Patl_0852_p-260(n/a)              1.8e-05  2_[+1]
+Patl_0858_p-164(Patl_085          1.8e-05  2_[+1]
+Patl_0867_p-1(n/a)                4.6e-05  2_[+1]
+Patl_0852_p-63(n/a)                 6e-05  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGGATCCAAT width=10 seqs=12
+Patl_0845_p-189(vanR)    (    3) TGGATCCAAT  1 
+Patl_0844_p-202(vanA)    (    3) TGGATCCAAT  1 
+Patl_0845_p-72(vanR)     (    3) TGGATCCAAT  1 
+Patl_0844_p-85(vanA)     (    3) TGGATCCAAT  1 
+Patl_0858_p-200(Patl_085 (    3) TGGATCCAAT  1 
+Patl_0844_p-32(vanA)     (    3) TGGATCCAAC  1 
+Patl_0845_p-242(vanR)    (    3) TGGATCCATT  1 
+Patl_0869_p-94(vanB)     (    3) TGGATGCAGT  1 
+Patl_0852_p-260(n/a)     (    3) TCGATCCAAC  1 
+Patl_0858_p-164(Patl_085 (    3) TGGCTGCAAT  1 
+Patl_0867_p-1(n/a)       (    3) TGTATCCATT  1 
+Patl_0852_p-63(n/a)      (    3) TTCATCCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 36 bayes= 1.62803 E= 3.1e-034 
+ -1023  -1023  -1023    151 
+ -1023   -123    225   -207 
+ -1023   -123    225   -207 
+   173   -123  -1023  -1023 
+ -1023  -1023  -1023    151 
+ -1023    209     -8  -1023 
+ -1023    235  -1023  -1023 
+   185  -1023  -1023  -1023 
+   144  -1023   -107   -107 
+ -1023    -23  -1023    125 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 12 E= 3.1e-034 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.083333  0.833333  0.083333 
+ 0.000000  0.083333  0.833333  0.083333 
+ 0.916667  0.083333  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.833333  0.166667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.750000  0.000000  0.083333  0.166667 
+ 0.000000  0.166667  0.000000  0.833333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGGATCCAAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_0858_p-200(Patl_085         3.28e-06  2_[+1(1.09e-06)]
+Patl_0858_p-164(Patl_085         5.52e-05  2_[+1(1.84e-05)]
+Patl_0852_p-260(n/a)             5.31e-05  2_[+1(1.77e-05)]
+Patl_0845_p-242(vanR)            1.43e-05  2_[+1(4.77e-06)]
+Patl_0844_p-85(vanA)             3.28e-06  2_[+1(1.09e-06)]
+Patl_0844_p-32(vanA)             5.11e-06  2_[+1(1.70e-06)]
+Patl_0852_p-63(n/a)              1.79e-04  2_[+1(5.98e-05)]
+Patl_0867_p-1(n/a)               1.38e-04  2_[+1(4.59e-05)]
+Patl_0869_p-94(vanB)             4.91e-05  2_[+1(1.64e-05)]
+Patl_0845_p-72(vanR)             3.28e-06  2_[+1(1.09e-06)]
+Patl_0844_p-202(vanA)            3.28e-06  2_[+1(1.09e-06)]
+Patl_0845_p-189(vanR)            3.28e-06  2_[+1(1.09e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

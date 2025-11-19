@@ -1,0 +1,212 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HypR_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HCH_03166_p-42(hypO)     1.0000     12  HCH_03167_p-129(hypE)    1.0000     12  
+HCH_03163)_p-118(hypD-re 1.0000     12  Csal_2708_p-49(hypO)     1.0000     12  
+Csal_2705_p-45(hypE)     1.0000     12  Csal_2707_p-44(hypR)     1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HypR_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/HypR_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              72    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=     72    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.417 C 0.0556 G 0.0833 T 0.444 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.408 C 0.0658 G 0.0921 T 0.434 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTKTATAMAAT MEME-1	width =  12  sites =   6  llr = 66  E-value = 8.9e-013
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8::::a:a3a8:
+pos.-specific     C  ::::::::7:::
+probability       G  2::7::::::2:
+matrix            T  :aa3a:a::::a
+
+         bits    3.9             
+                 3.5             
+                 3.1             
+                 2.7             
+Relative         2.4             
+Entropy          2.0    *    *   
+(15.8 bits)      1.6    *    *   
+                 1.2 ************
+                 0.8 ************
+                 0.4 ************
+                 0.0 ------------
+
+Multilevel           ATTGTATACAAT
+consensus               T    A   
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+HCH_03163)_p-118(hypD-re      1  1.05e-06          . ATTGTATACAAT           
+Csal_2707_p-44(hypR)          1  1.58e-06          . GTTGTATACAGT           
+Csal_2708_p-49(hypO)          1  6.56e-06          . ATTTTATACAAT           
+HCH_03166_p-42(hypO)          1  6.56e-06          . ATTTTATACAAT           
+Csal_2705_p-45(hypE)          1  1.53e-05          . ATTGTATAAAAT           
+HCH_03167_p-129(hypE)         1  1.53e-05          . ATTGTATAAAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_03163)_p-118(hypD-re          1.1e-06  [+1]
+Csal_2707_p-44(hypR)              1.6e-06  [+1]
+Csal_2708_p-49(hypO)              6.6e-06  [+1]
+HCH_03166_p-42(hypO)              6.6e-06  [+1]
+Csal_2705_p-45(hypE)              1.5e-05  [+1]
+HCH_03167_p-129(hypE)             1.5e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTKTATAMAAT width=12 seqs=6
+HCH_03163)_p-118(hypD-re (    1) ATTGTATACAAT  1 
+Csal_2707_p-44(hypR)     (    1) GTTGTATACAGT  1 
+Csal_2708_p-49(hypO)     (    1) ATTTTATACAAT  1 
+HCH_03166_p-42(hypO)     (    1) ATTTTATACAAT  1 
+Csal_2705_p-45(hypE)     (    1) ATTGTATAAAAT  1 
+HCH_03167_p-129(hypE)    (    1) ATTGTATAAAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 6 bayes= 0.192645 E= 8.9e-013 
+   103   -923     85   -923 
+  -923   -923   -923    120 
+  -923   -923   -923    120 
+  -923   -923    285    -38 
+  -923   -923   -923    120 
+   129   -923   -923   -923 
+  -923   -923   -923    120 
+   129   -923   -923   -923 
+   -29    334   -923   -923 
+   129   -923   -923   -923 
+   103   -923     85   -923 
+  -923   -923   -923    120 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 6 E= 8.9e-013 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.666667  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.666667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTKTATAMAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATT[GT]TATA[CA]AAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_03166_p-42(hypO)             6.56e-06  [+1(6.56e-06)]
+HCH_03167_p-129(hypE)            1.53e-05  [+1(1.53e-05)]
+HCH_03163)_p-118(hypD-re         1.05e-06  [+1(1.05e-06)]
+Csal_2708_p-49(hypO)             6.56e-06  [+1(6.56e-06)]
+Csal_2705_p-45(hypE)             1.53e-05  [+1(1.53e-05)]
+Csal_2707_p-44(hypR)             1.58e-06  [+1(1.58e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

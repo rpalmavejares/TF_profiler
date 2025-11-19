@@ -1,0 +1,257 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Zur_Enterococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+EfaeDRAFT_0070_p-55(rpsN 1.0000     23  EfaeDRAFT_0933_p-69(n/a) 1.0000     23  
+EfaeDRAFT_1581_p-150(Znu 1.0000     23  EfaeDRAFT_1582_p-39(znuC 1.0000     23  
+EfaeDRAFT_1775_p-35(zur) 1.0000     23  EfaeDRAFT_2092_p-78(zinT 1.0000     23  
+EF3202_p-57(rpsN2)       1.0000     23  EF0585_p-60(rpsN2)       1.0000     23  
+EF0544_p-122(rpmF2)      1.0000     23  EF2417_p-46(zur)         1.0000     23  
+EF0055_p-52(ZnuA)        1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Zur_Enterococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Zur_Enterococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             253    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    253    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.352 C 0.142 G 0.134 T 0.372 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.35 C 0.144 G 0.136 T 0.37 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YAAAWCGTAAHBATTACGATTTR MEME-1	width =  23  sites =  11  llr = 201  E-value = 5.4e-050
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2a77411:98317::71:7:::5
+pos.-specific     C  5:11:9::1143:::17::::::
+probability       G  ::1:1:9::::31::::a2:::5
+matrix            T  3:125::a:1442aa22:1aaa:
+
+         bits    2.9                  *     
+                 2.6                  *     
+                 2.3      **          *     
+                 2.0      **          *     
+Relative         1.7      **          *     
+Entropy          1.4  *   ***     ** ** *** 
+(26.4 bits)      1.2  *   ****    ** ** ****
+                 0.9 **   *****   ** ** ****
+                 0.6 **** *****  ***********
+                 0.3 ***********************
+                 0.0 -----------------------
+
+Multilevel           CAAATCGTAACTATTACGATTTA
+consensus            T   A     TC          G
+sequence                       AG           
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+EF3202_p-57(rpsN2)            1  4.26e-13          . CAAATCGTAACCATTACGATTTA           
+EF0544_p-122(rpmF2)           1  1.48e-12          . CAAAACGTAATCATTACGATTTG           
+EF0585_p-60(rpsN2)            1  3.83e-12          . CAAAACGTAACGTTTACGATTTG           
+EF0055_p-52(ZnuA)             1  3.67e-11          . CAAATCGTAAATATTACGGTTTA           
+EfaeDRAFT_2092_p-78(zinT      1  4.85e-11          . TAAAACGTAACTATTACGGTTTG           
+EfaeDRAFT_0933_p-69(n/a)      1  1.95e-10          . CAAATCGTAATTGTTTCGATTTG           
+EfaeDRAFT_0070_p-55(rpsN      1  3.44e-10          . AAAAGCGTAAAGATTACGATTTA           
+EfaeDRAFT_1775_p-35(zur)      1  2.26e-08          . TACTTCGTAATCATTTTGATTTG           
+EF2417_p-46(zur)              1  5.64e-08          . TATTTCGTAATGATTCTGATTTA           
+EfaeDRAFT_1581_p-150(Znu      1  8.28e-08          . CAACTCATCCATTTTACGATTTA           
+EfaeDRAFT_1582_p-39(znuC      1  1.29e-06          . AAGAAAGTATCAATTAAGTTTTA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+EF3202_p-57(rpsN2)                4.3e-13  [+1]
+EF0544_p-122(rpmF2)               1.5e-12  [+1]
+EF0585_p-60(rpsN2)                3.8e-12  [+1]
+EF0055_p-52(ZnuA)                 3.7e-11  [+1]
+EfaeDRAFT_2092_p-78(zinT          4.8e-11  [+1]
+EfaeDRAFT_0933_p-69(n/a)            2e-10  [+1]
+EfaeDRAFT_0070_p-55(rpsN          3.4e-10  [+1]
+EfaeDRAFT_1775_p-35(zur)          2.3e-08  [+1]
+EF2417_p-46(zur)                  5.6e-08  [+1]
+EfaeDRAFT_1581_p-150(Znu          8.3e-08  [+1]
+EfaeDRAFT_1582_p-39(znuC          1.3e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YAAAWCGTAAHBATTACGATTTR width=23 seqs=11
+EF3202_p-57(rpsN2)       (    1) CAAATCGTAACCATTACGATTTA  1 
+EF0544_p-122(rpmF2)      (    1) CAAAACGTAATCATTACGATTTG  1 
+EF0585_p-60(rpsN2)       (    1) CAAAACGTAACGTTTACGATTTG  1 
+EF0055_p-52(ZnuA)        (    1) CAAATCGTAAATATTACGGTTTA  1 
+EfaeDRAFT_2092_p-78(zinT (    1) TAAAACGTAACTATTACGGTTTG  1 
+EfaeDRAFT_0933_p-69(n/a) (    1) CAAATCGTAATTGTTTCGATTTG  1 
+EfaeDRAFT_0070_p-55(rpsN (    1) AAAAGCGTAAAGATTACGATTTA  1 
+EfaeDRAFT_1775_p-35(zur) (    1) TACTTCGTAATCATTTTGATTTG  1 
+EF2417_p-46(zur)         (    1) TATTTCGTAATGATTCTGATTTA  1 
+EfaeDRAFT_1581_p-150(Znu (    1) CAACTCATCCATTTTACGATTTA  1 
+EfaeDRAFT_1582_p-39(znuC (    1) AAGAAAGTATCAATTAAGTTTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 11 bayes= 0.921997 E= 5.4e-050 
+   -94    192  -1010    -44 
+   151  -1010  -1010  -1010 
+   105    -66    -58   -202 
+   105    -66  -1010   -102 
+     5  -1010    -58     56 
+  -194    266  -1010  -1010 
+  -194  -1010    274  -1010 
+ -1010  -1010  -1010    143 
+   138    -66  -1010  -1010 
+   122    -66  -1010   -202 
+   -36    134  -1010     -2 
+  -194     92    100     -2 
+   105  -1010    -58   -102 
+ -1010  -1010  -1010    143 
+ -1010  -1010  -1010    143 
+   105    -66  -1010   -102 
+  -194    234  -1010   -102 
+ -1010  -1010    288  -1010 
+   105  -1010     42   -202 
+ -1010  -1010  -1010    143 
+ -1010  -1010  -1010    143 
+ -1010  -1010  -1010    143 
+    64  -1010    174  -1010 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 11 E= 5.4e-050 
+ 0.181818  0.545455  0.000000  0.272727 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.727273  0.090909  0.090909  0.090909 
+ 0.727273  0.090909  0.000000  0.181818 
+ 0.363636  0.000000  0.090909  0.545455 
+ 0.090909  0.909091  0.000000  0.000000 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.909091  0.090909  0.000000  0.000000 
+ 0.818182  0.090909  0.000000  0.090909 
+ 0.272727  0.363636  0.000000  0.363636 
+ 0.090909  0.272727  0.272727  0.363636 
+ 0.727273  0.000000  0.090909  0.181818 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.727273  0.090909  0.000000  0.181818 
+ 0.090909  0.727273  0.000000  0.181818 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.727273  0.000000  0.181818  0.090909 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.545455  0.000000  0.454545  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAAAWCGTAAHBATTACGATTTR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT]AAA[TA]CGTAA[CTA][TCG]ATTACGATTT[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+EfaeDRAFT_0070_p-55(rpsN         3.44e-10  [+1(3.44e-10)]
+EfaeDRAFT_0933_p-69(n/a)         1.95e-10  [+1(1.95e-10)]
+EfaeDRAFT_1581_p-150(Znu         8.28e-08  [+1(8.28e-08)]
+EfaeDRAFT_1582_p-39(znuC         1.29e-06  [+1(1.29e-06)]
+EfaeDRAFT_1775_p-35(zur)         2.26e-08  [+1(2.26e-08)]
+EfaeDRAFT_2092_p-78(zinT         4.85e-11  [+1(4.85e-11)]
+EF3202_p-57(rpsN2)               4.26e-13  [+1(4.26e-13)]
+EF0585_p-60(rpsN2)               3.83e-12  [+1(3.83e-12)]
+EF0544_p-122(rpmF2)              1.48e-12  [+1(1.48e-12)]
+EF2417_p-46(zur)                 5.64e-08  [+1(5.64e-08)]
+EF0055_p-52(ZnuA)                3.67e-11  [+1(3.67e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

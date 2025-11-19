@@ -1,0 +1,260 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/CueR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_1340_p-62(copA)     1.0000     21  Ping_1381_p-69(copA2)    1.0000     21  
+PCNPT3_11152_p-56(PCNPT3 1.0000     21  PCNPT3_05574_p-59(copA)  1.0000     21  
+PE36_15789_p-68(PCNPT3_1 1.0000     21  PE36_19605_p-182(copA2)  1.0000     21  
+PE36_19605_p-97(copA2)   1.0000     21  PE36_15557_p-62(copA)    1.0000     21  
+AHA_4222_p-70(copA)      1.0000     21  ASA_0103_p-75(copA)      1.0000     21  
+ASA_0103_p-69(copA)      1.0000     21  Tola_0589_p-60(copA)     1.0000     21  
+Tola_0588_p-56(copZ)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/CueR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/CueR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             273    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    273    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.289 C 0.22 G 0.249 T 0.242 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.289 C 0.22 G 0.249 T 0.242 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTMCMSTWARGGTAARG MEME-1	width =  20  sites =  13  llr = 215  E-value = 3.3e-055
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8::::6142:6832::893:
+pos.-specific     C  289::3965:::2::1::1:
+probability       G  12:::1::3:125892:159
+matrix            T  ::1aa:::1a3111172:21
+
+         bits    2.2                     
+                 2.0    **    *          
+                 1.7   *** *  *          
+                 1.5  **** *  *    *    *
+Relative         1.3  **** *  *    * ** *
+Entropy          1.1  **** ** *   ** ** *
+(23.9 bits)      0.9 ***** ** * * ***** *
+                 0.7 ******** *** ***** *
+                 0.4 ******** *** ***** *
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTTACCCTAAGGGTAAGG
+consensus                 C AG T A  G  A 
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Ping_1340_p-62(copA)          1  1.91e-11          . ACCTTACCCTAAGGGTAATG G         
+PE36_15557_p-62(copA)         1  2.66e-11          . ACCTTACACTAAGGGTAAAG G         
+PE36_15789_p-68(PCNPT3_1      1  1.02e-10          . ACCTTCCCCTTAAGGTAAAG A         
+PE36_19605_p-97(copA2)        1  3.23e-10          . ACCTTCCAGTTAGGGTAAAG G         
+Ping_1381_p-69(copA2)         1  6.97e-10          . ACCTTCCCCTAAGAGTAATG A         
+ASA_0103_p-69(copA)           1  4.38e-09          . CCCTTACAGTAAAGGTTAGG G         
+AHA_4222_p-70(copA)           1  4.38e-09          . CCCTTACAGTAAAGGTTAGG G         
+PCNPT3_05574_p-59(copA)       1  5.87e-09          . ACCTTAACCTATGGGTAAGG G         
+ASA_0103_p-75(copA)           1  1.11e-08          . AGCTTACCCTTACAGTAAAG G         
+Tola_0588_p-56(copZ)          1  1.31e-08          . ACCTTCCAATAGAGGGAAGG T         
+PCNPT3_11152_p-56(PCNPT3      1  1.59e-07          . ACCTTACCGTTAGGGGAGCT T         
+Tola_0589_p-60(copA)          1  8.41e-07          . ACCTTGCCATGATGTCAAGG C         
+PE36_19605_p-182(copA2)       1  2.92e-06          . GGTTTACCTTAGCTGGAAGG T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_1340_p-62(copA)              1.9e-11  [+1]_1
+PE36_15557_p-62(copA)             2.7e-11  [+1]_1
+PE36_15789_p-68(PCNPT3_1            1e-10  [+1]_1
+PE36_19605_p-97(copA2)            3.2e-10  [+1]_1
+Ping_1381_p-69(copA2)               7e-10  [+1]_1
+ASA_0103_p-69(copA)               4.4e-09  [+1]_1
+AHA_4222_p-70(copA)               4.4e-09  [+1]_1
+PCNPT3_05574_p-59(copA)           5.9e-09  [+1]_1
+ASA_0103_p-75(copA)               1.1e-08  [+1]_1
+Tola_0588_p-56(copZ)              1.3e-08  [+1]_1
+PCNPT3_11152_p-56(PCNPT3          1.6e-07  [+1]_1
+Tola_0589_p-60(copA)              8.4e-07  [+1]_1
+PE36_19605_p-182(copA2)           2.9e-06  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTMCMSTWARGGTAARG width=20 seqs=13
+Ping_1340_p-62(copA)     (    1) ACCTTACCCTAAGGGTAATG  1 
+PE36_15557_p-62(copA)    (    1) ACCTTACACTAAGGGTAAAG  1 
+PE36_15789_p-68(PCNPT3_1 (    1) ACCTTCCCCTTAAGGTAAAG  1 
+PE36_19605_p-97(copA2)   (    1) ACCTTCCAGTTAGGGTAAAG  1 
+Ping_1381_p-69(copA2)    (    1) ACCTTCCCCTAAGAGTAATG  1 
+ASA_0103_p-69(copA)      (    1) CCCTTACAGTAAAGGTTAGG  1 
+AHA_4222_p-70(copA)      (    1) CCCTTACAGTAAAGGTTAGG  1 
+PCNPT3_05574_p-59(copA)  (    1) ACCTTAACCTATGGGTAAGG  1 
+ASA_0103_p-75(copA)      (    1) AGCTTACCCTTACAGTAAAG  1 
+Tola_0588_p-56(copZ)     (    1) ACCTTCCAATAGAGGGAAGG  1 
+PCNPT3_11152_p-56(PCNPT3 (    1) ACCTTACCGTTAGGGGAGCT  1 
+Tola_0589_p-60(copA)     (    1) ACCTTGCCATGATGTCAAGG  1 
+PE36_19605_p-182(copA2)  (    1) GGTTTACCTTAGCTGGAAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 26 bayes= 2.37587 E= 3.3e-055 
+   141    -52   -169  -1035 
+ -1035    194    -69  -1035 
+ -1035    207  -1035   -165 
+ -1035  -1035  -1035    205 
+ -1035  -1035  -1035    205 
+   109     48   -169  -1035 
+  -191    207  -1035  -1035 
+    41    148  -1035  -1035 
+   -91    107     30   -165 
+ -1035  -1035  -1035    205 
+   109  -1035   -169     35 
+   141  -1035    -69   -165 
+     9    -52     89   -165 
+   -91  -1035    163   -165 
+ -1035  -1035    189   -165 
+ -1035   -152    -11    152 
+   155  -1035  -1035    -65 
+   168  -1035   -169  -1035 
+     9   -152     89    -65 
+ -1035  -1035    189   -165 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 13 E= 3.3e-055 
+ 0.769231  0.153846  0.076923  0.000000 
+ 0.000000  0.846154  0.153846  0.000000 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.615385  0.307692  0.076923  0.000000 
+ 0.076923  0.923077  0.000000  0.000000 
+ 0.384615  0.615385  0.000000  0.000000 
+ 0.153846  0.461538  0.307692  0.076923 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.615385  0.000000  0.076923  0.307692 
+ 0.769231  0.000000  0.153846  0.076923 
+ 0.307692  0.153846  0.461538  0.076923 
+ 0.153846  0.000000  0.769231  0.076923 
+ 0.000000  0.000000  0.923077  0.076923 
+ 0.000000  0.076923  0.230769  0.692308 
+ 0.846154  0.000000  0.000000  0.153846 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.307692  0.076923  0.461538  0.153846 
+ 0.000000  0.000000  0.923077  0.076923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTMCMSTWARGGTAARG MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTT[AC]C[CA][CG]T[AT]A[GA]GG[TG]AA[GA]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_1340_p-62(copA)             3.82e-11  [+1(1.91e-11)]_1
+Ping_1381_p-69(copA2)            1.39e-09  [+1(6.97e-10)]_1
+PCNPT3_11152_p-56(PCNPT3         3.17e-07  [+1(1.59e-07)]_1
+PCNPT3_05574_p-59(copA)          1.17e-08  [+1(5.87e-09)]_1
+PE36_15789_p-68(PCNPT3_1         2.03e-10  [+1(1.02e-10)]_1
+PE36_19605_p-182(copA2)          5.84e-06  [+1(2.92e-06)]_1
+PE36_19605_p-97(copA2)           6.46e-10  [+1(3.23e-10)]_1
+PE36_15557_p-62(copA)            5.33e-11  [+1(2.66e-11)]_1
+AHA_4222_p-70(copA)              8.76e-09  [+1(4.38e-09)]_1
+ASA_0103_p-75(copA)              2.21e-08  [+1(1.11e-08)]_1
+ASA_0103_p-69(copA)              8.76e-09  [+1(4.38e-09)]_1
+Tola_0589_p-60(copA)             1.68e-06  [+1(8.41e-07)]_1
+Tola_0588_p-56(copZ)             2.63e-08  [+1(1.31e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

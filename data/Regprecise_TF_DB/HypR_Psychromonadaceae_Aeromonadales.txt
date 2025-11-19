@@ -1,0 +1,217 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/HypR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_2117_p-84(hypY)     1.0000     12  Ping_2118_p-107(hypR)    1.0000     12  
+AHA_0776_p-78(putA)      1.0000     12  AHA_0564_p-47(hypR)      1.0000     12  
+AHA_0776_p-205(putA)     1.0000     12  ASA_0767_p-204(putA)     1.0000     12  
+ASA_0767_p-77(putA)      1.0000     12  ASA_3770_p-47(hypR)      1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/HypR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/HypR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              96    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=     96    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.396 C 0.125 G 0.0833 T 0.396 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.39 C 0.13 G 0.09 T 0.39 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTGTATACA MEME-1	width =  10  sites =   8  llr = 82  E-value = 9.0e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::a:8:a
+pos.-specific     C  :3:::::3a:
+probability       G  :::83:::::
+matrix            T  :8a38:a:::
+
+         bits    3.5           
+                 3.1           
+                 2.8         * 
+                 2.4         * 
+Relative         2.1    *    * 
+Entropy          1.7    *    * 
+(14.8 bits)      1.4 * ** ** **
+                 1.0 **********
+                 0.7 **********
+                 0.3 **********
+                 0.0 ----------
+
+Multilevel           ATTGTATACA
+consensus             C TG  C  
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+Ping_2118_p-107(hypR)         1  2.57e-06          . ATTGGATCCA AT        
+Ping_2117_p-84(hypY)          1  2.57e-06          . ATTGGATCCA AT        
+ASA_0767_p-77(putA)           1  1.37e-05          . ATTGTATACA TT        
+ASA_0767_p-204(putA)          1  1.37e-05          . ATTGTATACA AA        
+AHA_0776_p-205(putA)          1  1.37e-05          . ATTGTATACA AA        
+AHA_0776_p-78(putA)           1  1.37e-05          . ATTGTATACA TT        
+ASA_3770_p-47(hypR)           1  7.31e-05          . ACTTTATACA AT        
+AHA_0564_p-47(hypR)           1  7.31e-05          . ACTTTATACA AT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_2118_p-107(hypR)             2.6e-06  [+1]_2
+Ping_2117_p-84(hypY)              2.6e-06  [+1]_2
+ASA_0767_p-77(putA)               1.4e-05  [+1]_2
+ASA_0767_p-204(putA)              1.4e-05  [+1]_2
+AHA_0776_p-205(putA)              1.4e-05  [+1]_2
+AHA_0776_p-78(putA)               1.4e-05  [+1]_2
+ASA_3770_p-47(hypR)               7.3e-05  [+1]_2
+AHA_0564_p-47(hypR)               7.3e-05  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTGTATACA width=10 seqs=8
+Ping_2118_p-107(hypR)    (    1) ATTGGATCCA  1 
+Ping_2117_p-84(hypY)     (    1) ATTGGATCCA  1 
+ASA_0767_p-77(putA)      (    1) ATTGTATACA  1 
+ASA_0767_p-204(putA)     (    1) ATTGTATACA  1 
+AHA_0776_p-205(putA)     (    1) ATTGTATACA  1 
+AHA_0776_p-78(putA)      (    1) ATTGTATACA  1 
+ASA_3770_p-47(hypR)      (    1) ACTTTATACA  1 
+AHA_0564_p-47(hypR)      (    1) ACTTTATACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 24 bayes= 2.70044 E= 9.0e-017 
+   136   -965   -965   -965 
+  -965     94   -965     94 
+  -965   -965   -965    136 
+  -965   -965    306    -64 
+  -965   -965    147     94 
+   136   -965   -965   -965 
+  -965   -965   -965    136 
+    94     94   -965   -965 
+  -965    294   -965   -965 
+   136   -965   -965   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 8 E= 9.0e-017 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.250000  0.000000  0.750000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.750000  0.250000 
+ 0.000000  0.000000  0.250000  0.750000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.750000  0.250000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTATACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TC]T[GT][TG]AT[AC]CA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_2117_p-84(hypY)             7.71e-06  [+1(2.57e-06)]_2
+Ping_2118_p-107(hypR)            7.71e-06  [+1(2.57e-06)]_2
+AHA_0776_p-78(putA)              4.11e-05  [+1(1.37e-05)]_2
+AHA_0564_p-47(hypR)              2.19e-04  [+1(7.31e-05)]_2
+AHA_0776_p-205(putA)             4.11e-05  [+1(1.37e-05)]_2
+ASA_0767_p-204(putA)             4.11e-05  [+1(1.37e-05)]_2
+ASA_0767_p-77(putA)              4.11e-05  [+1(1.37e-05)]_2
+ASA_3770_p-47(hypR)              2.19e-04  [+1(7.31e-05)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

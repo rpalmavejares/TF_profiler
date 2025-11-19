@@ -1,0 +1,271 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= NsrR2_Various_betaproteobacteria.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Tmz1t_0412(nsrR)Score=5. 1.0000     19  Tmz1t_0413,Score=5.8,Pos 1.0000     19  
+NE0927(nirK)Score=3.1,Po 1.0000     19  NE0927(nirK)Score=4,Pos= 1.0000     19  
+NE0928(nsrR)Score=4,Pos= 1.0000     19  NE0928(nsrR)Score=3.1,Po 1.0000     19  
+Tbd_2329(hmp)Score=5.7,P 1.0000     19  CV3494(norB)Score=3.3,Po 1.0000     19  
+CV2228(nasA)Score=5.5,Po 1.0000     19  CV3494(norB)Score=4.6,Po 1.0000     19  
+CV2007(nirK)Score=3.9Pos 1.0000     19  CV3488(hmp)Score=3.5,Pos 1.0000     19  
+CV3488(hmp)Score=2.7,Pos 1.0000     19  Mfla_0639(hmp)Score=4.2P 1.0000     19  
+Mmol_1063(hmp)Score=5.5, 1.0000     19  Mmol_1062(nsrR)Score=6,P 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna NsrR2_Various_betaproteobacteria.fasta -oc NsrR2_Various_betaproteobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           19
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             304    N=              16    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.349 C 0.148 G 0.135 T 0.368 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.347 C 0.149 G 0.136 T 0.367 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  19  sites =  16  llr = 200  E-value = 1.5e-053
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :812:9143364915:a2:
+pos.-specific     C  3:::511111::1::8:18
+probability       G  81:8:1:1:1111:5:::1
+matrix            T  :2915:946646:9:3:81
+
+         bits    2.9                    
+                 2.6                    
+                 2.3                    
+                 2.0 *                  
+Relative         1.7 *              *  *
+Entropy          1.4 *  *           ** *
+(18.0 bits)      1.1 * ****      * *** *
+                 0.9 * *****     ***** *
+                 0.6 *******     *******
+                 0.3 ******* ***********
+                 0.0 -------------------
+
+Multilevel           GATGCATATTATATACATC
+consensus            C   T  TAATA  GT   
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Tmz1t_0413,Score=5.8,Pos      1  9.07e-09          . GATGCATTTAATATGTATC           
+Tmz1t_0412(nsrR)Score=5.      1  1.05e-08          . GATACATATTAAATGCATC           
+Mmol_1062(nsrR)Score=6,P      1  2.11e-08          . GTTGCATATTAAATGCAAC           
+CV3494(norB)Score=4.6,Po      1  4.61e-08          . GATGCATGTATTCTGCATC           
+NE0928(nsrR)Score=4,Pos=      1  1.32e-07          . GGTGTATATTAGATACATC           
+NE0927(nirK)Score=4,Pos=      1  2.25e-07          . GATGTATCTAATATACACC           
+CV3494(norB)Score=3.3,Po      1  4.96e-07          . GATGTGCAATATATACATC           
+Mmol_1063(hmp)Score=5.5,      1  6.56e-07          . GTAGCATTTTAAATGCAAC           
+Tbd_2329(hmp)Score=5.7,P      1  6.56e-07          . CATGCATACGGTATGCATG           
+CV3488(hmp)Score=3.5,Pos      1  8.59e-07          . GATGTATTTTTTAAATATC           
+CV2007(nirK)Score=3.9Pos      1  1.99e-06          . CATGTATTAATTATGCATT           
+CV2228(nasA)Score=5.5,Po      1  2.72e-06          . CATGCAAACCATATGCATG           
+CV3488(hmp)Score=2.7,Pos      1  2.94e-06          . CATGTATTATTTGAACATC           
+NE0928(nsrR)Score=3.1,Po      1  2.94e-06          . GATATATTATTAATATATC           
+NE0927(nirK)Score=3.1,Po      1  4.56e-06          . GATATATTAATAATATATC           
+Mfla_0639(hmp)Score=4.2P      1  1.02e-05          . GTTTCCTATTAAATACAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tmz1t_0413,Score=5.8,Pos          9.1e-09  [+1]
+Tmz1t_0412(nsrR)Score=5.          1.1e-08  [+1]
+Mmol_1062(nsrR)Score=6,P          2.1e-08  [+1]
+CV3494(norB)Score=4.6,Po          4.6e-08  [+1]
+NE0928(nsrR)Score=4,Pos=          1.3e-07  [+1]
+NE0927(nirK)Score=4,Pos=          2.3e-07  [+1]
+CV3494(norB)Score=3.3,Po            5e-07  [+1]
+Mmol_1063(hmp)Score=5.5,          6.6e-07  [+1]
+Tbd_2329(hmp)Score=5.7,P          6.6e-07  [+1]
+CV3488(hmp)Score=3.5,Pos          8.6e-07  [+1]
+CV2007(nirK)Score=3.9Pos            2e-06  [+1]
+CV2228(nasA)Score=5.5,Po          2.7e-06  [+1]
+CV3488(hmp)Score=2.7,Pos          2.9e-06  [+1]
+NE0928(nsrR)Score=3.1,Po          2.9e-06  [+1]
+NE0927(nirK)Score=3.1,Po          4.6e-06  [+1]
+Mfla_0639(hmp)Score=4.2P            1e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=19 seqs=16
+Tmz1t_0413,Score=5.8,Pos (    1) GATGCATTTAATATGTATC  1 
+Tmz1t_0412(nsrR)Score=5. (    1) GATACATATTAAATGCATC  1 
+Mmol_1062(nsrR)Score=6,P (    1) GTTGCATATTAAATGCAAC  1 
+CV3494(norB)Score=4.6,Po (    1) GATGCATGTATTCTGCATC  1 
+NE0928(nsrR)Score=4,Pos= (    1) GGTGTATATTAGATACATC  1 
+NE0927(nirK)Score=4,Pos= (    1) GATGTATCTAATATACACC  1 
+CV3494(norB)Score=3.3,Po (    1) GATGTGCAATATATACATC  1 
+Mmol_1063(hmp)Score=5.5, (    1) GTAGCATTTTAAATGCAAC  1 
+Tbd_2329(hmp)Score=5.7,P (    1) CATGCATACGGTATGCATG  1 
+CV3488(hmp)Score=3.5,Pos (    1) GATGTATTTTTTAAATATC  1 
+CV2007(nirK)Score=3.9Pos (    1) CATGTATTAATTATGCATT  1 
+CV2228(nasA)Score=5.5,Po (    1) CATGCAAACCATATGCATG  1 
+CV3488(hmp)Score=2.7,Pos (    1) CATGTATTATTTGAACATC  1 
+NE0928(nsrR)Score=3.1,Po (    1) GATATATTATTAATATATC  1 
+NE0927(nirK)Score=3.1,Po (    1) GATATATTAATAATATATC  1 
+Mfla_0639(hmp)Score=4.2P (    1) GTTTCCTATTAAATACAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 16 bayes= 1.22239 E= 1.5e-053 
+ -1064     74    246  -1064 
+   111  -1064   -112    -97 
+  -247  -1064  -1064    135 
+   -89  -1064    246   -255 
+ -1064    174  -1064     45 
+   133   -126   -112  -1064 
+  -247   -126  -1064    125 
+    33   -126   -112     25 
+   -15    -26  -1064     62 
+   -15   -126   -112     62 
+    69  -1064   -112      3 
+    11  -1064   -112     62 
+   133   -126   -112  -1064 
+  -147  -1064  -1064    125 
+    53  -1064    187  -1064 
+ -1064    233  -1064    -55 
+   152  -1064  -1064  -1064 
+   -89   -126  -1064    103 
+ -1064    244    -13   -255 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 16 E= 1.5e-053 
+ 0.000000  0.250000  0.750000  0.000000 
+ 0.750000  0.000000  0.062500  0.187500 
+ 0.062500  0.000000  0.000000  0.937500 
+ 0.187500  0.000000  0.750000  0.062500 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.875000  0.062500  0.062500  0.000000 
+ 0.062500  0.062500  0.000000  0.875000 
+ 0.437500  0.062500  0.062500  0.437500 
+ 0.312500  0.125000  0.000000  0.562500 
+ 0.312500  0.062500  0.062500  0.562500 
+ 0.562500  0.000000  0.062500  0.375000 
+ 0.375000  0.000000  0.062500  0.562500 
+ 0.875000  0.062500  0.062500  0.000000 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.750000  0.000000  0.250000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.187500  0.062500  0.000000  0.750000 
+ 0.000000  0.812500  0.125000  0.062500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[GC]ATG[CT]AT[AT][TA][TA][AT][TA]AT[AG][CT]ATC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tmz1t_0412(nsrR)Score=5.         1.05e-08  [+1(1.05e-08)]
+Tmz1t_0413,Score=5.8,Pos         9.07e-09  [+1(9.07e-09)]
+NE0927(nirK)Score=3.1,Po         4.56e-06  [+1(4.56e-06)]
+NE0927(nirK)Score=4,Pos=         2.25e-07  [+1(2.25e-07)]
+NE0928(nsrR)Score=4,Pos=         1.32e-07  [+1(1.32e-07)]
+NE0928(nsrR)Score=3.1,Po         2.94e-06  [+1(2.94e-06)]
+Tbd_2329(hmp)Score=5.7,P         6.56e-07  [+1(6.56e-07)]
+CV3494(norB)Score=3.3,Po         4.96e-07  [+1(4.96e-07)]
+CV2228(nasA)Score=5.5,Po         2.72e-06  [+1(2.72e-06)]
+CV3494(norB)Score=4.6,Po         4.61e-08  [+1(4.61e-08)]
+CV2007(nirK)Score=3.9Pos         1.99e-06  [+1(1.99e-06)]
+CV3488(hmp)Score=3.5,Pos         8.59e-07  [+1(8.59e-07)]
+CV3488(hmp)Score=2.7,Pos         2.94e-06  [+1(2.94e-06)]
+Mfla_0639(hmp)Score=4.2P         1.02e-05  [+1(1.02e-05)]
+Mmol_1063(hmp)Score=5.5,         6.56e-07  [+1(6.56e-07)]
+Mmol_1062(nsrR)Score=6,P         2.11e-08  [+1(2.11e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

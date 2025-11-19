@@ -1,0 +1,208 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/HutC_Xanthomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+XAC1638_p-39(hutI)       1.0000     20  XAC1639_p-56(hutF)       1.0000     20  
+XCC1581_p-39(hutI)       1.0000     20  XCC1580_p-56(hutF)       1.0000     20  
+Smlt3107_p-33(hutI)      1.0000     20  Smlt3106_p-45(hutF)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/HutC_Xanthomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/HutC_Xanthomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             120    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=    120    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.408 C 0.0917 G 0.0917 T 0.408 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.403 C 0.0968 G 0.0968 T 0.403 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTATATACA MEME-1	width =  10  sites =   6  llr = 69  E-value = 7.8e-009
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::8:a:a:a
+pos.-specific     C  :::2::::a:
+probability       G  :a::::2:::
+matrix            T  a:a:a:8:::
+
+         bits    3.4  *      * 
+                 3.0  *      * 
+                 2.7  *      * 
+                 2.4  *      * 
+Relative         2.0  *      * 
+Entropy          1.7  *      * 
+(16.6 bits)      1.3 *** ** ***
+                 1.0 **********
+                 0.7 **********
+                 0.3 **********
+                 0.0 ----------
+
+Multilevel           TGTATATACA
+consensus                      
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+XCC1580_p-56(hutF)            6  6.52e-06      TGATA TGTATATACA ATAGA     
+XCC1581_p-39(hutI)            6  6.52e-06      TCTAT TGTATATACA TATCA     
+XAC1639_p-56(hutF)            6  6.52e-06      TGATA TGTATATACA ATAGA     
+XAC1638_p-39(hutI)            6  6.52e-06      TCTAT TGTATATACA TATCA     
+Smlt3106_p-45(hutF)           6  9.65e-06      TTATA TGTCTATACA ATATA     
+Smlt3107_p-33(hutI)           6  9.65e-06      TATAT TGTATAGACA TATAA     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XCC1580_p-56(hutF)                6.5e-06  5_[+1]_5
+XCC1581_p-39(hutI)                6.5e-06  5_[+1]_5
+XAC1639_p-56(hutF)                6.5e-06  5_[+1]_5
+XAC1638_p-39(hutI)                6.5e-06  5_[+1]_5
+Smlt3106_p-45(hutF)               9.7e-06  5_[+1]_5
+Smlt3107_p-33(hutI)               9.7e-06  5_[+1]_5
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTATATACA width=10 seqs=6
+XCC1580_p-56(hutF)       (    6) TGTATATACA  1 
+XCC1581_p-39(hutI)       (    6) TGTATATACA  1 
+XAC1639_p-56(hutF)       (    6) TGTATATACA  1 
+XAC1638_p-39(hutI)       (    6) TGTATATACA  1 
+Smlt3106_p-45(hutF)      (    6) TGTCTATACA  1 
+Smlt3107_p-33(hutI)      (    6) TGTATAGACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 66 bayes= 3.80735 E= 7.8e-009 
+  -923   -923   -923    131 
+  -923   -923    337   -923 
+  -923   -923   -923    131 
+   105     78   -923   -923 
+  -923   -923   -923    131 
+   131   -923   -923   -923 
+  -923   -923     78    105 
+   131   -923   -923   -923 
+  -923    337   -923   -923 
+   131   -923   -923   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 6 E= 7.8e-009 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.833333  0.166667  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.166667  0.833333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTATATACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XAC1638_p-39(hutI)               7.17e-05  5_[+1(6.52e-06)]_5
+XAC1639_p-56(hutF)               7.17e-05  5_[+1(6.52e-06)]_5
+XCC1581_p-39(hutI)               7.17e-05  5_[+1(6.52e-06)]_5
+XCC1580_p-56(hutF)               7.17e-05  5_[+1(6.52e-06)]_5
+Smlt3107_p-33(hutI)              1.06e-04  5_[+1(9.65e-06)]_5
+Smlt3106_p-45(hutF)              1.06e-04  5_[+1(9.65e-06)]_5
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

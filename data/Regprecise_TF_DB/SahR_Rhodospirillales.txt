@@ -1,0 +1,278 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/SahR_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rru_A3444_p-70(ahcY)     1.0000     20  Rru_A1718_p-377(metE)    1.0000     20  
+Rru_A1529_p-88(sahR)     1.0000     20  Magn03009486_p-89(ahcY)  1.0000     20  
+Magn03009308_p-46(sahR)  1.0000     20  Magn03007315_p-16(sahR)  1.0000     20  
+amb4391_p-89(ahcY)       1.0000     20  amb0432_p-18(sahR)       1.0000     20  
+AZL_026520_p-134(ahcY)   1.0000     20  AZL_009180_p-60(sahR)    1.0000     20  
+RC1_2714_p-163(ahcY)     1.0000     20  RC1_2051_p-133(sahR)     1.0000     20  
+Gdia_0808_p-30(sahR)     1.0000     20  Gdia_0807_p-366(metE)    1.0000     20  
+GbCGDNIH1_0783_p-330(met 1.0000     20  GbCGDNIH1_0064_p-23(ahcY 1.0000     20  
+GbCGDNIH1_0152_p-41(sahR 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/SahR_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/SahR_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             340    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    340    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.418 C 0.0912 G 0.0853 T 0.406 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.416 C 0.093 G 0.0872 T 0.404 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AYATAAAGATATCTTTATRT MEME-1	width =  20  sites =  17  llr = 305  E-value = 4.3e-094
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:a:aa91a:9:1:::a:6:
+pos.-specific     C  :6::::1::1::81:1:::1
+probability       G  2:::::19::1:11::::4:
+matrix            T  14:a:::1:9:a18a9:a:9
+
+         bits    3.5                     
+                 3.2                     
+                 2.8                     
+                 2.5        *            
+Relative         2.1        *    *       
+Entropy          1.8  *     *    *       
+(25.8 bits)      1.4  ***** **  ** * **  
+                 1.1  ************ ******
+                 0.7 ********************
+                 0.4 ********************
+                 0.0 --------------------
+
+Multilevel           ACATAAAGATATCTTTATAT
+consensus             T                G 
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+GbCGDNIH1_0152_p-41(sahR      1  5.06e-11          . ACATAAAGATATCTTTATGT           
+Magn03007315_p-16(sahR)       1  5.06e-11          . ACATAAAGATATCTTTATGT           
+RC1_2714_p-163(ahcY)          1  7.39e-11          . ACATAAAGATATCTTTATGC           
+AZL_026520_p-134(ahcY)        1  7.39e-11          . ACATAAAGATATCTTTATGC           
+AZL_009180_p-60(sahR)         1  1.16e-10          . GCATAAAGATATCTTTATAT           
+amb4391_p-89(ahcY)            1  3.18e-10          . ACATAAAGATATCTTTATAT           
+Magn03009486_p-89(ahcY)       1  3.18e-10          . ACATAAAGATATCTTTATAT           
+RC1_2051_p-133(sahR)          1  1.33e-09          . TCATAAAGATATCTTTATGT           
+amb0432_p-18(sahR)            1  1.50e-09          . GCATAAAGATATGTTTATAT           
+Magn03009308_p-46(sahR)       1  1.50e-09          . GCATAAAGATATGTTTATAT           
+Rru_A1529_p-88(sahR)          1  2.82e-09          . ATATAAAGATATCTTTATAT           
+Rru_A3444_p-70(ahcY)          1  2.82e-09          . ATATAAAGATATCTTTATAT           
+Rru_A1718_p-377(metE)         1  7.43e-09          . ATATAAAGATATCTTCATAT           
+GbCGDNIH1_0783_p-330(met      1  1.31e-08          . ACATAAAGATATATTTATAT           
+GbCGDNIH1_0064_p-23(ahcY      1  4.08e-08          . ATATAAATATATCCTTATGT           
+Gdia_0807_p-366(metE)         1  3.04e-07          . ATATAACAACATCCTTATAT           
+Gdia_0808_p-30(sahR)          1  3.72e-07          . ATATAAGGATGTTGTTATAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GbCGDNIH1_0152_p-41(sahR          5.1e-11  [+1]
+Magn03007315_p-16(sahR)           5.1e-11  [+1]
+RC1_2714_p-163(ahcY)              7.4e-11  [+1]
+AZL_026520_p-134(ahcY)            7.4e-11  [+1]
+AZL_009180_p-60(sahR)             1.2e-10  [+1]
+amb4391_p-89(ahcY)                3.2e-10  [+1]
+Magn03009486_p-89(ahcY)           3.2e-10  [+1]
+RC1_2051_p-133(sahR)              1.3e-09  [+1]
+amb0432_p-18(sahR)                1.5e-09  [+1]
+Magn03009308_p-46(sahR)           1.5e-09  [+1]
+Rru_A1529_p-88(sahR)              2.8e-09  [+1]
+Rru_A3444_p-70(ahcY)              2.8e-09  [+1]
+Rru_A1718_p-377(metE)             7.4e-09  [+1]
+GbCGDNIH1_0783_p-330(met          1.3e-08  [+1]
+GbCGDNIH1_0064_p-23(ahcY          4.1e-08  [+1]
+Gdia_0807_p-366(metE)               3e-07  [+1]
+Gdia_0808_p-30(sahR)              3.7e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AYATAAAGATATCTTTATRT width=20 seqs=17
+GbCGDNIH1_0152_p-41(sahR (    1) ACATAAAGATATCTTTATGT  1 
+Magn03007315_p-16(sahR)  (    1) ACATAAAGATATCTTTATGT  1 
+RC1_2714_p-163(ahcY)     (    1) ACATAAAGATATCTTTATGC  1 
+AZL_026520_p-134(ahcY)   (    1) ACATAAAGATATCTTTATGC  1 
+AZL_009180_p-60(sahR)    (    1) GCATAAAGATATCTTTATAT  1 
+amb4391_p-89(ahcY)       (    1) ACATAAAGATATCTTTATAT  1 
+Magn03009486_p-89(ahcY)  (    1) ACATAAAGATATCTTTATAT  1 
+RC1_2051_p-133(sahR)     (    1) TCATAAAGATATCTTTATGT  1 
+amb0432_p-18(sahR)       (    1) GCATAAAGATATGTTTATAT  1 
+Magn03009308_p-46(sahR)  (    1) GCATAAAGATATGTTTATAT  1 
+Rru_A1529_p-88(sahR)     (    1) ATATAAAGATATCTTTATAT  1 
+Rru_A3444_p-70(ahcY)     (    1) ATATAAAGATATCTTTATAT  1 
+Rru_A1718_p-377(metE)    (    1) ATATAAAGATATCTTCATAT  1 
+GbCGDNIH1_0783_p-330(met (    1) ACATAAAGATATATTTATAT  1 
+GbCGDNIH1_0064_p-23(ahcY (    1) ATATAAATATATCCTTATGT  1 
+Gdia_0807_p-366(metE)    (    1) ATATAACAACATCCTTATAT  1 
+Gdia_0808_p-30(sahR)     (    1) ATATAAGGATGTTGTTATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 17 bayes= 1.26303 E= 4.3e-094 
+    88  -1073    102   -278 
+ -1073    280  -1073    -20 
+   127  -1073  -1073  -1073 
+ -1073  -1073  -1073    131 
+   127  -1073  -1073  -1073 
+   127  -1073  -1073  -1073 
+   109    -66    -57  -1073 
+  -282  -1073    334   -278 
+   127  -1073  -1073  -1073 
+ -1073    -66  -1073    122 
+   118  -1073    -57  -1073 
+ -1073  -1073  -1073    131 
+  -282    304     43   -278 
+ -1073     34    -57    103 
+ -1073  -1073  -1073    131 
+ -1073    -66  -1073    122 
+   127  -1073  -1073  -1073 
+ -1073  -1073  -1073    131 
+    64  -1073    202  -1073 
+ -1073     34  -1073    113 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 17 E= 4.3e-094 
+ 0.764706  0.000000  0.176471  0.058824 
+ 0.000000  0.647059  0.000000  0.352941 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.882353  0.058824  0.058824  0.000000 
+ 0.058824  0.000000  0.882353  0.058824 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.058824  0.000000  0.941176 
+ 0.941176  0.000000  0.058824  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.058824  0.764706  0.117647  0.058824 
+ 0.000000  0.117647  0.058824  0.823529 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.058824  0.000000  0.941176 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.647059  0.000000  0.352941  0.000000 
+ 0.000000  0.117647  0.000000  0.882353 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATAAAGATATCTTTATRT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CT]ATAAAGATATCTTTAT[AG]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rru_A3444_p-70(ahcY)             2.82e-09  [+1(2.82e-09)]
+Rru_A1718_p-377(metE)            7.43e-09  [+1(7.43e-09)]
+Rru_A1529_p-88(sahR)             2.82e-09  [+1(2.82e-09)]
+Magn03009486_p-89(ahcY)          3.18e-10  [+1(3.18e-10)]
+Magn03009308_p-46(sahR)          1.50e-09  [+1(1.50e-09)]
+Magn03007315_p-16(sahR)          5.06e-11  [+1(5.06e-11)]
+amb4391_p-89(ahcY)               3.18e-10  [+1(3.18e-10)]
+amb0432_p-18(sahR)               1.50e-09  [+1(1.50e-09)]
+AZL_026520_p-134(ahcY)           7.39e-11  [+1(7.39e-11)]
+AZL_009180_p-60(sahR)            1.16e-10  [+1(1.16e-10)]
+RC1_2714_p-163(ahcY)             7.39e-11  [+1(7.39e-11)]
+RC1_2051_p-133(sahR)             1.33e-09  [+1(1.33e-09)]
+Gdia_0808_p-30(sahR)             3.72e-07  [+1(3.72e-07)]
+Gdia_0807_p-366(metE)            3.04e-07  [+1(3.04e-07)]
+GbCGDNIH1_0783_p-330(met         1.31e-08  [+1(1.31e-08)]
+GbCGDNIH1_0064_p-23(ahcY         4.08e-08  [+1(4.08e-08)]
+GbCGDNIH1_0152_p-41(sahR         5.06e-11  [+1(5.06e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

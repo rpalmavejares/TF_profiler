@@ -1,0 +1,326 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/MetR_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_2172_p-61(metF)      1.0000     15  RSP_2171_p-48(metR)      1.0000     15  
+RSP_3347_p-44(metH2)     1.0000     15  Pden_2319_p-58(metF)     1.0000     15  
+Pden_2318_p-47(metR)     1.0000     15  Jann_2547_p-90(bhmT)     1.0000     15  
+RB2654_08000_p-47(metR)  1.0000     15  RB2654_08005_p-64(metF)  1.0000     15  
+RB2654_20213_p-89(metH2) 1.0000     15  OG2516_06424_p-60(metF)  1.0000     15  
+OG2516_06419_p-49(metR)  1.0000     15  SKA53_15331_p-31(metR)   1.0000     15  
+SKA53_15326_p-60(metF)   1.0000     15  SKA53_15401_p-111(metH)  1.0000     15  
+OB2597_00765_p-57(metF)  1.0000     15  OB2597_00770_p-49(metR)  1.0000     15  
+ISM_08350_p-66(metF)     1.0000     15  ISM_08345_p-48(metR)     1.0000     15  
+ROS217_15585_p-48(metR)  1.0000     15  ROS217_15580_p-74(metF)  1.0000     15  
+ROS217_19582_p-73(bhmT)  1.0000     15  EE36_03128_p-64(metF)    1.0000     15  
+EE36_03123_p-47(metR)    1.0000     15  TM1040_1700_p-124(metF)  1.0000     15  
+TM1040_3617_p-91(metH2)  1.0000     15  TM1040_1699_p-48(metR)   1.0000     15  
+SPO3016_p-16(metF)       1.0000     15  SPO3015_p-48(metR)       1.0000     15  
+MED193_22236_p-49(metR)  1.0000     15  MED193_22231_p-62(metF)  1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/MetR_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/MetR_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             450    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    450    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.167 G 0.176 T 0.324 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.333 C 0.167 G 0.176 T 0.324 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RTGARWYWRWYTCAY MEME-1	width =  15  sites =  30  llr = 349  E-value = 8.9e-120
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6::a55:544:::a:
+pos.-specific     C  :::::15::15:a:3
+probability       G  4:a:51::51:1:::
+matrix            T  :a:::345:459::6
+
+         bits    2.6                
+                 2.3   *         *  
+                 2.1   *         *  
+                 1.8   *         *  
+Relative         1.5  ***        ** 
+Entropy          1.3  ***       *** 
+(16.8 bits)      1.0  ****     **** 
+                 0.8 ***** * * *****
+                 0.5 ***** *** *****
+                 0.3 ***** *** *****
+                 0.0 ---------------
+
+Multilevel           ATGAAACAGTTTCAT
+consensus            G   GTTTAAC   C
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+OG2516_06419_p-49(metR)       1  7.45e-08          . GTGAGACAAACTCAT           
+EE36_03123_p-47(metR)         1  2.62e-07          . GTGAAACAAACTCAT           
+OG2516_06424_p-60(metF)       1  3.26e-07          . ATGAGTTTGTCTCAC           
+RB2654_20213_p-89(metH2)      1  3.26e-07          . ATGAGCCAGTCTCAT           
+RB2654_08000_p-47(metR)       1  3.26e-07          . GTGAGACAAATTCAT           
+Pden_2318_p-47(metR)          1  3.26e-07          . GTGAGACAAATTCAT           
+RSP_2171_p-48(metR)           1  3.26e-07          . GTGAGACAAATTCAT           
+MED193_22236_p-49(metR)       1  5.74e-07          . GTGAAACAATTTCAT           
+SPO3015_p-48(metR)            1  5.74e-07          . GTGAGACAACTTCAT           
+ROS217_15585_p-48(metR)       1  5.74e-07          . GTGAGACAACTTCAT           
+OB2597_00770_p-49(metR)       1  7.76e-07          . GTGAGACAAGCTCAT           
+RB2654_08005_p-64(metF)       1  7.76e-07          . ATGAATTTGTCTCAC           
+Pden_2319_p-58(metF)          1  7.76e-07          . ATGAATTTGTCTCAC           
+RSP_2172_p-61(metF)           1  7.76e-07          . ATGAATTTGTCTCAC           
+EE36_03128_p-64(metF)         1  9.04e-07          . ATGAGTTTGTTTCAC           
+MED193_22231_p-62(metF)       1  1.04e-06          . ATGAAATTGTTTCAC           
+SPO3016_p-16(metF)            1  1.18e-06          . ATGAAGTTGTCTCAC           
+ROS217_15580_p-74(metF)       1  1.18e-06          . ATGAAGTTGTCTCAC           
+TM1040_1699_p-48(metR)        1  1.31e-06          . GTGAATCAAATTCAT           
+OB2597_00765_p-57(metF)       1  1.31e-06          . ATGAGCTTGTCTCAC           
+TM1040_3617_p-91(metH2)       1  1.76e-06          . GTGAGGCAAGCTCAT           
+TM1040_1700_p-124(metF)       1  1.93e-06          . ATGAATTTGATTCAC           
+SKA53_15401_p-111(metH)       1  4.67e-06          . GTGAATGAGTTTCAT           
+SKA53_15331_p-31(metR)        1  6.19e-06          . TTGAGACAAATTCAT           
+RSP_3347_p-44(metH2)          1  6.19e-06          . ATGAAACACCTTCAT           
+SKA53_15326_p-60(metF)        1  8.38e-06          . ATGAATTTGTCTCAA           
+ISM_08345_p-48(metR)          1  2.24e-05          . ATTAGGCAAATTCAT           
+ISM_08350_p-66(metF)          1  2.24e-05          . ATGAATTTGCCTAAT           
+Jann_2547_p-90(bhmT)          1  2.83e-05          . ATGAAAATGATGCAT           
+ROS217_19582_p-73(bhmT)       1  3.99e-05          . ATGAAATTTATGCAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OG2516_06419_p-49(metR)           7.5e-08  [+1]
+EE36_03123_p-47(metR)             2.6e-07  [+1]
+OG2516_06424_p-60(metF)           3.3e-07  [+1]
+RB2654_20213_p-89(metH2)          3.3e-07  [+1]
+RB2654_08000_p-47(metR)           3.3e-07  [+1]
+Pden_2318_p-47(metR)              3.3e-07  [+1]
+RSP_2171_p-48(metR)               3.3e-07  [+1]
+MED193_22236_p-49(metR)           5.7e-07  [+1]
+SPO3015_p-48(metR)                5.7e-07  [+1]
+ROS217_15585_p-48(metR)           5.7e-07  [+1]
+OB2597_00770_p-49(metR)           7.8e-07  [+1]
+RB2654_08005_p-64(metF)           7.8e-07  [+1]
+Pden_2319_p-58(metF)              7.8e-07  [+1]
+RSP_2172_p-61(metF)               7.8e-07  [+1]
+EE36_03128_p-64(metF)               9e-07  [+1]
+MED193_22231_p-62(metF)             1e-06  [+1]
+SPO3016_p-16(metF)                1.2e-06  [+1]
+ROS217_15580_p-74(metF)           1.2e-06  [+1]
+TM1040_1699_p-48(metR)            1.3e-06  [+1]
+OB2597_00765_p-57(metF)           1.3e-06  [+1]
+TM1040_3617_p-91(metH2)           1.8e-06  [+1]
+TM1040_1700_p-124(metF)           1.9e-06  [+1]
+SKA53_15401_p-111(metH)           4.7e-06  [+1]
+SKA53_15331_p-31(metR)            6.2e-06  [+1]
+RSP_3347_p-44(metH2)              6.2e-06  [+1]
+SKA53_15326_p-60(metF)            8.4e-06  [+1]
+ISM_08345_p-48(metR)              2.2e-05  [+1]
+ISM_08350_p-66(metF)              2.2e-05  [+1]
+Jann_2547_p-90(bhmT)              2.8e-05  [+1]
+ROS217_19582_p-73(bhmT)             4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RTGARWYWRWYTCAY width=15 seqs=30
+OG2516_06419_p-49(metR)  (    1) GTGAGACAAACTCAT  1 
+EE36_03123_p-47(metR)    (    1) GTGAAACAAACTCAT  1 
+OG2516_06424_p-60(metF)  (    1) ATGAGTTTGTCTCAC  1 
+RB2654_20213_p-89(metH2) (    1) ATGAGCCAGTCTCAT  1 
+RB2654_08000_p-47(metR)  (    1) GTGAGACAAATTCAT  1 
+Pden_2318_p-47(metR)     (    1) GTGAGACAAATTCAT  1 
+RSP_2171_p-48(metR)      (    1) GTGAGACAAATTCAT  1 
+MED193_22236_p-49(metR)  (    1) GTGAAACAATTTCAT  1 
+SPO3015_p-48(metR)       (    1) GTGAGACAACTTCAT  1 
+ROS217_15585_p-48(metR)  (    1) GTGAGACAACTTCAT  1 
+OB2597_00770_p-49(metR)  (    1) GTGAGACAAGCTCAT  1 
+RB2654_08005_p-64(metF)  (    1) ATGAATTTGTCTCAC  1 
+Pden_2319_p-58(metF)     (    1) ATGAATTTGTCTCAC  1 
+RSP_2172_p-61(metF)      (    1) ATGAATTTGTCTCAC  1 
+EE36_03128_p-64(metF)    (    1) ATGAGTTTGTTTCAC  1 
+MED193_22231_p-62(metF)  (    1) ATGAAATTGTTTCAC  1 
+SPO3016_p-16(metF)       (    1) ATGAAGTTGTCTCAC  1 
+ROS217_15580_p-74(metF)  (    1) ATGAAGTTGTCTCAC  1 
+TM1040_1699_p-48(metR)   (    1) GTGAATCAAATTCAT  1 
+OB2597_00765_p-57(metF)  (    1) ATGAGCTTGTCTCAC  1 
+TM1040_3617_p-91(metH2)  (    1) GTGAGGCAAGCTCAT  1 
+TM1040_1700_p-124(metF)  (    1) ATGAATTTGATTCAC  1 
+SKA53_15401_p-111(metH)  (    1) GTGAATGAGTTTCAT  1 
+SKA53_15331_p-31(metR)   (    1) TTGAGACAAATTCAT  1 
+RSP_3347_p-44(metH2)     (    1) ATGAAACACCTTCAT  1 
+SKA53_15326_p-60(metF)   (    1) ATGAATTTGTCTCAA  1 
+ISM_08345_p-48(metR)     (    1) ATTAGGCAAATTCAT  1 
+ISM_08350_p-66(metF)     (    1) ATGAATTTGCCTAAT  1 
+Jann_2547_p-90(bhmT)     (    1) ATGAAAATGATGCAT  1 
+ROS217_19582_p-73(bhmT)  (    1) ATGAAATTTATGCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 30 bayes= 1.55943 E= 8.9e-120 
+    77  -1155    118   -328 
+ -1155  -1155  -1155    163 
+ -1155  -1155    246   -328 
+   159  -1155  -1155  -1155 
+    68  -1155    140  -1155 
+    49   -133    -40      4 
+  -331    158   -240     42 
+    68  -1155  -1155     53 
+    38   -233    150   -328 
+    14    -33   -140     42 
+ -1155    148  -1155     72 
+ -1155  -1155   -140    153 
+  -331    253  -1155  -1155 
+   159  -1155  -1155  -1155 
+  -331     99  -1155     97 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 30 E= 8.9e-120 
+ 0.566667  0.000000  0.400000  0.033333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.966667  0.033333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.533333  0.000000  0.466667  0.000000 
+ 0.466667  0.066667  0.133333  0.333333 
+ 0.033333  0.500000  0.033333  0.433333 
+ 0.533333  0.000000  0.000000  0.466667 
+ 0.433333  0.033333  0.500000  0.033333 
+ 0.366667  0.133333  0.066667  0.433333 
+ 0.000000  0.466667  0.000000  0.533333 
+ 0.000000  0.000000  0.066667  0.933333 
+ 0.033333  0.966667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.033333  0.333333  0.000000  0.633333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGARWYWRWYTCAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]TGA[AG][AT][CT][AT][GA][TA][TC]TCA[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_2172_p-61(metF)              7.76e-07  [+1(7.76e-07)]
+RSP_2171_p-48(metR)              3.26e-07  [+1(3.26e-07)]
+RSP_3347_p-44(metH2)             6.19e-06  [+1(6.19e-06)]
+Pden_2319_p-58(metF)             7.76e-07  [+1(7.76e-07)]
+Pden_2318_p-47(metR)             3.26e-07  [+1(3.26e-07)]
+Jann_2547_p-90(bhmT)             2.83e-05  [+1(2.83e-05)]
+RB2654_08000_p-47(metR)          3.26e-07  [+1(3.26e-07)]
+RB2654_08005_p-64(metF)          7.76e-07  [+1(7.76e-07)]
+RB2654_20213_p-89(metH2)         3.26e-07  [+1(3.26e-07)]
+OG2516_06424_p-60(metF)          3.26e-07  [+1(3.26e-07)]
+OG2516_06419_p-49(metR)          7.45e-08  [+1(7.45e-08)]
+SKA53_15331_p-31(metR)           6.19e-06  [+1(6.19e-06)]
+SKA53_15326_p-60(metF)           8.38e-06  [+1(8.38e-06)]
+SKA53_15401_p-111(metH)          4.67e-06  [+1(4.67e-06)]
+OB2597_00765_p-57(metF)          1.31e-06  [+1(1.31e-06)]
+OB2597_00770_p-49(metR)          7.76e-07  [+1(7.76e-07)]
+ISM_08350_p-66(metF)             2.24e-05  [+1(2.24e-05)]
+ISM_08345_p-48(metR)             2.24e-05  [+1(2.24e-05)]
+ROS217_15585_p-48(metR)          5.74e-07  [+1(5.74e-07)]
+ROS217_15580_p-74(metF)          1.18e-06  [+1(1.18e-06)]
+ROS217_19582_p-73(bhmT)          3.99e-05  [+1(3.99e-05)]
+EE36_03128_p-64(metF)            9.04e-07  [+1(9.04e-07)]
+EE36_03123_p-47(metR)            2.62e-07  [+1(2.62e-07)]
+TM1040_1700_p-124(metF)          1.93e-06  [+1(1.93e-06)]
+TM1040_3617_p-91(metH2)          1.76e-06  [+1(1.76e-06)]
+TM1040_1699_p-48(metR)           1.31e-06  [+1(1.31e-06)]
+SPO3016_p-16(metF)               1.18e-06  [+1(1.18e-06)]
+SPO3015_p-48(metR)               5.74e-07  [+1(5.74e-07)]
+MED193_22236_p-49(metR)          5.74e-07  [+1(5.74e-07)]
+MED193_22231_p-62(metF)          1.04e-06  [+1(1.04e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,264 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Halobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+rrnAC3074_p215(rbkR)     1.0000     20  rrnAC3074_p197(rbkR)     1.0000     20  
+OE3964R_p-49(rbkR)       1.0000     20  VNG2126C_p-22(rbkR)      1.0000     20  
+HVO_0326_p-49(rbkR)      1.0000     20  Hmuk_1112_p-49(rbkR)     1.0000     20  
+HQ3236A_p-49(rbkR)       1.0000     20  Hlac_0355_p-67(rbkR)     1.0000     20  
+Hlac_0355_p-49(rbkR)     1.0000     20  Htur_2982_p-67(rbkR)     1.0000     20  
+Htur_2982_p-49(rbkR)     1.0000     20  Nmag_0941_p-67(rbkR)     1.0000     20  
+Nmag_0941_p-49(rbkR)     1.0000     20  NP0072A_p-49(rbkR)       1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Halobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Halobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             280    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    280    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.204 C 0.3 G 0.196 T 0.3 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.204 C 0.299 G 0.197 T 0.299 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCATWCCACWTTCGKTAYGC MEME-1	width =  20  sites =  14  llr = 225  E-value = 5.7e-062
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::8:33:91411::11a:::
+pos.-specific     C  39::16a:61:17::::429
+probability       G  711:1::111:1:a61::61
+matrix            T  ::1a41::14973:48:61:
+
+         bits    2.3              *  *   
+                 2.1              *  *   
+                 1.9        *     *  *   
+                 1.6    *  **     *  *   
+Relative         1.4 * **  **  *  *  *  *
+Entropy          1.2 ****  **  *  *  *  *
+(23.2 bits)      0.9 ****  **  * ***** **
+                 0.7 **** ***  * ********
+                 0.5 **** ***************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           GCATTCCACATTCGGTATGC
+consensus            C   AA   T  T T  CC 
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Htur_2982_p-49(rbkR)          1  1.02e-11          . GCATGCCACATTCGGTATGC           
+VNG2126C_p-22(rbkR)           1  1.26e-10          . GCATTCCACTTTCGGTATCC           
+OE3964R_p-49(rbkR)            1  1.26e-10          . GCATTCCACTTTCGGTATCC           
+rrnAC3074_p215(rbkR)          1  2.01e-10          . GCATTCCACCTTCGGTATGC           
+Nmag_0941_p-49(rbkR)          1  2.75e-10          . GCGTACCACATTCGGTACGC           
+HVO_0326_p-49(rbkR)           1  9.56e-09          . GCATTCCACTTACGATACGC           
+NP0072A_p-49(rbkR)            1  1.06e-08          . CCATACCACATTCGTTACGG           
+Hmuk_1112_p-49(rbkR)          1  1.06e-08          . GGATGACACATTCGTTATCC           
+Htur_2982_p-67(rbkR)          1  2.44e-08          . CCATCACAGTTTTGGTACGC           
+HQ3236A_p-49(rbkR)            1  3.45e-08          . GCATTCCATGTTCGTTATTC           
+Nmag_0941_p-67(rbkR)          1  1.63e-07          . CCATAACAGTTCTGTGATGC           
+Hlac_0355_p-49(rbkR)          1  1.97e-07          . GCATCTCACATCCGTTACTC           
+Hlac_0355_p-67(rbkR)          1  1.17e-06          . GGTTAACGTTTTTGGGATGC           
+rrnAC3074_p197(rbkR)          1  1.37e-06          . CCGTTCCAAAAGTGGAATGC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Htur_2982_p-49(rbkR)                1e-11  [+1]
+VNG2126C_p-22(rbkR)               1.3e-10  [+1]
+OE3964R_p-49(rbkR)                1.3e-10  [+1]
+rrnAC3074_p215(rbkR)                2e-10  [+1]
+Nmag_0941_p-49(rbkR)              2.7e-10  [+1]
+HVO_0326_p-49(rbkR)               9.6e-09  [+1]
+NP0072A_p-49(rbkR)                1.1e-08  [+1]
+Hmuk_1112_p-49(rbkR)              1.1e-08  [+1]
+Htur_2982_p-67(rbkR)              2.4e-08  [+1]
+HQ3236A_p-49(rbkR)                3.4e-08  [+1]
+Nmag_0941_p-67(rbkR)              1.6e-07  [+1]
+Hlac_0355_p-49(rbkR)                2e-07  [+1]
+Hlac_0355_p-67(rbkR)              1.2e-06  [+1]
+rrnAC3074_p197(rbkR)              1.4e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCATWCCACWTTCGKTAYGC width=20 seqs=14
+Htur_2982_p-49(rbkR)     (    1) GCATGCCACATTCGGTATGC  1 
+VNG2126C_p-22(rbkR)      (    1) GCATTCCACTTTCGGTATCC  1 
+OE3964R_p-49(rbkR)       (    1) GCATTCCACTTTCGGTATCC  1 
+rrnAC3074_p215(rbkR)     (    1) GCATTCCACCTTCGGTATGC  1 
+Nmag_0941_p-49(rbkR)     (    1) GCGTACCACATTCGGTACGC  1 
+HVO_0326_p-49(rbkR)      (    1) GCATTCCACTTACGATACGC  1 
+NP0072A_p-49(rbkR)       (    1) CCATACCACATTCGTTACGG  1 
+Hmuk_1112_p-49(rbkR)     (    1) GGATGACACATTCGTTATCC  1 
+Htur_2982_p-67(rbkR)     (    1) CCATCACAGTTTTGGTACGC  1 
+HQ3236A_p-49(rbkR)       (    1) GCATTCCATGTTCGTTATTC  1 
+Nmag_0941_p-67(rbkR)     (    1) CCATAACAGTTCTGTGATGC  1 
+Hlac_0355_p-49(rbkR)     (    1) GCATCTCACATCCGTTACTC  1 
+Hlac_0355_p-67(rbkR)     (    1) GGTTAACGTTTTTGGGATGC  1 
+rrnAC3074_p197(rbkR)     (    1) CCGTTCCAAAAGTGGAATGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 14 bayes= 1.12553 E= 5.7e-062 
+ -1045     -7    186  -1045 
+ -1045    152    -46  -1045 
+   194  -1045    -46   -206 
+ -1045  -1045  -1045    174 
+    48   -107    -46     52 
+    48    110  -1045   -206 
+ -1045    174  -1045  -1045 
+   218  -1045   -146  -1045 
+  -151    110    -46   -107 
+   107   -206   -146     52 
+  -151  -1045  -1045    163 
+  -151   -107   -146    125 
+ -1045    125  -1045     -7 
+ -1045  -1045    234  -1045 
+  -151  -1045    153     25 
+  -151  -1045    -46    139 
+   229  -1045  -1045  -1045 
+ -1045     25  -1045    110 
+ -1045    -48    170   -107 
+ -1045    163   -146  -1045 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 14 E= 5.7e-062 
+ 0.000000  0.285714  0.714286  0.000000 
+ 0.000000  0.857143  0.142857  0.000000 
+ 0.785714  0.000000  0.142857  0.071429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.285714  0.142857  0.142857  0.428571 
+ 0.285714  0.642857  0.000000  0.071429 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.928571  0.000000  0.071429  0.000000 
+ 0.071429  0.642857  0.142857  0.142857 
+ 0.428571  0.071429  0.071429  0.428571 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.071429  0.142857  0.071429  0.714286 
+ 0.000000  0.714286  0.000000  0.285714 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.071429  0.000000  0.571429  0.357143 
+ 0.071429  0.000000  0.142857  0.785714 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.357143  0.000000  0.642857 
+ 0.000000  0.214286  0.642857  0.142857 
+ 0.000000  0.928571  0.071429  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCATWCCACWTTCGKTAYGC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GC]CAT[TA][CA]CAC[AT]TT[CT]G[GT]TA[TC][GC]C
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+rrnAC3074_p215(rbkR)             2.01e-10  [+1(2.01e-10)]
+rrnAC3074_p197(rbkR)             1.37e-06  [+1(1.37e-06)]
+OE3964R_p-49(rbkR)               1.26e-10  [+1(1.26e-10)]
+VNG2126C_p-22(rbkR)              1.26e-10  [+1(1.26e-10)]
+HVO_0326_p-49(rbkR)              9.56e-09  [+1(9.56e-09)]
+Hmuk_1112_p-49(rbkR)             1.06e-08  [+1(1.06e-08)]
+HQ3236A_p-49(rbkR)               3.45e-08  [+1(3.45e-08)]
+Hlac_0355_p-67(rbkR)             1.17e-06  [+1(1.17e-06)]
+Hlac_0355_p-49(rbkR)             1.97e-07  [+1(1.97e-07)]
+Htur_2982_p-67(rbkR)             2.44e-08  [+1(2.44e-08)]
+Htur_2982_p-49(rbkR)             1.02e-11  [+1(1.02e-11)]
+Nmag_0941_p-67(rbkR)             1.63e-07  [+1(1.63e-07)]
+Nmag_0941_p-49(rbkR)             2.75e-10  [+1(2.75e-10)]
+NP0072A_p-49(rbkR)               1.06e-08  [+1(1.06e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,327 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PaaR_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL3041_p-64(paaZ)      1.0000     22  BPSL3230_p-62(paaA)      1.0000     22  
+BPSL3040_p-70(paaG)      1.0000     22  BMA2573_p-62(paaA)       1.0000     22  
+BMAA0543_p-64(paaZ)      1.0000     22  BMAA0544_p-88(paaG)      1.0000     22  
+Bcep18194_A3630_p-63(paa 1.0000     22  Bcep18194_B1317_p-60(paa 1.0000     22  
+Bcep18194_A3429_p-61(paa 1.0000     22  Bcep18194_A3631_p-88(paa 1.0000     22  
+Bamb_0448_p-63(paaZ)     1.0000     22  Bamb_0449_p-88(paaG)     1.0000     22  
+Bamb_3960_p-61(paaH)     1.0000     22  Bamb_0249_p-62(paaA)     1.0000     22  
+bglu_1g02410_p-62(paaA)  1.0000     22  bglu_1g04490_p-70(paaZ)  1.0000     22  
+bglu_1g04500_p-87(paaG)  1.0000     22  Bcep1808_0520_p-63(paaZ) 1.0000     22  
+Bcep1808_5069_p-61(paaH) 1.0000     22  Bcep1808_0521_p-88(paaG) 1.0000     22  
+Bcep1808_0312_p-62(paaA) 1.0000     22  Bxe_A0470_p-66(paaZ)     1.0000     22  
+Bxe_A0471_p-93(paaG)     1.0000     22  Bxe_A0295_p-65(paaA)     1.0000     22  
+Bphy_2689_p-68(paaZ)     1.0000     22  Bphy_2688_p-90(paaG)     1.0000     22  
+Bphy_2857_p-66(paaA)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PaaR_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PaaR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             594    N=              27
+sample: seed=            0    hsfrac=          0
+        searchsize=    594    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.212 C 0.259 G 0.283 T 0.246 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.212 C 0.259 G 0.283 T 0.246 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATYRACCGACCGGTCGGTTRRT MEME-1	width =  22  sites =  27  llr = 608  E-value = 3.1e-217
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7::6a::3a::::1:::::342
+pos.-specific     C  :34::aa::aa:::7:::3:::
+probability       G  :::3:::7:::aa::aa::66:
+matrix            T  2761:::::::::93::a71:7
+
+         bits    2.2     *   *             
+                 2.0     **  ***      *    
+                 1.8     *** *****   **    
+                 1.6     *** ****** ***    
+Relative         1.3     *** ****** ***    
+Entropy          1.1 **  *************** * 
+(32.5 bits)      0.9 *** *************** **
+                 0.7 **********************
+                 0.4 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ATTAACCGACCGGTCGGTTGGT
+consensus             CCG   A      T   CAA 
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+Bxe_A0295_p-65(paaA)          1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+Bcep1808_0312_p-62(paaA)      1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+Bamb_0249_p-62(paaA)          1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+Bcep18194_A3429_p-61(paa      1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+BMA2573_p-62(paaA)            1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+BPSL3230_p-62(paaA)           1  1.33e-13          . ATTAACCGACCGGTCGGTTGGT           
+Bphy_2688_p-90(paaG)          1  3.97e-12          . ATTGACCGACCGGTTGGTTGGT           
+Bphy_2857_p-66(paaA)          1  1.20e-11          . ATTAACCGACCGGACGGTTGGT           
+bglu_1g02410_p-62(paaA)       1  1.20e-11          . ATTAACCGACCGGACGGTTGGT           
+Bcep1808_0521_p-88(paaG)      1  1.87e-11          . ATTAACCGACCGGTTGGTCGGA           
+Bamb_0449_p-88(paaG)          1  1.87e-11          . ATTAACCGACCGGTTGGTCGGA           
+Bcep18194_A3631_p-88(paa      1  1.87e-11          . ATTAACCGACCGGTTGGTCGGA           
+BPSL3040_p-70(paaG)           1  1.87e-11          . ATTAACCGACCGGTTGGTCGGA           
+Bphy_2689_p-68(paaZ)          1  3.24e-11          . ACCAACCAACCGGTCGGTCAAT           
+Bcep1808_5069_p-61(paaH)      1  4.86e-11          . ATCTACCGACCGGTCGGTTTAT           
+Bamb_3960_p-61(paaH)          1  4.86e-11          . ATCTACCGACCGGTCGGTTTAT           
+bglu_1g04500_p-87(paaG)       1  1.03e-10          . ATTAACCGACCGGTTGGTCGGC           
+Bxe_A0471_p-93(paaG)          1  1.10e-10          . ATTGACCGACCGGTTGGTTGGG           
+Bcep1808_0520_p-63(paaZ)      1  1.19e-10          . TCCGACCAACCGGTCGGTTAAT           
+Bamb_0448_p-63(paaZ)          1  1.19e-10          . TCCGACCAACCGGTCGGTTAAT           
+Bcep18194_A3630_p-63(paa      1  1.19e-10          . TCCGACCAACCGGTCGGTTAAT           
+BPSL3041_p-64(paaZ)           1  1.19e-10          . TCCGACCAACCGGTCGGTTAAT           
+Bcep18194_B1317_p-60(paa      1  2.48e-10          . ATATACCGACCGGTCGGTTTAT           
+BMAA0544_p-88(paaG)           1  2.48e-10          . ATTAACCGACCGGTTAGTCGGA           
+Bxe_A0470_p-66(paaZ)          1  3.76e-10          . CCCAACCAACCGGTCGGTCAAT           
+bglu_1g04490_p-70(paaZ)       1  3.95e-10          . GCCGACCAACCGGTCGGTTAAT           
+BMAA0543_p-64(paaZ)           1  8.22e-10          . TCCGACTAACCGGTCGGTTAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bxe_A0295_p-65(paaA)              1.3e-13  [+1]
+Bcep1808_0312_p-62(paaA)          1.3e-13  [+1]
+Bamb_0249_p-62(paaA)              1.3e-13  [+1]
+Bcep18194_A3429_p-61(paa          1.3e-13  [+1]
+BMA2573_p-62(paaA)                1.3e-13  [+1]
+BPSL3230_p-62(paaA)               1.3e-13  [+1]
+Bphy_2688_p-90(paaG)                4e-12  [+1]
+Bphy_2857_p-66(paaA)              1.2e-11  [+1]
+bglu_1g02410_p-62(paaA)           1.2e-11  [+1]
+Bcep1808_0521_p-88(paaG)          1.9e-11  [+1]
+Bamb_0449_p-88(paaG)              1.9e-11  [+1]
+Bcep18194_A3631_p-88(paa          1.9e-11  [+1]
+BPSL3040_p-70(paaG)               1.9e-11  [+1]
+Bphy_2689_p-68(paaZ)              3.2e-11  [+1]
+Bcep1808_5069_p-61(paaH)          4.9e-11  [+1]
+Bamb_3960_p-61(paaH)              4.9e-11  [+1]
+bglu_1g04500_p-87(paaG)             1e-10  [+1]
+Bxe_A0471_p-93(paaG)              1.1e-10  [+1]
+Bcep1808_0520_p-63(paaZ)          1.2e-10  [+1]
+Bamb_0448_p-63(paaZ)              1.2e-10  [+1]
+Bcep18194_A3630_p-63(paa          1.2e-10  [+1]
+BPSL3041_p-64(paaZ)               1.2e-10  [+1]
+Bcep18194_B1317_p-60(paa          2.5e-10  [+1]
+BMAA0544_p-88(paaG)               2.5e-10  [+1]
+Bxe_A0470_p-66(paaZ)              3.8e-10  [+1]
+bglu_1g04490_p-70(paaZ)             4e-10  [+1]
+BMAA0543_p-64(paaZ)               8.2e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATYRACCGACCGGTCGGTTRRT width=22 seqs=27
+Bxe_A0295_p-65(paaA)     (    1) ATTAACCGACCGGTCGGTTGGT  1 
+Bcep1808_0312_p-62(paaA) (    1) ATTAACCGACCGGTCGGTTGGT  1 
+Bamb_0249_p-62(paaA)     (    1) ATTAACCGACCGGTCGGTTGGT  1 
+Bcep18194_A3429_p-61(paa (    1) ATTAACCGACCGGTCGGTTGGT  1 
+BMA2573_p-62(paaA)       (    1) ATTAACCGACCGGTCGGTTGGT  1 
+BPSL3230_p-62(paaA)      (    1) ATTAACCGACCGGTCGGTTGGT  1 
+Bphy_2688_p-90(paaG)     (    1) ATTGACCGACCGGTTGGTTGGT  1 
+Bphy_2857_p-66(paaA)     (    1) ATTAACCGACCGGACGGTTGGT  1 
+bglu_1g02410_p-62(paaA)  (    1) ATTAACCGACCGGACGGTTGGT  1 
+Bcep1808_0521_p-88(paaG) (    1) ATTAACCGACCGGTTGGTCGGA  1 
+Bamb_0449_p-88(paaG)     (    1) ATTAACCGACCGGTTGGTCGGA  1 
+Bcep18194_A3631_p-88(paa (    1) ATTAACCGACCGGTTGGTCGGA  1 
+BPSL3040_p-70(paaG)      (    1) ATTAACCGACCGGTTGGTCGGA  1 
+Bphy_2689_p-68(paaZ)     (    1) ACCAACCAACCGGTCGGTCAAT  1 
+Bcep1808_5069_p-61(paaH) (    1) ATCTACCGACCGGTCGGTTTAT  1 
+Bamb_3960_p-61(paaH)     (    1) ATCTACCGACCGGTCGGTTTAT  1 
+bglu_1g04500_p-87(paaG)  (    1) ATTAACCGACCGGTTGGTCGGC  1 
+Bxe_A0471_p-93(paaG)     (    1) ATTGACCGACCGGTTGGTTGGG  1 
+Bcep1808_0520_p-63(paaZ) (    1) TCCGACCAACCGGTCGGTTAAT  1 
+Bamb_0448_p-63(paaZ)     (    1) TCCGACCAACCGGTCGGTTAAT  1 
+Bcep18194_A3630_p-63(paa (    1) TCCGACCAACCGGTCGGTTAAT  1 
+BPSL3041_p-64(paaZ)      (    1) TCCGACCAACCGGTCGGTTAAT  1 
+Bcep18194_B1317_p-60(paa (    1) ATATACCGACCGGTCGGTTTAT  1 
+BMAA0544_p-88(paaG)      (    1) ATTAACCGACCGGTTAGTCGGA  1 
+Bxe_A0470_p-66(paaZ)     (    1) CCCAACCAACCGGTCGGTCAAT  1 
+bglu_1g04490_p-70(paaZ)  (    1) GCCGACCAACCGGTCGGTTAAT  1 
+BMAA0543_p-64(paaZ)      (    1) TCCGACTAACCGGTCGGTTAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 27 bayes= 1.51457 E= 3.1e-217 
+   180   -280   -293    -41 
+ -1140     19  -1140    152 
+  -252     51  -1140    127 
+   148  -1140      7   -114 
+   223  -1140  -1140  -1140 
+ -1140    195  -1140  -1140 
+ -1140    189  -1140   -273 
+    48  -1140    132  -1140 
+   223  -1140  -1140  -1140 
+ -1140    195  -1140  -1140 
+ -1140    195  -1140  -1140 
+ -1140  -1140    182  -1140 
+ -1140  -1140    182  -1140 
+  -152  -1140  -1140    191 
+ -1140    144  -1140     27 
+  -252  -1140    177  -1140 
+ -1140  -1140    182  -1140 
+ -1140  -1140  -1140    202 
+ -1140     19  -1140    152 
+    48  -1140    107   -114 
+    94  -1140    107  -1140 
+   -20   -280   -293    159 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 27 E= 3.1e-217 
+ 0.740741  0.037037  0.037037  0.185185 
+ 0.000000  0.296296  0.000000  0.703704 
+ 0.037037  0.370370  0.000000  0.592593 
+ 0.592593  0.000000  0.296296  0.111111 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.962963  0.000000  0.037037 
+ 0.296296  0.000000  0.703704  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.074074  0.000000  0.000000  0.925926 
+ 0.000000  0.703704  0.000000  0.296296 
+ 0.037037  0.000000  0.962963  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.296296  0.000000  0.703704 
+ 0.296296  0.000000  0.592593  0.111111 
+ 0.407407  0.000000  0.592593  0.000000 
+ 0.185185  0.037037  0.037037  0.740741 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYRACCGACCGGTCGGTTRRT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TC][TC][AG]ACC[GA]ACCGGT[CT]GGT[TC][GA][GA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL3041_p-64(paaZ)              1.19e-10  [+1(1.19e-10)]
+BPSL3230_p-62(paaA)              1.33e-13  [+1(1.33e-13)]
+BPSL3040_p-70(paaG)              1.87e-11  [+1(1.87e-11)]
+BMA2573_p-62(paaA)               1.33e-13  [+1(1.33e-13)]
+BMAA0543_p-64(paaZ)              8.22e-10  [+1(8.22e-10)]
+BMAA0544_p-88(paaG)              2.48e-10  [+1(2.48e-10)]
+Bcep18194_A3630_p-63(paa         1.19e-10  [+1(1.19e-10)]
+Bcep18194_B1317_p-60(paa         2.48e-10  [+1(2.48e-10)]
+Bcep18194_A3429_p-61(paa         1.33e-13  [+1(1.33e-13)]
+Bcep18194_A3631_p-88(paa         1.87e-11  [+1(1.87e-11)]
+Bamb_0448_p-63(paaZ)             1.19e-10  [+1(1.19e-10)]
+Bamb_0449_p-88(paaG)             1.87e-11  [+1(1.87e-11)]
+Bamb_3960_p-61(paaH)             4.86e-11  [+1(4.86e-11)]
+Bamb_0249_p-62(paaA)             1.33e-13  [+1(1.33e-13)]
+bglu_1g02410_p-62(paaA)          1.20e-11  [+1(1.20e-11)]
+bglu_1g04490_p-70(paaZ)          3.95e-10  [+1(3.95e-10)]
+bglu_1g04500_p-87(paaG)          1.03e-10  [+1(1.03e-10)]
+Bcep1808_0520_p-63(paaZ)         1.19e-10  [+1(1.19e-10)]
+Bcep1808_5069_p-61(paaH)         4.86e-11  [+1(4.86e-11)]
+Bcep1808_0521_p-88(paaG)         1.87e-11  [+1(1.87e-11)]
+Bcep1808_0312_p-62(paaA)         1.33e-13  [+1(1.33e-13)]
+Bxe_A0470_p-66(paaZ)             3.76e-10  [+1(3.76e-10)]
+Bxe_A0471_p-93(paaG)             1.10e-10  [+1(1.10e-10)]
+Bxe_A0295_p-65(paaA)             1.33e-13  [+1(1.33e-13)]
+Bphy_2689_p-68(paaZ)             3.24e-11  [+1(3.24e-11)]
+Bphy_2688_p-90(paaG)             3.97e-12  [+1(3.97e-12)]
+Bphy_2857_p-66(paaA)             1.20e-11  [+1(1.20e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

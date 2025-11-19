@@ -1,0 +1,239 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NrtR_Lactobacillaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LSEI_2767_p-40(pncA)     1.0000     21  LBUL_0279_p-55(pncA)     1.0000     21  
+LAF_1390_p-54(pncA)      1.0000     21  lhv_0930_p-74(pncB)      1.0000     21  
+lp_2514_p-61(niaP)       1.0000     21  LAR_0148_p-75(pncB)      1.0000     21  
+LGG_02764_p-41(pncA)     1.0000     21  LEUM_0911_p-40(niaP)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NrtR_Lactobacillaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/NrtR_Lactobacillaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             168    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    168    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.429 C 0.0655 G 0.0774 T 0.429 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.424 C 0.0698 G 0.0814 T 0.424 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TWWARGTAAAWWATACTTTWA MEME-1	width =  21  sites =   8  llr = 122  E-value = 3.9e-024
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :55a6::996448:a:::14a
+pos.-specific     C  :::::::::1:1:::a1::::
+probability       G  ::::4a:::1:::1:::::::
+matrix            T  a55:::a1116539::9a96:
+
+         bits    3.8                *     
+                 3.5      *         *     
+                 3.1      *         *     
+                 2.7      *         *     
+Relative         2.3      *         *     
+Entropy          1.9      *         *     
+(22.1 bits)      1.5      *         *     
+                 1.2 *  ****      *****  *
+                 0.8 *  ******    ****** *
+                 0.4 *********** *********
+                 0.0 ---------------------
+
+Multilevel           TAAAAGTAAATTATACTTTTA
+consensus             TT G     AAT      A 
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+LBUL_0279_p-55(pncA)          1  6.38e-10          . TTTAGGTAAGTTATACTTTTA           
+lhv_0930_p-74(pncB)           1  1.10e-08          . TAAAAGTAACTTAGACTTTTA           
+LEUM_0911_p-40(niaP)          1  3.51e-08          . TAAAAGTAAAAAATACTTTTA           
+LSEI_2767_p-40(pncA)          1  3.51e-08          . TTTAAGTAAAAAATACTTTTA           
+LAR_0148_p-75(pncB)           1  6.55e-08          . TAAAAGTTAATCATACTTTTA           
+LGG_02764_p-41(pncA)          1  7.74e-08          . TTTAAGTAAATTTTACTTTAA           
+lp_2514_p-61(niaP)            1  1.38e-07          . TAAAGGTAAAAAATACCTAAA           
+LAF_1390_p-54(pncA)           1  4.28e-07          . TTTAGGTATTTTTTACTTTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LBUL_0279_p-55(pncA)              6.4e-10  [+1]
+lhv_0930_p-74(pncB)               1.1e-08  [+1]
+LEUM_0911_p-40(niaP)              3.5e-08  [+1]
+LSEI_2767_p-40(pncA)              3.5e-08  [+1]
+LAR_0148_p-75(pncB)               6.5e-08  [+1]
+LGG_02764_p-41(pncA)              7.7e-08  [+1]
+lp_2514_p-61(niaP)                1.4e-07  [+1]
+LAF_1390_p-54(pncA)               4.3e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TWWARGTAAAWWATACTTTWA width=21 seqs=8
+LBUL_0279_p-55(pncA)     (    1) TTTAGGTAAGTTATACTTTTA  1 
+lhv_0930_p-74(pncB)      (    1) TAAAAGTAACTTAGACTTTTA  1 
+LEUM_0911_p-40(niaP)     (    1) TAAAAGTAAAAAATACTTTTA  1 
+LSEI_2767_p-40(pncA)     (    1) TTTAAGTAAAAAATACTTTTA  1 
+LAR_0148_p-75(pncB)      (    1) TAAAAGTTAATCATACTTTTA  1 
+LGG_02764_p-41(pncA)     (    1) TTTAAGTAAATTTTACTTTAA  1 
+lp_2514_p-61(niaP)       (    1) TAAAGGTAAAAAATACCTAAA  1 
+LAF_1390_p-54(pncA)      (    1) TTTAGGTATTTTTTACTTTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 8 bayes= 0.584963 E= 3.9e-024 
+  -965   -965   -965    124 
+    24   -965   -965     24 
+    24   -965   -965     24 
+   124   -965   -965   -965 
+    56   -965    220   -965 
+  -965   -965    362   -965 
+  -965   -965   -965    124 
+   104   -965   -965   -176 
+   104   -965   -965   -176 
+    56     84     62   -176 
+   -18   -965   -965     56 
+   -18     84   -965     24 
+    82   -965   -965    -76 
+  -965   -965     62    104 
+   124   -965   -965   -965 
+  -965    384   -965   -965 
+  -965     84   -965    104 
+  -965   -965   -965    124 
+  -176   -965   -965    104 
+   -18   -965   -965     56 
+   124   -965   -965   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 8 E= 3.9e-024 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.000000  0.375000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.625000  0.125000  0.125000  0.125000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 0.375000  0.125000  0.000000  0.500000 
+ 0.750000  0.000000  0.000000  0.250000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TWWARGTAAAWWATACTTTWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AT][AT]A[AG]GTAAA[TA][TA][AT]TACTTT[TA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LSEI_2767_p-40(pncA)             3.51e-08  [+1(3.51e-08)]
+LBUL_0279_p-55(pncA)             6.38e-10  [+1(6.38e-10)]
+LAF_1390_p-54(pncA)              4.28e-07  [+1(4.28e-07)]
+lhv_0930_p-74(pncB)              1.10e-08  [+1(1.10e-08)]
+lp_2514_p-61(niaP)               1.38e-07  [+1(1.38e-07)]
+LAR_0148_p-75(pncB)              6.55e-08  [+1(6.55e-08)]
+LGG_02764_p-41(pncA)             7.74e-08  [+1(7.74e-08)]
+LEUM_0911_p-40(niaP)             3.51e-08  [+1(3.51e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

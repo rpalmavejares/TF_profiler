@@ -1,0 +1,303 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/NsrR_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL2355_p-39(nnrS)      1.0000     19  BPSS1139_p-144(PF10006)  1.0000     19  
+BPSL2351_p-93(norB)      1.0000     19  BPSL2840_p-39(hmp)       1.0000     19  
+BPSL2368_p-36(nnrS)      1.0000     19  BMA0630_p-39(nnrS)       1.0000     19  
+BMA0633_p-93(norB)       1.0000     19  BMA2417_p-39(hmp)        1.0000     19  
+BMA0614_p-12(nnrS)       1.0000     19  Bcep18194_A3823_p-36(hmp 1.0000     19  
+Bcep18194_B1121_p-111(hc 1.0000     19  Bamb_0627_p-36(hmp)      1.0000     19  
+Bamb_4090_p-111(hcp)     1.0000     19  Bcep1808_6181_p-87(nsrR2 1.0000     19  
+Bcep1808_0698_p-35(hmp)  1.0000     19  Bcep1808_5223_p-109(hcp) 1.0000     19  
+bglu_1g06210_p-48(hmp)   1.0000     19  bglu_2g04830_p-110(hcp)  1.0000     19  
+Bxe_A2375_p-107(nsrR)    1.0000     19  Bxe_A2376_p-218(PF01152) 1.0000     19  
+Bphy_6194_p-67(hcp)      1.0000     19  Bphy_0937_p-70(nsrR)     1.0000     19  
+Bphy_0936_p-156(PF01152) 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/NsrR_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/NsrR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             437    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    437    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.311 C 0.195 G 0.215 T 0.279 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.311 C 0.195 G 0.215 T 0.279 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF SATGYATHVWDWAYGCATS MEME-1	width =  19  sites =  23  llr = 288  E-value = 8.6e-089
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a:2:8:333347211a1:
+pos.-specific     C  3:::7:142:1::3:9::5
+probability       G  6::8:1:131213:8:::4
+matrix            T  ::a:31921534:5:::9:
+
+         bits    2.4                    
+                 2.1                    
+                 1.9                    
+                 1.7   *            **  
+Relative         1.4  ***          **** 
+Entropy          1.2 ***** *       **** 
+(18.1 bits)      0.9 ***** *       *****
+                 0.7 *******     * *****
+                 0.5 *******     *******
+                 0.2 ********** ********
+                 0.0 -------------------
+
+Multilevel           GATGCATCGTATATGCATC
+consensus            C   T  AAATAGC    G
+sequence                    TC G  A     
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Bamb_0627_p-36(hmp)           1  3.73e-09          . GATGTATCGTATGTGCATG           
+Bcep18194_A3823_p-36(hmp      1  3.73e-09          . GATGTATCGTATGTGCATG           
+Bcep1808_5223_p-109(hcp)      1  1.07e-08          . GATGCATAAAGAACGCATC           
+Bcep1808_0698_p-35(hmp)       1  3.81e-08          . CATGTATCGTTTGAGCATG           
+Bcep18194_B1121_p-111(hc      1  4.33e-08          . GATGCATACGCAACGCATC           
+BMA0614_p-12(nnrS)            1  5.55e-08          . GATACATAATAAATGCATC           
+BPSL2368_p-36(nnrS)           1  5.55e-08          . GATACATAATAAATGCATC           
+Bamb_4090_p-111(hcp)          1  7.97e-08          . GATGCATCAGAGAAGCATC           
+bglu_2g04830_p-110(hcp)       1  1.01e-07          . GATGCATGAATGACGCATC           
+BMA2417_p-39(hmp)             1  1.58e-07          . GATGTATCGTTTGCGAATG           
+BPSL2840_p-39(hmp)            1  1.58e-07          . GATGTATCGTTTGCGAATG           
+BMA0630_p-39(nnrS)            1  5.90e-07          . CATGCATCAAGAAAGCAAC           
+BPSL2355_p-39(nnrS)           1  5.90e-07          . CATGCATCAAGAAAGCAAC           
+Bphy_0937_p-70(nsrR)          1  1.19e-06          . GATGTGTTTTAAAAGCATG           
+bglu_1g06210_p-48(hmp)        1  1.65e-06          . AATGTATCGTGTATGAATC           
+BMA0633_p-93(norB)            1  1.79e-06          . CATACATTCTTTGTACATG           
+BPSL2351_p-93(norB)           1  1.79e-06          . CATACATTCTTTGTACATG           
+Bxe_A2376_p-218(PF01152)      1  2.27e-06          . GATGCAGGCGCTACGCATG           
+Bcep1808_6181_p-87(nsrR2      1  2.27e-06          . GAAGTATTTTTAATGCATG           
+Bphy_0936_p-156(PF01152)      1  5.43e-06          . CATGCTTTTAAAACACATC           
+BPSS1139_p-144(PF10006)       1  9.14e-06          . GTTGCTCACAATATGCATC           
+Bxe_A2375_p-107(nsrR)         1  1.10e-05          . CATGCGTAGCGCCTGCATC           
+Bphy_6194_p-67(hcp)           1  7.22e-05          . CATGCGCAGACGATCCATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bamb_0627_p-36(hmp)               3.7e-09  [+1]
+Bcep18194_A3823_p-36(hmp          3.7e-09  [+1]
+Bcep1808_5223_p-109(hcp)          1.1e-08  [+1]
+Bcep1808_0698_p-35(hmp)           3.8e-08  [+1]
+Bcep18194_B1121_p-111(hc          4.3e-08  [+1]
+BMA0614_p-12(nnrS)                5.5e-08  [+1]
+BPSL2368_p-36(nnrS)               5.5e-08  [+1]
+Bamb_4090_p-111(hcp)                8e-08  [+1]
+bglu_2g04830_p-110(hcp)             1e-07  [+1]
+BMA2417_p-39(hmp)                 1.6e-07  [+1]
+BPSL2840_p-39(hmp)                1.6e-07  [+1]
+BMA0630_p-39(nnrS)                5.9e-07  [+1]
+BPSL2355_p-39(nnrS)               5.9e-07  [+1]
+Bphy_0937_p-70(nsrR)              1.2e-06  [+1]
+bglu_1g06210_p-48(hmp)            1.7e-06  [+1]
+BMA0633_p-93(norB)                1.8e-06  [+1]
+BPSL2351_p-93(norB)               1.8e-06  [+1]
+Bxe_A2376_p-218(PF01152)          2.3e-06  [+1]
+Bcep1808_6181_p-87(nsrR2          2.3e-06  [+1]
+Bphy_0936_p-156(PF01152)          5.4e-06  [+1]
+BPSS1139_p-144(PF10006)           9.1e-06  [+1]
+Bxe_A2375_p-107(nsrR)             1.1e-05  [+1]
+Bphy_6194_p-67(hcp)               7.2e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF SATGYATHVWDWAYGCATS width=19 seqs=23
+Bamb_0627_p-36(hmp)      (    1) GATGTATCGTATGTGCATG  1 
+Bcep18194_A3823_p-36(hmp (    1) GATGTATCGTATGTGCATG  1 
+Bcep1808_5223_p-109(hcp) (    1) GATGCATAAAGAACGCATC  1 
+Bcep1808_0698_p-35(hmp)  (    1) CATGTATCGTTTGAGCATG  1 
+Bcep18194_B1121_p-111(hc (    1) GATGCATACGCAACGCATC  1 
+BMA0614_p-12(nnrS)       (    1) GATACATAATAAATGCATC  1 
+BPSL2368_p-36(nnrS)      (    1) GATACATAATAAATGCATC  1 
+Bamb_4090_p-111(hcp)     (    1) GATGCATCAGAGAAGCATC  1 
+bglu_2g04830_p-110(hcp)  (    1) GATGCATGAATGACGCATC  1 
+BMA2417_p-39(hmp)        (    1) GATGTATCGTTTGCGAATG  1 
+BPSL2840_p-39(hmp)       (    1) GATGTATCGTTTGCGAATG  1 
+BMA0630_p-39(nnrS)       (    1) CATGCATCAAGAAAGCAAC  1 
+BPSL2355_p-39(nnrS)      (    1) CATGCATCAAGAAAGCAAC  1 
+Bphy_0937_p-70(nsrR)     (    1) GATGTGTTTTAAAAGCATG  1 
+bglu_1g06210_p-48(hmp)   (    1) AATGTATCGTGTATGAATC  1 
+BMA0633_p-93(norB)       (    1) CATACATTCTTTGTACATG  1 
+BPSL2351_p-93(norB)      (    1) CATACATTCTTTGTACATG  1 
+Bxe_A2376_p-218(PF01152) (    1) GATGCAGGCGCTACGCATG  1 
+Bcep1808_6181_p-87(nsrR2 (    1) GAAGTATTTTTAATGCATG  1 
+Bphy_0936_p-156(PF01152) (    1) CATGCTTTTAAAACACATC  1 
+BPSS1139_p-144(PF10006)  (    1) GTTGCTCACAATATGCATC  1 
+Bxe_A2375_p-107(nsrR)    (    1) CATGCGTAGCGCCTGCATC  1 
+Bphy_6194_p-67(hcp)      (    1) CATGCGCAGACGATCCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 23 bayes= 1.43812 E= 8.6e-089 
+  -283     83    150  -1117 
+   162  -1117  -1117   -268 
+  -283  -1117  -1117    178 
+   -84  -1117    194  -1117 
+ -1117    174  -1117     32 
+   133  -1117    -72   -168 
+ -1117   -116   -231    164 
+    -3    100   -131    -36 
+    -3     16     69   -110 
+    -3   -216    -72     90 
+    16    -58      1     13 
+    33   -216    -72     64 
+   107   -216     50  -1117 
+   -51     64  -1117     78 
+  -125   -216    194  -1117 
+  -125    216  -1117  -1117 
+   169  -1117  -1117  -1117 
+  -184  -1117  -1117    171 
+  -283    142    101  -1117 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 23 E= 8.6e-089 
+ 0.043478  0.347826  0.608696  0.000000 
+ 0.956522  0.000000  0.000000  0.043478 
+ 0.043478  0.000000  0.000000  0.956522 
+ 0.173913  0.000000  0.826087  0.000000 
+ 0.000000  0.652174  0.000000  0.347826 
+ 0.782609  0.000000  0.130435  0.086957 
+ 0.000000  0.086957  0.043478  0.869565 
+ 0.304348  0.391304  0.086957  0.217391 
+ 0.304348  0.217391  0.347826  0.130435 
+ 0.304348  0.043478  0.130435  0.521739 
+ 0.347826  0.130435  0.217391  0.304348 
+ 0.391304  0.043478  0.130435  0.434783 
+ 0.652174  0.043478  0.304348  0.000000 
+ 0.217391  0.304348  0.000000  0.478261 
+ 0.130435  0.043478  0.826087  0.000000 
+ 0.130435  0.869565  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.086957  0.000000  0.000000  0.913043 
+ 0.043478  0.521739  0.434783  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATGYATHVWDWAYGCATS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GC]ATG[CT]AT[CAT][GAC][TA][ATG][TA][AG][TCA]GCAT[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL2355_p-39(nnrS)              5.90e-07  [+1(5.90e-07)]
+BPSS1139_p-144(PF10006)          9.14e-06  [+1(9.14e-06)]
+BPSL2351_p-93(norB)              1.79e-06  [+1(1.79e-06)]
+BPSL2840_p-39(hmp)               1.58e-07  [+1(1.58e-07)]
+BPSL2368_p-36(nnrS)              5.55e-08  [+1(5.55e-08)]
+BMA0630_p-39(nnrS)               5.90e-07  [+1(5.90e-07)]
+BMA0633_p-93(norB)               1.79e-06  [+1(1.79e-06)]
+BMA2417_p-39(hmp)                1.58e-07  [+1(1.58e-07)]
+BMA0614_p-12(nnrS)               5.55e-08  [+1(5.55e-08)]
+Bcep18194_A3823_p-36(hmp         3.73e-09  [+1(3.73e-09)]
+Bcep18194_B1121_p-111(hc         4.33e-08  [+1(4.33e-08)]
+Bamb_0627_p-36(hmp)              3.73e-09  [+1(3.73e-09)]
+Bamb_4090_p-111(hcp)             7.97e-08  [+1(7.97e-08)]
+Bcep1808_6181_p-87(nsrR2         2.27e-06  [+1(2.27e-06)]
+Bcep1808_0698_p-35(hmp)          3.81e-08  [+1(3.81e-08)]
+Bcep1808_5223_p-109(hcp)         1.07e-08  [+1(1.07e-08)]
+bglu_1g06210_p-48(hmp)           1.65e-06  [+1(1.65e-06)]
+bglu_2g04830_p-110(hcp)          1.01e-07  [+1(1.01e-07)]
+Bxe_A2375_p-107(nsrR)            1.10e-05  [+1(1.10e-05)]
+Bxe_A2376_p-218(PF01152)         2.27e-06  [+1(2.27e-06)]
+Bphy_6194_p-67(hcp)              7.22e-05  [+1(7.22e-05)]
+Bphy_0937_p-70(nsrR)             1.19e-06  [+1(1.19e-06)]
+Bphy_0936_p-156(PF01152)         5.43e-06  [+1(5.43e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

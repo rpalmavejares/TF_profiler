@@ -1,0 +1,233 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/CzcR2_Lactobacillaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LVIS_0396_p14(cadD2)     1.0000     20  LVIS_0396_p-2(cadD2)     1.0000     20  
+LVIS_0395_p-40(czcR2)    1.0000     20  LVIS_0395_p-56(czcR2)    1.0000     20  
+LGG_02417_p-68(czcX)     1.0000     20  PEPE_0029_p-51(cadD2)    1.0000     20  
+PEPE_0028_p-34(czcR2)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/CzcR2_Lactobacillaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/CzcR2_Lactobacillaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             140    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    140    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.414 C 0.0786 G 0.0786 T 0.429 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.41 C 0.0833 G 0.0833 T 0.424 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATATGWTDAYATWAWCATAT MEME-1	width =  20  sites =   7  llr = 101  E-value = 2.5e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:a::4347163376:a:a:
+pos.-specific     C  :::::::::4::1::a::::
+probability       G  ::::a::3::3:::::::::
+matrix            T  1a:a:6733417634::a:a
+
+         bits    3.6     *          *    
+                 3.2     *          *    
+                 2.9     *          *    
+                 2.5     *          *    
+Relative         2.2     *          *    
+Entropy          1.8     *          *    
+(20.8 bits)      1.4   * *          ** * 
+                 1.1  ****          *****
+                 0.7 *****    **    *****
+                 0.4 ********************
+                 0.0 --------------------
+
+Multilevel           ATATGTTAACATTAACATAT
+consensus                 AAGTTGAATT     
+sequence                    T            
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+LGG_02417_p-68(czcX)          1  7.53e-09          . TTATGTTGACATTAACATAT           
+PEPE_0028_p-34(czcR2)         1  7.44e-08          . ATATGATAACATATTCATAT           
+LVIS_0396_p14(cadD2)          1  9.36e-08          . ATATGTTGAAAATAACATAT           
+PEPE_0029_p-51(cadD2)         1  1.16e-07          . ATATGAATATGTTATCATAT           
+LVIS_0395_p-40(czcR2)         1  1.76e-07          . ATATGTTATCATATTCATAT           
+LVIS_0396_p-2(cadD2)          1  2.11e-07          . ATATGAATATGATAACATAT           
+LVIS_0395_p-56(czcR2)         1  3.89e-07          . ATATGTTATTTTCAACATAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LGG_02417_p-68(czcX)              7.5e-09  [+1]
+PEPE_0028_p-34(czcR2)             7.4e-08  [+1]
+LVIS_0396_p14(cadD2)              9.4e-08  [+1]
+PEPE_0029_p-51(cadD2)             1.2e-07  [+1]
+LVIS_0395_p-40(czcR2)             1.8e-07  [+1]
+LVIS_0396_p-2(cadD2)              2.1e-07  [+1]
+LVIS_0395_p-56(czcR2)             3.9e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATATGWTDAYATWAWCATAT width=20 seqs=7
+LGG_02417_p-68(czcX)     (    1) TTATGTTGACATTAACATAT  1 
+PEPE_0028_p-34(czcR2)    (    1) ATATGATAACATATTCATAT  1 
+LVIS_0396_p14(cadD2)     (    1) ATATGTTGAAAATAACATAT  1 
+PEPE_0029_p-51(cadD2)    (    1) ATATGAATATGTTATCATAT  1 
+LVIS_0395_p-40(czcR2)    (    1) ATATGTTATCATATTCATAT  1 
+LVIS_0396_p-2(cadD2)     (    1) ATATGAATATGATAACATAT  1 
+LVIS_0395_p-56(czcR2)    (    1) ATATGTTATTTTCAACATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 7 bayes= 0.415037 E= 2.5e-017 
+   106   -945   -945   -156 
+  -945   -945   -945    124 
+   129   -945   -945   -945 
+  -945   -945   -945    124 
+  -945   -945    358   -945 
+     6   -945   -945     43 
+   -52   -945   -945     75 
+     6   -945    178    -57 
+    80   -945   -945    -57 
+  -152    236   -945      2 
+    48   -945    178   -156 
+   -52   -945   -945     75 
+   -52     78   -945     43 
+    80   -945   -945    -57 
+    48   -945   -945      2 
+  -945    358   -945   -945 
+   129   -945   -945   -945 
+  -945   -945   -945    124 
+   129   -945   -945   -945 
+  -945   -945   -945    124 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 7 E= 2.5e-017 
+ 0.857143  0.000000  0.000000  0.142857 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.428571  0.000000  0.000000  0.571429 
+ 0.285714  0.000000  0.000000  0.714286 
+ 0.428571  0.000000  0.285714  0.285714 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.142857  0.428571  0.000000  0.428571 
+ 0.571429  0.000000  0.285714  0.142857 
+ 0.285714  0.000000  0.000000  0.714286 
+ 0.285714  0.142857  0.000000  0.571429 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATGWTDAYATWAWCATAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATATG[TA][TA][AGT][AT][CT][AG][TA][TA][AT][AT]CATAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LVIS_0396_p14(cadD2)             9.36e-08  [+1(9.36e-08)]
+LVIS_0396_p-2(cadD2)             2.11e-07  [+1(2.11e-07)]
+LVIS_0395_p-40(czcR2)            1.76e-07  [+1(1.76e-07)]
+LVIS_0395_p-56(czcR2)            3.89e-07  [+1(3.89e-07)]
+LGG_02417_p-68(czcX)             7.53e-09  [+1(7.53e-09)]
+PEPE_0029_p-51(cadD2)            1.16e-07  [+1(1.16e-07)]
+PEPE_0028_p-34(czcR2)            7.44e-08  [+1(7.44e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

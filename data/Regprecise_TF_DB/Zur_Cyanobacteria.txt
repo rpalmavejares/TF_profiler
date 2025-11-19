@@ -1,0 +1,577 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Zur_Cyanobacteria.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SYNPCC7002_G0127_p-25(he 1.0000     23  SYNPCC7002_G0132_p-70(PF 1.0000     23  
+SYNPCC7002_A2501_p-39(zn 1.0000     23  sll1550_p-118(ompZ)      1.0000     23  
+slr2043_p-84(znuA)       1.0000     23  sll1937_p-45(zur)        1.0000     23  
+cce_1484_p-40(cce_1484)  1.0000     23  cce_1485_p-31(cce_1485)  1.0000     23  
+cce_4845_p-37(hisI2)     1.0000     23  cce_4835_p28(thrS2)      1.0000     23  
+cce_1495_p81(thrS2)      1.0000     23  cce_1495_p127(thrS2)     1.0000     23  
+cce_4834_p-80(yciC)      1.0000     23  cce_4834_p-52(yciC)      1.0000     23  
+cce_4833_p-46(yciC)      1.0000     23  cce_1501_p-43(folE2)     1.0000     23  
+cce_1489_p-78(hemB2)     1.0000     23  cce_1489_p-32(hemB2)     1.0000     23  
+cce_4852_p-72(hemB2)     1.0000     23  cce_4852_p-46(hemB2)     1.0000     23  
+cce_4863_p-62(PF07992)   1.0000     23  cce_4863_p-36(PF07992)   1.0000     23  
+cce_1488_p-77(yciC2)     1.0000     23  cce_1488_p-38(yciC2)     1.0000     23  
+cce_4857_p-50(yciC2)     1.0000     23  cce_4862_p-72(znuA)      1.0000     23  
+cce_4862_p-46(znuA)      1.0000     23  cce_2961_p-79(znuA)      1.0000     23  
+cce_4859_p-120(zur)      1.0000     23  cce_1494_p-6(alr1197)    1.0000     23  
+PCC8801_0774_p-32(cce_14 1.0000     23  PCC8801_2484_p-84(cce_14 1.0000     23  
+PCC8801_2483_p-53(cce_14 1.0000     23  PCC8801_0773_p-40(cce_14 1.0000     23  
+PCC8801_0861_p-152(smtA) 1.0000     23  PCC8801_0864_p-50(folE2) 1.0000     23  
+PCC8801_0777_p-72(hemB2) 1.0000     23  PCC8801_0777_p-32(hemB2) 1.0000     23  
+PCC8801_0862_p-76(yciC2) 1.0000     23  PCC8801_0862_p-38(yciC2) 1.0000     23  
+PCC8801_3888_p-52(znuA)  1.0000     23  Cyan7425_0794_p-29(cce_1 1.0000     23  
+Cyan7425_0822_p-29(cce_1 1.0000     23  Cyan7425_1909_p-41(yciC2 1.0000     23  
+Cyan7425_1916_p-104(Cyan 1.0000     23  Cyan7425_1917_p-56(zur)  1.0000     23  
+MAE_10010_p-40(ompZ)     1.0000     23  MAE_31590_p-34(thrS2)    1.0000     23  
+MAE_22860_p-323(folE2)   1.0000     23  MAE_20780_p-67(znuA)     1.0000     23  
+MAE_31630_p-6(alr1197)   1.0000     23  all4723_p-28(thrS2)      1.0000     23  
+all4725_p-31(hemB2)      1.0000     23  all1751_p-44(yciC2)      1.0000     23  
+all0833_p-110(znuA)      1.0000     23  all0833_p-80(znuA)       1.0000     23  
+alr4028_p-122(omp)       1.0000     23  all3515_p-52(all3515)    1.0000     23  
+alr1197_p-29(alr1197)    1.0000     23  alr3242_p-260(alr3242)   1.0000     23  
+alr3242_p-266(alr3242)   1.0000     23  alr1197_p-23(alr1197)    1.0000     23  
+Tery_3358_p-287(cce_1484 1.0000     23  Tery_2490_p-37(hisI2)    1.0000     23  
+Tery_4617_p-255(yciC)    1.0000     23  Tery_4613_p-43(PF07992)  1.0000     23  
+Tery_4951_p-49(znuA)     1.0000     23  Tery_4609_p-84(alr1199)  1.0000     23  
+Synpcc7942_1316_p-59(cce 1.0000     23  Synpcc7942_1463_p-37(omp 1.0000     23  
+PMT2202_p-111(cce_1485)  1.0000     23  PMT2203_p-34(cce_1484)   1.0000     23  
+CYA_2533_p-39(sufE)      1.0000     23  SYNW0970_p-83(cce_1485)  1.0000     23  
+SYNW0971_p37(cce_1484)   1.0000     23  SYNW0359_p-105(smtA)     1.0000     23  
+SYNW0359_p-79(smtA)      1.0000     23  glr1694_p-6(cce_1484)    1.0000     23  
+gll1693_p-56(cce_1486)   1.0000     23  glr0533_p-40(glr0533)    1.0000     23  
+tlr1246_p-84(ompZ)       1.0000     23  tlr2276_p-36(yciC)       1.0000     23  
+tlr2062_p-31(znuA)       1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Zur_Cyanobacteria.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Cyanobacteria/Zur_Cyanobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       83    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1909    N=              83
+sample: seed=            0    hsfrac=          0
+        searchsize=   1909    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.384 C 0.0995 G 0.115 T 0.401 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.384 C 0.0998 G 0.115 T 0.401 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TRAKAATGATWATCATTHTHA MEME-1	width =  21  sites =  83  llr = 1081  E-value = 1.9e-368
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  139199:1a:49::9:14126
+pos.-specific     C  1::1::1::::118:::313:
+probability       G  :5:4:::8:1:::11::1::2
+matrix            T  72:4::9::96:91:992942
+
+         bits    3.3                      
+                 3.0                      
+                 2.7                      
+                 2.3              *       
+Relative         2.0        *     *       
+Entropy          1.7        *     *       
+(18.8 bits)      1.3        **    *       
+                 1.0   * *****  ******    
+                 0.7  ** ****** ****** *  
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TGATAATGATTATCATTATTA
+consensus             A G      A      C C 
+sequence                              T A 
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+SYNW0970_p-83(cce_1485)       2  6.94e-10          A TGAGAATGATTATCATTTTTA C         
+MAE_22860_p-323(folE2)        2  1.10e-09          A TGATAACGATTATCATTCTAG G         
+cce_1485_p-31(cce_1485)       2  1.10e-09          A TGATAATGATAATCATTCTAG T         
+PCC8801_0773_p-40(cce_14      2  1.37e-09          A TTAGAATGATTATCATTATCA T         
+PCC8801_0774_p-32(cce_14      2  1.37e-09          A TGATAATGATAATCATTCTAA T         
+MAE_31630_p-6(alr1197)        2  2.14e-09          G CTAGAATGATTATCATTATCA C         
+cce_1484_p-40(cce_1484)       2  2.14e-09          A CTAGAATGATTATCATTATCA T         
+PCC8801_0864_p-50(folE2)      2  3.08e-09          T TGAGAACGATTATCATTTTAA A         
+SYNW0359_p-105(smtA)          2  3.78e-09          C CGATAATGATTATCATTCTTT T         
+cce_1495_p81(thrS2)           2  3.78e-09          T TGATAATGATTATCATTTTTA T         
+PCC8801_0862_p-38(yciC2)      2  4.32e-09          A TGAGAGTGATTATCATTCTAG A         
+SYNW0971_p37(cce_1484)        2  7.03e-09          G TAAAAATGATAATCATTCTCA T         
+cce_1488_p-77(yciC2)          2  7.03e-09          T TGAGAATGATTATTATTCTTA A         
+SYNPCC7002_G0127_p-25(he      2  8.33e-09          T CGAGAATGATTATCATTTTTT A         
+sll1550_p-118(ompZ)           2  1.08e-08          A TGATAATGATTATCATTATTT A         
+gll1693_p-56(cce_1486)        2  1.25e-08          T CAAGAATGATTCTCATTCTAG A         
+Cyan7425_1917_p-56(zur)       2  1.25e-08          A TGATAATGATTATCATTGCCT T         
+Tery_4951_p-49(znuA)          2  1.45e-08          A AAAGAATGATAATCATTATCA T         
+Tery_4613_p-43(PF07992)       2  1.68e-08          A AAAGAATGATAATCATTCTTA A         
+MAE_10010_p-40(ompZ)          2  1.68e-08          C TGAGAACAATAATCATTCTTG T         
+cce_1489_p-78(hemB2)          2  1.68e-08          A TAATAATGATTATCATTATTA T         
+glr1694_p-6(cce_1484)         2  1.93e-08          T CTAGAATGAGAATCATTCTTG A         
+cce_1501_p-43(folE2)          2  1.93e-08          T TGAGAACGATTATCATTTTAT C         
+PMT2202_p-111(cce_1485)       2  2.50e-08          A TGAGAATGATTCCCATTTTTA T         
+PCC8801_0777_p-72(hemB2)      2  2.50e-08          T TGATAATGATTATCATTCCGT G         
+PCC8801_0862_p-76(yciC2)      2  2.88e-08          T TGAGAATGATTCTTATTCTTG A         
+tlr2062_p-31(znuA)            2  3.34e-08          A TGAGAATGATTATCATTCATC T         
+PCC8801_0777_p-32(hemB2)      2  3.34e-08          A TAATAATGATTATCATTTTTA A         
+cce_1488_p-38(yciC2)          2  3.34e-08          A TGAAAATGATTATCATTTTAG A         
+cce_1495_p127(thrS2)          2  3.34e-08          A TAATAATGATTATCATTTTTA T         
+MAE_31590_p-34(thrS2)         2  3.82e-08          G CTACAATGATAATCATTATCA T         
+Cyan7425_1909_p-41(yciC2      2  3.82e-08          T TGATAATGATTATCATTGTAT A         
+PCC8801_0861_p-152(smtA)      2  4.94e-08          T CTAGAATGATAATCACTCTCA T         
+glr0533_p-40(glr0533)         2  5.62e-08          T TGAGAACGACTATCATTGTTA T         
+cce_4833_p-46(yciC)           2  5.62e-08          T TAAGAACGATTATCGTTATAG T         
+all3515_p-52(all3515)         2  6.39e-08          C TGATTATGATAATCATTATCG G         
+Synpcc7942_1463_p-37(omp      2  8.20e-08          A TGAGAATAATAATCATTTTTA G         
+all4723_p-28(thrS2)           2  8.20e-08          A TGATAACGATTCTCATTATTT A         
+SYNPCC7002_A2501_p-39(zn      2  8.20e-08          A TAAGAACGATTATCATTTCAA G         
+cce_4852_p-46(hemB2)          2  9.25e-08          A TAATAATGATTATCATTTTGA T         
+Cyan7425_1916_p-104(Cyan      2  1.16e-07          A AGGCAATGATAATCATTATCA T         
+MAE_20780_p-67(znuA)          2  1.49e-07          T TCAGAATGATAACGATTCTCA C         
+alr4028_p-122(omp)            2  1.68e-07          G TGATAATAATAATCATTATCT A         
+all4725_p-31(hemB2)           2  1.68e-07          A TGATAATGGTTATCAATCTTG T         
+SYNPCC7002_G0132_p-70(PF      2  1.68e-07          T TGATAATAATTATCATTTTTA T         
+cce_4863_p-36(PF07992)        2  2.35e-07          A TGAGAATGATTATCGTTAATT T         
+PMT2203_p-34(cce_1484)        2  2.64e-07          A TAAAAATGGGAATCATTCTCA T         
+all0833_p-110(znuA)           2  2.96e-07          A TGAGAATGAGAATTATTATAA T         
+cce_1489_p-32(hemB2)          2  3.29e-07          A TAATAATGATTATCGTTTCTA A         
+tlr1246_p-84(ompZ)            2  3.66e-07          A GTAGAATGATAATCATTACAA T         
+CYA_2533_p-39(sufE)           2  3.66e-07          T TATGATTGATTATCATTCTCA T         
+alr3242_p-266(alr3242)        2  3.66e-07          G TAAACATGATAATCATTATCA A         
+cce_4857_p-50(yciC2)          2  3.66e-07          A TGAGATCAATTATCATTATCA T         
+cce_4852_p-72(hemB2)          2  4.07e-07          T AAATAATAATAATCATTCTCG T         
+Synpcc7942_1316_p-59(cce      2  4.54e-07          T AGGGAATGATAACGATTCTCA A         
+cce_4835_p28(thrS2)           2  4.54e-07          A TGATAATGATTATTATTACAA T         
+cce_4862_p-46(znuA)           2  5.07e-07          A TAATAATGGTTATCATTTTAA T         
+alr1197_p-23(alr1197)         2  5.62e-07          A TGAAAATGATTATCATTTAAA A         
+PCC8801_3888_p-52(znuA)       2  6.22e-07          G ATACAATGATAATCGTTATCA G         
+cce_4862_p-72(znuA)           2  6.22e-07          A AATTAACGATAATCATTCTCA T         
+tlr2276_p-36(yciC)            2  6.88e-07          A TGAGAATGATTCTCTTTTTCT T         
+cce_4863_p-62(PF07992)        2  7.64e-07          A TTAAAATGATAACCATTATTA T         
+cce_4845_p-37(hisI2)          2  9.42e-07          A TGATAATGATTATCAAAATTG A         
+SYNW0359_p-79(smtA)           2  1.14e-06          C CAATAATGAGAATTATTCTTA T         
+Cyan7425_0822_p-29(cce_1      2  1.14e-06          T TGAAAATGAGAATGGTTCTTA T         
+slr2043_p-84(znuA)            2  1.14e-06          A TGATAATGATTATCGTTTATT G         
+cce_4859_p-120(zur)           2  1.86e-06          A TAATAATGATTATTATTCTAC A         
+cce_2961_p-79(znuA)           2  1.86e-06          T TAATAGTGATAATGATTCTTA T         
+cce_4834_p-80(yciC)           2  2.04e-06          A TTGTAATAATAATCATTATCA T         
+Cyan7425_0794_p-29(cce_1      2  2.46e-06          A TAAGAATTATTCTCATTTTCA C         
+all1751_p-44(yciC2)           2  3.24e-06          G TGATAATGATTATCCGTATGG T         
+cce_4834_p-52(yciC)           2  4.63e-06          C GTAAATTGATAATCATTATCA A         
+sll1937_p-45(zur)             2  4.63e-06          C AATAAACGATAATCATTATCA T         
+all0833_p-80(znuA)            2  5.98e-06          T GTACAATAAGTATCATTGTCA A         
+PCC8801_2484_p-84(cce_14      2  1.25e-05          C TCATAATGATTTTCATAATTG T         
+Tery_2490_p-37(hisI2)         2  3.35e-05          A GGATAATGATTATTAAAATTG A         
+PCC8801_2483_p-53(cce_14      2  4.45e-05          A CAATTATGAAAATCATTATGA G         
+cce_1494_p-6(alr1197)         2  4.77e-05          C TAACAATGATTACTGTAATTA T         
+Tery_3358_p-287(cce_1484      2  1.83e-04          A TTATAATCATATTTATTATTA A         
+alr3242_p-260(alr3242)        2  2.31e-04          A TGATAATCATTATCAAAAAAT G         
+Tery_4617_p-255(yciC)         2  3.06e-04          A TTATGATAATAATTATTGCAA T         
+alr1197_p-29(alr1197)         2  3.06e-04          A ACTGCATGAAAATGATTATCA T         
+Tery_4609_p-84(alr1199)       2  4.70e-04          T TTGAAACAAGTATTATTGTTT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SYNW0970_p-83(cce_1485)           6.9e-10  1_[+1]_1
+MAE_22860_p-323(folE2)            1.1e-09  1_[+1]_1
+cce_1485_p-31(cce_1485)           1.1e-09  1_[+1]_1
+PCC8801_0773_p-40(cce_14          1.4e-09  1_[+1]_1
+PCC8801_0774_p-32(cce_14          1.4e-09  1_[+1]_1
+MAE_31630_p-6(alr1197)            2.1e-09  1_[+1]_1
+cce_1484_p-40(cce_1484)           2.1e-09  1_[+1]_1
+PCC8801_0864_p-50(folE2)          3.1e-09  1_[+1]_1
+SYNW0359_p-105(smtA)              3.8e-09  1_[+1]_1
+cce_1495_p81(thrS2)               3.8e-09  1_[+1]_1
+PCC8801_0862_p-38(yciC2)          4.3e-09  1_[+1]_1
+SYNW0971_p37(cce_1484)              7e-09  1_[+1]_1
+cce_1488_p-77(yciC2)                7e-09  1_[+1]_1
+SYNPCC7002_G0127_p-25(he          8.3e-09  1_[+1]_1
+sll1550_p-118(ompZ)               1.1e-08  1_[+1]_1
+gll1693_p-56(cce_1486)            1.2e-08  1_[+1]_1
+Cyan7425_1917_p-56(zur)           1.2e-08  1_[+1]_1
+Tery_4951_p-49(znuA)              1.4e-08  1_[+1]_1
+Tery_4613_p-43(PF07992)           1.7e-08  1_[+1]_1
+MAE_10010_p-40(ompZ)              1.7e-08  1_[+1]_1
+cce_1489_p-78(hemB2)              1.7e-08  1_[+1]_1
+glr1694_p-6(cce_1484)             1.9e-08  1_[+1]_1
+cce_1501_p-43(folE2)              1.9e-08  1_[+1]_1
+PMT2202_p-111(cce_1485)           2.5e-08  1_[+1]_1
+PCC8801_0777_p-72(hemB2)          2.5e-08  1_[+1]_1
+PCC8801_0862_p-76(yciC2)          2.9e-08  1_[+1]_1
+tlr2062_p-31(znuA)                3.3e-08  1_[+1]_1
+PCC8801_0777_p-32(hemB2)          3.3e-08  1_[+1]_1
+cce_1488_p-38(yciC2)              3.3e-08  1_[+1]_1
+cce_1495_p127(thrS2)              3.3e-08  1_[+1]_1
+MAE_31590_p-34(thrS2)             3.8e-08  1_[+1]_1
+Cyan7425_1909_p-41(yciC2          3.8e-08  1_[+1]_1
+PCC8801_0861_p-152(smtA)          4.9e-08  1_[+1]_1
+glr0533_p-40(glr0533)             5.6e-08  1_[+1]_1
+cce_4833_p-46(yciC)               5.6e-08  1_[+1]_1
+all3515_p-52(all3515)             6.4e-08  1_[+1]_1
+Synpcc7942_1463_p-37(omp          8.2e-08  1_[+1]_1
+all4723_p-28(thrS2)               8.2e-08  1_[+1]_1
+SYNPCC7002_A2501_p-39(zn          8.2e-08  1_[+1]_1
+cce_4852_p-46(hemB2)              9.3e-08  1_[+1]_1
+Cyan7425_1916_p-104(Cyan          1.2e-07  1_[+1]_1
+MAE_20780_p-67(znuA)              1.5e-07  1_[+1]_1
+alr4028_p-122(omp)                1.7e-07  1_[+1]_1
+all4725_p-31(hemB2)               1.7e-07  1_[+1]_1
+SYNPCC7002_G0132_p-70(PF          1.7e-07  1_[+1]_1
+cce_4863_p-36(PF07992)            2.4e-07  1_[+1]_1
+PMT2203_p-34(cce_1484)            2.6e-07  1_[+1]_1
+all0833_p-110(znuA)                 3e-07  1_[+1]_1
+cce_1489_p-32(hemB2)              3.3e-07  1_[+1]_1
+tlr1246_p-84(ompZ)                3.7e-07  1_[+1]_1
+CYA_2533_p-39(sufE)               3.7e-07  1_[+1]_1
+alr3242_p-266(alr3242)            3.7e-07  1_[+1]_1
+cce_4857_p-50(yciC2)              3.7e-07  1_[+1]_1
+cce_4852_p-72(hemB2)              4.1e-07  1_[+1]_1
+Synpcc7942_1316_p-59(cce          4.5e-07  1_[+1]_1
+cce_4835_p28(thrS2)               4.5e-07  1_[+1]_1
+cce_4862_p-46(znuA)               5.1e-07  1_[+1]_1
+alr1197_p-23(alr1197)             5.6e-07  1_[+1]_1
+PCC8801_3888_p-52(znuA)           6.2e-07  1_[+1]_1
+cce_4862_p-72(znuA)               6.2e-07  1_[+1]_1
+tlr2276_p-36(yciC)                6.9e-07  1_[+1]_1
+cce_4863_p-62(PF07992)            7.6e-07  1_[+1]_1
+cce_4845_p-37(hisI2)              9.4e-07  1_[+1]_1
+SYNW0359_p-79(smtA)               1.1e-06  1_[+1]_1
+Cyan7425_0822_p-29(cce_1          1.1e-06  1_[+1]_1
+slr2043_p-84(znuA)                1.1e-06  1_[+1]_1
+cce_4859_p-120(zur)               1.9e-06  1_[+1]_1
+cce_2961_p-79(znuA)               1.9e-06  1_[+1]_1
+cce_4834_p-80(yciC)                 2e-06  1_[+1]_1
+Cyan7425_0794_p-29(cce_1          2.5e-06  1_[+1]_1
+all1751_p-44(yciC2)               3.2e-06  1_[+1]_1
+cce_4834_p-52(yciC)               4.6e-06  1_[+1]_1
+sll1937_p-45(zur)                 4.6e-06  1_[+1]_1
+all0833_p-80(znuA)                  6e-06  1_[+1]_1
+PCC8801_2484_p-84(cce_14          1.3e-05  1_[+1]_1
+Tery_2490_p-37(hisI2)             3.4e-05  1_[+1]_1
+PCC8801_2483_p-53(cce_14          4.5e-05  1_[+1]_1
+cce_1494_p-6(alr1197)             4.8e-05  1_[+1]_1
+Tery_3358_p-287(cce_1484          0.00018  1_[+1]_1
+alr3242_p-260(alr3242)            0.00023  1_[+1]_1
+Tery_4617_p-255(yciC)             0.00031  1_[+1]_1
+alr1197_p-29(alr1197)             0.00031  1_[+1]_1
+Tery_4609_p-84(alr1199)           0.00047  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TRAKAATGATWATCATTHTHA width=21 seqs=83
+SYNW0970_p-83(cce_1485)  (    2) TGAGAATGATTATCATTTTTA  1 
+MAE_22860_p-323(folE2)   (    2) TGATAACGATTATCATTCTAG  1 
+cce_1485_p-31(cce_1485)  (    2) TGATAATGATAATCATTCTAG  1 
+PCC8801_0773_p-40(cce_14 (    2) TTAGAATGATTATCATTATCA  1 
+PCC8801_0774_p-32(cce_14 (    2) TGATAATGATAATCATTCTAA  1 
+MAE_31630_p-6(alr1197)   (    2) CTAGAATGATTATCATTATCA  1 
+cce_1484_p-40(cce_1484)  (    2) CTAGAATGATTATCATTATCA  1 
+PCC8801_0864_p-50(folE2) (    2) TGAGAACGATTATCATTTTAA  1 
+SYNW0359_p-105(smtA)     (    2) CGATAATGATTATCATTCTTT  1 
+cce_1495_p81(thrS2)      (    2) TGATAATGATTATCATTTTTA  1 
+PCC8801_0862_p-38(yciC2) (    2) TGAGAGTGATTATCATTCTAG  1 
+SYNW0971_p37(cce_1484)   (    2) TAAAAATGATAATCATTCTCA  1 
+cce_1488_p-77(yciC2)     (    2) TGAGAATGATTATTATTCTTA  1 
+SYNPCC7002_G0127_p-25(he (    2) CGAGAATGATTATCATTTTTT  1 
+sll1550_p-118(ompZ)      (    2) TGATAATGATTATCATTATTT  1 
+gll1693_p-56(cce_1486)   (    2) CAAGAATGATTCTCATTCTAG  1 
+Cyan7425_1917_p-56(zur)  (    2) TGATAATGATTATCATTGCCT  1 
+Tery_4951_p-49(znuA)     (    2) AAAGAATGATAATCATTATCA  1 
+Tery_4613_p-43(PF07992)  (    2) AAAGAATGATAATCATTCTTA  1 
+MAE_10010_p-40(ompZ)     (    2) TGAGAACAATAATCATTCTTG  1 
+cce_1489_p-78(hemB2)     (    2) TAATAATGATTATCATTATTA  1 
+glr1694_p-6(cce_1484)    (    2) CTAGAATGAGAATCATTCTTG  1 
+cce_1501_p-43(folE2)     (    2) TGAGAACGATTATCATTTTAT  1 
+PMT2202_p-111(cce_1485)  (    2) TGAGAATGATTCCCATTTTTA  1 
+PCC8801_0777_p-72(hemB2) (    2) TGATAATGATTATCATTCCGT  1 
+PCC8801_0862_p-76(yciC2) (    2) TGAGAATGATTCTTATTCTTG  1 
+tlr2062_p-31(znuA)       (    2) TGAGAATGATTATCATTCATC  1 
+PCC8801_0777_p-32(hemB2) (    2) TAATAATGATTATCATTTTTA  1 
+cce_1488_p-38(yciC2)     (    2) TGAAAATGATTATCATTTTAG  1 
+cce_1495_p127(thrS2)     (    2) TAATAATGATTATCATTTTTA  1 
+MAE_31590_p-34(thrS2)    (    2) CTACAATGATAATCATTATCA  1 
+Cyan7425_1909_p-41(yciC2 (    2) TGATAATGATTATCATTGTAT  1 
+PCC8801_0861_p-152(smtA) (    2) CTAGAATGATAATCACTCTCA  1 
+glr0533_p-40(glr0533)    (    2) TGAGAACGACTATCATTGTTA  1 
+cce_4833_p-46(yciC)      (    2) TAAGAACGATTATCGTTATAG  1 
+all3515_p-52(all3515)    (    2) TGATTATGATAATCATTATCG  1 
+Synpcc7942_1463_p-37(omp (    2) TGAGAATAATAATCATTTTTA  1 
+all4723_p-28(thrS2)      (    2) TGATAACGATTCTCATTATTT  1 
+SYNPCC7002_A2501_p-39(zn (    2) TAAGAACGATTATCATTTCAA  1 
+cce_4852_p-46(hemB2)     (    2) TAATAATGATTATCATTTTGA  1 
+Cyan7425_1916_p-104(Cyan (    2) AGGCAATGATAATCATTATCA  1 
+MAE_20780_p-67(znuA)     (    2) TCAGAATGATAACGATTCTCA  1 
+alr4028_p-122(omp)       (    2) TGATAATAATAATCATTATCT  1 
+all4725_p-31(hemB2)      (    2) TGATAATGGTTATCAATCTTG  1 
+SYNPCC7002_G0132_p-70(PF (    2) TGATAATAATTATCATTTTTA  1 
+cce_4863_p-36(PF07992)   (    2) TGAGAATGATTATCGTTAATT  1 
+PMT2203_p-34(cce_1484)   (    2) TAAAAATGGGAATCATTCTCA  1 
+all0833_p-110(znuA)      (    2) TGAGAATGAGAATTATTATAA  1 
+cce_1489_p-32(hemB2)     (    2) TAATAATGATTATCGTTTCTA  1 
+tlr1246_p-84(ompZ)       (    2) GTAGAATGATAATCATTACAA  1 
+CYA_2533_p-39(sufE)      (    2) TATGATTGATTATCATTCTCA  1 
+alr3242_p-266(alr3242)   (    2) TAAACATGATAATCATTATCA  1 
+cce_4857_p-50(yciC2)     (    2) TGAGATCAATTATCATTATCA  1 
+cce_4852_p-72(hemB2)     (    2) AAATAATAATAATCATTCTCG  1 
+Synpcc7942_1316_p-59(cce (    2) AGGGAATGATAACGATTCTCA  1 
+cce_4835_p28(thrS2)      (    2) TGATAATGATTATTATTACAA  1 
+cce_4862_p-46(znuA)      (    2) TAATAATGGTTATCATTTTAA  1 
+alr1197_p-23(alr1197)    (    2) TGAAAATGATTATCATTTAAA  1 
+PCC8801_3888_p-52(znuA)  (    2) ATACAATGATAATCGTTATCA  1 
+cce_4862_p-72(znuA)      (    2) AATTAACGATAATCATTCTCA  1 
+tlr2276_p-36(yciC)       (    2) TGAGAATGATTCTCTTTTTCT  1 
+cce_4863_p-62(PF07992)   (    2) TTAAAATGATAACCATTATTA  1 
+cce_4845_p-37(hisI2)     (    2) TGATAATGATTATCAAAATTG  1 
+SYNW0359_p-79(smtA)      (    2) CAATAATGAGAATTATTCTTA  1 
+Cyan7425_0822_p-29(cce_1 (    2) TGAAAATGAGAATGGTTCTTA  1 
+slr2043_p-84(znuA)       (    2) TGATAATGATTATCGTTTATT  1 
+cce_4859_p-120(zur)      (    2) TAATAATGATTATTATTCTAC  1 
+cce_2961_p-79(znuA)      (    2) TAATAGTGATAATGATTCTTA  1 
+cce_4834_p-80(yciC)      (    2) TTGTAATAATAATCATTATCA  1 
+Cyan7425_0794_p-29(cce_1 (    2) TAAGAATTATTCTCATTTTCA  1 
+all1751_p-44(yciC2)      (    2) TGATAATGATTATCCGTATGG  1 
+cce_4834_p-52(yciC)      (    2) GTAAATTGATAATCATTATCA  1 
+sll1937_p-45(zur)        (    2) AATAAACGATAATCATTATCA  1 
+all0833_p-80(znuA)       (    2) GTACAATAAGTATCATTGTCA  1 
+PCC8801_2484_p-84(cce_14 (    2) TCATAATGATTTTCATAATTG  1 
+Tery_2490_p-37(hisI2)    (    2) GGATAATGATTATTAAAATTG  1 
+PCC8801_2483_p-53(cce_14 (    2) CAATTATGAAAATCATTATGA  1 
+cce_1494_p-6(alr1197)    (    2) TAACAATGATTACTGTAATTA  1 
+Tery_3358_p-287(cce_1484 (    2) TTATAATCATATTTATTATTA  1 
+alr3242_p-260(alr3242)   (    2) TGATAATCATTATCAAAAAAT  1 
+Tery_4617_p-255(yciC)    (    2) TTATGATAATAATTATTGCAA  1 
+alr1197_p-29(alr1197)    (    2) ACTGCATGAAAATGATTATCA  1 
+Tery_4609_p-84(alr1199)  (    2) TTGAAACAAGTATTATTGTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 249 bayes= 3.53303 E= 1.9e-368 
+  -182     27   -125     85 
+   -41   -147    210   -115 
+   123  -1302   -125   -306 
+  -167    -73    175     11 
+   129   -205   -325   -405 
+   129  -1302   -225   -347 
+ -1302     53  -1302    109 
+  -167   -205    287   -505 
+   133  -1302   -167  -1302 
+  -399   -305    -45    113 
+     5  -1302  -1302     59 
+   123    -47  -1302   -405 
+ -1302    -73  -1302    123 
+ -1302    302    -93   -160 
+   121   -305    -45   -505 
+  -299   -305   -325    121 
+  -267  -1302  -1302    123 
+     0    165    -67    -81 
+  -267    -24  -1302    109 
+   -75    170   -125     -1 
+    68   -205     75   -125 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 83 E= 1.9e-368 
+ 0.108434  0.120482  0.048193  0.722892 
+ 0.289157  0.036145  0.493976  0.180723 
+ 0.903614  0.000000  0.048193  0.048193 
+ 0.120482  0.060241  0.385542  0.433735 
+ 0.939759  0.024096  0.012048  0.024096 
+ 0.939759  0.000000  0.024096  0.036145 
+ 0.000000  0.144578  0.000000  0.855422 
+ 0.120482  0.024096  0.843373  0.012048 
+ 0.963855  0.000000  0.036145  0.000000 
+ 0.024096  0.012048  0.084337  0.879518 
+ 0.397590  0.000000  0.000000  0.602410 
+ 0.903614  0.072289  0.000000  0.024096 
+ 0.000000  0.060241  0.000000  0.939759 
+ 0.000000  0.807229  0.060241  0.132530 
+ 0.891566  0.012048  0.084337  0.012048 
+ 0.048193  0.012048  0.012048  0.927711 
+ 0.060241  0.000000  0.000000  0.939759 
+ 0.385542  0.313253  0.072289  0.228916 
+ 0.060241  0.084337  0.000000  0.855422 
+ 0.228916  0.325301  0.048193  0.397590 
+ 0.614458  0.024096  0.192771  0.168675 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRAKAATGATWATCATTHTHA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GA]A[TG]AATGAT[TA]ATCATT[ACT]T[TCA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.37 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SYNPCC7002_G0127_p-25(he         2.50e-08  1_[+1(8.33e-09)]_1
+SYNPCC7002_G0132_p-70(PF         5.03e-07  1_[+1(1.68e-07)]_1
+SYNPCC7002_A2501_p-39(zn         2.46e-07  1_[+1(8.20e-08)]_1
+sll1550_p-118(ompZ)              3.25e-08  1_[+1(1.08e-08)]_1
+slr2043_p-84(znuA)               3.43e-06  1_[+1(1.14e-06)]_1
+sll1937_p-45(zur)                1.39e-05  1_[+1(4.63e-06)]_1
+cce_1484_p-40(cce_1484)          6.42e-09  1_[+1(2.14e-09)]_1
+cce_1485_p-31(cce_1485)          3.30e-09  1_[+1(1.10e-09)]_1
+cce_4845_p-37(hisI2)             2.83e-06  1_[+1(9.42e-07)]_1
+cce_4835_p28(thrS2)              1.36e-06  1_[+1(4.54e-07)]_1
+cce_1495_p81(thrS2)              1.13e-08  1_[+1(3.78e-09)]_1
+cce_1495_p127(thrS2)             1.00e-07  1_[+1(3.34e-08)]_1
+cce_4834_p-80(yciC)              6.13e-06  1_[+1(2.04e-06)]_1
+cce_4834_p-52(yciC)              1.39e-05  1_[+1(4.63e-06)]_1
+cce_4833_p-46(yciC)              1.69e-07  1_[+1(5.62e-08)]_1
+cce_1501_p-43(folE2)             5.78e-08  1_[+1(1.93e-08)]_1
+cce_1489_p-78(hemB2)             5.05e-08  1_[+1(1.68e-08)]_1
+cce_1489_p-32(hemB2)             9.88e-07  1_[+1(3.29e-07)]_1
+cce_4852_p-72(hemB2)             1.22e-06  1_[+1(4.07e-07)]_1
+cce_4852_p-46(hemB2)             2.78e-07  1_[+1(9.25e-08)]_1
+cce_4863_p-62(PF07992)           2.29e-06  1_[+1(7.64e-07)]_1
+cce_4863_p-36(PF07992)           7.06e-07  1_[+1(2.35e-07)]_1
+cce_1488_p-77(yciC2)             2.11e-08  1_[+1(7.03e-09)]_1
+cce_1488_p-38(yciC2)             1.00e-07  1_[+1(3.34e-08)]_1
+cce_4857_p-50(yciC2)             1.10e-06  1_[+1(3.66e-07)]_1
+cce_4862_p-72(znuA)              1.87e-06  1_[+1(6.22e-07)]_1
+cce_4862_p-46(znuA)              1.52e-06  1_[+1(5.07e-07)]_1
+cce_2961_p-79(znuA)              5.58e-06  1_[+1(1.86e-06)]_1
+cce_4859_p-120(zur)              5.58e-06  1_[+1(1.86e-06)]_1
+cce_1494_p-6(alr1197)            1.43e-04  1_[+1(4.77e-05)]_1
+PCC8801_0774_p-32(cce_14         4.11e-09  1_[+1(1.37e-09)]_1
+PCC8801_2484_p-84(cce_14         3.76e-05  1_[+1(1.25e-05)]_1
+PCC8801_2483_p-53(cce_14         1.34e-04  1_[+1(4.45e-05)]_1
+PCC8801_0773_p-40(cce_14         4.11e-09  1_[+1(1.37e-09)]_1
+PCC8801_0861_p-152(smtA)         1.48e-07  1_[+1(4.94e-08)]_1
+PCC8801_0864_p-50(folE2)         9.25e-09  1_[+1(3.08e-09)]_1
+PCC8801_0777_p-72(hemB2)         7.50e-08  1_[+1(2.50e-08)]_1
+PCC8801_0777_p-32(hemB2)         1.00e-07  1_[+1(3.34e-08)]_1
+PCC8801_0862_p-76(yciC2)         8.63e-08  1_[+1(2.88e-08)]_1
+PCC8801_0862_p-38(yciC2)         1.29e-08  1_[+1(4.32e-09)]_1
+PCC8801_3888_p-52(znuA)          1.87e-06  1_[+1(6.22e-07)]_1
+Cyan7425_0794_p-29(cce_1         7.39e-06  1_[+1(2.46e-06)]_1
+Cyan7425_0822_p-29(cce_1         3.43e-06  1_[+1(1.14e-06)]_1
+Cyan7425_1909_p-41(yciC2         1.15e-07  1_[+1(3.82e-08)]_1
+Cyan7425_1916_p-104(Cyan         3.49e-07  1_[+1(1.16e-07)]_1
+Cyan7425_1917_p-56(zur)          3.74e-08  1_[+1(1.25e-08)]_1
+MAE_10010_p-40(ompZ)             5.05e-08  1_[+1(1.68e-08)]_1
+MAE_31590_p-34(thrS2)            1.15e-07  1_[+1(3.82e-08)]_1
+MAE_22860_p-323(folE2)           3.30e-09  1_[+1(1.10e-09)]_1
+MAE_20780_p-67(znuA)             4.47e-07  1_[+1(1.49e-07)]_1
+MAE_31630_p-6(alr1197)           6.42e-09  1_[+1(2.14e-09)]_1
+all4723_p-28(thrS2)              2.46e-07  1_[+1(8.20e-08)]_1
+all4725_p-31(hemB2)              5.03e-07  1_[+1(1.68e-07)]_1
+all1751_p-44(yciC2)              9.71e-06  1_[+1(3.24e-06)]_1
+all0833_p-110(znuA)              8.88e-07  1_[+1(2.96e-07)]_1
+all0833_p-80(znuA)               1.79e-05  1_[+1(5.98e-06)]_1
+alr4028_p-122(omp)               5.03e-07  1_[+1(1.68e-07)]_1
+all3515_p-52(all3515)            1.92e-07  1_[+1(6.39e-08)]_1
+alr1197_p-29(alr1197)            9.19e-04  23
+alr3242_p-260(alr3242)           6.94e-04  23
+alr3242_p-266(alr3242)           1.10e-06  1_[+1(3.66e-07)]_1
+alr1197_p-23(alr1197)            1.69e-06  1_[+1(5.62e-07)]_1
+Tery_3358_p-287(cce_1484         5.50e-04  23
+Tery_2490_p-37(hisI2)            1.01e-04  1_[+1(3.35e-05)]_1
+Tery_4617_p-255(yciC)            9.19e-04  23
+Tery_4613_p-43(PF07992)          5.05e-08  1_[+1(1.68e-08)]_1
+Tery_4951_p-49(znuA)             4.34e-08  1_[+1(1.45e-08)]_1
+Tery_4609_p-84(alr1199)          1.41e-03  23
+Synpcc7942_1316_p-59(cce         1.36e-06  1_[+1(4.54e-07)]_1
+Synpcc7942_1463_p-37(omp         2.46e-07  1_[+1(8.20e-08)]_1
+PMT2202_p-111(cce_1485)          7.50e-08  1_[+1(2.50e-08)]_1
+PMT2203_p-34(cce_1484)           7.93e-07  1_[+1(2.64e-07)]_1
+CYA_2533_p-39(sufE)              1.10e-06  1_[+1(3.66e-07)]_1
+SYNW0970_p-83(cce_1485)          2.08e-09  1_[+1(6.94e-10)]_1
+SYNW0971_p37(cce_1484)           2.11e-08  1_[+1(7.03e-09)]_1
+SYNW0359_p-105(smtA)             1.13e-08  1_[+1(3.78e-09)]_1
+SYNW0359_p-79(smtA)              3.43e-06  1_[+1(1.14e-06)]_1
+glr1694_p-6(cce_1484)            5.78e-08  1_[+1(1.93e-08)]_1
+gll1693_p-56(cce_1486)           3.74e-08  1_[+1(1.25e-08)]_1
+glr0533_p-40(glr0533)            1.69e-07  1_[+1(5.62e-08)]_1
+tlr1246_p-84(ompZ)               1.10e-06  1_[+1(3.66e-07)]_1
+tlr2276_p-36(yciC)               2.07e-06  1_[+1(6.88e-07)]_1
+tlr2062_p-31(znuA)               1.00e-07  1_[+1(3.34e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

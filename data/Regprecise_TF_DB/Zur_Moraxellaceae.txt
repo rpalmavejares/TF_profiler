@@ -1,0 +1,327 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/Zur_Moraxellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ACIAD1741_p-128(yciC)    1.0000     23  ACIAD0176_p-97(zur)      1.0000     23  
+ACIAD1328_p-43(ACIAD1328 1.0000     23  ACIAD0177_p-36(znuA)     1.0000     23  
+ACIAD1742_p-44(n/a)      1.0000     23  ACIAD0612_p-25(omr1)     1.0000     23  
+ACIAD0611_p-64(omr1)     1.0000     23  ACIAD0425_p-54(rpmE2)    1.0000     23  
+ACIAD1003_p-54(omr3)     1.0000     23  ACIAD1420_p-101(can)     1.0000     23  
+ACIAD0507_p-253(tonB)    1.0000     23  AB57_3864_p-77(yciC)     1.0000     23  
+AB57_0184_p-111(zur)     1.0000     23  AB57_0185_p-51(znuA)     1.0000     23  
+AB57_3926_p-41(omr1)     1.0000     23  AB57_3396_p-51(omr1)     1.0000     23  
+AB57_0468_p-54(rpmE2)    1.0000     23  AB57_0135_p-54(omr3)     1.0000     23  
+Psyc_1790_p-165(Psyc_179 1.0000     23  Psyc_2033_p-187(zur)     1.0000     23  
+Psyc_2032_p-83(znuA)     1.0000     23  PsycPRwf_1910_p-100(znuA 1.0000     23  
+PsycPRwf_0184_p-408(zur) 1.0000     23  PsycPRwf_2339_p-97(omr2) 1.0000     23  
+PsycPRwf_2339_p-92(omr1) 1.0000     23  PsycPRwf_2340_p-86(omr1) 1.0000     23  
+PsycPRwf_1926_p-121(Psyc 1.0000     23  PsycPRwf_0185_p-142(znuA 1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/Zur_Moraxellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/Zur_Moraxellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             644    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    644    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.425 C 0.0823 G 0.0932 T 0.399 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.424 C 0.0833 G 0.0941 T 0.398 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATGTTATAWTATAACATAAY MEME-1	width =  20  sites =  28  llr = 376  E-value = 1.4e-104
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  61:1:a:83:a:99:93862
+pos.-specific     C  :1::::::1:::::9:::14
+probability       G  1:a::::22:::::::::::
+matrix            T  39:9a:a:4a:a1:1:7234
+
+         bits    3.6                     
+                 3.2   *                 
+                 2.9   *                 
+                 2.5   *           *     
+Relative         2.2   *           *     
+Entropy          1.8   *           *     
+(19.4 bits)      1.4   *        *  *     
+                 1.1   * **** ***  *     
+                 0.7  ******* *******   *
+                 0.4 ******** ********* *
+                 0.0 --------------------
+
+Multilevel           ATGTTATATTATAACATAAC
+consensus            T       A       ATTT
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+PsycPRwf_2340_p-86(omr1)      4  6.43e-11        GTT ATGTTATAGTATAACATAAC           
+PsycPRwf_2339_p-92(omr1)      4  1.21e-10        GTT ATGTTATACTATAACATAAC           
+Psyc_2032_p-83(znuA)          4  2.16e-09        ATT ATGTTATAGTATAACATAAT           
+ACIAD1420_p-101(can)          4  2.16e-09        TAT TTGTTATGTTATAACATAAC           
+Psyc_2033_p-187(zur)          4  2.65e-09        ATT ATGTTATACTATAACATAAT           
+PsycPRwf_1926_p-121(Psyc      4  7.27e-09        TTA ATGTTATGTTATAACATAAT           
+AB57_3396_p-51(omr1)          4  7.27e-09        GAA ATGTTATAATATAACAAAAC           
+ACIAD1741_p-128(yciC)         4  1.03e-08        TAT ATGTTACATTATAACATAAC           
+AB57_0468_p-54(rpmE2)         4  1.39e-08        TGA GTGTTATGTTATAACATTTC           
+PsycPRwf_1910_p-100(znuA      4  7.43e-08        TTA TTGTTATAATATAACATACT           
+PsycPRwf_0185_p-142(znuA      4  8.20e-08        TAT TAGTTATAGTATAACATATC           
+ACIAD0176_p-97(zur)           4  8.20e-08        CTT GTGTTATATTATAACAAATT           
+AB57_3926_p-41(omr1)          4  1.56e-07        TAA GTGTTATATTATAATATAAC           
+AB57_0185_p-51(znuA)          4  2.33e-07        ACT TTGTTATATTATAACATGCT           
+AB57_0184_p-111(zur)          4  2.33e-07        AGC ATGTTATAATATAACAAAGT           
+AB57_3864_p-77(yciC)          4  3.78e-07        GTT ATGTTATAACATAACATTAT           
+ACIAD0177_p-36(znuA)          4  4.40e-07        AAT TTGTTATAATATAACACAAG           
+ACIAD0611_p-64(omr1)          4  6.93e-07        GCA ATGTTATAATATTACAAAAA           
+AB57_0135_p-54(omr3)          4  1.23e-06        GTA ACGTTATACTATTACATTTA           
+ACIAD0507_p-253(tonB)         4  1.23e-06        AAA GTATTATGTTATAACATAAT           
+ACIAD1003_p-54(omr3)          4  1.34e-06        GTA ATGTTATAGTATTACAATTA           
+PsycPRwf_2339_p-97(omr2)      4  1.45e-06        AAA ACGTTATGTTATACTATAAC           
+PsycPRwf_0184_p-408(zur)      4  1.71e-06        GAT ATGTTATACTATAACTAATA           
+ACIAD0425_p-54(rpmE2)         4  2.31e-06        AAA ATGAAATAATATAACATTAC           
+ACIAD0612_p-25(omr1)          4  2.50e-06        AAA TAGATATATTATAACGTAAC           
+ACIAD1742_p-44(n/a)           4  4.19e-06        CCA ATGTTATAATGTAACAGTTA           
+Psyc_1790_p-165(Psyc_179      4  1.03e-05        AAA TTGATATATTATAAAATAAT           
+ACIAD1328_p-43(ACIAD1328      4  2.54e-05        GGA ATGTTATAGTATTTGAAATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PsycPRwf_2340_p-86(omr1)          6.4e-11  3_[+1]
+PsycPRwf_2339_p-92(omr1)          1.2e-10  3_[+1]
+Psyc_2032_p-83(znuA)              2.2e-09  3_[+1]
+ACIAD1420_p-101(can)              2.2e-09  3_[+1]
+Psyc_2033_p-187(zur)              2.6e-09  3_[+1]
+PsycPRwf_1926_p-121(Psyc          7.3e-09  3_[+1]
+AB57_3396_p-51(omr1)              7.3e-09  3_[+1]
+ACIAD1741_p-128(yciC)               1e-08  3_[+1]
+AB57_0468_p-54(rpmE2)             1.4e-08  3_[+1]
+PsycPRwf_1910_p-100(znuA          7.4e-08  3_[+1]
+PsycPRwf_0185_p-142(znuA          8.2e-08  3_[+1]
+ACIAD0176_p-97(zur)               8.2e-08  3_[+1]
+AB57_3926_p-41(omr1)              1.6e-07  3_[+1]
+AB57_0185_p-51(znuA)              2.3e-07  3_[+1]
+AB57_0184_p-111(zur)              2.3e-07  3_[+1]
+AB57_3864_p-77(yciC)              3.8e-07  3_[+1]
+ACIAD0177_p-36(znuA)              4.4e-07  3_[+1]
+ACIAD0611_p-64(omr1)              6.9e-07  3_[+1]
+AB57_0135_p-54(omr3)              1.2e-06  3_[+1]
+ACIAD0507_p-253(tonB)             1.2e-06  3_[+1]
+ACIAD1003_p-54(omr3)              1.3e-06  3_[+1]
+PsycPRwf_2339_p-97(omr2)          1.4e-06  3_[+1]
+PsycPRwf_0184_p-408(zur)          1.7e-06  3_[+1]
+ACIAD0425_p-54(rpmE2)             2.3e-06  3_[+1]
+ACIAD0612_p-25(omr1)              2.5e-06  3_[+1]
+ACIAD1742_p-44(n/a)               4.2e-06  3_[+1]
+Psyc_1790_p-165(Psyc_179            1e-05  3_[+1]
+ACIAD1328_p-43(ACIAD1328          2.5e-05  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATGTTATAWTATAACATAAY width=20 seqs=28
+PsycPRwf_2340_p-86(omr1) (    4) ATGTTATAGTATAACATAAC  1 
+PsycPRwf_2339_p-92(omr1) (    4) ATGTTATACTATAACATAAC  1 
+Psyc_2032_p-83(znuA)     (    4) ATGTTATAGTATAACATAAT  1 
+ACIAD1420_p-101(can)     (    4) TTGTTATGTTATAACATAAC  1 
+Psyc_2033_p-187(zur)     (    4) ATGTTATACTATAACATAAT  1 
+PsycPRwf_1926_p-121(Psyc (    4) ATGTTATGTTATAACATAAT  1 
+AB57_3396_p-51(omr1)     (    4) ATGTTATAATATAACAAAAC  1 
+ACIAD1741_p-128(yciC)    (    4) ATGTTACATTATAACATAAC  1 
+AB57_0468_p-54(rpmE2)    (    4) GTGTTATGTTATAACATTTC  1 
+PsycPRwf_1910_p-100(znuA (    4) TTGTTATAATATAACATACT  1 
+PsycPRwf_0185_p-142(znuA (    4) TAGTTATAGTATAACATATC  1 
+ACIAD0176_p-97(zur)      (    4) GTGTTATATTATAACAAATT  1 
+AB57_3926_p-41(omr1)     (    4) GTGTTATATTATAATATAAC  1 
+AB57_0185_p-51(znuA)     (    4) TTGTTATATTATAACATGCT  1 
+AB57_0184_p-111(zur)     (    4) ATGTTATAATATAACAAAGT  1 
+AB57_3864_p-77(yciC)     (    4) ATGTTATAACATAACATTAT  1 
+ACIAD0177_p-36(znuA)     (    4) TTGTTATAATATAACACAAG  1 
+ACIAD0611_p-64(omr1)     (    4) ATGTTATAATATTACAAAAA  1 
+AB57_0135_p-54(omr3)     (    4) ACGTTATACTATTACATTTA  1 
+ACIAD0507_p-253(tonB)    (    4) GTATTATGTTATAACATAAT  1 
+ACIAD1003_p-54(omr3)     (    4) ATGTTATAGTATTACAATTA  1 
+PsycPRwf_2339_p-97(omr2) (    4) ACGTTATGTTATACTATAAC  1 
+PsycPRwf_0184_p-408(zur) (    4) ATGTTATACTATAACTAATA  1 
+ACIAD0425_p-54(rpmE2)    (    4) ATGAAATAATATAACATTAC  1 
+ACIAD0612_p-25(omr1)     (    4) TAGATATATTATAACGTAAC  1 
+ACIAD1742_p-44(n/a)      (    4) ATGTTATAATGTAACAGTTA  1 
+Psyc_1790_p-165(Psyc_179 (    4) TTGATATATTATAAAATAAT  1 
+ACIAD1328_p-43(ACIAD1328 (    4) ATGTTATAGTATTTGAAATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 112 bayes= 3.5518 E= 1.4e-104 
+    52  -1145     60    -67 
+  -257    -22  -1145    111 
+  -357  -1145    336  -1145 
+  -198  -1145  -1145    116 
+  -357  -1145  -1145    128 
+   124  -1145  -1145  -1145 
+ -1145   -122  -1145    128 
+    95  -1145     92  -1145 
+   -57     78     92     -2 
+ -1145   -122  -1145    128 
+   118  -1145   -140  -1145 
+ -1145  -1145  -1145    133 
+   101  -1145  -1145   -148 
+   113   -122  -1145   -347 
+  -357    336   -140   -248 
+   113  -1145   -140   -347 
+   -76   -122   -140     77 
+    82  -1145   -140    -89 
+    52    -22   -140    -48 
+  -125    224   -140     -2 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 28 E= 1.4e-104 
+ 0.607143  0.000000  0.142857  0.250000 
+ 0.071429  0.071429  0.000000  0.857143 
+ 0.035714  0.000000  0.964286  0.000000 
+ 0.107143  0.000000  0.000000  0.892857 
+ 0.035714  0.000000  0.000000  0.964286 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.035714  0.000000  0.964286 
+ 0.821429  0.000000  0.178571  0.000000 
+ 0.285714  0.142857  0.178571  0.392857 
+ 0.000000  0.035714  0.000000  0.964286 
+ 0.964286  0.000000  0.035714  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.000000  0.000000  0.142857 
+ 0.928571  0.035714  0.000000  0.035714 
+ 0.035714  0.857143  0.035714  0.071429 
+ 0.928571  0.000000  0.035714  0.035714 
+ 0.250000  0.035714  0.035714  0.678571 
+ 0.750000  0.000000  0.035714  0.214286 
+ 0.607143  0.071429  0.035714  0.285714 
+ 0.178571  0.392857  0.035714  0.392857 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTTATAWTATAACATAAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]TGTTATA[TA]TATAACA[TA][AT][AT][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ACIAD1741_p-128(yciC)            4.10e-08  3_[+1(1.03e-08)]
+ACIAD0176_p-97(zur)              3.28e-07  3_[+1(8.20e-08)]
+ACIAD1328_p-43(ACIAD1328         1.01e-04  3_[+1(2.54e-05)]
+ACIAD0177_p-36(znuA)             1.76e-06  3_[+1(4.40e-07)]
+ACIAD1742_p-44(n/a)              1.68e-05  3_[+1(4.19e-06)]
+ACIAD0612_p-25(omr1)             1.00e-05  3_[+1(2.50e-06)]
+ACIAD0611_p-64(omr1)             2.77e-06  3_[+1(6.93e-07)]
+ACIAD0425_p-54(rpmE2)            9.26e-06  3_[+1(2.31e-06)]
+ACIAD1003_p-54(omr3)             5.36e-06  3_[+1(1.34e-06)]
+ACIAD1420_p-101(can)             8.63e-09  3_[+1(2.16e-09)]
+ACIAD0507_p-253(tonB)            4.92e-06  3_[+1(1.23e-06)]
+AB57_3864_p-77(yciC)             1.51e-06  3_[+1(3.78e-07)]
+AB57_0184_p-111(zur)             9.31e-07  3_[+1(2.33e-07)]
+AB57_0185_p-51(znuA)             9.31e-07  3_[+1(2.33e-07)]
+AB57_3926_p-41(omr1)             6.25e-07  3_[+1(1.56e-07)]
+AB57_3396_p-51(omr1)             2.91e-08  3_[+1(7.27e-09)]
+AB57_0468_p-54(rpmE2)            5.54e-08  3_[+1(1.39e-08)]
+AB57_0135_p-54(omr3)             4.92e-06  3_[+1(1.23e-06)]
+Psyc_1790_p-165(Psyc_179         4.10e-05  3_[+1(1.03e-05)]
+Psyc_2033_p-187(zur)             1.06e-08  3_[+1(2.65e-09)]
+Psyc_2032_p-83(znuA)             8.63e-09  3_[+1(2.16e-09)]
+PsycPRwf_1910_p-100(znuA         2.97e-07  3_[+1(7.43e-08)]
+PsycPRwf_0184_p-408(zur)         6.83e-06  3_[+1(1.71e-06)]
+PsycPRwf_2339_p-97(omr2)         5.79e-06  3_[+1(1.45e-06)]
+PsycPRwf_2339_p-92(omr1)         4.85e-10  3_[+1(1.21e-10)]
+PsycPRwf_2340_p-86(omr1)         2.57e-10  3_[+1(6.43e-11)]
+PsycPRwf_1926_p-121(Psyc         2.91e-08  3_[+1(7.27e-09)]
+PsycPRwf_0185_p-142(znuA         3.28e-07  3_[+1(8.20e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

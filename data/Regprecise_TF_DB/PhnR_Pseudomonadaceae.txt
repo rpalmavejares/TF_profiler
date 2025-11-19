@@ -1,0 +1,320 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhnR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA2802_p-114(phnR3)      1.0000     12  PA3250_p-348(phnS)       1.0000     12  
+PA3249_p-27(phnR)        1.0000     12  PA3250_p-93(phnS)        1.0000     12  
+PA3249_p-282(phnR)       1.0000     12  PA1144_p-263(n/a)        1.0000     12  
+PA1144_p-84(n/a)         1.0000     12  PA3255_p-50(COG0560)     1.0000     12  
+PA2803_p-31(phnX)        1.0000     12  PSEEN1439_p-261(phnR)    1.0000     12  
+PSEEN1439_p-27(phnR)     1.0000     12  PSEEN1438_p-310(phnS)    1.0000     12  
+PSEEN1438_p-76(phnS)     1.0000     12  PP1727_p-28(phnR)        1.0000     12  
+PP1727_p-251(phnR)       1.0000     12  PP1726_p-311(phnS)       1.0000     12  
+PP1726_p-88(phnS)        1.0000     12  PSPTO3877_p-304(phnR)    1.0000     12  
+PSPTO3877_p-24(phnR)     1.0000     12  PSPTO3878_p-345(phnS)    1.0000     12  
+PSPTO3878_p-65(phnS)     1.0000     12  PFL_4386_p-305(phnR)     1.0000     12  
+PFL_4386_p-26(phnR)      1.0000     12  PFL_4387_p-348(phnS)     1.0000     12  
+PFL_4387_p-69(phnS)      1.0000     12  Pmen_1333_p-289(phnR)    1.0000     12  
+Pmen_1333_p-27(phnR)     1.0000     12  Pmen_1332_p-300(phnS)    1.0000     12  
+Pmen_1332_p-38(phnS)     1.0000     12  Pmen_1925_p-29(phnX)     1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhnR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhnR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             360    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    360    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.258 C 0.247 G 0.25 T 0.244 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.258 C 0.247 G 0.25 T 0.245 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGGWCTAGWCCA MEME-1	width =  12  sites =  30  llr = 404  E-value = 9.3e-151
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::24::a:5::a
+pos.-specific     C  :::2a::::8a:
+probability       G  :a8::::a2:::
+matrix            T  a::5:a::32::
+
+         bits    2.0 **  * **  **
+                 1.8 **  ****  **
+                 1.6 **  ****  **
+                 1.4 **  ****  **
+Relative         1.2 *** **** ***
+Entropy          1.0 *** **** ***
+(19.4 bits)      0.8 *** **** ***
+                 0.6 ************
+                 0.4 ************
+                 0.2 ************
+                 0.0 ------------
+
+Multilevel           TGGTCTAGACCA
+consensus              AA    TT  
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+PA1144_p-263(n/a)             1  5.95e-08          . TGGTCTAGACCA           
+PFL_4387_p-348(phnS)          1  1.22e-07          . TGGACTAGACCA           
+PSPTO3878_p-345(phnS)         1  1.22e-07          . TGGACTAGACCA           
+PA3249_p-27(phnR)             1  1.22e-07          . TGGACTAGACCA           
+PFL_4386_p-26(phnR)           1  1.79e-07          . TGGTCTAGTCCA           
+PSPTO3877_p-24(phnR)          1  1.79e-07          . TGGTCTAGTCCA           
+PA3250_p-348(phnS)            1  1.79e-07          . TGGTCTAGTCCA           
+Pmen_1332_p-300(phnS)         1  2.38e-07          . TGGACTAGTCCA           
+Pmen_1333_p-27(phnR)          1  2.38e-07          . TGGACTAGTCCA           
+PP1726_p-311(phnS)            1  2.38e-07          . TGGACTAGTCCA           
+PP1727_p-28(phnR)             1  2.38e-07          . TGGACTAGTCCA           
+PSEEN1438_p-310(phnS)         1  2.38e-07          . TGGACTAGTCCA           
+PSEEN1439_p-27(phnR)          1  2.38e-07          . TGGACTAGTCCA           
+PA2803_p-31(phnX)             1  2.98e-07          . TGGCCTAGACCA           
+PA1144_p-84(n/a)              1  2.98e-07          . TGGCCTAGACCA           
+PA2802_p-114(phnR3)           1  3.56e-07          . TGGTCTAGGCCA           
+Pmen_1333_p-289(phnR)         1  4.15e-07          . TGGTCTAGATCA           
+PSPTO3877_p-304(phnR)         1  4.15e-07          . TGGTCTAGATCA           
+PA3249_p-282(phnR)            1  4.15e-07          . TGGTCTAGATCA           
+Pmen_1925_p-29(phnX)          1  5.37e-07          . TGGACTAGGCCA           
+Pmen_1332_p-38(phnS)          1  5.37e-07          . TGATCTAGACCA           
+PSPTO3878_p-65(phnS)          1  5.37e-07          . TGATCTAGACCA           
+PA3250_p-93(phnS)             1  5.37e-07          . TGATCTAGACCA           
+PFL_4387_p-69(phnS)           1  1.19e-06          . TGACCTAGACCA           
+PFL_4386_p-305(phnR)          1  1.19e-06          . TGGTCTAGGTCA           
+PP1726_p-88(phnS)             1  1.19e-06          . TGACCTAGACCA           
+PP1727_p-251(phnR)            1  1.19e-06          . TGGTCTAGGTCA           
+PSEEN1438_p-76(phnS)          1  1.19e-06          . TGACCTAGACCA           
+PSEEN1439_p-261(phnR)         1  1.19e-06          . TGGTCTAGGTCA           
+PA3255_p-50(COG0560)          1  1.97e-06          . TGGACGAGACCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA1144_p-263(n/a)                 5.9e-08  [+1]
+PFL_4387_p-348(phnS)              1.2e-07  [+1]
+PSPTO3878_p-345(phnS)             1.2e-07  [+1]
+PA3249_p-27(phnR)                 1.2e-07  [+1]
+PFL_4386_p-26(phnR)               1.8e-07  [+1]
+PSPTO3877_p-24(phnR)              1.8e-07  [+1]
+PA3250_p-348(phnS)                1.8e-07  [+1]
+Pmen_1332_p-300(phnS)             2.4e-07  [+1]
+Pmen_1333_p-27(phnR)              2.4e-07  [+1]
+PP1726_p-311(phnS)                2.4e-07  [+1]
+PP1727_p-28(phnR)                 2.4e-07  [+1]
+PSEEN1438_p-310(phnS)             2.4e-07  [+1]
+PSEEN1439_p-27(phnR)              2.4e-07  [+1]
+PA2803_p-31(phnX)                   3e-07  [+1]
+PA1144_p-84(n/a)                    3e-07  [+1]
+PA2802_p-114(phnR3)               3.6e-07  [+1]
+Pmen_1333_p-289(phnR)             4.1e-07  [+1]
+PSPTO3877_p-304(phnR)             4.1e-07  [+1]
+PA3249_p-282(phnR)                4.1e-07  [+1]
+Pmen_1925_p-29(phnX)              5.4e-07  [+1]
+Pmen_1332_p-38(phnS)              5.4e-07  [+1]
+PSPTO3878_p-65(phnS)              5.4e-07  [+1]
+PA3250_p-93(phnS)                 5.4e-07  [+1]
+PFL_4387_p-69(phnS)               1.2e-06  [+1]
+PFL_4386_p-305(phnR)              1.2e-06  [+1]
+PP1726_p-88(phnS)                 1.2e-06  [+1]
+PP1727_p-251(phnR)                1.2e-06  [+1]
+PSEEN1438_p-76(phnS)              1.2e-06  [+1]
+PSEEN1439_p-261(phnR)             1.2e-06  [+1]
+PA3255_p-50(COG0560)                2e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGGWCTAGWCCA width=12 seqs=30
+PA1144_p-263(n/a)        (    1) TGGTCTAGACCA  1 
+PFL_4387_p-348(phnS)     (    1) TGGACTAGACCA  1 
+PSPTO3878_p-345(phnS)    (    1) TGGACTAGACCA  1 
+PA3249_p-27(phnR)        (    1) TGGACTAGACCA  1 
+PFL_4386_p-26(phnR)      (    1) TGGTCTAGTCCA  1 
+PSPTO3877_p-24(phnR)     (    1) TGGTCTAGTCCA  1 
+PA3250_p-348(phnS)       (    1) TGGTCTAGTCCA  1 
+Pmen_1332_p-300(phnS)    (    1) TGGACTAGTCCA  1 
+Pmen_1333_p-27(phnR)     (    1) TGGACTAGTCCA  1 
+PP1726_p-311(phnS)       (    1) TGGACTAGTCCA  1 
+PP1727_p-28(phnR)        (    1) TGGACTAGTCCA  1 
+PSEEN1438_p-310(phnS)    (    1) TGGACTAGTCCA  1 
+PSEEN1439_p-27(phnR)     (    1) TGGACTAGTCCA  1 
+PA2803_p-31(phnX)        (    1) TGGCCTAGACCA  1 
+PA1144_p-84(n/a)         (    1) TGGCCTAGACCA  1 
+PA2802_p-114(phnR3)      (    1) TGGTCTAGGCCA  1 
+Pmen_1333_p-289(phnR)    (    1) TGGTCTAGATCA  1 
+PSPTO3877_p-304(phnR)    (    1) TGGTCTAGATCA  1 
+PA3249_p-282(phnR)       (    1) TGGTCTAGATCA  1 
+Pmen_1925_p-29(phnX)     (    1) TGGACTAGGCCA  1 
+Pmen_1332_p-38(phnS)     (    1) TGATCTAGACCA  1 
+PSPTO3878_p-65(phnS)     (    1) TGATCTAGACCA  1 
+PA3250_p-93(phnS)        (    1) TGATCTAGACCA  1 
+PFL_4387_p-69(phnS)      (    1) TGACCTAGACCA  1 
+PFL_4386_p-305(phnR)     (    1) TGGTCTAGGTCA  1 
+PP1726_p-88(phnS)        (    1) TGACCTAGACCA  1 
+PP1727_p-251(phnR)       (    1) TGGTCTAGGTCA  1 
+PSEEN1438_p-76(phnS)     (    1) TGACCTAGACCA  1 
+PSEEN1439_p-261(phnR)    (    1) TGGTCTAGGTCA  1 
+PA3255_p-50(COG0560)     (    1) TGGACGAGACCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 30 bayes= 1.55943 E= 9.3e-151 
+ -1155  -1155  -1155    203 
+ -1155  -1155    200  -1155 
+   -37  -1155    168  -1155 
+    51    -57  -1155     93 
+ -1155    202  -1155  -1155 
+ -1155  -1155   -290    198 
+   195  -1155  -1155  -1155 
+ -1155  -1155    200  -1155 
+   105  -1155    -58     30 
+ -1155    169  -1155    -29 
+ -1155    202  -1155  -1155 
+   195  -1155  -1155  -1155 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 30 E= 9.3e-151 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.200000  0.000000  0.800000  0.000000 
+ 0.366667  0.166667  0.000000  0.466667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.033333  0.966667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.533333  0.000000  0.166667  0.300000 
+ 0.000000  0.800000  0.000000  0.200000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGWCTAGWCCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TG[GA][TA]CTAG[AT][CT]CA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA2802_p-114(phnR3)              3.56e-07  [+1(3.56e-07)]
+PA3250_p-348(phnS)               1.79e-07  [+1(1.79e-07)]
+PA3249_p-27(phnR)                1.22e-07  [+1(1.22e-07)]
+PA3250_p-93(phnS)                5.37e-07  [+1(5.37e-07)]
+PA3249_p-282(phnR)               4.15e-07  [+1(4.15e-07)]
+PA1144_p-263(n/a)                5.95e-08  [+1(5.95e-08)]
+PA1144_p-84(n/a)                 2.98e-07  [+1(2.98e-07)]
+PA3255_p-50(COG0560)             1.97e-06  [+1(1.97e-06)]
+PA2803_p-31(phnX)                2.98e-07  [+1(2.98e-07)]
+PSEEN1439_p-261(phnR)            1.19e-06  [+1(1.19e-06)]
+PSEEN1439_p-27(phnR)             2.38e-07  [+1(2.38e-07)]
+PSEEN1438_p-310(phnS)            2.38e-07  [+1(2.38e-07)]
+PSEEN1438_p-76(phnS)             1.19e-06  [+1(1.19e-06)]
+PP1727_p-28(phnR)                2.38e-07  [+1(2.38e-07)]
+PP1727_p-251(phnR)               1.19e-06  [+1(1.19e-06)]
+PP1726_p-311(phnS)               2.38e-07  [+1(2.38e-07)]
+PP1726_p-88(phnS)                1.19e-06  [+1(1.19e-06)]
+PSPTO3877_p-304(phnR)            4.15e-07  [+1(4.15e-07)]
+PSPTO3877_p-24(phnR)             1.79e-07  [+1(1.79e-07)]
+PSPTO3878_p-345(phnS)            1.22e-07  [+1(1.22e-07)]
+PSPTO3878_p-65(phnS)             5.37e-07  [+1(5.37e-07)]
+PFL_4386_p-305(phnR)             1.19e-06  [+1(1.19e-06)]
+PFL_4386_p-26(phnR)              1.79e-07  [+1(1.79e-07)]
+PFL_4387_p-348(phnS)             1.22e-07  [+1(1.22e-07)]
+PFL_4387_p-69(phnS)              1.19e-06  [+1(1.19e-06)]
+Pmen_1333_p-289(phnR)            4.15e-07  [+1(4.15e-07)]
+Pmen_1333_p-27(phnR)             2.38e-07  [+1(2.38e-07)]
+Pmen_1332_p-300(phnS)            2.38e-07  [+1(2.38e-07)]
+Pmen_1332_p-38(phnS)             5.37e-07  [+1(5.37e-07)]
+Pmen_1925_p-29(phnX)             5.37e-07  [+1(5.37e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

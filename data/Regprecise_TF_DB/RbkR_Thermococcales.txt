@@ -1,0 +1,256 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermococcales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PAB2198_p-62(ribU)       1.0000     20  PF0163_p133(ribU)        1.0000     20  
+PF0064_p-23(ribBA)       1.0000     20  PF0064_p-56(ribBA)       1.0000     20  
+PH0251_p-62(ribU)        1.0000     20  TGAM_1254_p92(ribD)      1.0000     20  
+TK2194_p-62(ribU)        1.0000     20  TK0424_p-52(ribD)        1.0000     20  
+TK0428_p-62(ribBA)       1.0000     20  TK0428_p-40(ribBA)       1.0000     20  
+TON_0610_p-53(ribD)      1.0000     20  TON_1440_p-62(ribU)      1.0000     20  
+TSIB_0195_p-61(ribU)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermococcales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/RbkR_Thermococcales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             260    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    260    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.35 C 0.146 G 0.146 T 0.358 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.348 C 0.148 G 0.148 T 0.356 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTTCYAWWTWTGGAACA MEME-1	width =  18  sites =  13  llr = 196  E-value = 7.5e-048
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  12::1296524:219a:a
+pos.-specific     C  1::185::12:1::::a:
+probability       G  17::::1:1::1891:::
+matrix            T  81a923:44768::::::
+
+         bits    2.8                 * 
+                 2.5                 * 
+                 2.2              *  * 
+                 1.9             **  * 
+Relative         1.7             ** ***
+Entropy          1.4   * *       ** ***
+(21.7 bits)      1.1  **** *     ******
+                 0.8  ******    *******
+                 0.6 ******** *********
+                 0.3 ******** *********
+                 0.0 ------------------
+
+Multilevel           TGTTCCAAATTTGGAACA
+consensus             A   T TT A       
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+TK0424_p-52(ribD)             2  7.69e-10          T TGTTCCAACCTTGGAACA A         
+TON_0610_p-53(ribD)           2  2.35e-09          T TATTCCAATTTTGGAACA A         
+TSIB_0195_p-61(ribU)          2  4.36e-09          A TATTCCAATTATGGAACA A         
+PH0251_p-62(ribU)             2  8.54e-09          T TGTTCCAATTATAGAACA T         
+TK2194_p-62(ribU)             2  9.30e-09          T TGTTCTATGTATGGAACA A         
+TGAM_1254_p92(ribD)           2  1.05e-08          A TGTTCCAAAAACGGAACA A         
+PAB2198_p-62(ribU)            2  1.19e-08          T CGTTCAAAATTTGGAACA T         
+TK0428_p-62(ribBA)            2  2.25e-08          T GATTCCATTTTTGGAACA A         
+TON_1440_p-62(ribU)           2  3.29e-08          G TGTTTCATATTGGGAACA A         
+PF0163_p133(ribU)             2  6.39e-08          T TGTTCTGAAAATGGAACA A         
+PF0064_p-56(ribBA)            2  1.73e-07          C TGTCTTATTTTTGGAACA C         
+PF0064_p-23(ribBA)            2  2.32e-06          T AGTTCTATACTTGAGACA T         
+TK0428_p-40(ribBA)            2  4.12e-06          T TTTTAAAAATTTAGAACA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TK0424_p-52(ribD)                 7.7e-10  1_[+1]_1
+TON_0610_p-53(ribD)               2.3e-09  1_[+1]_1
+TSIB_0195_p-61(ribU)              4.4e-09  1_[+1]_1
+PH0251_p-62(ribU)                 8.5e-09  1_[+1]_1
+TK2194_p-62(ribU)                 9.3e-09  1_[+1]_1
+TGAM_1254_p92(ribD)               1.1e-08  1_[+1]_1
+PAB2198_p-62(ribU)                1.2e-08  1_[+1]_1
+TK0428_p-62(ribBA)                2.2e-08  1_[+1]_1
+TON_1440_p-62(ribU)               3.3e-08  1_[+1]_1
+PF0163_p133(ribU)                 6.4e-08  1_[+1]_1
+PF0064_p-56(ribBA)                1.7e-07  1_[+1]_1
+PF0064_p-23(ribBA)                2.3e-06  1_[+1]_1
+TK0428_p-40(ribBA)                4.1e-06  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTTCYAWWTWTGGAACA width=18 seqs=13
+TK0424_p-52(ribD)        (    2) TGTTCCAACCTTGGAACA  1 
+TON_0610_p-53(ribD)      (    2) TATTCCAATTTTGGAACA  1 
+TSIB_0195_p-61(ribU)     (    2) TATTCCAATTATGGAACA  1 
+PH0251_p-62(ribU)        (    2) TGTTCCAATTATAGAACA  1 
+TK2194_p-62(ribU)        (    2) TGTTCTATGTATGGAACA  1 
+TGAM_1254_p92(ribD)      (    2) TGTTCCAAAAACGGAACA  1 
+PAB2198_p-62(ribU)       (    2) CGTTCAAAATTTGGAACA  1 
+TK0428_p-62(ribBA)       (    2) GATTCCATTTTTGGAACA  1 
+TON_1440_p-62(ribU)      (    2) TGTTTCATATTGGGAACA  1 
+PF0163_p133(ribU)        (    2) TGTTCTGAAAATGGAACA  1 
+PF0064_p-56(ribBA)       (    2) TGTCTTATTTTTGGAACA  1 
+PF0064_p-23(ribBA)       (    2) AGTTCTATACTTGAGACA  1 
+TK0428_p-40(ribBA)       (    2) TTTTAAAAATTTAGAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 39 bayes= 3.05063 E= 7.5e-048 
+  -218    -94    -94    111 
+   -59  -1035    223   -221 
+ -1035  -1035  -1035    149 
+ -1035    -94  -1035    137 
+  -218    238  -1035   -121 
+  -118    187  -1035    -21 
+   140  -1035    -94  -1035 
+    82  -1035  -1035     11 
+    41    -94    -94     11 
+  -118      6  -1035     96 
+    14  -1035  -1035     79 
+ -1035    -94    -94    125 
+  -118  -1035    252  -1035 
+  -218  -1035    264  -1035 
+   140  -1035    -94  -1035 
+   152  -1035  -1035  -1035 
+ -1035    276  -1035  -1035 
+   152  -1035  -1035  -1035 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 13 E= 7.5e-048 
+ 0.076923  0.076923  0.076923  0.769231 
+ 0.230769  0.000000  0.692308  0.076923 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.076923  0.000000  0.923077 
+ 0.076923  0.769231  0.000000  0.153846 
+ 0.153846  0.538462  0.000000  0.307692 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.615385  0.000000  0.000000  0.384615 
+ 0.461538  0.076923  0.076923  0.384615 
+ 0.153846  0.153846  0.000000  0.692308 
+ 0.384615  0.000000  0.000000  0.615385 
+ 0.000000  0.076923  0.076923  0.846154 
+ 0.153846  0.000000  0.846154  0.000000 
+ 0.076923  0.000000  0.923077  0.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTCYAWWTWTGGAACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GA]TTC[CT]A[AT][AT]T[TA]TGGAACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PAB2198_p-62(ribU)               3.58e-08  1_[+1(1.19e-08)]_1
+PF0163_p133(ribU)                1.92e-07  1_[+1(6.39e-08)]_1
+PF0064_p-23(ribBA)               6.97e-06  1_[+1(2.32e-06)]_1
+PF0064_p-56(ribBA)               5.20e-07  1_[+1(1.73e-07)]_1
+PH0251_p-62(ribU)                2.56e-08  1_[+1(8.54e-09)]_1
+TGAM_1254_p92(ribD)              3.16e-08  1_[+1(1.05e-08)]_1
+TK2194_p-62(ribU)                2.79e-08  1_[+1(9.30e-09)]_1
+TK0424_p-52(ribD)                2.31e-09  1_[+1(7.69e-10)]_1
+TK0428_p-62(ribBA)               6.74e-08  1_[+1(2.25e-08)]_1
+TK0428_p-40(ribBA)               1.24e-05  1_[+1(4.12e-06)]_1
+TON_0610_p-53(ribD)              7.05e-09  1_[+1(2.35e-09)]_1
+TON_1440_p-62(ribU)              9.88e-08  1_[+1(3.29e-08)]_1
+TSIB_0195_p-61(ribU)             1.31e-08  1_[+1(4.36e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

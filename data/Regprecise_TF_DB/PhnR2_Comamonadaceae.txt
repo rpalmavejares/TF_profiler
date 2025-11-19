@@ -1,0 +1,212 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PhnR2_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Bpro_3219_p-68(phnR2)    1.0000     12  Bpro_3218_p-148(phnT)    1.0000     12  
+Bpro_4694_p-161(phnS)    1.0000     12  Bpro_4693_p-30(phnR2)    1.0000     12  
+Veis_1095_p6(phnR2)      1.0000     12  Veis_0970_p-170(phnS)    1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PhnR2_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/PhnR2_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              72    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=     72    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.347 C 0.139 G 0.153 T 0.361 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.342 C 0.145 G 0.158 T 0.355 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AYTGTTRACAAT MEME-1	width =  12  sites =   6  llr = 74  E-value = 1.3e-016
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a2::::3a:a7:
+pos.-specific     C  :3:::3::a:::
+probability       G  :::a::7:::2:
+matrix            T  :5a:a7::::2a
+
+         bits    2.8    *    *   
+                 2.5    *    *   
+                 2.2    *    *   
+                 2.0    *    *   
+Relative         1.7 *  *   ***  
+Entropy          1.4 * *** **** *
+(17.9 bits)      1.1 * ******** *
+                 0.8 * ******** *
+                 0.6 ************
+                 0.3 ************
+                 0.0 ------------
+
+Multilevel           ATTGTTGACAAT
+consensus             C   CA     
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+Veis_1095_p6(phnR2)           1  1.61e-07          . ACTGTTGACAAT           
+Bpro_3219_p-68(phnR2)         1  5.75e-07          . ATTGTTGACAAT           
+Veis_0970_p-170(phnS)         1  6.28e-07          . ACTGTTGACAGT           
+Bpro_3218_p-148(phnT)         1  2.07e-06          . ATTGTCAACAAT           
+Bpro_4693_p-30(phnR2)         1  2.40e-06          . ATTGTTGACATT           
+Bpro_4694_p-161(phnS)         1  4.15e-06          . AATGTCAACAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Veis_1095_p6(phnR2)               1.6e-07  [+1]
+Bpro_3219_p-68(phnR2)             5.8e-07  [+1]
+Veis_0970_p-170(phnS)             6.3e-07  [+1]
+Bpro_3218_p-148(phnT)             2.1e-06  [+1]
+Bpro_4693_p-30(phnR2)             2.4e-06  [+1]
+Bpro_4694_p-161(phnS)             4.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AYTGTTRACAAT width=12 seqs=6
+Veis_1095_p6(phnR2)      (    1) ACTGTTGACAAT  1 
+Bpro_3219_p-68(phnR2)    (    1) ATTGTTGACAAT  1 
+Veis_0970_p-170(phnS)    (    1) ACTGTTGACAGT  1 
+Bpro_3218_p-148(phnT)    (    1) ATTGTCAACAAT  1 
+Bpro_4693_p-30(phnR2)    (    1) ATTGTTGACATT  1 
+Bpro_4694_p-161(phnS)    (    1) AATGTCAACAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 6 bayes= 0.192645 E= 1.3e-016 
+   155   -923   -923   -923 
+  -103    120   -923     49 
+  -923   -923   -923    149 
+  -923   -923    266   -923 
+  -923   -923   -923    149 
+  -923    120   -923     91 
+    -4   -923    208   -923 
+   155   -923   -923   -923 
+  -923    279   -923   -923 
+   155   -923   -923   -923 
+    96   -923      8   -109 
+  -923   -923   -923    149 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 6 E= 1.3e-016 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.166667  0.333333  0.000000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.333333  0.000000  0.666667 
+ 0.333333  0.000000  0.666667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.666667  0.000000  0.166667  0.166667 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYTGTTRACAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TC]TGT[TC][GA]ACAAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bpro_3219_p-68(phnR2)            5.75e-07  [+1(5.75e-07)]
+Bpro_3218_p-148(phnT)            2.07e-06  [+1(2.07e-06)]
+Bpro_4694_p-161(phnS)            4.15e-06  [+1(4.15e-06)]
+Bpro_4693_p-30(phnR2)            2.40e-06  [+1(2.40e-06)]
+Veis_1095_p6(phnR2)              1.61e-07  [+1(1.61e-07)]
+Veis_0970_p-170(phnS)            6.28e-07  [+1(6.28e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

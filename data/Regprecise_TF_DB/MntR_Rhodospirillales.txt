@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/MntR_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AZL_b04530_p16(mntR)     1.0000     20  AZL_b04520_p-114(mntH)   1.0000     20  
+Gdia_1353_p-179(mntR)    1.0000     20  Gdia_1352_p16(mntH)      1.0000     20  
+APA01_40860_p-157(mntR)  1.0000     20  APA01_40860_p-64(mntR)   1.0000     20  
+APA01_40840_p-141(mntH)  1.0000     20  APA01_40840_p-48(mntH)   1.0000     20  
+GOX2068_p-140(mntR)      1.0000     20  GOX2068_p-49(mntR)       1.0000     20  
+GOX2067_p-28(mntH)       1.0000     20  GOX2067_p-119(mntH)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/MntR_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/MntR_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.367 C 0.133 G 0.133 T 0.367 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.365 C 0.135 G 0.135 T 0.365 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AATATDSMATATKSHATATT MEME-1	width =  20  sites =  12  llr = 152  E-value = 1.8e-033
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  86:a:3:46:621:4a:a32
+pos.-specific     C  1:::::751322:33:::2:
+probability       G  :2:::33:223157:::::1
+matrix            T  23a:a4:126:64:3:a:68
+
+         bits    2.9                     
+                 2.6                     
+                 2.3                     
+                 2.0       *      *      
+Relative         1.7       *      *      
+Entropy          1.4   *** *      * ***  
+(18.3 bits)      1.2   *** *      * ***  
+                 0.9   *** **    ** ***  
+                 0.6 * *** ** ** ** *** *
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           AATATTCCATATGGAATATT
+consensus             T   AGA CG TCT   A 
+sequence                  G        C     
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+APA01_40840_p-48(mntH)        1  2.84e-08          . AATATAGCATATTGCATATT           
+APA01_40860_p-157(mntR)       1  2.84e-08          . AATATGCAATATGCTATATT           
+GOX2067_p-28(mntH)            1  5.44e-08          . AATATAGCATGTTGAATATT           
+GOX2068_p-140(mntR)           1  5.44e-08          . AATATTCAACATGCTATATT           
+AZL_b04520_p-114(mntH)        1  1.24e-07          . AGTATAGCGCCTTGCATACT           
+AZL_b04530_p16(mntR)          1  1.24e-07          . AGTATGCAAGGCGCTATACT           
+Gdia_1352_p16(mntH)           1  8.83e-07          . CATATAGCTTATTGCATATT           
+Gdia_1353_p-179(mntR)         1  8.83e-07          . AATATGCAATAAGCTATATG           
+GOX2067_p-119(mntH)           1  3.88e-06          . ATTATTCACGGCGGAATAAA           
+GOX2068_p-49(mntR)            1  3.88e-06          . TTTATTCCGCCGTGAATAAT           
+APA01_40840_p-141(mntH)       1  5.69e-06          . AATATTCCATAAAGAATAAA           
+APA01_40860_p-64(mntR)        1  5.69e-06          . TTTATTCTTTATGGAATATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+APA01_40840_p-48(mntH)            2.8e-08  [+1]
+APA01_40860_p-157(mntR)           2.8e-08  [+1]
+GOX2067_p-28(mntH)                5.4e-08  [+1]
+GOX2068_p-140(mntR)               5.4e-08  [+1]
+AZL_b04520_p-114(mntH)            1.2e-07  [+1]
+AZL_b04530_p16(mntR)              1.2e-07  [+1]
+Gdia_1352_p16(mntH)               8.8e-07  [+1]
+Gdia_1353_p-179(mntR)             8.8e-07  [+1]
+GOX2067_p-119(mntH)               3.9e-06  [+1]
+GOX2068_p-49(mntR)                3.9e-06  [+1]
+APA01_40840_p-141(mntH)           5.7e-06  [+1]
+APA01_40860_p-64(mntR)            5.7e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AATATDSMATATKSHATATT width=20 seqs=12
+APA01_40840_p-48(mntH)   (    1) AATATAGCATATTGCATATT  1 
+APA01_40860_p-157(mntR)  (    1) AATATGCAATATGCTATATT  1 
+GOX2067_p-28(mntH)       (    1) AATATAGCATGTTGAATATT  1 
+GOX2068_p-140(mntR)      (    1) AATATTCAACATGCTATATT  1 
+AZL_b04520_p-114(mntH)   (    1) AGTATAGCGCCTTGCATACT  1 
+AZL_b04530_p16(mntR)     (    1) AGTATGCAAGGCGCTATACT  1 
+Gdia_1352_p16(mntH)      (    1) CATATAGCTTATTGCATATT  1 
+Gdia_1353_p-179(mntR)    (    1) AATATGCAATAAGCTATATG  1 
+GOX2067_p-119(mntH)      (    1) ATTATTCACGGCGGAATAAA  1 
+GOX2068_p-49(mntR)       (    1) TTTATTCCGCCGTGAATAAT  1 
+APA01_40840_p-141(mntH)  (    1) AATATTCCATAAAGAATAAA  1 
+APA01_40860_p-64(mntR)   (    1) TTTATTCTTTATGGAATATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 12 bayes= 1 E= 1.8e-033 
+   104    -70  -1023   -113 
+    68  -1023     30    -54 
+ -1023  -1023  -1023    145 
+   145  -1023  -1023  -1023 
+ -1023  -1023  -1023    145 
+   -13  -1023     89     19 
+ -1023    230    130  -1023 
+    19    189  -1023   -213 
+    68    -70     30   -113 
+ -1023     89     30     68 
+    68     30     89  -1023 
+  -113     30    -70     68 
+  -213  -1023    189     19 
+ -1023    130    230  -1023 
+    19     89  -1023    -13 
+   145  -1023  -1023  -1023 
+ -1023  -1023  -1023    145 
+   145  -1023  -1023  -1023 
+   -54     30  -1023     68 
+  -113  -1023    -70    104 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 12 E= 1.8e-033 
+ 0.750000  0.083333  0.000000  0.166667 
+ 0.583333  0.000000  0.166667  0.250000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.333333  0.000000  0.250000  0.416667 
+ 0.000000  0.666667  0.333333  0.000000 
+ 0.416667  0.500000  0.000000  0.083333 
+ 0.583333  0.083333  0.166667  0.166667 
+ 0.000000  0.250000  0.166667  0.583333 
+ 0.583333  0.166667  0.250000  0.000000 
+ 0.166667  0.166667  0.083333  0.583333 
+ 0.083333  0.000000  0.500000  0.416667 
+ 0.000000  0.333333  0.666667  0.000000 
+ 0.416667  0.250000  0.000000  0.333333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.166667  0.000000  0.583333 
+ 0.166667  0.000000  0.083333  0.750000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATATDSMATATKSHATATT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT]TAT[TAG][CG][CA]A[TC][AG]T[GT][GC][ATC]ATA[TA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AZL_b04530_p16(mntR)             1.24e-07  [+1(1.24e-07)]
+AZL_b04520_p-114(mntH)           1.24e-07  [+1(1.24e-07)]
+Gdia_1353_p-179(mntR)            8.83e-07  [+1(8.83e-07)]
+Gdia_1352_p16(mntH)              8.83e-07  [+1(8.83e-07)]
+APA01_40860_p-157(mntR)          2.84e-08  [+1(2.84e-08)]
+APA01_40860_p-64(mntR)           5.69e-06  [+1(5.69e-06)]
+APA01_40840_p-141(mntH)          5.69e-06  [+1(5.69e-06)]
+APA01_40840_p-48(mntH)           2.84e-08  [+1(2.84e-08)]
+GOX2068_p-140(mntR)              5.44e-08  [+1(5.44e-08)]
+GOX2068_p-49(mntR)               3.88e-06  [+1(3.88e-06)]
+GOX2067_p-28(mntH)               5.44e-08  [+1(5.44e-08)]
+GOX2067_p-119(mntH)              3.88e-06  [+1(3.88e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

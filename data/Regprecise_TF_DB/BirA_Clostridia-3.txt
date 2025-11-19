@@ -1,0 +1,336 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Clostridia-3.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BACPEC_02754(bioB)Score= 1.0000     31  BACPEC_02755(bioY2)Score 1.0000     31  
+BLAHAN_02475(bioY)Score= 1.0000     31  BRYFOR_01898(bioY)Score= 1.0000     31  
+BRYFOR_01898(bioY)Score= 1.0000     31  Cbac1_010100014191(SSF54 1.0000     31  
+CLOBOL_00883(SSF54637)Sc 1.0000     31  CLONEX_00515(bioY)Score= 1.0000     31  
+CLOSCI_02690(bioY)Score= 1.0000     31  CLOSCI_01529(bioB)Score= 1.0000     31  
+DORFOR_03064(bioB)Score= 1.0000     31  DORLON_02721(bioB)Score= 1.0000     31  
+DORLON_01236(bioY)Score= 1.0000     31  DORLON_00987(bioY)Score= 1.0000     31  
+EUBELI_01172(bioY)Score= 1.0000     31  EUBELI_20420(bioB)Score= 1.0000     31  
+EUBREC_0920(bioB)Score=9 1.0000     31  EUBREC_3289(bioY)Score=8 1.0000     31  
+ROSINTL182_04738(bioY)Sc 1.0000     31  ROSINTL182_04738(bioY)Sc 1.0000     31  
+ROSINTL182_00207(bioY)Sc 1.0000     31  RUMGNA_00689(bioB)Score= 1.0000     31  
+RUMGNA_01549(bioY)Score= 1.0000     31  RUMLAC_00062(bioB)Score= 1.0000     31  
+RUMLAC_01841(bioY)Score= 1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Clostridia-3.fasta -oc BirA_Clostridia-3 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           31
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             775    N=              25    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.300 C 0.192 G 0.211 T 0.296 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.300 C 0.192 G 0.211 T 0.296 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  31  sites =  25  llr = 458  E-value = 3.8e-147
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:::4aa:333333333333333:::1a:a8
+pos.-specific     C  ::::2::a222222222222222:::::a::
+probability       G  ::a:::::222222222222222a::8::::
+matrix            T  6a:a5:::333333333333333:aa1:::2
+
+         bits    2.4        *                    *  
+                 2.1   *    *               *    *  
+                 1.9   *    *               *    *  
+                 1.7  *** ***               *** *** 
+Relative         1.4  *** ***               *** *** 
+Entropy          1.2  *** ***               ******* 
+(26.4 bits)      1.0  *** ***               ********
+                 0.7 **** ***               ********
+                 0.5 ********               ********
+                 0.2 ********               ********
+                 0.0 -------------------------------
+
+Multilevel           TTGTTAACAAAAAAAAAAAAAAAGTTGACAA
+consensus            A   A   TTTTTTTTTTTTTTT       T
+sequence                     GGGGGGGGGGGGGGG        
+                                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                         Site            
+-------------             ----- ---------            -------------------------------
+RUMLAC_01841(bioY)Score=      1  5.58e-10          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+EUBREC_0920(bioB)Score=9      1  5.58e-10          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+CLONEX_00515(bioY)Score=      1  5.58e-10          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+CLOBOL_00883(SSF54637)Sc      1  5.58e-10          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+Cbac1_010100014191(SSF54      1  5.58e-10          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+ROSINTL182_00207(bioY)Sc      1  1.12e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+EUBREC_3289(bioY)Score=8      1  1.12e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+DORLON_01236(bioY)Score=      1  1.12e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+BRYFOR_01898(bioY)Score=      1  1.12e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+BLAHAN_02475(bioY)Score=      1  1.12e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+RUMGNA_01549(bioY)Score=      1  2.05e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+BACPEC_02755(bioY2)Score      1  2.05e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+RUMLAC_00062(bioB)Score=      1  3.17e-09          . ATGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+DORLON_00987(bioY)Score=      1  3.17e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+CLOSCI_02690(bioY)Score=      1  3.17e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+EUBELI_01172(bioY)Score=      1  3.54e-09          . ATGTCAACNNNNNNNNNNNNNNNGTTGACAA           
+DORFOR_03064(bioB)Score=      1  4.45e-09          . TTGTCAACNNNNNNNNNNNNNNNGTTGACAT           
+ROSINTL182_04738(bioY)Sc      1  5.01e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+ROSINTL182_04738(bioY)Sc      1  6.37e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+EUBELI_20420(bioB)Score=      1  7.09e-09          . ATGTCAACNNNNNNNNNNNNNNNGTTGACAT           
+CLOSCI_01529(bioB)Score=      1  9.04e-09          . CTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+RUMGNA_00689(bioB)Score=      1  1.14e-08          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+DORLON_02721(bioB)Score=      1  1.14e-08          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+BRYFOR_01898(bioY)Score=      1  1.75e-08          . ATGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+BACPEC_02754(bioB)Score=      1  1.89e-08          . TTGTCAACNNNNNNNNNNNNNNNGTTAACAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RUMLAC_01841(bioY)Score=          5.6e-10  [+1]
+EUBREC_0920(bioB)Score=9          5.6e-10  [+1]
+CLONEX_00515(bioY)Score=          5.6e-10  [+1]
+CLOBOL_00883(SSF54637)Sc          5.6e-10  [+1]
+Cbac1_010100014191(SSF54          5.6e-10  [+1]
+ROSINTL182_00207(bioY)Sc          1.1e-09  [+1]
+EUBREC_3289(bioY)Score=8          1.1e-09  [+1]
+DORLON_01236(bioY)Score=          1.1e-09  [+1]
+BRYFOR_01898(bioY)Score=          1.1e-09  [+1]
+BLAHAN_02475(bioY)Score=          1.1e-09  [+1]
+RUMGNA_01549(bioY)Score=            2e-09  [+1]
+BACPEC_02755(bioY2)Score            2e-09  [+1]
+RUMLAC_00062(bioB)Score=          3.2e-09  [+1]
+DORLON_00987(bioY)Score=          3.2e-09  [+1]
+CLOSCI_02690(bioY)Score=          3.2e-09  [+1]
+EUBELI_01172(bioY)Score=          3.5e-09  [+1]
+DORFOR_03064(bioB)Score=          4.5e-09  [+1]
+ROSINTL182_04738(bioY)Sc            5e-09  [+1]
+ROSINTL182_04738(bioY)Sc          6.4e-09  [+1]
+EUBELI_20420(bioB)Score=          7.1e-09  [+1]
+CLOSCI_01529(bioB)Score=            9e-09  [+1]
+RUMGNA_00689(bioB)Score=          1.1e-08  [+1]
+DORLON_02721(bioB)Score=          1.1e-08  [+1]
+BRYFOR_01898(bioY)Score=          1.8e-08  [+1]
+BACPEC_02754(bioB)Score=          1.9e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=31 seqs=25
+RUMLAC_01841(bioY)Score= (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+EUBREC_0920(bioB)Score=9 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CLONEX_00515(bioY)Score= (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CLOBOL_00883(SSF54637)Sc (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+Cbac1_010100014191(SSF54 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+ROSINTL182_00207(bioY)Sc (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+EUBREC_3289(bioY)Score=8 (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+DORLON_01236(bioY)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BRYFOR_01898(bioY)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BLAHAN_02475(bioY)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+RUMGNA_01549(bioY)Score= (    1) ATGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BACPEC_02755(bioY2)Score (    1) ATGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+RUMLAC_00062(bioB)Score= (    1) ATGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+DORLON_00987(bioY)Score= (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+CLOSCI_02690(bioY)Score= (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+EUBELI_01172(bioY)Score= (    1) ATGTCAACNNNNNNNNNNNNNNNGTTGACAA  1 
+DORFOR_03064(bioB)Score= (    1) TTGTCAACNNNNNNNNNNNNNNNGTTGACAT  1 
+ROSINTL182_04738(bioY)Sc (    1) ATGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+ROSINTL182_04738(bioY)Sc (    1) TTGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+EUBELI_20420(bioB)Score= (    1) ATGTCAACNNNNNNNNNNNNNNNGTTGACAT  1 
+CLOSCI_01529(bioB)Score= (    1) CTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+RUMGNA_00689(bioB)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+DORLON_02721(bioB)Score= (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+BRYFOR_01898(bioY)Score= (    1) ATGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+BACPEC_02754(bioB)Score= (    1) TTGTCAACNNNNNNNNNNNNNNNGTTAACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 31 n= 25 bayes= 1.47917 E= 3.8e-147 
+     9   -226  -1129    111 
+ -1129  -1129  -1129    175 
+ -1129  -1129    224  -1129 
+ -1129  -1129  -1129    175 
+    26    -26  -1129     70 
+   174  -1129  -1129  -1129 
+   174  -1129  -1129  -1129 
+ -1129    238  -1129  -1129 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+ -1129  -1129    224  -1129 
+ -1129  -1129  -1129    175 
+ -1129  -1129  -1129    175 
+  -132  -1129    192   -189 
+   174  -1129  -1129  -1129 
+ -1129    238  -1129  -1129 
+   174  -1129  -1129  -1129 
+   134  -1129  -1129    -30 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 31 nsites= 25 E= 3.8e-147 
+ 0.320000  0.040000  0.000000  0.640000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.360000  0.160000  0.000000  0.480000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.300064  0.192234  0.211489  0.296213 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.120000  0.000000  0.800000  0.080000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.760000  0.000000  0.000000  0.240000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[TA]TGT[TA]AAC[ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG]GTTGACA[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACPEC_02754(bioB)Score=         1.89e-08  [+1(1.89e-08)]
+BACPEC_02755(bioY2)Score         2.05e-09  [+1(2.05e-09)]
+BLAHAN_02475(bioY)Score=         1.12e-09  [+1(1.12e-09)]
+BRYFOR_01898(bioY)Score=         1.12e-09  [+1(1.12e-09)]
+BRYFOR_01898(bioY)Score=         1.75e-08  [+1(1.75e-08)]
+Cbac1_010100014191(SSF54         5.58e-10  [+1(5.58e-10)]
+CLOBOL_00883(SSF54637)Sc         5.58e-10  [+1(5.58e-10)]
+CLONEX_00515(bioY)Score=         5.58e-10  [+1(5.58e-10)]
+CLOSCI_02690(bioY)Score=         3.17e-09  [+1(3.17e-09)]
+CLOSCI_01529(bioB)Score=         9.04e-09  [+1(9.04e-09)]
+DORFOR_03064(bioB)Score=         4.45e-09  [+1(4.45e-09)]
+DORLON_02721(bioB)Score=         1.14e-08  [+1(1.14e-08)]
+DORLON_01236(bioY)Score=         1.12e-09  [+1(1.12e-09)]
+DORLON_00987(bioY)Score=         3.17e-09  [+1(3.17e-09)]
+EUBELI_01172(bioY)Score=         3.54e-09  [+1(3.54e-09)]
+EUBELI_20420(bioB)Score=         7.09e-09  [+1(7.09e-09)]
+EUBREC_0920(bioB)Score=9         5.58e-10  [+1(5.58e-10)]
+EUBREC_3289(bioY)Score=8         1.12e-09  [+1(1.12e-09)]
+ROSINTL182_04738(bioY)Sc         5.01e-09  [+1(5.01e-09)]
+ROSINTL182_04738(bioY)Sc         6.37e-09  [+1(6.37e-09)]
+ROSINTL182_00207(bioY)Sc         1.12e-09  [+1(1.12e-09)]
+RUMGNA_00689(bioB)Score=         1.14e-08  [+1(1.14e-08)]
+RUMGNA_01549(bioY)Score=         2.05e-09  [+1(2.05e-09)]
+RUMLAC_00062(bioB)Score=         3.17e-09  [+1(3.17e-09)]
+RUMLAC_01841(bioY)Score=         5.58e-10  [+1(5.58e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,222 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NadQ_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CtesDRAFT_2977_p-91(nadC 1.0000     21  CtesDRAFT_2977_p-11(nadC 1.0000     21  
+CtesDRAFT_2575_p-52(nadA 1.0000     21  Daci_1541_p-11(nadC)     1.0000     21  
+Daci_2150_p-67(nadA)     1.0000     21  Daci_1541_p-81(nadC)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NadQ_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NadQ_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             126    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=    126    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.421 C 0.143 G 0.119 T 0.317 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.415 C 0.146 G 0.123 T 0.315 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATACTCARAWTKAGCAT MEME-1	width =  17  sites =   6  llr = 110  E-value = 6.3e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:7:::85a3::a::a:
+pos.-specific     C  :::a:a::::2:::8::
+probability       G  ::3:::23:::7:a:::
+matrix            T  :a::a::2:783::2:a
+
+         bits    3.0              *   
+                 2.7    * *       *   
+                 2.4    * *       *   
+                 2.1    * *       *   
+Relative         1.8  * ***       ** *
+Entropy          1.5  * ***     * ** *
+(26.3 bits)      1.2 ** ***  * *******
+                 0.9 ******* * *******
+                 0.6 *****************
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           ATACTCAAATTGAGCAT
+consensus              G    G A T     
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Daci_2150_p-67(nadA)          3  6.35e-10         TA ATACTCAAATTGAGCAT AT        
+CtesDRAFT_2977_p-91(nadC      3  9.91e-10         TA ATGCTCAGATTTAGCAT AA        
+Daci_1541_p-11(nadC)          3  2.38e-09         AT ATACTCAAAATGAGCAT TA        
+CtesDRAFT_2977_p-11(nadC      3  2.38e-09         AA ATACTCAAAATGAGCAT TA        
+CtesDRAFT_2575_p-52(nadA      3  4.45e-09         TA ATACTCAGATTGAGTAT AA        
+Daci_1541_p-81(nadC)          3  1.44e-08         TT ATGCTCGTATCTAGCAT AA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Daci_2150_p-67(nadA)              6.3e-10  2_[+1]_2
+CtesDRAFT_2977_p-91(nadC          9.9e-10  2_[+1]_2
+Daci_1541_p-11(nadC)              2.4e-09  2_[+1]_2
+CtesDRAFT_2977_p-11(nadC          2.4e-09  2_[+1]_2
+CtesDRAFT_2575_p-52(nadA          4.5e-09  2_[+1]_2
+Daci_1541_p-81(nadC)              1.4e-08  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATACTCARAWTKAGCAT width=17 seqs=6
+Daci_2150_p-67(nadA)     (    3) ATACTCAAATTGAGCAT  1 
+CtesDRAFT_2977_p-91(nadC (    3) ATGCTCAGATTTAGCAT  1 
+Daci_1541_p-11(nadC)     (    3) ATACTCAAAATGAGCAT  1 
+CtesDRAFT_2977_p-11(nadC (    3) ATACTCAAAATGAGCAT  1 
+CtesDRAFT_2575_p-52(nadA (    3) ATACTCAGATTGAGTAT  1 
+Daci_1541_p-81(nadC)     (    3) ATGCTCGTATCTAGCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 30 bayes= 3.28011 E= 6.3e-020 
+   127   -923   -923   -923 
+  -923   -923   -923    166 
+    68   -923    144   -923 
+  -923    277   -923   -923 
+  -923   -923   -923    166 
+  -923    277   -923   -923 
+   100   -923     44   -923 
+    27   -923    144    -92 
+   127   -923   -923   -923 
+   -32   -923   -923    108 
+  -923     19   -923    140 
+  -923   -923    244      8 
+   127   -923   -923   -923 
+  -923   -923    302   -923 
+  -923    251   -923    -92 
+   127   -923   -923   -923 
+  -923   -923   -923    166 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 6 E= 6.3e-020 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.666667  0.000000  0.333333  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.500000  0.000000  0.333333  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.166667  0.000000  0.833333 
+ 0.000000  0.000000  0.666667  0.333333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.833333  0.000000  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACTCARAWTKAGCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[AG]CTCA[AG]A[TA]T[GT]AGCAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CtesDRAFT_2977_p-91(nadC         4.95e-09  2_[+1(9.91e-10)]_2
+CtesDRAFT_2977_p-11(nadC         1.19e-08  2_[+1(2.38e-09)]_2
+CtesDRAFT_2575_p-52(nadA         2.23e-08  2_[+1(4.45e-09)]_2
+Daci_1541_p-11(nadC)             1.19e-08  2_[+1(2.38e-09)]_2
+Daci_2150_p-67(nadA)             3.17e-09  2_[+1(6.35e-10)]_2
+Daci_1541_p-81(nadC)             7.21e-08  2_[+1(1.44e-08)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

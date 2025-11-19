@@ -1,0 +1,262 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/ModE_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SO_3862_p-178(modE)      1.0000     28  SO_3863_p-73(modA2)      1.0000     28  
+Shewana3_0743_p-52(modA2 1.0000     28  Shewana3_0744_p-178(modE 1.0000     28  
+Shewmr4_3194_p-178(modE) 1.0000     28  Shewmr4_3195_p-52(modA2) 1.0000     28  
+Shewmr7_0770_p-178(modE) 1.0000     28  Shewmr7_0769_p-52(modA2) 1.0000     28  
+Sbal_3537_p-446(modE)    1.0000     28  Sbal_3538_p-52(modA2)    1.0000     28  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/ModE_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/ModE_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           28
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             280    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    280    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.368 C 0.132 G 0.132 T 0.368 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.366 C 0.134 G 0.134 T 0.366 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATCGWTATATASMWWKSTATATAWCGAT MEME-1	width =  28  sites =  10  llr = 288  E-value = 4.8e-077
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:::6:a:a:a:555:::a:a:a4::9:
+pos.-specific     C  11a::::::::55:::5:::::::a:::
+probability       G  :::a:::::::5:::55::::::::a11
+matrix            T  :9::4a:a:a:::555:a:a:a:6:::9
+
+         bits    2.9   **                    **  
+                 2.6   **                    **  
+                 2.3   **                    **  
+                 2.0   **       *    *       **  
+Relative         1.7   **       *    *       **  
+Entropy          1.5   ** *******    ******* **  
+(41.5 bits)      1.2 **** ********  ******** ****
+                 0.9 **** ********  ******** ****
+                 0.6 ****************************
+                 0.3 ****************************
+                 0.0 ----------------------------
+
+Multilevel           ATCGATATATACAAAGCTATATATCGAT
+consensus                T      GCTTTG      A    
+sequence                                         
+                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+Sbal_3538_p-52(modA2)         1  6.76e-14          . ATCGATATATAGATTGGTATATAACGAT           
+Sbal_3537_p-446(modE)         1  6.76e-14          . ATCGTTATATAccaAtcTATATAtCGAT           
+Shewmr7_0769_p-52(modA2)      1  6.76e-14          . ATCGATATATAGATTGGTATATAACGAT           
+Shewmr7_0770_p-178(modE)      1  6.76e-14          . ATCGTTATATACCAATCTATATATCGAT           
+Shewmr4_3195_p-52(modA2)      1  6.76e-14          . ATCGATATATAGATTGGTATATAACGAT           
+Shewmr4_3194_p-178(modE)      1  6.76e-14          . ATCGTTATATACCAATCTATATATCGAT           
+SO_3863_p-73(modA2)           1  1.46e-13          . CTCGATATATAGATTGGTATATATCGAT           
+SO_3862_p-178(modE)           1  1.46e-13          . ATCGATATATACCAATCTATATATCGAG           
+Shewana3_0744_p-178(modE      1  2.44e-13          . ATCGTTATATACCAATCTATATATCGGT           
+Shewana3_0743_p-52(modA2      1  2.44e-13          . ACCGATATATAGATTGGTATATAACGAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sbal_3538_p-52(modA2)             6.8e-14  [+1]
+Sbal_3537_p-446(modE)             6.8e-14  [+1]
+Shewmr7_0769_p-52(modA2)          6.8e-14  [+1]
+Shewmr7_0770_p-178(modE)          6.8e-14  [+1]
+Shewmr4_3195_p-52(modA2)          6.8e-14  [+1]
+Shewmr4_3194_p-178(modE)          6.8e-14  [+1]
+SO_3863_p-73(modA2)               1.5e-13  [+1]
+SO_3862_p-178(modE)               1.5e-13  [+1]
+Shewana3_0744_p-178(modE          2.4e-13  [+1]
+Shewana3_0743_p-52(modA2          2.4e-13  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATCGWTATATASMWWKSTATATAWCGAT width=28 seqs=10
+Sbal_3538_p-52(modA2)    (    1) ATCGATATATAGATTGGTATATAACGAT  1 
+Sbal_3537_p-446(modE)    (    1) ATCGTTATATACCAATCTATATATCGAT  1 
+Shewmr7_0769_p-52(modA2) (    1) ATCGATATATAGATTGGTATATAACGAT  1 
+Shewmr7_0770_p-178(modE) (    1) ATCGTTATATACCAATCTATATATCGAT  1 
+Shewmr4_3195_p-52(modA2) (    1) ATCGATATATAGATTGGTATATAACGAT  1 
+Shewmr4_3194_p-178(modE) (    1) ATCGTTATATACCAATCTATATATCGAT  1 
+SO_3863_p-73(modA2)      (    1) CTCGATATATAGATTGGTATATATCGAT  1 
+SO_3862_p-178(modE)      (    1) ATCGATATATACCAATCTATATATCGAG  1 
+Shewana3_0744_p-178(modE (    1) ATCGTTATATACCAATCTATATATCGGT  1 
+Shewana3_0743_p-52(modA2 (    1) ACCGATATATAGATTGGTATATAACGAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 10 bayes= 0.830075 E= 4.8e-077 
+   130    -42   -997   -997 
+  -997    -42   -997    130 
+  -997    290   -997   -997 
+  -997   -997    290   -997 
+    71   -997   -997     13 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+  -997    190    190   -997 
+    45    190   -997   -997 
+    45   -997   -997     45 
+    45   -997   -997     45 
+  -997   -997    190     45 
+  -997    190    190   -997 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+  -997   -997   -997    145 
+   145   -997   -997   -997 
+    13   -997   -997     71 
+  -997    290   -997   -997 
+  -997   -997    290   -997 
+   130   -997    -42   -997 
+  -997   -997    -42    130 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 10 E= 4.8e-077 
+ 0.900000  0.100000  0.000000  0.000000 
+ 0.000000  0.100000  0.000000  0.900000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.500000  0.500000  0.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 0.000000  0.500000  0.500000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  0.000000  0.100000  0.900000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCGWTATATASMWWKSTATATAWCGAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATCG[AT]TATATA[CG][AC][AT][AT][GT][CG]TATATA[TA]CGAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SO_3862_p-178(modE)              1.46e-13  [+1(1.46e-13)]
+SO_3863_p-73(modA2)              1.46e-13  [+1(1.46e-13)]
+Shewana3_0743_p-52(modA2         2.44e-13  [+1(2.44e-13)]
+Shewana3_0744_p-178(modE         2.44e-13  [+1(2.44e-13)]
+Shewmr4_3194_p-178(modE)         6.76e-14  [+1(6.76e-14)]
+Shewmr4_3195_p-52(modA2)         6.76e-14  [+1(6.76e-14)]
+Shewmr7_0770_p-178(modE)         6.76e-14  [+1(6.76e-14)]
+Shewmr7_0769_p-52(modA2)         6.76e-14  [+1(6.76e-14)]
+Sbal_3537_p-446(modE)            6.76e-14  [+1(6.76e-14)]
+Sbal_3538_p-52(modA2)            6.76e-14  [+1(6.76e-14)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

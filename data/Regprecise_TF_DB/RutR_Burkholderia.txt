@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RutR_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSS0273_p-160(rutR)     1.0000     20  BMAA1492_p-171(rutR)     1.0000     20  
+Bcep18194_C6653_p-196(ru 1.0000     20  Bcep18194_C6654_p-180(py 1.0000     20  
+Bamb_5968_p-195(rutR)    1.0000     20  Bamb_5967_p-188(pydC)    1.0000     20  
+Bcep1808_5508_p-195(rutR 1.0000     20  Bcep1808_5509_p-186(pydC 1.0000     20  
+Bxe_A1426_p-121(rutR)    1.0000     20  Bxe_A1427_p-168(pydC)    1.0000     20  
+Bphy_1537_p-216(rutR)    1.0000     20  Bphy_1536_p-200(pydC)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RutR_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RutR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.212 C 0.271 G 0.279 T 0.237 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.213 C 0.27 G 0.279 T 0.238 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WCCTGTCCRATYGGACAGGW MEME-1	width =  20  sites =  12  llr = 277  E-value = 1.3e-086
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4:::::::583:::8:a::4
+pos.-specific     C  :aa:::aa::13:::a::::
+probability       G  ::::a:::51::aa:::aa:
+matrix            T  6::a:a:::177::2::::6
+
+         bits    2.2                 *   
+                 2.0    * *          *   
+                 1.8  *******    ** **** 
+                 1.6  *******    ******* 
+Relative         1.3  ******* *  ******* 
+Entropy          1.1 ********** *********
+(33.3 bits)      0.9 ********************
+                 0.7 ********************
+                 0.4 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TCCTGTCCAATTGGACAGGT
+consensus            A       G AC       A
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Bcep1808_5508_p-195(rutR      1  3.72e-12          . TCCTGTCCGATTGGACAGGT           
+Bamb_5968_p-195(rutR)         1  3.72e-12          . TCCTGTCCGATTGGACAGGT           
+Bcep18194_C6653_p-196(ru      1  3.72e-12          . TCCTGTCCGATTGGACAGGT           
+Bphy_1537_p-216(rutR)         1  1.59e-11          . TCCTGTCCGAATGGACAGGT           
+Bcep1808_5509_p-186(pydC      1  1.59e-11          . ACCTGTCCAATCGGACAGGA           
+Bamb_5967_p-188(pydC)         1  1.59e-11          . ACCTGTCCAATCGGACAGGA           
+Bcep18194_C6654_p-180(py      1  1.59e-11          . ACCTGTCCAATCGGACAGGA           
+Bxe_A1427_p-168(pydC)         1  5.00e-11          . ACCTGTCCAACTGGACAGGA           
+Bxe_A1426_p-121(rutR)         1  5.00e-11          . TCCTGTCCAGTTGGACAGGT           
+BMAA1492_p-171(rutR)          1  6.90e-11          . TCCTGTCCGAATGGTCAGGT           
+BPSS0273_p-160(rutR)          1  6.90e-11          . TCCTGTCCGAATGGTCAGGT           
+Bphy_1536_p-200(pydC)         1  1.08e-10          . ACCTGTCCATTCGGACAGGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bcep1808_5508_p-195(rutR          3.7e-12  [+1]
+Bamb_5968_p-195(rutR)             3.7e-12  [+1]
+Bcep18194_C6653_p-196(ru          3.7e-12  [+1]
+Bphy_1537_p-216(rutR)             1.6e-11  [+1]
+Bcep1808_5509_p-186(pydC          1.6e-11  [+1]
+Bamb_5967_p-188(pydC)             1.6e-11  [+1]
+Bcep18194_C6654_p-180(py          1.6e-11  [+1]
+Bxe_A1427_p-168(pydC)               5e-11  [+1]
+Bxe_A1426_p-121(rutR)               5e-11  [+1]
+BMAA1492_p-171(rutR)              6.9e-11  [+1]
+BPSS0273_p-160(rutR)              6.9e-11  [+1]
+Bphy_1536_p-200(pydC)             1.1e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WCCTGTCCRATYGGACAGGW width=20 seqs=12
+Bcep1808_5508_p-195(rutR (    1) TCCTGTCCGATTGGACAGGT  1 
+Bamb_5968_p-195(rutR)    (    1) TCCTGTCCGATTGGACAGGT  1 
+Bcep18194_C6653_p-196(ru (    1) TCCTGTCCGATTGGACAGGT  1 
+Bphy_1537_p-216(rutR)    (    1) TCCTGTCCGAATGGACAGGT  1 
+Bcep1808_5509_p-186(pydC (    1) ACCTGTCCAATCGGACAGGA  1 
+Bamb_5967_p-188(pydC)    (    1) ACCTGTCCAATCGGACAGGA  1 
+Bcep18194_C6654_p-180(py (    1) ACCTGTCCAATCGGACAGGA  1 
+Bxe_A1427_p-168(pydC)    (    1) ACCTGTCCAACTGGACAGGA  1 
+Bxe_A1426_p-121(rutR)    (    1) TCCTGTCCAGTTGGACAGGT  1 
+BMAA1492_p-171(rutR)     (    1) TCCTGTCCGAATGGTCAGGT  1 
+BPSS0273_p-160(rutR)     (    1) TCCTGTCCGAATGGTCAGGT  1 
+Bphy_1536_p-200(pydC)    (    1) ACCTGTCCATTCGGACAGGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 12 bayes= 1 E= 1.3e-086 
+    97  -1023  -1023    129 
+ -1023    189  -1023  -1023 
+ -1023    189  -1023  -1023 
+ -1023  -1023  -1023    207 
+ -1023  -1023    184  -1023 
+ -1023  -1023  -1023    207 
+ -1023    189  -1023  -1023 
+ -1023    189  -1023  -1023 
+   123  -1023     84  -1023 
+   197  -1023   -174   -151 
+    23   -170  -1023    149 
+ -1023     30  -1023    149 
+ -1023  -1023    184  -1023 
+ -1023  -1023    184  -1023 
+   197  -1023  -1023    -51 
+ -1023    189  -1023  -1023 
+   223  -1023  -1023  -1023 
+ -1023  -1023    184  -1023 
+ -1023  -1023    184  -1023 
+    97  -1023  -1023    129 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 12 E= 1.3e-086 
+ 0.416667  0.000000  0.000000  0.583333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.833333  0.000000  0.083333  0.083333 
+ 0.250000  0.083333  0.000000  0.666667 
+ 0.000000  0.333333  0.000000  0.666667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.416667  0.000000  0.000000  0.583333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCCTGTCCRATYGGACAGGW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]CCTGTCC[AG]A[TA][TC]GGACAGG[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSS0273_p-160(rutR)             6.90e-11  [+1(6.90e-11)]
+BMAA1492_p-171(rutR)             6.90e-11  [+1(6.90e-11)]
+Bcep18194_C6653_p-196(ru         3.72e-12  [+1(3.72e-12)]
+Bcep18194_C6654_p-180(py         1.59e-11  [+1(1.59e-11)]
+Bamb_5968_p-195(rutR)            3.72e-12  [+1(3.72e-12)]
+Bamb_5967_p-188(pydC)            1.59e-11  [+1(1.59e-11)]
+Bcep1808_5508_p-195(rutR         3.72e-12  [+1(3.72e-12)]
+Bcep1808_5509_p-186(pydC         1.59e-11  [+1(1.59e-11)]
+Bxe_A1426_p-121(rutR)            5.00e-11  [+1(5.00e-11)]
+Bxe_A1427_p-168(pydC)            5.00e-11  [+1(5.00e-11)]
+Bphy_1537_p-216(rutR)            1.59e-11  [+1(1.59e-11)]
+Bphy_1536_p-200(pydC)            1.08e-10  [+1(1.08e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

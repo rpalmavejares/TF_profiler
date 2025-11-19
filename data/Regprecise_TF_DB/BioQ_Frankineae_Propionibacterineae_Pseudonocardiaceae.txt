@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/BioQ_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SACE_4682_p-58(bioQ)     1.0000     17  SACE_4683_p-63(bioB)     1.0000     17  
+PPA1407_p9(bioB)         1.0000     17  PPA1407_p26(bioB)        1.0000     17  
+PPA1400_p-75(bioY)       1.0000     17  PPA0967_p-121(bioA)      1.0000     17  
+PPA1406_p-55(bioQ)       1.0000     17  PPA1866_p-50(bioWF)      1.0000     17  
+Noca_3348_p-95(bioQ)     1.0000     17  Noca_3415_p-36(bioB)     1.0000     17  
+Noca_3349_p-39(bioY)     1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/BioQ_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/BioQ_Frankineae_Propionibacterineae_Pseudonocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             187    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    187    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.219 C 0.273 G 0.273 T 0.235 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.22 C 0.272 G 0.272 T 0.236 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCTGAACGSYGTTCARG MEME-1	width =  17  sites =  11  llr = 198  E-value = 5.7e-057
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:::a9:2::::::a4:
+pos.-specific     C  78:::18155:::a:::
+probability       G  :::a:::75:a1:::67
+matrix            T  :2a:::2::5:9a:::3
+
+         bits    2.2   * *       * *  
+                 2.0   ***     * ***  
+                 1.7   ****    * ***  
+                 1.5   ****    *****  
+Relative         1.3  ******   *****  
+Entropy          1.1 *******   *******
+(25.9 bits)      0.9 *****************
+                 0.7 *****************
+                 0.4 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           CCTGAACGCCGTTCAGG
+consensus            A       GT     AT
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Noca_3415_p-36(bioB)          1  1.58e-10          . CCTGAACGCTGTTCAGG           
+PPA1406_p-55(bioQ)            1  1.58e-10          . CCTGAACGCCGTTCAGG           
+SACE_4682_p-58(bioQ)          1  1.58e-10          . CCTGAACGCCGTTCAGG           
+PPA1407_p26(bioB)             1  3.15e-10          . CCTGAACGGCGTTCAGG           
+SACE_4683_p-63(bioB)          1  3.15e-10          . CCTGAACGGCGTTCAGG           
+PPA0967_p-121(bioA)           1  2.43e-09          . CCTGAACACTGTTCAAG           
+PPA1400_p-75(bioY)            1  4.07e-09          . ACTGAACGGTGTTCAAT           
+Noca_3348_p-95(bioQ)          1  6.97e-09          . CCTGAACGGTGGTCAGG           
+Noca_3349_p-39(bioY)          1  1.52e-08          . CCTGACCACCGTTCAGG           
+PPA1866_p-50(bioWF)           1  2.83e-08          . ATTGAATGGTGTTCAAT           
+PPA1407_p9(bioB)              1  5.63e-08          . ATTGAATCCCGTTCAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Noca_3415_p-36(bioB)              1.6e-10  [+1]
+PPA1406_p-55(bioQ)                1.6e-10  [+1]
+SACE_4682_p-58(bioQ)              1.6e-10  [+1]
+PPA1407_p26(bioB)                 3.2e-10  [+1]
+SACE_4683_p-63(bioB)              3.2e-10  [+1]
+PPA0967_p-121(bioA)               2.4e-09  [+1]
+PPA1400_p-75(bioY)                4.1e-09  [+1]
+Noca_3348_p-95(bioQ)                7e-09  [+1]
+Noca_3349_p-39(bioY)              1.5e-08  [+1]
+PPA1866_p-50(bioWF)               2.8e-08  [+1]
+PPA1407_p9(bioB)                  5.6e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCTGAACGSYGTTCARG width=17 seqs=11
+Noca_3415_p-36(bioB)     (    1) CCTGAACGCTGTTCAGG  1 
+PPA1406_p-55(bioQ)       (    1) CCTGAACGCCGTTCAGG  1 
+SACE_4682_p-58(bioQ)     (    1) CCTGAACGCCGTTCAGG  1 
+PPA1407_p26(bioB)        (    1) CCTGAACGGCGTTCAGG  1 
+SACE_4683_p-63(bioB)     (    1) CCTGAACGGCGTTCAGG  1 
+PPA0967_p-121(bioA)      (    1) CCTGAACACTGTTCAAG  1 
+PPA1400_p-75(bioY)       (    1) ACTGAACGGTGTTCAAT  1 
+Noca_3348_p-95(bioQ)     (    1) CCTGAACGGTGGTCAGG  1 
+Noca_3349_p-39(bioY)     (    1) CCTGACCACCGTTCAGG  1 
+PPA1866_p-50(bioWF)      (    1) ATTGAATGGTGTTCAAT  1 
+PPA1407_p9(bioB)         (    1) ATTGAATCCCGTTCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 11 bayes= 0.921997 E= 5.7e-057 
+    31    142  -1010  -1010 
+ -1010    159  -1010    -37 
+ -1010  -1010  -1010    208 
+ -1010  -1010    188  -1010 
+   218  -1010  -1010  -1010 
+   205   -158  -1010  -1010 
+ -1010    159  -1010    -37 
+   -27   -158    142  -1010 
+ -1010    100     74  -1010 
+ -1010    100  -1010     95 
+ -1010  -1010    188  -1010 
+ -1010  -1010   -158    195 
+ -1010  -1010  -1010    208 
+ -1010    188  -1010  -1010 
+   218  -1010  -1010  -1010 
+    73  -1010    122  -1010 
+ -1010  -1010    142     21 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 11 E= 5.7e-057 
+ 0.272727  0.727273  0.000000  0.000000 
+ 0.000000  0.818182  0.000000  0.181818 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.909091  0.090909  0.000000  0.000000 
+ 0.000000  0.818182  0.000000  0.181818 
+ 0.181818  0.090909  0.727273  0.000000 
+ 0.000000  0.545455  0.454545  0.000000 
+ 0.000000  0.545455  0.000000  0.454545 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.090909  0.909091 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.363636  0.000000  0.636364  0.000000 
+ 0.000000  0.000000  0.727273  0.272727 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCTGAACGSYGTTCARG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CA]CTGAACG[CG][CT]GTTCA[GA][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SACE_4682_p-58(bioQ)             1.58e-10  [+1(1.58e-10)]
+SACE_4683_p-63(bioB)             3.15e-10  [+1(3.15e-10)]
+PPA1407_p9(bioB)                 5.63e-08  [+1(5.63e-08)]
+PPA1407_p26(bioB)                3.15e-10  [+1(3.15e-10)]
+PPA1400_p-75(bioY)               4.07e-09  [+1(4.07e-09)]
+PPA0967_p-121(bioA)              2.43e-09  [+1(2.43e-09)]
+PPA1406_p-55(bioQ)               1.58e-10  [+1(1.58e-10)]
+PPA1866_p-50(bioWF)              2.83e-08  [+1(2.83e-08)]
+Noca_3348_p-95(bioQ)             6.97e-09  [+1(6.97e-09)]
+Noca_3415_p-36(bioB)             1.58e-10  [+1(1.58e-10)]
+Noca_3349_p-39(bioY)             1.52e-08  [+1(1.52e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

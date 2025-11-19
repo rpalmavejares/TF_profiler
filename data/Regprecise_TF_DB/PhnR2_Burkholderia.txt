@@ -1,0 +1,230 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnR2_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Bamb_3195_p-66(Bamb_3195 1.0000     12  Bamb_3194_p-114(phnA)    1.0000     12  
+Bamb_3197_p-93(phnR2)    1.0000     12  Bphy_5065_p-125(phnS2)   1.0000     12  
+Bphy_5064_p-231(n/a)     1.0000     12  Bcep18194_A6499_p-93(phn 1.0000     12  
+Bcep18194_A6494_p-107(Bc 1.0000     12  Bcep18194_A6493_p-113(ph 1.0000     12  
+Bxe_B1876_p-213(n/a)     1.0000     12  Bxe_B1875_p-145(phnS2)   1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnR2_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/PhnR2_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             120    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    120    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.317 C 0.183 G 0.183 T 0.317 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.315 C 0.185 G 0.185 T 0.315 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTGTYGACAAT MEME-1	width =  12  sites =  10  llr = 122  E-value = 1.1e-032
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7:::::38:aa:
+pos.-specific     C  :2::25::a::3
+probability       G  3::a::72::::
+matrix            T  :8a:85:::::7
+
+         bits    2.4    *    *   
+                 2.2    *    *   
+                 1.9    *    *   
+                 1.7   **    *** 
+Relative         1.5   **    *** 
+Entropy          1.2  **** ***** 
+(17.6 bits)      1.0 ************
+                 0.7 ************
+                 0.5 ************
+                 0.2 ************
+                 0.0 ------------
+
+Multilevel           ATTGTCGACAAT
+consensus            GC  CTAG   C
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+Bamb_3194_p-114(phnA)         1  4.40e-07          . ATTGTTGACAAT           
+Bcep18194_A6493_p-113(ph      1  9.07e-07          . GTTGTTGACAAT           
+Bphy_5064_p-231(n/a)          1  1.21e-06          . ATTGCCGACAAC           
+Bphy_5065_p-125(phnS2)        1  1.21e-06          . GTTGTCGGCAAT           
+Bcep18194_A6499_p-93(phn      1  1.74e-06          . ACTGTTGACAAT           
+Bamb_3197_p-93(phnR2)         1  1.74e-06          . ACTGTTGACAAT           
+Bamb_3195_p-66(Bamb_3195      1  1.74e-06          . ATTGTCAACAAT           
+Bxe_B1875_p-145(phnS2)        1  2.56e-06          . GTTGTTGGCAAT           
+Bcep18194_A6494_p-107(Bc      1  2.56e-06          . ATTGTCAACAAC           
+Bxe_B1876_p-213(n/a)          1  4.95e-06          . ATTGCCAACAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bamb_3194_p-114(phnA)             4.4e-07  [+1]
+Bcep18194_A6493_p-113(ph          9.1e-07  [+1]
+Bphy_5064_p-231(n/a)              1.2e-06  [+1]
+Bphy_5065_p-125(phnS2)            1.2e-06  [+1]
+Bcep18194_A6499_p-93(phn          1.7e-06  [+1]
+Bamb_3197_p-93(phnR2)             1.7e-06  [+1]
+Bamb_3195_p-66(Bamb_3195          1.7e-06  [+1]
+Bxe_B1875_p-145(phnS2)            2.6e-06  [+1]
+Bcep18194_A6494_p-107(Bc          2.6e-06  [+1]
+Bxe_B1876_p-213(n/a)              4.9e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTGTYGACAAT width=12 seqs=10
+Bamb_3194_p-114(phnA)    (    1) ATTGTTGACAAT  1 
+Bcep18194_A6493_p-113(ph (    1) GTTGTTGACAAT  1 
+Bphy_5064_p-231(n/a)     (    1) ATTGCCGACAAC  1 
+Bphy_5065_p-125(phnS2)   (    1) GTTGTCGGCAAT  1 
+Bcep18194_A6499_p-93(phn (    1) ACTGTTGACAAT  1 
+Bamb_3197_p-93(phnR2)    (    1) ACTGTTGACAAT  1 
+Bamb_3195_p-66(Bamb_3195 (    1) ATTGTCAACAAT  1 
+Bxe_B1875_p-145(phnS2)   (    1) GTTGTTGGCAAT  1 
+Bcep18194_A6494_p-107(Bc (    1) ATTGTCAACAAC  1 
+Bxe_B1876_p-213(n/a)     (    1) ATTGCCAACAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 10 bayes= 0.830075 E= 1.1e-032 
+   115   -997     69   -997 
+  -997     11   -997    135 
+  -997   -997   -997    167 
+  -997   -997    243   -997 
+  -997     11   -997    135 
+  -997    143   -997     67 
+    -7   -997    192   -997 
+   135   -997     11   -997 
+  -997    243   -997   -997 
+   167   -997   -997   -997 
+   167   -997   -997   -997 
+  -997     69   -997    115 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 10 E= 1.1e-032 
+ 0.700000  0.000000  0.300000  0.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.300000  0.000000  0.700000  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.300000  0.000000  0.700000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGTYGACAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][TC]TG[TC][CT][GA][AG]CAA[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bamb_3195_p-66(Bamb_3195         1.74e-06  [+1(1.74e-06)]
+Bamb_3194_p-114(phnA)            4.40e-07  [+1(4.40e-07)]
+Bamb_3197_p-93(phnR2)            1.74e-06  [+1(1.74e-06)]
+Bphy_5065_p-125(phnS2)           1.21e-06  [+1(1.21e-06)]
+Bphy_5064_p-231(n/a)             1.21e-06  [+1(1.21e-06)]
+Bcep18194_A6499_p-93(phn         1.74e-06  [+1(1.74e-06)]
+Bcep18194_A6494_p-107(Bc         2.56e-06  [+1(2.56e-06)]
+Bcep18194_A6493_p-113(ph         9.07e-07  [+1(9.07e-07)]
+Bxe_B1876_p-213(n/a)             4.95e-06  [+1(4.95e-06)]
+Bxe_B1875_p-145(phnS2)           2.56e-06  [+1(2.56e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,622 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Fur_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSc1963_p-287(tonB)      1.0000     19  RSc1966_p-82(hemP)       1.0000     19  
+RS03722_p-223(RSp0244)   1.0000     19  RS03722_p-217(RSp0244)   1.0000     19  
+RS00511_p-81(RSc3067)    1.0000     19  RS03714_p-66(RSp0252)    1.0000     19  
+RSc0349_p-77(bfd)        1.0000     19  RS02469_p-153(RSp1062)   1.0000     19  
+RS00872_p-237(RSp0415)   1.0000     19  RS00872_p-53(RSp0415)    1.0000     19  
+RS02198_p-48(RSp1640)    1.0000     19  RS00871_p-254(RSp0414)   1.0000     19  
+RS00871_p-70(RSp0414)    1.0000     19  RS04230_p-126(RSc1807)   1.0000     19  
+RS00176_p-56(RSc2918)    1.0000     19  RS04237_p-33(RSc1811)    1.0000     19  
+RS03023_p-59(RSp0100)    1.0000     19  Rpic_2119_p-70(n/a)      1.0000     19  
+Rpic_3345_p-75(n/a)      1.0000     19  Rpic_3949_p-61(n/a)      1.0000     19  
+Rpic_2116_p-289(n/a)     1.0000     19  Rpic_0101_p-65(n/a)      1.0000     19  
+Rpic_0205_p-75(n/a)      1.0000     19  Rpic_4266_p-100(n/a)     1.0000     19  
+Rpic_3802_p-136(n/a)     1.0000     19  Rpic_1641_p-55(n/a)      1.0000     19  
+Rpic_1817_p-55(n/a)      1.0000     19  Rmet_0837_p-302(n/a)     1.0000     19  
+Rmet_1105_p-167(n/a)     1.0000     19  Rmet_1819_p-54(n/a)      1.0000     19  
+Rmet_5373_p-66(n/a)      1.0000     19  Rmet_5891_p-82(feoA)     1.0000     19  
+Rmet_2277_p-208(n/a)     1.0000     19  Rmet_0247_p-91(n/a)      1.0000     19  
+Rmet_0720_p-120(n/a)     1.0000     19  Rmet_2280_p-73(n/a)      1.0000     19  
+Rmet_1120_p-56(n/a)      1.0000     19  Rmet_1366_p-347(n/a)     1.0000     19  
+Rmet_1367_p-78(n/a)      1.0000     19  Rmet_1104_p-317(n/a)     1.0000     19  
+Rmet_1104_p-99(n/a)      1.0000     19  Rmet_3077_p-42(n/a)      1.0000     19  
+Rmet_5945_p-62(pbrT)     1.0000     19  Rmet_5945_p-56(pbrT)     1.0000     19  
+pMOL30_093_p-56(pbrT)    1.0000     19  Rmet_5806_p-66(fecA1)    1.0000     19  
+Rmet_5807_p-107(fecA2)   1.0000     19  Reut_B5430_p-80(n/a)     1.0000     19  
+Reut_A2235_p-187(n/a)    1.0000     19  Reut_B4660_p-81(n/a)     1.0000     19  
+Reut_B4659_p-180(n/a)    1.0000     19  Reut_A0298_p-1(n/a)      1.0000     19  
+Reut_A2878_p-51(n/a)     1.0000     19  Reut_A2571_p-90(n/a)     1.0000     19  
+Reut_A2238_p-107(n/a)    1.0000     19  Reut_B3686_p-108(n/a)    1.0000     19  
+Reut_A2876_p-136(n/a)    1.0000     19  Reut_B4646_p-72(n/a)     1.0000     19  
+H16_B1683_p-195(h16_B168 1.0000     19  H16_B1684_p-74(fhuF)     1.0000     19  
+H16_B0117_p-253(h16_B011 1.0000     19  H16_B0117_p-159(h16_B011 1.0000     19  
+H16_B2476_p-73(h16_B2476 1.0000     19  H16_B1976_p-223(h16_B197 1.0000     19  
+H16_A0327_p-89(bfd)      1.0000     19  H16_B0085_p-80(h16_B0085 1.0000     19  
+H16_A2532_p-208(h16_A253 1.0000     19  H16_B2095_p-129(fepA)    1.0000     19  
+H16_A3182_p-153(h16_A318 1.0000     19  H16_A0796_p-87(h16_A0796 1.0000     19  
+H16_A2535_p-81(hemP)     1.0000     19  H16_B1489_p-80(h16_B1489 1.0000     19  
+H16_A1450_p-330(h16_A145 1.0000     19  H16_A1451_p-46(h16_A1451 1.0000     19  
+H16_B1100_p-84(h16_B1100 1.0000     19  H16_B1688_p-170(h16_B168 1.0000     19  
+H16_B1689_p-118(mbtH)    1.0000     19  H16_B0785_p-86(h16_B0785 1.0000     19  
+RALTA_B0125_p-157(n/a)   1.0000     19  RALTA_B2199_p-67(n/a)    1.0000     19  
+RALTA_B1494_p-57(fhuA3)  1.0000     19  RALTA_A0266_p-56(bfd)    1.0000     19  
+RALTA_B0077_p-83(feoA)   1.0000     19  RALTA_A2036_p-206(tonB)  1.0000     19  
+RALTA_B1811_p-153(n/a)   1.0000     19  RALTA_A2655_p-92(n/a)    1.0000     19  
+RALTA_A0777_p-84(n/a)    1.0000     19  RALTA_A2040_p-108(n/a)   1.0000     19  
+RALTA_B0897_p-70(aleB)   1.0000     19  RALTA_A1364_p-330(n/a)   1.0000     19  
+RALTA_A1365_p-46(n/a)    1.0000     19  RALTA_B1229_p-62(fhuA2)  1.0000     19  
+RALTA_B0923_p-84(fhuA1)  1.0000     19  RALTA_B2301_p-101(n/a)   1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Fur_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Fur_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       94    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1786    N=              94
+sample: seed=            0    hsfrac=          0
+        searchsize=   1786    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.363 C 0.137 G 0.122 T 0.379 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.363 C 0.137 G 0.122 T 0.379 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AATGAGAATBATTMTCATT MEME-1	width =  19  sites =  94  llr = 1301  E-value = 4.8e-508
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  98:361aa:18::3::91:
+pos.-specific     C  ::1:31::24:::518:::
+probability       G  :::716:::22:::3:1::
+matrix            T  :281:2::82:9a172:9a
+
+         bits    3.0                    
+                 2.7                    
+                 2.4                    
+                 2.1                    
+Relative         1.8                *   
+Entropy          1.5    *  *        *   
+(20.0 bits)      1.2 *  *  **   **  ** *
+                 0.9 * ** **** ***  ****
+                 0.6 *******************
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           AATGAGAATCATTCTCATT
+consensus               ACT   GG  AG    
+sequence                      T         
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Rmet_5806_p-66(fecA1)         1  9.61e-11          . AATGCGAACCATTCGCATT           
+Rmet_3077_p-42(n/a)           1  2.15e-10          . AACGCGAATCGTTCGCATT           
+RS00511_p-81(RSc3067)         1  2.44e-10          . AACGAGAATCATTCTCATT           
+RALTA_B2199_p-67(n/a)         1  5.00e-10          . AATGCGAATTATTCGCATT           
+H16_B2476_p-73(h16_B2476      1  5.00e-10          . AATGCGAATTATTCGCATT           
+RS02469_p-153(RSp1062)        1  2.76e-09          . AATGGGAATTGTTCTCATT           
+H16_A1451_p-46(h16_A1451      1  3.78e-09          . AATGCGAATCATTACCATT           
+H16_A1450_p-330(h16_A145      1  3.78e-09          . AATGCGAATCATTACCATT           
+Reut_A2571_p-90(n/a)          1  4.98e-09          . ATTGCGAATCATTATCATT           
+RALTA_A0777_p-84(n/a)         1  6.68e-09          . ATTGAGAATCATTATCATT           
+RSc1963_p-287(tonB)           1  6.68e-09          . AATGGGAATCATTATCGTT           
+Reut_A2876_p-136(n/a)         1  8.91e-09          . AACGCAAATCATTCGCATT           
+Rpic_3345_p-75(n/a)           1  8.91e-09          . AACGAGAATCATTCTCATC           
+RALTA_B0125_p-157(n/a)        1  1.01e-08          . AATGCGAATTGTTATCATT           
+H16_B0117_p-159(h16_B011      1  1.01e-08          . AATGCGAATTGTTATCATT           
+Reut_A2238_p-107(n/a)         1  1.14e-08          . AATGGTAATGGTTCTCATT           
+Rmet_5373_p-66(n/a)           1  1.30e-08          . AATACGAATCGTTATCATT           
+RSc1966_p-82(hemP)            1  1.30e-08          . AATGATAACGATTCTCATT           
+RALTA_A1365_p-46(n/a)         1  1.66e-08          . AATGCGAATCATTATTATT           
+RALTA_A1364_p-330(n/a)        1  1.66e-08          . AATGCGAATCATTATTATT           
+RALTA_B0897_p-70(aleB)        1  1.66e-08          . ATCGAGAATCATTATCATT           
+RALTA_A0266_p-56(bfd)         1  1.66e-08          . AATGGGAATTGTTATCATT           
+H16_A0327_p-89(bfd)           1  1.66e-08          . AATGGGAATTGTTATCATT           
+Reut_A0298_p-1(n/a)           1  1.66e-08          . AAtGggAATTgTTATCaTT           
+Rmet_0247_p-91(n/a)           1  1.66e-08          . AATGGGAATTGTTATCATT           
+Rpic_3949_p-61(n/a)           1  1.90e-08          . AATGAAAACGATTCGCATT           
+RS02198_p-48(RSp1640)         1  1.90e-08          . AATGAGAATCATTATCATC           
+RS03714_p-66(RSp0252)         1  1.90e-08          . AATGAAAACGATTCGCATT           
+RS00871_p-70(RSp0414)         1  2.52e-08          . ATTGAGAATAATTCTCATT           
+Rpic_4266_p-100(n/a)          1  3.27e-08          . AATAGGAATTGTTCTCATT           
+RALTA_B1494_p-57(fhuA3)       1  4.16e-08          . AACAAGAATTATTCTCATT           
+Rpic_3802_p-136(n/a)          1  4.16e-08          . ATTGAGAATCGTTGTCATT           
+RS00872_p-237(RSp0415)        1  4.78e-08          . AATGAGAATTATTCTCAAT           
+RALTA_A2036_p-206(tonB)       1  5.29e-08          . AATAAGAATCATTATCGTT           
+H16_A2532_p-208(h16_A253      1  5.29e-08          . AATAAGAATCATTATCGTT           
+Reut_A2235_p-187(n/a)         1  5.29e-08          . AATAAGAATCATTATCGTT           
+Rmet_2277_p-208(n/a)          1  5.29e-08          . AATAAGAATCATTATCGTT           
+Rpic_2119_p-70(n/a)           1  5.29e-08          . AATGATAACTATTCTCATT           
+H16_B1100_p-84(h16_B1100      1  6.07e-08          . ATTACGAATTATTCGCATT           
+Rpic_0205_p-75(n/a)           1  6.07e-08          . AACAAGAATTGTTCTCATT           
+RS04230_p-126(RSc1807)        1  6.07e-08          . AATGAGAATGATTATCAAT           
+RS00871_p-254(RSp0414)        1  6.07e-08          . ATCAAGAATGATTCTCATT           
+RSc0349_p-77(bfd)             1  6.07e-08          . AACAAGAATTGTTCTCATT           
+Rpic_2116_p-289(n/a)          1  6.77e-08          . AATAGGAATCATTATCGTT           
+RS04237_p-33(RSc1811)         1  6.77e-08          . AATGAGAATCATTTTCATC           
+H16_B0117_p-253(h16_B011      1  7.61e-08          . AATGGGAATCGATCTCATT           
+H16_B1976_p-223(h16_B197      1  9.51e-08          . AATACAAACCATTCTCATT           
+Reut_A2878_p-51(n/a)          1  9.51e-08          . AATGATAATGCTTCGCATT           
+RALTA_B1229_p-62(fhuA2)       1  1.19e-07          . AATGACAATGATTTGCATT           
+RALTA_A2040_p-108(n/a)        1  1.19e-07          . AATGATAACAATTCTCATT           
+H16_A2535_p-81(hemP)          1  1.19e-07          . AATGATAACAATTCTCATT           
+H16_A0796_p-87(h16_A0796      1  1.19e-07          . ATTGAGAATCATTATTATT           
+Rmet_2280_p-73(n/a)           1  1.19e-07          . AATGATAACAATTCTCATT           
+Rmet_1367_p-78(n/a)           1  1.47e-07          . AATACGAATCATTATTATT           
+Rmet_1366_p-347(n/a)          1  1.47e-07          . AATACGAATCATTATTATT           
+H16_B1689_p-118(mbtH)         1  2.02e-07          . AATACAAATCATTATCATT           
+pMOL30_093_p-56(pbrT)         1  2.02e-07          . AATTACAATCATTCGCATT           
+Rmet_5945_p-56(pbrT)          1  2.02e-07          . AATTACAATCATTCGCATT           
+Reut_B4659_p-180(n/a)         1  2.24e-07          . ATTACGAATGATTCGTATT           
+Rmet_1819_p-54(n/a)           1  2.24e-07          . AATACGAATTGTTCGTATT           
+Rpic_1817_p-55(n/a)           1  2.48e-07          . AATTACAATCATTCTCATT           
+Rpic_1641_p-55(n/a)           1  2.48e-07          . AATTACAATCATTCTCATT           
+Rpic_0101_p-65(n/a)           1  2.48e-07          . AACGATAACAATTCTCATT           
+Rmet_1104_p-99(n/a)           1  2.76e-07          . AATACTAATCATTTGCATT           
+RS00176_p-56(RSc2918)         1  2.76e-07          . AATAAGAATTCTTCTCATT           
+H16_B1489_p-80(h16_B1489      1  3.03e-07          . AATAGGAATCATTCTGATT           
+RALTA_B0077_p-83(feoA)        1  3.39e-07          . AATGAAAACGATTTTCATT           
+H16_B0085_p-80(h16_B0085      1  3.39e-07          . AATGAAAACGATTTTCATT           
+Reut_B5430_p-80(n/a)          1  3.39e-07          . AATGAAAACGATTTTCATT           
+RS00872_p-53(RSp0415)         1  3.72e-07          . AATGAGAATCATTCTTGAT           
+RALTA_B2301_p-101(n/a)        1  4.13e-07          . TTTGAGAATCACTCGCATT           
+Reut_B3686_p-108(n/a)         1  4.55e-07          . CTTGATAATGATTCGCATT           
+Rmet_1105_p-167(n/a)          1  4.55e-07          . AATGCAAATGATTAGTATT           
+RS03722_p-223(RSp0244)        1  4.55e-07          . ATTGATAATGATTCTTATT           
+RALTA_A2655_p-92(n/a)         1  6.66e-07          . AATAGGAATAATTCGCAAT           
+H16_A3182_p-153(h16_A318      1  6.66e-07          . AATAGGAATAATTCGCAAT           
+Reut_B4646_p-72(n/a)          1  7.31e-07          . AACAATAACCGTTATCATT           
+H16_B1688_p-170(h16_B168      1  8.79e-07          . AATGATAATGATTTGTATT           
+H16_B1684_p-74(fhuF)          1  8.79e-07          . CCTGATAATCATTCTCATT           
+RALTA_B0923_p-84(fhuA1)       1  1.05e-06          . ATCACGAATCATTCCTATT           
+Rmet_5807_p-107(fecA2)        1  1.14e-06          . ATTGCAAATCATTCCTATT           
+RS03023_p-59(RSp0100)         1  1.14e-06          . AGTGATAATCACTCTCATT           
+Rmet_0720_p-120(n/a)          1  1.25e-06          . ATTGATACTCATTATCATT           
+Rmet_1120_p-56(n/a)           1  1.48e-06          . AATGATAATAGGTCGCATT           
+Rmet_1104_p-317(n/a)          1  1.75e-06          . TATGATAATGGTTTGCATT           
+RALTA_B1811_p-153(n/a)        1  2.07e-06          . TATGAGAATGATTGTTATT           
+H16_B2095_p-129(fepA)         1  2.07e-06          . TATGAGAATGATTGTTATT           
+H16_B1683_p-195(h16_B168      1  2.07e-06          . AATGAGAATGATTATCAGG           
+Rmet_0837_p-302(n/a)          1  2.44e-06          . AATGCGAATAATTTACATT           
+Rmet_5891_p-82(feoA)          1  4.55e-06          . ATCGAGAACGATTTCTATT           
+Reut_B4660_p-81(n/a)          1  7.59e-06          . ACTGATAATGATTCCTGTT           
+H16_B0785_p-86(h16_B0785      1  3.13e-05          . ATGAGAAATTATTATCATT           
+RS03722_p-217(RSp0244)        1  4.67e-05          . AATGATTCTTATTTGCATT           
+Rmet_5945_p-62(pbrT)          1  3.13e-04          . AAATAGAATTACAATCATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_5806_p-66(fecA1)             9.6e-11  [+1]
+Rmet_3077_p-42(n/a)               2.1e-10  [+1]
+RS00511_p-81(RSc3067)             2.4e-10  [+1]
+RALTA_B2199_p-67(n/a)               5e-10  [+1]
+H16_B2476_p-73(h16_B2476            5e-10  [+1]
+RS02469_p-153(RSp1062)            2.8e-09  [+1]
+H16_A1451_p-46(h16_A1451          3.8e-09  [+1]
+H16_A1450_p-330(h16_A145          3.8e-09  [+1]
+Reut_A2571_p-90(n/a)                5e-09  [+1]
+RALTA_A0777_p-84(n/a)             6.7e-09  [+1]
+RSc1963_p-287(tonB)               6.7e-09  [+1]
+Reut_A2876_p-136(n/a)             8.9e-09  [+1]
+Rpic_3345_p-75(n/a)               8.9e-09  [+1]
+RALTA_B0125_p-157(n/a)              1e-08  [+1]
+H16_B0117_p-159(h16_B011            1e-08  [+1]
+Reut_A2238_p-107(n/a)             1.1e-08  [+1]
+Rmet_5373_p-66(n/a)               1.3e-08  [+1]
+RSc1966_p-82(hemP)                1.3e-08  [+1]
+RALTA_A1365_p-46(n/a)             1.7e-08  [+1]
+RALTA_A1364_p-330(n/a)            1.7e-08  [+1]
+RALTA_B0897_p-70(aleB)            1.7e-08  [+1]
+RALTA_A0266_p-56(bfd)             1.7e-08  [+1]
+H16_A0327_p-89(bfd)               1.7e-08  [+1]
+Reut_A0298_p-1(n/a)               1.7e-08  [+1]
+Rmet_0247_p-91(n/a)               1.7e-08  [+1]
+Rpic_3949_p-61(n/a)               1.9e-08  [+1]
+RS02198_p-48(RSp1640)             1.9e-08  [+1]
+RS03714_p-66(RSp0252)             1.9e-08  [+1]
+RS00871_p-70(RSp0414)             2.5e-08  [+1]
+Rpic_4266_p-100(n/a)              3.3e-08  [+1]
+RALTA_B1494_p-57(fhuA3)           4.2e-08  [+1]
+Rpic_3802_p-136(n/a)              4.2e-08  [+1]
+RS00872_p-237(RSp0415)            4.8e-08  [+1]
+RALTA_A2036_p-206(tonB)           5.3e-08  [+1]
+H16_A2532_p-208(h16_A253          5.3e-08  [+1]
+Reut_A2235_p-187(n/a)             5.3e-08  [+1]
+Rmet_2277_p-208(n/a)              5.3e-08  [+1]
+Rpic_2119_p-70(n/a)               5.3e-08  [+1]
+H16_B1100_p-84(h16_B1100          6.1e-08  [+1]
+Rpic_0205_p-75(n/a)               6.1e-08  [+1]
+RS04230_p-126(RSc1807)            6.1e-08  [+1]
+RS00871_p-254(RSp0414)            6.1e-08  [+1]
+RSc0349_p-77(bfd)                 6.1e-08  [+1]
+Rpic_2116_p-289(n/a)              6.8e-08  [+1]
+RS04237_p-33(RSc1811)             6.8e-08  [+1]
+H16_B0117_p-253(h16_B011          7.6e-08  [+1]
+H16_B1976_p-223(h16_B197          9.5e-08  [+1]
+Reut_A2878_p-51(n/a)              9.5e-08  [+1]
+RALTA_B1229_p-62(fhuA2)           1.2e-07  [+1]
+RALTA_A2040_p-108(n/a)            1.2e-07  [+1]
+H16_A2535_p-81(hemP)              1.2e-07  [+1]
+H16_A0796_p-87(h16_A0796          1.2e-07  [+1]
+Rmet_2280_p-73(n/a)               1.2e-07  [+1]
+Rmet_1367_p-78(n/a)               1.5e-07  [+1]
+Rmet_1366_p-347(n/a)              1.5e-07  [+1]
+H16_B1689_p-118(mbtH)               2e-07  [+1]
+pMOL30_093_p-56(pbrT)               2e-07  [+1]
+Rmet_5945_p-56(pbrT)                2e-07  [+1]
+Reut_B4659_p-180(n/a)             2.2e-07  [+1]
+Rmet_1819_p-54(n/a)               2.2e-07  [+1]
+Rpic_1817_p-55(n/a)               2.5e-07  [+1]
+Rpic_1641_p-55(n/a)               2.5e-07  [+1]
+Rpic_0101_p-65(n/a)               2.5e-07  [+1]
+Rmet_1104_p-99(n/a)               2.8e-07  [+1]
+RS00176_p-56(RSc2918)             2.8e-07  [+1]
+H16_B1489_p-80(h16_B1489            3e-07  [+1]
+RALTA_B0077_p-83(feoA)            3.4e-07  [+1]
+H16_B0085_p-80(h16_B0085          3.4e-07  [+1]
+Reut_B5430_p-80(n/a)              3.4e-07  [+1]
+RS00872_p-53(RSp0415)             3.7e-07  [+1]
+RALTA_B2301_p-101(n/a)            4.1e-07  [+1]
+Reut_B3686_p-108(n/a)             4.6e-07  [+1]
+Rmet_1105_p-167(n/a)              4.6e-07  [+1]
+RS03722_p-223(RSp0244)            4.6e-07  [+1]
+RALTA_A2655_p-92(n/a)             6.7e-07  [+1]
+H16_A3182_p-153(h16_A318          6.7e-07  [+1]
+Reut_B4646_p-72(n/a)              7.3e-07  [+1]
+H16_B1688_p-170(h16_B168          8.8e-07  [+1]
+H16_B1684_p-74(fhuF)              8.8e-07  [+1]
+RALTA_B0923_p-84(fhuA1)             1e-06  [+1]
+Rmet_5807_p-107(fecA2)            1.1e-06  [+1]
+RS03023_p-59(RSp0100)             1.1e-06  [+1]
+Rmet_0720_p-120(n/a)              1.2e-06  [+1]
+Rmet_1120_p-56(n/a)               1.5e-06  [+1]
+Rmet_1104_p-317(n/a)              1.7e-06  [+1]
+RALTA_B1811_p-153(n/a)            2.1e-06  [+1]
+H16_B2095_p-129(fepA)             2.1e-06  [+1]
+H16_B1683_p-195(h16_B168          2.1e-06  [+1]
+Rmet_0837_p-302(n/a)              2.4e-06  [+1]
+Rmet_5891_p-82(feoA)              4.6e-06  [+1]
+Reut_B4660_p-81(n/a)              7.6e-06  [+1]
+H16_B0785_p-86(h16_B0785          3.1e-05  [+1]
+RS03722_p-217(RSp0244)            4.7e-05  [+1]
+Rmet_5945_p-62(pbrT)              0.00031  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AATGAGAATBATTMTCATT width=19 seqs=94
+Rmet_5806_p-66(fecA1)    (    1) AATGCGAACCATTCGCATT  1 
+Rmet_3077_p-42(n/a)      (    1) AACGCGAATCGTTCGCATT  1 
+RS00511_p-81(RSc3067)    (    1) AACGAGAATCATTCTCATT  1 
+RALTA_B2199_p-67(n/a)    (    1) AATGCGAATTATTCGCATT  1 
+H16_B2476_p-73(h16_B2476 (    1) AATGCGAATTATTCGCATT  1 
+RS02469_p-153(RSp1062)   (    1) AATGGGAATTGTTCTCATT  1 
+H16_A1451_p-46(h16_A1451 (    1) AATGCGAATCATTACCATT  1 
+H16_A1450_p-330(h16_A145 (    1) AATGCGAATCATTACCATT  1 
+Reut_A2571_p-90(n/a)     (    1) ATTGCGAATCATTATCATT  1 
+RALTA_A0777_p-84(n/a)    (    1) ATTGAGAATCATTATCATT  1 
+RSc1963_p-287(tonB)      (    1) AATGGGAATCATTATCGTT  1 
+Reut_A2876_p-136(n/a)    (    1) AACGCAAATCATTCGCATT  1 
+Rpic_3345_p-75(n/a)      (    1) AACGAGAATCATTCTCATC  1 
+RALTA_B0125_p-157(n/a)   (    1) AATGCGAATTGTTATCATT  1 
+H16_B0117_p-159(h16_B011 (    1) AATGCGAATTGTTATCATT  1 
+Reut_A2238_p-107(n/a)    (    1) AATGGTAATGGTTCTCATT  1 
+Rmet_5373_p-66(n/a)      (    1) AATACGAATCGTTATCATT  1 
+RSc1966_p-82(hemP)       (    1) AATGATAACGATTCTCATT  1 
+RALTA_A1365_p-46(n/a)    (    1) AATGCGAATCATTATTATT  1 
+RALTA_A1364_p-330(n/a)   (    1) AATGCGAATCATTATTATT  1 
+RALTA_B0897_p-70(aleB)   (    1) ATCGAGAATCATTATCATT  1 
+RALTA_A0266_p-56(bfd)    (    1) AATGGGAATTGTTATCATT  1 
+H16_A0327_p-89(bfd)      (    1) AATGGGAATTGTTATCATT  1 
+Reut_A0298_p-1(n/a)      (    1) AATGGGAATTGTTATCATT  1 
+Rmet_0247_p-91(n/a)      (    1) AATGGGAATTGTTATCATT  1 
+Rpic_3949_p-61(n/a)      (    1) AATGAAAACGATTCGCATT  1 
+RS02198_p-48(RSp1640)    (    1) AATGAGAATCATTATCATC  1 
+RS03714_p-66(RSp0252)    (    1) AATGAAAACGATTCGCATT  1 
+RS00871_p-70(RSp0414)    (    1) ATTGAGAATAATTCTCATT  1 
+Rpic_4266_p-100(n/a)     (    1) AATAGGAATTGTTCTCATT  1 
+RALTA_B1494_p-57(fhuA3)  (    1) AACAAGAATTATTCTCATT  1 
+Rpic_3802_p-136(n/a)     (    1) ATTGAGAATCGTTGTCATT  1 
+RS00872_p-237(RSp0415)   (    1) AATGAGAATTATTCTCAAT  1 
+RALTA_A2036_p-206(tonB)  (    1) AATAAGAATCATTATCGTT  1 
+H16_A2532_p-208(h16_A253 (    1) AATAAGAATCATTATCGTT  1 
+Reut_A2235_p-187(n/a)    (    1) AATAAGAATCATTATCGTT  1 
+Rmet_2277_p-208(n/a)     (    1) AATAAGAATCATTATCGTT  1 
+Rpic_2119_p-70(n/a)      (    1) AATGATAACTATTCTCATT  1 
+H16_B1100_p-84(h16_B1100 (    1) ATTACGAATTATTCGCATT  1 
+Rpic_0205_p-75(n/a)      (    1) AACAAGAATTGTTCTCATT  1 
+RS04230_p-126(RSc1807)   (    1) AATGAGAATGATTATCAAT  1 
+RS00871_p-254(RSp0414)   (    1) ATCAAGAATGATTCTCATT  1 
+RSc0349_p-77(bfd)        (    1) AACAAGAATTGTTCTCATT  1 
+Rpic_2116_p-289(n/a)     (    1) AATAGGAATCATTATCGTT  1 
+RS04237_p-33(RSc1811)    (    1) AATGAGAATCATTTTCATC  1 
+H16_B0117_p-253(h16_B011 (    1) AATGGGAATCGATCTCATT  1 
+H16_B1976_p-223(h16_B197 (    1) AATACAAACCATTCTCATT  1 
+Reut_A2878_p-51(n/a)     (    1) AATGATAATGCTTCGCATT  1 
+RALTA_B1229_p-62(fhuA2)  (    1) AATGACAATGATTTGCATT  1 
+RALTA_A2040_p-108(n/a)   (    1) AATGATAACAATTCTCATT  1 
+H16_A2535_p-81(hemP)     (    1) AATGATAACAATTCTCATT  1 
+H16_A0796_p-87(h16_A0796 (    1) ATTGAGAATCATTATTATT  1 
+Rmet_2280_p-73(n/a)      (    1) AATGATAACAATTCTCATT  1 
+Rmet_1367_p-78(n/a)      (    1) AATACGAATCATTATTATT  1 
+Rmet_1366_p-347(n/a)     (    1) AATACGAATCATTATTATT  1 
+H16_B1689_p-118(mbtH)    (    1) AATACAAATCATTATCATT  1 
+pMOL30_093_p-56(pbrT)    (    1) AATTACAATCATTCGCATT  1 
+Rmet_5945_p-56(pbrT)     (    1) AATTACAATCATTCGCATT  1 
+Reut_B4659_p-180(n/a)    (    1) ATTACGAATGATTCGTATT  1 
+Rmet_1819_p-54(n/a)      (    1) AATACGAATTGTTCGTATT  1 
+Rpic_1817_p-55(n/a)      (    1) AATTACAATCATTCTCATT  1 
+Rpic_1641_p-55(n/a)      (    1) AATTACAATCATTCTCATT  1 
+Rpic_0101_p-65(n/a)      (    1) AACGATAACAATTCTCATT  1 
+Rmet_1104_p-99(n/a)      (    1) AATACTAATCATTTGCATT  1 
+RS00176_p-56(RSc2918)    (    1) AATAAGAATTCTTCTCATT  1 
+H16_B1489_p-80(h16_B1489 (    1) AATAGGAATCATTCTGATT  1 
+RALTA_B0077_p-83(feoA)   (    1) AATGAAAACGATTTTCATT  1 
+H16_B0085_p-80(h16_B0085 (    1) AATGAAAACGATTTTCATT  1 
+Reut_B5430_p-80(n/a)     (    1) AATGAAAACGATTTTCATT  1 
+RS00872_p-53(RSp0415)    (    1) AATGAGAATCATTCTTGAT  1 
+RALTA_B2301_p-101(n/a)   (    1) TTTGAGAATCACTCGCATT  1 
+Reut_B3686_p-108(n/a)    (    1) CTTGATAATGATTCGCATT  1 
+Rmet_1105_p-167(n/a)     (    1) AATGCAAATGATTAGTATT  1 
+RS03722_p-223(RSp0244)   (    1) ATTGATAATGATTCTTATT  1 
+RALTA_A2655_p-92(n/a)    (    1) AATAGGAATAATTCGCAAT  1 
+H16_A3182_p-153(h16_A318 (    1) AATAGGAATAATTCGCAAT  1 
+Reut_B4646_p-72(n/a)     (    1) AACAATAACCGTTATCATT  1 
+H16_B1688_p-170(h16_B168 (    1) AATGATAATGATTTGTATT  1 
+H16_B1684_p-74(fhuF)     (    1) CCTGATAATCATTCTCATT  1 
+RALTA_B0923_p-84(fhuA1)  (    1) ATCACGAATCATTCCTATT  1 
+Rmet_5807_p-107(fecA2)   (    1) ATTGCAAATCATTCCTATT  1 
+RS03023_p-59(RSp0100)    (    1) AGTGATAATCACTCTCATT  1 
+Rmet_0720_p-120(n/a)     (    1) ATTGATACTCATTATCATT  1 
+Rmet_1120_p-56(n/a)      (    1) AATGATAATAGGTCGCATT  1 
+Rmet_1104_p-317(n/a)     (    1) TATGATAATGGTTTGCATT  1 
+RALTA_B1811_p-153(n/a)   (    1) TATGAGAATGATTGTTATT  1 
+H16_B2095_p-129(fepA)    (    1) TATGAGAATGATTGTTATT  1 
+H16_B1683_p-195(h16_B168 (    1) AATGAGAATGATTATCAGG  1 
+Rmet_0837_p-302(n/a)     (    1) AATGCGAATAATTTACATT  1 
+Rmet_5891_p-82(feoA)     (    1) ATCGAGAACGATTTCTATT  1 
+Reut_B4660_p-81(n/a)     (    1) ACTGATAATGATTCCTGTT  1 
+H16_B0785_p-86(h16_B0785 (    1) ATGAGAAATTATTATCATT  1 
+RS03722_p-217(RSp0244)   (    1) AATGATTCTTATTTGCATT  1 
+Rmet_5945_p-62(pbrT)     (    1) AAATAGAATTACAATCATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 94 bayes= 1.85114 E= 4.8e-508 
+   137   -268  -1320   -315 
+   112   -268   -352   -107 
+  -509      1   -352    115 
+   -39  -1320    246   -283 
+    69     96     29  -1320 
+  -163   -136    234    -83 
+   145  -1320  -1320   -515 
+   143   -268  -1320  -1320 
+ -1320     22  -1320    115 
+  -192    171     94    -76 
+   110   -268     73  -1320 
+  -509   -210   -352    132 
+  -509  -1320  -1320    139 
+    -9    190   -193   -169 
+  -509   -110    107     82 
+ -1320    256   -352   -107 
+   134  -1320    -52  -1320 
+  -277  -1320   -352    131 
+ -1320   -210   -352    134 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 94 E= 4.8e-508 
+ 0.936170  0.021277  0.000000  0.042553 
+ 0.787234  0.021277  0.010638  0.180851 
+ 0.010638  0.138298  0.010638  0.840426 
+ 0.276596  0.000000  0.670213  0.053191 
+ 0.585106  0.265957  0.148936  0.000000 
+ 0.117021  0.053191  0.617021  0.212766 
+ 0.989362  0.000000  0.000000  0.010638 
+ 0.978723  0.021277  0.000000  0.000000 
+ 0.000000  0.159574  0.000000  0.840426 
+ 0.095745  0.446809  0.234043  0.223404 
+ 0.776596  0.021277  0.202128  0.000000 
+ 0.010638  0.031915  0.010638  0.946809 
+ 0.010638  0.000000  0.000000  0.989362 
+ 0.340426  0.510638  0.031915  0.117021 
+ 0.010638  0.063830  0.255319  0.670213 
+ 0.000000  0.808511  0.010638  0.180851 
+ 0.914894  0.000000  0.085106  0.000000 
+ 0.053191  0.000000  0.010638  0.936170 
+ 0.000000  0.031915  0.010638  0.957447 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATGAGAATBATTMTCATT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AAT[GA][AC][GT]AAT[CGT][AG]TT[CA][TG]CATT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.23 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSc1963_p-287(tonB)              6.68e-09  [+1(6.68e-09)]
+RSc1966_p-82(hemP)               1.30e-08  [+1(1.30e-08)]
+RS03722_p-223(RSp0244)           4.55e-07  [+1(4.55e-07)]
+RS03722_p-217(RSp0244)           4.67e-05  [+1(4.67e-05)]
+RS00511_p-81(RSc3067)            2.44e-10  [+1(2.44e-10)]
+RS03714_p-66(RSp0252)            1.90e-08  [+1(1.90e-08)]
+RSc0349_p-77(bfd)                6.07e-08  [+1(6.07e-08)]
+RS02469_p-153(RSp1062)           2.76e-09  [+1(2.76e-09)]
+RS00872_p-237(RSp0415)           4.78e-08  [+1(4.78e-08)]
+RS00872_p-53(RSp0415)            3.72e-07  [+1(3.72e-07)]
+RS02198_p-48(RSp1640)            1.90e-08  [+1(1.90e-08)]
+RS00871_p-254(RSp0414)           6.07e-08  [+1(6.07e-08)]
+RS00871_p-70(RSp0414)            2.52e-08  [+1(2.52e-08)]
+RS04230_p-126(RSc1807)           6.07e-08  [+1(6.07e-08)]
+RS00176_p-56(RSc2918)            2.76e-07  [+1(2.76e-07)]
+RS04237_p-33(RSc1811)            6.77e-08  [+1(6.77e-08)]
+RS03023_p-59(RSp0100)            1.14e-06  [+1(1.14e-06)]
+Rpic_2119_p-70(n/a)              5.29e-08  [+1(5.29e-08)]
+Rpic_3345_p-75(n/a)              8.91e-09  [+1(8.91e-09)]
+Rpic_3949_p-61(n/a)              1.90e-08  [+1(1.90e-08)]
+Rpic_2116_p-289(n/a)             6.77e-08  [+1(6.77e-08)]
+Rpic_0101_p-65(n/a)              2.48e-07  [+1(2.48e-07)]
+Rpic_0205_p-75(n/a)              6.07e-08  [+1(6.07e-08)]
+Rpic_4266_p-100(n/a)             3.27e-08  [+1(3.27e-08)]
+Rpic_3802_p-136(n/a)             4.16e-08  [+1(4.16e-08)]
+Rpic_1641_p-55(n/a)              2.48e-07  [+1(2.48e-07)]
+Rpic_1817_p-55(n/a)              2.48e-07  [+1(2.48e-07)]
+Rmet_0837_p-302(n/a)             2.44e-06  [+1(2.44e-06)]
+Rmet_1105_p-167(n/a)             4.55e-07  [+1(4.55e-07)]
+Rmet_1819_p-54(n/a)              2.24e-07  [+1(2.24e-07)]
+Rmet_5373_p-66(n/a)              1.30e-08  [+1(1.30e-08)]
+Rmet_5891_p-82(feoA)             4.55e-06  [+1(4.55e-06)]
+Rmet_2277_p-208(n/a)             5.29e-08  [+1(5.29e-08)]
+Rmet_0247_p-91(n/a)              1.66e-08  [+1(1.66e-08)]
+Rmet_0720_p-120(n/a)             1.25e-06  [+1(1.25e-06)]
+Rmet_2280_p-73(n/a)              1.19e-07  [+1(1.19e-07)]
+Rmet_1120_p-56(n/a)              1.48e-06  [+1(1.48e-06)]
+Rmet_1366_p-347(n/a)             1.47e-07  [+1(1.47e-07)]
+Rmet_1367_p-78(n/a)              1.47e-07  [+1(1.47e-07)]
+Rmet_1104_p-317(n/a)             1.75e-06  [+1(1.75e-06)]
+Rmet_1104_p-99(n/a)              2.76e-07  [+1(2.76e-07)]
+Rmet_3077_p-42(n/a)              2.15e-10  [+1(2.15e-10)]
+Rmet_5945_p-62(pbrT)             3.13e-04  19
+Rmet_5945_p-56(pbrT)             2.02e-07  [+1(2.02e-07)]
+pMOL30_093_p-56(pbrT)            2.02e-07  [+1(2.02e-07)]
+Rmet_5806_p-66(fecA1)            9.61e-11  [+1(9.61e-11)]
+Rmet_5807_p-107(fecA2)           1.14e-06  [+1(1.14e-06)]
+Reut_B5430_p-80(n/a)             3.39e-07  [+1(3.39e-07)]
+Reut_A2235_p-187(n/a)            5.29e-08  [+1(5.29e-08)]
+Reut_B4660_p-81(n/a)             7.59e-06  [+1(7.59e-06)]
+Reut_B4659_p-180(n/a)            2.24e-07  [+1(2.24e-07)]
+Reut_A0298_p-1(n/a)              1.66e-08  [+1(1.66e-08)]
+Reut_A2878_p-51(n/a)             9.51e-08  [+1(9.51e-08)]
+Reut_A2571_p-90(n/a)             4.98e-09  [+1(4.98e-09)]
+Reut_A2238_p-107(n/a)            1.14e-08  [+1(1.14e-08)]
+Reut_B3686_p-108(n/a)            4.55e-07  [+1(4.55e-07)]
+Reut_A2876_p-136(n/a)            8.91e-09  [+1(8.91e-09)]
+Reut_B4646_p-72(n/a)             7.31e-07  [+1(7.31e-07)]
+H16_B1683_p-195(h16_B168         2.07e-06  [+1(2.07e-06)]
+H16_B1684_p-74(fhuF)             8.79e-07  [+1(8.79e-07)]
+H16_B0117_p-253(h16_B011         7.61e-08  [+1(7.61e-08)]
+H16_B0117_p-159(h16_B011         1.01e-08  [+1(1.01e-08)]
+H16_B2476_p-73(h16_B2476         5.00e-10  [+1(5.00e-10)]
+H16_B1976_p-223(h16_B197         9.51e-08  [+1(9.51e-08)]
+H16_A0327_p-89(bfd)              1.66e-08  [+1(1.66e-08)]
+H16_B0085_p-80(h16_B0085         3.39e-07  [+1(3.39e-07)]
+H16_A2532_p-208(h16_A253         5.29e-08  [+1(5.29e-08)]
+H16_B2095_p-129(fepA)            2.07e-06  [+1(2.07e-06)]
+H16_A3182_p-153(h16_A318         6.66e-07  [+1(6.66e-07)]
+H16_A0796_p-87(h16_A0796         1.19e-07  [+1(1.19e-07)]
+H16_A2535_p-81(hemP)             1.19e-07  [+1(1.19e-07)]
+H16_B1489_p-80(h16_B1489         3.03e-07  [+1(3.03e-07)]
+H16_A1450_p-330(h16_A145         3.78e-09  [+1(3.78e-09)]
+H16_A1451_p-46(h16_A1451         3.78e-09  [+1(3.78e-09)]
+H16_B1100_p-84(h16_B1100         6.07e-08  [+1(6.07e-08)]
+H16_B1688_p-170(h16_B168         8.79e-07  [+1(8.79e-07)]
+H16_B1689_p-118(mbtH)            2.02e-07  [+1(2.02e-07)]
+H16_B0785_p-86(h16_B0785         3.13e-05  [+1(3.13e-05)]
+RALTA_B0125_p-157(n/a)           1.01e-08  [+1(1.01e-08)]
+RALTA_B2199_p-67(n/a)            5.00e-10  [+1(5.00e-10)]
+RALTA_B1494_p-57(fhuA3)          4.16e-08  [+1(4.16e-08)]
+RALTA_A0266_p-56(bfd)            1.66e-08  [+1(1.66e-08)]
+RALTA_B0077_p-83(feoA)           3.39e-07  [+1(3.39e-07)]
+RALTA_A2036_p-206(tonB)          5.29e-08  [+1(5.29e-08)]
+RALTA_B1811_p-153(n/a)           2.07e-06  [+1(2.07e-06)]
+RALTA_A2655_p-92(n/a)            6.66e-07  [+1(6.66e-07)]
+RALTA_A0777_p-84(n/a)            6.68e-09  [+1(6.68e-09)]
+RALTA_A2040_p-108(n/a)           1.19e-07  [+1(1.19e-07)]
+RALTA_B0897_p-70(aleB)           1.66e-08  [+1(1.66e-08)]
+RALTA_A1364_p-330(n/a)           1.66e-08  [+1(1.66e-08)]
+RALTA_A1365_p-46(n/a)            1.66e-08  [+1(1.66e-08)]
+RALTA_B1229_p-62(fhuA2)          1.19e-07  [+1(1.19e-07)]
+RALTA_B0923_p-84(fhuA1)          1.05e-06  [+1(1.05e-06)]
+RALTA_B2301_p-101(n/a)           4.13e-07  [+1(4.13e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

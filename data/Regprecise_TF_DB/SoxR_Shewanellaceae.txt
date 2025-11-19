@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/SoxR_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sden_2124_p-56(PF00903)  1.0000     20  Sden_2125_p-116(soxR)    1.0000     20  
+Sden_0647_p-61(Sden_0647 1.0000     20  Sfri_1566_p-57(PF00903)  1.0000     20  
+Sfri_1565_p-64(soxR)     1.0000     20  Sama_3348_p-62(PF11158)  1.0000     20  
+Sama_3347_p-32(soxR)     1.0000     20  Shew_0422_p-65(PF11158)  1.0000     20  
+Shew_0423_p-32(soxR)     1.0000     20  swp_2308_p-69(acrA)      1.0000     20  
+swp_2307_p-49(soxR)      1.0000     20  Swoo_3439_p-113(soxR)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/SoxR_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/SoxR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.2 G 0.196 T 0.308 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.295 C 0.201 G 0.197 T 0.307 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTCAAGTYRACTTGAGGT MEME-1	width =  20  sites =  12  llr = 258  E-value = 4.8e-077
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:::2aa:::78::::a31:
+pos.-specific     C  :88:8:::23::a:::::1:
+probability       G  :1:::::a::33:::8:78:
+matrix            T  :13a::::87:::aa3:1:a
+
+         bits    2.3        *    *       
+                 2.1        *    *       
+                 1.9 *    ***    *   *   
+                 1.6 *  *****    *** *  *
+Relative         1.4 ********    ***** **
+Entropy          1.2 *********  ****** **
+(31.0 bits)      0.9 ********************
+                 0.7 ********************
+                 0.5 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTCAAGTTAACTTGAGGT
+consensus              T      CGG   T A  
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Sden_2125_p-116(soxR)         1  4.65e-12          . ACCTCAAGTTAGCTTGAGGT           
+Sden_2124_p-56(PF00903)       1  6.74e-12          . ACCTCAAGCTAACTTGAGGT           
+Sama_3347_p-32(soxR)          1  1.86e-11          . ACTTCAAGTCAACTTGAGGT           
+Sama_3348_p-62(PF11158)       1  1.86e-11          . ACCTCAAGTTGACTTGAAGT           
+Shew_0422_p-65(PF11158)       1  2.66e-11          . ACCTCAAGTCGACTTGAAGT           
+Shew_0423_p-32(soxR)          1  2.89e-11          . ACTTCAAGTCGACTTGAGGT           
+Sfri_1566_p-57(PF00903)       1  3.60e-11          . ACCTCAAGTTAGCTTTAGGT           
+swp_2308_p-69(acrA)           1  4.65e-11          . ACCTCAAGTTAACTTGATGT           
+Sden_0647_p-61(Sden_0647      1  8.79e-11          . ACCTCAAGTTAGCTTGAGCT           
+Sfri_1565_p-64(soxR)          1  1.01e-10          . ACCTAAAGCTAACTTGAGGT           
+swp_2307_p-49(soxR)           1  1.67e-09          . ATCTCAAGTTAACTTTAGAT           
+Swoo_3439_p-113(soxR)         1  4.41e-09          . AgtTaAAGTcgACTTtAaGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sden_2125_p-116(soxR)             4.6e-12  [+1]
+Sden_2124_p-56(PF00903)           6.7e-12  [+1]
+Sama_3347_p-32(soxR)              1.9e-11  [+1]
+Sama_3348_p-62(PF11158)           1.9e-11  [+1]
+Shew_0422_p-65(PF11158)           2.7e-11  [+1]
+Shew_0423_p-32(soxR)              2.9e-11  [+1]
+Sfri_1566_p-57(PF00903)           3.6e-11  [+1]
+swp_2308_p-69(acrA)               4.7e-11  [+1]
+Sden_0647_p-61(Sden_0647          8.8e-11  [+1]
+Sfri_1565_p-64(soxR)                1e-10  [+1]
+swp_2307_p-49(soxR)               1.7e-09  [+1]
+Swoo_3439_p-113(soxR)             4.4e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTCAAGTYRACTTGAGGT width=20 seqs=12
+Sden_2125_p-116(soxR)    (    1) ACCTCAAGTTAGCTTGAGGT  1 
+Sden_2124_p-56(PF00903)  (    1) ACCTCAAGCTAACTTGAGGT  1 
+Sama_3347_p-32(soxR)     (    1) ACTTCAAGTCAACTTGAGGT  1 
+Sama_3348_p-62(PF11158)  (    1) ACCTCAAGTTGACTTGAAGT  1 
+Shew_0422_p-65(PF11158)  (    1) ACCTCAAGTCGACTTGAAGT  1 
+Shew_0423_p-32(soxR)     (    1) ACTTCAAGTCGACTTGAGGT  1 
+Sfri_1566_p-57(PF00903)  (    1) ACCTCAAGTTAGCTTTAGGT  1 
+swp_2308_p-69(acrA)      (    1) ACCTCAAGTTAACTTGATGT  1 
+Sden_0647_p-61(Sden_0647 (    1) ACCTCAAGTTAGCTTGAGCT  1 
+Sfri_1565_p-64(soxR)     (    1) ACCTAAAGCTAACTTGAGGT  1 
+swp_2307_p-49(soxR)      (    1) ATCTCAAGTTAACTTTAGAT  1 
+Swoo_3439_p-113(soxR)    (    1) AGTTAAAGTCGACTTTAAGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 12 bayes= 1 E= 4.8e-077 
+   176  -1023  -1023  -1023 
+ -1023    205   -124   -188 
+ -1023    190  -1023    -30 
+ -1023  -1023  -1023    170 
+   -82    205  -1023  -1023 
+   176  -1023  -1023  -1023 
+   176  -1023  -1023  -1023 
+ -1023  -1023    234  -1023 
+ -1023    -27  -1023    144 
+ -1023     73  -1023    112 
+   118  -1023     76  -1023 
+   135  -1023     35  -1023 
+ -1023    232  -1023  -1023 
+ -1023  -1023  -1023    170 
+ -1023  -1023  -1023    170 
+ -1023  -1023    193    -30 
+   176  -1023  -1023  -1023 
+   -24  -1023    176   -188 
+  -182   -127    208  -1023 
+ -1023  -1023  -1023    170 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 12 E= 4.8e-077 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.833333  0.083333  0.083333 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.166667  0.833333  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.166667  0.000000  0.833333 
+ 0.000000  0.333333  0.000000  0.666667 
+ 0.666667  0.000000  0.333333  0.000000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.750000  0.250000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.666667  0.083333 
+ 0.083333  0.083333  0.833333  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAAGTYRACTTGAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AC[CT]TCAAGT[TC][AG][AG]CTT[GT]A[GA]GT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sden_2124_p-56(PF00903)          6.74e-12  [+1(6.74e-12)]
+Sden_2125_p-116(soxR)            4.65e-12  [+1(4.65e-12)]
+Sden_0647_p-61(Sden_0647         8.79e-11  [+1(8.79e-11)]
+Sfri_1566_p-57(PF00903)          3.60e-11  [+1(3.60e-11)]
+Sfri_1565_p-64(soxR)             1.01e-10  [+1(1.01e-10)]
+Sama_3348_p-62(PF11158)          1.86e-11  [+1(1.86e-11)]
+Sama_3347_p-32(soxR)             1.86e-11  [+1(1.86e-11)]
+Shew_0422_p-65(PF11158)          2.66e-11  [+1(2.66e-11)]
+Shew_0423_p-32(soxR)             2.89e-11  [+1(2.89e-11)]
+swp_2308_p-69(acrA)              4.65e-11  [+1(4.65e-11)]
+swp_2307_p-49(soxR)              1.67e-09  [+1(1.67e-09)]
+Swoo_3439_p-113(soxR)            4.41e-09  [+1(4.41e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

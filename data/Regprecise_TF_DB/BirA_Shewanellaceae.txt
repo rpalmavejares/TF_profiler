@@ -1,0 +1,371 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Shewanellaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SO_2741(bioA)Score=7.8,P 1.0000     33  SO_2740(bioB)Score=7.8,P 1.0000     33  
+Sputcn32_2346(bioA)Score 1.0000     33  Sputcn32_2345(bioB)Score 1.0000     33  
+Sputw3181_1662(bioA)Scor 1.0000     33  Sputw3181_1663(bioB)Scor 1.0000     33  
+Shewana3_2520(bioA)Score 1.0000     33  Shewana3_2519(bioB)Score 1.0000     33  
+Shewmr4_2360(bioA)Score= 1.0000     33  Shewmr4_2359(bioB)Score= 1.0000     33  
+Shewmr7_2432(bioA)Score= 1.0000     33  Shewmr7_2431(bioB)Score= 1.0000     33  
+Sbal_1757(bioA)Score=7.5 1.0000     33  Sbal_1758(bioB)Score=7.5 1.0000     33  
+Sden_1658(bioB)Score=6.8 1.0000     33  Sden_1657(bioA)Score=6.8 1.0000     33  
+Sfri_1474(bioA)Score=7.3 1.0000     33  Sfri_1475(bioB)Score=7.3 1.0000     33  
+Sama_1437(bioA)Score=7.8 1.0000     33  Sama_1438(bioB)Score=7.8 1.0000     33  
+Shew_1718(bioA)Score=8,P 1.0000     33  Shew_1719(bioB)Score=8,P 1.0000     33  
+Spea_1800(bioA)Score=7.3 1.0000     33  Spea_1801(bioB)Score=7.3 1.0000     33  
+Shal_2478(bioA)Score=7.3 1.0000     33  Shal_2477(bioB)Score=7.3 1.0000     33  
+swp_2929(bioA)Score=7.3, 1.0000     33  swp_2928(bioB)Score=7.3, 1.0000     33  
+Ssed_2777(bioA)Score=8,P 1.0000     33  Ssed_2776(bioB)Score=8,P 1.0000     33  
+Swoo_1865(bioA)Score=8,P 1.0000     33  Swoo_1866(bioB)Score=8,P 1.0000     33  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Shewanellaceae.fasta -oc BirA_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           33
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=            1056    N=              32    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.266 C 0.234 G 0.234 T 0.266 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.266 C 0.234 G 0.234 T 0.266 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  33  sites =  32  llr = 548  E-value = 6.9e-177
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :4::5aa::33333333333333311:::a:55
+pos.-specific     C  5:::5::8422222222222222251::::a1:
+probability       G  :1a::::1522222222222222248::5:::5
+matrix            T  55:a:::11333333333333333::aa5::4:
+
+         bits    2.1   *                           *  
+                 1.9   ** **                   ** **  
+                 1.7   ** **                   ** **  
+                 1.5   ** **                   ** **  
+Relative         1.3   ** ***                 *** **  
+Entropy          1.0 * ******                 ****** *
+(24.7 bits)      0.8 * ******                 ****** *
+                 0.6 *********               *********
+                 0.4 *********               *********
+                 0.2 *********               *********
+                 0.0 ---------------------------------
+
+Multilevel           CTGTCAACGAAAAAAAAAAAAAAACGTTGACAG
+consensus            TA  A   CTTTTTTTTTTTTTTTG   T  TA
+sequence                      CCCCCCCCCCCCCCC         
+                              GGGGGGGGGGGGGGG         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site             
+-------------             ----- ---------            ---------------------------------
+Sama_1438(bioB)Score=7.8      1  1.32e-09          . CAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Sama_1437(bioA)Score=7.8      1  1.32e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTG           
+Swoo_1866(bioB)Score=8,P      1  2.24e-09          . TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Swoo_1865(bioA)Score=8,P      1  2.24e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA           
+Ssed_2776(bioB)Score=8,P      1  2.24e-09          . TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Ssed_2777(bioA)Score=8,P      1  2.24e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA           
+Shew_1719(bioB)Score=8,P      1  2.24e-09          . TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Shew_1718(bioA)Score=8,P      1  2.24e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA           
+Shewmr7_2431(bioB)Score=      1  5.92e-09          . TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Shewmr7_2432(bioA)Score=      1  5.92e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA           
+Shewmr4_2359(bioB)Score=      1  5.92e-09          . TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Shewmr4_2360(bioA)Score=      1  5.92e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA           
+Shewana3_2519(bioB)Score      1  5.92e-09          . TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+Shewana3_2520(bioA)Score      1  5.92e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA           
+SO_2740(bioB)Score=7.8,P      1  5.92e-09          . TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG           
+SO_2741(bioA)Score=7.8,P      1  5.92e-09          . CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA           
+Sbal_1758(bioB)Score=7.5      1  8.44e-09          . TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG           
+Sbal_1757(bioA)Score=7.5      1  8.44e-09          . CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA           
+Sputw3181_1663(bioB)Scor      1  8.44e-09          . TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG           
+Sputw3181_1662(bioA)Scor      1  8.44e-09          . CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA           
+Sputcn32_2345(bioB)Score      1  8.44e-09          . TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG           
+Sputcn32_2346(bioA)Score      1  8.44e-09          . CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA           
+swp_2928(bioB)Score=7.3,      1  2.12e-08          . TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG           
+swp_2929(bioA)Score=7.3,      1  2.12e-08          . CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA           
+Shal_2477(bioB)Score=7.3      1  2.12e-08          . TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG           
+Shal_2478(bioA)Score=7.3      1  2.12e-08          . CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA           
+Spea_1801(bioB)Score=7.3      1  2.12e-08          . TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG           
+Spea_1800(bioA)Score=7.3      1  2.12e-08          . CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA           
+Sfri_1475(bioB)Score=7.3      1  2.83e-08          . TAGTAAAGCNNNNNNNNNNNNNNNCGTTGACAG           
+Sfri_1474(bioA)Score=7.3      1  2.83e-08          . CTGTCAACGNNNNNNNNNNNNNNNGCTTTACTA           
+Sden_1657(bioA)Score=6.8      1  5.33e-08          . cTGTcAACgNNNNNNNNNNNNNNNacTTgACtA           
+Sden_1658(bioB)Score=6.8      1  5.33e-08          . TaGTcAAgtNNNNNNNNNNNNNNNcGTTgACAg           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sama_1438(bioB)Score=7.8          1.3e-09  [+1]
+Sama_1437(bioA)Score=7.8          1.3e-09  [+1]
+Swoo_1866(bioB)Score=8,P          2.2e-09  [+1]
+Swoo_1865(bioA)Score=8,P          2.2e-09  [+1]
+Ssed_2776(bioB)Score=8,P          2.2e-09  [+1]
+Ssed_2777(bioA)Score=8,P          2.2e-09  [+1]
+Shew_1719(bioB)Score=8,P          2.2e-09  [+1]
+Shew_1718(bioA)Score=8,P          2.2e-09  [+1]
+Shewmr7_2431(bioB)Score=          5.9e-09  [+1]
+Shewmr7_2432(bioA)Score=          5.9e-09  [+1]
+Shewmr4_2359(bioB)Score=          5.9e-09  [+1]
+Shewmr4_2360(bioA)Score=          5.9e-09  [+1]
+Shewana3_2519(bioB)Score          5.9e-09  [+1]
+Shewana3_2520(bioA)Score          5.9e-09  [+1]
+SO_2740(bioB)Score=7.8,P          5.9e-09  [+1]
+SO_2741(bioA)Score=7.8,P          5.9e-09  [+1]
+Sbal_1758(bioB)Score=7.5          8.4e-09  [+1]
+Sbal_1757(bioA)Score=7.5          8.4e-09  [+1]
+Sputw3181_1663(bioB)Scor          8.4e-09  [+1]
+Sputw3181_1662(bioA)Scor          8.4e-09  [+1]
+Sputcn32_2345(bioB)Score          8.4e-09  [+1]
+Sputcn32_2346(bioA)Score          8.4e-09  [+1]
+swp_2928(bioB)Score=7.3,          2.1e-08  [+1]
+swp_2929(bioA)Score=7.3,          2.1e-08  [+1]
+Shal_2477(bioB)Score=7.3          2.1e-08  [+1]
+Shal_2478(bioA)Score=7.3          2.1e-08  [+1]
+Spea_1801(bioB)Score=7.3          2.1e-08  [+1]
+Spea_1800(bioA)Score=7.3          2.1e-08  [+1]
+Sfri_1475(bioB)Score=7.3          2.8e-08  [+1]
+Sfri_1474(bioA)Score=7.3          2.8e-08  [+1]
+Sden_1657(bioA)Score=6.8          5.3e-08  [+1]
+Sden_1658(bioB)Score=6.8          5.3e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=33 seqs=32
+Sama_1438(bioB)Score=7.8 (    1) CAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Sama_1437(bioA)Score=7.8 (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTG  1 
+Swoo_1866(bioB)Score=8,P (    1) TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Swoo_1865(bioA)Score=8,P (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Ssed_2776(bioB)Score=8,P (    1) TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Ssed_2777(bioA)Score=8,P (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Shew_1719(bioB)Score=8,P (    1) TAGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Shew_1718(bioA)Score=8,P (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Shewmr7_2431(bioB)Score= (    1) TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Shewmr7_2432(bioA)Score= (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA  1 
+Shewmr4_2359(bioB)Score= (    1) TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Shewmr4_2360(bioA)Score= (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA  1 
+Shewana3_2519(bioB)Score (    1) TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Shewana3_2520(bioA)Score (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA  1 
+SO_2740(bioB)Score=7.8,P (    1) TGGTAAACCNNNNNNNNNNNNNNNCGTTGACAG  1 
+SO_2741(bioA)Score=7.8,P (    1) CTGTCAACGNNNNNNNNNNNNNNNGGTTTACCA  1 
+Sbal_1758(bioB)Score=7.5 (    1) TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG  1 
+Sbal_1757(bioA)Score=7.5 (    1) CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA  1 
+Sputw3181_1663(bioB)Scor (    1) TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG  1 
+Sputw3181_1662(bioA)Scor (    1) CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA  1 
+Sputcn32_2345(bioB)Score (    1) TAGTAAACTNNNNNNNNNNNNNNNCGTTGACAG  1 
+Sputcn32_2346(bioA)Score (    1) CTGTCAACGNNNNNNNNNNNNNNNAGTTTACTA  1 
+swp_2928(bioB)Score=7.3, (    1) TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG  1 
+swp_2929(bioA)Score=7.3, (    1) CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Shal_2477(bioB)Score=7.3 (    1) TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG  1 
+Shal_2478(bioA)Score=7.3 (    1) CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Spea_1801(bioB)Score=7.3 (    1) TAGTAAACCNNNNNNNNNNNNNNNCATTGACAG  1 
+Spea_1800(bioA)Score=7.3 (    1) CTGTCAATGNNNNNNNNNNNNNNNGGTTTACTA  1 
+Sfri_1475(bioB)Score=7.3 (    1) TAGTAAAGCNNNNNNNNNNNNNNNCGTTGACAG  1 
+Sfri_1474(bioA)Score=7.3 (    1) CTGTCAACGNNNNNNNNNNNNNNNGCTTTACTA  1 
+Sden_1657(bioA)Score=6.8 (    1) CTGTCAACGNNNNNNNNNNNNNNNACTTGACTA  1 
+Sden_1658(bioB)Score=6.8 (    1) TAGTCAAGTNNNNNNNNNNNNNNNCGTTGACAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 33 n= 32 bayes= 1.58496 E= 6.9e-177 
+ -1164    118  -1164     82 
+    50  -1164    -90     91 
+ -1164  -1164    210  -1164 
+ -1164  -1164  -1164    191 
+    82    118  -1164  -1164 
+   191  -1164  -1164  -1164 
+   191  -1164  -1164  -1164 
+ -1164    185   -190   -150 
+ -1164     68    110   -109 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+  -109    110     68  -1164 
+  -150   -190    185  -1164 
+ -1164  -1164  -1164    191 
+ -1164  -1164  -1164    191 
+ -1164  -1164    118     82 
+   191  -1164  -1164  -1164 
+ -1164    210  -1164  -1164 
+    91    -90  -1164     50 
+    82  -1164    118  -1164 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 33 nsites= 32 E= 6.9e-177 
+ 0.000000  0.531250  0.000000  0.468750 
+ 0.375000  0.000000  0.125000  0.500000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.468750  0.531250  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.843750  0.062500  0.093750 
+ 0.000000  0.375000  0.500000  0.125000 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.266038  0.233962  0.233962  0.266038 
+ 0.125000  0.500000  0.375000  0.000000 
+ 0.093750  0.062500  0.843750  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.531250  0.468750 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.125000  0.000000  0.375000 
+ 0.468750  0.000000  0.531250  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CT][TA]GT[CA]AAC[GC][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][ATCG][CG]GTT[GT]AC[AT][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.16 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SO_2741(bioA)Score=7.8,P         5.92e-09  [+1(5.92e-09)]
+SO_2740(bioB)Score=7.8,P         5.92e-09  [+1(5.92e-09)]
+Sputcn32_2346(bioA)Score         8.44e-09  [+1(8.44e-09)]
+Sputcn32_2345(bioB)Score         8.44e-09  [+1(8.44e-09)]
+Sputw3181_1662(bioA)Scor         8.44e-09  [+1(8.44e-09)]
+Sputw3181_1663(bioB)Scor         8.44e-09  [+1(8.44e-09)]
+Shewana3_2520(bioA)Score         5.92e-09  [+1(5.92e-09)]
+Shewana3_2519(bioB)Score         5.92e-09  [+1(5.92e-09)]
+Shewmr4_2360(bioA)Score=         5.92e-09  [+1(5.92e-09)]
+Shewmr4_2359(bioB)Score=         5.92e-09  [+1(5.92e-09)]
+Shewmr7_2432(bioA)Score=         5.92e-09  [+1(5.92e-09)]
+Shewmr7_2431(bioB)Score=         5.92e-09  [+1(5.92e-09)]
+Sbal_1757(bioA)Score=7.5         8.44e-09  [+1(8.44e-09)]
+Sbal_1758(bioB)Score=7.5         8.44e-09  [+1(8.44e-09)]
+Sden_1658(bioB)Score=6.8         5.33e-08  [+1(5.33e-08)]
+Sden_1657(bioA)Score=6.8         5.33e-08  [+1(5.33e-08)]
+Sfri_1474(bioA)Score=7.3         2.83e-08  [+1(2.83e-08)]
+Sfri_1475(bioB)Score=7.3         2.83e-08  [+1(2.83e-08)]
+Sama_1437(bioA)Score=7.8         1.32e-09  [+1(1.32e-09)]
+Sama_1438(bioB)Score=7.8         1.32e-09  [+1(1.32e-09)]
+Shew_1718(bioA)Score=8,P         2.24e-09  [+1(2.24e-09)]
+Shew_1719(bioB)Score=8,P         2.24e-09  [+1(2.24e-09)]
+Spea_1800(bioA)Score=7.3         2.12e-08  [+1(2.12e-08)]
+Spea_1801(bioB)Score=7.3         2.12e-08  [+1(2.12e-08)]
+Shal_2478(bioA)Score=7.3         2.12e-08  [+1(2.12e-08)]
+Shal_2477(bioB)Score=7.3         2.12e-08  [+1(2.12e-08)]
+swp_2929(bioA)Score=7.3,         2.12e-08  [+1(2.12e-08)]
+swp_2928(bioB)Score=7.3,         2.12e-08  [+1(2.12e-08)]
+Ssed_2777(bioA)Score=8,P         2.24e-09  [+1(2.24e-09)]
+Ssed_2776(bioB)Score=8,P         2.24e-09  [+1(2.24e-09)]
+Swoo_1865(bioA)Score=8,P         2.24e-09  [+1(2.24e-09)]
+Swoo_1866(bioB)Score=8,P         2.24e-09  [+1(2.24e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,191 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= PdxR3_Frankineae_Propionibacterineae_Pseudonocardiaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SACE_7002(COG2364)Score= 1.0000     48  Namu_3401(COG2364)Score= 1.0000     48  
+Noca_3372(COG2364)Score= 1.0000     48  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna PdxR3_Frankineae_Propionibacterineae_Pseudonocardiaceae.fasta -oc PdxR3_Frankineae_Propionibacterineae_Pseudonocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           48
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=        3    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             144    N=               3    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.293 C 0.252 G 0.189 T 0.266 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.292 C 0.252 G 0.191 T 0.265 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =   8  sites =   3  llr = 28  E-value = 9.6e+000
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:3::a7:
+pos.-specific     C  :::aa:::
+probability       G  :a3:::3:
+matrix            T  ::3::::a
+
+         bits    2.4  *      
+                 2.2  *      
+                 1.9  * **  *
+                 1.7 ** *** *
+Relative         1.4 ** *** *
+Entropy          1.2 ** *** *
+(13.3 bits)      1.0 ** *****
+                 0.7 ** *****
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           AGACCAAT
+consensus              G   G 
+sequence               T     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+Noca_3372(COG2364)Score=     39  1.53e-05 NNNNNNNNNA AGGCCAAT CT        
+SACE_7002(COG2364)Score=      2  4.65e-05          G AGTCCAAT TANNNNNNAT
+Namu_3401(COG2364)Score=      2  9.90e-05          C AGACCAGT TTNNNNNNCA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Noca_3372(COG2364)Score=          1.5e-05  38_[+1]_2
+SACE_7002(COG2364)Score=          4.6e-05  1_[+1]_39
+Namu_3401(COG2364)Score=          9.9e-05  1_[+1]_39
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=8 seqs=3
+Noca_3372(COG2364)Score= (   39) AGGCCAAT  1 
+SACE_7002(COG2364)Score= (    2) AGTCCAAT  1 
+Namu_3401(COG2364)Score= (    2) AGACCAGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 123 bayes= 5.32193 E= 9.6e+000 
+   177   -823   -823   -823 
+  -823   -823    239   -823 
+    19   -823     80     33 
+  -823    199   -823   -823 
+  -823    199   -823   -823 
+   177   -823   -823   -823 
+   119   -823     80   -823 
+  -823   -823   -823    191 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 3 E= 9.6e+000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.333333  0.000000  0.333333  0.333333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.666667  0.000000  0.333333  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+AG[AGT]CCA[AG]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SACE_7002(COG2364)Score=         1.90e-03  1_[+1(4.65e-05)]_39
+Namu_3401(COG2364)Score=         4.05e-03  1_[+1(9.90e-05)]_39
+Noca_3372(COG2364)Score=         6.27e-04  38_[+1(1.53e-05)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

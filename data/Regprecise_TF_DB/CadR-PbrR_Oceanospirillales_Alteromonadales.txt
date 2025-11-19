@@ -1,0 +1,262 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CadR-PbrR_Oceanospirillales_Alteromonadales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HCH_03680(czcD)Score=5.5 1.0000     21  Maqu_1408(czcD2)Score=5. 1.0000     21  
+Maqu_3109(czcD)Score=6.6 1.0000     21  Maqu_3273(czcD2)Score=6. 1.0000     21  
+Maqu_4003(czcD2)Score=5. 1.0000     21  Maqu_1294(czcD2)Score=6. 1.0000     21  
+Maqu_3210(czcD2)Score=6. 1.0000     21  Maqu_0893(czcD2)Score=5. 1.0000     21  
+MELB17_04522(czcD)Score= 1.0000     21  MED92_00235(czcD)Score=6 1.0000     21  
+Sde_1960(czcD)Score=6.3, 1.0000     21  CJA_1839(czcD)Score=6.2, 1.0000     21  
+ABO_1368(czcD2)Score=5.5 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CadR-PbrR_Oceanospirillales_Alteromonadales.fasta -oc CadR-PbrR_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           21
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             273    N=              13    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.267 C 0.223 G 0.209 T 0.300 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.267 C 0.224 G 0.209 T 0.300 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  21  sites =  13  llr = 282  E-value = 9.5e-085
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::5:a::45::7:a:5::
+pos.-specific     C  :a97:1:::3::a:15:::1:
+probability       G  :::::5::a:45:::::759:
+matrix            T  ::13a:a::72::a25:3::a
+
+         bits    2.3  *      *   *        
+                 2.0  *      *   *        
+                 1.8 *** * ***   **  *  **
+                 1.6 *** * ***   **  *  **
+Relative         1.4 *** * ***   **  *  **
+Entropy          1.1 ***** ***  ***  *****
+(31.2 bits)      0.9 ***** **** *** ******
+                 0.7 ********** **********
+                 0.5 *********************
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCCTATAGTAACTACAGAGT
+consensus               T G   CGG  TT TG  
+sequence                       T          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Maqu_3210(czcD2)Score=6.      1  1.21e-13          . ACCCTGTAGTGGCTACAGGGT           
+Maqu_1294(czcD2)Score=6.      1  1.21e-13          . ACCCTGTAGTGGCTACAGGGT           
+Maqu_3273(czcD2)Score=6.      1  1.21e-13          . ACCCTGTAGTGGCTACAGGGT           
+Maqu_3109(czcD)Score=6.6      1  7.73e-12          . ACCCTGTAGCAACTACAGGGT           
+MELB17_04522(czcD)Score=      1  2.10e-11          . ACCCTGTAGCTACTACAGGGT           
+MED92_00235(czcD)Score=6      1  3.29e-11          . ACCCTATAGCTACTACAGGGT           
+CJA_1839(czcD)Score=6.2,      1  1.04e-10          . ACCCTCTAGTAACTATAGAGT           
+Maqu_1408(czcD2)Score=5.      1  1.71e-10          . ACCTTATAGTGACTATATAGT           
+Sde_1960(czcD)Score=6.3,      1  4.17e-10          . ACTCTATAGTTACTATAGAGT           
+ABO_1368(czcD2)Score=5.5      1  4.66e-10          . ACCTTATAGTAGCTTTATAGT           
+Maqu_0893(czcD2)Score=5.      1  4.66e-10          . ACCTTATAGTAGCTTTATAGT           
+Maqu_4003(czcD2)Score=5.      1  4.66e-10          . ACCTTATAGTAGCTTTATAGT           
+HCH_03680(czcD)Score=5.5      1  6.51e-10          . ACCCTGTAGCGACTCCAGACT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Maqu_3210(czcD2)Score=6.          1.2e-13  [+1]
+Maqu_1294(czcD2)Score=6.          1.2e-13  [+1]
+Maqu_3273(czcD2)Score=6.          1.2e-13  [+1]
+Maqu_3109(czcD)Score=6.6          7.7e-12  [+1]
+MELB17_04522(czcD)Score=          2.1e-11  [+1]
+MED92_00235(czcD)Score=6          3.3e-11  [+1]
+CJA_1839(czcD)Score=6.2,            1e-10  [+1]
+Maqu_1408(czcD2)Score=5.          1.7e-10  [+1]
+Sde_1960(czcD)Score=6.3,          4.2e-10  [+1]
+ABO_1368(czcD2)Score=5.5          4.7e-10  [+1]
+Maqu_0893(czcD2)Score=5.          4.7e-10  [+1]
+Maqu_4003(czcD2)Score=5.          4.7e-10  [+1]
+HCH_03680(czcD)Score=5.5          6.5e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=21 seqs=13
+Maqu_3210(czcD2)Score=6. (    1) ACCCTGTAGTGGCTACAGGGT  1 
+Maqu_1294(czcD2)Score=6. (    1) ACCCTGTAGTGGCTACAGGGT  1 
+Maqu_3273(czcD2)Score=6. (    1) ACCCTGTAGTGGCTACAGGGT  1 
+Maqu_3109(czcD)Score=6.6 (    1) ACCCTGTAGCAACTACAGGGT  1 
+MELB17_04522(czcD)Score= (    1) ACCCTGTAGCTACTACAGGGT  1 
+MED92_00235(czcD)Score=6 (    1) ACCCTATAGCTACTACAGGGT  1 
+CJA_1839(czcD)Score=6.2, (    1) ACCCTCTAGTAACTATAGAGT  1 
+Maqu_1408(czcD2)Score=5. (    1) ACCTTATAGTGACTATATAGT  1 
+Sde_1960(czcD)Score=6.3, (    1) ACTCTATAGTTACTATAGAGT  1 
+ABO_1368(czcD2)Score=5.5 (    1) ACCTTATAGTAGCTTTATAGT  1 
+Maqu_0893(czcD2)Score=5. (    1) ACCTTATAGTAGCTTTATAGT  1 
+Maqu_4003(czcD2)Score=5. (    1) ACCTTATAGTAGCTTTATAGT  1 
+HCH_03680(czcD)Score=5.5 (    1) ACCCTGTAGCGACTCCAGACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 13 bayes= 1.06711 E= 9.5e-085 
+   190  -1035  -1035  -1035 
+ -1035    216  -1035  -1035 
+ -1035    204  -1035   -196 
+ -1035    163  -1035      4 
+ -1035  -1035  -1035    174 
+    79   -154    114  -1035 
+ -1035  -1035  -1035    174 
+   190  -1035  -1035  -1035 
+ -1035  -1035    225  -1035 
+ -1035     46  -1035    121 
+    53  -1035     88    -38 
+   101  -1035    114  -1035 
+ -1035    216  -1035  -1035 
+ -1035  -1035  -1035    174 
+   137   -154  -1035    -38 
+ -1035    127  -1035     62 
+   190  -1035  -1035  -1035 
+ -1035  -1035    172      4 
+   101  -1035    114  -1035 
+ -1035   -154    214  -1035 
+ -1035  -1035  -1035    174 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 13 E= 9.5e-085 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.000000  0.692308  0.000000  0.307692 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.461538  0.076923  0.461538  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.307692  0.000000  0.692308 
+ 0.384615  0.000000  0.384615  0.230769 
+ 0.538462  0.000000  0.461538  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.692308  0.076923  0.000000  0.230769 
+ 0.000000  0.538462  0.000000  0.461538 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.692308  0.307692 
+ 0.538462  0.000000  0.461538  0.000000 
+ 0.000000  0.076923  0.923077  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+ACC[CT]T[AG]TAG[TC][AGT][AG]CT[AT][CT]A[GT][AG]GT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_03680(czcD)Score=5.5         6.51e-10  [+1(6.51e-10)]
+Maqu_1408(czcD2)Score=5.         1.71e-10  [+1(1.71e-10)]
+Maqu_3109(czcD)Score=6.6         7.73e-12  [+1(7.73e-12)]
+Maqu_3273(czcD2)Score=6.         1.21e-13  [+1(1.21e-13)]
+Maqu_4003(czcD2)Score=5.         4.66e-10  [+1(4.66e-10)]
+Maqu_1294(czcD2)Score=6.         1.21e-13  [+1(1.21e-13)]
+Maqu_3210(czcD2)Score=6.         1.21e-13  [+1(1.21e-13)]
+Maqu_0893(czcD2)Score=5.         4.66e-10  [+1(4.66e-10)]
+MELB17_04522(czcD)Score=         2.10e-11  [+1(2.10e-11)]
+MED92_00235(czcD)Score=6         3.29e-11  [+1(3.29e-11)]
+Sde_1960(czcD)Score=6.3,         4.17e-10  [+1(4.17e-10)]
+CJA_1839(czcD)Score=6.2,         1.04e-10  [+1(1.04e-10)]
+ABO_1368(czcD2)Score=5.5         4.66e-10  [+1(4.66e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,319 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FabR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_1494_p-56(OLE1)     1.0000     18  Ping_1493_p-179(fabR)    1.0000     18  
+PE36_22265_p-56(lcfH)    1.0000     18  PE36_01362_p-60(OLE1)    1.0000     18  
+PE36_03571_p-51(hyIII)   1.0000     18  PE36_11777_p-49(fabA)    1.0000     18  
+PE36_12337_p-101(pfaA)   1.0000     18  PE36_00604_p-64(plsC)    1.0000     18  
+PE36_07177_p-45(desC)    1.0000     18  AHA_3493_p-64(hyIII)     1.0000     18  
+AHA_2280_p-57(fabA)      1.0000     18  AHA_0722_p-98(lcfH)      1.0000     18  
+AHA_0722_p-33(lcfH)      1.0000     18  AHA_2144_p-192(fadL)     1.0000     18  
+AHA_2144_p-179(fadL)     1.0000     18  AHA_3740_p-65(plsC)      1.0000     18  
+AHA_0367_p-131(fabR)     1.0000     18  AHA_0366_p-35(OLE1)      1.0000     18  
+ASA_0719_p-33(lcfH)      1.0000     18  ASA_3966_p-35(OLE1)      1.0000     18  
+ASA_0824_p-64(hyIII)     1.0000     18  ASA_2000_p-57(fabA)      1.0000     18  
+ASA_2157_p-192(fadL)     1.0000     18  ASA_2157_p-179(fadL)     1.0000     18  
+ASA_3965_p-132(fabR)     1.0000     18  ASA_0546_p-65(plsC)      1.0000     18  
+ASA_0719_p-97(lcfH)      1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FabR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FabR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             486    N=              27
+sample: seed=            0    hsfrac=          0
+        searchsize=    486    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.251 C 0.261 G 0.247 T 0.241 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.251 C 0.261 G 0.247 T 0.241 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RGCGWACASYTGTACGCT MEME-1	width =  18  sites =  27  llr = 418  E-value = 2.4e-143
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6::14a:921:::62111
+pos.-specific     C  ::9:1:a:54::::7191
+probability       G  4a:7:::131:a:117::
+matrix            T  ::124::::4a:a3:117
+
+         bits    2.1  *   *    ***     
+                 1.8  *   **   ***     
+                 1.6  *   **   ***     
+                 1.4  *   ***  ***     
+Relative         1.2  **  ***  ***   * 
+Entropy          1.0 **** ***  ***   **
+(22.3 bits)      0.8 **** ***  ***** **
+                 0.6 ********  ********
+                 0.4 ******** *********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           AGCGAACACCTGTACGCT
+consensus            G   T   GT   TA   
+sequence                     A         
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PE36_03571_p-51(hyIII)        1  6.19e-11          . AGCGTACACTTGTACGCT           
+AHA_2280_p-57(fabA)           1  2.12e-10          . AGCGAACAACTGTACGCT           
+ASA_0719_p-97(lcfH)           1  4.17e-10          . AGCGAACACTTGTAAGCT           
+AHA_0722_p-98(lcfH)           1  1.11e-09          . GGCGAACACTTGTAAGCT           
+PE36_11777_p-49(fabA)         1  5.33e-09          . GGCGTACAGATGTACGCT           
+PE36_12337_p-101(pfaA)        1  8.84e-09          . AGAGTACACTTGTACGCT           
+ASA_0824_p-64(hyIII)          1  9.78e-09          . AGCTAACACTTGTACTCT           
+AHA_3493_p-64(hyIII)          1  9.78e-09          . AGCTAACACTTGTACTCT           
+PE36_01362_p-60(OLE1)         1  9.78e-09          . AGCTTACACTTGTGCGCT           
+ASA_3966_p-35(OLE1)           1  1.06e-08          . GGCGCACAGCTGTTCGCT           
+AHA_0366_p-35(OLE1)           1  1.06e-08          . GGCGCACAGCTGTTCGCT           
+ASA_2000_p-57(fabA)           1  1.20e-08          . AGCGCACAAGTGTACGCT           
+ASA_0546_p-65(plsC)           1  1.32e-08          . GGCGAACGCTTGTTCGCT           
+AHA_3740_p-65(plsC)           1  1.32e-08          . GGCGAACGCTTGTTCGCT           
+ASA_3965_p-132(fabR)          1  2.31e-08          . AGCGAACAGCTGTGCGCC           
+AHA_0367_p-131(fabR)          1  2.31e-08          . AGCGAACAGCTGTGCGCC           
+PE36_07177_p-45(desC)         1  3.49e-08          . AGTGTACACGTGTAAGCT           
+Ping_1494_p-56(OLE1)          1  6.08e-08          . GGTGTACATCTGTACGCT           
+AHA_2144_p-179(fadL)          1  6.60e-08          . AGTAAACAACTGTACGCT           
+PE36_00604_p-64(plsC)         1  8.42e-08          . AGCTAACGCTTGTACACT           
+Ping_1493_p-179(fabR)         1  1.17e-07          . AGCGTACAGATGTACACC           
+PE36_22265_p-56(lcfH)         1  2.85e-07          . GGCTTACAAGTGTAAGCC           
+ASA_2157_p-179(fadL)          1  3.05e-07          . AGCAAACACCTGTTCACA           
+ASA_0719_p-33(lcfH)           1  4.18e-07          . GGCGTACAACTGTTACTT           
+AHA_0722_p-33(lcfH)           1  4.18e-07          . GGCGTACAACTGTTACTT           
+AHA_2144_p-192(fadL)          1  7.03e-07          . AGCGTACACCTGTAGTAA           
+ASA_2157_p-192(fadL)          1  9.60e-07          . AGCGTACAGCTGTAGCAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PE36_03571_p-51(hyIII)            6.2e-11  [+1]
+AHA_2280_p-57(fabA)               2.1e-10  [+1]
+ASA_0719_p-97(lcfH)               4.2e-10  [+1]
+AHA_0722_p-98(lcfH)               1.1e-09  [+1]
+PE36_11777_p-49(fabA)             5.3e-09  [+1]
+PE36_12337_p-101(pfaA)            8.8e-09  [+1]
+ASA_0824_p-64(hyIII)              9.8e-09  [+1]
+AHA_3493_p-64(hyIII)              9.8e-09  [+1]
+PE36_01362_p-60(OLE1)             9.8e-09  [+1]
+ASA_3966_p-35(OLE1)               1.1e-08  [+1]
+AHA_0366_p-35(OLE1)               1.1e-08  [+1]
+ASA_2000_p-57(fabA)               1.2e-08  [+1]
+ASA_0546_p-65(plsC)               1.3e-08  [+1]
+AHA_3740_p-65(plsC)               1.3e-08  [+1]
+ASA_3965_p-132(fabR)              2.3e-08  [+1]
+AHA_0367_p-131(fabR)              2.3e-08  [+1]
+PE36_07177_p-45(desC)             3.5e-08  [+1]
+Ping_1494_p-56(OLE1)              6.1e-08  [+1]
+AHA_2144_p-179(fadL)              6.6e-08  [+1]
+PE36_00604_p-64(plsC)             8.4e-08  [+1]
+Ping_1493_p-179(fabR)             1.2e-07  [+1]
+PE36_22265_p-56(lcfH)             2.8e-07  [+1]
+ASA_2157_p-179(fadL)              3.1e-07  [+1]
+ASA_0719_p-33(lcfH)               4.2e-07  [+1]
+AHA_0722_p-33(lcfH)               4.2e-07  [+1]
+AHA_2144_p-192(fadL)                7e-07  [+1]
+ASA_2157_p-192(fadL)              9.6e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RGCGWACASYTGTACGCT width=18 seqs=27
+PE36_03571_p-51(hyIII)   (    1) AGCGTACACTTGTACGCT  1 
+AHA_2280_p-57(fabA)      (    1) AGCGAACAACTGTACGCT  1 
+ASA_0719_p-97(lcfH)      (    1) AGCGAACACTTGTAAGCT  1 
+AHA_0722_p-98(lcfH)      (    1) GGCGAACACTTGTAAGCT  1 
+PE36_11777_p-49(fabA)    (    1) GGCGTACAGATGTACGCT  1 
+PE36_12337_p-101(pfaA)   (    1) AGAGTACACTTGTACGCT  1 
+ASA_0824_p-64(hyIII)     (    1) AGCTAACACTTGTACTCT  1 
+AHA_3493_p-64(hyIII)     (    1) AGCTAACACTTGTACTCT  1 
+PE36_01362_p-60(OLE1)    (    1) AGCTTACACTTGTGCGCT  1 
+ASA_3966_p-35(OLE1)      (    1) GGCGCACAGCTGTTCGCT  1 
+AHA_0366_p-35(OLE1)      (    1) GGCGCACAGCTGTTCGCT  1 
+ASA_2000_p-57(fabA)      (    1) AGCGCACAAGTGTACGCT  1 
+ASA_0546_p-65(plsC)      (    1) GGCGAACGCTTGTTCGCT  1 
+AHA_3740_p-65(plsC)      (    1) GGCGAACGCTTGTTCGCT  1 
+ASA_3965_p-132(fabR)     (    1) AGCGAACAGCTGTGCGCC  1 
+AHA_0367_p-131(fabR)     (    1) AGCGAACAGCTGTGCGCC  1 
+PE36_07177_p-45(desC)    (    1) AGTGTACACGTGTAAGCT  1 
+Ping_1494_p-56(OLE1)     (    1) GGTGTACATCTGTACGCT  1 
+AHA_2144_p-179(fadL)     (    1) AGTAAACAACTGTACGCT  1 
+PE36_00604_p-64(plsC)    (    1) AGCTAACGCTTGTACACT  1 
+Ping_1493_p-179(fabR)    (    1) AGCGTACAGATGTACACC  1 
+PE36_22265_p-56(lcfH)    (    1) GGCTTACAAGTGTAAGCC  1 
+ASA_2157_p-179(fadL)     (    1) AGCAAACACCTGTTCACA  1 
+ASA_0719_p-33(lcfH)      (    1) GGCGTACAACTGTTACTT  1 
+AHA_0722_p-33(lcfH)      (    1) GGCGTACAACTGTTACTT  1 
+AHA_2144_p-192(fadL)     (    1) AGCGTACACCTGTAGTAA  1 
+ASA_2157_p-192(fadL)     (    1) AGCGTACAGCTGTAGCAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 27 bayes= 1.51457 E= 2.4e-143 
+   133  -1140     58  -1140 
+ -1140  -1140    202  -1140 
+  -276    170  -1140   -112 
+  -176  -1140    158    -38 
+    82   -123  -1140     88 
+   199  -1140  -1140  -1140 
+ -1140    194  -1140  -1140 
+   182  -1140   -115  -1140 
+   -18     88      7   -270 
+  -176     77   -115     62 
+ -1140  -1140  -1140    205 
+ -1140  -1140    202  -1140 
+ -1140  -1140  -1140    205 
+   133  -1140   -115     11 
+   -18    143   -174  -1140 
+  -118   -123    143   -112 
+  -176    170  -1140   -170 
+  -118    -82  -1140    162 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 27 E= 2.4e-143 
+ 0.629630  0.000000  0.370370  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.037037  0.851852  0.000000  0.111111 
+ 0.074074  0.000000  0.740741  0.185185 
+ 0.444444  0.111111  0.000000  0.444444 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.888889  0.000000  0.111111  0.000000 
+ 0.222222  0.481481  0.259259  0.037037 
+ 0.074074  0.444444  0.111111  0.370370 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.629630  0.000000  0.111111  0.259259 
+ 0.222222  0.703704  0.074074  0.000000 
+ 0.111111  0.111111  0.666667  0.111111 
+ 0.074074  0.851852  0.000000  0.074074 
+ 0.111111  0.148148  0.000000  0.740741 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGCGWACASYTGTACGCT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]GCG[AT]ACA[CGA][CT]TGT[AT][CA]GCT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_1494_p-56(OLE1)             6.08e-08  [+1(6.08e-08)]
+Ping_1493_p-179(fabR)            1.17e-07  [+1(1.17e-07)]
+PE36_22265_p-56(lcfH)            2.85e-07  [+1(2.85e-07)]
+PE36_01362_p-60(OLE1)            9.78e-09  [+1(9.78e-09)]
+PE36_03571_p-51(hyIII)           6.19e-11  [+1(6.19e-11)]
+PE36_11777_p-49(fabA)            5.33e-09  [+1(5.33e-09)]
+PE36_12337_p-101(pfaA)           8.84e-09  [+1(8.84e-09)]
+PE36_00604_p-64(plsC)            8.42e-08  [+1(8.42e-08)]
+PE36_07177_p-45(desC)            3.49e-08  [+1(3.49e-08)]
+AHA_3493_p-64(hyIII)             9.78e-09  [+1(9.78e-09)]
+AHA_2280_p-57(fabA)              2.12e-10  [+1(2.12e-10)]
+AHA_0722_p-98(lcfH)              1.11e-09  [+1(1.11e-09)]
+AHA_0722_p-33(lcfH)              4.18e-07  [+1(4.18e-07)]
+AHA_2144_p-192(fadL)             7.03e-07  [+1(7.03e-07)]
+AHA_2144_p-179(fadL)             6.60e-08  [+1(6.60e-08)]
+AHA_3740_p-65(plsC)              1.32e-08  [+1(1.32e-08)]
+AHA_0367_p-131(fabR)             2.31e-08  [+1(2.31e-08)]
+AHA_0366_p-35(OLE1)              1.06e-08  [+1(1.06e-08)]
+ASA_0719_p-33(lcfH)              4.18e-07  [+1(4.18e-07)]
+ASA_3966_p-35(OLE1)              1.06e-08  [+1(1.06e-08)]
+ASA_0824_p-64(hyIII)             9.78e-09  [+1(9.78e-09)]
+ASA_2000_p-57(fabA)              1.20e-08  [+1(1.20e-08)]
+ASA_2157_p-192(fadL)             9.60e-07  [+1(9.60e-07)]
+ASA_2157_p-179(fadL)             3.05e-07  [+1(3.05e-07)]
+ASA_3965_p-132(fabR)             2.31e-08  [+1(2.31e-08)]
+ASA_0546_p-65(plsC)              1.32e-08  [+1(1.32e-08)]
+ASA_0719_p-97(lcfH)              4.17e-10  [+1(4.17e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

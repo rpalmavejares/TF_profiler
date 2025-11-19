@@ -1,0 +1,316 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/KdgR_Thermotogales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TM0064_p-32(uxaC)        1.0000     19  TM0065_p-88(kdgR)        1.0000     19  
+TM0071_p-135(xloE)       1.0000     19  TM0070_p-103(xynB)       1.0000     19  
+TM0060_p-199(xtpF)       1.0000     19  TM0061_p-138(xynA1)      1.0000     19  
+TRQ2_0882_p-88(kdgR)     1.0000     19  TRQ2_0883_p-32(uxaC)     1.0000     19  
+TRQ2_0886_p-199(xtpF)    1.0000     19  TRQ2_0885_p-138(xynA1)   1.0000     19  
+CTN_0629_p-48(kdgR)      1.0000     19  CTN_0630_p-33(uxaC)      1.0000     19  
+CTN_0633_p-191(n/a)      1.0000     19  CTN_0632_p-91(xynA1)     1.0000     19  
+Tpet_0860_p-32(uxaC)     1.0000     19  Tpet_0859_p-88(kdgR)     1.0000     19  
+Tpet_0853_p-136(xloE)    1.0000     19  Tpet_0854_p-103(xynB)    1.0000     19  
+Tpet_0863_p-139(xynA1)   1.0000     19  Tpet_0864_p-199(xtpF)    1.0000     19  
+Tnap_0695_p-88(kdgR)     1.0000     19  Tnap_0694_p-32(uxaC)     1.0000     19  
+Tnap_0701_p-135(xloE)    1.0000     19  Tnap_0700_p-103(xynB)    1.0000     19  
+Tnap_0691_p-138(xynA1)   1.0000     19  Tnap_0690_p-198(xtpF)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/KdgR_Thermotogales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/KdgR_Thermotogales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       26    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             494    N=              26
+sample: seed=            0    hsfrac=          0
+        searchsize=    494    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.37 C 0.13 G 0.13 T 0.37 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.369 C 0.131 G 0.131 T 0.369 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TKTGAAARWNWYTTTCAMA MEME-1	width =  19  sites =  26  llr = 390  E-value = 4.6e-129
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::21aaa43341::::85a
+pos.-specific     C  ::::::::2225:::9:5:
+probability       G  :5:9:::5222::::::::
+matrix            T  a58::::14334aaa12::
+
+         bits    2.9                    
+                 2.6                    
+                 2.4    *           *   
+                 2.1    *           *   
+Relative         1.8    *           *   
+Entropy          1.5 *  ****     ****  *
+(21.6 bits)      1.2 ** ****     **** **
+                 0.9 ** ****     **** **
+                 0.6 ********   ********
+                 0.3 ********   ********
+                 0.0 -------------------
+
+Multilevel           TGTGAAAGTAACTTTCACA
+consensus             T     AATTT     A 
+sequence                      C         
+                              G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Tnap_0690_p-198(xtpF)         1  2.18e-09          . TGTGAAAGGAACTTTCAAA           
+Tnap_0691_p-138(xynA1)        1  2.18e-09          . TTTGAAAGTTCCTTTCACA           
+Tpet_0864_p-199(xtpF)         1  2.18e-09          . TGTGAAAGGAACTTTCAAA           
+Tpet_0863_p-139(xynA1)        1  2.18e-09          . TTTGAAAGTTCCTTTCACA           
+TRQ2_0885_p-138(xynA1)        1  2.18e-09          . TTTGAAAGTTCCTTTCACA           
+TRQ2_0886_p-199(xtpF)         1  2.18e-09          . TGTGAAAGGAACTTTCAAA           
+TM0061_p-138(xynA1)           1  2.18e-09          . TTTGAAAGTTCCTTTCACA           
+TM0060_p-199(xtpF)            1  2.18e-09          . TGTGAAAGGAACTTTCAAA           
+CTN_0632_p-91(xynA1)          1  4.52e-09          . TTTGAAAGCCTTTTTCACA           
+CTN_0633_p-191(n/a)           1  4.52e-09          . TGTGAAAAAGGCTTTCAAA           
+CTN_0630_p-33(uxaC)           1  2.37e-08          . TGAGAAAATCATTTTCACA           
+CTN_0629_p-48(kdgR)           1  2.37e-08          . TGTGAAAATGATTTTCTCA           
+Tnap_0694_p-32(uxaC)          1  6.07e-08          . TGAGAAAACCATTTTCAAA           
+Tnap_0695_p-88(kdgR)          1  6.07e-08          . TTTGAAAATGGTTTTCTCA           
+Tpet_0859_p-88(kdgR)          1  6.07e-08          . TTTGAAAATGGTTTTCTCA           
+Tpet_0860_p-32(uxaC)          1  6.07e-08          . TGAGAAAACCATTTTCAAA           
+TRQ2_0883_p-32(uxaC)          1  6.07e-08          . TGAGAAAACCATTTTCAAA           
+TRQ2_0882_p-88(kdgR)          1  6.07e-08          . TTTGAAAATGGTTTTCTCA           
+TM0065_p-88(kdgR)             1  6.07e-08          . TTTGAAAATGGTTTTCTCA           
+TM0064_p-32(uxaC)             1  6.07e-08          . TGAGAAAACCATTTTCAAA           
+Tnap_0700_p-103(xynB)         1  1.12e-06          . TGTAAAAGATTATTTCAAA           
+Tnap_0701_p-135(xloE)         1  1.12e-06          . TTTGAAATAATCTTTTACA           
+Tpet_0854_p-103(xynB)         1  1.12e-06          . TGTAAAAGATTATTTCAAA           
+Tpet_0853_p-136(xloE)         1  1.12e-06          . TTTGAAATAATCTTTTACA           
+TM0070_p-103(xynB)            1  1.12e-06          . TGTAAAAGATTATTTCAAA           
+TM0071_p-135(xloE)            1  1.12e-06          . TTTGAAATAATCTTTTACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tnap_0690_p-198(xtpF)             2.2e-09  [+1]
+Tnap_0691_p-138(xynA1)            2.2e-09  [+1]
+Tpet_0864_p-199(xtpF)             2.2e-09  [+1]
+Tpet_0863_p-139(xynA1)            2.2e-09  [+1]
+TRQ2_0885_p-138(xynA1)            2.2e-09  [+1]
+TRQ2_0886_p-199(xtpF)             2.2e-09  [+1]
+TM0061_p-138(xynA1)               2.2e-09  [+1]
+TM0060_p-199(xtpF)                2.2e-09  [+1]
+CTN_0632_p-91(xynA1)              4.5e-09  [+1]
+CTN_0633_p-191(n/a)               4.5e-09  [+1]
+CTN_0630_p-33(uxaC)               2.4e-08  [+1]
+CTN_0629_p-48(kdgR)               2.4e-08  [+1]
+Tnap_0694_p-32(uxaC)              6.1e-08  [+1]
+Tnap_0695_p-88(kdgR)              6.1e-08  [+1]
+Tpet_0859_p-88(kdgR)              6.1e-08  [+1]
+Tpet_0860_p-32(uxaC)              6.1e-08  [+1]
+TRQ2_0883_p-32(uxaC)              6.1e-08  [+1]
+TRQ2_0882_p-88(kdgR)              6.1e-08  [+1]
+TM0065_p-88(kdgR)                 6.1e-08  [+1]
+TM0064_p-32(uxaC)                 6.1e-08  [+1]
+Tnap_0700_p-103(xynB)             1.1e-06  [+1]
+Tnap_0701_p-135(xloE)             1.1e-06  [+1]
+Tpet_0854_p-103(xynB)             1.1e-06  [+1]
+Tpet_0853_p-136(xloE)             1.1e-06  [+1]
+TM0070_p-103(xynB)                1.1e-06  [+1]
+TM0071_p-135(xloE)                1.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TKTGAAARWNWYTTTCAMA width=19 seqs=26
+Tnap_0690_p-198(xtpF)    (    1) TGTGAAAGGAACTTTCAAA  1 
+Tnap_0691_p-138(xynA1)   (    1) TTTGAAAGTTCCTTTCACA  1 
+Tpet_0864_p-199(xtpF)    (    1) TGTGAAAGGAACTTTCAAA  1 
+Tpet_0863_p-139(xynA1)   (    1) TTTGAAAGTTCCTTTCACA  1 
+TRQ2_0885_p-138(xynA1)   (    1) TTTGAAAGTTCCTTTCACA  1 
+TRQ2_0886_p-199(xtpF)    (    1) TGTGAAAGGAACTTTCAAA  1 
+TM0061_p-138(xynA1)      (    1) TTTGAAAGTTCCTTTCACA  1 
+TM0060_p-199(xtpF)       (    1) TGTGAAAGGAACTTTCAAA  1 
+CTN_0632_p-91(xynA1)     (    1) TTTGAAAGCCTTTTTCACA  1 
+CTN_0633_p-191(n/a)      (    1) TGTGAAAAAGGCTTTCAAA  1 
+CTN_0630_p-33(uxaC)      (    1) TGAGAAAATCATTTTCACA  1 
+CTN_0629_p-48(kdgR)      (    1) TGTGAAAATGATTTTCTCA  1 
+Tnap_0694_p-32(uxaC)     (    1) TGAGAAAACCATTTTCAAA  1 
+Tnap_0695_p-88(kdgR)     (    1) TTTGAAAATGGTTTTCTCA  1 
+Tpet_0859_p-88(kdgR)     (    1) TTTGAAAATGGTTTTCTCA  1 
+Tpet_0860_p-32(uxaC)     (    1) TGAGAAAACCATTTTCAAA  1 
+TRQ2_0883_p-32(uxaC)     (    1) TGAGAAAACCATTTTCAAA  1 
+TRQ2_0882_p-88(kdgR)     (    1) TTTGAAAATGGTTTTCTCA  1 
+TM0065_p-88(kdgR)        (    1) TTTGAAAATGGTTTTCTCA  1 
+TM0064_p-32(uxaC)        (    1) TGAGAAAACCATTTTCAAA  1 
+Tnap_0700_p-103(xynB)    (    1) TGTAAAAGATTATTTCAAA  1 
+Tnap_0701_p-135(xloE)    (    1) TTTGAAATAATCTTTTACA  1 
+Tpet_0854_p-103(xynB)    (    1) TGTAAAAGATTATTTCAAA  1 
+Tpet_0853_p-136(xloE)    (    1) TTTGAAATAATCTTTTACA  1 
+TM0070_p-103(xynB)       (    1) TGTAAAAGATTATTTCAAA  1 
+TM0071_p-135(xloE)       (    1) TTTGAAATAATCTTTTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 26 bayes= 1.4975 E= 4.6e-129 
+ -1134  -1134  -1134    144 
+ -1134  -1134    204     32 
+   -94  -1134  -1134    113 
+  -168  -1134    276  -1134 
+   144  -1134  -1134  -1134 
+   144  -1134  -1134  -1134 
+   144  -1134  -1134  -1134 
+    20  -1134    182   -168 
+   -46     56     24      6 
+   -46     82     82    -46 
+     6     24     56    -46 
+  -168    182  -1134     20 
+ -1134  -1134  -1134    144 
+ -1134  -1134  -1134    144 
+ -1134  -1134  -1134    144 
+ -1134    276  -1134   -168 
+   113  -1134  -1134    -94 
+    32    204  -1134  -1134 
+   144  -1134  -1134  -1134 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 26 E= 4.6e-129 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.538462  0.461538 
+ 0.192308  0.000000  0.000000  0.807692 
+ 0.115385  0.000000  0.884615  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.423077  0.000000  0.461538  0.115385 
+ 0.269231  0.192308  0.153846  0.384615 
+ 0.269231  0.230769  0.230769  0.269231 
+ 0.384615  0.153846  0.192308  0.269231 
+ 0.115385  0.461538  0.000000  0.423077 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.884615  0.000000  0.115385 
+ 0.807692  0.000000  0.000000  0.192308 
+ 0.461538  0.538462  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKTGAAARWNWYTTTCAMA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GT]TGAAA[GA][TA][ATCG][AT][CT]TTTCA[CA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TM0064_p-32(uxaC)                6.07e-08  [+1(6.07e-08)]
+TM0065_p-88(kdgR)                6.07e-08  [+1(6.07e-08)]
+TM0071_p-135(xloE)               1.12e-06  [+1(1.12e-06)]
+TM0070_p-103(xynB)               1.12e-06  [+1(1.12e-06)]
+TM0060_p-199(xtpF)               2.18e-09  [+1(2.18e-09)]
+TM0061_p-138(xynA1)              2.18e-09  [+1(2.18e-09)]
+TRQ2_0882_p-88(kdgR)             6.07e-08  [+1(6.07e-08)]
+TRQ2_0883_p-32(uxaC)             6.07e-08  [+1(6.07e-08)]
+TRQ2_0886_p-199(xtpF)            2.18e-09  [+1(2.18e-09)]
+TRQ2_0885_p-138(xynA1)           2.18e-09  [+1(2.18e-09)]
+CTN_0629_p-48(kdgR)              2.37e-08  [+1(2.37e-08)]
+CTN_0630_p-33(uxaC)              2.37e-08  [+1(2.37e-08)]
+CTN_0633_p-191(n/a)              4.52e-09  [+1(4.52e-09)]
+CTN_0632_p-91(xynA1)             4.52e-09  [+1(4.52e-09)]
+Tpet_0860_p-32(uxaC)             6.07e-08  [+1(6.07e-08)]
+Tpet_0859_p-88(kdgR)             6.07e-08  [+1(6.07e-08)]
+Tpet_0853_p-136(xloE)            1.12e-06  [+1(1.12e-06)]
+Tpet_0854_p-103(xynB)            1.12e-06  [+1(1.12e-06)]
+Tpet_0863_p-139(xynA1)           2.18e-09  [+1(2.18e-09)]
+Tpet_0864_p-199(xtpF)            2.18e-09  [+1(2.18e-09)]
+Tnap_0695_p-88(kdgR)             6.07e-08  [+1(6.07e-08)]
+Tnap_0694_p-32(uxaC)             6.07e-08  [+1(6.07e-08)]
+Tnap_0701_p-135(xloE)            1.12e-06  [+1(1.12e-06)]
+Tnap_0700_p-103(xynB)            1.12e-06  [+1(1.12e-06)]
+Tnap_0691_p-138(xynA1)           2.18e-09  [+1(2.18e-09)]
+Tnap_0690_p-198(xtpF)            2.18e-09  [+1(2.18e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

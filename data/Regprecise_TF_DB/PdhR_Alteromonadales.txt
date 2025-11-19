@@ -1,0 +1,268 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PdhR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_3349_p-79(pdhR)     1.0000     15  MADE_03226_p-104(pdhR)   1.0000     15  
+GHTCC_010100009300_p-221 1.0000     15  GHTCC_010100002754_p-71( 1.0000     15  
+CPS_1049_p-69(oadA)      1.0000     15  CPS_4809_p-91(pdhR)      1.0000     15  
+CPS_4809_p-244(pdhR)     1.0000     15  ATW7_11636_p-118(oadG)   1.0000     15  
+ATW7_12388_p-91(pdhR)    1.0000     15  PSHAa0538_p-123(oadG)    1.0000     15  
+PSHAa2231_p-79(cyoA)     1.0000     15  PSHAa0390_p-93(pdhR)     1.0000     15  
+PTD2_14632_p-136(oadG)   1.0000     15  PTD2_08454_p-58(pdhR)    1.0000     15  
+PTD2_08454_p-226(pdhR)   1.0000     15  OS145_05110_p-36(pdhR)   1.0000     15  
+IL0457_p-23(pdhR)        1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PdhR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PdhR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             255    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    255    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.278 C 0.169 G 0.173 T 0.38 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.278 C 0.17 G 0.174 T 0.378 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTGGTHTKACCAAT MEME-1	width =  15  sites =  17  llr = 258  E-value = 8.6e-084
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6111::31:a::99:
+pos.-specific     C  1:::::4:::aa:::
+probability       G  :1:9a1::5:::1::
+matrix            T  289::9395::::1a
+
+         bits    2.6     *     **   
+                 2.3     *     **   
+                 2.0    **     **   
+                 1.8    **    ***   
+Relative         1.5    **    ***** 
+Entropy          1.3    **    ******
+(21.9 bits)      1.0   **** ********
+                 0.8  ***** ********
+                 0.5 ***************
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           ATTGGTCTTACCAAT
+consensus            T     A G      
+sequence                   T        
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+CPS_4809_p-91(pdhR)           1  3.78e-09          . ATTGGTCTTACCAAT           
+GHTCC_010100009300_p-221      1  3.78e-09          . ATTGGTCTTACCAAT           
+Patl_3349_p-79(pdhR)          1  3.78e-09          . ATTGGTCTTACCAAT           
+IL0457_p-23(pdhR)             1  1.07e-08          . TTTGGTCTGACCAAT           
+CPS_4809_p-244(pdhR)          1  1.67e-08          . ATTGGTCAGACCAAT           
+PTD2_14632_p-136(oadG)        1  2.30e-08          . ATTGGTTTTACCAAT           
+PSHAa0538_p-123(oadG)         1  2.30e-08          . ATTGGTTTTACCAAT           
+ATW7_11636_p-118(oadG)        1  2.30e-08          . ATTGGTTTTACCAAT           
+ATW7_12388_p-91(pdhR)         1  2.99e-08          . CTTGGTATGACCAAT           
+PTD2_08454_p-58(pdhR)         1  3.25e-08          . TTTGGTATGACCAAT           
+PSHAa0390_p-93(pdhR)          1  3.25e-08          . TTTGGTATGACCAAT           
+OS145_05110_p-36(pdhR)        1  7.43e-08          . TTTGGTCAGACCAAT           
+GHTCC_010100002754_p-71(      1  9.26e-08          . AATGGTATTACCAAT           
+MADE_03226_p-104(pdhR)        1  9.26e-08          . AATGGTATTACCAAT           
+PTD2_08454_p-226(pdhR)        1  3.08e-07          . AGTGGTCTGACCATT           
+CPS_1049_p-69(oadA)           1  8.58e-07          . ATAAGTTTGACCAAT           
+PSHAa2231_p-79(cyoA)          1  1.10e-06          . CTTGGGTTTACCGAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CPS_4809_p-91(pdhR)               3.8e-09  [+1]
+GHTCC_010100009300_p-221          3.8e-09  [+1]
+Patl_3349_p-79(pdhR)              3.8e-09  [+1]
+IL0457_p-23(pdhR)                 1.1e-08  [+1]
+CPS_4809_p-244(pdhR)              1.7e-08  [+1]
+PTD2_14632_p-136(oadG)            2.3e-08  [+1]
+PSHAa0538_p-123(oadG)             2.3e-08  [+1]
+ATW7_11636_p-118(oadG)            2.3e-08  [+1]
+ATW7_12388_p-91(pdhR)               3e-08  [+1]
+PTD2_08454_p-58(pdhR)             3.3e-08  [+1]
+PSHAa0390_p-93(pdhR)              3.3e-08  [+1]
+OS145_05110_p-36(pdhR)            7.4e-08  [+1]
+GHTCC_010100002754_p-71(          9.3e-08  [+1]
+MADE_03226_p-104(pdhR)            9.3e-08  [+1]
+PTD2_08454_p-226(pdhR)            3.1e-07  [+1]
+CPS_1049_p-69(oadA)               8.6e-07  [+1]
+PSHAa2231_p-79(cyoA)              1.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTGGTHTKACCAAT width=15 seqs=17
+CPS_4809_p-91(pdhR)      (    1) ATTGGTCTTACCAAT  1 
+GHTCC_010100009300_p-221 (    1) ATTGGTCTTACCAAT  1 
+Patl_3349_p-79(pdhR)     (    1) ATTGGTCTTACCAAT  1 
+IL0457_p-23(pdhR)        (    1) TTTGGTCTGACCAAT  1 
+CPS_4809_p-244(pdhR)     (    1) ATTGGTCAGACCAAT  1 
+PTD2_14632_p-136(oadG)   (    1) ATTGGTTTTACCAAT  1 
+PSHAa0538_p-123(oadG)    (    1) ATTGGTTTTACCAAT  1 
+ATW7_11636_p-118(oadG)   (    1) ATTGGTTTTACCAAT  1 
+ATW7_12388_p-91(pdhR)    (    1) CTTGGTATGACCAAT  1 
+PTD2_08454_p-58(pdhR)    (    1) TTTGGTATGACCAAT  1 
+PSHAa0390_p-93(pdhR)     (    1) TTTGGTATGACCAAT  1 
+OS145_05110_p-36(pdhR)   (    1) TTTGGTCAGACCAAT  1 
+GHTCC_010100002754_p-71( (    1) AATGGTATTACCAAT  1 
+MADE_03226_p-104(pdhR)   (    1) AATGGTATTACCAAT  1 
+PTD2_08454_p-226(pdhR)   (    1) AGTGGTCTGACCATT  1 
+CPS_1049_p-69(oadA)      (    1) ATAAGTTTGACCAAT  1 
+PSHAa2231_p-79(cyoA)     (    1) CTTGGGTTTACCGAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 17 bayes= 1.26303 E= 8.6e-084 
+   122    -53  -1073    -68 
+  -124  -1073   -156    112 
+  -224  -1073  -1073    131 
+  -224  -1073    244  -1073 
+ -1073  -1073    252  -1073 
+ -1073  -1073   -156    131 
+     8    128  -1073    -36 
+  -124  -1073  -1073    122 
+ -1073  -1073    144     48 
+   185  -1073  -1073  -1073 
+ -1073    256  -1073  -1073 
+ -1073    256  -1073  -1073 
+   176  -1073   -156  -1073 
+   176  -1073  -1073   -268 
+ -1073  -1073  -1073    140 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 17 E= 8.6e-084 
+ 0.647059  0.117647  0.000000  0.235294 
+ 0.117647  0.000000  0.058824  0.823529 
+ 0.058824  0.000000  0.000000  0.941176 
+ 0.058824  0.000000  0.941176  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.058824  0.941176 
+ 0.294118  0.411765  0.000000  0.294118 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.000000  0.000000  0.470588  0.529412 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.941176  0.000000  0.058824  0.000000 
+ 0.941176  0.000000  0.000000  0.058824 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGGTHTKACCAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]TTGGT[CAT]T[TG]ACCAAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_3349_p-79(pdhR)             3.78e-09  [+1(3.78e-09)]
+MADE_03226_p-104(pdhR)           9.26e-08  [+1(9.26e-08)]
+GHTCC_010100009300_p-221         3.78e-09  [+1(3.78e-09)]
+GHTCC_010100002754_p-71(         9.26e-08  [+1(9.26e-08)]
+CPS_1049_p-69(oadA)              8.58e-07  [+1(8.58e-07)]
+CPS_4809_p-91(pdhR)              3.78e-09  [+1(3.78e-09)]
+CPS_4809_p-244(pdhR)             1.67e-08  [+1(1.67e-08)]
+ATW7_11636_p-118(oadG)           2.30e-08  [+1(2.30e-08)]
+ATW7_12388_p-91(pdhR)            2.99e-08  [+1(2.99e-08)]
+PSHAa0538_p-123(oadG)            2.30e-08  [+1(2.30e-08)]
+PSHAa2231_p-79(cyoA)             1.10e-06  [+1(1.10e-06)]
+PSHAa0390_p-93(pdhR)             3.25e-08  [+1(3.25e-08)]
+PTD2_14632_p-136(oadG)           2.30e-08  [+1(2.30e-08)]
+PTD2_08454_p-58(pdhR)            3.25e-08  [+1(3.25e-08)]
+PTD2_08454_p-226(pdhR)           3.08e-07  [+1(3.08e-07)]
+OS145_05110_p-36(pdhR)           7.43e-08  [+1(7.43e-08)]
+IL0457_p-23(pdhR)                1.07e-08  [+1(1.07e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,294 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/NorR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PE36_10688_p-193(hmp)    1.0000     19  PE36_04748_p-119(norV)   1.0000     19  
+PE36_04748_p-163(norV)   1.0000     19  PE36_04753_p-37(norR)    1.0000     19  
+PE36_04753_p-81(norR)    1.0000     19  PE36_04753_p-56(norR)    1.0000     19  
+PE36_10688_p-149(hmp)    1.0000     19  PE36_10688_p-174(hmp)    1.0000     19  
+PE36_04748_p-144(norV)   1.0000     19  AHA_0119_p-122(norV)     1.0000     19  
+AHA_0118_p-67(norR)      1.0000     19  AHA_0118_p-42(norR)      1.0000     19  
+AHA_0118_p-22(norR)      1.0000     19  AHA_0119_p-167(norV)     1.0000     19  
+AHA_0119_p-147(norV)     1.0000     19  ASA_4272_p-168(norV)     1.0000     19  
+ASA_4273_p-67(norR)      1.0000     19  ASA_4273_p-42(norR)      1.0000     19  
+ASA_4273_p-22(norR)      1.0000     19  ASA_4272_p-148(norV)     1.0000     19  
+ASA_4272_p-123(norV)     1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/NorR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/NorR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             399    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    399    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.316 C 0.178 G 0.178 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.315 C 0.179 G 0.179 T 0.328 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF SATTGTCWWWWWGACAATS MEME-1	width =  19  sites =  21  llr = 292  E-value = 7.8e-089
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  16:2:::63563:a:8711
+pos.-specific     C  4:2:::91::::1:a::32
+probability       G  23::a:1::::19:::2:5
+matrix            T  2188:a:37545:::2:61
+
+         bits    2.5     *         *    
+                 2.2     *         *    
+                 2.0     *       * *    
+                 1.7     * *     ***    
+Relative         1.5     ***     ***    
+Entropy          1.2     ***     ***    
+(20.0 bits)      1.0   *****     ****   
+                 0.7  ****** *** *****  
+                 0.5  ****** *** *******
+                 0.2 *******************
+                 0.0 -------------------
+
+Multilevel           CATTGTCATAATGACAATG
+consensus            GGC    TATTA    GCC
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+AHA_0118_p-67(norR)           1  3.28e-09          . CATTGTCATTTAGACAACC           
+AHA_0119_p-122(norV)          1  7.80e-09          . GGTTGTCTAAATGACAATG           
+AHA_0118_p-22(norR)           1  1.08e-08          . CACTGTCATTTGGACAATC           
+PE36_04748_p-119(norV)        1  1.97e-08          . GGTAGTCATTATGACAGTG           
+ASA_4273_p-67(norR)           1  2.28e-08          . CATTGTCATTTAGACAACT           
+PE36_04753_p-81(norR)         1  2.28e-08          . CACTGTCATAATGACTACC           
+AHA_0119_p-167(norV)          1  2.62e-08          . GATTGTCCAAATGACAGTG           
+ASA_4272_p-123(norV)          1  4.41e-08          . AGTTGTCTAAATGACAATG           
+PE36_10688_p-149(hmp)         1  4.98e-08          . GGTTGTCATAAGCACAACG           
+ASA_4273_p-22(norR)           1  5.63e-08          . CACTGTCATTTGGACAATT           
+PE36_04748_p-163(norV)        1  8.90e-08          . CACTGTCTTATCGACAGTG           
+ASA_4272_p-168(norV)          1  1.11e-07          . AATTGTCCAAATGACAGTG           
+PE36_04753_p-37(norR)         1  1.37e-07          . CACTGTCGATAAGACAGTG           
+PE36_04748_p-144(norV)        1  2.05e-07          . TATAGTCATAATGACAATA           
+PE36_04753_p-56(norR)         1  2.49e-07          . TATTGTCATTATGACTATA           
+PE36_10688_p-193(hmp)         1  5.37e-07          . AGTTGTCATTTAGACACCC           
+ASA_4273_p-42(norR)           1  8.47e-07          . CATAGTCAAAAACACAAAG           
+ASA_4272_p-148(norV)          1  1.28e-06          . CTTTGTGTTTTTGACTATG           
+PE36_10688_p-174(hmp)         1  2.72e-06          . TGTTGTTTTATTGACAACT           
+AHA_0118_p-42(norR)           1  3.17e-06          . TATAGTCAAAAACACAAAC           
+AHA_0119_p-147(norV)          1  4.79e-06          . GTTTGTGTTTTTGACTATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AHA_0118_p-67(norR)               3.3e-09  [+1]
+AHA_0119_p-122(norV)              7.8e-09  [+1]
+AHA_0118_p-22(norR)               1.1e-08  [+1]
+PE36_04748_p-119(norV)              2e-08  [+1]
+ASA_4273_p-67(norR)               2.3e-08  [+1]
+PE36_04753_p-81(norR)             2.3e-08  [+1]
+AHA_0119_p-167(norV)              2.6e-08  [+1]
+ASA_4272_p-123(norV)              4.4e-08  [+1]
+PE36_10688_p-149(hmp)               5e-08  [+1]
+ASA_4273_p-22(norR)               5.6e-08  [+1]
+PE36_04748_p-163(norV)            8.9e-08  [+1]
+ASA_4272_p-168(norV)              1.1e-07  [+1]
+PE36_04753_p-37(norR)             1.4e-07  [+1]
+PE36_04748_p-144(norV)            2.1e-07  [+1]
+PE36_04753_p-56(norR)             2.5e-07  [+1]
+PE36_10688_p-193(hmp)             5.4e-07  [+1]
+ASA_4273_p-42(norR)               8.5e-07  [+1]
+ASA_4272_p-148(norV)              1.3e-06  [+1]
+PE36_10688_p-174(hmp)             2.7e-06  [+1]
+AHA_0118_p-42(norR)               3.2e-06  [+1]
+AHA_0119_p-147(norV)              4.8e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF SATTGTCWWWWWGACAATS width=19 seqs=21
+AHA_0118_p-67(norR)      (    1) CATTGTCATTTAGACAACC  1 
+AHA_0119_p-122(norV)     (    1) GGTTGTCTAAATGACAATG  1 
+AHA_0118_p-22(norR)      (    1) CACTGTCATTTGGACAATC  1 
+PE36_04748_p-119(norV)   (    1) GGTAGTCATTATGACAGTG  1 
+ASA_4273_p-67(norR)      (    1) CATTGTCATTTAGACAACT  1 
+PE36_04753_p-81(norR)    (    1) CACTGTCATAATGACTACC  1 
+AHA_0119_p-167(norV)     (    1) GATTGTCCAAATGACAGTG  1 
+ASA_4272_p-123(norV)     (    1) AGTTGTCTAAATGACAATG  1 
+PE36_10688_p-149(hmp)    (    1) GGTTGTCATAAGCACAACG  1 
+ASA_4273_p-22(norR)      (    1) CACTGTCATTTGGACAATT  1 
+PE36_04748_p-163(norV)   (    1) CACTGTCTTATCGACAGTG  1 
+ASA_4272_p-168(norV)     (    1) AATTGTCCAAATGACAGTG  1 
+PE36_04753_p-37(norR)    (    1) CACTGTCGATAAGACAGTG  1 
+PE36_04748_p-144(norV)   (    1) TATAGTCATAATGACAATA  1 
+PE36_04753_p-56(norR)    (    1) TATTGTCATTATGACTATA  1 
+PE36_10688_p-193(hmp)    (    1) AGTTGTCATTTAGACACCC  1 
+ASA_4273_p-42(norR)      (    1) CATAGTCAAAAACACAAAG  1 
+ASA_4272_p-148(norV)     (    1) CTTTGTGTTTTTGACTATG  1 
+PE36_10688_p-174(hmp)    (    1) TGTTGTTTTATTGACAACT  1 
+AHA_0118_p-42(norR)      (    1) TATAGTCAAAAACACAAAC  1 
+AHA_0119_p-147(norV)     (    1) GTTTGTGTTTTTGACTATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 21 bayes= 1.38995 E= 7.8e-089 
+  -114    126     41    -78 
+    97  -1104     68   -178 
+ -1104     41  -1104    122 
+   -73  -1104  -1104    130 
+ -1104  -1104    248  -1104 
+ -1104  -1104  -1104    161 
+ -1104    226    -91   -278 
+    86    -91   -191    -20 
+     8  -1104  -1104    102 
+    73  -1104  -1104     54 
+    86  -1104  -1104     39 
+   -14   -191    -32     68 
+ -1104    -32    226  -1104 
+   167  -1104  -1104  -1104 
+ -1104    248  -1104  -1104 
+   136  -1104  -1104    -78 
+   118   -191     41  -1104 
+  -172     68  -1104     92 
+  -114     41    141   -120 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 21 E= 7.8e-089 
+ 0.142857  0.428571  0.238095  0.190476 
+ 0.619048  0.000000  0.285714  0.095238 
+ 0.000000  0.238095  0.000000  0.761905 
+ 0.190476  0.000000  0.000000  0.809524 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.857143  0.095238  0.047619 
+ 0.571429  0.095238  0.047619  0.285714 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.523810  0.000000  0.000000  0.476190 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.285714  0.047619  0.142857  0.523810 
+ 0.000000  0.142857  0.857143  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.809524  0.000000  0.000000  0.190476 
+ 0.714286  0.047619  0.238095  0.000000 
+ 0.095238  0.285714  0.000000  0.619048 
+ 0.142857  0.238095  0.476190  0.142857 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SATTGTCWWWWWGACAATS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CG][AG][TC]TGTC[AT][TA][AT][AT][TA]GACA[AG][TC][GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PE36_10688_p-193(hmp)            5.37e-07  [+1(5.37e-07)]
+PE36_04748_p-119(norV)           1.97e-08  [+1(1.97e-08)]
+PE36_04748_p-163(norV)           8.90e-08  [+1(8.90e-08)]
+PE36_04753_p-37(norR)            1.37e-07  [+1(1.37e-07)]
+PE36_04753_p-81(norR)            2.28e-08  [+1(2.28e-08)]
+PE36_04753_p-56(norR)            2.49e-07  [+1(2.49e-07)]
+PE36_10688_p-149(hmp)            4.98e-08  [+1(4.98e-08)]
+PE36_10688_p-174(hmp)            2.72e-06  [+1(2.72e-06)]
+PE36_04748_p-144(norV)           2.05e-07  [+1(2.05e-07)]
+AHA_0119_p-122(norV)             7.80e-09  [+1(7.80e-09)]
+AHA_0118_p-67(norR)              3.28e-09  [+1(3.28e-09)]
+AHA_0118_p-42(norR)              3.17e-06  [+1(3.17e-06)]
+AHA_0118_p-22(norR)              1.08e-08  [+1(1.08e-08)]
+AHA_0119_p-167(norV)             2.62e-08  [+1(2.62e-08)]
+AHA_0119_p-147(norV)             4.79e-06  [+1(4.79e-06)]
+ASA_4272_p-168(norV)             1.11e-07  [+1(1.11e-07)]
+ASA_4273_p-67(norR)              2.28e-08  [+1(2.28e-08)]
+ASA_4273_p-42(norR)              8.47e-07  [+1(8.47e-07)]
+ASA_4273_p-22(norR)              5.63e-08  [+1(5.63e-08)]
+ASA_4272_p-148(norV)             1.28e-06  [+1(1.28e-06)]
+ASA_4272_p-123(norV)             4.41e-08  [+1(4.41e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

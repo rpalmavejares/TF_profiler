@@ -1,0 +1,319 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Fur_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+OA2633_11590_p-27(piuC)  1.0000     19  OA2633_10854_p-30(n/a)   1.0000     19  
+OA2633_12430_p-77(bfd)   1.0000     19  OA2633_12920_p-7(OA2633_ 1.0000     19  
+OA2633_01936_p-143(hemA) 1.0000     19  OA2633_05321_p-80(omp3)  1.0000     19  
+OA2633_13875_p-134(piuB) 1.0000     19  OA2633_12420_p-104(bfr)  1.0000     19  
+OA2633_04511_p-52(omp6)  1.0000     19  OA2633_04511_p-81(omp6)  1.0000     19  
+OA2633_08249_p-65(hugA)  1.0000     19  OA2633_08249_p-119(hugA) 1.0000     19  
+OA2633_02911_p-221(nuoA) 1.0000     19  OA2633_09259_p-132(sdhC) 1.0000     19  
+OA2633_15080_p-89(fbpA)  1.0000     19  OA2633_12430_p-109(bfd)  1.0000     19  
+OA2633_08069_p-47(omp1)  1.0000     19  HNE_2174_p-54(omp1)      1.0000     19  
+HNE_3075_p-18(bfd)       1.0000     19  HNE_3320_p-58(n/a)       1.0000     19  
+HNE_2693_p-57(fbpA)      1.0000     19  HNE_1742_p-186(nuoA)     1.0000     19  
+HNE_2116_p-129(omp4)     1.0000     19  HNE_2116_p-154(omp4)     1.0000     19  
+HNE_1653_p-87(omp2)      1.0000     19  HNE_1653_p-33(omp2)      1.0000     19  
+HNE_1625_p-68(piuC)      1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Fur_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Fur_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             513    N=              27
+sample: seed=            0    hsfrac=          0
+        searchsize=    513    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.324 C 0.179 G 0.185 T 0.312 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.323 C 0.18 G 0.186 T 0.311 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTGMRAATSATTCKCAAD MEME-1	width =  18  sites =  27  llr = 352  E-value = 5.5e-106
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::53a71:9:11::963
+pos.-specific     C  2::41:116:1:7:a:::
+probability       G  ::a:6:11311::5:123
+matrix            T  7a::::171:7925::24
+
+         bits    2.5   *               
+                 2.2   *           *   
+                 2.0   *           *   
+                 1.7  **  *        *   
+Relative         1.5  **  *        *   
+Entropy          1.2  **  *   *    **  
+(18.8 bits)      1.0  **  *  ** *****  
+                 0.7  *****  ********  
+                 0.5 ****************  
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           TTGAGAATCATTCGCAAT
+consensus               CA   G    T  TA
+sequence                              G
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+HNE_3320_p-58(n/a)            2  5.62e-09          T TTGAAAATCATTCTCAAG           
+OA2633_10854_p-30(n/a)        2  9.54e-09          T TTGCGAATGGTTCGCATG           
+HNE_2693_p-57(fbpA)           2  1.11e-08          C TTGCGATTCATTCTCAAA           
+HNE_2116_p-129(omp4)          2  2.22e-08          A TTGCAAACCATTCTCAAG           
+OA2633_11590_p-27(piuC)       2  5.31e-08          A CTGCAAATCACTCGCAGG           
+HNE_3075_p-18(bfd)            2  6.02e-08          A TTGACACTCATTCGCAAG           
+OA2633_12430_p-109(bfd)       2  6.02e-08          G TTGACACTCATTCGCAAG           
+OA2633_02911_p-221(nuoA)      2  8.38e-08          T TTGAGAGGCATTCGCAAA           
+HNE_1653_p-33(omp2)           2  1.19e-07          A CTGAGAATAATTCGCAAT           
+OA2633_08249_p-65(hugA)       2  1.19e-07          A TTGAGAACTATTCGCAAT           
+HNE_1625_p-68(piuC)           2  1.81e-07          T TTGAGAATGAGTTGCAGT           
+HNE_2174_p-54(omp1)           2  2.25e-07          A TTGCAAATGAGTTGCAAT           
+OA2633_04511_p-81(omp6)       2  2.75e-07          T CTGCAATTCATTCTCATT           
+OA2633_04511_p-52(omp6)       2  4.45e-07          A TTGAGAATGACACGCATT           
+OA2633_12430_p-77(bfd)        2  4.45e-07          A TTGCGAATGATTTTCGGA           
+HNE_1742_p-186(nuoA)          2  4.89e-07          G TTGCGAATTAATCGCAAA           
+OA2633_09259_p-132(sdhC)      2  5.35e-07          A CTGAGAACCGTTTGCAAA           
+OA2633_08069_p-47(omp1)       2  5.86e-07          A TTGATAATCACTCTCAAA           
+HNE_2116_p-154(omp4)          2  7.01e-07          A ATGTAAATCATTCGCAAT           
+OA2633_12920_p-7(OA2633_      2  7.69e-07          T ATGAGAATGATCCGCATT           
+OA2633_15080_p-89(fbpA)       2  1.08e-06          C TTGCGAGACGTTCTCAGA           
+OA2633_13875_p-134(piuB)      2  1.18e-06          A TTGCAAATCATTCTTATA           
+OA2633_01936_p-143(hemA)      2  1.39e-06          T TTGAGAAGCGTTGTCAAG           
+OA2633_12420_p-104(bfr)       2  2.59e-06          T CTGCAACTCAGTTTCAGT           
+HNE_1653_p-87(omp2)           2  2.79e-06          A TTGAGAATGATAATCATT           
+OA2633_08249_p-119(hugA)      2  2.79e-06          A GTGCGAAAGATTCTCACT           
+OA2633_05321_p-80(omp3)       2  1.42e-05          A ATGAGATTGATTATCGAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HNE_3320_p-58(n/a)                5.6e-09  1_[+1]
+OA2633_10854_p-30(n/a)            9.5e-09  1_[+1]
+HNE_2693_p-57(fbpA)               1.1e-08  1_[+1]
+HNE_2116_p-129(omp4)              2.2e-08  1_[+1]
+OA2633_11590_p-27(piuC)           5.3e-08  1_[+1]
+HNE_3075_p-18(bfd)                  6e-08  1_[+1]
+OA2633_12430_p-109(bfd)             6e-08  1_[+1]
+OA2633_02911_p-221(nuoA)          8.4e-08  1_[+1]
+HNE_1653_p-33(omp2)               1.2e-07  1_[+1]
+OA2633_08249_p-65(hugA)           1.2e-07  1_[+1]
+HNE_1625_p-68(piuC)               1.8e-07  1_[+1]
+HNE_2174_p-54(omp1)               2.2e-07  1_[+1]
+OA2633_04511_p-81(omp6)           2.7e-07  1_[+1]
+OA2633_04511_p-52(omp6)           4.5e-07  1_[+1]
+OA2633_12430_p-77(bfd)            4.5e-07  1_[+1]
+HNE_1742_p-186(nuoA)              4.9e-07  1_[+1]
+OA2633_09259_p-132(sdhC)          5.3e-07  1_[+1]
+OA2633_08069_p-47(omp1)           5.9e-07  1_[+1]
+HNE_2116_p-154(omp4)                7e-07  1_[+1]
+OA2633_12920_p-7(OA2633_          7.7e-07  1_[+1]
+OA2633_15080_p-89(fbpA)           1.1e-06  1_[+1]
+OA2633_13875_p-134(piuB)          1.2e-06  1_[+1]
+OA2633_01936_p-143(hemA)          1.4e-06  1_[+1]
+OA2633_12420_p-104(bfr)           2.6e-06  1_[+1]
+HNE_1653_p-87(omp2)               2.8e-06  1_[+1]
+OA2633_08249_p-119(hugA)          2.8e-06  1_[+1]
+OA2633_05321_p-80(omp3)           1.4e-05  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTGMRAATSATTCKCAAD width=18 seqs=27
+HNE_3320_p-58(n/a)       (    2) TTGAAAATCATTCTCAAG  1 
+OA2633_10854_p-30(n/a)   (    2) TTGCGAATGGTTCGCATG  1 
+HNE_2693_p-57(fbpA)      (    2) TTGCGATTCATTCTCAAA  1 
+HNE_2116_p-129(omp4)     (    2) TTGCAAACCATTCTCAAG  1 
+OA2633_11590_p-27(piuC)  (    2) CTGCAAATCACTCGCAGG  1 
+HNE_3075_p-18(bfd)       (    2) TTGACACTCATTCGCAAG  1 
+OA2633_12430_p-109(bfd)  (    2) TTGACACTCATTCGCAAG  1 
+OA2633_02911_p-221(nuoA) (    2) TTGAGAGGCATTCGCAAA  1 
+HNE_1653_p-33(omp2)      (    2) CTGAGAATAATTCGCAAT  1 
+OA2633_08249_p-65(hugA)  (    2) TTGAGAACTATTCGCAAT  1 
+HNE_1625_p-68(piuC)      (    2) TTGAGAATGAGTTGCAGT  1 
+HNE_2174_p-54(omp1)      (    2) TTGCAAATGAGTTGCAAT  1 
+OA2633_04511_p-81(omp6)  (    2) CTGCAATTCATTCTCATT  1 
+OA2633_04511_p-52(omp6)  (    2) TTGAGAATGACACGCATT  1 
+OA2633_12430_p-77(bfd)   (    2) TTGCGAATGATTTTCGGA  1 
+HNE_1742_p-186(nuoA)     (    2) TTGCGAATTAATCGCAAA  1 
+OA2633_09259_p-132(sdhC) (    2) CTGAGAACCGTTTGCAAA  1 
+OA2633_08069_p-47(omp1)  (    2) TTGATAATCACTCTCAAA  1 
+HNE_2116_p-154(omp4)     (    2) ATGTAAATCATTCGCAAT  1 
+OA2633_12920_p-7(OA2633_ (    2) ATGAGAATGATCCGCATT  1 
+OA2633_15080_p-89(fbpA)  (    2) TTGCGAGACGTTCTCAGA  1 
+OA2633_13875_p-134(piuB) (    2) TTGCAAATCATTCTTATA  1 
+OA2633_01936_p-143(hemA) (    2) TTGAGAAGCGTTGTCAAG  1 
+OA2633_12420_p-104(bfr)  (    2) CTGCAACTCAGTTTCAGT  1 
+HNE_1653_p-87(omp2)      (    2) TTGAGAATGATAATCATT  1 
+OA2633_08249_p-119(hugA) (    2) GTGCGAAAGATTCTCACT  1 
+OA2633_05321_p-80(omp3)  (    2) ATGAGATTGATTATCGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 54 bayes= 2.74723 E= 5.5e-106 
+  -154      4   -232    110 
+ -1140  -1140  -1140    168 
+ -1140  -1140    243  -1140 
+    68    130  -1140   -307 
+   -12   -128    167   -307 
+   163  -1140  -1140  -1140 
+   112    -69   -133   -149 
+  -212    -69   -133    125 
+  -312    163     84   -207 
+   140  -1140    -33  -1140 
+  -312    -69    -74    125 
+  -212   -228  -1140    151 
+  -212    197   -232    -75 
+ -1140  -1140    148     63 
+ -1140    242  -1140   -307 
+   152  -1140   -133  -1140 
+    78   -228      0    -49 
+     5  -1140     48     39 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 27 E= 5.5e-106 
+ 0.111111  0.185185  0.037037  0.666667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.518519  0.444444  0.000000  0.037037 
+ 0.296296  0.074074  0.592593  0.037037 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.703704  0.111111  0.074074  0.111111 
+ 0.074074  0.111111  0.074074  0.740741 
+ 0.037037  0.555556  0.333333  0.074074 
+ 0.851852  0.000000  0.148148  0.000000 
+ 0.037037  0.111111  0.111111  0.740741 
+ 0.074074  0.037037  0.000000  0.888889 
+ 0.074074  0.703704  0.037037  0.185185 
+ 0.000000  0.000000  0.518519  0.481481 
+ 0.000000  0.962963  0.000000  0.037037 
+ 0.925926  0.000000  0.074074  0.000000 
+ 0.555556  0.037037  0.185185  0.222222 
+ 0.333333  0.000000  0.259259  0.407407 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGMRAATSATTCKCAAD MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTG[AC][GA]AAT[CG]ATTC[GT]CA[AT][TAG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OA2633_11590_p-27(piuC)          1.06e-07  1_[+1(5.31e-08)]
+OA2633_10854_p-30(n/a)           1.91e-08  1_[+1(9.54e-09)]
+OA2633_12430_p-77(bfd)           8.91e-07  1_[+1(4.45e-07)]
+OA2633_12920_p-7(OA2633_         1.54e-06  1_[+1(7.69e-07)]
+OA2633_01936_p-143(hemA)         2.78e-06  1_[+1(1.39e-06)]
+OA2633_05321_p-80(omp3)          2.84e-05  1_[+1(1.42e-05)]
+OA2633_13875_p-134(piuB)         2.35e-06  1_[+1(1.18e-06)]
+OA2633_12420_p-104(bfr)          5.19e-06  1_[+1(2.59e-06)]
+OA2633_04511_p-52(omp6)          8.91e-07  1_[+1(4.45e-07)]
+OA2633_04511_p-81(omp6)          5.49e-07  1_[+1(2.75e-07)]
+OA2633_08249_p-65(hugA)          2.38e-07  1_[+1(1.19e-07)]
+OA2633_08249_p-119(hugA)         5.59e-06  1_[+1(2.79e-06)]
+OA2633_02911_p-221(nuoA)         1.68e-07  1_[+1(8.38e-08)]
+OA2633_09259_p-132(sdhC)         1.07e-06  1_[+1(5.35e-07)]
+OA2633_15080_p-89(fbpA)          2.16e-06  1_[+1(1.08e-06)]
+OA2633_12430_p-109(bfd)          1.20e-07  1_[+1(6.02e-08)]
+OA2633_08069_p-47(omp1)          1.17e-06  1_[+1(5.86e-07)]
+HNE_2174_p-54(omp1)              4.49e-07  1_[+1(2.25e-07)]
+HNE_3075_p-18(bfd)               1.20e-07  1_[+1(6.02e-08)]
+HNE_3320_p-58(n/a)               1.12e-08  1_[+1(5.62e-09)]
+HNE_2693_p-57(fbpA)              2.23e-08  1_[+1(1.11e-08)]
+HNE_1742_p-186(nuoA)             9.79e-07  1_[+1(4.89e-07)]
+HNE_2116_p-129(omp4)             4.43e-08  1_[+1(2.22e-08)]
+HNE_2116_p-154(omp4)             1.40e-06  1_[+1(7.01e-07)]
+HNE_1653_p-87(omp2)              5.59e-06  1_[+1(2.79e-06)]
+HNE_1653_p-33(omp2)              2.38e-07  1_[+1(1.19e-07)]
+HNE_1625_p-68(piuC)              3.62e-07  1_[+1(1.81e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

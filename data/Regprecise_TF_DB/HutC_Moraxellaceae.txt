@@ -1,0 +1,217 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/HutC_Moraxellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AB57_3862_p-67(hutC)     1.0000     20  AB57_3860_p-90(hutU)     1.0000     20  
+AB57_1739)_p-83(COG1457  1.0000     20  PsycPRwf_0851_p-207(COG3 1.0000     20  
+PsycPRwf_0851_p-28(COG33 1.0000     20  PsycPRwf_0853_p-156(hutC 1.0000     20  
+PsycPRwf_0852_p-54(hutU) 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/HutC_Moraxellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/HutC_Moraxellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             140    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    140    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.364 C 0.0929 G 0.15 T 0.393 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.361 C 0.0972 G 0.153 T 0.389 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTATATACAWR MEME-1	width =  12  sites =   7  llr = 82  E-value = 1.3e-012
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a:a:a:a66
+pos.-specific     C  :3::1:::a:::
+probability       G  17::::3::::4
+matrix            T  9:a:9:7:::4:
+
+         bits    3.4         *   
+                 3.0         *   
+                 2.7         *   
+                 2.4         *   
+Relative         2.0  *      *   
+Entropy          1.7  *      *   
+(17.0 bits)      1.3  *** * ***  
+                 1.0 ********** *
+                 0.7 ********** *
+                 0.3 ************
+                 0.0 ------------
+
+Multilevel           TGTATATACAAA
+consensus             C    G   TG
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+AB57_3860_p-90(hutU)          6  4.45e-07      ATGGA TGTATATACAAG TTA       
+AB57_1739)_p-83(COG1457       6  9.25e-07      TAACT TGTATATACATG TTT       
+PsycPRwf_0852_p-54(hutU)      6  2.37e-06      TAATT TGTATATACAAA ATC       
+PsycPRwf_0853_p-156(hutC      6  2.37e-06      GATTT TGTATATACAAA TTA       
+AB57_3862_p-67(hutC)          6  4.17e-06      GTGGT TGTATATACATA GCA       
+PsycPRwf_0851_p-207(COG3      8  6.52e-06    TAATTTG TCTATAGACATA G         
+PsycPRwf_0851_p-28(COG33      6  7.92e-06      TTATT GCTACAGACAAG GAT       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AB57_3860_p-90(hutU)              4.5e-07  5_[+1]_3
+AB57_1739)_p-83(COG1457           9.2e-07  5_[+1]_3
+PsycPRwf_0852_p-54(hutU)          2.4e-06  5_[+1]_3
+PsycPRwf_0853_p-156(hutC          2.4e-06  5_[+1]_3
+AB57_3862_p-67(hutC)              4.2e-06  5_[+1]_3
+PsycPRwf_0851_p-207(COG3          6.5e-06  7_[+1]_1
+PsycPRwf_0851_p-28(COG33          7.9e-06  5_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTATATACAWR width=12 seqs=7
+AB57_3860_p-90(hutU)     (    6) TGTATATACAAG  1 
+AB57_1739)_p-83(COG1457  (    6) TGTATATACATG  1 
+PsycPRwf_0852_p-54(hutU) (    6) TGTATATACAAA  1 
+PsycPRwf_0853_p-156(hutC (    6) TGTATATACAAA  1 
+AB57_3862_p-67(hutC)     (    6) TGTATATACATA  1 
+PsycPRwf_0851_p-207(COG3 (    8) TCTATAGACATA  1 
+PsycPRwf_0851_p-28(COG33 (    6) GCTACAGACAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 63 bayes= 4.32193 E= 1.3e-012 
+  -945   -945    -10    114 
+  -945    155    222   -945 
+  -945   -945   -945    136 
+   147   -945   -945   -945 
+  -945     55   -945    114 
+   147   -945   -945   -945 
+  -945   -945     90     88 
+   147   -945   -945   -945 
+  -945    336   -945   -945 
+   147   -945   -945   -945 
+    66   -945   -945     14 
+    66   -945    149   -945 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 7 E= 1.3e-012 
+ 0.000000  0.000000  0.142857  0.857143 
+ 0.000000  0.285714  0.714286  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.142857  0.000000  0.857143 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.285714  0.714286 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.571429  0.000000  0.000000  0.428571 
+ 0.571429  0.000000  0.428571  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTATATACAWR MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GC]TATA[TG]ACA[AT][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AB57_3862_p-67(hutC)             3.75e-05  5_[+1(4.17e-06)]_3
+AB57_3860_p-90(hutU)             4.01e-06  5_[+1(4.45e-07)]_3
+AB57_1739)_p-83(COG1457          8.32e-06  5_[+1(9.25e-07)]_3
+PsycPRwf_0851_p-207(COG3         5.87e-05  7_[+1(6.52e-06)]_1
+PsycPRwf_0851_p-28(COG33         7.13e-05  5_[+1(7.92e-06)]_3
+PsycPRwf_0853_p-156(hutC         2.13e-05  5_[+1(2.37e-06)]_3
+PsycPRwf_0852_p-54(hutU)         2.13e-05  5_[+1(2.37e-06)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

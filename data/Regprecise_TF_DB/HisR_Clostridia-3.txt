@@ -1,0 +1,368 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= HisR_Clostridia-3.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BACPEC_00055(hisZ)Score= 1.0000     20  BLAHAN_01640(hisR)Score= 1.0000     20  
+BLAHAN_01245(hisX)Score= 1.0000     20  BRYFOR_02963(hisZ)Score= 1.0000     20  
+Cbac1_010100022442(hisX) 1.0000     20  Cbac1_010100017829(hisR) 1.0000     20  
+Cbac1_010100026804(hisZ) 1.0000     20  CLOBOL_07128(hisR)Score= 1.0000     20  
+CLOBOL_01668(hisX)Score= 1.0000     20  CLOBOL_03939(hisZ)Score= 1.0000     20  
+CLONEX_00021(hisR)Score= 1.0000     20  CLONEX_03079(hisX)Score= 1.0000     20  
+CLONEX_02879(hisZ)Score= 1.0000     20  CLONEX_02879(hisZ)Score= 1.0000     20  
+CLOSCI_02856(hisR)Score= 1.0000     20  CLOSCI_00784(hisX)Score= 1.0000     20  
+CLOSCI_00467(hisZ)Score= 1.0000     20  DORFOR_03026(hisR)Score= 1.0000     20  
+DORFOR_00662(hisX)Score= 1.0000     20  DORFOR_01586(hisZ)Score= 1.0000     20  
+DORLON_01427(hisR)Score= 1.0000     20  DORLON_00748(hisX)Score= 1.0000     20  
+DORLON_00474(hisZ)Score= 1.0000     20  EUBELI_01562(hisR)Score= 1.0000     20  
+EUBELI_01397(hisX)Score= 1.0000     20  EUBELI_01024(hisZ)Score= 1.0000     20  
+EUBREC_1393(hisR)Score=5 1.0000     20  EUBREC_2005(hisX)Score=5 1.0000     20  
+EUBREC_1685(hisZ)Score=4 1.0000     20  ROSINTL182_03943(hisZ)Sc 1.0000     20  
+ROSINTL182_04526(hisR)Sc 1.0000     20  RUMGNA_03779(hisR)Score= 1.0000     20  
+RUMGNA_00302(hisX)Score= 1.0000     20  RUMGNA_02473(hisZ)Score= 1.0000     20  
+RUMLAC_00772(hisR)Score= 1.0000     20  RUMLAC_01337(hisX)Score= 1.0000     20  
+RUMLAC_00416(hisZ)Score= 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna HisR_Clostridia-3.fasta -oc HisR_Clostridia-3 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           20
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       37    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             740    N=              37    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.355 C 0.120 G 0.203 T 0.322 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.355 C 0.121 G 0.203 T 0.321 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  20  sites =  37  llr = 503  E-value = 1.6e-170
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2931::a2:5:321a994:3
+pos.-specific     C  4:4::1:34:2:4::1::1:
+probability       G  11122::5:5:73::1:6:6
+matrix            T  2:2889::6:7:29::1:91
+
+         bits    3.0                     
+                 2.7                     
+                 2.4                     
+                 2.1                     
+Relative         1.8                     
+Entropy          1.5      **             
+(19.6 bits)      1.2     *** *  * **   * 
+                 0.9  * ********* *******
+                 0.6  * ********* *******
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           CACTTTAGTATGCTAAAGTG
+consensus            A A    CCGCAG    A A
+sequence               T                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+BACPEC_00055(hisZ)Score=      1  4.56e-11          . CACGTTACCACGCTAAAGTG           
+BRYFOR_02963(hisZ)Score=      1  5.63e-10          . CACGGTACCACGCTAAAGTG           
+CLOSCI_00784(hisX)Score=      1  9.37e-10          . CAATTTAGCGTGGTAAAGTA           
+Cbac1_010100022442(hisX)      1  2.14e-09          . CACTTTAGTGTGCTAATATG           
+RUMLAC_00772(hisR)Score=      1  7.86e-09          . AAATTTAGTGTGCTAAAATG           
+DORFOR_00662(hisX)Score=      1  7.86e-09          . CGATTTAGCGTGGTAAAGTA           
+CLOBOL_01668(hisX)Score=      1  1.53e-08          . CGCTTTAGTGTGCTAATATG           
+ROSINTL182_03943(hisZ)Sc      1  2.86e-08          . CAAGGTAGCACACTAAAGTG           
+ROSINTL182_04526(hisR)Sc      1  3.63e-08          . AACTTTAATATGCTAAAATG           
+CLOBOL_07128(hisR)Score=      1  4.07e-08          . GACTTTAATATGCTAAAATG           
+CLOSCI_00467(hisZ)Score=      1  4.57e-08          . CATGGTAGCACACTAAAGTG           
+RUMGNA_00302(hisX)Score=      1  5.12e-08          . CAGTTTAGTATAGTAAAGTG           
+EUBELI_01397(hisX)Score=      1  5.12e-08          . TGATTTACTGTGGTAAAGTG           
+DORFOR_01586(hisZ)Score=      1  7.15e-08          . TATGGTAGCACGCTAAAGTG           
+CLOSCI_02856(hisR)Score=      1  7.15e-08          . AAATTTAGTGTGTTAAAATG           
+DORLON_01427(hisR)Score=      1  7.96e-08          . GAATTTAGTGTGTTAAAATG           
+DORFOR_03026(hisR)Score=      1  7.96e-08          . AAATTTACTGTGTTAAAATG           
+Cbac1_010100026804(hisZ)      1  7.96e-08          . CACTTTACTACGAAAAAGTG           
+RUMGNA_03779(hisR)Score=      1  9.86e-08          . AAATTTAGTGTGATAAAATG           
+DORLON_00474(hisZ)Score=      1  1.65e-07          . CATGGTAGCACACTAAAGTA           
+DORLON_00748(hisX)Score=      1  1.82e-07          . GATTTTAGTGTGATAAAGTA           
+CLONEX_00021(hisR)Score=      1  1.82e-07          . GAGTTTACTGTGCTAAAATA           
+Cbac1_010100017829(hisR)      1  2.43e-07          . AACTTTAATATGTTAAAATG           
+CLONEX_03079(hisX)Score=      1  2.67e-07          . TAATTTAGTGTGGTAGAGTA           
+RUMLAC_01337(hisX)Score=      1  4.20e-07          . GACTTTACCATGGTGCAGTG           
+CLOBOL_03939(hisZ)Score=      1  6.47e-07          . CACTTTACCATAGAAAAGCA           
+EUBREC_1685(hisZ)Score=4      1  1.43e-06          . CACTTTACTACAAGAAAGCG           
+EUBREC_2005(hisX)Score=5      1  1.43e-06          . TACTTTAGCGTGATAATTTG           
+EUBELI_01024(hisZ)Score=      1  1.54e-06          . CACTTCAACGCATTAAAGCA           
+BLAHAN_01640(hisR)Score=      1  1.54e-06          . AAATTTACTGTGCTACTATA           
+EUBELI_01562(hisR)Score=      1  2.05e-06          . AACTTCACTGTGTTAAAATT           
+CLONEX_02879(hisZ)Score=      1  2.53e-06          . TATGGTAGCGTAATAAAGTA           
+EUBREC_1393(hisR)Score=5      1  2.71e-06          . AACTTTAATATGTTAAAATT           
+RUMGNA_02473(hisZ)Score=      1  2.90e-06          . TGTATTAGCATAGTAAAGTG           
+RUMLAC_00416(hisZ)Score=      1  3.31e-06          . CGTATTAGCAGACTAAAGTG           
+BLAHAN_01245(hisX)Score=      1  3.54e-06          . CAATTTAGCATAGTAGAGAA           
+CLONEX_02879(hisZ)Score=      1  1.20e-05          . TATTTTAATATGGTAGCGTA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACPEC_00055(hisZ)Score=          4.6e-11  [+1]
+BRYFOR_02963(hisZ)Score=          5.6e-10  [+1]
+CLOSCI_00784(hisX)Score=          9.4e-10  [+1]
+Cbac1_010100022442(hisX)          2.1e-09  [+1]
+RUMLAC_00772(hisR)Score=          7.9e-09  [+1]
+DORFOR_00662(hisX)Score=          7.9e-09  [+1]
+CLOBOL_01668(hisX)Score=          1.5e-08  [+1]
+ROSINTL182_03943(hisZ)Sc          2.9e-08  [+1]
+ROSINTL182_04526(hisR)Sc          3.6e-08  [+1]
+CLOBOL_07128(hisR)Score=          4.1e-08  [+1]
+CLOSCI_00467(hisZ)Score=          4.6e-08  [+1]
+RUMGNA_00302(hisX)Score=          5.1e-08  [+1]
+EUBELI_01397(hisX)Score=          5.1e-08  [+1]
+DORFOR_01586(hisZ)Score=          7.2e-08  [+1]
+CLOSCI_02856(hisR)Score=          7.2e-08  [+1]
+DORLON_01427(hisR)Score=            8e-08  [+1]
+DORFOR_03026(hisR)Score=            8e-08  [+1]
+Cbac1_010100026804(hisZ)            8e-08  [+1]
+RUMGNA_03779(hisR)Score=          9.9e-08  [+1]
+DORLON_00474(hisZ)Score=          1.6e-07  [+1]
+DORLON_00748(hisX)Score=          1.8e-07  [+1]
+CLONEX_00021(hisR)Score=          1.8e-07  [+1]
+Cbac1_010100017829(hisR)          2.4e-07  [+1]
+CLONEX_03079(hisX)Score=          2.7e-07  [+1]
+RUMLAC_01337(hisX)Score=          4.2e-07  [+1]
+CLOBOL_03939(hisZ)Score=          6.5e-07  [+1]
+EUBREC_1685(hisZ)Score=4          1.4e-06  [+1]
+EUBREC_2005(hisX)Score=5          1.4e-06  [+1]
+EUBELI_01024(hisZ)Score=          1.5e-06  [+1]
+BLAHAN_01640(hisR)Score=          1.5e-06  [+1]
+EUBELI_01562(hisR)Score=          2.1e-06  [+1]
+CLONEX_02879(hisZ)Score=          2.5e-06  [+1]
+EUBREC_1393(hisR)Score=5          2.7e-06  [+1]
+RUMGNA_02473(hisZ)Score=          2.9e-06  [+1]
+RUMLAC_00416(hisZ)Score=          3.3e-06  [+1]
+BLAHAN_01245(hisX)Score=          3.5e-06  [+1]
+CLONEX_02879(hisZ)Score=          1.2e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=20 seqs=37
+BACPEC_00055(hisZ)Score= (    1) CACGTTACCACGCTAAAGTG  1 
+BRYFOR_02963(hisZ)Score= (    1) CACGGTACCACGCTAAAGTG  1 
+CLOSCI_00784(hisX)Score= (    1) CAATTTAGCGTGGTAAAGTA  1 
+Cbac1_010100022442(hisX) (    1) CACTTTAGTGTGCTAATATG  1 
+RUMLAC_00772(hisR)Score= (    1) AAATTTAGTGTGCTAAAATG  1 
+DORFOR_00662(hisX)Score= (    1) CGATTTAGCGTGGTAAAGTA  1 
+CLOBOL_01668(hisX)Score= (    1) CGCTTTAGTGTGCTAATATG  1 
+ROSINTL182_03943(hisZ)Sc (    1) CAAGGTAGCACACTAAAGTG  1 
+ROSINTL182_04526(hisR)Sc (    1) AACTTTAATATGCTAAAATG  1 
+CLOBOL_07128(hisR)Score= (    1) GACTTTAATATGCTAAAATG  1 
+CLOSCI_00467(hisZ)Score= (    1) CATGGTAGCACACTAAAGTG  1 
+RUMGNA_00302(hisX)Score= (    1) CAGTTTAGTATAGTAAAGTG  1 
+EUBELI_01397(hisX)Score= (    1) TGATTTACTGTGGTAAAGTG  1 
+DORFOR_01586(hisZ)Score= (    1) TATGGTAGCACGCTAAAGTG  1 
+CLOSCI_02856(hisR)Score= (    1) AAATTTAGTGTGTTAAAATG  1 
+DORLON_01427(hisR)Score= (    1) GAATTTAGTGTGTTAAAATG  1 
+DORFOR_03026(hisR)Score= (    1) AAATTTACTGTGTTAAAATG  1 
+Cbac1_010100026804(hisZ) (    1) CACTTTACTACGAAAAAGTG  1 
+RUMGNA_03779(hisR)Score= (    1) AAATTTAGTGTGATAAAATG  1 
+DORLON_00474(hisZ)Score= (    1) CATGGTAGCACACTAAAGTA  1 
+DORLON_00748(hisX)Score= (    1) GATTTTAGTGTGATAAAGTA  1 
+CLONEX_00021(hisR)Score= (    1) GAGTTTACTGTGCTAAAATA  1 
+Cbac1_010100017829(hisR) (    1) AACTTTAATATGTTAAAATG  1 
+CLONEX_03079(hisX)Score= (    1) TAATTTAGTGTGGTAGAGTA  1 
+RUMLAC_01337(hisX)Score= (    1) GACTTTACCATGGTGCAGTG  1 
+CLOBOL_03939(hisZ)Score= (    1) CACTTTACCATAGAAAAGCA  1 
+EUBREC_1685(hisZ)Score=4 (    1) CACTTTACTACAAGAAAGCG  1 
+EUBREC_2005(hisX)Score=5 (    1) TACTTTAGCGTGATAATTTG  1 
+EUBELI_01024(hisZ)Score= (    1) CACTTCAACGCATTAAAGCA  1 
+BLAHAN_01640(hisR)Score= (    1) AAATTTACTGTGCTACTATA  1 
+EUBELI_01562(hisR)Score= (    1) AACTTCACTGTGTTAAAATT  1 
+CLONEX_02879(hisZ)Score= (    1) TATGGTAGCGTAATAAAGTA  1 
+EUBREC_1393(hisR)Score=5 (    1) AACTTTAATATGTTAAAATT  1 
+RUMGNA_02473(hisZ)Score= (    1) TGTATTAGCATAGTAAAGTG  1 
+RUMLAC_00416(hisZ)Score= (    1) CGTATTAGCAGACTAAAGTG  1 
+BLAHAN_01245(hisX)Score= (    1) CAATTTAGCATAGTAGAGAA  1 
+CLONEX_02879(hisZ)Score= (    1) TATTTTAATATGGTAGCGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 37 bayes= 1.63743 E= 1.6e-170 
+   -54    184    -59    -76 
+   129  -1185    -59  -1185 
+   -13    174   -191    -57 
+  -271  -1185    -10    124 
+ -1185  -1185    -32    138 
+ -1185   -116  -1185    156 
+   149  -1185  -1185  -1185 
+  -113    130    141  -1185 
+ -1185    184  -1185     82 
+    53  -1185    126  -1185 
+ -1185    101   -291    118 
+   -26  -1185    179  -1185 
+  -113    164     41    -76 
+  -271  -1185   -291    152 
+   145  -1185   -291  -1185 
+   129   -116   -132  -1185 
+   129   -216  -1185   -157 
+     9  -1185    155   -357 
+  -371    -58  -1185    147 
+   -13  -1185    161   -257 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 37 E= 1.6e-170 
+ 0.243243  0.432432  0.135135  0.189189 
+ 0.864865  0.000000  0.135135  0.000000 
+ 0.324324  0.405405  0.054054  0.216216 
+ 0.054054  0.000000  0.189189  0.756757 
+ 0.000000  0.000000  0.162162  0.837838 
+ 0.000000  0.054054  0.000000  0.945946 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.162162  0.297297  0.540541  0.000000 
+ 0.000000  0.432432  0.000000  0.567568 
+ 0.513514  0.000000  0.486486  0.000000 
+ 0.000000  0.243243  0.027027  0.729730 
+ 0.297297  0.000000  0.702703  0.000000 
+ 0.162162  0.378378  0.270270  0.189189 
+ 0.054054  0.000000  0.027027  0.918919 
+ 0.972973  0.000000  0.027027  0.000000 
+ 0.864865  0.054054  0.081081  0.000000 
+ 0.864865  0.027027  0.000000  0.108108 
+ 0.378378  0.000000  0.594595  0.027027 
+ 0.027027  0.081081  0.000000  0.891892 
+ 0.324324  0.000000  0.621622  0.054054 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CA]A[CAT]TTTA[GC][TC][AG][TC][GA][CG]TAAA[GA]T[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACPEC_00055(hisZ)Score=         4.56e-11  [+1(4.56e-11)]
+BLAHAN_01640(hisR)Score=         1.54e-06  [+1(1.54e-06)]
+BLAHAN_01245(hisX)Score=         3.54e-06  [+1(3.54e-06)]
+BRYFOR_02963(hisZ)Score=         5.63e-10  [+1(5.63e-10)]
+Cbac1_010100022442(hisX)         2.14e-09  [+1(2.14e-09)]
+Cbac1_010100017829(hisR)         2.43e-07  [+1(2.43e-07)]
+Cbac1_010100026804(hisZ)         7.96e-08  [+1(7.96e-08)]
+CLOBOL_07128(hisR)Score=         4.07e-08  [+1(4.07e-08)]
+CLOBOL_01668(hisX)Score=         1.53e-08  [+1(1.53e-08)]
+CLOBOL_03939(hisZ)Score=         6.47e-07  [+1(6.47e-07)]
+CLONEX_00021(hisR)Score=         1.82e-07  [+1(1.82e-07)]
+CLONEX_03079(hisX)Score=         2.67e-07  [+1(2.67e-07)]
+CLONEX_02879(hisZ)Score=         1.20e-05  [+1(1.20e-05)]
+CLONEX_02879(hisZ)Score=         2.53e-06  [+1(2.53e-06)]
+CLOSCI_02856(hisR)Score=         7.15e-08  [+1(7.15e-08)]
+CLOSCI_00784(hisX)Score=         9.37e-10  [+1(9.37e-10)]
+CLOSCI_00467(hisZ)Score=         4.57e-08  [+1(4.57e-08)]
+DORFOR_03026(hisR)Score=         7.96e-08  [+1(7.96e-08)]
+DORFOR_00662(hisX)Score=         7.86e-09  [+1(7.86e-09)]
+DORFOR_01586(hisZ)Score=         7.15e-08  [+1(7.15e-08)]
+DORLON_01427(hisR)Score=         7.96e-08  [+1(7.96e-08)]
+DORLON_00748(hisX)Score=         1.82e-07  [+1(1.82e-07)]
+DORLON_00474(hisZ)Score=         1.65e-07  [+1(1.65e-07)]
+EUBELI_01562(hisR)Score=         2.05e-06  [+1(2.05e-06)]
+EUBELI_01397(hisX)Score=         5.12e-08  [+1(5.12e-08)]
+EUBELI_01024(hisZ)Score=         1.54e-06  [+1(1.54e-06)]
+EUBREC_1393(hisR)Score=5         2.71e-06  [+1(2.71e-06)]
+EUBREC_2005(hisX)Score=5         1.43e-06  [+1(1.43e-06)]
+EUBREC_1685(hisZ)Score=4         1.43e-06  [+1(1.43e-06)]
+ROSINTL182_03943(hisZ)Sc         2.86e-08  [+1(2.86e-08)]
+ROSINTL182_04526(hisR)Sc         3.63e-08  [+1(3.63e-08)]
+RUMGNA_03779(hisR)Score=         9.86e-08  [+1(9.86e-08)]
+RUMGNA_00302(hisX)Score=         5.12e-08  [+1(5.12e-08)]
+RUMGNA_02473(hisZ)Score=         2.90e-06  [+1(2.90e-06)]
+RUMLAC_00772(hisR)Score=         7.86e-09  [+1(7.86e-09)]
+RUMLAC_01337(hisX)Score=         4.20e-07  [+1(4.20e-07)]
+RUMLAC_00416(hisZ)Score=         3.31e-06  [+1(3.31e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

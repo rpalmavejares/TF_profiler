@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/CueR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HI0292_p-63(copA0)       1.0000     21  HI0293_p-34(cueR)        1.0000     21  
+NT05HA_0168_p-82(copA0)  1.0000     21  NT05HA_0167_p-33(cueR)   1.0000     21  
+PM1939_p-64(COG3019)     1.0000     21  MS0887_p-68(copA0)       1.0000     21  
+MS0886_p-55(cueR)        1.0000     21  Asuc_1034_p-28(copA)     1.0000     21  
+Asuc_1033_p-63(cueR)     1.0000     21  HSM_1725_p-66(COG3019)   1.0000     21  
+HSM_1728_p-72(cueR)      1.0000     21  APP7_1312_p-35(cueR)     1.0000     21  
+APP7_1313_p-71(COG3019)  1.0000     21  HAPS_1832_p-78(cueR)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/CueR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/CueR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             294    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    294    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.282 C 0.221 G 0.211 T 0.286 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.282 C 0.221 G 0.211 T 0.285 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTAACCTWAGGTYAAGGT MEME-1	width =  21  sites =  14  llr = 280  E-value = 1.4e-083
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9::::68:1:49:::1a91:1
+pos.-specific     C  :991:12972::1::3:::1:
+probability       G  :1:::2:11::17a11:199:
+matrix            T  1:19a1::186:1:96::::9
+
+         bits    2.2              *       
+                 2.0              *       
+                 1.8  ** *  *     *  * *  
+                 1.6  ****  *     *  **** 
+Relative         1.3 *****  *   * ** **** 
+Entropy          1.1 ***** ** * **** *****
+(28.9 bits)      0.9 ***** ********* *****
+                 0.7 ***** ********* *****
+                 0.4 *********************
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTAACCTTAGGTTAAGGT
+consensus                 GC  CA    C     
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+NT05HA_0167_p-33(cueR)        1  4.70e-12          . ACCTTAACGTTAGGTTAAGGT           
+NT05HA_0168_p-82(copA0)       1  9.39e-12          . ACCTTAACCTAACGTTAAGGT           
+HSM_1725_p-66(COG3019)        1  3.52e-11          . ACCTTAACCCTAGGTTAAGCT           
+PM1939_p-64(COG3019)          1  6.11e-11          . ACCTTAACCCTAGGTCAAGCT           
+MS0887_p-68(copA0)            1  6.61e-11          . ACCTTCCCCTTAGGTCAAGGT           
+APP7_1313_p-71(COG3019)       1  7.22e-11          . ACCTTAACCTAGGGTTAAGGA           
+APP7_1312_p-35(cueR)          1  8.35e-11          . TCCTTAACCCTAGGTTAAGGT           
+HI0292_p-63(copA0)            1  1.21e-10          . ACCTTAACCTTATGTAAAGGT           
+MS0886_p-55(cueR)             1  1.83e-10          . ACCTTGACCTAAGGGGAAGGT           
+HI0293_p-34(cueR)             1  3.74e-10          . ACCTTTACATAAGGTTAAGGT           
+Asuc_1034_p-28(copA)          1  9.23e-10          . ACTTTACCCTTACGTCAAGGT           
+Asuc_1033_p-63(cueR)          1  2.09e-09          . ACCTTGACGTAAGGGTAAAGT           
+HAPS_1832_p-78(cueR)          1  9.47e-09          . AGCCTAACCTTATGTTAGGGT           
+HSM_1728_p-72(cueR)           1  2.80e-08          . ACCTTGCGTTAGGGTCAAGGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NT05HA_0167_p-33(cueR)            4.7e-12  [+1]
+NT05HA_0168_p-82(copA0)           9.4e-12  [+1]
+HSM_1725_p-66(COG3019)            3.5e-11  [+1]
+PM1939_p-64(COG3019)              6.1e-11  [+1]
+MS0887_p-68(copA0)                6.6e-11  [+1]
+APP7_1313_p-71(COG3019)           7.2e-11  [+1]
+APP7_1312_p-35(cueR)              8.4e-11  [+1]
+HI0292_p-63(copA0)                1.2e-10  [+1]
+MS0886_p-55(cueR)                 1.8e-10  [+1]
+HI0293_p-34(cueR)                 3.7e-10  [+1]
+Asuc_1034_p-28(copA)              9.2e-10  [+1]
+Asuc_1033_p-63(cueR)              2.1e-09  [+1]
+HAPS_1832_p-78(cueR)              9.5e-09  [+1]
+HSM_1728_p-72(cueR)               2.8e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTAACCTWAGGTYAAGGT width=21 seqs=14
+NT05HA_0167_p-33(cueR)   (    1) ACCTTAACGTTAGGTTAAGGT  1 
+NT05HA_0168_p-82(copA0)  (    1) ACCTTAACCTAACGTTAAGGT  1 
+HSM_1725_p-66(COG3019)   (    1) ACCTTAACCCTAGGTTAAGCT  1 
+PM1939_p-64(COG3019)     (    1) ACCTTAACCCTAGGTCAAGCT  1 
+MS0887_p-68(copA0)       (    1) ACCTTCCCCTTAGGTCAAGGT  1 
+APP7_1313_p-71(COG3019)  (    1) ACCTTAACCTAGGGTTAAGGA  1 
+APP7_1312_p-35(cueR)     (    1) TCCTTAACCCTAGGTTAAGGT  1 
+HI0292_p-63(copA0)       (    1) ACCTTAACCTTATGTAAAGGT  1 
+MS0886_p-55(cueR)        (    1) ACCTTGACCTAAGGGGAAGGT  1 
+HI0293_p-34(cueR)        (    1) ACCTTTACATAAGGTTAAGGT  1 
+Asuc_1034_p-28(copA)     (    1) ACTTTACCCTTACGTCAAGGT  1 
+Asuc_1033_p-63(cueR)     (    1) ACCTTGACGTAAGGGTAAAGT  1 
+HAPS_1832_p-78(cueR)     (    1) AGCCTAACCTTATGTTAGGGT  1 
+HSM_1728_p-72(cueR)      (    1) ACCTTGCGTTAGGGTCAAGGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 14 bayes= 1.12553 E= 1.4e-083 
+   172  -1045  -1045   -199 
+ -1045    207   -156  -1045 
+ -1045    207  -1045   -199 
+ -1045   -163  -1045    170 
+ -1045  -1045  -1045    181 
+   119   -163      2   -199 
+   148     -5  -1045  -1045 
+ -1045    207   -156  -1045 
+  -198    169    -56   -199 
+ -1045     -5  -1045    146 
+    60  -1045  -1045    100 
+   160  -1045    -56  -1045 
+ -1045    -63    176   -100 
+ -1045  -1045    224  -1045 
+ -1045  -1045    -56    159 
+  -198     37   -156    100 
+   183  -1045  -1045  -1045 
+   172  -1045   -156  -1045 
+  -198  -1045    213  -1045 
+ -1045    -63    202  -1045 
+   -98  -1045  -1045    159 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 14 E= 1.4e-083 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.000000  0.928571  0.071429  0.000000 
+ 0.000000  0.928571  0.000000  0.071429 
+ 0.000000  0.071429  0.000000  0.928571 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.642857  0.071429  0.214286  0.071429 
+ 0.785714  0.214286  0.000000  0.000000 
+ 0.000000  0.928571  0.071429  0.000000 
+ 0.071429  0.714286  0.142857  0.071429 
+ 0.000000  0.214286  0.000000  0.785714 
+ 0.428571  0.000000  0.000000  0.571429 
+ 0.857143  0.000000  0.142857  0.000000 
+ 0.000000  0.142857  0.714286  0.142857 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.142857  0.857143 
+ 0.071429  0.285714  0.071429  0.571429 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.928571  0.000000  0.071429  0.000000 
+ 0.071429  0.000000  0.928571  0.000000 
+ 0.000000  0.142857  0.857143  0.000000 
+ 0.142857  0.000000  0.000000  0.857143 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTAACCTWAGGTYAAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTT[AG][AC]CC[TC][TA]AGGT[TC]AAGGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HI0292_p-63(copA0)               1.21e-10  [+1(1.21e-10)]
+HI0293_p-34(cueR)                3.74e-10  [+1(3.74e-10)]
+NT05HA_0168_p-82(copA0)          9.39e-12  [+1(9.39e-12)]
+NT05HA_0167_p-33(cueR)           4.70e-12  [+1(4.70e-12)]
+PM1939_p-64(COG3019)             6.11e-11  [+1(6.11e-11)]
+MS0887_p-68(copA0)               6.61e-11  [+1(6.61e-11)]
+MS0886_p-55(cueR)                1.83e-10  [+1(1.83e-10)]
+Asuc_1034_p-28(copA)             9.23e-10  [+1(9.23e-10)]
+Asuc_1033_p-63(cueR)             2.09e-09  [+1(2.09e-09)]
+HSM_1725_p-66(COG3019)           3.52e-11  [+1(3.52e-11)]
+HSM_1728_p-72(cueR)              2.80e-08  [+1(2.80e-08)]
+APP7_1312_p-35(cueR)             8.35e-11  [+1(8.35e-11)]
+APP7_1313_p-71(COG3019)          7.22e-11  [+1(7.22e-11)]
+HAPS_1832_p-78(cueR)             9.47e-09  [+1(9.47e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

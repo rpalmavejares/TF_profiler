@@ -1,0 +1,387 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/IscR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC2720_p-30(nfuA)        1.0000     25  VC0747_p-23(iscR)        1.0000     25  
+VC0747_p-48(iscR)        1.0000     25  VC0627_p-114(erpA)       1.0000     25  
+VV1_0864_p9(nfuA)        1.0000     25  VV1_0439_p-93(iscR)      1.0000     25  
+VV1_0439_p-68(iscR)      1.0000     25  VV1_1679_p-175(erpA)     1.0000     25  
+VIBHAR_00614_p-30(nfuA)  1.0000     25  VIBHAR_01054_p-93(iscR)  1.0000     25  
+VIBHAR_01054_p-68(iscR)  1.0000     25  VIBHAR_03416_p-87(erpA)  1.0000     25  
+VP0146_p-30(nfuA)        1.0000     25  VP0595_p-93(iscR)        1.0000     25  
+VP0595_p-68(iscR)        1.0000     25  VP2474_p-103(erpA)       1.0000     25  
+VSAK1_13428_p6(nfuA)     1.0000     25  VSAK1_12120_p-91(iscR)   1.0000     25  
+VSAK1_12120_p-66(iscR)   1.0000     25  VSAK1_05110_p-169(erpA)  1.0000     25  
+VS_0606_p-92(iscR)       1.0000     25  VS_0606_p-67(iscR)       1.0000     25  
+VS_2501_p-87(erpA)       1.0000     25  VF_2461_p-30(nfuA)       1.0000     25  
+VF_0616_p-69(iscR)       1.0000     25  VF_0616_p-94(iscR)       1.0000     25  
+VF_2134_p-75(erpA)       1.0000     25  VSAL_I2911_p-30(nfuA)    1.0000     25  
+VSAL_I0716_p-69(iscR)    1.0000     25  VSAL_I0716_p-94(iscR)    1.0000     25  
+VSAL_I2571_p-75(erpA)    1.0000     25  VAS14_21772_p-37(nfuA)   1.0000     25  
+VAS14_06718_p-103(iscR)  1.0000     25  VAS14_06718_p-128(iscR)  1.0000     25  
+VAS14_07789_p-68(erpA)   1.0000     25  PBPRA0177_p-37(nfuA)     1.0000     25  
+PBPRA0749_p-66(iscR)     1.0000     25  PBPRA0749_p-91(iscR)     1.0000     25  
+PBPRA0531_p-68(erpA)     1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/IscR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/IscR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           25
+nsites: minsites=        2    maxsites=       39    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             975    N=              39
+sample: seed=            0    hsfrac=          0
+        searchsize=    975    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.367 C 0.156 G 0.161 T 0.316 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.367 C 0.156 G 0.161 T 0.316 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATACYTGACYAAWWTAGTCAGGTAT MEME-1	width =  25  sites =  39  llr = 768  E-value = 1.8e-273
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  91a1:1:a31775418::1822:a3
+pos.-specific     C  :::842::74::1:1:2:9::::::
+probability       G  1:::::7:::211::28::288:::
+matrix            T  19:1682:15:24681:a::::a:7
+
+         bits    2.7                          
+                 2.4                          
+                 2.1                   *      
+                 1.9                 * *      
+Relative         1.6                 *** ***  
+Entropy          1.3   **  **        *** **** 
+(28.4 bits)      1.1 ***** ***       *** **** 
+                 0.8 ***********   * *********
+                 0.5 ***********   ***********
+                 0.3 *************************
+                 0.0 -------------------------
+
+Multilevel           ATACTTGACTAAATTAGTCAGGTAT
+consensus                C T ACGTTA          A
+sequence                                      
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+VF_0616_p-69(iscR)            1  7.40e-14          . ATACTTGACCAAAATAGTCAGGTAT           
+VS_0606_p-67(iscR)            1  9.52e-14          . ATACTTGACCAATTTAGTCGGGTAT           
+VSAL_I0716_p-69(iscR)         1  3.36e-13          . ATACTTGACCAAAATGGTCAGGTAT           
+PBPRA0749_p-66(iscR)          1  5.38e-13          . ATACTTGACCATTTTAGTCGGGTAT           
+VV1_0439_p-68(iscR)           1  6.37e-13          . ATACTTGACCATTTTGGTCAGGTAT           
+PBPRA0531_p-68(erpA)          1  2.64e-12          . ATACTTGAACAAGTTAGTCAGGTAT           
+VIBHAR_01054_p-68(iscR)       1  3.06e-12          . ATACTTGACCGTTTTGGTCGGGTAT           
+VP0595_p-68(iscR)             1  5.41e-12          . ATACTTGACCATTTTACTCGGGTAT           
+VAS14_07789_p-68(erpA)        1  1.20e-11          . ATACTTGAACAACATAGTCAGGTAT           
+VV1_1679_p-175(erpA)          1  1.20e-11          . ATACTTGAACGTATTGGTCAGGTAT           
+VS_2501_p-87(erpA)            1  1.99e-11          . ATACTTGAACGTTTCAGTCAGGTAT           
+VSAL_I2571_p-75(erpA)         1  2.90e-11          . ATACTTGAATGAAACAGTCAGGTAT           
+VF_2134_p-75(erpA)            1  2.90e-11          . ATACTTGAATGAAACAGTCAGGTAT           
+VSAK1_12120_p-66(iscR)        1  3.27e-11          . ATACTTGATTAAAATAGTCAGGTAT           
+VSAK1_05110_p-169(erpA)       1  1.03e-10          . ATACTTGAACGAAGCAGTCAGGTAT           
+VP2474_p-103(erpA)            1  1.03e-10          . ATACTTGAACGAGTTTGTCAGGTAT           
+VIBHAR_03416_p-87(erpA)       1  1.03e-10          . ATACTTGAACGAGTTTGTCAGGTAT           
+VC0747_p-23(iscR)             1  1.15e-10          . ATACTTGACCAAAAGAGTCAAGTAT           
+VC0747_p-48(iscR)             1  1.60e-10          . ATACCTGACTAAATTAGTCAAATAA           
+PBPRA0749_p-91(iscR)          1  2.99e-10          . AAACCTGACTAAAATCGTCAGGTAA           
+VAS14_06718_p-103(iscR)       1  2.99e-10          . ATACTTGACCAATTTAGTATGGTAT           
+VIBHAR_01054_p-93(iscR)       1  3.30e-10          . ATACCTGACTAAAATAGTCAAATAA           
+VSAK1_12120_p-91(iscR)        1  4.92e-10          . ATACCTGACTATTTTAGTCAAATAA           
+VV1_0439_p-93(iscR)           1  4.92e-10          . ATACCTGACTATTTTAGTCAAATAA           
+VAS14_06718_p-128(iscR)       1  9.57e-10          . ATACCCTACTAGAACAGTCAGGTAA           
+VS_0606_p-92(iscR)            1  9.57e-10          . ATACCTGACTAAAATAGTCAACTAA           
+VSAL_I0716_p-94(iscR)         1  2.34e-09          . ATACTTGACTAAAATAGTAGGATAA           
+VP0595_p-93(iscR)             1  3.87e-09          . ATACCTGAGTAATTTAGTCAAATAA           
+VV1_0864_p9(nfuA)             1  4.20e-09          . ATAACCTACAAATTTACTCGGGTAT           
+VIBHAR_00614_p-30(nfuA)       1  4.55e-09          . ATAGCCTACAAATTTACTCAGGTAT           
+PBPRA0177_p-37(nfuA)          1  7.32e-09          . AAATCTTACTAAATAGGTCAGGTAT           
+VP0146_p-30(nfuA)             1  1.07e-08          . GTAACCTACAAAATTACTCAGGTAT           
+VF_0616_p-94(iscR)            1  1.15e-08          . GTACTTGACTAAAATAGTAGGATAA           
+VAS14_21772_p-37(nfuA)        1  1.66e-08          . AAAACTCACTAAATAGGTCAGGTAT           
+VC0627_p-114(erpA)            1  2.05e-08          . ATACTTGAACGGCCAACTCAGGTAT           
+VSAK1_13428_p6(nfuA)          1  2.71e-08          . ATAACCTACAACTATACTCAGGTAT           
+VF_2461_p-30(nfuA)            1  4.04e-08          . TAATCATACTAAATTAGTCAGGTAT           
+VSAL_I2911_p-30(nfuA)         1  4.31e-08          . TAATCATACTAATTTAGTCAGGTAT           
+VC2720_p-30(nfuA)             1  9.63e-08          . ATAACCTATTCTTTTACTCAGGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VF_0616_p-69(iscR)                7.4e-14  [+1]
+VS_0606_p-67(iscR)                9.5e-14  [+1]
+VSAL_I0716_p-69(iscR)             3.4e-13  [+1]
+PBPRA0749_p-66(iscR)              5.4e-13  [+1]
+VV1_0439_p-68(iscR)               6.4e-13  [+1]
+PBPRA0531_p-68(erpA)              2.6e-12  [+1]
+VIBHAR_01054_p-68(iscR)           3.1e-12  [+1]
+VP0595_p-68(iscR)                 5.4e-12  [+1]
+VAS14_07789_p-68(erpA)            1.2e-11  [+1]
+VV1_1679_p-175(erpA)              1.2e-11  [+1]
+VS_2501_p-87(erpA)                  2e-11  [+1]
+VSAL_I2571_p-75(erpA)             2.9e-11  [+1]
+VF_2134_p-75(erpA)                2.9e-11  [+1]
+VSAK1_12120_p-66(iscR)            3.3e-11  [+1]
+VSAK1_05110_p-169(erpA)             1e-10  [+1]
+VP2474_p-103(erpA)                  1e-10  [+1]
+VIBHAR_03416_p-87(erpA)             1e-10  [+1]
+VC0747_p-23(iscR)                 1.2e-10  [+1]
+VC0747_p-48(iscR)                 1.6e-10  [+1]
+PBPRA0749_p-91(iscR)                3e-10  [+1]
+VAS14_06718_p-103(iscR)             3e-10  [+1]
+VIBHAR_01054_p-93(iscR)           3.3e-10  [+1]
+VSAK1_12120_p-91(iscR)            4.9e-10  [+1]
+VV1_0439_p-93(iscR)               4.9e-10  [+1]
+VAS14_06718_p-128(iscR)           9.6e-10  [+1]
+VS_0606_p-92(iscR)                9.6e-10  [+1]
+VSAL_I0716_p-94(iscR)             2.3e-09  [+1]
+VP0595_p-93(iscR)                 3.9e-09  [+1]
+VV1_0864_p9(nfuA)                 4.2e-09  [+1]
+VIBHAR_00614_p-30(nfuA)           4.6e-09  [+1]
+PBPRA0177_p-37(nfuA)              7.3e-09  [+1]
+VP0146_p-30(nfuA)                 1.1e-08  [+1]
+VF_0616_p-94(iscR)                1.2e-08  [+1]
+VAS14_21772_p-37(nfuA)            1.7e-08  [+1]
+VC0627_p-114(erpA)                2.1e-08  [+1]
+VSAK1_13428_p6(nfuA)              2.7e-08  [+1]
+VF_2461_p-30(nfuA)                  4e-08  [+1]
+VSAL_I2911_p-30(nfuA)             4.3e-08  [+1]
+VC2720_p-30(nfuA)                 9.6e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATACYTGACYAAWWTAGTCAGGTAT width=25 seqs=39
+VF_0616_p-69(iscR)       (    1) ATACTTGACCAAAATAGTCAGGTAT  1 
+VS_0606_p-67(iscR)       (    1) ATACTTGACCAATTTAGTCGGGTAT  1 
+VSAL_I0716_p-69(iscR)    (    1) ATACTTGACCAAAATGGTCAGGTAT  1 
+PBPRA0749_p-66(iscR)     (    1) ATACTTGACCATTTTAGTCGGGTAT  1 
+VV1_0439_p-68(iscR)      (    1) ATACTTGACCATTTTGGTCAGGTAT  1 
+PBPRA0531_p-68(erpA)     (    1) ATACTTGAACAAGTTAGTCAGGTAT  1 
+VIBHAR_01054_p-68(iscR)  (    1) ATACTTGACCGTTTTGGTCGGGTAT  1 
+VP0595_p-68(iscR)        (    1) ATACTTGACCATTTTACTCGGGTAT  1 
+VAS14_07789_p-68(erpA)   (    1) ATACTTGAACAACATAGTCAGGTAT  1 
+VV1_1679_p-175(erpA)     (    1) ATACTTGAACGTATTGGTCAGGTAT  1 
+VS_2501_p-87(erpA)       (    1) ATACTTGAACGTTTCAGTCAGGTAT  1 
+VSAL_I2571_p-75(erpA)    (    1) ATACTTGAATGAAACAGTCAGGTAT  1 
+VF_2134_p-75(erpA)       (    1) ATACTTGAATGAAACAGTCAGGTAT  1 
+VSAK1_12120_p-66(iscR)   (    1) ATACTTGATTAAAATAGTCAGGTAT  1 
+VSAK1_05110_p-169(erpA)  (    1) ATACTTGAACGAAGCAGTCAGGTAT  1 
+VP2474_p-103(erpA)       (    1) ATACTTGAACGAGTTTGTCAGGTAT  1 
+VIBHAR_03416_p-87(erpA)  (    1) ATACTTGAACGAGTTTGTCAGGTAT  1 
+VC0747_p-23(iscR)        (    1) ATACTTGACCAAAAGAGTCAAGTAT  1 
+VC0747_p-48(iscR)        (    1) ATACCTGACTAAATTAGTCAAATAA  1 
+PBPRA0749_p-91(iscR)     (    1) AAACCTGACTAAAATCGTCAGGTAA  1 
+VAS14_06718_p-103(iscR)  (    1) ATACTTGACCAATTTAGTATGGTAT  1 
+VIBHAR_01054_p-93(iscR)  (    1) ATACCTGACTAAAATAGTCAAATAA  1 
+VSAK1_12120_p-91(iscR)   (    1) ATACCTGACTATTTTAGTCAAATAA  1 
+VV1_0439_p-93(iscR)      (    1) ATACCTGACTATTTTAGTCAAATAA  1 
+VAS14_06718_p-128(iscR)  (    1) ATACCCTACTAGAACAGTCAGGTAA  1 
+VS_0606_p-92(iscR)       (    1) ATACCTGACTAAAATAGTCAACTAA  1 
+VSAL_I0716_p-94(iscR)    (    1) ATACTTGACTAAAATAGTAGGATAA  1 
+VP0595_p-93(iscR)        (    1) ATACCTGAGTAATTTAGTCAAATAA  1 
+VV1_0864_p9(nfuA)        (    1) ATAACCTACAAATTTACTCGGGTAT  1 
+VIBHAR_00614_p-30(nfuA)  (    1) ATAGCCTACAAATTTACTCAGGTAT  1 
+PBPRA0177_p-37(nfuA)     (    1) AAATCTTACTAAATAGGTCAGGTAT  1 
+VP0146_p-30(nfuA)        (    1) GTAACCTACAAAATTACTCAGGTAT  1 
+VF_0616_p-94(iscR)       (    1) GTACTTGACTAAAATAGTAGGATAA  1 
+VAS14_21772_p-37(nfuA)   (    1) AAAACTCACTAAATAGGTCAGGTAT  1 
+VC0627_p-114(erpA)       (    1) ATACTTGAACGGCCAACTCAGGTAT  1 
+VSAK1_13428_p6(nfuA)     (    1) ATAACCTACAACTATACTCAGGTAT  1 
+VF_2461_p-30(nfuA)       (    1) TAATCATACTAAATTAGTCAGGTAT  1 
+VSAL_I2911_p-30(nfuA)    (    1) TAATCATACTAATTTAGTCAGGTAT  1 
+VC2720_p-30(nfuA)        (    1) ATAACCTATTCTTTTACTCAGGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 39 bayes= 1.65486 E= 1.8e-273 
+   129  -1193   -165   -262 
+  -152  -1193  -1193    147 
+   145  -1193  -1193  -1193 
+  -152    230   -265   -204 
+ -1193    148  -1193     84 
+  -284     -2  -1193    133 
+ -1193   -261    220    -45 
+   145  -1193  -1193  -1193 
+   -52    209   -265   -262 
+  -184    148  -1193     55 
+   102   -261     52  -1193 
+    92   -261   -165    -45 
+    41   -161   -107     29 
+    -3   -261   -265     90 
+  -225    -29   -265    128 
+   107   -261     -7   -262 
+ -1193     20    235  -1193 
+ -1193  -1193  -1193    166 
+  -225    256  -1193  -1193 
+   112  -1193     15   -362 
+  -103  -1193    235  -1193 
+  -103   -261    230  -1193 
+ -1193  -1193  -1193    166 
+   145  -1193  -1193  -1193 
+   -52  -1193  -1193    124 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 39 E= 1.8e-273 
+ 0.897436  0.000000  0.051282  0.051282 
+ 0.128205  0.000000  0.000000  0.871795 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.128205  0.769231  0.025641  0.076923 
+ 0.000000  0.435897  0.000000  0.564103 
+ 0.051282  0.153846  0.000000  0.794872 
+ 0.000000  0.025641  0.743590  0.230769 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.256410  0.666667  0.025641  0.051282 
+ 0.102564  0.435897  0.000000  0.461538 
+ 0.743590  0.025641  0.230769  0.000000 
+ 0.692308  0.025641  0.051282  0.230769 
+ 0.487179  0.051282  0.076923  0.384615 
+ 0.358974  0.025641  0.025641  0.589744 
+ 0.076923  0.128205  0.025641  0.769231 
+ 0.769231  0.025641  0.153846  0.051282 
+ 0.000000  0.179487  0.820513  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.076923  0.923077  0.000000  0.000000 
+ 0.794872  0.000000  0.179487  0.025641 
+ 0.179487  0.000000  0.820513  0.000000 
+ 0.179487  0.025641  0.794872  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.256410  0.000000  0.000000  0.743590 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACYTGACYAAWWTAGTCAGGTAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATAC[TC]T[GT]A[CA][TC][AG][AT][AT][TA]TAGTCAGGTA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.10 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC2720_p-30(nfuA)                9.63e-08  [+1(9.63e-08)]
+VC0747_p-23(iscR)                1.15e-10  [+1(1.15e-10)]
+VC0747_p-48(iscR)                1.60e-10  [+1(1.60e-10)]
+VC0627_p-114(erpA)               2.05e-08  [+1(2.05e-08)]
+VV1_0864_p9(nfuA)                4.20e-09  [+1(4.20e-09)]
+VV1_0439_p-93(iscR)              4.92e-10  [+1(4.92e-10)]
+VV1_0439_p-68(iscR)              6.37e-13  [+1(6.37e-13)]
+VV1_1679_p-175(erpA)             1.20e-11  [+1(1.20e-11)]
+VIBHAR_00614_p-30(nfuA)          4.55e-09  [+1(4.55e-09)]
+VIBHAR_01054_p-93(iscR)          3.30e-10  [+1(3.30e-10)]
+VIBHAR_01054_p-68(iscR)          3.06e-12  [+1(3.06e-12)]
+VIBHAR_03416_p-87(erpA)          1.03e-10  [+1(1.03e-10)]
+VP0146_p-30(nfuA)                1.07e-08  [+1(1.07e-08)]
+VP0595_p-93(iscR)                3.87e-09  [+1(3.87e-09)]
+VP0595_p-68(iscR)                5.41e-12  [+1(5.41e-12)]
+VP2474_p-103(erpA)               1.03e-10  [+1(1.03e-10)]
+VSAK1_13428_p6(nfuA)             2.71e-08  [+1(2.71e-08)]
+VSAK1_12120_p-91(iscR)           4.92e-10  [+1(4.92e-10)]
+VSAK1_12120_p-66(iscR)           3.27e-11  [+1(3.27e-11)]
+VSAK1_05110_p-169(erpA)          1.03e-10  [+1(1.03e-10)]
+VS_0606_p-92(iscR)               9.57e-10  [+1(9.57e-10)]
+VS_0606_p-67(iscR)               9.52e-14  [+1(9.52e-14)]
+VS_2501_p-87(erpA)               1.99e-11  [+1(1.99e-11)]
+VF_2461_p-30(nfuA)               4.04e-08  [+1(4.04e-08)]
+VF_0616_p-69(iscR)               7.40e-14  [+1(7.40e-14)]
+VF_0616_p-94(iscR)               1.15e-08  [+1(1.15e-08)]
+VF_2134_p-75(erpA)               2.90e-11  [+1(2.90e-11)]
+VSAL_I2911_p-30(nfuA)            4.31e-08  [+1(4.31e-08)]
+VSAL_I0716_p-69(iscR)            3.36e-13  [+1(3.36e-13)]
+VSAL_I0716_p-94(iscR)            2.34e-09  [+1(2.34e-09)]
+VSAL_I2571_p-75(erpA)            2.90e-11  [+1(2.90e-11)]
+VAS14_21772_p-37(nfuA)           1.66e-08  [+1(1.66e-08)]
+VAS14_06718_p-103(iscR)          2.99e-10  [+1(2.99e-10)]
+VAS14_06718_p-128(iscR)          9.57e-10  [+1(9.57e-10)]
+VAS14_07789_p-68(erpA)           1.20e-11  [+1(1.20e-11)]
+PBPRA0177_p-37(nfuA)             7.32e-09  [+1(7.32e-09)]
+PBPRA0749_p-66(iscR)             5.38e-13  [+1(5.38e-13)]
+PBPRA0749_p-91(iscR)             2.99e-10  [+1(2.99e-10)]
+PBPRA0531_p-68(erpA)             2.64e-12  [+1(2.64e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,269 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/RbsR_Thermotogales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TM0960_p-34(rbsK)        1.0000     20  TM0960_p-46(rbsK)        1.0000     20  
+CTN_1616_p32(rbsK)       1.0000     20  CTN_1616_p44(rbsK)       1.0000     20  
+Tpet_1789_p-56(rbsK)     1.0000     20  Tpet_1789_p-44(rbsK)     1.0000     20  
+Tnap_1790_p-56(rbsK)     1.0000     20  Tnap_1790_p-44(rbsK)     1.0000     20  
+Tlet_1324_p-47(rbsR)     1.0000     20  Tlet_1324_p-59(rbsR)     1.0000     20  
+THA_669_p-30(rbsD)       1.0000     20  THA_669_p-42(rbsD)       1.0000     20  
+Pmob_0919_p-43(rbsR)     1.0000     20  Kole_0605_p-39(rbsR)     1.0000     20  
+Kole_0605_p-27(rbsR)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/RbsR_Thermotogales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/RbsR_Thermotogales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             300    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    300    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.363 C 0.147 G 0.16 T 0.33 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.362 C 0.148 G 0.161 T 0.329 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTKYGAAAACGWTTTCRAAA MEME-1	width =  20  sites =  15  llr = 278  E-value = 3.5e-084
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:2:199aa::4::1:5778
+pos.-specific     C  :116:::::a:::::a::1:
+probability       G  ::3:9:1:::a:::1:4122
+matrix            T  9954:1:::::6aa9:13::
+
+         bits    2.8          **    *    
+                 2.5          **    *    
+                 2.2     *    **    *    
+                 1.9     *    **    *    
+Relative         1.7     *    ** ** *    
+Entropy          1.4 *  **  **** ** *    
+(26.8 bits)      1.1 ** ** ***** ** *   *
+                 0.8 ** ******** ****   *
+                 0.6 ** *****************
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TTTCGAAAACGTTTTCAAAA
+consensus              GT       A    GTGG
+sequence               A                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Tnap_1790_p-44(rbsK)          1  1.03e-10          . TTTCGAAAACGTTTTCAAAG           
+Tpet_1789_p-44(rbsK)          1  1.03e-10          . TTTCGAAAACGTTTTCAAAG           
+Tnap_1790_p-56(rbsK)          1  2.23e-10          . TTGTGAAAACGATTTCGAAA           
+Tpet_1789_p-56(rbsK)          1  2.23e-10          . TTGTGAAAACGATTTCGAAA           
+CTN_1616_p32(rbsK)            1  2.23e-10          . TTGTGAAAACGATTTCGAAA           
+TM0960_p-46(rbsK)             1  2.23e-10          . TTGTGAAAACGATTTCGAAA           
+CTN_1616_p44(rbsK)            1  1.01e-09          . TTTCGAAAACGATTTCATCA           
+TM0960_p-34(rbsK)             1  1.01e-09          . TTTCGAAAACGATTTCATCA           
+Tlet_1324_p-59(rbsR)          1  1.79e-09          . TCTTGAAAACGTTTTCAAGA           
+THA_669_p-30(rbsD)            1  2.11e-09          . TTTCGAAAACGTTTTCTAGG           
+THA_669_p-42(rbsD)            1  2.72e-09          . ATACGAAAACGTTTTCGAAA           
+Pmob_0919_p-43(rbsR)          1  4.69e-09          . TTCCGAAAACGTTTGCATAA           
+Kole_0605_p-27(rbsR)          1  8.75e-09          . TTACGTAAACGTTTTCAGGA           
+Tlet_1324_p-47(rbsR)          1  1.34e-08          . TTTCAAGAACGTTTTCAAAA           
+Kole_0605_p-39(rbsR)          1  5.35e-08          . TCATGTAAACGTTTACGTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tnap_1790_p-44(rbsK)                1e-10  [+1]
+Tpet_1789_p-44(rbsK)                1e-10  [+1]
+Tnap_1790_p-56(rbsK)              2.2e-10  [+1]
+Tpet_1789_p-56(rbsK)              2.2e-10  [+1]
+CTN_1616_p32(rbsK)                2.2e-10  [+1]
+TM0960_p-46(rbsK)                 2.2e-10  [+1]
+CTN_1616_p44(rbsK)                  1e-09  [+1]
+TM0960_p-34(rbsK)                   1e-09  [+1]
+Tlet_1324_p-59(rbsR)              1.8e-09  [+1]
+THA_669_p-30(rbsD)                2.1e-09  [+1]
+THA_669_p-42(rbsD)                2.7e-09  [+1]
+Pmob_0919_p-43(rbsR)              4.7e-09  [+1]
+Kole_0605_p-27(rbsR)              8.7e-09  [+1]
+Tlet_1324_p-47(rbsR)              1.3e-08  [+1]
+Kole_0605_p-39(rbsR)              5.4e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTKYGAAAACGWTTTCRAAA width=20 seqs=15
+Tnap_1790_p-44(rbsK)     (    1) TTTCGAAAACGTTTTCAAAG  1 
+Tpet_1789_p-44(rbsK)     (    1) TTTCGAAAACGTTTTCAAAG  1 
+Tnap_1790_p-56(rbsK)     (    1) TTGTGAAAACGATTTCGAAA  1 
+Tpet_1789_p-56(rbsK)     (    1) TTGTGAAAACGATTTCGAAA  1 
+CTN_1616_p32(rbsK)       (    1) TTGTGAAAACGATTTCGAAA  1 
+TM0960_p-46(rbsK)        (    1) TTGTGAAAACGATTTCGAAA  1 
+CTN_1616_p44(rbsK)       (    1) TTTCGAAAACGATTTCATCA  1 
+TM0960_p-34(rbsK)        (    1) TTTCGAAAACGATTTCATCA  1 
+Tlet_1324_p-59(rbsR)     (    1) TCTTGAAAACGTTTTCAAGA  1 
+THA_669_p-30(rbsD)       (    1) TTTCGAAAACGTTTTCTAGG  1 
+THA_669_p-42(rbsD)       (    1) ATACGAAAACGTTTTCGAAA  1 
+Pmob_0919_p-43(rbsR)     (    1) TTCCGAAAACGTTTGCATAA  1 
+Kole_0605_p-27(rbsR)     (    1) TTACGTAAACGTTTTCAGGA  1 
+Tlet_1324_p-47(rbsR)     (    1) TTTCAAGAACGTTTTCAAAA  1 
+Kole_0605_p-39(rbsR)     (    1) TCATGTAAACGTTTACGTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 15 bayes= 1.17688 E= 3.5e-084 
+  -244  -1055  -1055    150 
+ -1055    -15  -1055    140 
+   -85   -115     73     50 
+ -1055    202  -1055     28 
+  -244  -1055    253  -1055 
+   126  -1055  -1055   -130 
+   137  -1055   -127  -1055 
+   147  -1055  -1055  -1055 
+   147  -1055  -1055  -1055 
+ -1055    276  -1055  -1055 
+ -1055  -1055    263  -1055 
+    14  -1055  -1055     87 
+ -1055  -1055  -1055    160 
+ -1055  -1055  -1055    160 
+  -244  -1055   -127    140 
+ -1055    276  -1055  -1055 
+    56  -1055    131   -230 
+    88  -1055   -127    -30 
+    88    -15     31  -1055 
+   114  -1055     31  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 15 E= 3.5e-084 
+ 0.066667  0.000000  0.000000  0.933333 
+ 0.000000  0.133333  0.000000  0.866667 
+ 0.200000  0.066667  0.266667  0.466667 
+ 0.000000  0.600000  0.000000  0.400000 
+ 0.066667  0.000000  0.933333  0.000000 
+ 0.866667  0.000000  0.000000  0.133333 
+ 0.933333  0.000000  0.066667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.066667  0.000000  0.066667  0.866667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.533333  0.000000  0.400000  0.066667 
+ 0.666667  0.000000  0.066667  0.266667 
+ 0.666667  0.133333  0.200000  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTKYGAAAACGWTTTCRAAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TT[TGA][CT]GAAAACG[TA]TTTC[AG][AT][AG][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TM0960_p-34(rbsK)                1.01e-09  [+1(1.01e-09)]
+TM0960_p-46(rbsK)                2.23e-10  [+1(2.23e-10)]
+CTN_1616_p32(rbsK)               2.23e-10  [+1(2.23e-10)]
+CTN_1616_p44(rbsK)               1.01e-09  [+1(1.01e-09)]
+Tpet_1789_p-56(rbsK)             2.23e-10  [+1(2.23e-10)]
+Tpet_1789_p-44(rbsK)             1.03e-10  [+1(1.03e-10)]
+Tnap_1790_p-56(rbsK)             2.23e-10  [+1(2.23e-10)]
+Tnap_1790_p-44(rbsK)             1.03e-10  [+1(1.03e-10)]
+Tlet_1324_p-47(rbsR)             1.34e-08  [+1(1.34e-08)]
+Tlet_1324_p-59(rbsR)             1.79e-09  [+1(1.79e-09)]
+THA_669_p-30(rbsD)               2.11e-09  [+1(2.11e-09)]
+THA_669_p-42(rbsD)               2.72e-09  [+1(2.72e-09)]
+Pmob_0919_p-43(rbsR)             4.69e-09  [+1(4.69e-09)]
+Kole_0605_p-39(rbsR)             5.35e-08  [+1(5.35e-08)]
+Kole_0605_p-27(rbsR)             8.75e-09  [+1(8.75e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,319 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrdR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Aave_0864_p-128(nrdA)    1.0000     16  Aave_0864_p-96(nrdA)     1.0000     16  
+Ajs_0087_p-61(nrdD)      1.0000     16  Ajs_0087_p-29(nrdD)      1.0000     16  
+Ajs_3632_p-103(nrdA)     1.0000     16  Ajs_3632_p-135(nrdA)     1.0000     16  
+CtesDRAFT_3006_p-138(nrd 1.0000     16  CtesDRAFT_3006_p-169(nrd 1.0000     16  
+Daci_1501_p-172(nrdA)    1.0000     16  Daci_1501_p-141(nrdA)    1.0000     16  
+Pnap_3385_p-159(nrdA)    1.0000     16  Pnap_3385_p-190(nrdA)    1.0000     16  
+Bpro_1107_p-215(nrdA)    1.0000     16  Bpro_1107_p-183(nrdA)    1.0000     16  
+Rfer_0368_p-30(nrdD)     1.0000     16  Rfer_0368_p-61(nrdD)     1.0000     16  
+Rfer_3347_p-109(nrdA)    1.0000     16  Rfer_3347_p-140(nrdA)    1.0000     16  
+Vapar_0956_p-98(nrdA)    1.0000     16  Vapar_0956_p-130(nrdA)   1.0000     16  
+Veis_1496_p-115(nrdA)    1.0000     16  Veis_1496_p-147(nrdA)    1.0000     16  
+Mpe_A3214_p-294(nrdA)    1.0000     16  Mpe_A1693_p-1880(Ajs_008 1.0000     16  
+Mpe_A1693_p-1848(Ajs_008 1.0000     16  Mpe_A3214_p-325(nrdA)    1.0000     16  
+Lcho_0382_p-322(nrdA)    1.0000     16  Lcho_0382_p-291(nrdA)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrdR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrdR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             448    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    448    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.279 C 0.239 G 0.214 T 0.268 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.279 C 0.239 G 0.215 T 0.268 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACACTACMTRTAGTGT MEME-1	width =  16  sites =  28  llr = 423  E-value = 4.5e-150
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:7::a:6:4:a::::
+pos.-specific     C  1a1a1:64:2:::::3
+probability       G  1:1:::3:34::a:a2
+matrix            T  ::::9:2:7:a::9:6
+
+         bits    2.2             * * 
+                 2.0    *      * * * 
+                 1.8  * * *    *** * 
+                 1.6  * * *    ***** 
+Relative         1.3  * ***    ***** 
+Entropy          1.1  * ***    ***** 
+(21.8 bits)      0.9 ****** ** ***** 
+                 0.7 ********* ******
+                 0.4 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           ACACTACATGTAGTGT
+consensus                  GCGA     C
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Veis_1496_p-147(nrdA)         1  1.61e-09          . ACACTACAGGTAGTGT           
+Rfer_0368_p-30(nrdD)          1  1.61e-09          . ACACTACCTATAGTGT           
+Aave_0864_p-128(nrdA)         1  2.18e-09          . ACACTACATGTAGTGC           
+Mpe_A1693_p-1880(Ajs_008      1  2.39e-09          . ACACTACCGGTAGTGT           
+CtesDRAFT_3006_p-169(nrd      1  2.39e-09          . ACACTACCGGTAGTGT           
+Pnap_3385_p-190(nrdA)         1  4.34e-09          . ACACTACCTGTAGTGG           
+Ajs_3632_p-103(nrdA)          1  5.43e-09          . ACACTAGATATAGTGT           
+Ajs_0087_p-29(nrdD)           1  5.43e-09          . ACACTATATGTAGTGT           
+Daci_1501_p-172(nrdA)         1  7.68e-09          . ACACTACAGGTAGTGC           
+Bpro_1107_p-215(nrdA)         1  9.85e-09          . ACACTACAGGTAGTGG           
+Mpe_A3214_p-325(nrdA)         1  3.90e-08          . ACGCTACATATAGTGC           
+Vapar_0956_p-98(nrdA)         1  4.18e-08          . ACCCTAGATATAGTGT           
+Lcho_0382_p-291(nrdA)         1  6.76e-08          . GCACTAGATGTAGTGC           
+Lcho_0382_p-322(nrdA)         1  7.39e-08          . ACACTAGCGCTAGTGC           
+Vapar_0956_p-130(nrdA)        1  7.39e-08          . ACGCTACATCTAGTGG           
+Rfer_3347_p-140(nrdA)         1  7.39e-08          . CCACTACCGGTAGTGG           
+Pnap_3385_p-159(nrdA)         1  8.33e-08          . GCACTAGCTGTAGTGC           
+Veis_1496_p-115(nrdA)         1  1.05e-07          . ACACCATATATAGTGT           
+Ajs_3632_p-135(nrdA)          1  1.31e-07          . ACACTACCCCTAGTGT           
+Ajs_0087_p-61(nrdD)           1  1.44e-07          . AAACTACCTATAGTGT           
+Daci_1501_p-141(nrdA)         1  1.56e-07          . ACACCATATCTAGTGT           
+Mpe_A3214_p-294(nrdA)         1  1.81e-07          . GCGCTAGATATAGTGT           
+Rfer_3347_p-109(nrdA)         1  2.32e-07          . CCCCTATATATAGTGT           
+Rfer_0368_p-61(nrdD)          1  2.86e-07          . ACGCTACATTTAGTGG           
+Bpro_1107_p-183(nrdA)         1  3.22e-07          . ACCCTAGGTATAGTGT           
+Aave_0864_p-96(nrdA)          1  3.45e-07          . CCACTACCTATAGCGT           
+CtesDRAFT_3006_p-138(nrd      1  4.33e-07          . ACCCCATATCTAGTGT           
+Mpe_A1693_p-1848(Ajs_008      1  6.66e-07          . CCACTACCGGTAGAGC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Veis_1496_p-147(nrdA)             1.6e-09  [+1]
+Rfer_0368_p-30(nrdD)              1.6e-09  [+1]
+Aave_0864_p-128(nrdA)             2.2e-09  [+1]
+Mpe_A1693_p-1880(Ajs_008          2.4e-09  [+1]
+CtesDRAFT_3006_p-169(nrd          2.4e-09  [+1]
+Pnap_3385_p-190(nrdA)             4.3e-09  [+1]
+Ajs_3632_p-103(nrdA)              5.4e-09  [+1]
+Ajs_0087_p-29(nrdD)               5.4e-09  [+1]
+Daci_1501_p-172(nrdA)             7.7e-09  [+1]
+Bpro_1107_p-215(nrdA)             9.8e-09  [+1]
+Mpe_A3214_p-325(nrdA)             3.9e-08  [+1]
+Vapar_0956_p-98(nrdA)             4.2e-08  [+1]
+Lcho_0382_p-291(nrdA)             6.8e-08  [+1]
+Lcho_0382_p-322(nrdA)             7.4e-08  [+1]
+Vapar_0956_p-130(nrdA)            7.4e-08  [+1]
+Rfer_3347_p-140(nrdA)             7.4e-08  [+1]
+Pnap_3385_p-159(nrdA)             8.3e-08  [+1]
+Veis_1496_p-115(nrdA)             1.1e-07  [+1]
+Ajs_3632_p-135(nrdA)              1.3e-07  [+1]
+Ajs_0087_p-61(nrdD)               1.4e-07  [+1]
+Daci_1501_p-141(nrdA)             1.6e-07  [+1]
+Mpe_A3214_p-294(nrdA)             1.8e-07  [+1]
+Rfer_3347_p-109(nrdA)             2.3e-07  [+1]
+Rfer_0368_p-61(nrdD)              2.9e-07  [+1]
+Bpro_1107_p-183(nrdA)             3.2e-07  [+1]
+Aave_0864_p-96(nrdA)              3.5e-07  [+1]
+CtesDRAFT_3006_p-138(nrd          4.3e-07  [+1]
+Mpe_A1693_p-1848(Ajs_008          6.7e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACACTACMTRTAGTGT width=16 seqs=28
+Veis_1496_p-147(nrdA)    (    1) ACACTACAGGTAGTGT  1 
+Rfer_0368_p-30(nrdD)     (    1) ACACTACCTATAGTGT  1 
+Aave_0864_p-128(nrdA)    (    1) ACACTACATGTAGTGC  1 
+Mpe_A1693_p-1880(Ajs_008 (    1) ACACTACCGGTAGTGT  1 
+CtesDRAFT_3006_p-169(nrd (    1) ACACTACCGGTAGTGT  1 
+Pnap_3385_p-190(nrdA)    (    1) ACACTACCTGTAGTGG  1 
+Ajs_3632_p-103(nrdA)     (    1) ACACTAGATATAGTGT  1 
+Ajs_0087_p-29(nrdD)      (    1) ACACTATATGTAGTGT  1 
+Daci_1501_p-172(nrdA)    (    1) ACACTACAGGTAGTGC  1 
+Bpro_1107_p-215(nrdA)    (    1) ACACTACAGGTAGTGG  1 
+Mpe_A3214_p-325(nrdA)    (    1) ACGCTACATATAGTGC  1 
+Vapar_0956_p-98(nrdA)    (    1) ACCCTAGATATAGTGT  1 
+Lcho_0382_p-291(nrdA)    (    1) GCACTAGATGTAGTGC  1 
+Lcho_0382_p-322(nrdA)    (    1) ACACTAGCGCTAGTGC  1 
+Vapar_0956_p-130(nrdA)   (    1) ACGCTACATCTAGTGG  1 
+Rfer_3347_p-140(nrdA)    (    1) CCACTACCGGTAGTGG  1 
+Pnap_3385_p-159(nrdA)    (    1) GCACTAGCTGTAGTGC  1 
+Veis_1496_p-115(nrdA)    (    1) ACACCATATATAGTGT  1 
+Ajs_3632_p-135(nrdA)     (    1) ACACTACCCCTAGTGT  1 
+Ajs_0087_p-61(nrdD)      (    1) AAACTACCTATAGTGT  1 
+Daci_1501_p-141(nrdA)    (    1) ACACCATATCTAGTGT  1 
+Mpe_A3214_p-294(nrdA)    (    1) GCGCTAGATATAGTGT  1 
+Rfer_3347_p-109(nrdA)    (    1) CCCCTATATATAGTGT  1 
+Rfer_0368_p-61(nrdD)     (    1) ACGCTACATTTAGTGG  1 
+Bpro_1107_p-183(nrdA)    (    1) ACCCTAGGTATAGTGT  1 
+Aave_0864_p-96(nrdA)     (    1) CCACTACCTATAGCGT  1 
+CtesDRAFT_3006_p-138(nrd (    1) ACCCCATATCTAGTGT  1 
+Mpe_A1693_p-1848(Ajs_008 (    1) CCACTACCGGTAGAGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 28 bayes= 1.53051 E= 4.5e-150 
+   143    -74   -100  -1145 
+  -296    201  -1145  -1145 
+   136    -74    -59  -1145 
+ -1145    206  -1145  -1145 
+ -1145   -116  -1145    174 
+   184  -1145  -1145  -1145 
+ -1145    126     22    -58 
+   104     72   -258  -1145 
+ -1145   -274     41    134 
+    36    -42    100   -290 
+ -1145  -1145  -1145    190 
+   184  -1145  -1145  -1145 
+ -1145  -1145    222  -1145 
+  -296   -274  -1145    179 
+ -1145  -1145    222  -1145 
+ -1145      7    -27    109 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 28 E= 4.5e-150 
+ 0.750000  0.142857  0.107143  0.000000 
+ 0.035714  0.964286  0.000000  0.000000 
+ 0.714286  0.142857  0.142857  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.107143  0.000000  0.892857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.571429  0.250000  0.178571 
+ 0.571429  0.392857  0.035714  0.000000 
+ 0.000000  0.035714  0.285714  0.678571 
+ 0.357143  0.178571  0.428571  0.035714 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.035714  0.035714  0.000000  0.928571 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.250000  0.178571  0.571429 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACTACMTRTAGTGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACACTA[CG][AC][TG][GA]TAGTG[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Aave_0864_p-128(nrdA)            2.18e-09  [+1(2.18e-09)]
+Aave_0864_p-96(nrdA)             3.45e-07  [+1(3.45e-07)]
+Ajs_0087_p-61(nrdD)              1.44e-07  [+1(1.44e-07)]
+Ajs_0087_p-29(nrdD)              5.43e-09  [+1(5.43e-09)]
+Ajs_3632_p-103(nrdA)             5.43e-09  [+1(5.43e-09)]
+Ajs_3632_p-135(nrdA)             1.31e-07  [+1(1.31e-07)]
+CtesDRAFT_3006_p-138(nrd         4.33e-07  [+1(4.33e-07)]
+CtesDRAFT_3006_p-169(nrd         2.39e-09  [+1(2.39e-09)]
+Daci_1501_p-172(nrdA)            7.68e-09  [+1(7.68e-09)]
+Daci_1501_p-141(nrdA)            1.56e-07  [+1(1.56e-07)]
+Pnap_3385_p-159(nrdA)            8.33e-08  [+1(8.33e-08)]
+Pnap_3385_p-190(nrdA)            4.34e-09  [+1(4.34e-09)]
+Bpro_1107_p-215(nrdA)            9.85e-09  [+1(9.85e-09)]
+Bpro_1107_p-183(nrdA)            3.22e-07  [+1(3.22e-07)]
+Rfer_0368_p-30(nrdD)             1.61e-09  [+1(1.61e-09)]
+Rfer_0368_p-61(nrdD)             2.86e-07  [+1(2.86e-07)]
+Rfer_3347_p-109(nrdA)            2.32e-07  [+1(2.32e-07)]
+Rfer_3347_p-140(nrdA)            7.39e-08  [+1(7.39e-08)]
+Vapar_0956_p-98(nrdA)            4.18e-08  [+1(4.18e-08)]
+Vapar_0956_p-130(nrdA)           7.39e-08  [+1(7.39e-08)]
+Veis_1496_p-115(nrdA)            1.05e-07  [+1(1.05e-07)]
+Veis_1496_p-147(nrdA)            1.61e-09  [+1(1.61e-09)]
+Mpe_A3214_p-294(nrdA)            1.81e-07  [+1(1.81e-07)]
+Mpe_A1693_p-1880(Ajs_008         2.39e-09  [+1(2.39e-09)]
+Mpe_A1693_p-1848(Ajs_008         6.66e-07  [+1(6.66e-07)]
+Mpe_A3214_p-325(nrdA)            3.90e-08  [+1(3.90e-08)]
+Lcho_0382_p-322(nrdA)            7.39e-08  [+1(7.39e-08)]
+Lcho_0382_p-291(nrdA)            6.76e-08  [+1(6.76e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

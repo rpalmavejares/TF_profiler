@@ -1,0 +1,448 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/MetR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC1705_p-121(n/a)        1.0000     15  VC0941_p-154(glyA)       1.0000     15  
+VC2685_p-122(metF)       1.0000     15  VC1704_p-147(metE)       1.0000     15  
+VV1_0286_p-153(glyA)     1.0000     15  VV1_1366_p-130(metF)     1.0000     15  
+VV1_2218_p-128(metR)     1.0000     15  VV1_2219_p-208(metE)     1.0000     15  
+VV20997_p-97(PF08908)    1.0000     15  VIBHAR_02963_p-116(pfl)  1.0000     15  
+VIBHAR_02963_p-138(pfl)  1.0000     15  VIBHAR_01208_p-155(glyA) 1.0000     15  
+VIBHAR_00047_p-128(metF) 1.0000     15  VIBHAR_02773_p-133(metR) 1.0000     15  
+VIBHAR_02772_p-146(metE) 1.0000     15  VIBHAR_02801_p-236(PF089 1.0000     15  
+VP1975_p-118(n/a)        1.0000     15  VP0715_p-155(glyA)       1.0000     15  
+VP2763_p-126(metF)       1.0000     15  VP1974_p-149(metE)       1.0000     15  
+VP1992_p-234(PF08908)    1.0000     15  VSAK1_10503_p-157(glyA)  1.0000     15  
+VSAK1_09463_p-162(metF)  1.0000     15  VSAK1_00947_p-109(metR)  1.0000     15  
+VSAK1_00952_p-199(metE)  1.0000     15  VSAK1_00952_p-103(metE)  1.0000     15  
+VS_2373_p-156(glyA)      1.0000     15  VS_2373_p-143(glyA)      1.0000     15  
+VS_1144_p-141(metR)      1.0000     15  VS_1145_p-155(metE)      1.0000     15  
+VS_1283_p-193(PF08908)   1.0000     15  VF_A0142_p-173(pfl)      1.0000     15  
+VF_A0142_p-151(pfl)      1.0000     15  VF_0695_p-222(glyA)      1.0000     15  
+VF_0695_p-182(glyA)      1.0000     15  VF_2309_p-142(metF)      1.0000     15  
+VF_1722_p-136(metR)      1.0000     15  VF_1722_p-101(metR)      1.0000     15  
+VF_1721_p-134(metE)      1.0000     15  VF_1721_p-99(metE)       1.0000     15  
+VSAL_I0864_p-182(glyA)   1.0000     15  VSAL_I2762_p-162(metF)   1.0000     15  
+VSAL_I2762_p-140(metF)   1.0000     15  VSAL_I0860_p-136(metR)   1.0000     15  
+VSAL_I0860_p-65(metR)    1.0000     15  VAS14_11629_p-226(pfl)   1.0000     15  
+VAS14_11629_p-248(pfl)   1.0000     15  VAS14_16581_p-210(glyA)  1.0000     15  
+VAS14_12469_p-135(PF0890 1.0000     15  PBPRA0795_p-212(glyA)    1.0000     15  
+PBPRA0795_p-178(glyA)    1.0000     15  PBPRA0263_p-160(metF)    1.0000     15  
+PBPRA0263_p-138(metF)    1.0000     15  PBPRA1378_p-163(metR)    1.0000     15  
+PBPRA1378_p-43(metR)     1.0000     15  PBPRA1379_p-226(metE)    1.0000     15  
+PBPRA1379_p-106(metE)    1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/MetR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/MetR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       57    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             855    N=              57
+sample: seed=            0    hsfrac=          0
+        searchsize=    855    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.43 C 0.0982 G 0.0959 T 0.375 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.43 C 0.099 G 0.0966 T 0.375 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATGAAWAWWWTTCAT MEME-1	width =  15  sites =  57  llr = 518  E-value = 3.2e-188
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8::9857555::1a1
+pos.-specific     C  :::1::::221:8::
+probability       G  ::9:21:::::2:::
+matrix            T  2a1::4353398::9
+
+         bits    3.4                
+                 3.0                
+                 2.7                
+                 2.4   *            
+Relative         2.0   *         *  
+Entropy          1.7   *         *  
+(13.1 bits)      1.3  **         ** 
+                 1.0  ***      **** 
+                 0.7  ****     *****
+                 0.3 ***** *  ******
+                 0.0 ---------------
+
+Multilevel           ATGAAAAAAATTCAT
+consensus                 TTTTT     
+sequence                      C     
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+VS_2373_p-156(glyA)           1  9.82e-08          . ATGAAAAAACTGCAT           
+VP0715_p-155(glyA)            1  9.82e-08          . ATGAAAAAACTGCAT           
+VIBHAR_01208_p-155(glyA)      1  9.82e-08          . ATGAAAAAACTGCAT           
+VC0941_p-154(glyA)            1  9.82e-08          . ATGAAAAAACTGCAT           
+VSAK1_10503_p-157(glyA)       1  1.62e-07          . ATGAGAAAACTGCAT           
+VIBHAR_02801_p-236(PF089      1  1.62e-07          . ATGAAATTCCTTCAT           
+VV20997_p-97(PF08908)         1  3.00e-07          . ATGAATTTCCTTCAT           
+PBPRA0795_p-212(glyA)         1  4.69e-07          . ATGAAAATAATTCAT           
+VV1_0286_p-153(glyA)          1  4.69e-07          . ATGAAGAAACTGCAT           
+VSAK1_00952_p-199(metE)       1  6.74e-07          . ATGAATATCCCTCAT           
+VSAK1_09463_p-162(metF)       1  6.74e-07          . ATGAAAAAAATTCAT           
+VC2685_p-122(metF)            1  8.70e-07          . ATGAGTAATCTTCAT           
+VSAL_I0864_p-182(glyA)        1  1.15e-06          . ATGAATATCTTTCAT           
+VF_0695_p-182(glyA)           1  1.82e-06          . ATGAATATATTTCAT           
+VS_1283_p-193(PF08908)        1  2.69e-06          . ATGAATATTCCTCAT           
+VF_A0142_p-151(pfl)           1  3.57e-06          . ATGAAAAGCATTCAT           
+VP1992_p-234(PF08908)         1  3.57e-06          . ATGAATTTCTTTCAT           
+VIBHAR_02963_p-116(pfl)       1  3.57e-06          . ATGAAAAGCATTCAT           
+VSAL_I2762_p-162(metF)        1  4.60e-06          . TTGAAAATCCCTCAT           
+VSAL_I2762_p-140(metF)        1  5.82e-06          . TTGAAAAAAATTCAT           
+VF_A0142_p-173(pfl)           1  5.82e-06          . ATGCATATAATGCAT           
+VF_1721_p-99(metE)            1  6.45e-06          . TTGAATATAATTCAT           
+PBPRA0263_p-138(metF)         1  7.15e-06          . GTGAAAAAAATTCAT           
+VF_2309_p-142(metF)           1  7.15e-06          . TTGAGAAAAATTCAT           
+VIBHAR_00047_p-128(metF)      1  7.15e-06          . TTGAGAAAAATTCAT           
+VV1_1366_p-130(metF)          1  7.15e-06          . TTGAGAAAAATTCAT           
+VAS14_11629_p-226(pfl)        1  7.87e-06          . ATGAAAACCATTCAT           
+VP2763_p-126(metF)            1  8.60e-06          . GTGAGAAAAATTCAT           
+VAS14_16581_p-210(glyA)       1  9.45e-06          . ATGAAAATGATTCAT           
+VSAK1_00952_p-103(metE)       1  1.66e-05          . TTGAATTAATTTCAT           
+VSAK1_00947_p-109(metR)       1  1.98e-05          . ATGAAATTAATTCAA           
+VAS14_12469_p-135(PF0890      1  2.16e-05          . TTGAATTTTTTTCAT           
+VSAL_I0860_p-136(metR)        1  3.18e-05          . ATGAATTTATTTCAA           
+VP1975_p-118(n/a)             1  3.18e-05          . ATTAAAAAAATTCAT           
+VF_1722_p-136(metR)           1  3.95e-05          . ATGAATTATATTCAA           
+VV1_2218_p-128(metR)          1  3.95e-05          . ATTAGAAAAATTCAT           
+VAS14_11629_p-248(pfl)        1  4.41e-05          . ATGCACAATATGCAT           
+VIBHAR_02773_p-133(metR)      1  4.41e-05          . ATTAAAAAATTTCAT           
+VS_1145_p-155(metE)           1  4.92e-05          . ATGAAAATTATTAAT           
+PBPRA1379_p-226(metE)         1  5.49e-05          . ATGAATATATTTAAT           
+VS_1144_p-141(metR)           1  8.14e-05          . ATTAATAATTTTCAT           
+PBPRA1378_p-43(metR)          1  8.92e-05          . ATTAAATATATTCAT           
+PBPRA1378_p-163(metR)         1  9.73e-05          . ATGAATAAAACTAAT           
+VC1705_p-121(n/a)             1  9.73e-05          . ATTAGTAATTTTCAT           
+VC1704_p-147(metE)            1  1.06e-04          . ATGAAAATTACTAAT           
+PBPRA1379_p-106(metE)         1  1.15e-04          . ATTAGTTTTATTCAT           
+VIBHAR_02772_p-146(metE)      1  1.15e-04          . ATGAAATTTTTTAAT           
+VP1974_p-149(metE)            1  1.35e-04          . ATGAATTTTTTTAAT           
+PBPRA0263_p-160(metF)         1  1.57e-04          . TTGAAGTTTATGCAA           
+VV1_2219_p-208(metE)          1  2.45e-04          . ATGAATTTTTCTAAT           
+VIBHAR_02963_p-138(pfl)       1  3.23e-04          . ATGCAATTTAATCAT           
+VS_2373_p-143(glyA)           1  3.45e-04          . ATGATAAAATTGCAA           
+VF_1722_p-101(metR)           1  3.93e-04          . ATCGATTAACTTCAT           
+VF_1721_p-134(metE)           1  4.20e-04          . ATGAAGTTAATCGAT           
+VF_0695_p-222(glyA)           1  5.80e-04          . ATGCAATTATTTGAA           
+VSAL_I0860_p-65(metR)         1  6.19e-04          . TTGAAGGTTTTTCAC           
+PBPRA0795_p-178(glyA)         1  8.95e-04          . ATGAATAAATTGTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VS_2373_p-156(glyA)               9.8e-08  [+1]
+VP0715_p-155(glyA)                9.8e-08  [+1]
+VIBHAR_01208_p-155(glyA)          9.8e-08  [+1]
+VC0941_p-154(glyA)                9.8e-08  [+1]
+VSAK1_10503_p-157(glyA)           1.6e-07  [+1]
+VIBHAR_02801_p-236(PF089          1.6e-07  [+1]
+VV20997_p-97(PF08908)               3e-07  [+1]
+PBPRA0795_p-212(glyA)             4.7e-07  [+1]
+VV1_0286_p-153(glyA)              4.7e-07  [+1]
+VSAK1_00952_p-199(metE)           6.7e-07  [+1]
+VSAK1_09463_p-162(metF)           6.7e-07  [+1]
+VC2685_p-122(metF)                8.7e-07  [+1]
+VSAL_I0864_p-182(glyA)            1.2e-06  [+1]
+VF_0695_p-182(glyA)               1.8e-06  [+1]
+VS_1283_p-193(PF08908)            2.7e-06  [+1]
+VF_A0142_p-151(pfl)               3.6e-06  [+1]
+VP1992_p-234(PF08908)             3.6e-06  [+1]
+VIBHAR_02963_p-116(pfl)           3.6e-06  [+1]
+VSAL_I2762_p-162(metF)            4.6e-06  [+1]
+VSAL_I2762_p-140(metF)            5.8e-06  [+1]
+VF_A0142_p-173(pfl)               5.8e-06  [+1]
+VF_1721_p-99(metE)                6.5e-06  [+1]
+PBPRA0263_p-138(metF)             7.1e-06  [+1]
+VF_2309_p-142(metF)               7.1e-06  [+1]
+VIBHAR_00047_p-128(metF)          7.1e-06  [+1]
+VV1_1366_p-130(metF)              7.1e-06  [+1]
+VAS14_11629_p-226(pfl)            7.9e-06  [+1]
+VP2763_p-126(metF)                8.6e-06  [+1]
+VAS14_16581_p-210(glyA)           9.4e-06  [+1]
+VSAK1_00952_p-103(metE)           1.7e-05  [+1]
+VSAK1_00947_p-109(metR)             2e-05  [+1]
+VAS14_12469_p-135(PF0890          2.2e-05  [+1]
+VSAL_I0860_p-136(metR)            3.2e-05  [+1]
+VP1975_p-118(n/a)                 3.2e-05  [+1]
+VF_1722_p-136(metR)               3.9e-05  [+1]
+VV1_2218_p-128(metR)              3.9e-05  [+1]
+VAS14_11629_p-248(pfl)            4.4e-05  [+1]
+VIBHAR_02773_p-133(metR)          4.4e-05  [+1]
+VS_1145_p-155(metE)               4.9e-05  [+1]
+PBPRA1379_p-226(metE)             5.5e-05  [+1]
+VS_1144_p-141(metR)               8.1e-05  [+1]
+PBPRA1378_p-43(metR)              8.9e-05  [+1]
+PBPRA1378_p-163(metR)             9.7e-05  [+1]
+VC1705_p-121(n/a)                 9.7e-05  [+1]
+VC1704_p-147(metE)                0.00011  [+1]
+PBPRA1379_p-106(metE)             0.00012  [+1]
+VIBHAR_02772_p-146(metE)          0.00012  [+1]
+VP1974_p-149(metE)                0.00013  [+1]
+PBPRA0263_p-160(metF)             0.00016  [+1]
+VV1_2219_p-208(metE)              0.00025  [+1]
+VIBHAR_02963_p-138(pfl)           0.00032  [+1]
+VS_2373_p-143(glyA)               0.00034  [+1]
+VF_1722_p-101(metR)               0.00039  [+1]
+VF_1721_p-134(metE)               0.00042  [+1]
+VF_0695_p-222(glyA)               0.00058  [+1]
+VSAL_I0860_p-65(metR)             0.00062  [+1]
+PBPRA0795_p-178(glyA)              0.0009  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATGAAWAWWWTTCAT width=15 seqs=57
+VS_2373_p-156(glyA)      (    1) ATGAAAAAACTGCAT  1 
+VP0715_p-155(glyA)       (    1) ATGAAAAAACTGCAT  1 
+VIBHAR_01208_p-155(glyA) (    1) ATGAAAAAACTGCAT  1 
+VC0941_p-154(glyA)       (    1) ATGAAAAAACTGCAT  1 
+VSAK1_10503_p-157(glyA)  (    1) ATGAGAAAACTGCAT  1 
+VIBHAR_02801_p-236(PF089 (    1) ATGAAATTCCTTCAT  1 
+VV20997_p-97(PF08908)    (    1) ATGAATTTCCTTCAT  1 
+PBPRA0795_p-212(glyA)    (    1) ATGAAAATAATTCAT  1 
+VV1_0286_p-153(glyA)     (    1) ATGAAGAAACTGCAT  1 
+VSAK1_00952_p-199(metE)  (    1) ATGAATATCCCTCAT  1 
+VSAK1_09463_p-162(metF)  (    1) ATGAAAAAAATTCAT  1 
+VC2685_p-122(metF)       (    1) ATGAGTAATCTTCAT  1 
+VSAL_I0864_p-182(glyA)   (    1) ATGAATATCTTTCAT  1 
+VF_0695_p-182(glyA)      (    1) ATGAATATATTTCAT  1 
+VS_1283_p-193(PF08908)   (    1) ATGAATATTCCTCAT  1 
+VF_A0142_p-151(pfl)      (    1) ATGAAAAGCATTCAT  1 
+VP1992_p-234(PF08908)    (    1) ATGAATTTCTTTCAT  1 
+VIBHAR_02963_p-116(pfl)  (    1) ATGAAAAGCATTCAT  1 
+VSAL_I2762_p-162(metF)   (    1) TTGAAAATCCCTCAT  1 
+VSAL_I2762_p-140(metF)   (    1) TTGAAAAAAATTCAT  1 
+VF_A0142_p-173(pfl)      (    1) ATGCATATAATGCAT  1 
+VF_1721_p-99(metE)       (    1) TTGAATATAATTCAT  1 
+PBPRA0263_p-138(metF)    (    1) GTGAAAAAAATTCAT  1 
+VF_2309_p-142(metF)      (    1) TTGAGAAAAATTCAT  1 
+VIBHAR_00047_p-128(metF) (    1) TTGAGAAAAATTCAT  1 
+VV1_1366_p-130(metF)     (    1) TTGAGAAAAATTCAT  1 
+VAS14_11629_p-226(pfl)   (    1) ATGAAAACCATTCAT  1 
+VP2763_p-126(metF)       (    1) GTGAGAAAAATTCAT  1 
+VAS14_16581_p-210(glyA)  (    1) ATGAAAATGATTCAT  1 
+VSAK1_00952_p-103(metE)  (    1) TTGAATTAATTTCAT  1 
+VSAK1_00947_p-109(metR)  (    1) ATGAAATTAATTCAA  1 
+VAS14_12469_p-135(PF0890 (    1) TTGAATTTTTTTCAT  1 
+VSAL_I0860_p-136(metR)   (    1) ATGAATTTATTTCAA  1 
+VP1975_p-118(n/a)        (    1) ATTAAAAAAATTCAT  1 
+VF_1722_p-136(metR)      (    1) ATGAATTATATTCAA  1 
+VV1_2218_p-128(metR)     (    1) ATTAGAAAAATTCAT  1 
+VAS14_11629_p-248(pfl)   (    1) ATGCACAATATGCAT  1 
+VIBHAR_02773_p-133(metR) (    1) ATTAAAAAATTTCAT  1 
+VS_1145_p-155(metE)      (    1) ATGAAAATTATTAAT  1 
+PBPRA1379_p-226(metE)    (    1) ATGAATATATTTAAT  1 
+VS_1144_p-141(metR)      (    1) ATTAATAATTTTCAT  1 
+PBPRA1378_p-43(metR)     (    1) ATTAAATATATTCAT  1 
+PBPRA1378_p-163(metR)    (    1) ATGAATAAAACTAAT  1 
+VC1705_p-121(n/a)        (    1) ATTAGTAATTTTCAT  1 
+VC1704_p-147(metE)       (    1) ATGAAAATTACTAAT  1 
+PBPRA1379_p-106(metE)    (    1) ATTAGTTTTATTCAT  1 
+VIBHAR_02772_p-146(metE) (    1) ATGAAATTTTTTAAT  1 
+VP1974_p-149(metE)       (    1) ATGAATTTTTTTAAT  1 
+PBPRA0263_p-160(metF)    (    1) TTGAAGTTTATGCAA  1 
+VV1_2219_p-208(metE)     (    1) ATGAATTTTTCTAAT  1 
+VIBHAR_02963_p-138(pfl)  (    1) ATGCAATTTAATCAT  1 
+VS_2373_p-143(glyA)      (    1) ATGATAAAATTGCAA  1 
+VF_1722_p-101(metR)      (    1) ATCGATTAACTTCAT  1 
+VF_1721_p-134(metE)      (    1) ATGAAGTTAATCGAT  1 
+VF_0695_p-222(glyA)      (    1) ATGCAATTATTTGAA  1 
+VSAL_I0860_p-65(metR)    (    1) TTGAAGGTTTTTCAC  1 
+PBPRA0795_p-178(glyA)    (    1) ATGAATAAATTGTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 57 bayes= 1.75899 E= 3.2e-188 
+    88  -1248   -146   -110 
+ -1248  -1248  -1248    142 
+ -1248   -249    315   -161 
+   109    -50   -246  -1248 
+    94  -1248     71   -441 
+    29   -249    -46      4 
+    63  -1248   -246    -25 
+    14   -249   -146     34 
+    29     67   -246    -33 
+    14    120  -1248    -33 
+  -461      9  -1248    123 
+ -1248   -249    100    107 
+  -181    306   -146   -441 
+   122  -1248  -1248  -1248 
+  -181   -249  -1248    120 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 57 E= 3.2e-188 
+ 0.789474  0.000000  0.035088  0.175439 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.017544  0.859649  0.122807 
+ 0.912281  0.070175  0.017544  0.000000 
+ 0.824561  0.000000  0.157895  0.017544 
+ 0.526316  0.017544  0.070175  0.385965 
+ 0.666667  0.000000  0.017544  0.315789 
+ 0.473684  0.017544  0.035088  0.473684 
+ 0.526316  0.157895  0.017544  0.298246 
+ 0.473684  0.228070  0.000000  0.298246 
+ 0.017544  0.105263  0.000000  0.877193 
+ 0.000000  0.017544  0.192982  0.789474 
+ 0.122807  0.824561  0.035088  0.017544 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.122807  0.017544  0.000000  0.859649 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGAAWAWWWTTCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATGAA[AT][AT][AT][AT][ATC]TTCAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.10 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC1705_p-121(n/a)                9.73e-05  [+1(9.73e-05)]
+VC0941_p-154(glyA)               9.82e-08  [+1(9.82e-08)]
+VC2685_p-122(metF)               8.70e-07  [+1(8.70e-07)]
+VC1704_p-147(metE)               1.06e-04  15
+VV1_0286_p-153(glyA)             4.69e-07  [+1(4.69e-07)]
+VV1_1366_p-130(metF)             7.15e-06  [+1(7.15e-06)]
+VV1_2218_p-128(metR)             3.95e-05  [+1(3.95e-05)]
+VV1_2219_p-208(metE)             2.45e-04  15
+VV20997_p-97(PF08908)            3.00e-07  [+1(3.00e-07)]
+VIBHAR_02963_p-116(pfl)          3.57e-06  [+1(3.57e-06)]
+VIBHAR_02963_p-138(pfl)          3.23e-04  15
+VIBHAR_01208_p-155(glyA)         9.82e-08  [+1(9.82e-08)]
+VIBHAR_00047_p-128(metF)         7.15e-06  [+1(7.15e-06)]
+VIBHAR_02773_p-133(metR)         4.41e-05  [+1(4.41e-05)]
+VIBHAR_02772_p-146(metE)         1.15e-04  15
+VIBHAR_02801_p-236(PF089         1.62e-07  [+1(1.62e-07)]
+VP1975_p-118(n/a)                3.18e-05  [+1(3.18e-05)]
+VP0715_p-155(glyA)               9.82e-08  [+1(9.82e-08)]
+VP2763_p-126(metF)               8.60e-06  [+1(8.60e-06)]
+VP1974_p-149(metE)               1.35e-04  15
+VP1992_p-234(PF08908)            3.57e-06  [+1(3.57e-06)]
+VSAK1_10503_p-157(glyA)          1.62e-07  [+1(1.62e-07)]
+VSAK1_09463_p-162(metF)          6.74e-07  [+1(6.74e-07)]
+VSAK1_00947_p-109(metR)          1.98e-05  [+1(1.98e-05)]
+VSAK1_00952_p-199(metE)          6.74e-07  [+1(6.74e-07)]
+VSAK1_00952_p-103(metE)          1.66e-05  [+1(1.66e-05)]
+VS_2373_p-156(glyA)              9.82e-08  [+1(9.82e-08)]
+VS_2373_p-143(glyA)              3.45e-04  15
+VS_1144_p-141(metR)              8.14e-05  [+1(8.14e-05)]
+VS_1145_p-155(metE)              4.92e-05  [+1(4.92e-05)]
+VS_1283_p-193(PF08908)           2.69e-06  [+1(2.69e-06)]
+VF_A0142_p-173(pfl)              5.82e-06  [+1(5.82e-06)]
+VF_A0142_p-151(pfl)              3.57e-06  [+1(3.57e-06)]
+VF_0695_p-222(glyA)              5.80e-04  15
+VF_0695_p-182(glyA)              1.82e-06  [+1(1.82e-06)]
+VF_2309_p-142(metF)              7.15e-06  [+1(7.15e-06)]
+VF_1722_p-136(metR)              3.95e-05  [+1(3.95e-05)]
+VF_1722_p-101(metR)              3.93e-04  15
+VF_1721_p-134(metE)              4.20e-04  15
+VF_1721_p-99(metE)               6.45e-06  [+1(6.45e-06)]
+VSAL_I0864_p-182(glyA)           1.15e-06  [+1(1.15e-06)]
+VSAL_I2762_p-162(metF)           4.60e-06  [+1(4.60e-06)]
+VSAL_I2762_p-140(metF)           5.82e-06  [+1(5.82e-06)]
+VSAL_I0860_p-136(metR)           3.18e-05  [+1(3.18e-05)]
+VSAL_I0860_p-65(metR)            6.19e-04  15
+VAS14_11629_p-226(pfl)           7.87e-06  [+1(7.87e-06)]
+VAS14_11629_p-248(pfl)           4.41e-05  [+1(4.41e-05)]
+VAS14_16581_p-210(glyA)          9.45e-06  [+1(9.45e-06)]
+VAS14_12469_p-135(PF0890         2.16e-05  [+1(2.16e-05)]
+PBPRA0795_p-212(glyA)            4.69e-07  [+1(4.69e-07)]
+PBPRA0795_p-178(glyA)            8.95e-04  15
+PBPRA0263_p-160(metF)            1.57e-04  15
+PBPRA0263_p-138(metF)            7.15e-06  [+1(7.15e-06)]
+PBPRA1378_p-163(metR)            9.73e-05  [+1(9.73e-05)]
+PBPRA1378_p-43(metR)             8.92e-05  [+1(8.92e-05)]
+PBPRA1379_p-226(metE)            5.49e-05  [+1(5.49e-05)]
+PBPRA1379_p-106(metE)            1.15e-04  15
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

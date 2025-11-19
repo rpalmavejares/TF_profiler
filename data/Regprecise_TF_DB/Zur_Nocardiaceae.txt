@@ -1,0 +1,343 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/Zur_Nocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+nfa49740_p-88(yciC)      1.0000     21  nfa49740_p-33(yciC)      1.0000     21  
+nfa23260_p-35(znuB2)     1.0000     21  nfa4450_p-27(znuA)       1.0000     21  
+nfa49750_p-95(rpmB2)     1.0000     21  nfa49750_p-40(rpmB2)     1.0000     21  
+nfa23250_p-45(znuC2)     1.0000     21  RER_44020_p-84(yciC)     1.0000     21  
+RER_44020_p-30(yciC)     1.0000     21  RER_44030_p-41(rpmB2)    1.0000     21  
+RER_54290_p-39(nfa23280) 1.0000     21  RER_14090_p-25(yciC3)    1.0000     21  
+RER_07030_p-56(znuA)     1.0000     21  RER_44030_p-95(rpmB2)    1.0000     21  
+ROP_56820_p-56(yciC)     1.0000     21  ROP_04730_p-30(rpmJ2)    1.0000     21  
+ROP_56810_p-116(rpmB2)   1.0000     21  ROP_56810_p-62(rpmB2)    1.0000     21  
+ROP_22700_p-31(znuB2)    1.0000     21  ROP_22730_p-47(nfa23280) 1.0000     21  
+ROP_44070_p-28(znuA)     1.0000     21  ROP_22690_p-8(znuC2)     1.0000     21  
+RHA1_ro05618_p-83(yciC)  1.0000     21  RHA1_ro05618_p-29(yciC)  1.0000     21  
+RHA1_ro05617_p-117(rpmB2 1.0000     21  RHA1_ro05617_p-63(rpmB2) 1.0000     21  
+RHA1_ro02546_p-31(znuB2) 1.0000     21  RHA1_ro02549_p-47(nfa232 1.0000     21  
+RHA1_ro05533_p-25(yciC3) 1.0000     21  RHA1_ro04479_p-55(znuA)  1.0000     21  
+RHA1_ro02545_p-8(znuC2)  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/Zur_Nocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/Zur_Nocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             651    N=              31
+sample: seed=            0    hsfrac=          0
+        searchsize=    651    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.338 C 0.169 G 0.154 T 0.339 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.337 C 0.169 G 0.154 T 0.339 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TDWYGAHAAYSRTTDTCRWYA MEME-1	width =  21  sites =  31  llr = 481  E-value = 1.5e-161
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  146::82aa::5::2::6428
+pos.-specific     C  2::5::5::45::::2a::3:
+probability       G  :3::a2::::55::31:4:::
+matrix            T  7335::3::6::aa47::552
+
+         bits    2.7     *                
+                 2.4     *           *    
+                 2.2     *           *    
+                 1.9     *           *    
+Relative         1.6     *  **   **  *    
+Entropy          1.3     *  ** * **  *    
+(22.4 bits)      1.1    *** *******  **   
+                 0.8    *** *******  **  *
+                 0.5 *  *** ******* ***  *
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TAATGACAATCATTTTCATTA
+consensus             GTC  T  CGG  G  GAC 
+sequence              T    A       A      
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+nfa49740_p-88(yciC)           1  3.13e-10          . TGATGACAATCGTTTTCGACA           
+ROP_04730_p-30(rpmJ2)         1  4.03e-10          . TAACGACAATCGTTTTCAATA           
+RHA1_ro05618_p-83(yciC)       1  1.25e-09          . TGATGACAATCATTTTCGACA           
+ROP_56820_p-56(yciC)          1  1.25e-09          . TGATGACAATCATTTTCGACA           
+nfa49750_p-40(rpmB2)          1  2.25e-09          . TGTCGAAAACGATTGTCATCA           
+RHA1_ro02546_p-31(znuB2)      1  3.24e-09          . TTACGACAATCATTATCGTTA           
+RHA1_ro05617_p-63(rpmB2)      1  3.24e-09          . TGTCGAAAATGATTGTCATCA           
+ROP_22700_p-31(znuB2)         1  3.24e-09          . TTACGACAATCATTATCGTTA           
+ROP_56810_p-62(rpmB2)         1  3.24e-09          . TGTCGAAAATGATTGTCATCA           
+RHA1_ro02545_p-8(znuC2)       1  6.31e-09          . TAACGATAATGATTGTCGTAA           
+RHA1_ro05617_p-117(rpmB2      1  6.31e-09          . TTTCGATAACGATTGTCATTA           
+ROP_22690_p-8(znuC2)          1  6.31e-09          . TAACGATAATGATTGTCGTAA           
+ROP_56810_p-116(rpmB2)        1  6.31e-09          . TTTCGATAACGATTGTCATTA           
+RER_14090_p-25(yciC3)         1  8.55e-09          . TAATGACAATGGTTACCATTA           
+RER_44020_p-84(yciC)          1  1.31e-08          . AGATGACAATCGTTTTCGACA           
+RHA1_ro05618_p-29(yciC)       1  1.50e-08          . TAATGACAATCGTTATCGAAA           
+RER_07030_p-56(znuA)          1  2.18e-08          . TAACGGTAACGGTTTCCAATA           
+RER_44030_p-41(rpmB2)         1  2.46e-08          . TGTCGAAAACGATTGTCATCT           
+nfa49750_p-95(rpmB2)          1  4.71e-08          . TTTCGATAACGATTGTCATTT           
+RHA1_ro04479_p-55(znuA)       1  5.19e-08          . CAACGGTAACGGTTTCCAATA           
+ROP_44070_p-28(znuA)          1  5.19e-08          . CAACGGTAACGGTTTCCAATA           
+RHA1_ro02549_p-47(nfa232      1  1.05e-07          . CTTTGACAACCGTTTGCAATA           
+nfa49740_p-33(yciC)           1  1.14e-07          . AAATGACAATCGTTATCGAAA           
+nfa4450_p-27(znuA)            1  1.89e-07          . TAATGGAAATCGTTTCCGTTT           
+ROP_22730_p-47(nfa23280)      1  2.02e-07          . CTTTGACAACCGTTTGCAAAA           
+nfa23260_p-35(znuB2)          1  2.45e-07          . TAGTGATAATCGTTTTCATCT           
+RER_54290_p-39(nfa23280)      1  3.84e-07          . CTTTGACAATCATTTACATTA           
+RER_44030_p-95(rpmB2)         1  4.68e-07          . TTCTGGGAATGATTGTCATTA           
+nfa23250_p-45(znuC2)          1  5.13e-07          . AGATGAAAACGATTATCACTA           
+RER_44020_p-30(yciC)          1  5.37e-07          . TAATGACAATCATTCCCAGAA           
+RHA1_ro05533_p-25(yciC3)      1  7.17e-07          . TAATGAAAACAGTTATCATTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nfa49740_p-88(yciC)               3.1e-10  [+1]
+ROP_04730_p-30(rpmJ2)               4e-10  [+1]
+RHA1_ro05618_p-83(yciC)           1.2e-09  [+1]
+ROP_56820_p-56(yciC)              1.2e-09  [+1]
+nfa49750_p-40(rpmB2)              2.3e-09  [+1]
+RHA1_ro02546_p-31(znuB2)          3.2e-09  [+1]
+RHA1_ro05617_p-63(rpmB2)          3.2e-09  [+1]
+ROP_22700_p-31(znuB2)             3.2e-09  [+1]
+ROP_56810_p-62(rpmB2)             3.2e-09  [+1]
+RHA1_ro02545_p-8(znuC2)           6.3e-09  [+1]
+RHA1_ro05617_p-117(rpmB2          6.3e-09  [+1]
+ROP_22690_p-8(znuC2)              6.3e-09  [+1]
+ROP_56810_p-116(rpmB2)            6.3e-09  [+1]
+RER_14090_p-25(yciC3)             8.5e-09  [+1]
+RER_44020_p-84(yciC)              1.3e-08  [+1]
+RHA1_ro05618_p-29(yciC)           1.5e-08  [+1]
+RER_07030_p-56(znuA)              2.2e-08  [+1]
+RER_44030_p-41(rpmB2)             2.5e-08  [+1]
+nfa49750_p-95(rpmB2)              4.7e-08  [+1]
+RHA1_ro04479_p-55(znuA)           5.2e-08  [+1]
+ROP_44070_p-28(znuA)              5.2e-08  [+1]
+RHA1_ro02549_p-47(nfa232          1.1e-07  [+1]
+nfa49740_p-33(yciC)               1.1e-07  [+1]
+nfa4450_p-27(znuA)                1.9e-07  [+1]
+ROP_22730_p-47(nfa23280)            2e-07  [+1]
+nfa23260_p-35(znuB2)              2.4e-07  [+1]
+RER_54290_p-39(nfa23280)          3.8e-07  [+1]
+RER_44030_p-95(rpmB2)             4.7e-07  [+1]
+nfa23250_p-45(znuC2)              5.1e-07  [+1]
+RER_44020_p-30(yciC)              5.4e-07  [+1]
+RHA1_ro05533_p-25(yciC3)          7.2e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TDWYGAHAAYSRTTDTCRWYA width=21 seqs=31
+nfa49740_p-88(yciC)      (    1) TGATGACAATCGTTTTCGACA  1 
+ROP_04730_p-30(rpmJ2)    (    1) TAACGACAATCGTTTTCAATA  1 
+RHA1_ro05618_p-83(yciC)  (    1) TGATGACAATCATTTTCGACA  1 
+ROP_56820_p-56(yciC)     (    1) TGATGACAATCATTTTCGACA  1 
+nfa49750_p-40(rpmB2)     (    1) TGTCGAAAACGATTGTCATCA  1 
+RHA1_ro02546_p-31(znuB2) (    1) TTACGACAATCATTATCGTTA  1 
+RHA1_ro05617_p-63(rpmB2) (    1) TGTCGAAAATGATTGTCATCA  1 
+ROP_22700_p-31(znuB2)    (    1) TTACGACAATCATTATCGTTA  1 
+ROP_56810_p-62(rpmB2)    (    1) TGTCGAAAATGATTGTCATCA  1 
+RHA1_ro02545_p-8(znuC2)  (    1) TAACGATAATGATTGTCGTAA  1 
+RHA1_ro05617_p-117(rpmB2 (    1) TTTCGATAACGATTGTCATTA  1 
+ROP_22690_p-8(znuC2)     (    1) TAACGATAATGATTGTCGTAA  1 
+ROP_56810_p-116(rpmB2)   (    1) TTTCGATAACGATTGTCATTA  1 
+RER_14090_p-25(yciC3)    (    1) TAATGACAATGGTTACCATTA  1 
+RER_44020_p-84(yciC)     (    1) AGATGACAATCGTTTTCGACA  1 
+RHA1_ro05618_p-29(yciC)  (    1) TAATGACAATCGTTATCGAAA  1 
+RER_07030_p-56(znuA)     (    1) TAACGGTAACGGTTTCCAATA  1 
+RER_44030_p-41(rpmB2)    (    1) TGTCGAAAACGATTGTCATCT  1 
+nfa49750_p-95(rpmB2)     (    1) TTTCGATAACGATTGTCATTT  1 
+RHA1_ro04479_p-55(znuA)  (    1) CAACGGTAACGGTTTCCAATA  1 
+ROP_44070_p-28(znuA)     (    1) CAACGGTAACGGTTTCCAATA  1 
+RHA1_ro02549_p-47(nfa232 (    1) CTTTGACAACCGTTTGCAATA  1 
+nfa49740_p-33(yciC)      (    1) AAATGACAATCGTTATCGAAA  1 
+nfa4450_p-27(znuA)       (    1) TAATGGAAATCGTTTCCGTTT  1 
+ROP_22730_p-47(nfa23280) (    1) CTTTGACAACCGTTTGCAAAA  1 
+nfa23260_p-35(znuB2)     (    1) TAGTGATAATCGTTTTCATCT  1 
+RER_54290_p-39(nfa23280) (    1) CTTTGACAATCATTTACATTA  1 
+RER_44030_p-95(rpmB2)    (    1) TTCTGGGAATGATTGTCATTA  1 
+nfa23250_p-45(znuC2)     (    1) AGATGAAAACGATTATCACTA  1 
+RER_44020_p-30(yciC)     (    1) TAATGACAATCATTCCCAGAA  1 
+RHA1_ro05533_p-25(yciC3) (    1) TAATGAAAACAGTTATCATTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 31 bayes= 1.57258 E= 1.5e-161 
+  -180     -7  -1160    113 
+    31  -1160     91    -22 
+    86   -239   -226     -7 
+ -1160    151  -1160     61 
+ -1160  -1160    270  -1160 
+   131  -1160      6  -1160 
+   -58    141   -226    -22 
+   157  -1160  -1160  -1160 
+   157  -1160  -1160  -1160 
+ -1160    119  -1160     85 
+  -338    151    165  -1160 
+    70  -1160    155  -1160 
+ -1160  -1160  -1160    156 
+ -1160  -1160  -1160    156 
+   -58   -239    106     31 
+  -338     19   -126    107 
+ -1160    256  -1160  -1160 
+    93  -1160    120  -1160 
+    20   -239   -226     69 
+   -80     78  -1160     61 
+   131  -1160  -1160   -107 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 31 E= 1.5e-161 
+ 0.096774  0.161290  0.000000  0.741935 
+ 0.419355  0.000000  0.290323  0.290323 
+ 0.612903  0.032258  0.032258  0.322581 
+ 0.000000  0.483871  0.000000  0.516129 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.838710  0.000000  0.161290  0.000000 
+ 0.225806  0.451613  0.032258  0.290323 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.387097  0.000000  0.612903 
+ 0.032258  0.483871  0.483871  0.000000 
+ 0.548387  0.000000  0.451613  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.225806  0.032258  0.322581  0.419355 
+ 0.032258  0.193548  0.064516  0.709677 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.645161  0.000000  0.354839  0.000000 
+ 0.387097  0.032258  0.032258  0.548387 
+ 0.193548  0.290323  0.000000  0.516129 
+ 0.838710  0.000000  0.000000  0.161290 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TDWYGAHAAYSRTTDTCRWYA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AGT][AT][TC]GA[CTA]AA[TC][CG][AG]TT[TGA]TC[AG][TA][TC]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nfa49740_p-88(yciC)              3.13e-10  [+1(3.13e-10)]
+nfa49740_p-33(yciC)              1.14e-07  [+1(1.14e-07)]
+nfa23260_p-35(znuB2)             2.45e-07  [+1(2.45e-07)]
+nfa4450_p-27(znuA)               1.89e-07  [+1(1.89e-07)]
+nfa49750_p-95(rpmB2)             4.71e-08  [+1(4.71e-08)]
+nfa49750_p-40(rpmB2)             2.25e-09  [+1(2.25e-09)]
+nfa23250_p-45(znuC2)             5.13e-07  [+1(5.13e-07)]
+RER_44020_p-84(yciC)             1.31e-08  [+1(1.31e-08)]
+RER_44020_p-30(yciC)             5.37e-07  [+1(5.37e-07)]
+RER_44030_p-41(rpmB2)            2.46e-08  [+1(2.46e-08)]
+RER_54290_p-39(nfa23280)         3.84e-07  [+1(3.84e-07)]
+RER_14090_p-25(yciC3)            8.55e-09  [+1(8.55e-09)]
+RER_07030_p-56(znuA)             2.18e-08  [+1(2.18e-08)]
+RER_44030_p-95(rpmB2)            4.68e-07  [+1(4.68e-07)]
+ROP_56820_p-56(yciC)             1.25e-09  [+1(1.25e-09)]
+ROP_04730_p-30(rpmJ2)            4.03e-10  [+1(4.03e-10)]
+ROP_56810_p-116(rpmB2)           6.31e-09  [+1(6.31e-09)]
+ROP_56810_p-62(rpmB2)            3.24e-09  [+1(3.24e-09)]
+ROP_22700_p-31(znuB2)            3.24e-09  [+1(3.24e-09)]
+ROP_22730_p-47(nfa23280)         2.02e-07  [+1(2.02e-07)]
+ROP_44070_p-28(znuA)             5.19e-08  [+1(5.19e-08)]
+ROP_22690_p-8(znuC2)             6.31e-09  [+1(6.31e-09)]
+RHA1_ro05618_p-83(yciC)          1.25e-09  [+1(1.25e-09)]
+RHA1_ro05618_p-29(yciC)          1.50e-08  [+1(1.50e-08)]
+RHA1_ro05617_p-117(rpmB2         6.31e-09  [+1(6.31e-09)]
+RHA1_ro05617_p-63(rpmB2)         3.24e-09  [+1(3.24e-09)]
+RHA1_ro02546_p-31(znuB2)         3.24e-09  [+1(3.24e-09)]
+RHA1_ro02549_p-47(nfa232         1.05e-07  [+1(1.05e-07)]
+RHA1_ro05533_p-25(yciC3)         7.17e-07  [+1(7.17e-07)]
+RHA1_ro04479_p-55(znuA)          5.19e-08  [+1(5.19e-08)]
+RHA1_ro02545_p-8(znuC2)          6.31e-09  [+1(6.31e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

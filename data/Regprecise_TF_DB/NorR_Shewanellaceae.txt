@@ -1,0 +1,605 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/NorR_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sputcn32_3073_p-50(norR) 1.0000     19  Sputcn32_3072_p-120(norB 1.0000     19  
+Sputcn32_3072_p-144(norB 1.0000     19  Sputcn32_3072_p-162(norB 1.0000     19  
+Sputcn32_3072_p-190(norB 1.0000     19  Sputw3181_0872_p-50(norR 1.0000     19  
+Sputw3181_0873_p-120(nor 1.0000     19  Sputw3181_0873_p-144(nor 1.0000     19  
+Sputw3181_0873_p-190(nor 1.0000     19  Sputw3181_0873_p-162(nor 1.0000     19  
+Shewana3_0845_p-166(norR 1.0000     19  Shewana3_0845_p-58(norR) 1.0000     19  
+Shewana3_0846_p-131(norB 1.0000     19  Shewana3_0846_p-156(norB 1.0000     19  
+Shewana3_0846_p-174(norB 1.0000     19  Shewana3_0846_p-203(norB 1.0000     19  
+Shewmr4_3090_p-167(norR) 1.0000     19  Shewmr4_3090_p-58(norR)  1.0000     19  
+Shewmr4_3089_p-156(norB) 1.0000     19  Shewmr4_3089_p-131(norB) 1.0000     19  
+Shewmr4_3089_p-174(norB) 1.0000     19  Shewmr4_3089_p-203(norB) 1.0000     19  
+Shewmr4_3089_p-33(norB)  1.0000     19  Shewmr7_0883_p-203(norB) 1.0000     19  
+Shewmr7_0883_p-174(norB) 1.0000     19  Shewmr7_0883_p-156(norB) 1.0000     19  
+Shewmr7_0883_p-131(norB) 1.0000     19  Shewmr7_0882_p-58(norR)  1.0000     19  
+Shewmr7_0882_p-166(norR) 1.0000     19  Sfri_3254_p-58(norR)     1.0000     19  
+Sfri_3254_p-43(norR)     1.0000     19  Sfri_1583_p-195(norV)    1.0000     19  
+Sfri_1583_p-176(norV)    1.0000     19  Sfri_1583_p-152(norV)    1.0000     19  
+Sfri_3253_p-138(norB)    1.0000     19  Sfri_3253_p-162(norB)    1.0000     19  
+Sfri_3253_p-181(norB)    1.0000     19  Sama_0728_p-169(norB)    1.0000     19  
+Sama_0728_p-149(norB)    1.0000     19  Sama_0727_p-76(norR)     1.0000     19  
+Shew_0656_p-120(norR)    1.0000     19  Shew_0656_p-96(norR)     1.0000     19  
+Shew_0657_p-132(norB)    1.0000     19  Shew_0657_p-157(norB)    1.0000     19  
+Shew_0657_p-175(norB)    1.0000     19  Shew_0657_p-204(norB)    1.0000     19  
+Spea_3444_p-154(norR)    1.0000     19  Spea_3444_p-119(norR)    1.0000     19  
+Spea_3652_p-145(norV)    1.0000     19  Spea_3652_p-169(norV)    1.0000     19  
+Spea_3652_p-188(norV)    1.0000     19  Spea_3652_p-237(norV)    1.0000     19  
+Shal_3554_p-165(norB)    1.0000     19  Shal_3554_p-186(norB)    1.0000     19  
+Shal_3555_p-86(norR)     1.0000     19  Shal_3554_p-142(norB)    1.0000     19  
+Shal_3740_p-144(norV)    1.0000     19  Shal_3740_p-188(norV)    1.0000     19  
+Shal_3740_p-168(norV)    1.0000     19  swp_4283_p-131(swp_4283) 1.0000     19  
+swp_0832_p-105(norR)     1.0000     19  swp_0832_p-72(norR)      1.0000     19  
+swp_4283_p-156(swp_4283) 1.0000     19  swp_0833_p-173(norB)     1.0000     19  
+swp_0833_p-155(norB)     1.0000     19  swp_0833_p-131(norB)     1.0000     19  
+swp_4282_p-118(norR2)    1.0000     19  swp_4282_p-93(norR2)     1.0000     19  
+swp_1079_p-138(norV)     1.0000     19  swp_1079_p-162(norV)     1.0000     19  
+swp_1079_p-182(norV)     1.0000     19  swp_1079_p-207(norV)     1.0000     19  
+Ssed_3822_p-129(norB)    1.0000     19  Ssed_3822_p-171(norB)    1.0000     19  
+Ssed_3822_p-153(norB)    1.0000     19  Ssed_3823_p-136(norR)    1.0000     19  
+Ssed_3823_p-160(norR)    1.0000     19  Ssed_4053_p-133(norV)    1.0000     19  
+Ssed_4053_p-157(norV)    1.0000     19  Ssed_4053_p-176(norV)    1.0000     19  
+Ssed_4053_p-213(norV)    1.0000     19  Swoo_0760_p-62(norR)     1.0000     19  
+Swoo_0760_p-37(norR)     1.0000     19  Swoo_0686_p-525(nnrS2)   1.0000     19  
+Swoo_0686_p-499(nnrS2)   1.0000     19  Swoo_0688_p-118(norR2)   1.0000     19  
+Swoo_0688_p-92(norR2)    1.0000     19  Swoo_0761_p-130(norB)    1.0000     19  
+Swoo_0761_p-154(norB)    1.0000     19  Swoo_0761_p-172(norB)    1.0000     19  
+Swoo_0761_p-199(norB)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/NorR_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/NorR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       91    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1729    N=              91
+sample: seed=            0    hsfrac=          0
+        searchsize=   1729    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.353 C 0.179 G 0.155 T 0.313 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.353 C 0.179 G 0.155 T 0.313 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RBTGTCAWWWWGACAHT MEME-1	width =  17  sites =  91  llr = 985  E-value = 2.8e-335
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5121:1746631a:942
+pos.-specific     C  12:::8::::1::a:42
+probability       G  34:9::1::::8:::1:
+matrix            T  138:a126445:::125
+
+         bits    2.7                  
+                 2.4                  
+                 2.2    *         *   
+                 1.9    *         *   
+Relative         1.6    **      * *   
+Entropy          1.3    ***     ***   
+(15.6 bits)      1.1    ***     ***   
+                 0.8   ****     ****  
+                 0.5   ******** ****  
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           AGTGTCATAATGACACT
+consensus            GT     ATTA    AC
+sequence              C               
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Sputw3181_0873_p-144(nor      2  5.06e-09          A ATTGTCATTATGACACT T         
+Sputcn32_3072_p-144(norB      2  5.06e-09          A ATTGTCATTATGACACT T         
+Swoo_0761_p-172(norB)         2  1.76e-08          A GCTGTCATTTAGACACT A         
+Shewmr7_0883_p-174(norB)      2  2.19e-08          A GCTGTCATAAAGACAAT A         
+Shewana3_0846_p-174(norB      2  2.19e-08          A GCTGTCATAAAGACAAT C         
+Shew_0657_p-132(norB)         2  2.66e-08          G ATTGTCATTATGACAAT T         
+swp_0833_p-173(norB)          2  4.89e-08          C ATTGTCAAAAAGACACT T         
+Shewmr4_3089_p-156(norB)      2  1.54e-07          A ACTGTCATATCGACAAT A         
+Shewmr7_0883_p-156(norB)      2  1.77e-07          A GCTGTCATATCGACAAC A         
+Shal_3740_p-188(norV)         2  2.05e-07          G ACTGTCTTAATGACATT T         
+swp_0833_p-131(norB)          2  3.12e-07          C ATTGTCTTTATGACAAC C         
+Spea_3652_p-188(norV)         2  3.12e-07          A GGTGTCTTATTGACAGC T         
+Sfri_3253_p-181(norB)         2  3.12e-07          C GCTGTCATTTCGACATT A         
+Swoo_0761_p-130(norB)         2  4.04e-07          C ATAGTCATAATGACACA T         
+swp_1079_p-182(norV)          2  4.04e-07          G GGTGTCTTAATGACATA G         
+Sfri_3254_p-43(norR)          2  4.04e-07          A CTTGTCATAATGACATC A         
+swp_0833_p-155(norB)          2  4.61e-07          T AGTGTCATATGGACACA C         
+Ssed_3822_p-153(norB)         2  5.22e-07          G GCTGTTATTAAGACACT A         
+Shal_3554_p-142(norB)         2  5.22e-07          C ACAGTCAAAATGACAAC A         
+Sfri_1583_p-152(norV)         2  5.22e-07          A ATTGTTATAATGACACC C         
+Swoo_0760_p-62(norR)          2  5.95e-07          G ATTGTCAAAATGACATA C         
+Ssed_3822_p-171(norB)         2  5.95e-07          A AGTGTAAAAATGACACT G         
+Sfri_1583_p-195(norV)         2  6.72e-07          C AAAGTCATAATGACACC C         
+Shew_0657_p-157(norB)         2  7.58e-07          C GGTGTCATTTTTACACT T         
+Shewmr4_3089_p-174(norB)      2  9.61e-07          A GCTGTCACAAAGACAAT A         
+Swoo_0688_p-92(norR2)         2  1.08e-06          T GTAGTCATATTGACTCT A         
+Shew_0657_p-175(norB)         2  1.08e-06          C ACTGTCTTTTTGACACG C         
+Ssed_3822_p-129(norB)         2  1.22e-06          G GGTGTCCTAATGACACA A         
+Shew_0656_p-120(norR)         2  1.37e-06          A AGTGTAAAAATGACAAT A         
+Sama_0727_p-76(norR)          2  1.37e-06          C CATGTCAAAATGACAAT T         
+Sputw3181_0873_p-162(nor      2  1.71e-06          T AGTGTCATAAAAACAAT A         
+Sputcn32_3072_p-162(norB      2  1.71e-06          T AGTGTCATAAAAACAAT A         
+Shewmr7_0883_p-131(norB)      2  1.91e-06          C AGTATCAAAAAGACAAT A         
+Shewmr4_3089_p-131(norB)      2  1.91e-06          C AGTATCAAAAAGACAAT T         
+Shewana3_0846_p-131(norB      2  1.91e-06          C AGTATCAAAAAGACAAT C         
+swp_4282_p-118(norR2)         2  2.13e-06          T GTAGTCATAATGACTAC G         
+Ssed_4053_p-213(norV)         2  2.38e-06          T CCTGTTATTAAGACACT C         
+swp_1079_p-138(norV)          2  2.38e-06          T GTTGTCATTATTACAAT T         
+Sama_0728_p-149(norB)         2  2.38e-06          A AATGTCTTTATGACATC A         
+swp_0832_p-72(norR)           2  2.65e-06          T AATGTCAAAAAGACAAA A         
+swp_4283_p-131(swp_4283)      2  2.65e-06          C GTAGTCATTATGACTAC A         
+Sfri_3253_p-162(norB)         2  2.65e-06          A ATAGTCTTATTGACACA T         
+Sfri_3253_p-138(norB)         2  2.65e-06          A TGTGTCAATAAGACTAT T         
+Swoo_0686_p-525(nnrS2)        2  2.95e-06          T AGAGTCAATATGACTAC A         
+Ssed_4053_p-176(norV)         2  2.95e-06          T AGTGTTGATATGACACT G         
+swp_4282_p-93(norR2)          2  2.95e-06          T GTAGTCATTATGACTCA T         
+Sputw3181_0873_p-120(nor      2  2.95e-06          A CGTATCAAAAAGACACT C         
+Sputcn32_3072_p-120(norB      2  2.95e-06          A CGTATCAAAAAGACACT C         
+Swoo_0761_p-154(norB)         2  3.28e-06          A ACTGTCATTTTTACAAT A         
+Sfri_1583_p-176(norV)         2  3.28e-06          G ATAGTCATAAAGACATA G         
+Swoo_0686_p-499(nnrS2)        2  3.64e-06          T GTAGTCATATTGACTCA C         
+Spea_3444_p-119(norR)         2  3.64e-06          T ACTGTTAAAAAGACACA C         
+Spea_3444_p-154(norR)         2  3.64e-06          A AGTGTAAAATTGACATT G         
+Ssed_3823_p-136(norR)         2  4.04e-06          A AATGTCAATATGACAAG C         
+swp_4283_p-156(swp_4283)      2  4.04e-06          A TGAGTCATAATGACTAC A         
+Shal_3740_p-144(norV)         2  4.04e-06          T GCTATCAAAAAGACATT G         
+Sama_0728_p-169(norB)         2  4.04e-06          T AGTGTCATTTATACAAT T         
+Shewmr7_0882_p-166(norR)      2  4.04e-06          A GGTGTCGTTTAGGCACC T         
+Shewmr4_3090_p-167(norR)      2  4.04e-06          A GGTGTCGTTTAGGCACC T         
+Shewana3_0845_p-166(norR      2  4.04e-06          A GGTGTCGTTTAGGCACC T         
+swp_1079_p-162(norV)          2  4.48e-06          G AGTGTCTTTATGATACT T         
+Spea_3652_p-145(norV)         2  4.95e-06          C GCTATCAAAAAGACAGT G         
+Sputw3181_0872_p-50(norR      2  4.95e-06          C TGTGTCAATATCACAAT T         
+Sputcn32_3073_p-50(norR)      2  4.95e-06          C TGTGTCAATATCACAAT T         
+Shal_3554_p-186(norB)         2  6.67e-06          A GATGTCAATTCGACAAA G         
+Shewmr7_0882_p-58(norR)       2  6.67e-06          C TGTGTCAATATAACAAT C         
+Shewmr4_3090_p-58(norR)       2  6.67e-06          C TGTGTCAATATAACAAT C         
+Shewana3_0846_p-156(norB      2  6.67e-06          C ACTGTCATATCAACAAT C         
+Shewana3_0845_p-58(norR)      2  6.67e-06          C TGTGTCAATATAACAAT C         
+Ssed_4053_p-133(norV)         2  7.35e-06          G CATGTCTTTATGACATC T         
+Shew_0657_p-204(norB)         2  7.35e-06          A AGTATCAAATCGACACA G         
+swp_1079_p-207(norV)          2  8.10e-06          C TTTGTCATAAAGACTCG G         
+Swoo_0688_p-118(norR2)        2  8.89e-06          G TGAGTCAATATGACTAC A         
+Sputw3181_0873_p-190(nor      2  8.89e-06          G ATTGTTTTAAAGACACA A         
+Sputcn32_3072_p-190(norB      2  8.89e-06          G ATTGTTTTAAAGACACA A         
+Shew_0656_p-96(norR)          2  9.78e-06          T ACTGTTAAATTGACATA T         
+Shal_3555_p-86(norR)          2  1.07e-05          T ACTGTAAAAAAGACAGC A         
+Sfri_3254_p-58(norR)          2  1.07e-05          T GTTGTTATATTCACACT T         
+Shal_3554_p-165(norB)         2  1.29e-05          C GTTATCAAATAGACAGC T         
+Shal_3740_p-168(norV)         2  1.68e-05          T ACGGTCATTTTGACTGT T         
+Ssed_4053_p-157(norV)         2  2.00e-05          C AATGTCTTTTGGACAGT T         
+swp_0832_p-105(norR)          2  2.58e-05          A ACAGTATATTTGACACT G         
+Spea_3652_p-169(norV)         2  2.58e-05          A TATGTCACTTTGACATT T         
+Shewmr7_0883_p-203(norB)      2  2.80e-05          C ATTGTGTTATCGACATT C         
+Shewmr4_3089_p-203(norB)      2  2.80e-05          C ATTGTGTTATCGACATT C         
+Ssed_3823_p-160(norR)         2  4.20e-05          T TTTGTATTTATGACAGC A         
+Shewana3_0846_p-203(norB      2  6.65e-05          C ATTGTGTTATCGACATA C         
+Swoo_0761_p-199(norB)         2  7.17e-05          A TCAGTCATATTGATATT C         
+Shewmr4_3089_p-33(norB)       2  8.30e-05          A CGTATCAAAATGACGTT G         
+Spea_3652_p-237(norV)         2  2.45e-04          T ATAGTCGTTTGGTCACT G         
+Swoo_0760_p-37(norR)          2  5.29e-04          T ATGGTCATATTCAAACC A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputw3181_0873_p-144(nor          5.1e-09  1_[+1]_1
+Sputcn32_3072_p-144(norB          5.1e-09  1_[+1]_1
+Swoo_0761_p-172(norB)             1.8e-08  1_[+1]_1
+Shewmr7_0883_p-174(norB)          2.2e-08  1_[+1]_1
+Shewana3_0846_p-174(norB          2.2e-08  1_[+1]_1
+Shew_0657_p-132(norB)             2.7e-08  1_[+1]_1
+swp_0833_p-173(norB)              4.9e-08  1_[+1]_1
+Shewmr4_3089_p-156(norB)          1.5e-07  1_[+1]_1
+Shewmr7_0883_p-156(norB)          1.8e-07  1_[+1]_1
+Shal_3740_p-188(norV)             2.1e-07  1_[+1]_1
+swp_0833_p-131(norB)              3.1e-07  1_[+1]_1
+Spea_3652_p-188(norV)             3.1e-07  1_[+1]_1
+Sfri_3253_p-181(norB)             3.1e-07  1_[+1]_1
+Swoo_0761_p-130(norB)               4e-07  1_[+1]_1
+swp_1079_p-182(norV)                4e-07  1_[+1]_1
+Sfri_3254_p-43(norR)                4e-07  1_[+1]_1
+swp_0833_p-155(norB)              4.6e-07  1_[+1]_1
+Ssed_3822_p-153(norB)             5.2e-07  1_[+1]_1
+Shal_3554_p-142(norB)             5.2e-07  1_[+1]_1
+Sfri_1583_p-152(norV)             5.2e-07  1_[+1]_1
+Swoo_0760_p-62(norR)              5.9e-07  1_[+1]_1
+Ssed_3822_p-171(norB)             5.9e-07  1_[+1]_1
+Sfri_1583_p-195(norV)             6.7e-07  1_[+1]_1
+Shew_0657_p-157(norB)             7.6e-07  1_[+1]_1
+Shewmr4_3089_p-174(norB)          9.6e-07  1_[+1]_1
+Swoo_0688_p-92(norR2)             1.1e-06  1_[+1]_1
+Shew_0657_p-175(norB)             1.1e-06  1_[+1]_1
+Ssed_3822_p-129(norB)             1.2e-06  1_[+1]_1
+Shew_0656_p-120(norR)             1.4e-06  1_[+1]_1
+Sama_0727_p-76(norR)              1.4e-06  1_[+1]_1
+Sputw3181_0873_p-162(nor          1.7e-06  1_[+1]_1
+Sputcn32_3072_p-162(norB          1.7e-06  1_[+1]_1
+Shewmr7_0883_p-131(norB)          1.9e-06  1_[+1]_1
+Shewmr4_3089_p-131(norB)          1.9e-06  1_[+1]_1
+Shewana3_0846_p-131(norB          1.9e-06  1_[+1]_1
+swp_4282_p-118(norR2)             2.1e-06  1_[+1]_1
+Ssed_4053_p-213(norV)             2.4e-06  1_[+1]_1
+swp_1079_p-138(norV)              2.4e-06  1_[+1]_1
+Sama_0728_p-149(norB)             2.4e-06  1_[+1]_1
+swp_0832_p-72(norR)               2.7e-06  1_[+1]_1
+swp_4283_p-131(swp_4283)          2.7e-06  1_[+1]_1
+Sfri_3253_p-162(norB)             2.7e-06  1_[+1]_1
+Sfri_3253_p-138(norB)             2.7e-06  1_[+1]_1
+Swoo_0686_p-525(nnrS2)              3e-06  1_[+1]_1
+Ssed_4053_p-176(norV)               3e-06  1_[+1]_1
+swp_4282_p-93(norR2)                3e-06  1_[+1]_1
+Sputw3181_0873_p-120(nor            3e-06  1_[+1]_1
+Sputcn32_3072_p-120(norB            3e-06  1_[+1]_1
+Swoo_0761_p-154(norB)             3.3e-06  1_[+1]_1
+Sfri_1583_p-176(norV)             3.3e-06  1_[+1]_1
+Swoo_0686_p-499(nnrS2)            3.6e-06  1_[+1]_1
+Spea_3444_p-119(norR)             3.6e-06  1_[+1]_1
+Spea_3444_p-154(norR)             3.6e-06  1_[+1]_1
+Ssed_3823_p-136(norR)               4e-06  1_[+1]_1
+swp_4283_p-156(swp_4283)            4e-06  1_[+1]_1
+Shal_3740_p-144(norV)               4e-06  1_[+1]_1
+Sama_0728_p-169(norB)               4e-06  1_[+1]_1
+Shewmr7_0882_p-166(norR)            4e-06  1_[+1]_1
+Shewmr4_3090_p-167(norR)            4e-06  1_[+1]_1
+Shewana3_0845_p-166(norR            4e-06  1_[+1]_1
+swp_1079_p-162(norV)              4.5e-06  1_[+1]_1
+Spea_3652_p-145(norV)               5e-06  1_[+1]_1
+Sputw3181_0872_p-50(norR            5e-06  1_[+1]_1
+Sputcn32_3073_p-50(norR)            5e-06  1_[+1]_1
+Shal_3554_p-186(norB)             6.7e-06  1_[+1]_1
+Shewmr7_0882_p-58(norR)           6.7e-06  1_[+1]_1
+Shewmr4_3090_p-58(norR)           6.7e-06  1_[+1]_1
+Shewana3_0846_p-156(norB          6.7e-06  1_[+1]_1
+Shewana3_0845_p-58(norR)          6.7e-06  1_[+1]_1
+Ssed_4053_p-133(norV)             7.4e-06  1_[+1]_1
+Shew_0657_p-204(norB)             7.4e-06  1_[+1]_1
+swp_1079_p-207(norV)              8.1e-06  1_[+1]_1
+Swoo_0688_p-118(norR2)            8.9e-06  1_[+1]_1
+Sputw3181_0873_p-190(nor          8.9e-06  1_[+1]_1
+Sputcn32_3072_p-190(norB          8.9e-06  1_[+1]_1
+Shew_0656_p-96(norR)              9.8e-06  1_[+1]_1
+Shal_3555_p-86(norR)              1.1e-05  1_[+1]_1
+Sfri_3254_p-58(norR)              1.1e-05  1_[+1]_1
+Shal_3554_p-165(norB)             1.3e-05  1_[+1]_1
+Shal_3740_p-168(norV)             1.7e-05  1_[+1]_1
+Ssed_4053_p-157(norV)               2e-05  1_[+1]_1
+swp_0832_p-105(norR)              2.6e-05  1_[+1]_1
+Spea_3652_p-169(norV)             2.6e-05  1_[+1]_1
+Shewmr7_0883_p-203(norB)          2.8e-05  1_[+1]_1
+Shewmr4_3089_p-203(norB)          2.8e-05  1_[+1]_1
+Ssed_3823_p-160(norR)             4.2e-05  1_[+1]_1
+Shewana3_0846_p-203(norB          6.7e-05  1_[+1]_1
+Swoo_0761_p-199(norB)             7.2e-05  1_[+1]_1
+Shewmr4_3089_p-33(norB)           8.3e-05  1_[+1]_1
+Spea_3652_p-237(norV)             0.00024  1_[+1]_1
+Swoo_0760_p-37(norR)              0.00053  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RBTGTCAWWWWGACAHT width=17 seqs=91
+Sputw3181_0873_p-144(nor (    2) ATTGTCATTATGACACT  1 
+Sputcn32_3072_p-144(norB (    2) ATTGTCATTATGACACT  1 
+Swoo_0761_p-172(norB)    (    2) GCTGTCATTTAGACACT  1 
+Shewmr7_0883_p-174(norB) (    2) GCTGTCATAAAGACAAT  1 
+Shewana3_0846_p-174(norB (    2) GCTGTCATAAAGACAAT  1 
+Shew_0657_p-132(norB)    (    2) ATTGTCATTATGACAAT  1 
+swp_0833_p-173(norB)     (    2) ATTGTCAAAAAGACACT  1 
+Shewmr4_3089_p-156(norB) (    2) ACTGTCATATCGACAAT  1 
+Shewmr7_0883_p-156(norB) (    2) GCTGTCATATCGACAAC  1 
+Shal_3740_p-188(norV)    (    2) ACTGTCTTAATGACATT  1 
+swp_0833_p-131(norB)     (    2) ATTGTCTTTATGACAAC  1 
+Spea_3652_p-188(norV)    (    2) GGTGTCTTATTGACAGC  1 
+Sfri_3253_p-181(norB)    (    2) GCTGTCATTTCGACATT  1 
+Swoo_0761_p-130(norB)    (    2) ATAGTCATAATGACACA  1 
+swp_1079_p-182(norV)     (    2) GGTGTCTTAATGACATA  1 
+Sfri_3254_p-43(norR)     (    2) CTTGTCATAATGACATC  1 
+swp_0833_p-155(norB)     (    2) AGTGTCATATGGACACA  1 
+Ssed_3822_p-153(norB)    (    2) GCTGTTATTAAGACACT  1 
+Shal_3554_p-142(norB)    (    2) ACAGTCAAAATGACAAC  1 
+Sfri_1583_p-152(norV)    (    2) ATTGTTATAATGACACC  1 
+Swoo_0760_p-62(norR)     (    2) ATTGTCAAAATGACATA  1 
+Ssed_3822_p-171(norB)    (    2) AGTGTAAAAATGACACT  1 
+Sfri_1583_p-195(norV)    (    2) AAAGTCATAATGACACC  1 
+Shew_0657_p-157(norB)    (    2) GGTGTCATTTTTACACT  1 
+Shewmr4_3089_p-174(norB) (    2) GCTGTCACAAAGACAAT  1 
+Swoo_0688_p-92(norR2)    (    2) GTAGTCATATTGACTCT  1 
+Shew_0657_p-175(norB)    (    2) ACTGTCTTTTTGACACG  1 
+Ssed_3822_p-129(norB)    (    2) GGTGTCCTAATGACACA  1 
+Shew_0656_p-120(norR)    (    2) AGTGTAAAAATGACAAT  1 
+Sama_0727_p-76(norR)     (    2) CATGTCAAAATGACAAT  1 
+Sputw3181_0873_p-162(nor (    2) AGTGTCATAAAAACAAT  1 
+Sputcn32_3072_p-162(norB (    2) AGTGTCATAAAAACAAT  1 
+Shewmr7_0883_p-131(norB) (    2) AGTATCAAAAAGACAAT  1 
+Shewmr4_3089_p-131(norB) (    2) AGTATCAAAAAGACAAT  1 
+Shewana3_0846_p-131(norB (    2) AGTATCAAAAAGACAAT  1 
+swp_4282_p-118(norR2)    (    2) GTAGTCATAATGACTAC  1 
+Ssed_4053_p-213(norV)    (    2) CCTGTTATTAAGACACT  1 
+swp_1079_p-138(norV)     (    2) GTTGTCATTATTACAAT  1 
+Sama_0728_p-149(norB)    (    2) AATGTCTTTATGACATC  1 
+swp_0832_p-72(norR)      (    2) AATGTCAAAAAGACAAA  1 
+swp_4283_p-131(swp_4283) (    2) GTAGTCATTATGACTAC  1 
+Sfri_3253_p-162(norB)    (    2) ATAGTCTTATTGACACA  1 
+Sfri_3253_p-138(norB)    (    2) TGTGTCAATAAGACTAT  1 
+Swoo_0686_p-525(nnrS2)   (    2) AGAGTCAATATGACTAC  1 
+Ssed_4053_p-176(norV)    (    2) AGTGTTGATATGACACT  1 
+swp_4282_p-93(norR2)     (    2) GTAGTCATTATGACTCA  1 
+Sputw3181_0873_p-120(nor (    2) CGTATCAAAAAGACACT  1 
+Sputcn32_3072_p-120(norB (    2) CGTATCAAAAAGACACT  1 
+Swoo_0761_p-154(norB)    (    2) ACTGTCATTTTTACAAT  1 
+Sfri_1583_p-176(norV)    (    2) ATAGTCATAAAGACATA  1 
+Swoo_0686_p-499(nnrS2)   (    2) GTAGTCATATTGACTCA  1 
+Spea_3444_p-119(norR)    (    2) ACTGTTAAAAAGACACA  1 
+Spea_3444_p-154(norR)    (    2) AGTGTAAAATTGACATT  1 
+Ssed_3823_p-136(norR)    (    2) AATGTCAATATGACAAG  1 
+swp_4283_p-156(swp_4283) (    2) TGAGTCATAATGACTAC  1 
+Shal_3740_p-144(norV)    (    2) GCTATCAAAAAGACATT  1 
+Sama_0728_p-169(norB)    (    2) AGTGTCATTTATACAAT  1 
+Shewmr7_0882_p-166(norR) (    2) GGTGTCGTTTAGGCACC  1 
+Shewmr4_3090_p-167(norR) (    2) GGTGTCGTTTAGGCACC  1 
+Shewana3_0845_p-166(norR (    2) GGTGTCGTTTAGGCACC  1 
+swp_1079_p-162(norV)     (    2) AGTGTCTTTATGATACT  1 
+Spea_3652_p-145(norV)    (    2) GCTATCAAAAAGACAGT  1 
+Sputw3181_0872_p-50(norR (    2) TGTGTCAATATCACAAT  1 
+Sputcn32_3073_p-50(norR) (    2) TGTGTCAATATCACAAT  1 
+Shal_3554_p-186(norB)    (    2) GATGTCAATTCGACAAA  1 
+Shewmr7_0882_p-58(norR)  (    2) TGTGTCAATATAACAAT  1 
+Shewmr4_3090_p-58(norR)  (    2) TGTGTCAATATAACAAT  1 
+Shewana3_0846_p-156(norB (    2) ACTGTCATATCAACAAT  1 
+Shewana3_0845_p-58(norR) (    2) TGTGTCAATATAACAAT  1 
+Ssed_4053_p-133(norV)    (    2) CATGTCTTTATGACATC  1 
+Shew_0657_p-204(norB)    (    2) AGTATCAAATCGACACA  1 
+swp_1079_p-207(norV)     (    2) TTTGTCATAAAGACTCG  1 
+Swoo_0688_p-118(norR2)   (    2) TGAGTCAATATGACTAC  1 
+Sputw3181_0873_p-190(nor (    2) ATTGTTTTAAAGACACA  1 
+Sputcn32_3072_p-190(norB (    2) ATTGTTTTAAAGACACA  1 
+Shew_0656_p-96(norR)     (    2) ACTGTTAAATTGACATA  1 
+Shal_3555_p-86(norR)     (    2) ACTGTAAAAAAGACAGC  1 
+Sfri_3254_p-58(norR)     (    2) GTTGTTATATTCACACT  1 
+Shal_3554_p-165(norB)    (    2) GTTATCAAATAGACAGC  1 
+Shal_3740_p-168(norV)    (    2) ACGGTCATTTTGACTGT  1 
+Ssed_4053_p-157(norV)    (    2) AATGTCTTTTGGACAGT  1 
+swp_0832_p-105(norR)     (    2) ACAGTATATTTGACACT  1 
+Spea_3652_p-169(norV)    (    2) TATGTCACTTTGACATT  1 
+Shewmr7_0883_p-203(norB) (    2) ATTGTGTTATCGACATT  1 
+Shewmr4_3089_p-203(norB) (    2) ATTGTGTTATCGACATT  1 
+Ssed_3823_p-160(norR)    (    2) TTTGTATTTATGACAGC  1 
+Shewana3_0846_p-203(norB (    2) ATTGTGTTATCGACATA  1 
+Swoo_0761_p-199(norB)    (    2) TCAGTCATATTGATATT  1 
+Shewmr4_3089_p-33(norB)  (    2) CGTATCAAAATGACGTT  1 
+Spea_3652_p-237(norV)    (    2) ATAGTCGTTTGGTCACT  1 
+Swoo_0760_p-37(norR)     (    2) ATGGTCATATTCAAACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 273 bayes= 3.67671 E= 2.8e-335 
+    55   -122     82   -125 
+  -183     43    118     -3 
+  -100  -1315   -282    136 
+  -168  -1315    252  -1315 
+ -1315  -1315  -1315    167 
+  -242    216   -223   -166 
+   108   -402   -150    -75 
+     4   -302  -1315     97 
+    72  -1315  -1315     41 
+    85  -1315  -1315     21 
+   -15    -85   -223     81 
+  -242   -202    245   -283 
+   144  -1315   -223   -483 
+  -500    243  -1315   -383 
+   130  -1315   -382   -137 
+     4    106   -101    -75 
+   -92     37   -223     81 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 91 E= 2.8e-335 
+ 0.516484  0.076923  0.274725  0.131868 
+ 0.098901  0.241758  0.351648  0.307692 
+ 0.175824  0.000000  0.021978  0.802198 
+ 0.109890  0.000000  0.890110  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.065934  0.802198  0.032967  0.098901 
+ 0.747253  0.010989  0.054945  0.186813 
+ 0.362637  0.021978  0.000000  0.615385 
+ 0.582418  0.000000  0.000000  0.417582 
+ 0.637363  0.000000  0.000000  0.362637 
+ 0.318681  0.098901  0.032967  0.549451 
+ 0.065934  0.043956  0.846154  0.043956 
+ 0.956044  0.000000  0.032967  0.010989 
+ 0.010989  0.967033  0.000000  0.021978 
+ 0.868132  0.000000  0.010989  0.120879 
+ 0.362637  0.373626  0.076923  0.186813 
+ 0.186813  0.230769  0.032967  0.549451 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RBTGTCAWWWWGACAHT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][GTC]TGTCA[TA][AT][AT][TA]GACA[CA][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.25 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputcn32_3073_p-50(norR)         1.49e-05  1_[+1(4.95e-06)]_1
+Sputcn32_3072_p-120(norB         8.85e-06  1_[+1(2.95e-06)]_1
+Sputcn32_3072_p-144(norB         1.52e-08  1_[+1(5.06e-09)]_1
+Sputcn32_3072_p-162(norB         5.13e-06  1_[+1(1.71e-06)]_1
+Sputcn32_3072_p-190(norB         2.67e-05  1_[+1(8.89e-06)]_1
+Sputw3181_0872_p-50(norR         1.49e-05  1_[+1(4.95e-06)]_1
+Sputw3181_0873_p-120(nor         8.85e-06  1_[+1(2.95e-06)]_1
+Sputw3181_0873_p-144(nor         1.52e-08  1_[+1(5.06e-09)]_1
+Sputw3181_0873_p-190(nor         2.67e-05  1_[+1(8.89e-06)]_1
+Sputw3181_0873_p-162(nor         5.13e-06  1_[+1(1.71e-06)]_1
+Shewana3_0845_p-166(norR         1.21e-05  1_[+1(4.04e-06)]_1
+Shewana3_0845_p-58(norR)         2.00e-05  1_[+1(6.67e-06)]_1
+Shewana3_0846_p-131(norB         5.72e-06  1_[+1(1.91e-06)]_1
+Shewana3_0846_p-156(norB         2.00e-05  1_[+1(6.67e-06)]_1
+Shewana3_0846_p-174(norB         6.58e-08  1_[+1(2.19e-08)]_1
+Shewana3_0846_p-203(norB         2.00e-04  1_[+1(6.65e-05)]_1
+Shewmr4_3090_p-167(norR)         1.21e-05  1_[+1(4.04e-06)]_1
+Shewmr4_3090_p-58(norR)          2.00e-05  1_[+1(6.67e-06)]_1
+Shewmr4_3089_p-156(norB)         4.62e-07  1_[+1(1.54e-07)]_1
+Shewmr4_3089_p-131(norB)         5.72e-06  1_[+1(1.91e-06)]_1
+Shewmr4_3089_p-174(norB)         2.88e-06  1_[+1(9.61e-07)]_1
+Shewmr4_3089_p-203(norB)         8.41e-05  1_[+1(2.80e-05)]_1
+Shewmr4_3089_p-33(norB)          2.49e-04  1_[+1(8.30e-05)]_1
+Shewmr7_0883_p-203(norB)         8.41e-05  1_[+1(2.80e-05)]_1
+Shewmr7_0883_p-174(norB)         6.58e-08  1_[+1(2.19e-08)]_1
+Shewmr7_0883_p-156(norB)         5.32e-07  1_[+1(1.77e-07)]_1
+Shewmr7_0883_p-131(norB)         5.72e-06  1_[+1(1.91e-06)]_1
+Shewmr7_0882_p-58(norR)          2.00e-05  1_[+1(6.67e-06)]_1
+Shewmr7_0882_p-166(norR)         1.21e-05  1_[+1(4.04e-06)]_1
+Sfri_3254_p-58(norR)             3.22e-05  1_[+1(1.07e-05)]_1
+Sfri_3254_p-43(norR)             1.21e-06  1_[+1(4.04e-07)]_1
+Sfri_1583_p-195(norV)            2.02e-06  1_[+1(6.72e-07)]_1
+Sfri_1583_p-176(norV)            9.84e-06  1_[+1(3.28e-06)]_1
+Sfri_1583_p-152(norV)            1.57e-06  1_[+1(5.22e-07)]_1
+Sfri_3253_p-138(norB)            7.96e-06  1_[+1(2.65e-06)]_1
+Sfri_3253_p-162(norB)            7.96e-06  1_[+1(2.65e-06)]_1
+Sfri_3253_p-181(norB)            9.36e-07  1_[+1(3.12e-07)]_1
+Sama_0728_p-169(norB)            1.21e-05  1_[+1(4.04e-06)]_1
+Sama_0728_p-149(norB)            7.14e-06  1_[+1(2.38e-06)]_1
+Sama_0727_p-76(norR)             4.10e-06  1_[+1(1.37e-06)]_1
+Shew_0656_p-120(norR)            4.10e-06  1_[+1(1.37e-06)]_1
+Shew_0656_p-96(norR)             2.93e-05  1_[+1(9.78e-06)]_1
+Shew_0657_p-132(norB)            7.98e-08  1_[+1(2.66e-08)]_1
+Shew_0657_p-157(norB)            2.27e-06  1_[+1(7.58e-07)]_1
+Shew_0657_p-175(norB)            3.24e-06  1_[+1(1.08e-06)]_1
+Shew_0657_p-204(norB)            2.21e-05  1_[+1(7.35e-06)]_1
+Spea_3444_p-154(norR)            1.09e-05  1_[+1(3.64e-06)]_1
+Spea_3444_p-119(norR)            1.09e-05  1_[+1(3.64e-06)]_1
+Spea_3652_p-145(norV)            1.49e-05  1_[+1(4.95e-06)]_1
+Spea_3652_p-169(norV)            7.74e-05  1_[+1(2.58e-05)]_1
+Spea_3652_p-188(norV)            9.36e-07  1_[+1(3.12e-07)]_1
+Spea_3652_p-237(norV)            7.35e-04  19
+Shal_3554_p-165(norB)            3.87e-05  1_[+1(1.29e-05)]_1
+Shal_3554_p-186(norB)            2.00e-05  1_[+1(6.67e-06)]_1
+Shal_3555_p-86(norR)             3.22e-05  1_[+1(1.07e-05)]_1
+Shal_3554_p-142(norB)            1.57e-06  1_[+1(5.22e-07)]_1
+Shal_3740_p-144(norV)            1.21e-05  1_[+1(4.04e-06)]_1
+Shal_3740_p-188(norV)            6.16e-07  1_[+1(2.05e-07)]_1
+Shal_3740_p-168(norV)            5.05e-05  1_[+1(1.68e-05)]_1
+swp_4283_p-131(swp_4283)         7.96e-06  1_[+1(2.65e-06)]_1
+swp_0832_p-105(norR)             7.74e-05  1_[+1(2.58e-05)]_1
+swp_0832_p-72(norR)              7.96e-06  1_[+1(2.65e-06)]_1
+swp_4283_p-156(swp_4283)         1.21e-05  1_[+1(4.04e-06)]_1
+swp_0833_p-173(norB)             1.47e-07  1_[+1(4.89e-08)]_1
+swp_0833_p-155(norB)             1.38e-06  1_[+1(4.61e-07)]_1
+swp_0833_p-131(norB)             9.36e-07  1_[+1(3.12e-07)]_1
+swp_4282_p-118(norR2)            6.40e-06  1_[+1(2.13e-06)]_1
+swp_4282_p-93(norR2)             8.85e-06  1_[+1(2.95e-06)]_1
+swp_1079_p-138(norV)             7.14e-06  1_[+1(2.38e-06)]_1
+swp_1079_p-162(norV)             1.34e-05  1_[+1(4.48e-06)]_1
+swp_1079_p-182(norV)             1.21e-06  1_[+1(4.04e-07)]_1
+swp_1079_p-207(norV)             2.43e-05  1_[+1(8.10e-06)]_1
+Ssed_3822_p-129(norB)            3.65e-06  1_[+1(1.22e-06)]_1
+Ssed_3822_p-171(norB)            1.78e-06  1_[+1(5.95e-07)]_1
+Ssed_3822_p-153(norB)            1.57e-06  1_[+1(5.22e-07)]_1
+Ssed_3823_p-136(norR)            1.21e-05  1_[+1(4.04e-06)]_1
+Ssed_3823_p-160(norR)            1.26e-04  1_[+1(4.20e-05)]_1
+Ssed_4053_p-133(norV)            2.21e-05  1_[+1(7.35e-06)]_1
+Ssed_4053_p-157(norV)            6.01e-05  1_[+1(2.00e-05)]_1
+Ssed_4053_p-176(norV)            8.85e-06  1_[+1(2.95e-06)]_1
+Ssed_4053_p-213(norV)            7.14e-06  1_[+1(2.38e-06)]_1
+Swoo_0760_p-62(norR)             1.78e-06  1_[+1(5.95e-07)]_1
+Swoo_0760_p-37(norR)             1.59e-03  19
+Swoo_0686_p-525(nnrS2)           8.85e-06  1_[+1(2.95e-06)]_1
+Swoo_0686_p-499(nnrS2)           1.09e-05  1_[+1(3.64e-06)]_1
+Swoo_0688_p-118(norR2)           2.67e-05  1_[+1(8.89e-06)]_1
+Swoo_0688_p-92(norR2)            3.24e-06  1_[+1(1.08e-06)]_1
+Swoo_0761_p-130(norB)            1.21e-06  1_[+1(4.04e-07)]_1
+Swoo_0761_p-154(norB)            9.84e-06  1_[+1(3.28e-06)]_1
+Swoo_0761_p-172(norB)            5.28e-08  1_[+1(1.76e-08)]_1
+Swoo_0761_p-199(norB)            2.15e-04  1_[+1(7.17e-05)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

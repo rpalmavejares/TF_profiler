@@ -1,0 +1,261 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/MntR_Micrococcineae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AAur_3272_p-7(mtsA)      1.0000     16  AAur_pTC20050_p-59(mntH) 1.0000     16  
+AAur_pTC10168_p-61(mntH) 1.0000     16  Achl_3070_p-61(mntH)     1.0000     16  
+Arth_3280_p-7(mtsA)      1.0000     16  Arth_3280_p15(mtsA)      1.0000     16  
+Arth_4418_p-46(mntR)     1.0000     16  Bcav_1388_p2(mtsA)       1.0000     16  
+Bfae_31330_p-30(mtsA)    1.0000     16  Bfae_31330_p-53(mtsA)    1.0000     16  
+BlinB01000963_p-16(mtsA) 1.0000     16  Jden_0297_p-45(mtsA)     1.0000     16  
+KRH_01300_p-45(mtsA)     1.0000     16  Lxx20950_p-62(mntH)      1.0000     16  
+RSal33209_1376_p-52(mntH 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/MntR_Micrococcineae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/MntR_Micrococcineae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.242 C 0.254 G 0.242 T 0.263 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.242 C 0.254 G 0.242 T 0.262 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KTTCGGTAYGCCTAAM MEME-1	width =  16  sites =  15  llr = 196  E-value = 1.6e-056
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:11::17131:19a3
+pos.-specific     C  1::9::11419a:1:5
+probability       G  511:a81217::3::2
+matrix            T  499::2714:::6:::
+
+         bits    2.0     *      *  * 
+                 1.8     *      *  * 
+                 1.6  *  *      * ** 
+                 1.4  * **     ** ** 
+Relative         1.2  *****    ** ** 
+Entropy          1.0  *****    ** ** 
+(18.9 bits)      0.8  *****   *** ** 
+                 0.6  ******* *******
+                 0.4 ******** *******
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           GTTCGGTACGCCTAAC
+consensus            T    T GTA  G  A
+sequence                            G
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+AAur_pTC20050_p-59(mntH)      1  1.02e-09          . TTTCGGTATGCCTAAC           
+AAur_3272_p-7(mtsA)           1  1.02e-09          . TTTCGGTATGCCTAAC           
+Achl_3070_p-61(mntH)          1  2.45e-09          . TTTCGGTATGCCTAAA           
+KRH_01300_p-45(mtsA)          1  1.08e-08          . GTTCGGTACACCGAAC           
+RSal33209_1376_p-52(mntH      1  2.65e-08          . TTTCGTTATGCCTAAA           
+Arth_4418_p-46(mntR)          1  4.04e-08          . GTTCGTTAAGCCTAAC           
+AAur_pTC10168_p-61(mntH)      1  4.04e-08          . TTTCGGCACGCCTAAA           
+Arth_3280_p-7(mtsA)           1  4.70e-08          . ATTCGGTATGCCTAAA           
+Arth_3280_p15(mtsA)           1  1.73e-07          . TTTCGGTGCGCCAAAG           
+Bfae_31330_p-53(mtsA)         1  4.72e-07          . GTTCGGTGCAACGAAC           
+Jden_0297_p-45(mtsA)          1  9.87e-07          . GTTCGGACTGCCGAAC           
+Bcav_1388_p2(mtsA)            1  2.85e-06          . GTTCGGTGGCCCAAAC           
+Lxx20950_p-62(mntH)           1  7.69e-06          . GTTAGTCTCACCTAAC           
+Bfae_31330_p-30(mtsA)         1  1.26e-05          . GTGCGGGACAACGAAG           
+BlinB01000963_p-16(mtsA)      1  8.00e-05          . CGAAGGTAAGCCTCAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AAur_pTC20050_p-59(mntH)            1e-09  [+1]
+AAur_3272_p-7(mtsA)                 1e-09  [+1]
+Achl_3070_p-61(mntH)              2.5e-09  [+1]
+KRH_01300_p-45(mtsA)              1.1e-08  [+1]
+RSal33209_1376_p-52(mntH          2.7e-08  [+1]
+Arth_4418_p-46(mntR)                4e-08  [+1]
+AAur_pTC10168_p-61(mntH)            4e-08  [+1]
+Arth_3280_p-7(mtsA)               4.7e-08  [+1]
+Arth_3280_p15(mtsA)               1.7e-07  [+1]
+Bfae_31330_p-53(mtsA)             4.7e-07  [+1]
+Jden_0297_p-45(mtsA)              9.9e-07  [+1]
+Bcav_1388_p2(mtsA)                2.8e-06  [+1]
+Lxx20950_p-62(mntH)               7.7e-06  [+1]
+Bfae_31330_p-30(mtsA)             1.3e-05  [+1]
+BlinB01000963_p-16(mtsA)            8e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KTTCGGTAYGCCTAAM width=16 seqs=15
+AAur_pTC20050_p-59(mntH) (    1) TTTCGGTATGCCTAAC  1 
+AAur_3272_p-7(mtsA)      (    1) TTTCGGTATGCCTAAC  1 
+Achl_3070_p-61(mntH)     (    1) TTTCGGTATGCCTAAA  1 
+KRH_01300_p-45(mtsA)     (    1) GTTCGGTACACCGAAC  1 
+RSal33209_1376_p-52(mntH (    1) TTTCGTTATGCCTAAA  1 
+Arth_4418_p-46(mntR)     (    1) GTTCGTTAAGCCTAAC  1 
+AAur_pTC10168_p-61(mntH) (    1) TTTCGGCACGCCTAAA  1 
+Arth_3280_p-7(mtsA)      (    1) ATTCGGTATGCCTAAA  1 
+Arth_3280_p15(mtsA)      (    1) TTTCGGTGCGCCAAAG  1 
+Bfae_31330_p-53(mtsA)    (    1) GTTCGGTGCAACGAAC  1 
+Jden_0297_p-45(mtsA)     (    1) GTTCGGACTGCCGAAC  1 
+Bcav_1388_p2(mtsA)       (    1) GTTCGGTGGCCCAAAC  1 
+Lxx20950_p-62(mntH)      (    1) GTTAGTCTCACCTAAC  1 
+Bfae_31330_p-30(mtsA)    (    1) GTGCGGGACAACGAAG  1 
+BlinB01000963_p-16(mtsA) (    1) CGAAGGTAAGCCTCAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 15 bayes= 1.17688 E= 1.6e-056 
+  -186   -193     95     61 
+ -1055  -1055   -186    183 
+  -186  -1055   -186    172 
+   -86    177  -1055  -1055 
+ -1055  -1055    205  -1055 
+ -1055  -1055    173    -39 
+  -186    -93   -186    148 
+   146   -193    -27   -197 
+   -86     65   -186     61 
+    14   -193    146  -1055 
+   -86    177  -1055  -1055 
+ -1055    198  -1055  -1055 
+   -86  -1055     14    119 
+   195   -193  -1055  -1055 
+   205  -1055  -1055  -1055 
+    14    107    -27  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 15 E= 1.6e-056 
+ 0.066667  0.066667  0.466667  0.400000 
+ 0.000000  0.000000  0.066667  0.933333 
+ 0.066667  0.000000  0.066667  0.866667 
+ 0.133333  0.866667  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.066667  0.133333  0.066667  0.733333 
+ 0.666667  0.066667  0.200000  0.066667 
+ 0.133333  0.400000  0.066667  0.400000 
+ 0.266667  0.066667  0.666667  0.000000 
+ 0.133333  0.866667  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.133333  0.000000  0.266667  0.600000 
+ 0.933333  0.066667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.266667  0.533333  0.200000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTTCGGTAYGCCTAAM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT]TTCG[GT]T[AG][CT][GA]CC[TG]AA[CAG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AAur_3272_p-7(mtsA)              1.02e-09  [+1(1.02e-09)]
+AAur_pTC20050_p-59(mntH)         1.02e-09  [+1(1.02e-09)]
+AAur_pTC10168_p-61(mntH)         4.04e-08  [+1(4.04e-08)]
+Achl_3070_p-61(mntH)             2.45e-09  [+1(2.45e-09)]
+Arth_3280_p-7(mtsA)              4.70e-08  [+1(4.70e-08)]
+Arth_3280_p15(mtsA)              1.73e-07  [+1(1.73e-07)]
+Arth_4418_p-46(mntR)             4.04e-08  [+1(4.04e-08)]
+Bcav_1388_p2(mtsA)               2.85e-06  [+1(2.85e-06)]
+Bfae_31330_p-30(mtsA)            1.26e-05  [+1(1.26e-05)]
+Bfae_31330_p-53(mtsA)            4.72e-07  [+1(4.72e-07)]
+BlinB01000963_p-16(mtsA)         8.00e-05  [+1(8.00e-05)]
+Jden_0297_p-45(mtsA)             9.87e-07  [+1(9.87e-07)]
+KRH_01300_p-45(mtsA)             1.08e-08  [+1(1.08e-08)]
+Lxx20950_p-62(mntH)              7.69e-06  [+1(7.69e-06)]
+RSal33209_1376_p-52(mntH         2.65e-08  [+1(2.65e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

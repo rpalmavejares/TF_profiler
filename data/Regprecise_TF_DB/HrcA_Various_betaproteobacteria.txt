@@ -1,0 +1,314 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= HrcA_Various_betaproteobacteria.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ebB35(groS)Score=7.4,Pos 1.0000     27  ebA4241(rpoH)Score=7,Pos 1.0000     27  
+Tmz1t_1419(groS)Score=7. 1.0000     27  Tmz1t_1062(rpoH)Score=7. 1.0000     27  
+Daro_0425(groS)Score=7.4 1.0000     27  Daro_3837(rpoH)Score=7.1 1.0000     27  
+NE0027(groS)Score=7.4,Po 1.0000     27  NE0584(rpoH)Score=7,Pos= 1.0000     27  
+Nmul_A2345(groS)Score=7. 1.0000     27  Tbd_0092(groS)Score=6.8, 1.0000     27  
+Tbd_0345(rpoH)Score=7,Po 1.0000     27  CV4015(groS)Score=7.3,Po 1.0000     27  
+CV4206(rpoH)Score=6.8,Po 1.0000     27  LHK_01878(groS)Score=7,P 1.0000     27  
+LHK_00659(groS)Score=6.9 1.0000     27  LHK_00231(rpoH)Score=6.7 1.0000     27  
+Mfla_0365(groS)Score=7.3 1.0000     27  Mfla_0702(rpoH)Score=6.3 1.0000     27  
+Mmol_0429(groS)Score=6.9 1.0000     27  Mmol_1814(rpoH)Score=7,P 1.0000     27  
+MB2181_06400(groS)Score= 1.0000     27  MB2181_02680(rpoH)Score= 1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna HrcA_Various_betaproteobacteria.fasta -oc HrcA_Various_betaproteobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           27
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             594    N=              22    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.263 C 0.227 G 0.246 T 0.264 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.263 C 0.227 G 0.246 T 0.264 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  27  sites =  22  llr = 551  E-value = 8.3e-188
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::a:::233531221:a:::::a9
+pos.-specific     C  1:::a:a:a1312:5215:::::a:::
+probability       G  :::a:::::4:235353:a:a:a:::1
+matrix            T  9a:::::a:444:21144:::a::a::
+
+         bits    2.1     *   *              *   
+                 1.9     *** *         ******** 
+                 1.7  ********         ******** 
+                 1.5  ********         *********
+Relative         1.3 *********         *********
+Entropy          1.1 *********         *********
+(36.1 bits)      0.9 *********         *********
+                 0.6 *********         *********
+                 0.4 ********* *  **  **********
+                 0.2 ***************************
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCGTTAGCGTCGAGTGCTAA
+consensus                     TAAGAGAGT         
+sequence                       CG   C           
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+Tmz1t_1419(groS)Score=7.      1  1.61e-15          . TTAGCACTCGTTGGCGTCGAGTGCTAA           
+Mfla_0365(groS)Score=7.3      1  8.95e-15          . TTAGCACTCGATAGGGTTGAGTGCTAA           
+ebB35(groS)Score=7.4,Pos      1  6.08e-14          . TTAGCACTCGTTGGCAGTGAGTGCTAA           
+MB2181_02680(rpoH)Score=      1  8.71e-14          . TTAGCACTCTATAGGATTGAGTGCTAA           
+CV4015(groS)Score=7.3,Po      1  8.71e-14          . TTAGCACTCGCAATGGTCGAGTGCTAA           
+Nmul_A2345(groS)Score=7.      1  1.66e-13          . TTAGCACTCATTGGCATTGAGTGCTAA           
+Daro_0425(groS)Score=7.4      1  6.78e-13          . TTAGCACTCACCGGCGACGAGTGCTAA           
+Tmz1t_1062(rpoH)Score=7.      1  6.78e-13          . TTAGCACTCTCACGCCCCGAGTGCTAA           
+Daro_3837(rpoH)Score=7.1      1  1.15e-12          . TTAGCACTCTTATGCAGCGAGTGCTAA           
+Tbd_0092(groS)Score=6.8,      1  1.28e-12          . TCAGCACTCTATGGCGGCGAGTGCTAA           
+MB2181_06400(groS)Score=      1  1.55e-12          . TTAGCACTCTATCAAGTTGAGTGCTAA           
+Tbd_0345(rpoH)Score=7,Po      1  1.55e-12          . TTAGCACTCCCAATGCGCGAGTGCTAA           
+ebA4241(rpoH)Score=7,Pos      1  1.89e-12          . TTAGCACTCCAACGCCATGAGTGCTAA           
+Mmol_1814(rpoH)Score=7,P      1  3.84e-12          . CTAGCACTCTCGAACGTAGAGTGCTAA           
+NE0027(groS)Score=7.4,Po      1  3.84e-12          . TTAGCACTCGTTGCTGTTGAGTGCTAA           
+LHK_01878(groS)Score=7,P      1  4.18e-12          . TTAGCACTCGTGAAGCGGGAGTGCTAA           
+Mmol_0429(groS)Score=6.9      1  1.36e-11          . TTAGCAATCGAGGTGCGCGAGTGCTAA           
+LHK_00659(groS)Score=6.9      1  1.36e-11          . TTGGCACTCGTGAGTGATGAGTGCTAA           
+CV4206(rpoH)Score=6.8,Po      1  1.77e-11          . CTAGCACTCTCAATATTCGAGTGCTAA           
+NE0584(rpoH)Score=7,Pos=      1  5.19e-11          . TTAGCACTCATGAACTAAGAGTGCTAG           
+LHK_00231(rpoH)Score=6.7      1  5.74e-11          . TTATCACTCAACCAGGCCGAGTGCTAA           
+Mfla_0702(rpoH)Score=6.3      1  7.63e-11          . CTAGCACACTCAAACAGTGAGTGCTAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tmz1t_1419(groS)Score=7.          1.6e-15  [+1]
+Mfla_0365(groS)Score=7.3            9e-15  [+1]
+ebB35(groS)Score=7.4,Pos          6.1e-14  [+1]
+MB2181_02680(rpoH)Score=          8.7e-14  [+1]
+CV4015(groS)Score=7.3,Po          8.7e-14  [+1]
+Nmul_A2345(groS)Score=7.          1.7e-13  [+1]
+Daro_0425(groS)Score=7.4          6.8e-13  [+1]
+Tmz1t_1062(rpoH)Score=7.          6.8e-13  [+1]
+Daro_3837(rpoH)Score=7.1          1.2e-12  [+1]
+Tbd_0092(groS)Score=6.8,          1.3e-12  [+1]
+MB2181_06400(groS)Score=          1.6e-12  [+1]
+Tbd_0345(rpoH)Score=7,Po          1.6e-12  [+1]
+ebA4241(rpoH)Score=7,Pos          1.9e-12  [+1]
+Mmol_1814(rpoH)Score=7,P          3.8e-12  [+1]
+NE0027(groS)Score=7.4,Po          3.8e-12  [+1]
+LHK_01878(groS)Score=7,P          4.2e-12  [+1]
+Mmol_0429(groS)Score=6.9          1.4e-11  [+1]
+LHK_00659(groS)Score=6.9          1.4e-11  [+1]
+CV4206(rpoH)Score=6.8,Po          1.8e-11  [+1]
+NE0584(rpoH)Score=7,Pos=          5.2e-11  [+1]
+LHK_00231(rpoH)Score=6.7          5.7e-11  [+1]
+Mfla_0702(rpoH)Score=6.3          7.6e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=27 seqs=22
+Tmz1t_1419(groS)Score=7. (    1) TTAGCACTCGTTGGCGTCGAGTGCTAA  1 
+Mfla_0365(groS)Score=7.3 (    1) TTAGCACTCGATAGGGTTGAGTGCTAA  1 
+ebB35(groS)Score=7.4,Pos (    1) TTAGCACTCGTTGGCAGTGAGTGCTAA  1 
+MB2181_02680(rpoH)Score= (    1) TTAGCACTCTATAGGATTGAGTGCTAA  1 
+CV4015(groS)Score=7.3,Po (    1) TTAGCACTCGCAATGGTCGAGTGCTAA  1 
+Nmul_A2345(groS)Score=7. (    1) TTAGCACTCATTGGCATTGAGTGCTAA  1 
+Daro_0425(groS)Score=7.4 (    1) TTAGCACTCACCGGCGACGAGTGCTAA  1 
+Tmz1t_1062(rpoH)Score=7. (    1) TTAGCACTCTCACGCCCCGAGTGCTAA  1 
+Daro_3837(rpoH)Score=7.1 (    1) TTAGCACTCTTATGCAGCGAGTGCTAA  1 
+Tbd_0092(groS)Score=6.8, (    1) TCAGCACTCTATGGCGGCGAGTGCTAA  1 
+MB2181_06400(groS)Score= (    1) TTAGCACTCTATCAAGTTGAGTGCTAA  1 
+Tbd_0345(rpoH)Score=7,Po (    1) TTAGCACTCCCAATGCGCGAGTGCTAA  1 
+ebA4241(rpoH)Score=7,Pos (    1) TTAGCACTCCAACGCCATGAGTGCTAA  1 
+Mmol_1814(rpoH)Score=7,P (    1) CTAGCACTCTCGAACGTAGAGTGCTAA  1 
+NE0027(groS)Score=7.4,Po (    1) TTAGCACTCGTTGCTGTTGAGTGCTAA  1 
+LHK_01878(groS)Score=7,P (    1) TTAGCACTCGTGAAGCGGGAGTGCTAA  1 
+Mmol_0429(groS)Score=6.9 (    1) TTAGCAATCGAGGTGCGCGAGTGCTAA  1 
+LHK_00659(groS)Score=6.9 (    1) TTGGCACTCGTGAGTGATGAGTGCTAA  1 
+CV4206(rpoH)Score=6.8,Po (    1) CTAGCACTCTCAATATTCGAGTGCTAA  1 
+NE0584(rpoH)Score=7,Pos= (    1) TTAGCACTCATGAACTAAGAGTGCTAG  1 
+LHK_00231(rpoH)Score=6.7 (    1) TTATCACTCAACCAGGCCGAGTGCTAA  1 
+Mfla_0702(rpoH)Score=6.3 (    1) CTAGCACACTCAAACAGTGAGTGCTAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 22 bayes= 1.41504 E= 8.3e-188 
+ -1110    -74  -1110    171 
+ -1110   -232  -1110    185 
+   186  -1110   -243  -1110 
+ -1110  -1110    196   -254 
+ -1110    214  -1110  -1110 
+   193  -1110  -1110  -1110 
+  -253    207  -1110  -1110 
+  -253  -1110  -1110    185 
+ -1110    214  -1110  -1110 
+   -53   -132     56     46 
+    28     48  -1110     46 
+    28   -132    -11     46 
+    79    -32     37   -254 
+     5   -232    102    -54 
+  -153    114     37   -154 
+   -21      0     89   -154 
+   -53   -132     37     63 
+  -153    100   -243     63 
+ -1110  -1110    202  -1110 
+   193  -1110  -1110  -1110 
+ -1110  -1110    202  -1110 
+ -1110  -1110  -1110    192 
+ -1110  -1110    202  -1110 
+ -1110    214  -1110  -1110 
+ -1110  -1110  -1110    192 
+   193  -1110  -1110  -1110 
+   179  -1110   -143  -1110 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 22 E= 8.3e-188 
+ 0.000000  0.136364  0.000000  0.863636 
+ 0.000000  0.045455  0.000000  0.954545 
+ 0.954545  0.000000  0.045455  0.000000 
+ 0.000000  0.000000  0.954545  0.045455 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.045455  0.954545  0.000000  0.000000 
+ 0.045455  0.000000  0.000000  0.954545 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.181818  0.090909  0.363636  0.363636 
+ 0.318182  0.318182  0.000000  0.363636 
+ 0.318182  0.090909  0.227273  0.363636 
+ 0.454545  0.181818  0.318182  0.045455 
+ 0.272727  0.045455  0.500000  0.181818 
+ 0.090909  0.500000  0.318182  0.090909 
+ 0.227273  0.227273  0.454545  0.090909 
+ 0.181818  0.090909  0.318182  0.409091 
+ 0.090909  0.454545  0.045455  0.409091 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.909091  0.000000  0.090909  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACTC[GT][TAC][TAG][AG][GA][CG][GAC][TG][CT]GAGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ebB35(groS)Score=7.4,Pos         6.08e-14  [+1(6.08e-14)]
+ebA4241(rpoH)Score=7,Pos         1.89e-12  [+1(1.89e-12)]
+Tmz1t_1419(groS)Score=7.         1.61e-15  [+1(1.61e-15)]
+Tmz1t_1062(rpoH)Score=7.         6.78e-13  [+1(6.78e-13)]
+Daro_0425(groS)Score=7.4         6.78e-13  [+1(6.78e-13)]
+Daro_3837(rpoH)Score=7.1         1.15e-12  [+1(1.15e-12)]
+NE0027(groS)Score=7.4,Po         3.84e-12  [+1(3.84e-12)]
+NE0584(rpoH)Score=7,Pos=         5.19e-11  [+1(5.19e-11)]
+Nmul_A2345(groS)Score=7.         1.66e-13  [+1(1.66e-13)]
+Tbd_0092(groS)Score=6.8,         1.28e-12  [+1(1.28e-12)]
+Tbd_0345(rpoH)Score=7,Po         1.55e-12  [+1(1.55e-12)]
+CV4015(groS)Score=7.3,Po         8.71e-14  [+1(8.71e-14)]
+CV4206(rpoH)Score=6.8,Po         1.77e-11  [+1(1.77e-11)]
+LHK_01878(groS)Score=7,P         4.18e-12  [+1(4.18e-12)]
+LHK_00659(groS)Score=6.9         1.36e-11  [+1(1.36e-11)]
+LHK_00231(rpoH)Score=6.7         5.74e-11  [+1(5.74e-11)]
+Mfla_0365(groS)Score=7.3         8.95e-15  [+1(8.95e-15)]
+Mfla_0702(rpoH)Score=6.3         7.63e-11  [+1(7.63e-11)]
+Mmol_0429(groS)Score=6.9         1.36e-11  [+1(1.36e-11)]
+Mmol_1814(rpoH)Score=7,P         3.84e-12  [+1(3.84e-12)]
+MB2181_06400(groS)Score=         1.55e-12  [+1(1.55e-12)]
+MB2181_02680(rpoH)Score=         8.71e-14  [+1(8.71e-14)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

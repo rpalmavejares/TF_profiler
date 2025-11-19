@@ -1,0 +1,308 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GguR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Avin_05220_p-72(kdgD)    1.0000     17  Avin_05190_p-213(gguR)   1.0000     17  
+Avin_05190_p-63(gguR)    1.0000     17  PSEEN2658_p-71(kdgD)     1.0000     17  
+PSEEN0730_p-105(gguT)    1.0000     17  PSEEN0729_p-201(gguR)    1.0000     17  
+PSEEN2654_p-63(gguR)     1.0000     17  Pmen_1215_p-275(kdgD)    1.0000     17  
+Pmen_1215_p-76(kdgD)     1.0000     17  Pmen_3299_p-316(udh)     1.0000     17  
+Pmen_3299_p-60(udh)      1.0000     17  Pmen_3306_p-54(aldE)     1.0000     17  
+Pmen_3305_p-63(gguR)     1.0000     17  Pmen_1214_p-450(gudD2)   1.0000     17  
+Pmen_1214_p-251(gudD2)   1.0000     17  PP4758_p-79(gguT)        1.0000     17  
+PP3599_p-71(kdgD)        1.0000     17  PP1171_p-43(udh)         1.0000     17  
+PP4759_p-104(gguR)       1.0000     17  PP3603_p-47(gguR)        1.0000     17  
+PSPTO4549_p-77(kdgD)     1.0000     17  PSPTO3323_p-163(kgsD)    1.0000     17  
+PSPTO1053_p-48(udh)      1.0000     17  PSPTO5219_p-385(exuT)    1.0000     17  
+PSPTO5219_p-265(exuT)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GguR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GguR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             425    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    425    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.315 C 0.198 G 0.193 T 0.294 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.315 C 0.198 G 0.193 T 0.294 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWGTYRTMSKAYAACWT MEME-1	width =  17  sites =  25  llr = 333  E-value = 2.3e-110
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  74:::4:61:a:8a:31
+pos.-specific     C  21::3::46::6::a11
+probability       G  119:16::46::2::22
+matrix            T  :4:a6:a::4:4:::46
+
+         bits    2.4                  
+                 2.1               *  
+                 1.9   *           *  
+                 1.7   **  *   *  **  
+Relative         1.4   **  *   *  **  
+Entropy          1.2   ** **  *** **  
+(19.2 bits)      0.9   ** **********  
+                 0.7 * *************  
+                 0.5 * ************* *
+                 0.2 *************** *
+                 0.0 -----------------
+
+Multilevel           ATGTTGTACGACAACTT
+consensus             A  CA CGT TG  AG
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PSPTO5219_p-265(exuT)         1  2.22e-09          . ATGTTGTACGACAACAT           
+PSEEN2658_p-71(kdgD)          1  5.25e-09          . ATGTTGTACGATAACTT           
+Pmen_3299_p-60(udh)           1  3.68e-08          . AAGTCATACGACAACGT           
+PP1171_p-43(udh)              1  5.97e-08          . AAGTCATACGACAACCT           
+PP3599_p-71(kdgD)             1  6.93e-08          . AGGTTGTACGATAACTT           
+PSPTO1053_p-48(udh)           1  9.11e-08          . AAGTCATACGACAACAG           
+PSEEN0729_p-201(gguR)         1  9.11e-08          . AAGTTGTACGACAACAC           
+PSPTO3323_p-163(kgsD)         1  1.05e-07          . AAGTTGTACGATGACTG           
+Avin_05220_p-72(kdgD)         1  1.20e-07          . AAGTCATACGATAACGT           
+PSEEN0730_p-105(gguT)         1  1.34e-07          . GTGTTGTCGTACAACTT           
+PSPTO4549_p-77(kdgD)          1  1.71e-07          . CAGTTGTACGATGACTT           
+Pmen_1214_p-251(gudD2)        1  1.71e-07          . AGGTCATACGACAACAT           
+Pmen_1215_p-275(kdgD)         1  2.89e-07          . ATGTTGTCGTATGACCT           
+PSEEN2654_p-63(gguR)          1  5.00e-07          . ATGTGATCGTACAACTG           
+PP4759_p-104(gguR)            1  5.43e-07          . AAGTTGTACGACAAGAT           
+PP4758_p-79(gguT)             1  6.39e-07          . ATCTTGTCGTACAACTT           
+Pmen_3299_p-316(udh)          1  6.39e-07          . ACGTTGTCATACAACTT           
+Pmen_3305_p-63(gguR)          1  6.92e-07          . GTGTCATCGTACAACTG           
+Pmen_1215_p-76(kdgD)          1  7.45e-07          . TTGTTGTACGATAACGT           
+PP3603_p-47(gguR)             1  1.00e-06          . ATGTGATCGTACAACCG           
+Pmen_3306_p-54(aldE)          1  1.16e-06          . CAGTTGTACGATGACAC           
+Pmen_1214_p-450(gudD2)        1  1.61e-06          . ACGTTATCGTACAACAA           
+Avin_05190_p-213(gguR)        1  1.61e-06          . ATGTCATCATATGACTT           
+PSPTO5219_p-385(exuT)         1  3.08e-06          . CAGTCATCGTATAACGA           
+Avin_05190_p-63(gguR)         1  3.08e-06          . CTATTGTCGTACGACTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSPTO5219_p-265(exuT)             2.2e-09  [+1]
+PSEEN2658_p-71(kdgD)              5.2e-09  [+1]
+Pmen_3299_p-60(udh)               3.7e-08  [+1]
+PP1171_p-43(udh)                    6e-08  [+1]
+PP3599_p-71(kdgD)                 6.9e-08  [+1]
+PSPTO1053_p-48(udh)               9.1e-08  [+1]
+PSEEN0729_p-201(gguR)             9.1e-08  [+1]
+PSPTO3323_p-163(kgsD)               1e-07  [+1]
+Avin_05220_p-72(kdgD)             1.2e-07  [+1]
+PSEEN0730_p-105(gguT)             1.3e-07  [+1]
+PSPTO4549_p-77(kdgD)              1.7e-07  [+1]
+Pmen_1214_p-251(gudD2)            1.7e-07  [+1]
+Pmen_1215_p-275(kdgD)             2.9e-07  [+1]
+PSEEN2654_p-63(gguR)                5e-07  [+1]
+PP4759_p-104(gguR)                5.4e-07  [+1]
+PP4758_p-79(gguT)                 6.4e-07  [+1]
+Pmen_3299_p-316(udh)              6.4e-07  [+1]
+Pmen_3305_p-63(gguR)              6.9e-07  [+1]
+Pmen_1215_p-76(kdgD)              7.5e-07  [+1]
+PP3603_p-47(gguR)                   1e-06  [+1]
+Pmen_3306_p-54(aldE)              1.2e-06  [+1]
+Pmen_1214_p-450(gudD2)            1.6e-06  [+1]
+Avin_05190_p-213(gguR)            1.6e-06  [+1]
+PSPTO5219_p-385(exuT)             3.1e-06  [+1]
+Avin_05190_p-63(gguR)             3.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWGTYRTMSKAYAACWT width=17 seqs=25
+PSPTO5219_p-265(exuT)    (    1) ATGTTGTACGACAACAT  1 
+PSEEN2658_p-71(kdgD)     (    1) ATGTTGTACGATAACTT  1 
+Pmen_3299_p-60(udh)      (    1) AAGTCATACGACAACGT  1 
+PP1171_p-43(udh)         (    1) AAGTCATACGACAACCT  1 
+PP3599_p-71(kdgD)        (    1) AGGTTGTACGATAACTT  1 
+PSPTO1053_p-48(udh)      (    1) AAGTCATACGACAACAG  1 
+PSEEN0729_p-201(gguR)    (    1) AAGTTGTACGACAACAC  1 
+PSPTO3323_p-163(kgsD)    (    1) AAGTTGTACGATGACTG  1 
+Avin_05220_p-72(kdgD)    (    1) AAGTCATACGATAACGT  1 
+PSEEN0730_p-105(gguT)    (    1) GTGTTGTCGTACAACTT  1 
+PSPTO4549_p-77(kdgD)     (    1) CAGTTGTACGATGACTT  1 
+Pmen_1214_p-251(gudD2)   (    1) AGGTCATACGACAACAT  1 
+Pmen_1215_p-275(kdgD)    (    1) ATGTTGTCGTATGACCT  1 
+PSEEN2654_p-63(gguR)     (    1) ATGTGATCGTACAACTG  1 
+PP4759_p-104(gguR)       (    1) AAGTTGTACGACAAGAT  1 
+PP4758_p-79(gguT)        (    1) ATCTTGTCGTACAACTT  1 
+Pmen_3299_p-316(udh)     (    1) ACGTTGTCATACAACTT  1 
+Pmen_3305_p-63(gguR)     (    1) GTGTCATCGTACAACTG  1 
+Pmen_1215_p-76(kdgD)     (    1) TTGTTGTACGATAACGT  1 
+PP3603_p-47(gguR)        (    1) ATGTGATCGTACAACCG  1 
+Pmen_3306_p-54(aldE)     (    1) CAGTTGTACGATGACAC  1 
+Pmen_1214_p-450(gudD2)   (    1) ACGTTATCGTACAACAA  1 
+Avin_05190_p-213(gguR)   (    1) ATGTCATCATATGACTT  1 
+PSPTO5219_p-385(exuT)    (    1) CAGTCATCGTATAACGA  1 
+Avin_05190_p-63(gguR)    (    1) CTATTGTCGTACGACTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 25 bayes= 1.47917 E= 2.3e-110 
+   119    -31   -127   -287 
+    35   -131   -127     58 
+  -297   -231    225  -1129 
+ -1129  -1129  -1129    177 
+ -1129     69   -127    103 
+    48  -1129    153  -1129 
+ -1129  -1129  -1129    177 
+    83    115  -1129  -1129 
+  -197    150     90  -1129 
+ -1129  -1129    153     58 
+   167  -1129  -1129  -1129 
+ -1129    160  -1129     45 
+   127  -1129     31  -1129 
+   167  -1129  -1129  -1129 
+ -1129    228   -227  -1129 
+   -17    -72    -27     58 
+  -197   -131      5    112 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 25 E= 2.3e-110 
+ 0.720000  0.160000  0.080000  0.040000 
+ 0.400000  0.080000  0.080000  0.440000 
+ 0.040000  0.040000  0.920000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.320000  0.080000  0.600000 
+ 0.440000  0.000000  0.560000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.560000  0.440000  0.000000  0.000000 
+ 0.080000  0.560000  0.360000  0.000000 
+ 0.000000  0.000000  0.560000  0.440000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.600000  0.000000  0.400000 
+ 0.760000  0.000000  0.240000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.960000  0.040000  0.000000 
+ 0.280000  0.120000  0.160000  0.440000 
+ 0.080000  0.080000  0.200000  0.640000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTYRTMSKAYAACWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TA]GT[TC][GA]T[AC][CG][GT]A[CT][AG]AC[TA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Avin_05220_p-72(kdgD)            1.20e-07  [+1(1.20e-07)]
+Avin_05190_p-213(gguR)           1.61e-06  [+1(1.61e-06)]
+Avin_05190_p-63(gguR)            3.08e-06  [+1(3.08e-06)]
+PSEEN2658_p-71(kdgD)             5.25e-09  [+1(5.25e-09)]
+PSEEN0730_p-105(gguT)            1.34e-07  [+1(1.34e-07)]
+PSEEN0729_p-201(gguR)            9.11e-08  [+1(9.11e-08)]
+PSEEN2654_p-63(gguR)             5.00e-07  [+1(5.00e-07)]
+Pmen_1215_p-275(kdgD)            2.89e-07  [+1(2.89e-07)]
+Pmen_1215_p-76(kdgD)             7.45e-07  [+1(7.45e-07)]
+Pmen_3299_p-316(udh)             6.39e-07  [+1(6.39e-07)]
+Pmen_3299_p-60(udh)              3.68e-08  [+1(3.68e-08)]
+Pmen_3306_p-54(aldE)             1.16e-06  [+1(1.16e-06)]
+Pmen_3305_p-63(gguR)             6.92e-07  [+1(6.92e-07)]
+Pmen_1214_p-450(gudD2)           1.61e-06  [+1(1.61e-06)]
+Pmen_1214_p-251(gudD2)           1.71e-07  [+1(1.71e-07)]
+PP4758_p-79(gguT)                6.39e-07  [+1(6.39e-07)]
+PP3599_p-71(kdgD)                6.93e-08  [+1(6.93e-08)]
+PP1171_p-43(udh)                 5.97e-08  [+1(5.97e-08)]
+PP4759_p-104(gguR)               5.43e-07  [+1(5.43e-07)]
+PP3603_p-47(gguR)                1.00e-06  [+1(1.00e-06)]
+PSPTO4549_p-77(kdgD)             1.71e-07  [+1(1.71e-07)]
+PSPTO3323_p-163(kgsD)            1.05e-07  [+1(1.05e-07)]
+PSPTO1053_p-48(udh)              9.11e-08  [+1(9.11e-08)]
+PSPTO5219_p-385(exuT)            3.08e-06  [+1(3.08e-06)]
+PSPTO5219_p-265(exuT)            2.22e-09  [+1(2.22e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

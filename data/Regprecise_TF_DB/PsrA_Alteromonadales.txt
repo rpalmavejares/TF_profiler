@@ -1,0 +1,318 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PsrA_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MADE_03736_p-147(fadB)   1.0000     20  MADE_01742_p-32(n/a)     1.0000     20  
+MADE_01022_p-110(fadD2)  1.0000     20  CPS_0393_p-163(fadB)     1.0000     20  
+CPS_1586_p-149(psrA)     1.0000     20  CPS_1191_p-186(n/a)      1.0000     20  
+CPS_3687_p-202(etfB)     1.0000     20  CPS_3686_p-99(etfD)      1.0000     20  
+CPS_3686_p-80(etfD)      1.0000     20  CPS_1189_p-133(fadD1)    1.0000     20  
+CPS_1177_p-80(acdH2)     1.0000     20  CPS_4476_p-66(n/a)       1.0000     20  
+CPS_3687_p-183(etfB)     1.0000     20  OS145_01812_p-95(fadE2)  1.0000     20  
+OS145_12684_p-35(psrA)   1.0000     20  OS145_03332_p-62(n/a)    1.0000     20  
+OS145_03250_p-132(fadB)  1.0000     20  OS145_06047_p-109(ldh)   1.0000     20  
+OS145_10515_p-35(fadH1)  1.0000     20  IL1665_p-97(fadE2)       1.0000     20  
+IL0918_p-38(psrA)        1.0000     20  IL0656_p-30(n/a)         1.0000     20  
+IL1963_p-62(n/a)         1.0000     20  IL1314_p-110(ldh)        1.0000     20  
+IL1748_p-104(fadH1)      1.0000     20  IL0011_p-133(fadB)       1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PsrA_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/PsrA_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       26    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             520    N=              26
+sample: seed=            0    hsfrac=          0
+        searchsize=    520    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.394 C 0.146 G 0.121 T 0.338 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.393 C 0.147 G 0.122 T 0.338 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWTYAAACRCNYGTTTRAAW MEME-1	width =  20  sites =  26  llr = 411  E-value = 6.5e-136
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  73:1aaa:522:::::5a84
+pos.-specific     C  :::5:::a:734:::1::::
+probability       G  11::::::513:a:::3:::
+matrix            T  3694::::::26:aa91:25
+
+         bits    3.0             *       
+                 2.7        *    *       
+                 2.4        *    *       
+                 2.1        *    *       
+Relative         1.8        *    *       
+Entropy          1.5        *    ***     
+(22.8 bits)      1.2     **** * ***** *  
+                 0.9   * ****** ***** ** 
+                 0.6   ******** ******** 
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           ATTCAAACACCTGTTTAAAT
+consensus            TA T    G GC    G  A
+sequence                       A         
+                               T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+IL0011_p-133(fadB)            1  5.66e-10          . ATTCAAACGCATGTTTAAAT           
+OS145_03250_p-132(fadB)       1  5.66e-10          . ATTCAAACGCATGTTTAAAT           
+OS145_03332_p-62(n/a)         1  7.49e-10          . AATTAAACGCCTGTTTGAAA           
+CPS_1177_p-80(acdH2)          1  9.39e-10          . AATCAAACACCTGTTTGAAA           
+OS145_10515_p-35(fadH1)       1  1.29e-09          . AATTAAACGCCCGTTTAAAA           
+CPS_3686_p-80(etfD)           1  1.54e-09          . TATCAAACGCACGTTTGAAA           
+IL1748_p-104(fadH1)           1  6.48e-09          . AATTAAACACCCGTTTAAAA           
+CPS_3686_p-99(etfD)           1  6.48e-09          . TATCAAACACTTGTTTGAAT           
+IL1665_p-97(fadE2)            1  8.13e-09          . ATTCAAACGCCCGTTCAATT           
+OS145_12684_p-35(psrA)        1  1.05e-08          . AATTAAACGCATGTTTAAAA           
+IL0918_p-38(psrA)             1  2.09e-08          . GATTAAACGCATGTTTAAAT           
+IL0656_p-30(n/a)              1  2.57e-08          . AATCAAACAGTCGTTTAAAT           
+MADE_01742_p-32(n/a)          1  3.14e-08          . ATTAAAACACTTGTTTGAAA           
+OS145_01812_p-95(fadE2)       1  3.46e-08          . ATTCAAACAGGTGTTCAAAT           
+MADE_03736_p-147(fadB)        1  3.46e-08          . ATTGAAACGCTTGTTTGATT           
+CPS_3687_p-183(etfB)          1  4.24e-08          . ATTCAAACAAGTGTTTGATA           
+CPS_4476_p-66(n/a)            1  4.65e-08          . ATTCAAACAAGTGTTTTAAT           
+MADE_01022_p-110(fadD2)       1  5.06e-08          . ATGTAAACGCTTGTTTAAAA           
+IL1963_p-62(n/a)              1  5.59e-08          . GTTTAAACAAGCGTTTAAAT           
+CPS_1189_p-133(fadD1)         1  7.29e-08          . ATTAAAACAAGCGTTTAAAT           
+OS145_06047_p-109(ldh)        1  7.94e-08          . TGCTAAACACCCGTTTGAAT           
+CPS_3687_p-202(etfB)          1  7.94e-08          . TTTCAAACGTGCGTTTGATA           
+IL1314_p-110(ldh)             1  1.19e-07          . TGATAAACGCCCGTTTAAAT           
+CPS_1586_p-149(psrA)          1  1.74e-07          . TTTTAAACAGGTGTTTAAAC           
+CPS_0393_p-163(fadB)          1  2.97e-07          . TTTAAAACACTTGTTTTAAA           
+CPS_1191_p-186(n/a)           1  6.17e-07          . ATTCAAACTAATGTTTTAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IL0011_p-133(fadB)                5.7e-10  [+1]
+OS145_03250_p-132(fadB)           5.7e-10  [+1]
+OS145_03332_p-62(n/a)             7.5e-10  [+1]
+CPS_1177_p-80(acdH2)              9.4e-10  [+1]
+OS145_10515_p-35(fadH1)           1.3e-09  [+1]
+CPS_3686_p-80(etfD)               1.5e-09  [+1]
+IL1748_p-104(fadH1)               6.5e-09  [+1]
+CPS_3686_p-99(etfD)               6.5e-09  [+1]
+IL1665_p-97(fadE2)                8.1e-09  [+1]
+OS145_12684_p-35(psrA)            1.1e-08  [+1]
+IL0918_p-38(psrA)                 2.1e-08  [+1]
+IL0656_p-30(n/a)                  2.6e-08  [+1]
+MADE_01742_p-32(n/a)              3.1e-08  [+1]
+OS145_01812_p-95(fadE2)           3.5e-08  [+1]
+MADE_03736_p-147(fadB)            3.5e-08  [+1]
+CPS_3687_p-183(etfB)              4.2e-08  [+1]
+CPS_4476_p-66(n/a)                4.7e-08  [+1]
+MADE_01022_p-110(fadD2)           5.1e-08  [+1]
+IL1963_p-62(n/a)                  5.6e-08  [+1]
+CPS_1189_p-133(fadD1)             7.3e-08  [+1]
+OS145_06047_p-109(ldh)            7.9e-08  [+1]
+CPS_3687_p-202(etfB)              7.9e-08  [+1]
+IL1314_p-110(ldh)                 1.2e-07  [+1]
+CPS_1586_p-149(psrA)              1.7e-07  [+1]
+CPS_0393_p-163(fadB)                3e-07  [+1]
+CPS_1191_p-186(n/a)               6.2e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWTYAAACRCNYGTTTRAAW width=20 seqs=26
+IL0011_p-133(fadB)       (    1) ATTCAAACGCATGTTTAAAT  1 
+OS145_03250_p-132(fadB)  (    1) ATTCAAACGCATGTTTAAAT  1 
+OS145_03332_p-62(n/a)    (    1) AATTAAACGCCTGTTTGAAA  1 
+CPS_1177_p-80(acdH2)     (    1) AATCAAACACCTGTTTGAAA  1 
+OS145_10515_p-35(fadH1)  (    1) AATTAAACGCCCGTTTAAAA  1 
+CPS_3686_p-80(etfD)      (    1) TATCAAACGCACGTTTGAAA  1 
+IL1748_p-104(fadH1)      (    1) AATTAAACACCCGTTTAAAA  1 
+CPS_3686_p-99(etfD)      (    1) TATCAAACACTTGTTTGAAT  1 
+IL1665_p-97(fadE2)       (    1) ATTCAAACGCCCGTTCAATT  1 
+OS145_12684_p-35(psrA)   (    1) AATTAAACGCATGTTTAAAA  1 
+IL0918_p-38(psrA)        (    1) GATTAAACGCATGTTTAAAT  1 
+IL0656_p-30(n/a)         (    1) AATCAAACAGTCGTTTAAAT  1 
+MADE_01742_p-32(n/a)     (    1) ATTAAAACACTTGTTTGAAA  1 
+OS145_01812_p-95(fadE2)  (    1) ATTCAAACAGGTGTTCAAAT  1 
+MADE_03736_p-147(fadB)   (    1) ATTGAAACGCTTGTTTGATT  1 
+CPS_3687_p-183(etfB)     (    1) ATTCAAACAAGTGTTTGATA  1 
+CPS_4476_p-66(n/a)       (    1) ATTCAAACAAGTGTTTTAAT  1 
+MADE_01022_p-110(fadD2)  (    1) ATGTAAACGCTTGTTTAAAA  1 
+IL1963_p-62(n/a)         (    1) GTTTAAACAAGCGTTTAAAT  1 
+CPS_1189_p-133(fadD1)    (    1) ATTAAAACAAGCGTTTAAAT  1 
+OS145_06047_p-109(ldh)   (    1) TGCTAAACACCCGTTTGAAT  1 
+CPS_3687_p-202(etfB)     (    1) TTTCAAACGTGCGTTTGATA  1 
+IL1314_p-110(ldh)        (    1) TGATAAACGCCCGTTTAAAT  1 
+CPS_1586_p-149(psrA)     (    1) TTTTAAACAGGTGTTTAAAC  1 
+CPS_0393_p-163(fadB)     (    1) TTTAAAACACTTGTTTTAAA  1 
+CPS_1191_p-186(n/a)      (    1) ATTCAAACTAATGTTTTAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 26 bayes= 1.4975 E= 6.5e-136 
+    73  -1134    -67    -33 
+   -18  -1134    -67     77 
+  -335   -193   -167    139 
+  -177    165   -167     19 
+   135  -1134  -1134  -1134 
+   135  -1134  -1134  -1134 
+   135  -1134  -1134  -1134 
+ -1134    277  -1134  -1134 
+    35  -1134    192   -313 
+  -103    215     -8   -313 
+   -77     87    114    -55 
+ -1134    139  -1134     87 
+ -1134  -1134    303  -1134 
+ -1134  -1134  -1134    157 
+ -1134  -1134  -1134    157 
+ -1134    -93  -1134    145 
+    45  -1134    150   -155 
+   135  -1134  -1134  -1134 
+   111  -1134  -1134   -113 
+    11   -193  -1134     67 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 26 E= 6.5e-136 
+ 0.653846  0.000000  0.076923  0.269231 
+ 0.346154  0.000000  0.076923  0.576923 
+ 0.038462  0.038462  0.038462  0.884615 
+ 0.115385  0.461538  0.038462  0.384615 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.461538  0.038462 
+ 0.192308  0.653846  0.115385  0.038462 
+ 0.230769  0.269231  0.269231  0.230769 
+ 0.000000  0.384615  0.000000  0.615385 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.076923  0.000000  0.923077 
+ 0.538462  0.000000  0.346154  0.115385 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.846154  0.000000  0.000000  0.153846 
+ 0.423077  0.038462  0.000000  0.538462 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWTYAAACRCNYGTTTRAAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][TA]T[CT]AAAC[AG]C[CGAT][TC]GTTT[AG]AA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MADE_03736_p-147(fadB)           3.46e-08  [+1(3.46e-08)]
+MADE_01742_p-32(n/a)             3.14e-08  [+1(3.14e-08)]
+MADE_01022_p-110(fadD2)          5.06e-08  [+1(5.06e-08)]
+CPS_0393_p-163(fadB)             2.97e-07  [+1(2.97e-07)]
+CPS_1586_p-149(psrA)             1.74e-07  [+1(1.74e-07)]
+CPS_1191_p-186(n/a)              6.17e-07  [+1(6.17e-07)]
+CPS_3687_p-202(etfB)             7.94e-08  [+1(7.94e-08)]
+CPS_3686_p-99(etfD)              6.48e-09  [+1(6.48e-09)]
+CPS_3686_p-80(etfD)              1.54e-09  [+1(1.54e-09)]
+CPS_1189_p-133(fadD1)            7.29e-08  [+1(7.29e-08)]
+CPS_1177_p-80(acdH2)             9.39e-10  [+1(9.39e-10)]
+CPS_4476_p-66(n/a)               4.65e-08  [+1(4.65e-08)]
+CPS_3687_p-183(etfB)             4.24e-08  [+1(4.24e-08)]
+OS145_01812_p-95(fadE2)          3.46e-08  [+1(3.46e-08)]
+OS145_12684_p-35(psrA)           1.05e-08  [+1(1.05e-08)]
+OS145_03332_p-62(n/a)            7.49e-10  [+1(7.49e-10)]
+OS145_03250_p-132(fadB)          5.66e-10  [+1(5.66e-10)]
+OS145_06047_p-109(ldh)           7.94e-08  [+1(7.94e-08)]
+OS145_10515_p-35(fadH1)          1.29e-09  [+1(1.29e-09)]
+IL1665_p-97(fadE2)               8.13e-09  [+1(8.13e-09)]
+IL0918_p-38(psrA)                2.09e-08  [+1(2.09e-08)]
+IL0656_p-30(n/a)                 2.57e-08  [+1(2.57e-08)]
+IL1963_p-62(n/a)                 5.59e-08  [+1(5.59e-08)]
+IL1314_p-110(ldh)                1.19e-07  [+1(1.19e-07)]
+IL1748_p-104(fadH1)              6.48e-09  [+1(6.48e-09)]
+IL0011_p-133(fadB)               5.66e-10  [+1(5.66e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,279 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/ArgR_Listeriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+lin2195_p-114(argG)      1.0000     16  lin1633_p-88(argC)       1.0000     16  
+lin2195_p-50(argG)       1.0000     16  lin2195_p-30(argG)       1.0000     16  
+lin1633_p-62(argC)       1.0000     16  lmo2090_p-30(argG)       1.0000     16  
+lmo2090_p-50(argG)       1.0000     16  lmo2090_p-114(argG)      1.0000     16  
+lmo1591_p-63(argC)       1.0000     16  lmo1591_p-89(argC)       1.0000     16  
+lse_2080_p-50(argG)      1.0000     16  lse_2080_p-114(argG)     1.0000     16  
+lse_2080_p-30(argG)      1.0000     16  lse_1507_p-103(argC)     1.0000     16  
+lse_1507_p-62(argC)      1.0000     16  lwe2111_p-30(argG)       1.0000     16  
+lwe2111_p-114(argG)      1.0000     16  lwe2111_p-50(argG)       1.0000     16  
+lwe1604_p-62(argC)       1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/ArgR_Listeriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/ArgR_Listeriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             304    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    304    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.447 C 0.0592 G 0.0625 T 0.431 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.445 C 0.0617 G 0.0649 T 0.429 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF NTKWATATWWATACAT MEME-1	width =  16  sites =  19  llr = 156  E-value = 3.1e-041
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3213a:8354a26393
+pos.-specific     C  2::1:::::::::7::
+probability       G  2:5:::::::::3:::
+matrix            T  3846:a2756:81:17
+
+         bits    4.0                 
+                 3.6                 
+                 3.2                 
+                 2.8                 
+Relative         2.4              *  
+Entropy          2.0              *  
+(11.9 bits)      1.6              *  
+                 1.2   * **    *  *  
+                 0.8   * **    * *** 
+                 0.4 *** **** *******
+                 0.0 ----------------
+
+Multilevel           TTGTATATTTATACAT
+consensus            A TA  TAAA AGA A
+sequence             C               
+                     G               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+lwe2111_p-30(argG)            1  4.53e-06          . TTGTATATTTATGAAT           
+lse_2080_p-30(argG)           1  4.53e-06          . TTGTATATTTATGAAT           
+lmo2090_p-30(argG)            1  4.53e-06          . TTGTATATTTATGAAT           
+lin2195_p-30(argG)            1  4.53e-06          . TTGTATATTTATGAAT           
+lmo2090_p-114(argG)           1  5.07e-06          . ATGTATTTTTAAGCAT           
+lwe1604_p-62(argC)            1  5.80e-06          . CTTTATAAATATACAT           
+lwe2111_p-114(argG)           1  2.40e-05          . ATGTATTTTTAAACAT           
+lse_2080_p-114(argG)          1  2.40e-05          . ATGTATTTTTAAACAT           
+lwe2111_p-50(argG)            1  2.77e-05          . GTTAATATAAATACAA           
+lse_2080_p-50(argG)           1  2.77e-05          . GTTAATATAAATACAA           
+lmo2090_p-50(argG)            1  2.77e-05          . GTTAATATAAATACAA           
+lin2195_p-50(argG)            1  2.77e-05          . GTTAATATAAATACAA           
+lse_1507_p-62(argC)           1  4.60e-05          . CATTATAAATATACAT           
+lmo1591_p-63(argC)            1  4.60e-05          . CATTATAAATATACAT           
+lin1633_p-62(argC)            1  4.60e-05          . CATTATAAATATACAT           
+lse_1507_p-103(argC)          1  8.41e-05          . ATGCATAAAAATGCTT           
+lin2195_p-114(argG)           1  2.43e-04          . ATGTATTTTTAATCAT           
+lmo1591_p-89(argC)            1  2.12e-03          . TTAAATATTAATAAAA           
+lin1633_p-88(argC)            1  2.12e-03          . TTAAATATTAATAAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lwe2111_p-30(argG)                4.5e-06  [+1]
+lse_2080_p-30(argG)               4.5e-06  [+1]
+lmo2090_p-30(argG)                4.5e-06  [+1]
+lin2195_p-30(argG)                4.5e-06  [+1]
+lmo2090_p-114(argG)               5.1e-06  [+1]
+lwe1604_p-62(argC)                5.8e-06  [+1]
+lwe2111_p-114(argG)               2.4e-05  [+1]
+lse_2080_p-114(argG)              2.4e-05  [+1]
+lwe2111_p-50(argG)                2.8e-05  [+1]
+lse_2080_p-50(argG)               2.8e-05  [+1]
+lmo2090_p-50(argG)                2.8e-05  [+1]
+lin2195_p-50(argG)                2.8e-05  [+1]
+lse_1507_p-62(argC)               4.6e-05  [+1]
+lmo1591_p-63(argC)                4.6e-05  [+1]
+lin1633_p-62(argC)                4.6e-05  [+1]
+lse_1507_p-103(argC)              8.4e-05  [+1]
+lin2195_p-114(argG)               0.00024  [+1]
+lmo1591_p-89(argC)                 0.0021  [+1]
+lin1633_p-88(argC)                 0.0021  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF NTKWATATWWATACAT width=16 seqs=19
+lwe2111_p-30(argG)       (    1) TTGTATATTTATGAAT  1 
+lse_2080_p-30(argG)      (    1) TTGTATATTTATGAAT  1 
+lmo2090_p-30(argG)       (    1) TTGTATATTTATGAAT  1 
+lin2195_p-30(argG)       (    1) TTGTATATTTATGAAT  1 
+lmo2090_p-114(argG)      (    1) ATGTATTTTTAAGCAT  1 
+lwe1604_p-62(argC)       (    1) CTTTATAAATATACAT  1 
+lwe2111_p-114(argG)      (    1) ATGTATTTTTAAACAT  1 
+lse_2080_p-114(argG)     (    1) ATGTATTTTTAAACAT  1 
+lwe2111_p-50(argG)       (    1) GTTAATATAAATACAA  1 
+lse_2080_p-50(argG)      (    1) GTTAATATAAATACAA  1 
+lmo2090_p-50(argG)       (    1) GTTAATATAAATACAA  1 
+lin2195_p-50(argG)       (    1) GTTAATATAAATACAA  1 
+lse_1507_p-62(argC)      (    1) CATTATAAATATACAT  1 
+lmo1591_p-63(argC)       (    1) CATTATAAATATACAT  1 
+lin1633_p-62(argC)       (    1) CATTATAAATATACAT  1 
+lse_1507_p-103(argC)     (    1) ATGCATAAAAATGCTT  1 
+lin2195_p-114(argG)      (    1) ATGTATTTTTAATCAT  1 
+lmo1591_p-89(argC)       (    1) TTAAATATTAATAAAA  1 
+lin1633_p-88(argC)       (    1) TTAAATATTAATAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 19 bayes= 1.33258 E= 3.1e-041 
+   -76    177    170    -44 
+  -149  -1089  -1089     97 
+  -208  -1089    287     -3 
+   -49    -23  -1089     56 
+   117  -1089  -1089  -1089 
+ -1089  -1089  -1089    122 
+    83  -1089  -1089   -102 
+   -76  -1089  -1089     78 
+     9  -1089  -1089     30 
+   -27  -1089  -1089     56 
+   117  -1089  -1089  -1089 
+  -108  -1089  -1089     88 
+    51  -1089    228   -302 
+   -49    347  -1089  -1089 
+   109  -1089  -1089   -302 
+   -49  -1089  -1089     67 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 19 E= 3.1e-041 
+ 0.263158  0.210526  0.210526  0.315789 
+ 0.157895  0.000000  0.000000  0.842105 
+ 0.105263  0.000000  0.473684  0.421053 
+ 0.315789  0.052632  0.000000  0.631579 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.789474  0.000000  0.000000  0.210526 
+ 0.263158  0.000000  0.000000  0.736842 
+ 0.473684  0.000000  0.000000  0.526316 
+ 0.368421  0.000000  0.000000  0.631579 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.210526  0.000000  0.000000  0.789474 
+ 0.631579  0.000000  0.315789  0.052632 
+ 0.315789  0.684211  0.000000  0.000000 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.315789  0.000000  0.000000  0.684211 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NTKWATATWWATACAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TACG]T[GT][TA]AT[AT][TA][TA][TA]A[TA][AG][CA]A[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lin2195_p-114(argG)              2.43e-04  16
+lin1633_p-88(argC)               2.12e-03  16
+lin2195_p-50(argG)               2.77e-05  [+1(2.77e-05)]
+lin2195_p-30(argG)               4.53e-06  [+1(4.53e-06)]
+lin1633_p-62(argC)               4.60e-05  [+1(4.60e-05)]
+lmo2090_p-30(argG)               4.53e-06  [+1(4.53e-06)]
+lmo2090_p-50(argG)               2.77e-05  [+1(2.77e-05)]
+lmo2090_p-114(argG)              5.07e-06  [+1(5.07e-06)]
+lmo1591_p-63(argC)               4.60e-05  [+1(4.60e-05)]
+lmo1591_p-89(argC)               2.12e-03  16
+lse_2080_p-50(argG)              2.77e-05  [+1(2.77e-05)]
+lse_2080_p-114(argG)             2.40e-05  [+1(2.40e-05)]
+lse_2080_p-30(argG)              4.53e-06  [+1(4.53e-06)]
+lse_1507_p-103(argC)             8.41e-05  [+1(8.41e-05)]
+lse_1507_p-62(argC)              4.60e-05  [+1(4.60e-05)]
+lwe2111_p-30(argG)               4.53e-06  [+1(4.53e-06)]
+lwe2111_p-114(argG)              2.40e-05  [+1(2.40e-05)]
+lwe2111_p-50(argG)               2.77e-05  [+1(2.77e-05)]
+lwe1604_p-62(argC)               5.80e-06  [+1(5.80e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

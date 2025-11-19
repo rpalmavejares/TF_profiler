@@ -1,0 +1,460 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/Zur_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC2551_p-50(VC2551)      1.0000     23  VC0878_p-40(rpmE2)       1.0000     23  
+VC2082_p-47(znuC)        1.0000     23  VC2081_p-50(znuA)        1.0000     23  
+VC1263_p-97(ribA)        1.0000     23  VV1_0717_p-381(zbp)      1.0000     23  
+VV1_0360_p-125(omr)      1.0000     23  VV1_0152_p-46(znuC)      1.0000     23  
+VV1_0151_p-58(znuA)      1.0000     23  VV1_2234_p-144(ribA)     1.0000     23  
+VV1_1840_p-37(rpmE2)     1.0000     23  VIBHAR_03250_p-41(rpmE2) 1.0000     23  
+VIBHAR_06466_p-36(omr)   1.0000     23  VIBHAR_06466_p-70(omr)   1.0000     23  
+VIBHAR_01360_p-46(znuC)  1.0000     23  VIBHAR_01361_p-55(znuA)  1.0000     23  
+VIBHAR_02717_p-154(ribA) 1.0000     23  VP2331_p-41(rpmE2)       1.0000     23  
+VPA1308_p-62(omr)        1.0000     23  VPA1308_p-33(omr)        1.0000     23  
+VP0303_p-43(VC2551)      1.0000     23  VP0852_p-46(znuC)        1.0000     23  
+VP0853_p-55(znuA)        1.0000     23  VP1921_p-207(ribA)       1.0000     23  
+VSAK1_20814_p-31(rpmE2)  1.0000     23  VSAK1_01829_p-391(zbp)   1.0000     23  
+VSAK1_08973_p-46(znuC)   1.0000     23  VSAK1_17572_p-102(znuC)  1.0000     23  
+VSAK1_17567_p-64(znuA)   1.0000     23  VSAK1_08978_p-58(znuA)   1.0000     23  
+VSAK1_04575_p-91(ribA)   1.0000     23  VS_2780_p-53(VC2551)     1.0000     23  
+VS_2238_p-46(znuC)       1.0000     23  VS_2237_p-60(znuA)       1.0000     23  
+VS_1924_p-116(ribA)      1.0000     23  VS_2366_p-43(rpmE2)      1.0000     23  
+VS_2781_p-385(zbp)       1.0000     23  VF_0328_p-389(zbp)       1.0000     23  
+VF_2367_p-90(znuC)       1.0000     23  VF_0829_p-50(znuC)       1.0000     23  
+VF_2366_p-79(znuA)       1.0000     23  VF_0830_p-61(znuA)       1.0000     23  
+VSAL_I0429_p-48(VC2551)  1.0000     23  VSAL_I0851_p-50(znuC)    1.0000     23  
+VSAL_I0852_p-61(znuA)    1.0000     23  VSAL_I0890_p-47(rpmE2)   1.0000     23  
+VSAL_I0428_p-390(zbp)    1.0000     23  VAS14_13584_p-43(rpmE2)  1.0000     23  
+VAS14_17781_p-83(znuC)   1.0000     23  VAS14_17781_p-59(znuC)   1.0000     23  
+VAS14_17786_p-133(znuA)  1.0000     23  VAS14_17786_p-109(znuA)  1.0000     23  
+VAS14_03723_p-260(ribA)  1.0000     23  PBPRA1054_p-55(znuC)     1.0000     23  
+PBPRA1055_p24(znuA)      1.0000     23  PBPRA0375_p-25(VC2551)   1.0000     23  
+PBPRA0374_p-376(zbp)     1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/Zur_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/Zur_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       57    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1311    N=              57
+sample: seed=            0    hsfrac=          0
+        searchsize=   1311    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.415 C 0.09 G 0.087 T 0.408 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.414 C 0.0905 G 0.0875 T 0.408 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DWAATGTTATAWTATAACAWT MEME-1	width =  21  sites =  57  llr = 872  E-value = 1.3e-296
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3566::::a:a6:8:9a:a41
+pos.-specific     C  1::::::::2::3::::a:11
+probability       G  4111:a:::::::2:::::::
+matrix            T  2432a:aa:8:47:a1:::58
+
+         bits    3.5      *           *   
+                 3.2      *           *   
+                 2.8      *           *   
+                 2.5      *           *   
+Relative         2.1      *           *   
+Entropy          1.8      *           *   
+(22.1 bits)      1.4     *** *     *  *   
+                 1.1     ******* *** ***  
+                 0.7     ******* *******  
+                 0.4 * ***************** *
+                 0.0 ---------------------
+
+Multilevel           GAAATGTTATAATATAACATT
+consensus            ATTT       TC      A 
+sequence             T                    
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+VV1_0360_p-125(omr)           1  3.05e-11          . GAAATGTTATAACATAACATT TG        
+VAS14_17786_p-133(znuA)       1  8.05e-10          . GTAATGTTATAATATAACATT AC        
+VAS14_17781_p-59(znuC)        1  1.67e-09          . GTAATGTTATATTATAACATT AC        
+VAS14_13584_p-43(rpmE2)       1  1.67e-09          . GTTATGTTATAACATAACAAT AA        
+VSAL_I0890_p-47(rpmE2)        1  1.67e-09          . GTTATGTTATAACATAACAAT TA        
+VF_2366_p-79(znuA)            1  1.67e-09          . GTTATGTTATAACATAACAAT TA        
+VF_2367_p-90(znuC)            1  1.67e-09          . GTTATGTTATAACATAACAAT TA        
+VSAK1_17567_p-64(znuA)        1  1.67e-09          . GTTATGTTATAACATAACAAT TG        
+VSAK1_08973_p-46(znuC)        1  1.96e-09          . GAAATGTTACATTATAACAAT AA        
+VSAK1_20814_p-31(rpmE2)       1  1.96e-09          . GCAATGTTATAACATAACAAT TA        
+VAS14_17786_p-109(znuA)       1  3.63e-09          . GATATGTTATATTGTAACATT AT        
+VP2331_p-41(rpmE2)            1  3.63e-09          . AAAATGTTATAACATAACAAT TT        
+VC0878_p-40(rpmE2)            1  3.63e-09          . AAAATGTTATAACATAACAAT TT        
+VIBHAR_03250_p-41(rpmE2)      1  5.39e-09          . ATAATGTTATAACATAACAAT CA        
+PBPRA1054_p-55(znuC)          1  7.37e-09          . GTGATGTTATAATATAACACC TT        
+VP0853_p-55(znuA)             1  1.04e-08          . ATAATGTTATAATGTAACATT AT        
+VIBHAR_01361_p-55(znuA)       1  1.04e-08          . ATAATGTTATAATGTAACATT AT        
+VSAL_I0852_p-61(znuA)         1  1.54e-08          . TAAGTGTTATAATGTAACATT TT        
+VF_0830_p-61(znuA)            1  1.54e-08          . TAAGTGTTATAATGTAACATT TT        
+VV1_1840_p-37(rpmE2)          1  1.54e-08          . AATATGTTATAACATAACAAT TA        
+VS_2237_p-60(znuA)            1  1.83e-08          . CTAATGTTATAATGTAACATT TA        
+VSAL_I0851_p-50(znuC)         1  2.19e-08          . AAAATGTTACATTATAACACT TA        
+VF_0829_p-50(znuC)            1  2.19e-08          . AAAATGTTACATTATAACACT TA        
+VV1_0152_p-46(znuC)           1  2.19e-08          . AAAATGTTACATTATAACACT CA        
+VPA1308_p-33(omr)             1  2.61e-08          . CATATGTTATAACATAACAAT AA        
+VP0852_p-46(znuC)             1  2.97e-08          . ATAATGTTACATTATAACATT AT        
+VIBHAR_02717_p-154(ribA)      1  2.97e-08          . TAAATGTTATATTATAACAAT TG        
+VIBHAR_01360_p-46(znuC)       1  2.97e-08          . ATAATGTTACATTATAACATT AT        
+VS_2238_p-46(znuC)            1  3.39e-08          . TAAATGTTACATTATAACATT AG        
+VV1_0151_p-58(znuA)           1  4.28e-08          . TGAGTGTTATAATGTAACATT TT        
+PBPRA0374_p-376(zbp)          1  4.83e-08          . GTAATGTTATATTATTACATT AC        
+PBPRA0375_p-25(VC2551)        1  4.83e-08          . GTAATGTTATATTATTACATT AC        
+VAS14_03723_p-260(ribA)       1  4.83e-08          . GATGTGTTATAATATAACATA TT        
+VS_1924_p-116(ribA)           1  6.77e-08          . TAATTGTTATAATATAACAAT TT        
+VSAK1_04575_p-91(ribA)        1  6.77e-08          . TAATTGTTATAATATAACAAT TA        
+VSAK1_08978_p-58(znuA)        1  6.77e-08          . TTATTGTTATAATGTAACATT TC        
+VSAK1_01829_p-391(zbp)        1  7.46e-08          . GATTTGTTATAACATAACAAA TC        
+PBPRA1055_p24(znuA)           1  8.16e-08          . AAGGTGTTATATTATAACATC AC        
+VC1263_p-97(ribA)             1  8.16e-08          . CATTTGTTATAACATAACAAT TT        
+VP0303_p-43(VC2551)           1  1.13e-07          . TGAGTGTTATATTATAACACC CG        
+VAS14_17781_p-83(znuC)        1  1.23e-07          . ATAATGTTACAATATAACATA TC        
+VPA1308_p-62(omr)             1  1.46e-07          . TAATTGTTATATTATAACAAC TT        
+VSAL_I0428_p-390(zbp)         1  1.59e-07          . AAAATGTTATATTATTACATT TA        
+VSAL_I0429_p-48(VC2551)       1  1.59e-07          . AAAATGTTATATTATTACATT TA        
+VF_0328_p-389(zbp)            1  1.59e-07          . AAAATGTTATATTATTACATT TA        
+VS_2781_p-385(zbp)            1  1.59e-07          . ATATTGTTATATTATAACAGT AT        
+VS_2780_p-53(VC2551)          1  1.59e-07          . ATATTGTTATATTATAACAGT AT        
+VSAK1_17572_p-102(znuC)       1  1.72e-07          . GTTATGTTATAACATAACTTT TA        
+VC2081_p-50(znuA)             1  1.98e-07          . GTTATGTTATAAAGTAACATT CA        
+VP1921_p-207(ribA)            1  2.26e-07          . AAATTGTTATACTATAACAAT TT        
+VV1_0717_p-381(zbp)           1  2.42e-07          . TAGCTGTTATATTGTAACACT TT        
+VV1_2234_p-144(ribA)          1  2.95e-07          . TTATTGTTATAATATAACAAA AC        
+VC2551_p-50(VC2551)           1  4.01e-07          . GACTTGTTATATTATAACAAG CC        
+VS_2366_p-43(rpmE2)           1  4.57e-07          . GATATGTTATAACGTATCAAA TT        
+VIBHAR_06466_p-36(omr)        1  5.23e-07          . GTGGTGTAATAACATAACAAA GT        
+VIBHAR_06466_p-70(omr)        1  1.57e-06          . TCTTTGTTATGTTATAACATC TG        
+VC2082_p-47(znuC)             1  1.94e-06          . TGAATGTTACTTTATAACATA AC        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VV1_0360_p-125(omr)               3.1e-11  [+1]_2
+VAS14_17786_p-133(znuA)             8e-10  [+1]_2
+VAS14_17781_p-59(znuC)            1.7e-09  [+1]_2
+VAS14_13584_p-43(rpmE2)           1.7e-09  [+1]_2
+VSAL_I0890_p-47(rpmE2)            1.7e-09  [+1]_2
+VF_2366_p-79(znuA)                1.7e-09  [+1]_2
+VF_2367_p-90(znuC)                1.7e-09  [+1]_2
+VSAK1_17567_p-64(znuA)            1.7e-09  [+1]_2
+VSAK1_08973_p-46(znuC)              2e-09  [+1]_2
+VSAK1_20814_p-31(rpmE2)             2e-09  [+1]_2
+VAS14_17786_p-109(znuA)           3.6e-09  [+1]_2
+VP2331_p-41(rpmE2)                3.6e-09  [+1]_2
+VC0878_p-40(rpmE2)                3.6e-09  [+1]_2
+VIBHAR_03250_p-41(rpmE2)          5.4e-09  [+1]_2
+PBPRA1054_p-55(znuC)              7.4e-09  [+1]_2
+VP0853_p-55(znuA)                   1e-08  [+1]_2
+VIBHAR_01361_p-55(znuA)             1e-08  [+1]_2
+VSAL_I0852_p-61(znuA)             1.5e-08  [+1]_2
+VF_0830_p-61(znuA)                1.5e-08  [+1]_2
+VV1_1840_p-37(rpmE2)              1.5e-08  [+1]_2
+VS_2237_p-60(znuA)                1.8e-08  [+1]_2
+VSAL_I0851_p-50(znuC)             2.2e-08  [+1]_2
+VF_0829_p-50(znuC)                2.2e-08  [+1]_2
+VV1_0152_p-46(znuC)               2.2e-08  [+1]_2
+VPA1308_p-33(omr)                 2.6e-08  [+1]_2
+VP0852_p-46(znuC)                   3e-08  [+1]_2
+VIBHAR_02717_p-154(ribA)            3e-08  [+1]_2
+VIBHAR_01360_p-46(znuC)             3e-08  [+1]_2
+VS_2238_p-46(znuC)                3.4e-08  [+1]_2
+VV1_0151_p-58(znuA)               4.3e-08  [+1]_2
+PBPRA0374_p-376(zbp)              4.8e-08  [+1]_2
+PBPRA0375_p-25(VC2551)            4.8e-08  [+1]_2
+VAS14_03723_p-260(ribA)           4.8e-08  [+1]_2
+VS_1924_p-116(ribA)               6.8e-08  [+1]_2
+VSAK1_04575_p-91(ribA)            6.8e-08  [+1]_2
+VSAK1_08978_p-58(znuA)            6.8e-08  [+1]_2
+VSAK1_01829_p-391(zbp)            7.5e-08  [+1]_2
+PBPRA1055_p24(znuA)               8.2e-08  [+1]_2
+VC1263_p-97(ribA)                 8.2e-08  [+1]_2
+VP0303_p-43(VC2551)               1.1e-07  [+1]_2
+VAS14_17781_p-83(znuC)            1.2e-07  [+1]_2
+VPA1308_p-62(omr)                 1.5e-07  [+1]_2
+VSAL_I0428_p-390(zbp)             1.6e-07  [+1]_2
+VSAL_I0429_p-48(VC2551)           1.6e-07  [+1]_2
+VF_0328_p-389(zbp)                1.6e-07  [+1]_2
+VS_2781_p-385(zbp)                1.6e-07  [+1]_2
+VS_2780_p-53(VC2551)              1.6e-07  [+1]_2
+VSAK1_17572_p-102(znuC)           1.7e-07  [+1]_2
+VC2081_p-50(znuA)                   2e-07  [+1]_2
+VP1921_p-207(ribA)                2.3e-07  [+1]_2
+VV1_0717_p-381(zbp)               2.4e-07  [+1]_2
+VV1_2234_p-144(ribA)                3e-07  [+1]_2
+VC2551_p-50(VC2551)                 4e-07  [+1]_2
+VS_2366_p-43(rpmE2)               4.6e-07  [+1]_2
+VIBHAR_06466_p-36(omr)            5.2e-07  [+1]_2
+VIBHAR_06466_p-70(omr)            1.6e-06  [+1]_2
+VC2082_p-47(znuC)                 1.9e-06  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DWAATGTTATAWTATAACAWT width=21 seqs=57
+VV1_0360_p-125(omr)      (    1) GAAATGTTATAACATAACATT  1 
+VAS14_17786_p-133(znuA)  (    1) GTAATGTTATAATATAACATT  1 
+VAS14_17781_p-59(znuC)   (    1) GTAATGTTATATTATAACATT  1 
+VAS14_13584_p-43(rpmE2)  (    1) GTTATGTTATAACATAACAAT  1 
+VSAL_I0890_p-47(rpmE2)   (    1) GTTATGTTATAACATAACAAT  1 
+VF_2366_p-79(znuA)       (    1) GTTATGTTATAACATAACAAT  1 
+VF_2367_p-90(znuC)       (    1) GTTATGTTATAACATAACAAT  1 
+VSAK1_17567_p-64(znuA)   (    1) GTTATGTTATAACATAACAAT  1 
+VSAK1_08973_p-46(znuC)   (    1) GAAATGTTACATTATAACAAT  1 
+VSAK1_20814_p-31(rpmE2)  (    1) GCAATGTTATAACATAACAAT  1 
+VAS14_17786_p-109(znuA)  (    1) GATATGTTATATTGTAACATT  1 
+VP2331_p-41(rpmE2)       (    1) AAAATGTTATAACATAACAAT  1 
+VC0878_p-40(rpmE2)       (    1) AAAATGTTATAACATAACAAT  1 
+VIBHAR_03250_p-41(rpmE2) (    1) ATAATGTTATAACATAACAAT  1 
+PBPRA1054_p-55(znuC)     (    1) GTGATGTTATAATATAACACC  1 
+VP0853_p-55(znuA)        (    1) ATAATGTTATAATGTAACATT  1 
+VIBHAR_01361_p-55(znuA)  (    1) ATAATGTTATAATGTAACATT  1 
+VSAL_I0852_p-61(znuA)    (    1) TAAGTGTTATAATGTAACATT  1 
+VF_0830_p-61(znuA)       (    1) TAAGTGTTATAATGTAACATT  1 
+VV1_1840_p-37(rpmE2)     (    1) AATATGTTATAACATAACAAT  1 
+VS_2237_p-60(znuA)       (    1) CTAATGTTATAATGTAACATT  1 
+VSAL_I0851_p-50(znuC)    (    1) AAAATGTTACATTATAACACT  1 
+VF_0829_p-50(znuC)       (    1) AAAATGTTACATTATAACACT  1 
+VV1_0152_p-46(znuC)      (    1) AAAATGTTACATTATAACACT  1 
+VPA1308_p-33(omr)        (    1) CATATGTTATAACATAACAAT  1 
+VP0852_p-46(znuC)        (    1) ATAATGTTACATTATAACATT  1 
+VIBHAR_02717_p-154(ribA) (    1) TAAATGTTATATTATAACAAT  1 
+VIBHAR_01360_p-46(znuC)  (    1) ATAATGTTACATTATAACATT  1 
+VS_2238_p-46(znuC)       (    1) TAAATGTTACATTATAACATT  1 
+VV1_0151_p-58(znuA)      (    1) TGAGTGTTATAATGTAACATT  1 
+PBPRA0374_p-376(zbp)     (    1) GTAATGTTATATTATTACATT  1 
+PBPRA0375_p-25(VC2551)   (    1) GTAATGTTATATTATTACATT  1 
+VAS14_03723_p-260(ribA)  (    1) GATGTGTTATAATATAACATA  1 
+VS_1924_p-116(ribA)      (    1) TAATTGTTATAATATAACAAT  1 
+VSAK1_04575_p-91(ribA)   (    1) TAATTGTTATAATATAACAAT  1 
+VSAK1_08978_p-58(znuA)   (    1) TTATTGTTATAATGTAACATT  1 
+VSAK1_01829_p-391(zbp)   (    1) GATTTGTTATAACATAACAAA  1 
+PBPRA1055_p24(znuA)      (    1) AAGGTGTTATATTATAACATC  1 
+VC1263_p-97(ribA)        (    1) CATTTGTTATAACATAACAAT  1 
+VP0303_p-43(VC2551)      (    1) TGAGTGTTATATTATAACACC  1 
+VAS14_17781_p-83(znuC)   (    1) ATAATGTTACAATATAACATA  1 
+VPA1308_p-62(omr)        (    1) TAATTGTTATATTATAACAAC  1 
+VSAL_I0428_p-390(zbp)    (    1) AAAATGTTATATTATTACATT  1 
+VSAL_I0429_p-48(VC2551)  (    1) AAAATGTTATATTATTACATT  1 
+VF_0328_p-389(zbp)       (    1) AAAATGTTATATTATTACATT  1 
+VS_2781_p-385(zbp)       (    1) ATATTGTTATATTATAACAGT  1 
+VS_2780_p-53(VC2551)     (    1) ATATTGTTATATTATAACAGT  1 
+VSAK1_17572_p-102(znuC)  (    1) GTTATGTTATAACATAACTTT  1 
+VC2081_p-50(znuA)        (    1) GTTATGTTATAAAGTAACATT  1 
+VP1921_p-207(ribA)       (    1) AAATTGTTATACTATAACAAT  1 
+VV1_0717_p-381(zbp)      (    1) TAGCTGTTATATTGTAACACT  1 
+VV1_2234_p-144(ribA)     (    1) TTATTGTTATAATATAACAAA  1 
+VC2551_p-50(VC2551)      (    1) GACTTGTTATATTATAACAAG  1 
+VS_2366_p-43(rpmE2)      (    1) GATATGTTATAACGTATCAAA  1 
+VIBHAR_06466_p-36(omr)   (    1) GTGGTGTAATAACATAACAAA  1 
+VIBHAR_06466_p-70(omr)   (    1) TCTTTGTTATGTTATAACATC  1 
+VC2082_p-47(znuC)        (    1) TGAATGTTACTTTATAACATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 171 bayes= 3.4212 E= 1.3e-296 
+   -31    -78    207    -73 
+    25   -137    -73      5 
+    65   -237    -32    -63 
+    65   -237     49    -95 
+ -1248  -1248  -1248    129 
+ -1248  -1248    352  -1248 
+ -1248  -1248  -1248    129 
+  -456  -1248  -1248    127 
+   127  -1248  -1248  -1248 
+ -1248     80  -1248    105 
+   122  -1248   -232   -453 
+    44   -237  -1248      5 
+  -456    172  -1248     75 
+    96  -1248    114  -1248 
+ -1248  -1248  -1248    129 
+   114  -1248  -1248   -222 
+   125  -1248  -1248   -453 
+ -1248    347  -1248  -1248 
+   125  -1248  -1248   -453 
+    -4     22   -132     16 
+  -175     -4   -232     92 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 57 E= 1.3e-296 
+ 0.333333  0.052632  0.368421  0.245614 
+ 0.491228  0.035088  0.052632  0.421053 
+ 0.649123  0.017544  0.070175  0.263158 
+ 0.649123  0.017544  0.122807  0.210526 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.017544  0.000000  0.000000  0.982456 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.157895  0.000000  0.842105 
+ 0.964912  0.000000  0.017544  0.017544 
+ 0.561404  0.017544  0.000000  0.421053 
+ 0.017544  0.298246  0.000000  0.684211 
+ 0.807018  0.000000  0.192982  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.912281  0.000000  0.000000  0.087719 
+ 0.982456  0.000000  0.000000  0.017544 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.982456  0.000000  0.000000  0.017544 
+ 0.403509  0.105263  0.035088  0.456140 
+ 0.122807  0.087719  0.017544  0.771930 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWAATGTTATAWTATAACAWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GAT][AT][AT][AT]TGTTATA[AT][TC]ATAACA[TA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.15 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC2551_p-50(VC2551)              1.20e-06  [+1(4.01e-07)]_2
+VC0878_p-40(rpmE2)               1.09e-08  [+1(3.63e-09)]_2
+VC2082_p-47(znuC)                5.83e-06  [+1(1.94e-06)]_2
+VC2081_p-50(znuA)                5.95e-07  [+1(1.98e-07)]_2
+VC1263_p-97(ribA)                2.45e-07  [+1(8.16e-08)]_2
+VV1_0717_p-381(zbp)              7.25e-07  [+1(2.42e-07)]_2
+VV1_0360_p-125(omr)              9.16e-11  [+1(3.05e-11)]_2
+VV1_0152_p-46(znuC)              6.58e-08  [+1(2.19e-08)]_2
+VV1_0151_p-58(znuA)              1.28e-07  [+1(4.28e-08)]_2
+VV1_2234_p-144(ribA)             8.85e-07  [+1(2.95e-07)]_2
+VV1_1840_p-37(rpmE2)             4.62e-08  [+1(1.54e-08)]_2
+VIBHAR_03250_p-41(rpmE2)         1.62e-08  [+1(5.39e-09)]_2
+VIBHAR_06466_p-36(omr)           1.57e-06  [+1(5.23e-07)]_2
+VIBHAR_06466_p-70(omr)           4.72e-06  [+1(1.57e-06)]_2
+VIBHAR_01360_p-46(znuC)          8.91e-08  [+1(2.97e-08)]_2
+VIBHAR_01361_p-55(znuA)          3.11e-08  [+1(1.04e-08)]_2
+VIBHAR_02717_p-154(ribA)         8.91e-08  [+1(2.97e-08)]_2
+VP2331_p-41(rpmE2)               1.09e-08  [+1(3.63e-09)]_2
+VPA1308_p-62(omr)                4.39e-07  [+1(1.46e-07)]_2
+VPA1308_p-33(omr)                7.82e-08  [+1(2.61e-08)]_2
+VP0303_p-43(VC2551)              3.38e-07  [+1(1.13e-07)]_2
+VP0852_p-46(znuC)                8.91e-08  [+1(2.97e-08)]_2
+VP0853_p-55(znuA)                3.11e-08  [+1(1.04e-08)]_2
+VP1921_p-207(ribA)               6.78e-07  [+1(2.26e-07)]_2
+VSAK1_20814_p-31(rpmE2)          5.88e-09  [+1(1.96e-09)]_2
+VSAK1_01829_p-391(zbp)           2.24e-07  [+1(7.46e-08)]_2
+VSAK1_08973_p-46(znuC)           5.88e-09  [+1(1.96e-09)]_2
+VSAK1_17572_p-102(znuC)          5.16e-07  [+1(1.72e-07)]_2
+VSAK1_17567_p-64(znuA)           5.02e-09  [+1(1.67e-09)]_2
+VSAK1_08978_p-58(znuA)           2.03e-07  [+1(6.77e-08)]_2
+VSAK1_04575_p-91(ribA)           2.03e-07  [+1(6.77e-08)]_2
+VS_2780_p-53(VC2551)             4.78e-07  [+1(1.59e-07)]_2
+VS_2238_p-46(znuC)               1.02e-07  [+1(3.39e-08)]_2
+VS_2237_p-60(znuA)               5.49e-08  [+1(1.83e-08)]_2
+VS_1924_p-116(ribA)              2.03e-07  [+1(6.77e-08)]_2
+VS_2366_p-43(rpmE2)              1.37e-06  [+1(4.57e-07)]_2
+VS_2781_p-385(zbp)               4.78e-07  [+1(1.59e-07)]_2
+VF_0328_p-389(zbp)               4.78e-07  [+1(1.59e-07)]_2
+VF_2367_p-90(znuC)               5.02e-09  [+1(1.67e-09)]_2
+VF_0829_p-50(znuC)               6.58e-08  [+1(2.19e-08)]_2
+VF_2366_p-79(znuA)               5.02e-09  [+1(1.67e-09)]_2
+VF_0830_p-61(znuA)               4.62e-08  [+1(1.54e-08)]_2
+VSAL_I0429_p-48(VC2551)          4.78e-07  [+1(1.59e-07)]_2
+VSAL_I0851_p-50(znuC)            6.58e-08  [+1(2.19e-08)]_2
+VSAL_I0852_p-61(znuA)            4.62e-08  [+1(1.54e-08)]_2
+VSAL_I0890_p-47(rpmE2)           5.02e-09  [+1(1.67e-09)]_2
+VSAL_I0428_p-390(zbp)            4.78e-07  [+1(1.59e-07)]_2
+VAS14_13584_p-43(rpmE2)          5.02e-09  [+1(1.67e-09)]_2
+VAS14_17781_p-83(znuC)           3.70e-07  [+1(1.23e-07)]_2
+VAS14_17781_p-59(znuC)           5.02e-09  [+1(1.67e-09)]_2
+VAS14_17786_p-133(znuA)          2.41e-09  [+1(8.05e-10)]_2
+VAS14_17786_p-109(znuA)          1.09e-08  [+1(3.63e-09)]_2
+VAS14_03723_p-260(ribA)          1.45e-07  [+1(4.83e-08)]_2
+PBPRA1054_p-55(znuC)             2.21e-08  [+1(7.37e-09)]_2
+PBPRA1055_p24(znuA)              2.45e-07  [+1(8.16e-08)]_2
+PBPRA0375_p-25(VC2551)           1.45e-07  [+1(4.83e-08)]_2
+PBPRA0374_p-376(zbp)             1.45e-07  [+1(4.83e-08)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

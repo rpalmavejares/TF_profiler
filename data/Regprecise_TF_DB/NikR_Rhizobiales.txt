@@ -1,0 +1,267 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= NikR_Rhizobiales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BMEII0486(nikR)Score=7.1 1.0000     28  BMEII0487(nikA)Score=7.1 1.0000     28  
+RPA4757(omp_Ni)Score=7.7 1.0000     28  RPA4756(nikR)Score=7.7,P 1.0000     28  
+bll6949(hoxN)Score=7.8,P 1.0000     28  bll6910(hoxN)Score=7.7,P 1.0000     28  
+BBta_3362(omp_Ni-2)Score 1.0000     28  BBta_1993(hoxN)Score=6.9 1.0000     28  
+BBta_6192(omp_Ni)Score=7 1.0000     28  BBta_6191(nikR)Score=7.7 1.0000     28  
+BBta_3358(hoxN2)Score=7. 1.0000     28  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna NikR_Rhizobiales.fasta -oc NikR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           28
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             308    N=              11    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.297 C 0.209 G 0.196 T 0.297 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.296 C 0.210 G 0.197 T 0.296 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  28  sites =  11  llr = 177  E-value = 1.1e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:a::a1333333333333337::a:9:
+pos.-specific     C  ::::::422222222222222::a::19
+probability       G  9:::a::222222222222221::::::
+matrix            T  :a:a::5333333333333332a::a:1
+
+         bits    2.3     *                  *    
+                 2.1     *                  *    
+                 1.9 *   *                  *   *
+                 1.6 ******                **** *
+Relative         1.4 ******                ******
+Entropy          1.2 ******                ******
+(23.2 bits)      0.9 ******                ******
+                 0.7 *******              *******
+                 0.5 *******              *******
+                 0.2 *******              *******
+                 0.0 ----------------------------
+
+Multilevel           GTATGATAAAAAAAAAAAAAAATCATAC
+consensus                  CTTTTTTTTTTTTTT       
+sequence                    CCCCCCCCCCCCCC       
+                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+BBta_6191(nikR)Score=7.7      1  1.49e-08          . GTATGATNNNNNNNNNNNNNNATCATAC           
+BBta_6192(omp_Ni)Score=7      1  1.49e-08          . GTATGATNNNNNNNNNNNNNNATCATAC           
+BBta_3362(omp_Ni-2)Score      1  1.49e-08          . GTATGATNNNNNNNNNNNNNNATCATAC           
+bll6910(hoxN)Score=7.7,P      1  1.49e-08          . GTATGATNNNNNNNNNNNNNNATCATAC           
+bll6949(hoxN)Score=7.8,P      1  1.49e-08          . GTATGACNNNNNNNNNNNNNNATCATAC           
+BBta_3358(hoxN2)Score=7.      1  2.98e-08          . GTATGACNNNNNNNNNNNNNNTTCATAC           
+RPA4756(nikR)Score=7.7,P      1  2.98e-08          . GTATGACNNNNNNNNNNNNNNTTCATAC           
+BBta_1993(hoxN)Score=6.9      1  5.90e-08          . GTATGACNNNNNNNNNNNNNNATCATCC           
+BMEII0486(nikR)Score=7.1      1  8.00e-08          . GTATGATNNNNNNNNNNNNNNATCATAT           
+BMEII0487(nikA)Score=7.1      1  1.02e-07          . ATATGATNNNNNNNNNNNNNNATCATAC           
+RPA4757(omp_Ni)Score=7.7      1  1.27e-07          . GTATGAANNNNNNNNNNNNNNGTCATAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BBta_6191(nikR)Score=7.7          1.5e-08  [+1]
+BBta_6192(omp_Ni)Score=7          1.5e-08  [+1]
+BBta_3362(omp_Ni-2)Score          1.5e-08  [+1]
+bll6910(hoxN)Score=7.7,P          1.5e-08  [+1]
+bll6949(hoxN)Score=7.8,P          1.5e-08  [+1]
+BBta_3358(hoxN2)Score=7.            3e-08  [+1]
+RPA4756(nikR)Score=7.7,P            3e-08  [+1]
+BBta_1993(hoxN)Score=6.9          5.9e-08  [+1]
+BMEII0486(nikR)Score=7.1            8e-08  [+1]
+BMEII0487(nikA)Score=7.1            1e-07  [+1]
+RPA4757(omp_Ni)Score=7.7          1.3e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=28 seqs=11
+BBta_6191(nikR)Score=7.7 (    1) GTATGATNNNNNNNNNNNNNNATCATAC  1 
+BBta_6192(omp_Ni)Score=7 (    1) GTATGATNNNNNNNNNNNNNNATCATAC  1 
+BBta_3362(omp_Ni-2)Score (    1) GTATGATNNNNNNNNNNNNNNATCATAC  1 
+bll6910(hoxN)Score=7.7,P (    1) GTATGATNNNNNNNNNNNNNNATCATAC  1 
+bll6949(hoxN)Score=7.8,P (    1) GTATGACNNNNNNNNNNNNNNATCATAC  1 
+BBta_3358(hoxN2)Score=7. (    1) GTATGACNNNNNNNNNNNNNNTTCATAC  1 
+RPA4756(nikR)Score=7.7,P (    1) GTATGACNNNNNNNNNNNNNNTTCATAC  1 
+BBta_1993(hoxN)Score=6.9 (    1) GTATGACNNNNNNNNNNNNNNATCATCC  1 
+BMEII0486(nikR)Score=7.1 (    1) GTATGATNNNNNNNNNNNNNNATCATAT  1 
+BMEII0487(nikA)Score=7.1 (    1) ATATGATNNNNNNNNNNNNNNATCATAC  1 
+RPA4757(omp_Ni)Score=7.7 (    1) GTATGAANNNNNNNNNNNNNNGTCATAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 11 bayes= 0.921997 E= 1.1e-039 
+  -170  -1010    220  -1010 
+ -1010  -1010  -1010    175 
+   175  -1010  -1010  -1010 
+ -1010  -1010  -1010    175 
+ -1010  -1010    234  -1010 
+   175  -1010  -1010  -1010 
+  -170     79  -1010     88 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+   129  -1010   -112    -70 
+ -1010  -1010  -1010    175 
+ -1010    225  -1010  -1010 
+   175  -1010  -1010  -1010 
+ -1010  -1010  -1010    175 
+   162   -121  -1010  -1010 
+ -1010    211  -1010   -170 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 11 E= 1.1e-039 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.090909  0.363636  0.000000  0.545455 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.296474  0.209936  0.197115  0.296474 
+ 0.727273  0.000000  0.090909  0.181818 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.909091  0.090909  0.000000  0.000000 
+ 0.000000  0.909091  0.000000  0.090909 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+GTATGA[TC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC][ATC]ATCATAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BMEII0486(nikR)Score=7.1         8.00e-08  [+1(8.00e-08)]
+BMEII0487(nikA)Score=7.1         1.02e-07  [+1(1.02e-07)]
+RPA4757(omp_Ni)Score=7.7         1.27e-07  [+1(1.27e-07)]
+RPA4756(nikR)Score=7.7,P         2.98e-08  [+1(2.98e-08)]
+bll6949(hoxN)Score=7.8,P         1.49e-08  [+1(1.49e-08)]
+bll6910(hoxN)Score=7.7,P         1.49e-08  [+1(1.49e-08)]
+BBta_3362(omp_Ni-2)Score         1.49e-08  [+1(1.49e-08)]
+BBta_1993(hoxN)Score=6.9         5.90e-08  [+1(5.90e-08)]
+BBta_6192(omp_Ni)Score=7         1.49e-08  [+1(1.49e-08)]
+BBta_6191(nikR)Score=7.7         1.49e-08  [+1(1.49e-08)]
+BBta_3358(hoxN2)Score=7.         2.98e-08  [+1(2.98e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

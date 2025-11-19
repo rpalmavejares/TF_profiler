@@ -1,0 +1,231 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/LldR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rmet_5900_p-48(lldR)     1.0000     17  Rmet_5899_p-106(lldE)    1.0000     17  
+Reut_B5449_p-64(lldR)    1.0000     17  Reut_B5448_p-85(lldE)    1.0000     17  
+H16_B0094_p-113(lldR)    1.0000     17  H16_B0093_p-84(lldE)     1.0000     17  
+RALTA_B0086_p-59(lldR)   1.0000     17  RALTA_B0085_p-83(lldE)   1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/LldR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/LldR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             136    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    136    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.301 C 0.199 G 0.199 T 0.301 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.3 C 0.2 G 0.2 T 0.3 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AATTGGTYSRACCAATT MEME-1	width =  17  sites =   8  llr = 157  E-value = 9.8e-041
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9a:::::::4a::a9::
+pos.-specific     C  ::1::::65::aa:::1
+probability       G  1:::aa::56::::1::
+matrix            T  ::9a::a4:::::::a9
+
+         bits    2.3     **     **    
+                 2.1     **     **    
+                 1.9     **     **    
+                 1.6  * ****   **** * 
+Relative         1.4  * **** * **** * 
+Entropy          1.2 *****************
+(28.4 bits)      0.9 *****************
+                 0.7 *****************
+                 0.5 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           AATTGGTCCGACCAATT
+consensus                   TGA       
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+RALTA_B0085_p-83(lldE)        1  1.51e-10          . AATTGGTCCGACCAATT           
+RALTA_B0086_p-59(lldR)        1  1.51e-10          . AATTGGTCGGACCAATT           
+Reut_B5448_p-85(lldE)         1  6.05e-10          . AATTGGTCCAACCAATT           
+Reut_B5449_p-64(lldR)         1  6.05e-10          . AATTGGTTGGACCAATT           
+H16_B0093_p-84(lldE)          1  2.56e-09          . GATTGGTCCAACCAATT           
+H16_B0094_p-113(lldR)         1  2.56e-09          . AATTGGTTGGACCAATC           
+Rmet_5899_p-106(lldE)         1  2.56e-09          . AACTGGTCCAACCAATT           
+Rmet_5900_p-48(lldR)          1  2.56e-09          . AATTGGTTGGACCAGTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_B0085_p-83(lldE)            1.5e-10  [+1]
+RALTA_B0086_p-59(lldR)            1.5e-10  [+1]
+Reut_B5448_p-85(lldE)               6e-10  [+1]
+Reut_B5449_p-64(lldR)               6e-10  [+1]
+H16_B0093_p-84(lldE)              2.6e-09  [+1]
+H16_B0094_p-113(lldR)             2.6e-09  [+1]
+Rmet_5899_p-106(lldE)             2.6e-09  [+1]
+Rmet_5900_p-48(lldR)              2.6e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AATTGGTYSRACCAATT width=17 seqs=8
+RALTA_B0085_p-83(lldE)   (    1) AATTGGTCCGACCAATT  1 
+RALTA_B0086_p-59(lldR)   (    1) AATTGGTCGGACCAATT  1 
+Reut_B5448_p-85(lldE)    (    1) AATTGGTCCAACCAATT  1 
+Reut_B5449_p-64(lldR)    (    1) AATTGGTTGGACCAATT  1 
+H16_B0093_p-84(lldE)     (    1) GATTGGTCCAACCAATT  1 
+H16_B0094_p-113(lldR)    (    1) AATTGGTTGGACCAATC  1 
+Rmet_5899_p-106(lldE)    (    1) AACTGGTCCAACCAATT  1 
+Rmet_5900_p-48(lldR)     (    1) AATTGGTTGGACCAGTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 8 bayes= 0.584963 E= 9.8e-041 
+   154   -965    -68   -965 
+   174   -965   -965   -965 
+  -965    -68   -965    154 
+  -965   -965   -965    174 
+  -965   -965    232   -965 
+  -965   -965    232   -965 
+  -965   -965   -965    174 
+  -965    164   -965     32 
+  -965    132    132   -965 
+    32   -965    164   -965 
+   174   -965   -965   -965 
+  -965    232   -965   -965 
+  -965    232   -965   -965 
+   174   -965   -965   -965 
+   154   -965    -68   -965 
+  -965   -965   -965    174 
+  -965    -68   -965    154 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 8 E= 9.8e-041 
+ 0.875000  0.000000  0.125000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.625000  0.000000  0.375000 
+ 0.000000  0.500000  0.500000  0.000000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AATTGGTYSRACCAATT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AATTGGT[CT][CG][GA]ACCAATT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_5900_p-48(lldR)             2.56e-09  [+1(2.56e-09)]
+Rmet_5899_p-106(lldE)            2.56e-09  [+1(2.56e-09)]
+Reut_B5449_p-64(lldR)            6.05e-10  [+1(6.05e-10)]
+Reut_B5448_p-85(lldE)            6.05e-10  [+1(6.05e-10)]
+H16_B0094_p-113(lldR)            2.56e-09  [+1(2.56e-09)]
+H16_B0093_p-84(lldE)             2.56e-09  [+1(2.56e-09)]
+RALTA_B0086_p-59(lldR)           1.51e-10  [+1(1.51e-10)]
+RALTA_B0085_p-83(lldE)           1.51e-10  [+1(1.51e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

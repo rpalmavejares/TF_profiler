@@ -1,0 +1,320 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HutC_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_2934_p-48(hutI)      1.0000     18  RSP_2933_p-41(hutF)      1.0000     18  
+Pden_0710_p-73(hutI)     1.0000     18  Pden_0709_p-41(hutF)     1.0000     18  
+Pden_0709_p-64(hutF)     1.0000     18  Pden_0710_p-50(hutI)     1.0000     18  
+OG2516_07747_p-56(hutI)  1.0000     18  OG2516_07752_p-41(hutF)  1.0000     18  
+ISM_02740_p-95(hutF)     1.0000     18  ISM_05640_p-86(hutI)     1.0000     18  
+ISM_02745_p-67(hutC)     1.0000     18  ROS217_15945_p-52(hutG)  1.0000     18  
+ROS217_15950_p-42(hutF)  1.0000     18  ROS217_11786_p-86(hutI)  1.0000     18  
+ROS217_11791_p-187(hutC) 1.0000     18  TM1040_3003_p-26(hutF)   1.0000     18  
+TM1040_3642_p-119(hutC)  1.0000     18  TM1040_3004_p-67(hutI)   1.0000     18  
+SPO2191_p-48(hutI)       1.0000     18  SPO2190_p-133(hutC)      1.0000     18  
+SPO2190_p-51(hutC)       1.0000     18  SPO2190_p-49(hutC)       1.0000     18  
+SPO2191_p-46(hutI)       1.0000     18  MED193_01670_p-71(hutI)  1.0000     18  
+MED193_01665_p-30(hutF)  1.0000     18  HNE_2394_p-40(hutF)      1.0000     18  
+HNE_2395_p-55(hutI)      1.0000     18  OA2633_11039_p-75(hutC)  1.0000     18  
+OA2633_11044_p15(hutI)   1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HutC_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/HutC_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       29    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             522    N=              29
+sample: seed=            0    hsfrac=          0
+        searchsize=    522    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.381 C 0.117 G 0.119 T 0.383 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.38 C 0.118 G 0.12 T 0.382 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATGTVTAKACATA MEME-1	width =  14  sites =  29  llr = 329  E-value = 2.6e-091
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :911:2:819:91a
+pos.-specific     C  :::::42:1:a:::
+probability       G  1::9:3:24:::::
+matrix            T  9191918:31:19:
+
+         bits    3.1           *   
+                 2.8           *   
+                 2.5           *   
+                 2.2    *      *   
+Relative         1.9    *      *   
+Entropy          1.5    *      *  *
+(16.4 bits)      1.2 *  *      *  *
+                 0.9 ***** ** *****
+                 0.6 **************
+                 0.3 **************
+                 0.0 --------------
+
+Multilevel           TATGTCTAGACATA
+consensus                 G  T     
+sequence                  A        
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+MED193_01665_p-30(hutF)       3  1.29e-08         CA TATGTCTAGACATA AA        
+MED193_01670_p-71(hutI)       3  1.29e-08         TT TATGTCTAGACATA TG        
+ISM_02740_p-95(hutF)          3  3.01e-08         AT TATGTCCAGACATA AC        
+OG2516_07747_p-56(hutI)       3  3.82e-08         GT TATGTGCAGACATA AC        
+OA2633_11039_p-75(hutC)       3  9.87e-08         AA TATGTCTATACATA TT        
+HNE_2395_p-55(hutI)           3  9.87e-08         AT TATGTCTATACATA TT        
+TM1040_3003_p-26(hutF)        3  9.87e-08         GT TATGTCTATACATA AG        
+ROS217_11791_p-187(hutC)      3  9.87e-08         AT TATGTCTATACATA TT        
+OA2633_11044_p15(hutI)        3  2.33e-07         AA TATGTATAGACATA TT        
+HNE_2394_p-40(hutF)           3  2.33e-07         AA TATGTATAGACATA AT        
+TM1040_3004_p-67(hutI)        3  2.33e-07         CT TATGTATAGACATA AC        
+ROS217_11786_p-86(hutI)       3  2.33e-07         AA TATGTATAGACATA AT        
+OG2516_07752_p-41(hutF)       3  2.33e-07         GT TATGTCTGCACATA AC        
+ISM_05640_p-86(hutI)          3  4.03e-07         AT TATGTATGGACATA AT        
+SPO2190_p-133(hutC)           3  7.10e-07         TT TATGTCCAGTCATA AA        
+RSP_2934_p-48(hutI)           3  2.04e-06         AT TATGTGCACACAAA TT        
+ISM_02745_p-67(hutC)          3  3.08e-06         TC TATGTGCGTACAAA TT        
+RSP_2933_p-41(hutF)           3  3.08e-06         AA TTTGTGTGCACATA AT        
+Pden_0710_p-50(hutI)          3  5.02e-06         AA TAAGTTTAGACATA GA        
+Pden_0710_p-73(hutI)          3  5.02e-06         AA TAAGTTTAGACATA GA        
+Pden_0709_p-64(hutF)          3  5.34e-06         TC TATGTCTAAACTTA TT        
+Pden_0709_p-41(hutF)          3  5.34e-06         TC TATGTCTAAACTTA TT        
+TM1040_3642_p-119(hutC)       3  8.49e-06         AA TATGTAGGTACATA TT        
+SPO2190_p-49(hutC)            1  2.47e-05          . GATTTGTATACATA AATT      
+SPO2190_p-51(hutC)            3  2.47e-05         TC GATTTGTATACATA AA        
+ROS217_15945_p-52(hutG)       3  9.57e-05         AA TATGCTTAATCATA TT        
+SPO2191_p-46(hutI)            1  1.08e-04          . TTTATGTATACAAA TCGA      
+SPO2191_p-48(hutI)            3  1.08e-04         AA TTTATGTATACAAA TC        
+ROS217_15950_p-42(hutF)       3  1.42e-04         AA TATGATTAAGCATA TT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MED193_01665_p-30(hutF)           1.3e-08  2_[+1]_2
+MED193_01670_p-71(hutI)           1.3e-08  2_[+1]_2
+ISM_02740_p-95(hutF)                3e-08  2_[+1]_2
+OG2516_07747_p-56(hutI)           3.8e-08  2_[+1]_2
+OA2633_11039_p-75(hutC)           9.9e-08  2_[+1]_2
+HNE_2395_p-55(hutI)               9.9e-08  2_[+1]_2
+TM1040_3003_p-26(hutF)            9.9e-08  2_[+1]_2
+ROS217_11791_p-187(hutC)          9.9e-08  2_[+1]_2
+OA2633_11044_p15(hutI)            2.3e-07  2_[+1]_2
+HNE_2394_p-40(hutF)               2.3e-07  2_[+1]_2
+TM1040_3004_p-67(hutI)            2.3e-07  2_[+1]_2
+ROS217_11786_p-86(hutI)           2.3e-07  2_[+1]_2
+OG2516_07752_p-41(hutF)           2.3e-07  2_[+1]_2
+ISM_05640_p-86(hutI)                4e-07  2_[+1]_2
+SPO2190_p-133(hutC)               7.1e-07  2_[+1]_2
+RSP_2934_p-48(hutI)                 2e-06  2_[+1]_2
+ISM_02745_p-67(hutC)              3.1e-06  2_[+1]_2
+RSP_2933_p-41(hutF)               3.1e-06  2_[+1]_2
+Pden_0710_p-50(hutI)                5e-06  2_[+1]_2
+Pden_0710_p-73(hutI)                5e-06  2_[+1]_2
+Pden_0709_p-64(hutF)              5.3e-06  2_[+1]_2
+Pden_0709_p-41(hutF)              5.3e-06  2_[+1]_2
+TM1040_3642_p-119(hutC)           8.5e-06  2_[+1]_2
+SPO2190_p-49(hutC)                2.5e-05  [+1]_4
+SPO2190_p-51(hutC)                2.5e-05  2_[+1]_2
+ROS217_15945_p-52(hutG)           9.6e-05  2_[+1]_2
+SPO2191_p-46(hutI)                0.00011  [+1]_4
+SPO2191_p-48(hutI)                0.00011  2_[+1]_2
+ROS217_15950_p-42(hutF)           0.00014  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATGTVTAKACATA width=14 seqs=29
+MED193_01665_p-30(hutF)  (    3) TATGTCTAGACATA  1 
+MED193_01670_p-71(hutI)  (    3) TATGTCTAGACATA  1 
+ISM_02740_p-95(hutF)     (    3) TATGTCCAGACATA  1 
+OG2516_07747_p-56(hutI)  (    3) TATGTGCAGACATA  1 
+OA2633_11039_p-75(hutC)  (    3) TATGTCTATACATA  1 
+HNE_2395_p-55(hutI)      (    3) TATGTCTATACATA  1 
+TM1040_3003_p-26(hutF)   (    3) TATGTCTATACATA  1 
+ROS217_11791_p-187(hutC) (    3) TATGTCTATACATA  1 
+OA2633_11044_p15(hutI)   (    3) TATGTATAGACATA  1 
+HNE_2394_p-40(hutF)      (    3) TATGTATAGACATA  1 
+TM1040_3004_p-67(hutI)   (    3) TATGTATAGACATA  1 
+ROS217_11786_p-86(hutI)  (    3) TATGTATAGACATA  1 
+OG2516_07752_p-41(hutF)  (    3) TATGTCTGCACATA  1 
+ISM_05640_p-86(hutI)     (    3) TATGTATGGACATA  1 
+SPO2190_p-133(hutC)      (    3) TATGTCCAGTCATA  1 
+RSP_2934_p-48(hutI)      (    3) TATGTGCACACAAA  1 
+ISM_02745_p-67(hutC)     (    3) TATGTGCGTACAAA  1 
+RSP_2933_p-41(hutF)      (    3) TTTGTGTGCACATA  1 
+Pden_0710_p-50(hutI)     (    3) TAAGTTTAGACATA  1 
+Pden_0710_p-73(hutI)     (    3) TAAGTTTAGACATA  1 
+Pden_0709_p-64(hutF)     (    3) TATGTCTAAACTTA  1 
+Pden_0709_p-41(hutF)     (    3) TATGTCTAAACTTA  1 
+TM1040_3642_p-119(hutC)  (    3) TATGTAGGTACATA  1 
+SPO2190_p-49(hutC)       (    1) GATTTGTATACATA  1 
+SPO2190_p-51(hutC)       (    3) GATTTGTATACATA  1 
+ROS217_15945_p-52(hutG)  (    3) TATGCTTAATCATA  1 
+SPO2191_p-46(hutI)       (    1) TTTATGTATACAAA  1 
+SPO2191_p-48(hutI)       (    3) TTTATGTATACAAA  1 
+ROS217_15950_p-42(hutF)  (    3) TATGATTAAGCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 145 bayes= 3.91754 E= 2.6e-091 
+ -1150  -1150    -80    128 
+   124  -1150  -1150   -188 
+  -246  -1150  -1150    128 
+  -246  -1150    285   -247 
+  -346   -177  -1150    128 
+   -88    169    120   -147 
+ -1150     55   -180    105 
+   112  -1150     53  -1150 
+  -146    -19    179    -15 
+   124  -1150   -180   -247 
+ -1150    308  -1150  -1150 
+   129  -1150  -1150   -247 
+  -146  -1150  -1150    117 
+   139  -1150  -1150  -1150 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 29 E= 2.6e-091 
+ 0.000000  0.000000  0.068966  0.931034 
+ 0.896552  0.000000  0.000000  0.103448 
+ 0.068966  0.000000  0.000000  0.931034 
+ 0.068966  0.000000  0.862069  0.068966 
+ 0.034483  0.034483  0.000000  0.931034 
+ 0.206897  0.379310  0.275862  0.137931 
+ 0.000000  0.172414  0.034483  0.793103 
+ 0.827586  0.000000  0.172414  0.000000 
+ 0.137931  0.103448  0.413793  0.344828 
+ 0.896552  0.000000  0.034483  0.068966 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.931034  0.000000  0.000000  0.068966 
+ 0.137931  0.000000  0.000000  0.862069 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGTVTAKACATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TATGT[CGA]TA[GT]ACATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_2934_p-48(hutI)              1.02e-05  2_[+1(2.04e-06)]_2
+RSP_2933_p-41(hutF)              1.54e-05  2_[+1(3.08e-06)]_2
+Pden_0710_p-73(hutI)             2.51e-05  2_[+1(5.02e-06)]_2
+Pden_0709_p-41(hutF)             2.67e-05  2_[+1(5.34e-06)]_2
+Pden_0709_p-64(hutF)             2.67e-05  2_[+1(5.34e-06)]_2
+Pden_0710_p-50(hutI)             2.51e-05  2_[+1(5.02e-06)]_2
+OG2516_07747_p-56(hutI)          1.91e-07  2_[+1(3.82e-08)]_2
+OG2516_07752_p-41(hutF)          1.16e-06  2_[+1(2.33e-07)]_2
+ISM_02740_p-95(hutF)             1.50e-07  2_[+1(3.01e-08)]_2
+ISM_05640_p-86(hutI)             2.02e-06  2_[+1(4.03e-07)]_2
+ISM_02745_p-67(hutC)             1.54e-05  2_[+1(3.08e-06)]_2
+ROS217_15945_p-52(hutG)          4.79e-04  2_[+1(9.57e-05)]_2
+ROS217_15950_p-42(hutF)          7.11e-04  18
+ROS217_11786_p-86(hutI)          1.16e-06  2_[+1(2.33e-07)]_2
+ROS217_11791_p-187(hutC)         4.94e-07  2_[+1(9.87e-08)]_2
+TM1040_3003_p-26(hutF)           4.94e-07  2_[+1(9.87e-08)]_2
+TM1040_3642_p-119(hutC)          4.24e-05  2_[+1(8.49e-06)]_2
+TM1040_3004_p-67(hutI)           1.16e-06  2_[+1(2.33e-07)]_2
+SPO2191_p-48(hutI)               5.40e-04  18
+SPO2190_p-133(hutC)              3.55e-06  2_[+1(7.10e-07)]_2
+SPO2190_p-51(hutC)               1.24e-04  2_[+1(2.47e-05)]_2
+SPO2190_p-49(hutC)               1.24e-04  [+1(2.47e-05)]_4
+SPO2191_p-46(hutI)               5.40e-04  18
+MED193_01670_p-71(hutI)          6.46e-08  2_[+1(1.29e-08)]_2
+MED193_01665_p-30(hutF)          6.46e-08  2_[+1(1.29e-08)]_2
+HNE_2394_p-40(hutF)              1.16e-06  2_[+1(2.33e-07)]_2
+HNE_2395_p-55(hutI)              4.94e-07  2_[+1(9.87e-08)]_2
+OA2633_11039_p-75(hutC)          4.94e-07  2_[+1(9.87e-08)]_2
+OA2633_11044_p15(hutI)           1.16e-06  2_[+1(2.33e-07)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

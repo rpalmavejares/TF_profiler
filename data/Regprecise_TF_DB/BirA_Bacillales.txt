@@ -1,0 +1,385 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Bacillales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BSU10370(bioY2)Score=8.5 1.0000     31  BSU32030(bioY1)Score=8.7 1.0000     31  
+BSU30240(bioW)Score=8.8, 1.0000     31  RBAM_010550(bioY2)Score= 1.0000     31  
+RBAM_029080(bioY1)Score= 1.0000     31  RBAM_018290(bioW)Score=8 1.0000     31  
+RBAM_018290(bioW)Score=7 1.0000     31  BPUM_2376(bioY2)Score=8. 1.0000     31  
+BPUM_2863(bioY1)Score=8. 1.0000     31  BPUM_2779(bioB)Score=8.7 1.0000     31  
+BLi03385(bioY1)Score=8.7 1.0000     31  BLi00766(bioW)Score=8.7, 1.0000     31  
+Aflv_2398(bioY1)Score=8. 1.0000     31  Aflv_1376(bioB)Score=8.7 1.0000     31  
+Aflv_1163(bioF)Score=8.5 1.0000     31  Aflv_1070(bioD)Score=8.7 1.0000     31  
+GK2944(bioY1)Score=8.6,P 1.0000     31  GK1570(bioB)Score=7.8,Po 1.0000     31  
+GK2128(bioF)Score=8.4,Po 1.0000     31  GK3018(bioY)Score=8.5,Po 1.0000     31  
+GK3098(bioH)Score=8.5,Po 1.0000     31  BC3629(bioY2)Score=7.7,P 1.0000     31  
+BC3629(bioY2)Score=8.6,P 1.0000     31  BC4119(bioA)Score=8.7,Po 1.0000     31  
+BC4917(bioY1)Score=8.7,P 1.0000     31  BH3358(bioY1)Score=7.8,P 1.0000     31  
+BH3358(bioY1)Score=8.6,P 1.0000     31  BH3907(bioF)Score=8.8,Po 1.0000     31  
+BH1748(bioB)Score=8.7,Po 1.0000     31  BH0783(bioD)Score=8.7,Po 1.0000     31  
+ABC0344(yhfT)Score=8.5,P 1.0000     31  ABC2607(bioY2)Score=8.7, 1.0000     31  
+OB1717(bioY2)Score=8.6,P 1.0000     31  OB2346(bioY1)Score=8.6,P 1.0000     31  
+Pjdr2_3366(bioY2)Score=8 1.0000     31  Pjdr2_1461(bioA)Score=8. 1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Bacillales.fasta -oc BirA_Bacillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           31
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       36    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=            1116    N=              36    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.307 C 0.190 G 0.203 T 0.300 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.307 C 0.190 G 0.203 T 0.300 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  31  sites =  36  llr = 614  E-value = 1.8e-209
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  51::3aa:333333333333333:::3a:a6
+pos.-specific     C  ::::1::a222222222222222:::::a::
+probability       G  ::a:::::222222222222222a::5::::
+matrix            T  49:a7:::333333333333333:aa2:::4
+
+         bits    2.4   *    *               *    *  
+                 2.2   *    *               *    *  
+                 1.9   *    *               *    *  
+                 1.7   ** * *               **  *** 
+Relative         1.4   ** ***               *** *** 
+Entropy          1.2  *** ***               *** *** 
+(24.6 bits)      1.0  *** ***               *** *** 
+                 0.7  *******               *** ****
+                 0.5 ********               ********
+                 0.2 ********               ********
+                 0.0 -------------------------------
+
+Multilevel           ATGTTAACAAAAAAAAAAAAAAAGTTGACAA
+consensus            T   A   TTTTTTTTTTTTTTT   A   T
+sequence                     GGGGGGGGGGGGGGG        
+                                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                         Site            
+-------------             ----- ---------            -------------------------------
+ABC2607(bioY2)Score=8.7,      1  1.21e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+Aflv_1070(bioD)Score=8.7      1  1.21e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+BLi03385(bioY1)Score=8.7      1  1.21e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+BPUM_2863(bioY1)Score=8.      1  1.21e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+BSU32030(bioY1)Score=8.7      1  1.21e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+BPUM_2376(bioY2)Score=8.      1  1.82e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+RBAM_010550(bioY2)Score=      1  1.82e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+Aflv_1376(bioB)Score=8.7      1  2.40e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+BH3907(bioF)Score=8.8,Po      1  3.33e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+Pjdr2_1461(bioA)Score=8.      1  4.87e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+ABC0344(yhfT)Score=8.5,P      1  4.87e-09          . ATGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+GK3018(bioY)Score=8.5,Po      1  4.87e-09          . ATGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+BSU30240(bioW)Score=8.8,      1  4.87e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+OB1717(bioY2)Score=8.6,P      1  5.48e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+BC3629(bioY2)Score=8.6,P      1  5.48e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+BH0783(bioD)Score=8.7,Po      1  6.39e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+BC4917(bioY1)Score=8.7,P      1  6.39e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+BC4119(bioA)Score=8.7,Po      1  6.39e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+BLi00766(bioW)Score=8.7,      1  6.39e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+BPUM_2779(bioB)Score=8.7      1  6.39e-09          . ATGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+Pjdr2_3366(bioY2)Score=8      1  7.89e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTAACAt           
+BSU10370(bioY2)Score=8.5      1  7.89e-09          . ATGTAAACNNNNNNNNNNNNNNNGTTGACAT           
+BH1748(bioB)Score=8.7,Po      1  1.03e-08          . TTGTTAACNNNNNNNNNNNNNNNGTTTACAA           
+BH3358(bioY1)Score=8.6,P      1  1.43e-08          . ATGTCAACNNNNNNNNNNNNNNNGTTGACAA           
+GK2944(bioY1)Score=8.6,P      1  1.43e-08          . TTGTTAACNNNNNNNNNNNNNNNGTTTACAT           
+OB2346(bioY1)Score=8.6,P      1  1.56e-08          . TTGTCAACNNNNNNNNNNNNNNNGTTGACAA           
+GK3098(bioH)Score=8.5,Po      1  1.88e-08          . ATGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+Aflv_1163(bioF)Score=8.5      1  1.88e-08          . ATGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+GK2128(bioF)Score=8.4,Po      1  2.36e-08          . ATGTAAACNNNNNNNNNNNNNNNGTTTACAT           
+GK1570(bioB)Score=7.8,Po      1  3.28e-08          . AAGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+RBAM_029080(bioY1)Score=      1  3.43e-08          . TAGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+RBAM_018290(bioW)Score=8      1  4.18e-08          . GTGTTAACNNNNNNNNNNNNNNNGTTAACAT           
+Aflv_2398(bioY1)Score=8.      1  4.70e-08          . TCGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+BC3629(bioY2)Score=7.7,P      1  7.10e-08          . ATGTTACCNNNNNNNNNNNNNNNGTTTACAA           
+BH3358(bioY1)Score=7.8,P      1  7.68e-08          . ATGTTAACNNNNNNNNNNNNNNNGTAAACAT           
+RBAM_018290(bioW)Score=7      1  9.17e-08          . CAGTTAACNNNNNNNNNNNNNNNGTTGACAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ABC2607(bioY2)Score=8.7,          1.2e-09  [+1]
+Aflv_1070(bioD)Score=8.7          1.2e-09  [+1]
+BLi03385(bioY1)Score=8.7          1.2e-09  [+1]
+BPUM_2863(bioY1)Score=8.          1.2e-09  [+1]
+BSU32030(bioY1)Score=8.7          1.2e-09  [+1]
+BPUM_2376(bioY2)Score=8.          1.8e-09  [+1]
+RBAM_010550(bioY2)Score=          1.8e-09  [+1]
+Aflv_1376(bioB)Score=8.7          2.4e-09  [+1]
+BH3907(bioF)Score=8.8,Po          3.3e-09  [+1]
+Pjdr2_1461(bioA)Score=8.          4.9e-09  [+1]
+ABC0344(yhfT)Score=8.5,P          4.9e-09  [+1]
+GK3018(bioY)Score=8.5,Po          4.9e-09  [+1]
+BSU30240(bioW)Score=8.8,          4.9e-09  [+1]
+OB1717(bioY2)Score=8.6,P          5.5e-09  [+1]
+BC3629(bioY2)Score=8.6,P          5.5e-09  [+1]
+BH0783(bioD)Score=8.7,Po          6.4e-09  [+1]
+BC4917(bioY1)Score=8.7,P          6.4e-09  [+1]
+BC4119(bioA)Score=8.7,Po          6.4e-09  [+1]
+BLi00766(bioW)Score=8.7,          6.4e-09  [+1]
+BPUM_2779(bioB)Score=8.7          6.4e-09  [+1]
+Pjdr2_3366(bioY2)Score=8          7.9e-09  [+1]
+BSU10370(bioY2)Score=8.5          7.9e-09  [+1]
+BH1748(bioB)Score=8.7,Po            1e-08  [+1]
+BH3358(bioY1)Score=8.6,P          1.4e-08  [+1]
+GK2944(bioY1)Score=8.6,P          1.4e-08  [+1]
+OB2346(bioY1)Score=8.6,P          1.6e-08  [+1]
+GK3098(bioH)Score=8.5,Po          1.9e-08  [+1]
+Aflv_1163(bioF)Score=8.5          1.9e-08  [+1]
+GK2128(bioF)Score=8.4,Po          2.4e-08  [+1]
+GK1570(bioB)Score=7.8,Po          3.3e-08  [+1]
+RBAM_029080(bioY1)Score=          3.4e-08  [+1]
+RBAM_018290(bioW)Score=8          4.2e-08  [+1]
+Aflv_2398(bioY1)Score=8.          4.7e-08  [+1]
+BC3629(bioY2)Score=7.7,P          7.1e-08  [+1]
+BH3358(bioY1)Score=7.8,P          7.7e-08  [+1]
+RBAM_018290(bioW)Score=7          9.2e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=31 seqs=36
+ABC2607(bioY2)Score=8.7, (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+Aflv_1070(bioD)Score=8.7 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BLi03385(bioY1)Score=8.7 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BPUM_2863(bioY1)Score=8. (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BSU32030(bioY1)Score=8.7 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BPUM_2376(bioY2)Score=8. (    1) ATGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+RBAM_010550(bioY2)Score= (    1) ATGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+Aflv_1376(bioB)Score=8.7 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+BH3907(bioF)Score=8.8,Po (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+Pjdr2_1461(bioA)Score=8. (    1) TTGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+ABC0344(yhfT)Score=8.5,P (    1) ATGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+GK3018(bioY)Score=8.5,Po (    1) ATGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BSU30240(bioW)Score=8.8, (    1) TTGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+OB1717(bioY2)Score=8.6,P (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BC3629(bioY2)Score=8.6,P (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+BH0783(bioD)Score=8.7,Po (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+BC4917(bioY1)Score=8.7,P (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+BC4119(bioA)Score=8.7,Po (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+BLi00766(bioW)Score=8.7, (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+BPUM_2779(bioB)Score=8.7 (    1) ATGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+Pjdr2_3366(bioY2)Score=8 (    1) TTGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+BSU10370(bioY2)Score=8.5 (    1) ATGTAAACNNNNNNNNNNNNNNNGTTGACAT  1 
+BH1748(bioB)Score=8.7,Po (    1) TTGTTAACNNNNNNNNNNNNNNNGTTTACAA  1 
+BH3358(bioY1)Score=8.6,P (    1) ATGTCAACNNNNNNNNNNNNNNNGTTGACAA  1 
+GK2944(bioY1)Score=8.6,P (    1) TTGTTAACNNNNNNNNNNNNNNNGTTTACAT  1 
+OB2346(bioY1)Score=8.6,P (    1) TTGTCAACNNNNNNNNNNNNNNNGTTGACAA  1 
+GK3098(bioH)Score=8.5,Po (    1) ATGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+Aflv_1163(bioF)Score=8.5 (    1) ATGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+GK2128(bioF)Score=8.4,Po (    1) ATGTAAACNNNNNNNNNNNNNNNGTTTACAT  1 
+GK1570(bioB)Score=7.8,Po (    1) AAGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+RBAM_029080(bioY1)Score= (    1) TAGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+RBAM_018290(bioW)Score=8 (    1) GTGTTAACNNNNNNNNNNNNNNNGTTAACAT  1 
+Aflv_2398(bioY1)Score=8. (    1) TCGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+BC3629(bioY2)Score=7.7,P (    1) ATGTTACCNNNNNNNNNNNNNNNGTTTACAA  1 
+BH3358(bioY1)Score=7.8,P (    1) ATGTTAACNNNNNNNNNNNNNNNGTAAACAT  1 
+RBAM_018290(bioW)Score=7 (    1) CAGTTAACNNNNNNNNNNNNNNNGTTGACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 31 n= 36 bayes= 1.62803 E= 1.8e-209 
+    70   -277   -286     57 
+  -188   -277  -1181    157 
+ -1181  -1181    230  -1181 
+ -1181  -1181  -1181    174 
+   -14   -177  -1181    115 
+   170  -1181  -1181  -1181 
+   166   -277  -1181  -1181 
+ -1181    239  -1181  -1181 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+ -1181  -1181    230  -1181 
+ -1181  -1181  -1181    174 
+  -346  -1181  -1181    170 
+    12  -1181    130    -85 
+   170  -1181  -1181  -1181 
+ -1181    239  -1181  -1181 
+   170  -1181  -1181  -1181 
+    93  -1181  -1181     47 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 31 nsites= 36 E= 1.8e-209 
+ 0.500000  0.027778  0.027778  0.444444 
+ 0.083333  0.027778  0.000000  0.888889 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.277778  0.055556  0.000000  0.666667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.972222  0.027778  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.307143  0.190179  0.202679  0.300000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.027778  0.000000  0.000000  0.972222 
+ 0.333333  0.000000  0.500000  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.583333  0.000000  0.000000  0.416667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[AT]TGT[TA]AAC[ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG][ATG]GTT[GA]ACA[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.15 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BSU10370(bioY2)Score=8.5         7.89e-09  [+1(7.89e-09)]
+BSU32030(bioY1)Score=8.7         1.21e-09  [+1(1.21e-09)]
+BSU30240(bioW)Score=8.8,         4.87e-09  [+1(4.87e-09)]
+RBAM_010550(bioY2)Score=         1.82e-09  [+1(1.82e-09)]
+RBAM_029080(bioY1)Score=         3.43e-08  [+1(3.43e-08)]
+RBAM_018290(bioW)Score=8         4.18e-08  [+1(4.18e-08)]
+RBAM_018290(bioW)Score=7         9.17e-08  [+1(9.17e-08)]
+BPUM_2376(bioY2)Score=8.         1.82e-09  [+1(1.82e-09)]
+BPUM_2863(bioY1)Score=8.         1.21e-09  [+1(1.21e-09)]
+BPUM_2779(bioB)Score=8.7         6.39e-09  [+1(6.39e-09)]
+BLi03385(bioY1)Score=8.7         1.21e-09  [+1(1.21e-09)]
+BLi00766(bioW)Score=8.7,         6.39e-09  [+1(6.39e-09)]
+Aflv_2398(bioY1)Score=8.         4.70e-08  [+1(4.70e-08)]
+Aflv_1376(bioB)Score=8.7         2.40e-09  [+1(2.40e-09)]
+Aflv_1163(bioF)Score=8.5         1.88e-08  [+1(1.88e-08)]
+Aflv_1070(bioD)Score=8.7         1.21e-09  [+1(1.21e-09)]
+GK2944(bioY1)Score=8.6,P         1.43e-08  [+1(1.43e-08)]
+GK1570(bioB)Score=7.8,Po         3.28e-08  [+1(3.28e-08)]
+GK2128(bioF)Score=8.4,Po         2.36e-08  [+1(2.36e-08)]
+GK3018(bioY)Score=8.5,Po         4.87e-09  [+1(4.87e-09)]
+GK3098(bioH)Score=8.5,Po         1.88e-08  [+1(1.88e-08)]
+BC3629(bioY2)Score=7.7,P         7.10e-08  [+1(7.10e-08)]
+BC3629(bioY2)Score=8.6,P         5.48e-09  [+1(5.48e-09)]
+BC4119(bioA)Score=8.7,Po         6.39e-09  [+1(6.39e-09)]
+BC4917(bioY1)Score=8.7,P         6.39e-09  [+1(6.39e-09)]
+BH3358(bioY1)Score=7.8,P         7.68e-08  [+1(7.68e-08)]
+BH3358(bioY1)Score=8.6,P         1.43e-08  [+1(1.43e-08)]
+BH3907(bioF)Score=8.8,Po         3.33e-09  [+1(3.33e-09)]
+BH1748(bioB)Score=8.7,Po         1.03e-08  [+1(1.03e-08)]
+BH0783(bioD)Score=8.7,Po         6.39e-09  [+1(6.39e-09)]
+ABC0344(yhfT)Score=8.5,P         4.87e-09  [+1(4.87e-09)]
+ABC2607(bioY2)Score=8.7,         1.21e-09  [+1(1.21e-09)]
+OB1717(bioY2)Score=8.6,P         5.48e-09  [+1(5.48e-09)]
+OB2346(bioY1)Score=8.6,P         1.56e-08  [+1(1.56e-08)]
+Pjdr2_3366(bioY2)Score=8         7.89e-09  [+1(7.89e-09)]
+Pjdr2_1461(bioA)Score=8.         4.87e-09  [+1(4.87e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,246 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/MetR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ajs_1631_p-13(metR)      1.0000     15  Ajs_1631_p-44(metR)      1.0000     15  
+Ajs_1630_p-99(metE)      1.0000     15  Ajs_1630_p-68(metE)      1.0000     15  
+CtesDRAFT_5278_p-21(metE 1.0000     15  CtesDRAFT_5279_p-17(metR 1.0000     15  
+Daci_5860_p-19(metR)     1.0000     15  Vapar_3249_p-13(metR)    1.0000     15  
+Vapar_3249_p-44(metR)    1.0000     15  Vapar_3248_p-103(metE)   1.0000     15  
+Vapar_3248_p-72(metE)    1.0000     15  Veis_4447_p-72(metE)     1.0000     15  
+Veis_4448_p-13(metR)     1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/MetR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/MetR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             195    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    195    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.374 C 0.123 G 0.113 T 0.39 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.372 C 0.126 G 0.116 T 0.387 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGAATWWWAYTCA MEME-1	width =  13  sites =  13  llr = 95  E-value = 7.4e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::86243372:2a
+pos.-specific     C  ::2:1221:3:8:
+probability       G  :8:2:1221:2::
+matrix            T  a2:28445258::
+
+         bits    3.1              
+                 2.8              
+                 2.5              
+                 2.2              
+Relative         1.9  *         * 
+Entropy          1.6  *         **
+(10.6 bits)      1.2 **         **
+                 0.9 ***       ***
+                 0.6 *****     ***
+                 0.3 *****   *****
+                 0.0 -------------
+
+Multilevel           TGAATATTATTCA
+consensus             T G TAATC A 
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+Veis_4448_p-13(metR)          2  2.29e-06          T TGAATAGTATTCA T         
+Veis_4447_p-72(metE)          2  3.01e-06          A TGAATACTATTCA A         
+Daci_5860_p-19(metR)          2  1.71e-05          A TGAATTTTTCTCA C         
+CtesDRAFT_5279_p-17(metR      2  1.91e-05          A TGAATTGTGTTCA C         
+CtesDRAFT_5278_p-21(metE      2  4.00e-05          G TGAACACAATTCA T         
+Vapar_3248_p-103(metE)        2  1.06e-04          A TGAATGAATTTCA A         
+Vapar_3249_p-13(metR)         2  1.30e-04          T TGAAATTCATTCA T         
+Ajs_1631_p-13(metR)           2  2.26e-04          T TGAATATTTCTAA T         
+Ajs_1630_p-99(metE)           2  6.11e-04          A TTAGAAATATTCA A         
+Vapar_3248_p-72(metE)         2  6.54e-04          T TTCGTTTGAATCA T         
+Vapar_3249_p-44(metR)         2  6.54e-04          A TGATTCAAACGAA A         
+Ajs_1630_p-68(metE)           2  6.54e-04          T TTCGTTTGAATCA T         
+Ajs_1631_p-44(metR)           2  6.54e-04          A TGATTCAAACGAA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Veis_4448_p-13(metR)              2.3e-06  1_[+1]_1
+Veis_4447_p-72(metE)                3e-06  1_[+1]_1
+Daci_5860_p-19(metR)              1.7e-05  1_[+1]_1
+CtesDRAFT_5279_p-17(metR          1.9e-05  1_[+1]_1
+CtesDRAFT_5278_p-21(metE            4e-05  1_[+1]_1
+Vapar_3248_p-103(metE)            0.00011  1_[+1]_1
+Vapar_3249_p-13(metR)             0.00013  1_[+1]_1
+Ajs_1631_p-13(metR)               0.00023  1_[+1]_1
+Ajs_1630_p-99(metE)               0.00061  1_[+1]_1
+Vapar_3248_p-72(metE)             0.00065  1_[+1]_1
+Vapar_3249_p-44(metR)             0.00065  1_[+1]_1
+Ajs_1630_p-68(metE)               0.00065  1_[+1]_1
+Ajs_1631_p-44(metR)               0.00065  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGAATWWWAYTCA width=13 seqs=13
+Veis_4448_p-13(metR)     (    2) TGAATAGTATTCA  1 
+Veis_4447_p-72(metE)     (    2) TGAATACTATTCA  1 
+Daci_5860_p-19(metR)     (    2) TGAATTTTTCTCA  1 
+CtesDRAFT_5279_p-17(metR (    2) TGAATTGTGTTCA  1 
+CtesDRAFT_5278_p-21(metE (    2) TGAACACAATTCA  1 
+Vapar_3248_p-103(metE)   (    2) TGAATGAATTTCA  1 
+Vapar_3249_p-13(metR)    (    2) TGAAATTCATTCA  1 
+Ajs_1631_p-13(metR)      (    2) TGAATATTTCTAA  1 
+Ajs_1630_p-99(metE)      (    2) TTAGAAATATTCA  1 
+Vapar_3248_p-72(metE)    (    2) TTCGTTTGAATCA  1 
+Vapar_3249_p-44(metR)    (    2) TGATTCAAACGAA  1 
+Ajs_1630_p-68(metE)      (    2) TTCGTTTGAATCA  1 
+Ajs_1631_p-44(metR)      (    2) TGATTCAAACGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 39 bayes= 3.05063 E= 7.4e-017 
+ -1035  -1035  -1035    137 
+ -1035  -1035    273    -74 
+   119     29  -1035  -1035 
+    73  -1035    100   -133 
+  -127    -71  -1035     99 
+     5     29    -59     -1 
+   -27     29     41     -1 
+   -27    -71     41     25 
+    90  -1035    -59    -74 
+  -127    129  -1035     48 
+ -1035  -1035     41    113 
+   -69    261  -1035  -1035 
+   143  -1035  -1035  -1035 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 13 E= 7.4e-017 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.769231  0.230769 
+ 0.846154  0.153846  0.000000  0.000000 
+ 0.615385  0.000000  0.230769  0.153846 
+ 0.153846  0.076923  0.000000  0.769231 
+ 0.384615  0.153846  0.076923  0.384615 
+ 0.307692  0.153846  0.153846  0.384615 
+ 0.307692  0.076923  0.153846  0.461538 
+ 0.692308  0.000000  0.076923  0.230769 
+ 0.153846  0.307692  0.000000  0.538462 
+ 0.000000  0.000000  0.153846  0.846154 
+ 0.230769  0.769231  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAATWWWAYTCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GT]A[AG]T[AT][TA][TA][AT][TC]T[CA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ajs_1631_p-13(metR)              6.78e-04  15
+Ajs_1631_p-44(metR)              1.96e-03  15
+Ajs_1630_p-99(metE)              1.83e-03  15
+Ajs_1630_p-68(metE)              1.96e-03  15
+CtesDRAFT_5278_p-21(metE         1.20e-04  1_[+1(4.00e-05)]_1
+CtesDRAFT_5279_p-17(metR         5.73e-05  1_[+1(1.91e-05)]_1
+Daci_5860_p-19(metR)             5.12e-05  1_[+1(1.71e-05)]_1
+Vapar_3249_p-13(metR)            3.90e-04  15
+Vapar_3249_p-44(metR)            1.96e-03  15
+Vapar_3248_p-103(metE)           3.17e-04  15
+Vapar_3248_p-72(metE)            1.96e-03  15
+Veis_4447_p-72(metE)             9.02e-06  1_[+1(3.01e-06)]_1
+Veis_4448_p-13(metR)             6.86e-06  1_[+1(2.29e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

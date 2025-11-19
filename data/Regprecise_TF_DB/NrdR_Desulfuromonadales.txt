@@ -1,0 +1,288 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NrdR_Desulfuromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Gmet_1297_p-101(nrdJ)    1.0000     16  GSU1871_p-93(nrdJ)       1.0000     16  
+GSU1871_p-91(nrdJ)       1.0000     16  Gura_2259_p-100(nrdJ)    1.0000     16  
+Gura_2259_p-68(nrdJ)     1.0000     16  Geob_3024_p-89(nrdJ)     1.0000     16  
+Geob_3024_p-57(nrdJ)     1.0000     16  GM21_3073_p-98(nrdJ)     1.0000     16  
+GM21_3073_p-67(nrdJ)     1.0000     16  Glov_1779_p-355(nrdD)    1.0000     16  
+Glov_1779_p-387(nrdD)    1.0000     16  Glov_2318_p-108(nrdJ)    1.0000     16  
+Glov_2318_p-140(nrdJ)    1.0000     16  Ppro_2498_p-128(nrdJ)    1.0000     16  
+Ppro_2498_p-150(nrdJ)    1.0000     16  Pcar_1852_p-95(nrdJ)     1.0000     16  
+Dace_0338_p-122(nrdD)    1.0000     16  Dace_0338_p-90(nrdD)     1.0000     16  
+Dace_1005_p-47(nrdJ)     1.0000     16  Dace_1005_p-78(nrdJ)     1.0000     16  
+Dace_0674_p-422(nrdD)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NrdR_Desulfuromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/NrdR_Desulfuromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             336    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    336    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.283 C 0.188 G 0.196 T 0.333 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.282 C 0.188 G 0.197 T 0.332 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VCMMWAYATRTTGTGK MEME-1	width =  16  sites =  21  llr = 248  E-value = 1.2e-076
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  31533a2a:4:1::21
+pos.-specific     C  3847::3::1::1::1
+probability       G  3::::::::5:19:84
+matrix            T  ::1:6:4:a:a7:a:4
+
+         bits    2.4                 
+                 2.2                 
+                 1.9                 
+                 1.7      * ** * **  
+Relative         1.4  *   * ** * *** 
+Entropy          1.2  * * * ** * *** 
+(17.0 bits)      1.0  * * * ** * *** 
+                 0.7  *** * **** *** 
+                 0.5 **** * ******** 
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           ACACTATATGTTGTGG
+consensus            G CAA C  A     T
+sequence             C               
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Gura_2259_p-100(nrdJ)         1  9.30e-09          . GCCATACATGTTGTGG           
+Geob_3024_p-89(nrdJ)          1  1.76e-08          . GCCATATATGTTGTGG           
+Gmet_1297_p-101(nrdJ)         1  3.56e-08          . GCCATACATATTGTGG           
+GSU1871_p-91(nrdJ)            1  1.02e-07          . ACCATATATATTGTGG           
+Dace_0674_p-422(nrdD)         1  2.14e-07          . CCACAATATGTTGTGA           
+GM21_3073_p-67(nrdJ)          1  2.79e-07          . CCACTAAATGTGGTGT           
+Pcar_1852_p-95(nrdJ)          1  3.90e-07          . ACCCAAGATATTGTGG           
+Glov_2318_p-108(nrdJ)         1  3.90e-07          . GCACAAAATGTTGTGA           
+Ppro_2498_p-128(nrdJ)         1  4.83e-07          . GACATATATGTTGTGG           
+Glov_2318_p-140(nrdJ)         1  5.98e-07          . CACATATATGTTGTGG           
+Dace_1005_p-78(nrdJ)          1  9.90e-07          . ACACGATATATTGTGT           
+Dace_0338_p-122(nrdD)         1  1.44e-06          . GAACAACATGTTGTAG           
+Glov_1779_p-387(nrdD)         1  1.44e-06          . ACTCTATATCTTGTGT           
+Glov_1779_p-355(nrdD)         1  2.42e-06          . CCACAACATATTCTGC           
+Gura_2259_p-68(nrdJ)          1  2.64e-06          . CCACAAAATGTGGTAT           
+GM21_3073_p-98(nrdJ)          1  3.94e-06          . GTCATACATCTTGTGG           
+Geob_3024_p-57(nrdJ)          1  4.58e-06          . CCACTAAATATAGTAT           
+Ppro_2498_p-150(nrdJ)         1  1.13e-05          . ACCCAATCTATTCTGT           
+Dace_1005_p-47(nrdJ)          1  1.54e-05          . ACACTCCATGTGGTAC           
+Dace_0338_p-90(nrdD)          1  1.95e-05          . TCTCTACATCTAGTGT           
+GSU1871_p-93(nrdJ)            1  3.67e-05          . ACACCATATATATTGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gura_2259_p-100(nrdJ)             9.3e-09  [+1]
+Geob_3024_p-89(nrdJ)              1.8e-08  [+1]
+Gmet_1297_p-101(nrdJ)             3.6e-08  [+1]
+GSU1871_p-91(nrdJ)                  1e-07  [+1]
+Dace_0674_p-422(nrdD)             2.1e-07  [+1]
+GM21_3073_p-67(nrdJ)              2.8e-07  [+1]
+Pcar_1852_p-95(nrdJ)              3.9e-07  [+1]
+Glov_2318_p-108(nrdJ)             3.9e-07  [+1]
+Ppro_2498_p-128(nrdJ)             4.8e-07  [+1]
+Glov_2318_p-140(nrdJ)               6e-07  [+1]
+Dace_1005_p-78(nrdJ)              9.9e-07  [+1]
+Dace_0338_p-122(nrdD)             1.4e-06  [+1]
+Glov_1779_p-387(nrdD)             1.4e-06  [+1]
+Glov_1779_p-355(nrdD)             2.4e-06  [+1]
+Gura_2259_p-68(nrdJ)              2.6e-06  [+1]
+GM21_3073_p-98(nrdJ)              3.9e-06  [+1]
+Geob_3024_p-57(nrdJ)              4.6e-06  [+1]
+Ppro_2498_p-150(nrdJ)             1.1e-05  [+1]
+Dace_1005_p-47(nrdJ)              1.5e-05  [+1]
+Dace_0338_p-90(nrdD)              1.9e-05  [+1]
+GSU1871_p-93(nrdJ)                3.7e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VCMMWAYATRTTGTGK width=16 seqs=21
+Gura_2259_p-100(nrdJ)    (    1) GCCATACATGTTGTGG  1 
+Geob_3024_p-89(nrdJ)     (    1) GCCATATATGTTGTGG  1 
+Gmet_1297_p-101(nrdJ)    (    1) GCCATACATATTGTGG  1 
+GSU1871_p-91(nrdJ)       (    1) ACCATATATATTGTGG  1 
+Dace_0674_p-422(nrdD)    (    1) CCACAATATGTTGTGA  1 
+GM21_3073_p-67(nrdJ)     (    1) CCACTAAATGTGGTGT  1 
+Pcar_1852_p-95(nrdJ)     (    1) ACCCAAGATATTGTGG  1 
+Glov_2318_p-108(nrdJ)    (    1) GCACAAAATGTTGTGA  1 
+Ppro_2498_p-128(nrdJ)    (    1) GACATATATGTTGTGG  1 
+Glov_2318_p-140(nrdJ)    (    1) CACATATATGTTGTGG  1 
+Dace_1005_p-78(nrdJ)     (    1) ACACGATATATTGTGT  1 
+Dace_0338_p-122(nrdD)    (    1) GAACAACATGTTGTAG  1 
+Glov_1779_p-387(nrdD)    (    1) ACTCTATATCTTGTGT  1 
+Glov_1779_p-355(nrdD)    (    1) CCACAACATATTCTGC  1 
+Gura_2259_p-68(nrdJ)     (    1) CCACAAAATGTGGTAT  1 
+GM21_3073_p-98(nrdJ)     (    1) GTCATACATCTTGTGG  1 
+Geob_3024_p-57(nrdJ)     (    1) CCACTAAATATAGTAT  1 
+Ppro_2498_p-150(nrdJ)    (    1) ACCCAATCTATTCTGT  1 
+Dace_1005_p-47(nrdJ)     (    1) ACACTCCATGTGGTAC  1 
+Dace_0338_p-90(nrdD)     (    1) TCTCTACATCTAGTGT  1 
+GSU1871_p-93(nrdJ)       (    1) ACACCATATATATTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 21 bayes= 1.38995 E= 1.2e-076 
+    24     60     76   -280 
+   -98    210  -1104   -280 
+    75    119  -1104   -180 
+    24    182  -1104  -1104 
+    24   -198   -205     78 
+   175   -198  -1104  -1104 
+   -57     82   -205     37 
+   175   -198  -1104  -1104 
+ -1104  -1104  -1104    159 
+    43    -40    127  -1104 
+ -1104  -1104  -1104    159 
+   -98  -1104    -46    110 
+ -1104    -98    212   -280 
+ -1104  -1104  -1104    159 
+   -57  -1104    204  -1104 
+  -157    -98    112     20 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 21 E= 1.2e-076 
+ 0.333333  0.285714  0.333333  0.047619 
+ 0.142857  0.809524  0.000000  0.047619 
+ 0.476190  0.428571  0.000000  0.095238 
+ 0.333333  0.666667  0.000000  0.000000 
+ 0.333333  0.047619  0.047619  0.571429 
+ 0.952381  0.047619  0.000000  0.000000 
+ 0.190476  0.333333  0.047619  0.428571 
+ 0.952381  0.047619  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.380952  0.142857  0.476190  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.142857  0.000000  0.142857  0.714286 
+ 0.000000  0.095238  0.857143  0.047619 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.190476  0.000000  0.809524  0.000000 
+ 0.095238  0.095238  0.428571  0.380952 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCMMWAYATRTTGTGK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AGC]C[AC][CA][TA]A[TC]AT[GA]TTGTG[GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gmet_1297_p-101(nrdJ)            3.56e-08  [+1(3.56e-08)]
+GSU1871_p-93(nrdJ)               3.67e-05  [+1(3.67e-05)]
+GSU1871_p-91(nrdJ)               1.02e-07  [+1(1.02e-07)]
+Gura_2259_p-100(nrdJ)            9.30e-09  [+1(9.30e-09)]
+Gura_2259_p-68(nrdJ)             2.64e-06  [+1(2.64e-06)]
+Geob_3024_p-89(nrdJ)             1.76e-08  [+1(1.76e-08)]
+Geob_3024_p-57(nrdJ)             4.58e-06  [+1(4.58e-06)]
+GM21_3073_p-98(nrdJ)             3.94e-06  [+1(3.94e-06)]
+GM21_3073_p-67(nrdJ)             2.79e-07  [+1(2.79e-07)]
+Glov_1779_p-355(nrdD)            2.42e-06  [+1(2.42e-06)]
+Glov_1779_p-387(nrdD)            1.44e-06  [+1(1.44e-06)]
+Glov_2318_p-108(nrdJ)            3.90e-07  [+1(3.90e-07)]
+Glov_2318_p-140(nrdJ)            5.98e-07  [+1(5.98e-07)]
+Ppro_2498_p-128(nrdJ)            4.83e-07  [+1(4.83e-07)]
+Ppro_2498_p-150(nrdJ)            1.13e-05  [+1(1.13e-05)]
+Pcar_1852_p-95(nrdJ)             3.90e-07  [+1(3.90e-07)]
+Dace_0338_p-122(nrdD)            1.44e-06  [+1(1.44e-06)]
+Dace_0338_p-90(nrdD)             1.95e-05  [+1(1.95e-05)]
+Dace_1005_p-47(nrdJ)             1.54e-05  [+1(1.54e-05)]
+Dace_1005_p-78(nrdJ)             9.90e-07  [+1(9.90e-07)]
+Dace_0674_p-422(nrdD)            2.14e-07  [+1(2.14e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

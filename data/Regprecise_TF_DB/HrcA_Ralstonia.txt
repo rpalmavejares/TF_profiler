@@ -1,0 +1,269 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HrcA_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSc0641_p-117(groS)      1.0000     27  RSc0374_p-70(rpoH)       1.0000     27  
+Rpic_0578_p-118(groS)    1.0000     27  Rpic_0230_p-70(rpoH)     1.0000     27  
+Rmet_0615_p-118(groS)    1.0000     27  Rmet_0272_p-96(rpoH)     1.0000     27  
+Reut_A2657_p-130(groS)   1.0000     27  Reut_A0325_p-104(rpoH)   1.0000     27  
+H16_A0705_p-121(groS)    1.0000     27  H16_A0354_p-104(rpoH)    1.0000     27  
+RALTA_A0685_p-121(groS)  1.0000     27  RALTA_A0299_p-108(rpoH)  1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HrcA_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/HrcA_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             324    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    324    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.219 C 0.247 G 0.296 T 0.238 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.22 C 0.247 G 0.296 T 0.238 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1	width =  27  sites =  12  llr = 359  E-value = 2.0e-111
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::9::a:::4::21:112:a:::::aa
+pos.-specific     C  ::::a:a:a:685::431:::::a:::
+probability       G  ::1a:::::6::39a344a:a:a::::
+matrix            T  aa:::::a::421::233:::a::a::
+
+         bits    2.2      *             *     **
+                 2.0 **  *****          * * ****
+                 1.8 *********     *   *********
+                 1.5 *********     *   *********
+Relative         1.3 *********  * **   *********
+Entropy          1.1 ********* ** **   *********
+(43.2 bits)      0.9 ************ **   *********
+                 0.7 ************ **   *********
+                 0.4 ************ **   *********
+                 0.2 ***************************
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCGCCCGGCGGGAGTGCTAA
+consensus                     AT G  GCT         
+sequence                             T          
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+H16_A0354_p-104(rpoH)         1  1.08e-15          . TTAGCACTCACCCGGCCTGAGTGCTAA           
+Reut_A0325_p-104(rpoH)        1  1.08e-15          . TTAGCACTCACCCGGCTTGAGTGCTAA           
+RALTA_A0299_p-108(rpoH)       1  4.14e-15          . TTAGCACTCACCCGGCCAGAGTGCTAA           
+Rpic_0230_p-70(rpoH)          1  9.43e-15          . TTAGCACTCATCCGGTTGGAGTGCTAA           
+RALTA_A0685_p-121(groS)       1  1.44e-14          . TTAGCACTCGTCAGGGGGGAGTGCTAA           
+H16_A0705_p-121(groS)         1  1.44e-14          . TTAGCACTCGTCAGGGGTGAGTGCTAA           
+Rpic_0578_p-118(groS)         1  2.80e-14          . TTAGCACTCGCCGGGCAGGAGTGCTAA           
+RSc0374_p-70(rpoH)            1  3.76e-14          . TTAGCACTCATCCAGCCGGAGTGCTAA           
+Rmet_0272_p-96(rpoH)          1  4.59e-14          . TTAGCACTCGTCCGGTTCGAGTGCTAA           
+Reut_A2657_p-130(groS)        1  4.80e-14          . TTAGCACTCGCTGGGGGTGAGTGCTAA           
+Rmet_0615_p-118(groS)         1  7.70e-14          . TTAGCACTCGCTGGGGGAGAGTGCTAA           
+RSc0641_p-117(groS)           1  2.64e-13          . TTGGCACTCGCCTGGAGGGAGTGCTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H16_A0354_p-104(rpoH)             1.1e-15  [+1]
+Reut_A0325_p-104(rpoH)            1.1e-15  [+1]
+RALTA_A0299_p-108(rpoH)           4.1e-15  [+1]
+Rpic_0230_p-70(rpoH)              9.4e-15  [+1]
+RALTA_A0685_p-121(groS)           1.4e-14  [+1]
+H16_A0705_p-121(groS)             1.4e-14  [+1]
+Rpic_0578_p-118(groS)             2.8e-14  [+1]
+RSc0374_p-70(rpoH)                3.8e-14  [+1]
+Rmet_0272_p-96(rpoH)              4.6e-14  [+1]
+Reut_A2657_p-130(groS)            4.8e-14  [+1]
+Rmet_0615_p-118(groS)             7.7e-14  [+1]
+RSc0641_p-117(groS)               2.6e-13  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTAGCACTCRYCSGGSBKGAGTGCTAA width=27 seqs=12
+H16_A0354_p-104(rpoH)    (    1) TTAGCACTCACCCGGCCTGAGTGCTAA  1 
+Reut_A0325_p-104(rpoH)   (    1) TTAGCACTCACCCGGCTTGAGTGCTAA  1 
+RALTA_A0299_p-108(rpoH)  (    1) TTAGCACTCACCCGGCCAGAGTGCTAA  1 
+Rpic_0230_p-70(rpoH)     (    1) TTAGCACTCATCCGGTTGGAGTGCTAA  1 
+RALTA_A0685_p-121(groS)  (    1) TTAGCACTCGTCAGGGGGGAGTGCTAA  1 
+H16_A0705_p-121(groS)    (    1) TTAGCACTCGTCAGGGGTGAGTGCTAA  1 
+Rpic_0578_p-118(groS)    (    1) TTAGCACTCGCCGGGCAGGAGTGCTAA  1 
+RSc0374_p-70(rpoH)       (    1) TTAGCACTCATCCAGCCGGAGTGCTAA  1 
+Rmet_0272_p-96(rpoH)     (    1) TTAGCACTCGTCCGGTTCGAGTGCTAA  1 
+Reut_A2657_p-130(groS)   (    1) TTAGCACTCGCTGGGGGTGAGTGCTAA  1 
+Rmet_0615_p-118(groS)    (    1) TTAGCACTCGCTGGGGGAGAGTGCTAA  1 
+RSc0641_p-117(groS)      (    1) TTGGCACTCGCCTGGAGGGAGTGCTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 12 bayes= 1 E= 2.0e-111 
+ -1023  -1023  -1023    207 
+ -1023  -1023  -1023    207 
+   206  -1023   -182  -1023 
+ -1023  -1023    176  -1023 
+ -1023    202  -1023  -1023 
+   219  -1023  -1023  -1023 
+ -1023    202  -1023  -1023 
+ -1023  -1023  -1023    207 
+ -1023    202  -1023  -1023 
+    92  -1023     98  -1023 
+ -1023    124  -1023     81 
+ -1023    175  -1023    -51 
+   -40    102    -24   -151 
+  -140  -1023    163  -1023 
+ -1023  -1023    176  -1023 
+  -140     75     17    -51 
+  -140      2     49      7 
+   -40   -156     49     49 
+ -1023  -1023    176  -1023 
+   219  -1023  -1023  -1023 
+ -1023  -1023    176  -1023 
+ -1023  -1023  -1023    207 
+ -1023  -1023    176  -1023 
+ -1023    202  -1023  -1023 
+ -1023  -1023  -1023    207 
+   219  -1023  -1023  -1023 
+   219  -1023  -1023  -1023 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 12 E= 2.0e-111 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.416667  0.000000  0.583333  0.000000 
+ 0.000000  0.583333  0.000000  0.416667 
+ 0.000000  0.833333  0.000000  0.166667 
+ 0.166667  0.500000  0.250000  0.083333 
+ 0.083333  0.000000  0.916667  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.083333  0.416667  0.333333  0.166667 
+ 0.083333  0.250000  0.416667  0.250000 
+ 0.166667  0.083333  0.416667  0.333333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCRYCSGGSBKGAGTGCTAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACTC[GA][CT]C[CG]GG[CG][GCT][GT]GAGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSc0641_p-117(groS)              2.64e-13  [+1(2.64e-13)]
+RSc0374_p-70(rpoH)               3.76e-14  [+1(3.76e-14)]
+Rpic_0578_p-118(groS)            2.80e-14  [+1(2.80e-14)]
+Rpic_0230_p-70(rpoH)             9.43e-15  [+1(9.43e-15)]
+Rmet_0615_p-118(groS)            7.70e-14  [+1(7.70e-14)]
+Rmet_0272_p-96(rpoH)             4.59e-14  [+1(4.59e-14)]
+Reut_A2657_p-130(groS)           4.80e-14  [+1(4.80e-14)]
+Reut_A0325_p-104(rpoH)           1.08e-15  [+1(1.08e-15)]
+H16_A0705_p-121(groS)            1.44e-14  [+1(1.44e-14)]
+H16_A0354_p-104(rpoH)            1.08e-15  [+1(1.08e-15)]
+RALTA_A0685_p-121(groS)          1.44e-14  [+1(1.44e-14)]
+RALTA_A0299_p-108(rpoH)          4.14e-15  [+1(4.14e-15)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

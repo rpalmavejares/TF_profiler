@@ -1,0 +1,320 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/ArgR_Streptomycetaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SAV_6778_p-36(argG)      1.0000     20  SAV_6778_p-26(argG)      1.0000     20  
+SAV_801_p-37(argG)       1.0000     20  SAV_3165_p-28(SCO2628)   1.0000     20  
+SAV_1487_p-44(SCO1086)   1.0000     20  SAV_6763_p-55(argC)      1.0000     20  
+SAV_6763_p-35(argC)      1.0000     20  SCO1570_p-59(argH)       1.0000     20  
+SCO1570_p-49(argH)       1.0000     20  SCO7036_p-37(argG)       1.0000     20  
+SCO7036_p-27(argG)       1.0000     20  SCO2015_p-178(cpdB)      1.0000     20  
+SCO2686_p-42(SCO2628)    1.0000     20  SCO1086_p-44(SCO1086)    1.0000     20  
+SCO1580_p-57(argC)       1.0000     20  SCO1580_p-37(argC)       1.0000     20  
+SGR_3668_p-27(argG)      1.0000     20  SGR_5966_p-47(argG)      1.0000     20  
+SGR_6519_p-70(SCO1086)   1.0000     20  SGR_5960_p-57(argC)      1.0000     20  
+SGR_5960_p-37(argC)      1.0000     20  SGR_3668_p-37(argG)      1.0000     20  
+SCAB_74201_p-35(argC)    1.0000     20  SCAB_74201_p-55(argC)    1.0000     20  
+SCAB_82621_p-71(SCO1086) 1.0000     20  SCAB_74301_p-71(argH)    1.0000     20  
+SCAB_74301_p-61(argH)    1.0000     20  SCAB_44121_p-37(argG)    1.0000     20  
+SCAB_44121_p-27(argG)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/ArgR_Streptomycetaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/ArgR_Streptomycetaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       29    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             580    N=              29
+sample: seed=            0    hsfrac=          0
+        searchsize=    580    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.269 C 0.25 G 0.214 T 0.267 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.269 C 0.25 G 0.214 T 0.267 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGCATARTCATGCR MEME-1	width =  14  sites =  29  llr = 332  E-value = 3.9e-090
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::9:74217:1:6
+pos.-specific     C  2:9:::1171::a1
+probability       G  :a:11241:2:9:3
+matrix            T  8:1:9::62:a:::
+
+         bits    2.2  *            
+                 2.0  *          * 
+                 1.8  *        * * 
+                 1.6  * *      *** 
+Relative         1.3  ****     *** 
+Entropy          1.1  ****     *** 
+(16.5 bits)      0.9 ******    *** 
+                 0.7 ******* ***** 
+                 0.4 ******* ******
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           TGCATAATCATGCA
+consensus            C    GGAT    G
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+SGR_3668_p-37(argG)           4  3.96e-08        TGT TGCATGATCATGCA TAA       
+SCO7036_p-37(argG)            4  5.41e-08        CTT TGCATGGTCATGCG TAA       
+SCAB_44121_p-37(argG)         4  9.40e-08        CTT TGCATGATCATGCG TTG       
+SCAB_74301_p-61(argH)         4  1.09e-07        TTC TGCATACTCATGCA TGA       
+SCO1570_p-49(argH)            4  1.09e-07        TTC TGCATACTCATGCA TGA       
+SAV_6778_p-26(argG)           4  1.09e-07        CCC TGCATACTCATGCA TGT       
+SCAB_74201_p-55(argC)         4  2.22e-07        GAT TGCATAAACGTGCA GCG       
+SCO1580_p-57(argC)            4  2.22e-07        CAT TGCATAAACGTGCA TCG       
+SAV_6763_p-55(argC)           4  2.22e-07        GAT TGCATAAACGTGCA GCG       
+SAV_1487_p-44(SCO1086)        4  3.07e-07        CGA TGCATAGATATGCG ATC       
+SCO1086_p-44(SCO1086)         4  6.98e-07        CAC TGCATAGGTATGCG TTC       
+SGR_6519_p-70(SCO1086)        4  1.06e-06        TCG CGCATAACCATGCG ACC       
+SGR_3668_p-27(argG)           4  1.32e-06        TCA TGCATAAGAATGCA TAC       
+SCO2686_p-42(SCO2628)         4  1.94e-06        TGT GGCATGATCATGCA TTG       
+SAV_801_p-37(argG)            4  2.26e-06        CCT TGCATGAAAATGCG CGA       
+SCAB_74201_p-35(argC)         4  2.83e-06        AAA CGTATAGTCATGCC ATC       
+SGR_5960_p-37(argC)           4  2.83e-06        CTG CGTATAGTCATGCC ATC       
+SAV_6763_p-35(argC)           4  2.83e-06        AAA CGTATAGTCATGCC ATC       
+SGR_5960_p-57(argC)           4  3.00e-06        CTT TGCATAAAAGTGCG CCG       
+SCAB_74301_p-71(argH)         4  3.68e-06        TCA TGCAGAGTTCTGCA TAC       
+SCO1570_p-59(argH)            4  3.68e-06        ACA TGCAGAGTTCTGCA TAC       
+SAV_6778_p-36(argG)           4  4.65e-06        TCA TGCAGAGCCCTGCA TAC       
+SCAB_82621_p-71(SCO1086)      4  5.62e-06        GAC TGCATAGATATACG GTC       
+SGR_5966_p-47(argG)           4  5.95e-06        GAC TGCATAGTTATACC CAT       
+SCO7036_p-27(argG)            4  6.98e-06        TCA TGCGTAATGATGCA TAC       
+SCO1580_p-37(argC)            4  1.03e-05        GCA CGTATAGTCATGCT CTC       
+SAV_3165_p-28(SCO2628)        4  1.03e-05        CAG TGCAAGATCCTGCA GGA       
+SCAB_44121_p-27(argG)         4  4.15e-05        TCA TGCGTTGGCGTGCA TAA       
+SCO2015_p-178(cpdB)           4  1.56e-04        CCA CGCATGACCACTCA ACA       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SGR_3668_p-37(argG)                 4e-08  3_[+1]_3
+SCO7036_p-37(argG)                5.4e-08  3_[+1]_3
+SCAB_44121_p-37(argG)             9.4e-08  3_[+1]_3
+SCAB_74301_p-61(argH)             1.1e-07  3_[+1]_3
+SCO1570_p-49(argH)                1.1e-07  3_[+1]_3
+SAV_6778_p-26(argG)               1.1e-07  3_[+1]_3
+SCAB_74201_p-55(argC)             2.2e-07  3_[+1]_3
+SCO1580_p-57(argC)                2.2e-07  3_[+1]_3
+SAV_6763_p-55(argC)               2.2e-07  3_[+1]_3
+SAV_1487_p-44(SCO1086)            3.1e-07  3_[+1]_3
+SCO1086_p-44(SCO1086)               7e-07  3_[+1]_3
+SGR_6519_p-70(SCO1086)            1.1e-06  3_[+1]_3
+SGR_3668_p-27(argG)               1.3e-06  3_[+1]_3
+SCO2686_p-42(SCO2628)             1.9e-06  3_[+1]_3
+SAV_801_p-37(argG)                2.3e-06  3_[+1]_3
+SCAB_74201_p-35(argC)             2.8e-06  3_[+1]_3
+SGR_5960_p-37(argC)               2.8e-06  3_[+1]_3
+SAV_6763_p-35(argC)               2.8e-06  3_[+1]_3
+SGR_5960_p-57(argC)                 3e-06  3_[+1]_3
+SCAB_74301_p-71(argH)             3.7e-06  3_[+1]_3
+SCO1570_p-59(argH)                3.7e-06  3_[+1]_3
+SAV_6778_p-36(argG)               4.7e-06  3_[+1]_3
+SCAB_82621_p-71(SCO1086)          5.6e-06  3_[+1]_3
+SGR_5966_p-47(argG)               5.9e-06  3_[+1]_3
+SCO7036_p-27(argG)                  7e-06  3_[+1]_3
+SCO1580_p-37(argC)                  1e-05  3_[+1]_3
+SAV_3165_p-28(SCO2628)              1e-05  3_[+1]_3
+SCAB_44121_p-27(argG)             4.2e-05  3_[+1]_3
+SCO2015_p-178(cpdB)               0.00016  3_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGCATARTCATGCR width=14 seqs=29
+SGR_3668_p-37(argG)      (    4) TGCATGATCATGCA  1 
+SCO7036_p-37(argG)       (    4) TGCATGGTCATGCG  1 
+SCAB_44121_p-37(argG)    (    4) TGCATGATCATGCG  1 
+SCAB_74301_p-61(argH)    (    4) TGCATACTCATGCA  1 
+SCO1570_p-49(argH)       (    4) TGCATACTCATGCA  1 
+SAV_6778_p-26(argG)      (    4) TGCATACTCATGCA  1 
+SCAB_74201_p-55(argC)    (    4) TGCATAAACGTGCA  1 
+SCO1580_p-57(argC)       (    4) TGCATAAACGTGCA  1 
+SAV_6763_p-55(argC)      (    4) TGCATAAACGTGCA  1 
+SAV_1487_p-44(SCO1086)   (    4) TGCATAGATATGCG  1 
+SCO1086_p-44(SCO1086)    (    4) TGCATAGGTATGCG  1 
+SGR_6519_p-70(SCO1086)   (    4) CGCATAACCATGCG  1 
+SGR_3668_p-27(argG)      (    4) TGCATAAGAATGCA  1 
+SCO2686_p-42(SCO2628)    (    4) GGCATGATCATGCA  1 
+SAV_801_p-37(argG)       (    4) TGCATGAAAATGCG  1 
+SCAB_74201_p-35(argC)    (    4) CGTATAGTCATGCC  1 
+SGR_5960_p-37(argC)      (    4) CGTATAGTCATGCC  1 
+SAV_6763_p-35(argC)      (    4) CGTATAGTCATGCC  1 
+SGR_5960_p-57(argC)      (    4) TGCATAAAAGTGCG  1 
+SCAB_74301_p-71(argH)    (    4) TGCAGAGTTCTGCA  1 
+SCO1570_p-59(argH)       (    4) TGCAGAGTTCTGCA  1 
+SAV_6778_p-36(argG)      (    4) TGCAGAGCCCTGCA  1 
+SCAB_82621_p-71(SCO1086) (    4) TGCATAGATATACG  1 
+SGR_5966_p-47(argG)      (    4) TGCATAGTTATACC  1 
+SCO7036_p-27(argG)       (    4) TGCGTAATGATGCA  1 
+SCO1580_p-37(argC)       (    4) CGTATAGTCATGCT  1 
+SAV_3165_p-28(SCO2628)   (    4) TGCAAGATCCTGCA  1 
+SCAB_44121_p-27(argG)    (    4) TGCGTTGGCGTGCA  1 
+SCO2015_p-178(cpdB)      (    4) CGCATGACCACTCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 203 bayes= 4.42999 E= 3.9e-090 
+ -1150    -27   -263    151 
+ -1150  -1150    222  -1150 
+ -1150    179  -1150    -95 
+   179  -1150   -163  -1150 
+  -296  -1150   -105    169 
+   143  -1150     17   -295 
+    74   -127    107  -1150 
+   -16   -127   -105    105 
+  -138    139   -263    -37 
+   136    -86    -31  -1150 
+ -1150   -285  -1150    185 
+  -196  -1150    207   -295 
+ -1150    200  -1150  -1150 
+   104    -86     37   -295 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 29 E= 3.9e-090 
+ 0.000000  0.206897  0.034483  0.758621 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.862069  0.000000  0.137931 
+ 0.931034  0.000000  0.068966  0.000000 
+ 0.034483  0.000000  0.103448  0.862069 
+ 0.724138  0.000000  0.241379  0.034483 
+ 0.448276  0.103448  0.448276  0.000000 
+ 0.241379  0.103448  0.103448  0.551724 
+ 0.103448  0.655172  0.034483  0.206897 
+ 0.689655  0.137931  0.172414  0.000000 
+ 0.000000  0.034483  0.000000  0.965517 
+ 0.068966  0.000000  0.896552  0.034483 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.551724  0.137931  0.275862  0.034483 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATARTCATGCR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]GCAT[AG][AG][TA][CT]ATGC[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SAV_6778_p-36(argG)              3.26e-05  3_[+1(4.65e-06)]_3
+SAV_6778_p-26(argG)              7.60e-07  3_[+1(1.09e-07)]_3
+SAV_801_p-37(argG)               1.58e-05  3_[+1(2.26e-06)]_3
+SAV_3165_p-28(SCO2628)           7.23e-05  3_[+1(1.03e-05)]_3
+SAV_1487_p-44(SCO1086)           2.15e-06  3_[+1(3.07e-07)]_3
+SAV_6763_p-55(argC)              1.56e-06  3_[+1(2.22e-07)]_3
+SAV_6763_p-35(argC)              1.98e-05  3_[+1(2.83e-06)]_3
+SCO1570_p-59(argH)               2.58e-05  3_[+1(3.68e-06)]_3
+SCO1570_p-49(argH)               7.60e-07  3_[+1(1.09e-07)]_3
+SCO7036_p-37(argG)               3.79e-07  3_[+1(5.41e-08)]_3
+SCO7036_p-27(argG)               4.89e-05  3_[+1(6.98e-06)]_3
+SCO2015_p-178(cpdB)              1.09e-03  20
+SCO2686_p-42(SCO2628)            1.36e-05  3_[+1(1.94e-06)]_3
+SCO1086_p-44(SCO1086)            4.89e-06  3_[+1(6.98e-07)]_3
+SCO1580_p-57(argC)               1.56e-06  3_[+1(2.22e-07)]_3
+SCO1580_p-37(argC)               7.23e-05  3_[+1(1.03e-05)]_3
+SGR_3668_p-27(argG)              9.26e-06  3_[+1(1.32e-06)]_3
+SGR_5966_p-47(argG)              4.16e-05  3_[+1(5.95e-06)]_3
+SGR_6519_p-70(SCO1086)           7.42e-06  3_[+1(1.06e-06)]_3
+SGR_5960_p-57(argC)              2.10e-05  3_[+1(3.00e-06)]_3
+SGR_5960_p-37(argC)              1.98e-05  3_[+1(2.83e-06)]_3
+SGR_3668_p-37(argG)              2.77e-07  3_[+1(3.96e-08)]_3
+SCAB_74201_p-35(argC)            1.98e-05  3_[+1(2.83e-06)]_3
+SCAB_74201_p-55(argC)            1.56e-06  3_[+1(2.22e-07)]_3
+SCAB_82621_p-71(SCO1086)         3.93e-05  3_[+1(5.62e-06)]_3
+SCAB_74301_p-71(argH)            2.58e-05  3_[+1(3.68e-06)]_3
+SCAB_74301_p-61(argH)            7.60e-07  3_[+1(1.09e-07)]_3
+SCAB_44121_p-37(argG)            6.58e-07  3_[+1(9.40e-08)]_3
+SCAB_44121_p-27(argG)            2.91e-04  3_[+1(4.15e-05)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

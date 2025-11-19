@@ -1,0 +1,226 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/MerR_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sputcn32_0170_p-61(merT) 1.0000     22  Sputw3181_3206_p-61(merT 1.0000     22  
+Shewana3_4342_p-63(merT2 1.0000     22  Shewana3_4314_p-61(merT) 1.0000     22  
+Sfri_3491_p-61(merT)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/MerR_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/MerR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             110    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=    110    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.273 C 0.282 G 0.227 T 0.218 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.281 G 0.228 T 0.219 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACTCCGTACWWHGGTACGGMA MEME-1	width =  21  sites =   5  llr = 122  E-value = 7.1e-023
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::::a:6442::a:::48
+pos.-specific     C  :a:aa:::a::2:2::a::6:
+probability       G  :::::a::::::88:::aa:2
+matrix            T  ::a:::a::464::a::::::
+
+         bits    2.2   *  **       *  **  
+                 2.0 * *  ***      ** **  
+                 1.8 *********     *****  
+                 1.5 *********     *****  
+Relative         1.3 *********   ******* *
+Entropy          1.1 *********** ******* *
+(35.2 bits)      0.9 *********** *********
+                 0.7 *********** *********
+                 0.4 *********************
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACTCCGTACATAGGTACGGCA
+consensus                     TATAC     AG
+sequence                        C         
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Sfri_3491_p-61(merT)          1  6.93e-13          . ACTCCGTACATAGGTACGGCA C         
+Sputw3181_3206_p-61(merT      1  2.67e-12          . ACTCCGTACTATGGTACGGCA T         
+Sputcn32_0170_p-61(merT)      1  2.67e-12          . ACTCCGTACTATGGTACGGCA T         
+Shewana3_4314_p-61(merT)      1  1.67e-11          . ACTCCGTACATCGGTACGGAG A         
+Shewana3_4342_p-63(merT2      1  3.71e-11          . ACTCCGTACATAACTACGGAA G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sfri_3491_p-61(merT)              6.9e-13  [+1]_1
+Sputw3181_3206_p-61(merT          2.7e-12  [+1]_1
+Sputcn32_0170_p-61(merT)          2.7e-12  [+1]_1
+Shewana3_4314_p-61(merT)          1.7e-11  [+1]_1
+Shewana3_4342_p-63(merT2          3.7e-11  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACTCCGTACWWHGGTACGGMA width=21 seqs=5
+Sfri_3491_p-61(merT)     (    1) ACTCCGTACATAGGTACGGCA  1 
+Sputw3181_3206_p-61(merT (    1) ACTCCGTACTATGGTACGGCA  1 
+Sputcn32_0170_p-61(merT) (    1) ACTCCGTACTATGGTACGGCA  1 
+Shewana3_4314_p-61(merT) (    1) ACTCCGTACATCGGTACGGAG  1 
+Shewana3_4342_p-63(merT2 (    1) ACTCCGTACATAACTACGGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 10 bayes= 0.465664 E= 7.1e-023 
+   188   -897   -897   -897 
+  -897    183   -897   -897 
+  -897   -897   -897    219 
+  -897    183   -897   -897 
+  -897    183   -897   -897 
+  -897   -897    213   -897 
+  -897   -897   -897    219 
+   188   -897   -897   -897 
+  -897    183   -897   -897 
+   114   -897   -897     87 
+    56   -897   -897    145 
+    56    -49   -897     87 
+   -44   -897    181   -897 
+  -897    -49    181   -897 
+  -897   -897   -897    219 
+   188   -897   -897   -897 
+  -897    183   -897   -897 
+  -897   -897    213   -897 
+  -897   -897    213   -897 
+    56    109   -897   -897 
+   155   -897    -19   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 5 E= 7.1e-023 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.400000  0.200000  0.000000  0.400000 
+ 0.200000  0.000000  0.800000  0.000000 
+ 0.000000  0.200000  0.800000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACWWHGGTACGGMA MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACTCCGTAC[AT][TA][ATC][GA][GC]TACGG[CA][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputcn32_0170_p-61(merT)         5.35e-12  [+1(2.67e-12)]_1
+Sputw3181_3206_p-61(merT         5.35e-12  [+1(2.67e-12)]_1
+Shewana3_4342_p-63(merT2         7.43e-11  [+1(3.71e-11)]_1
+Shewana3_4314_p-61(merT)         3.34e-11  [+1(1.67e-11)]_1
+Sfri_3491_p-61(merT)             1.39e-12  [+1(6.93e-13)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

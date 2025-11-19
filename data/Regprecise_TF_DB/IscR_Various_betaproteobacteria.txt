@@ -1,0 +1,333 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= IscR_Various_betaproteobacteria.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ebA6404(iscR)Score=5.6,P 1.0000     25  ebA6404(iscR)Score=5.8,P 1.0000     25  
+ebA1175(ydhD)Score=5.2,P 1.0000     25  ebA6405(cysE)Score=5.8Po 1.0000     25  
+Tmz1t_2207(iscR)Score=5. 1.0000     25  Tmz1t_2207(iscR)Score=5. 1.0000     25  
+Tmz1t_2208(cysE)Score=6. 1.0000     25  Daro_1948(iscR)Score=6.3 1.0000     25  
+Daro_1948(iscR)Score=5.5 1.0000     25  Daro_1948(iscR)Score=5.2 1.0000     25  
+Daro_1947(cysE)Score=6.1 1.0000     25  NE1452(iscR)Score=6.7,Po 1.0000     25  
+Nmul_A0694(iscR)Score=6. 1.0000     25  Nmul_A0674(iscR)Score=5. 1.0000     25  
+Nmul_A0694(iscR)Score=6. 1.0000     25  Tbd_2499(ydhD)Score=5.1, 1.0000     25  
+Tbd_1162(cysE)Score=6.5, 1.0000     25  Tbd_1163(iscR)Score=6.2, 1.0000     25  
+Tbd_1163(iscR)Score=6.5, 1.0000     25  CV1095(iscR)Score=6.6,Po 1.0000     25  
+NMB1378(iscR)Score=6.3,P 1.0000     25  LHK_02866(iscR)Score=6.4 1.0000     25  
+Mfla_0811(cysE)Score=4.6 1.0000     25  Mfla_0810(iscR)Score=6.3 1.0000     25  
+Mmol_1671(iscR)Score=6.3 1.0000     25  MB2181_02935(cysE)Score= 1.0000     25  
+MB2181_02930(iscR)Score= 1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna IscR_Various_betaproteobacteria.fasta -oc IscR_Various_betaproteobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           25
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             675    N=              27    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.326 C 0.135 G 0.199 T 0.341 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.325 C 0.135 G 0.199 T 0.340 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  25  sites =  27  llr = 489  E-value = 1.2e-156
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:9::::a:17964:61:1412371
+pos.-specific     C  :::422::72:::13:4:8::1:::
+probability       G  :::6::a:2:3::1:15::687:::
+matrix            T  1a1:87::171144731a::::729
+
+         bits    2.9                          
+                 2.6                          
+                 2.3       *                  
+                 2.0       *                  
+Relative         1.7       **          *      
+Entropy          1.4  * *  ***        ** *    
+(26.1 bits)      1.2 ***** ***     *  ** *    
+                 0.9 *********  *  * ******* *
+                 0.6 ************* * *********
+                 0.3 ************* ***********
+                 0.0 -------------------------
+
+Multilevel           ATAGTTGACTAAAATAGTCGGGTAT
+consensus               CCC    G TTCTC  A  AT 
+sequence                                      
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+NE1452(iscR)Score=6.7,Po      1  1.35e-12          . ATAGTTGACTAATATTGTCGGGTAT           
+Tbd_1163(iscR)Score=6.5,      1  6.10e-12          . ATAGTTGACTGAAATGCTCGGGAAT           
+CV1095(iscR)Score=6.6,Po      1  9.61e-12          . ATACTTGACTAATTTAGTCGGATAT           
+Tbd_1162(cysE)Score=6.5,      1  9.61e-12          . ATAGTTGACTAAAATACTCGGAAAT           
+NMB1378(iscR)Score=6.3,P      1  2.64e-11          . ATACTTGACTGAAACACTCAGATAT           
+Nmul_A0694(iscR)Score=6.      1  4.54e-11          . ATAGTTGACTAAATCAATCAGGTAT           
+LHK_02866(iscR)Score=6.4      1  8.59e-11          . ATGGTTGACTAAATTAGTCGGGTTT           
+Tmz1t_2208(cysE)Score=6.      1  1.57e-10          . ATAGTCGATTAAAATTCTCGGGAAT           
+Mfla_0810(iscR)Score=6.3      1  1.76e-10          . ATAGTTGACTAAAGTATTCAGGTAT           
+Daro_1947(cysE)Score=6.1      1  3.12e-10          . ATAGCTGACAAATTCAGTCGAGTAT           
+Mmol_1671(iscR)Score=6.3      1  5.37e-10          . ATAGTTGACTAAAATTGTAAGGAAT           
+ebA6405(cysE)Score=5.8Po      1  5.37e-10          . AAACCCGACTAAACTAGTCGGGAAT           
+ebA6404(iscR)Score=5.8,P      1  5.97e-10          . ATAGTCGAGTGAAACGTTCGGGTAT           
+Nmul_A0674(iscR)Score=5.      1  7.36e-10          . ATACTTGATCAATGTTGTCGGGTAT           
+Daro_1948(iscR)Score=6.3      1  8.16e-10          . ATAGTTGACTAATTTTCTCTGGTTT           
+Nmul_A0694(iscR)Score=6.      1  1.00e-09          . ATAGTTGACTAAATCAGTCATCTAT           
+Tbd_1163(iscR)Score=6.2,      1  2.00e-09          . ATAGTTGACTAAATTGCTAAGGTAA           
+MB2181_02935(cysE)Score=      1  4.58e-09          . ATACTTGAGTTATTTACTCAGGATT           
+ebA6404(iscR)Score=5.6,P      1  8.43e-09          . GTAGTTGACCGATTTTGTCGGGTTA           
+Tbd_2499(ydhD)Score=5.1,      1  1.28e-08          . ATTCCCGAGTATTCCACTCAGGTAT           
+ebA1175(ydhD)Score=5.2,P      1  1.91e-08          . TTACCCGACTGAAACACTCAACTTT           
+Daro_1948(iscR)Score=5.5      1  4.41e-08          . ATAGTTGACCTTAATACTAGGTTAT           
+Tmz1t_2207(iscR)Score=5.      1  5.10e-08          . ATACTCGACAAAAATGATGGGATAT           
+MB2181_02930(iscR)Score=      1  5.48e-08          . ATACTTGATAGTTTTAGTCAAGTAT           
+Tmz1t_2207(iscR)Score=5.      1  7.27e-08          . TTAGTTGACCGTTTTTGTCGGGATC           
+Daro_1948(iscR)Score=5.2      1  1.33e-07          . ATACCTGAGCAAAATAGTTGACTAA           
+Mfla_0811(cysE)Score=4.6      1  7.50e-07          . ATTTCAGAGTAAAATAGTCGGATGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NE1452(iscR)Score=6.7,Po          1.4e-12  [+1]
+Tbd_1163(iscR)Score=6.5,          6.1e-12  [+1]
+CV1095(iscR)Score=6.6,Po          9.6e-12  [+1]
+Tbd_1162(cysE)Score=6.5,          9.6e-12  [+1]
+NMB1378(iscR)Score=6.3,P          2.6e-11  [+1]
+Nmul_A0694(iscR)Score=6.          4.5e-11  [+1]
+LHK_02866(iscR)Score=6.4          8.6e-11  [+1]
+Tmz1t_2208(cysE)Score=6.          1.6e-10  [+1]
+Mfla_0810(iscR)Score=6.3          1.8e-10  [+1]
+Daro_1947(cysE)Score=6.1          3.1e-10  [+1]
+Mmol_1671(iscR)Score=6.3          5.4e-10  [+1]
+ebA6405(cysE)Score=5.8Po          5.4e-10  [+1]
+ebA6404(iscR)Score=5.8,P            6e-10  [+1]
+Nmul_A0674(iscR)Score=5.          7.4e-10  [+1]
+Daro_1948(iscR)Score=6.3          8.2e-10  [+1]
+Nmul_A0694(iscR)Score=6.            1e-09  [+1]
+Tbd_1163(iscR)Score=6.2,            2e-09  [+1]
+MB2181_02935(cysE)Score=          4.6e-09  [+1]
+ebA6404(iscR)Score=5.6,P          8.4e-09  [+1]
+Tbd_2499(ydhD)Score=5.1,          1.3e-08  [+1]
+ebA1175(ydhD)Score=5.2,P          1.9e-08  [+1]
+Daro_1948(iscR)Score=5.5          4.4e-08  [+1]
+Tmz1t_2207(iscR)Score=5.          5.1e-08  [+1]
+MB2181_02930(iscR)Score=          5.5e-08  [+1]
+Tmz1t_2207(iscR)Score=5.          7.3e-08  [+1]
+Daro_1948(iscR)Score=5.2          1.3e-07  [+1]
+Mfla_0811(cysE)Score=4.6          7.5e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=25 seqs=27
+NE1452(iscR)Score=6.7,Po (    1) ATAGTTGACTAATATTGTCGGGTAT  1 
+Tbd_1163(iscR)Score=6.5, (    1) ATAGTTGACTGAAATGCTCGGGAAT  1 
+CV1095(iscR)Score=6.6,Po (    1) ATACTTGACTAATTTAGTCGGATAT  1 
+Tbd_1162(cysE)Score=6.5, (    1) ATAGTTGACTAAAATACTCGGAAAT  1 
+NMB1378(iscR)Score=6.3,P (    1) ATACTTGACTGAAACACTCAGATAT  1 
+Nmul_A0694(iscR)Score=6. (    1) ATAGTTGACTAAATCAATCAGGTAT  1 
+LHK_02866(iscR)Score=6.4 (    1) ATGGTTGACTAAATTAGTCGGGTTT  1 
+Tmz1t_2208(cysE)Score=6. (    1) ATAGTCGATTAAAATTCTCGGGAAT  1 
+Mfla_0810(iscR)Score=6.3 (    1) ATAGTTGACTAAAGTATTCAGGTAT  1 
+Daro_1947(cysE)Score=6.1 (    1) ATAGCTGACAAATTCAGTCGAGTAT  1 
+Mmol_1671(iscR)Score=6.3 (    1) ATAGTTGACTAAAATTGTAAGGAAT  1 
+ebA6405(cysE)Score=5.8Po (    1) AAACCCGACTAAACTAGTCGGGAAT  1 
+ebA6404(iscR)Score=5.8,P (    1) ATAGTCGAGTGAAACGTTCGGGTAT  1 
+Nmul_A0674(iscR)Score=5. (    1) ATACTTGATCAATGTTGTCGGGTAT  1 
+Daro_1948(iscR)Score=6.3 (    1) ATAGTTGACTAATTTTCTCTGGTTT  1 
+Nmul_A0694(iscR)Score=6. (    1) ATAGTTGACTAAATCAGTCATCTAT  1 
+Tbd_1163(iscR)Score=6.2, (    1) ATAGTTGACTAAATTGCTAAGGTAA  1 
+MB2181_02935(cysE)Score= (    1) ATACTTGAGTTATTTACTCAGGATT  1 
+ebA6404(iscR)Score=5.6,P (    1) GTAGTTGACCGATTTTGTCGGGTTA  1 
+Tbd_2499(ydhD)Score=5.1, (    1) ATTCCCGAGTATTCCACTCAGGTAT  1 
+ebA1175(ydhD)Score=5.2,P (    1) TTACCCGACTGAAACACTCAACTTT  1 
+Daro_1948(iscR)Score=5.5 (    1) ATAGTTGACCTTAATACTAGGTTAT  1 
+Tmz1t_2207(iscR)Score=5. (    1) ATACTCGACAAAAATGATGGGATAT  1 
+MB2181_02930(iscR)Score= (    1) ATACTTGATAGTTTTAGTCAAGTAT  1 
+Tmz1t_2207(iscR)Score=5. (    1) TTAGTTGACCGTTTTTGTCGGGATC  1 
+Daro_1948(iscR)Score=5.2 (    1) ATACCTGAGCAAAATAGTTGACTAA  1 
+Mfla_0811(cysE)Score=4.6 (    1) ATTTCAGAGTAAAATAGTCGGATGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 27 bayes= 1.51457 E= 1.2e-156 
+   145  -1140   -242   -220 
+  -313  -1140  -1140    150 
+   145  -1140   -242   -220 
+ -1140    145    158   -320 
+ -1140     71  -1140    119 
+  -313     71  -1140    112 
+ -1140  -1140    233  -1140 
+   162  -1140  -1140  -1140 
+ -1140    238    -10   -161 
+  -155     45  -1140    105 
+   103  -1140     38   -220 
+   139  -1140  -1140   -120 
+    95  -1140  -1140     12 
+    45    -87   -142     26 
+ -1140     94  -1140    112 
+    86  -1140    -42    -39 
+  -213    145    128   -220 
+ -1140  -1140  -1140    156 
+  -155    259   -242   -320 
+    19  -1140    158   -320 
+  -113  -1140    203   -320 
+   -81    -29    175   -320 
+   -33  -1140  -1140    112 
+   119  -1140   -242    -61 
+  -155   -187  -1140    132 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 27 E= 1.2e-156 
+ 0.888889  0.000000  0.037037  0.074074 
+ 0.037037  0.000000  0.000000  0.962963 
+ 0.888889  0.000000  0.037037  0.074074 
+ 0.000000  0.370370  0.592593  0.037037 
+ 0.000000  0.222222  0.000000  0.777778 
+ 0.037037  0.222222  0.000000  0.740741 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.703704  0.185185  0.111111 
+ 0.111111  0.185185  0.000000  0.703704 
+ 0.666667  0.000000  0.259259  0.074074 
+ 0.851852  0.000000  0.000000  0.148148 
+ 0.629630  0.000000  0.000000  0.370370 
+ 0.444444  0.074074  0.074074  0.407407 
+ 0.000000  0.259259  0.000000  0.740741 
+ 0.592593  0.000000  0.148148  0.259259 
+ 0.074074  0.370370  0.481481  0.074074 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.111111  0.814815  0.037037  0.037037 
+ 0.370370  0.000000  0.592593  0.037037 
+ 0.148148  0.000000  0.814815  0.037037 
+ 0.185185  0.111111  0.666667  0.037037 
+ 0.259259  0.000000  0.000000  0.740741 
+ 0.740741  0.000000  0.037037  0.222222 
+ 0.111111  0.037037  0.000000  0.851852 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+ATA[GC][TC][TC]GACT[AG]A[AT][AT][TC][AT][GC]TC[GA]GG[TA][AT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ebA6404(iscR)Score=5.6,P         8.43e-09  [+1(8.43e-09)]
+ebA6404(iscR)Score=5.8,P         5.97e-10  [+1(5.97e-10)]
+ebA1175(ydhD)Score=5.2,P         1.91e-08  [+1(1.91e-08)]
+ebA6405(cysE)Score=5.8Po         5.37e-10  [+1(5.37e-10)]
+Tmz1t_2207(iscR)Score=5.         5.10e-08  [+1(5.10e-08)]
+Tmz1t_2207(iscR)Score=5.         7.27e-08  [+1(7.27e-08)]
+Tmz1t_2208(cysE)Score=6.         1.57e-10  [+1(1.57e-10)]
+Daro_1948(iscR)Score=6.3         8.16e-10  [+1(8.16e-10)]
+Daro_1948(iscR)Score=5.5         4.41e-08  [+1(4.41e-08)]
+Daro_1948(iscR)Score=5.2         1.33e-07  [+1(1.33e-07)]
+Daro_1947(cysE)Score=6.1         3.12e-10  [+1(3.12e-10)]
+NE1452(iscR)Score=6.7,Po         1.35e-12  [+1(1.35e-12)]
+Nmul_A0694(iscR)Score=6.         1.00e-09  [+1(1.00e-09)]
+Nmul_A0674(iscR)Score=5.         7.36e-10  [+1(7.36e-10)]
+Nmul_A0694(iscR)Score=6.         4.54e-11  [+1(4.54e-11)]
+Tbd_2499(ydhD)Score=5.1,         1.28e-08  [+1(1.28e-08)]
+Tbd_1162(cysE)Score=6.5,         9.61e-12  [+1(9.61e-12)]
+Tbd_1163(iscR)Score=6.2,         2.00e-09  [+1(2.00e-09)]
+Tbd_1163(iscR)Score=6.5,         6.10e-12  [+1(6.10e-12)]
+CV1095(iscR)Score=6.6,Po         9.61e-12  [+1(9.61e-12)]
+NMB1378(iscR)Score=6.3,P         2.64e-11  [+1(2.64e-11)]
+LHK_02866(iscR)Score=6.4         8.59e-11  [+1(8.59e-11)]
+Mfla_0811(cysE)Score=4.6         7.50e-07  [+1(7.50e-07)]
+Mfla_0810(iscR)Score=6.3         1.76e-10  [+1(1.76e-10)]
+Mmol_1671(iscR)Score=6.3         5.37e-10  [+1(5.37e-10)]
+MB2181_02935(cysE)Score=         4.58e-09  [+1(4.58e-09)]
+MB2181_02930(iscR)Score=         5.48e-08  [+1(5.48e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

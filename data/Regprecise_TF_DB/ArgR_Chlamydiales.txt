@@ -1,0 +1,227 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/ArgR_Chlamydiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CAB530_p-47(glnP)        1.0000     18  CAB530_p-26(glnP)        1.0000     18  
+CF0464_p-26(glnP)        1.0000     18  CF0464_p-47(glnP)        1.0000     18  
+CP0575_p-49(glnP)        1.0000     18  CP0575_p-28(glnP)        1.0000     18  
+CCA00544_p-46(glnP)      1.0000     18  CCA00544_p-25(glnP)      1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/ArgR_Chlamydiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/ArgR_Chlamydiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             144    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    144    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.361 C 0.104 G 0.153 T 0.382 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.358 C 0.108 G 0.155 T 0.378 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TRMATRAWTATGCWT MEME-1	width =  15  sites =   8  llr = 110  E-value = 1.0e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :55a:6a6:a::13:
+pos.-specific     C  1:5:::::::1:9:1
+probability       G  :5:::4:::::a:3:
+matrix            T  9:::a::4a:9::59
+
+         bits    3.2                
+                 2.9                
+                 2.6            **  
+                 2.2            **  
+Relative         1.9            **  
+Entropy          1.6    *  *  * **  
+(19.8 bits)      1.3   *** * ** **  
+                 1.0 ******* ***** *
+                 0.6 ************* *
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           TAAATAAATATGCTT
+consensus             GC  G T     A 
+sequence                          G 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+CCA00544_p-46(glnP)           3  1.55e-08         AC TGCATGATTATGCTT T         
+CAB530_p-47(glnP)             3  1.55e-08         AT TGCATGATTATGCTT T         
+CF0464_p-47(glnP)             3  7.57e-08         GT TGCATGATTACGCTT T         
+CAB530_p-26(glnP)             3  2.86e-07         TG TAAATAAATATGCGT T         
+CCA00544_p-25(glnP)           3  6.62e-07         AG TAAATAAATATGCAT G         
+CP0575_p-28(glnP)             3  6.62e-07         TA TAAATAAATATGCAT A         
+CP0575_p-49(glnP)             3  8.65e-07         AT TGCATAAATATGATT T         
+CF0464_p-26(glnP)             3  8.65e-07         AT CAAATAAATATGCGC G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CCA00544_p-46(glnP)               1.6e-08  2_[+1]_1
+CAB530_p-47(glnP)                 1.6e-08  2_[+1]_1
+CF0464_p-47(glnP)                 7.6e-08  2_[+1]_1
+CAB530_p-26(glnP)                 2.9e-07  2_[+1]_1
+CCA00544_p-25(glnP)               6.6e-07  2_[+1]_1
+CP0575_p-28(glnP)                 6.6e-07  2_[+1]_1
+CP0575_p-49(glnP)                 8.7e-07  2_[+1]_1
+CF0464_p-26(glnP)                 8.7e-07  2_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TRMATRAWTATGCWT width=15 seqs=8
+CCA00544_p-46(glnP)      (    3) TGCATGATTATGCTT  1 
+CAB530_p-47(glnP)        (    3) TGCATGATTATGCTT  1 
+CF0464_p-47(glnP)        (    3) TGCATGATTACGCTT  1 
+CAB530_p-26(glnP)        (    3) TAAATAAATATGCGT  1 
+CCA00544_p-25(glnP)      (    3) TAAATAAATATGCAT  1 
+CP0575_p-28(glnP)        (    3) TAAATAAATATGCAT  1 
+CP0575_p-49(glnP)        (    3) TGCATAAATATGATT  1 
+CF0464_p-26(glnP)        (    3) CAAATAAATATGCGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 32 bayes= 2.5025 E= 1.0e-020 
+  -965     21   -965    121 
+    48   -965    168   -965 
+    48    221   -965   -965 
+   148   -965   -965   -965 
+  -965   -965   -965    140 
+    80   -965    127   -965 
+   148   -965   -965   -965 
+    80   -965   -965     -1 
+  -965   -965   -965    140 
+   148   -965   -965   -965 
+  -965     21   -965    121 
+  -965   -965    268   -965 
+  -152    302   -965   -965 
+   -52   -965     69     40 
+  -965     21   -965    121 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 8 E= 1.0e-020 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.625000  0.000000  0.375000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.125000  0.875000  0.000000  0.000000 
+ 0.250000  0.000000  0.250000  0.500000 
+ 0.000000  0.125000  0.000000  0.875000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRMATRAWTATGCWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AG][AC]AT[AG]A[AT]TATGC[TAG]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CAB530_p-47(glnP)                6.21e-08  2_[+1(1.55e-08)]_1
+CAB530_p-26(glnP)                1.14e-06  2_[+1(2.86e-07)]_1
+CF0464_p-26(glnP)                3.46e-06  2_[+1(8.65e-07)]_1
+CF0464_p-47(glnP)                3.03e-07  2_[+1(7.57e-08)]_1
+CP0575_p-49(glnP)                3.46e-06  2_[+1(8.65e-07)]_1
+CP0575_p-28(glnP)                2.65e-06  2_[+1(6.62e-07)]_1
+CCA00544_p-46(glnP)              6.21e-08  2_[+1(1.55e-08)]_1
+CCA00544_p-25(glnP)              2.65e-06  2_[+1(6.62e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

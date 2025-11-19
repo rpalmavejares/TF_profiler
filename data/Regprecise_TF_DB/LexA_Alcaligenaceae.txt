@@ -1,0 +1,287 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alcaligenaceae/LexA_Alcaligenaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BAV2027_p-39(imuA)       1.0000     20  BAV2545_p-27(uvrD)       1.0000     20  
+BAV2808_p-134(uvrA)      1.0000     20  BAV2309_p-172(recA)      1.0000     20  
+BAV1370_p-28(PF4055)     1.0000     20  BAV1503_p-62(lexA)       1.0000     20  
+BAV2034_p-44(dinB)       1.0000     20  BB3086_p-35(imuA)        1.0000     20  
+BB1810_p-41(uvrD)        1.0000     20  BB4032_p-150(uvrA)       1.0000     20  
+BB2076_p-135(recA)       1.0000     20  BB3446_p-25(PF4055)      1.0000     20  
+BB2271_p38(lexA)         1.0000     20  Bpet2611_p60(imuA)       1.0000     20  
+Bpet3400_p-6(uvrD)       1.0000     20  Bpet0873_p-180(uvrA)     1.0000     20  
+Bpet2056_p-136(recA)     1.0000     20  Bpet1911_p-25(PF4055)    1.0000     20  
+Bpet2782_p-39(lexA)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alcaligenaceae/LexA_Alcaligenaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alcaligenaceae/LexA_Alcaligenaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             380    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    380    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.282 C 0.153 G 0.153 T 0.413 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.281 C 0.154 G 0.154 T 0.411 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TACTGTATATTTATACAGTA MEME-1	width =  20  sites =  19  llr = 330  E-value = 1.0e-102
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :7::::6:613:7:8:a:17
+pos.-specific     C  2:a1:1::::22::2a::12
+probability       G  12::a21:1:::3::::a:1
+matrix            T  72:9:73a3968:a::::81
+
+         bits    2.7   * *          * *  
+                 2.4   * *          * *  
+                 2.2   * *          * *  
+                 1.9   * *          ***  
+Relative         1.6   * *          ***  
+Entropy          1.4   * *  *    ******  
+(25.0 bits)      1.1   ***  *    ******  
+                 0.8   ***  * * ******** 
+                 0.5 ********** *********
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TACTGTATATTTATACAGTA
+consensus                 GT T ACG       
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Bpet2611_p60(imuA)            1  6.96e-11          . TACTGTATATTTGTACAGTA           
+BAV2027_p-39(imuA)            1  6.96e-11          . TACTGTATATTCATACAGTA           
+BB3086_p-35(imuA)             1  4.45e-10          . TACTGTATATTTATACAGTG           
+BB4032_p-150(uvrA)            1  2.33e-09          . TACTGTTTATTTATACAGCA           
+Bpet2782_p-39(lexA)           1  3.07e-09          . TGCTGTATATCCATACAGTC           
+Bpet2056_p-136(recA)          1  3.36e-09          . TACTGGATTTTTATCCAGTA           
+BAV2808_p-134(uvrA)           1  3.75e-09          . TACTGTTTATCTATACAGCA           
+BAV1370_p-28(PF4055)          1  4.20e-09          . TACTGTGTTTTTGTACAGTA           
+BAV2309_p-172(recA)           1  4.20e-09          . TACTGTTTGTTTGTACAGTA           
+BAV2034_p-44(dinB)            1  4.82e-09          . TACCGTATATTTATCCAGTA           
+BB2271_p38(lexA)              1  5.89e-09          . CGCTGTATATCCATACAGTC           
+Bpet1911_p-25(PF4055)         1  6.42e-09          . TACTGGTTTTTTGTACAGTA           
+BB2076_p-135(recA)            1  6.42e-09          . CACTGGATTTTTATCCAGTA           
+BAV1503_p-62(lexA)            1  6.42e-09          . CGCTGTATATACATACAGTC           
+BB1810_p-41(uvrD)             1  1.32e-08          . TTCTGTATAAATATACAGTA           
+BB3446_p-25(PF4055)           1  1.96e-08          . TACTGCGTTTTTGTACAGTA           
+BAV2545_p-27(uvrD)            1  2.10e-08          . GTCTGTATATATATACAGTG           
+Bpet3400_p-6(uvrD)            1  6.68e-08          . GTCTGGATGAATATACAGTA           
+Bpet0873_p-180(uvrA)          1  9.23e-08          . TACTGTTTATATATACAGAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bpet2611_p60(imuA)                  7e-11  [+1]
+BAV2027_p-39(imuA)                  7e-11  [+1]
+BB3086_p-35(imuA)                 4.5e-10  [+1]
+BB4032_p-150(uvrA)                2.3e-09  [+1]
+Bpet2782_p-39(lexA)               3.1e-09  [+1]
+Bpet2056_p-136(recA)              3.4e-09  [+1]
+BAV2808_p-134(uvrA)               3.8e-09  [+1]
+BAV1370_p-28(PF4055)              4.2e-09  [+1]
+BAV2309_p-172(recA)               4.2e-09  [+1]
+BAV2034_p-44(dinB)                4.8e-09  [+1]
+BB2271_p38(lexA)                  5.9e-09  [+1]
+Bpet1911_p-25(PF4055)             6.4e-09  [+1]
+BB2076_p-135(recA)                6.4e-09  [+1]
+BAV1503_p-62(lexA)                6.4e-09  [+1]
+BB1810_p-41(uvrD)                 1.3e-08  [+1]
+BB3446_p-25(PF4055)                 2e-08  [+1]
+BAV2545_p-27(uvrD)                2.1e-08  [+1]
+Bpet3400_p-6(uvrD)                6.7e-08  [+1]
+Bpet0873_p-180(uvrA)              9.2e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TACTGTATATTTATACAGTA width=20 seqs=19
+Bpet2611_p60(imuA)       (    1) TACTGTATATTTGTACAGTA  1 
+BAV2027_p-39(imuA)       (    1) TACTGTATATTCATACAGTA  1 
+BB3086_p-35(imuA)        (    1) TACTGTATATTTATACAGTG  1 
+BB4032_p-150(uvrA)       (    1) TACTGTTTATTTATACAGCA  1 
+Bpet2782_p-39(lexA)      (    1) TGCTGTATATCCATACAGTC  1 
+Bpet2056_p-136(recA)     (    1) TACTGGATTTTTATCCAGTA  1 
+BAV2808_p-134(uvrA)      (    1) TACTGTTTATCTATACAGCA  1 
+BAV1370_p-28(PF4055)     (    1) TACTGTGTTTTTGTACAGTA  1 
+BAV2309_p-172(recA)      (    1) TACTGTTTGTTTGTACAGTA  1 
+BAV2034_p-44(dinB)       (    1) TACCGTATATTTATCCAGTA  1 
+BB2271_p38(lexA)         (    1) CGCTGTATATCCATACAGTC  1 
+Bpet1911_p-25(PF4055)    (    1) TACTGGTTTTTTGTACAGTA  1 
+BB2076_p-135(recA)       (    1) CACTGGATTTTTATCCAGTA  1 
+BAV1503_p-62(lexA)       (    1) CGCTGTATATACATACAGTC  1 
+BB1810_p-41(uvrD)        (    1) TTCTGTATAAATATACAGTA  1 
+BB3446_p-25(PF4055)      (    1) TACTGCGTTTTTGTACAGTA  1 
+BAV2545_p-27(uvrD)       (    1) GTCTGTATATATATACAGTG  1 
+Bpet3400_p-6(uvrD)       (    1) GTCTGGATGAATATACAGTA  1 
+Bpet0873_p-180(uvrA)     (    1) TACTGTTTATATATACAGAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 19 bayes= 1.33258 E= 1.0e-102 
+ -1089      4    -55     84 
+   128  -1089      4   -138 
+ -1089    270  -1089  -1089 
+ -1089   -154  -1089    120 
+ -1089  -1089    270  -1089 
+ -1089   -154     45     84 
+   117  -1089    -55    -64 
+ -1089  -1089  -1089    128 
+   117  -1089    -55    -64 
+  -142  -1089  -1089    112 
+   -10      4  -1089     49 
+ -1089     45  -1089     94 
+   139  -1089     78  -1089 
+ -1089  -1089  -1089    128 
+   158      4  -1089  -1089 
+ -1089    270  -1089  -1089 
+   183  -1089  -1089  -1089 
+ -1089  -1089    270  -1089 
+  -241    -55  -1089    103 
+   128      4    -55   -296 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 19 E= 1.0e-102 
+ 0.000000  0.157895  0.105263  0.736842 
+ 0.684211  0.000000  0.157895  0.157895 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.052632  0.000000  0.947368 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.052632  0.210526  0.736842 
+ 0.631579  0.000000  0.105263  0.263158 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.631579  0.000000  0.105263  0.263158 
+ 0.105263  0.000000  0.000000  0.894737 
+ 0.263158  0.157895  0.000000  0.578947 
+ 0.000000  0.210526  0.000000  0.789474 
+ 0.736842  0.000000  0.263158  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.842105  0.157895  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.052632  0.105263  0.000000  0.842105 
+ 0.684211  0.157895  0.105263  0.052632 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TACTGTATATTTATACAGTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TACTG[TG][AT]T[AT]T[TA][TC][AG]TACAGTA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BAV2027_p-39(imuA)               6.96e-11  [+1(6.96e-11)]
+BAV2545_p-27(uvrD)               2.10e-08  [+1(2.10e-08)]
+BAV2808_p-134(uvrA)              3.75e-09  [+1(3.75e-09)]
+BAV2309_p-172(recA)              4.20e-09  [+1(4.20e-09)]
+BAV1370_p-28(PF4055)             4.20e-09  [+1(4.20e-09)]
+BAV1503_p-62(lexA)               6.42e-09  [+1(6.42e-09)]
+BAV2034_p-44(dinB)               4.82e-09  [+1(4.82e-09)]
+BB3086_p-35(imuA)                4.45e-10  [+1(4.45e-10)]
+BB1810_p-41(uvrD)                1.32e-08  [+1(1.32e-08)]
+BB4032_p-150(uvrA)               2.33e-09  [+1(2.33e-09)]
+BB2076_p-135(recA)               6.42e-09  [+1(6.42e-09)]
+BB3446_p-25(PF4055)              1.96e-08  [+1(1.96e-08)]
+BB2271_p38(lexA)                 5.89e-09  [+1(5.89e-09)]
+Bpet2611_p60(imuA)               6.96e-11  [+1(6.96e-11)]
+Bpet3400_p-6(uvrD)               6.68e-08  [+1(6.68e-08)]
+Bpet0873_p-180(uvrA)             9.23e-08  [+1(9.23e-08)]
+Bpet2056_p-136(recA)             3.36e-09  [+1(3.36e-09)]
+Bpet1911_p-25(PF4055)            6.42e-09  [+1(6.42e-09)]
+Bpet2782_p-39(lexA)              3.07e-09  [+1(3.07e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

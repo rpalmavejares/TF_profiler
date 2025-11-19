@@ -1,0 +1,285 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LldR_Desulfuromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GSU1622_p-126(lldP)      1.0000     17  GSU1622_p-235(lldP)      1.0000     17  
+GSU1621_p-3(lldG)        1.0000     17  GSU1621_p106(lldG)       1.0000     17  
+Gura_0153_p-231(lldG)    1.0000     17  Gura_2200_p-195(lldP)    1.0000     17  
+Gura_2200_p-303(lldP)    1.0000     17  Gura_0154_p-233(lldP)    1.0000     17  
+Gura_0154_p-125(lldP)    1.0000     17  Gura_0153_p-339(lldG)    1.0000     17  
+GM21_1315_p-280(lldG)    1.0000     17  GM21_1315_p-172(lldG)    1.0000     17  
+GM21_1316_p-276(lldP)    1.0000     17  GM21_1316_p-168(lldP)    1.0000     17  
+Ppro_2540_p-114(glcD)    1.0000     17  Ppro_2670_p-158(lldR)    1.0000     17  
+Ppro_2735_p-65(lldP)     1.0000     17  Ppro_2735_p-322(lldP)    1.0000     17  
+Ppro_3136_p0(lldG)       1.0000     17  Ppro_3136_p-144(lldG)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LldR_Desulfuromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LldR_Desulfuromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             340    N=              20
+sample: seed=            0    hsfrac=          0
+        searchsize=    340    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.365 C 0.141 G 0.159 T 0.335 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.363 C 0.142 G 0.16 T 0.334 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAKTGGTAWTACMAHWT MEME-1	width =  17  sites =  20  llr = 238  E-value = 4.3e-071
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9721:1:7719:49432
+pos.-specific     C  ::::::13:::a7:33:
+probability       G  :14:8a:::31:::2:1
+matrix            T  13593:a147:1:2258
+
+         bits    2.8                  
+                 2.5            *     
+                 2.2      *     *     
+                 2.0      *     *     
+Relative         1.7     **     *     
+Entropy          1.4     ***    **    
+(17.2 bits)      1.1 *  ****   ***    
+                 0.8 *  ***** *****   
+                 0.6 * ************  *
+                 0.3 ************** **
+                 0.0 -----------------
+
+Multilevel           AATTGGTAATACCAATT
+consensus             TG T  CTG  A CAA
+sequence                           TC 
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Ppro_3136_p-144(lldG)         1  2.69e-08          . AATTGGTAATACCAGAT           
+Ppro_3136_p0(lldG)            1  2.69e-08          . ATGTGGTCATACCATCT           
+Gura_0154_p-125(lldP)         1  3.22e-08          . AATTGGTAATACAACTT           
+GSU1622_p-235(lldP)           1  4.35e-08          . AAGTTGTAATACCAACT           
+Gura_0153_p-339(lldG)         1  1.24e-07          . AAGTTGTATTACCAATT           
+Ppro_2540_p-114(glcD)         1  2.61e-07          . AATTGGTAATACAACTA           
+Gura_2200_p-195(lldP)         1  2.61e-07          . AAATGGTAATACCAACA           
+GSU1621_p106(lldG)            1  2.94e-07          . AGTTGGTATTACAACTT           
+Ppro_2670_p-158(lldR)         1  3.29e-07          . ATGTGGTATTACAAGTT           
+Ppro_2735_p-65(lldP)          1  5.69e-07          . AATTGGTAATGCAAGTT           
+GSU1621_p-3(lldG)             1  8.56e-07          . TAGTTGTCATACCAACT           
+Ppro_2735_p-322(lldP)         1  1.27e-06          . AAGTGGTAAGACCTTCG           
+GSU1622_p-126(lldP)           1  1.82e-06          . AGTTGGTATGACAACTA           
+Gura_2200_p-303(lldP)         1  1.99e-06          . AAATTGTAATACCATAT           
+GM21_1315_p-280(lldG)         1  3.03e-06          . TTTTGGTCAGGCCAATT           
+GM21_1316_p-168(lldP)         1  3.85e-06          . AATTGGCCTGACCAAAA           
+GM21_1315_p-172(lldG)         1  9.93e-06          . ATTTGGTCATATCTATT           
+Gura_0153_p-231(lldG)         1  1.29e-05          . ATGTGGTTATACATTTT           
+GM21_1316_p-276(lldP)         1  2.24e-05          . AATAGATATGACCAAAT           
+Gura_0154_p-233(lldP)         1  4.58e-05          . AAAATGTATAACCACAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ppro_3136_p-144(lldG)             2.7e-08  [+1]
+Ppro_3136_p0(lldG)                2.7e-08  [+1]
+Gura_0154_p-125(lldP)             3.2e-08  [+1]
+GSU1622_p-235(lldP)               4.4e-08  [+1]
+Gura_0153_p-339(lldG)             1.2e-07  [+1]
+Ppro_2540_p-114(glcD)             2.6e-07  [+1]
+Gura_2200_p-195(lldP)             2.6e-07  [+1]
+GSU1621_p106(lldG)                2.9e-07  [+1]
+Ppro_2670_p-158(lldR)             3.3e-07  [+1]
+Ppro_2735_p-65(lldP)              5.7e-07  [+1]
+GSU1621_p-3(lldG)                 8.6e-07  [+1]
+Ppro_2735_p-322(lldP)             1.3e-06  [+1]
+GSU1622_p-126(lldP)               1.8e-06  [+1]
+Gura_2200_p-303(lldP)               2e-06  [+1]
+GM21_1315_p-280(lldG)               3e-06  [+1]
+GM21_1316_p-168(lldP)             3.8e-06  [+1]
+GM21_1315_p-172(lldG)             9.9e-06  [+1]
+Gura_0153_p-231(lldG)             1.3e-05  [+1]
+GM21_1316_p-276(lldP)             2.2e-05  [+1]
+Gura_0154_p-233(lldP)             4.6e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAKTGGTAWTACMAHWT width=17 seqs=20
+Ppro_3136_p-144(lldG)    (    1) AATTGGTAATACCAGAT  1 
+Ppro_3136_p0(lldG)       (    1) ATGTGGTCATACCATCT  1 
+Gura_0154_p-125(lldP)    (    1) AATTGGTAATACAACTT  1 
+GSU1622_p-235(lldP)      (    1) AAGTTGTAATACCAACT  1 
+Gura_0153_p-339(lldG)    (    1) AAGTTGTATTACCAATT  1 
+Ppro_2540_p-114(glcD)    (    1) AATTGGTAATACAACTA  1 
+Gura_2200_p-195(lldP)    (    1) AAATGGTAATACCAACA  1 
+GSU1621_p106(lldG)       (    1) AGTTGGTATTACAACTT  1 
+Ppro_2670_p-158(lldR)    (    1) ATGTGGTATTACAAGTT  1 
+Ppro_2735_p-65(lldP)     (    1) AATTGGTAATGCAAGTT  1 
+GSU1621_p-3(lldG)        (    1) TAGTTGTCATACCAACT  1 
+Ppro_2735_p-322(lldP)    (    1) AAGTGGTAAGACCTTCG  1 
+GSU1622_p-126(lldP)      (    1) AGTTGGTATGACAACTA  1 
+Gura_2200_p-303(lldP)    (    1) AAATTGTAATACCATAT  1 
+GM21_1315_p-280(lldG)    (    1) TTTTGGTCAGGCCAATT  1 
+GM21_1316_p-168(lldP)    (    1) AATTGGCCTGACCAAAA  1 
+GM21_1315_p-172(lldG)    (    1) ATTTGGTCATATCTATT  1 
+Gura_0153_p-231(lldG)    (    1) ATGTGGTTATACATTTT  1 
+GM21_1316_p-276(lldP)    (    1) AATAGATATGACCAAAT  1 
+Gura_0154_p-233(lldP)    (    1) AAAATGTATAACCACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 20 bayes= 1.36257 E= 4.3e-071 
+   131  -1097  -1097   -174 
+    84  -1097    -68    -42 
+  -128  -1097    113     58 
+  -186  -1097  -1097    143 
+ -1097  -1097    223    -42 
+  -286  -1097    257  -1097 
+ -1097   -151  -1097    151 
+    95     81  -1097   -274 
+    84  -1097  -1097      7 
+  -286  -1097     64    107 
+   131  -1097    -68  -1097 
+ -1097    274  -1097   -274 
+    -5    219  -1097  -1097 
+   123  -1097  -1097   -116 
+    14     81     -9    -74 
+   -54     81  -1097     58 
+   -86  -1097   -168    117 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 20 E= 4.3e-071 
+ 0.900000  0.000000  0.000000  0.100000 
+ 0.650000  0.000000  0.100000  0.250000 
+ 0.150000  0.000000  0.350000  0.500000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 0.000000  0.000000  0.750000  0.250000 
+ 0.050000  0.000000  0.950000  0.000000 
+ 0.000000  0.050000  0.000000  0.950000 
+ 0.700000  0.250000  0.000000  0.050000 
+ 0.650000  0.000000  0.000000  0.350000 
+ 0.050000  0.000000  0.250000  0.700000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  0.950000  0.000000  0.050000 
+ 0.350000  0.650000  0.000000  0.000000 
+ 0.850000  0.000000  0.000000  0.150000 
+ 0.400000  0.250000  0.150000  0.200000 
+ 0.250000  0.250000  0.000000  0.500000 
+ 0.200000  0.000000  0.050000  0.750000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKTGGTAWTACMAHWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT][TG]T[GT]GT[AC][AT][TG]AC[CA]A[ACT][TAC][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GSU1622_p-126(lldP)              1.82e-06  [+1(1.82e-06)]
+GSU1622_p-235(lldP)              4.35e-08  [+1(4.35e-08)]
+GSU1621_p-3(lldG)                8.56e-07  [+1(8.56e-07)]
+GSU1621_p106(lldG)               2.94e-07  [+1(2.94e-07)]
+Gura_0153_p-231(lldG)            1.29e-05  [+1(1.29e-05)]
+Gura_2200_p-195(lldP)            2.61e-07  [+1(2.61e-07)]
+Gura_2200_p-303(lldP)            1.99e-06  [+1(1.99e-06)]
+Gura_0154_p-233(lldP)            4.58e-05  [+1(4.58e-05)]
+Gura_0154_p-125(lldP)            3.22e-08  [+1(3.22e-08)]
+Gura_0153_p-339(lldG)            1.24e-07  [+1(1.24e-07)]
+GM21_1315_p-280(lldG)            3.03e-06  [+1(3.03e-06)]
+GM21_1315_p-172(lldG)            9.93e-06  [+1(9.93e-06)]
+GM21_1316_p-276(lldP)            2.24e-05  [+1(2.24e-05)]
+GM21_1316_p-168(lldP)            3.85e-06  [+1(3.85e-06)]
+Ppro_2540_p-114(glcD)            2.61e-07  [+1(2.61e-07)]
+Ppro_2670_p-158(lldR)            3.29e-07  [+1(3.29e-07)]
+Ppro_2735_p-65(lldP)             5.69e-07  [+1(5.69e-07)]
+Ppro_2735_p-322(lldP)            1.27e-06  [+1(1.27e-06)]
+Ppro_3136_p0(lldG)               2.69e-08  [+1(2.69e-08)]
+Ppro_3136_p-144(lldG)            2.69e-08  [+1(2.69e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

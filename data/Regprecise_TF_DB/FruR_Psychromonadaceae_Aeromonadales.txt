@@ -1,0 +1,292 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FruR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_3550_p-109(fruR)    1.0000     16  Ping_3550_p-131(fruR)    1.0000     16  
+Ping_3551_p-222(fruB)    1.0000     16  Ping_3551_p-200(fruB)    1.0000     16  
+PCNPT3_02230_p-187(fruR) 1.0000     16  PCNPT3_02235_p-43(fruB)  1.0000     16  
+PCNPT3_02235_p-107(fruB) 1.0000     16  PCNPT3_02230_p-123(fruR) 1.0000     16  
+PE36_02704_p-181(fruR)   1.0000     16  PE36_02704_p-112(fruR)   1.0000     16  
+PE36_02699_p-131(fruB)   1.0000     16  PE36_02699_p-200(fruB)   1.0000     16  
+AHA_2349_p-156(fruR)     1.0000     16  AHA_2349_p-131(fruR)     1.0000     16  
+AHA_2348_p-193(fruB)     1.0000     16  AHA_2348_p-168(fruB)     1.0000     16  
+ASA_1939_p-170(fruB)     1.0000     16  ASA_1939_p-195(fruB)     1.0000     16  
+ASA_1938_p-128(fruR)     1.0000     16  ASA_1938_p-153(fruR)     1.0000     16  
+Tola_0289_p-104(fruR)    1.0000     16  Tola_0288_p-168(fruB)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FruR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/FruR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             352    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    352    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.261 C 0.239 G 0.239 T 0.261 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.261 C 0.239 G 0.239 T 0.261 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCTGAAWCGWTTCAGC MEME-1	width =  16  sites =  22  llr = 387  E-value = 2.2e-135
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:::aa5::4:::a::
+pos.-specific     C  :9::::191:::a:17
+probability       G  71:a:::191::::9:
+matrix            T  ::a:::4::5aa:::3
+
+         bits    2.1    *        *   
+                 1.9   ** *    * **  
+                 1.7  ***** ** ***** 
+                 1.4  ***** ** ***** 
+Relative         1.2 ****** ** ******
+Entropy          1.0 ****** ** ******
+(25.3 bits)      0.8 ****** ** ******
+                 0.6 ****************
+                 0.4 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           GCTGAAACGTTTCAGC
+consensus            A     T  A     T
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+PE36_02699_p-131(fruB)        1  6.88e-10          . GCTGAAACGATTCAGC           
+PE36_02704_p-181(fruR)        1  6.88e-10          . GCTGAATCGTTTCAGC           
+ASA_1938_p-128(fruR)          1  2.42e-09          . ACTGAATCGTTTCAGC           
+ASA_1939_p-195(fruB)          1  2.42e-09          . GCTGAAACGATTCAGT           
+AHA_2348_p-193(fruB)          1  2.42e-09          . GCTGAAACGATTCAGT           
+AHA_2349_p-131(fruR)          1  2.42e-09          . ACTGAATCGTTTCAGC           
+PCNPT3_02235_p-43(fruB)       1  2.42e-09          . GCTGAAACGATTCAGT           
+PCNPT3_02230_p-187(fruR)      1  2.42e-09          . ACTGAATCGTTTCAGC           
+Ping_3551_p-222(fruB)         1  2.84e-09          . GCTGAAACGGTTCAGC           
+Ping_3550_p-109(fruR)         1  2.84e-09          . GCTGAACCGTTTCAGC           
+PE36_02699_p-200(fruB)        1  4.95e-09          . GCTGAAAGGTTTCAGC           
+PE36_02704_p-112(fruR)        1  4.95e-09          . GCTGAAACCTTTCAGC           
+PCNPT3_02230_p-123(fruR)      1  4.95e-09          . GCTGAAACCTTTCAGC           
+PCNPT3_02235_p-107(fruB)      1  4.95e-09          . GCTGAAAGGTTTCAGC           
+Ping_3551_p-200(fruB)         1  1.08e-08          . ACTGAATCGGTTCAGC           
+Ping_3550_p-131(fruR)         1  1.08e-08          . GCTGAACCGATTCAGT           
+Tola_0288_p-168(fruB)         1  1.39e-08          . GCTGAAACGATACAGC           
+Tola_0289_p-104(fruR)         1  1.39e-08          . GCTGTATCGTTTCAGC           
+ASA_1938_p-153(fruR)          1  1.84e-08          . GCTGAATCGTTTCACT           
+ASA_1939_p-170(fruB)          1  1.84e-08          . AGTGAAACGATTCAGC           
+AHA_2348_p-168(fruB)          1  1.84e-08          . AGTGAAACGATTCAGC           
+AHA_2349_p-156(fruR)          1  1.84e-08          . GCTGAATCGTTTCACT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PE36_02699_p-131(fruB)            6.9e-10  [+1]
+PE36_02704_p-181(fruR)            6.9e-10  [+1]
+ASA_1938_p-128(fruR)              2.4e-09  [+1]
+ASA_1939_p-195(fruB)              2.4e-09  [+1]
+AHA_2348_p-193(fruB)              2.4e-09  [+1]
+AHA_2349_p-131(fruR)              2.4e-09  [+1]
+PCNPT3_02235_p-43(fruB)           2.4e-09  [+1]
+PCNPT3_02230_p-187(fruR)          2.4e-09  [+1]
+Ping_3551_p-222(fruB)             2.8e-09  [+1]
+Ping_3550_p-109(fruR)             2.8e-09  [+1]
+PE36_02699_p-200(fruB)            4.9e-09  [+1]
+PE36_02704_p-112(fruR)            4.9e-09  [+1]
+PCNPT3_02230_p-123(fruR)          4.9e-09  [+1]
+PCNPT3_02235_p-107(fruB)          4.9e-09  [+1]
+Ping_3551_p-200(fruB)             1.1e-08  [+1]
+Ping_3550_p-131(fruR)             1.1e-08  [+1]
+Tola_0288_p-168(fruB)             1.4e-08  [+1]
+Tola_0289_p-104(fruR)             1.4e-08  [+1]
+ASA_1938_p-153(fruR)              1.8e-08  [+1]
+ASA_1939_p-170(fruB)              1.8e-08  [+1]
+AHA_2348_p-168(fruB)              1.8e-08  [+1]
+AHA_2349_p-156(fruR)              1.8e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCTGAAWCGWTTCAGC width=16 seqs=22
+PE36_02699_p-131(fruB)   (    1) GCTGAAACGATTCAGC  1 
+PE36_02704_p-181(fruR)   (    1) GCTGAATCGTTTCAGC  1 
+ASA_1938_p-128(fruR)     (    1) ACTGAATCGTTTCAGC  1 
+ASA_1939_p-195(fruB)     (    1) GCTGAAACGATTCAGT  1 
+AHA_2348_p-193(fruB)     (    1) GCTGAAACGATTCAGT  1 
+AHA_2349_p-131(fruR)     (    1) ACTGAATCGTTTCAGC  1 
+PCNPT3_02235_p-43(fruB)  (    1) GCTGAAACGATTCAGT  1 
+PCNPT3_02230_p-187(fruR) (    1) ACTGAATCGTTTCAGC  1 
+Ping_3551_p-222(fruB)    (    1) GCTGAAACGGTTCAGC  1 
+Ping_3550_p-109(fruR)    (    1) GCTGAACCGTTTCAGC  1 
+PE36_02699_p-200(fruB)   (    1) GCTGAAAGGTTTCAGC  1 
+PE36_02704_p-112(fruR)   (    1) GCTGAAACCTTTCAGC  1 
+PCNPT3_02230_p-123(fruR) (    1) GCTGAAACCTTTCAGC  1 
+PCNPT3_02235_p-107(fruB) (    1) GCTGAAAGGTTTCAGC  1 
+Ping_3551_p-200(fruB)    (    1) ACTGAATCGGTTCAGC  1 
+Ping_3550_p-131(fruR)    (    1) GCTGAACCGATTCAGT  1 
+Tola_0288_p-168(fruB)    (    1) GCTGAAACGATACAGC  1 
+Tola_0289_p-104(fruR)    (    1) GCTGTATCGTTTCAGC  1 
+ASA_1938_p-153(fruR)     (    1) GCTGAATCGTTTCACT  1 
+ASA_1939_p-170(fruB)     (    1) AGTGAAACGATTCAGC  1 
+AHA_2348_p-168(fruB)     (    1) AGTGAAACGATTCAGC  1 
+AHA_2349_p-156(fruR)     (    1) GCTGAATCGTTTCACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 22 bayes= 1.41504 E= 2.2e-135 
+     6  -1110    161  -1110 
+ -1110    193   -139  -1110 
+ -1110  -1110  -1110    194 
+ -1110  -1110    207  -1110 
+   187  -1110  -1110   -252 
+   194  -1110  -1110  -1110 
+   106   -139  -1110     48 
+ -1110    193   -139  -1110 
+ -1110   -139    193  -1110 
+    48  -1110   -139    106 
+ -1110  -1110  -1110    194 
+  -252  -1110  -1110    187 
+ -1110    207  -1110  -1110 
+   194  -1110  -1110  -1110 
+ -1110   -139    193  -1110 
+ -1110    161  -1110      6 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 22 E= 2.2e-135 
+ 0.272727  0.000000  0.727273  0.000000 
+ 0.000000  0.909091  0.090909  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.954545  0.000000  0.000000  0.045455 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.545455  0.090909  0.000000  0.363636 
+ 0.000000  0.909091  0.090909  0.000000 
+ 0.000000  0.090909  0.909091  0.000000 
+ 0.363636  0.000000  0.090909  0.545455 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.045455  0.000000  0.000000  0.954545 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.090909  0.909091  0.000000 
+ 0.000000  0.727273  0.000000  0.272727 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGAAWCGWTTCAGC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]CTGAA[AT]CG[TA]TTCAG[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_3550_p-109(fruR)            2.84e-09  [+1(2.84e-09)]
+Ping_3550_p-131(fruR)            1.08e-08  [+1(1.08e-08)]
+Ping_3551_p-222(fruB)            2.84e-09  [+1(2.84e-09)]
+Ping_3551_p-200(fruB)            1.08e-08  [+1(1.08e-08)]
+PCNPT3_02230_p-187(fruR)         2.42e-09  [+1(2.42e-09)]
+PCNPT3_02235_p-43(fruB)          2.42e-09  [+1(2.42e-09)]
+PCNPT3_02235_p-107(fruB)         4.95e-09  [+1(4.95e-09)]
+PCNPT3_02230_p-123(fruR)         4.95e-09  [+1(4.95e-09)]
+PE36_02704_p-181(fruR)           6.88e-10  [+1(6.88e-10)]
+PE36_02704_p-112(fruR)           4.95e-09  [+1(4.95e-09)]
+PE36_02699_p-131(fruB)           6.88e-10  [+1(6.88e-10)]
+PE36_02699_p-200(fruB)           4.95e-09  [+1(4.95e-09)]
+AHA_2349_p-156(fruR)             1.84e-08  [+1(1.84e-08)]
+AHA_2349_p-131(fruR)             2.42e-09  [+1(2.42e-09)]
+AHA_2348_p-193(fruB)             2.42e-09  [+1(2.42e-09)]
+AHA_2348_p-168(fruB)             1.84e-08  [+1(1.84e-08)]
+ASA_1939_p-170(fruB)             1.84e-08  [+1(1.84e-08)]
+ASA_1939_p-195(fruB)             2.42e-09  [+1(2.42e-09)]
+ASA_1938_p-128(fruR)             2.42e-09  [+1(2.42e-09)]
+ASA_1938_p-153(fruR)             1.84e-08  [+1(1.84e-08)]
+Tola_0289_p-104(fruR)            1.39e-08  [+1(1.39e-08)]
+Tola_0288_p-168(fruB)            1.39e-08  [+1(1.39e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

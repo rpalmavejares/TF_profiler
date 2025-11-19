@@ -1,0 +1,315 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/ArgR_Lactobacillaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LVIS_1200_p-161(artPQ)   1.0000     18  LVIS_1200_p-96(artPQ)    1.0000     18  
+LSEI_1344_p-56(artPQ)    1.0000     18  LSEI_2810_p-46(artP2)    1.0000     18  
+LAF_0624_p-63(artM)      1.0000     18  LAF_1625_p-136(argG)     1.0000     18  
+LAF_0726_p-220(argC)     1.0000     18  LAF_0727_p-120(carA)     1.0000     18  
+lp_0527_p-169(carA)      1.0000     18  lp_0775_p-139(argG)      1.0000     18  
+lp_0528_p-117(argC)      1.0000     18  lp_2111_p-17(artPQ)      1.0000     18  
+LAR_0081_p-136(carA)     1.0000     18  LAR_0702_p-164(argG)     1.0000     18  
+LAR_0698_p-253(artPQ)    1.0000     18  LAR_0081_p-261(carA)     1.0000     18  
+LGG_01356_p-56(artPQ)    1.0000     18  LGG_02816_p-46(artP2)    1.0000     18  
+LSA1057_p-55(artPQ)      1.0000     18  LSL_0306_p-47(argG)      1.0000     18  
+LSL_1541_p-162(artPQ)    1.0000     18  LSL_1541_p-82(artPQ)     1.0000     18  
+LEUM_0629_p-59(artM)     1.0000     18  LEUM_0060_p-71(argC)     1.0000     18  
+LEUM_0655_p-62(artP2)    1.0000     18  LEUM_1459_p-73(argG)     1.0000     18  
+PEPE_1137_p-94(artPQ)    1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/ArgR_Lactobacillaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Lactobacillaceae/ArgR_Lactobacillaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             486    N=              27
+sample: seed=            0    hsfrac=          0
+        searchsize=    486    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.434 C 0.0844 G 0.0782 T 0.403 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.433 C 0.0857 G 0.0796 T 0.402 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGCATAAAWATTCAWT MEME-1	width =  16  sites =  27  llr = 249  E-value = 5.0e-064
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :129:a7839211763
+pos.-specific     C  ::6::::::::16:::
+probability       G  :9:1::::::::11::
+matrix            T  a:2:a:3271882247
+
+         bits    3.7                 
+                 3.3                 
+                 2.9                 
+                 2.6  *              
+Relative         2.2  *              
+Entropy          1.8  *              
+(13.3 bits)      1.5 **          *   
+                 1.1 ******      *   
+                 0.7 ******   *  *   
+                 0.4 ************** *
+                 0.0 ----------------
+
+Multilevel           TGCATAAATATTCAAT
+consensus              A   TTA A   TA
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+LAR_0081_p-261(carA)          3  5.76e-08         TT TGCATAAAAATTCATT           
+LGG_01356_p-56(artPQ)         3  3.10e-07         AT TGCATAAAAATTGAAT           
+lp_0775_p-139(argG)           3  3.10e-07         TC TGCATAAAAATTCTAT           
+lp_2111_p-17(artPQ)           3  4.65e-07         CT TGCATAAATAATCATA           
+LAF_0624_p-63(artM)           3  8.45e-07         CT TGCATAATAATTCGTT           
+LSL_1541_p-82(artPQ)          3  1.10e-06         CT TGCATAAATAAACAAT           
+LAR_0698_p-253(artPQ)         3  1.29e-06         AT TGCATAAATAAACATT           
+LSA1057_p-55(artPQ)           3  2.95e-06         AT TGCATAAATATTTATA           
+LEUM_1459_p-73(argG)          3  4.13e-06         AT TGCATATTTAATCAAA           
+LGG_02816_p-46(artP2)         3  4.13e-06         AA TGAGTATATATTCAAT           
+LSEI_2810_p-46(artP2)         3  4.13e-06         AA TGAGTATATATTCAAT           
+LAR_0081_p-136(carA)          3  5.27e-06         CA TACATATATATTCAAT           
+LEUM_0655_p-62(artP2)         3  5.90e-06         AT TGTATAAAAATTCAAA           
+LEUM_0060_p-71(argC)          3  6.54e-06         TT TGCATATTTATTGTAT           
+PEPE_1137_p-94(artPQ)         3  7.33e-06         AA TGTATAAAAATTCATA           
+LSEI_1344_p-56(artPQ)         3  1.54e-05         AT TGCATAAAAATCAATT           
+lp_0527_p-169(carA)           3  3.03e-05         AT TGAAAAAATATTCATT           
+LAF_0726_p-220(argC)          3  4.08e-05         TG TGTATAAATATTTAGT           
+lp_0528_p-117(argC)           3  4.86e-05         AA TGAATATTTTTTCAAT           
+LAF_0727_p-120(carA)          3  5.30e-05         CG TTCATAAATAACCAAT           
+LEUM_0629_p-59(artM)          3  9.68e-05         GA TGCATATAAATTATAA           
+LVIS_1200_p-96(artPQ)         3  1.24e-04         AG TGTATAAAAATAGATA           
+LSL_0306_p-47(argG)           3  2.16e-04         AA TGAATAGATTATGAAT           
+LAF_1625_p-136(argG)          3  2.16e-04         CT TGCATTTTTATTTGAT           
+LVIS_1200_p-161(artPQ)        3  2.52e-04         AA TGTATAAATTTTTATA           
+LAR_0702_p-164(argG)          3  2.91e-04         AT TAAATAATTATTCTAT           
+LSL_1541_p-162(artPQ)         3  5.13e-04         GT TACATAAATATATTTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LAR_0081_p-261(carA)              5.8e-08  2_[+1]
+LGG_01356_p-56(artPQ)             3.1e-07  2_[+1]
+lp_0775_p-139(argG)               3.1e-07  2_[+1]
+lp_2111_p-17(artPQ)               4.7e-07  2_[+1]
+LAF_0624_p-63(artM)               8.5e-07  2_[+1]
+LSL_1541_p-82(artPQ)              1.1e-06  2_[+1]
+LAR_0698_p-253(artPQ)             1.3e-06  2_[+1]
+LSA1057_p-55(artPQ)                 3e-06  2_[+1]
+LEUM_1459_p-73(argG)              4.1e-06  2_[+1]
+LGG_02816_p-46(artP2)             4.1e-06  2_[+1]
+LSEI_2810_p-46(artP2)             4.1e-06  2_[+1]
+LAR_0081_p-136(carA)              5.3e-06  2_[+1]
+LEUM_0655_p-62(artP2)             5.9e-06  2_[+1]
+LEUM_0060_p-71(argC)              6.5e-06  2_[+1]
+PEPE_1137_p-94(artPQ)             7.3e-06  2_[+1]
+LSEI_1344_p-56(artPQ)             1.5e-05  2_[+1]
+lp_0527_p-169(carA)                 3e-05  2_[+1]
+LAF_0726_p-220(argC)              4.1e-05  2_[+1]
+lp_0528_p-117(argC)               4.9e-05  2_[+1]
+LAF_0727_p-120(carA)              5.3e-05  2_[+1]
+LEUM_0629_p-59(artM)              9.7e-05  2_[+1]
+LVIS_1200_p-96(artPQ)             0.00012  2_[+1]
+LSL_0306_p-47(argG)               0.00022  2_[+1]
+LAF_1625_p-136(argG)              0.00022  2_[+1]
+LVIS_1200_p-161(artPQ)            0.00025  2_[+1]
+LAR_0702_p-164(argG)              0.00029  2_[+1]
+LSL_1541_p-162(artPQ)             0.00051  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGCATAAAWATTCAWT width=16 seqs=27
+LAR_0081_p-261(carA)     (    3) TGCATAAAAATTCATT  1 
+LGG_01356_p-56(artPQ)    (    3) TGCATAAAAATTGAAT  1 
+lp_0775_p-139(argG)      (    3) TGCATAAAAATTCTAT  1 
+lp_2111_p-17(artPQ)      (    3) TGCATAAATAATCATA  1 
+LAF_0624_p-63(artM)      (    3) TGCATAATAATTCGTT  1 
+LSL_1541_p-82(artPQ)     (    3) TGCATAAATAAACAAT  1 
+LAR_0698_p-253(artPQ)    (    3) TGCATAAATAAACATT  1 
+LSA1057_p-55(artPQ)      (    3) TGCATAAATATTTATA  1 
+LEUM_1459_p-73(argG)     (    3) TGCATATTTAATCAAA  1 
+LGG_02816_p-46(artP2)    (    3) TGAGTATATATTCAAT  1 
+LSEI_2810_p-46(artP2)    (    3) TGAGTATATATTCAAT  1 
+LAR_0081_p-136(carA)     (    3) TACATATATATTCAAT  1 
+LEUM_0655_p-62(artP2)    (    3) TGTATAAAAATTCAAA  1 
+LEUM_0060_p-71(argC)     (    3) TGCATATTTATTGTAT  1 
+PEPE_1137_p-94(artPQ)    (    3) TGTATAAAAATTCATA  1 
+LSEI_1344_p-56(artPQ)    (    3) TGCATAAAAATCAATT  1 
+lp_0527_p-169(carA)      (    3) TGAAAAAATATTCATT  1 
+LAF_0726_p-220(argC)     (    3) TGTATAAATATTTAGT  1 
+lp_0528_p-117(argC)      (    3) TGAATATTTTTTCAAT  1 
+LAF_0727_p-120(carA)     (    3) TTCATAAATAACCAAT  1 
+LEUM_0629_p-59(artM)     (    3) TGCATATAAATTATAA  1 
+LVIS_1200_p-96(artPQ)    (    3) TGTATAAAAATAGATA  1 
+LSL_0306_p-47(argG)      (    3) TGAATAGATTATGAAT  1 
+LAF_1625_p-136(argG)     (    3) TGCATTTTTATTTGAT  1 
+LVIS_1200_p-161(artPQ)   (    3) TGTATAAATTTTTATA  1 
+LAR_0702_p-164(argG)     (    3) TAAATAATTATTCTAT  1 
+LSL_1541_p-162(artPQ)    (    3) TACATAAATATATTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 81 bayes= 3.4021 E= 5.0e-064 
+ -1140  -1140  -1140    131 
+  -196  -1140    342   -344 
+   -96    279  -1140   -112 
+   110  -1140    -10  -1140 
+  -354  -1140  -1140    126 
+   115  -1140  -1140   -344 
+    62  -1140   -110    -44 
+    85  -1140  -1140    -85 
+   -38  -1140  -1140     73 
+   104  -1140  -1140   -185 
+   -96  -1140  -1140     95 
+  -155    -21  -1140     95 
+  -254    279     90   -112 
+    78  -1140    -10   -112 
+    36  -1140   -110      2 
+   -55  -1140  -1140     81 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 27 E= 5.0e-064 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.111111  0.000000  0.851852  0.037037 
+ 0.222222  0.592593  0.000000  0.185185 
+ 0.925926  0.000000  0.074074  0.000000 
+ 0.037037  0.000000  0.000000  0.962963 
+ 0.962963  0.000000  0.000000  0.037037 
+ 0.666667  0.000000  0.037037  0.296296 
+ 0.777778  0.000000  0.000000  0.222222 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.888889  0.000000  0.000000  0.111111 
+ 0.222222  0.000000  0.000000  0.777778 
+ 0.148148  0.074074  0.000000  0.777778 
+ 0.074074  0.592593  0.148148  0.185185 
+ 0.740741  0.000000  0.074074  0.185185 
+ 0.555556  0.000000  0.037037  0.407407 
+ 0.296296  0.000000  0.000000  0.703704 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCATAAAWATTCAWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TG[CA]ATA[AT][AT][TA]A[TA]TCA[AT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LVIS_1200_p-161(artPQ)           7.57e-04  18
+LVIS_1200_p-96(artPQ)            3.73e-04  18
+LSEI_1344_p-56(artPQ)            4.63e-05  2_[+1(1.54e-05)]
+LSEI_2810_p-46(artP2)            1.24e-05  2_[+1(4.13e-06)]
+LAF_0624_p-63(artM)              2.54e-06  2_[+1(8.45e-07)]
+LAF_1625_p-136(argG)             6.47e-04  18
+LAF_0726_p-220(argC)             1.22e-04  2_[+1(4.08e-05)]
+LAF_0727_p-120(carA)             1.59e-04  2_[+1(5.30e-05)]
+lp_0527_p-169(carA)              9.09e-05  2_[+1(3.03e-05)]
+lp_0775_p-139(argG)              9.30e-07  2_[+1(3.10e-07)]
+lp_0528_p-117(argC)              1.46e-04  2_[+1(4.86e-05)]
+lp_2111_p-17(artPQ)              1.40e-06  2_[+1(4.65e-07)]
+LAR_0081_p-136(carA)             1.58e-05  2_[+1(5.27e-06)]
+LAR_0702_p-164(argG)             8.73e-04  18
+LAR_0698_p-253(artPQ)            3.86e-06  2_[+1(1.29e-06)]
+LAR_0081_p-261(carA)             1.73e-07  2_[+1(5.76e-08)]
+LGG_01356_p-56(artPQ)            9.30e-07  2_[+1(3.10e-07)]
+LGG_02816_p-46(artP2)            1.24e-05  2_[+1(4.13e-06)]
+LSA1057_p-55(artPQ)              8.85e-06  2_[+1(2.95e-06)]
+LSL_0306_p-47(argG)              6.47e-04  18
+LSL_1541_p-162(artPQ)            1.54e-03  18
+LSL_1541_p-82(artPQ)             3.31e-06  2_[+1(1.10e-06)]
+LEUM_0629_p-59(artM)             2.90e-04  2_[+1(9.68e-05)]
+LEUM_0060_p-71(argC)             1.96e-05  2_[+1(6.54e-06)]
+LEUM_0655_p-62(artP2)            1.77e-05  2_[+1(5.90e-06)]
+LEUM_1459_p-73(argG)             1.24e-05  2_[+1(4.13e-06)]
+PEPE_1137_p-94(artPQ)            2.20e-05  2_[+1(7.33e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

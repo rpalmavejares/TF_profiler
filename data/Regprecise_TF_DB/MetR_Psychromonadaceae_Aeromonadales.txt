@@ -1,0 +1,252 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/MetR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_1476_p-61(metR)     1.0000     17  Ping_1476_p-200(metR)    1.0000     17  
+Ping_3386_p-113(metE)    1.0000     17  PE36_01285_p-126(metE)   1.0000     17  
+PE36_01280_p-63(metR)    1.0000     17  PE36_01280_p-94(metR)    1.0000     17  
+PE36_01285_p-157(metE)   1.0000     17  AHA_1955_p-82(metR)      1.0000     17  
+AHA_1956_p-108(metE)     1.0000     17  ASA_2339_p-130(metR)     1.0000     17  
+ASA_2338_p-117(metE)     1.0000     17  Tola_2944_p-112(metE)    1.0000     17  
+Tola_2943_p-14(metR)     1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/MetR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/MetR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             221    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    221    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.339 C 0.136 G 0.149 T 0.376 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.338 C 0.138 G 0.151 T 0.373 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTGAATWDWWTTCAWG MEME-1	width =  16  sites =  13  llr = 136  E-value = 9.7e-031
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5::9a23235:1:a51
+pos.-specific     C  ::11::22121:9::2
+probability       G  ::9::2222::11::5
+matrix            T  5a:::6445398::52
+
+         bits    2.9                 
+                 2.6             *   
+                 2.3   *         *   
+                 2.0   *         *   
+Relative         1.7   *         *   
+Entropy          1.4  ** *       **  
+(15.0 bits)      1.1  ****     * **  
+                 0.9  ****     **** *
+                 0.6 *****     ******
+                 0.3 ******   *******
+                 0.0 ----------------
+
+Multilevel           TTGAATTTTATTCAAG
+consensus            A    AAAAT    TC
+sequence                    G C      
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+PE36_01285_p-126(metE)        2  4.87e-07          T ATGAATTTGATTCATG           
+ASA_2339_p-130(metR)          2  6.02e-07          A TTGAATACTCTTCAAC           
+Ping_1476_p-61(metR)          2  6.02e-07          T ATGAATTTTTTTCAAG           
+AHA_1955_p-82(metR)           2  1.60e-06          A TTGAATCCTTTTCAAC           
+Ping_3386_p-113(metE)         2  3.69e-06          T ATGAATTTACCTCATG           
+Ping_1476_p-200(metR)         2  4.80e-06          T TTGAATGGTATACATG           
+ASA_2338_p-117(metE)          2  6.32e-06          G TTGAAGAGTATTCAAT           
+Tola_2943_p-14(metR)          2  1.12e-05          C TTGCAGGTTTTTCATG           
+AHA_1956_p-108(metE)          2  1.12e-05          G TTGAAAAGGATTCAAT           
+Tola_2944_p-112(metE)         2  1.73e-05          C ATGAAAAACCTGCAAG           
+PE36_01280_p-94(metR)         2  2.02e-05          C ATGAATCAAATTCATA           
+PE36_01280_p-63(metR)         2  2.81e-05          G TTGAAATTAATTGATG           
+PE36_01285_p-157(metE)        2  3.33e-05          C ATCAATTAATTTCAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PE36_01285_p-126(metE)            4.9e-07  1_[+1]
+ASA_2339_p-130(metR)                6e-07  1_[+1]
+Ping_1476_p-61(metR)                6e-07  1_[+1]
+AHA_1955_p-82(metR)               1.6e-06  1_[+1]
+Ping_3386_p-113(metE)             3.7e-06  1_[+1]
+Ping_1476_p-200(metR)             4.8e-06  1_[+1]
+ASA_2338_p-117(metE)              6.3e-06  1_[+1]
+Tola_2943_p-14(metR)              1.1e-05  1_[+1]
+AHA_1956_p-108(metE)              1.1e-05  1_[+1]
+Tola_2944_p-112(metE)             1.7e-05  1_[+1]
+PE36_01280_p-94(metR)               2e-05  1_[+1]
+PE36_01280_p-63(metR)             2.8e-05  1_[+1]
+PE36_01285_p-157(metE)            3.3e-05  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTGAATWDWWTTCAWG width=16 seqs=13
+PE36_01285_p-126(metE)   (    2) ATGAATTTGATTCATG  1 
+ASA_2339_p-130(metR)     (    2) TTGAATACTCTTCAAC  1 
+Ping_1476_p-61(metR)     (    2) ATGAATTTTTTTCAAG  1 
+AHA_1955_p-82(metR)      (    2) TTGAATCCTTTTCAAC  1 
+Ping_3386_p-113(metE)    (    2) ATGAATTTACCTCATG  1 
+Ping_1476_p-200(metR)    (    2) TTGAATGGTATACATG  1 
+ASA_2338_p-117(metE)     (    2) TTGAAGAGTATTCAAT  1 
+Tola_2943_p-14(metR)     (    2) TTGCAGGTTTTTCATG  1 
+AHA_1956_p-108(metE)     (    2) TTGAAAAGGATTCAAT  1 
+Tola_2944_p-112(metE)    (    2) ATGAAAAACCTGCAAG  1 
+PE36_01280_p-94(metR)    (    2) ATGAATCAAATTCATA  1 
+PE36_01280_p-63(metR)    (    2) TTGAAATTAATTGATG  1 
+PE36_01285_p-157(metE)   (    2) ATCAATTAATTTCAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 26 bayes= 2.37587 E= 9.7e-031 
+    45  -1035  -1035     53 
+ -1035  -1035  -1035    142 
+ -1035    -84    261  -1035 
+   145    -84  -1035  -1035 
+   157  -1035  -1035  -1035 
+   -55  -1035      3     72 
+   -13     16      3      4 
+   -55     16     61      4 
+   -13    -84      3     31 
+    45     74  -1035    -28 
+ -1035    -84  -1035    131 
+  -213  -1035    -97    118 
+ -1035    274    -97  -1035 
+   157  -1035  -1035  -1035 
+    67  -1035  -1035     31 
+  -213     74    183   -128 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 13 E= 9.7e-031 
+ 0.461538  0.000000  0.000000  0.538462 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.076923  0.923077  0.000000 
+ 0.923077  0.076923  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.230769  0.000000  0.153846  0.615385 
+ 0.307692  0.153846  0.153846  0.384615 
+ 0.230769  0.153846  0.230769  0.384615 
+ 0.307692  0.076923  0.153846  0.461538 
+ 0.461538  0.230769  0.000000  0.307692 
+ 0.000000  0.076923  0.000000  0.923077 
+ 0.076923  0.000000  0.076923  0.846154 
+ 0.000000  0.923077  0.076923  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.538462  0.000000  0.000000  0.461538 
+ 0.076923  0.230769  0.538462  0.153846 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTGAATWDWWTTCAWG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TGAA[TA][TA][TAG][TA][ATC]TTCA[AT][GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_1476_p-61(metR)             1.20e-06  1_[+1(6.02e-07)]
+Ping_1476_p-200(metR)            9.60e-06  1_[+1(4.80e-06)]
+Ping_3386_p-113(metE)            7.37e-06  1_[+1(3.69e-06)]
+PE36_01285_p-126(metE)           9.74e-07  1_[+1(4.87e-07)]
+PE36_01280_p-63(metR)            5.62e-05  1_[+1(2.81e-05)]
+PE36_01280_p-94(metR)            4.03e-05  1_[+1(2.02e-05)]
+PE36_01285_p-157(metE)           6.67e-05  1_[+1(3.33e-05)]
+AHA_1955_p-82(metR)              3.19e-06  1_[+1(1.60e-06)]
+AHA_1956_p-108(metE)             2.24e-05  1_[+1(1.12e-05)]
+ASA_2339_p-130(metR)             1.20e-06  1_[+1(6.02e-07)]
+ASA_2338_p-117(metE)             1.26e-05  1_[+1(6.32e-06)]
+Tola_2944_p-112(metE)            3.46e-05  1_[+1(1.73e-05)]
+Tola_2943_p-14(metR)             2.24e-05  1_[+1(1.12e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,264 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/Zur_Xanthomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+XF1830_p-108(yciC)       1.0000     23  XF2096_p-196(folE2)      1.0000     23  
+XF0384_p-122(omr1)       1.0000     23  XAC0276_p-43(yciC)       1.0000     23  
+XAC2829_p-138(omr1)      1.0000     23  XAC0690_p-63(omr2)       1.0000     23  
+XAC1780_p-153(amiC)      1.0000     23  XCC0257_p-41(yciC)       1.0000     23  
+XCC2658_p-138(omr1)      1.0000     23  XCC1763_p-152(amiC)      1.0000     23  
+XCC2046_p-56(omr2)       1.0000     23  Smlt0520_p-48(yciC)      1.0000     23  
+Smlt1446_p-111(omr1)     1.0000     23  Smlt0157_p-42(omr2)      1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/Zur_Xanthomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/Zur_Xanthomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             322    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    322    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.354 C 0.127 G 0.13 T 0.388 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.353 C 0.129 G 0.132 T 0.387 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RTGTTATAWWATAACATTTY MEME-1	width =  20  sites =  14  llr = 190  E-value = 2.6e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6::12a:8537:88:9111:
+pos.-specific     C  :1::::1:11::::a12226
+probability       G  4:a2:::::13:1::1:::1
+matrix            T  19:68:9246:a12::6663
+
+         bits    3.0   *           *     
+                 2.7   *           *     
+                 2.4   *           *     
+                 2.1   *           *     
+Relative         1.8   *           *     
+Entropy          1.5   *  *     *  *     
+(19.6 bits)      1.2  **  *    **  *    *
+                 0.9  **  **   **  **   *
+                 0.6 *** ****  ******   *
+                 0.3 ********* **********
+                 0.0 --------------------
+
+Multilevel           ATGTTATAATATAACATTTC
+consensus            G  GA  TTAG  T  CCCT
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Smlt0520_p-48(yciC)           4  1.30e-09        TAA GTGTTATACAGTAACATTCC           
+XAC0276_p-43(yciC)            4  2.09e-09        TAA GTGTTATATAGTAACACTCC           
+Smlt1446_p-111(omr1)          4  7.36e-09        GTT ATGGAATAATATAACATCCC           
+XCC2658_p-138(omr1)           4  5.48e-08        GAC GTGGAATAATATAACATCTT           
+XAC2829_p-138(omr1)           4  5.48e-08        GAC GTGGAATAATATAACATCTT           
+XCC0257_p-41(yciC)            4  1.09e-07        GAG TTGTTATACAGTAACATTTC           
+Smlt0157_p-42(omr2)           4  1.83e-07        GAA ATGTTATATGATTACATTTC           
+XCC1763_p-152(amiC)           4  1.98e-07        CTA GTGTTACTTTATAACACTTG           
+XAC0690_p-63(omr2)            4  2.98e-07        AGT ATGTTATAACATGTCATTTC           
+XAC1780_p-153(amiC)           4  3.57e-07        TTG ATGTTACTTTATAACACTTG           
+XF2096_p-196(folE2)           4  9.20e-07        GTT ATGTTATTTTATAACATATT           
+XF0384_p-122(omr1)            4  1.97e-06        TGA ATGATATAATATTACCTTAC           
+XCC2046_p-56(omr2)            4  3.60e-06        ATT ACGTTATAATATATCGATAC           
+XF1830_p-108(yciC)            4  5.43e-06        AGA ATGATATAAAGTATCAAATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Smlt0520_p-48(yciC)               1.3e-09  3_[+1]
+XAC0276_p-43(yciC)                2.1e-09  3_[+1]
+Smlt1446_p-111(omr1)              7.4e-09  3_[+1]
+XCC2658_p-138(omr1)               5.5e-08  3_[+1]
+XAC2829_p-138(omr1)               5.5e-08  3_[+1]
+XCC0257_p-41(yciC)                1.1e-07  3_[+1]
+Smlt0157_p-42(omr2)               1.8e-07  3_[+1]
+XCC1763_p-152(amiC)                 2e-07  3_[+1]
+XAC0690_p-63(omr2)                  3e-07  3_[+1]
+XAC1780_p-153(amiC)               3.6e-07  3_[+1]
+XF2096_p-196(folE2)               9.2e-07  3_[+1]
+XF0384_p-122(omr1)                  2e-06  3_[+1]
+XCC2046_p-56(omr2)                3.6e-06  3_[+1]
+XF1830_p-108(yciC)                5.4e-06  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RTGTTATAWWATAACATTTY width=20 seqs=14
+Smlt0520_p-48(yciC)      (    4) GTGTTATACAGTAACATTCC  1 
+XAC0276_p-43(yciC)       (    4) GTGTTATATAGTAACACTCC  1 
+Smlt1446_p-111(omr1)     (    4) ATGGAATAATATAACATCCC  1 
+XCC2658_p-138(omr1)      (    4) GTGGAATAATATAACATCTT  1 
+XAC2829_p-138(omr1)      (    4) GTGGAATAATATAACATCTT  1 
+XCC0257_p-41(yciC)       (    4) TTGTTATACAGTAACATTTC  1 
+Smlt0157_p-42(omr2)      (    4) ATGTTATATGATTACATTTC  1 
+XCC1763_p-152(amiC)      (    4) GTGTTACTTTATAACACTTG  1 
+XAC0690_p-63(omr2)       (    4) ATGTTATAACATGTCATTTC  1 
+XAC1780_p-153(amiC)      (    4) ATGTTACTTTATAACACTTG  1 
+XF2096_p-196(folE2)      (    4) ATGTTATTTTATAACATATT  1 
+XF0384_p-122(omr1)       (    4) ATGATATAATATTACCTTAC  1 
+XCC2046_p-56(omr2)       (    4) ACGTTATAATATATCGATAC  1 
+XF1830_p-108(yciC)       (    4) ATGATATAAAGTATCAAATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 56 bayes= 1.58496 E= 2.6e-039 
+    70  -1045    144   -243 
+ -1045    -85  -1045    126 
+ -1045  -1045    292  -1045 
+  -130  -1045     70     73 
+   -72  -1045  -1045    102 
+   150  -1045  -1045  -1045 
+ -1045     15  -1045    115 
+   115  -1045  -1045    -85 
+    50     15  -1045    -11 
+   -30    -85    -88     56 
+   102  -1045    111  -1045 
+ -1045  -1045  -1045    137 
+   115  -1045    -88   -143 
+   115  -1045  -1045    -85 
+ -1045    296  -1045  -1045 
+   128    -85    -88  -1045 
+  -130     73  -1045     73 
+  -130     73  -1045     73 
+  -130     73  -1045     73 
+ -1045    215     12    -44 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 14 E= 2.6e-039 
+ 0.571429  0.000000  0.357143  0.071429 
+ 0.000000  0.071429  0.000000  0.928571 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.142857  0.000000  0.214286  0.642857 
+ 0.214286  0.000000  0.000000  0.785714 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.142857  0.000000  0.857143 
+ 0.785714  0.000000  0.000000  0.214286 
+ 0.500000  0.142857  0.000000  0.357143 
+ 0.285714  0.071429  0.071429  0.571429 
+ 0.714286  0.000000  0.285714  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.785714  0.000000  0.071429  0.142857 
+ 0.785714  0.000000  0.000000  0.214286 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.857143  0.071429  0.071429  0.000000 
+ 0.142857  0.214286  0.000000  0.642857 
+ 0.142857  0.214286  0.000000  0.642857 
+ 0.142857  0.214286  0.000000  0.642857 
+ 0.000000  0.571429  0.142857  0.285714 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTGTTATAWWATAACATTTY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]TG[TG][TA]AT[AT][AT][TA][AG]TA[AT]CA[TC][TC][TC][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XF1830_p-108(yciC)               2.17e-05  3_[+1(5.43e-06)]
+XF2096_p-196(folE2)              3.68e-06  3_[+1(9.20e-07)]
+XF0384_p-122(omr1)               7.88e-06  3_[+1(1.97e-06)]
+XAC0276_p-43(yciC)               8.37e-09  3_[+1(2.09e-09)]
+XAC2829_p-138(omr1)              2.19e-07  3_[+1(5.48e-08)]
+XAC0690_p-63(omr2)               1.19e-06  3_[+1(2.98e-07)]
+XAC1780_p-153(amiC)              1.43e-06  3_[+1(3.57e-07)]
+XCC0257_p-41(yciC)               4.35e-07  3_[+1(1.09e-07)]
+XCC2658_p-138(omr1)              2.19e-07  3_[+1(5.48e-08)]
+XCC1763_p-152(amiC)              7.91e-07  3_[+1(1.98e-07)]
+XCC2046_p-56(omr2)               1.44e-05  3_[+1(3.60e-06)]
+Smlt0520_p-48(yciC)              5.18e-09  3_[+1(1.30e-09)]
+Smlt1446_p-111(omr1)             2.94e-08  3_[+1(7.36e-09)]
+Smlt0157_p-42(omr2)              7.30e-07  3_[+1(1.83e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

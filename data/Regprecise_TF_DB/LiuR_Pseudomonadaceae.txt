@@ -1,0 +1,341 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/LiuR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA2557_p-127(aacS)       1.0000     18  PA2557_p-133(aacS)       1.0000     18  
+PA2016_p-34(liuR)        1.0000     18  PA2016_p-40(liuR)        1.0000     18  
+PSEEN3384_p-81(aacS)     1.0000     18  PSEEN3384_p-131(aacS)    1.0000     18  
+PSEEN2982_p-59(liuR)     1.0000     18  PSEEN3386_p-173(liuA)    1.0000     18  
+PSEEN3386_p-217(liuA)    1.0000     18  PSEEN3386_p-223(liuA)    1.0000     18  
+PP4063_p-80(aacS)        1.0000     18  PP4063_p-131(aacS)       1.0000     18  
+PP3539_p-59(liuR)        1.0000     18  PP4064_p-97(liuA)        1.0000     18  
+PP4064_p-148(liuA)       1.0000     18  PSPTO2739_p109(liuA)     1.0000     18  
+PSPTO2743_p-62(liuR)     1.0000     18  PFL_3935_p-115(aacS)     1.0000     18  
+PFL_3935_p-158(aacS)     1.0000     18  PFL_3933_p-59(liuR)      1.0000     18  
+PFL_3936_p-88(liuA)      1.0000     18  PFL_3936_p-131(liuA)     1.0000     18  
+Pmen_2034_p-23(liuR)     1.0000     18  Pmen_2034_p-29(liuR)     1.0000     18  
+PST_3208_p-70(livG)      1.0000     18  PST_3208_p-76(livG)      1.0000     18  
+PST_3208_p-99(livG)      1.0000     18  PST_3211_p-98(aacS)      1.0000     18  
+PST_3211_p-104(aacS)     1.0000     18  PST_3213_p-133(liuA)     1.0000     18  
+Avin_49570_p-32(liuR)    1.0000     18  Avin_49570_p-38(liuR)    1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/LiuR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/LiuR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             576    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    576    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.321 C 0.168 G 0.182 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.321 C 0.169 G 0.183 T 0.328 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF STTTACGTWWACGTAAAS MEME-1	width =  18  sites =  32  llr = 563  E-value = 5.8e-204
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::19:::46a:::8a9:
+pos.-specific     C  4::::a1::::8::2::5
+probability       G  5::2::9::::2a::::4
+matrix            T  :aa7:::a64:::a1:11
+
+         bits    2.6      *      *     
+                 2.3      *      *     
+                 2.1      **     *     
+                 1.8      **    **     
+Relative         1.5  **  ***  **** *  
+Entropy          1.3  ** ****  **** *  
+(25.4 bits)      1.0 *** ****  **** ***
+                 0.8 *** **************
+                 0.5 ******************
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           GTTTACGTTAACGTAAAC
+consensus            C  G    AT       G
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PFL_3935_p-158(aacS)          1  7.75e-11          . CTTTACGTTAACGTAAAC           
+PP4063_p-131(aacS)            1  7.75e-11          . CTTTACGTTAACGTAAAC           
+PA2557_p-127(aacS)            1  7.75e-11          . CTTTACGTTAACGTAAAC           
+PST_3213_p-133(liuA)          1  1.61e-10          . CTTTACGTTAACGTAAAG           
+Pmen_2034_p-29(liuR)          1  1.61e-10          . GTTTACGTTAACGTAAAG           
+PFL_3936_p-88(liuA)           1  1.61e-10          . GTTTACGTTAACGTAAAG           
+PSPTO2739_p109(liuA)          1  1.61e-10          . gTTTACGTTAACGTAAAG           
+PP4064_p-97(liuA)             1  1.61e-10          . GTTTACGTTAACGTAAAG           
+PA2016_p-40(liuR)             1  1.61e-10          . CTTTACGTTAACGTAAAG           
+PSEEN3384_p-131(aacS)         1  4.42e-10          . GTTGACGTTAACGTAAAC           
+Avin_49570_p-38(liuR)         1  5.74e-10          . GTTTACGTTTACGTAAAG           
+PSEEN3386_p-173(liuA)         1  6.15e-10          . GTTTACGTTAACGTCAAC           
+PFL_3936_p-131(liuA)          1  1.00e-09          . GTTGACGTTTACGTAAAG           
+PFL_3935_p-115(aacS)          1  1.04e-09          . CTTTACGTAAACGTCAAC           
+PSEEN2982_p-59(liuR)          1  1.26e-09          . CTTGACGTATACGTAAAC           
+PST_3211_p-98(aacS)           1  1.64e-09          . CTTTACGTTAACGTAATC           
+PFL_3933_p-59(liuR)           1  3.88e-09          . CTTGACGTATACGTCAAC           
+PP3539_p-59(liuR)             1  3.88e-09          . CTTGACGTATACGTCAAC           
+PP4064_p-148(liuA)            1  5.11e-09          . ATTTACGTTTACGTAAAG           
+PSEEN3386_p-223(liuA)         1  5.11e-09          . ATTTACGTTTACGTAAAG           
+PP4063_p-80(aacS)             1  6.32e-09          . CTTTACGTAAACGTAAAT           
+PSEEN3384_p-81(aacS)          1  6.32e-09          . CTTTACGTAAACGTAAAT           
+PSPTO2743_p-62(liuR)          1  1.35e-08          . CTTGACGCTTACGTAAAG           
+Pmen_2034_p-23(liuR)          1  1.51e-08          . GTTAACGTAAAGGTAAAC           
+PA2016_p-34(liuR)             1  1.51e-08          . GTTAACGTAAAGGTAAAC           
+PST_3208_p-70(livG)           1  3.36e-08          . GTTTACGTAAAGGTCATG           
+PA2557_p-133(aacS)            1  3.63e-08          . GTTTACCTTTACGTTAAC           
+PST_3208_p-76(livG)           1  5.69e-08          . GTTATCGTTTACGTAAAG           
+PSEEN3386_p-217(liuA)         1  6.87e-08          . GTTTACGTAAAGGTTATG           
+PST_3208_p-99(livG)           1  1.05e-07          . CTTGCCGTATACGGAAAC           
+Avin_49570_p-32(liuR)         1  1.22e-07          . GTTTACGTAAAGGTAATA           
+PST_3211_p-104(aacS)          1  4.12e-07          . AGTTACCTTTACGTTAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PFL_3935_p-158(aacS)              7.8e-11  [+1]
+PP4063_p-131(aacS)                7.8e-11  [+1]
+PA2557_p-127(aacS)                7.8e-11  [+1]
+PST_3213_p-133(liuA)              1.6e-10  [+1]
+Pmen_2034_p-29(liuR)              1.6e-10  [+1]
+PFL_3936_p-88(liuA)               1.6e-10  [+1]
+PSPTO2739_p109(liuA)              1.6e-10  [+1]
+PP4064_p-97(liuA)                 1.6e-10  [+1]
+PA2016_p-40(liuR)                 1.6e-10  [+1]
+PSEEN3384_p-131(aacS)             4.4e-10  [+1]
+Avin_49570_p-38(liuR)             5.7e-10  [+1]
+PSEEN3386_p-173(liuA)             6.2e-10  [+1]
+PFL_3936_p-131(liuA)                1e-09  [+1]
+PFL_3935_p-115(aacS)                1e-09  [+1]
+PSEEN2982_p-59(liuR)              1.3e-09  [+1]
+PST_3211_p-98(aacS)               1.6e-09  [+1]
+PFL_3933_p-59(liuR)               3.9e-09  [+1]
+PP3539_p-59(liuR)                 3.9e-09  [+1]
+PP4064_p-148(liuA)                5.1e-09  [+1]
+PSEEN3386_p-223(liuA)             5.1e-09  [+1]
+PP4063_p-80(aacS)                 6.3e-09  [+1]
+PSEEN3384_p-81(aacS)              6.3e-09  [+1]
+PSPTO2743_p-62(liuR)              1.3e-08  [+1]
+Pmen_2034_p-23(liuR)              1.5e-08  [+1]
+PA2016_p-34(liuR)                 1.5e-08  [+1]
+PST_3208_p-70(livG)               3.4e-08  [+1]
+PA2557_p-133(aacS)                3.6e-08  [+1]
+PST_3208_p-76(livG)               5.7e-08  [+1]
+PSEEN3386_p-217(liuA)             6.9e-08  [+1]
+PST_3208_p-99(livG)                 1e-07  [+1]
+Avin_49570_p-32(liuR)             1.2e-07  [+1]
+PST_3211_p-104(aacS)              4.1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF STTTACGTWWACGTAAAS width=18 seqs=32
+PFL_3935_p-158(aacS)     (    1) CTTTACGTTAACGTAAAC  1 
+PP4063_p-131(aacS)       (    1) CTTTACGTTAACGTAAAC  1 
+PA2557_p-127(aacS)       (    1) CTTTACGTTAACGTAAAC  1 
+PST_3213_p-133(liuA)     (    1) CTTTACGTTAACGTAAAG  1 
+Pmen_2034_p-29(liuR)     (    1) GTTTACGTTAACGTAAAG  1 
+PFL_3936_p-88(liuA)      (    1) GTTTACGTTAACGTAAAG  1 
+PSPTO2739_p109(liuA)     (    1) GTTTACGTTAACGTAAAG  1 
+PP4064_p-97(liuA)        (    1) GTTTACGTTAACGTAAAG  1 
+PA2016_p-40(liuR)        (    1) CTTTACGTTAACGTAAAG  1 
+PSEEN3384_p-131(aacS)    (    1) GTTGACGTTAACGTAAAC  1 
+Avin_49570_p-38(liuR)    (    1) GTTTACGTTTACGTAAAG  1 
+PSEEN3386_p-173(liuA)    (    1) GTTTACGTTAACGTCAAC  1 
+PFL_3936_p-131(liuA)     (    1) GTTGACGTTTACGTAAAG  1 
+PFL_3935_p-115(aacS)     (    1) CTTTACGTAAACGTCAAC  1 
+PSEEN2982_p-59(liuR)     (    1) CTTGACGTATACGTAAAC  1 
+PST_3211_p-98(aacS)      (    1) CTTTACGTTAACGTAATC  1 
+PFL_3933_p-59(liuR)      (    1) CTTGACGTATACGTCAAC  1 
+PP3539_p-59(liuR)        (    1) CTTGACGTATACGTCAAC  1 
+PP4064_p-148(liuA)       (    1) ATTTACGTTTACGTAAAG  1 
+PSEEN3386_p-223(liuA)    (    1) ATTTACGTTTACGTAAAG  1 
+PP4063_p-80(aacS)        (    1) CTTTACGTAAACGTAAAT  1 
+PSEEN3384_p-81(aacS)     (    1) CTTTACGTAAACGTAAAT  1 
+PSPTO2743_p-62(liuR)     (    1) CTTGACGCTTACGTAAAG  1 
+Pmen_2034_p-23(liuR)     (    1) GTTAACGTAAAGGTAAAC  1 
+PA2016_p-34(liuR)        (    1) GTTAACGTAAAGGTAAAC  1 
+PST_3208_p-70(livG)      (    1) GTTTACGTAAAGGTCATG  1 
+PA2557_p-133(aacS)       (    1) GTTTACCTTTACGTTAAC  1 
+PST_3208_p-76(livG)      (    1) GTTATCGTTTACGTAAAG  1 
+PSEEN3386_p-217(liuA)    (    1) GTTTACGTAAAGGTTATG  1 
+PST_3208_p-99(livG)      (    1) CTTGCCGTATACGGAAAC  1 
+Avin_49570_p-32(liuR)    (    1) GTTTACGTAAAGGTAATA  1 
+PST_3211_p-104(aacS)     (    1) AGTTACCTTTACGTTAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 32 bayes= 1.58496 E= 5.8e-204 
+  -177    137    136  -1164 
+ -1164  -1164   -255    156 
+ -1164  -1164  -1164    161 
+  -177  -1164     26    107 
+   155   -243  -1164   -339 
+ -1164    256  -1164  -1164 
+ -1164   -143    236  -1164 
+ -1164   -243  -1164    156 
+    23  -1164  -1164     93 
+    96  -1164  -1164     19 
+   164  -1164  -1164  -1164 
+ -1164    232    -23  -1164 
+ -1164  -1164    245  -1164 
+ -1164  -1164   -255    156 
+   123    -11  -1164   -180 
+   164  -1164  -1164  -1164 
+   145  -1164  -1164   -139 
+  -336    147    126   -239 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 32 E= 5.8e-204 
+ 0.093750  0.437500  0.468750  0.000000 
+ 0.000000  0.000000  0.031250  0.968750 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.093750  0.000000  0.218750  0.687500 
+ 0.937500  0.031250  0.000000  0.031250 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.062500  0.937500  0.000000 
+ 0.000000  0.031250  0.000000  0.968750 
+ 0.375000  0.000000  0.000000  0.625000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.843750  0.156250  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.031250  0.968750 
+ 0.750000  0.156250  0.000000  0.093750 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.031250  0.468750  0.437500  0.062500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif STTTACGTWWACGTAAAS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GC]TT[TG]ACGT[TA][AT]ACGTAAA[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA2557_p-127(aacS)               7.75e-11  [+1(7.75e-11)]
+PA2557_p-133(aacS)               3.63e-08  [+1(3.63e-08)]
+PA2016_p-34(liuR)                1.51e-08  [+1(1.51e-08)]
+PA2016_p-40(liuR)                1.61e-10  [+1(1.61e-10)]
+PSEEN3384_p-81(aacS)             6.32e-09  [+1(6.32e-09)]
+PSEEN3384_p-131(aacS)            4.42e-10  [+1(4.42e-10)]
+PSEEN2982_p-59(liuR)             1.26e-09  [+1(1.26e-09)]
+PSEEN3386_p-173(liuA)            6.15e-10  [+1(6.15e-10)]
+PSEEN3386_p-217(liuA)            6.87e-08  [+1(6.87e-08)]
+PSEEN3386_p-223(liuA)            5.11e-09  [+1(5.11e-09)]
+PP4063_p-80(aacS)                6.32e-09  [+1(6.32e-09)]
+PP4063_p-131(aacS)               7.75e-11  [+1(7.75e-11)]
+PP3539_p-59(liuR)                3.88e-09  [+1(3.88e-09)]
+PP4064_p-97(liuA)                1.61e-10  [+1(1.61e-10)]
+PP4064_p-148(liuA)               5.11e-09  [+1(5.11e-09)]
+PSPTO2739_p109(liuA)             1.61e-10  [+1(1.61e-10)]
+PSPTO2743_p-62(liuR)             1.35e-08  [+1(1.35e-08)]
+PFL_3935_p-115(aacS)             1.04e-09  [+1(1.04e-09)]
+PFL_3935_p-158(aacS)             7.75e-11  [+1(7.75e-11)]
+PFL_3933_p-59(liuR)              3.88e-09  [+1(3.88e-09)]
+PFL_3936_p-88(liuA)              1.61e-10  [+1(1.61e-10)]
+PFL_3936_p-131(liuA)             1.00e-09  [+1(1.00e-09)]
+Pmen_2034_p-23(liuR)             1.51e-08  [+1(1.51e-08)]
+Pmen_2034_p-29(liuR)             1.61e-10  [+1(1.61e-10)]
+PST_3208_p-70(livG)              3.36e-08  [+1(3.36e-08)]
+PST_3208_p-76(livG)              5.69e-08  [+1(5.69e-08)]
+PST_3208_p-99(livG)              1.05e-07  [+1(1.05e-07)]
+PST_3211_p-98(aacS)              1.64e-09  [+1(1.64e-09)]
+PST_3211_p-104(aacS)             4.12e-07  [+1(4.12e-07)]
+PST_3213_p-133(liuA)             1.61e-10  [+1(1.61e-10)]
+Avin_49570_p-32(liuR)            1.22e-07  [+1(1.22e-07)]
+Avin_49570_p-38(liuR)            5.74e-10  [+1(5.74e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

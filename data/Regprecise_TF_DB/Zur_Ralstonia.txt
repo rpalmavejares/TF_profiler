@@ -1,0 +1,287 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Zur_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RS00125_p-114(omr2)      1.0000     23  RS04852_p-95(RSc0594)    1.0000     23  
+RSc1963_p-220(tonB)      1.0000     23  RS01372_p-37(zip)        1.0000     23  
+Rpic_3702_p-50(zur)      1.0000     23  Rpic_2432_p-48(zip)      1.0000     23  
+Rpic_0521_p-31(n/a)      1.0000     23  Rpic_2116_p-223(tonB)    1.0000     23  
+Rmet_1098_p-71(yciC2)    1.0000     23  Rmet_1098_p-99(yciC2)    1.0000     23  
+Rmet_2621_p-26(zip)      1.0000     23  Rmet_0125_p-34(yciC)     1.0000     23  
+Reut_A0161_p-66(yciC)    1.0000     23  Reut_A0876_p-3(zip)      1.0000     23  
+H16_B2121_p-58(h16_B2121 1.0000     23  H16_A0193_p-75(yciC)     1.0000     23  
+H16_A2738_p-35(zip)      1.0000     23  RALTA_A0136_p-76(yciC)   1.0000     23  
+RALTA_A2241_p-35(zip)    1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Zur_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/Zur_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             437    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    437    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.256 C 0.185 G 0.197 T 0.362 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.256 C 0.186 G 0.197 T 0.361 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TYGCAACWYTGTTGCRTTWR MEME-1	width =  20  sites =  19  llr = 358  E-value = 3.4e-105
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:::aa:5131::::62155
+pos.-specific     C  :4:a::913:::::a::2::
+probability       G  ::a:::::119::a:41114
+matrix            T  96::::1457:aa:::7741
+
+         bits    2.4   **         **     
+                 2.2   **  *      **     
+                 1.9   *****   *  **     
+                 1.7   *****   *  **     
+Relative         1.5   *****   *****     
+Entropy          1.2 * *****   ******    
+(27.2 bits)      1.0 *******   ******   *
+                 0.7 *******   ******   *
+                 0.5 ******** ***********
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TTGCAACATTGTTGCATTAA
+consensus             C     TCA     GACTG
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+H16_A2738_p-35(zip)           4  4.33e-11        TTA TTGCAACATTGTTGCGTTAG           
+Rmet_2621_p-26(zip)           4  4.33e-11        TTT TTGCAACATTGTTGCGTTAA           
+Rmet_0125_p-34(yciC)          4  1.06e-10        CAG TCGCAACTTTGTTGCATCAA           
+Reut_A0161_p-66(yciC)         4  1.96e-10        CAG TCGCAACTTTGTTGCAATAA           
+RALTA_A2241_p-35(zip)         4  2.38e-10        TTA TTGCAACATTGTTGCGTTTG           
+Reut_A0876_p-3(zip)           4  2.38e-10        TTG TTGCAACATTGTTGCGTTTG           
+Rmet_1098_p-71(yciC2)         4  3.75e-10        TGT TTGCAACAATGTTGCATTAA           
+Rpic_2432_p-48(zip)           4  4.98e-10        TTC TTGCAACTCTGTTGCGTTTA           
+RS01372_p-37(zip)             4  4.98e-10        TTC TTGCAACTCTGTTGCGTTTG           
+Rpic_2116_p-223(tonB)         4  6.26e-10        TTG TCGCAACACTGTTGCAGTTG           
+RSc1963_p-220(tonB)           4  6.26e-10        TTG TCGCAACACTGTTGCATGAA           
+RALTA_A0136_p-76(yciC)        4  1.08e-09        AAT TCGCAACCTTGTTGCAACAG           
+H16_A0193_p-75(yciC)          4  1.08e-09        AAT TCGCAACCTTGTTGCAACAA           
+Rpic_0521_p-31(n/a)           4  1.08e-09        AAT TCGCAACTTAGTTGCATTGG           
+RS04852_p-95(RSc0594)         4  1.08e-09        AAT TCGCAACTTAGTTGCATTGG           
+H16_B2121_p-58(h16_B2121      4  1.58e-08        CAA TTGCAATTGAGTTGCGTTAA           
+Rpic_3702_p-50(zur)           4  1.73e-08        CAA TTGCAACTCAATTGCAGCAA           
+Rmet_1098_p-99(yciC2)         4  2.16e-08        GAA ATGCAACAAGGTTGCATTTA           
+RS00125_p-114(omr2)           4  4.09e-08        TAT TTGCAACAGAGTTGCAAATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H16_A2738_p-35(zip)               4.3e-11  3_[+1]
+Rmet_2621_p-26(zip)               4.3e-11  3_[+1]
+Rmet_0125_p-34(yciC)              1.1e-10  3_[+1]
+Reut_A0161_p-66(yciC)               2e-10  3_[+1]
+RALTA_A2241_p-35(zip)             2.4e-10  3_[+1]
+Reut_A0876_p-3(zip)               2.4e-10  3_[+1]
+Rmet_1098_p-71(yciC2)             3.8e-10  3_[+1]
+Rpic_2432_p-48(zip)                 5e-10  3_[+1]
+RS01372_p-37(zip)                   5e-10  3_[+1]
+Rpic_2116_p-223(tonB)             6.3e-10  3_[+1]
+RSc1963_p-220(tonB)               6.3e-10  3_[+1]
+RALTA_A0136_p-76(yciC)            1.1e-09  3_[+1]
+H16_A0193_p-75(yciC)              1.1e-09  3_[+1]
+Rpic_0521_p-31(n/a)               1.1e-09  3_[+1]
+RS04852_p-95(RSc0594)             1.1e-09  3_[+1]
+H16_B2121_p-58(h16_B2121          1.6e-08  3_[+1]
+Rpic_3702_p-50(zur)               1.7e-08  3_[+1]
+Rmet_1098_p-99(yciC2)             2.2e-08  3_[+1]
+RS00125_p-114(omr2)               4.1e-08  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TYGCAACWYTGTTGCRTTWR width=20 seqs=19
+H16_A2738_p-35(zip)      (    4) TTGCAACATTGTTGCGTTAG  1 
+Rmet_2621_p-26(zip)      (    4) TTGCAACATTGTTGCGTTAA  1 
+Rmet_0125_p-34(yciC)     (    4) TCGCAACTTTGTTGCATCAA  1 
+Reut_A0161_p-66(yciC)    (    4) TCGCAACTTTGTTGCAATAA  1 
+RALTA_A2241_p-35(zip)    (    4) TTGCAACATTGTTGCGTTTG  1 
+Reut_A0876_p-3(zip)      (    4) TTGCAACATTGTTGCGTTTG  1 
+Rmet_1098_p-71(yciC2)    (    4) TTGCAACAATGTTGCATTAA  1 
+Rpic_2432_p-48(zip)      (    4) TTGCAACTCTGTTGCGTTTA  1 
+RS01372_p-37(zip)        (    4) TTGCAACTCTGTTGCGTTTG  1 
+Rpic_2116_p-223(tonB)    (    4) TCGCAACACTGTTGCAGTTG  1 
+RSc1963_p-220(tonB)      (    4) TCGCAACACTGTTGCATGAA  1 
+RALTA_A0136_p-76(yciC)   (    4) TCGCAACCTTGTTGCAACAG  1 
+H16_A0193_p-75(yciC)     (    4) TCGCAACCTTGTTGCAACAA  1 
+Rpic_0521_p-31(n/a)      (    4) TCGCAACTTAGTTGCATTGG  1 
+RS04852_p-95(RSc0594)    (    4) TCGCAACTTAGTTGCATTGG  1 
+H16_B2121_p-58(h16_B2121 (    4) TTGCAATTGAGTTGCGTTAA  1 
+Rpic_3702_p-50(zur)      (    4) TTGCAACTCAATTGCAGCAA  1 
+Rmet_1098_p-99(yciC2)    (    4) ATGCAACAAGGTTGCATTTA  1 
+RS00125_p-114(omr2)      (    4) TTGCAACAGAGTTGCAAATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 76 bayes= 1.83928 E= 3.4e-105 
+  -228  -1089  -1089    139 
+ -1089    118  -1089     68 
+ -1089  -1089    234  -1089 
+ -1089    243  -1089  -1089 
+   196  -1089  -1089  -1089 
+   196  -1089  -1089  -1089 
+ -1089    235  -1089   -277 
+    89    -82  -1089     22 
+  -128     50    -91     55 
+     4  -1089   -190     92 
+  -228  -1089    226  -1089 
+ -1089  -1089  -1089    147 
+ -1089  -1089  -1089    147 
+ -1089  -1089    234  -1089 
+ -1089    243  -1089  -1089 
+   130  -1089     90  -1089 
+   -28  -1089    -91     92 
+  -228     18   -190     92 
+   104  -1089    -91      3 
+   104  -1089    109   -277 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 19 E= 3.4e-105 
+ 0.052632  0.000000  0.000000  0.947368 
+ 0.000000  0.421053  0.000000  0.578947 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.947368  0.000000  0.052632 
+ 0.473684  0.105263  0.000000  0.421053 
+ 0.105263  0.263158  0.105263  0.526316 
+ 0.263158  0.000000  0.052632  0.684211 
+ 0.052632  0.000000  0.947368  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.631579  0.000000  0.368421  0.000000 
+ 0.210526  0.000000  0.105263  0.684211 
+ 0.052632  0.210526  0.052632  0.684211 
+ 0.526316  0.000000  0.105263  0.368421 
+ 0.526316  0.000000  0.421053  0.052632 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGCAACWYTGTTGCRTTWR MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[TC]GCAAC[AT][TC][TA]GTTGC[AG][TA][TC][AT][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RS00125_p-114(omr2)              1.64e-07  3_[+1(4.09e-08)]
+RS04852_p-95(RSc0594)            4.32e-09  3_[+1(1.08e-09)]
+RSc1963_p-220(tonB)              2.50e-09  3_[+1(6.26e-10)]
+RS01372_p-37(zip)                1.99e-09  3_[+1(4.98e-10)]
+Rpic_3702_p-50(zur)              6.92e-08  3_[+1(1.73e-08)]
+Rpic_2432_p-48(zip)              1.99e-09  3_[+1(4.98e-10)]
+Rpic_0521_p-31(n/a)              4.32e-09  3_[+1(1.08e-09)]
+Rpic_2116_p-223(tonB)            2.50e-09  3_[+1(6.26e-10)]
+Rmet_1098_p-71(yciC2)            1.50e-09  3_[+1(3.75e-10)]
+Rmet_1098_p-99(yciC2)            8.62e-08  3_[+1(2.16e-08)]
+Rmet_2621_p-26(zip)              1.73e-10  3_[+1(4.33e-11)]
+Rmet_0125_p-34(yciC)             4.25e-10  3_[+1(1.06e-10)]
+Reut_A0161_p-66(yciC)            7.84e-10  3_[+1(1.96e-10)]
+Reut_A0876_p-3(zip)              9.54e-10  3_[+1(2.38e-10)]
+H16_B2121_p-58(h16_B2121         6.32e-08  3_[+1(1.58e-08)]
+H16_A0193_p-75(yciC)             4.32e-09  3_[+1(1.08e-09)]
+H16_A2738_p-35(zip)              1.73e-10  3_[+1(4.33e-11)]
+RALTA_A0136_p-76(yciC)           4.32e-09  3_[+1(1.08e-09)]
+RALTA_A2241_p-35(zip)            9.54e-10  3_[+1(2.38e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

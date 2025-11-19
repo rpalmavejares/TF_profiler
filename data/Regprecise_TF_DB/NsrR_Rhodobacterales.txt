@@ -1,0 +1,276 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NsrR_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Pden_1689_p-71(hmp)      1.0000     19  Pden_1690_p-73(nsrR2)    1.0000     19  
+Pden_3025_p-131(dnrN)    1.0000     19  Pden_3025_p-96(dnrN)     1.0000     19  
+Pden_3024_p-66(nsrR)     1.0000     19  Pden_3024_p-31(nsrR)     1.0000     19  
+OB2597_05190_p-131(PF011 1.0000     19  OB2597_05195_p-38(nsrR)  1.0000     19  
+ROS217_02150_p-33(PF0115 1.0000     19  ROS217_14296_p-94(PF0181 1.0000     19  
+ROS217_14291_p-41(nsrR)  1.0000     19  ROS217_02155_p-41(nsrR)  1.0000     19  
+SPOA0186_p-90(n/a)       1.0000     19  SPOA0185_p-34(cyoA)      1.0000     19  
+SPOA0192_p-65(PF01152)   1.0000     19  HNE_1540_p-113(PF01152)  1.0000     19  
+HNE_1541_p-40(nsrR)      1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NsrR_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NsrR_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             323    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    323    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.341 C 0.164 G 0.164 T 0.331 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.339 C 0.165 G 0.165 T 0.33 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TMGGTATTKWMAATACCKA MEME-1	width =  19  sites =  17  llr = 288  E-value = 1.7e-088
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :61:19:::4599:a:119
+pos.-specific     C  14:::111114::::a8:1
+probability       G  1:8a::::51111::::41
+matrix            T  911:9:9944:::a::16:
+
+         bits    2.6    *           *   
+                 2.3    *           *   
+                 2.1    *           *   
+                 1.8    *           *   
+Relative         1.6   **         ****  
+Entropy          1.3   ******   ******  
+(24.4 bits)      1.0 * ******   ****** *
+                 0.8 ********* *********
+                 0.5 ********* *********
+                 0.3 ********* *********
+                 0.0 -------------------
+
+Multilevel           TAGGTATTGAAAATACCTA
+consensus             C      TTC      G 
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+ROS217_02155_p-41(nsrR)       1  1.35e-10          . TCGGTATTGTAAATACCTA           
+HNE_1541_p-40(nsrR)           1  2.08e-10          . TAGGTATTGTAAATACCGA           
+HNE_1540_p-113(PF01152)       1  2.08e-10          . TCGGTATTTACAATACCTA           
+ROS217_14291_p-41(nsrR)       1  2.08e-10          . TAGGTATTGTAAATACCGA           
+ROS217_14296_p-94(PF0181      1  2.08e-10          . TCGGTATTTACAATACCTA           
+ROS217_02150_p-33(PF0115      1  2.28e-10          . TAGGTATTTACAATACCGA           
+SPOA0185_p-34(cyoA)           1  7.42e-10          . TAGGTATTTAAAATACCTA           
+SPOA0186_p-90(n/a)            1  8.58e-10          . TAGGTATTTTAAATACCTA           
+Pden_3025_p-131(dnrN)         1  1.34e-09          . TTGGTATTGACAATACCGA           
+Pden_3024_p-31(nsrR)          1  1.58e-09          . TCGGTATTGTCAATACCAA           
+Pden_3025_p-96(dnrN)          1  2.96e-09          . TCGGTATTGCAAGTACCGA           
+Pden_3024_p-66(nsrR)          1  4.13e-09          . TCGGTACTTGCAATACCGA           
+OB2597_05195_p-38(nsrR)       1  1.69e-08          . TAGGTATTGGAAATACTTA           
+OB2597_05190_p-131(PF011      1  2.12e-08          . TAAGTATTTCCAATACCTA           
+SPOA0192_p-65(PF01152)        1  3.71e-08          . TAGGACTTGAAAATACCTA           
+Pden_1689_p-71(hmp)           1  3.48e-06          . GATGTATCCAGAATACATG           
+Pden_1690_p-73(nsrR2)         1  3.74e-06          . CATGTATTCTGGATACATC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ROS217_02155_p-41(nsrR)           1.4e-10  [+1]
+HNE_1541_p-40(nsrR)               2.1e-10  [+1]
+HNE_1540_p-113(PF01152)           2.1e-10  [+1]
+ROS217_14291_p-41(nsrR)           2.1e-10  [+1]
+ROS217_14296_p-94(PF0181          2.1e-10  [+1]
+ROS217_02150_p-33(PF0115          2.3e-10  [+1]
+SPOA0185_p-34(cyoA)               7.4e-10  [+1]
+SPOA0186_p-90(n/a)                8.6e-10  [+1]
+Pden_3025_p-131(dnrN)             1.3e-09  [+1]
+Pden_3024_p-31(nsrR)              1.6e-09  [+1]
+Pden_3025_p-96(dnrN)                3e-09  [+1]
+Pden_3024_p-66(nsrR)              4.1e-09  [+1]
+OB2597_05195_p-38(nsrR)           1.7e-08  [+1]
+OB2597_05190_p-131(PF011          2.1e-08  [+1]
+SPOA0192_p-65(PF01152)            3.7e-08  [+1]
+Pden_1689_p-71(hmp)               3.5e-06  [+1]
+Pden_1690_p-73(nsrR2)             3.7e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TMGGTATTKWMAATACCKA width=19 seqs=17
+ROS217_02155_p-41(nsrR)  (    1) TCGGTATTGTAAATACCTA  1 
+HNE_1541_p-40(nsrR)      (    1) TAGGTATTGTAAATACCGA  1 
+HNE_1540_p-113(PF01152)  (    1) TCGGTATTTACAATACCTA  1 
+ROS217_14291_p-41(nsrR)  (    1) TAGGTATTGTAAATACCGA  1 
+ROS217_14296_p-94(PF0181 (    1) TCGGTATTTACAATACCTA  1 
+ROS217_02150_p-33(PF0115 (    1) TAGGTATTTACAATACCGA  1 
+SPOA0185_p-34(cyoA)      (    1) TAGGTATTTAAAATACCTA  1 
+SPOA0186_p-90(n/a)       (    1) TAGGTATTTTAAATACCTA  1 
+Pden_3025_p-131(dnrN)    (    1) TTGGTATTGACAATACCGA  1 
+Pden_3024_p-31(nsrR)     (    1) TCGGTATTGTCAATACCAA  1 
+Pden_3025_p-96(dnrN)     (    1) TCGGTATTGCAAGTACCGA  1 
+Pden_3024_p-66(nsrR)     (    1) TCGGTACTTGCAATACCGA  1 
+OB2597_05195_p-38(nsrR)  (    1) TAGGTATTGGAAATACTTA  1 
+OB2597_05190_p-131(PF011 (    1) TAAGTATTTCCAATACCTA  1 
+SPOA0192_p-65(PF01152)   (    1) TAGGACTTGAAAATACCTA  1 
+Pden_1689_p-71(hmp)      (    1) GATGTATCCAGAATACATG  1 
+Pden_1690_p-73(nsrR2)    (    1) CATGTATTCTGGATACATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 17 bayes= 1.26303 E= 1.7e-088 
+ -1073   -149   -149    142 
+    79    110  -1073   -249 
+  -252  -1073    232   -149 
+ -1073  -1073    260  -1073 
+  -252  -1073  -1073    151 
+   147   -149  -1073  -1073 
+ -1073   -149  -1073    151 
+ -1073   -149  -1073    151 
+ -1073    -49    151     32 
+    28    -49    -49     10 
+    47    132    -49  -1073 
+   147  -1073   -149  -1073 
+   147  -1073   -149  -1073 
+ -1073  -1073  -1073    160 
+   156  -1073  -1073  -1073 
+ -1073    260  -1073  -1073 
+  -153    232  -1073   -249 
+  -252  -1073    110     83 
+   138   -149   -149  -1073 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 17 E= 1.7e-088 
+ 0.000000  0.058824  0.058824  0.882353 
+ 0.588235  0.352941  0.000000  0.058824 
+ 0.058824  0.000000  0.823529  0.117647 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.058824  0.000000  0.000000  0.941176 
+ 0.941176  0.058824  0.000000  0.000000 
+ 0.000000  0.058824  0.000000  0.941176 
+ 0.000000  0.058824  0.000000  0.941176 
+ 0.000000  0.117647  0.470588  0.411765 
+ 0.411765  0.117647  0.117647  0.352941 
+ 0.470588  0.411765  0.117647  0.000000 
+ 0.941176  0.000000  0.058824  0.000000 
+ 0.941176  0.000000  0.058824  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.117647  0.823529  0.000000  0.058824 
+ 0.058824  0.000000  0.352941  0.588235 
+ 0.882353  0.058824  0.058824  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TMGGTATTKWMAATACCKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AC]GGTATT[GT][AT][AC]AATACC[TG]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pden_1689_p-71(hmp)              3.48e-06  [+1(3.48e-06)]
+Pden_1690_p-73(nsrR2)            3.74e-06  [+1(3.74e-06)]
+Pden_3025_p-131(dnrN)            1.34e-09  [+1(1.34e-09)]
+Pden_3025_p-96(dnrN)             2.96e-09  [+1(2.96e-09)]
+Pden_3024_p-66(nsrR)             4.13e-09  [+1(4.13e-09)]
+Pden_3024_p-31(nsrR)             1.58e-09  [+1(1.58e-09)]
+OB2597_05190_p-131(PF011         2.12e-08  [+1(2.12e-08)]
+OB2597_05195_p-38(nsrR)          1.69e-08  [+1(1.69e-08)]
+ROS217_02150_p-33(PF0115         2.28e-10  [+1(2.28e-10)]
+ROS217_14296_p-94(PF0181         2.08e-10  [+1(2.08e-10)]
+ROS217_14291_p-41(nsrR)          2.08e-10  [+1(2.08e-10)]
+ROS217_02155_p-41(nsrR)          1.35e-10  [+1(1.35e-10)]
+SPOA0186_p-90(n/a)               8.58e-10  [+1(8.58e-10)]
+SPOA0185_p-34(cyoA)              7.42e-10  [+1(7.42e-10)]
+SPOA0192_p-65(PF01152)           3.71e-08  [+1(3.71e-08)]
+HNE_1540_p-113(PF01152)          2.08e-10  [+1(2.08e-10)]
+HNE_1541_p-40(nsrR)              2.08e-10  [+1(2.08e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

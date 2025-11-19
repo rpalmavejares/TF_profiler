@@ -1,0 +1,345 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhhR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA0865_p-161(hpd)        1.0000     20  PA0865_p-212(hpd)        1.0000     20  
+PA0872_p-217(phhA)       1.0000     20  PA0872_p-144(phhA)       1.0000     20  
+PA0873_p-159(phhR)       1.0000     20  PA0873_p-86(phhR)        1.0000     20  
+PSEEN3892_p-210(phhA)    1.0000     20  PSEEN3892_p-137(phhA)    1.0000     20  
+PSEEN3891_p-138(phhR)    1.0000     20  PSEEN3891_p-65(phhR)     1.0000     20  
+PFL_1612_p-194(phhR)     1.0000     20  PFL_1612_p-120(phhR)     1.0000     20  
+PFL_1611_p-207(phhA)     1.0000     20  PFL_1611_p-133(phhA)     1.0000     20  
+Pmen_1696_p-144(hpd)     1.0000     20  Pmen_1696_p-195(hpd)     1.0000     20  
+Pmen_3112_p-193(phhA)    1.0000     20  Pmen_3111_p-80(phhR)     1.0000     20  
+PP4490_p-212(phhA)       1.0000     20  PP4490_p-139(phhA)       1.0000     20  
+PP4489_p-138(phhR)       1.0000     20  PP4489_p-65(phhR)        1.0000     20  
+PST_0869_p-143(hpd)      1.0000     20  PST_0869_p-203(hpd)      1.0000     20  
+PST_3561_p-136(phhR)     1.0000     20  PST_3561_p-74(phhR)      1.0000     20  
+PST_3562_p-191(phhA)     1.0000     20  PST_3562_p-129(phhA)     1.0000     20  
+PSPTO1823_p-88(phhR)     1.0000     20  PSPTO1823_p-161(phhR)    1.0000     20  
+PSPTO1822_p-206(phhA)    1.0000     20  PSPTO1822_p-133(phhA)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhhR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/PhhR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             640    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    640    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.325 C 0.184 G 0.184 T 0.306 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.325 C 0.185 G 0.185 T 0.306 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YYGTMAVGWWWWCKTKACRR MEME-1	width =  20  sites =  32  llr = 490  E-value = 8.0e-167
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::6a535556::::9:56
+pos.-specific     C  44::4:31::::72::1a:1
+probability       G  1:a:::36::::13:5::53
+matrix            T  56:a::::555425a5::::
+
+         bits    2.4   *              *  
+                 2.2   *              *  
+                 1.9   *              *  
+                 1.7   *  *        *  *  
+Relative         1.5   ** *        *  *  
+Entropy          1.2   ** *        * **  
+(22.1 bits)      1.0  ***** *    * ***** 
+                 0.7 ****** ****** ******
+                 0.5 ****** *************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TTGTAAAGAAAACTTTACAA
+consensus            CC  C CATTTTTG G  GG
+sequence                   G             
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+PSPTO1823_p-161(phhR)         1  2.23e-09          . TCGTAACGAAAACTTTACGA           
+PA0872_p-144(phhA)            1  2.23e-09          . TCGTAAGGAAAACTTTACGA           
+PA0865_p-212(hpd)             1  2.23e-09          . CTGTAAAGATAACTTTACGA           
+PFL_1612_p-194(phhR)          1  5.61e-09          . TTGTAAAGTAAACGTTACGA           
+PST_0869_p-143(hpd)           1  6.64e-09          . CTGTAAGGAAAACCTGACAG           
+PSPTO1822_p-133(phhA)         1  8.89e-09          . TCGTAAAGTTTTCGTTACGA           
+PFL_1611_p-133(phhA)          1  1.13e-08          . TCGTAACGTTTACTTTACAA           
+PST_3561_p-74(phhR)           1  1.42e-08          . CTGTCAAATAATCTTGACGA           
+Pmen_3111_p-80(phhR)          1  1.42e-08          . CTGTCACATATTCTTGACGG           
+PFL_1612_p-120(phhR)          1  1.42e-08          . CTGTCACATAATCTTGACGA           
+PA0873_p-86(phhR)             1  1.42e-08          . CTGTCACATATTCTTGACGG           
+PA0873_p-159(phhR)            1  1.42e-08          . TCGTAAAGTTTTCCTTACGA           
+Pmen_3112_p-193(phhA)         1  2.08e-08          . CCGTCAAGAATATGTGACAG           
+PA0872_p-217(phhA)            1  2.08e-08          . CCGTCAAGAATATGTGACAG           
+PST_3562_p-191(phhA)          1  3.20e-08          . TCGTCAAGATTATTTGACAG           
+PFL_1611_p-207(phhA)          1  3.71e-08          . TCGTCAAGATTATGTGACAG           
+PP4489_p-65(phhR)             1  4.88e-08          . TTGTCAGCTTATCTTTACGA           
+PSEEN3891_p-65(phhR)          1  4.88e-08          . TTGTCAGCTTATCTTTACGA           
+PP4490_p-139(phhA)            1  6.93e-08          . TTGTAAAATTATCGTTACGA           
+PP4489_p-138(phhR)            1  7.64e-08          . TCGTAACGATAATTTTACAA           
+PP4490_p-212(phhA)            1  8.35e-08          . TCGTAAAGATAAGCTGACAA           
+PSEEN3892_p-210(phhA)         1  8.35e-08          . TCGTAAAGATAAGCTGACAA           
+PSEEN3891_p-138(phhR)         1  9.06e-08          . TTGTAACGATAATTTTACAA           
+PSEEN3892_p-137(phhA)         1  1.13e-07          . TTGTAAAATTATCGTTACAA           
+PSPTO1822_p-206(phhA)         1  1.21e-07          . CCGTCAACAATACGTTACAC           
+PST_0869_p-203(hpd)           1  1.30e-07          . CTGTCAGCTTTTCGTTACGC           
+PSPTO1823_p-88(phhR)          1  1.76e-07          . GTGTAACGTATTGTTGACGG           
+Pmen_1696_p-144(hpd)          1  2.20e-07          . CTGTAAGAAAAACTTGCCAA           
+Pmen_1696_p-195(hpd)          1  3.04e-07          . CTGGCAAGAAAACCTTACGC           
+PST_3561_p-136(phhR)          1  3.37e-07          . CTGTAAGAAATACATGACAG           
+PST_3562_p-129(phhA)          1  5.30e-07          . CTGTCATGTATTTCTTACAG           
+PA0865_p-161(hpd)             1  5.71e-07          . GCGTAAGGAATAGTTGCCAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSPTO1823_p-161(phhR)             2.2e-09  [+1]
+PA0872_p-144(phhA)                2.2e-09  [+1]
+PA0865_p-212(hpd)                 2.2e-09  [+1]
+PFL_1612_p-194(phhR)              5.6e-09  [+1]
+PST_0869_p-143(hpd)               6.6e-09  [+1]
+PSPTO1822_p-133(phhA)             8.9e-09  [+1]
+PFL_1611_p-133(phhA)              1.1e-08  [+1]
+PST_3561_p-74(phhR)               1.4e-08  [+1]
+Pmen_3111_p-80(phhR)              1.4e-08  [+1]
+PFL_1612_p-120(phhR)              1.4e-08  [+1]
+PA0873_p-86(phhR)                 1.4e-08  [+1]
+PA0873_p-159(phhR)                1.4e-08  [+1]
+Pmen_3112_p-193(phhA)             2.1e-08  [+1]
+PA0872_p-217(phhA)                2.1e-08  [+1]
+PST_3562_p-191(phhA)              3.2e-08  [+1]
+PFL_1611_p-207(phhA)              3.7e-08  [+1]
+PP4489_p-65(phhR)                 4.9e-08  [+1]
+PSEEN3891_p-65(phhR)              4.9e-08  [+1]
+PP4490_p-139(phhA)                6.9e-08  [+1]
+PP4489_p-138(phhR)                7.6e-08  [+1]
+PP4490_p-212(phhA)                8.4e-08  [+1]
+PSEEN3892_p-210(phhA)             8.4e-08  [+1]
+PSEEN3891_p-138(phhR)             9.1e-08  [+1]
+PSEEN3892_p-137(phhA)             1.1e-07  [+1]
+PSPTO1822_p-206(phhA)             1.2e-07  [+1]
+PST_0869_p-203(hpd)               1.3e-07  [+1]
+PSPTO1823_p-88(phhR)              1.8e-07  [+1]
+Pmen_1696_p-144(hpd)              2.2e-07  [+1]
+Pmen_1696_p-195(hpd)                3e-07  [+1]
+PST_3561_p-136(phhR)              3.4e-07  [+1]
+PST_3562_p-129(phhA)              5.3e-07  [+1]
+PA0865_p-161(hpd)                 5.7e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YYGTMAVGWWWWCKTKACRR width=20 seqs=32
+PSPTO1823_p-161(phhR)    (    1) TCGTAACGAAAACTTTACGA  1 
+PA0872_p-144(phhA)       (    1) TCGTAAGGAAAACTTTACGA  1 
+PA0865_p-212(hpd)        (    1) CTGTAAAGATAACTTTACGA  1 
+PFL_1612_p-194(phhR)     (    1) TTGTAAAGTAAACGTTACGA  1 
+PST_0869_p-143(hpd)      (    1) CTGTAAGGAAAACCTGACAG  1 
+PSPTO1822_p-133(phhA)    (    1) TCGTAAAGTTTTCGTTACGA  1 
+PFL_1611_p-133(phhA)     (    1) TCGTAACGTTTACTTTACAA  1 
+PST_3561_p-74(phhR)      (    1) CTGTCAAATAATCTTGACGA  1 
+Pmen_3111_p-80(phhR)     (    1) CTGTCACATATTCTTGACGG  1 
+PFL_1612_p-120(phhR)     (    1) CTGTCACATAATCTTGACGA  1 
+PA0873_p-86(phhR)        (    1) CTGTCACATATTCTTGACGG  1 
+PA0873_p-159(phhR)       (    1) TCGTAAAGTTTTCCTTACGA  1 
+Pmen_3112_p-193(phhA)    (    1) CCGTCAAGAATATGTGACAG  1 
+PA0872_p-217(phhA)       (    1) CCGTCAAGAATATGTGACAG  1 
+PST_3562_p-191(phhA)     (    1) TCGTCAAGATTATTTGACAG  1 
+PFL_1611_p-207(phhA)     (    1) TCGTCAAGATTATGTGACAG  1 
+PP4489_p-65(phhR)        (    1) TTGTCAGCTTATCTTTACGA  1 
+PSEEN3891_p-65(phhR)     (    1) TTGTCAGCTTATCTTTACGA  1 
+PP4490_p-139(phhA)       (    1) TTGTAAAATTATCGTTACGA  1 
+PP4489_p-138(phhR)       (    1) TCGTAACGATAATTTTACAA  1 
+PP4490_p-212(phhA)       (    1) TCGTAAAGATAAGCTGACAA  1 
+PSEEN3892_p-210(phhA)    (    1) TCGTAAAGATAAGCTGACAA  1 
+PSEEN3891_p-138(phhR)    (    1) TTGTAACGATAATTTTACAA  1 
+PSEEN3892_p-137(phhA)    (    1) TTGTAAAATTATCGTTACAA  1 
+PSPTO1822_p-206(phhA)    (    1) CCGTCAACAATACGTTACAC  1 
+PST_0869_p-203(hpd)      (    1) CTGTCAGCTTTTCGTTACGC  1 
+PSPTO1823_p-88(phhR)     (    1) GTGTAACGTATTGTTGACGG  1 
+Pmen_1696_p-144(hpd)     (    1) CTGTAAGAAAAACTTGCCAA  1 
+Pmen_1696_p-195(hpd)     (    1) CTGGCAAGAAAACCTTACGC  1 
+PST_3561_p-136(phhR)     (    1) CTGTAAGAAATACATGACAG  1 
+PST_3562_p-129(phhA)     (    1) CTGTCATGTATTTCTTACAG  1 
+PA0865_p-161(hpd)        (    1) GCGTAAGGAATAGTTGCCAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 32 bayes= 1.58496 E= 8.0e-167 
+ -1164    124   -156     71 
+ -1164    124  -1164     88 
+ -1164  -1164    244  -1164 
+ -1164  -1164   -256    166 
+    79    124  -1164  -1164 
+   162  -1164  -1164  -1164 
+    53     44     44   -329 
+   -38    -56    176  -1164 
+    71  -1164  -1164     62 
+    71  -1164  -1164     62 
+    71  -1164  -1164     62 
+    87  -1164  -1164     41 
+ -1164    183    -56    -48 
+  -337      2     61     71 
+ -1164  -1164  -1164    171 
+ -1164  -1164    134     80 
+   153   -156  -1164  -1164 
+ -1164    244  -1164  -1164 
+    62  -1164    144  -1164 
+    79    -98     90  -1164 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 32 E= 8.0e-167 
+ 0.000000  0.437500  0.062500  0.500000 
+ 0.000000  0.437500  0.000000  0.562500 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.031250  0.968750 
+ 0.562500  0.437500  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.468750  0.250000  0.250000  0.031250 
+ 0.250000  0.125000  0.625000  0.000000 
+ 0.531250  0.000000  0.000000  0.468750 
+ 0.531250  0.000000  0.000000  0.468750 
+ 0.531250  0.000000  0.000000  0.468750 
+ 0.593750  0.000000  0.000000  0.406250 
+ 0.000000  0.656250  0.125000  0.218750 
+ 0.031250  0.187500  0.281250  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.468750  0.531250 
+ 0.937500  0.062500  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.562500  0.093750  0.343750  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYGTMAVGWWWWCKTKACRR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC][TC]GT[AC]A[ACG][GA][AT][AT][AT][AT][CT][TG]T[TG]AC[AG][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA0865_p-161(hpd)                5.71e-07  [+1(5.71e-07)]
+PA0865_p-212(hpd)                2.23e-09  [+1(2.23e-09)]
+PA0872_p-217(phhA)               2.08e-08  [+1(2.08e-08)]
+PA0872_p-144(phhA)               2.23e-09  [+1(2.23e-09)]
+PA0873_p-159(phhR)               1.42e-08  [+1(1.42e-08)]
+PA0873_p-86(phhR)                1.42e-08  [+1(1.42e-08)]
+PSEEN3892_p-210(phhA)            8.35e-08  [+1(8.35e-08)]
+PSEEN3892_p-137(phhA)            1.13e-07  [+1(1.13e-07)]
+PSEEN3891_p-138(phhR)            9.06e-08  [+1(9.06e-08)]
+PSEEN3891_p-65(phhR)             4.88e-08  [+1(4.88e-08)]
+PFL_1612_p-194(phhR)             5.61e-09  [+1(5.61e-09)]
+PFL_1612_p-120(phhR)             1.42e-08  [+1(1.42e-08)]
+PFL_1611_p-207(phhA)             3.71e-08  [+1(3.71e-08)]
+PFL_1611_p-133(phhA)             1.13e-08  [+1(1.13e-08)]
+Pmen_1696_p-144(hpd)             2.20e-07  [+1(2.20e-07)]
+Pmen_1696_p-195(hpd)             3.04e-07  [+1(3.04e-07)]
+Pmen_3112_p-193(phhA)            2.08e-08  [+1(2.08e-08)]
+Pmen_3111_p-80(phhR)             1.42e-08  [+1(1.42e-08)]
+PP4490_p-212(phhA)               8.35e-08  [+1(8.35e-08)]
+PP4490_p-139(phhA)               6.93e-08  [+1(6.93e-08)]
+PP4489_p-138(phhR)               7.64e-08  [+1(7.64e-08)]
+PP4489_p-65(phhR)                4.88e-08  [+1(4.88e-08)]
+PST_0869_p-143(hpd)              6.64e-09  [+1(6.64e-09)]
+PST_0869_p-203(hpd)              1.30e-07  [+1(1.30e-07)]
+PST_3561_p-136(phhR)             3.37e-07  [+1(3.37e-07)]
+PST_3561_p-74(phhR)              1.42e-08  [+1(1.42e-08)]
+PST_3562_p-191(phhA)             3.20e-08  [+1(3.20e-08)]
+PST_3562_p-129(phhA)             5.30e-07  [+1(5.30e-07)]
+PSPTO1823_p-88(phhR)             1.76e-07  [+1(1.76e-07)]
+PSPTO1823_p-161(phhR)            2.23e-09  [+1(2.23e-09)]
+PSPTO1822_p-206(phhA)            1.21e-07  [+1(1.21e-07)]
+PSPTO1822_p-133(phhA)            8.89e-09  [+1(8.89e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

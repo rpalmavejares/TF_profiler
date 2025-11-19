@@ -1,0 +1,227 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RbsR_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL1834_p-75(rbsB)      1.0000     20  Bcep18194_A4745_p-78(rbs 1.0000     20  
+Bamb_1503_p-77(rbsB)     1.0000     20  Bcep1808_1558_p-80(rbsB) 1.0000     20  
+bglu_1g18680_p-70(rbsB)  1.0000     20  Bxe_A1997_p-84(rbsB)     1.0000     20  
+Bphy_1237_p-65(rbsB)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RbsR_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/RbsR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             140    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    140    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.193 C 0.307 G 0.257 T 0.243 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.194 C 0.306 G 0.257 T 0.243 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCGCAAACGTTTGCTCR MEME-1	width =  17  sites =   7  llr = 146  E-value = 3.7e-034
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1::aaa:::::::::4
+pos.-specific     C  :9:a:::a:::::a:9:
+probability       G  7:a:::::a:::a:3:6
+matrix            T  3::::::::aaa::71:
+
+         bits    2.4     ***          
+                 2.1     ***  ***     
+                 1.9   * *** *****    
+                 1.7   ************   
+Relative         1.4   ************   
+Entropy          1.2 *****************
+(30.0 bits)      0.9 *****************
+                 0.7 *****************
+                 0.5 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           GCGCAAACGTTTGCTCG
+consensus            T             G A
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Bamb_1503_p-77(rbsB)          3  1.34e-10         GG GCGCAAACGTTTGCTCG C         
+Bcep18194_A4745_p-78(rbs      3  1.34e-10         TG GCGCAAACGTTTGCTCA C         
+BPSL1834_p-75(rbsB)           3  1.34e-10         CT GCGCAAACGTTTGCTCG T         
+bglu_1g18680_p-70(rbsB)       3  4.89e-10         TC GAGCAAACGTTTGCTCA A         
+Bcep1808_1558_p-80(rbsB)      3  5.95e-10         TA GCGCAAACGTTTGCTTG C         
+Bphy_1237_p-65(rbsB)          3  7.30e-10         GC TCGCAAACGTTTGCGCA C         
+Bxe_A1997_p-84(rbsB)          3  7.30e-10         CC TCGCAAACGTTTGCGCG C         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bamb_1503_p-77(rbsB)              1.3e-10  2_[+1]_1
+Bcep18194_A4745_p-78(rbs          1.3e-10  2_[+1]_1
+BPSL1834_p-75(rbsB)               1.3e-10  2_[+1]_1
+bglu_1g18680_p-70(rbsB)           4.9e-10  2_[+1]_1
+Bcep1808_1558_p-80(rbsB)            6e-10  2_[+1]_1
+Bphy_1237_p-65(rbsB)              7.3e-10  2_[+1]_1
+Bxe_A1997_p-84(rbsB)              7.3e-10  2_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCGCAAACGTTTGCTCR width=17 seqs=7
+Bamb_1503_p-77(rbsB)     (    3) GCGCAAACGTTTGCTCG  1 
+Bcep18194_A4745_p-78(rbs (    3) GCGCAAACGTTTGCTCA  1 
+BPSL1834_p-75(rbsB)      (    3) GCGCAAACGTTTGCTCG  1 
+bglu_1g18680_p-70(rbsB)  (    3) GAGCAAACGTTTGCTCA  1 
+Bcep1808_1558_p-80(rbsB) (    3) GCGCAAACGTTTGCTTG  1 
+Bphy_1237_p-65(rbsB)     (    3) TCGCAAACGTTTGCGCA  1 
+Bxe_A1997_p-84(rbsB)     (    3) TCGCAAACGTTTGCGCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 28 bayes= 3.05889 E= 3.7e-034 
+  -945   -945    147     23 
+   -44    149   -945   -945 
+  -945   -945    196   -945 
+  -945    171   -945   -945 
+   236   -945   -945   -945 
+   236   -945   -945   -945 
+   236   -945   -945   -945 
+  -945    171   -945   -945 
+  -945   -945    196   -945 
+  -945   -945   -945    204 
+  -945   -945   -945    204 
+  -945   -945   -945    204 
+  -945   -945    196   -945 
+  -945    171   -945   -945 
+  -945   -945     15    155 
+  -945    149   -945    -77 
+   114   -945    115   -945 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 7 E= 3.7e-034 
+ 0.000000  0.000000  0.714286  0.285714 
+ 0.142857  0.857143  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.285714  0.714286 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.428571  0.000000  0.571429  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCGCAAACGTTTGCTCR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT]CGCAAACGTTTGC[TG]C[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL1834_p-75(rbsB)              5.38e-10  2_[+1(1.34e-10)]_1
+Bcep18194_A4745_p-78(rbs         5.38e-10  2_[+1(1.34e-10)]_1
+Bamb_1503_p-77(rbsB)             5.38e-10  2_[+1(1.34e-10)]_1
+Bcep1808_1558_p-80(rbsB)         2.38e-09  2_[+1(5.95e-10)]_1
+bglu_1g18680_p-70(rbsB)          1.96e-09  2_[+1(4.89e-10)]_1
+Bxe_A1997_p-84(rbsB)             2.92e-09  2_[+1(7.30e-10)]_1
+Bphy_1237_p-65(rbsB)             2.92e-09  2_[+1(7.30e-10)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

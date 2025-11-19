@@ -1,0 +1,338 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/CueR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b0484_p-67(copA)         1.0000     21  b0123_p-73(cueO)         1.0000     21  
+STM0498_p-97(copA)       1.0000     21  STM0499_p-33(cueR)       1.0000     21  
+STM0168_p-62(cueO)       1.0000     21  CKO_02665_p-67(copA)     1.0000     21  
+CKO_03244_p-73(cueO)     1.0000     21  KPN_00464_p-40(copA)     1.0000     21  
+KPN_00465_p-33(cueR)     1.0000     21  KPN_00131_p-62(cueO)     1.0000     21  
+Ent638_0962_p-95(copA)   1.0000     21  Ent638_0963_p-33(cueR)   1.0000     21  
+EAM_1044_p-83(copA)      1.0000     21  EAM_1045_p-33(cueR)      1.0000     21  
+EAM_0777_p-62(cueO)      1.0000     21  y1093_p-194(copA)        1.0000     21  
+y1094_p-33(cueR)         1.0000     21  y0777_p-210(cueO)        1.0000     21  
+Spro_1150_p-93(copA)     1.0000     21  Spro_1151_p-33(cueR)     1.0000     21  
+Spro_3999_p-118(cueO)    1.0000     21  ECA1193_p-103(copA)      1.0000     21  
+ECA1194_p-33(cueR)       1.0000     21  ETAE_1039_p-115(copA)    1.0000     21  
+ETAE_1040_p-33(cueR)     1.0000     21  PMI2173_p-122(copA)      1.0000     21  
+PMI2172_p-33(cueR)       1.0000     21  PMI0159_p-108(cueO)      1.0000     21  
+plu3823_p-33(cueR)       1.0000     21  plu3824_p-129(copA)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/CueR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/CueR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             630    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    630    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.219 C 0.27 G 0.283 T 0.229 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.219 C 0.27 G 0.282 T 0.229 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTCCCSYWRSGGGAAGGT MEME-1	width =  21  sites =  30  llr = 594  E-value = 3.1e-211
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::113::561:::a7:::
+pos.-specific     C  :aa::88754::3::1:::::
+probability       G  ::::::::5::46787:39a:
+matrix            T  :::aa:::165::312::::a
+
+         bits    2.2 *   *           *    
+                 2.0 ** **           *   *
+                 1.8 *****           *   *
+                 1.5 *****           *  **
+Relative         1.3 *****           *****
+Entropy          1.1 *******  ***  * *****
+(28.6 bits)      0.9 ******** *** ** *****
+                 0.7 *********************
+                 0.4 *********************
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTCCCCTAAGGGGAAGGT
+consensus                   AGCTGCT   G   
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+CKO_03244_p-73(cueO)          1  1.89e-11          . ACCTTCCCGTAAGGGGAGGGT           
+Spro_1151_p-33(cueR)          1  2.27e-11          . ACCTTCCAGCAAGGGGAAGGT           
+Spro_1150_p-93(copA)          1  2.27e-11          . ACCTTCCCCTTGCTGGAAGGT           
+KPN_00465_p-33(cueR)          1  2.27e-11          . ACCTTCCAGCAAGGGGAAGGT           
+KPN_00464_p-40(copA)          1  2.27e-11          . ACCTTCCCCTTGCTGGAAGGT           
+b0484_p-67(copA)              1  2.27e-11          . ACCTTCCCCTTGCTGGAAGGT           
+CKO_02665_p-67(copA)          1  8.60e-11          . ACCTTCCCCTTGATGGAAGGT           
+y1094_p-33(cueR)              1  1.83e-10          . ACCTTCCAGCAAGGTGAAGGT           
+y1093_p-194(copA)             1  1.83e-10          . ACCTTCACCTTGCTGGAAGGT           
+KPN_00131_p-62(cueO)          1  1.83e-10          . ACCTTCCCGTTACGGTAGGGT           
+b0123_p-73(cueO)              1  2.23e-10          . ACCTTCCCGTAAGGGGAAGGA           
+plu3824_p-129(copA)           1  2.79e-10          . ACCTTACCCTTGAGGGAAGGT           
+ETAE_1040_p-33(cueR)          1  3.07e-10          . ACCTTCCCGCAAGGTTAAGGT           
+plu3823_p-33(cueR)            1  3.35e-10          . ACCTTCCCTCAAGGGTAAGGT           
+PMI2172_p-33(cueR)            1  3.69e-10          . ACCTTTCCGCAAGGGGAAGGT           
+PMI2173_p-122(copA)           1  3.69e-10          . ACCTTCCCCTTGCGGAAAGGT           
+STM0168_p-62(cueO)            1  3.69e-10          . ACCTTCCCGTTAGGGCAGGGT           
+y0777_p-210(cueO)             1  4.41e-10          . ACCTTCCCCTAAGAGGAGGGT           
+ETAE_1039_p-115(copA)         1  5.36e-10          . ACCTTAACCTTGCGGGAAGGT           
+Spro_3999_p-118(cueO)         1  5.89e-10          . ACCTTCCGCTAAGGGGAGGGT           
+Ent638_0963_p-33(cueR)        1  6.40e-10          . ACCTTCCAGCAAGGTTAAGGT           
+STM0499_p-33(cueR)            1  6.40e-10          . ACCTTCCAGCAAGGTTAAGGT           
+Ent638_0962_p-95(copA)        1  9.00e-10          . ACCTTAACCTTGCTGGAAGGT           
+STM0498_p-97(copA)            1  9.00e-10          . ACCTTAACCTTGCTGGAAGGT           
+EAM_0777_p-62(cueO)           1  1.15e-09          . ACCTTCCCGCTGGGGCAGGGT           
+EAM_1044_p-83(copA)           1  2.12e-09          . ACGTTCCCCTTGATGGAAGGT           
+ECA1194_p-33(cueR)            1  2.29e-09          . ACCTTCTAGCAAGGGGAGGGT           
+EAM_1045_p-33(cueR)           1  3.72e-09          . ACCTTCCATCAAGGGGAACGT           
+ECA1193_p-103(copA)           1  9.52e-09          . ACCCTCCCCTTGCTAGAAGGT           
+PMI0159_p-108(cueO)           1  1.34e-08          . ACCTTCCAGTAAGGGGAGACT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CKO_03244_p-73(cueO)              1.9e-11  [+1]
+Spro_1151_p-33(cueR)              2.3e-11  [+1]
+Spro_1150_p-93(copA)              2.3e-11  [+1]
+KPN_00465_p-33(cueR)              2.3e-11  [+1]
+KPN_00464_p-40(copA)              2.3e-11  [+1]
+b0484_p-67(copA)                  2.3e-11  [+1]
+CKO_02665_p-67(copA)              8.6e-11  [+1]
+y1094_p-33(cueR)                  1.8e-10  [+1]
+y1093_p-194(copA)                 1.8e-10  [+1]
+KPN_00131_p-62(cueO)              1.8e-10  [+1]
+b0123_p-73(cueO)                  2.2e-10  [+1]
+plu3824_p-129(copA)               2.8e-10  [+1]
+ETAE_1040_p-33(cueR)              3.1e-10  [+1]
+plu3823_p-33(cueR)                3.4e-10  [+1]
+PMI2172_p-33(cueR)                3.7e-10  [+1]
+PMI2173_p-122(copA)               3.7e-10  [+1]
+STM0168_p-62(cueO)                3.7e-10  [+1]
+y0777_p-210(cueO)                 4.4e-10  [+1]
+ETAE_1039_p-115(copA)             5.4e-10  [+1]
+Spro_3999_p-118(cueO)             5.9e-10  [+1]
+Ent638_0963_p-33(cueR)            6.4e-10  [+1]
+STM0499_p-33(cueR)                6.4e-10  [+1]
+Ent638_0962_p-95(copA)              9e-10  [+1]
+STM0498_p-97(copA)                  9e-10  [+1]
+EAM_0777_p-62(cueO)               1.1e-09  [+1]
+EAM_1044_p-83(copA)               2.1e-09  [+1]
+ECA1194_p-33(cueR)                2.3e-09  [+1]
+EAM_1045_p-33(cueR)               3.7e-09  [+1]
+ECA1193_p-103(copA)               9.5e-09  [+1]
+PMI0159_p-108(cueO)               1.3e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTCCCSYWRSGGGAAGGT width=21 seqs=30
+CKO_03244_p-73(cueO)     (    1) ACCTTCCCGTAAGGGGAGGGT  1 
+Spro_1151_p-33(cueR)     (    1) ACCTTCCAGCAAGGGGAAGGT  1 
+Spro_1150_p-93(copA)     (    1) ACCTTCCCCTTGCTGGAAGGT  1 
+KPN_00465_p-33(cueR)     (    1) ACCTTCCAGCAAGGGGAAGGT  1 
+KPN_00464_p-40(copA)     (    1) ACCTTCCCCTTGCTGGAAGGT  1 
+b0484_p-67(copA)         (    1) ACCTTCCCCTTGCTGGAAGGT  1 
+CKO_02665_p-67(copA)     (    1) ACCTTCCCCTTGATGGAAGGT  1 
+y1094_p-33(cueR)         (    1) ACCTTCCAGCAAGGTGAAGGT  1 
+y1093_p-194(copA)        (    1) ACCTTCACCTTGCTGGAAGGT  1 
+KPN_00131_p-62(cueO)     (    1) ACCTTCCCGTTACGGTAGGGT  1 
+b0123_p-73(cueO)         (    1) ACCTTCCCGTAAGGGGAAGGA  1 
+plu3824_p-129(copA)      (    1) ACCTTACCCTTGAGGGAAGGT  1 
+ETAE_1040_p-33(cueR)     (    1) ACCTTCCCGCAAGGTTAAGGT  1 
+plu3823_p-33(cueR)       (    1) ACCTTCCCTCAAGGGTAAGGT  1 
+PMI2172_p-33(cueR)       (    1) ACCTTTCCGCAAGGGGAAGGT  1 
+PMI2173_p-122(copA)      (    1) ACCTTCCCCTTGCGGAAAGGT  1 
+STM0168_p-62(cueO)       (    1) ACCTTCCCGTTAGGGCAGGGT  1 
+y0777_p-210(cueO)        (    1) ACCTTCCCCTAAGAGGAGGGT  1 
+ETAE_1039_p-115(copA)    (    1) ACCTTAACCTTGCGGGAAGGT  1 
+Spro_3999_p-118(cueO)    (    1) ACCTTCCGCTAAGGGGAGGGT  1 
+Ent638_0963_p-33(cueR)   (    1) ACCTTCCAGCAAGGTTAAGGT  1 
+STM0499_p-33(cueR)       (    1) ACCTTCCAGCAAGGTTAAGGT  1 
+Ent638_0962_p-95(copA)   (    1) ACCTTAACCTTGCTGGAAGGT  1 
+STM0498_p-97(copA)       (    1) ACCTTAACCTTGCTGGAAGGT  1 
+EAM_0777_p-62(cueO)      (    1) ACCTTCCCGCTGGGGCAGGGT  1 
+EAM_1044_p-83(copA)      (    1) ACGTTCCCCTTGATGGAAGGT  1 
+ECA1194_p-33(cueR)       (    1) ACCTTCTAGCAAGGGGAGGGT  1 
+EAM_1045_p-33(cueR)      (    1) ACCTTCCATCAAGGGGAACGT  1 
+ECA1193_p-103(copA)      (    1) ACCCTCCCCTTGCTAGAAGGT  1 
+PMI0159_p-108(cueO)      (    1) ACCTTCCAGTAAGGGGAGACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 30 bayes= 1.55943 E= 3.1e-211 
+   219  -1155  -1155  -1155 
+ -1155    189  -1155  -1155 
+ -1155    184   -308  -1155 
+ -1155   -301  -1155    208 
+ -1155  -1155  -1155    213 
+   -72    163  -1155   -278 
+   -72    163  -1155   -278 
+    28    138   -308  -1155 
+ -1155     79     72   -178 
+ -1155     44  -1155    147 
+   119  -1155  -1155    113 
+   137  -1155     62  -1155 
+  -113     31    100  -1155 
+  -271  -1155    124     39 
+  -271  -1155    156    -78 
+  -271   -201    138    -46 
+   219  -1155  -1155  -1155 
+   174  -1155     -8  -1155 
+  -271   -301    172  -1155 
+ -1155   -301    178  -1155 
+  -271  -1155  -1155    208 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 30 E= 3.1e-211 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.966667  0.033333  0.000000 
+ 0.000000  0.033333  0.000000  0.966667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.133333  0.833333  0.000000  0.033333 
+ 0.133333  0.833333  0.000000  0.033333 
+ 0.266667  0.700000  0.033333  0.000000 
+ 0.000000  0.466667  0.466667  0.066667 
+ 0.000000  0.366667  0.000000  0.633333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.566667  0.000000  0.433333  0.000000 
+ 0.100000  0.333333  0.566667  0.000000 
+ 0.033333  0.000000  0.666667  0.300000 
+ 0.033333  0.000000  0.833333  0.133333 
+ 0.033333  0.066667  0.733333  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.733333  0.000000  0.266667  0.000000 
+ 0.033333  0.033333  0.933333  0.000000 
+ 0.000000  0.033333  0.966667  0.000000 
+ 0.033333  0.000000  0.000000  0.966667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCSYWRSGGGAAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTTCC[CA][CG][TC][AT][AG][GC][GT]GGA[AG]GGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b0484_p-67(copA)                 2.27e-11  [+1(2.27e-11)]
+b0123_p-73(cueO)                 2.23e-10  [+1(2.23e-10)]
+STM0498_p-97(copA)               9.00e-10  [+1(9.00e-10)]
+STM0499_p-33(cueR)               6.40e-10  [+1(6.40e-10)]
+STM0168_p-62(cueO)               3.69e-10  [+1(3.69e-10)]
+CKO_02665_p-67(copA)             8.60e-11  [+1(8.60e-11)]
+CKO_03244_p-73(cueO)             1.89e-11  [+1(1.89e-11)]
+KPN_00464_p-40(copA)             2.27e-11  [+1(2.27e-11)]
+KPN_00465_p-33(cueR)             2.27e-11  [+1(2.27e-11)]
+KPN_00131_p-62(cueO)             1.83e-10  [+1(1.83e-10)]
+Ent638_0962_p-95(copA)           9.00e-10  [+1(9.00e-10)]
+Ent638_0963_p-33(cueR)           6.40e-10  [+1(6.40e-10)]
+EAM_1044_p-83(copA)              2.12e-09  [+1(2.12e-09)]
+EAM_1045_p-33(cueR)              3.72e-09  [+1(3.72e-09)]
+EAM_0777_p-62(cueO)              1.15e-09  [+1(1.15e-09)]
+y1093_p-194(copA)                1.83e-10  [+1(1.83e-10)]
+y1094_p-33(cueR)                 1.83e-10  [+1(1.83e-10)]
+y0777_p-210(cueO)                4.41e-10  [+1(4.41e-10)]
+Spro_1150_p-93(copA)             2.27e-11  [+1(2.27e-11)]
+Spro_1151_p-33(cueR)             2.27e-11  [+1(2.27e-11)]
+Spro_3999_p-118(cueO)            5.89e-10  [+1(5.89e-10)]
+ECA1193_p-103(copA)              9.52e-09  [+1(9.52e-09)]
+ECA1194_p-33(cueR)               2.29e-09  [+1(2.29e-09)]
+ETAE_1039_p-115(copA)            5.36e-10  [+1(5.36e-10)]
+ETAE_1040_p-33(cueR)             3.07e-10  [+1(3.07e-10)]
+PMI2173_p-122(copA)              3.69e-10  [+1(3.69e-10)]
+PMI2172_p-33(cueR)               3.69e-10  [+1(3.69e-10)]
+PMI0159_p-108(cueO)              1.34e-08  [+1(1.34e-08)]
+plu3823_p-33(cueR)               3.35e-10  [+1(3.35e-10)]
+plu3824_p-129(copA)              2.79e-10  [+1(2.79e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

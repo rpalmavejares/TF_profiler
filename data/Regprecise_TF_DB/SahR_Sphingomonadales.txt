@@ -1,0 +1,314 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/SahR_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ELI_14285_p-49(metK)     1.0000     20  ELI_05040_p-110(ahcY)    1.0000     20  
+ELI_10100_p-18(sahR)     1.0000     20  NAP1_11848_p-80(metK)    1.0000     20  
+NAP1_04180_p-115(ahcY)   1.0000     20  NAP1_10493_p-40(sahR)    1.0000     20  
+NAP1_10493_p-32(sahR)    1.0000     20  Saro_0284_p-30(metK)     1.0000     20  
+Saro_2003_p-105(ahcY)    1.0000     20  Saro_3209_p-48(sahR)     1.0000     20  
+Saro_3209_p-18(sahR)     1.0000     20  Sala_3139_p-39(metK)     1.0000     20  
+Sala_0163_p-118(ahcY)    1.0000     20  Sala_0034_p-28(sahR)     1.0000     20  
+SJA_C1-12140_p-53(metK)  1.0000     20  SJA_C1-16830_p-120(ahcY) 1.0000     20  
+SJA_C1-29170_p-29(sahR)  1.0000     20  Swit_4786_p-558(n/a)     1.0000     20  
+Swit_3373_p-79(metK)     1.0000     20  Swit_2674_p-102(ahcY)    1.0000     20  
+Swit_2402_p-16(sahR)     1.0000     20  ZMO1000_p-316(metE)      1.0000     20  
+ZMO0273_p-187(metK)      1.0000     20  ZMO0182_p-231(ahcY)      1.0000     20  
+ZMO1748_p-186(sahR)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/SahR_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/SahR_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             500    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    500    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.426 C 0.086 G 0.072 T 0.416 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.425 C 0.0873 G 0.0734 T 0.415 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATATAAAGAWWTCTTTATAT MEME-1	width =  20  sites =  25  llr = 368  E-value = 2.8e-117
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:a:a99:74511:::a:9:
+pos.-specific     C  :3::::11:::19:::::::
+probability       G  :::::::82:11::::::1:
+matrix            T  :7:a::::1647:9aa:a:a
+
+         bits    3.8                     
+                 3.4                     
+                 3.0        *            
+                 2.6        *    *       
+Relative         2.3        *    *       
+Entropy          1.9        *    *       
+(21.3 bits)      1.5        *    *       
+                 1.1 *****  *    ********
+                 0.8 ********    ********
+                 0.4 *********  *********
+                 0.0 --------------------
+
+Multilevel           ATATAAAGATATCTTTATAT
+consensus             C       AT         
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Saro_0284_p-30(metK)          1  1.49e-10          . ACATAAAGGTTTCTTTATAT           
+ELI_14285_p-49(metK)          1  1.67e-09          . ACATAAAGATTCCTTTATAT           
+Saro_3209_p-18(sahR)          1  2.22e-09          . ATATAAAGGTTTCTTTATAT           
+Saro_2003_p-105(ahcY)         1  2.63e-09          . ATATAAAGAAGTCTTTATAT           
+SJA_C1-29170_p-29(sahR)       1  5.51e-09          . ATATAAAGATTTCTTTATAT           
+Swit_2402_p-16(sahR)          1  7.84e-09          . ATATAAAGATTTCTTTATGT           
+ELI_10100_p-18(sahR)          1  9.32e-09          . ATATAACGATGTCTTTATAT           
+Swit_2674_p-102(ahcY)         1  1.02e-08          . ATATAAAGAAACCTTTATAT           
+Swit_3373_p-79(metK)          1  1.16e-08          . ATATAACGAAGTCTTTATAT           
+Sala_0034_p-28(sahR)          1  1.16e-08          . ATATAAAGAAAGCTTTATAT           
+Sala_3139_p-39(metK)          1  1.32e-08          . ACATAAAGCTTCCTTTATAT           
+SJA_C1-16830_p-120(ahcY)      1  2.05e-08          . ACATAAAGAAAACTTTATAT           
+ELI_05040_p-110(ahcY)         1  2.05e-08          . ATATAAAGGAATCGTTATAT           
+NAP1_11848_p-80(metK)         1  2.35e-08          . ATATAAAGGTTTCCTTATGT           
+NAP1_04180_p-115(ahcY)        1  4.00e-08          . ATATAAAGAAAACTTTATAT           
+Swit_4786_p-558(n/a)          1  4.94e-08          . ATATAAAGTTTTCTTTATAT           
+ZMO1748_p-186(sahR)           1  6.43e-08          . TCATAAAGATATCTTTATAT           
+ZMO1000_p-316(metE)           1  1.11e-07          . ATATAAACACATCTTTATAT           
+ZMO0182_p-231(ahcY)           1  1.99e-07          . ACATAAAGAATTATTTATAT           
+SJA_C1-12140_p-53(metK)       1  2.33e-07          . ACATAAACTTTTCTTTATGT           
+Saro_3209_p-48(sahR)          1  3.99e-07          . ATATAAAGATATCTTTAAAC           
+Sala_0163_p-118(ahcY)         1  5.16e-07          . ATATAAAGAAAAGTTTATAT           
+ZMO0273_p-187(metK)           1  1.04e-06          . ATATAAGGAAAGATTTATAT           
+NAP1_10493_p-32(sahR)         1  8.20e-06          . ATATCTAAATATCTTTATAT           
+NAP1_10493_p-40(sahR)         1  4.44e-05          . ATTTACACATATCTAAATAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saro_0284_p-30(metK)              1.5e-10  [+1]
+ELI_14285_p-49(metK)              1.7e-09  [+1]
+Saro_3209_p-18(sahR)              2.2e-09  [+1]
+Saro_2003_p-105(ahcY)             2.6e-09  [+1]
+SJA_C1-29170_p-29(sahR)           5.5e-09  [+1]
+Swit_2402_p-16(sahR)              7.8e-09  [+1]
+ELI_10100_p-18(sahR)              9.3e-09  [+1]
+Swit_2674_p-102(ahcY)               1e-08  [+1]
+Swit_3373_p-79(metK)              1.2e-08  [+1]
+Sala_0034_p-28(sahR)              1.2e-08  [+1]
+Sala_3139_p-39(metK)              1.3e-08  [+1]
+SJA_C1-16830_p-120(ahcY)            2e-08  [+1]
+ELI_05040_p-110(ahcY)               2e-08  [+1]
+NAP1_11848_p-80(metK)             2.4e-08  [+1]
+NAP1_04180_p-115(ahcY)              4e-08  [+1]
+Swit_4786_p-558(n/a)              4.9e-08  [+1]
+ZMO1748_p-186(sahR)               6.4e-08  [+1]
+ZMO1000_p-316(metE)               1.1e-07  [+1]
+ZMO0182_p-231(ahcY)                 2e-07  [+1]
+SJA_C1-12140_p-53(metK)           2.3e-07  [+1]
+Saro_3209_p-48(sahR)                4e-07  [+1]
+Sala_0163_p-118(ahcY)             5.2e-07  [+1]
+ZMO0273_p-187(metK)                 1e-06  [+1]
+NAP1_10493_p-32(sahR)             8.2e-06  [+1]
+NAP1_10493_p-40(sahR)             4.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATATAAAGAWWTCTTTATAT width=20 seqs=25
+Saro_0284_p-30(metK)     (    1) ACATAAAGGTTTCTTTATAT  1 
+ELI_14285_p-49(metK)     (    1) ACATAAAGATTCCTTTATAT  1 
+Saro_3209_p-18(sahR)     (    1) ATATAAAGGTTTCTTTATAT  1 
+Saro_2003_p-105(ahcY)    (    1) ATATAAAGAAGTCTTTATAT  1 
+SJA_C1-29170_p-29(sahR)  (    1) ATATAAAGATTTCTTTATAT  1 
+Swit_2402_p-16(sahR)     (    1) ATATAAAGATTTCTTTATGT  1 
+ELI_10100_p-18(sahR)     (    1) ATATAACGATGTCTTTATAT  1 
+Swit_2674_p-102(ahcY)    (    1) ATATAAAGAAACCTTTATAT  1 
+Swit_3373_p-79(metK)     (    1) ATATAACGAAGTCTTTATAT  1 
+Sala_0034_p-28(sahR)     (    1) ATATAAAGAAAGCTTTATAT  1 
+Sala_3139_p-39(metK)     (    1) ACATAAAGCTTCCTTTATAT  1 
+SJA_C1-16830_p-120(ahcY) (    1) ACATAAAGAAAACTTTATAT  1 
+ELI_05040_p-110(ahcY)    (    1) ATATAAAGGAATCGTTATAT  1 
+NAP1_11848_p-80(metK)    (    1) ATATAAAGGTTTCCTTATGT  1 
+NAP1_04180_p-115(ahcY)   (    1) ATATAAAGAAAACTTTATAT  1 
+Swit_4786_p-558(n/a)     (    1) ATATAAAGTTTTCTTTATAT  1 
+ZMO1748_p-186(sahR)      (    1) TCATAAAGATATCTTTATAT  1 
+ZMO1000_p-316(metE)      (    1) ATATAAACACATCTTTATAT  1 
+ZMO0182_p-231(ahcY)      (    1) ACATAAAGAATTATTTATAT  1 
+SJA_C1-12140_p-53(metK)  (    1) ACATAAACTTTTCTTTATGT  1 
+Saro_3209_p-48(sahR)     (    1) ATATAAAGATATCTTTAAAC  1 
+Sala_0163_p-118(ahcY)    (    1) ATATAAAGAAAAGTTTATAT  1 
+ZMO0273_p-187(metK)      (    1) ATATAAGGAAAGATTTATAT  1 
+NAP1_10493_p-32(sahR)    (    1) ATATCTAAATATCTTTATAT  1 
+NAP1_10493_p-40(sahR)    (    1) ATTTACACATATCTAAATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 25 bayes= 1.47917 E= 2.8e-117 
+   118  -1129  -1129   -337 
+ -1129    168  -1129     80 
+   118  -1129  -1129   -337 
+ -1129  -1129  -1129    127 
+   118   -113  -1129  -1129 
+   112   -113  -1129   -337 
+   105    -13    -88  -1129 
+  -340     46    352  -1129 
+    76   -113    112   -237 
+    -9   -113  -1129     43 
+    18  -1129     71     -5 
+  -182     46     12     71 
+  -241    333    -88  -1129 
+ -1129   -113    -88    115 
+  -340  -1129  -1129    121 
+  -340  -1129  -1129    121 
+   124  -1129  -1129  -1129 
+  -340  -1129  -1129    121 
+   105  -1129     71  -1129 
+ -1129   -113  -1129    121 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 25 E= 2.8e-117 
+ 0.960000  0.000000  0.000000  0.040000 
+ 0.000000  0.280000  0.000000  0.720000 
+ 0.960000  0.000000  0.000000  0.040000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.960000  0.040000  0.000000  0.000000 
+ 0.920000  0.040000  0.000000  0.040000 
+ 0.880000  0.080000  0.040000  0.000000 
+ 0.040000  0.120000  0.840000  0.000000 
+ 0.720000  0.040000  0.160000  0.080000 
+ 0.400000  0.040000  0.000000  0.560000 
+ 0.480000  0.000000  0.120000  0.400000 
+ 0.120000  0.120000  0.080000  0.680000 
+ 0.080000  0.880000  0.040000  0.000000 
+ 0.000000  0.040000  0.040000  0.920000 
+ 0.040000  0.000000  0.000000  0.960000 
+ 0.040000  0.000000  0.000000  0.960000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.040000  0.000000  0.000000  0.960000 
+ 0.880000  0.000000  0.120000  0.000000 
+ 0.000000  0.040000  0.000000  0.960000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATATAAAGAWWTCTTTATAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TC]ATAAAGA[TA][AT]TCTTTATAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ELI_14285_p-49(metK)             1.67e-09  [+1(1.67e-09)]
+ELI_05040_p-110(ahcY)            2.05e-08  [+1(2.05e-08)]
+ELI_10100_p-18(sahR)             9.32e-09  [+1(9.32e-09)]
+NAP1_11848_p-80(metK)            2.35e-08  [+1(2.35e-08)]
+NAP1_04180_p-115(ahcY)           4.00e-08  [+1(4.00e-08)]
+NAP1_10493_p-40(sahR)            4.44e-05  [+1(4.44e-05)]
+NAP1_10493_p-32(sahR)            8.20e-06  [+1(8.20e-06)]
+Saro_0284_p-30(metK)             1.49e-10  [+1(1.49e-10)]
+Saro_2003_p-105(ahcY)            2.63e-09  [+1(2.63e-09)]
+Saro_3209_p-48(sahR)             3.99e-07  [+1(3.99e-07)]
+Saro_3209_p-18(sahR)             2.22e-09  [+1(2.22e-09)]
+Sala_3139_p-39(metK)             1.32e-08  [+1(1.32e-08)]
+Sala_0163_p-118(ahcY)            5.16e-07  [+1(5.16e-07)]
+Sala_0034_p-28(sahR)             1.16e-08  [+1(1.16e-08)]
+SJA_C1-12140_p-53(metK)          2.33e-07  [+1(2.33e-07)]
+SJA_C1-16830_p-120(ahcY)         2.05e-08  [+1(2.05e-08)]
+SJA_C1-29170_p-29(sahR)          5.51e-09  [+1(5.51e-09)]
+Swit_4786_p-558(n/a)             4.94e-08  [+1(4.94e-08)]
+Swit_3373_p-79(metK)             1.16e-08  [+1(1.16e-08)]
+Swit_2674_p-102(ahcY)            1.02e-08  [+1(1.02e-08)]
+Swit_2402_p-16(sahR)             7.84e-09  [+1(7.84e-09)]
+ZMO1000_p-316(metE)              1.11e-07  [+1(1.11e-07)]
+ZMO0273_p-187(metK)              1.04e-06  [+1(1.04e-06)]
+ZMO0182_p-231(ahcY)              1.99e-07  [+1(1.99e-07)]
+ZMO1748_p-186(sahR)              6.43e-08  [+1(6.43e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

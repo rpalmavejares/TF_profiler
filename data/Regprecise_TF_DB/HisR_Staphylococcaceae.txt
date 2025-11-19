@@ -1,0 +1,309 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HisR_Staphylococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SA0804_p-38(yuiF)        1.0000     20  SA0417_p-27(SA0417)      1.0000     20  
+SA2472_p-84(hisZ)        1.0000     20  SA1723_p-62(hisR)        1.0000     20  
+STACA0001_0183_p-39(yuiF 1.0000     20  STACA0001_1477_p-30(SA04 1.0000     20  
+STACA0001_1960_p-60(hisR 1.0000     20  SE0637_p-37(yuiF)        1.0000     20  
+SE2326_p-108(SA0417)     1.0000     20  SE0270_p-56(hisZ)        1.0000     20  
+SE1592_p-60(hisR)        1.0000     20  Sca_0548_p-37(yuiF)      1.0000     20  
+Sca_0085_p-143(SA0417)   1.0000     20  Sca_0637_p-50(hisZ)      1.0000     20  
+Sca_1481_p-60(hisR)      1.0000     20  SH2008_p-37(yuiF)        1.0000     20  
+SH2552_p-108(SA0417)     1.0000     20  SH1044_p-65(hisR)        1.0000     20  
+SSP1832_p-38(yuiF)       1.0000     20  SSP2298_p-47(SA0417)     1.0000     20  
+SSP0431_p-49(hisZ)       1.0000     20  SSP0883_p-61(hisR)       1.0000     20  
+MCCL_0570_p-47(yuiF)     1.0000     20  MCCL_0041_p-33(SA0417)   1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HisR_Staphylococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Staphylococcaceae/HisR_Staphylococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             480    N=              24
+sample: seed=            0    hsfrac=          0
+        searchsize=    480    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.163 G 0.198 T 0.344 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.295 C 0.163 G 0.198 T 0.343 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YACTTTARYKCRWTARWGNG MEME-1	width =  20  sites =  24  llr = 369  E-value = 5.4e-119
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :8::::a5:1133:a56333
+pos.-specific     C  6:a:::::4:6:1:::1:3:
+probability       G  :3:::::5:5:52::4:827
+matrix            T  4::aaa::54225a::3:3:
+
+         bits    2.6   *                 
+                 2.4   *                 
+                 2.1   *                 
+                 1.8   *   *       *     
+Relative         1.6   *****      **     
+Entropy          1.3 * *****      **  *  
+(22.2 bits)      1.0 *******      **  * *
+                 0.8 ********* *  *** * *
+                 0.5 ************ ***** *
+                 0.3 ************ ***** *
+                 0.0 --------------------
+
+Multilevel           CACTTTAGTGCGTTAAAGCG
+consensus            TG     ACTTAA  GTAAA
+sequence                        T      T 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+SH2552_p-108(SA0417)          1  2.37e-10          . CGCTTTAACGCGTTAAAGGG           
+SA0804_p-38(yuiF)             1  3.61e-10          . CGCTTTAGTTCGATAGAGCG           
+SE2326_p-108(SA0417)          1  4.19e-10          . CACTTTAGCGCTTTAAAGGG           
+STACA0001_1477_p-30(SA04      1  4.19e-10          . CACTTTAGCGCTTTAAAGGG           
+SH2008_p-37(yuiF)             1  4.74e-09          . TACTTTAGTTCGGTAGAGAG           
+Sca_0637_p-50(hisZ)           1  4.74e-09          . TACTTTAGTTCGGTAGAGAG           
+SE0637_p-37(yuiF)             1  5.42e-09          . TACTTTAGTTCGATAGAGTG           
+STACA0001_0183_p-39(yuiF      1  5.42e-09          . TACTTTAGTTCGATAGAGTG           
+SA0417_p-27(SA0417)           1  1.68e-08          . CGCTTTAACGCTTTAAAGGA           
+Sca_0085_p-143(SA0417)        1  1.88e-08          . CGCTTTAACGCTTTAAAGTA           
+SA2472_p-84(hisZ)             1  1.88e-08          . CACTTTAGTGTGGTAGAGAA           
+SSP0431_p-49(hisZ)            1  2.36e-08          . TACTTTAGTTCGGTAGAGAA           
+SSP1832_p-38(yuiF)            1  2.36e-08          . TACTTTAGTTCGATAACGTG           
+Sca_1481_p-60(hisR)           1  3.61e-08          . CACTTTAACGTATTAGTACG           
+SH1044_p-65(hisR)             1  4.86e-08          . CACTTTAACTATTTAATGCG           
+SSP2298_p-47(SA0417)          1  6.48e-08          . CGCTTTAACGCAATAAAGCT           
+STACA0001_1960_p-60(hisR      1  1.10e-07          . CACTTTAACTAATTAGTACG           
+MCCL_0041_p-33(SA0417)        1  1.20e-07          . CACTTTACAGCGTTAAAACG           
+SE1592_p-60(hisR)             1  1.30e-07          . CACTTTAACGAATTAGTAAG           
+Sca_0548_p-37(yuiF)           1  1.53e-07          . TGCTTTAGTTCGATAACGTA           
+SSP0883_p-61(hisR)            1  1.78e-07          . CACTTTAATGTACTAATACG           
+SA1723_p-62(hisR)             1  2.93e-07          . CACTTTAATAGATTAATGCG           
+SE0270_p-56(hisZ)             1  1.42e-06          . TACTTTAATGTATTATCGAA           
+MCCL_0570_p-47(yuiF)          1  1.81e-06          . TACTTTAGTATGCTAATATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SH2552_p-108(SA0417)              2.4e-10  [+1]
+SA0804_p-38(yuiF)                 3.6e-10  [+1]
+SE2326_p-108(SA0417)              4.2e-10  [+1]
+STACA0001_1477_p-30(SA04          4.2e-10  [+1]
+SH2008_p-37(yuiF)                 4.7e-09  [+1]
+Sca_0637_p-50(hisZ)               4.7e-09  [+1]
+SE0637_p-37(yuiF)                 5.4e-09  [+1]
+STACA0001_0183_p-39(yuiF          5.4e-09  [+1]
+SA0417_p-27(SA0417)               1.7e-08  [+1]
+Sca_0085_p-143(SA0417)            1.9e-08  [+1]
+SA2472_p-84(hisZ)                 1.9e-08  [+1]
+SSP0431_p-49(hisZ)                2.4e-08  [+1]
+SSP1832_p-38(yuiF)                2.4e-08  [+1]
+Sca_1481_p-60(hisR)               3.6e-08  [+1]
+SH1044_p-65(hisR)                 4.9e-08  [+1]
+SSP2298_p-47(SA0417)              6.5e-08  [+1]
+STACA0001_1960_p-60(hisR          1.1e-07  [+1]
+MCCL_0041_p-33(SA0417)            1.2e-07  [+1]
+SE1592_p-60(hisR)                 1.3e-07  [+1]
+Sca_0548_p-37(yuiF)               1.5e-07  [+1]
+SSP0883_p-61(hisR)                1.8e-07  [+1]
+SA1723_p-62(hisR)                 2.9e-07  [+1]
+SE0270_p-56(hisZ)                 1.4e-06  [+1]
+MCCL_0570_p-47(yuiF)              1.8e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YACTTTARYKCRWTARWGNG width=20 seqs=24
+SH2552_p-108(SA0417)     (    1) CGCTTTAACGCGTTAAAGGG  1 
+SA0804_p-38(yuiF)        (    1) CGCTTTAGTTCGATAGAGCG  1 
+SE2326_p-108(SA0417)     (    1) CACTTTAGCGCTTTAAAGGG  1 
+STACA0001_1477_p-30(SA04 (    1) CACTTTAGCGCTTTAAAGGG  1 
+SH2008_p-37(yuiF)        (    1) TACTTTAGTTCGGTAGAGAG  1 
+Sca_0637_p-50(hisZ)      (    1) TACTTTAGTTCGGTAGAGAG  1 
+SE0637_p-37(yuiF)        (    1) TACTTTAGTTCGATAGAGTG  1 
+STACA0001_0183_p-39(yuiF (    1) TACTTTAGTTCGATAGAGTG  1 
+SA0417_p-27(SA0417)      (    1) CGCTTTAACGCTTTAAAGGA  1 
+Sca_0085_p-143(SA0417)   (    1) CGCTTTAACGCTTTAAAGTA  1 
+SA2472_p-84(hisZ)        (    1) CACTTTAGTGTGGTAGAGAA  1 
+SSP0431_p-49(hisZ)       (    1) TACTTTAGTTCGGTAGAGAA  1 
+SSP1832_p-38(yuiF)       (    1) TACTTTAGTTCGATAACGTG  1 
+Sca_1481_p-60(hisR)      (    1) CACTTTAACGTATTAGTACG  1 
+SH1044_p-65(hisR)        (    1) CACTTTAACTATTTAATGCG  1 
+SSP2298_p-47(SA0417)     (    1) CGCTTTAACGCAATAAAGCT  1 
+STACA0001_1960_p-60(hisR (    1) CACTTTAACTAATTAGTACG  1 
+MCCL_0041_p-33(SA0417)   (    1) CACTTTACAGCGTTAAAACG  1 
+SE1592_p-60(hisR)        (    1) CACTTTAACGAATTAGTAAG  1 
+Sca_0548_p-37(yuiF)      (    1) TGCTTTAGTTCGATAACGTA  1 
+SSP0883_p-61(hisR)       (    1) CACTTTAATGTACTAATACG  1 
+SA1723_p-62(hisR)        (    1) CACTTTAATAGATTAATGCG  1 
+SE0270_p-56(hisZ)        (    1) TACTTTAATGTATTATCGAA  1 
+MCCL_0570_p-47(yuiF)     (    1) TACTTTAGTATGCTAATATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24 bayes= 1.45943 E= 5.4e-119 
+ -1123    194  -1123     13 
+   134  -1123     33  -1123 
+ -1123    261  -1123  -1123 
+ -1123  -1123  -1123    154 
+ -1123  -1123  -1123    154 
+ -1123  -1123  -1123    154 
+   176  -1123  -1123  -1123 
+    63   -197    133  -1123 
+  -282    135  -1123     66 
+  -182  -1123    133     28 
+  -124    194   -225    -72 
+    -2  -1123    133    -72 
+   -24    -97    -25     54 
+ -1123  -1123  -1123    154 
+   176  -1123  -1123  -1123 
+    87  -1123    107   -304 
+    98    -38  -1123    -23 
+   -24  -1123    192  -1123 
+   -24    103    -25    -46 
+    -2  -1123    175   -304 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 24 E= 5.4e-119 
+ 0.000000  0.625000  0.000000  0.375000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.458333  0.041667  0.500000  0.000000 
+ 0.041667  0.416667  0.000000  0.541667 
+ 0.083333  0.000000  0.500000  0.416667 
+ 0.125000  0.625000  0.041667  0.208333 
+ 0.291667  0.000000  0.500000  0.208333 
+ 0.250000  0.083333  0.166667  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.541667  0.000000  0.416667  0.041667 
+ 0.583333  0.125000  0.000000  0.291667 
+ 0.250000  0.000000  0.750000  0.000000 
+ 0.250000  0.333333  0.166667  0.250000 
+ 0.291667  0.000000  0.666667  0.041667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTARYKCRWTARWGNG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][AG]CTTTA[GA][TC][GT][CT][GAT][TA]TA[AG][AT][GA][CAT][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SA0804_p-38(yuiF)                3.61e-10  [+1(3.61e-10)]
+SA0417_p-27(SA0417)              1.68e-08  [+1(1.68e-08)]
+SA2472_p-84(hisZ)                1.88e-08  [+1(1.88e-08)]
+SA1723_p-62(hisR)                2.93e-07  [+1(2.93e-07)]
+STACA0001_0183_p-39(yuiF         5.42e-09  [+1(5.42e-09)]
+STACA0001_1477_p-30(SA04         4.19e-10  [+1(4.19e-10)]
+STACA0001_1960_p-60(hisR         1.10e-07  [+1(1.10e-07)]
+SE0637_p-37(yuiF)                5.42e-09  [+1(5.42e-09)]
+SE2326_p-108(SA0417)             4.19e-10  [+1(4.19e-10)]
+SE0270_p-56(hisZ)                1.42e-06  [+1(1.42e-06)]
+SE1592_p-60(hisR)                1.30e-07  [+1(1.30e-07)]
+Sca_0548_p-37(yuiF)              1.53e-07  [+1(1.53e-07)]
+Sca_0085_p-143(SA0417)           1.88e-08  [+1(1.88e-08)]
+Sca_0637_p-50(hisZ)              4.74e-09  [+1(4.74e-09)]
+Sca_1481_p-60(hisR)              3.61e-08  [+1(3.61e-08)]
+SH2008_p-37(yuiF)                4.74e-09  [+1(4.74e-09)]
+SH2552_p-108(SA0417)             2.37e-10  [+1(2.37e-10)]
+SH1044_p-65(hisR)                4.86e-08  [+1(4.86e-08)]
+SSP1832_p-38(yuiF)               2.36e-08  [+1(2.36e-08)]
+SSP2298_p-47(SA0417)             6.48e-08  [+1(6.48e-08)]
+SSP0431_p-49(hisZ)               2.36e-08  [+1(2.36e-08)]
+SSP0883_p-61(hisR)               1.78e-07  [+1(1.78e-07)]
+MCCL_0570_p-47(yuiF)             1.81e-06  [+1(1.81e-06)]
+MCCL_0041_p-33(SA0417)           1.20e-07  [+1(1.20e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,261 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/ArgR_Thermoanaerobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Athe_1249_p-70(argG)     1.0000     16  Athe_1079_p-82(argC)     1.0000     16  
+Athe_1540_p-112(carA)    1.0000     16  Csac_1814_p-63(argG)     1.0000     16  
+Csac_1531_p-71(argC)     1.0000     16  Csac_2227_p-111(carA)    1.0000     16  
+CHY_2265_p-59(argC)      1.0000     16  Moth_2290_p-60(argC)     1.0000     16  
+Moth_2290_p-39(argC)     1.0000     16  Teth514_0657_p-131(argC) 1.0000     16  
+Teth514_0657_p-72(argC)  1.0000     16  Thit_2172_p-130(argC)    1.0000     16  
+Thit_2172_p-72(argC)     1.0000     16  TTE2498_p-52(argC)       1.0000     16  
+TTE0815_p-156(carA)      1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/ArgR_Thermoanaerobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/ArgR_Thermoanaerobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.392 C 0.0708 G 0.0625 T 0.475 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.389 C 0.0738 G 0.0656 T 0.471 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTGYATWATTATAMAT MEME-1	width =  16  sites =  15  llr = 180  E-value = 8.1e-051
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::1a:773:a:75a1
+pos.-specific     C  :::4:::::::::5:2
+probability       G  ::a:::::::::::::
+matrix            T  8a:5:a337a:a3::7
+
+         bits    3.9   *             
+                 3.5   *             
+                 3.1   *             
+                 2.8   *             
+Relative         2.4   *             
+Entropy          2.0   *             
+(17.3 bits)      1.6   *          *  
+                 1.2  ** **   *** ** 
+                 0.8  *****   *** ** 
+                 0.4 ****************
+                 0.0 ----------------
+
+Multilevel           TTGTATAATTATACAT
+consensus            A  C  TTA   TA C
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Moth_2290_p-60(argC)          1  3.20e-08          . TTGCATTATTATACAT           
+Athe_1249_p-70(argG)          1  5.89e-08          . TTGCATAATTATTCAT           
+CHY_2265_p-59(argC)           1  2.49e-07          . TTGCATAAATATACAA           
+TTE2498_p-52(argC)            1  4.35e-07          . TTGCATAAATATAAAT           
+Thit_2172_p-72(argC)          1  4.35e-07          . TTGCATAAATATAAAT           
+Csac_1531_p-71(argC)          1  8.58e-07          . TTGTATTTTTATACAC           
+Athe_1079_p-82(argC)          1  8.58e-07          . TTGTATTTTTATACAC           
+Thit_2172_p-130(argC)         1  1.27e-06          . TTGTATAATTATAAAT           
+Teth514_0657_p-131(argC)      1  1.27e-06          . TTGTATAATTATAAAT           
+Teth514_0657_p-72(argC)       1  1.89e-06          . ATGCATAAATATAAAT           
+Moth_2290_p-39(argC)          1  2.17e-06          . ATGTATAATTATAAAC           
+Csac_1814_p-63(argG)          1  4.64e-06          . TTGAATAATTATTCAT           
+Csac_2227_p-111(carA)         1  5.33e-06          . TTGTATTTTTATTCAT           
+Athe_1540_p-112(carA)         1  5.33e-06          . TTGTATTTTTATTCAT           
+TTE0815_p-156(carA)           1  1.14e-05          . ATGTATAATTATAAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Moth_2290_p-60(argC)              3.2e-08  [+1]
+Athe_1249_p-70(argG)              5.9e-08  [+1]
+CHY_2265_p-59(argC)               2.5e-07  [+1]
+TTE2498_p-52(argC)                4.4e-07  [+1]
+Thit_2172_p-72(argC)              4.4e-07  [+1]
+Csac_1531_p-71(argC)              8.6e-07  [+1]
+Athe_1079_p-82(argC)              8.6e-07  [+1]
+Thit_2172_p-130(argC)             1.3e-06  [+1]
+Teth514_0657_p-131(argC)          1.3e-06  [+1]
+Teth514_0657_p-72(argC)           1.9e-06  [+1]
+Moth_2290_p-39(argC)              2.2e-06  [+1]
+Csac_1814_p-63(argG)              4.6e-06  [+1]
+Csac_2227_p-111(carA)             5.3e-06  [+1]
+Athe_1540_p-112(carA)             5.3e-06  [+1]
+TTE0815_p-156(carA)               1.1e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTGYATWATTATAMAT width=16 seqs=15
+Moth_2290_p-60(argC)     (    1) TTGCATTATTATACAT  1 
+Athe_1249_p-70(argG)     (    1) TTGCATAATTATTCAT  1 
+CHY_2265_p-59(argC)      (    1) TTGCATAAATATACAA  1 
+TTE2498_p-52(argC)       (    1) TTGCATAAATATAAAT  1 
+Thit_2172_p-72(argC)     (    1) TTGCATAAATATAAAT  1 
+Csac_1531_p-71(argC)     (    1) TTGTATTTTTATACAC  1 
+Athe_1079_p-82(argC)     (    1) TTGTATTTTTATACAC  1 
+Thit_2172_p-130(argC)    (    1) TTGTATAATTATAAAT  1 
+Teth514_0657_p-131(argC) (    1) TTGTATAATTATAAAT  1 
+Teth514_0657_p-72(argC)  (    1) ATGCATAAATATAAAT  1 
+Moth_2290_p-39(argC)     (    1) ATGTATAATTATAAAC  1 
+Csac_1814_p-63(argG)     (    1) TTGAATAATTATTCAT  1 
+Csac_2227_p-111(carA)    (    1) TTGTATTTTTATTCAT  1 
+Athe_1540_p-112(carA)    (    1) TTGTATTTTTATTCAT  1 
+TTE0815_p-156(carA)      (    1) ATGTATAATTATAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 15 bayes= 1.17688 E= 8.1e-051 
+   -96  -1055  -1055     76 
+ -1055  -1055  -1055    108 
+ -1055  -1055    393  -1055 
+  -254    244  -1055     18 
+   136  -1055  -1055  -1055 
+ -1055  -1055  -1055    108 
+    78  -1055  -1055    -50 
+    91  -1055  -1055    -82 
+   -55  -1055  -1055     64 
+ -1055  -1055  -1055    108 
+   136  -1055  -1055  -1055 
+ -1055  -1055  -1055    108 
+    91  -1055  -1055    -82 
+    26    285  -1055  -1055 
+   136  -1055  -1055  -1055 
+  -154    144  -1055     50 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 15 E= 8.1e-051 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.066667  0.400000  0.000000  0.533333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.733333  0.000000  0.000000  0.266667 
+ 0.266667  0.000000  0.000000  0.733333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.733333  0.000000  0.000000  0.266667 
+ 0.466667  0.533333  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.133333  0.200000  0.000000  0.666667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGYATWATTATAMAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TG[TC]AT[AT][AT][TA]TAT[AT][CA]A[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Athe_1249_p-70(argG)             5.89e-08  [+1(5.89e-08)]
+Athe_1079_p-82(argC)             8.58e-07  [+1(8.58e-07)]
+Athe_1540_p-112(carA)            5.33e-06  [+1(5.33e-06)]
+Csac_1814_p-63(argG)             4.64e-06  [+1(4.64e-06)]
+Csac_1531_p-71(argC)             8.58e-07  [+1(8.58e-07)]
+Csac_2227_p-111(carA)            5.33e-06  [+1(5.33e-06)]
+CHY_2265_p-59(argC)              2.49e-07  [+1(2.49e-07)]
+Moth_2290_p-60(argC)             3.20e-08  [+1(3.20e-08)]
+Moth_2290_p-39(argC)             2.17e-06  [+1(2.17e-06)]
+Teth514_0657_p-131(argC)         1.27e-06  [+1(1.27e-06)]
+Teth514_0657_p-72(argC)          1.89e-06  [+1(1.89e-06)]
+Thit_2172_p-130(argC)            1.27e-06  [+1(1.27e-06)]
+Thit_2172_p-72(argC)             4.35e-07  [+1(4.35e-07)]
+TTE2498_p-52(argC)               4.35e-07  [+1(4.35e-07)]
+TTE0815_p-156(carA)              1.14e-05  [+1(1.14e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,578 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/FnrN_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Jann_3858_p-56(fnrN)     1.0000     20  Jann_1933_p-67(hemA)     1.0000     20  
+Jann_3859_p-51(hemN)     1.0000     20  Jann_3857_p-126(ccoN)    1.0000     20  
+Jann_3853_p-84(ccoG)     1.0000     20  SKA53_02751_p-167(hemA)  1.0000     20  
+SKA53_08751_p-136(uspA)  1.0000     20  SKA53_08751_p-114(uspA)  1.0000     20  
+SKA53_08741_p-105(ccoN)  1.0000     20  SKA53_08741_p-83(ccoN)   1.0000     20  
+SKA53_08641_p-177(ccoG)  1.0000     20  OB2597_01932_p-155(hemA) 1.0000     20  
+OB2597_06915_p-113(ctaD) 1.0000     20  OB2597_15845_p-189(ctaC) 1.0000     20  
+OB2597_20571_p-73(ccoN)  1.0000     20  OB2597_20591_p-77(ccoG)  1.0000     20  
+OG2516_17525_p-74(uspA)  1.0000     20  Pden_1850_p-131(fnrN)    1.0000     20  
+Pden_1851_p-51(hemN)     1.0000     20  Pden_1822_p-40(hemA)     1.0000     20  
+Pden_1849_p-146(uspA)    1.0000     20  Pden_3636_p-51(ompW)     1.0000     20  
+Pden_0893_p-141(ccpR)    1.0000     20  Pden_1848_p-124(ccoN)    1.0000     20  
+Pden_1844_p-70(ccoG)     1.0000     20  RSP_1877_p-127(ctaD)     1.0000     20  
+RSP_0698_p-31(fnrN)      1.0000     20  RSP_1826_p-161(ctaC)     1.0000     20  
+RSP_0699_p-51(hemN)      1.0000     20  RSP_2984_p-87(hemA)      1.0000     20  
+RSP_0696_p-136(ccoN)     1.0000     20  RSP_0697_p-111(uspA)     1.0000     20  
+RSP_0697_p-79(uspA)      1.0000     20  RSP_0696_p-104(ccoN)     1.0000     20  
+RSP_2507_p-69(ompW)      1.0000     20  RSP_2395_p-81(ccpR)      1.0000     20  
+RB2654_06514_p-192(ctaC) 1.0000     20  RB2654_10044_p-29(fnrN)  1.0000     20  
+RB2654_08222_p-212(ctaD) 1.0000     20  RB2654_10034_p-143(uspA) 1.0000     20  
+RB2654_10034_p-100(uspA) 1.0000     20  RB2654_03389_p-127(hemA) 1.0000     20  
+RB2654_10049_p-52(hemN)  1.0000     20  RB2654_10029_p-168(ccoN) 1.0000     20  
+RB2654_10029_p-125(ccoN) 1.0000     20  RB2654_10004_p0(ccoG)    1.0000     20  
+MED193_08963_p-178(ctaC) 1.0000     20  MED193_11238_p-29(fnrN)  1.0000     20  
+MED193_21064_p-162(hemA) 1.0000     20  MED193_08728_p-122(ctaD) 1.0000     20  
+MED193_11233_p-114(uspA) 1.0000     20  MED193_11228_p-93(ccoN)  1.0000     20  
+MED193_11193_p-180(ccoG) 1.0000     20  ROS217_04445_p-219(ctaC) 1.0000     20  
+ROS217_21737_p-168(hemA) 1.0000     20  ROS217_12216_p-53(fnrN)  1.0000     20  
+ROS217_15111_p-128(ctaD) 1.0000     20  ROS217_12221_p-111(uspA) 1.0000     20  
+ROS217_12221_p-79(uspA)  1.0000     20  ROS217_12211_p-51(hemN)  1.0000     20  
+ROS217_20807_p-75(ompW)  1.0000     20  ROS217_12226_p-143(ccoN) 1.0000     20  
+ROS217_12226_p-111(ccoN) 1.0000     20  ROS217_12261_p-73(ccoG)  1.0000     20  
+TM1040_2336_p-164(ctaC)  1.0000     20  TM1040_0860_p-169(hemA)  1.0000     20  
+TM1040_2547_p-29(fnrN)   1.0000     20  TM1040_2291_p-125(ctaD)  1.0000     20  
+TM1040_2546_p-126(uspA)  1.0000     20  TM1040_2548_p-51(hemN)   1.0000     20  
+TM1040_0734_p-78(ompW)   1.0000     20  TM1040_2545_p-117(ccoN)  1.0000     20  
+TM1040_2540_p-79(ccoG)   1.0000     20  SPO3076_p-162(ctaC)      1.0000     20  
+SPO2596_p-146(hemA)      1.0000     20  SPO3531_p-32(fnrN)       1.0000     20  
+SPO1383_p-120(ctaD)      1.0000     20  SPO3527_p-98(uspA)       1.0000     20  
+SPO3532_p-52(hemN)       1.0000     20  SPO2792_p-75(ompW)       1.0000     20  
+SPO0330_p-96(ccpR)       1.0000     20  SPO3526_p-110(ccoN)      1.0000     20  
+SPO3522_p-80(ccoG)       1.0000     20  EE36_02238_p-72(ccoN)    1.0000     20  
+EE36_02218_p-74(ccoG)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/FnrN_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/FnrN_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       85    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1700    N=              85
+sample: seed=            0    hsfrac=          0
+        searchsize=   1700    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.302 C 0.212 G 0.196 T 0.289 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.302 C 0.212 G 0.196 T 0.289 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTTGATCYRGATCAARG MEME-1	width =  17  sites =  85  llr = 1236  E-value = 3.5e-438
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::a:1:627::aa41
+pos.-specific     C  4::::366:2::a::12
+probability       G  1::a::1:353::::46
+matrix            T  4aa::714:2:a:::11
+
+         bits    2.4    *        *    
+                 2.1    *        *    
+                 1.9   **       **    
+                 1.6  ****      ***   
+Relative         1.4  ****      ****  
+Entropy          1.2  *****    *****  
+(21.0 bits)      0.9  ***** ** *****  
+                 0.7  ******** ***** *
+                 0.5  ******** ***** *
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TTTGATCCAGATCAAAG
+consensus            C    C TG G    G 
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Jann_1933_p-67(hemA)          3  4.46e-10         CC TTTGATCCAGATCAAAG C         
+Jann_3857_p-126(ccoN)         3  5.18e-10         GG CTTGACCCAGATCAAGG T         
+OG2516_17525_p-74(uspA)       3  1.28e-09         GC CTTGATCTGGATCAAGG T         
+SKA53_08641_p-177(ccoG)       3  1.28e-09         TG CTTGATCCACATCAAGG A         
+EE36_02238_p-72(ccoN)         3  1.59e-09         CA TTTGATCTAGATCAAGG C         
+RSP_1877_p-127(ctaD)          3  2.05e-09         TT ATTGATCCAGATCAAAG T         
+SPO3526_p-110(ccoN)           3  3.84e-09         GT CTTGATGCAGATCAAAG C         
+SPO0330_p-96(ccpR)            3  3.84e-09         CG CTTGATCCATATCAAAG T         
+SPO1383_p-120(ctaD)           3  3.84e-09         AT CTTGATCCAGATCAAAC T         
+TM1040_2291_p-125(ctaD)       3  3.84e-09         TT CTTGATCCAGATCAAAC T         
+MED193_08728_p-122(ctaD)      3  3.84e-09         AT CTTGATCCAGATCAAAC T         
+OB2597_20591_p-77(ccoG)       3  3.84e-09         GC CTTGATGCAGATCAAAG G         
+Pden_3636_p-51(ompW)          3  4.74e-09         AT CTTGATCCAGATCAACG T         
+EE36_02218_p-74(ccoG)         3  6.95e-09         TG TTTGATGCAGATCAAAG C         
+Jann_3853_p-84(ccoG)          3  6.95e-09         AA CTTGATCCACGTCAAAG C         
+OB2597_15845_p-189(ctaC)      3  8.24e-09         TT CTTGATCCAGATCAAAA A         
+TM1040_2540_p-79(ccoG)        3  1.14e-08         TT TTTGATCCACGTCAAAG T         
+ROS217_12221_p-79(uspA)       3  1.14e-08         CG TTTGATCCGCGTCAAGG C         
+MED193_11193_p-180(ccoG)      3  1.14e-08         TT TTTGATCCACGTCAAAG A         
+SPO3076_p-162(ctaC)           3  1.36e-08         TG TTTGATCCAGATCAAAA A         
+RB2654_08222_p-212(ctaD)      3  1.59e-08         TC CTTGACCCGGATCAAAC A         
+SPO3522_p-80(ccoG)            3  1.87e-08         TT TTTGACCCATATCAAAG T         
+ROS217_12261_p-73(ccoG)       3  1.87e-08         AA TTTGATGCAGGTCAAAG C         
+MED193_11228_p-93(ccoN)       3  2.22e-08         GT CTTGATGCAGATCAATG C         
+ROS217_21737_p-168(hemA)      3  2.57e-08         GA CTTGACCCAAGTCAAGG A         
+RSP_0699_p-51(hemN)           3  2.57e-08         CG CTTGATCTGAATCAAAG C         
+Jann_3859_p-51(hemN)          3  2.57e-08         CG CTTGATCCAAATCAATG C         
+Pden_1822_p-40(hemA)          3  3.36e-08         GG CTTGATGCGTATCAAGG T         
+ROS217_12226_p-111(ccoN)      3  3.82e-08         GT TTTGACACAGATCAAGG A         
+RSP_2507_p-69(ompW)           3  3.82e-08         CC ATTGACGCAGATCAAGG C         
+SPO3532_p-52(hemN)            3  4.37e-08         TA CTTGATCTGAGTCAAGG T         
+RB2654_10049_p-52(hemN)       3  4.37e-08         CA TTTGATCCGTATCAATG T         
+SPO2792_p-75(ompW)            3  4.99e-08         AT CTTGATCCAGATCAGGG A         
+RSP_0697_p-111(uspA)          3  4.99e-08         GC CTTGATCCATGTCAATG G         
+Pden_1844_p-70(ccoG)          3  4.99e-08         CG CTTGACGCAGATCAATG C         
+Pden_1848_p-124(ccoN)         3  4.99e-08         AG ATTGACGCAGATCAAAG T         
+TM1040_2545_p-117(ccoN)       3  5.74e-08         AT CTTGATACAGATCAATG T         
+TM1040_0860_p-169(hemA)       3  5.74e-08         TA TTTGACCTGTATCAAGG A         
+ROS217_20807_p-75(ompW)       3  5.74e-08         AA CTTGACCCAAATCAATG T         
+MED193_21064_p-162(hemA)      3  7.30e-08         TA TTTGACCTGTATCAAAG T         
+RB2654_03389_p-127(hemA)      3  8.27e-08         GG TTTGATCCACGTCAACG C         
+SPO2596_p-146(hemA)           3  9.27e-08         TA ATTGACCCAAGTCAAGG C         
+ROS217_12226_p-143(ccoN)      3  9.27e-08         GC CTTGACGCGGATCAAAC G         
+RSP_0698_p-31(fnrN)           3  9.27e-08         GC TTTGATTCAGATCAAGC G         
+RB2654_10004_p0(ccoG)         3  1.03e-07         AT GTTGATCCAAGTCAAGG C         
+RB2654_10034_p-143(uspA)      3  1.17e-07         AC CTTGATCCATGTCAAAA C         
+RB2654_10029_p-125(ccoN)      3  1.30e-07         GT TTTGACATGGATCAAGG T         
+Pden_1851_p-51(hemN)          3  1.30e-07         CA TTTGATTTGGGTCAAGG T         
+SPO3527_p-98(uspA)            3  1.45e-07         GC TTTGATCTGCATCAAGA C         
+RSP_2395_p-81(ccpR)           3  1.45e-07         GA ATTGATCTAAGTCAAAG G         
+OB2597_01932_p-155(hemA)      3  1.45e-07         GA ATTGATTCACATCAAGG A         
+ROS217_12211_p-51(hemN)       3  1.60e-07         CG GTTGATCTAAATCAAAG C         
+RSP_0697_p-79(uspA)           3  1.60e-07         TA CTTGATCCTCATCAAGG A         
+MED193_08963_p-178(ctaC)      3  1.78e-07         TT TTTGATCTAAATCAAGA A         
+SKA53_08741_p-83(ccoN)        3  1.96e-07         GG GTTGATCCACATCAACG A         
+TM1040_0734_p-78(ompW)        3  2.16e-07         CA TTTGATCTAGATCAGAG C         
+RB2654_10034_p-100(uspA)      3  2.16e-07         GA TTTGACACATATCAAAG C         
+RSP_1826_p-161(ctaC)          3  2.16e-07         TC CTTGATTCAGATCAAAT G         
+Pden_1850_p-131(fnrN)         3  2.16e-07         AC CTTGACCCAAATCAAAT G         
+SKA53_08741_p-105(ccoN)       3  2.16e-07         GC ATTGATCCATGTCAAAC G         
+RSP_0696_p-104(ccoN)          3  2.62e-07         CC ATTGACATGGATCAAGG C         
+MED193_11233_p-114(uspA)      3  2.86e-07         GC ATTGATCTGCATCAAGA C         
+RSP_2984_p-87(hemA)           3  2.86e-07         GA TTTGATCCTTATCAAGG C         
+SPO3531_p-32(fnrN)            3  3.12e-07         AC CTTGACTCAGATCAAGT A         
+TM1040_2548_p-51(hemN)        3  3.12e-07         TG GTTGATCTGTGTCAAAG C         
+TM1040_2336_p-164(ctaC)       3  3.12e-07         TT TTTGATCTAAGTCAAGA A         
+ROS217_12221_p-111(uspA)      3  3.12e-07         TC CTTGATCTGTGTCAAAA C         
+Pden_0893_p-141(ccpR)         3  3.40e-07         CA TCTGACCCAGATCAAAG C         
+TM1040_2546_p-126(uspA)       3  3.68e-07         AC ATTGATCTGTATCAAGA T         
+SKA53_08751_p-114(uspA)       3  3.99e-07         CG TTTGACATGGATCAATG C         
+SKA53_02751_p-167(hemA)       3  3.99e-07         TT ATTGATCCAGATCATGG T         
+Jann_3858_p-56(fnrN)          3  4.69e-07         GC ATTGATTTGGATCAAGC G         
+MED193_11238_p-29(fnrN)       3  5.05e-07         AC TTTGACTTGGATCAAAC G         
+Pden_1849_p-146(uspA)         3  5.05e-07         AC TTTGATCTGCGTCAATC T         
+RB2654_06514_p-192(ctaC)      3  5.45e-07         GC ATTGATCTGCATCAATC G         
+OB2597_20571_p-73(ccoN)       3  5.45e-07         CA ATTGACCCAAGTCAAAA C         
+RB2654_10044_p-29(fnrN)       3  5.87e-07         AC ATTGATACGGATCAAAT G         
+ROS217_15111_p-128(ctaD)      3  6.29e-07         TC TTTGATCTGCATCAATT T         
+TM1040_2547_p-29(fnrN)        3  6.72e-07         GC TTTGACACAGATCAACC A         
+OB2597_06915_p-113(ctaD)      3  6.72e-07         TA TTTGATCTGCGTCAATA C         
+ROS217_12216_p-53(fnrN)       3  7.70e-07         GC TTTGATTTAGATCAACC G         
+ROS217_04445_p-219(ctaC)      3  9.89e-07         AA TTTGATTTAAATCAAAA A         
+SKA53_08751_p-136(uspA)       3  1.31e-06         TC GTTGATGTGGATCAACC C         
+RB2654_10029_p-168(ccoN)      3  1.87e-06         GC TTTGATATGTGTCAAAT C         
+RSP_0696_p-136(ccoN)          3  2.05e-06         TC CTTGATGAGGATCAAGT A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Jann_1933_p-67(hemA)              4.5e-10  2_[+1]_1
+Jann_3857_p-126(ccoN)             5.2e-10  2_[+1]_1
+OG2516_17525_p-74(uspA)           1.3e-09  2_[+1]_1
+SKA53_08641_p-177(ccoG)           1.3e-09  2_[+1]_1
+EE36_02238_p-72(ccoN)             1.6e-09  2_[+1]_1
+RSP_1877_p-127(ctaD)                2e-09  2_[+1]_1
+SPO3526_p-110(ccoN)               3.8e-09  2_[+1]_1
+SPO0330_p-96(ccpR)                3.8e-09  2_[+1]_1
+SPO1383_p-120(ctaD)               3.8e-09  2_[+1]_1
+TM1040_2291_p-125(ctaD)           3.8e-09  2_[+1]_1
+MED193_08728_p-122(ctaD)          3.8e-09  2_[+1]_1
+OB2597_20591_p-77(ccoG)           3.8e-09  2_[+1]_1
+Pden_3636_p-51(ompW)              4.7e-09  2_[+1]_1
+EE36_02218_p-74(ccoG)               7e-09  2_[+1]_1
+Jann_3853_p-84(ccoG)                7e-09  2_[+1]_1
+OB2597_15845_p-189(ctaC)          8.2e-09  2_[+1]_1
+TM1040_2540_p-79(ccoG)            1.1e-08  2_[+1]_1
+ROS217_12221_p-79(uspA)           1.1e-08  2_[+1]_1
+MED193_11193_p-180(ccoG)          1.1e-08  2_[+1]_1
+SPO3076_p-162(ctaC)               1.4e-08  2_[+1]_1
+RB2654_08222_p-212(ctaD)          1.6e-08  2_[+1]_1
+SPO3522_p-80(ccoG)                1.9e-08  2_[+1]_1
+ROS217_12261_p-73(ccoG)           1.9e-08  2_[+1]_1
+MED193_11228_p-93(ccoN)           2.2e-08  2_[+1]_1
+ROS217_21737_p-168(hemA)          2.6e-08  2_[+1]_1
+RSP_0699_p-51(hemN)               2.6e-08  2_[+1]_1
+Jann_3859_p-51(hemN)              2.6e-08  2_[+1]_1
+Pden_1822_p-40(hemA)              3.4e-08  2_[+1]_1
+ROS217_12226_p-111(ccoN)          3.8e-08  2_[+1]_1
+RSP_2507_p-69(ompW)               3.8e-08  2_[+1]_1
+SPO3532_p-52(hemN)                4.4e-08  2_[+1]_1
+RB2654_10049_p-52(hemN)           4.4e-08  2_[+1]_1
+SPO2792_p-75(ompW)                  5e-08  2_[+1]_1
+RSP_0697_p-111(uspA)                5e-08  2_[+1]_1
+Pden_1844_p-70(ccoG)                5e-08  2_[+1]_1
+Pden_1848_p-124(ccoN)               5e-08  2_[+1]_1
+TM1040_2545_p-117(ccoN)           5.7e-08  2_[+1]_1
+TM1040_0860_p-169(hemA)           5.7e-08  2_[+1]_1
+ROS217_20807_p-75(ompW)           5.7e-08  2_[+1]_1
+MED193_21064_p-162(hemA)          7.3e-08  2_[+1]_1
+RB2654_03389_p-127(hemA)          8.3e-08  2_[+1]_1
+SPO2596_p-146(hemA)               9.3e-08  2_[+1]_1
+ROS217_12226_p-143(ccoN)          9.3e-08  2_[+1]_1
+RSP_0698_p-31(fnrN)               9.3e-08  2_[+1]_1
+RB2654_10004_p0(ccoG)               1e-07  2_[+1]_1
+RB2654_10034_p-143(uspA)          1.2e-07  2_[+1]_1
+RB2654_10029_p-125(ccoN)          1.3e-07  2_[+1]_1
+Pden_1851_p-51(hemN)              1.3e-07  2_[+1]_1
+SPO3527_p-98(uspA)                1.4e-07  2_[+1]_1
+RSP_2395_p-81(ccpR)               1.4e-07  2_[+1]_1
+OB2597_01932_p-155(hemA)          1.4e-07  2_[+1]_1
+ROS217_12211_p-51(hemN)           1.6e-07  2_[+1]_1
+RSP_0697_p-79(uspA)               1.6e-07  2_[+1]_1
+MED193_08963_p-178(ctaC)          1.8e-07  2_[+1]_1
+SKA53_08741_p-83(ccoN)              2e-07  2_[+1]_1
+TM1040_0734_p-78(ompW)            2.2e-07  2_[+1]_1
+RB2654_10034_p-100(uspA)          2.2e-07  2_[+1]_1
+RSP_1826_p-161(ctaC)              2.2e-07  2_[+1]_1
+Pden_1850_p-131(fnrN)             2.2e-07  2_[+1]_1
+SKA53_08741_p-105(ccoN)           2.2e-07  2_[+1]_1
+RSP_0696_p-104(ccoN)              2.6e-07  2_[+1]_1
+MED193_11233_p-114(uspA)          2.9e-07  2_[+1]_1
+RSP_2984_p-87(hemA)               2.9e-07  2_[+1]_1
+SPO3531_p-32(fnrN)                3.1e-07  2_[+1]_1
+TM1040_2548_p-51(hemN)            3.1e-07  2_[+1]_1
+TM1040_2336_p-164(ctaC)           3.1e-07  2_[+1]_1
+ROS217_12221_p-111(uspA)          3.1e-07  2_[+1]_1
+Pden_0893_p-141(ccpR)             3.4e-07  2_[+1]_1
+TM1040_2546_p-126(uspA)           3.7e-07  2_[+1]_1
+SKA53_08751_p-114(uspA)             4e-07  2_[+1]_1
+SKA53_02751_p-167(hemA)             4e-07  2_[+1]_1
+Jann_3858_p-56(fnrN)              4.7e-07  2_[+1]_1
+MED193_11238_p-29(fnrN)           5.1e-07  2_[+1]_1
+Pden_1849_p-146(uspA)             5.1e-07  2_[+1]_1
+RB2654_06514_p-192(ctaC)          5.4e-07  2_[+1]_1
+OB2597_20571_p-73(ccoN)           5.4e-07  2_[+1]_1
+RB2654_10044_p-29(fnrN)           5.9e-07  2_[+1]_1
+ROS217_15111_p-128(ctaD)          6.3e-07  2_[+1]_1
+TM1040_2547_p-29(fnrN)            6.7e-07  2_[+1]_1
+OB2597_06915_p-113(ctaD)          6.7e-07  2_[+1]_1
+ROS217_12216_p-53(fnrN)           7.7e-07  2_[+1]_1
+ROS217_04445_p-219(ctaC)          9.9e-07  2_[+1]_1
+SKA53_08751_p-136(uspA)           1.3e-06  2_[+1]_1
+RB2654_10029_p-168(ccoN)          1.9e-06  2_[+1]_1
+RSP_0696_p-136(ccoN)                2e-06  2_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTTGATCYRGATCAARG width=17 seqs=85
+Jann_1933_p-67(hemA)     (    3) TTTGATCCAGATCAAAG  1 
+Jann_3857_p-126(ccoN)    (    3) CTTGACCCAGATCAAGG  1 
+OG2516_17525_p-74(uspA)  (    3) CTTGATCTGGATCAAGG  1 
+SKA53_08641_p-177(ccoG)  (    3) CTTGATCCACATCAAGG  1 
+EE36_02238_p-72(ccoN)    (    3) TTTGATCTAGATCAAGG  1 
+RSP_1877_p-127(ctaD)     (    3) ATTGATCCAGATCAAAG  1 
+SPO3526_p-110(ccoN)      (    3) CTTGATGCAGATCAAAG  1 
+SPO0330_p-96(ccpR)       (    3) CTTGATCCATATCAAAG  1 
+SPO1383_p-120(ctaD)      (    3) CTTGATCCAGATCAAAC  1 
+TM1040_2291_p-125(ctaD)  (    3) CTTGATCCAGATCAAAC  1 
+MED193_08728_p-122(ctaD) (    3) CTTGATCCAGATCAAAC  1 
+OB2597_20591_p-77(ccoG)  (    3) CTTGATGCAGATCAAAG  1 
+Pden_3636_p-51(ompW)     (    3) CTTGATCCAGATCAACG  1 
+EE36_02218_p-74(ccoG)    (    3) TTTGATGCAGATCAAAG  1 
+Jann_3853_p-84(ccoG)     (    3) CTTGATCCACGTCAAAG  1 
+OB2597_15845_p-189(ctaC) (    3) CTTGATCCAGATCAAAA  1 
+TM1040_2540_p-79(ccoG)   (    3) TTTGATCCACGTCAAAG  1 
+ROS217_12221_p-79(uspA)  (    3) TTTGATCCGCGTCAAGG  1 
+MED193_11193_p-180(ccoG) (    3) TTTGATCCACGTCAAAG  1 
+SPO3076_p-162(ctaC)      (    3) TTTGATCCAGATCAAAA  1 
+RB2654_08222_p-212(ctaD) (    3) CTTGACCCGGATCAAAC  1 
+SPO3522_p-80(ccoG)       (    3) TTTGACCCATATCAAAG  1 
+ROS217_12261_p-73(ccoG)  (    3) TTTGATGCAGGTCAAAG  1 
+MED193_11228_p-93(ccoN)  (    3) CTTGATGCAGATCAATG  1 
+ROS217_21737_p-168(hemA) (    3) CTTGACCCAAGTCAAGG  1 
+RSP_0699_p-51(hemN)      (    3) CTTGATCTGAATCAAAG  1 
+Jann_3859_p-51(hemN)     (    3) CTTGATCCAAATCAATG  1 
+Pden_1822_p-40(hemA)     (    3) CTTGATGCGTATCAAGG  1 
+ROS217_12226_p-111(ccoN) (    3) TTTGACACAGATCAAGG  1 
+RSP_2507_p-69(ompW)      (    3) ATTGACGCAGATCAAGG  1 
+SPO3532_p-52(hemN)       (    3) CTTGATCTGAGTCAAGG  1 
+RB2654_10049_p-52(hemN)  (    3) TTTGATCCGTATCAATG  1 
+SPO2792_p-75(ompW)       (    3) CTTGATCCAGATCAGGG  1 
+RSP_0697_p-111(uspA)     (    3) CTTGATCCATGTCAATG  1 
+Pden_1844_p-70(ccoG)     (    3) CTTGACGCAGATCAATG  1 
+Pden_1848_p-124(ccoN)    (    3) ATTGACGCAGATCAAAG  1 
+TM1040_2545_p-117(ccoN)  (    3) CTTGATACAGATCAATG  1 
+TM1040_0860_p-169(hemA)  (    3) TTTGACCTGTATCAAGG  1 
+ROS217_20807_p-75(ompW)  (    3) CTTGACCCAAATCAATG  1 
+MED193_21064_p-162(hemA) (    3) TTTGACCTGTATCAAAG  1 
+RB2654_03389_p-127(hemA) (    3) TTTGATCCACGTCAACG  1 
+SPO2596_p-146(hemA)      (    3) ATTGACCCAAGTCAAGG  1 
+ROS217_12226_p-143(ccoN) (    3) CTTGACGCGGATCAAAC  1 
+RSP_0698_p-31(fnrN)      (    3) TTTGATTCAGATCAAGC  1 
+RB2654_10004_p0(ccoG)    (    3) GTTGATCCAAGTCAAGG  1 
+RB2654_10034_p-143(uspA) (    3) CTTGATCCATGTCAAAA  1 
+RB2654_10029_p-125(ccoN) (    3) TTTGACATGGATCAAGG  1 
+Pden_1851_p-51(hemN)     (    3) TTTGATTTGGGTCAAGG  1 
+SPO3527_p-98(uspA)       (    3) TTTGATCTGCATCAAGA  1 
+RSP_2395_p-81(ccpR)      (    3) ATTGATCTAAGTCAAAG  1 
+OB2597_01932_p-155(hemA) (    3) ATTGATTCACATCAAGG  1 
+ROS217_12211_p-51(hemN)  (    3) GTTGATCTAAATCAAAG  1 
+RSP_0697_p-79(uspA)      (    3) CTTGATCCTCATCAAGG  1 
+MED193_08963_p-178(ctaC) (    3) TTTGATCTAAATCAAGA  1 
+SKA53_08741_p-83(ccoN)   (    3) GTTGATCCACATCAACG  1 
+TM1040_0734_p-78(ompW)   (    3) TTTGATCTAGATCAGAG  1 
+RB2654_10034_p-100(uspA) (    3) TTTGACACATATCAAAG  1 
+RSP_1826_p-161(ctaC)     (    3) CTTGATTCAGATCAAAT  1 
+Pden_1850_p-131(fnrN)    (    3) CTTGACCCAAATCAAAT  1 
+SKA53_08741_p-105(ccoN)  (    3) ATTGATCCATGTCAAAC  1 
+RSP_0696_p-104(ccoN)     (    3) ATTGACATGGATCAAGG  1 
+MED193_11233_p-114(uspA) (    3) ATTGATCTGCATCAAGA  1 
+RSP_2984_p-87(hemA)      (    3) TTTGATCCTTATCAAGG  1 
+SPO3531_p-32(fnrN)       (    3) CTTGACTCAGATCAAGT  1 
+TM1040_2548_p-51(hemN)   (    3) GTTGATCTGTGTCAAAG  1 
+TM1040_2336_p-164(ctaC)  (    3) TTTGATCTAAGTCAAGA  1 
+ROS217_12221_p-111(uspA) (    3) CTTGATCTGTGTCAAAA  1 
+Pden_0893_p-141(ccpR)    (    3) TCTGACCCAGATCAAAG  1 
+TM1040_2546_p-126(uspA)  (    3) ATTGATCTGTATCAAGA  1 
+SKA53_08751_p-114(uspA)  (    3) TTTGACATGGATCAATG  1 
+SKA53_02751_p-167(hemA)  (    3) ATTGATCCAGATCATGG  1 
+Jann_3858_p-56(fnrN)     (    3) ATTGATTTGGATCAAGC  1 
+MED193_11238_p-29(fnrN)  (    3) TTTGACTTGGATCAAAC  1 
+Pden_1849_p-146(uspA)    (    3) TTTGATCTGCGTCAATC  1 
+RB2654_06514_p-192(ctaC) (    3) ATTGATCTGCATCAATC  1 
+OB2597_20571_p-73(ccoN)  (    3) ATTGACCCAAGTCAAAA  1 
+RB2654_10044_p-29(fnrN)  (    3) ATTGATACGGATCAAAT  1 
+ROS217_15111_p-128(ctaD) (    3) TTTGATCTGCATCAATT  1 
+TM1040_2547_p-29(fnrN)   (    3) TTTGACACAGATCAACC  1 
+OB2597_06915_p-113(ctaD) (    3) TTTGATCTGCGTCAATA  1 
+ROS217_12216_p-53(fnrN)  (    3) TTTGATTTAGATCAACC  1 
+ROS217_04445_p-219(ctaC) (    3) TTTGATTTAAATCAAAA  1 
+SKA53_08751_p-136(uspA)  (    3) GTTGATGTGGATCAACC  1 
+RB2654_10029_p-168(ccoN) (    3) TTTGATATGTGTCAAAT  1 
+RSP_0696_p-136(ccoN)     (    3) CTTGATGAGGATCAAGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 340 bayes= 4.111 E= 3.5e-438 
+   -78     83   -174     42 
+ -1305   -417  -1305    177 
+ -1305  -1305  -1305    179 
+ -1305  -1305    235  -1305 
+   173  -1305  -1305  -1305 
+ -1305     35  -1305    133 
+  -151    161    -47   -145 
+  -468    158  -1305     29 
+   107  -1305     80   -362 
+   -88    -27    130    -71 
+   129  -1305     40  -1305 
+ -1305  -1305  -1305    179 
+ -1305    223  -1305  -1305 
+   173  -1305  -1305  -1305 
+   167  -1305   -306   -462 
+    53   -159     85   -103 
+  -110    -37    164   -181 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 85 E= 3.5e-438 
+ 0.176471  0.376471  0.058824  0.388235 
+ 0.000000  0.011765  0.000000  0.988235 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.270588  0.000000  0.729412 
+ 0.105882  0.647059  0.141176  0.105882 
+ 0.011765  0.635294  0.000000  0.352941 
+ 0.635294  0.000000  0.341176  0.023529 
+ 0.164706  0.176471  0.482353  0.176471 
+ 0.741176  0.000000  0.258824  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.964706  0.000000  0.023529  0.011765 
+ 0.435294  0.070588  0.352941  0.141176 
+ 0.141176  0.164706  0.611765  0.082353 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTGATCYRGATCAARG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]TTGA[TC]C[CT][AG]G[AG]TCAA[AG]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Jann_3858_p-56(fnrN)             1.88e-06  2_[+1(4.69e-07)]_1
+Jann_1933_p-67(hemA)             1.78e-09  2_[+1(4.46e-10)]_1
+Jann_3859_p-51(hemN)             1.03e-07  2_[+1(2.57e-08)]_1
+Jann_3857_p-126(ccoN)            2.07e-09  2_[+1(5.18e-10)]_1
+Jann_3853_p-84(ccoG)             2.78e-08  2_[+1(6.95e-09)]_1
+SKA53_02751_p-167(hemA)          1.60e-06  2_[+1(3.99e-07)]_1
+SKA53_08751_p-136(uspA)          5.25e-06  2_[+1(1.31e-06)]_1
+SKA53_08751_p-114(uspA)          1.60e-06  2_[+1(3.99e-07)]_1
+SKA53_08741_p-105(ccoN)          8.64e-07  2_[+1(2.16e-07)]_1
+SKA53_08741_p-83(ccoN)           7.85e-07  2_[+1(1.96e-07)]_1
+SKA53_08641_p-177(ccoG)          5.11e-09  2_[+1(1.28e-09)]_1
+OB2597_01932_p-155(hemA)         5.79e-07  2_[+1(1.45e-07)]_1
+OB2597_06915_p-113(ctaD)         2.69e-06  2_[+1(6.72e-07)]_1
+OB2597_15845_p-189(ctaC)         3.29e-08  2_[+1(8.24e-09)]_1
+OB2597_20571_p-73(ccoN)          2.18e-06  2_[+1(5.45e-07)]_1
+OB2597_20591_p-77(ccoG)          1.53e-08  2_[+1(3.84e-09)]_1
+OG2516_17525_p-74(uspA)          5.11e-09  2_[+1(1.28e-09)]_1
+Pden_1850_p-131(fnrN)            8.64e-07  2_[+1(2.16e-07)]_1
+Pden_1851_p-51(hemN)             5.22e-07  2_[+1(1.30e-07)]_1
+Pden_1822_p-40(hemA)             1.34e-07  2_[+1(3.36e-08)]_1
+Pden_1849_p-146(uspA)            2.02e-06  2_[+1(5.05e-07)]_1
+Pden_3636_p-51(ompW)             1.90e-08  2_[+1(4.74e-09)]_1
+Pden_0893_p-141(ccpR)            1.36e-06  2_[+1(3.40e-07)]_1
+Pden_1848_p-124(ccoN)            2.00e-07  2_[+1(4.99e-08)]_1
+Pden_1844_p-70(ccoG)             2.00e-07  2_[+1(4.99e-08)]_1
+RSP_1877_p-127(ctaD)             8.20e-09  2_[+1(2.05e-09)]_1
+RSP_0698_p-31(fnrN)              3.71e-07  2_[+1(9.27e-08)]_1
+RSP_1826_p-161(ctaC)             8.64e-07  2_[+1(2.16e-07)]_1
+RSP_0699_p-51(hemN)              1.03e-07  2_[+1(2.57e-08)]_1
+RSP_2984_p-87(hemA)              1.14e-06  2_[+1(2.86e-07)]_1
+RSP_0696_p-136(ccoN)             8.18e-06  2_[+1(2.05e-06)]_1
+RSP_0697_p-111(uspA)             2.00e-07  2_[+1(4.99e-08)]_1
+RSP_0697_p-79(uspA)              6.42e-07  2_[+1(1.60e-07)]_1
+RSP_0696_p-104(ccoN)             1.05e-06  2_[+1(2.62e-07)]_1
+RSP_2507_p-69(ompW)              1.53e-07  2_[+1(3.82e-08)]_1
+RSP_2395_p-81(ccpR)              5.79e-07  2_[+1(1.45e-07)]_1
+RB2654_06514_p-192(ctaC)         2.18e-06  2_[+1(5.45e-07)]_1
+RB2654_10044_p-29(fnrN)          2.35e-06  2_[+1(5.87e-07)]_1
+RB2654_08222_p-212(ctaD)         6.36e-08  2_[+1(1.59e-08)]_1
+RB2654_10034_p-143(uspA)         4.66e-07  2_[+1(1.17e-07)]_1
+RB2654_10034_p-100(uspA)         8.64e-07  2_[+1(2.16e-07)]_1
+RB2654_03389_p-127(hemA)         3.31e-07  2_[+1(8.27e-08)]_1
+RB2654_10049_p-52(hemN)          1.75e-07  2_[+1(4.37e-08)]_1
+RB2654_10029_p-168(ccoN)         7.47e-06  2_[+1(1.87e-06)]_1
+RB2654_10029_p-125(ccoN)         5.22e-07  2_[+1(1.30e-07)]_1
+RB2654_10004_p0(ccoG)            4.13e-07  2_[+1(1.03e-07)]_1
+MED193_08963_p-178(ctaC)         7.10e-07  2_[+1(1.78e-07)]_1
+MED193_11238_p-29(fnrN)          2.02e-06  2_[+1(5.05e-07)]_1
+MED193_21064_p-162(hemA)         2.92e-07  2_[+1(7.30e-08)]_1
+MED193_08728_p-122(ctaD)         1.53e-08  2_[+1(3.84e-09)]_1
+MED193_11233_p-114(uspA)         1.14e-06  2_[+1(2.86e-07)]_1
+MED193_11228_p-93(ccoN)          8.89e-08  2_[+1(2.22e-08)]_1
+MED193_11193_p-180(ccoG)         4.57e-08  2_[+1(1.14e-08)]_1
+ROS217_04445_p-219(ctaC)         3.96e-06  2_[+1(9.89e-07)]_1
+ROS217_21737_p-168(hemA)         1.03e-07  2_[+1(2.57e-08)]_1
+ROS217_12216_p-53(fnrN)          3.08e-06  2_[+1(7.70e-07)]_1
+ROS217_15111_p-128(ctaD)         2.51e-06  2_[+1(6.29e-07)]_1
+ROS217_12221_p-111(uspA)         1.25e-06  2_[+1(3.12e-07)]_1
+ROS217_12221_p-79(uspA)          4.57e-08  2_[+1(1.14e-08)]_1
+ROS217_12211_p-51(hemN)          6.42e-07  2_[+1(1.60e-07)]_1
+ROS217_20807_p-75(ompW)          2.29e-07  2_[+1(5.74e-08)]_1
+ROS217_12226_p-143(ccoN)         3.71e-07  2_[+1(9.27e-08)]_1
+ROS217_12226_p-111(ccoN)         1.53e-07  2_[+1(3.82e-08)]_1
+ROS217_12261_p-73(ccoG)          7.46e-08  2_[+1(1.87e-08)]_1
+TM1040_2336_p-164(ctaC)          1.25e-06  2_[+1(3.12e-07)]_1
+TM1040_0860_p-169(hemA)          2.29e-07  2_[+1(5.74e-08)]_1
+TM1040_2547_p-29(fnrN)           2.69e-06  2_[+1(6.72e-07)]_1
+TM1040_2291_p-125(ctaD)          1.53e-08  2_[+1(3.84e-09)]_1
+TM1040_2546_p-126(uspA)          1.47e-06  2_[+1(3.68e-07)]_1
+TM1040_2548_p-51(hemN)           1.25e-06  2_[+1(3.12e-07)]_1
+TM1040_0734_p-78(ompW)           8.64e-07  2_[+1(2.16e-07)]_1
+TM1040_2545_p-117(ccoN)          2.29e-07  2_[+1(5.74e-08)]_1
+TM1040_2540_p-79(ccoG)           4.57e-08  2_[+1(1.14e-08)]_1
+SPO3076_p-162(ctaC)              5.43e-08  2_[+1(1.36e-08)]_1
+SPO2596_p-146(hemA)              3.71e-07  2_[+1(9.27e-08)]_1
+SPO3531_p-32(fnrN)               1.25e-06  2_[+1(3.12e-07)]_1
+SPO1383_p-120(ctaD)              1.53e-08  2_[+1(3.84e-09)]_1
+SPO3527_p-98(uspA)               5.79e-07  2_[+1(1.45e-07)]_1
+SPO3532_p-52(hemN)               1.75e-07  2_[+1(4.37e-08)]_1
+SPO2792_p-75(ompW)               2.00e-07  2_[+1(4.99e-08)]_1
+SPO0330_p-96(ccpR)               1.53e-08  2_[+1(3.84e-09)]_1
+SPO3526_p-110(ccoN)              1.53e-08  2_[+1(3.84e-09)]_1
+SPO3522_p-80(ccoG)               7.46e-08  2_[+1(1.87e-08)]_1
+EE36_02238_p-72(ccoN)            6.36e-09  2_[+1(1.59e-09)]_1
+EE36_02218_p-74(ccoG)            2.78e-08  2_[+1(6.95e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

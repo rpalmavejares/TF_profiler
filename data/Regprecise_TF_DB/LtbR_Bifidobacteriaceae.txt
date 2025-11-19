@@ -1,0 +1,285 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/LtbR_Bifidobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BAD_0178_p-33(ltbR)      1.0000     19  BAD_0179_p-302(leuC)     1.0000     19  
+BIFANG_00091_p-168(leuC) 1.0000     19  BLA_0228_p-32(ltbR)      1.0000     19  
+BLA_0228_p-168(ltbR)     1.0000     19  BLA_0229_p-282(leuC)     1.0000     19  
+BLA_0229_p-146(leuC)     1.0000     19  BbifN4_010100000594_p-67 1.0000     19  
+BbifN4_010100000599_p-25 1.0000     19  BIFBRE_00110_p-36(ltbR)  1.0000     19  
+BIFBRE_00111_p-178(leuC) 1.0000     19  BDP_0267_p-33(ltbR)      1.0000     19  
+BDP_0268_p-270(leuC)     1.0000     19  BIFGAL_00075_p-34(ltbR)  1.0000     19  
+BIFGAL_00074_p-221(n/a)  1.0000     19  BL1261_p-60(ltbR)        1.0000     19  
+BL1262_p-276(leuC)       1.0000     19  Blon_2326_p-36(ltbR)     1.0000     19  
+Blon_2325_p-276(leuC)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/LtbR_Bifidobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/LtbR_Bifidobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             361    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    361    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.33 C 0.175 G 0.172 T 0.324 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.329 C 0.175 G 0.173 T 0.323 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CATYTCACWWWGTGARATG MEME-1	width =  19  sites =  19  llr = 334  E-value = 1.9e-107
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :9::::926551::a5a:2
+pos.-specific     C  8::5:a:6:::11::1:1:
+probability       G  :1:1::11:::6:a:5::8
+matrix            T  2:a4a::145529::::9:
+
+         bits    2.5      *       *     
+                 2.3      *       *     
+                 2.0      *       *     
+                 1.8 *    *       *    *
+Relative         1.5 * * **       ** * *
+Entropy          1.3 *** ***     *** ***
+(25.4 bits)      1.0 *******     *** ***
+                 0.8 ********   ********
+                 0.5 *******************
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           CATCTCACATTGTGAAATG
+consensus               T    TAA    G   
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Blon_2325_p-276(leuC)         1  5.09e-11          . CATCTCACATAGTGAAATG           
+BIFANG_00091_p-168(leuC)      1  5.09e-11          . CATCTCACATAGTGAAATG           
+Blon_2326_p-36(ltbR)          1  1.34e-10          . CATTTCACTATGTGAGATG           
+BDP_0268_p-270(leuC)          1  1.10e-09          . CATCTCACATATTGAAATG           
+BAD_0179_p-302(leuC)          1  1.10e-09          . CATCTCACATATTGAAATG           
+BL1262_p-276(leuC)            1  1.59e-09          . CATCTCACATAGTGAAATA           
+BIFBRE_00111_p-178(leuC)      1  1.59e-09          . CATCTCACATAGTGAAATA           
+BIFGAL_00074_p-221(n/a)       1  1.80e-09          . CATCTCACATAATGAAATG           
+BbifN4_010100000599_p-25      1  1.80e-09          . CATCTCACATAATGAAATG           
+BDP_0267_p-33(ltbR)           1  2.07e-09          . CATTTCAATATGTGAGATG           
+BAD_0178_p-33(ltbR)           1  2.07e-09          . CATTTCAATATGTGAGATG           
+BL1261_p-60(ltbR)             1  2.83e-09          . TATTTCACTATGTGAGATG           
+BIFBRE_00110_p-36(ltbR)       1  2.83e-09          . TATTTCACTATGTGAGATG           
+BIFGAL_00075_p-34(ltbR)       1  3.12e-09          . CATTTCATTATGTGAGATG           
+BbifN4_010100000594_p-67      1  3.12e-09          . CATTTCATTATGTGAGATG           
+BLA_0229_p-146(leuC)          1  8.44e-08          . CATCTCGCATTCTGACATA           
+BLA_0228_p-168(ltbR)          1  9.39e-08          . TATGTCAGAATGCGAGATG           
+BLA_0228_p-32(ltbR)           1  1.20e-07          . CGTTTCGAATACTGAGATG           
+BLA_0229_p-282(leuC)          1  1.26e-07          . CATCTCAGTATTCGAAACG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Blon_2325_p-276(leuC)             5.1e-11  [+1]
+BIFANG_00091_p-168(leuC)          5.1e-11  [+1]
+Blon_2326_p-36(ltbR)              1.3e-10  [+1]
+BDP_0268_p-270(leuC)              1.1e-09  [+1]
+BAD_0179_p-302(leuC)              1.1e-09  [+1]
+BL1262_p-276(leuC)                1.6e-09  [+1]
+BIFBRE_00111_p-178(leuC)          1.6e-09  [+1]
+BIFGAL_00074_p-221(n/a)           1.8e-09  [+1]
+BbifN4_010100000599_p-25          1.8e-09  [+1]
+BDP_0267_p-33(ltbR)               2.1e-09  [+1]
+BAD_0178_p-33(ltbR)               2.1e-09  [+1]
+BL1261_p-60(ltbR)                 2.8e-09  [+1]
+BIFBRE_00110_p-36(ltbR)           2.8e-09  [+1]
+BIFGAL_00075_p-34(ltbR)           3.1e-09  [+1]
+BbifN4_010100000594_p-67          3.1e-09  [+1]
+BLA_0229_p-146(leuC)              8.4e-08  [+1]
+BLA_0228_p-168(ltbR)              9.4e-08  [+1]
+BLA_0228_p-32(ltbR)               1.2e-07  [+1]
+BLA_0229_p-282(leuC)              1.3e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CATYTCACWWWGTGARATG width=19 seqs=19
+Blon_2325_p-276(leuC)    (    1) CATCTCACATAGTGAAATG  1 
+BIFANG_00091_p-168(leuC) (    1) CATCTCACATAGTGAAATG  1 
+Blon_2326_p-36(ltbR)     (    1) CATTTCACTATGTGAGATG  1 
+BDP_0268_p-270(leuC)     (    1) CATCTCACATATTGAAATG  1 
+BAD_0179_p-302(leuC)     (    1) CATCTCACATATTGAAATG  1 
+BL1262_p-276(leuC)       (    1) CATCTCACATAGTGAAATA  1 
+BIFBRE_00111_p-178(leuC) (    1) CATCTCACATAGTGAAATA  1 
+BIFGAL_00074_p-221(n/a)  (    1) CATCTCACATAATGAAATG  1 
+BbifN4_010100000599_p-25 (    1) CATCTCACATAATGAAATG  1 
+BDP_0267_p-33(ltbR)      (    1) CATTTCAATATGTGAGATG  1 
+BAD_0178_p-33(ltbR)      (    1) CATTTCAATATGTGAGATG  1 
+BL1261_p-60(ltbR)        (    1) TATTTCACTATGTGAGATG  1 
+BIFBRE_00110_p-36(ltbR)  (    1) TATTTCACTATGTGAGATG  1 
+BIFGAL_00075_p-34(ltbR)  (    1) CATTTCATTATGTGAGATG  1 
+BbifN4_010100000594_p-67 (    1) CATTTCATTATGTGAGATG  1 
+BLA_0229_p-146(leuC)     (    1) CATCTCGCATTCTGACATA  1 
+BLA_0228_p-168(ltbR)     (    1) TATGTCAGAATGCGAGATG  1 
+BLA_0228_p-32(ltbR)      (    1) CGTTTCGAATACTGAGATG  1 
+BLA_0229_p-282(leuC)     (    1) CATCTCAGTATTCGAAACG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 19 bayes= 1.33258 E= 1.9e-107 
+ -1089    226  -1089   -103 
+   153  -1089   -171  -1089 
+ -1089  -1089  -1089    163 
+ -1089    159   -171     38 
+ -1089  -1089  -1089    163 
+ -1089    251  -1089  -1089 
+   144  -1089    -71  -1089 
+  -106    185    -71   -162 
+    82  -1089  -1089     38 
+    53  -1089  -1089     70 
+    53  -1089  -1089     70 
+  -164    -74    187   -103 
+ -1089    -74  -1089    147 
+ -1089  -1089    253  -1089 
+   160  -1089  -1089  -1089 
+    53   -173    146  -1089 
+   160  -1089  -1089  -1089 
+ -1089   -173  -1089    155 
+  -106  -1089    229  -1089 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 19 E= 1.9e-107 
+ 0.000000  0.842105  0.000000  0.157895 
+ 0.947368  0.000000  0.052632  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.526316  0.052632  0.421053 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.894737  0.000000  0.105263  0.000000 
+ 0.157895  0.631579  0.105263  0.105263 
+ 0.578947  0.000000  0.000000  0.421053 
+ 0.473684  0.000000  0.000000  0.526316 
+ 0.473684  0.000000  0.000000  0.526316 
+ 0.105263  0.105263  0.631579  0.157895 
+ 0.000000  0.105263  0.000000  0.894737 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.473684  0.052632  0.473684  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.052632  0.000000  0.947368 
+ 0.157895  0.000000  0.842105  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CATYTCACWWWGTGARATG MEME-1 regular expression
+--------------------------------------------------------------------------------
+CAT[CT]TCAC[AT][TA][TA]GTGA[AG]ATG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BAD_0178_p-33(ltbR)              2.07e-09  [+1(2.07e-09)]
+BAD_0179_p-302(leuC)             1.10e-09  [+1(1.10e-09)]
+BIFANG_00091_p-168(leuC)         5.09e-11  [+1(5.09e-11)]
+BLA_0228_p-32(ltbR)              1.20e-07  [+1(1.20e-07)]
+BLA_0228_p-168(ltbR)             9.39e-08  [+1(9.39e-08)]
+BLA_0229_p-282(leuC)             1.26e-07  [+1(1.26e-07)]
+BLA_0229_p-146(leuC)             8.44e-08  [+1(8.44e-08)]
+BbifN4_010100000594_p-67         3.12e-09  [+1(3.12e-09)]
+BbifN4_010100000599_p-25         1.80e-09  [+1(1.80e-09)]
+BIFBRE_00110_p-36(ltbR)          2.83e-09  [+1(2.83e-09)]
+BIFBRE_00111_p-178(leuC)         1.59e-09  [+1(1.59e-09)]
+BDP_0267_p-33(ltbR)              2.07e-09  [+1(2.07e-09)]
+BDP_0268_p-270(leuC)             1.10e-09  [+1(1.10e-09)]
+BIFGAL_00075_p-34(ltbR)          3.12e-09  [+1(3.12e-09)]
+BIFGAL_00074_p-221(n/a)          1.80e-09  [+1(1.80e-09)]
+BL1261_p-60(ltbR)                2.83e-09  [+1(2.83e-09)]
+BL1262_p-276(leuC)               1.59e-09  [+1(1.59e-09)]
+Blon_2326_p-36(ltbR)             1.34e-10  [+1(1.34e-10)]
+Blon_2325_p-276(leuC)            5.09e-11  [+1(5.09e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

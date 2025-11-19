@@ -1,0 +1,242 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/ArgR_Thermotogales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TM1780_p-37(argG)        1.0000     19  TM0371_p-60(argR)        1.0000     19  
+TRQ2_1045_p-37(argG)     1.0000     19  TRQ2_0560_p-60(argR)     1.0000     19  
+CTN_1184_p-37(argG)      1.0000     19  CTN_0302_p-41(argR)      1.0000     19  
+Tpet_0546_p-60(argR)     1.0000     19  Tpet_1067_p-37(argG)     1.0000     19  
+Tnap_0166_p-60(argR)     1.0000     19  Tnap_1035_p-37(argG)     1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/ArgR_Thermotogales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermotogales/ArgR_Thermotogales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             190    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    190    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.416 C 0.0789 G 0.0842 T 0.421 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.412 C 0.0825 G 0.0876 T 0.418 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATAWTTATGCTATMWAKA MEME-1	width =  18  sites =  10  llr = 171  E-value = 5.5e-041
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:a5::a::::9:55a19
+pos.-specific     C  :::::::::a:::5::::
+probability       G  ::::::::a::1::::5:
+matrix            T  :a:5aa:a::a:a:5:41
+
+         bits    3.6         **        
+                 3.2         **        
+                 2.9         **        
+                 2.5         **        
+Relative         2.2         **        
+Entropy          1.8         **        
+(24.6 bits)      1.4 *** ******* ** *  
+                 1.1 *** ********** ** 
+                 0.7 *** ********** ***
+                 0.4 ******************
+                 0.0 ------------------
+
+Multilevel           ATAATTATGCTATAAAGA
+consensus               T         CT T 
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Tnap_1035_p-37(argG)          1  2.31e-10          . ATAATTATGCTATCAAGA A         
+Tpet_1067_p-37(argG)          1  2.31e-10          . ATAATTATGCTATCAAGA A         
+CTN_1184_p-37(argG)           1  2.31e-10          . ATAATTATGCTATCAAGA A         
+TRQ2_1045_p-37(argG)          1  2.31e-10          . ATAATTATGCTATCAAGA A         
+TM1780_p-37(argG)             1  2.31e-10          . ATAATTATGCTATCAAGA A         
+Tnap_0166_p-60(argR)          1  4.02e-08          . ATATTTATGCTATATATA T         
+Tpet_0546_p-60(argR)          1  4.02e-08          . ATATTTATGCTATATATA T         
+TRQ2_0560_p-60(argR)          1  4.02e-08          . ATATTTATGCTATATATA T         
+TM0371_p-60(argR)             1  4.02e-08          . ATATTTATGCTATATATA T         
+CTN_0302_p-41(argR)           1  1.56e-07          . ATATTTATGCTGTATAAT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tnap_1035_p-37(argG)              2.3e-10  [+1]_1
+Tpet_1067_p-37(argG)              2.3e-10  [+1]_1
+CTN_1184_p-37(argG)               2.3e-10  [+1]_1
+TRQ2_1045_p-37(argG)              2.3e-10  [+1]_1
+TM1780_p-37(argG)                 2.3e-10  [+1]_1
+Tnap_0166_p-60(argR)                4e-08  [+1]_1
+Tpet_0546_p-60(argR)                4e-08  [+1]_1
+TRQ2_0560_p-60(argR)                4e-08  [+1]_1
+TM0371_p-60(argR)                   4e-08  [+1]_1
+CTN_0302_p-41(argR)               1.6e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATAWTTATGCTATMWAKA width=18 seqs=10
+Tnap_1035_p-37(argG)     (    1) ATAATTATGCTATCAAGA  1 
+Tpet_1067_p-37(argG)     (    1) ATAATTATGCTATCAAGA  1 
+CTN_1184_p-37(argG)      (    1) ATAATTATGCTATCAAGA  1 
+TRQ2_1045_p-37(argG)     (    1) ATAATTATGCTATCAAGA  1 
+TM1780_p-37(argG)        (    1) ATAATTATGCTATCAAGA  1 
+Tnap_0166_p-60(argR)     (    1) ATATTTATGCTATATATA  1 
+Tpet_0546_p-60(argR)     (    1) ATATTTATGCTATATATA  1 
+TRQ2_0560_p-60(argR)     (    1) ATATTTATGCTATATATA  1 
+TM0371_p-60(argR)        (    1) ATATTTATGCTATATATA  1 
+CTN_0302_p-41(argR)      (    1) ATATTTATGCTGTATAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 20 bayes= 2.18763 E= 5.5e-041 
+   128   -997   -997   -997 
+  -997   -997   -997    126 
+   128   -997   -997   -997 
+    28   -997   -997     26 
+  -997   -997   -997    126 
+  -997   -997   -997    126 
+   128   -997   -997   -997 
+  -997   -997   -997    126 
+  -997   -997    351   -997 
+  -997    360   -997   -997 
+  -997   -997   -997    126 
+   113   -997     19   -997 
+  -997   -997   -997    126 
+    28    260   -997   -997 
+    28   -997   -997     26 
+   128   -997   -997   -997 
+  -204   -997    251     -6 
+   113   -997   -997   -206 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 10 E= 5.5e-041 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.100000  0.000000  0.500000  0.400000 
+ 0.900000  0.000000  0.000000  0.100000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAWTTATGCTATMWAKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATA[AT]TTATGCTAT[AC][AT]A[GT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TM1780_p-37(argG)                4.63e-10  [+1(2.31e-10)]_1
+TM0371_p-60(argR)                8.04e-08  [+1(4.02e-08)]_1
+TRQ2_1045_p-37(argG)             4.63e-10  [+1(2.31e-10)]_1
+TRQ2_0560_p-60(argR)             8.04e-08  [+1(4.02e-08)]_1
+CTN_1184_p-37(argG)              4.63e-10  [+1(2.31e-10)]_1
+CTN_0302_p-41(argR)              3.12e-07  [+1(1.56e-07)]_1
+Tpet_0546_p-60(argR)             8.04e-08  [+1(4.02e-08)]_1
+Tpet_1067_p-37(argG)             4.63e-10  [+1(2.31e-10)]_1
+Tnap_0166_p-60(argR)             8.04e-08  [+1(4.02e-08)]_1
+Tnap_1035_p-37(argG)             4.63e-10  [+1(2.31e-10)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

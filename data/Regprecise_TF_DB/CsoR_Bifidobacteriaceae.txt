@@ -1,0 +1,249 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/CsoR_Bifidobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BAD_1302_p-82(csoR)      1.0000     17  BAD_1301_p-23(copA)      1.0000     17  
+BbifN4_010100007162_p-36 1.0000     17  BbifN4_010100007157_p-67 1.0000     17  
+BIFBRE_02066_p-8(csoR)   1.0000     17  BIFBRE_02065_p-64(copA)  1.0000     17  
+BDP_1760_p-85(csoR)      1.0000     17  BDP_1759_p-73(copA)      1.0000     17  
+BL0408_p-63(csoR)        1.0000     17  BL0409_p-65(copA)        1.0000     17  
+Blon_0252_p-63(csoR)     1.0000     17  Blon_0251_p-64(copA)     1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/CsoR_Bifidobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/CsoR_Bifidobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             204    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    204    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.275 C 0.225 G 0.225 T 0.275 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.274 C 0.226 G 0.226 T 0.274 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATACCCYHWDRGGGTAT MEME-1	width =  17  sites =  12  llr = 232  E-value = 2.7e-070
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:a::::3554::::a:
+pos.-specific     C  :::aaa63:::::::::
+probability       G  :::::::::36aaa:::
+matrix            T  :a::::4553::::a:a
+
+         bits    2.1    ***     ***   
+                 1.9 ******     ******
+                 1.7 ******     ******
+                 1.5 ******     ******
+Relative         1.3 ******     ******
+Entropy          1.1 *******   *******
+(27.9 bits)      0.9 ******* * *******
+                 0.6 ******* * *******
+                 0.4 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ATACCCCTAAGGGGTAT
+consensus                  TATGA      
+sequence                    C T       
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+BIFBRE_02065_p-64(copA)       1  8.38e-10          . ATACCCCATAGGGGTAT           
+BIFBRE_02066_p-8(csoR)        1  8.38e-10          . ATACCCCTATGGGGTAT           
+Blon_0251_p-64(copA)          1  1.57e-09          . ATACCCTCTAGGGGTAT           
+Blon_0252_p-63(csoR)          1  1.57e-09          . ATACCCCTAGAGGGTAT           
+BL0409_p-65(copA)             1  1.57e-09          . ATACCCTCTAGGGGTAT           
+BL0408_p-63(csoR)             1  1.57e-09          . ATACCCCTAGAGGGTAT           
+BbifN4_010100007157_p-67      1  1.57e-09          . ATACCCTCTAGGGGTAT           
+BbifN4_010100007162_p-36      1  1.57e-09          . ATACCCCTAGAGGGTAT           
+BDP_1759_p-73(copA)           1  2.34e-09          . ATACCCTATAGGGGTAT           
+BDP_1760_p-85(csoR)           1  2.34e-09          . ATACCCCTATAGGGTAT           
+BAD_1301_p-23(copA)           1  2.34e-09          . ATACCCTATAGGGGTAT           
+BAD_1302_p-82(csoR)           1  2.34e-09          . ATACCCCTATAGGGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BIFBRE_02065_p-64(copA)           8.4e-10  [+1]
+BIFBRE_02066_p-8(csoR)            8.4e-10  [+1]
+Blon_0251_p-64(copA)              1.6e-09  [+1]
+Blon_0252_p-63(csoR)              1.6e-09  [+1]
+BL0409_p-65(copA)                 1.6e-09  [+1]
+BL0408_p-63(csoR)                 1.6e-09  [+1]
+BbifN4_010100007157_p-67          1.6e-09  [+1]
+BbifN4_010100007162_p-36          1.6e-09  [+1]
+BDP_1759_p-73(copA)               2.3e-09  [+1]
+BDP_1760_p-85(csoR)               2.3e-09  [+1]
+BAD_1301_p-23(copA)               2.3e-09  [+1]
+BAD_1302_p-82(csoR)               2.3e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATACCCYHWDRGGGTAT width=17 seqs=12
+BIFBRE_02065_p-64(copA)  (    1) ATACCCCATAGGGGTAT  1 
+BIFBRE_02066_p-8(csoR)   (    1) ATACCCCTATGGGGTAT  1 
+Blon_0251_p-64(copA)     (    1) ATACCCTCTAGGGGTAT  1 
+Blon_0252_p-63(csoR)     (    1) ATACCCCTAGAGGGTAT  1 
+BL0409_p-65(copA)        (    1) ATACCCTCTAGGGGTAT  1 
+BL0408_p-63(csoR)        (    1) ATACCCCTAGAGGGTAT  1 
+BbifN4_010100007157_p-67 (    1) ATACCCTCTAGGGGTAT  1 
+BbifN4_010100007162_p-36 (    1) ATACCCCTAGAGGGTAT  1 
+BDP_1759_p-73(copA)      (    1) ATACCCTATAGGGGTAT  1 
+BDP_1760_p-85(csoR)      (    1) ATACCCCTATAGGGTAT  1 
+BAD_1301_p-23(copA)      (    1) ATACCCTATAGGGGTAT  1 
+BAD_1302_p-82(csoR)      (    1) ATACCCCTATAGGGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 12 bayes= 1 E= 2.7e-070 
+   187  -1023  -1023  -1023 
+ -1023  -1023  -1023    187 
+   187  -1023  -1023  -1023 
+ -1023    214  -1023  -1023 
+ -1023    214  -1023  -1023 
+ -1023    214  -1023  -1023 
+ -1023    137  -1023     60 
+   -13     15  -1023     87 
+    87  -1023  -1023     87 
+    87  -1023     15    -13 
+    60  -1023    137  -1023 
+ -1023  -1023    214  -1023 
+ -1023  -1023    214  -1023 
+ -1023  -1023    214  -1023 
+ -1023  -1023  -1023    187 
+   187  -1023  -1023  -1023 
+ -1023  -1023  -1023    187 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 12 E= 2.7e-070 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.583333  0.000000  0.416667 
+ 0.250000  0.250000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.250000  0.250000 
+ 0.416667  0.000000  0.583333  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATACCCYHWDRGGGTAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATACCC[CT][TAC][AT][AGT][GA]GGGTAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BAD_1302_p-82(csoR)              2.34e-09  [+1(2.34e-09)]
+BAD_1301_p-23(copA)              2.34e-09  [+1(2.34e-09)]
+BbifN4_010100007162_p-36         1.57e-09  [+1(1.57e-09)]
+BbifN4_010100007157_p-67         1.57e-09  [+1(1.57e-09)]
+BIFBRE_02066_p-8(csoR)           8.38e-10  [+1(8.38e-10)]
+BIFBRE_02065_p-64(copA)          8.38e-10  [+1(8.38e-10)]
+BDP_1760_p-85(csoR)              2.34e-09  [+1(2.34e-09)]
+BDP_1759_p-73(copA)              2.34e-09  [+1(2.34e-09)]
+BL0408_p-63(csoR)                1.57e-09  [+1(1.57e-09)]
+BL0409_p-65(copA)                1.57e-09  [+1(1.57e-09)]
+Blon_0252_p-63(csoR)             1.57e-09  [+1(1.57e-09)]
+Blon_0251_p-64(copA)             1.57e-09  [+1(1.57e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

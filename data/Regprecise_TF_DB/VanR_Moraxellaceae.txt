@@ -1,0 +1,228 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/VanR_Moraxellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ACIAD0982_p-134(vanK)    1.0000     12  ACIAD0980_p-220(vanA)    1.0000     12  
+ACIAD0980_p-34(vanA)     1.0000     12  ACIAD0982_p-180(vanK)    1.0000     12  
+AB57_1201_p-247(vanK)    1.0000     12  AB57_1200_p-256(vanA)    1.0000     12  
+AB57_1200_p-186(vanA)    1.0000     12  AB57_1200_p-176(vanA)    1.0000     12  
+AB57_1201_p-153(vanK)    1.0000     12  AB57_1200_p-34(vanA)     1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/VanR_Moraxellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Moraxellaceae/VanR_Moraxellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             120    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    120    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.325 C 0.175 G 0.158 T 0.342 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.323 C 0.177 G 0.161 T 0.339 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WWTGGATCCAW MEME-1	width =  11  sites =  10  llr = 115  E-value = 1.1e-029
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  44:::a::1a6
+pos.-specific     C  ::11:::a9::
+probability       G  :::8a::::::
+matrix            T  6691::a:::4
+
+         bits    2.6     *      
+                 2.4     *  *   
+                 2.1     *  *   
+                 1.8     *  **  
+Relative         1.6    ******* 
+Entropy          1.3   ******** 
+(16.5 bits)      1.1   ******** 
+                 0.8   ******** 
+                 0.5 ***********
+                 0.3 ***********
+                 0.0 -----------
+
+Multilevel           TTTGGATCCAA
+consensus            AA        T
+sequence                        
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+AB57_1201_p-153(vanK)         1  3.61e-07          . TTTGGATCCAA G         
+ACIAD0980_p-220(vanA)         1  3.61e-07          . TTTGGATCCAA T         
+AB57_1200_p-34(vanA)          1  1.05e-06          . ATTGGATCCAA T         
+AB57_1200_p-176(vanA)         1  1.05e-06          . TATGGATCCAA A         
+ACIAD0980_p-34(vanA)          1  1.05e-06          . ATTGGATCCAA T         
+ACIAD0982_p-180(vanK)         1  1.43e-06          . TTTGGATCCAT T         
+AB57_1200_p-256(vanA)         1  2.48e-06          . TATGGATCCAT A         
+AB57_1201_p-247(vanK)         1  2.48e-06          . TATGGATCCAT A         
+ACIAD0982_p-134(vanK)         1  2.03e-05          . AACCGATCCAA T         
+AB57_1200_p-186(vanA)         1  4.15e-05          . ATTTGATCAAT A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AB57_1201_p-153(vanK)             3.6e-07  [+1]_1
+ACIAD0980_p-220(vanA)             3.6e-07  [+1]_1
+AB57_1200_p-34(vanA)              1.1e-06  [+1]_1
+AB57_1200_p-176(vanA)             1.1e-06  [+1]_1
+ACIAD0980_p-34(vanA)              1.1e-06  [+1]_1
+ACIAD0982_p-180(vanK)             1.4e-06  [+1]_1
+AB57_1200_p-256(vanA)             2.5e-06  [+1]_1
+AB57_1201_p-247(vanK)             2.5e-06  [+1]_1
+ACIAD0982_p-134(vanK)               2e-05  [+1]_1
+AB57_1200_p-186(vanA)             4.2e-05  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WWTGGATCCAW width=11 seqs=10
+AB57_1201_p-153(vanK)    (    1) TTTGGATCCAA  1 
+ACIAD0980_p-220(vanA)    (    1) TTTGGATCCAA  1 
+AB57_1200_p-34(vanA)     (    1) ATTGGATCCAA  1 
+AB57_1200_p-176(vanA)    (    1) TATGGATCCAA  1 
+ACIAD0980_p-34(vanA)     (    1) ATTGGATCCAA  1 
+ACIAD0982_p-180(vanK)    (    1) TTTGGATCCAT  1 
+AB57_1200_p-256(vanA)    (    1) TATGGATCCAT  1 
+AB57_1201_p-247(vanK)    (    1) TATGGATCCAT  1 
+ACIAD0982_p-134(vanK)    (    1) AACCGATCCAA  1 
+AB57_1200_p-186(vanA)    (    1) ATTTGATCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 20 bayes= 2.18763 E= 1.1e-029 
+    31   -997   -997     82 
+    31   -997   -997     82 
+  -997    -83   -997    141 
+  -997    -83    231   -176 
+  -997   -997    263   -997 
+   163   -997   -997   -997 
+  -997   -997   -997    156 
+  -997    249   -997   -997 
+  -169    234   -997   -997 
+   163   -997   -997   -997 
+    89   -997   -997     24 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 10 E= 1.1e-029 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  0.100000  0.000000  0.900000 
+ 0.000000  0.100000  0.800000  0.100000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.100000  0.900000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.000000  0.400000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWTGGATCCAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TA]TGGATCCA[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ACIAD0982_p-134(vanK)            4.05e-05  [+1(2.03e-05)]_1
+ACIAD0980_p-220(vanA)            7.23e-07  [+1(3.61e-07)]_1
+ACIAD0980_p-34(vanA)             2.10e-06  [+1(1.05e-06)]_1
+ACIAD0982_p-180(vanK)            2.86e-06  [+1(1.43e-06)]_1
+AB57_1201_p-247(vanK)            4.96e-06  [+1(2.48e-06)]_1
+AB57_1200_p-256(vanA)            4.96e-06  [+1(2.48e-06)]_1
+AB57_1200_p-186(vanA)            8.30e-05  [+1(4.15e-05)]_1
+AB57_1200_p-176(vanA)            2.10e-06  [+1(1.05e-06)]_1
+AB57_1201_p-153(vanK)            7.23e-07  [+1(3.61e-07)]_1
+AB57_1200_p-34(vanA)             2.10e-06  [+1(1.05e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

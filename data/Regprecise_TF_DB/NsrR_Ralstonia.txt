@@ -1,0 +1,303 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NsrR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+H16_A3534_p-39(nsrR)     1.0000     19  H16_A3533_p-41(hmp)      1.0000     19  
+RALTA_A2987_p-40(nsrR)   1.0000     19  RALTA_A2986_p-40(hmp)    1.0000     19  
+Rmet_3383_p-25(nsrR)     1.0000     19  Rmet_4922_p-53(PF10006)  1.0000     19  
+Rmet_3382_p32(hmp)       1.0000     19  Rmet_5307_p-62(nnrS)     1.0000     19  
+Reut_A3220_p-39(nsrR)    1.0000     19  Reut_A3219_p-41(hmp)     1.0000     19  
+RS01706_p-133(hmp)       1.0000     19  RS03037_p-103(PF10006)   1.0000     19  
+RS03037_p-53(PF10006)    1.0000     19  RS03038_p-203(nirK)      1.0000     19  
+RS03038_p-153(nirK)      1.0000     19  RS01705_p-134(nsrR)      1.0000     19  
+Rpic_4014_p-101(PF10006) 1.0000     19  Rpic_3609_p-32(hmp)      1.0000     19  
+Rpic_2508_p-102(PHG233)  1.0000     19  Rpic_4014_p-51(PF10006)  1.0000     19  
+Rpic_4015_p-241(nirK)    1.0000     19  Rpic_4015_p-191(nirK)    1.0000     19  
+Rpic_3608_p-218(nsrR)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NsrR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/NsrR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             437    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    437    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.277 C 0.195 G 0.192 T 0.336 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.277 C 0.195 G 0.193 T 0.336 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF SWTGCATTTWADATGCATS MEME-1	width =  19  sites =  23  llr = 314  E-value = 1.1e-098
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :71::a:213639:2:81:
+pos.-specific     C  5:::8::22111:::a1:5
+probability       G  4::a::::1223::8:::4
+matrix            T  :39:2:a565131a::18:
+
+         bits    2.4    *           *   
+                 2.1    *           *   
+                 1.9    *           *   
+                 1.7    * *        **   
+Relative         1.4    ****      ***   
+Entropy          1.2    ****     ****  *
+(19.7 bits)      1.0 * *****     ***** *
+                 0.7 *******     *******
+                 0.5 *******     *******
+                 0.2 ********* * *******
+                 0.0 -------------------
+
+Multilevel           CATGCATTTTAAATGCATC
+consensus            GT  T  A A G      G
+sequence                    C   T       
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Rmet_3382_p32(hmp)            1  1.19e-09          . CATGCATTTTACATGCATG           
+RALTA_A2987_p-40(nsrR)        1  2.70e-09          . CTTGCATCCTAGATGCATC           
+RS03037_p-53(PF10006)         1  4.89e-09          . GATGCATTCTCAATGCATC           
+RS03038_p-203(nirK)           1  8.63e-09          . GATGCATTGAGAATGCATC           
+H16_A3534_p-39(nsrR)          1  9.90e-09          . CTTGCATCCTGGATGCATC           
+Rmet_4922_p-53(PF10006)       1  2.17e-08          . GATGCAATTTAAATGCATC           
+H16_A3533_p-41(hmp)           1  3.51e-08          . CATGCATTTAATTTGCATG           
+Rpic_4014_p-51(PF10006)       1  4.94e-08          . GTTGCATCCTTAATGCATC           
+Reut_A3219_p-41(hmp)          1  6.16e-08          . CATGCATTTTGTTTGCATG           
+Rmet_5307_p-62(nnrS)          1  6.16e-08          . ATTGCATTTAAGATGCATG           
+Rpic_2508_p-102(PHG233)       1  9.40e-08          . GATGTATTGTCAATGCATG           
+Rpic_4015_p-241(nirK)         1  1.15e-07          . GATGCATTAAGGATGCAAC           
+Rpic_4014_p-101(PF10006)      1  2.27e-07          . CAAGCATCTGATATACATC           
+RALTA_A2986_p-40(hmp)         1  3.26e-07          . CATGCATATTTTCTGCATG           
+Reut_A3220_p-39(nsrR)         1  3.56e-07          . CTTGCATTTGAAATGCCGC           
+Rmet_3383_p-25(nsrR)          1  4.23e-07          . CTTGCATTGGCGATGCACG           
+Rpic_4015_p-191(nirK)         1  5.46e-07          . GATGTATATCAGATGCTTG           
+RS01705_p-134(nsrR)           1  5.46e-07          . CATGCATATTAAATACCAC           
+RS01706_p-133(hmp)            1  5.46e-07          . GTGGTATTTAATATGCATG           
+RS03037_p-103(PF10006)        1  1.11e-06          . CAAGTATCTGATATACATC           
+RS03038_p-153(nirK)           1  2.43e-06          . GATGTATATCAGATACTTG           
+Rpic_3609_p-32(hmp)           1  7.31e-06          . GTTGCATATTTCACGCATA           
+Rpic_3608_p-218(nsrR)         1  2.10e-05          . TATGCGTGAAATATGCAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_3382_p32(hmp)                1.2e-09  [+1]
+RALTA_A2987_p-40(nsrR)            2.7e-09  [+1]
+RS03037_p-53(PF10006)             4.9e-09  [+1]
+RS03038_p-203(nirK)               8.6e-09  [+1]
+H16_A3534_p-39(nsrR)              9.9e-09  [+1]
+Rmet_4922_p-53(PF10006)           2.2e-08  [+1]
+H16_A3533_p-41(hmp)               3.5e-08  [+1]
+Rpic_4014_p-51(PF10006)           4.9e-08  [+1]
+Reut_A3219_p-41(hmp)              6.2e-08  [+1]
+Rmet_5307_p-62(nnrS)              6.2e-08  [+1]
+Rpic_2508_p-102(PHG233)           9.4e-08  [+1]
+Rpic_4015_p-241(nirK)             1.2e-07  [+1]
+Rpic_4014_p-101(PF10006)          2.3e-07  [+1]
+RALTA_A2986_p-40(hmp)             3.3e-07  [+1]
+Reut_A3220_p-39(nsrR)             3.6e-07  [+1]
+Rmet_3383_p-25(nsrR)              4.2e-07  [+1]
+Rpic_4015_p-191(nirK)             5.5e-07  [+1]
+RS01705_p-134(nsrR)               5.5e-07  [+1]
+RS01706_p-133(hmp)                5.5e-07  [+1]
+RS03037_p-103(PF10006)            1.1e-06  [+1]
+RS03038_p-153(nirK)               2.4e-06  [+1]
+Rpic_3609_p-32(hmp)               7.3e-06  [+1]
+Rpic_3608_p-218(nsrR)             2.1e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF SWTGCATTTWADATGCATS width=19 seqs=23
+Rmet_3382_p32(hmp)       (    1) CATGCATTTTACATGCATG  1 
+RALTA_A2987_p-40(nsrR)   (    1) CTTGCATCCTAGATGCATC  1 
+RS03037_p-53(PF10006)    (    1) GATGCATTCTCAATGCATC  1 
+RS03038_p-203(nirK)      (    1) GATGCATTGAGAATGCATC  1 
+H16_A3534_p-39(nsrR)     (    1) CTTGCATCCTGGATGCATC  1 
+Rmet_4922_p-53(PF10006)  (    1) GATGCAATTTAAATGCATC  1 
+H16_A3533_p-41(hmp)      (    1) CATGCATTTAATTTGCATG  1 
+Rpic_4014_p-51(PF10006)  (    1) GTTGCATCCTTAATGCATC  1 
+Reut_A3219_p-41(hmp)     (    1) CATGCATTTTGTTTGCATG  1 
+Rmet_5307_p-62(nnrS)     (    1) ATTGCATTTAAGATGCATG  1 
+Rpic_2508_p-102(PHG233)  (    1) GATGTATTGTCAATGCATG  1 
+Rpic_4015_p-241(nirK)    (    1) GATGCATTAAGGATGCAAC  1 
+Rpic_4014_p-101(PF10006) (    1) CAAGCATCTGATATACATC  1 
+RALTA_A2986_p-40(hmp)    (    1) CATGCATATTTTCTGCATG  1 
+Reut_A3220_p-39(nsrR)    (    1) CTTGCATTTGAAATGCCGC  1 
+Rmet_3383_p-25(nsrR)     (    1) CTTGCATTGGCGATGCACG  1 
+Rpic_4015_p-191(nirK)    (    1) GATGTATATCAGATGCTTG  1 
+RS01705_p-134(nsrR)      (    1) CATGCATATTAAATACCAC  1 
+RS01706_p-133(hmp)       (    1) GTGGTATTTAATATGCATG  1 
+RS03037_p-103(PF10006)   (    1) CAAGTATCTGATATACATC  1 
+RS03038_p-153(nirK)      (    1) GATGTATATCAGATACTTG  1 
+Rpic_3609_p-32(hmp)      (    1) GTTGCATATTTCACGCATA  1 
+Rpic_3608_p-218(nsrR)    (    1) TATGCGTGAAATATGCAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 23 bayes= 1.43812 E= 1.1e-098 
+  -267    129    117   -294 
+   124  -1117  -1117      5 
+  -167  -1117   -215    137 
+ -1117  -1117    237  -1117 
+ -1117    200  -1117    -63 
+   179  -1117   -215  -1117 
+  -267  -1117  -1117    151 
+   -35     16   -215     64 
+  -167    -17    -56     86 
+    -8   -116    -15     51 
+   103    -58    -15   -136 
+    14   -116     66    -14 
+   165   -216  -1117   -195 
+ -1117   -216  -1117    151 
+   -67  -1117    210  -1117 
+ -1117    236  -1117  -1117 
+   158   -116  -1117   -195 
+  -108   -216   -215    122 
+  -267    142    117  -1117 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 23 E= 1.1e-098 
+ 0.043478  0.478261  0.434783  0.043478 
+ 0.652174  0.000000  0.000000  0.347826 
+ 0.086957  0.000000  0.043478  0.869565 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.782609  0.000000  0.217391 
+ 0.956522  0.000000  0.043478  0.000000 
+ 0.043478  0.000000  0.000000  0.956522 
+ 0.217391  0.217391  0.043478  0.521739 
+ 0.086957  0.173913  0.130435  0.608696 
+ 0.260870  0.086957  0.173913  0.478261 
+ 0.565217  0.130435  0.173913  0.130435 
+ 0.304348  0.086957  0.304348  0.304348 
+ 0.869565  0.043478  0.000000  0.086957 
+ 0.000000  0.043478  0.000000  0.956522 
+ 0.173913  0.000000  0.826087  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.826087  0.086957  0.000000  0.086957 
+ 0.130435  0.043478  0.043478  0.782609 
+ 0.043478  0.521739  0.434783  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SWTGCATTTWADATGCATS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CG][AT]TG[CT]AT[TAC]T[TA]A[AGT]ATGCAT[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H16_A3534_p-39(nsrR)             9.90e-09  [+1(9.90e-09)]
+H16_A3533_p-41(hmp)              3.51e-08  [+1(3.51e-08)]
+RALTA_A2987_p-40(nsrR)           2.70e-09  [+1(2.70e-09)]
+RALTA_A2986_p-40(hmp)            3.26e-07  [+1(3.26e-07)]
+Rmet_3383_p-25(nsrR)             4.23e-07  [+1(4.23e-07)]
+Rmet_4922_p-53(PF10006)          2.17e-08  [+1(2.17e-08)]
+Rmet_3382_p32(hmp)               1.19e-09  [+1(1.19e-09)]
+Rmet_5307_p-62(nnrS)             6.16e-08  [+1(6.16e-08)]
+Reut_A3220_p-39(nsrR)            3.56e-07  [+1(3.56e-07)]
+Reut_A3219_p-41(hmp)             6.16e-08  [+1(6.16e-08)]
+RS01706_p-133(hmp)               5.46e-07  [+1(5.46e-07)]
+RS03037_p-103(PF10006)           1.11e-06  [+1(1.11e-06)]
+RS03037_p-53(PF10006)            4.89e-09  [+1(4.89e-09)]
+RS03038_p-203(nirK)              8.63e-09  [+1(8.63e-09)]
+RS03038_p-153(nirK)              2.43e-06  [+1(2.43e-06)]
+RS01705_p-134(nsrR)              5.46e-07  [+1(5.46e-07)]
+Rpic_4014_p-101(PF10006)         2.27e-07  [+1(2.27e-07)]
+Rpic_3609_p-32(hmp)              7.31e-06  [+1(7.31e-06)]
+Rpic_2508_p-102(PHG233)          9.40e-08  [+1(9.40e-08)]
+Rpic_4014_p-51(PF10006)          4.94e-08  [+1(4.94e-08)]
+Rpic_4015_p-241(nirK)            1.15e-07  [+1(1.15e-07)]
+Rpic_4015_p-191(nirK)            5.46e-07  [+1(5.46e-07)]
+Rpic_3608_p-218(nsrR)            2.10e-05  [+1(2.10e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

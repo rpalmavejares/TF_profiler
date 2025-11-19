@@ -1,0 +1,303 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= Fur_Clostridia-2.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CD1287(fur)Score=5.3,Pos 1.0000     19  CD1647,Score=5.3,Pos=-91 1.0000     19  
+CD1647,Score=5.3,Pos=-85 1.0000     19  CD1647,Score=6,Pos=-50[C 1.0000     19  
+CD1485,Score=5.4,Pos=-37 1.0000     19  CD2878(fhuD)Score=5.8Pos 1.0000     19  
+CD1485Score=6.3,Pos=-74[ 1.0000     19  CD1087(zupT)Score=6.3,Po 1.0000     19  
+CD1819(PF11449)Score=6.2 1.0000     19  CD2499(PF10087)Score=5.8 1.0000     19  
+CD2499(PF10087)Score=5.6 1.0000     19  CD2499(PF10087)Score=6,P 1.0000     19  
+CD3273(feoA)Score=5.7,Po 1.0000     19  CD1745A(feoA)Score=6,Pos 1.0000     19  
+CLOBAR_01156(PF10087)Sco 1.0000     19  CLOBAR_00861(fhuD)Score= 1.0000     19  
+CLOBAR_01156(PF10087)Sco 1.0000     19  CLOBAR_00960,Score=5.6,P 1.0000     19  
+CLOBAR_01994,Score=5.2,P 1.0000     19  CLOBAR_01994,Score=5.4Po 1.0000     19  
+CLOBAR_00324(feoA)Score= 1.0000     19  CLOHIR_00610(PF10087)Sco 1.0000     19  
+CLOHIR_01757(zupT)Score= 1.0000     19  CLOHIR_00731(feoA)Score= 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna Fur_Clostridia-2.fasta -oc Fur_Clostridia-2 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           19
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             456    N=              24    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.428 C 0.075 G 0.079 T 0.419 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.426 C 0.076 G 0.080 T 0.417 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  17  sites =  24  llr = 291  E-value = 3.4e-081
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :2a1a811a317::a51
+pos.-specific     C  :::::::3:::::9:::
+probability       G  :8:::::4:::::::::
+matrix            T  a::9:291:693a1:58
+
+         bits    3.7                  
+                 3.3                  
+                 3.0              *   
+                 2.6              *   
+Relative         2.2  *           *   
+Entropy          1.9  *           *   
+(17.5 bits)      1.5  *           *   
+                 1.1 *** *  **   ***  
+                 0.7 ********* * *** *
+                 0.4 ********* *******
+                 0.0 -----------------
+
+Multilevel           TGATAATGATTATCAAT
+consensus                   C A T   T 
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+CD1087(zupT)Score=6.3,Po      3  2.14e-08         AA TGATAATCAATATCAAT           
+CD1745A(feoA)Score=6,Pos      3  2.67e-08         TT TGATAATGATTTTCATT           
+CLOBAR_01156(PF10087)Sco      3  3.57e-08         AA TGATAATCAGTATCATT           
+CLOHIR_00731(feoA)Score=      3  4.32e-08         AT TGATAATGAATTTCATT           
+CD3273(feoA)Score=5.7,Po      3  4.32e-08         AG TGATAATGAATTTCATT           
+CD1819(PF11449)Score=6.2      3  5.96e-08         AT TGATATTGATTATCAAT           
+CD1485Score=6.3,Pos=-74[      3  5.96e-08         AT TGATATTGATTATCATT           
+CD2878(fhuD)Score=5.8Pos      3  1.64e-07         TA TGATAATCAATATCATA           
+CLOBAR_01994,Score=5.2,P      3  2.52e-07         GG TGATAATAATTATCAAT           
+CLOBAR_00960,Score=5.6,P      3  2.52e-07         AA TGATAATCGTTATCATG           
+CD2499(PF10087)Score=6,P      3  4.86e-07         AA TGATAATTAATATCAAT           
+CLOBAR_00324(feoA)Score=      3  6.20e-07         TA TGAAAATGAATTTCATT           
+CD1647,Score=6,Pos=-50[C      3  6.20e-07         AA TGATAATAATTTTCATT           
+CLOBAR_00861(fhuD)Score=      3  7.28e-07         AT TGATAATCATTATTAAT           
+CD2499(PF10087)Score=5.8      3  1.82e-06         AA TGAAAATCAATATCAAA           
+CLOHIR_00610(PF10087)Sco      3  2.38e-06         CA TAATAATGATTATCAAA           
+CLOBAR_01156(PF10087)Sco      3  2.73e-06         AC TGATAAATATTATCAAT           
+CD1485,Score=5.4,Pos=-37      3  2.73e-06         CT TGATATTAATTTTCATT           
+CD1287(fur)Score=5.3,Pos      3  3.68e-06         TT TAATAAAGATTATCAAT           
+CD2499(PF10087)Score=5.6      3  5.86e-06         AA TAATAATGAAAATCAAT           
+CLOHIR_01757(zupT)Score=      3  8.58e-06         AT TAATATTCACTTTCATT           
+CD1647,Score=5.3,Pos=-91      3  1.49e-05         AT TGACAATGATAATTATT           
+CLOBAR_01994,Score=5.4Po      3  1.80e-05         AA TTATTATCATTATCAAT           
+CD1647,Score=5.3,Pos=-85      3  2.07e-05         AA TGATAATTATTATTGAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CD1087(zupT)Score=6.3,Po          2.1e-08  2_[+1]
+CD1745A(feoA)Score=6,Pos          2.7e-08  2_[+1]
+CLOBAR_01156(PF10087)Sco          3.6e-08  2_[+1]
+CLOHIR_00731(feoA)Score=          4.3e-08  2_[+1]
+CD3273(feoA)Score=5.7,Po          4.3e-08  2_[+1]
+CD1819(PF11449)Score=6.2            6e-08  2_[+1]
+CD1485Score=6.3,Pos=-74[            6e-08  2_[+1]
+CD2878(fhuD)Score=5.8Pos          1.6e-07  2_[+1]
+CLOBAR_01994,Score=5.2,P          2.5e-07  2_[+1]
+CLOBAR_00960,Score=5.6,P          2.5e-07  2_[+1]
+CD2499(PF10087)Score=6,P          4.9e-07  2_[+1]
+CLOBAR_00324(feoA)Score=          6.2e-07  2_[+1]
+CD1647,Score=6,Pos=-50[C          6.2e-07  2_[+1]
+CLOBAR_00861(fhuD)Score=          7.3e-07  2_[+1]
+CD2499(PF10087)Score=5.8          1.8e-06  2_[+1]
+CLOHIR_00610(PF10087)Sco          2.4e-06  2_[+1]
+CLOBAR_01156(PF10087)Sco          2.7e-06  2_[+1]
+CD1485,Score=5.4,Pos=-37          2.7e-06  2_[+1]
+CD1287(fur)Score=5.3,Pos          3.7e-06  2_[+1]
+CD2499(PF10087)Score=5.6          5.9e-06  2_[+1]
+CLOHIR_01757(zupT)Score=          8.6e-06  2_[+1]
+CD1647,Score=5.3,Pos=-91          1.5e-05  2_[+1]
+CLOBAR_01994,Score=5.4Po          1.8e-05  2_[+1]
+CD1647,Score=5.3,Pos=-85          2.1e-05  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=17 seqs=24
+CD1087(zupT)Score=6.3,Po (    3) TGATAATCAATATCAAT  1 
+CD1745A(feoA)Score=6,Pos (    3) TGATAATGATTTTCATT  1 
+CLOBAR_01156(PF10087)Sco (    3) TGATAATCAGTATCATT  1 
+CLOHIR_00731(feoA)Score= (    3) TGATAATGAATTTCATT  1 
+CD3273(feoA)Score=5.7,Po (    3) TGATAATGAATTTCATT  1 
+CD1819(PF11449)Score=6.2 (    3) TGATATTGATTATCAAT  1 
+CD1485Score=6.3,Pos=-74[ (    3) TGATATTGATTATCATT  1 
+CD2878(fhuD)Score=5.8Pos (    3) TGATAATCAATATCATA  1 
+CLOBAR_01994,Score=5.2,P (    3) TGATAATAATTATCAAT  1 
+CLOBAR_00960,Score=5.6,P (    3) TGATAATCGTTATCATG  1 
+CD2499(PF10087)Score=6,P (    3) TGATAATTAATATCAAT  1 
+CLOBAR_00324(feoA)Score= (    3) TGAAAATGAATTTCATT  1 
+CD1647,Score=6,Pos=-50[C (    3) TGATAATAATTTTCATT  1 
+CLOBAR_00861(fhuD)Score= (    3) TGATAATCATTATTAAT  1 
+CD2499(PF10087)Score=5.8 (    3) TGAAAATCAATATCAAA  1 
+CLOHIR_00610(PF10087)Sco (    3) TAATAATGATTATCAAA  1 
+CLOBAR_01156(PF10087)Sco (    3) TGATAAATATTATCAAT  1 
+CD1485,Score=5.4,Pos=-37 (    3) TGATATTAATTTTCATT  1 
+CD1287(fur)Score=5.3,Pos (    3) TAATAAAGATTATCAAT  1 
+CD2499(PF10087)Score=5.6 (    3) TAATAATGAAAATCAAT  1 
+CLOHIR_01757(zupT)Score= (    3) TAATATTCACTTTCATT  1 
+CD1647,Score=5.3,Pos=-91 (    3) TGACAATGATAATTATT  1 
+CLOBAR_01994,Score=5.4Po (    3) TTATTATCATTATCAAT  1 
+CD1647,Score=5.3,Pos=-85 (    3) TGATAATTATTATTGAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 72 bayes= 3.35755 E= 3.4e-081 
+ -1123  -1123  -1123    126 
+  -135  -1123    330   -332 
+   123  -1123  -1123  -1123 
+  -235    -87  -1123    107 
+   117  -1123  -1123   -332 
+    97  -1123  -1123   -132 
+  -235  -1123  -1123    113 
+  -177    213    237   -174 
+   117  -1123    -95  -1123 
+   -35    -87    -95     48 
+  -235  -1123  -1123    113 
+    73  -1123  -1123    -52 
+ -1123  -1123  -1123    126 
+ -1123    352  -1123   -174 
+   117  -1123    -95  -1123 
+    23  -1123  -1123     26 
+  -177  -1123    -95    100 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 24 E= 3.4e-081 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.166667  0.000000  0.791667  0.041667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.083333  0.041667  0.000000  0.875000 
+ 0.958333  0.000000  0.000000  0.041667 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.083333  0.000000  0.000000  0.916667 
+ 0.125000  0.333333  0.416667  0.125000 
+ 0.958333  0.000000  0.041667  0.000000 
+ 0.333333  0.041667  0.041667  0.583333 
+ 0.083333  0.000000  0.000000  0.916667 
+ 0.708333  0.000000  0.000000  0.291667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.875000  0.000000  0.125000 
+ 0.958333  0.000000  0.041667  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.125000  0.000000  0.041667  0.833333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+TGATAAT[GC]A[TA]T[AT]TCA[AT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CD1287(fur)Score=5.3,Pos         1.10e-05  2_[+1(3.68e-06)]
+CD1647,Score=5.3,Pos=-91         4.46e-05  2_[+1(1.49e-05)]
+CD1647,Score=5.3,Pos=-85         6.21e-05  2_[+1(2.07e-05)]
+CD1647,Score=6,Pos=-50[C         1.86e-06  2_[+1(6.20e-07)]
+CD1485,Score=5.4,Pos=-37         8.19e-06  2_[+1(2.73e-06)]
+CD2878(fhuD)Score=5.8Pos         4.93e-07  2_[+1(1.64e-07)]
+CD1485Score=6.3,Pos=-74[         1.79e-07  2_[+1(5.96e-08)]
+CD1087(zupT)Score=6.3,Po         6.42e-08  2_[+1(2.14e-08)]
+CD1819(PF11449)Score=6.2         1.79e-07  2_[+1(5.96e-08)]
+CD2499(PF10087)Score=5.8         5.45e-06  2_[+1(1.82e-06)]
+CD2499(PF10087)Score=5.6         1.76e-05  2_[+1(5.86e-06)]
+CD2499(PF10087)Score=6,P         1.46e-06  2_[+1(4.86e-07)]
+CD3273(feoA)Score=5.7,Po         1.30e-07  2_[+1(4.32e-08)]
+CD1745A(feoA)Score=6,Pos         8.01e-08  2_[+1(2.67e-08)]
+CLOBAR_01156(PF10087)Sco         8.19e-06  2_[+1(2.73e-06)]
+CLOBAR_00861(fhuD)Score=         2.18e-06  2_[+1(7.28e-07)]
+CLOBAR_01156(PF10087)Sco         1.07e-07  2_[+1(3.57e-08)]
+CLOBAR_00960,Score=5.6,P         7.55e-07  2_[+1(2.52e-07)]
+CLOBAR_01994,Score=5.2,P         7.55e-07  2_[+1(2.52e-07)]
+CLOBAR_01994,Score=5.4Po         5.40e-05  2_[+1(1.80e-05)]
+CLOBAR_00324(feoA)Score=         1.86e-06  2_[+1(6.20e-07)]
+CLOHIR_00610(PF10087)Sco         7.13e-06  2_[+1(2.38e-06)]
+CLOHIR_01757(zupT)Score=         2.57e-05  2_[+1(8.58e-06)]
+CLOHIR_00731(feoA)Score=         1.30e-07  2_[+1(4.32e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

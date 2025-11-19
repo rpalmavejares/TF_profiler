@@ -1,0 +1,220 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/GntR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PSHAb0479_p-83(gntU)     1.0000     20  PSHAb0478_p-97(gntR)     1.0000     20  
+PSHAb0480_p-90(gntK)     1.0000     20  PSHAb0480_p-76(gntK)     1.0000     20  
+PSHAb0479_p-97(gntU)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/GntR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/GntR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             100    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=    100    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.34 C 0.15 G 0.16 T 0.35 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.337 C 0.154 G 0.163 T 0.346 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YAWGTTACGNGTAACWTR MEME-1	width =  18  sites =   5  llr = 96  E-value = 9.9e-015
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a4:::a::2::aa:6:6
+pos.-specific     C  4::::::a24::::a:::
+probability       G  :::a::::62a::::::4
+matrix            T  6:6:aa::22:a:::4a:
+
+         bits    2.7    *   *  *   *   
+                 2.4    *   *  *   *   
+                 2.2    *   *  *   *   
+                 1.9    *   *  *   *   
+Relative         1.6  * *****  ***** * 
+Entropy          1.4  * *****  ***** * 
+(27.6 bits)      1.1 ** ****** ***** **
+                 0.8 ** ****** ***** **
+                 0.5 ********* ********
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           TATGTTACGCGTAACATA
+consensus            C A     CA     T G
+sequence                     TG        
+                              T        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PSHAb0479_p-83(gntU)          2  1.38e-10          A CATGTTACGCGTAACTTA A         
+PSHAb0480_p-90(gntK)          2  1.94e-10          T TAAGTTACGCGTAACATG T         
+PSHAb0478_p-97(gntR)          2  1.75e-09          T TATGTTACGTGTAACATA A         
+PSHAb0480_p-76(gntK)          2  4.19e-09          A CATGTTACCAGTAACTTA A         
+PSHAb0479_p-97(gntU)          2  4.87e-09          T TAAGTTACTGGTAACATG T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSHAb0479_p-83(gntU)              1.4e-10  1_[+1]_1
+PSHAb0480_p-90(gntK)              1.9e-10  1_[+1]_1
+PSHAb0478_p-97(gntR)              1.8e-09  1_[+1]_1
+PSHAb0480_p-76(gntK)              4.2e-09  1_[+1]_1
+PSHAb0479_p-97(gntU)              4.9e-09  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YAWGTTACGNGTAACWTR width=18 seqs=5
+PSHAb0479_p-83(gntU)     (    2) CATGTTACGCGTAACTTA  1 
+PSHAb0480_p-90(gntK)     (    2) TAAGTTACGCGTAACATG  1 
+PSHAb0478_p-97(gntR)     (    2) TATGTTACGTGTAACATA  1 
+PSHAb0480_p-76(gntK)     (    2) CATGTTACCAGTAACTTA  1 
+PSHAb0479_p-97(gntU)     (    2) TAAGTTACTGGTAACATG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 15 bayes= 2.25376 E= 9.9e-015 
+  -897    138   -897     79 
+   157   -897   -897   -897 
+    25   -897   -897     79 
+  -897   -897    261   -897 
+  -897   -897   -897    153 
+  -897   -897   -897    153 
+   157   -897   -897   -897 
+  -897    270   -897   -897 
+  -897     38    187    -79 
+   -75    138     29    -79 
+  -897   -897    261   -897 
+  -897   -897   -897    153 
+   157   -897   -897   -897 
+   157   -897   -897   -897 
+  -897    270   -897   -897 
+    83   -897   -897     21 
+  -897   -897   -897    153 
+    83   -897    129   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 5 E= 9.9e-015 
+ 0.000000  0.400000  0.000000  0.600000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.200000  0.600000  0.200000 
+ 0.200000  0.400000  0.200000  0.200000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.600000  0.000000  0.400000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAWGTTACGNGTAACWTR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]A[TA]GTTAC[GCT][CAGT]GTAAC[AT]T[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSHAb0479_p-83(gntU)             4.13e-10  1_[+1(1.38e-10)]_1
+PSHAb0478_p-97(gntR)             5.25e-09  1_[+1(1.75e-09)]_1
+PSHAb0480_p-90(gntK)             5.82e-10  1_[+1(1.94e-10)]_1
+PSHAb0480_p-76(gntK)             1.26e-08  1_[+1(4.19e-09)]_1
+PSHAb0479_p-97(gntU)             1.46e-08  1_[+1(4.87e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

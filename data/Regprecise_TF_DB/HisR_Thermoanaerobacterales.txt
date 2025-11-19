@@ -1,0 +1,237 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HisR_Thermoanaerobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Athe_1480_p-36(hisZ)     1.0000     20  Csac_2027_p-37(hisZ)     1.0000     20  
+CHY_1084_p-31(hisG)      1.0000     20  CHY_1082_p-50(hisR)      1.0000     20  
+Moth_2037_p-32(hisZ)     1.0000     20  Teth514_0999_p-45(hisZ)  1.0000     20  
+Thit_1821_p-45(hisZ)     1.0000     20  TTE2140_p-43(hisZ)       1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HisR_Thermoanaerobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Thermoanaerobacterales/HisR_Thermoanaerobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             160    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    160    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.4 C 0.156 G 0.106 T 0.338 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.396 C 0.159 G 0.11 T 0.335 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YACTTTATCAYRWTAMARWR MEME-1	width =  20  sites =   8  llr = 130  E-value = 1.5e-027
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a::::a3:a144:a6a445
+pos.-specific     C  4:9::3::8:4::::4::1:
+probability       G  :::1:::1:::61::::6:5
+matrix            T  6:19a8:63:5:5a::::5:
+
+         bits    3.2                     
+                 2.9                     
+                 2.6                     
+                 2.2                     
+Relative         1.9   *                 
+Entropy          1.6   * *   *  * *   *  
+(23.4 bits)      1.3  **** * ** * ** ** *
+                 1.0 ******* ** * ***** *
+                 0.6 ******* **** ***** *
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TACTTTATCATGTTAAAGTA
+consensus            C    C AT CAA  C AAG
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+TTE2140_p-43(hisZ)            1  8.43e-10          . TACTTTATCACGTTACAAAG           
+Thit_1821_p-45(hisZ)          1  8.43e-10          . TACTTTATCACGTTACAAAG           
+Teth514_0999_p-45(hisZ)       1  8.43e-10          . TACTTTATCACGTTACAAAG           
+Csac_2027_p-37(hisZ)          1  4.46e-09          . CACTTCATCATGATAAAGCA           
+Athe_1480_p-36(hisZ)          1  2.05e-08          . CACTTCATTATGATAAAGTA           
+CHY_1084_p-31(hisG)           1  4.94e-08          . CACTTTAACAAAATAAAGTG           
+Moth_2037_p-32(hisZ)          1  8.69e-08          . TACGTTAACATAGTAAAGTA           
+CHY_1082_p-50(hisR)           1  4.64e-07          . TATTTTAGTATATTAAAGTA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TTE2140_p-43(hisZ)                8.4e-10  [+1]
+Thit_1821_p-45(hisZ)              8.4e-10  [+1]
+Teth514_0999_p-45(hisZ)           8.4e-10  [+1]
+Csac_2027_p-37(hisZ)              4.5e-09  [+1]
+Athe_1480_p-36(hisZ)              2.1e-08  [+1]
+CHY_1084_p-31(hisG)               4.9e-08  [+1]
+Moth_2037_p-32(hisZ)              8.7e-08  [+1]
+CHY_1082_p-50(hisR)               4.6e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YACTTTATCAYRWTAMARWR width=20 seqs=8
+TTE2140_p-43(hisZ)       (    1) TACTTTATCACGTTACAAAG  1 
+Thit_1821_p-45(hisZ)     (    1) TACTTTATCACGTTACAAAG  1 
+Teth514_0999_p-45(hisZ)  (    1) TACTTTATCACGTTACAAAG  1 
+Csac_2027_p-37(hisZ)     (    1) CACTTCATCATGATAAAGCA  1 
+Athe_1480_p-36(hisZ)     (    1) CACTTCATTATGATAAAGTA  1 
+CHY_1084_p-31(hisG)      (    1) CACTTTAACAAAATAAAGTG  1 
+Moth_2037_p-32(hisZ)     (    1) TACGTTAACATAGTAAAGTA  1 
+CHY_1082_p-50(hisR)      (    1) TATTTTAGTATATTAAAGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 8 bayes= 0.584963 E= 1.5e-027 
+  -965    124   -965     90 
+   133   -965   -965   -965 
+  -965    246   -965   -142 
+  -965   -965     19    138 
+  -965   -965   -965    157 
+  -965     66   -965    116 
+   133   -965   -965   -965 
+   -66   -965     19     90 
+  -965    224   -965    -42 
+   133   -965   -965   -965 
+  -166    124   -965     58 
+    -8   -965    251   -965 
+    -8   -965     19     58 
+  -965   -965   -965    157 
+   133   -965   -965   -965 
+    66    124   -965   -965 
+   133   -965   -965   -965 
+    -8   -965    251   -965 
+    -8    -34   -965     58 
+    33   -965    219   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 8 E= 1.5e-027 
+ 0.000000  0.375000  0.000000  0.625000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.875000  0.000000  0.125000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.250000  0.000000  0.750000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.125000  0.625000 
+ 0.000000  0.750000  0.000000  0.250000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.125000  0.375000  0.000000  0.500000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 0.375000  0.000000  0.125000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.375000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 0.375000  0.125000  0.000000  0.500000 
+ 0.500000  0.000000  0.500000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YACTTTATCAYRWTAMARWR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]ACTT[TC]A[TA][CT]A[TC][GA][TA]TA[AC]A[GA][TA][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Athe_1480_p-36(hisZ)             2.05e-08  [+1(2.05e-08)]
+Csac_2027_p-37(hisZ)             4.46e-09  [+1(4.46e-09)]
+CHY_1084_p-31(hisG)              4.94e-08  [+1(4.94e-08)]
+CHY_1082_p-50(hisR)              4.64e-07  [+1(4.64e-07)]
+Moth_2037_p-32(hisZ)             8.69e-08  [+1(8.69e-08)]
+Teth514_0999_p-45(hisZ)          8.43e-10  [+1(8.43e-10)]
+Thit_1821_p-45(hisZ)             8.43e-10  [+1(8.43e-10)]
+TTE2140_p-43(hisZ)               8.43e-10  [+1(8.43e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

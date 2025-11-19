@@ -1,0 +1,334 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/LtbR_Mycobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MSMEG_2387_p-119(leuC)   1.0000     19  MSMEG_2387_p-98(leuC)    1.0000     19  
+MSMEG_2386_p-32(ltbR)    1.0000     19  MSMEG_2386_p-11(ltbR)    1.0000     19  
+Rv2988c_p-58(leuC)       1.0000     19  Rv2989_p-32(ltbR)        1.0000     19  
+MAB_3294c_p-39(leuC)     1.0000     19  MAB_3295_p-11(ltbR)      1.0000     19  
+MAB_3294c_p-60(leuC)     1.0000     19  MAB_3295_p-32(ltbR)      1.0000     19  
+MAV_3838_p-94(leuC)      1.0000     19  MAV_3838_p-73(leuC)      1.0000     19  
+MAV_3839_p-71(ltbR)      1.0000     19  MAV_3839_p-50(ltbR)      1.0000     19  
+MMAR_1726_p-90(leuC)     1.0000     19  MMAR_1726_p-69(leuC)     1.0000     19  
+MMAR_1725_p-32(ltbR)     1.0000     19  MMAR_1725_p-11(ltbR)     1.0000     19  
+Mvan_2135_p-25(leuC)     1.0000     19  Mvan_2135_p-46(leuC)     1.0000     19  
+Mvan_2134_p-32(ltbR)     1.0000     19  Mvan_2134_p-11(ltbR)     1.0000     19  
+Mflv_4227_p-46(leuC)     1.0000     19  Mflv_4227_p-25(leuC)     1.0000     19  
+Mflv_4228_p-11(ltbR)     1.0000     19  Mflv_4228_p-32(ltbR)     1.0000     19  
+Mjls_1901_p-84(leuC)     1.0000     19  Mjls_1901_p-63(leuC)     1.0000     19  
+Mjls_1900_p-11(ltbR)     1.0000     19  Mjls_1900_p-32(ltbR)     1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/LtbR_Mycobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/LtbR_Mycobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             570    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    570    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.286 C 0.214 G 0.214 T 0.286 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.286 C 0.214 G 0.214 T 0.286 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF HGTCTCACAWTGTGAGACD MEME-1	width =  19  sites =  30  llr = 381  E-value = 2.9e-123
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  32:2::6174122:9:a13
+pos.-specific     C  4::71a:621:12::::6:
+probability       G  :6::::21:126:a17::4
+matrix            T  31a:9:2214716::2:23
+
+         bits    2.2      *       *     
+                 2.0      *       *     
+                 1.8   *  *       *  *  
+                 1.6   *  *       *  *  
+Relative         1.3   * **       ** *  
+Entropy          1.1   ****       ****  
+(18.3 bits)      0.9   ****       ****  
+                 0.7  *****  * *  ***** 
+                 0.4  ******** ******** 
+                 0.2 *******************
+                 0.0 -------------------
+
+Multilevel           CGTCTCACAATGTGAGACG
+consensus            TA A  GT T AA  T TA
+sequence             A     T     C     T
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Mflv_4228_p-11(ltbR)          1  4.65e-08          . AGTATCTCCTTGTGAGACA           
+Mflv_4227_p-46(leuC)          1  4.65e-08          . TGTCTCACAAGGAGATACT           
+MMAR_1725_p-11(ltbR)          1  4.65e-08          . AGTATCTCCTTGTGAGACA           
+MMAR_1726_p-90(leuC)          1  4.65e-08          . TGTCTCACAAGGAGATACT           
+MAV_3839_p-50(ltbR)           1  4.65e-08          . AGTATCTCCTTGTGAGACA           
+MAV_3838_p-94(leuC)           1  4.65e-08          . TGTCTCACAAGGAGATACT           
+MMAR_1725_p-32(ltbR)          1  8.80e-08          . CATCTCATAATACGAGACG           
+MMAR_1726_p-69(leuC)          1  8.80e-08          . CGTCTCGTATTATGAGATG           
+Rv2989_p-32(ltbR)             1  1.40e-07          . CATCTCAAAATACGAGACG           
+Rv2988c_p-58(leuC)            1  1.40e-07          . CGTCTCGTATTTTGAGATG           
+Mvan_2134_p-32(ltbR)          1  2.18e-07          . TGTCTCACAATCTGGGAAG           
+Mvan_2135_p-25(leuC)          1  2.18e-07          . CTTCCCAGATTGTGAGACA           
+MSMEG_2386_p-32(ltbR)         1  2.18e-07          . TATCTCAAAATACGAGACG           
+MSMEG_2387_p-98(leuC)         1  2.18e-07          . CGTCTCGTATTTTGAGATA           
+Mvan_2134_p-11(ltbR)          1  2.68e-07          . AATATCTCCTTGTGAGACA           
+Mvan_2135_p-46(leuC)          1  2.68e-07          . TGTCTCACAAGGAGATATT           
+MAV_3839_p-71(ltbR)           1  2.68e-07          . GATCTCATAATGCGAGACG           
+MAV_3838_p-73(leuC)           1  2.68e-07          . CGTCTCGCATTATGAGATC           
+Mjls_1900_p-11(ltbR)          1  3.00e-07          . AGTATCTCCCTGTGAGACA           
+Mjls_1901_p-84(leuC)          1  3.00e-07          . TGTCTCACAGGGAGATACT           
+Mjls_1900_p-32(ltbR)          1  9.74e-07          . AATCTCACATTGCGGGAGG           
+Mjls_1901_p-63(leuC)          1  9.74e-07          . CCTCCCGCAATGTGAGATT           
+Mflv_4228_p-32(ltbR)          1  1.39e-06          . TTTCTCACATTCTGGGAAG           
+Mflv_4227_p-25(leuC)          1  1.39e-06          . CTTCCCAGAATGTGAGAAA           
+MSMEG_2386_p-11(ltbR)         1  3.44e-06          . AGTATCTCTCTGTGAGAAA           
+MSMEG_2387_p-119(leuC)        1  3.44e-06          . TTTCTCACAGAGAGATACT           
+MAB_3294c_p-60(leuC)          1  5.38e-06          . TGTCTCACGTAACGATACT           
+MAB_3295_p-11(ltbR)           1  5.38e-06          . AGTATCGTTACGTGAGACA           
+MAB_3295_p-32(ltbR)           1  1.20e-05          . CGTCTCAATATTTGGAACG           
+MAB_3294c_p-39(leuC)          1  1.20e-05          . CGTTCCAAATATTGAGACG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Mflv_4228_p-11(ltbR)              4.7e-08  [+1]
+Mflv_4227_p-46(leuC)              4.7e-08  [+1]
+MMAR_1725_p-11(ltbR)              4.7e-08  [+1]
+MMAR_1726_p-90(leuC)              4.7e-08  [+1]
+MAV_3839_p-50(ltbR)               4.7e-08  [+1]
+MAV_3838_p-94(leuC)               4.7e-08  [+1]
+MMAR_1725_p-32(ltbR)              8.8e-08  [+1]
+MMAR_1726_p-69(leuC)              8.8e-08  [+1]
+Rv2989_p-32(ltbR)                 1.4e-07  [+1]
+Rv2988c_p-58(leuC)                1.4e-07  [+1]
+Mvan_2134_p-32(ltbR)              2.2e-07  [+1]
+Mvan_2135_p-25(leuC)              2.2e-07  [+1]
+MSMEG_2386_p-32(ltbR)             2.2e-07  [+1]
+MSMEG_2387_p-98(leuC)             2.2e-07  [+1]
+Mvan_2134_p-11(ltbR)              2.7e-07  [+1]
+Mvan_2135_p-46(leuC)              2.7e-07  [+1]
+MAV_3839_p-71(ltbR)               2.7e-07  [+1]
+MAV_3838_p-73(leuC)               2.7e-07  [+1]
+Mjls_1900_p-11(ltbR)                3e-07  [+1]
+Mjls_1901_p-84(leuC)                3e-07  [+1]
+Mjls_1900_p-32(ltbR)              9.7e-07  [+1]
+Mjls_1901_p-63(leuC)              9.7e-07  [+1]
+Mflv_4228_p-32(ltbR)              1.4e-06  [+1]
+Mflv_4227_p-25(leuC)              1.4e-06  [+1]
+MSMEG_2386_p-11(ltbR)             3.4e-06  [+1]
+MSMEG_2387_p-119(leuC)            3.4e-06  [+1]
+MAB_3294c_p-60(leuC)              5.4e-06  [+1]
+MAB_3295_p-11(ltbR)               5.4e-06  [+1]
+MAB_3295_p-32(ltbR)               1.2e-05  [+1]
+MAB_3294c_p-39(leuC)              1.2e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF HGTCTCACAWTGTGAGACD width=19 seqs=30
+Mflv_4228_p-11(ltbR)     (    1) AGTATCTCCTTGTGAGACA  1 
+Mflv_4227_p-46(leuC)     (    1) TGTCTCACAAGGAGATACT  1 
+MMAR_1725_p-11(ltbR)     (    1) AGTATCTCCTTGTGAGACA  1 
+MMAR_1726_p-90(leuC)     (    1) TGTCTCACAAGGAGATACT  1 
+MAV_3839_p-50(ltbR)      (    1) AGTATCTCCTTGTGAGACA  1 
+MAV_3838_p-94(leuC)      (    1) TGTCTCACAAGGAGATACT  1 
+MMAR_1725_p-32(ltbR)     (    1) CATCTCATAATACGAGACG  1 
+MMAR_1726_p-69(leuC)     (    1) CGTCTCGTATTATGAGATG  1 
+Rv2989_p-32(ltbR)        (    1) CATCTCAAAATACGAGACG  1 
+Rv2988c_p-58(leuC)       (    1) CGTCTCGTATTTTGAGATG  1 
+Mvan_2134_p-32(ltbR)     (    1) TGTCTCACAATCTGGGAAG  1 
+Mvan_2135_p-25(leuC)     (    1) CTTCCCAGATTGTGAGACA  1 
+MSMEG_2386_p-32(ltbR)    (    1) TATCTCAAAATACGAGACG  1 
+MSMEG_2387_p-98(leuC)    (    1) CGTCTCGTATTTTGAGATA  1 
+Mvan_2134_p-11(ltbR)     (    1) AATATCTCCTTGTGAGACA  1 
+Mvan_2135_p-46(leuC)     (    1) TGTCTCACAAGGAGATATT  1 
+MAV_3839_p-71(ltbR)      (    1) GATCTCATAATGCGAGACG  1 
+MAV_3838_p-73(leuC)      (    1) CGTCTCGCATTATGAGATC  1 
+Mjls_1900_p-11(ltbR)     (    1) AGTATCTCCCTGTGAGACA  1 
+Mjls_1901_p-84(leuC)     (    1) TGTCTCACAGGGAGATACT  1 
+Mjls_1900_p-32(ltbR)     (    1) AATCTCACATTGCGGGAGG  1 
+Mjls_1901_p-63(leuC)     (    1) CCTCCCGCAATGTGAGATT  1 
+Mflv_4228_p-32(ltbR)     (    1) TTTCTCACATTCTGGGAAG  1 
+Mflv_4227_p-25(leuC)     (    1) CTTCCCAGAATGTGAGAAA  1 
+MSMEG_2386_p-11(ltbR)    (    1) AGTATCTCTCTGTGAGAAA  1 
+MSMEG_2387_p-119(leuC)   (    1) TTTCTCACAGAGAGATACT  1 
+MAB_3294c_p-60(leuC)     (    1) TGTCTCACGTAACGATACT  1 
+MAB_3295_p-11(ltbR)      (    1) AGTATCGTTACGTGAGACA  1 
+MAB_3295_p-32(ltbR)      (    1) CGTCTCAATATTTGGAACG  1 
+MAB_3294c_p-39(leuC)     (    1) CGTTCCAAATATTGAGACG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 30 bayes= 1.55943 E= 2.9e-123 
+   -10     77   -268     22 
+   -51   -268    156   -110 
+ -1155  -1155  -1155    181 
+   -29    177  -1155   -310 
+ -1155    -68  -1155    160 
+ -1155    222  -1155  -1155 
+   107  -1155    -10    -51 
+  -110    149   -168    -51 
+   129    -36   -268   -151 
+    60   -168   -168     60 
+  -151   -268    -36    129 
+   -51   -168    149   -110 
+   -51    -10  -1155    107 
+ -1155  -1155    222  -1155 
+   160  -1155    -68  -1155 
+  -310  -1155    177    -29 
+   181  -1155  -1155  -1155 
+  -110    156   -268    -51 
+    22   -268     77    -10 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 30 E= 2.9e-123 
+ 0.266667  0.366667  0.033333  0.333333 
+ 0.200000  0.033333  0.633333  0.133333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.233333  0.733333  0.000000  0.033333 
+ 0.000000  0.133333  0.000000  0.866667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.200000  0.200000 
+ 0.133333  0.600000  0.066667  0.200000 
+ 0.700000  0.166667  0.033333  0.100000 
+ 0.433333  0.066667  0.066667  0.433333 
+ 0.100000  0.033333  0.166667  0.700000 
+ 0.200000  0.066667  0.600000  0.133333 
+ 0.200000  0.200000  0.000000  0.600000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.866667  0.000000  0.133333  0.000000 
+ 0.033333  0.000000  0.733333  0.233333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.133333  0.633333  0.033333  0.200000 
+ 0.333333  0.033333  0.366667  0.266667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HGTCTCACAWTGTGAGACD MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CTA][GA]T[CA]TC[AGT][CT]A[AT]T[GA][TAC]GA[GT]A[CT][GAT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MSMEG_2387_p-119(leuC)           3.44e-06  [+1(3.44e-06)]
+MSMEG_2387_p-98(leuC)            2.18e-07  [+1(2.18e-07)]
+MSMEG_2386_p-32(ltbR)            2.18e-07  [+1(2.18e-07)]
+MSMEG_2386_p-11(ltbR)            3.44e-06  [+1(3.44e-06)]
+Rv2988c_p-58(leuC)               1.40e-07  [+1(1.40e-07)]
+Rv2989_p-32(ltbR)                1.40e-07  [+1(1.40e-07)]
+MAB_3294c_p-39(leuC)             1.20e-05  [+1(1.20e-05)]
+MAB_3295_p-11(ltbR)              5.38e-06  [+1(5.38e-06)]
+MAB_3294c_p-60(leuC)             5.38e-06  [+1(5.38e-06)]
+MAB_3295_p-32(ltbR)              1.20e-05  [+1(1.20e-05)]
+MAV_3838_p-94(leuC)              4.65e-08  [+1(4.65e-08)]
+MAV_3838_p-73(leuC)              2.68e-07  [+1(2.68e-07)]
+MAV_3839_p-71(ltbR)              2.68e-07  [+1(2.68e-07)]
+MAV_3839_p-50(ltbR)              4.65e-08  [+1(4.65e-08)]
+MMAR_1726_p-90(leuC)             4.65e-08  [+1(4.65e-08)]
+MMAR_1726_p-69(leuC)             8.80e-08  [+1(8.80e-08)]
+MMAR_1725_p-32(ltbR)             8.80e-08  [+1(8.80e-08)]
+MMAR_1725_p-11(ltbR)             4.65e-08  [+1(4.65e-08)]
+Mvan_2135_p-25(leuC)             2.18e-07  [+1(2.18e-07)]
+Mvan_2135_p-46(leuC)             2.68e-07  [+1(2.68e-07)]
+Mvan_2134_p-32(ltbR)             2.18e-07  [+1(2.18e-07)]
+Mvan_2134_p-11(ltbR)             2.68e-07  [+1(2.68e-07)]
+Mflv_4227_p-46(leuC)             4.65e-08  [+1(4.65e-08)]
+Mflv_4227_p-25(leuC)             1.39e-06  [+1(1.39e-06)]
+Mflv_4228_p-11(ltbR)             4.65e-08  [+1(4.65e-08)]
+Mflv_4228_p-32(ltbR)             1.39e-06  [+1(1.39e-06)]
+Mjls_1901_p-84(leuC)             3.00e-07  [+1(3.00e-07)]
+Mjls_1901_p-63(leuC)             9.74e-07  [+1(9.74e-07)]
+Mjls_1900_p-11(ltbR)             3.00e-07  [+1(3.00e-07)]
+Mjls_1900_p-32(ltbR)             9.74e-07  [+1(9.74e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

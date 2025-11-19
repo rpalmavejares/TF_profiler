@@ -1,0 +1,214 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NsrR_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Saro_0149_p3(nsrR)       1.0000     19  Saro_0148_p-48(hmp)      1.0000     19  
+Sala_0536_p-66(nsrR)     1.0000     19  Sala_0535_p-77(PF01152)  1.0000     19  
+Sala_0535_p-34(PF01152)  1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NsrR_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NsrR_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              95    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=     95    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.347 C 0.137 G 0.147 T 0.368 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.343 C 0.141 G 0.152 T 0.364 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RGTATATWATATACY MEME-1	width =  15  sites =   5  llr = 68  E-value = 1.8e-007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4::a:6:4a28:a::
+pos.-specific     C  :::::2::::2::86
+probability       G  6a::2::::2:::::
+matrix            T  ::a:82a6:6:a:24
+
+         bits    2.8  *             
+                 2.5  *             
+                 2.3  *             
+                 2.0  *             
+Relative         1.7  *           * 
+Entropy          1.4 ****  * *  ****
+(19.5 bits)      1.1 ***** * * *****
+                 0.8 ***** * * *****
+                 0.6 ***** *** *****
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           GGTATATTATATACC
+consensus            A   GC A AC  TT
+sequence                  T   G     
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Sala_0535_p-34(PF01152)       3  9.28e-09         GA GGTATCTTATATACC AT        
+Sala_0536_p-66(nsrR)          3  2.31e-08         AT GGTATATAAGATACC TC        
+Saro_0148_p-48(hmp)           3  4.69e-07         CA AGTAGATTAAATACC AG        
+Saro_0149_p3(nsrR)            3  8.34e-07         CT GGTATTTAATCTACT TG        
+Sala_0535_p-77(PF01152)       3  2.23e-06         TA AGTATATTATATATT GC        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sala_0535_p-34(PF01152)           9.3e-09  2_[+1]_2
+Sala_0536_p-66(nsrR)              2.3e-08  2_[+1]_2
+Saro_0148_p-48(hmp)               4.7e-07  2_[+1]_2
+Saro_0149_p3(nsrR)                8.3e-07  2_[+1]_2
+Sala_0535_p-77(PF01152)           2.2e-06  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RGTATATWATATACY width=15 seqs=5
+Sala_0535_p-34(PF01152)  (    3) GGTATCTTATATACC  1 
+Sala_0536_p-66(nsrR)     (    3) GGTATATAAGATACC  1 
+Saro_0148_p-48(hmp)      (    3) AGTAGATTAAATACC  1 
+Saro_0149_p3(nsrR)       (    3) GGTATTTAATCTACT  1 
+Sala_0535_p-77(PF01152)  (    3) AGTATATTATATATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 25 bayes= 3.10692 E= 1.8e-007 
+    22   -897    198   -897 
+  -897   -897    272   -897 
+  -897   -897   -897    146 
+   154   -897   -897   -897 
+  -897   -897     40    114 
+    80     50   -897    -86 
+  -897   -897   -897    146 
+    22   -897   -897     72 
+   154   -897   -897   -897 
+   -78   -897     40     72 
+   122     50   -897   -897 
+  -897   -897   -897    146 
+   154   -897   -897   -897 
+  -897    250   -897    -86 
+  -897    208   -897     14 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 5 E= 1.8e-007 
+ 0.400000  0.000000  0.600000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.200000  0.800000 
+ 0.600000  0.200000  0.000000  0.200000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.200000  0.000000  0.200000  0.600000 
+ 0.800000  0.200000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.800000  0.000000  0.200000 
+ 0.000000  0.600000  0.000000  0.400000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RGTATATWATATACY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]GTA[TG][ACT]T[TA]A[TAG][AC]TA[CT][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saro_0149_p3(nsrR)               4.17e-06  2_[+1(8.34e-07)]_2
+Saro_0148_p-48(hmp)              2.34e-06  2_[+1(4.69e-07)]_2
+Sala_0536_p-66(nsrR)             1.15e-07  2_[+1(2.31e-08)]_2
+Sala_0535_p-77(PF01152)          1.11e-05  2_[+1(2.23e-06)]_2
+Sala_0535_p-34(PF01152)          4.64e-08  2_[+1(9.28e-09)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

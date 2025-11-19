@@ -1,0 +1,325 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/CblR_Sulfolobales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Msed_2089_p-20(cobN)     1.0000     19  Msed_0807_p-1(btuF)      1.0000     19  
+Msed_1305_p-23(hoxN)     1.0000     19  Msed_0588_p-1(potE)      1.0000     19  
+Msed_1226_p-18(bluB)     1.0000     19  Msed_2090_p-119(Msed_209 1.0000     19  
+ST2443_p20(hoxN)         1.0000     19  ST2443_p49(hoxN)         1.0000     19  
+ST0840_p-64(btuF)        1.0000     19  ST0840_p-1(btuF)         1.0000     19  
+ST0841_p-85(btuC)        1.0000     19  ST0841_p-22(btuC)        1.0000     19  
+ST2455_p5(potE)          1.0000     19  ST1824_p-22(cbiC)        1.0000     19  
+ST0601_p-1(bluB)         1.0000     19  SSO1018_p29(hoxN)        1.0000     19  
+SSO0485_p-23(btuF)       1.0000     19  SSO2308_p-1(cbiC)        1.0000     19  
+SSO2560_p-22(bluB)       1.0000     19  YN1551_1651_p2(hoxN)     1.0000     19  
+YN1551_1191_p-23(btuF)   1.0000     19  YN1551_0113_p-1(cbiC)    1.0000     19  
+YN1551_3111_p-22(bluB)   1.0000     19  Saci_2028_p-23(hoxN)     1.0000     19  
+Saci_1221_p-24(btuC)     1.0000     19  Saci_1220_p-24(btuF)     1.0000     19  
+Saci_0399_p-1(cbiC)      1.0000     19  Saci_0250_p-18(bluB)     1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/CblR_Sulfolobales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/CblR_Sulfolobales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             532    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    532    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.323 C 0.197 G 0.171 T 0.308 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.323 C 0.198 G 0.172 T 0.308 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATGGATARCCTATCCAWA MEME-1	width =  19  sites =  28  llr = 477  E-value = 4.3e-167
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :5:::9:a41:1a1::946
+pos.-specific     C  11::::::158:::aa::1
+probability       G  11:aa:::52:::::::11
+matrix            T  82a::1a::238:9::151
+
+         bits    2.5    **              
+                 2.3    **         **   
+                 2.0    **         **   
+                 1.8    ** *       **   
+Relative         1.5   *** **    * **   
+Entropy          1.3   *** **  * *****  
+(24.6 bits)      1.0   ******  *******  
+                 0.8 * ******* *******  
+                 0.5 * ******* *******  
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           TATGGATAGCCTATCCATA
+consensus             T      AGT      A 
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Msed_0807_p-1(btuF)           1  7.23e-11          . TATGGATAGCCTATCCATC           
+Msed_1305_p-23(hoxN)          1  1.29e-10          . TATGGATAGCCTATCCAAC           
+SSO2560_p-22(bluB)            1  3.15e-10          . GCTGGATAGCCTATCCATA           
+ST0601_p-1(bluB)              1  4.07e-10          . TATGGATAACCTATCCATG           
+YN1551_3111_p-22(bluB)        1  5.15e-10          . TCTGGATAGTCTATCCATA           
+ST2443_p20(hoxN)              1  1.26e-09          . TATGGATAACTTATCCAAA           
+Msed_0588_p-1(potE)           1  1.60e-09          . TATGGCTAGCCTATCCAAA           
+YN1551_1191_p-23(btuF)        1  1.95e-09          . TTTGGATAGTCTATCCAGA           
+SSO0485_p-23(btuF)            1  1.95e-09          . TTTGGATAGTCTATCCAGA           
+Saci_0250_p-18(bluB)          1  2.48e-09          . GATGGATAATCTATCCATA           
+Saci_1221_p-24(btuC)          1  3.93e-09          . TATGGATAAGCTATCCACA           
+ST2443_p49(hoxN)              1  3.93e-09          . TGTGGATAACTTATCCAAA           
+Saci_1220_p-24(btuF)          1  4.39e-09          . TATGGATAGCCTATCCTAC           
+ST2455_p5(potE)               1  4.84e-09          . TATGGATAACTTATCCAAG           
+Saci_0399_p-1(cbiC)           1  5.31e-09          . TTTGGATACCCTATCCATC           
+Saci_2028_p-23(hoxN)          1  8.82e-09          . ATTGGATAGGCTATCCATA           
+YN1551_1651_p2(hoxN)          1  8.82e-09          . GATGGATAGACAATCCATA           
+SSO1018_p29(hoxN)             1  8.82e-09          . GATGGATAGACAATCCATA           
+ST1824_p-22(cbiC)             1  8.82e-09          . TTTGGATAAGCTATCCAAT           
+ST0840_p-1(btuF)              1  1.37e-08          . TATGGATGACTTATCCATA           
+Msed_2090_p-119(Msed_209      1  1.50e-08          . CCTGGTTAGCCTATCCATA           
+Msed_2089_p-20(cobN)          1  1.79e-08          . TATGGATAGGCTAACCAGG           
+ST0841_p-85(btuC)             1  2.66e-08          . TATGGATAAGTCATCCATA           
+Msed_1226_p-18(bluB)          1  4.23e-08          . CCTGGATACTCTATCCATA           
+YN1551_0113_p-1(cbiC)         1  4.85e-08          . TGTGGATAGACAATCCAAT           
+SSO2308_p-1(cbiC)             1  4.85e-08          . TGTGGATAGACAATCCAAT           
+ST0841_p-22(btuC)             1  1.59e-07          . TATGGTTAAGTTATCCTAA           
+ST0840_p-64(btuF)             1  2.53e-07          . TTAGGATAACTTAACCATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Msed_0807_p-1(btuF)               7.2e-11  [+1]
+Msed_1305_p-23(hoxN)              1.3e-10  [+1]
+SSO2560_p-22(bluB)                3.1e-10  [+1]
+ST0601_p-1(bluB)                  4.1e-10  [+1]
+YN1551_3111_p-22(bluB)            5.1e-10  [+1]
+ST2443_p20(hoxN)                  1.3e-09  [+1]
+Msed_0588_p-1(potE)               1.6e-09  [+1]
+YN1551_1191_p-23(btuF)            1.9e-09  [+1]
+SSO0485_p-23(btuF)                1.9e-09  [+1]
+Saci_0250_p-18(bluB)              2.5e-09  [+1]
+Saci_1221_p-24(btuC)              3.9e-09  [+1]
+ST2443_p49(hoxN)                  3.9e-09  [+1]
+Saci_1220_p-24(btuF)              4.4e-09  [+1]
+ST2455_p5(potE)                   4.8e-09  [+1]
+Saci_0399_p-1(cbiC)               5.3e-09  [+1]
+Saci_2028_p-23(hoxN)              8.8e-09  [+1]
+YN1551_1651_p2(hoxN)              8.8e-09  [+1]
+SSO1018_p29(hoxN)                 8.8e-09  [+1]
+ST1824_p-22(cbiC)                 8.8e-09  [+1]
+ST0840_p-1(btuF)                  1.4e-08  [+1]
+Msed_2090_p-119(Msed_209          1.5e-08  [+1]
+Msed_2089_p-20(cobN)              1.8e-08  [+1]
+ST0841_p-85(btuC)                 2.7e-08  [+1]
+Msed_1226_p-18(bluB)              4.2e-08  [+1]
+YN1551_0113_p-1(cbiC)             4.9e-08  [+1]
+SSO2308_p-1(cbiC)                 4.9e-08  [+1]
+ST0841_p-22(btuC)                 1.6e-07  [+1]
+ST0840_p-64(btuF)                 2.5e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATGGATARCCTATCCAWA width=19 seqs=28
+Msed_0807_p-1(btuF)      (    1) TATGGATAGCCTATCCATC  1 
+Msed_1305_p-23(hoxN)     (    1) TATGGATAGCCTATCCAAC  1 
+SSO2560_p-22(bluB)       (    1) GCTGGATAGCCTATCCATA  1 
+ST0601_p-1(bluB)         (    1) TATGGATAACCTATCCATG  1 
+YN1551_3111_p-22(bluB)   (    1) TCTGGATAGTCTATCCATA  1 
+ST2443_p20(hoxN)         (    1) TATGGATAACTTATCCAAA  1 
+Msed_0588_p-1(potE)      (    1) TATGGCTAGCCTATCCAAA  1 
+YN1551_1191_p-23(btuF)   (    1) TTTGGATAGTCTATCCAGA  1 
+SSO0485_p-23(btuF)       (    1) TTTGGATAGTCTATCCAGA  1 
+Saci_0250_p-18(bluB)     (    1) GATGGATAATCTATCCATA  1 
+Saci_1221_p-24(btuC)     (    1) TATGGATAAGCTATCCACA  1 
+ST2443_p49(hoxN)         (    1) TGTGGATAACTTATCCAAA  1 
+Saci_1220_p-24(btuF)     (    1) TATGGATAGCCTATCCTAC  1 
+ST2455_p5(potE)          (    1) TATGGATAACTTATCCAAG  1 
+Saci_0399_p-1(cbiC)      (    1) TTTGGATACCCTATCCATC  1 
+Saci_2028_p-23(hoxN)     (    1) ATTGGATAGGCTATCCATA  1 
+YN1551_1651_p2(hoxN)     (    1) GATGGATAGACAATCCATA  1 
+SSO1018_p29(hoxN)        (    1) GATGGATAGACAATCCATA  1 
+ST1824_p-22(cbiC)        (    1) TTTGGATAAGCTATCCAAT  1 
+ST0840_p-1(btuF)         (    1) TATGGATGACTTATCCATA  1 
+Msed_2090_p-119(Msed_209 (    1) CCTGGTTAGCCTATCCATA  1 
+Msed_2089_p-20(cobN)     (    1) TATGGATAGGCTAACCAGG  1 
+ST0841_p-85(btuC)        (    1) TATGGATAAGTCATCCATA  1 
+Msed_1226_p-18(bluB)     (    1) CCTGGATACTCTATCCATA  1 
+YN1551_0113_p-1(cbiC)    (    1) TGTGGATAGACAATCCAAT  1 
+SSO2308_p-1(cbiC)        (    1) TGTGGATAGACAATCCAAT  1 
+ST0841_p-22(btuC)        (    1) TATGGTTAAGTTATCCTAA  1 
+ST0840_p-64(btuF)        (    1) TTAGGATAACTTAACCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 28 bayes= 1.53051 E= 4.3e-167 
+  -317   -147    -26    128 
+    73    -47    -68    -52 
+  -317  -1145  -1145    165 
+ -1145  -1145    254  -1145 
+ -1145  -1145    254  -1145 
+   147   -247  -1145   -211 
+ -1145  -1145  -1145    170 
+   158  -1145   -226  -1145 
+    28   -147    164  -1145 
+  -118    123     32    -79 
+ -1145    192  -1145    -30 
+  -118   -247  -1145    142 
+   163  -1145  -1145  -1145 
+  -217  -1145  -1145    159 
+ -1145    234  -1145  -1145 
+ -1145    234  -1145  -1145 
+   152  -1145  -1145   -211 
+    15   -247    -68     70 
+    99    -47    -68   -152 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 28 E= 4.3e-167 
+ 0.035714  0.071429  0.142857  0.750000 
+ 0.535714  0.142857  0.107143  0.214286 
+ 0.035714  0.000000  0.000000  0.964286 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.892857  0.035714  0.000000  0.071429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.964286  0.000000  0.035714  0.000000 
+ 0.392857  0.071429  0.535714  0.000000 
+ 0.142857  0.464286  0.214286  0.178571 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.142857  0.035714  0.000000  0.821429 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.357143  0.035714  0.107143  0.500000 
+ 0.642857  0.142857  0.107143  0.107143 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGGATARCCTATCCAWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[AT]TGGATA[GA][CG][CT]TATCCA[TA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Msed_2089_p-20(cobN)             1.79e-08  [+1(1.79e-08)]
+Msed_0807_p-1(btuF)              7.23e-11  [+1(7.23e-11)]
+Msed_1305_p-23(hoxN)             1.29e-10  [+1(1.29e-10)]
+Msed_0588_p-1(potE)              1.60e-09  [+1(1.60e-09)]
+Msed_1226_p-18(bluB)             4.23e-08  [+1(4.23e-08)]
+Msed_2090_p-119(Msed_209         1.50e-08  [+1(1.50e-08)]
+ST2443_p20(hoxN)                 1.26e-09  [+1(1.26e-09)]
+ST2443_p49(hoxN)                 3.93e-09  [+1(3.93e-09)]
+ST0840_p-64(btuF)                2.53e-07  [+1(2.53e-07)]
+ST0840_p-1(btuF)                 1.37e-08  [+1(1.37e-08)]
+ST0841_p-85(btuC)                2.66e-08  [+1(2.66e-08)]
+ST0841_p-22(btuC)                1.59e-07  [+1(1.59e-07)]
+ST2455_p5(potE)                  4.84e-09  [+1(4.84e-09)]
+ST1824_p-22(cbiC)                8.82e-09  [+1(8.82e-09)]
+ST0601_p-1(bluB)                 4.07e-10  [+1(4.07e-10)]
+SSO1018_p29(hoxN)                8.82e-09  [+1(8.82e-09)]
+SSO0485_p-23(btuF)               1.95e-09  [+1(1.95e-09)]
+SSO2308_p-1(cbiC)                4.85e-08  [+1(4.85e-08)]
+SSO2560_p-22(bluB)               3.15e-10  [+1(3.15e-10)]
+YN1551_1651_p2(hoxN)             8.82e-09  [+1(8.82e-09)]
+YN1551_1191_p-23(btuF)           1.95e-09  [+1(1.95e-09)]
+YN1551_0113_p-1(cbiC)            4.85e-08  [+1(4.85e-08)]
+YN1551_3111_p-22(bluB)           5.15e-10  [+1(5.15e-10)]
+Saci_2028_p-23(hoxN)             8.82e-09  [+1(8.82e-09)]
+Saci_1221_p-24(btuC)             3.93e-09  [+1(3.93e-09)]
+Saci_1220_p-24(btuF)             4.39e-09  [+1(4.39e-09)]
+Saci_0399_p-1(cbiC)              5.31e-09  [+1(5.31e-09)]
+Saci_0250_p-18(bluB)             2.48e-09  [+1(2.48e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,265 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/AgaR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b3131_p-34(agaR)         1.0000     15  b3132_p-134(agaZ)        1.0000     15  
+b3132_p-90(agaZ)         1.0000     15  b3136_p-150(agaS)        1.0000     15  
+b3136_p-119(agaS)        1.0000     15  b3132_p-229(agaZ)        1.0000     15  
+CKO_04529_p-35(agaR)     1.0000     15  CKO_04536_p-119(agaS)    1.0000     15  
+CKO_04530_p-247(agaZ)    1.0000     15  CKO_04530_p-152(agaZ)    1.0000     15  
+CKO_04530_p-108(agaZ)    1.0000     15  CKO_04536_p-252(agaS)    1.0000     15  
+CKO_04536_p-150(agaS)    1.0000     15  Ent638_3571_p-35(agaR)   1.0000     15  
+Ent638_3577_p-144(agaS)  1.0000     15  Ent638_3572_p-90(agaZ)   1.0000     15  
+Ent638_3572_p-230(agaZ)  1.0000     15  Ent638_3572_p-134(agaZ)  1.0000     15  
+Ent638_3577_p-113(agaS)  1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/AgaR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/AgaR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             285    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    285    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.158 C 0.179 G 0.0947 T 0.568 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.159 C 0.18 G 0.0969 T 0.564 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CTTTCGTTTTATTTY MEME-1	width =  15  sites =  15  llr = 159  E-value = 8.5e-040
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::::21:2:6::::
+pos.-specific     C  8:::a::::22:::7
+probability       G  :::::71:::2::::
+matrix            T  1aaa:19a88:aaa3
+
+         bits    3.4                
+                 3.0                
+                 2.7                
+                 2.4     *          
+Relative         2.0     **         
+Entropy          1.7     **         
+(15.3 bits)      1.3 *   **    *    
+                 1.0 *   **    *   *
+                 0.7 ****** *  *****
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           CTTTCGTTTTATTTC
+consensus                 A  ACC   T
+sequence                       G    
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Ent638_3572_p-230(agaZ)       1  4.69e-07          . CTTTCGTTTCATTTC           
+CKO_04530_p-247(agaZ)         1  4.69e-07          . CTTTCGTTTCATTTC           
+b3132_p-229(agaZ)             1  4.69e-07          . CTTTCGTTTCATTTC           
+Ent638_3572_p-134(agaZ)       1  7.23e-07          . CTTTCGTTATGTTTC           
+Ent638_3572_p-90(agaZ)        1  3.03e-06          . CTTTCGTTTTATTTT           
+CKO_04530_p-108(agaZ)         1  3.03e-06          . CTTTCGTTTTATTTT           
+b3132_p-90(agaZ)              1  3.03e-06          . CTTTCGTTTTATTTT           
+b3136_p-150(agaS)             1  4.41e-06          . ATTTCGTTTTATTTC           
+CKO_04530_p-152(agaZ)         1  5.60e-06          . CTTTCATTATGTTTC           
+b3132_p-134(agaZ)             1  5.60e-06          . CTTTCATTATGTTTC           
+Ent638_3577_p-144(agaS)       1  7.50e-06          . TTTTCGTTTTATTTC           
+CKO_04536_p-150(agaS)         1  7.50e-06          . TTTTCGTTTTATTTC           
+CKO_04536_p-119(agaS)         1  2.58e-05          . CTTTCGATTTCTTTT           
+CKO_04536_p-252(agaS)         1  5.10e-05          . CTTTCTTTTTCTTTC           
+b3136_p-119(agaS)             1  5.70e-05          . CTTTCAGTTTCTTTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ent638_3572_p-230(agaZ)           4.7e-07  [+1]
+CKO_04530_p-247(agaZ)             4.7e-07  [+1]
+b3132_p-229(agaZ)                 4.7e-07  [+1]
+Ent638_3572_p-134(agaZ)           7.2e-07  [+1]
+Ent638_3572_p-90(agaZ)              3e-06  [+1]
+CKO_04530_p-108(agaZ)               3e-06  [+1]
+b3132_p-90(agaZ)                    3e-06  [+1]
+b3136_p-150(agaS)                 4.4e-06  [+1]
+CKO_04530_p-152(agaZ)             5.6e-06  [+1]
+b3132_p-134(agaZ)                 5.6e-06  [+1]
+Ent638_3577_p-144(agaS)           7.5e-06  [+1]
+CKO_04536_p-150(agaS)             7.5e-06  [+1]
+CKO_04536_p-119(agaS)             2.6e-05  [+1]
+CKO_04536_p-252(agaS)             5.1e-05  [+1]
+b3136_p-119(agaS)                 5.7e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CTTTCGTTTTATTTY width=15 seqs=15
+Ent638_3572_p-230(agaZ)  (    1) CTTTCGTTTCATTTC  1 
+CKO_04530_p-247(agaZ)    (    1) CTTTCGTTTCATTTC  1 
+b3132_p-229(agaZ)        (    1) CTTTCGTTTCATTTC  1 
+Ent638_3572_p-134(agaZ)  (    1) CTTTCGTTATGTTTC  1 
+Ent638_3572_p-90(agaZ)   (    1) CTTTCGTTTTATTTT  1 
+CKO_04530_p-108(agaZ)    (    1) CTTTCGTTTTATTTT  1 
+b3132_p-90(agaZ)         (    1) CTTTCGTTTTATTTT  1 
+b3136_p-150(agaS)        (    1) ATTTCGTTTTATTTC  1 
+CKO_04530_p-152(agaZ)    (    1) CTTTCATTATGTTTC  1 
+b3132_p-134(agaZ)        (    1) CTTTCATTATGTTTC  1 
+Ent638_3577_p-144(agaS)  (    1) TTTTCGTTTTATTTC  1 
+CKO_04536_p-150(agaS)    (    1) TTTTCGTTTTATTTC  1 
+CKO_04536_p-119(agaS)    (    1) CTTTCGATTTCTTTT  1 
+CKO_04536_p-252(agaS)    (    1) CTTTCTTTTTCTTTC  1 
+b3136_p-119(agaS)        (    1) CTTTCAGTTTCTTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 19 bayes= -2.30378 E= 8.5e-040 
+  -125    215  -1055   -208 
+ -1055  -1055  -1055     83 
+ -1055  -1055  -1055     83 
+ -1055  -1055  -1055     83 
+ -1055    247  -1055  -1055 
+    33  -1055    292   -307 
+  -125  -1055    -54     62 
+ -1055  -1055  -1055     83 
+    33  -1055  -1055     50 
+ -1055     15  -1055     50 
+   191     15    105  -1055 
+ -1055  -1055  -1055     83 
+ -1055  -1055  -1055     83 
+ -1055  -1055  -1055     83 
+ -1055    189  -1055    -76 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 15 E= 8.5e-040 
+ 0.066667  0.800000  0.000000  0.133333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.200000  0.000000  0.733333  0.066667 
+ 0.066667  0.000000  0.066667  0.866667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.600000  0.200000  0.200000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.666667  0.000000  0.333333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTCGTTTTATTTY MEME-1 regular expression
+--------------------------------------------------------------------------------
+CTTTC[GA]TT[TA][TC][ACG]TTT[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b3131_p-34(agaR)                 9.85e-01  15
+b3132_p-134(agaZ)                5.60e-06  [+1(5.60e-06)]
+b3132_p-90(agaZ)                 3.03e-06  [+1(3.03e-06)]
+b3136_p-150(agaS)                4.41e-06  [+1(4.41e-06)]
+b3136_p-119(agaS)                5.70e-05  [+1(5.70e-05)]
+b3132_p-229(agaZ)                4.69e-07  [+1(4.69e-07)]
+CKO_04529_p-35(agaR)             9.85e-01  15
+CKO_04536_p-119(agaS)            2.58e-05  [+1(2.58e-05)]
+CKO_04530_p-247(agaZ)            4.69e-07  [+1(4.69e-07)]
+CKO_04530_p-152(agaZ)            5.60e-06  [+1(5.60e-06)]
+CKO_04530_p-108(agaZ)            3.03e-06  [+1(3.03e-06)]
+CKO_04536_p-252(agaS)            5.10e-05  [+1(5.10e-05)]
+CKO_04536_p-150(agaS)            7.50e-06  [+1(7.50e-06)]
+Ent638_3571_p-35(agaR)           9.85e-01  15
+Ent638_3577_p-144(agaS)          7.50e-06  [+1(7.50e-06)]
+Ent638_3572_p-90(agaZ)           3.03e-06  [+1(3.03e-06)]
+Ent638_3572_p-230(agaZ)          4.69e-07  [+1(4.69e-07)]
+Ent638_3572_p-134(agaZ)          7.23e-07  [+1(7.23e-07)]
+Ent638_3577_p-113(agaS)          6.51e-03  15
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

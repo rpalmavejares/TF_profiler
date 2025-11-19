@@ -1,0 +1,330 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlorobiales/ModE_Chlorobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cpar_0446_p-151(modD)    1.0000     30  Cpar_0441_p-90(modX)     1.0000     30  
+Cag_0412_p-29(modD)      1.0000     30  Cag_1253_p-51(omp_mod)   1.0000     30  
+CferDRAFT_1916_p-45(modA 1.0000     30  Clim_0375_p-44(modD)     1.0000     30  
+Clim_0375_p-341(modD)    1.0000     30  Clim_0676_p-79(omp_mod)  1.0000     30  
+Cpha266_0439_p-266(modX) 1.0000     30  Cpha266_0440_p-44(omp_mo 1.0000     30  
+Cpha266_0440_p-220(omp_m 1.0000     30  Cpha266_0455_p-194(modD) 1.0000     30  
+Cpha266_0455_p-44(modD)  1.0000     30  Ctha_1484_p-36(omp_mod)  1.0000     30  
+Ctha_2016_p-32(modX)     1.0000     30  Plut_1707_p-51(modD)     1.0000     30  
+Plut_1540_p-156(omp_mod) 1.0000     30  Ppha_1997_p-153(omp_mod) 1.0000     30  
+Ppha_1997_p-41(omp_mod)  1.0000     30  Ppha_1996_p-298(modX)    1.0000     30  
+Paes_0414_p-104(modA)    1.0000     30  Paes_1636_p-61(modA)     1.0000     30  
+Cvib_1491_p-140(modD)    1.0000     30  Cvib_1353_p-47(omp_mod)  1.0000     30  
+Cvib_0108_p-51(modD)     1.0000     30  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlorobiales/ModE_Chlorobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlorobiales/ModE_Chlorobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           30
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             750    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    750    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.373 C 0.159 G 0.123 T 0.345 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.373 C 0.159 G 0.123 T 0.345 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WYCGTTATATHHTWAAWTAYATAACGAA MEME-1	width =  28  sites =  25  llr = 450  E-value = 3.8e-127
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  41::119:623223684271a:aa::77
+pos.-specific     C  :3a:1::::234:2:1:1:5:1::a:21
+probability       G  12:a1:1:1:::211:22:::::::a11
+matrix            T  54::79:a274374324524:9:::::2
+
+         bits    3.0    *                     *  
+                 2.7   **                     *  
+                 2.4   **                    **  
+                 2.1   **                    **  
+Relative         1.8   **                    **  
+Entropy          1.5   **   *            *   **  
+(26.0 bits)      1.2   ** ***            ******  
+                 0.9   ** ***            ******  
+                 0.6   ** *** * **  *  ********* 
+                 0.3 ************* **  **********
+                 0.0 ----------------------------
+
+Multilevel           TTCGTTATATTCTTAATTACATAACGAA
+consensus            AC      T AT AT AATT        
+sequence                       CA    GG          
+                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+Cpar_0441_p-90(modX)          2  1.36e-11          A TTCGTTATATTTGTAAGAACATAACGAA T         
+Clim_0676_p-79(omp_mod)       2  3.94e-11          T ACCGTTATACCTTTTATTATATAACGAA T         
+CferDRAFT_1916_p-45(modA      2  3.94e-11          C TCCGTTATTTCATATAATACATAACGAA A         
+Clim_0375_p-341(modD)         2  1.19e-10          A TTCGTTATATTCTTATTTGCATAACGAA T         
+Cag_1253_p-51(omp_mod)        2  2.12e-10          G TGCGTTATATTTATAAATACATAACGAG C         
+Cpha266_0439_p-266(modX)      2  2.80e-10          T TCCGTTATTTTCTAAATTATATAACGCC A         
+Cpha266_0440_p-44(omp_mo      2  3.65e-10          C ATCGTTATATACTTATATTTATAACGAA A         
+Plut_1540_p-156(omp_mod)      2  4.16e-10          T TTCGTTATATTCACACTTATATAACGAA T         
+Cpar_0446_p-151(modD)         2  4.73e-10          A ATCGTTATTTCCTGTAAGACATATCGAA A         
+Ppha_1997_p-41(omp_mod)       2  1.38e-09          T TTCGCTATATTTTTAAGGTAATAACGAA T         
+Ctha_1484_p-36(omp_mod)       2  2.37e-09          T AACGATATATATTAAAGTATATAACGAA T         
+Cag_0412_p-29(modD)           2  2.37e-09          C AGCGTTATAACCATAATCTCATAACGAT A         
+Ppha_1996_p-298(modX)         2  2.63e-09          A TACGTTGTTTACTAAATTATATAACGGA A         
+Paes_1636_p-61(modA)          2  2.91e-09          T GACGTTATTACATTAAAAACATAACGAA A         
+Cpha266_0440_p-220(omp_m      2  2.91e-09          T GGCGTTATATAATTTAGAAAATAACGGA A         
+Clim_0375_p-44(modD)          2  3.22e-09          G GTCGGAATAACCTGAAAGATATAACGAA A         
+Paes_0414_p-104(modA)         2  4.74e-09          T TCCGTTGTATATTATAAGTTATAACGAG T         
+Cvib_1353_p-47(omp_mod)       2  7.47e-09          C ACCGTTATCACCTGAACAACACAACGAA A         
+Cvib_1491_p-140(modD)         2  1.84e-08          G TTCGCTATATTCAAATAAACATAACGGT T         
+Plut_1707_p-51(modD)          2  1.98e-08          T ATCGGTATGCAAGCGATTACATAACGCT T         
+Ppha_1997_p-153(omp_mod)      2  2.30e-08          T TCCGTTATATAATTTAGTAAACAACGTA T         
+Cpha266_0455_p-44(modD)       2  2.30e-08          A ACCGAAATACCTTTACTCATATAACGAA C         
+Cpha266_0455_p-194(modD)      2  2.30e-08          A AGCGTTATATTTGAAAACTCATTACGAC C         
+Ctha_2016_p-32(modX)          2  3.06e-08          T TTCGTTATTTTCTCTTTGTTATAAGGCA A         
+Cvib_0108_p-51(modD)          2  3.28e-08          T ATCGATATGCAAGCGATTACATAACGCT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cpar_0441_p-90(modX)              1.4e-11  1_[+1]_1
+Clim_0676_p-79(omp_mod)           3.9e-11  1_[+1]_1
+CferDRAFT_1916_p-45(modA          3.9e-11  1_[+1]_1
+Clim_0375_p-341(modD)             1.2e-10  1_[+1]_1
+Cag_1253_p-51(omp_mod)            2.1e-10  1_[+1]_1
+Cpha266_0439_p-266(modX)          2.8e-10  1_[+1]_1
+Cpha266_0440_p-44(omp_mo          3.7e-10  1_[+1]_1
+Plut_1540_p-156(omp_mod)          4.2e-10  1_[+1]_1
+Cpar_0446_p-151(modD)             4.7e-10  1_[+1]_1
+Ppha_1997_p-41(omp_mod)           1.4e-09  1_[+1]_1
+Ctha_1484_p-36(omp_mod)           2.4e-09  1_[+1]_1
+Cag_0412_p-29(modD)               2.4e-09  1_[+1]_1
+Ppha_1996_p-298(modX)             2.6e-09  1_[+1]_1
+Paes_1636_p-61(modA)              2.9e-09  1_[+1]_1
+Cpha266_0440_p-220(omp_m          2.9e-09  1_[+1]_1
+Clim_0375_p-44(modD)              3.2e-09  1_[+1]_1
+Paes_0414_p-104(modA)             4.7e-09  1_[+1]_1
+Cvib_1353_p-47(omp_mod)           7.5e-09  1_[+1]_1
+Cvib_1491_p-140(modD)             1.8e-08  1_[+1]_1
+Plut_1707_p-51(modD)                2e-08  1_[+1]_1
+Ppha_1997_p-153(omp_mod)          2.3e-08  1_[+1]_1
+Cpha266_0455_p-44(modD)           2.3e-08  1_[+1]_1
+Cpha266_0455_p-194(modD)          2.3e-08  1_[+1]_1
+Ctha_2016_p-32(modX)              3.1e-08  1_[+1]_1
+Cvib_0108_p-51(modD)              3.3e-08  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WYCGTTATATHHTWAAWTAYATAACGAA width=28 seqs=25
+Cpar_0441_p-90(modX)     (    2) TTCGTTATATTTGTAAGAACATAACGAA  1 
+Clim_0676_p-79(omp_mod)  (    2) ACCGTTATACCTTTTATTATATAACGAA  1 
+CferDRAFT_1916_p-45(modA (    2) TCCGTTATTTCATATAATACATAACGAA  1 
+Clim_0375_p-341(modD)    (    2) TTCGTTATATTCTTATTTGCATAACGAA  1 
+Cag_1253_p-51(omp_mod)   (    2) TGCGTTATATTTATAAATACATAACGAG  1 
+Cpha266_0439_p-266(modX) (    2) TCCGTTATTTTCTAAATTATATAACGCC  1 
+Cpha266_0440_p-44(omp_mo (    2) ATCGTTATATACTTATATTTATAACGAA  1 
+Plut_1540_p-156(omp_mod) (    2) TTCGTTATATTCACACTTATATAACGAA  1 
+Cpar_0446_p-151(modD)    (    2) ATCGTTATTTCCTGTAAGACATATCGAA  1 
+Ppha_1997_p-41(omp_mod)  (    2) TTCGCTATATTTTTAAGGTAATAACGAA  1 
+Ctha_1484_p-36(omp_mod)  (    2) AACGATATATATTAAAGTATATAACGAA  1 
+Cag_0412_p-29(modD)      (    2) AGCGTTATAACCATAATCTCATAACGAT  1 
+Ppha_1996_p-298(modX)    (    2) TACGTTGTTTACTAAATTATATAACGGA  1 
+Paes_1636_p-61(modA)     (    2) GACGTTATTACATTAAAAACATAACGAA  1 
+Cpha266_0440_p-220(omp_m (    2) GGCGTTATATAATTTAGAAAATAACGGA  1 
+Clim_0375_p-44(modD)     (    2) GTCGGAATAACCTGAAAGATATAACGAA  1 
+Paes_0414_p-104(modA)    (    2) TCCGTTGTATATTATAAGTTATAACGAG  1 
+Cvib_1353_p-47(omp_mod)  (    2) ACCGTTATCACCTGAACAACACAACGAA  1 
+Cvib_1491_p-140(modD)    (    2) TTCGCTATATTCAAATAAACATAACGGT  1 
+Plut_1707_p-51(modD)     (    2) ATCGGTATGCAAGCGATTACATAACGCT  1 
+Ppha_1997_p-153(omp_mod) (    2) TCCGTTATATAATTTAGTAAACAACGTA  1 
+Cpha266_0455_p-44(modD)  (    2) ACCGAAATACCTTTACTCATATAACGAA  1 
+Cpha266_0455_p-194(modD) (    2) AGCGTTATATTTGAAAACTCATTACGAC  1 
+Ctha_2016_p-32(modX)     (    2) TTCGTTATTTTCTCTTTGTTATAAGGCA  1 
+Cvib_0108_p-51(modD)     (    2) ATCGATATGCAAGCGATTACATAACGCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 75 bayes= 3.37346 E= 3.8e-127 
+    10  -1129     -4     48 
+  -163     81     38     35 
+ -1129    265  -1129  -1129 
+ -1129  -1129    302  -1129 
+  -163    -99    -62    106 
+  -222  -1129  -1129    142 
+   130  -1129    -62  -1129 
+ -1129  -1129  -1129    154 
+    78   -199    -62    -52 
+  -122      1  -1129     98 
+   -22    101  -1129      6 
+   -63    147  -1129    -11 
+  -122  -1129     38     98 
+   -41      1     -4     35 
+    78  -1129    -62    -30 
+   103    -99  -1129   -111 
+    -5   -199     70     21 
+   -90    -41     70     48 
+    95  -1129   -162    -52 
+  -163    159  -1129     21 
+   142  -1129  -1129  -1129 
+ -1129    -99  -1129    142 
+   136  -1129  -1129   -310 
+   136  -1129  -1129   -310 
+ -1129    259   -162  -1129 
+ -1129  -1129    302  -1129 
+    87      1     -4   -310 
+    87    -99    -62   -111 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 25 E= 3.8e-127 
+ 0.400000  0.000000  0.120000  0.480000 
+ 0.120000  0.280000  0.160000  0.440000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.120000  0.080000  0.080000  0.720000 
+ 0.080000  0.000000  0.000000  0.920000 
+ 0.920000  0.000000  0.080000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.640000  0.040000  0.080000  0.240000 
+ 0.160000  0.160000  0.000000  0.680000 
+ 0.320000  0.320000  0.000000  0.360000 
+ 0.240000  0.440000  0.000000  0.320000 
+ 0.160000  0.000000  0.160000  0.680000 
+ 0.280000  0.160000  0.120000  0.440000 
+ 0.640000  0.000000  0.080000  0.280000 
+ 0.760000  0.080000  0.000000  0.160000 
+ 0.360000  0.040000  0.200000  0.400000 
+ 0.200000  0.120000  0.200000  0.480000 
+ 0.720000  0.000000  0.040000  0.240000 
+ 0.120000  0.480000  0.000000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.080000  0.000000  0.920000 
+ 0.960000  0.000000  0.000000  0.040000 
+ 0.960000  0.000000  0.000000  0.040000 
+ 0.000000  0.960000  0.040000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.680000  0.160000  0.120000  0.040000 
+ 0.680000  0.080000  0.080000  0.160000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WYCGTTATATHHTWAAWTAYATAACGAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TC]CGTTAT[AT]T[TAC][CTA]T[TA][AT]A[TAG][TAG][AT][CT]ATAACGAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cpar_0446_p-151(modD)            1.42e-09  1_[+1(4.73e-10)]_1
+Cpar_0441_p-90(modX)             4.09e-11  1_[+1(1.36e-11)]_1
+Cag_0412_p-29(modD)              7.11e-09  1_[+1(2.37e-09)]_1
+Cag_1253_p-51(omp_mod)           6.37e-10  1_[+1(2.12e-10)]_1
+CferDRAFT_1916_p-45(modA         1.18e-10  1_[+1(3.94e-11)]_1
+Clim_0375_p-44(modD)             9.65e-09  1_[+1(3.22e-09)]_1
+Clim_0375_p-341(modD)            3.58e-10  1_[+1(1.19e-10)]_1
+Clim_0676_p-79(omp_mod)          1.18e-10  1_[+1(3.94e-11)]_1
+Cpha266_0439_p-266(modX)         8.39e-10  1_[+1(2.80e-10)]_1
+Cpha266_0440_p-44(omp_mo         1.10e-09  1_[+1(3.65e-10)]_1
+Cpha266_0440_p-220(omp_m         8.73e-09  1_[+1(2.91e-09)]_1
+Cpha266_0455_p-194(modD)         6.90e-08  1_[+1(2.30e-08)]_1
+Cpha266_0455_p-44(modD)          6.90e-08  1_[+1(2.30e-08)]_1
+Ctha_1484_p-36(omp_mod)          7.11e-09  1_[+1(2.37e-09)]_1
+Ctha_2016_p-32(modX)             9.18e-08  1_[+1(3.06e-08)]_1
+Plut_1707_p-51(modD)             5.95e-08  1_[+1(1.98e-08)]_1
+Plut_1540_p-156(omp_mod)         1.25e-09  1_[+1(4.16e-10)]_1
+Ppha_1997_p-153(omp_mod)         6.90e-08  1_[+1(2.30e-08)]_1
+Ppha_1997_p-41(omp_mod)          4.15e-09  1_[+1(1.38e-09)]_1
+Ppha_1996_p-298(modX)            7.88e-09  1_[+1(2.63e-09)]_1
+Paes_0414_p-104(modA)            1.42e-08  1_[+1(4.74e-09)]_1
+Paes_1636_p-61(modA)             8.73e-09  1_[+1(2.91e-09)]_1
+Cvib_1491_p-140(modD)            5.52e-08  1_[+1(1.84e-08)]_1
+Cvib_1353_p-47(omp_mod)          2.24e-08  1_[+1(7.47e-09)]_1
+Cvib_0108_p-51(modD)             9.84e-08  1_[+1(3.28e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,326 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/HexR1_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA5015_p-129(aceE)       1.0000     17  PA5015_p-181(aceE)       1.0000     17  
+PA5438_p-45(hexR1)       1.0000     17  PA5439_p-57(zwf)         1.0000     17  
+PA3185_p-67(aldE)        1.0000     17  PSEEN5145_p-125(aceE)    1.0000     17  
+PSEEN5145_p-177(aceE)    1.0000     17  PSEEN5500_p-45(zwf)      1.0000     17  
+PSEEN5499_p-60(hexR1)    1.0000     17  PP0339_p-177(aceE)       1.0000     17  
+PP0339_p-125(aceE)       1.0000     17  PP5350_p-60(hexR1)       1.0000     17  
+PP5351_p-45(zwf)         1.0000     17  PSPTO5005_p-127(aceE)    1.0000     17  
+PSPTO5005_p-179(aceE)    1.0000     17  PSPTO5515_p-61(hexR1)    1.0000     17  
+PFL_6160_p-63(hexR1)     1.0000     17  PFL_0509_p-178(aceE)     1.0000     17  
+PFL_0509_p-126(aceE)     1.0000     17  Pmen_0576_p-128(aceE)    1.0000     17  
+Pmen_0576_p-181(aceE)    1.0000     17  Pmen_4485_p-105(hexR1)   1.0000     17  
+Pmen_4486_p-131(zwf)     1.0000     17  PST_0183_p-195(hexR1)    1.0000     17  
+PST_0182_p-59(zwf)       1.0000     17  PST_3852_p-179(aceE)     1.0000     17  
+PST_3852_p-128(aceE)     1.0000     17  Avin_02030_p-61(hexR1)   1.0000     17  
+Avin_02020_p-43(zwf)     1.0000     17  Avin_44900_p-114(aceE)   1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/HexR1_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/HexR1_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       30    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             510    N=              30
+sample: seed=            0    hsfrac=          0
+        searchsize=    510    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.369 C 0.143 G 0.129 T 0.359 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.368 C 0.144 G 0.13 T 0.358 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAGTWWWACTACA MEME-1	width =  15  sites =  30  llr = 489  E-value = 1.7e-165
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a::656a::a:7
+pos.-specific     C  ::::::::::a::a:
+probability       G  :a::a::::::::::
+matrix            T  a:a::a454::a::2
+
+         bits    2.9  *  *     *  * 
+                 2.6  *  *     *  * 
+                 2.4  *  *     *  * 
+                 2.1  *  *     *  * 
+Relative         1.8  *  *     *  * 
+Entropy          1.5  *****   ***** 
+(23.5 bits)      1.2 ******   ***** 
+                 0.9 ******   ***** 
+                 0.6 ***************
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           TGTAGTAAAACTACA
+consensus                  TTT     T
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Avin_44900_p-114(aceE)        2  1.04e-08          T TGTAGTAAAACTACA A         
+Avin_02030_p-61(hexR1)        2  1.04e-08          A TGTAGTATAACTACA G         
+PST_3852_p-128(aceE)          2  1.04e-08          T TGTAGTAAAACTACA G         
+Pmen_4485_p-105(hexR1)        2  1.04e-08          A TGTAGTATAACTACA A         
+Pmen_0576_p-128(aceE)         2  1.04e-08          A TGTAGTAAAACTACA A         
+PFL_0509_p-126(aceE)          2  1.04e-08          T TGTAGTAAAACTACA C         
+PFL_6160_p-63(hexR1)          2  1.04e-08          C TGTAGTATAACTACA A         
+PSPTO5515_p-61(hexR1)         2  1.04e-08          A TGTAGTATAACTACA A         
+PSPTO5005_p-127(aceE)         2  1.04e-08          T TGTAGTAAAACTACA C         
+PP5350_p-60(hexR1)            2  1.04e-08          A TGTAGTATAACTACA A         
+PP0339_p-125(aceE)            2  1.04e-08          A TGTAGTAAAACTACA A         
+PSEEN5499_p-60(hexR1)         2  1.04e-08          A TGTAGTATAACTACA A         
+PSEEN5145_p-125(aceE)         2  1.04e-08          T TGTAGTAAAACTACA C         
+PA3185_p-67(aldE)             2  1.04e-08          A TGTAGTAAAACTACA C         
+PA5438_p-45(hexR1)            2  1.04e-08          T TGTAGTATAACTACA A         
+PA5015_p-129(aceE)            2  1.04e-08          C TGTAGTAAAACTACA A         
+Avin_02020_p-43(zwf)          2  4.04e-08          C TGTAGTTATACTACA T         
+Pmen_4486_p-131(zwf)          2  4.04e-08          T TGTAGTTATACTACA T         
+PP5351_p-45(zwf)              2  4.04e-08          T TGTAGTTATACTACA T         
+PSEEN5500_p-45(zwf)           2  4.04e-08          T TGTAGTTATACTACA T         
+PA5439_p-57(zwf)              2  4.04e-08          T TGTAGTTATACTACA A         
+PST_3852_p-179(aceE)          2  7.97e-08          C TGTAGTTTTACTACT A         
+Pmen_0576_p-181(aceE)         2  7.97e-08          T TGTAGTTTTACTACT A         
+PFL_0509_p-178(aceE)          2  7.97e-08          C TGTAGTTTTACTACT C         
+PSPTO5005_p-179(aceE)         2  7.97e-08          C TGTAGTTTTACTACT G         
+PP0339_p-177(aceE)            2  7.97e-08          A TGTAGTTTTACTACT A         
+PSEEN5145_p-177(aceE)         2  7.97e-08          G TGTAGTTTTACTACT A         
+PA5015_p-181(aceE)            2  7.97e-08          A TGTAGTTTTACTACT A         
+PST_0183_p-195(hexR1)         2  8.38e-08          T TGTAGTATAACTACC G         
+PST_0182_p-59(zwf)            2  1.10e-07          C GGTAGTTATACTACA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Avin_44900_p-114(aceE)              1e-08  1_[+1]_1
+Avin_02030_p-61(hexR1)              1e-08  1_[+1]_1
+PST_3852_p-128(aceE)                1e-08  1_[+1]_1
+Pmen_4485_p-105(hexR1)              1e-08  1_[+1]_1
+Pmen_0576_p-128(aceE)               1e-08  1_[+1]_1
+PFL_0509_p-126(aceE)                1e-08  1_[+1]_1
+PFL_6160_p-63(hexR1)                1e-08  1_[+1]_1
+PSPTO5515_p-61(hexR1)               1e-08  1_[+1]_1
+PSPTO5005_p-127(aceE)               1e-08  1_[+1]_1
+PP5350_p-60(hexR1)                  1e-08  1_[+1]_1
+PP0339_p-125(aceE)                  1e-08  1_[+1]_1
+PSEEN5499_p-60(hexR1)               1e-08  1_[+1]_1
+PSEEN5145_p-125(aceE)               1e-08  1_[+1]_1
+PA3185_p-67(aldE)                   1e-08  1_[+1]_1
+PA5438_p-45(hexR1)                  1e-08  1_[+1]_1
+PA5015_p-129(aceE)                  1e-08  1_[+1]_1
+Avin_02020_p-43(zwf)                4e-08  1_[+1]_1
+Pmen_4486_p-131(zwf)                4e-08  1_[+1]_1
+PP5351_p-45(zwf)                    4e-08  1_[+1]_1
+PSEEN5500_p-45(zwf)                 4e-08  1_[+1]_1
+PA5439_p-57(zwf)                    4e-08  1_[+1]_1
+PST_3852_p-179(aceE)                8e-08  1_[+1]_1
+Pmen_0576_p-181(aceE)               8e-08  1_[+1]_1
+PFL_0509_p-178(aceE)                8e-08  1_[+1]_1
+PSPTO5005_p-179(aceE)               8e-08  1_[+1]_1
+PP0339_p-177(aceE)                  8e-08  1_[+1]_1
+PSEEN5145_p-177(aceE)               8e-08  1_[+1]_1
+PA5015_p-181(aceE)                  8e-08  1_[+1]_1
+PST_0183_p-195(hexR1)             8.4e-08  1_[+1]_1
+PST_0182_p-59(zwf)                1.1e-07  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAGTWWWACTACA width=15 seqs=30
+Avin_44900_p-114(aceE)   (    2) TGTAGTAAAACTACA  1 
+Avin_02030_p-61(hexR1)   (    2) TGTAGTATAACTACA  1 
+PST_3852_p-128(aceE)     (    2) TGTAGTAAAACTACA  1 
+Pmen_4485_p-105(hexR1)   (    2) TGTAGTATAACTACA  1 
+Pmen_0576_p-128(aceE)    (    2) TGTAGTAAAACTACA  1 
+PFL_0509_p-126(aceE)     (    2) TGTAGTAAAACTACA  1 
+PFL_6160_p-63(hexR1)     (    2) TGTAGTATAACTACA  1 
+PSPTO5515_p-61(hexR1)    (    2) TGTAGTATAACTACA  1 
+PSPTO5005_p-127(aceE)    (    2) TGTAGTAAAACTACA  1 
+PP5350_p-60(hexR1)       (    2) TGTAGTATAACTACA  1 
+PP0339_p-125(aceE)       (    2) TGTAGTAAAACTACA  1 
+PSEEN5499_p-60(hexR1)    (    2) TGTAGTATAACTACA  1 
+PSEEN5145_p-125(aceE)    (    2) TGTAGTAAAACTACA  1 
+PA3185_p-67(aldE)        (    2) TGTAGTAAAACTACA  1 
+PA5438_p-45(hexR1)       (    2) TGTAGTATAACTACA  1 
+PA5015_p-129(aceE)       (    2) TGTAGTAAAACTACA  1 
+Avin_02020_p-43(zwf)     (    2) TGTAGTTATACTACA  1 
+Pmen_4486_p-131(zwf)     (    2) TGTAGTTATACTACA  1 
+PP5351_p-45(zwf)         (    2) TGTAGTTATACTACA  1 
+PSEEN5500_p-45(zwf)      (    2) TGTAGTTATACTACA  1 
+PA5439_p-57(zwf)         (    2) TGTAGTTATACTACA  1 
+PST_3852_p-179(aceE)     (    2) TGTAGTTTTACTACT  1 
+Pmen_0576_p-181(aceE)    (    2) TGTAGTTTTACTACT  1 
+PFL_0509_p-178(aceE)     (    2) TGTAGTTTTACTACT  1 
+PSPTO5005_p-179(aceE)    (    2) TGTAGTTTTACTACT  1 
+PP0339_p-177(aceE)       (    2) TGTAGTTTTACTACT  1 
+PSEEN5145_p-177(aceE)    (    2) TGTAGTTTTACTACT  1 
+PA5015_p-181(aceE)       (    2) TGTAGTTTTACTACT  1 
+PST_0183_p-195(hexR1)    (    2) TGTAGTATAACTACC  1 
+PST_0182_p-59(zwf)       (    2) GGTAGTTATACTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 90 bayes= 2.64572 E= 1.7e-165 
+ -1155  -1155   -197    143 
+ -1155  -1155    294  -1155 
+ -1155  -1155  -1155    148 
+   144  -1155  -1155  -1155 
+ -1155  -1155    294  -1155 
+ -1155  -1155  -1155    148 
+    62  -1155  -1155     28 
+    44  -1155  -1155     48 
+    62  -1155  -1155     28 
+   144  -1155  -1155  -1155 
+ -1155    280  -1155  -1155 
+ -1155  -1155  -1155    148 
+   144  -1155  -1155  -1155 
+ -1155    280  -1155  -1155 
+   100   -211  -1155    -62 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 30 E= 1.7e-165 
+ 0.000000  0.000000  0.033333  0.966667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.566667  0.000000  0.000000  0.433333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.566667  0.000000  0.000000  0.433333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.733333  0.033333  0.000000  0.233333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAGTWWWACTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTAGT[AT][AT][AT]ACTAC[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA5015_p-129(aceE)               3.11e-08  1_[+1(1.04e-08)]_1
+PA5015_p-181(aceE)               2.39e-07  1_[+1(7.97e-08)]_1
+PA5438_p-45(hexR1)               3.11e-08  1_[+1(1.04e-08)]_1
+PA5439_p-57(zwf)                 1.21e-07  1_[+1(4.04e-08)]_1
+PA3185_p-67(aldE)                3.11e-08  1_[+1(1.04e-08)]_1
+PSEEN5145_p-125(aceE)            3.11e-08  1_[+1(1.04e-08)]_1
+PSEEN5145_p-177(aceE)            2.39e-07  1_[+1(7.97e-08)]_1
+PSEEN5500_p-45(zwf)              1.21e-07  1_[+1(4.04e-08)]_1
+PSEEN5499_p-60(hexR1)            3.11e-08  1_[+1(1.04e-08)]_1
+PP0339_p-177(aceE)               2.39e-07  1_[+1(7.97e-08)]_1
+PP0339_p-125(aceE)               3.11e-08  1_[+1(1.04e-08)]_1
+PP5350_p-60(hexR1)               3.11e-08  1_[+1(1.04e-08)]_1
+PP5351_p-45(zwf)                 1.21e-07  1_[+1(4.04e-08)]_1
+PSPTO5005_p-127(aceE)            3.11e-08  1_[+1(1.04e-08)]_1
+PSPTO5005_p-179(aceE)            2.39e-07  1_[+1(7.97e-08)]_1
+PSPTO5515_p-61(hexR1)            3.11e-08  1_[+1(1.04e-08)]_1
+PFL_6160_p-63(hexR1)             3.11e-08  1_[+1(1.04e-08)]_1
+PFL_0509_p-178(aceE)             2.39e-07  1_[+1(7.97e-08)]_1
+PFL_0509_p-126(aceE)             3.11e-08  1_[+1(1.04e-08)]_1
+Pmen_0576_p-128(aceE)            3.11e-08  1_[+1(1.04e-08)]_1
+Pmen_0576_p-181(aceE)            2.39e-07  1_[+1(7.97e-08)]_1
+Pmen_4485_p-105(hexR1)           3.11e-08  1_[+1(1.04e-08)]_1
+Pmen_4486_p-131(zwf)             1.21e-07  1_[+1(4.04e-08)]_1
+PST_0183_p-195(hexR1)            2.51e-07  1_[+1(8.38e-08)]_1
+PST_0182_p-59(zwf)               3.31e-07  1_[+1(1.10e-07)]_1
+PST_3852_p-179(aceE)             2.39e-07  1_[+1(7.97e-08)]_1
+PST_3852_p-128(aceE)             3.11e-08  1_[+1(1.04e-08)]_1
+Avin_02030_p-61(hexR1)           3.11e-08  1_[+1(1.04e-08)]_1
+Avin_02020_p-43(zwf)             1.21e-07  1_[+1(4.04e-08)]_1
+Avin_44900_p-114(aceE)           3.11e-08  1_[+1(1.04e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

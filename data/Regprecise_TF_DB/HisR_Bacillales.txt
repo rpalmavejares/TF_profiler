@@ -1,0 +1,291 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/HisR_Bacillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BSU34930_p-65(hisZ)      1.0000     20  BSU32040_p-39(yuiF)      1.0000     20  
+RBAM_032140_p-61(hisZ)   1.0000     20  RBAM_029090_p-39(yuiF)   1.0000     20  
+BPUM_3128_p-62(hisZ)     1.0000     20  BPUM_2865_p-36(yuiF)     1.0000     20  
+BLi03738_p-62(hisZ)      1.0000     20  BLi03386_p-40(yuiF)      1.0000     20  
+Aflv_2537_p-55(hisZ)     1.0000     20  Aflv_2537_p-39(hisZ)     1.0000     20  
+Aflv_1385_p-34(yuiF)     1.0000     20  GK3077_p-42(hisZ)        1.0000     20  
+BH3584_p-71(hisZ)        1.0000     20  BH3584_p-55(hisZ)        1.0000     20  
+BH3359_p-47(yuiF)        1.0000     20  ABC3050_p-43(hisZ)       1.0000     20  
+ABC2918_p-30(yuiF)       1.0000     20  OB0553_p-66(hisZ)        1.0000     20  
+OB0879_p-50(yuiF)        1.0000     20  Pjdr2_0159_p-37(hisZ)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/HisR_Bacillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/HisR_Bacillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             400    N=              20
+sample: seed=            0    hsfrac=          0
+        searchsize=    400    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.438 C 0.128 G 0.142 T 0.292 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.436 C 0.129 G 0.144 T 0.292 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YAYWTTAGCRAACTAAAGKA MEME-1	width =  20  sites =  20  llr = 302  E-value = 1.2e-091
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1826::a2:6882:aa91:9
+pos.-specific     C  415::::17:::8:::::1:
+probability       G  :2:::::6:3:3::11:942
+matrix            T  6:45aa:2322:1a::1:6:
+
+         bits    3.0                     
+                 2.7                     
+                 2.4                     
+                 2.1                  *  
+Relative         1.8     **  *   **   *  
+Entropy          1.5     **  *   **   *  
+(21.8 bits)      1.2     *** *   **   *  
+                 0.9 *   *****  *********
+                 0.6 ********* **********
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TACATTAGCAAACTAAAGTA
+consensus            CGTT    TGTG      G 
+sequence               A                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+RBAM_029090_p-39(yuiF)        1  1.24e-10          . TACATTAGCAAACTAAAGGA           
+BSU32040_p-39(yuiF)           1  1.24e-10          . TACATTAGCAAACTAAAGGA           
+BPUM_3128_p-62(hisZ)          1  2.24e-10          . CATATTAGCGAACTAAAGGA           
+RBAM_032140_p-61(hisZ)        1  2.24e-10          . CATATTAGCGAACTAAAGGA           
+BSU34930_p-65(hisZ)           1  2.24e-10          . CATATTAGCGAACTAAAGGA           
+BLi03738_p-62(hisZ)           1  3.34e-10          . CATATTAGCGAACTAAAGTA           
+BH3584_p-55(hisZ)             1  6.58e-10          . TATATTAGCGAACTAAAGTA           
+Aflv_2537_p-39(hisZ)          1  6.58e-10          . TATATTAGCGAACTAAAGTA           
+BLi03386_p-40(yuiF)           1  6.58e-10          . TACATTAGCAAACTAAAGTG           
+BPUM_2865_p-36(yuiF)          1  1.87e-09          . TACATTAGTAAACTAAAGGA           
+GK3077_p-42(hisZ)             1  2.91e-09          . CATATTAGCAAACTAAAGCA           
+ABC3050_p-43(hisZ)            1  5.57e-09          . TGATTTAGCAAACTAAAGTA           
+Aflv_1385_p-34(yuiF)          1  6.80e-08          . CAATTTATCAAACTAAAGTG           
+Pjdr2_0159_p-37(hisZ)         1  8.12e-08          . CACTTTAATATACTAAAGTA           
+BH3359_p-47(yuiF)             1  6.37e-07          . TGATTTAATAAACTAAAGCA           
+OB0879_p-50(yuiF)             1  1.12e-06          . TGCTTTATCATGATGAAGTA           
+ABC2918_p-30(yuiF)            1  1.96e-06          . TGATTTAATAAGATAAAGGA           
+OB0553_p-66(hisZ)             1  3.08e-06          . AACTTTACTTAGATAAAGTG           
+Aflv_2537_p-55(hisZ)          1  9.09e-06          . AACTTTACTTTGCTAATATA           
+BH3584_p-71(hisZ)             1  3.38e-05          . TCCTTTATCTTGTTAGTATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RBAM_029090_p-39(yuiF)            1.2e-10  [+1]
+BSU32040_p-39(yuiF)               1.2e-10  [+1]
+BPUM_3128_p-62(hisZ)              2.2e-10  [+1]
+RBAM_032140_p-61(hisZ)            2.2e-10  [+1]
+BSU34930_p-65(hisZ)               2.2e-10  [+1]
+BLi03738_p-62(hisZ)               3.3e-10  [+1]
+BH3584_p-55(hisZ)                 6.6e-10  [+1]
+Aflv_2537_p-39(hisZ)              6.6e-10  [+1]
+BLi03386_p-40(yuiF)               6.6e-10  [+1]
+BPUM_2865_p-36(yuiF)              1.9e-09  [+1]
+GK3077_p-42(hisZ)                 2.9e-09  [+1]
+ABC3050_p-43(hisZ)                5.6e-09  [+1]
+Aflv_1385_p-34(yuiF)              6.8e-08  [+1]
+Pjdr2_0159_p-37(hisZ)             8.1e-08  [+1]
+BH3359_p-47(yuiF)                 6.4e-07  [+1]
+OB0879_p-50(yuiF)                 1.1e-06  [+1]
+ABC2918_p-30(yuiF)                  2e-06  [+1]
+OB0553_p-66(hisZ)                 3.1e-06  [+1]
+Aflv_2537_p-55(hisZ)              9.1e-06  [+1]
+BH3584_p-71(hisZ)                 3.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YAYWTTAGCRAACTAAAGKA width=20 seqs=20
+RBAM_029090_p-39(yuiF)   (    1) TACATTAGCAAACTAAAGGA  1 
+BSU32040_p-39(yuiF)      (    1) TACATTAGCAAACTAAAGGA  1 
+BPUM_3128_p-62(hisZ)     (    1) CATATTAGCGAACTAAAGGA  1 
+RBAM_032140_p-61(hisZ)   (    1) CATATTAGCGAACTAAAGGA  1 
+BSU34930_p-65(hisZ)      (    1) CATATTAGCGAACTAAAGGA  1 
+BLi03738_p-62(hisZ)      (    1) CATATTAGCGAACTAAAGTA  1 
+BH3584_p-55(hisZ)        (    1) TATATTAGCGAACTAAAGTA  1 
+Aflv_2537_p-39(hisZ)     (    1) TATATTAGCGAACTAAAGTA  1 
+BLi03386_p-40(yuiF)      (    1) TACATTAGCAAACTAAAGTG  1 
+BPUM_2865_p-36(yuiF)     (    1) TACATTAGTAAACTAAAGGA  1 
+GK3077_p-42(hisZ)        (    1) CATATTAGCAAACTAAAGCA  1 
+ABC3050_p-43(hisZ)       (    1) TGATTTAGCAAACTAAAGTA  1 
+Aflv_1385_p-34(yuiF)     (    1) CAATTTATCAAACTAAAGTG  1 
+Pjdr2_0159_p-37(hisZ)    (    1) CACTTTAATATACTAAAGTA  1 
+BH3359_p-47(yuiF)        (    1) TGATTTAATAAACTAAAGCA  1 
+OB0879_p-50(yuiF)        (    1) TGCTTTATCATGATGAAGTA  1 
+ABC2918_p-30(yuiF)       (    1) TGATTTAATAAGATAAAGGA  1 
+OB0553_p-66(hisZ)        (    1) AACTTTACTTAGATAAAGTG  1 
+Aflv_2537_p-55(hisZ)     (    1) AACTTTACTTTGCTAATATA  1 
+BH3584_p-71(hisZ)        (    1) TCCTTTATCTTGTTAGTATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 20 bayes= 1.36257 E= 1.2e-091 
+  -212    144  -1097     91 
+    78   -136     48  -1097 
+  -112    181  -1097     26 
+    34  -1097  -1097     62 
+ -1097  -1097  -1097    178 
+ -1097  -1097  -1097    178 
+   120  -1097  -1097  -1097 
+  -154    -36    206    -96 
+ -1097    244  -1097      4 
+    34  -1097    106    -96 
+    88  -1097  -1097    -55 
+    78  -1097     80  -1097 
+  -154    264  -1097   -254 
+ -1097  -1097  -1097    178 
+   112  -1097   -152  -1097 
+   112  -1097   -152  -1097 
+   105  -1097  -1097   -154 
+  -212  -1097    265  -1097 
+ -1097    -36    129     91 
+    96  -1097      6  -1097 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 20 E= 1.2e-091 
+ 0.100000  0.350000  0.000000  0.550000 
+ 0.750000  0.050000  0.200000  0.000000 
+ 0.200000  0.450000  0.000000  0.350000 
+ 0.550000  0.000000  0.000000  0.450000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.150000  0.100000  0.600000  0.150000 
+ 0.000000  0.700000  0.000000  0.300000 
+ 0.550000  0.000000  0.300000  0.150000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.150000  0.800000  0.000000  0.050000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.950000  0.000000  0.050000  0.000000 
+ 0.950000  0.000000  0.050000  0.000000 
+ 0.900000  0.000000  0.000000  0.100000 
+ 0.100000  0.000000  0.900000  0.000000 
+ 0.000000  0.100000  0.350000  0.550000 
+ 0.850000  0.000000  0.150000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YAYWTTAGCRAACTAAAGKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC][AG][CTA][AT]TTAG[CT][AG][AT][AG]CTAAAG[TG]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BSU34930_p-65(hisZ)              2.24e-10  [+1(2.24e-10)]
+BSU32040_p-39(yuiF)              1.24e-10  [+1(1.24e-10)]
+RBAM_032140_p-61(hisZ)           2.24e-10  [+1(2.24e-10)]
+RBAM_029090_p-39(yuiF)           1.24e-10  [+1(1.24e-10)]
+BPUM_3128_p-62(hisZ)             2.24e-10  [+1(2.24e-10)]
+BPUM_2865_p-36(yuiF)             1.87e-09  [+1(1.87e-09)]
+BLi03738_p-62(hisZ)              3.34e-10  [+1(3.34e-10)]
+BLi03386_p-40(yuiF)              6.58e-10  [+1(6.58e-10)]
+Aflv_2537_p-55(hisZ)             9.09e-06  [+1(9.09e-06)]
+Aflv_2537_p-39(hisZ)             6.58e-10  [+1(6.58e-10)]
+Aflv_1385_p-34(yuiF)             6.80e-08  [+1(6.80e-08)]
+GK3077_p-42(hisZ)                2.91e-09  [+1(2.91e-09)]
+BH3584_p-71(hisZ)                3.38e-05  [+1(3.38e-05)]
+BH3584_p-55(hisZ)                6.58e-10  [+1(6.58e-10)]
+BH3359_p-47(yuiF)                6.37e-07  [+1(6.37e-07)]
+ABC3050_p-43(hisZ)               5.57e-09  [+1(5.57e-09)]
+ABC2918_p-30(yuiF)               1.96e-06  [+1(1.96e-06)]
+OB0553_p-66(hisZ)                3.08e-06  [+1(3.08e-06)]
+OB0879_p-50(yuiF)                1.12e-06  [+1(1.12e-06)]
+Pjdr2_0159_p-37(hisZ)            8.12e-08  [+1(8.12e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

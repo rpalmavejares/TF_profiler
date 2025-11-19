@@ -1,0 +1,242 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/ModE_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSS1786_p-58(modA)      1.0000     24  BMAA0299_p-58(modA)      1.0000     24  
+Bcep18194_B2236_p17(modA 1.0000     24  Bamb_3228_p-57(modA)     1.0000     24  
+Bcep1808_4236_p-57(modA) 1.0000     24  Bxe_B1479_p-37(modB)     1.0000     24  
+Bxe_B2848_p-72(modA)     1.0000     24  Bphy_4405_p-67(modA)     1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/ModE_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/ModE_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           24
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             192    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    192    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.26 C 0.271 G 0.146 T 0.323 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.26 C 0.27 G 0.148 T 0.321 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CGTTATAACCTSSCVTATATTACG MEME-1	width =  24  sites =   7  llr = 186  E-value = 1.4e-044
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::9:aa::1:1:3:a:a::a::
+pos.-specific     C  a:1:::::aa14494:::::::a:
+probability       G  :a::1:::::14313::::::::a
+matrix            T  ::9a:a::::611::a:a:aa:::
+
+         bits    2.8  *                     *
+                 2.5  *                     *
+                 2.2  *                     *
+                 1.9 **    ****      * *  ***
+Relative         1.7 ** * *****     *********
+Entropy          1.4 ** *******   * *********
+(38.4 bits)      1.1 **********   * *********
+                 0.8 ********** * * *********
+                 0.6 ********** * ***********
+                 0.3 ************************
+                 0.0 ------------------------
+
+Multilevel           CGTTATAACCTCCCCTATATTACG
+consensus                       GG A         
+sequence                           G         
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+BMAA0299_p-58(modA)           1  4.26e-14          . CGTTATAACCTCGCGTATATTACG           
+BPSS1786_p-58(modA)           1  4.26e-14          . CGTTATAACCTCGCGTATATTACG           
+Bamb_3228_p-57(modA)          1  1.11e-13          . CGTTATAACCTCCCCTATATTACG           
+Bcep18194_B2236_p17(modA      1  2.72e-13          . CGTTATAACCCGCCCTATATTACG           
+Bcep1808_4236_p-57(modA)      1  6.45e-13          . CGTTATAACCGGCGCTATATTACG           
+Bxe_B2848_p-72(modA)          1  2.91e-12          . CGTTATAACCTTTCATATATTACG           
+Bphy_4405_p-67(modA)          1  6.00e-12          . CGCTGTAACCAGACATATATTACG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BMAA0299_p-58(modA)               4.3e-14  [+1]
+BPSS1786_p-58(modA)               4.3e-14  [+1]
+Bamb_3228_p-57(modA)              1.1e-13  [+1]
+Bcep18194_B2236_p17(modA          2.7e-13  [+1]
+Bcep1808_4236_p-57(modA)          6.5e-13  [+1]
+Bxe_B2848_p-72(modA)              2.9e-12  [+1]
+Bphy_4405_p-67(modA)                6e-12  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CGTTATAACCTSSCVTATATTACG width=24 seqs=7
+BMAA0299_p-58(modA)      (    1) CGTTATAACCTCGCGTATATTACG  1 
+BPSS1786_p-58(modA)      (    1) CGTTATAACCTCGCGTATATTACG  1 
+Bamb_3228_p-57(modA)     (    1) CGTTATAACCTCCCCTATATTACG  1 
+Bcep18194_B2236_p17(modA (    1) CGTTATAACCCGCCCTATATTACG  1 
+Bcep1808_4236_p-57(modA) (    1) CGTTATAACCGGCGCTATATTACG  1 
+Bxe_B2848_p-72(modA)     (    1) CGTTATAACCTTTCATATATTACG  1 
+Bphy_4405_p-67(modA)     (    1) CGCTGTAACCAGACATATATTACG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 8 bayes= 0.736966 E= 1.4e-044 
+  -945    189   -945   -945 
+  -945   -945    275   -945 
+  -945    -92   -945    141 
+  -945   -945   -945    164 
+   172   -945     -5   -945 
+  -945   -945   -945    164 
+   194   -945   -945   -945 
+   194   -945   -945   -945 
+  -945    189   -945   -945 
+  -945    189   -945   -945 
+   -86    -92     -5     83 
+  -945     66    153   -117 
+   -86     66     95   -117 
+  -945    166     -5   -945 
+    13     66     95   -945 
+  -945   -945   -945    164 
+   194   -945   -945   -945 
+  -945   -945   -945    164 
+   194   -945   -945   -945 
+  -945   -945   -945    164 
+  -945   -945   -945    164 
+   194   -945   -945   -945 
+  -945    189   -945   -945 
+  -945   -945    275   -945 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 7 E= 1.4e-044 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.142857  0.000000  0.857143 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.000000  0.142857  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.142857  0.142857  0.142857  0.571429 
+ 0.000000  0.428571  0.428571  0.142857 
+ 0.142857  0.428571  0.285714  0.142857 
+ 0.000000  0.857143  0.142857  0.000000 
+ 0.285714  0.428571  0.285714  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGTTATAACCTSSCVTATATTACG MEME-1 regular expression
+--------------------------------------------------------------------------------
+CGTTATAACCT[CG][CG]C[CAG]TATATTACG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSS1786_p-58(modA)              4.26e-14  [+1(4.26e-14)]
+BMAA0299_p-58(modA)              4.26e-14  [+1(4.26e-14)]
+Bcep18194_B2236_p17(modA         2.72e-13  [+1(2.72e-13)]
+Bamb_3228_p-57(modA)             1.11e-13  [+1(1.11e-13)]
+Bcep1808_4236_p-57(modA)         6.45e-13  [+1(6.45e-13)]
+Bxe_B1479_p-37(modB)             9.99e-03  24
+Bxe_B2848_p-72(modA)             2.91e-12  [+1(2.91e-12)]
+Bphy_4405_p-67(modA)             6.00e-12  [+1(6.00e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

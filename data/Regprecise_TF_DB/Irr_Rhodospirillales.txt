@@ -1,0 +1,254 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/Irr_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rru_A1789_p-96(ccpA)     1.0000     21  Rru_A2196_p-43(bfd)      1.0000     21  
+Magn03001119_p-205(sufS2 1.0000     21  Magn03001119_p-186(sufS2 1.0000     21  
+Magn03005274_p-156(bfr)  1.0000     21  Magn03006487_p-180(fhuA) 1.0000     21  
+Magn03009205_p-61(irr)   1.0000     21  amb2822_p-164(ccpA)      1.0000     21  
+AZL_001890_p-173(ccpA)   1.0000     21  RC1_1876_p-63(dps1)      1.0000     21  
+RC1_3428_p-48(bfr)       1.0000     21  RC1_3828_p-77(ccpA)      1.0000     21  
+RC1_2944_p-104(irr)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/Irr_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/Irr_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             273    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    273    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.158 G 0.147 T 0.363 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.332 C 0.159 G 0.148 T 0.361 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTAGAATWATTCYARAY MEME-1	width =  17  sites =  13  llr = 156  E-value = 2.7e-030
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :16197:58:::1a581
+pos.-specific     C  2:1::122:1:95:::5
+probability       G  ::2912222:::::31:
+matrix            T  892::162:9a15:224
+
+         bits    2.8                  
+                 2.5                  
+                 2.2    *       *     
+                 1.9    *       *     
+Relative         1.7    *       * *   
+Entropy          1.4    **     ** *   
+(17.3 bits)      1.1 ** **   **** *   
+                 0.8 ** **   ******  *
+                 0.6 ** **** *********
+                 0.3 ******* *********
+                 0.0 -----------------
+
+Multilevel           TTAGAATAATTCCAAAC
+consensus                  CTG   T G T
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Magn03001119_p-205(sufS2      4  4.98e-09        CTC TTAGAATAATTCTAGAC G         
+AZL_001890_p-173(ccpA)        4  9.99e-09        AGT TTAGAATAATTCCAGAT T         
+Magn03001119_p-186(sufS2      4  5.25e-08        CGA TTAGAACTATTCTAAAC T         
+RC1_1876_p-63(dps1)           4  7.89e-08        AAC TTGGAAGAATTCTAAAC T         
+amb2822_p-164(ccpA)           4  1.70e-07        GAG TTAGAAGAATTCTAAAT A         
+Magn03005274_p-156(bfr)       4  1.92e-07        AGT TTGGGATCATTCCAAAC T         
+RC1_2944_p-104(irr)           4  1.70e-06        GGC CTTGAATTGTTCCAAAT A         
+Magn03006487_p-180(fhuA)      4  1.70e-06        AAA TAAGAATAATTCTATAC A         
+RC1_3428_p-48(bfr)            4  2.73e-06        GTT TTAAACTCGTTCCAGAC T         
+Rru_A1789_p-96(ccpA)          4  6.04e-06        TTC CTAGAGCAATTCCAATA T         
+RC1_3828_p-77(ccpA)           4  7.32e-06        TCT TTAGATTTATTCAAGAT C         
+Magn03009205_p-61(irr)        4  1.43e-05        TTT TTCGAACGACTCCATGT T         
+Rru_A2196_p-43(bfd)           4  2.98e-05        GGT TTTGAGTGGTTTTAATC T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Magn03001119_p-205(sufS2            5e-09  3_[+1]_1
+AZL_001890_p-173(ccpA)              1e-08  3_[+1]_1
+Magn03001119_p-186(sufS2          5.2e-08  3_[+1]_1
+RC1_1876_p-63(dps1)               7.9e-08  3_[+1]_1
+amb2822_p-164(ccpA)               1.7e-07  3_[+1]_1
+Magn03005274_p-156(bfr)           1.9e-07  3_[+1]_1
+RC1_2944_p-104(irr)               1.7e-06  3_[+1]_1
+Magn03006487_p-180(fhuA)          1.7e-06  3_[+1]_1
+RC1_3428_p-48(bfr)                2.7e-06  3_[+1]_1
+Rru_A1789_p-96(ccpA)                6e-06  3_[+1]_1
+RC1_3828_p-77(ccpA)               7.3e-06  3_[+1]_1
+Magn03009205_p-61(irr)            1.4e-05  3_[+1]_1
+Rru_A2196_p-43(bfd)                 3e-05  3_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTAGAATWATTCYARAY width=17 seqs=13
+Magn03001119_p-205(sufS2 (    4) TTAGAATAATTCTAGAC  1 
+AZL_001890_p-173(ccpA)   (    4) TTAGAATAATTCCAGAT  1 
+Magn03001119_p-186(sufS2 (    4) TTAGAACTATTCTAAAC  1 
+RC1_1876_p-63(dps1)      (    4) TTGGAAGAATTCTAAAC  1 
+amb2822_p-164(ccpA)      (    4) TTAGAAGAATTCTAAAT  1 
+Magn03005274_p-156(bfr)  (    4) TTGGGATCATTCCAAAC  1 
+RC1_2944_p-104(irr)      (    4) CTTGAATTGTTCCAAAT  1 
+Magn03006487_p-180(fhuA) (    4) TAAGAATAATTCTATAC  1 
+RC1_3428_p-48(bfr)       (    4) TTAAACTCGTTCCAGAC  1 
+Rru_A1789_p-96(ccpA)     (    4) CTAGAGCAATTCCAATA  1 
+RC1_3828_p-77(ccpA)      (    4) TTAGATTTATTCAAGAT  1 
+Magn03009205_p-61(irr)   (    4) TTCGAACGACTCCATGT  1 
+Rru_A2196_p-43(bfd)      (    4) TTTGAGTGGTTTTAATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 65 bayes= 3.85561 E= 2.7e-030 
+ -1035     -5  -1035    123 
+  -211  -1035  -1035    135 
+    89   -104      6   -123 
+  -211  -1035    264  -1035 
+   147  -1035    -94  -1035 
+   106   -104      6   -223 
+ -1035     54      6     77 
+    47     -5      6    -64 
+   121  -1035     64  -1035 
+ -1035   -104  -1035    135 
+ -1035  -1035  -1035    147 
+ -1035    254  -1035   -223 
+  -211    154  -1035     35 
+   159  -1035  -1035  -1035 
+    70  -1035    106   -123 
+   121  -1035    -94   -123 
+  -211    176  -1035      9 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 13 E= 2.7e-030 
+ 0.000000  0.153846  0.000000  0.846154 
+ 0.076923  0.000000  0.000000  0.923077 
+ 0.615385  0.076923  0.153846  0.153846 
+ 0.076923  0.000000  0.923077  0.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.692308  0.076923  0.153846  0.076923 
+ 0.000000  0.230769  0.153846  0.615385 
+ 0.461538  0.153846  0.153846  0.230769 
+ 0.769231  0.000000  0.230769  0.000000 
+ 0.000000  0.076923  0.000000  0.923077 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.923077  0.000000  0.076923 
+ 0.076923  0.461538  0.000000  0.461538 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.538462  0.000000  0.307692  0.153846 
+ 0.769231  0.000000  0.076923  0.153846 
+ 0.076923  0.538462  0.000000  0.384615 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGAATWATTCYARAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTAGAA[TC][AT][AG]TTC[CT]A[AG]A[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rru_A1789_p-96(ccpA)             3.02e-05  3_[+1(6.04e-06)]_1
+Rru_A2196_p-43(bfd)              1.49e-04  3_[+1(2.98e-05)]_1
+Magn03001119_p-205(sufS2         2.49e-08  3_[+1(4.98e-09)]_1
+Magn03001119_p-186(sufS2         2.62e-07  3_[+1(5.25e-08)]_1
+Magn03005274_p-156(bfr)          9.59e-07  3_[+1(1.92e-07)]_1
+Magn03006487_p-180(fhuA)         8.49e-06  3_[+1(1.70e-06)]_1
+Magn03009205_p-61(irr)           7.15e-05  3_[+1(1.43e-05)]_1
+amb2822_p-164(ccpA)              8.52e-07  3_[+1(1.70e-07)]_1
+AZL_001890_p-173(ccpA)           5.00e-08  3_[+1(9.99e-09)]_1
+RC1_1876_p-63(dps1)              3.95e-07  3_[+1(7.89e-08)]_1
+RC1_3428_p-48(bfr)               1.36e-05  3_[+1(2.73e-06)]_1
+RC1_3828_p-77(ccpA)              3.66e-05  3_[+1(7.32e-06)]_1
+RC1_2944_p-104(irr)              8.49e-06  3_[+1(1.70e-06)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

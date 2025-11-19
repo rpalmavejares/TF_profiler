@@ -1,0 +1,244 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NrtR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VCA0098_p-103(pncB)      1.0000     21  VCA0098_p-50(pncB)       1.0000     21  
+VCA0097_p-316(nrtR)      1.0000     21  VV1_2373_p-203(nrtR)     1.0000     21  
+VV1_2372_p-96(pncB)      1.0000     21  VIBHAR_06575_p-196(pncB) 1.0000     21  
+VIBHAR_06576_p-215(nrtR) 1.0000     21  VPA0308_p-214(nrtR)      1.0000     21  
+VPA0309_p-106(pncB)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NrtR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NrtR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             189    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    189    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.392 C 0.122 G 0.116 T 0.37 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.389 C 0.124 G 0.119 T 0.368 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTWGTMAMMWWWKKTKACWAA MEME-1	width =  21  sites =   9  llr = 159  E-value = 1.3e-036
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::4::4a466661:::a:6aa
+pos.-specific     C  ::::16:63::::::::a:::
+probability       G  :::a::::::::36:6:::::
+matrix            T  aa6:9:::144464a4::4::
+
+         bits    3.1    *             *   
+                 2.8    *             *   
+                 2.5    *             *   
+                 2.1    *             *   
+Relative         1.8    *             *   
+Entropy          1.5 ** *          *  *   
+(25.5 bits)      1.2 ** *****     ***** **
+                 0.9 ** *****     ***** **
+                 0.6 ** ******   ****** **
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TTTGTCACAAAATGTGACAAA
+consensus              A  A ACTTTGT T  T  
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+VCA0098_p-103(pncB)           1  1.46e-10          . TTTGTCACAAAAGTTGACAAA           
+VCA0097_p-316(nrtR)           1  4.14e-10          . TTTGTCAACTTTTGTGACAAA           
+VPA0309_p-106(pncB)           1  2.05e-09          . TTAGTAACAAAAGTTGACAAA           
+VIBHAR_06575_p-196(pncB)      1  2.05e-09          . TTAGTAACAAAAGTTGACAAA           
+VPA0308_p-214(nrtR)           1  3.71e-09          . TTTGTCAACTTTTGTTACTAA           
+VIBHAR_06576_p-215(nrtR)      1  3.71e-09          . TTTGTCAACTTTTGTTACTAA           
+VCA0098_p-50(pncB)            1  1.45e-08          . TTAGCAACAAAATGTTACTAA           
+VV1_2372_p-96(pncB)           1  2.39e-08          . TTAGTAACAAAAATTGACAAA           
+VV1_2373_p-203(nrtR)          1  2.86e-08          . TTTGTCAATTTTTGTTACTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0098_p-103(pncB)               1.5e-10  [+1]
+VCA0097_p-316(nrtR)               4.1e-10  [+1]
+VPA0309_p-106(pncB)               2.1e-09  [+1]
+VIBHAR_06575_p-196(pncB)          2.1e-09  [+1]
+VPA0308_p-214(nrtR)               3.7e-09  [+1]
+VIBHAR_06576_p-215(nrtR)          3.7e-09  [+1]
+VCA0098_p-50(pncB)                1.4e-08  [+1]
+VV1_2372_p-96(pncB)               2.4e-08  [+1]
+VV1_2373_p-203(nrtR)              2.9e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTWGTMAMMWWWKKTKACWAA width=21 seqs=9
+VCA0098_p-103(pncB)      (    1) TTTGTCACAAAAGTTGACAAA  1 
+VCA0097_p-316(nrtR)      (    1) TTTGTCAACTTTTGTGACAAA  1 
+VPA0309_p-106(pncB)      (    1) TTAGTAACAAAAGTTGACAAA  1 
+VIBHAR_06575_p-196(pncB) (    1) TTAGTAACAAAAGTTGACAAA  1 
+VPA0308_p-214(nrtR)      (    1) TTTGTCAACTTTTGTTACTAA  1 
+VIBHAR_06576_p-215(nrtR) (    1) TTTGTCAACTTTTGTTACTAA  1 
+VCA0098_p-50(pncB)       (    1) TTAGCAACAAAATGTTACTAA  1 
+VV1_2372_p-96(pncB)      (    1) TTAGTAACAAAAATTGACAAA  1 
+VV1_2373_p-203(nrtR)     (    1) TTTGTCAATTTTTGTTACTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 9 bayes= 0.719892 E= 1.3e-036 
+  -982   -982   -982    144 
+  -982   -982   -982    144 
+    19   -982   -982     59 
+  -982   -982    307   -982 
+  -982    -16   -982    127 
+    19    216   -982   -982 
+   136   -982   -982   -982 
+    19    216   -982   -982 
+    52    142   -982   -172 
+    52   -982   -982     27 
+    52   -982   -982     27 
+    52   -982   -982     27 
+  -180   -982    148     59 
+  -982   -982    222     27 
+  -982   -982   -982    144 
+  -982   -982    222     27 
+   136   -982   -982   -982 
+  -982    301   -982   -982 
+    52   -982   -982     27 
+   136   -982   -982   -982 
+   136   -982   -982   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 9 E= 1.3e-036 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.444444  0.000000  0.000000  0.555556 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.111111  0.000000  0.888889 
+ 0.444444  0.555556  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.444444  0.555556  0.000000  0.000000 
+ 0.555556  0.333333  0.000000  0.111111 
+ 0.555556  0.000000  0.000000  0.444444 
+ 0.555556  0.000000  0.000000  0.444444 
+ 0.555556  0.000000  0.000000  0.444444 
+ 0.111111  0.000000  0.333333  0.555556 
+ 0.000000  0.000000  0.555556  0.444444 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.555556  0.444444 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.555556  0.000000  0.000000  0.444444 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTWGTMAMMWWWKKTKACWAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TT[TA]GT[CA]A[CA][AC][AT][AT][AT][TG][GT]T[GT]AC[AT]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0098_p-103(pncB)              1.46e-10  [+1(1.46e-10)]
+VCA0098_p-50(pncB)               1.45e-08  [+1(1.45e-08)]
+VCA0097_p-316(nrtR)              4.14e-10  [+1(4.14e-10)]
+VV1_2373_p-203(nrtR)             2.86e-08  [+1(2.86e-08)]
+VV1_2372_p-96(pncB)              2.39e-08  [+1(2.39e-08)]
+VIBHAR_06575_p-196(pncB)         2.05e-09  [+1(2.05e-09)]
+VIBHAR_06576_p-215(nrtR)         3.71e-09  [+1(3.71e-09)]
+VPA0308_p-214(nrtR)              3.71e-09  [+1(3.71e-09)]
+VPA0309_p-106(pncB)              2.05e-09  [+1(2.05e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

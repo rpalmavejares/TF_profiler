@@ -1,0 +1,314 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= PaaR2_Deinococcus-Thermus.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Deide_01560(phbA)Score=6 1.0000     18  Deide_14880(pccB)Score=6 1.0000     18  
+Deide_11350(mcm)Score=5. 1.0000     18  Deide_23440(bkdA1)Score= 1.0000     18  
+Deide_10580(bcd2)Score=6 1.0000     18  Deide_10010(hmgcL)Score= 1.0000     18  
+Deide_03290(accB)Score=4 1.0000     18  Deide_02390(paaR)Score=4 1.0000     18  
+Dgeo_0811(pccB)Score=6.4 1.0000     18  Dgeo_1320(mcm2)Score=5.7 1.0000     18  
+Dgeo_2338(bkdA1)Score=6. 1.0000     18  Dgeo_1253(hmgcL)Score=5. 1.0000     18  
+Dgeo_0862(mcm)Score=6.1, 1.0000     18  Dgeo_1179(bcd2)Score=6.2 1.0000     18  
+Dgeo_0117(paaR)Score=4.8 1.0000     18  Dgeo_0467(accB)Score=5.3 1.0000     18  
+DR1072(phbA)Score=4.8Pos 1.0000     18  DR1084(mcm2)Score=4.6,Po 1.0000     18  
+DR0460(acsA)Score=5.6,Po 1.0000     18  DR1542(pccB)Score=6.4,Po 1.0000     18  
+DR1189(mcm)Score=5.6,Pos 1.0000     18  DR0029(bkdA1)Score=5.6Po 1.0000     18  
+DR1255(bcd2)Score=5.8,Po 1.0000     18  DR1240(hmgcL)Score=5.7,P 1.0000     18  
+DR0118(accB)Score=5.7,Po 1.0000     18  DR2376(paaR)Score=5.4,Po 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna PaaR2_Deinococcus-Thermus.fasta -oc PaaR2_Deinococcus-Thermus 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           18
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       26    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             468    N=              26    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.226 C 0.224 G 0.267 T 0.282 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.227 C 0.225 G 0.267 T 0.282 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  18  sites =  26  llr = 416  E-value = 5.9e-144
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :3aa:252::::3:::41
+pos.-specific     C  a1::a:22a:::3:1::1
+probability       G  :::::825:a:::a4:17
+matrix            T  :6:::::2::aa4:5951
+
+         bits    2.2    **   *         
+                 1.9 * ***   **        
+                 1.7 * ***   ** * *    
+                 1.5 * ***   **** *    
+Relative         1.3 * ****  **** * *  
+Entropy          1.1 * ****  **** * *  
+(23.1 bits)      0.9 * ****  **** * *  
+                 0.6 * ****  **** * * *
+                 0.4 ******* ****** ***
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           CTAACGAGCGTTTGTTTG
+consensus             A    GA    A G A 
+sequence                         C     
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Deide_01560(phbA)Score=6      1  1.29e-10          . CTAACGAGCGTTAGGTTG           
+Deide_14880(pccB)Score=6      1  3.56e-10          . CAAACGAGCGTTTGTTAG           
+DR1542(pccB)Score=6.4,Po      1  8.46e-10          . CTAACGGGCGTTTGTTAG           
+Dgeo_2338(bkdA1)Score=6.      1  8.46e-10          . CTAACGAGCGTTAGCTAG           
+Dgeo_0811(pccB)Score=6.4      1  8.46e-10          . CTAACGGGCGTTTGTTAG           
+DR0118(accB)Score=5.7,Po      1  2.49e-09          . CAAACGGGCGTTAGGTTG           
+Dgeo_1179(bcd2)Score=6.2      1  2.49e-09          . CTAACAAGCGTTTGGTAG           
+Dgeo_0862(mcm)Score=6.1,      1  3.77e-09          . CTAACGAGCGTTTGTTTC           
+DR1255(bcd2)Score=5.8,Po      1  4.66e-09          . CTAACGCCCGTTTGGTAG           
+Deide_10580(bcd2)Score=6      1  5.17e-09          . CTAACGGTCGTTTGGTAG           
+Deide_23440(bkdA1)Score=      1  8.74e-09          . CTAACGAACGTTAGATAG           
+DR2376(paaR)Score=5.4,Po      1  1.09e-08          . CAAACGCCCGTTTGGTTG           
+DR0029(bkdA1)Score=5.6Po      1  1.47e-08          . CTAACGCTCGTTAGCTAG           
+Deide_11350(mcm)Score=5.      1  1.78e-08          . CTAACGGGCGTTAGTTTT           
+DR1240(hmgcL)Score=5.7,P      1  4.07e-08          . CCAACAAACGTTCGTTTG           
+Dgeo_0467(accB)Score=5.3      1  4.78e-08          . CTAACGACCGTTCGGGAG           
+Deide_10010(hmgcL)Score=      1  4.78e-08          . GTAACGAACGTTCGTTTG           
+Deide_02390(paaR)Score=4      1  5.59e-08          . CAAACGAGCGTTAGGTGA           
+DR1189(mcm)Score=5.6,Pos      1  6.03e-08          . CAAACAAGCGTTTGTTTT           
+DR0460(acsA)Score=5.6,Po      1  1.07e-07          . CTCACAAACGTTCGTTAG           
+Dgeo_1320(mcm2)Score=5.7      1  1.07e-07          . CTAACGTGCGTTCGTTCG           
+Deide_03290(accB)Score=4      1  1.14e-07          . CAAACGACCGTTAGGTGA           
+Dgeo_1253(hmgcL)Score=5.      1  1.22e-07          . CCAACGAACGCTTGTTTG           
+Dgeo_0117(paaR)Score=4.8      1  2.46e-07          . CAAACGGACGTTCACTTG           
+DR1072(phbA)Score=4.8Pos      1  2.93e-07          . CTAACGCTCGTTAGTCTC           
+DR1084(mcm2)Score=4.6,Po      1  3.10e-07          . CGAACGCTCGTTCGGTTC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Deide_01560(phbA)Score=6          1.3e-10  [+1]
+Deide_14880(pccB)Score=6          3.6e-10  [+1]
+DR1542(pccB)Score=6.4,Po          8.5e-10  [+1]
+Dgeo_2338(bkdA1)Score=6.          8.5e-10  [+1]
+Dgeo_0811(pccB)Score=6.4          8.5e-10  [+1]
+DR0118(accB)Score=5.7,Po          2.5e-09  [+1]
+Dgeo_1179(bcd2)Score=6.2          2.5e-09  [+1]
+Dgeo_0862(mcm)Score=6.1,          3.8e-09  [+1]
+DR1255(bcd2)Score=5.8,Po          4.7e-09  [+1]
+Deide_10580(bcd2)Score=6          5.2e-09  [+1]
+Deide_23440(bkdA1)Score=          8.7e-09  [+1]
+DR2376(paaR)Score=5.4,Po          1.1e-08  [+1]
+DR0029(bkdA1)Score=5.6Po          1.5e-08  [+1]
+Deide_11350(mcm)Score=5.          1.8e-08  [+1]
+DR1240(hmgcL)Score=5.7,P          4.1e-08  [+1]
+Dgeo_0467(accB)Score=5.3          4.8e-08  [+1]
+Deide_10010(hmgcL)Score=          4.8e-08  [+1]
+Deide_02390(paaR)Score=4          5.6e-08  [+1]
+DR1189(mcm)Score=5.6,Pos            6e-08  [+1]
+DR0460(acsA)Score=5.6,Po          1.1e-07  [+1]
+Dgeo_1320(mcm2)Score=5.7          1.1e-07  [+1]
+Deide_03290(accB)Score=4          1.1e-07  [+1]
+Dgeo_1253(hmgcL)Score=5.          1.2e-07  [+1]
+Dgeo_0117(paaR)Score=4.8          2.5e-07  [+1]
+DR1072(phbA)Score=4.8Pos          2.9e-07  [+1]
+DR1084(mcm2)Score=4.6,Po          3.1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=18 seqs=26
+Deide_01560(phbA)Score=6 (    1) CTAACGAGCGTTAGGTTG  1 
+Deide_14880(pccB)Score=6 (    1) CAAACGAGCGTTTGTTAG  1 
+DR1542(pccB)Score=6.4,Po (    1) CTAACGGGCGTTTGTTAG  1 
+Dgeo_2338(bkdA1)Score=6. (    1) CTAACGAGCGTTAGCTAG  1 
+Dgeo_0811(pccB)Score=6.4 (    1) CTAACGGGCGTTTGTTAG  1 
+DR0118(accB)Score=5.7,Po (    1) CAAACGGGCGTTAGGTTG  1 
+Dgeo_1179(bcd2)Score=6.2 (    1) CTAACAAGCGTTTGGTAG  1 
+Dgeo_0862(mcm)Score=6.1, (    1) CTAACGAGCGTTTGTTTC  1 
+DR1255(bcd2)Score=5.8,Po (    1) CTAACGCCCGTTTGGTAG  1 
+Deide_10580(bcd2)Score=6 (    1) CTAACGGTCGTTTGGTAG  1 
+Deide_23440(bkdA1)Score= (    1) CTAACGAACGTTAGATAG  1 
+DR2376(paaR)Score=5.4,Po (    1) CAAACGCCCGTTTGGTTG  1 
+DR0029(bkdA1)Score=5.6Po (    1) CTAACGCTCGTTAGCTAG  1 
+Deide_11350(mcm)Score=5. (    1) CTAACGGGCGTTAGTTTT  1 
+DR1240(hmgcL)Score=5.7,P (    1) CCAACAAACGTTCGTTTG  1 
+Dgeo_0467(accB)Score=5.3 (    1) CTAACGACCGTTCGGGAG  1 
+Deide_10010(hmgcL)Score= (    1) GTAACGAACGTTCGTTTG  1 
+Deide_02390(paaR)Score=4 (    1) CAAACGAGCGTTAGGTGA  1 
+DR1189(mcm)Score=5.6,Pos (    1) CAAACAAGCGTTTGTTTT  1 
+DR0460(acsA)Score=5.6,Po (    1) CTCACAAACGTTCGTTAG  1 
+Dgeo_1320(mcm2)Score=5.7 (    1) CTAACGTGCGTTCGTTCG  1 
+Deide_03290(accB)Score=4 (    1) CAAACGACCGTTAGGTGA  1 
+Dgeo_1253(hmgcL)Score=5. (    1) CCAACGAACGCTTGTTTG  1 
+Dgeo_0117(paaR)Score=4.8 (    1) CAAACGGACGTTCACTTG  1 
+DR1072(phbA)Score=4.8Pos (    1) CTAACGCTCGTTAGTCTC  1 
+DR1084(mcm2)Score=4.6,Po (    1) CGAACGCTCGTTCGGTTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 26 bayes= 1.4975 E= 5.9e-144 
+ -1134    210   -279  -1134 
+    25   -154   -279    113 
+   208   -254  -1134  -1134 
+   214  -1134  -1134  -1134 
+ -1134    215  -1134  -1134 
+   -56  -1134    166  -1134 
+   125    -22    -21   -287 
+     3    -55     79    -87 
+ -1134    215  -1134  -1134 
+ -1134  -1134    190  -1134 
+ -1134   -254  -1134    177 
+ -1134  -1134  -1134    183 
+    61     26  -1134     45 
+  -256  -1134    185  -1134 
+  -256    -96     53     71 
+ -1134   -254   -279    171 
+    90   -254   -179     71 
+  -156    -96    145   -187 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 26 E= 5.9e-144 
+ 0.000000  0.961538  0.038462  0.000000 
+ 0.269231  0.076923  0.038462  0.615385 
+ 0.961538  0.038462  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.153846  0.000000  0.846154  0.000000 
+ 0.538462  0.192308  0.230769  0.038462 
+ 0.230769  0.153846  0.461538  0.153846 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.038462  0.000000  0.961538 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.346154  0.269231  0.000000  0.384615 
+ 0.038462  0.000000  0.961538  0.000000 
+ 0.038462  0.115385  0.384615  0.461538 
+ 0.000000  0.038462  0.038462  0.923077 
+ 0.423077  0.038462  0.076923  0.461538 
+ 0.076923  0.115385  0.730769  0.076923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+C[TA]AACG[AG][GA]CGTT[TAC]G[TG]T[TA]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Deide_01560(phbA)Score=6         1.29e-10  [+1(1.29e-10)]
+Deide_14880(pccB)Score=6         3.56e-10  [+1(3.56e-10)]
+Deide_11350(mcm)Score=5.         1.78e-08  [+1(1.78e-08)]
+Deide_23440(bkdA1)Score=         8.74e-09  [+1(8.74e-09)]
+Deide_10580(bcd2)Score=6         5.17e-09  [+1(5.17e-09)]
+Deide_10010(hmgcL)Score=         4.78e-08  [+1(4.78e-08)]
+Deide_03290(accB)Score=4         1.14e-07  [+1(1.14e-07)]
+Deide_02390(paaR)Score=4         5.59e-08  [+1(5.59e-08)]
+Dgeo_0811(pccB)Score=6.4         8.46e-10  [+1(8.46e-10)]
+Dgeo_1320(mcm2)Score=5.7         1.07e-07  [+1(1.07e-07)]
+Dgeo_2338(bkdA1)Score=6.         8.46e-10  [+1(8.46e-10)]
+Dgeo_1253(hmgcL)Score=5.         1.22e-07  [+1(1.22e-07)]
+Dgeo_0862(mcm)Score=6.1,         3.77e-09  [+1(3.77e-09)]
+Dgeo_1179(bcd2)Score=6.2         2.49e-09  [+1(2.49e-09)]
+Dgeo_0117(paaR)Score=4.8         2.46e-07  [+1(2.46e-07)]
+Dgeo_0467(accB)Score=5.3         4.78e-08  [+1(4.78e-08)]
+DR1072(phbA)Score=4.8Pos         2.93e-07  [+1(2.93e-07)]
+DR1084(mcm2)Score=4.6,Po         3.10e-07  [+1(3.10e-07)]
+DR0460(acsA)Score=5.6,Po         1.07e-07  [+1(1.07e-07)]
+DR1542(pccB)Score=6.4,Po         8.46e-10  [+1(8.46e-10)]
+DR1189(mcm)Score=5.6,Pos         6.03e-08  [+1(6.03e-08)]
+DR0029(bkdA1)Score=5.6Po         1.47e-08  [+1(1.47e-08)]
+DR1255(bcd2)Score=5.8,Po         4.66e-09  [+1(4.66e-09)]
+DR1240(hmgcL)Score=5.7,P         4.07e-08  [+1(4.07e-08)]
+DR0118(accB)Score=5.7,Po         2.49e-09  [+1(2.49e-09)]
+DR2376(paaR)Score=5.4,Po         1.09e-08  [+1(1.09e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

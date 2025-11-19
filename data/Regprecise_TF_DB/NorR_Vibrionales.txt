@@ -1,0 +1,375 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NorR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC2330_p-56(nnrS)        1.0000     19  VC2330_p-80(nnrS)        1.0000     19  
+VCA0182_p-52(norR2)      1.0000     19  VCA0183_p-157(hmp)       1.0000     19  
+VV21342_p-32(norR1)      1.0000     19  VV21342_p-52(norR1)      1.0000     19  
+VV21342_p-76(norR1)      1.0000     19  VV21343_p-170(norV)      1.0000     19  
+VV21343_p-190(norV)      1.0000     19  VV21343_p-146(norV)      1.0000     19  
+VSAK1_23189_p-59(norR2)  1.0000     19  VSAK1_23829_p-32(norR1)  1.0000     19  
+VSAK1_17902_p-186(tehB)  1.0000     19  VSAK1_23834_p-138(norV)  1.0000     19  
+VSAK1_23834_p-162(norV)  1.0000     19  VSAK1_23834_p-182(norV)  1.0000     19  
+VSAK1_23829_p-52(norR1)  1.0000     19  VSAK1_23829_p-76(norR1)  1.0000     19  
+VS_II1439_p-10(norV)     1.0000     19  VS_II0563_p-53(norR2)    1.0000     19  
+VS_II0563_p-75(norR2)    1.0000     19  VS_II0563_p-175(norR2)   1.0000     19  
+VS_II0152_p-127(fpr)     1.0000     19  VS_II0152_p-103(fpr)     1.0000     19  
+VS_II1439_p-168(norV)    1.0000     19  VS_2426_p-187(nnrS)      1.0000     19  
+VS_II0564_p-52(hmp)      1.0000     19  VS_II0564_p-193(hmp)     1.0000     19  
+VF_1783_p-38(norR1)      1.0000     19  VF_1783_p-83(norR1)      1.0000     19  
+VF_1783_p-58(norR1)      1.0000     19  VF_1782_p-123(norV)      1.0000     19  
+VF_1782_p-148(norV)      1.0000     19  VF_1782_p-168(norV)      1.0000     19  
+VSAL_I2198_p-39(norR1)   1.0000     19  VSAL_I2198_p-59(norR1)   1.0000     19  
+VSAL_I2198_p-84(norR1)   1.0000     19  VSAL_I2199_p-122(norV)   1.0000     19  
+VSAL_I2199_p-147(norV)   1.0000     19  VSAL_I2199_p-167(norV)   1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NorR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/NorR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       40    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             760    N=              40
+sample: seed=            0    hsfrac=          0
+        searchsize=    760    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.345 C 0.153 G 0.153 T 0.35 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.344 C 0.153 G 0.153 T 0.349 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ADTGTCAWWWTGACAHT MEME-1	width =  17  sites =  40  llr = 499  E-value = 3.2e-158
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  632:::76553:a:832
+pos.-specific     C  :1:::a::::1::a:41
+probability       G  131a::1::::a:::11
+matrix            T  338:a125557:::227
+
+         bits    2.7              *   
+                 2.4    * *     * *   
+                 2.2    * *     * *   
+                 1.9    * *     * *   
+Relative         1.6    ***     ***   
+Entropy          1.4    ***     ***   
+(18.0 bits)      1.1    ***     ***   
+                 0.8    ***     ****  
+                 0.5   *************  
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           AGTGTCAATTTGACACT
+consensus            TT    TTAAA    A 
+sequence              A             T 
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+VSAL_I2198_p-84(norR1)        2  2.91e-09          A AATGTCAATTTGACACT C         
+VV21343_p-146(norV)           2  6.26e-09          T AGTGTCATTTAGACACT G         
+VF_1782_p-123(norV)           2  8.08e-09          G ATTGTCATAATGACACT T         
+VV21342_p-76(norR1)           2  9.85e-09          C AGTGTCTAAATGACACT A         
+VSAL_I2199_p-122(norV)        2  1.44e-08          G AGTGTCAAATTGACATT T         
+VF_1783_p-83(norR1)           2  1.69e-08          A AGTGTCATTATGACAAT C         
+VV21343_p-190(norV)           2  7.43e-08          T AATGTCAATATGACAAT T         
+VV21342_p-32(norR1)           2  1.08e-07          A ATTGTCATATTGACATT A         
+VCA0183_p-157(hmp)            2  1.08e-07          T AGTGTCAAATCGACACG A         
+VV21342_p-52(norR1)           2  1.39e-07          T TTTGTCATTTAGACACT A         
+VF_1783_p-58(norR1)           2  1.95e-07          T TTTGTCAAAACGACACT A         
+VSAK1_23834_p-182(norV)       2  1.95e-07          C TTTGTCAATATGACAAT T         
+VCA0182_p-52(norR2)           2  2.55e-07          T CGTGTCGATTTGACACT A         
+VSAK1_23834_p-138(norV)       2  4.62e-07          C AGTGTCGTTTAGACAGT T         
+VSAL_I2199_p-167(norV)        2  5.26e-07          T AATGTCAATTTGACTAT T         
+VSAL_I2198_p-39(norR1)        2  5.26e-07          A ATAGTCAAATTGACATT A         
+VSAK1_23829_p-76(norR1)       2  5.26e-07          A ACTGTCTAAACGACACT G         
+VSAK1_23829_p-32(norR1)       2  5.26e-07          A ATTGTCATATTGACAAA G         
+VF_1782_p-148(norV)           2  5.89e-07          T AGTGTCGTTTTGACAAA A         
+VC2330_p-56(nnrS)             2  5.89e-07          T GGTGTCATTATGACTTT T         
+VV21343_p-170(norV)           2  6.49e-07          T AGTGTCTAAATGACAAA A         
+VS_II0152_p-127(fpr)          2  7.07e-07          A GATGTCATTTAGACACA A         
+VSAK1_23829_p-52(norR1)       2  8.41e-07          A GATGTCATTTAGACATT A         
+VSAL_I2198_p-59(norR1)        2  1.14e-06          T TCTGTCAAAAAGACAGT A         
+VS_II1439_p-168(norV)         2  1.14e-06          C TGAGTCATAAAGACACC T         
+VS_II0563_p-53(norR2)         2  1.14e-06          T TATGTCATAAAGACTCT A         
+VSAK1_23834_p-162(norV)       2  1.56e-06          T AATGTCTAAATGACATC T         
+VF_1782_p-168(norV)           2  1.71e-06          C AGTGTTAATTTGACAAT T         
+VSAK1_23189_p-59(norR2)       2  1.86e-06          T TAGGTCAATATGACTCT A         
+VSAL_I2199_p-147(norV)        2  2.15e-06          T ACTGTCTTTTTGACAGA A         
+VF_1783_p-38(norR1)           2  2.15e-06          A ATTGTCAAATTAACACT G         
+VC2330_p-80(nnrS)             2  2.46e-06          A AAAGTCATAATGACTCG A         
+VS_2426_p-187(nnrS)           2  2.82e-06          G TGTGTTTAATTGACACT T         
+VS_II0564_p-52(hmp)           2  3.05e-06          A TTAGTCAATTTGACATG A         
+VS_II0152_p-103(fpr)          2  3.85e-06          C AAAGTCTATTTGACATC A         
+VSAK1_17902_p-186(tehB)       2  3.85e-06          T GAGGTCGTTATGACACA A         
+VS_II0564_p-193(hmp)          2  6.95e-06          T GTTGTCTATATGACTGA A         
+VS_II0563_p-175(norR2)        2  6.95e-06          T TCAGTCATATAGACAAC A         
+VS_II0563_p-75(norR2)         2  1.35e-05          T TTAGTCAAAAAGACCTT T         
+VS_II1439_p-10(norV)          2  1.43e-05          T ATTATCATTATGACTAT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VSAL_I2198_p-84(norR1)            2.9e-09  1_[+1]_1
+VV21343_p-146(norV)               6.3e-09  1_[+1]_1
+VF_1782_p-123(norV)               8.1e-09  1_[+1]_1
+VV21342_p-76(norR1)               9.9e-09  1_[+1]_1
+VSAL_I2199_p-122(norV)            1.4e-08  1_[+1]_1
+VF_1783_p-83(norR1)               1.7e-08  1_[+1]_1
+VV21343_p-190(norV)               7.4e-08  1_[+1]_1
+VV21342_p-32(norR1)               1.1e-07  1_[+1]_1
+VCA0183_p-157(hmp)                1.1e-07  1_[+1]_1
+VV21342_p-52(norR1)               1.4e-07  1_[+1]_1
+VF_1783_p-58(norR1)               1.9e-07  1_[+1]_1
+VSAK1_23834_p-182(norV)           1.9e-07  1_[+1]_1
+VCA0182_p-52(norR2)               2.6e-07  1_[+1]_1
+VSAK1_23834_p-138(norV)           4.6e-07  1_[+1]_1
+VSAL_I2199_p-167(norV)            5.3e-07  1_[+1]_1
+VSAL_I2198_p-39(norR1)            5.3e-07  1_[+1]_1
+VSAK1_23829_p-76(norR1)           5.3e-07  1_[+1]_1
+VSAK1_23829_p-32(norR1)           5.3e-07  1_[+1]_1
+VF_1782_p-148(norV)               5.9e-07  1_[+1]_1
+VC2330_p-56(nnrS)                 5.9e-07  1_[+1]_1
+VV21343_p-170(norV)               6.5e-07  1_[+1]_1
+VS_II0152_p-127(fpr)              7.1e-07  1_[+1]_1
+VSAK1_23829_p-52(norR1)           8.4e-07  1_[+1]_1
+VSAL_I2198_p-59(norR1)            1.1e-06  1_[+1]_1
+VS_II1439_p-168(norV)             1.1e-06  1_[+1]_1
+VS_II0563_p-53(norR2)             1.1e-06  1_[+1]_1
+VSAK1_23834_p-162(norV)           1.6e-06  1_[+1]_1
+VF_1782_p-168(norV)               1.7e-06  1_[+1]_1
+VSAK1_23189_p-59(norR2)           1.9e-06  1_[+1]_1
+VSAL_I2199_p-147(norV)            2.2e-06  1_[+1]_1
+VF_1783_p-38(norR1)               2.2e-06  1_[+1]_1
+VC2330_p-80(nnrS)                 2.5e-06  1_[+1]_1
+VS_2426_p-187(nnrS)               2.8e-06  1_[+1]_1
+VS_II0564_p-52(hmp)                 3e-06  1_[+1]_1
+VS_II0152_p-103(fpr)              3.9e-06  1_[+1]_1
+VSAK1_17902_p-186(tehB)           3.9e-06  1_[+1]_1
+VS_II0564_p-193(hmp)                7e-06  1_[+1]_1
+VS_II0563_p-175(norR2)              7e-06  1_[+1]_1
+VS_II0563_p-75(norR2)             1.4e-05  1_[+1]_1
+VS_II1439_p-10(norV)              1.4e-05  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ADTGTCAWWWTGACAHT width=17 seqs=40
+VSAL_I2198_p-84(norR1)   (    2) AATGTCAATTTGACACT  1 
+VV21343_p-146(norV)      (    2) AGTGTCATTTAGACACT  1 
+VF_1782_p-123(norV)      (    2) ATTGTCATAATGACACT  1 
+VV21342_p-76(norR1)      (    2) AGTGTCTAAATGACACT  1 
+VSAL_I2199_p-122(norV)   (    2) AGTGTCAAATTGACATT  1 
+VF_1783_p-83(norR1)      (    2) AGTGTCATTATGACAAT  1 
+VV21343_p-190(norV)      (    2) AATGTCAATATGACAAT  1 
+VV21342_p-32(norR1)      (    2) ATTGTCATATTGACATT  1 
+VCA0183_p-157(hmp)       (    2) AGTGTCAAATCGACACG  1 
+VV21342_p-52(norR1)      (    2) TTTGTCATTTAGACACT  1 
+VF_1783_p-58(norR1)      (    2) TTTGTCAAAACGACACT  1 
+VSAK1_23834_p-182(norV)  (    2) TTTGTCAATATGACAAT  1 
+VCA0182_p-52(norR2)      (    2) CGTGTCGATTTGACACT  1 
+VSAK1_23834_p-138(norV)  (    2) AGTGTCGTTTAGACAGT  1 
+VSAL_I2199_p-167(norV)   (    2) AATGTCAATTTGACTAT  1 
+VSAL_I2198_p-39(norR1)   (    2) ATAGTCAAATTGACATT  1 
+VSAK1_23829_p-76(norR1)  (    2) ACTGTCTAAACGACACT  1 
+VSAK1_23829_p-32(norR1)  (    2) ATTGTCATATTGACAAA  1 
+VF_1782_p-148(norV)      (    2) AGTGTCGTTTTGACAAA  1 
+VC2330_p-56(nnrS)        (    2) GGTGTCATTATGACTTT  1 
+VV21343_p-170(norV)      (    2) AGTGTCTAAATGACAAA  1 
+VS_II0152_p-127(fpr)     (    2) GATGTCATTTAGACACA  1 
+VSAK1_23829_p-52(norR1)  (    2) GATGTCATTTAGACATT  1 
+VSAL_I2198_p-59(norR1)   (    2) TCTGTCAAAAAGACAGT  1 
+VS_II1439_p-168(norV)    (    2) TGAGTCATAAAGACACC  1 
+VS_II0563_p-53(norR2)    (    2) TATGTCATAAAGACTCT  1 
+VSAK1_23834_p-162(norV)  (    2) AATGTCTAAATGACATC  1 
+VF_1782_p-168(norV)      (    2) AGTGTTAATTTGACAAT  1 
+VSAK1_23189_p-59(norR2)  (    2) TAGGTCAATATGACTCT  1 
+VSAL_I2199_p-147(norV)   (    2) ACTGTCTTTTTGACAGA  1 
+VF_1783_p-38(norR1)      (    2) ATTGTCAAATTAACACT  1 
+VC2330_p-80(nnrS)        (    2) AAAGTCATAATGACTCG  1 
+VS_2426_p-187(nnrS)      (    2) TGTGTTTAATTGACACT  1 
+VS_II0564_p-52(hmp)      (    2) TTAGTCAATTTGACATG  1 
+VS_II0152_p-103(fpr)     (    2) AAAGTCTATTTGACATC  1 
+VSAK1_17902_p-186(tehB)  (    2) GAGGTCGTTATGACACA  1 
+VS_II0564_p-193(hmp)     (    2) GTTGTCTATATGACTGA  1 
+VS_II0563_p-175(norR2)   (    2) TCAGTCATATAGACAAC  1 
+VS_II0563_p-75(norR2)    (    2) TTAGTCAAAAAGACCTT  1 
+VS_II1439_p-10(norV)     (    2) ATTATCATTATGACTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 120 bayes= 3.52356 E= 3.2e-158 
+    74   -261    -29    -35 
+   -32    -61    109    -22 
+   -98  -1197   -161    115 
+  -378  -1197    267  -1197 
+ -1197  -1197  -1197    152 
+ -1197    263  -1197   -280 
+   102  -1197    -61    -80 
+    68  -1197  -1197     36 
+    46  -1197  -1197     59 
+    46  -1197  -1197     59 
+   -46   -103  -1197     95 
+  -378  -1197    267  -1197 
+   154  -1197  -1197  -1197 
+ -1197    271  -1197  -1197 
+   122   -261  -1197   -100 
+   -46    147    -61    -64 
+   -98    -61   -103     90 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 40 E= 3.2e-158 
+ 0.575000  0.025000  0.125000  0.275000 
+ 0.275000  0.100000  0.325000  0.300000 
+ 0.175000  0.000000  0.050000  0.775000 
+ 0.025000  0.000000  0.975000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.950000  0.000000  0.050000 
+ 0.700000  0.000000  0.100000  0.200000 
+ 0.550000  0.000000  0.000000  0.450000 
+ 0.475000  0.000000  0.000000  0.525000 
+ 0.475000  0.000000  0.000000  0.525000 
+ 0.250000  0.075000  0.000000  0.675000 
+ 0.025000  0.000000  0.975000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.800000  0.025000  0.000000  0.175000 
+ 0.250000  0.425000  0.100000  0.225000 
+ 0.175000  0.100000  0.075000  0.650000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ADTGTCAWWWTGACAHT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][GTA]TGTC[AT][AT][TA][TA][TA]GACA[CAT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC2330_p-56(nnrS)                1.77e-06  1_[+1(5.89e-07)]_1
+VC2330_p-80(nnrS)                7.38e-06  1_[+1(2.46e-06)]_1
+VCA0182_p-52(norR2)              7.65e-07  1_[+1(2.55e-07)]_1
+VCA0183_p-157(hmp)               3.23e-07  1_[+1(1.08e-07)]_1
+VV21342_p-32(norR1)              3.23e-07  1_[+1(1.08e-07)]_1
+VV21342_p-52(norR1)              4.18e-07  1_[+1(1.39e-07)]_1
+VV21342_p-76(norR1)              2.96e-08  1_[+1(9.85e-09)]_1
+VV21343_p-170(norV)              1.95e-06  1_[+1(6.49e-07)]_1
+VV21343_p-190(norV)              2.23e-07  1_[+1(7.43e-08)]_1
+VV21343_p-146(norV)              1.88e-08  1_[+1(6.26e-09)]_1
+VSAK1_23189_p-59(norR2)          5.57e-06  1_[+1(1.86e-06)]_1
+VSAK1_23829_p-32(norR1)          1.58e-06  1_[+1(5.26e-07)]_1
+VSAK1_17902_p-186(tehB)          1.16e-05  1_[+1(3.85e-06)]_1
+VSAK1_23834_p-138(norV)          1.39e-06  1_[+1(4.62e-07)]_1
+VSAK1_23834_p-162(norV)          4.67e-06  1_[+1(1.56e-06)]_1
+VSAK1_23834_p-182(norV)          5.84e-07  1_[+1(1.95e-07)]_1
+VSAK1_23829_p-52(norR1)          2.52e-06  1_[+1(8.41e-07)]_1
+VSAK1_23829_p-76(norR1)          1.58e-06  1_[+1(5.26e-07)]_1
+VS_II1439_p-10(norV)             4.28e-05  1_[+1(1.43e-05)]_1
+VS_II0563_p-53(norR2)            3.43e-06  1_[+1(1.14e-06)]_1
+VS_II0563_p-75(norR2)            4.06e-05  1_[+1(1.35e-05)]_1
+VS_II0563_p-175(norR2)           2.09e-05  1_[+1(6.95e-06)]_1
+VS_II0152_p-127(fpr)             2.12e-06  1_[+1(7.07e-07)]_1
+VS_II0152_p-103(fpr)             1.16e-05  1_[+1(3.85e-06)]_1
+VS_II1439_p-168(norV)            3.43e-06  1_[+1(1.14e-06)]_1
+VS_2426_p-187(nnrS)              8.47e-06  1_[+1(2.82e-06)]_1
+VS_II0564_p-52(hmp)              9.14e-06  1_[+1(3.05e-06)]_1
+VS_II0564_p-193(hmp)             2.09e-05  1_[+1(6.95e-06)]_1
+VF_1783_p-38(norR1)              6.46e-06  1_[+1(2.15e-06)]_1
+VF_1783_p-83(norR1)              5.08e-08  1_[+1(1.69e-08)]_1
+VF_1783_p-58(norR1)              5.84e-07  1_[+1(1.95e-07)]_1
+VF_1782_p-123(norV)              2.42e-08  1_[+1(8.08e-09)]_1
+VF_1782_p-148(norV)              1.77e-06  1_[+1(5.89e-07)]_1
+VF_1782_p-168(norV)              5.12e-06  1_[+1(1.71e-06)]_1
+VSAL_I2198_p-39(norR1)           1.58e-06  1_[+1(5.26e-07)]_1
+VSAL_I2198_p-59(norR1)           3.43e-06  1_[+1(1.14e-06)]_1
+VSAL_I2198_p-84(norR1)           8.74e-09  1_[+1(2.91e-09)]_1
+VSAL_I2199_p-122(norV)           4.33e-08  1_[+1(1.44e-08)]_1
+VSAL_I2199_p-147(norV)           6.46e-06  1_[+1(2.15e-06)]_1
+VSAL_I2199_p-167(norV)           1.58e-06  1_[+1(5.26e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

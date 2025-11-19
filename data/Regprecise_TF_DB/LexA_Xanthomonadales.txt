@@ -1,0 +1,225 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/LexA_Xanthomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+XF2313_p-140(XF2297)     1.0000     19  XF0122_p15(lexA)         1.0000     19  
+XAC1739_p-21(lexA)       1.0000     19  XCC1721_p-21(lexA)       1.0000     19  
+XCC2963_p-69(umuD)       1.0000     19  Smlt1740_p15(lexA)       1.0000     19  
+Smlt2926_p-145(imuA)     1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/LexA_Xanthomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Xanthomonadales/LexA_Xanthomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=        7    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             133    N=               7
+sample: seed=            0    hsfrac=          0
+        searchsize=    133    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.398 C 0.0977 G 0.0902 T 0.414 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.394 C 0.102 G 0.0949 T 0.409 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KTAGTAATAYTACTAA MEME-1	width =  16  sites =   7  llr = 110  E-value = 8.3e-021
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::aa171:9::9a
+pos.-specific     C  :::::::::6::a:1:
+probability       G  4::a:::::::1::::
+matrix            T  6a::a::933a::a::
+
+         bits    3.4    *        *   
+                 3.1    *        *   
+                 2.7    *        *   
+                 2.4    *        *   
+Relative         2.0    *        *   
+Entropy          1.7    *        *   
+(22.7 bits)      1.4 *******   * ** *
+                 1.0 *******  *******
+                 0.7 ******** *******
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           TTAGTAATACTACTAA
+consensus            G       TT      
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Smlt1740_p15(lexA)            4  1.58e-09        TTA GTAGTAATACTACTAA           
+XCC1721_p-21(lexA)            4  1.58e-09        TTA GTAGTAATACTACTAA           
+XAC1739_p-21(lexA)            4  1.58e-09        TTA GTAGTAATACTACTAA           
+Smlt2926_p-145(imuA)          4  3.82e-08        TCA TTAGTAATTCTACTCA           
+XF0122_p15(lexA)              4  1.58e-07        TTA TTAGTAATAATACTAA           
+XCC2963_p-69(umuD)            4  2.24e-07        TTT TTAGTAATTTTGCTAA           
+XF2313_p-140(XF2297)          4  2.98e-07        GAT TTAGTAAAATTACTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Smlt1740_p15(lexA)                1.6e-09  3_[+1]
+XCC1721_p-21(lexA)                1.6e-09  3_[+1]
+XAC1739_p-21(lexA)                1.6e-09  3_[+1]
+Smlt2926_p-145(imuA)              3.8e-08  3_[+1]
+XF0122_p15(lexA)                  1.6e-07  3_[+1]
+XCC2963_p-69(umuD)                2.2e-07  3_[+1]
+XF2313_p-140(XF2297)                3e-07  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KTAGTAATAYTACTAA width=16 seqs=7
+Smlt1740_p15(lexA)       (    4) GTAGTAATACTACTAA  1 
+XCC1721_p-21(lexA)       (    4) GTAGTAATACTACTAA  1 
+XAC1739_p-21(lexA)       (    4) GTAGTAATACTACTAA  1 
+Smlt2926_p-145(imuA)     (    4) TTAGTAATTCTACTCA  1 
+XF0122_p15(lexA)         (    4) TTAGTAATAATACTAA  1 
+XCC2963_p-69(umuD)       (    4) TTAGTAATTTTGCTAA  1 
+XF2313_p-140(XF2297)     (    4) TTAGTAAAATTACTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 28 bayes= 3.05889 E= 8.3e-021 
+  -945   -945    217     48 
+  -945   -945   -945    129 
+   134   -945   -945   -945 
+  -945   -945    340   -945 
+  -945   -945   -945    129 
+   134   -945   -945   -945 
+   134   -945   -945   -945 
+  -146   -945   -945    107 
+    86   -945   -945    -52 
+  -146    248   -945    -52 
+  -945   -945   -945    129 
+   112   -945     59   -945 
+  -945    329   -945   -945 
+  -945   -945   -945    129 
+   112     48   -945   -945 
+   134   -945   -945   -945 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 7 E= 8.3e-021 
+ 0.000000  0.000000  0.428571  0.571429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.714286  0.000000  0.000000  0.285714 
+ 0.142857  0.571429  0.000000  0.285714 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.000000  0.142857  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.857143  0.142857  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTAGTAATAYTACTAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TG]TAGTAAT[AT][CT]TACTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XF2313_p-140(XF2297)             1.19e-06  3_[+1(2.98e-07)]
+XF0122_p15(lexA)                 6.32e-07  3_[+1(1.58e-07)]
+XAC1739_p-21(lexA)               6.32e-09  3_[+1(1.58e-09)]
+XCC1721_p-21(lexA)               6.32e-09  3_[+1(1.58e-09)]
+XCC2963_p-69(umuD)               8.96e-07  3_[+1(2.24e-07)]
+Smlt1740_p15(lexA)               6.32e-09  3_[+1(1.58e-09)]
+Smlt2926_p-145(imuA)             1.53e-07  3_[+1(3.82e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

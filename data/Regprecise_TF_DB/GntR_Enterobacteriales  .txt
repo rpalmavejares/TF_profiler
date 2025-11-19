@@ -1,0 +1,470 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= GntR_Enterobacteriales  .fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b4267(idnD)Score=3.8,Pos 1.0000     20  b3415(gntT)Score=5.9,Pos 1.0000     20  
+b3415(gntT)Score=4.9,Pos 1.0000     20  b1851(edd)Score=6.3,Pos= 1.0000     20  
+b3437(gntK)Score=5.8,Pos 1.0000     20  b3437(gntK)Score=6.4,Pos 1.0000     20  
+b4267(idnD)Score=3.8Pos= 1.0000     20  b4268(idnK)Score=5,Pos=- 1.0000     20  
+STM1885(edd)Score=6.1Pos 1.0000     20  STM3542(gntK)Score=5.1,P 1.0000     20  
+STM4484(idnD)Score=4.3,P 1.0000     20  STM3542(gntK)Score=6.4,P 1.0000     20  
+STM3512(gntT)Score=6Pos= 1.0000     20  STM3512(gntT)Score=4.7,P 1.0000     20  
+STM4485(idnK)Score=5.1,P 1.0000     20  CKO_04836(gntT)Score=6,P 1.0000     20  
+CKO_04836(gntT)Score=4.9 1.0000     20  CKO_04856(gntK)Score=6.4 1.0000     20  
+CKO_04856(gntK)Score=5.6 1.0000     20  CKO_01115(edd)Score=6.3P 1.0000     20  
+CKO_02793(idnO)Score=4.8 1.0000     20  KPN_03801(gntK)Score=6.4 1.0000     20  
+KPN_03801(gntK)Score=5.6 1.0000     20  KPN_02366(edd)Score=6.3P 1.0000     20  
+KPN_02366(edd)Score=5.4, 1.0000     20  KPN_03785(gntT)Score=5.5 1.0000     20  
+KPN_03785(gntT)Score=4.9 1.0000     20  Ent638_3828(gntT)Score=5 1.0000     20  
+Ent638_3828(gntT)Score=4 1.0000     20  Ent638_3845(gntK)Score=5 1.0000     20  
+Ent638_3845(gntK)Score=6 1.0000     20  Ent638_2420(edd)Score=6. 1.0000     20  
+EAM_3275(gntK)Score=5.9, 1.0000     20  EAM_0336(gadA)Score=5.8P 1.0000     20  
+y1651(sdxX)Score=5.7,Pos 1.0000     20  y3875(gntT)Score=6,Pos=- 1.0000     20  
+y3875(gntT)Score=5.1,Pos 1.0000     20  y3876(gntK)Score=5.6,Pos 1.0000     20  
+y3876(gntK)Score=5.5,Pos 1.0000     20  Spro_3288(idnO)Score=4.2 1.0000     20  
+Spro_3289(idnR)Score=4.4 1.0000     20  Spro_4497(gntK)Score=6.4 1.0000     20  
+Spro_4497(gntK)Score=5.5 1.0000     20  Spro_4651(gntT)Score=5.3 1.0000     20  
+Spro_4651(gntT)Score=5.4 1.0000     20  Spro_2136(gadA)Score=5.9 1.0000     20  
+ECA1836(edd)Score=5.9,Po 1.0000     20  ECA1839(gntK)Score=5.4,P 1.0000     20  
+ECA1839(gntK)Score=5.1,P 1.0000     20  ECA4159(gntK)Score=5.3,P 1.0000     20  
+ECA1840(gntT)Score=5.5,P 1.0000     20  ECA1840(gntT)Score=5.6,P 1.0000     20  
+ECA4158(gntU)Score=5.5,P 1.0000     20  ETAE_0135(gntK)Score=5.4 1.0000     20  
+ETAE_0135(gntK)Score=6,P 1.0000     20  PMI2673(gntK)Score=6.4,P 1.0000     20  
+PMI2673(gntK)Score=5.3,P 1.0000     20  PMI2760(edd)Score=5.1,Po 1.0000     20  
+PMI2760(edd)Score=6.4,Po 1.0000     20  plu0497(gntK)Score=5.9Po 1.0000     20  
+plu0497(gntK)Score=6.4,P 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna GntR_Enterobacteriales  .fasta -oc GntR_Enterobacteriales   
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           20
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       61    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=            1220    N=              61    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.324 C 0.209 G 0.163 T 0.304 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.324 C 0.209 G 0.163 T 0.304 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  17  sites =  61  llr = 933  E-value = 3.1e-325
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  71:1:a:::3:a8:932
+pos.-specific     C  22::::a84::::a::1
+probability       G  ::9::::167::::123
+matrix            T  1719a:::::a:2::54
+
+         bits    2.6                  
+                 2.4                  
+                 2.1   *          *   
+                 1.8   * * *   *  *   
+Relative         1.6   * ****  ** *   
+Entropy          1.3   * ******** **  
+(22.1 bits)      1.0   *************  
+                 0.8   *************  
+                 0.5 **************** 
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           ATGTTACCGGTAACATT
+consensus                    CA     AG
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PMI2760(edd)Score=6.4,Po      3  3.43e-10         CA ATGTTACCGGTAACAAG T         
+y1651(sdxX)Score=5.7,Pos      3  7.86e-10         TC ACGTTACCGGTAACATG T         
+PMI2673(gntK)Score=6.4,P      3  1.27e-09         TA ATGTTACCCGTAACAGT T         
+y3875(gntT)Score=6,Pos=-      3  1.27e-09         CC ATGTTACCGGTATCATG A         
+Spro_4497(gntK)Score=6.4      3  2.05e-09         CA ATGTTACCGATAACATG T         
+Spro_2136(gadA)Score=5.9      3  2.77e-09         AT AAGTTACCGGTAACATT G         
+Spro_4497(gntK)Score=5.5      3  2.77e-09         AC ATGTTACCGGTAACAAA C         
+y3876(gntK)Score=5.5,Pos      3  5.30e-09         TC ATGATACCGGTAACATG G         
+Ent638_3828(gntT)Score=5      3  5.30e-09         AG ATGTTACCCGTATCATT C         
+CKO_04836(gntT)Score=6,P      3  5.30e-09         AT ATGTTACCCGTATCATT C         
+STM3512(gntT)Score=6Pos=      3  5.30e-09         AT ATGTTACCCGTATCATT C         
+b3415(gntT)Score=5.9,Pos      3  5.30e-09         AG ATGTTACCCGTATCATT C         
+plu0497(gntK)Score=6.4,P      3  6.01e-09         TA ATGTTACCGATAACAGT T         
+ECA1840(gntT)Score=5.5,P      3  6.01e-09         TC ACGTTACCGGTATCATG A         
+KPN_03801(gntK)Score=6.4      3  6.01e-09         CA ATGTTACCGATAACAGT T         
+CKO_04856(gntK)Score=6.4      3  6.01e-09         CA ATGTTACCGATAACAGT T         
+STM3542(gntK)Score=6.4,P      3  6.01e-09         CA ATGTTACCGATAACAGT T         
+b3437(gntK)Score=6.4,Pos      3  6.01e-09         CA ATGTTACCGATAACAGT T         
+EAM_0336(gadA)Score=5.8P      3  6.73e-09         TA TTGTTACCGGTAACAGT C         
+Ent638_3845(gntK)Score=6      3  8.01e-09         AA CTGTTACCCGTAACAAT T         
+Ent638_2420(edd)Score=6.      3  9.70e-09         TT ATTTTACCGGTAACATG A         
+KPN_02366(edd)Score=6.3P      3  9.70e-09         TT ATTTTACCGGTAACATG A         
+CKO_01115(edd)Score=6.3P      3  9.70e-09         TT ATTTTACCGGTAACATG A         
+STM1885(edd)Score=6.1Pos      3  9.70e-09         GT ATTTTACCGGTAACATG A         
+b1851(edd)Score=6.3,Pos=      3  9.70e-09         TT ATTTTACCGGTAACATG A         
+plu0497(gntK)Score=5.9Po      3  1.13e-08         AA CAGTTACCGGTAACATT T         
+ECA1840(gntT)Score=5.6,P      3  1.13e-08         TC ATGATACCGGTAACAAG T         
+ETAE_0135(gntK)Score=6,P      3  1.27e-08         GA ATGTTACCCATAACAGT T         
+ECA1839(gntK)Score=5.4,P      3  1.37e-08         AC TTGTTACCGGTATCATG A         
+Spro_4651(gntT)Score=5.3      3  1.37e-08         GG TTGTTACCGGTATCATG A         
+y3876(gntK)Score=5.6,Pos      3  1.37e-08         AT TTGTTACCGGTATCATG A         
+ECA4158(gntU)Score=5.5,P      3  1.55e-08         AC ATGTTACCCGTATCATA T         
+Spro_4651(gntT)Score=5.4      3  1.55e-08         TC ATGATACCGGTAACAAT G         
+PMI2760(edd)Score=5.1,Po      3  1.76e-08         GC TTGTTACCCGTAACAAT G         
+ECA1836(edd)Score=5.9,Po      3  1.96e-08         CA TTGTTACCGGTATCATT T         
+KPN_02366(edd)Score=5.4,      3  1.96e-08         CA ATGTTACGGGTAACAAA T         
+b3437(gntK)Score=5.8,Pos      3  2.21e-08         AA CAGTTACCCGTAACATT T         
+KPN_03785(gntT)Score=5.5      3  2.69e-08         AC ATGTTACCCGTATCATC C         
+ECA4159(gntK)Score=5.3,P      3  2.97e-08         AT ATGATACGGGTAACATG T         
+EAM_3275(gntK)Score=5.9,      3  3.69e-08         CA ATGTTACCGATAACAAC G         
+y3875(gntT)Score=5.1,Pos      3  4.09e-08         TC ATGATACCGGTAACAAA T         
+KPN_03801(gntK)Score=5.6      3  4.09e-08         AA CAGTTACCCGTAACAAT T         
+CKO_04856(gntK)Score=5.6      3  4.09e-08         AA CAGTTACCCGTAACAAT T         
+ECA1839(gntK)Score=5.1,P      3  4.53e-08         TC ATGATACCGGTAACGTG A         
+PMI2673(gntK)Score=5.3,P      3  5.39e-08         AA CAGTTACGGGTAACATT A         
+STM3542(gntK)Score=5.1,P      3  9.32e-08         AA CAGTTACCCGTAACAAA T         
+Ent638_3828(gntT)Score=4      3  1.02e-07         TG ACGTTACCCATAACAAA T         
+KPN_03785(gntT)Score=4.9      3  1.02e-07         TG ACGTTACCCATAACAAA T         
+CKO_04836(gntT)Score=4.9      3  1.02e-07         CG ACGTTACCCATAACAAA T         
+STM3512(gntT)Score=4.7,P      3  1.02e-07         TG ACGTTACCCATAACAAA G         
+b3415(gntT)Score=4.9,Pos      3  1.02e-07         TG ACGTTACCCATAACAAA T         
+STM4485(idnK)Score=5.1,P      3  1.68e-07         CA ATGTTACGCATAACGTG A         
+b4268(idnK)Score=5,Pos=-      3  1.68e-07         CT ATGTTACGCATAACGTG A         
+Ent638_3845(gntK)Score=5      3  2.54e-07         CA ATGTTACCGATAACTGT T         
+CKO_02793(idnO)Score=4.8      3  3.96e-07         TA CAGTTACGCGTAACAGC T         
+ETAE_0135(gntK)Score=5.4      3  4.57e-07         AA CAGTTACCAGTAACATT G         
+STM4484(idnD)Score=4.3,P      3  4.92e-07         Tc AcGTTAtgcGTAACATT g         
+b4267(idnD)Score=3.8Pos=      3  9.07e-07         Tc AcGTTAtgcGTAACATa g         
+Spro_3289(idnR)Score=4.4      3  5.61e-06         AG CTGTTACCTTTAACGTG A         
+Spro_3288(idnO)Score=4.2      3  7.16e-06         Tc AcGTTAaaGGTAACAgc T         
+b4267(idnD)Score=3.8,Pos      3  9.35e-05         TA tTtcTACtGaTAAgAaT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PMI2760(edd)Score=6.4,Po          3.4e-10  2_[+1]_1
+y1651(sdxX)Score=5.7,Pos          7.9e-10  2_[+1]_1
+PMI2673(gntK)Score=6.4,P          1.3e-09  2_[+1]_1
+y3875(gntT)Score=6,Pos=-          1.3e-09  2_[+1]_1
+Spro_4497(gntK)Score=6.4            2e-09  2_[+1]_1
+Spro_2136(gadA)Score=5.9          2.8e-09  2_[+1]_1
+Spro_4497(gntK)Score=5.5          2.8e-09  2_[+1]_1
+y3876(gntK)Score=5.5,Pos          5.3e-09  2_[+1]_1
+Ent638_3828(gntT)Score=5          5.3e-09  2_[+1]_1
+CKO_04836(gntT)Score=6,P          5.3e-09  2_[+1]_1
+STM3512(gntT)Score=6Pos=          5.3e-09  2_[+1]_1
+b3415(gntT)Score=5.9,Pos          5.3e-09  2_[+1]_1
+plu0497(gntK)Score=6.4,P            6e-09  2_[+1]_1
+ECA1840(gntT)Score=5.5,P            6e-09  2_[+1]_1
+KPN_03801(gntK)Score=6.4            6e-09  2_[+1]_1
+CKO_04856(gntK)Score=6.4            6e-09  2_[+1]_1
+STM3542(gntK)Score=6.4,P            6e-09  2_[+1]_1
+b3437(gntK)Score=6.4,Pos            6e-09  2_[+1]_1
+EAM_0336(gadA)Score=5.8P          6.7e-09  2_[+1]_1
+Ent638_3845(gntK)Score=6            8e-09  2_[+1]_1
+Ent638_2420(edd)Score=6.          9.7e-09  2_[+1]_1
+KPN_02366(edd)Score=6.3P          9.7e-09  2_[+1]_1
+CKO_01115(edd)Score=6.3P          9.7e-09  2_[+1]_1
+STM1885(edd)Score=6.1Pos          9.7e-09  2_[+1]_1
+b1851(edd)Score=6.3,Pos=          9.7e-09  2_[+1]_1
+plu0497(gntK)Score=5.9Po          1.1e-08  2_[+1]_1
+ECA1840(gntT)Score=5.6,P          1.1e-08  2_[+1]_1
+ETAE_0135(gntK)Score=6,P          1.3e-08  2_[+1]_1
+ECA1839(gntK)Score=5.4,P          1.4e-08  2_[+1]_1
+Spro_4651(gntT)Score=5.3          1.4e-08  2_[+1]_1
+y3876(gntK)Score=5.6,Pos          1.4e-08  2_[+1]_1
+ECA4158(gntU)Score=5.5,P          1.6e-08  2_[+1]_1
+Spro_4651(gntT)Score=5.4          1.6e-08  2_[+1]_1
+PMI2760(edd)Score=5.1,Po          1.8e-08  2_[+1]_1
+ECA1836(edd)Score=5.9,Po            2e-08  2_[+1]_1
+KPN_02366(edd)Score=5.4,            2e-08  2_[+1]_1
+b3437(gntK)Score=5.8,Pos          2.2e-08  2_[+1]_1
+KPN_03785(gntT)Score=5.5          2.7e-08  2_[+1]_1
+ECA4159(gntK)Score=5.3,P            3e-08  2_[+1]_1
+EAM_3275(gntK)Score=5.9,          3.7e-08  2_[+1]_1
+y3875(gntT)Score=5.1,Pos          4.1e-08  2_[+1]_1
+KPN_03801(gntK)Score=5.6          4.1e-08  2_[+1]_1
+CKO_04856(gntK)Score=5.6          4.1e-08  2_[+1]_1
+ECA1839(gntK)Score=5.1,P          4.5e-08  2_[+1]_1
+PMI2673(gntK)Score=5.3,P          5.4e-08  2_[+1]_1
+STM3542(gntK)Score=5.1,P          9.3e-08  2_[+1]_1
+Ent638_3828(gntT)Score=4            1e-07  2_[+1]_1
+KPN_03785(gntT)Score=4.9            1e-07  2_[+1]_1
+CKO_04836(gntT)Score=4.9            1e-07  2_[+1]_1
+STM3512(gntT)Score=4.7,P            1e-07  2_[+1]_1
+b3415(gntT)Score=4.9,Pos            1e-07  2_[+1]_1
+STM4485(idnK)Score=5.1,P          1.7e-07  2_[+1]_1
+b4268(idnK)Score=5,Pos=-          1.7e-07  2_[+1]_1
+Ent638_3845(gntK)Score=5          2.5e-07  2_[+1]_1
+CKO_02793(idnO)Score=4.8            4e-07  2_[+1]_1
+ETAE_0135(gntK)Score=5.4          4.6e-07  2_[+1]_1
+STM4484(idnD)Score=4.3,P          4.9e-07  2_[+1]_1
+b4267(idnD)Score=3.8Pos=          9.1e-07  2_[+1]_1
+Spro_3289(idnR)Score=4.4          5.6e-06  2_[+1]_1
+Spro_3288(idnO)Score=4.2          7.2e-06  2_[+1]_1
+b4267(idnD)Score=3.8,Pos          9.3e-05  2_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=17 seqs=61
+PMI2760(edd)Score=6.4,Po (    3) ATGTTACCGGTAACAAG  1 
+y1651(sdxX)Score=5.7,Pos (    3) ACGTTACCGGTAACATG  1 
+PMI2673(gntK)Score=6.4,P (    3) ATGTTACCCGTAACAGT  1 
+y3875(gntT)Score=6,Pos=- (    3) ATGTTACCGGTATCATG  1 
+Spro_4497(gntK)Score=6.4 (    3) ATGTTACCGATAACATG  1 
+Spro_2136(gadA)Score=5.9 (    3) AAGTTACCGGTAACATT  1 
+Spro_4497(gntK)Score=5.5 (    3) ATGTTACCGGTAACAAA  1 
+y3876(gntK)Score=5.5,Pos (    3) ATGATACCGGTAACATG  1 
+Ent638_3828(gntT)Score=5 (    3) ATGTTACCCGTATCATT  1 
+CKO_04836(gntT)Score=6,P (    3) ATGTTACCCGTATCATT  1 
+STM3512(gntT)Score=6Pos= (    3) ATGTTACCCGTATCATT  1 
+b3415(gntT)Score=5.9,Pos (    3) ATGTTACCCGTATCATT  1 
+plu0497(gntK)Score=6.4,P (    3) ATGTTACCGATAACAGT  1 
+ECA1840(gntT)Score=5.5,P (    3) ACGTTACCGGTATCATG  1 
+KPN_03801(gntK)Score=6.4 (    3) ATGTTACCGATAACAGT  1 
+CKO_04856(gntK)Score=6.4 (    3) ATGTTACCGATAACAGT  1 
+STM3542(gntK)Score=6.4,P (    3) ATGTTACCGATAACAGT  1 
+b3437(gntK)Score=6.4,Pos (    3) ATGTTACCGATAACAGT  1 
+EAM_0336(gadA)Score=5.8P (    3) TTGTTACCGGTAACAGT  1 
+Ent638_3845(gntK)Score=6 (    3) CTGTTACCCGTAACAAT  1 
+Ent638_2420(edd)Score=6. (    3) ATTTTACCGGTAACATG  1 
+KPN_02366(edd)Score=6.3P (    3) ATTTTACCGGTAACATG  1 
+CKO_01115(edd)Score=6.3P (    3) ATTTTACCGGTAACATG  1 
+STM1885(edd)Score=6.1Pos (    3) ATTTTACCGGTAACATG  1 
+b1851(edd)Score=6.3,Pos= (    3) ATTTTACCGGTAACATG  1 
+plu0497(gntK)Score=5.9Po (    3) CAGTTACCGGTAACATT  1 
+ECA1840(gntT)Score=5.6,P (    3) ATGATACCGGTAACAAG  1 
+ETAE_0135(gntK)Score=6,P (    3) ATGTTACCCATAACAGT  1 
+ECA1839(gntK)Score=5.4,P (    3) TTGTTACCGGTATCATG  1 
+Spro_4651(gntT)Score=5.3 (    3) TTGTTACCGGTATCATG  1 
+y3876(gntK)Score=5.6,Pos (    3) TTGTTACCGGTATCATG  1 
+ECA4158(gntU)Score=5.5,P (    3) ATGTTACCCGTATCATA  1 
+Spro_4651(gntT)Score=5.4 (    3) ATGATACCGGTAACAAT  1 
+PMI2760(edd)Score=5.1,Po (    3) TTGTTACCCGTAACAAT  1 
+ECA1836(edd)Score=5.9,Po (    3) TTGTTACCGGTATCATT  1 
+KPN_02366(edd)Score=5.4, (    3) ATGTTACGGGTAACAAA  1 
+b3437(gntK)Score=5.8,Pos (    3) CAGTTACCCGTAACATT  1 
+KPN_03785(gntT)Score=5.5 (    3) ATGTTACCCGTATCATC  1 
+ECA4159(gntK)Score=5.3,P (    3) ATGATACGGGTAACATG  1 
+EAM_3275(gntK)Score=5.9, (    3) ATGTTACCGATAACAAC  1 
+y3875(gntT)Score=5.1,Pos (    3) ATGATACCGGTAACAAA  1 
+KPN_03801(gntK)Score=5.6 (    3) CAGTTACCCGTAACAAT  1 
+CKO_04856(gntK)Score=5.6 (    3) CAGTTACCCGTAACAAT  1 
+ECA1839(gntK)Score=5.1,P (    3) ATGATACCGGTAACGTG  1 
+PMI2673(gntK)Score=5.3,P (    3) CAGTTACGGGTAACATT  1 
+STM3542(gntK)Score=5.1,P (    3) CAGTTACCCGTAACAAA  1 
+Ent638_3828(gntT)Score=4 (    3) ACGTTACCCATAACAAA  1 
+KPN_03785(gntT)Score=4.9 (    3) ACGTTACCCATAACAAA  1 
+CKO_04836(gntT)Score=4.9 (    3) ACGTTACCCATAACAAA  1 
+STM3512(gntT)Score=4.7,P (    3) ACGTTACCCATAACAAA  1 
+b3415(gntT)Score=4.9,Pos (    3) ACGTTACCCATAACAAA  1 
+STM4485(idnK)Score=5.1,P (    3) ATGTTACGCATAACGTG  1 
+b4268(idnK)Score=5,Pos=- (    3) ATGTTACGCATAACGTG  1 
+Ent638_3845(gntK)Score=5 (    3) ATGTTACCGATAACTGT  1 
+CKO_02793(idnO)Score=4.8 (    3) CAGTTACGCGTAACAGC  1 
+ETAE_0135(gntK)Score=5.4 (    3) CAGTTACCAGTAACATT  1 
+STM4484(idnD)Score=4.3,P (    3) ACGTTATGCGTAACATT  1 
+b4267(idnD)Score=3.8Pos= (    3) ACGTTATGCGTAACATA  1 
+Spro_3289(idnR)Score=4.4 (    3) CTGTTACCTTTAACGTG  1 
+Spro_3288(idnO)Score=4.2 (    3) ACGTTAAAGGTAACAGC  1 
+b4267(idnD)Score=3.8,Pos (    3) TTTCTACTGATAAGAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 244 bayes= 4.06015 E= 3.1e-325 
+   116    -35  -1257   -140 
+  -113    -35  -1257    118 
+ -1257  -1257    246   -163 
+  -172   -367  -1257    154 
+ -1257  -1257  -1257    172 
+   163  -1257  -1257  -1257 
+  -430    218  -1257   -321 
+  -430    200    -32   -421 
+  -430     91    181   -421 
+   -22  -1257    211   -421 
+ -1257  -1257  -1257    172 
+   163  -1257  -1257  -1257 
+   131  -1257  -1257    -63 
+ -1257    223   -332  -1257 
+   150  -1257   -132   -421 
+   -13  -1257     14     79 
+   -84   -167    100     49 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 61 E= 3.1e-325 
+ 0.721311  0.163934  0.000000  0.114754 
+ 0.147541  0.163934  0.000000  0.688525 
+ 0.000000  0.000000  0.901639  0.098361 
+ 0.098361  0.016393  0.000000  0.885246 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.016393  0.950820  0.000000  0.032787 
+ 0.016393  0.836066  0.131148  0.016393 
+ 0.016393  0.393443  0.573770  0.016393 
+ 0.278689  0.000000  0.704918  0.016393 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.803279  0.000000  0.000000  0.196721 
+ 0.000000  0.983607  0.016393  0.000000 
+ 0.918033  0.000000  0.065574  0.016393 
+ 0.295082  0.000000  0.180328  0.524590 
+ 0.180328  0.065574  0.327869  0.426230 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+ATGTTACC[GC][GA]TAACA[TA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b4267(idnD)Score=3.8,Pos         3.74e-04  2_[+1(9.35e-05)]_1
+b3415(gntT)Score=5.9,Pos         2.12e-08  2_[+1(5.30e-09)]_1
+b3415(gntT)Score=4.9,Pos         4.07e-07  2_[+1(1.02e-07)]_1
+b1851(edd)Score=6.3,Pos=         3.88e-08  2_[+1(9.70e-09)]_1
+b3437(gntK)Score=5.8,Pos         8.84e-08  2_[+1(2.21e-08)]_1
+b3437(gntK)Score=6.4,Pos         2.41e-08  2_[+1(6.01e-09)]_1
+b4267(idnD)Score=3.8Pos=         3.63e-06  2_[+1(9.07e-07)]_1
+b4268(idnK)Score=5,Pos=-         6.73e-07  2_[+1(1.68e-07)]_1
+STM1885(edd)Score=6.1Pos         3.88e-08  2_[+1(9.70e-09)]_1
+STM3542(gntK)Score=5.1,P         3.73e-07  2_[+1(9.32e-08)]_1
+STM4484(idnD)Score=4.3,P         1.97e-06  2_[+1(4.92e-07)]_1
+STM3542(gntK)Score=6.4,P         2.41e-08  2_[+1(6.01e-09)]_1
+STM3512(gntT)Score=6Pos=         2.12e-08  2_[+1(5.30e-09)]_1
+STM3512(gntT)Score=4.7,P         4.07e-07  2_[+1(1.02e-07)]_1
+STM4485(idnK)Score=5.1,P         6.73e-07  2_[+1(1.68e-07)]_1
+CKO_04836(gntT)Score=6,P         2.12e-08  2_[+1(5.30e-09)]_1
+CKO_04836(gntT)Score=4.9         4.07e-07  2_[+1(1.02e-07)]_1
+CKO_04856(gntK)Score=6.4         2.41e-08  2_[+1(6.01e-09)]_1
+CKO_04856(gntK)Score=5.6         1.64e-07  2_[+1(4.09e-08)]_1
+CKO_01115(edd)Score=6.3P         3.88e-08  2_[+1(9.70e-09)]_1
+CKO_02793(idnO)Score=4.8         1.59e-06  2_[+1(3.96e-07)]_1
+KPN_03801(gntK)Score=6.4         2.41e-08  2_[+1(6.01e-09)]_1
+KPN_03801(gntK)Score=5.6         1.64e-07  2_[+1(4.09e-08)]_1
+KPN_02366(edd)Score=6.3P         3.88e-08  2_[+1(9.70e-09)]_1
+KPN_02366(edd)Score=5.4,         7.82e-08  2_[+1(1.96e-08)]_1
+KPN_03785(gntT)Score=5.5         1.08e-07  2_[+1(2.69e-08)]_1
+KPN_03785(gntT)Score=4.9         4.07e-07  2_[+1(1.02e-07)]_1
+Ent638_3828(gntT)Score=5         2.12e-08  2_[+1(5.30e-09)]_1
+Ent638_3828(gntT)Score=4         4.07e-07  2_[+1(1.02e-07)]_1
+Ent638_3845(gntK)Score=5         1.01e-06  2_[+1(2.54e-07)]_1
+Ent638_3845(gntK)Score=6         3.20e-08  2_[+1(8.01e-09)]_1
+Ent638_2420(edd)Score=6.         3.88e-08  2_[+1(9.70e-09)]_1
+EAM_3275(gntK)Score=5.9,         1.48e-07  2_[+1(3.69e-08)]_1
+EAM_0336(gadA)Score=5.8P         2.69e-08  2_[+1(6.73e-09)]_1
+y1651(sdxX)Score=5.7,Pos         3.14e-09  2_[+1(7.86e-10)]_1
+y3875(gntT)Score=6,Pos=-         5.07e-09  2_[+1(1.27e-09)]_1
+y3875(gntT)Score=5.1,Pos         1.64e-07  2_[+1(4.09e-08)]_1
+y3876(gntK)Score=5.6,Pos         5.48e-08  2_[+1(1.37e-08)]_1
+y3876(gntK)Score=5.5,Pos         2.12e-08  2_[+1(5.30e-09)]_1
+Spro_3288(idnO)Score=4.2         2.86e-05  2_[+1(7.16e-06)]_1
+Spro_3289(idnR)Score=4.4         2.24e-05  2_[+1(5.61e-06)]_1
+Spro_4497(gntK)Score=6.4         8.18e-09  2_[+1(2.05e-09)]_1
+Spro_4497(gntK)Score=5.5         1.11e-08  2_[+1(2.77e-09)]_1
+Spro_4651(gntT)Score=5.3         5.48e-08  2_[+1(1.37e-08)]_1
+Spro_4651(gntT)Score=5.4         6.22e-08  2_[+1(1.55e-08)]_1
+Spro_2136(gadA)Score=5.9         1.11e-08  2_[+1(2.77e-09)]_1
+ECA1836(edd)Score=5.9,Po         7.82e-08  2_[+1(1.96e-08)]_1
+ECA1839(gntK)Score=5.4,P         5.48e-08  2_[+1(1.37e-08)]_1
+ECA1839(gntK)Score=5.1,P         1.81e-07  2_[+1(4.53e-08)]_1
+ECA4159(gntK)Score=5.3,P         1.19e-07  2_[+1(2.97e-08)]_1
+ECA1840(gntT)Score=5.5,P         2.41e-08  2_[+1(6.01e-09)]_1
+ECA1840(gntT)Score=5.6,P         4.53e-08  2_[+1(1.13e-08)]_1
+ECA4158(gntU)Score=5.5,P         6.22e-08  2_[+1(1.55e-08)]_1
+ETAE_0135(gntK)Score=5.4         1.83e-06  2_[+1(4.57e-07)]_1
+ETAE_0135(gntK)Score=6,P         5.08e-08  2_[+1(1.27e-08)]_1
+PMI2673(gntK)Score=6.4,P         5.07e-09  2_[+1(1.27e-09)]_1
+PMI2673(gntK)Score=5.3,P         2.15e-07  2_[+1(5.39e-08)]_1
+PMI2760(edd)Score=5.1,Po         7.04e-08  2_[+1(1.76e-08)]_1
+PMI2760(edd)Score=6.4,Po         1.37e-09  2_[+1(3.43e-10)]_1
+plu0497(gntK)Score=5.9Po         4.53e-08  2_[+1(1.13e-08)]_1
+plu0497(gntK)Score=6.4,P         2.41e-08  2_[+1(6.01e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,264 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/SahR_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC2141_p-24(sahR)        1.0000     20  CC0482_p-393(metE)       1.0000     20  
+CC0257_p-90(ahcY)        1.0000     20  CC0050_p-90(metK)        1.0000     20  
+Cseg_0217_p-86(ahcY)     1.0000     20  Cseg_0024_p-85(metK)     1.0000     20  
+Cseg_1811_p-362(DUF1852) 1.0000     20  Cseg_1280_p-1000(metF)   1.0000     20  
+Caul_3410_p-24(sahR)     1.0000     20  Caul_4623_p-91(ahcY)     1.0000     20  
+Caul_0027_p-83(metK)     1.0000     20  PHZ_c3448_p-84(metK)     1.0000     20  
+PHZ_c2652_p-26(sahR)     1.0000     20  PHZ_c0093_p-88(ahcY)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/SahR_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/SahR_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             280    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    280    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.404 C 0.129 G 0.0857 T 0.382 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.401 C 0.13 G 0.088 T 0.38 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACATAAAGATATCTTTATRT MEME-1	width =  20  sites =  14  llr = 272  E-value = 1.8e-081
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:a:aa9:919:::::a:4:
+pos.-specific     C  :9:::::2:1::a1:::::2
+probability       G  2:::::18::::::::::61
+matrix            T  :1:a::::181a:9aa:a:7
+
+         bits    3.5                     
+                 3.2                     
+                 2.8        *    *       
+                 2.5  *     *    *       
+Relative         2.1  *     *    *       
+Entropy          1.8  *     *    *     * 
+(28.0 bits)      1.4  ***** *   ** ***** 
+                 1.1 *********  ******** 
+                 0.7 ********************
+                 0.4 ********************
+                 0.0 --------------------
+
+Multilevel           ACATAAAGATATCTTTATGT
+consensus            G      C          AC
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+PHZ_c2652_p-26(sahR)          1  4.92e-11          . ACATAAAGATATCTTTATGT           
+Caul_3410_p-24(sahR)          1  4.92e-11          . ACATAAAGATATCTTTATGT           
+Cseg_1280_p-1000(metF)        1  4.92e-11          . ACATAAAGATATCTTTATGT           
+CC2141_p-24(sahR)             1  4.92e-11          . ACATAAAGATATCTTTATGT           
+CC0257_p-90(ahcY)             1  6.23e-11          . ACATAAAGATATCTTTATGC           
+Cseg_1811_p-362(DUF1852)      1  8.10e-11          . ACATAAAGATATCCTTATGT           
+Cseg_0217_p-86(ahcY)          1  9.68e-11          . GCATAAGGATATCTTTATGC           
+Cseg_0024_p-85(metK)          1  1.51e-09          . GCATAAACATATCTTTATAT           
+CC0050_p-90(metK)             1  1.51e-09          . GCATAAACATATCTTTATAT           
+CC0482_p-393(metE)            1  2.25e-09          . ACATAAAGAAATCTTTATAT           
+PHZ_c3448_p-84(metK)          1  4.12e-09          . ACATAAAGATTTCTTTATAG           
+PHZ_c0093_p-88(ahcY)          1  4.97e-09          . ACATAAAGACTTCTTTATAT           
+Caul_0027_p-83(metK)          1  1.04e-08          . ACATAAACTTATCTTTATAT           
+Caul_4623_p-91(ahcY)          1  1.04e-08          . ATATAAAGAAATCCTTATGC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PHZ_c2652_p-26(sahR)              4.9e-11  [+1]
+Caul_3410_p-24(sahR)              4.9e-11  [+1]
+Cseg_1280_p-1000(metF)            4.9e-11  [+1]
+CC2141_p-24(sahR)                 4.9e-11  [+1]
+CC0257_p-90(ahcY)                 6.2e-11  [+1]
+Cseg_1811_p-362(DUF1852)          8.1e-11  [+1]
+Cseg_0217_p-86(ahcY)              9.7e-11  [+1]
+Cseg_0024_p-85(metK)              1.5e-09  [+1]
+CC0050_p-90(metK)                 1.5e-09  [+1]
+CC0482_p-393(metE)                2.2e-09  [+1]
+PHZ_c3448_p-84(metK)              4.1e-09  [+1]
+PHZ_c0093_p-88(ahcY)                5e-09  [+1]
+Caul_0027_p-83(metK)                1e-08  [+1]
+Caul_4623_p-91(ahcY)                1e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACATAAAGATATCTTTATRT width=20 seqs=14
+PHZ_c2652_p-26(sahR)     (    1) ACATAAAGATATCTTTATGT  1 
+Caul_3410_p-24(sahR)     (    1) ACATAAAGATATCTTTATGT  1 
+Cseg_1280_p-1000(metF)   (    1) ACATAAAGATATCTTTATGT  1 
+CC2141_p-24(sahR)        (    1) ACATAAAGATATCTTTATGT  1 
+CC0257_p-90(ahcY)        (    1) ACATAAAGATATCTTTATGC  1 
+Cseg_1811_p-362(DUF1852) (    1) ACATAAAGATATCCTTATGT  1 
+Cseg_0217_p-86(ahcY)     (    1) GCATAAGGATATCTTTATGC  1 
+Cseg_0024_p-85(metK)     (    1) GCATAAACATATCTTTATAT  1 
+CC0050_p-90(metK)        (    1) GCATAAACATATCTTTATAT  1 
+CC0482_p-393(metE)       (    1) ACATAAAGAAATCTTTATAT  1 
+PHZ_c3448_p-84(metK)     (    1) ACATAAAGATTTCTTTATAG  1 
+PHZ_c0093_p-88(ahcY)     (    1) ACATAAAGACTTCTTTATAT  1 
+Caul_0027_p-83(metK)     (    1) ACATAAACTTATCTTTATAT  1 
+Caul_4623_p-91(ahcY)     (    1) ATATAAAGAAATCCTTATGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 14 bayes= 1.12553 E= 1.8e-081 
+    97  -1045    128  -1045 
+ -1045    283  -1045   -241 
+   132  -1045  -1045  -1045 
+ -1045  -1045  -1045    139 
+   132  -1045  -1045  -1045 
+   132  -1045  -1045  -1045 
+   121  -1045    -30  -1045 
+ -1045     72    316  -1045 
+   121  -1045  -1045   -241 
+  -149    -87  -1045    105 
+   109  -1045  -1045   -141 
+ -1045  -1045  -1045    139 
+ -1045    294  -1045  -1045 
+ -1045     13  -1045    117 
+ -1045  -1045  -1045    139 
+ -1045  -1045  -1045    139 
+   132  -1045  -1045  -1045 
+ -1045  -1045  -1045    139 
+     9  -1045    270  -1045 
+ -1045     72    -30     91 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 14 E= 1.8e-081 
+ 0.785714  0.000000  0.214286  0.000000 
+ 0.000000  0.928571  0.000000  0.071429 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.928571  0.000000  0.071429  0.000000 
+ 0.000000  0.214286  0.785714  0.000000 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.142857  0.071429  0.000000  0.785714 
+ 0.857143  0.000000  0.000000  0.142857 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.142857  0.000000  0.857143 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.428571  0.000000  0.571429  0.000000 
+ 0.000000  0.214286  0.071429  0.714286 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACATAAAGATATCTTTATRT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]CATAAA[GC]ATATCTTTAT[GA][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC2141_p-24(sahR)                4.92e-11  [+1(4.92e-11)]
+CC0482_p-393(metE)               2.25e-09  [+1(2.25e-09)]
+CC0257_p-90(ahcY)                6.23e-11  [+1(6.23e-11)]
+CC0050_p-90(metK)                1.51e-09  [+1(1.51e-09)]
+Cseg_0217_p-86(ahcY)             9.68e-11  [+1(9.68e-11)]
+Cseg_0024_p-85(metK)             1.51e-09  [+1(1.51e-09)]
+Cseg_1811_p-362(DUF1852)         8.10e-11  [+1(8.10e-11)]
+Cseg_1280_p-1000(metF)           4.92e-11  [+1(4.92e-11)]
+Caul_3410_p-24(sahR)             4.92e-11  [+1(4.92e-11)]
+Caul_4623_p-91(ahcY)             1.04e-08  [+1(1.04e-08)]
+Caul_0027_p-83(metK)             1.04e-08  [+1(1.04e-08)]
+PHZ_c3448_p-84(metK)             4.12e-09  [+1(4.12e-09)]
+PHZ_c2652_p-26(sahR)             4.92e-11  [+1(4.92e-11)]
+PHZ_c0093_p-88(ahcY)             4.97e-09  [+1(4.97e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

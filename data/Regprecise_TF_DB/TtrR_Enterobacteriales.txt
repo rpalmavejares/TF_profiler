@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/TtrR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ETAE_1647_p-131(ttrB)    1.0000     24  ETAE_1646_p-85(ttrS)     1.0000     24  
+PMI1683_p-121(ttrB)      1.0000     24  PMI1684_p-66(ttrS)       1.0000     24  
+STM1386_p-69(ttrS)       1.0000     24  STM1385_p-118(ttrB)      1.0000     24  
+Spro_1067_p-92(ttrB)     1.0000     24  Spro_1066_p-85(ttrS)     1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/TtrR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/TtrR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           24
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             192    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    192    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.297 C 0.203 G 0.203 T 0.297 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.296 C 0.204 G 0.204 T 0.296 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VKAWTGTGGTWWACCACAWTMB MEME-1	width =  22  sites =   8  llr = 175  E-value = 1.9e-036
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:84:::::1469::a:a636:
+pos.-specific     C  5::::::::::::aa:a:::43
+probability       G  34:::a:aa::::::::::::5
+matrix            T  :636a:a::9641:::::48:3
+
+         bits    2.3      * **    ** *     
+                 2.1      * **    ** *     
+                 1.8     *****    *****    
+                 1.6     *****    *****    
+Relative         1.4     *****    *****    
+Entropy          1.1     ******  ******    
+(31.6 bits)      0.9  ** ******  ****** ** 
+                 0.7 **********************
+                 0.5 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           CTATTGTGGTTAACCACAATAG
+consensus            AGTA      AT      TACC
+sequence             G                    T
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+STM1385_p-118(ttrB)           2  5.07e-11          G GGTATGTGGTTAACCACAATAG A         
+STM1386_p-69(ttrS)            2  5.07e-11          T CTATTGTGGTTAACCACATACC C         
+ETAE_1646_p-85(ttrS)          2  5.07e-11          C CTATTGTGGAAAACCACAATAG C         
+ETAE_1647_p-131(ttrB)         2  5.07e-11          G CTATTGTGGTTTTCCACAATAG G         
+Spro_1066_p-85(ttrS)          2  9.14e-11          A ATATTGTGGTTTACCACATTCC C         
+Spro_1067_p-92(ttrB)          2  9.14e-11          G GGAATGTGGTAAACCACAATAT T         
+PMI1684_p-66(ttrS)            2  1.27e-10          C CTATTGTGGTTTACCACATACT C         
+PMI1683_p-121(ttrB)           2  1.27e-10          G AGTATGTGGTAAACCACAATAG G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+STM1385_p-118(ttrB)               5.1e-11  1_[+1]_1
+STM1386_p-69(ttrS)                5.1e-11  1_[+1]_1
+ETAE_1646_p-85(ttrS)              5.1e-11  1_[+1]_1
+ETAE_1647_p-131(ttrB)             5.1e-11  1_[+1]_1
+Spro_1066_p-85(ttrS)              9.1e-11  1_[+1]_1
+Spro_1067_p-92(ttrB)              9.1e-11  1_[+1]_1
+PMI1684_p-66(ttrS)                1.3e-10  1_[+1]_1
+PMI1683_p-121(ttrB)               1.3e-10  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VKAWTGTGGTWWACCACAWTMB width=22 seqs=8
+STM1385_p-118(ttrB)      (    2) GGTATGTGGTTAACCACAATAG  1 
+STM1386_p-69(ttrS)       (    2) CTATTGTGGTTAACCACATACC  1 
+ETAE_1646_p-85(ttrS)     (    2) CTATTGTGGAAAACCACAATAG  1 
+ETAE_1647_p-131(ttrB)    (    2) CTATTGTGGTTTTCCACAATAG  1 
+Spro_1066_p-85(ttrS)     (    2) ATATTGTGGTTTACCACATTCC  1 
+Spro_1067_p-92(ttrB)     (    2) GGAATGTGGTAAACCACAATAT  1 
+PMI1684_p-66(ttrS)       (    2) CTATTGTGGTTTACCACATACT  1 
+PMI1683_p-121(ttrB)      (    2) AGTATGTGGTAAACCACAATAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 24 bayes= 2.70044 E= 1.9e-036 
+   -24    129     29   -965 
+  -965   -965     88    108 
+   134   -965   -965    -24 
+    34   -965   -965    108 
+  -965   -965   -965    176 
+  -965   -965    229   -965 
+  -965   -965   -965    176 
+  -965   -965    229   -965 
+  -965   -965    229   -965 
+  -124   -965   -965    156 
+    34   -965   -965    108 
+   108   -965   -965     34 
+   156   -965   -965   -124 
+  -965    229   -965   -965 
+  -965    229   -965   -965 
+   176   -965   -965   -965 
+  -965    229   -965   -965 
+   176   -965   -965   -965 
+   108   -965   -965     34 
+   -24   -965   -965    134 
+   108     88   -965   -965 
+  -965     29    129    -24 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 8 E= 1.9e-036 
+ 0.250000  0.500000  0.250000  0.000000 
+ 0.000000  0.000000  0.375000  0.625000 
+ 0.750000  0.000000  0.000000  0.250000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.625000  0.375000  0.000000  0.000000 
+ 0.000000  0.250000  0.500000  0.250000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VKAWTGTGGTWWACCACAWTMB MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CAG][TG][AT][TA]TGTGGT[TA][AT]ACCACA[AT][TA][AC][GCT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ETAE_1647_p-131(ttrB)            1.52e-10  1_[+1(5.07e-11)]_1
+ETAE_1646_p-85(ttrS)             1.52e-10  1_[+1(5.07e-11)]_1
+PMI1683_p-121(ttrB)              3.81e-10  1_[+1(1.27e-10)]_1
+PMI1684_p-66(ttrS)               3.81e-10  1_[+1(1.27e-10)]_1
+STM1386_p-69(ttrS)               1.52e-10  1_[+1(5.07e-11)]_1
+STM1385_p-118(ttrB)              1.52e-10  1_[+1(5.07e-11)]_1
+Spro_1067_p-92(ttrB)             2.74e-10  1_[+1(9.14e-11)]_1
+Spro_1066_p-85(ttrS)             2.74e-10  1_[+1(9.14e-11)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

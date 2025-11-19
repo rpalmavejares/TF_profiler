@@ -1,0 +1,273 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/MntR_Corynebacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CORAM0001_0534_p-153(mnt 1.0000     20  cauri_0335_p-76(mntR)    1.0000     20  
+cauri_0334_p-51(mntM)    1.0000     20  DIP0615_p-91(mntA)       1.0000     20  
+DIP1923_p-81(nrdI2)      1.0000     20  CE1566_p-34(mntT)        1.0000     20  
+cg1623_p-34(mntT)        1.0000     20  jk1486_p-57(mtsA)        1.0000     20  
+jk1486_p-18(mtsA)        1.0000     20  jk1485_p-86(mntR)        1.0000     20  
+jk0226_p-123(nrdI2)      1.0000     20  jk0226_p-100(nrdI2)      1.0000     20  
+ckrop_1572_p-177(mtsA)   1.0000     20  ckrop_1571_p-143(mntR)   1.0000     20  
+ckrop_3000_p-72(nrdI2)   1.0000     20  cur_0526_p-56(mtsB)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/MntR_Corynebacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Corynebacteriaceae/MntR_Corynebacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             320    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    320    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.356 C 0.141 G 0.156 T 0.347 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.355 C 0.142 G 0.157 T 0.346 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWGTTCAATRCATTGAACWT MEME-1	width =  20  sites =  16  llr = 266  E-value = 4.0e-078
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  961:1:98:3:81::99161
+pos.-specific     C  1::::9:::2811::::7::
+probability       G  :19:::112412::a::1:1
+matrix            T  13:a91:2811:9a:11148
+
+         bits    2.8                     
+                 2.5      *        *     
+                 2.3      *        *     
+                 2.0   *  *    *   *     
+Relative         1.7   *  *    *   *     
+Entropy          1.4   ** *    *  **     
+(24.0 bits)      1.1   ***** * *  ** **  
+                 0.8 * ***** * ******** *
+                 0.6 * ******************
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           AAGTTCAATGCATTGAACAT
+consensus             T       A        T 
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+DIP1923_p-81(nrdI2)           1  9.47e-12          . AAGTTCAATGCATTGAACTT           
+cauri_0334_p-51(mntM)         1  2.28e-11          . AAGTTCAATCCATTGAACAT           
+cur_0526_p-56(mtsB)           1  8.02e-11          . AAGTTCAATACATTGAACTT           
+cg1623_p-34(mntT)             1  5.43e-10          . CTGTTCAATGCGTTGAACAT           
+cauri_0335_p-76(mntR)         1  6.09e-10          . ATGTTCAATGGATTGAACTT           
+CE1566_p-34(mntT)             1  1.12e-09          . ATGTTCATGCCATTGAACAT           
+jk1486_p-57(mtsA)             1  3.55e-09          . TTGTTCAATACATTGAACAT           
+CORAM0001_0534_p-153(mnt      1  8.41e-09          . AAGTTCAATGGGTTGAAAAT           
+ckrop_3000_p-72(nrdI2)        1  1.58e-08          . AAGTTCAAGCCATTGAATAA           
+jk1485_p-86(mntR)             1  1.90e-08          . ATGTTCAATGTATTGAACAA           
+ckrop_1572_p-177(mtsA)        1  4.60e-08          . AAATACATTGCATTGAACTT           
+jk0226_p-100(nrdI2)           1  4.97e-08          . AAGTTCGGGTCATTGAACTT           
+ckrop_1571_p-143(mntR)        1  5.81e-08          . AAGTTCAATGCAATGTATTT           
+DIP0615_p-91(mntA)            1  9.73e-08          . AAATTCAATACGCTGAACAG           
+jk0226_p-123(nrdI2)           1  1.37e-07          . AAGTTCAATACATTGTTGTT           
+jk1486_p-18(mtsA)             1  1.23e-06          . AGGTTTATTACCTTGAAAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DIP1923_p-81(nrdI2)               9.5e-12  [+1]
+cauri_0334_p-51(mntM)             2.3e-11  [+1]
+cur_0526_p-56(mtsB)                 8e-11  [+1]
+cg1623_p-34(mntT)                 5.4e-10  [+1]
+cauri_0335_p-76(mntR)             6.1e-10  [+1]
+CE1566_p-34(mntT)                 1.1e-09  [+1]
+jk1486_p-57(mtsA)                 3.6e-09  [+1]
+CORAM0001_0534_p-153(mnt          8.4e-09  [+1]
+ckrop_3000_p-72(nrdI2)            1.6e-08  [+1]
+jk1485_p-86(mntR)                 1.9e-08  [+1]
+ckrop_1572_p-177(mtsA)            4.6e-08  [+1]
+jk0226_p-100(nrdI2)                 5e-08  [+1]
+ckrop_1571_p-143(mntR)            5.8e-08  [+1]
+DIP0615_p-91(mntA)                9.7e-08  [+1]
+jk0226_p-123(nrdI2)               1.4e-07  [+1]
+jk1486_p-18(mtsA)                 1.2e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWGTTCAATRCATTGAACWT width=20 seqs=16
+DIP1923_p-81(nrdI2)      (    1) AAGTTCAATGCATTGAACTT  1 
+cauri_0334_p-51(mntM)    (    1) AAGTTCAATCCATTGAACAT  1 
+cur_0526_p-56(mtsB)      (    1) AAGTTCAATACATTGAACTT  1 
+cg1623_p-34(mntT)        (    1) CTGTTCAATGCGTTGAACAT  1 
+cauri_0335_p-76(mntR)    (    1) ATGTTCAATGGATTGAACTT  1 
+CE1566_p-34(mntT)        (    1) ATGTTCATGCCATTGAACAT  1 
+jk1486_p-57(mtsA)        (    1) TTGTTCAATACATTGAACAT  1 
+CORAM0001_0534_p-153(mnt (    1) AAGTTCAATGGGTTGAAAAT  1 
+ckrop_3000_p-72(nrdI2)   (    1) AAGTTCAAGCCATTGAATAA  1 
+jk1485_p-86(mntR)        (    1) ATGTTCAATGTATTGAACAA  1 
+ckrop_1572_p-177(mtsA)   (    1) AAATACATTGCATTGAACTT  1 
+jk0226_p-100(nrdI2)      (    1) AAGTTCGGGTCATTGAACTT  1 
+ckrop_1571_p-143(mntR)   (    1) AAGTTCAATGCAATGTATTT  1 
+DIP0615_p-91(mntA)       (    1) AAATTCAATACGCTGAACAG  1 
+jk0226_p-123(nrdI2)      (    1) AAGTTCAATACATTGTTGTT  1 
+jk1486_p-18(mtsA)        (    1) AGGTTTATTACCTTGAAAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 16 bayes= 1.22239 E= 4.0e-078 
+   130   -118  -1064   -246 
+    82  -1064   -133    -15 
+  -150  -1064    247  -1064 
+ -1064  -1064  -1064    153 
+  -250  -1064  -1064    144 
+ -1064    272  -1064   -246 
+   140  -1064   -133  -1064 
+   108  -1064   -133    -88 
+ -1064  -1064     25    123 
+   -18     40    147   -246 
+ -1064    252    -33   -246 
+   108   -118     25  -1064 
+  -250   -118  -1064    134 
+ -1064  -1064  -1064    153 
+ -1064  -1064    267  -1064 
+   130  -1064  -1064   -147 
+   140  -1064  -1064   -246 
+  -150    228   -133   -147 
+    66  -1064  -1064     34 
+  -150  -1064   -133    123 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 16 E= 4.0e-078 
+ 0.875000  0.062500  0.000000  0.062500 
+ 0.625000  0.000000  0.062500  0.312500 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.062500  0.000000  0.000000  0.937500 
+ 0.000000  0.937500  0.000000  0.062500 
+ 0.937500  0.000000  0.062500  0.000000 
+ 0.750000  0.000000  0.062500  0.187500 
+ 0.000000  0.000000  0.187500  0.812500 
+ 0.312500  0.187500  0.437500  0.062500 
+ 0.000000  0.812500  0.125000  0.062500 
+ 0.750000  0.062500  0.187500  0.000000 
+ 0.062500  0.062500  0.000000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.937500  0.000000  0.000000  0.062500 
+ 0.125000  0.687500  0.062500  0.125000 
+ 0.562500  0.000000  0.000000  0.437500 
+ 0.125000  0.000000  0.062500  0.812500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWGTTCAATRCATTGAACWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT]GTTCAAT[GA]CATTGAAC[AT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CORAM0001_0534_p-153(mnt         8.41e-09  [+1(8.41e-09)]
+cauri_0335_p-76(mntR)            6.09e-10  [+1(6.09e-10)]
+cauri_0334_p-51(mntM)            2.28e-11  [+1(2.28e-11)]
+DIP0615_p-91(mntA)               9.73e-08  [+1(9.73e-08)]
+DIP1923_p-81(nrdI2)              9.47e-12  [+1(9.47e-12)]
+CE1566_p-34(mntT)                1.12e-09  [+1(1.12e-09)]
+cg1623_p-34(mntT)                5.43e-10  [+1(5.43e-10)]
+jk1486_p-57(mtsA)                3.55e-09  [+1(3.55e-09)]
+jk1486_p-18(mtsA)                1.23e-06  [+1(1.23e-06)]
+jk1485_p-86(mntR)                1.90e-08  [+1(1.90e-08)]
+jk0226_p-123(nrdI2)              1.37e-07  [+1(1.37e-07)]
+jk0226_p-100(nrdI2)              4.97e-08  [+1(4.97e-08)]
+ckrop_1572_p-177(mtsA)           4.60e-08  [+1(4.60e-08)]
+ckrop_1571_p-143(mntR)           5.81e-08  [+1(5.81e-08)]
+ckrop_3000_p-72(nrdI2)           1.58e-08  [+1(1.58e-08)]
+cur_0526_p-56(mtsB)              8.02e-11  [+1(8.02e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

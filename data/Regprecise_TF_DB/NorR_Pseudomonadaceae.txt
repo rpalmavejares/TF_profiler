@@ -1,0 +1,375 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/NorR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA2665_p-55(norR)        1.0000     19  PA2665_p-10(norR)        1.0000     19  
+PA2665_p-30(norR)        1.0000     19  PA2664_p-118(hmp)        1.0000     19  
+PA2664_p-163(hmp)        1.0000     19  PA2664_p-143(hmp)        1.0000     19  
+PSEEN0951_p-55(norR)     1.0000     19  PSEEN0951_p-10(norR)     1.0000     19  
+PSEEN0951_p-29(norR)     1.0000     19  PSEEN0952_p-164(hmp)     1.0000     19  
+PSEEN0952_p-145(hmp)     1.0000     19  PSEEN0952_p-119(hmp)     1.0000     19  
+PSEEN3000_p-140(nnrS)    1.0000     19  PSEEN3000_p-115(nnrS)    1.0000     19  
+PP0807_p-29(norR)        1.0000     19  PP0807_p-10(norR)        1.0000     19  
+PP0808_p-145(hmp)        1.0000     19  PP0808_p-164(hmp)        1.0000     19  
+PP2840_p-140(nnrS)       1.0000     19  PFL_5041_p-10(norR)      1.0000     19  
+PFL_5041_p-55(norR)      1.0000     19  PFL_5041_p-29(norR)      1.0000     19  
+PFL_5040_p-165(hmp)      1.0000     19  PFL_5040_p-146(hmp)      1.0000     19  
+PFL_5040_p-120(hmp)      1.0000     19  PFL_3310_p-157(n/a)      1.0000     19  
+PFL_3310_p-136(n/a)      1.0000     19  PFL_3310_p-111(n/a)      1.0000     19  
+Pmen_3579_p-55(norR)     1.0000     19  Pmen_3579_p-29(norR)     1.0000     19  
+Pmen_3579_p-10(norR)     1.0000     19  Pmen_3580_p-156(hmp)     1.0000     19  
+Pmen_3580_p-201(hmp)     1.0000     19  Pmen_3580_p-182(hmp)     1.0000     19  
+Avin_51080_p-29(norR)    1.0000     19  Avin_51080_p-54(norR)    1.0000     19  
+Avin_51080_p-10(norR)    1.0000     19  Avin_51090_p-178(hmp)    1.0000     19  
+Avin_51090_p-159(hmp)    1.0000     19  Avin_51090_p-134(hmp)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/NorR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/NorR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       40    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             760    N=              40
+sample: seed=            0    hsfrac=          0
+        searchsize=    760    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.287 C 0.214 G 0.214 T 0.284 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.287 C 0.215 G 0.215 T 0.284 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GBAGTCATWATGACTVC MEME-1	width =  17  sites =  40  llr = 488  E-value = 4.1e-154
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  216:::62582:a:241
+pos.-specific     C  13:::a1::12::a237
+probability       G  632a::21::1a:::2:
+matrix            T  142:a:27526:::612
+
+         bits    2.2      *     *     
+                 2.0    * *     * *   
+                 1.8    ***     ***   
+                 1.6    ***     ***   
+Relative         1.3    ***     ***   
+Entropy          1.1    ***     ***   
+(17.6 bits)      0.9    ***  ** ***   
+                 0.7    *** *** ***  *
+                 0.4 * **** *** **** *
+                 0.2 * ***************
+                 0.0 -----------------
+
+Multilevel           GTAGTCATAATGACTAC
+consensus            AGG    ATT    ACT
+sequence              C             G 
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PFL_5040_p-165(hmp)           2  5.36e-10          T GCAGTCATAATGACTCC A         
+PFL_5041_p-10(norR)           2  1.01e-09          T GGAGTCATTATGACTGC A         
+PFL_3310_p-157(n/a)           2  1.82e-08          T GCAGTCATATTGACTGC G         
+PP0807_p-10(norR)             2  7.74e-08          A GGAGTCCATATGACTAC A         
+PP0808_p-164(hmp)             2  9.34e-08          T GTAGTCATATGGACTCC T         
+PSEEN0952_p-164(hmp)          2  9.34e-08          T GCAGTCATATGGACTCC T         
+PSEEN0951_p-10(norR)          2  1.10e-07          A GGAGTCCATATGACTGC A         
+PA2664_p-143(hmp)             2  1.10e-07          T GCAGTCCTAATGACTCT G         
+PA2665_p-30(norR)             2  1.38e-07          C AGAGTCATTAGGACTGC A         
+Pmen_3580_p-201(hmp)          2  1.94e-07          A GCGGTCATTTCGACTAC T         
+PFL_3310_p-136(n/a)           2  2.23e-07          G GCGGTCTTTATGACTTC T         
+PSEEN3000_p-140(nnrS)         2  2.58e-07          G GAAGTCAATATGACAAC A         
+Avin_51080_p-54(norR)         2  2.95e-07          T GCAGTCGTTTCGACTAC G         
+Avin_51090_p-159(hmp)         2  3.39e-07          A GCAGTCTTATTGACAAC G         
+Pmen_3579_p-10(norR)          2  3.39e-07          A GTAGTCGAAATGACCGC T         
+Avin_51090_p-134(hmp)         2  3.92e-07          C GTAGTCGAAACGACTGC A         
+PFL_5041_p-29(norR)           2  4.45e-07          T ATAGTCATTAAGACACC A         
+PA2665_p-55(norR)             2  5.04e-07          A TAGGTCATAATGACTGC A         
+PFL_5040_p-146(hmp)           2  5.66e-07          T GGTGTCTTAATGACTAT A         
+PSEEN3000_p-115(nnrS)         2  6.96e-07          C AAGGTCATTATGACAAC A         
+Avin_51080_p-29(norR)         2  7.71e-07          C GTTGTCAATAAGACTGC T         
+PA2664_p-118(hmp)             2  8.57e-07          T GCAGTCATTATGACCTA T         
+Pmen_3580_p-156(hmp)          2  9.49e-07          G CGAGTCATTAAGACAAC A         
+PA2665_p-10(norR)             2  1.75e-06          A GAGGTCGAAATGACCAC C         
+PFL_5041_p-55(norR)           2  2.10e-06          T ATAGTCATAAAGACACT C         
+PSEEN0952_p-119(hmp)          2  2.10e-06          G TGTGTCCTTATGACACC G         
+PFL_5040_p-120(hmp)           2  2.29e-06          G AGTGTCTTTATGACTAT A         
+PSEEN0951_p-55(norR)          2  2.50e-06          C GGTGTCATAAGGACACA C         
+PA2664_p-163(hmp)             2  2.50e-06          G GTGGTCATTTCGACCTC T         
+Pmen_3580_p-182(hmp)          2  2.72e-06          C AAAGTCTTTATGACTCA C         
+PFL_3310_p-111(n/a)           2  2.97e-06          T CTGGTCATAAAGACTCT T         
+Pmen_3579_p-55(norR)          2  3.22e-06          T GTTGTCTTAATGACTCG C         
+Pmen_3579_p-29(norR)          2  4.08e-06          G TGAGTCATAAAGACTTT G         
+PP0808_p-145(hmp)             2  5.12e-06          A TGGGTCGATATGACTAT A         
+PP2840_p-140(nnrS)            2  5.92e-06          G CCAGTCTGAATGACCGC A         
+PP0807_p-29(norR)             2  6.81e-06          T ATAGTCATATCGACCCA T         
+PSEEN0952_p-145(hmp)          2  8.83e-06          G TTGGTCGGAATGACTAT A         
+PSEEN0951_p-29(norR)          2  1.41e-05          T ATAGTCATTCCGACCAA C         
+Avin_51080_p-10(norR)         2  1.92e-05          C GTTATCCGAATGACTAC A         
+Avin_51090_p-178(hmp)         2  2.11e-05          T GTAGTCATTCGGATAAC G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PFL_5040_p-165(hmp)               5.4e-10  1_[+1]_1
+PFL_5041_p-10(norR)                 1e-09  1_[+1]_1
+PFL_3310_p-157(n/a)               1.8e-08  1_[+1]_1
+PP0807_p-10(norR)                 7.7e-08  1_[+1]_1
+PP0808_p-164(hmp)                 9.3e-08  1_[+1]_1
+PSEEN0952_p-164(hmp)              9.3e-08  1_[+1]_1
+PSEEN0951_p-10(norR)              1.1e-07  1_[+1]_1
+PA2664_p-143(hmp)                 1.1e-07  1_[+1]_1
+PA2665_p-30(norR)                 1.4e-07  1_[+1]_1
+Pmen_3580_p-201(hmp)              1.9e-07  1_[+1]_1
+PFL_3310_p-136(n/a)               2.2e-07  1_[+1]_1
+PSEEN3000_p-140(nnrS)             2.6e-07  1_[+1]_1
+Avin_51080_p-54(norR)             2.9e-07  1_[+1]_1
+Avin_51090_p-159(hmp)             3.4e-07  1_[+1]_1
+Pmen_3579_p-10(norR)              3.4e-07  1_[+1]_1
+Avin_51090_p-134(hmp)             3.9e-07  1_[+1]_1
+PFL_5041_p-29(norR)               4.5e-07  1_[+1]_1
+PA2665_p-55(norR)                   5e-07  1_[+1]_1
+PFL_5040_p-146(hmp)               5.7e-07  1_[+1]_1
+PSEEN3000_p-115(nnrS)               7e-07  1_[+1]_1
+Avin_51080_p-29(norR)             7.7e-07  1_[+1]_1
+PA2664_p-118(hmp)                 8.6e-07  1_[+1]_1
+Pmen_3580_p-156(hmp)              9.5e-07  1_[+1]_1
+PA2665_p-10(norR)                 1.7e-06  1_[+1]_1
+PFL_5041_p-55(norR)               2.1e-06  1_[+1]_1
+PSEEN0952_p-119(hmp)              2.1e-06  1_[+1]_1
+PFL_5040_p-120(hmp)               2.3e-06  1_[+1]_1
+PSEEN0951_p-55(norR)              2.5e-06  1_[+1]_1
+PA2664_p-163(hmp)                 2.5e-06  1_[+1]_1
+Pmen_3580_p-182(hmp)              2.7e-06  1_[+1]_1
+PFL_3310_p-111(n/a)                 3e-06  1_[+1]_1
+Pmen_3579_p-55(norR)              3.2e-06  1_[+1]_1
+Pmen_3579_p-29(norR)              4.1e-06  1_[+1]_1
+PP0808_p-145(hmp)                 5.1e-06  1_[+1]_1
+PP2840_p-140(nnrS)                5.9e-06  1_[+1]_1
+PP0807_p-29(norR)                 6.8e-06  1_[+1]_1
+PSEEN0952_p-145(hmp)              8.8e-06  1_[+1]_1
+PSEEN0951_p-29(norR)              1.4e-05  1_[+1]_1
+Avin_51080_p-10(norR)             1.9e-05  1_[+1]_1
+Avin_51090_p-178(hmp)             2.1e-05  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GBAGTCATWATGACTVC width=17 seqs=40
+PFL_5040_p-165(hmp)      (    2) GCAGTCATAATGACTCC  1 
+PFL_5041_p-10(norR)      (    2) GGAGTCATTATGACTGC  1 
+PFL_3310_p-157(n/a)      (    2) GCAGTCATATTGACTGC  1 
+PP0807_p-10(norR)        (    2) GGAGTCCATATGACTAC  1 
+PP0808_p-164(hmp)        (    2) GTAGTCATATGGACTCC  1 
+PSEEN0952_p-164(hmp)     (    2) GCAGTCATATGGACTCC  1 
+PSEEN0951_p-10(norR)     (    2) GGAGTCCATATGACTGC  1 
+PA2664_p-143(hmp)        (    2) GCAGTCCTAATGACTCT  1 
+PA2665_p-30(norR)        (    2) AGAGTCATTAGGACTGC  1 
+Pmen_3580_p-201(hmp)     (    2) GCGGTCATTTCGACTAC  1 
+PFL_3310_p-136(n/a)      (    2) GCGGTCTTTATGACTTC  1 
+PSEEN3000_p-140(nnrS)    (    2) GAAGTCAATATGACAAC  1 
+Avin_51080_p-54(norR)    (    2) GCAGTCGTTTCGACTAC  1 
+Avin_51090_p-159(hmp)    (    2) GCAGTCTTATTGACAAC  1 
+Pmen_3579_p-10(norR)     (    2) GTAGTCGAAATGACCGC  1 
+Avin_51090_p-134(hmp)    (    2) GTAGTCGAAACGACTGC  1 
+PFL_5041_p-29(norR)      (    2) ATAGTCATTAAGACACC  1 
+PA2665_p-55(norR)        (    2) TAGGTCATAATGACTGC  1 
+PFL_5040_p-146(hmp)      (    2) GGTGTCTTAATGACTAT  1 
+PSEEN3000_p-115(nnrS)    (    2) AAGGTCATTATGACAAC  1 
+Avin_51080_p-29(norR)    (    2) GTTGTCAATAAGACTGC  1 
+PA2664_p-118(hmp)        (    2) GCAGTCATTATGACCTA  1 
+Pmen_3580_p-156(hmp)     (    2) CGAGTCATTAAGACAAC  1 
+PA2665_p-10(norR)        (    2) GAGGTCGAAATGACCAC  1 
+PFL_5041_p-55(norR)      (    2) ATAGTCATAAAGACACT  1 
+PSEEN0952_p-119(hmp)     (    2) TGTGTCCTTATGACACC  1 
+PFL_5040_p-120(hmp)      (    2) AGTGTCTTTATGACTAT  1 
+PSEEN0951_p-55(norR)     (    2) GGTGTCATAAGGACACA  1 
+PA2664_p-163(hmp)        (    2) GTGGTCATTTCGACCTC  1 
+Pmen_3580_p-182(hmp)     (    2) AAAGTCTTTATGACTCA  1 
+PFL_3310_p-111(n/a)      (    2) CTGGTCATAAAGACTCT  1 
+Pmen_3579_p-55(norR)     (    2) GTTGTCTTAATGACTCG  1 
+Pmen_3579_p-29(norR)     (    2) TGAGTCATAAAGACTTT  1 
+PP0808_p-145(hmp)        (    2) TGGGTCGATATGACTAT  1 
+PP2840_p-140(nnrS)       (    2) CCAGTCTGAATGACCGC  1 
+PP0807_p-29(norR)        (    2) ATAGTCATATCGACCCA  1 
+PSEEN0952_p-145(hmp)     (    2) TTGGTCGGAATGACTAT  1 
+PSEEN0951_p-29(norR)     (    2) ATAGTCATTCCGACCAA  1 
+Avin_51080_p-10(norR)    (    2) GTTATCCGAATGACTAC  1 
+Avin_51090_p-178(hmp)    (    2) GTAGTCATTCGGATAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 120 bayes= 3.52356 E= 4.1e-154 
+   -52   -152    148   -118 
+  -120     22     36     30 
+   107  -1197      7    -70 
+  -352  -1197    218  -1197 
+ -1197  -1197  -1197    182 
+ -1197    222  -1197  -1197 
+    94    -78    -52    -70 
+   -52  -1197   -152    135 
+    80  -1197  -1197     82 
+   139   -210  -1197    -51 
+   -93    -52    -78    102 
+ -1197  -1197    222  -1197 
+   180  -1197  -1197  -1197 
+ -1197    218  -1197   -350 
+   -35    -29  -1197    108 
+    39     48      7   -151 
+  -120    160   -310    -51 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 40 E= 4.1e-154 
+ 0.200000  0.075000  0.600000  0.125000 
+ 0.125000  0.250000  0.275000  0.350000 
+ 0.600000  0.000000  0.225000  0.175000 
+ 0.025000  0.000000  0.975000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.550000  0.125000  0.150000  0.175000 
+ 0.200000  0.000000  0.075000  0.725000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.750000  0.050000  0.000000  0.200000 
+ 0.150000  0.150000  0.125000  0.575000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.975000  0.000000  0.025000 
+ 0.225000  0.175000  0.000000  0.600000 
+ 0.375000  0.300000  0.225000  0.100000 
+ 0.125000  0.650000  0.025000  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GBAGTCATWATGACTVC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA][TGC][AG]GTCA[TA][AT][AT]TGAC[TA][ACG][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.09 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA2665_p-55(norR)                1.51e-06  1_[+1(5.04e-07)]_1
+PA2665_p-10(norR)                5.24e-06  1_[+1(1.75e-06)]_1
+PA2665_p-30(norR)                4.15e-07  1_[+1(1.38e-07)]_1
+PA2664_p-118(hmp)                2.57e-06  1_[+1(8.57e-07)]_1
+PA2664_p-163(hmp)                7.50e-06  1_[+1(2.50e-06)]_1
+PA2664_p-143(hmp)                3.29e-07  1_[+1(1.10e-07)]_1
+PSEEN0951_p-55(norR)             7.50e-06  1_[+1(2.50e-06)]_1
+PSEEN0951_p-10(norR)             3.29e-07  1_[+1(1.10e-07)]_1
+PSEEN0951_p-29(norR)             4.24e-05  1_[+1(1.41e-05)]_1
+PSEEN0952_p-164(hmp)             2.80e-07  1_[+1(9.34e-08)]_1
+PSEEN0952_p-145(hmp)             2.65e-05  1_[+1(8.83e-06)]_1
+PSEEN0952_p-119(hmp)             6.29e-06  1_[+1(2.10e-06)]_1
+PSEEN3000_p-140(nnrS)            7.74e-07  1_[+1(2.58e-07)]_1
+PSEEN3000_p-115(nnrS)            2.09e-06  1_[+1(6.96e-07)]_1
+PP0807_p-29(norR)                2.04e-05  1_[+1(6.81e-06)]_1
+PP0807_p-10(norR)                2.32e-07  1_[+1(7.74e-08)]_1
+PP0808_p-145(hmp)                1.54e-05  1_[+1(5.12e-06)]_1
+PP0808_p-164(hmp)                2.80e-07  1_[+1(9.34e-08)]_1
+PP2840_p-140(nnrS)               1.78e-05  1_[+1(5.92e-06)]_1
+PFL_5041_p-10(norR)              3.02e-09  1_[+1(1.01e-09)]_1
+PFL_5041_p-55(norR)              6.29e-06  1_[+1(2.10e-06)]_1
+PFL_5041_p-29(norR)              1.34e-06  1_[+1(4.45e-07)]_1
+PFL_5040_p-165(hmp)              1.61e-09  1_[+1(5.36e-10)]_1
+PFL_5040_p-146(hmp)              1.70e-06  1_[+1(5.66e-07)]_1
+PFL_5040_p-120(hmp)              6.88e-06  1_[+1(2.29e-06)]_1
+PFL_3310_p-157(n/a)              5.45e-08  1_[+1(1.82e-08)]_1
+PFL_3310_p-136(n/a)              6.68e-07  1_[+1(2.23e-07)]_1
+PFL_3310_p-111(n/a)              8.92e-06  1_[+1(2.97e-06)]_1
+Pmen_3579_p-55(norR)             9.67e-06  1_[+1(3.22e-06)]_1
+Pmen_3579_p-29(norR)             1.22e-05  1_[+1(4.08e-06)]_1
+Pmen_3579_p-10(norR)             1.02e-06  1_[+1(3.39e-07)]_1
+Pmen_3580_p-156(hmp)             2.85e-06  1_[+1(9.49e-07)]_1
+Pmen_3580_p-201(hmp)             5.81e-07  1_[+1(1.94e-07)]_1
+Pmen_3580_p-182(hmp)             8.17e-06  1_[+1(2.72e-06)]_1
+Avin_51080_p-29(norR)            2.31e-06  1_[+1(7.71e-07)]_1
+Avin_51080_p-54(norR)            8.84e-07  1_[+1(2.95e-07)]_1
+Avin_51080_p-10(norR)            5.75e-05  1_[+1(1.92e-05)]_1
+Avin_51090_p-178(hmp)            6.33e-05  1_[+1(2.11e-05)]_1
+Avin_51090_p-159(hmp)            1.02e-06  1_[+1(3.39e-07)]_1
+Avin_51090_p-134(hmp)            1.18e-06  1_[+1(3.92e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

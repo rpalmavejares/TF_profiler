@@ -1,0 +1,368 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Irr_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_0850_p-29(mbfA)      1.0000     21  RSP_2395_p-87(ccpA)      1.0000     21  
+Jann_2366_p-137(iscR)    1.0000     21  Jann_0865_p-79(fssA)     1.0000     21  
+Jann_3276_p-123(dps)     1.0000     21  RB2654_13154_p-46(irpA)  1.0000     21  
+RB2654_18613_p-52(fssA)  1.0000     21  RB2654_16991_p-30(mbfA)  1.0000     21  
+OG2516_03700_p-131(iscR) 1.0000     21  SKA53_05183_p-111(iscR)  1.0000     21  
+SKA53_14701_p-78(fssA)   1.0000     21  SKA53_14166_p-32(mbfA)   1.0000     21  
+SKA53_14466_p-85(katG)   1.0000     21  OB2597_03589_p-114(iscR) 1.0000     21  
+OB2597_10089_p-79(fssA)  1.0000     21  OB2597_06815_p-85(bfr)   1.0000     21  
+ISM_16015_p-129(iscR)    1.0000     21  ISM_02850_p-77(fssA)     1.0000     21  
+ISM_08740_p-39(mbfA)     1.0000     21  ISM_16225_p-92(katG)     1.0000     21  
+ROS217_20542_p-100(iscR) 1.0000     21  ROS217_10487_p-76(fssA)  1.0000     21  
+ROS217_11126_p-30(mbfA)  1.0000     21  ROS217_11501_p-75(ccpA)  1.0000     21  
+EE36_11399_p-111(katG)   1.0000     21  EE36_14302_p-116(iscR)   1.0000     21  
+EE36_09510_p-76(fssA)    1.0000     21  EE36_01790_p-116(dps)    1.0000     21  
+TM1040_1240_p-117(iscR)  1.0000     21  TM1040_3091_p-74(fssA)   1.0000     21  
+TM1040_2791_p-146(katG)  1.0000     21  SPO2025_p-121(iscR)      1.0000     21  
+SPO0382_p-76(fssA)       1.0000     21  SPO3842_p-32(mbfA)       1.0000     21  
+SPO0330_p-72(ccpA)       1.0000     21  MED193_04321_p-124(iscR) 1.0000     21  
+MED193_10358_p-75(fssA)  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Irr_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/Irr_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       37    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             777    N=              37
+sample: seed=            0    hsfrac=          0
+        searchsize=    777    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.367 C 0.162 G 0.143 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.366 C 0.163 G 0.143 T 0.328 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ANYTTAGAAYBRTTCYAAAY MEME-1	width =  20  sites =  37  llr = 579  E-value = 7.4e-194
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  721::9:aa:26::::a971
+pos.-specific     C  124::::::43:::a4:::4
+probability       G  131::1a::144:::::111
+matrix            T  125aa::::52:9a:6::14
+
+         bits    2.8       *             
+                 2.5       *       *     
+                 2.2       *       *     
+                 2.0       *       *     
+Relative         1.7     * *      **     
+Entropy          1.4    ** ***   *** *   
+(22.6 bits)      1.1    ******  *******  
+                 0.8    ******  *******  
+                 0.6    ******* ******** 
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           AGTTTAGAATGATTCTAAAT
+consensus             TC      CCG   C   C
+sequence              A                  
+                      C                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+ROS217_10487_p-76(fssA)       1  3.53e-10          . ATCTTAGAATGGTTCTAAAC C         
+SKA53_14701_p-78(fssA)        1  3.53e-10          . AGTTTAGAATCGTTCCAAAT C         
+EE36_09510_p-76(fssA)         1  8.50e-10          . AACTTAGAATCGTTCCAAAC C         
+RB2654_16991_p-30(mbfA)       1  8.50e-10          . AGTTTGGAATCGTTCCAAAC A         
+ISM_16015_p-129(iscR)         1  2.21e-09          . ACTTTAGAACTGTTCTAAAC A         
+SKA53_05183_p-111(iscR)       1  2.21e-09          . ACCTTAGAAGGATTCTAAAC T         
+ROS217_20542_p-100(iscR)      1  2.58e-09          . ACCTTAGAACTGTTCTAAAT T         
+SPO2025_p-121(iscR)           1  4.22e-09          . ATCTTAGAATGGTTCTAAGT C         
+TM1040_1240_p-117(iscR)       1  5.68e-09          . ACCTTAGAACTGTTCTAAAG A         
+ROS217_11501_p-75(ccpA)       1  7.54e-09          . GATTTAGAATGGTTCCAAAC G         
+EE36_14302_p-116(iscR)        1  9.89e-09          . AGTTTAGAACGGTTCTAACT T         
+SPO0382_p-76(fssA)            1  1.46e-08          . TCTTTAGAACCGTTCCAAAG T         
+SKA53_14166_p-32(mbfA)        1  1.46e-08          . AGATTAGAATCATTCTAAAT A         
+SPO3842_p-32(mbfA)            1  1.65e-08          . ATCTTGGAATCATTCTAAAT T         
+ISM_16225_p-92(katG)          1  1.88e-08          . CGCTTAGAACGATTCCAAGG C         
+ISM_08740_p-39(mbfA)          1  2.11e-08          . AGTTTAGAATCATTCTAATT G         
+TM1040_3091_p-74(fssA)        1  2.37e-08          . AATTTAGAACCATTCCAAAA C         
+ISM_02850_p-77(fssA)          1  2.65e-08          . TTTTTAGAATCGTTCCAAAT C         
+Jann_2366_p-137(iscR)         1  2.65e-08          . ACCCTAGAACGATTCCAAAT T         
+MED193_10358_p-75(fssA)       1  2.95e-08          . AATTTAGAATAATTCTAAAC C         
+Jann_3276_p-123(dps)          1  2.95e-08          . AGTTTAGAATTATTCTAGAC A         
+EE36_01790_p-116(dps)         1  3.64e-08          . AGTTTAGAATAATTCCAAAA A         
+ROS217_11126_p-30(mbfA)       1  3.64e-08          . AGTTTAGAATTATTCTAAAA G         
+RB2654_18613_p-52(fssA)       1  4.02e-08          . GACTTGGAACGATTCCAAGC T         
+OG2516_03700_p-131(iscR)      1  5.37e-08          . TGTTTAGAAGTGTTCTAAAC T         
+OB2597_10089_p-79(fssA)       1  5.88e-08          . GAATTAGAACGGTTCTAAAT C         
+Jann_0865_p-79(fssA)          1  5.88e-08          . ACTTTAGAACGATTCCAGTT C         
+SPO0330_p-72(ccpA)            1  6.45e-08          . ATGTTAGAATGATTCTAATC G         
+SKA53_14466_p-85(katG)        1  6.45e-08          . ATGTTAGAAGGATTCTAAGC G         
+OB2597_03589_p-114(iscR)      1  8.42e-08          . ACCTTAGAAAGATTCTAAAG C         
+MED193_04321_p-124(iscR)      1  9.97e-08          . ATCTTAGAACAATTCTAATT G         
+RB2654_13154_p-46(irpA)       1  9.97e-08          . TGATTGGAACCATTCCAAAT T         
+TM1040_2791_p-146(katG)       1  2.08e-07          . AACTTAGAATAATTCTGAAC T         
+OB2597_06815_p-85(bfr)        1  2.87e-07          . TTTTTGGAATAATTCTAAAT T         
+RSP_0850_p-29(mbfA)           1  2.87e-07          . AATTTAGAATGACTCTAAAA A         
+RSP_2395_p-87(ccpA)           1  6.74e-07          . AGATTAGAATTGATCTAAGT C         
+EE36_11399_p-111(katG)        1  9.15e-07          . ctgTTAGAAcAATTCcAgAa a         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ROS217_10487_p-76(fssA)           3.5e-10  [+1]_1
+SKA53_14701_p-78(fssA)            3.5e-10  [+1]_1
+EE36_09510_p-76(fssA)             8.5e-10  [+1]_1
+RB2654_16991_p-30(mbfA)           8.5e-10  [+1]_1
+ISM_16015_p-129(iscR)             2.2e-09  [+1]_1
+SKA53_05183_p-111(iscR)           2.2e-09  [+1]_1
+ROS217_20542_p-100(iscR)          2.6e-09  [+1]_1
+SPO2025_p-121(iscR)               4.2e-09  [+1]_1
+TM1040_1240_p-117(iscR)           5.7e-09  [+1]_1
+ROS217_11501_p-75(ccpA)           7.5e-09  [+1]_1
+EE36_14302_p-116(iscR)            9.9e-09  [+1]_1
+SPO0382_p-76(fssA)                1.5e-08  [+1]_1
+SKA53_14166_p-32(mbfA)            1.5e-08  [+1]_1
+SPO3842_p-32(mbfA)                1.7e-08  [+1]_1
+ISM_16225_p-92(katG)              1.9e-08  [+1]_1
+ISM_08740_p-39(mbfA)              2.1e-08  [+1]_1
+TM1040_3091_p-74(fssA)            2.4e-08  [+1]_1
+ISM_02850_p-77(fssA)              2.6e-08  [+1]_1
+Jann_2366_p-137(iscR)             2.6e-08  [+1]_1
+MED193_10358_p-75(fssA)             3e-08  [+1]_1
+Jann_3276_p-123(dps)                3e-08  [+1]_1
+EE36_01790_p-116(dps)             3.6e-08  [+1]_1
+ROS217_11126_p-30(mbfA)           3.6e-08  [+1]_1
+RB2654_18613_p-52(fssA)             4e-08  [+1]_1
+OG2516_03700_p-131(iscR)          5.4e-08  [+1]_1
+OB2597_10089_p-79(fssA)           5.9e-08  [+1]_1
+Jann_0865_p-79(fssA)              5.9e-08  [+1]_1
+SPO0330_p-72(ccpA)                6.4e-08  [+1]_1
+SKA53_14466_p-85(katG)            6.4e-08  [+1]_1
+OB2597_03589_p-114(iscR)          8.4e-08  [+1]_1
+MED193_04321_p-124(iscR)            1e-07  [+1]_1
+RB2654_13154_p-46(irpA)             1e-07  [+1]_1
+TM1040_2791_p-146(katG)           2.1e-07  [+1]_1
+OB2597_06815_p-85(bfr)            2.9e-07  [+1]_1
+RSP_0850_p-29(mbfA)               2.9e-07  [+1]_1
+RSP_2395_p-87(ccpA)               6.7e-07  [+1]_1
+EE36_11399_p-111(katG)            9.1e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ANYTTAGAAYBRTTCYAAAY width=20 seqs=37
+ROS217_10487_p-76(fssA)  (    1) ATCTTAGAATGGTTCTAAAC  1 
+SKA53_14701_p-78(fssA)   (    1) AGTTTAGAATCGTTCCAAAT  1 
+EE36_09510_p-76(fssA)    (    1) AACTTAGAATCGTTCCAAAC  1 
+RB2654_16991_p-30(mbfA)  (    1) AGTTTGGAATCGTTCCAAAC  1 
+ISM_16015_p-129(iscR)    (    1) ACTTTAGAACTGTTCTAAAC  1 
+SKA53_05183_p-111(iscR)  (    1) ACCTTAGAAGGATTCTAAAC  1 
+ROS217_20542_p-100(iscR) (    1) ACCTTAGAACTGTTCTAAAT  1 
+SPO2025_p-121(iscR)      (    1) ATCTTAGAATGGTTCTAAGT  1 
+TM1040_1240_p-117(iscR)  (    1) ACCTTAGAACTGTTCTAAAG  1 
+ROS217_11501_p-75(ccpA)  (    1) GATTTAGAATGGTTCCAAAC  1 
+EE36_14302_p-116(iscR)   (    1) AGTTTAGAACGGTTCTAACT  1 
+SPO0382_p-76(fssA)       (    1) TCTTTAGAACCGTTCCAAAG  1 
+SKA53_14166_p-32(mbfA)   (    1) AGATTAGAATCATTCTAAAT  1 
+SPO3842_p-32(mbfA)       (    1) ATCTTGGAATCATTCTAAAT  1 
+ISM_16225_p-92(katG)     (    1) CGCTTAGAACGATTCCAAGG  1 
+ISM_08740_p-39(mbfA)     (    1) AGTTTAGAATCATTCTAATT  1 
+TM1040_3091_p-74(fssA)   (    1) AATTTAGAACCATTCCAAAA  1 
+ISM_02850_p-77(fssA)     (    1) TTTTTAGAATCGTTCCAAAT  1 
+Jann_2366_p-137(iscR)    (    1) ACCCTAGAACGATTCCAAAT  1 
+MED193_10358_p-75(fssA)  (    1) AATTTAGAATAATTCTAAAC  1 
+Jann_3276_p-123(dps)     (    1) AGTTTAGAATTATTCTAGAC  1 
+EE36_01790_p-116(dps)    (    1) AGTTTAGAATAATTCCAAAA  1 
+ROS217_11126_p-30(mbfA)  (    1) AGTTTAGAATTATTCTAAAA  1 
+RB2654_18613_p-52(fssA)  (    1) GACTTGGAACGATTCCAAGC  1 
+OG2516_03700_p-131(iscR) (    1) TGTTTAGAAGTGTTCTAAAC  1 
+OB2597_10089_p-79(fssA)  (    1) GAATTAGAACGGTTCTAAAT  1 
+Jann_0865_p-79(fssA)     (    1) ACTTTAGAACGATTCCAGTT  1 
+SPO0330_p-72(ccpA)       (    1) ATGTTAGAATGATTCTAATC  1 
+SKA53_14466_p-85(katG)   (    1) ATGTTAGAAGGATTCTAAGC  1 
+OB2597_03589_p-114(iscR) (    1) ACCTTAGAAAGATTCTAAAG  1 
+MED193_04321_p-124(iscR) (    1) ATCTTAGAACAATTCTAATT  1 
+RB2654_13154_p-46(irpA)  (    1) TGATTGGAACCATTCCAAAT  1 
+TM1040_2791_p-146(katG)  (    1) AACTTAGAATAATTCTGAAC  1 
+OB2597_06815_p-85(bfr)   (    1) TTTTTGGAATAATTCTAAAT  1 
+RSP_0850_p-29(mbfA)      (    1) AATTTAGAATGACTCTAAAA  1 
+RSP_2395_p-87(ccpA)      (    1) AGATTAGAATTGATCTAAGT  1 
+EE36_11399_p-111(katG)   (    1) CTGTTAGAACAATTCCAGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 74 bayes= 2.85244 E= 7.4e-194 
+    99   -159    -82   -128 
+   -76     41    118    -43 
+  -176    111    -82     49 
+ -1185   -259  -1185    157 
+ -1185  -1185  -1185    161 
+   124  -1185     -9  -1185 
+ -1185  -1185    280  -1185 
+   145  -1185  -1185  -1185 
+   145  -1185  -1185  -1185 
+  -376    122    -82     65 
+  -117     73    140    -79 
+    70  -1185    150  -1185 
+  -376   -259  -1185    153 
+ -1185  -1185  -1185    161 
+ -1185    262  -1185  -1185 
+ -1185    122  -1185     92 
+   141  -1185   -241  -1185 
+   133  -1185    -82  -1185 
+    99   -259     -9   -160 
+  -144    111    -41     31 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 37 E= 7.4e-194 
+ 0.729730  0.054054  0.081081  0.135135 
+ 0.216216  0.216216  0.324324  0.243243 
+ 0.108108  0.351351  0.081081  0.459459 
+ 0.000000  0.027027  0.000000  0.972973 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.864865  0.000000  0.135135  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.027027  0.378378  0.081081  0.513514 
+ 0.162162  0.270270  0.378378  0.189189 
+ 0.594595  0.000000  0.405405  0.000000 
+ 0.027027  0.027027  0.000000  0.945946 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.378378  0.000000  0.621622 
+ 0.972973  0.000000  0.027027  0.000000 
+ 0.918919  0.000000  0.081081  0.000000 
+ 0.729730  0.027027  0.135135  0.108108 
+ 0.135135  0.351351  0.108108  0.405405 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ANYTTAGAAYBRTTCYAAAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[GTAC][TC]TTAGAA[TC][GC][AG]TTC[TC]AAA[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_0850_p-29(mbfA)              5.74e-07  [+1(2.87e-07)]_1
+RSP_2395_p-87(ccpA)              1.35e-06  [+1(6.74e-07)]_1
+Jann_2366_p-137(iscR)            5.30e-08  [+1(2.65e-08)]_1
+Jann_0865_p-79(fssA)             1.18e-07  [+1(5.88e-08)]_1
+Jann_3276_p-123(dps)             5.91e-08  [+1(2.95e-08)]_1
+RB2654_13154_p-46(irpA)          1.99e-07  [+1(9.97e-08)]_1
+RB2654_18613_p-52(fssA)          8.04e-08  [+1(4.02e-08)]_1
+RB2654_16991_p-30(mbfA)          1.70e-09  [+1(8.50e-10)]_1
+OG2516_03700_p-131(iscR)         1.07e-07  [+1(5.37e-08)]_1
+SKA53_05183_p-111(iscR)          4.41e-09  [+1(2.21e-09)]_1
+SKA53_14701_p-78(fssA)           7.07e-10  [+1(3.53e-10)]_1
+SKA53_14166_p-32(mbfA)           2.93e-08  [+1(1.46e-08)]_1
+SKA53_14466_p-85(katG)           1.29e-07  [+1(6.45e-08)]_1
+OB2597_03589_p-114(iscR)         1.68e-07  [+1(8.42e-08)]_1
+OB2597_10089_p-79(fssA)          1.18e-07  [+1(5.88e-08)]_1
+OB2597_06815_p-85(bfr)           5.74e-07  [+1(2.87e-07)]_1
+ISM_16015_p-129(iscR)            4.41e-09  [+1(2.21e-09)]_1
+ISM_02850_p-77(fssA)             5.30e-08  [+1(2.65e-08)]_1
+ISM_08740_p-39(mbfA)             4.22e-08  [+1(2.11e-08)]_1
+ISM_16225_p-92(katG)             3.75e-08  [+1(1.88e-08)]_1
+ROS217_20542_p-100(iscR)         5.15e-09  [+1(2.58e-09)]_1
+ROS217_10487_p-76(fssA)          7.07e-10  [+1(3.53e-10)]_1
+ROS217_11126_p-30(mbfA)          7.28e-08  [+1(3.64e-08)]_1
+ROS217_11501_p-75(ccpA)          1.51e-08  [+1(7.54e-09)]_1
+EE36_11399_p-111(katG)           1.83e-06  [+1(9.15e-07)]_1
+EE36_14302_p-116(iscR)           1.98e-08  [+1(9.89e-09)]_1
+EE36_09510_p-76(fssA)            1.70e-09  [+1(8.50e-10)]_1
+EE36_01790_p-116(dps)            7.28e-08  [+1(3.64e-08)]_1
+TM1040_1240_p-117(iscR)          1.14e-08  [+1(5.68e-09)]_1
+TM1040_3091_p-74(fssA)           4.74e-08  [+1(2.37e-08)]_1
+TM1040_2791_p-146(katG)          4.15e-07  [+1(2.08e-07)]_1
+SPO2025_p-121(iscR)              8.44e-09  [+1(4.22e-09)]_1
+SPO0382_p-76(fssA)               2.93e-08  [+1(1.46e-08)]_1
+SPO3842_p-32(mbfA)               3.31e-08  [+1(1.65e-08)]_1
+SPO0330_p-72(ccpA)               1.29e-07  [+1(6.45e-08)]_1
+MED193_04321_p-124(iscR)         1.99e-07  [+1(9.97e-08)]_1
+MED193_10358_p-75(fssA)          5.91e-08  [+1(2.95e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

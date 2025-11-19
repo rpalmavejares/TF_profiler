@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/PhnF_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rmet_0767_p-155(phnF)    1.0000     22  Rmet_0766_p-29(phnG)     1.0000     22  
+Reut_B4185_p-243(phnF)   1.0000     22  Reut_B4186_p-29(phnG)    1.0000     22  
+H16_B1288_p-26(phnG)     1.0000     22  H16_B1289_p-174(phnF)    1.0000     22  
+RALTA_B1191_p-23(phnG)   1.0000     22  RALTA_B1192_p-174(phnF)  1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/PhnF_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/PhnF_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             176    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    176    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.312 C 0.188 G 0.188 T 0.312 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.311 C 0.189 G 0.189 T 0.311 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YCTAWACGTMTAKACGTWTAGR MEME-1	width =  22  sites =   8  llr = 201  E-value = 1.0e-049
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a4a:::5:a:a:::5:a:5
+pos.-specific     C  5a::1:a::5::::a:::::::
+probability       G  :::::::a::::5::a:1::a5
+matrix            T  5:a:5:::a:a:5:::a4a:::
+
+         bits    2.4  *    **      **    * 
+                 2.2  *    **      **    * 
+                 1.9  *    **      **    * 
+                 1.7  *** **** ** **** *** 
+Relative         1.4  *** **** ** **** *** 
+Entropy          1.2  *** **** ** **** *** 
+(36.2 bits)      1.0 **** ************ ****
+                 0.7 **** ************ ****
+                 0.5 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           CCTATACGTATAGACGTATAGA
+consensus            T   A    C  T    T   G
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+RALTA_B1192_p-174(phnF)       1  3.88e-12          . CCTATACGTCTATACGTTTAGA           
+RALTA_B1191_p-23(phnG)        1  3.88e-12          . TCTAAACGTATAGACGTATAGG           
+H16_B1289_p-174(phnF)         1  3.88e-12          . CCTATACGTCTATACGTTTAGA           
+H16_B1288_p-26(phnG)          1  3.88e-12          . TCTAAACGTATAGACGTATAGG           
+Rmet_0766_p-29(phnG)          1  3.88e-12          . TCTAAACGTATAGACGTATAGG           
+Rmet_0767_p-155(phnF)         1  3.88e-12          . CCTATACGTCTATACGTTTAGA           
+Reut_B4186_p-29(phnG)         1  8.92e-12          . TCTACACGTATAGACGTATAGG           
+Reut_B4185_p-243(phnF)        1  8.92e-12          . CCTATACGTCTATACGTGTAGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_B1192_p-174(phnF)           3.9e-12  [+1]
+RALTA_B1191_p-23(phnG)            3.9e-12  [+1]
+H16_B1289_p-174(phnF)             3.9e-12  [+1]
+H16_B1288_p-26(phnG)              3.9e-12  [+1]
+Rmet_0766_p-29(phnG)              3.9e-12  [+1]
+Rmet_0767_p-155(phnF)             3.9e-12  [+1]
+Reut_B4186_p-29(phnG)             8.9e-12  [+1]
+Reut_B4185_p-243(phnF)            8.9e-12  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YCTAWACGTMTAKACGTWTAGR width=22 seqs=8
+RALTA_B1192_p-174(phnF)  (    1) CCTATACGTCTATACGTTTAGA  1 
+RALTA_B1191_p-23(phnG)   (    1) TCTAAACGTATAGACGTATAGG  1 
+H16_B1289_p-174(phnF)    (    1) CCTATACGTCTATACGTTTAGA  1 
+H16_B1288_p-26(phnG)     (    1) TCTAAACGTATAGACGTATAGG  1 
+Rmet_0766_p-29(phnG)     (    1) TCTAAACGTATAGACGTATAGG  1 
+Rmet_0767_p-155(phnF)    (    1) CCTATACGTCTATACGTTTAGA  1 
+Reut_B4186_p-29(phnG)    (    1) TCTACACGTATAGACGTATAGG  1 
+Reut_B4185_p-243(phnF)   (    1) CCTATACGTCTATACGTGTAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 8 bayes= 0.584963 E= 1.0e-049 
+  -965    140   -965     68 
+  -965    240   -965   -965 
+  -965   -965   -965    168 
+   168   -965   -965   -965 
+    27    -59   -965     68 
+   168   -965   -965   -965 
+  -965    240   -965   -965 
+  -965   -965    240   -965 
+  -965   -965   -965    168 
+    68    140   -965   -965 
+  -965   -965   -965    168 
+   168   -965   -965   -965 
+  -965   -965    140     68 
+   168   -965   -965   -965 
+  -965    240   -965   -965 
+  -965   -965    240   -965 
+  -965   -965   -965    168 
+    68   -965    -59     27 
+  -965   -965   -965    168 
+   168   -965   -965   -965 
+  -965   -965    240   -965 
+    68   -965    140   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 8 E= 1.0e-049 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.375000  0.125000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.125000  0.375000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YCTAWACGTMTAKACGTWTAGR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT]CTA[TA]ACGT[AC]TA[GT]ACGT[AT]TAG[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_0767_p-155(phnF)            3.88e-12  [+1(3.88e-12)]
+Rmet_0766_p-29(phnG)             3.88e-12  [+1(3.88e-12)]
+Reut_B4185_p-243(phnF)           8.92e-12  [+1(8.92e-12)]
+Reut_B4186_p-29(phnG)            8.92e-12  [+1(8.92e-12)]
+H16_B1288_p-26(phnG)             3.88e-12  [+1(3.88e-12)]
+H16_B1289_p-174(phnF)            3.88e-12  [+1(3.88e-12)]
+RALTA_B1191_p-23(phnG)           3.88e-12  [+1(3.88e-12)]
+RALTA_B1192_p-174(phnF)          3.88e-12  [+1(3.88e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

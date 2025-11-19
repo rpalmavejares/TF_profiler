@@ -1,0 +1,399 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= HexR_Pseudomonadaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Avin_17630(zwf)Score=6.9 1.0000     20  Avin_15710(pgl)Score=7,P 1.0000     20  
+Avin_27260(zwf)Score=5.5 1.0000     20  Avin_27270(hexR)Score=5. 1.0000     20  
+Avin_15700(hexR)Score=7, 1.0000     20  PA3183(zwf)Score=7.8,Pos 1.0000     20  
+PA3194(edd)Score=7.9,Pos 1.0000     20  PA3184(hexR)Score=7.8,Po 1.0000     20  
+PA3195(gapA)Score=7.9,Po 1.0000     20  PSEEN4417(edd)Score=7,Po 1.0000     20  
+PSEEN4405(zwf)Score=7.8, 1.0000     20  PSEEN4417(edd)Score=7.5, 1.0000     20  
+PSEEN4406(hexR)Score=7.8 1.0000     20  PSEEN4418(gapA)Score=7,P 1.0000     20  
+PSEEN4418(gapA)Score=7.5 1.0000     20  PFL_4622(edd)Score=7,Pos 1.0000     20  
+PFL_4610(zwf)Score=7.8,P 1.0000     20  PFL_4622(edd)Score=7.5,P 1.0000     20  
+PFL_4611(hexR)Score=7.8P 1.0000     20  PFL_4623(gapA)Score=7,Po 1.0000     20  
+PFL_4623(gapA)Score=7.5, 1.0000     20  Pmen_1312(edd)Score=6.5, 1.0000     20  
+Pmen_3143(zwf)Score=8.1, 1.0000     20  Pmen_1147(glk)Score=7.7, 1.0000     20  
+Pmen_1312(edd)Score=7.5, 1.0000     20  Pmen_3144(hexR)Score=8.1 1.0000     20  
+Pmen_1311(gapA)Score=6.3 1.0000     20  Pmen_1311(gapA)Score=7.5 1.0000     20  
+PP1010(edd)Score=7,Pos=- 1.0000     20  PP1022(zwf)Score=7.8,Pos 1.0000     20  
+PP1010(edd)Score=7.5,Pos 1.0000     20  PP_1021(hexR)Score=7.8,P 1.0000     20  
+PP1009(gapA)Score=7,Pos= 1.0000     20  PP1009(gapA)Score=7.5,Po 1.0000     20  
+PST_3497(zwf)Score=7.8,P 1.0000     20  PST_3500(edd)Score=6.6,P 1.0000     20  
+PST_3498(hexR)Score=7.8, 1.0000     20  PST_2444(edd)Score=6.8,P 1.0000     20  
+PSPTO1288(edd)Score=6.9, 1.0000     20  PSPTO1300(zwf)Score=7.8, 1.0000     20  
+PSPTO1288(edd)Score=7.5, 1.0000     20  PSPTO1299(hexR)Score=7.8 1.0000     20  
+PSPTO1287(gapA)Score=6.3 1.0000     20  PSPTO1287(gapA)Score=7.5 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna HexR_Pseudomonadaceae.fasta -oc HexR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           20
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       44    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             880    N=              44    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.326 C 0.174 G 0.173 T 0.327 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.326 C 0.174 G 0.173 T 0.327 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  20  sites =  44  llr = 552  E-value = 1.3e-196
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:::2::333333a:8a293
+pos.-specific     C  :11::::222222:a::7::
+probability       G  ::8::9:222222::::11:
+matrix            T  491a8:a333333::2:::7
+
+         bits    2.5               *     
+                 2.3               *     
+                 2.0      *        *     
+                 1.8      *        *     
+Relative         1.5    * **      ** *   
+Entropy          1.3   ** **      ** **  
+(18.1 bits)      1.0  *** **      ** *** 
+                 0.8 *******      *******
+                 0.5 *******      *******
+                 0.3 *******      *******
+                 0.0 --------------------
+
+Multilevel           ATGTTGTTTTTTTACAACAT
+consensus            T   A  AAAAAA  T   A
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Pmen_3144(hexR)Score=8.1      1  1.25e-08          . ATGTTGTNNNNNNACAACAT           
+Pmen_3143(zwf)Score=8.1,      1  1.25e-08          . ATGTTGTNNNNNNACAACAT           
+PA3195(gapA)Score=7.9,Po      1  2.50e-08          . TTGTTGTNNNNNNACAACAT           
+PA3194(edd)Score=7.9,Pos      1  3.74e-08          . ATGTTGTNNNNNNACAACAA           
+PSPTO1299(hexR)Score=7.8      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+PST_3498(hexR)Score=7.8,      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+PP_1021(hexR)Score=7.8,P      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+Pmen_1147(glk)Score=7.7,      1  6.23e-08          . TTGTTGTNNNNNNACAACAA           
+PFL_4611(hexR)Score=7.8P      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+PSEEN4406(hexR)Score=7.8      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+PA3184(hexR)Score=7.8,Po      1  6.23e-08          . ATGTAGTNNNNNNACAACAT           
+PSPTO1300(zwf)Score=7.8,      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PST_3497(zwf)Score=7.8,P      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PP1022(zwf)Score=7.8,Pos      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PFL_4610(zwf)Score=7.8,P      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PSEEN4405(zwf)Score=7.8,      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PA3183(zwf)Score=7.8,Pos      1  7.48e-08          . ATGTTGTNNNNNNACTACAT           
+PSPTO1288(edd)Score=7.5,      1  2.55e-07          . TTGTTGTNNNNNNACAAGAT           
+PP1010(edd)Score=7.5,Pos      1  2.55e-07          . TTGTTGTNNNNNNACAAGAT           
+Pmen_1312(edd)Score=7.5,      1  2.55e-07          . TTGTTGTNNNNNNACAAGAT           
+PFL_4622(edd)Score=7.5,P      1  2.55e-07          . TTGTTGTNNNNNNACAAGAT           
+PSEEN4417(edd)Score=7.5,      1  2.55e-07          . TTGTTGTNNNNNNACAAGAT           
+PSPTO1287(gapA)Score=7.5      1  3.47e-07          . ATCTTGTNNNNNNACAACAA           
+PP1009(gapA)Score=7.5,Po      1  3.47e-07          . ATCTTGTNNNNNNACAACAA           
+Pmen_1311(gapA)Score=7.5      1  3.47e-07          . ATCTTGTNNNNNNACAACAA           
+PFL_4623(gapA)Score=7.5,      1  3.47e-07          . ATCTTGTNNNNNNACAACAA           
+PSEEN4418(gapA)Score=7.5      1  3.47e-07          . ATCTTGTNNNNNNACAACAA           
+Avin_15710(pgl)Score=7,P      1  7.24e-07          . TCGTAGTNNNNNNACAACAT           
+Avin_15700(hexR)Score=7,      1  9.85e-07          . ATGTTGTNNNNNNACtACga           
+Avin_17630(zwf)Score=6.9      1  1.49e-06          . TTGTTTTNNNNNNACAACAT           
+PP1009(gapA)Score=7,Pos=      1  1.59e-06          . TCGTTGTNNNNNNACAAAAT           
+PFL_4623(gapA)Score=7,Po      1  1.59e-06          . TCGTTGTNNNNNNACAAAAT           
+PSEEN4418(gapA)Score=7,P      1  1.59e-06          . TCGTTGTNNNNNNACAAAAT           
+PP1010(edd)Score=7,Pos=-      1  2.17e-06          . ATtTTGTNNNNNNACAACga           
+PFL_4622(edd)Score=7,Pos      1  2.17e-06          . ATtTTGTNNNNNNACAACga           
+PSEEN4417(edd)Score=7,Po      1  2.17e-06          . ATTTTGTNNNNNNACAACGA           
+PST_2444(edd)Score=6.8,P      1  4.48e-06          . tgGTTGTNNNNNNACAAaAT           
+PSPTO1288(edd)Score=6.9,      1  9.36e-06          . ATtTTGTNNNNNNACAACta           
+PST_3500(edd)Score=6.6,P      1  1.07e-05          . TTGTTATNNNNNNACTACAA           
+Pmen_1311(gapA)Score=6.3      1  1.44e-05          . TTGTATTNNNNNNACAAAAT           
+PSPTO1287(gapA)Score=6.3      1  1.59e-05          . TTGTAGANNNNNNACAAAAT           
+Pmen_1312(edd)Score=6.5,      1  2.03e-05          . ATtTTGTNNNNNNACAAaca           
+Avin_27260(zwf)Score=5.5      1  3.73e-05          . ATGTaGTNNNNNNACgcaAT           
+Avin_27270(hexR)Score=5.      1  4.44e-05          . ATtgcGTNNNNNNACtACAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pmen_3144(hexR)Score=8.1          1.2e-08  [+1]
+Pmen_3143(zwf)Score=8.1,          1.2e-08  [+1]
+PA3195(gapA)Score=7.9,Po          2.5e-08  [+1]
+PA3194(edd)Score=7.9,Pos          3.7e-08  [+1]
+PSPTO1299(hexR)Score=7.8          6.2e-08  [+1]
+PST_3498(hexR)Score=7.8,          6.2e-08  [+1]
+PP_1021(hexR)Score=7.8,P          6.2e-08  [+1]
+Pmen_1147(glk)Score=7.7,          6.2e-08  [+1]
+PFL_4611(hexR)Score=7.8P          6.2e-08  [+1]
+PSEEN4406(hexR)Score=7.8          6.2e-08  [+1]
+PA3184(hexR)Score=7.8,Po          6.2e-08  [+1]
+PSPTO1300(zwf)Score=7.8,          7.5e-08  [+1]
+PST_3497(zwf)Score=7.8,P          7.5e-08  [+1]
+PP1022(zwf)Score=7.8,Pos          7.5e-08  [+1]
+PFL_4610(zwf)Score=7.8,P          7.5e-08  [+1]
+PSEEN4405(zwf)Score=7.8,          7.5e-08  [+1]
+PA3183(zwf)Score=7.8,Pos          7.5e-08  [+1]
+PSPTO1288(edd)Score=7.5,          2.5e-07  [+1]
+PP1010(edd)Score=7.5,Pos          2.5e-07  [+1]
+Pmen_1312(edd)Score=7.5,          2.5e-07  [+1]
+PFL_4622(edd)Score=7.5,P          2.5e-07  [+1]
+PSEEN4417(edd)Score=7.5,          2.5e-07  [+1]
+PSPTO1287(gapA)Score=7.5          3.5e-07  [+1]
+PP1009(gapA)Score=7.5,Po          3.5e-07  [+1]
+Pmen_1311(gapA)Score=7.5          3.5e-07  [+1]
+PFL_4623(gapA)Score=7.5,          3.5e-07  [+1]
+PSEEN4418(gapA)Score=7.5          3.5e-07  [+1]
+Avin_15710(pgl)Score=7,P          7.2e-07  [+1]
+Avin_15700(hexR)Score=7,          9.9e-07  [+1]
+Avin_17630(zwf)Score=6.9          1.5e-06  [+1]
+PP1009(gapA)Score=7,Pos=          1.6e-06  [+1]
+PFL_4623(gapA)Score=7,Po          1.6e-06  [+1]
+PSEEN4418(gapA)Score=7,P          1.6e-06  [+1]
+PP1010(edd)Score=7,Pos=-          2.2e-06  [+1]
+PFL_4622(edd)Score=7,Pos          2.2e-06  [+1]
+PSEEN4417(edd)Score=7,Po          2.2e-06  [+1]
+PST_2444(edd)Score=6.8,P          4.5e-06  [+1]
+PSPTO1288(edd)Score=6.9,          9.4e-06  [+1]
+PST_3500(edd)Score=6.6,P          1.1e-05  [+1]
+Pmen_1311(gapA)Score=6.3          1.4e-05  [+1]
+PSPTO1287(gapA)Score=6.3          1.6e-05  [+1]
+Pmen_1312(edd)Score=6.5,            2e-05  [+1]
+Avin_27260(zwf)Score=5.5          3.7e-05  [+1]
+Avin_27270(hexR)Score=5.          4.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=20 seqs=44
+Pmen_3144(hexR)Score=8.1 (    1) ATGTTGTNNNNNNACAACAT  1 
+Pmen_3143(zwf)Score=8.1, (    1) ATGTTGTNNNNNNACAACAT  1 
+PA3195(gapA)Score=7.9,Po (    1) TTGTTGTNNNNNNACAACAT  1 
+PA3194(edd)Score=7.9,Pos (    1) ATGTTGTNNNNNNACAACAA  1 
+PSPTO1299(hexR)Score=7.8 (    1) ATGTAGTNNNNNNACAACAT  1 
+PST_3498(hexR)Score=7.8, (    1) ATGTAGTNNNNNNACAACAT  1 
+PP_1021(hexR)Score=7.8,P (    1) ATGTAGTNNNNNNACAACAT  1 
+Pmen_1147(glk)Score=7.7, (    1) TTGTTGTNNNNNNACAACAA  1 
+PFL_4611(hexR)Score=7.8P (    1) ATGTAGTNNNNNNACAACAT  1 
+PSEEN4406(hexR)Score=7.8 (    1) ATGTAGTNNNNNNACAACAT  1 
+PA3184(hexR)Score=7.8,Po (    1) ATGTAGTNNNNNNACAACAT  1 
+PSPTO1300(zwf)Score=7.8, (    1) ATGTTGTNNNNNNACTACAT  1 
+PST_3497(zwf)Score=7.8,P (    1) ATGTTGTNNNNNNACTACAT  1 
+PP1022(zwf)Score=7.8,Pos (    1) ATGTTGTNNNNNNACTACAT  1 
+PFL_4610(zwf)Score=7.8,P (    1) ATGTTGTNNNNNNACTACAT  1 
+PSEEN4405(zwf)Score=7.8, (    1) ATGTTGTNNNNNNACTACAT  1 
+PA3183(zwf)Score=7.8,Pos (    1) ATGTTGTNNNNNNACTACAT  1 
+PSPTO1288(edd)Score=7.5, (    1) TTGTTGTNNNNNNACAAGAT  1 
+PP1010(edd)Score=7.5,Pos (    1) TTGTTGTNNNNNNACAAGAT  1 
+Pmen_1312(edd)Score=7.5, (    1) TTGTTGTNNNNNNACAAGAT  1 
+PFL_4622(edd)Score=7.5,P (    1) TTGTTGTNNNNNNACAAGAT  1 
+PSEEN4417(edd)Score=7.5, (    1) TTGTTGTNNNNNNACAAGAT  1 
+PSPTO1287(gapA)Score=7.5 (    1) ATCTTGTNNNNNNACAACAA  1 
+PP1009(gapA)Score=7.5,Po (    1) ATCTTGTNNNNNNACAACAA  1 
+Pmen_1311(gapA)Score=7.5 (    1) ATCTTGTNNNNNNACAACAA  1 
+PFL_4623(gapA)Score=7.5, (    1) ATCTTGTNNNNNNACAACAA  1 
+PSEEN4418(gapA)Score=7.5 (    1) ATCTTGTNNNNNNACAACAA  1 
+Avin_15710(pgl)Score=7,P (    1) TCGTAGTNNNNNNACAACAT  1 
+Avin_15700(hexR)Score=7, (    1) ATGTTGTNNNNNNACTACGA  1 
+Avin_17630(zwf)Score=6.9 (    1) TTGTTTTNNNNNNACAACAT  1 
+PP1009(gapA)Score=7,Pos= (    1) TCGTTGTNNNNNNACAAAAT  1 
+PFL_4623(gapA)Score=7,Po (    1) TCGTTGTNNNNNNACAAAAT  1 
+PSEEN4418(gapA)Score=7,P (    1) TCGTTGTNNNNNNACAAAAT  1 
+PP1010(edd)Score=7,Pos=- (    1) ATTTTGTNNNNNNACAACGA  1 
+PFL_4622(edd)Score=7,Pos (    1) ATTTTGTNNNNNNACAACGA  1 
+PSEEN4417(edd)Score=7,Po (    1) ATTTTGTNNNNNNACAACGA  1 
+PST_2444(edd)Score=6.8,P (    1) TGGTTGTNNNNNNACAAAAT  1 
+PSPTO1288(edd)Score=6.9, (    1) ATTTTGTNNNNNNACAACTA  1 
+PST_3500(edd)Score=6.6,P (    1) TTGTTATNNNNNNACTACAA  1 
+Pmen_1311(gapA)Score=6.3 (    1) TTGTATTNNNNNNACAAAAT  1 
+PSPTO1287(gapA)Score=6.3 (    1) TTGTAGANNNNNNACAAAAT  1 
+Pmen_1312(edd)Score=6.5, (    1) ATTTTGTNNNNNNACAAACA  1 
+Avin_27260(zwf)Score=5.5 (    1) ATGTAGTNNNNNNACGCAAT  1 
+Avin_27270(hexR)Score=5. (    1) ATTGCGTNNNNNNACTACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 44 bayes= 1.69188 E= 1.3e-196 
+    97  -1210  -1210     15 
+ -1210    -94   -293    144 
+ -1210    -62    212   -126 
+ -1210  -1210   -293    158 
+   -52   -294  -1210    120 
+  -384  -1210    243   -284 
+  -384  -1210  -1210    158 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+   162  -1210  -1210  -1210 
+ -1210    252  -1210  -1210 
+   125  -1210   -293    -68 
+   158   -294  -1210  -1210 
+   -84    202    -61  -1210 
+   141   -294    -93   -384 
+    -3  -1210  -1210    106 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 44 E= 1.3e-196 
+ 0.636364  0.000000  0.000000  0.363636 
+ 0.000000  0.090909  0.022727  0.886364 
+ 0.000000  0.113636  0.750000  0.136364 
+ 0.000000  0.000000  0.022727  0.977273 
+ 0.227273  0.022727  0.000000  0.750000 
+ 0.022727  0.000000  0.931818  0.045455 
+ 0.022727  0.000000  0.000000  0.977273 
+ 0.325792  0.174208  0.173077  0.326923 
+ 0.325792  0.174208  0.173077  0.326923 
+ 0.325792  0.174208  0.173077  0.326923 
+ 0.325792  0.174208  0.173077  0.326923 
+ 0.325792  0.174208  0.173077  0.326923 
+ 0.325792  0.174208  0.173077  0.326923 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.772727  0.000000  0.022727  0.204545 
+ 0.977273  0.022727  0.000000  0.000000 
+ 0.181818  0.704545  0.113636  0.000000 
+ 0.863636  0.022727  0.090909  0.022727 
+ 0.318182  0.000000  0.000000  0.681818 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[AT]TGT[TA]GT[TA][TA][TA][TA][TA][TA]AC[AT]ACA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Avin_17630(zwf)Score=6.9         1.49e-06  [+1(1.49e-06)]
+Avin_15710(pgl)Score=7,P         7.24e-07  [+1(7.24e-07)]
+Avin_27260(zwf)Score=5.5         3.73e-05  [+1(3.73e-05)]
+Avin_27270(hexR)Score=5.         4.44e-05  [+1(4.44e-05)]
+Avin_15700(hexR)Score=7,         9.85e-07  [+1(9.85e-07)]
+PA3183(zwf)Score=7.8,Pos         7.48e-08  [+1(7.48e-08)]
+PA3194(edd)Score=7.9,Pos         3.74e-08  [+1(3.74e-08)]
+PA3184(hexR)Score=7.8,Po         6.23e-08  [+1(6.23e-08)]
+PA3195(gapA)Score=7.9,Po         2.50e-08  [+1(2.50e-08)]
+PSEEN4417(edd)Score=7,Po         2.17e-06  [+1(2.17e-06)]
+PSEEN4405(zwf)Score=7.8,         7.48e-08  [+1(7.48e-08)]
+PSEEN4417(edd)Score=7.5,         2.55e-07  [+1(2.55e-07)]
+PSEEN4406(hexR)Score=7.8         6.23e-08  [+1(6.23e-08)]
+PSEEN4418(gapA)Score=7,P         1.59e-06  [+1(1.59e-06)]
+PSEEN4418(gapA)Score=7.5         3.47e-07  [+1(3.47e-07)]
+PFL_4622(edd)Score=7,Pos         2.17e-06  [+1(2.17e-06)]
+PFL_4610(zwf)Score=7.8,P         7.48e-08  [+1(7.48e-08)]
+PFL_4622(edd)Score=7.5,P         2.55e-07  [+1(2.55e-07)]
+PFL_4611(hexR)Score=7.8P         6.23e-08  [+1(6.23e-08)]
+PFL_4623(gapA)Score=7,Po         1.59e-06  [+1(1.59e-06)]
+PFL_4623(gapA)Score=7.5,         3.47e-07  [+1(3.47e-07)]
+Pmen_1312(edd)Score=6.5,         2.03e-05  [+1(2.03e-05)]
+Pmen_3143(zwf)Score=8.1,         1.25e-08  [+1(1.25e-08)]
+Pmen_1147(glk)Score=7.7,         6.23e-08  [+1(6.23e-08)]
+Pmen_1312(edd)Score=7.5,         2.55e-07  [+1(2.55e-07)]
+Pmen_3144(hexR)Score=8.1         1.25e-08  [+1(1.25e-08)]
+Pmen_1311(gapA)Score=6.3         1.44e-05  [+1(1.44e-05)]
+Pmen_1311(gapA)Score=7.5         3.47e-07  [+1(3.47e-07)]
+PP1010(edd)Score=7,Pos=-         2.17e-06  [+1(2.17e-06)]
+PP1022(zwf)Score=7.8,Pos         7.48e-08  [+1(7.48e-08)]
+PP1010(edd)Score=7.5,Pos         2.55e-07  [+1(2.55e-07)]
+PP_1021(hexR)Score=7.8,P         6.23e-08  [+1(6.23e-08)]
+PP1009(gapA)Score=7,Pos=         1.59e-06  [+1(1.59e-06)]
+PP1009(gapA)Score=7.5,Po         3.47e-07  [+1(3.47e-07)]
+PST_3497(zwf)Score=7.8,P         7.48e-08  [+1(7.48e-08)]
+PST_3500(edd)Score=6.6,P         1.07e-05  [+1(1.07e-05)]
+PST_3498(hexR)Score=7.8,         6.23e-08  [+1(6.23e-08)]
+PST_2444(edd)Score=6.8,P         4.48e-06  [+1(4.48e-06)]
+PSPTO1288(edd)Score=6.9,         9.36e-06  [+1(9.36e-06)]
+PSPTO1300(zwf)Score=7.8,         7.48e-08  [+1(7.48e-08)]
+PSPTO1288(edd)Score=7.5,         2.55e-07  [+1(2.55e-07)]
+PSPTO1299(hexR)Score=7.8         6.23e-08  [+1(6.23e-08)]
+PSPTO1287(gapA)Score=6.3         1.59e-05  [+1(1.59e-05)]
+PSPTO1287(gapA)Score=7.5         3.47e-07  [+1(3.47e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

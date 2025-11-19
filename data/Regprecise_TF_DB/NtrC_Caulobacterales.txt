@@ -1,0 +1,263 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NtrC_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC1339_p-208(glnK)       1.0000     17  CC1968_p-141(glnB)       1.0000     17  
+CC1739_p-70(nifR3)       1.0000     17  CC0614_p-31(narK)        1.0000     17  
+CC0614_p-7(narK)         1.0000     17  Cseg_1636_p-206(glnK)    1.0000     17  
+Cseg_1980_p-10(nifR3)    1.0000     17  Caul_2957_p-235(narK)    1.0000     17  
+Caul_2171_p-201(glnK)    1.0000     17  Caul_2852_p-141(glnB)    1.0000     17  
+Caul_2957_p-211(narK)    1.0000     17  Caul_2604_p-10(nifR3)    1.0000     17  
+PHZ_c1361_p-211(glnK)    1.0000     17  PHZ_c1573_p-140(glnB)    1.0000     17  
+PHZ_c1732_p-10(nifR3)    1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NtrC_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NtrC_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             255    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    255    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.282 C 0.227 G 0.231 T 0.259 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.282 C 0.228 G 0.232 T 0.259 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YGCTYADWWWWTGRGCR MEME-1	width =  17  sites =  15  llr = 178  E-value = 1.7e-047
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::211935553:35::6
+pos.-specific     C  4:836:111122:::a:
+probability       G  :a:::121:1::749:4
+matrix            T  6::63:434358:11::
+
+         bits    2.1  *             * 
+                 1.9  *             * 
+                 1.7  *            ** 
+                 1.5  *   *        ** 
+Relative         1.3  **  *     ** ** 
+Entropy          1.1 ***  *     ** ***
+(17.1 bits)      0.9 *** **     ** ***
+                 0.6 ******     ******
+                 0.4 ****** ** *******
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TGCTCATAAATTGAGCA
+consensus            C ACT ATTTACAG  G
+sequence                   G   C      
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Cseg_1636_p-206(glnK)         1  9.31e-08          . CGCTCAAAAATTAGGCG           
+Cseg_1980_p-10(nifR3)         1  1.47e-07          . TGATCATAAAATGAGCA           
+Caul_2171_p-201(glnK)         1  1.71e-07          . CGCCCAATATTTGGGCG           
+CC0614_p-7(narK)              1  2.25e-07          . CGCTCATTTGCTGAGCA           
+Caul_2604_p-10(nifR3)         1  4.25e-07          . TGCATATAAAATGAGCA           
+CC1339_p-208(glnK)            1  6.01e-07          . CGCTCAACTTTTGGGCG           
+PHZ_c1732_p-10(nifR3)         1  8.31e-07          . TGATTAGAAAATGAGCA           
+PHZ_c1361_p-211(glnK)         1  1.02e-06          . TGCACAGAAATCGGGCG           
+Caul_2852_p-141(glnB)         1  1.50e-06          . TGCTCAAATTCCAGGCA           
+CC0614_p-31(narK)             1  1.50e-06          . TGCTAAAATCTTGAGCG           
+CC1739_p-70(nifR3)            1  2.75e-06          . TGATTACAAAATGAGCA           
+PHZ_c1573_p-140(glnB)         1  3.48e-06          . CGCCCATTCCTTAGGCG           
+Caul_2957_p-235(narK)         1  8.44e-06          . TGCTCATGCATCGTGCA           
+Caul_2957_p-211(narK)         1  8.97e-06          . TGCCTGTTTGCTGAGCA           
+CC1968_p-141(glnB)            1  1.47e-05          . CGCCTAGTTTTTAATCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cseg_1636_p-206(glnK)             9.3e-08  [+1]
+Cseg_1980_p-10(nifR3)             1.5e-07  [+1]
+Caul_2171_p-201(glnK)             1.7e-07  [+1]
+CC0614_p-7(narK)                  2.2e-07  [+1]
+Caul_2604_p-10(nifR3)             4.2e-07  [+1]
+CC1339_p-208(glnK)                  6e-07  [+1]
+PHZ_c1732_p-10(nifR3)             8.3e-07  [+1]
+PHZ_c1361_p-211(glnK)               1e-06  [+1]
+Caul_2852_p-141(glnB)             1.5e-06  [+1]
+CC0614_p-31(narK)                 1.5e-06  [+1]
+CC1739_p-70(nifR3)                2.8e-06  [+1]
+PHZ_c1573_p-140(glnB)             3.5e-06  [+1]
+Caul_2957_p-235(narK)             8.4e-06  [+1]
+Caul_2957_p-211(narK)               9e-06  [+1]
+CC1968_p-141(glnB)                1.5e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YGCTYADWWWWTGRGCR width=17 seqs=15
+Cseg_1636_p-206(glnK)    (    1) CGCTCAAAAATTAGGCG  1 
+Cseg_1980_p-10(nifR3)    (    1) TGATCATAAAATGAGCA  1 
+Caul_2171_p-201(glnK)    (    1) CGCCCAATATTTGGGCG  1 
+CC0614_p-7(narK)         (    1) CGCTCATTTGCTGAGCA  1 
+Caul_2604_p-10(nifR3)    (    1) TGCATATAAAATGAGCA  1 
+CC1339_p-208(glnK)       (    1) CGCTCAACTTTTGGGCG  1 
+PHZ_c1732_p-10(nifR3)    (    1) TGATTAGAAAATGAGCA  1 
+PHZ_c1361_p-211(glnK)    (    1) TGCACAGAAATCGGGCG  1 
+Caul_2852_p-141(glnB)    (    1) TGCTCAAATTCCAGGCA  1 
+CC0614_p-31(narK)        (    1) TGCTAAAATCTTGAGCG  1 
+CC1739_p-70(nifR3)       (    1) TGATTACAAAATGAGCA  1 
+PHZ_c1573_p-140(glnB)    (    1) CGCCCATTCCTTAGGCG  1 
+Caul_2957_p-235(narK)    (    1) TGCTCATGCATCGTGCA  1 
+Caul_2957_p-211(narK)    (    1) TGCCTGTTTGCTGAGCA  1 
+CC1968_p-141(glnB)       (    1) CGCCTAGTTTTTAATCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 15 bayes= 1.17688 E= 1.7e-047 
+ -1055     81  -1055    121 
+ -1055  -1055    211  -1055 
+   -49    181  -1055  -1055 
+  -108     23  -1055    121 
+  -208    140  -1055     37 
+   173  -1055   -179  -1055 
+    24   -177    -21     63 
+    92   -177   -179     37 
+    73    -77  -1055     63 
+    73    -77    -80      4 
+    -8    -19  -1055    104 
+ -1055    -19  -1055    163 
+    -8  -1055    166  -1055 
+    92  -1055     79   -195 
+ -1055  -1055    201   -195 
+ -1055    213  -1055  -1055 
+   109  -1055     79  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 15 E= 1.7e-047 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.133333  0.266667  0.000000  0.600000 
+ 0.066667  0.600000  0.000000  0.333333 
+ 0.933333  0.000000  0.066667  0.000000 
+ 0.333333  0.066667  0.200000  0.400000 
+ 0.533333  0.066667  0.066667  0.333333 
+ 0.466667  0.133333  0.000000  0.400000 
+ 0.466667  0.133333  0.133333  0.266667 
+ 0.266667  0.200000  0.000000  0.533333 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.266667  0.000000  0.733333  0.000000 
+ 0.533333  0.000000  0.400000  0.066667 
+ 0.000000  0.000000  0.933333  0.066667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.400000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGCTYADWWWWTGRGCR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]G[CA][TC][CT]A[TAG][AT][AT][AT][TAC][TC][GA][AG]GC[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC1339_p-208(glnK)               6.01e-07  [+1(6.01e-07)]
+CC1968_p-141(glnB)               1.47e-05  [+1(1.47e-05)]
+CC1739_p-70(nifR3)               2.75e-06  [+1(2.75e-06)]
+CC0614_p-31(narK)                1.50e-06  [+1(1.50e-06)]
+CC0614_p-7(narK)                 2.25e-07  [+1(2.25e-07)]
+Cseg_1636_p-206(glnK)            9.31e-08  [+1(9.31e-08)]
+Cseg_1980_p-10(nifR3)            1.47e-07  [+1(1.47e-07)]
+Caul_2957_p-235(narK)            8.44e-06  [+1(8.44e-06)]
+Caul_2171_p-201(glnK)            1.71e-07  [+1(1.71e-07)]
+Caul_2852_p-141(glnB)            1.50e-06  [+1(1.50e-06)]
+Caul_2957_p-211(narK)            8.97e-06  [+1(8.97e-06)]
+Caul_2604_p-10(nifR3)            4.25e-07  [+1(4.25e-07)]
+PHZ_c1361_p-211(glnK)            1.02e-06  [+1(1.02e-06)]
+PHZ_c1573_p-140(glnB)            3.48e-06  [+1(3.48e-06)]
+PHZ_c1732_p-10(nifR3)            8.31e-07  [+1(8.31e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

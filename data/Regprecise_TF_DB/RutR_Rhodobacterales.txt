@@ -1,0 +1,476 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/RutR_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_0189_p-74(pydX)      1.0000     20  RSP_0186_p-80(rutR)      1.0000     20  
+RSP_0184_p-121(pydC)     1.0000     20  RSP_0184_p-87(pydC)      1.0000     20  
+RSP_0185_p-36(rutR)      1.0000     20  RSP_0185_p-70(rutR)      1.0000     20  
+Pden_1113_p-225(pydC)    1.0000     20  Jann_1306_p-36(codA)     1.0000     20  
+Jann_2709_p-57(praX)     1.0000     20  Jann_2713_p-76(pydX)     1.0000     20  
+Jann_2710_p-177(rutR)    1.0000     20  Jann_0789_p-65(deoC)     1.0000     20  
+RB2654_20823_p-29(cdd)   1.0000     20  RB2654_20923_p-186(pntD) 1.0000     20  
+RB2654_14990_p-337(pydX) 1.0000     20  RB2654_07801_p-61(rutR)  1.0000     20  
+RB2654_10383_p-26(deoC)  1.0000     20  RB2654_14955_p-233(pydC) 1.0000     20  
+OG2516_10926_p-62(pydX)  1.0000     20  OG2516_10906_p-92(rutR)  1.0000     20  
+OG2516_07892_p-75(deoC)  1.0000     20  OG2516_10901_p-69(pydC)  1.0000     20  
+SKA53_10689_p-67(pydX)   1.0000     20  SKA53_10679_p-143(rutR)  1.0000     20  
+SKA53_09929_p-59(deoC)   1.0000     20  SKA53_10674_p-39(pydC)   1.0000     20  
+OB2597_04355_p-66(pydX)  1.0000     20  OB2597_04330_p-177(rutR) 1.0000     20  
+OB2597_04325_p-43(pydC)  1.0000     20  ISM_13640_p-75(pydX)     1.0000     20  
+ISM_13625_p-147(rutR)    1.0000     20  ISM_11210_p-53(pytM)     1.0000     20  
+ISM_13620_p-41(pydC)     1.0000     20  ROS217_12316_p-58(rutR)  1.0000     20  
+ROS217_06720_p-69(pydX)  1.0000     20  ROS217_10977_p-44(pytM)  1.0000     20  
+ROS217_12311_p-33(pydC)  1.0000     20  EE36_09043_p-72(pydX)    1.0000     20  
+EE36_09053_p-128(rutR)   1.0000     20  EE36_09058_p-61(pydC)    1.0000     20  
+TM1040_1572_p-52(cdd)    1.0000     20  TM1040_3094_p-122(pntD)  1.0000     20  
+TM1040_1501_p-91(pydX)   1.0000     20  TM1040_1499_p-156(rutR)  1.0000     20  
+TM1040_0097_p-105(deoC)  1.0000     20  TM1040_1498_p-153(pydC)  1.0000     20  
+SPO2930_p-34(cdd)        1.0000     20  SPO0379_p-142(pntD)      1.0000     20  
+SPO1776_p-89(pydX)       1.0000     20  SPO1776_p-72(pydX)       1.0000     20  
+SPO1780_p-119(rutR)      1.0000     20  SPO3367_p-262(deoC)      1.0000     20  
+SPO2802_p11(pytM)        1.0000     20  SPO1781_p-64(pydC)       1.0000     20  
+MED193_06029_p-97(upp)   1.0000     20  MED193_10378_p-154(pntD) 1.0000     20  
+MED193_05534_p-74(pydX)  1.0000     20  MED193_05524_p-155(rutR) 1.0000     20  
+MED193_12973_p-105(deoC) 1.0000     20  MED193_17244_p74(pytM)   1.0000     20  
+MED193_05484_p-60(pytD)  1.0000     20  MED193_05519_p-119(pydC) 1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/RutR_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/RutR_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       62    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1240    N=              62
+sample: seed=            0    hsfrac=          0
+        searchsize=   1240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.342 C 0.166 G 0.168 T 0.324 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.342 C 0.166 G 0.168 T 0.324 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTKACCADTTGGTMAAA MEME-1	width =  18  sites =  62  llr = 919  E-value = 6.6e-323
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:::a::6431:3:5a98
+pos.-specific     C  11:::9a::22:::5:::
+probability       G  :::6:::32::a7:::11
+matrix            T  8994::::457::a:::1
+
+         bits    2.6            *      
+                 2.3       *    *      
+                 2.1      **    *      
+                 1.8      **    *      
+Relative         1.6      **    **  *  
+Entropy          1.3  *  ***    *** ** 
+(21.4 bits)      1.0  ******    ****** 
+                 0.8  *******   *******
+                 0.5 ********  ********
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           TTTGACCAATTGGTCAAA
+consensus               T   GTA  A A   
+sequence                     G         
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+MED193_05519_p-119(pydC)      2  2.94e-11          G TTTGACCAGTTGGTCAAA T         
+SPO1781_p-64(pydC)            2  2.94e-11          G TTTGACCAGTTGGTCAAA T         
+TM1040_1498_p-153(pydC)       2  2.94e-11          G TTTGACCAGTTGGTCAAA T         
+OB2597_04325_p-43(pydC)       2  1.46e-10          C TTTGACCGATTGGTCAAA A         
+SKA53_09929_p-59(deoC)        2  1.46e-10          G TTTGACCAATTGGTCAAA A         
+MED193_05524_p-155(rutR)      2  2.21e-10          A TTTGACCAACTGGTCAAA C         
+SPO1780_p-119(rutR)           2  2.21e-10          A TTTGACCAACTGGTCAAA C         
+TM1040_1499_p-156(rutR)       2  2.21e-10          A TTTGACCAACTGGTCAAA C         
+SKA53_10674_p-39(pydC)        2  2.21e-10          T TTTGACCATCTGGTCAAA C         
+OB2597_04330_p-177(rutR)      2  3.87e-10          T TTTGACCAATCGGTCAAA G         
+SKA53_10679_p-143(rutR)       2  3.87e-10          G TTTGACCAGATGGTCAAA A         
+OG2516_07892_p-75(deoC)       2  8.15e-10          T TTTTACCGGTTGGTCAAA C         
+Jann_2709_p-57(praX)          2  1.81e-09          C CTTGACCGTTTGGTCAAA A         
+ROS217_10977_p-44(pytM)       2  3.88e-09          A TTTTACCAATTGGTAAAA C         
+Jann_0789_p-65(deoC)          2  6.47e-09          T TTTGACCGTTTGGTCAAC C         
+TM1040_1572_p-52(cdd)         2  1.16e-08          A TTTGACCATCCGATCAAA A         
+Jann_2710_p-177(rutR)         2  1.16e-08          T TTTGACCAAACGGTCAAG G         
+ISM_13625_p-147(rutR)         2  1.81e-08          A TTTTACCATTTGGTAAAG T         
+ISM_11210_p-53(pytM)          2  2.33e-08          T CTTTACCGTTTGGTAAAA T         
+OG2516_10901_p-69(pydC)       2  2.33e-08          C TTTAACCGATTGGTCAAA T         
+MED193_05534_p-74(pydX)       2  2.58e-08          A TTTTACCAGTTGATAAAA A         
+SPO1776_p-72(pydX)            2  2.58e-08          A TTTTACCAGTTGATAAAA T         
+TM1040_1501_p-91(pydX)        2  2.58e-08          A TTTTACCAGTTGATAAAA A         
+EE36_09043_p-72(pydX)         2  2.58e-08          A TTTTACCAGTTGATAAAA A         
+ROS217_06720_p-69(pydX)       2  2.97e-08          A TTTTACCAATTGATAAAA T         
+ISM_13640_p-75(pydX)          2  2.97e-08          A TTTTACCAATTGATAAAA T         
+OG2516_10926_p-62(pydX)       2  2.97e-08          A TTTTACCGTTTGATAAAA T         
+RB2654_14990_p-337(pydX)      2  2.97e-08          T TTTTACCAATTGATAAAA A         
+TM1040_3094_p-122(pntD)       2  5.51e-08          T TTAGACCGGCTGGTCAAA A         
+EE36_09053_p-128(rutR)        2  5.51e-08          T TTTTACCATTTGGTAAAT C         
+ISM_13620_p-41(pydC)          2  5.51e-08          A CTTTACCAAATGGTAAAA T         
+MED193_06029_p-97(upp)        2  6.19e-08          C TTTGACCATCAGATCAAA A         
+ROS217_12316_p-58(rutR)       2  6.19e-08          T TTTTACCATTTGGTAAAC T         
+RSP_0186_p-80(rutR)           2  6.19e-08          G TTTGACCGTCCGGTCAGG A         
+EE36_09058_p-61(pydC)         2  7.36e-08          G ATTTACCAAATGGTAAAA A         
+SPO0379_p-142(pntD)           2  8.01e-08          C TCGGACCATTCGGTCAAA A         
+OG2516_10906_p-92(rutR)       2  8.01e-08          A TTTGACCAATCGGTTAAA G         
+RB2654_14955_p-233(pydC)      2  1.19e-07          A TTTAACCGAATGGTAAAA A         
+ROS217_12311_p-33(pydC)       2  1.32e-07          A GTTTACCAAATGGTAAAA A         
+RB2654_20823_p-29(cdd)        2  1.42e-07          A CTGGACCATACGGTCAAA G         
+OB2597_04355_p-66(pydX)       2  1.69e-07          A ATTTACCATTTGATAAAA A         
+SKA53_10689_p-67(pydX)        2  1.69e-07          A ATTTACCGTTTGATAAAA A         
+RSP_0185_p-70(rutR)           2  2.01e-07          G TTCGACCATCCGGTCAGA T         
+RSP_0184_p-87(pydC)           2  2.01e-07          A TCTGACCGGATGGTCGAA C         
+MED193_12973_p-105(deoC)      2  2.44e-07          A TTTGTCCAAAAGGTCAAA T         
+Jann_2713_p-76(pydX)          2  2.66e-07          A TTTTACCATTTGATAAAT T         
+Jann_1306_p-36(codA)          2  2.66e-07          A TTTTACCATATGGTAAGG A         
+RB2654_07801_p-61(rutR)       2  3.41e-07          C GTTGATCATCTGGTCAAA T         
+MED193_05484_p-60(pytD)       2  4.75e-07          A TTTGATCGAAGGGTCAAA T         
+SPO3367_p-262(deoC)           2  4.75e-07          T TTTGTCCGAAAGGTAAAA T         
+SPO2930_p-34(cdd)             2  5.15e-07          T TCCGACCAGATGATCAAA A         
+RSP_0184_p-121(pydC)          2  5.15e-07          T ATTGACCGCTTGGTCAGG T         
+TM1040_0097_p-105(deoC)       2  6.47e-07          T TTTGTCCTTTTGGTAAAA A         
+RB2654_10383_p-26(deoC)       2  6.47e-07          A TTTGACCAAAAGGAAAAA T         
+RSP_0189_p-74(pydX)           2  6.97e-07          T ATTTATCGTTTGGTAAAA A         
+RB2654_20923_p-186(pntD)      2  8.12e-07          T TTTGAACGTCGGGTCAAA T         
+SPO1776_p-89(pydX)            2  1.17e-06          T TTTGACCGAAAGATAAAT T         
+Pden_1113_p-225(pydC)         2  1.46e-06          T ATTGACTGGTTGATAAAA T         
+MED193_17244_p74(pytM)        2  1.80e-06          T TTTTACCCTTTGGACAAG A         
+MED193_10378_p-154(pntD)      2  2.35e-06          T TCGCACCAAACGGTCAAA A         
+SPO2802_p11(pytM)             2  2.51e-06          A ATTGACTGCTCGGTAAAA A         
+RSP_0185_p-36(rutR)           2  2.51e-06          A CCTGACCAAGCGGTCAAT A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MED193_05519_p-119(pydC)          2.9e-11  1_[+1]_1
+SPO1781_p-64(pydC)                2.9e-11  1_[+1]_1
+TM1040_1498_p-153(pydC)           2.9e-11  1_[+1]_1
+OB2597_04325_p-43(pydC)           1.5e-10  1_[+1]_1
+SKA53_09929_p-59(deoC)            1.5e-10  1_[+1]_1
+MED193_05524_p-155(rutR)          2.2e-10  1_[+1]_1
+SPO1780_p-119(rutR)               2.2e-10  1_[+1]_1
+TM1040_1499_p-156(rutR)           2.2e-10  1_[+1]_1
+SKA53_10674_p-39(pydC)            2.2e-10  1_[+1]_1
+OB2597_04330_p-177(rutR)          3.9e-10  1_[+1]_1
+SKA53_10679_p-143(rutR)           3.9e-10  1_[+1]_1
+OG2516_07892_p-75(deoC)           8.1e-10  1_[+1]_1
+Jann_2709_p-57(praX)              1.8e-09  1_[+1]_1
+ROS217_10977_p-44(pytM)           3.9e-09  1_[+1]_1
+Jann_0789_p-65(deoC)              6.5e-09  1_[+1]_1
+TM1040_1572_p-52(cdd)             1.2e-08  1_[+1]_1
+Jann_2710_p-177(rutR)             1.2e-08  1_[+1]_1
+ISM_13625_p-147(rutR)             1.8e-08  1_[+1]_1
+ISM_11210_p-53(pytM)              2.3e-08  1_[+1]_1
+OG2516_10901_p-69(pydC)           2.3e-08  1_[+1]_1
+MED193_05534_p-74(pydX)           2.6e-08  1_[+1]_1
+SPO1776_p-72(pydX)                2.6e-08  1_[+1]_1
+TM1040_1501_p-91(pydX)            2.6e-08  1_[+1]_1
+EE36_09043_p-72(pydX)             2.6e-08  1_[+1]_1
+ROS217_06720_p-69(pydX)             3e-08  1_[+1]_1
+ISM_13640_p-75(pydX)                3e-08  1_[+1]_1
+OG2516_10926_p-62(pydX)             3e-08  1_[+1]_1
+RB2654_14990_p-337(pydX)            3e-08  1_[+1]_1
+TM1040_3094_p-122(pntD)           5.5e-08  1_[+1]_1
+EE36_09053_p-128(rutR)            5.5e-08  1_[+1]_1
+ISM_13620_p-41(pydC)              5.5e-08  1_[+1]_1
+MED193_06029_p-97(upp)            6.2e-08  1_[+1]_1
+ROS217_12316_p-58(rutR)           6.2e-08  1_[+1]_1
+RSP_0186_p-80(rutR)               6.2e-08  1_[+1]_1
+EE36_09058_p-61(pydC)             7.4e-08  1_[+1]_1
+SPO0379_p-142(pntD)                 8e-08  1_[+1]_1
+OG2516_10906_p-92(rutR)             8e-08  1_[+1]_1
+RB2654_14955_p-233(pydC)          1.2e-07  1_[+1]_1
+ROS217_12311_p-33(pydC)           1.3e-07  1_[+1]_1
+RB2654_20823_p-29(cdd)            1.4e-07  1_[+1]_1
+OB2597_04355_p-66(pydX)           1.7e-07  1_[+1]_1
+SKA53_10689_p-67(pydX)            1.7e-07  1_[+1]_1
+RSP_0185_p-70(rutR)                 2e-07  1_[+1]_1
+RSP_0184_p-87(pydC)                 2e-07  1_[+1]_1
+MED193_12973_p-105(deoC)          2.4e-07  1_[+1]_1
+Jann_2713_p-76(pydX)              2.7e-07  1_[+1]_1
+Jann_1306_p-36(codA)              2.7e-07  1_[+1]_1
+RB2654_07801_p-61(rutR)           3.4e-07  1_[+1]_1
+MED193_05484_p-60(pytD)           4.7e-07  1_[+1]_1
+SPO3367_p-262(deoC)               4.7e-07  1_[+1]_1
+SPO2930_p-34(cdd)                 5.1e-07  1_[+1]_1
+RSP_0184_p-121(pydC)              5.1e-07  1_[+1]_1
+TM1040_0097_p-105(deoC)           6.5e-07  1_[+1]_1
+RB2654_10383_p-26(deoC)           6.5e-07  1_[+1]_1
+RSP_0189_p-74(pydX)                 7e-07  1_[+1]_1
+RB2654_20923_p-186(pntD)          8.1e-07  1_[+1]_1
+SPO1776_p-89(pydX)                1.2e-06  1_[+1]_1
+Pden_1113_p-225(pydC)             1.5e-06  1_[+1]_1
+MED193_17244_p74(pytM)            1.8e-06  1_[+1]_1
+MED193_10378_p-154(pntD)          2.4e-06  1_[+1]_1
+SPO2802_p11(pytM)                 2.5e-06  1_[+1]_1
+RSP_0185_p-36(rutR)               2.5e-06  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTKACCADTTGGTMAAA width=18 seqs=62
+MED193_05519_p-119(pydC) (    2) TTTGACCAGTTGGTCAAA  1 
+SPO1781_p-64(pydC)       (    2) TTTGACCAGTTGGTCAAA  1 
+TM1040_1498_p-153(pydC)  (    2) TTTGACCAGTTGGTCAAA  1 
+OB2597_04325_p-43(pydC)  (    2) TTTGACCGATTGGTCAAA  1 
+SKA53_09929_p-59(deoC)   (    2) TTTGACCAATTGGTCAAA  1 
+MED193_05524_p-155(rutR) (    2) TTTGACCAACTGGTCAAA  1 
+SPO1780_p-119(rutR)      (    2) TTTGACCAACTGGTCAAA  1 
+TM1040_1499_p-156(rutR)  (    2) TTTGACCAACTGGTCAAA  1 
+SKA53_10674_p-39(pydC)   (    2) TTTGACCATCTGGTCAAA  1 
+OB2597_04330_p-177(rutR) (    2) TTTGACCAATCGGTCAAA  1 
+SKA53_10679_p-143(rutR)  (    2) TTTGACCAGATGGTCAAA  1 
+OG2516_07892_p-75(deoC)  (    2) TTTTACCGGTTGGTCAAA  1 
+Jann_2709_p-57(praX)     (    2) CTTGACCGTTTGGTCAAA  1 
+ROS217_10977_p-44(pytM)  (    2) TTTTACCAATTGGTAAAA  1 
+Jann_0789_p-65(deoC)     (    2) TTTGACCGTTTGGTCAAC  1 
+TM1040_1572_p-52(cdd)    (    2) TTTGACCATCCGATCAAA  1 
+Jann_2710_p-177(rutR)    (    2) TTTGACCAAACGGTCAAG  1 
+ISM_13625_p-147(rutR)    (    2) TTTTACCATTTGGTAAAG  1 
+ISM_11210_p-53(pytM)     (    2) CTTTACCGTTTGGTAAAA  1 
+OG2516_10901_p-69(pydC)  (    2) TTTAACCGATTGGTCAAA  1 
+MED193_05534_p-74(pydX)  (    2) TTTTACCAGTTGATAAAA  1 
+SPO1776_p-72(pydX)       (    2) TTTTACCAGTTGATAAAA  1 
+TM1040_1501_p-91(pydX)   (    2) TTTTACCAGTTGATAAAA  1 
+EE36_09043_p-72(pydX)    (    2) TTTTACCAGTTGATAAAA  1 
+ROS217_06720_p-69(pydX)  (    2) TTTTACCAATTGATAAAA  1 
+ISM_13640_p-75(pydX)     (    2) TTTTACCAATTGATAAAA  1 
+OG2516_10926_p-62(pydX)  (    2) TTTTACCGTTTGATAAAA  1 
+RB2654_14990_p-337(pydX) (    2) TTTTACCAATTGATAAAA  1 
+TM1040_3094_p-122(pntD)  (    2) TTAGACCGGCTGGTCAAA  1 
+EE36_09053_p-128(rutR)   (    2) TTTTACCATTTGGTAAAT  1 
+ISM_13620_p-41(pydC)     (    2) CTTTACCAAATGGTAAAA  1 
+MED193_06029_p-97(upp)   (    2) TTTGACCATCAGATCAAA  1 
+ROS217_12316_p-58(rutR)  (    2) TTTTACCATTTGGTAAAC  1 
+RSP_0186_p-80(rutR)      (    2) TTTGACCGTCCGGTCAGG  1 
+EE36_09058_p-61(pydC)    (    2) ATTTACCAAATGGTAAAA  1 
+SPO0379_p-142(pntD)      (    2) TCGGACCATTCGGTCAAA  1 
+OG2516_10906_p-92(rutR)  (    2) TTTGACCAATCGGTTAAA  1 
+RB2654_14955_p-233(pydC) (    2) TTTAACCGAATGGTAAAA  1 
+ROS217_12311_p-33(pydC)  (    2) GTTTACCAAATGGTAAAA  1 
+RB2654_20823_p-29(cdd)   (    2) CTGGACCATACGGTCAAA  1 
+OB2597_04355_p-66(pydX)  (    2) ATTTACCATTTGATAAAA  1 
+SKA53_10689_p-67(pydX)   (    2) ATTTACCGTTTGATAAAA  1 
+RSP_0185_p-70(rutR)      (    2) TTCGACCATCCGGTCAGA  1 
+RSP_0184_p-87(pydC)      (    2) TCTGACCGGATGGTCGAA  1 
+MED193_12973_p-105(deoC) (    2) TTTGTCCAAAAGGTCAAA  1 
+Jann_2713_p-76(pydX)     (    2) TTTTACCATTTGATAAAT  1 
+Jann_1306_p-36(codA)     (    2) TTTTACCATATGGTAAGG  1 
+RB2654_07801_p-61(rutR)  (    2) GTTGATCATCTGGTCAAA  1 
+MED193_05484_p-60(pytD)  (    2) TTTGATCGAAGGGTCAAA  1 
+SPO3367_p-262(deoC)      (    2) TTTGTCCGAAAGGTAAAA  1 
+SPO2930_p-34(cdd)        (    2) TCCGACCAGATGATCAAA  1 
+RSP_0184_p-121(pydC)     (    2) ATTGACCGCTTGGTCAGG  1 
+TM1040_0097_p-105(deoC)  (    2) TTTGTCCTTTTGGTAAAA  1 
+RB2654_10383_p-26(deoC)  (    2) TTTGACCAAAAGGAAAAA  1 
+RSP_0189_p-74(pydX)      (    2) ATTTATCGTTTGGTAAAA  1 
+RB2654_20923_p-186(pntD) (    2) TTTGAACGTCGGGTCAAA  1 
+SPO1776_p-89(pydX)       (    2) TTTGACCGAAAGATAAAT  1 
+Pden_1113_p-225(pydC)    (    2) ATTGACTGGTTGATAAAA  1 
+MED193_17244_p74(pytM)   (    2) TTTTACCCTTTGGACAAG  1 
+MED193_10378_p-154(pntD) (    2) TCGCACCAAACGGTCAAA  1 
+SPO2802_p11(pytM)        (    2) ATTGACTGCTCGGTAAAA  1 
+RSP_0185_p-36(rutR)      (    2) CCTGACCAAGCGGTCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 186 bayes= 3.61891 E= 6.6e-323 
+  -160   -104   -238    126 
+ -1260   -104  -1260    150 
+  -440   -237   -180    148 
+  -340   -336    179     20 
+   148  -1260  -1260   -274 
+  -440    249  -1260   -274 
+ -1260    254  -1260   -333 
+    92   -336     94   -432 
+    18   -237     32     20 
+   -40      9   -338     76 
+  -208      9   -238    113 
+ -1260  -1260    257  -1260 
+   -40  -1260    214  -1260 
+  -340  -1260  -1260    158 
+    40    168  -1260   -432 
+   153  -1260   -338  -1260 
+   145  -1260   -138  -1260 
+   124   -237    -80   -233 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 62 E= 6.6e-323 
+ 0.112903  0.080645  0.032258  0.774194 
+ 0.000000  0.080645  0.000000  0.919355 
+ 0.016129  0.032258  0.048387  0.903226 
+ 0.032258  0.016129  0.580645  0.370968 
+ 0.951613  0.000000  0.000000  0.048387 
+ 0.016129  0.935484  0.000000  0.048387 
+ 0.000000  0.967742  0.000000  0.032258 
+ 0.645161  0.016129  0.322581  0.016129 
+ 0.387097  0.032258  0.209677  0.370968 
+ 0.258065  0.177419  0.016129  0.548387 
+ 0.080645  0.177419  0.032258  0.709677 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.258065  0.000000  0.741935  0.000000 
+ 0.032258  0.000000  0.000000  0.967742 
+ 0.451613  0.532258  0.000000  0.016129 
+ 0.983871  0.000000  0.016129  0.000000 
+ 0.935484  0.000000  0.064516  0.000000 
+ 0.806452  0.032258  0.096774  0.064516 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTKACCADTTGGTMAAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTT[GT]ACC[AG][ATG][TA]TG[GA]T[CA]AAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_0189_p-74(pydX)              2.09e-06  1_[+1(6.97e-07)]_1
+RSP_0186_p-80(rutR)              1.86e-07  1_[+1(6.19e-08)]_1
+RSP_0184_p-121(pydC)             1.54e-06  1_[+1(5.15e-07)]_1
+RSP_0184_p-87(pydC)              6.03e-07  1_[+1(2.01e-07)]_1
+RSP_0185_p-36(rutR)              7.53e-06  1_[+1(2.51e-06)]_1
+RSP_0185_p-70(rutR)              6.03e-07  1_[+1(2.01e-07)]_1
+Pden_1113_p-225(pydC)            4.38e-06  1_[+1(1.46e-06)]_1
+Jann_1306_p-36(codA)             7.99e-07  1_[+1(2.66e-07)]_1
+Jann_2709_p-57(praX)             5.44e-09  1_[+1(1.81e-09)]_1
+Jann_2713_p-76(pydX)             7.99e-07  1_[+1(2.66e-07)]_1
+Jann_2710_p-177(rutR)            3.48e-08  1_[+1(1.16e-08)]_1
+Jann_0789_p-65(deoC)             1.94e-08  1_[+1(6.47e-09)]_1
+RB2654_20823_p-29(cdd)           4.26e-07  1_[+1(1.42e-07)]_1
+RB2654_20923_p-186(pntD)         2.43e-06  1_[+1(8.12e-07)]_1
+RB2654_14990_p-337(pydX)         8.91e-08  1_[+1(2.97e-08)]_1
+RB2654_07801_p-61(rutR)          1.02e-06  1_[+1(3.41e-07)]_1
+RB2654_10383_p-26(deoC)          1.94e-06  1_[+1(6.47e-07)]_1
+RB2654_14955_p-233(pydC)         3.56e-07  1_[+1(1.19e-07)]_1
+OG2516_10926_p-62(pydX)          8.91e-08  1_[+1(2.97e-08)]_1
+OG2516_10906_p-92(rutR)          2.40e-07  1_[+1(8.01e-08)]_1
+OG2516_07892_p-75(deoC)          2.44e-09  1_[+1(8.15e-10)]_1
+OG2516_10901_p-69(pydC)          6.98e-08  1_[+1(2.33e-08)]_1
+SKA53_10689_p-67(pydX)           5.08e-07  1_[+1(1.69e-07)]_1
+SKA53_10679_p-143(rutR)          1.16e-09  1_[+1(3.87e-10)]_1
+SKA53_09929_p-59(deoC)           4.38e-10  1_[+1(1.46e-10)]_1
+SKA53_10674_p-39(pydC)           6.62e-10  1_[+1(2.21e-10)]_1
+OB2597_04355_p-66(pydX)          5.08e-07  1_[+1(1.69e-07)]_1
+OB2597_04330_p-177(rutR)         1.16e-09  1_[+1(3.87e-10)]_1
+OB2597_04325_p-43(pydC)          4.38e-10  1_[+1(1.46e-10)]_1
+ISM_13640_p-75(pydX)             8.91e-08  1_[+1(2.97e-08)]_1
+ISM_13625_p-147(rutR)            5.42e-08  1_[+1(1.81e-08)]_1
+ISM_11210_p-53(pytM)             6.98e-08  1_[+1(2.33e-08)]_1
+ISM_13620_p-41(pydC)             1.65e-07  1_[+1(5.51e-08)]_1
+ROS217_12316_p-58(rutR)          1.86e-07  1_[+1(6.19e-08)]_1
+ROS217_06720_p-69(pydX)          8.91e-08  1_[+1(2.97e-08)]_1
+ROS217_10977_p-44(pytM)          1.16e-08  1_[+1(3.88e-09)]_1
+ROS217_12311_p-33(pydC)          3.97e-07  1_[+1(1.32e-07)]_1
+EE36_09043_p-72(pydX)            7.73e-08  1_[+1(2.58e-08)]_1
+EE36_09053_p-128(rutR)           1.65e-07  1_[+1(5.51e-08)]_1
+EE36_09058_p-61(pydC)            2.21e-07  1_[+1(7.36e-08)]_1
+TM1040_1572_p-52(cdd)            3.48e-08  1_[+1(1.16e-08)]_1
+TM1040_3094_p-122(pntD)          1.65e-07  1_[+1(5.51e-08)]_1
+TM1040_1501_p-91(pydX)           7.73e-08  1_[+1(2.58e-08)]_1
+TM1040_1499_p-156(rutR)          6.62e-10  1_[+1(2.21e-10)]_1
+TM1040_0097_p-105(deoC)          1.94e-06  1_[+1(6.47e-07)]_1
+TM1040_1498_p-153(pydC)          8.82e-11  1_[+1(2.94e-11)]_1
+SPO2930_p-34(cdd)                1.54e-06  1_[+1(5.15e-07)]_1
+SPO0379_p-142(pntD)              2.40e-07  1_[+1(8.01e-08)]_1
+SPO1776_p-89(pydX)               3.52e-06  1_[+1(1.17e-06)]_1
+SPO1776_p-72(pydX)               7.73e-08  1_[+1(2.58e-08)]_1
+SPO1780_p-119(rutR)              6.62e-10  1_[+1(2.21e-10)]_1
+SPO3367_p-262(deoC)              1.42e-06  1_[+1(4.75e-07)]_1
+SPO2802_p11(pytM)                7.53e-06  1_[+1(2.51e-06)]_1
+SPO1781_p-64(pydC)               8.82e-11  1_[+1(2.94e-11)]_1
+MED193_06029_p-97(upp)           1.86e-07  1_[+1(6.19e-08)]_1
+MED193_10378_p-154(pntD)         7.06e-06  1_[+1(2.35e-06)]_1
+MED193_05534_p-74(pydX)          7.73e-08  1_[+1(2.58e-08)]_1
+MED193_05524_p-155(rutR)         6.62e-10  1_[+1(2.21e-10)]_1
+MED193_12973_p-105(deoC)         7.32e-07  1_[+1(2.44e-07)]_1
+MED193_17244_p74(pytM)           5.40e-06  1_[+1(1.80e-06)]_1
+MED193_05484_p-60(pytD)          1.42e-06  1_[+1(4.75e-07)]_1
+MED193_05519_p-119(pydC)         8.82e-11  1_[+1(2.94e-11)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

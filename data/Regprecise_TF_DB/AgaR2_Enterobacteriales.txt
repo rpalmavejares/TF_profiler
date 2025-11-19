@@ -1,0 +1,195 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= AgaR2_Enterobacteriales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Spro_2577(agaR)Score=8.2 1.0000     25  Spro_3849(agaR)Score=7.3 1.0000     25  
+ETAE_0677(agaR)Score=8.2 1.0000     25  plu0832(agaR)Score=7.8,P 1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna AgaR2_Enterobacteriales.fasta -oc AgaR2_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           25
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=        4    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             100    N=               4    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.260 C 0.250 G 0.230 T 0.260 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.260 C 0.250 G 0.231 T 0.260 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =   8  sites =   4  llr = 31  E-value = 6.7e-001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  33::aaa:
+pos.-specific     C  33a::::3
+probability       G  22:a:::8
+matrix            T  33::::::
+
+         bits    2.1    *    
+                 1.9   ***** 
+                 1.7   ***** 
+                 1.5   ***** 
+Relative         1.3   ******
+Entropy          1.1   ******
+(11.2 bits)      0.8   ******
+                 0.6   ******
+                 0.4   ******
+                 0.2   ******
+                 0.0 --------
+
+Multilevel           AACGAAAG
+consensus            TT     C
+sequence             CC      
+                     GG      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+ETAE_0677(agaR)Score=8.2     18  2.35e-04 NNNNNNNNNN NNCGAAAG           
+Spro_3849(agaR)Score=7.3     18  2.35e-04 NNNNNNNNNN NNCGAAAG           
+Spro_2577(agaR)Score=8.2     18  2.35e-04 NNNNNNNNNN NNCGAAAG           
+plu0832(agaR)Score=7.8,P     18  4.89e-04 NNNNNNNNNN NNCGAAAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ETAE_0677(agaR)Score=8.2          0.00023  17_[+1]
+Spro_3849(agaR)Score=7.3          0.00023  17_[+1]
+Spro_2577(agaR)Score=8.2          0.00023  17_[+1]
+plu0832(agaR)Score=7.8,P          0.00049  17_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=8 seqs=4
+ETAE_0677(agaR)Score=8.2 (   18) NNCGAAAG  1 
+Spro_3849(agaR)Score=7.3 (   18) NNCGAAAG  1 
+Spro_2577(agaR)Score=8.2 (   18) NNCGAAAG  1 
+plu0832(agaR)Score=7.8,P (   18) NNCGAAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 72 bayes= 4.85798 E= 6.7e-001 
+     0      0      0      0 
+     0      0      0      0 
+  -865    200   -865   -865 
+  -865   -865    211   -865 
+   194   -865   -865   -865 
+   194   -865   -865   -865 
+   194   -865   -865   -865 
+  -865      0    170   -865 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 4 E= 6.7e-001 
+ 0.259615  0.250000  0.230769  0.259615 
+ 0.259615  0.250000  0.230769  0.259615 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.250000  0.750000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[ATCG][ATCG]CGAAA[GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Spro_2577(agaR)Score=8.2         4.22e-03  25
+Spro_3849(agaR)Score=7.3         4.22e-03  25
+ETAE_0677(agaR)Score=8.2         4.22e-03  25
+plu0832(agaR)Score=7.8,P         8.77e-03  25
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

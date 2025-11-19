@@ -1,0 +1,275 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagR_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sde_3605_p-200(chiA)     1.0000     18  Sde_3982_p-257(chiD)     1.0000     18  
+Sde_3982_p-288(chiD)     1.0000     18  Sde_3035_p-141(omp_nag)  1.0000     18  
+Sde_3035_p-106(omp_nag)  1.0000     18  Sde_3041_p-134(nagB2)    1.0000     18  
+TERTU_0808_p-164(omp_nag 1.0000     18  TERTU_0808_p-96(omp_nag) 1.0000     18  
+TERTU_0285_p-184(chiA)   1.0000     18  TERTU_0285_p-213(chiA)   1.0000     18  
+TERTU_0815_p-59(nagB2)   1.0000     18  CJA_3072_p-213(omp_nag)  1.0000     18  
+CJA_0287_p-81(hex)       1.0000     18  CJA_2191_p-139(cbp)      1.0000     18  
+CJA_1157_p-121(omp_nag)  1.0000     18  CJA_1157_p-85(omp_nag)   1.0000     18  
+CJA_0988_p-350(chiD)     1.0000     18  CJA_1069_p-223(omp_nag)  1.0000     18  
+CJA_1160_p-252(nagK)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagR_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagR_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             342    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    342    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.246 C 0.208 G 0.196 T 0.351 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.246 C 0.208 G 0.197 T 0.35 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGACAACGTTGTCW MEME-1	width =  14  sites =  19  llr = 316  E-value = 3.6e-098
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:9:a9:::::::4
+pos.-specific     C  1::a::a:1:::a1
+probability       G  191::1:a::a:::
+matrix            T  81::::::9a:a:5
+
+         bits    2.3    *  **  * * 
+                 2.1  * ** **  * * 
+                 1.9  * ** **  * * 
+                 1.6  *******  * * 
+Relative         1.4  ******* **** 
+Entropy          1.2  ************ 
+(24.0 bits)      0.9  ************ 
+                 0.7 ************* 
+                 0.5 **************
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           TGACAACGTTGTCT
+consensus                         A
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+TERTU_0815_p-59(nagB2)        3  3.78e-09         AA TGACAACGTTGTCA TT        
+TERTU_0808_p-96(omp_nag)      3  3.78e-09         CA TGACAACGTTGTCA TA        
+Sde_3035_p-141(omp_nag)       3  3.78e-09         TT TGACAACGTTGTCA AA        
+CJA_1160_p-252(nagK)          3  9.16e-09         TT TGACAACGTTGTCT CG        
+CJA_0988_p-350(chiD)          3  9.16e-09         TT TGACAACGTTGTCT CT        
+TERTU_0285_p-213(chiA)        3  9.16e-09         AT TGACAACGTTGTCT TC        
+TERTU_0285_p-184(chiA)        3  9.16e-09         TC TGACAACGTTGTCT TT        
+TERTU_0808_p-164(omp_nag      3  9.16e-09         GT TGACAACGTTGTCT TT        
+Sde_3041_p-134(nagB2)         3  9.16e-09         AA TGACAACGTTGTCT CG        
+Sde_3982_p-288(chiD)          3  9.16e-09         TT TGACAACGTTGTCT AT        
+Sde_3605_p-200(chiA)          3  9.16e-09         TT TGACAACGTTGTCT TT        
+CJA_1157_p-121(omp_nag)       3  1.24e-08         GT TGACAACGTTGTCC GT        
+Sde_3035_p-106(omp_nag)       3  1.24e-08         CA TGACAACGTTGTCC AT        
+CJA_0287_p-81(hex)            3  3.37e-08         CT GGACAACGTTGTCA GT        
+CJA_1157_p-85(omp_nag)        3  4.22e-08         AT CGACAACGTTGTCT TA        
+CJA_1069_p-223(omp_nag)       3  7.23e-08         AT TGACAGCGCTGTCA CA        
+CJA_3072_p-213(omp_nag)       3  7.23e-08         AT TGACAGCGCTGTCA TT        
+CJA_2191_p-139(cbp)           3  1.11e-07         AA AGGCAACGTTGTCA TT        
+Sde_3982_p-257(chiD)          3  1.52e-07         AG ATACAACGTTGTCA TT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TERTU_0815_p-59(nagB2)            3.8e-09  2_[+1]_2
+TERTU_0808_p-96(omp_nag)          3.8e-09  2_[+1]_2
+Sde_3035_p-141(omp_nag)           3.8e-09  2_[+1]_2
+CJA_1160_p-252(nagK)              9.2e-09  2_[+1]_2
+CJA_0988_p-350(chiD)              9.2e-09  2_[+1]_2
+TERTU_0285_p-213(chiA)            9.2e-09  2_[+1]_2
+TERTU_0285_p-184(chiA)            9.2e-09  2_[+1]_2
+TERTU_0808_p-164(omp_nag          9.2e-09  2_[+1]_2
+Sde_3041_p-134(nagB2)             9.2e-09  2_[+1]_2
+Sde_3982_p-288(chiD)              9.2e-09  2_[+1]_2
+Sde_3605_p-200(chiA)              9.2e-09  2_[+1]_2
+CJA_1157_p-121(omp_nag)           1.2e-08  2_[+1]_2
+Sde_3035_p-106(omp_nag)           1.2e-08  2_[+1]_2
+CJA_0287_p-81(hex)                3.4e-08  2_[+1]_2
+CJA_1157_p-85(omp_nag)            4.2e-08  2_[+1]_2
+CJA_1069_p-223(omp_nag)           7.2e-08  2_[+1]_2
+CJA_3072_p-213(omp_nag)           7.2e-08  2_[+1]_2
+CJA_2191_p-139(cbp)               1.1e-07  2_[+1]_2
+Sde_3982_p-257(chiD)              1.5e-07  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGACAACGTTGTCW width=14 seqs=19
+TERTU_0815_p-59(nagB2)   (    3) TGACAACGTTGTCA  1 
+TERTU_0808_p-96(omp_nag) (    3) TGACAACGTTGTCA  1 
+Sde_3035_p-141(omp_nag)  (    3) TGACAACGTTGTCA  1 
+CJA_1160_p-252(nagK)     (    3) TGACAACGTTGTCT  1 
+CJA_0988_p-350(chiD)     (    3) TGACAACGTTGTCT  1 
+TERTU_0285_p-213(chiA)   (    3) TGACAACGTTGTCT  1 
+TERTU_0285_p-184(chiA)   (    3) TGACAACGTTGTCT  1 
+TERTU_0808_p-164(omp_nag (    3) TGACAACGTTGTCT  1 
+Sde_3041_p-134(nagB2)    (    3) TGACAACGTTGTCT  1 
+Sde_3982_p-288(chiD)     (    3) TGACAACGTTGTCT  1 
+Sde_3605_p-200(chiA)     (    3) TGACAACGTTGTCT  1 
+CJA_1157_p-121(omp_nag)  (    3) TGACAACGTTGTCC  1 
+Sde_3035_p-106(omp_nag)  (    3) TGACAACGTTGTCC  1 
+CJA_0287_p-81(hex)       (    3) GGACAACGTTGTCA  1 
+CJA_1157_p-85(omp_nag)   (    3) CGACAACGTTGTCT  1 
+CJA_1069_p-223(omp_nag)  (    3) TGACAGCGCTGTCA  1 
+CJA_3072_p-213(omp_nag)  (    3) TGACAGCGCTGTCA  1 
+CJA_2191_p-139(cbp)      (    3) AGGCAACGTTGTCA  1 
+Sde_3982_p-257(chiD)     (    3) ATACAACGTTGTCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 95 bayes= 3.0555 E= 3.6e-098 
+  -122   -198   -190    117 
+ -1089  -1089    227   -273 
+   195  -1089   -190  -1089 
+ -1089    226  -1089  -1089 
+   202  -1089  -1089  -1089 
+   186  -1089    -90  -1089 
+ -1089    226  -1089  -1089 
+ -1089  -1089    235  -1089 
+ -1089    -98  -1089    135 
+ -1089  -1089  -1089    152 
+ -1089  -1089    235  -1089 
+ -1089  -1089  -1089    152 
+ -1089    226  -1089  -1089 
+    78    -98  -1089     44 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 19 E= 3.6e-098 
+ 0.105263  0.052632  0.052632  0.789474 
+ 0.000000  0.000000  0.947368  0.052632 
+ 0.947368  0.000000  0.052632  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.894737  0.000000  0.105263  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.105263  0.000000  0.894737 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.421053  0.105263  0.000000  0.473684 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGACAACGTTGTCW MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGACAACGTTGTC[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sde_3605_p-200(chiA)             4.58e-08  2_[+1(9.16e-09)]_2
+Sde_3982_p-257(chiD)             7.60e-07  2_[+1(1.52e-07)]_2
+Sde_3982_p-288(chiD)             4.58e-08  2_[+1(9.16e-09)]_2
+Sde_3035_p-141(omp_nag)          1.89e-08  2_[+1(3.78e-09)]_2
+Sde_3035_p-106(omp_nag)          6.18e-08  2_[+1(1.24e-08)]_2
+Sde_3041_p-134(nagB2)            4.58e-08  2_[+1(9.16e-09)]_2
+TERTU_0808_p-164(omp_nag         4.58e-08  2_[+1(9.16e-09)]_2
+TERTU_0808_p-96(omp_nag)         1.89e-08  2_[+1(3.78e-09)]_2
+TERTU_0285_p-184(chiA)           4.58e-08  2_[+1(9.16e-09)]_2
+TERTU_0285_p-213(chiA)           4.58e-08  2_[+1(9.16e-09)]_2
+TERTU_0815_p-59(nagB2)           1.89e-08  2_[+1(3.78e-09)]_2
+CJA_3072_p-213(omp_nag)          3.61e-07  2_[+1(7.23e-08)]_2
+CJA_0287_p-81(hex)               1.69e-07  2_[+1(3.37e-08)]_2
+CJA_2191_p-139(cbp)              5.54e-07  2_[+1(1.11e-07)]_2
+CJA_1157_p-121(omp_nag)          6.18e-08  2_[+1(1.24e-08)]_2
+CJA_1157_p-85(omp_nag)           2.11e-07  2_[+1(4.22e-08)]_2
+CJA_0988_p-350(chiD)             4.58e-08  2_[+1(9.16e-09)]_2
+CJA_1069_p-223(omp_nag)          3.61e-07  2_[+1(7.23e-08)]_2
+CJA_1160_p-252(nagK)             4.58e-08  2_[+1(9.16e-09)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,238 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/ArgR_Mycobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MAB_2336_p-37(argC)      1.0000     18  MAV_3118_p-37(argC)      1.0000     18  
+Mflv_3530_p-21(argC)     1.0000     18  ML1406_p-37(argC)        1.0000     18  
+MMAR_2462_p-37(argC)     1.0000     18  MSMEG_3776_p-27(argC)    1.0000     18  
+Mjls_2987_p-21(argC)     1.0000     18  Rv1652_p-21(argC)        1.0000     18  
+Mvan_3314_p-37(argC)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/ArgR_Mycobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/ArgR_Mycobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             162    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    162    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.16 G 0.167 T 0.377 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.295 C 0.163 G 0.169 T 0.373 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTGCRWAHTANTGCATA MEME-1	width =  18  sites =   9  llr = 142  E-value = 2.4e-035
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1:::6463273:::a1a
+pos.-specific     C  ::::a:1221:2::a:::
+probability       G  :::a:41:1:12:a::::
+matrix            T  a9a:::323722a:::9:
+
+         bits    2.6    **        **   
+                 2.4    **        **   
+                 2.1    **        **   
+                 1.8    **        *** *
+Relative         1.6    **        *** *
+Entropy          1.3 * ***       **** *
+(22.8 bits)      1.0 ******      ******
+                 0.8 ******      ******
+                 0.5 ****** * ** ******
+                 0.3 ****** * ** ******
+                 0.0 ------------------
+
+Multilevel           TTTGCAAAATAATGCATA
+consensus                 GTCTATC      
+sequence                    TC  G      
+                                T      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+ML1406_p-37(argC)             1  4.80e-10          . TTTGCGAAATAATGCATA           
+MMAR_2462_p-37(argC)          1  3.06e-09          . TTTGCGAAATATTGCATA           
+MAV_3118_p-37(argC)           1  3.06e-09          . TTTGCAAAGTACTGCATA           
+Mvan_3314_p-37(argC)          1  8.96e-09          . TTTGCGGCTTAGTGCATA           
+Rv1652_p-21(argC)             1  2.84e-08          . TTTGCAAACTGTTGCATA           
+Mjls_2987_p-21(argC)          1  7.24e-08          . TTTGCATTTAACTGCATA           
+MAB_2336_p-37(argC)           1  7.24e-08          . TTTGCGCTCTTGTGCATA           
+Mflv_3530_p-21(argC)          1  1.31e-07          . TTTGCATCTCTATGCATA           
+MSMEG_3776_p-27(argC)         1  2.93e-07          . TATGCATAAAAATGCAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ML1406_p-37(argC)                 4.8e-10  [+1]
+MMAR_2462_p-37(argC)              3.1e-09  [+1]
+MAV_3118_p-37(argC)               3.1e-09  [+1]
+Mvan_3314_p-37(argC)                9e-09  [+1]
+Rv1652_p-21(argC)                 2.8e-08  [+1]
+Mjls_2987_p-21(argC)              7.2e-08  [+1]
+MAB_2336_p-37(argC)               7.2e-08  [+1]
+Mflv_3530_p-21(argC)              1.3e-07  [+1]
+MSMEG_3776_p-27(argC)             2.9e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTGCRWAHTANTGCATA width=18 seqs=9
+ML1406_p-37(argC)        (    1) TTTGCGAAATAATGCATA  1 
+MMAR_2462_p-37(argC)     (    1) TTTGCGAAATATTGCATA  1 
+MAV_3118_p-37(argC)      (    1) TTTGCAAAGTACTGCATA  1 
+Mvan_3314_p-37(argC)     (    1) TTTGCGGCTTAGTGCATA  1 
+Rv1652_p-21(argC)        (    1) TTTGCAAACTGTTGCATA  1 
+Mjls_2987_p-21(argC)     (    1) TTTGCATTTAACTGCATA  1 
+MAB_2336_p-37(argC)      (    1) TTTGCGCTCTTGTGCATA  1 
+Mflv_3530_p-21(argC)     (    1) TTTGCATCTCTATGCATA  1 
+MSMEG_3776_p-27(argC)    (    1) TATGCATAAAAATGCAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 9 bayes= 0.719892 E= 2.4e-035 
+  -982   -982   -982    142 
+  -141   -982   -982    125 
+  -982   -982   -982    142 
+  -982   -982    257   -982 
+  -982    262   -982   -982 
+    91   -982    140   -982 
+    59    -55    -60    -16 
+    91     45   -982    -75 
+    18     45    -60    -16 
+   -41    -55   -982     84 
+   117   -982    -60    -75 
+    18     45     40    -75 
+  -982   -982   -982    142 
+  -982   -982    257   -982 
+  -982    262   -982   -982 
+   176   -982   -982   -982 
+  -141   -982   -982    125 
+   176   -982   -982   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 9 E= 2.4e-035 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.111111  0.000000  0.000000  0.888889 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.555556  0.000000  0.444444  0.000000 
+ 0.444444  0.111111  0.111111  0.333333 
+ 0.555556  0.222222  0.000000  0.222222 
+ 0.333333  0.222222  0.111111  0.333333 
+ 0.222222  0.111111  0.000000  0.666667 
+ 0.666667  0.000000  0.111111  0.222222 
+ 0.333333  0.222222  0.222222  0.222222 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.111111  0.000000  0.000000  0.888889 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTGCRWAHTANTGCATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTTGC[AG][AT][ACT][ATC][TA][AT][ACGT]TGCATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MAB_2336_p-37(argC)              7.24e-08  [+1(7.24e-08)]
+MAV_3118_p-37(argC)              3.06e-09  [+1(3.06e-09)]
+Mflv_3530_p-21(argC)             1.31e-07  [+1(1.31e-07)]
+ML1406_p-37(argC)                4.80e-10  [+1(4.80e-10)]
+MMAR_2462_p-37(argC)             3.06e-09  [+1(3.06e-09)]
+MSMEG_3776_p-27(argC)            2.93e-07  [+1(2.93e-07)]
+Mjls_2987_p-21(argC)             7.24e-08  [+1(7.24e-08)]
+Rv1652_p-21(argC)                2.84e-08  [+1(2.84e-08)]
+Mvan_3314_p-37(argC)             8.96e-09  [+1(8.96e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

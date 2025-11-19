@@ -1,0 +1,240 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/VanR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA4904_p-13(vanA)        1.0000     12  PA4904_p-222(vanA)       1.0000     12  
+PA4904_p-38(vanA)        1.0000     12  PA4903_p-168(vanK)       1.0000     12  
+PP3736_p-41(vanA)        1.0000     12  PP3736_p-126(vanA)       1.0000     12  
+PP3740_p-195(vanK)       1.0000     12  PSPTO2904_p-138(vanA)    1.0000     12  
+PSPTO2904_p-42(vanA)     1.0000     12  PFL_3480_p-203(vanK)     1.0000     12  
+PFL_3471_p-44(vanA)      1.0000     12  PFL_3471_p-150(vanA)     1.0000     12  
+PFL_3471_p-128(vanA)     1.0000     12  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/VanR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/VanR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           12
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             156    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    156    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.308 C 0.192 G 0.199 T 0.301 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.306 C 0.194 G 0.2 T 0.3 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGGATCCAWT MEME-1	width =  10  sites =  13  llr = 151  E-value = 1.3e-042
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::a:::932
+pos.-specific     C  :::::aa:11
+probability       G  :aa::::1::
+matrix            T  9:::a:::67
+
+         bits    2.4  **  **   
+                 2.1  **  **   
+                 1.9  **  **   
+                 1.7  ******   
+Relative         1.4 ********  
+Entropy          1.2 ********  
+(16.7 bits)      0.9 ********  
+                 0.7 ******** *
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           TGGATCCATT
+consensus                    AA
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+PFL_3471_p-44(vanA)           3  1.14e-06         AA TGGATCCATT           
+PFL_3480_p-203(vanK)          3  1.14e-06         TG TGGATCCATT           
+PSPTO2904_p-138(vanA)         3  1.14e-06         CA TGGATCCATT           
+PP3740_p-195(vanK)            3  1.14e-06         TG TGGATCCATT           
+PP3736_p-41(vanA)             3  1.14e-06         AA TGGATCCATT           
+PA4904_p-222(vanA)            3  1.14e-06         AT TGGATCCATT           
+PA4903_p-168(vanK)            3  2.31e-06         AA TGGATCCAAT           
+PA4904_p-38(vanA)             3  2.31e-06         AT TGGATCCAAT           
+PFL_3471_p-150(vanA)          3  3.47e-06         AA TGGATCCATA           
+PSPTO2904_p-42(vanA)          3  3.47e-06         TG TGGATCCATA           
+PP3736_p-126(vanA)            3  4.21e-06         AA TGGATCCACT           
+PFL_3471_p-128(vanA)          3  6.14e-06         AC TGGATCCAAA           
+PA4904_p-13(vanA)             3  2.63e-05         AG AGGATCCGAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PFL_3471_p-44(vanA)               1.1e-06  2_[+1]
+PFL_3480_p-203(vanK)              1.1e-06  2_[+1]
+PSPTO2904_p-138(vanA)             1.1e-06  2_[+1]
+PP3740_p-195(vanK)                1.1e-06  2_[+1]
+PP3736_p-41(vanA)                 1.1e-06  2_[+1]
+PA4904_p-222(vanA)                1.1e-06  2_[+1]
+PA4903_p-168(vanK)                2.3e-06  2_[+1]
+PA4904_p-38(vanA)                 2.3e-06  2_[+1]
+PFL_3471_p-150(vanA)              3.5e-06  2_[+1]
+PSPTO2904_p-42(vanA)              3.5e-06  2_[+1]
+PP3736_p-126(vanA)                4.2e-06  2_[+1]
+PFL_3471_p-128(vanA)              6.1e-06  2_[+1]
+PA4904_p-13(vanA)                 2.6e-05  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGGATCCAWT width=10 seqs=13
+PFL_3471_p-44(vanA)      (    3) TGGATCCATT  1 
+PFL_3480_p-203(vanK)     (    3) TGGATCCATT  1 
+PSPTO2904_p-138(vanA)    (    3) TGGATCCATT  1 
+PP3740_p-195(vanK)       (    3) TGGATCCATT  1 
+PP3736_p-41(vanA)        (    3) TGGATCCATT  1 
+PA4904_p-222(vanA)       (    3) TGGATCCATT  1 
+PA4903_p-168(vanK)       (    3) TGGATCCAAT  1 
+PA4904_p-38(vanA)        (    3) TGGATCCAAT  1 
+PFL_3471_p-150(vanA)     (    3) TGGATCCATA  1 
+PSPTO2904_p-42(vanA)     (    3) TGGATCCATA  1 
+PP3736_p-126(vanA)       (    3) TGGATCCACT  1 
+PFL_3471_p-128(vanA)     (    3) TGGATCCAAA  1 
+PA4904_p-13(vanA)        (    3) AGGATCCGAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 39 bayes= 2.51706 E= 1.3e-042 
+  -199  -1035  -1035    162 
+ -1035  -1035    232  -1035 
+ -1035  -1035    232  -1035 
+   171  -1035  -1035  -1035 
+ -1035  -1035  -1035    174 
+ -1035    237  -1035  -1035 
+ -1035    237  -1035  -1035 
+   159  -1035   -138  -1035 
+     1   -133  -1035    104 
+   -41   -133  -1035    121 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 13 E= 1.3e-042 
+ 0.076923  0.000000  0.000000  0.923077 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.307692  0.076923  0.000000  0.615385 
+ 0.230769  0.076923  0.000000  0.692308 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGATCCAWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGGATCCA[TA][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA4904_p-13(vanA)                7.89e-05  2_[+1(2.63e-05)]
+PA4904_p-222(vanA)               3.43e-06  2_[+1(1.14e-06)]
+PA4904_p-38(vanA)                6.92e-06  2_[+1(2.31e-06)]
+PA4903_p-168(vanK)               6.92e-06  2_[+1(2.31e-06)]
+PP3736_p-41(vanA)                3.43e-06  2_[+1(1.14e-06)]
+PP3736_p-126(vanA)               1.26e-05  2_[+1(4.21e-06)]
+PP3740_p-195(vanK)               3.43e-06  2_[+1(1.14e-06)]
+PSPTO2904_p-138(vanA)            3.43e-06  2_[+1(1.14e-06)]
+PSPTO2904_p-42(vanA)             1.04e-05  2_[+1(3.47e-06)]
+PFL_3480_p-203(vanK)             3.43e-06  2_[+1(1.14e-06)]
+PFL_3471_p-44(vanA)              3.43e-06  2_[+1(1.14e-06)]
+PFL_3471_p-150(vanA)             1.04e-05  2_[+1(3.47e-06)]
+PFL_3471_p-128(vanA)             1.84e-05  2_[+1(6.14e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

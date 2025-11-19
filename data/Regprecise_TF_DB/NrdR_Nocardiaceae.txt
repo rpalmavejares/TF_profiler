@@ -1,0 +1,236 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/NrdR_Nocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+nfa42980_p-124(nrdF)     1.0000     16  nfa43090_p-191(nrdH)     1.0000     16  
+nfa42980_p-92(nrdF)      1.0000     16  nfa43090_p-223(nrdH)     1.0000     16  
+RER_23500_p-133(nrdH)    1.0000     16  RER_23500_p-165(nrdH)    1.0000     16  
+ROP_64920_p-188(nrdH)    1.0000     16  ROP_64920_p-156(nrdH)    1.0000     16  
+RHA1_ro06439_p-188(nrdH) 1.0000     16  RHA1_ro06439_p-156(nrdH) 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/NrdR_Nocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/NrdR_Nocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             160    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    160    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.237 C 0.25 G 0.237 T 0.275 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.238 C 0.25 G 0.238 T 0.274 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CACWASRTSTMGTGT MEME-1	width =  15  sites =  10  llr = 154  E-value = 1.7e-038
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :9:6a:51::5::::
+pos.-specific     C  a:a::6:14:4:1::
+probability       G  :1:::45:6::a2a:
+matrix            T  :::4:::8:a1:7:a
+
+         bits    2.1 * * *      * * 
+                 1.9 * * *    * * **
+                 1.7 *** *    * * **
+                 1.5 *** *    * * **
+Relative         1.2 *** *    * * **
+Entropy          1.0 ********** * **
+(22.2 bits)      0.8 ********** ****
+                 0.6 ***************
+                 0.4 ***************
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           CACAACATGTAGTGT
+consensus               T GG C C G  
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+RHA1_ro06439_p-156(nrdH)      2  1.92e-08          C CACTAGGTGTAGTGT           
+ROP_64920_p-156(nrdH)         2  1.92e-08          C CACTAGGTGTAGTGT           
+RER_23500_p-133(nrdH)         2  1.92e-08          C CACTAGGTGTAGTGT           
+nfa43090_p-191(nrdH)          2  1.92e-08          C CACTAGGTGTAGTGT           
+RHA1_ro06439_p-188(nrdH)      2  4.88e-08          T CACAACATCTCGGGT           
+ROP_64920_p-188(nrdH)         2  4.88e-08          T CACAACATCTCGGGT           
+nfa42980_p-92(nrdF)           2  5.57e-08          A CACAACGAGTAGTGT           
+nfa43090_p-223(nrdH)          2  1.01e-07          T CGCAACATGTCGTGT           
+RER_23500_p-165(nrdH)         2  1.10e-07          T CACAACATCTCGCGT           
+nfa42980_p-124(nrdF)          2  2.99e-07          A CACAACACCTTGTGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RHA1_ro06439_p-156(nrdH)          1.9e-08  1_[+1]
+ROP_64920_p-156(nrdH)             1.9e-08  1_[+1]
+RER_23500_p-133(nrdH)             1.9e-08  1_[+1]
+nfa43090_p-191(nrdH)              1.9e-08  1_[+1]
+RHA1_ro06439_p-188(nrdH)          4.9e-08  1_[+1]
+ROP_64920_p-188(nrdH)             4.9e-08  1_[+1]
+nfa42980_p-92(nrdF)               5.6e-08  1_[+1]
+nfa43090_p-223(nrdH)                1e-07  1_[+1]
+RER_23500_p-165(nrdH)             1.1e-07  1_[+1]
+nfa42980_p-124(nrdF)                3e-07  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CACWASRTSTMGTGT width=15 seqs=10
+RHA1_ro06439_p-156(nrdH) (    2) CACTAGGTGTAGTGT  1 
+ROP_64920_p-156(nrdH)    (    2) CACTAGGTGTAGTGT  1 
+RER_23500_p-133(nrdH)    (    2) CACTAGGTGTAGTGT  1 
+nfa43090_p-191(nrdH)     (    2) CACTAGGTGTAGTGT  1 
+RHA1_ro06439_p-188(nrdH) (    2) CACAACATCTCGGGT  1 
+ROP_64920_p-188(nrdH)    (    2) CACAACATCTCGGGT  1 
+nfa42980_p-92(nrdF)      (    2) CACAACGAGTAGTGT  1 
+nfa43090_p-223(nrdH)     (    2) CGCAACATGTCGTGT  1 
+RER_23500_p-165(nrdH)    (    2) CACAACATCTCGCGT  1 
+nfa42980_p-124(nrdF)     (    2) CACAACACCTTGTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 20 bayes= 0.465664 E= 1.7e-038 
+  -997    200   -997   -997 
+   192   -997   -125   -997 
+  -997    200   -997   -997 
+   133   -997   -997     54 
+   207   -997   -997   -997 
+  -997    126     75   -997 
+   107   -997    107   -997 
+  -125   -132   -997    154 
+  -997     68    133   -997 
+  -997   -997   -997    186 
+   107     68   -997   -145 
+  -997   -997    207   -997 
+  -997   -132    -25    135 
+  -997   -997    207   -997 
+  -997   -997   -997    186 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 10 E= 1.7e-038 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.600000  0.400000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.100000  0.100000  0.000000  0.800000 
+ 0.000000  0.400000  0.600000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.400000  0.000000  0.100000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.100000  0.200000  0.700000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACWASRTSTMGTGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+CAC[AT]A[CG][AG]T[GC]T[AC]G[TG]GT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nfa42980_p-124(nrdF)             5.99e-07  1_[+1(2.99e-07)]
+nfa43090_p-191(nrdH)             3.85e-08  1_[+1(1.92e-08)]
+nfa42980_p-92(nrdF)              1.11e-07  1_[+1(5.57e-08)]
+nfa43090_p-223(nrdH)             2.02e-07  1_[+1(1.01e-07)]
+RER_23500_p-133(nrdH)            3.85e-08  1_[+1(1.92e-08)]
+RER_23500_p-165(nrdH)            2.20e-07  1_[+1(1.10e-07)]
+ROP_64920_p-188(nrdH)            9.77e-08  1_[+1(4.88e-08)]
+ROP_64920_p-156(nrdH)            3.85e-08  1_[+1(1.92e-08)]
+RHA1_ro06439_p-188(nrdH)         9.77e-08  1_[+1(4.88e-08)]
+RHA1_ro06439_p-156(nrdH)         3.85e-08  1_[+1(1.92e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

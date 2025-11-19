@@ -1,0 +1,262 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Fur_Enterococcaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+EF0188_p-196(fhuD)       1.0000     19  EF0188_p-40(fhuD)        1.0000     19  
+EF0191_p-215(fhuC)       1.0000     19  EF0191_p-59(fhuC)        1.0000     19  
+EF0475_p-53(feoA)        1.0000     19  EF2623_p-97(cadA)        1.0000     19  
+EF3085_p-41(yclN)        1.0000     19  EF0575_p-34(sitB)        1.0000     19  
+EfaeDRAFT_1290_p-35(yclN 1.0000     19  EfaeDRAFT_1407_p-100(feo 1.0000     19  
+EfaeDRAFT_1458_p-130(cad 1.0000     19  EfaeDRAFT_0644_p-141(cad 1.0000     19  
+EfaeDRAFT_0644_p-93(cadA 1.0000     19  EfaeDRAFT_0644_p-87(cadA 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Fur_Enterococcaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterococcaceae/Fur_Enterococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             266    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    266    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.35 C 0.147 G 0.132 T 0.372 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.348 C 0.148 G 0.133 T 0.37 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ARTGAKAATCRTTMTCAWT MEME-1	width =  19  sites =  14  llr = 216  E-value = 1.3e-060
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  85:1a199::6::3:194:
+pos.-specific     C  1:11::::36:::6:9:11
+probability       G  13:9:4:1:34:::::1::
+matrix            T  129::41:71:aa1a::59
+
+         bits    2.9                    
+                 2.6                    
+                 2.3                *   
+                 2.0    *           *   
+Relative         1.7    *           *   
+Entropy          1.5    **    * ** **   
+(22.3 bits)      1.2   *** ** **** *** *
+                 0.9   *** *********** *
+                 0.6 * *************** *
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           AATGAGAATCATTCTCATT
+consensus             G   T  CGG  A   A 
+sequence              T                 
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+EF3085_p-41(yclN)             1  1.89e-10          . AATGAGAATCATTCTCAAT           
+EF0191_p-59(fhuC)             1  3.08e-10          . AGTGAGAACGATTCTCAAT           
+EF0188_p-196(fhuD)            1  2.18e-09          . ATTGAGAATCGTTCTCACT           
+EF0475_p-53(feoA)             1  2.64e-09          . ATTGAGAACGATTCTCATT           
+EfaeDRAFT_1290_p-35(yclN      1  4.92e-09          . AATGAAAATCATTCTCAAT           
+EfaeDRAFT_1407_p-100(feo      1  1.11e-08          . TGTGAGAATGATTCTCATT           
+EF0188_p-40(fhuD)             1  1.35e-08          . AATGAGAATCGTTATCAAC           
+EF0575_p-34(sitB)             1  3.05e-08          . CGTGATAATCATTATCATT           
+EF0191_p-215(fhuC)            1  4.25e-08          . GTTGATAACGATTCTCATT           
+EfaeDRAFT_0644_p-93(cadA      1  4.69e-08          . AATGATAACCATTATCGTT           
+EF2623_p-97(cadA)             1  8.39e-08          . AATGAAAGTCGTTTTCATT           
+EfaeDRAFT_1458_p-130(cad      1  3.49e-07          . AGTGATAGTTGTTTTCAAT           
+EfaeDRAFT_0644_p-87(cadA      1  6.01e-07          . AACCATTATCGTTCTCATT           
+EfaeDRAFT_0644_p-141(cad      1  2.06e-06          . AATAATAATCATTATAAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+EF3085_p-41(yclN)                 1.9e-10  [+1]
+EF0191_p-59(fhuC)                 3.1e-10  [+1]
+EF0188_p-196(fhuD)                2.2e-09  [+1]
+EF0475_p-53(feoA)                 2.6e-09  [+1]
+EfaeDRAFT_1290_p-35(yclN          4.9e-09  [+1]
+EfaeDRAFT_1407_p-100(feo          1.1e-08  [+1]
+EF0188_p-40(fhuD)                 1.3e-08  [+1]
+EF0575_p-34(sitB)                 3.1e-08  [+1]
+EF0191_p-215(fhuC)                4.3e-08  [+1]
+EfaeDRAFT_0644_p-93(cadA          4.7e-08  [+1]
+EF2623_p-97(cadA)                 8.4e-08  [+1]
+EfaeDRAFT_1458_p-130(cad          3.5e-07  [+1]
+EfaeDRAFT_0644_p-87(cadA            6e-07  [+1]
+EfaeDRAFT_0644_p-141(cad          2.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ARTGAKAATCRTTMTCAWT width=19 seqs=14
+EF3085_p-41(yclN)        (    1) AATGAGAATCATTCTCAAT  1 
+EF0191_p-59(fhuC)        (    1) AGTGAGAACGATTCTCAAT  1 
+EF0188_p-196(fhuD)       (    1) ATTGAGAATCGTTCTCACT  1 
+EF0475_p-53(feoA)        (    1) ATTGAGAACGATTCTCATT  1 
+EfaeDRAFT_1290_p-35(yclN (    1) AATGAAAATCATTCTCAAT  1 
+EfaeDRAFT_1407_p-100(feo (    1) TGTGAGAATGATTCTCATT  1 
+EF0188_p-40(fhuD)        (    1) AATGAGAATCGTTATCAAC  1 
+EF0575_p-34(sitB)        (    1) CGTGATAATCATTATCATT  1 
+EF0191_p-215(fhuC)       (    1) GTTGATAACGATTCTCATT  1 
+EfaeDRAFT_0644_p-93(cadA (    1) AATGATAACCATTATCGTT  1 
+EF2623_p-97(cadA)        (    1) AATGAAAGTCGTTTTCATT  1 
+EfaeDRAFT_1458_p-130(cad (    1) AGTGATAGTTGTTTTCAAT  1 
+EfaeDRAFT_0644_p-87(cadA (    1) AACCATTATCGTTCTCATT  1 
+EfaeDRAFT_0644_p-141(cad (    1) AATAATAATCATTATAAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 14 bayes= 1.12553 E= 1.3e-060 
+   117   -105    -90   -237 
+    52  -1045    110    -79 
+ -1045   -105  -1045    133 
+  -228   -105    268  -1045 
+   152  -1045  -1045  -1045 
+  -128  -1045    168     21 
+   141  -1045  -1045   -237 
+   130  -1045     10  -1045 
+ -1045     95  -1045     95 
+ -1045    212    110   -237 
+    88  -1045    142  -1045 
+ -1045  -1045  -1045    143 
+ -1045  -1045  -1045    143 
+   -28    195  -1045   -137 
+ -1045  -1045  -1045    143 
+  -228    265  -1045  -1045 
+   141  -1045    -90  -1045 
+    30   -105  -1045     43 
+ -1045   -105  -1045    133 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 14 E= 1.3e-060 
+ 0.785714  0.071429  0.071429  0.071429 
+ 0.500000  0.000000  0.285714  0.214286 
+ 0.000000  0.071429  0.000000  0.928571 
+ 0.071429  0.071429  0.857143  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.142857  0.000000  0.428571  0.428571 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.857143  0.000000  0.142857  0.000000 
+ 0.000000  0.285714  0.000000  0.714286 
+ 0.000000  0.642857  0.285714  0.071429 
+ 0.642857  0.000000  0.357143  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.285714  0.571429  0.000000  0.142857 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.071429  0.928571  0.000000  0.000000 
+ 0.928571  0.000000  0.071429  0.000000 
+ 0.428571  0.071429  0.000000  0.500000 
+ 0.000000  0.071429  0.000000  0.928571 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ARTGAKAATCRTTMTCAWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AGT]TGA[GT]AA[TC][CG][AG]TT[CA]TCA[TA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+EF0188_p-196(fhuD)               2.18e-09  [+1(2.18e-09)]
+EF0188_p-40(fhuD)                1.35e-08  [+1(1.35e-08)]
+EF0191_p-215(fhuC)               4.25e-08  [+1(4.25e-08)]
+EF0191_p-59(fhuC)                3.08e-10  [+1(3.08e-10)]
+EF0475_p-53(feoA)                2.64e-09  [+1(2.64e-09)]
+EF2623_p-97(cadA)                8.39e-08  [+1(8.39e-08)]
+EF3085_p-41(yclN)                1.89e-10  [+1(1.89e-10)]
+EF0575_p-34(sitB)                3.05e-08  [+1(3.05e-08)]
+EfaeDRAFT_1290_p-35(yclN         4.92e-09  [+1(4.92e-09)]
+EfaeDRAFT_1407_p-100(feo         1.11e-08  [+1(1.11e-08)]
+EfaeDRAFT_1458_p-130(cad         3.49e-07  [+1(3.49e-07)]
+EfaeDRAFT_0644_p-141(cad         2.06e-06  [+1(2.06e-06)]
+EfaeDRAFT_0644_p-93(cadA         4.69e-08  [+1(4.69e-08)]
+EfaeDRAFT_0644_p-87(cadA         6.01e-07  [+1(6.01e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

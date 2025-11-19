@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/ModE3_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RALTA_A1003_p-31(tupB)   1.0000     20  RALTA_A1004_p-128(modE3) 1.0000     20  
+H16_A1020_p-127(modE3)   1.0000     20  H16_A1019_p-37(tupB)     1.0000     20  
+Reut_A0931_p-35(tupB)    1.0000     20  Reut_A0932_p-128(modE3)  1.0000     20  
+Rmet_0895_p-35(tupB)     1.0000     20  Rmet_0896_p-127(modE3)   1.0000     20  
+Rpic_2244_p-52(tupB)     1.0000     20  Rpic_2243_p-126(modE3)   1.0000     20  
+RS03658_p-50(tupB)       1.0000     20  RS03657_p-109(modE3)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/ModE3_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/ModE3_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.342 C 0.158 G 0.158 T 0.342 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.34 C 0.16 G 0.16 T 0.34 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTATGTYKBWWVMRACATAA MEME-1	width =  20  sites =  12  llr = 179  E-value = 4.5e-044
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::9:::2:1333658:a:8a
+pos.-specific     C  :2:::23132233::a:1::
+probability       G  ::1:a::33223132:::2:
+matrix            T  a8:a:8563331:2:::9::
+
+         bits    2.6     *          *    
+                 2.4     *          *    
+                 2.1     *          *    
+                 1.9     *          *    
+Relative         1.6 *  **          **  *
+Entropy          1.3 * ***          *** *
+(21.6 bits)      1.1 ******        ******
+                 0.8 ****** *    * ******
+                 0.5 *********  *********
+                 0.3 *********  *********
+                 0.0 --------------------
+
+Multilevel           TTATGTTTCAACAAACATAA
+consensus                  CGGTTGCG      
+sequence                     T  A        
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+H16_A1019_p-37(tupB)          1  1.25e-08          . TTATGTCTGGAAAAACATAA           
+H16_A1020_p-127(modE3)        1  1.25e-08          . TTATGTTTTTCCAGACATAA           
+RALTA_A1004_p-128(modE3)      1  6.84e-08          . TTATGTTCTTGCAGACATAA           
+RALTA_A1003_p-31(tupB)        1  6.84e-08          . TTATGTCTGCAAGAACATAA           
+Reut_A0932_p-128(modE3)       1  8.41e-08          . TTATGTTTCGATAAACATAA           
+Reut_A0931_p-35(tupB)         1  8.41e-08          . TTATGTTTATCGAAACATAA           
+RS03657_p-109(modE3)          1  9.84e-08          . TTATGTCGGATGCTGCATGA           
+RS03658_p-50(tupB)            1  9.84e-08          . TCATGCAGCATCCGACATAA           
+Rpic_2243_p-126(modE3)        1  9.84e-08          . TTATGTCGGATGCTGCATGA           
+Rpic_2244_p-52(tupB)          1  9.84e-08          . TCATGCAGCATCCGACATAA           
+Rmet_0896_p-127(modE3)        1  1.45e-07          . TTATGTTTTTGGAAACACAA           
+Rmet_0895_p-35(tupB)          1  1.45e-07          . TTGTGTTTCCAAAAACATAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H16_A1019_p-37(tupB)              1.3e-08  [+1]
+H16_A1020_p-127(modE3)            1.3e-08  [+1]
+RALTA_A1004_p-128(modE3)          6.8e-08  [+1]
+RALTA_A1003_p-31(tupB)            6.8e-08  [+1]
+Reut_A0932_p-128(modE3)           8.4e-08  [+1]
+Reut_A0931_p-35(tupB)             8.4e-08  [+1]
+RS03657_p-109(modE3)              9.8e-08  [+1]
+RS03658_p-50(tupB)                9.8e-08  [+1]
+Rpic_2243_p-126(modE3)            9.8e-08  [+1]
+Rpic_2244_p-52(tupB)              9.8e-08  [+1]
+Rmet_0896_p-127(modE3)            1.5e-07  [+1]
+Rmet_0895_p-35(tupB)              1.5e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTATGTYKBWWVMRACATAA width=20 seqs=12
+H16_A1019_p-37(tupB)     (    1) TTATGTCTGGAAAAACATAA  1 
+H16_A1020_p-127(modE3)   (    1) TTATGTTTTTCCAGACATAA  1 
+RALTA_A1004_p-128(modE3) (    1) TTATGTTCTTGCAGACATAA  1 
+RALTA_A1003_p-31(tupB)   (    1) TTATGTCTGCAAGAACATAA  1 
+Reut_A0932_p-128(modE3)  (    1) TTATGTTTCGATAAACATAA  1 
+Reut_A0931_p-35(tupB)    (    1) TTATGTTTATCGAAACATAA  1 
+RS03657_p-109(modE3)     (    1) TTATGTCGGATGCTGCATGA  1 
+RS03658_p-50(tupB)       (    1) TCATGCAGCATCCGACATAA  1 
+Rpic_2243_p-126(modE3)   (    1) TTATGTCGGATGCTGCATGA  1 
+Rpic_2244_p-52(tupB)     (    1) TCATGCAGCATCCGACATAA  1 
+Rmet_0896_p-127(modE3)   (    1) TTATGTTTTTGGAAACACAA  1 
+Rmet_0895_p-35(tupB)     (    1) TTGTGTTTCCAAAAACATAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 12 bayes= 1 E= 4.5e-044 
+ -1023  -1023  -1023    155 
+ -1023      6  -1023    129 
+   143  -1023    -94  -1023 
+ -1023  -1023  -1023    155 
+ -1023  -1023    264  -1023 
+ -1023      6  -1023    129 
+  -103    106  -1023     56 
+ -1023    -94    106     78 
+  -203    106    106    -44 
+    -3      6      6     -3 
+    -3      6      6     -3 
+   -44    106    106   -203 
+    78    106    -94  -1023 
+    56  -1023    106   -103 
+   129  -1023      6  -1023 
+ -1023    264  -1023  -1023 
+   155  -1023  -1023  -1023 
+ -1023    -94  -1023    143 
+   129  -1023      6  -1023 
+   155  -1023  -1023  -1023 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 12 E= 4.5e-044 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.166667  0.000000  0.833333 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.166667  0.000000  0.833333 
+ 0.166667  0.333333  0.000000  0.500000 
+ 0.000000  0.083333  0.333333  0.583333 
+ 0.083333  0.333333  0.333333  0.250000 
+ 0.333333  0.166667  0.166667  0.333333 
+ 0.333333  0.166667  0.166667  0.333333 
+ 0.250000  0.333333  0.333333  0.083333 
+ 0.583333  0.333333  0.083333  0.000000 
+ 0.500000  0.000000  0.333333  0.166667 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.083333  0.000000  0.916667 
+ 0.833333  0.000000  0.166667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTATGTYKBWWVMRACATAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTATGT[TC][TG][CGT][AT][AT][CGA][AC][AG]ACATAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_A1003_p-31(tupB)           6.84e-08  [+1(6.84e-08)]
+RALTA_A1004_p-128(modE3)         6.84e-08  [+1(6.84e-08)]
+H16_A1020_p-127(modE3)           1.25e-08  [+1(1.25e-08)]
+H16_A1019_p-37(tupB)             1.25e-08  [+1(1.25e-08)]
+Reut_A0931_p-35(tupB)            8.41e-08  [+1(8.41e-08)]
+Reut_A0932_p-128(modE3)          8.41e-08  [+1(8.41e-08)]
+Rmet_0895_p-35(tupB)             1.45e-07  [+1(1.45e-07)]
+Rmet_0896_p-127(modE3)           1.45e-07  [+1(1.45e-07)]
+Rpic_2244_p-52(tupB)             9.84e-08  [+1(9.84e-08)]
+Rpic_2243_p-126(modE3)           9.84e-08  [+1(9.84e-08)]
+RS03658_p-50(tupB)               9.84e-08  [+1(9.84e-08)]
+RS03657_p-109(modE3)             9.84e-08  [+1(9.84e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

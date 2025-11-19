@@ -1,0 +1,341 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SdaR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b0162_p-69(sdaR)         1.0000     20  b2789_p-385(gudP)        1.0000     20  
+b3128_p-250(garD)        1.0000     20  b3128_p-208(garD)        1.0000     20  
+b3127_p-144(garP)        1.0000     20  b3127_p-186(garP)        1.0000     20  
+STM2962_p-376(gudP)      1.0000     20  STM0210_p-71(sdaR)       1.0000     20  
+STM3250_p-276(garD)      1.0000     20  STM3250_p-233(garD)      1.0000     20  
+STM3249_p-316(garL)      1.0000     20  STM3249_p-273(garL)      1.0000     20  
+CKO_03205_p-17(sdaR)     1.0000     20  CKO_04143_p-388(gudP)    1.0000     20  
+CKO_04527_p-223(garD)    1.0000     20  CKO_04523_p-203(garL)    1.0000     20  
+KPN_03132_p-376(gudP)    1.0000     20  KPN_00177_p-17(sdaR)     1.0000     20  
+KPN_03540_p-206(garD)    1.0000     20  KPN_03539_p-206(garP)    1.0000     20  
+KPN_03132_p-221(gudP)    1.0000     20  Ent638_0702_p-71(sdaR)   1.0000     20  
+Ent638_3242_p-240(gudP)  1.0000     20  Ent638_3570_p-224(garD)  1.0000     20  
+Ent638_3569_p-208(garP)  1.0000     20  ECA3300_p-80(sdaR)       1.0000     20  
+ECA3577_p-440(gudP)      1.0000     20  ECA3577_p-264(gudP)      1.0000     20  
+ECA3576_p-358(gudX)      1.0000     20  ECA3578_p-140(garD)      1.0000     20  
+ECA3578_p-316(garD)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SdaR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/SdaR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             620    N=              31
+sample: seed=            0    hsfrac=          0
+        searchsize=    620    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.287 C 0.208 G 0.195 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.287 C 0.208 G 0.196 T 0.309 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTTTGKGCAWWTGCMCAAWR MEME-1	width =  20  sites =  31  llr = 410  E-value = 1.2e-134
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  131122::835:::527854
+pos.-specific     C  5::1:::a:::2:a481:11
+probability       G  11::739:1:::a:::1::4
+matrix            T  4687151:1648::211251
+
+         bits    2.4             *       
+                 2.1        *    **      
+                 1.9       **    **      
+                 1.6       **    **      
+Relative         1.4       **    **      
+Entropy          1.2     * **    ** *    
+(19.1 bits)      0.9   * * ***  *** * *  
+                 0.7   *** *** **** * *  
+                 0.5   **************** *
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           CTTTGTGCATATGCACAAAG
+consensus            TA   G   AT   C   TA
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+STM0210_p-71(sdaR)            1  1.24e-10          . TTTTGTGCATTTGCACAATG           
+Ent638_0702_p-71(sdaR)        1  3.74e-10          . CTTTGTGCATTCGCACAATG           
+b0162_p-69(sdaR)              1  1.09e-09          . CTTTAGGCATTTGCACAATG           
+KPN_00177_p-17(sdaR)          1  1.29e-09          . CTTAGTGCAAATGCACAATG           
+CKO_04523_p-203(garL)         1  4.33e-09          . CGTTGTGCAAATGCTCAAAA           
+CKO_04527_p-223(garD)         1  7.64e-09          . TTTTGAGCATTTGCACAACG           
+b3128_p-208(garD)             1  9.98e-09          . TTTTGAGCATATGCACATAA           
+b3127_p-186(garP)             1  1.13e-08          . TTATGTGCATATGCTCAAAA           
+CKO_03205_p-17(sdaR)          1  1.48e-08          . GTTTGTGCAGATGCACAATG           
+Ent638_3569_p-208(garP)       1  6.23e-08          . GGTTGTGCATATGCTCAAAT           
+STM2962_p-376(gudP)           1  6.97e-08          . CTTTGTGCATATGCCCGCAA           
+STM3250_p-276(garD)           1  1.33e-07          . CATTGTGCAAACGCTCATTA           
+Ent638_3570_p-224(garD)       1  2.20e-07          . ATTTGAGCATATGCACAACC           
+STM3249_p-273(garL)           1  2.95e-07          . TAATGAGCGTTTGCACAATG           
+CKO_04143_p-388(gudP)         1  3.25e-07          . CATCAGGCATTTGCCCTAAA           
+STM3250_p-233(garD)           1  4.31e-07          . TTTTGAGCATACGCCCATGA           
+ECA3300_p-80(sdaR)            1  5.67e-07          . CTTTGTTAATTTGCACAATG           
+ECA3576_p-358(gudX)           1  8.07e-07          . TGCTGGGCTATTGCCCAATG           
+b3128_p-250(garD)             1  8.80e-07          . CATTGTGCAAATGCTAATTT           
+Ent638_3242_p-240(gudP)       1  1.04e-06          . CGTTGTGCTTATGCCTCAAA           
+KPN_03132_p-376(gudP)         1  1.45e-06          . CTTTAGGCAAACGCCACAAT           
+KPN_03540_p-206(garD)         1  1.58e-06          . AATTGTGCTTATGCCATAAG           
+STM3249_p-316(garL)           1  1.58e-06          . TCATGGGCGTATGCTCAAAA           
+b3127_p-144(garP)             1  1.85e-06          . AAATTAGCATTTGCACAATG           
+ECA3578_p-140(garD)           1  2.00e-06          . CTTAGGTCAATTGCATAATG           
+ECA3577_p-440(gudP)           1  2.17e-06          . CATTATGCAATTGACCTAAG           
+ECA3578_p-316(garD)           1  2.94e-06          . GTTGGTGCACTTGCCCTATA           
+KPN_03132_p-221(gudP)         1  2.94e-06          . TTTCAGGCATTCGCCACAAA           
+ECA3577_p-264(gudP)           1  3.17e-06          . TATAGGGCAAGTGCACCAAC           
+KPN_03539_p-206(garP)         1  3.42e-06          . CTTATGGCATAAGCACAATT           
+b2789_p-385(gudP)             1  7.96e-06          . TTTCAGGCAAATGCCAGTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+STM0210_p-71(sdaR)                1.2e-10  [+1]
+Ent638_0702_p-71(sdaR)            3.7e-10  [+1]
+b0162_p-69(sdaR)                  1.1e-09  [+1]
+KPN_00177_p-17(sdaR)              1.3e-09  [+1]
+CKO_04523_p-203(garL)             4.3e-09  [+1]
+CKO_04527_p-223(garD)             7.6e-09  [+1]
+b3128_p-208(garD)                   1e-08  [+1]
+b3127_p-186(garP)                 1.1e-08  [+1]
+CKO_03205_p-17(sdaR)              1.5e-08  [+1]
+Ent638_3569_p-208(garP)           6.2e-08  [+1]
+STM2962_p-376(gudP)                 7e-08  [+1]
+STM3250_p-276(garD)               1.3e-07  [+1]
+Ent638_3570_p-224(garD)           2.2e-07  [+1]
+STM3249_p-273(garL)                 3e-07  [+1]
+CKO_04143_p-388(gudP)             3.2e-07  [+1]
+STM3250_p-233(garD)               4.3e-07  [+1]
+ECA3300_p-80(sdaR)                5.7e-07  [+1]
+ECA3576_p-358(gudX)               8.1e-07  [+1]
+b3128_p-250(garD)                 8.8e-07  [+1]
+Ent638_3242_p-240(gudP)             1e-06  [+1]
+KPN_03132_p-376(gudP)             1.5e-06  [+1]
+KPN_03540_p-206(garD)             1.6e-06  [+1]
+STM3249_p-316(garL)               1.6e-06  [+1]
+b3127_p-144(garP)                 1.9e-06  [+1]
+ECA3578_p-140(garD)                 2e-06  [+1]
+ECA3577_p-440(gudP)               2.2e-06  [+1]
+ECA3578_p-316(garD)               2.9e-06  [+1]
+KPN_03132_p-221(gudP)             2.9e-06  [+1]
+ECA3577_p-264(gudP)               3.2e-06  [+1]
+KPN_03539_p-206(garP)             3.4e-06  [+1]
+b2789_p-385(gudP)                   8e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTTTGKGCAWWTGCMCAAWR width=20 seqs=31
+STM0210_p-71(sdaR)       (    1) TTTTGTGCATTTGCACAATG  1 
+Ent638_0702_p-71(sdaR)   (    1) CTTTGTGCATTCGCACAATG  1 
+b0162_p-69(sdaR)         (    1) CTTTAGGCATTTGCACAATG  1 
+KPN_00177_p-17(sdaR)     (    1) CTTAGTGCAAATGCACAATG  1 
+CKO_04523_p-203(garL)    (    1) CGTTGTGCAAATGCTCAAAA  1 
+CKO_04527_p-223(garD)    (    1) TTTTGAGCATTTGCACAACG  1 
+b3128_p-208(garD)        (    1) TTTTGAGCATATGCACATAA  1 
+b3127_p-186(garP)        (    1) TTATGTGCATATGCTCAAAA  1 
+CKO_03205_p-17(sdaR)     (    1) GTTTGTGCAGATGCACAATG  1 
+Ent638_3569_p-208(garP)  (    1) GGTTGTGCATATGCTCAAAT  1 
+STM2962_p-376(gudP)      (    1) CTTTGTGCATATGCCCGCAA  1 
+STM3250_p-276(garD)      (    1) CATTGTGCAAACGCTCATTA  1 
+Ent638_3570_p-224(garD)  (    1) ATTTGAGCATATGCACAACC  1 
+STM3249_p-273(garL)      (    1) TAATGAGCGTTTGCACAATG  1 
+CKO_04143_p-388(gudP)    (    1) CATCAGGCATTTGCCCTAAA  1 
+STM3250_p-233(garD)      (    1) TTTTGAGCATACGCCCATGA  1 
+ECA3300_p-80(sdaR)       (    1) CTTTGTTAATTTGCACAATG  1 
+ECA3576_p-358(gudX)      (    1) TGCTGGGCTATTGCCCAATG  1 
+b3128_p-250(garD)        (    1) CATTGTGCAAATGCTAATTT  1 
+Ent638_3242_p-240(gudP)  (    1) CGTTGTGCTTATGCCTCAAA  1 
+KPN_03132_p-376(gudP)    (    1) CTTTAGGCAAACGCCACAAT  1 
+KPN_03540_p-206(garD)    (    1) AATTGTGCTTATGCCATAAG  1 
+STM3249_p-316(garL)      (    1) TCATGGGCGTATGCTCAAAA  1 
+b3127_p-144(garP)        (    1) AAATTAGCATTTGCACAATG  1 
+ECA3578_p-140(garD)      (    1) CTTAGGTCAATTGCATAATG  1 
+ECA3577_p-440(gudP)      (    1) CATTATGCAATTGACCTAAG  1 
+ECA3578_p-316(garD)      (    1) GTTGGTGCACTTGCCCTATA  1 
+KPN_03132_p-221(gudP)    (    1) TTTCAGGCATTCGCCACAAA  1 
+ECA3577_p-264(gudP)      (    1) TATAGGGCAAGTGCACCAAC  1 
+KPN_03539_p-206(garP)    (    1) CTTATGGCATAAGCACAATT  1 
+b2789_p-385(gudP)        (    1) TTTCAGGCAAATGCCAGTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 31 bayes= 1.57258 E= 1.2e-134 
+  -157    112   -101     20 
+   -15   -269    -60     91 
+  -115   -269  -1160    144 
+  -115   -111   -260    126 
+   -57  -1160    192   -226 
+   -57  -1160     72     65 
+ -1160  -1160    226   -226 
+  -315    222  -1160  -1160 
+   155  -1160   -160   -168 
+    17   -269   -260     99 
+    93  -1160   -260     44 
+  -315    -37  -1160    138 
+ -1160  -1160    235  -1160 
+  -315    222  -1160  -1160 
+    65     77  -1160    -68 
+   -83    189  -1160   -226 
+   124    -69   -160   -126 
+   149   -269  -1160    -94 
+    65   -169   -260     55 
+    43   -169    110   -126 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 31 E= 1.2e-134 
+ 0.096774  0.451613  0.096774  0.354839 
+ 0.258065  0.032258  0.129032  0.580645 
+ 0.129032  0.032258  0.000000  0.838710 
+ 0.129032  0.096774  0.032258  0.741935 
+ 0.193548  0.000000  0.741935  0.064516 
+ 0.193548  0.000000  0.322581  0.483871 
+ 0.000000  0.000000  0.935484  0.064516 
+ 0.032258  0.967742  0.000000  0.000000 
+ 0.838710  0.000000  0.064516  0.096774 
+ 0.322581  0.032258  0.032258  0.612903 
+ 0.548387  0.000000  0.032258  0.419355 
+ 0.032258  0.161290  0.000000  0.806452 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.032258  0.967742  0.000000  0.000000 
+ 0.451613  0.354839  0.000000  0.193548 
+ 0.161290  0.774194  0.000000  0.064516 
+ 0.677419  0.129032  0.064516  0.129032 
+ 0.806452  0.032258  0.000000  0.161290 
+ 0.451613  0.064516  0.032258  0.451613 
+ 0.387097  0.064516  0.419355  0.129032 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTTTGKGCAWWTGCMCAAWR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][TA]TTG[TG]GCA[TA][AT]TGC[AC]CAA[AT][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b0162_p-69(sdaR)                 1.09e-09  [+1(1.09e-09)]
+b2789_p-385(gudP)                7.96e-06  [+1(7.96e-06)]
+b3128_p-250(garD)                8.80e-07  [+1(8.80e-07)]
+b3128_p-208(garD)                9.98e-09  [+1(9.98e-09)]
+b3127_p-144(garP)                1.85e-06  [+1(1.85e-06)]
+b3127_p-186(garP)                1.13e-08  [+1(1.13e-08)]
+STM2962_p-376(gudP)              6.97e-08  [+1(6.97e-08)]
+STM0210_p-71(sdaR)               1.24e-10  [+1(1.24e-10)]
+STM3250_p-276(garD)              1.33e-07  [+1(1.33e-07)]
+STM3250_p-233(garD)              4.31e-07  [+1(4.31e-07)]
+STM3249_p-316(garL)              1.58e-06  [+1(1.58e-06)]
+STM3249_p-273(garL)              2.95e-07  [+1(2.95e-07)]
+CKO_03205_p-17(sdaR)             1.48e-08  [+1(1.48e-08)]
+CKO_04143_p-388(gudP)            3.25e-07  [+1(3.25e-07)]
+CKO_04527_p-223(garD)            7.64e-09  [+1(7.64e-09)]
+CKO_04523_p-203(garL)            4.33e-09  [+1(4.33e-09)]
+KPN_03132_p-376(gudP)            1.45e-06  [+1(1.45e-06)]
+KPN_00177_p-17(sdaR)             1.29e-09  [+1(1.29e-09)]
+KPN_03540_p-206(garD)            1.58e-06  [+1(1.58e-06)]
+KPN_03539_p-206(garP)            3.42e-06  [+1(3.42e-06)]
+KPN_03132_p-221(gudP)            2.94e-06  [+1(2.94e-06)]
+Ent638_0702_p-71(sdaR)           3.74e-10  [+1(3.74e-10)]
+Ent638_3242_p-240(gudP)          1.04e-06  [+1(1.04e-06)]
+Ent638_3570_p-224(garD)          2.20e-07  [+1(2.20e-07)]
+Ent638_3569_p-208(garP)          6.23e-08  [+1(6.23e-08)]
+ECA3300_p-80(sdaR)               5.67e-07  [+1(5.67e-07)]
+ECA3577_p-440(gudP)              2.17e-06  [+1(2.17e-06)]
+ECA3577_p-264(gudP)              3.17e-06  [+1(3.17e-06)]
+ECA3576_p-358(gudX)              8.07e-07  [+1(8.07e-07)]
+ECA3578_p-140(garD)              2.00e-06  [+1(2.00e-06)]
+ECA3578_p-316(garD)              2.94e-06  [+1(2.94e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

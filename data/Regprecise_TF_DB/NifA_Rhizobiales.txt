@@ -1,0 +1,778 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NifA_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AZC_1051_p-161(ahpC)     1.0000     16  AZC_1051_p-206(ahpC)     1.0000     16  
+AZC_1041_p-281(nifH)     1.0000     16  AZC_3414_p-138(nifB)     1.0000     16  
+AZC_3442_p-192(cheY)     1.0000     16  AZC_3442_p-163(cheY)     1.0000     16  
+AZC_0303_p-67(fer2)      1.0000     16  AZC_1052_p-190(xdhC)     1.0000     16  
+AZC_1043_p-142(fdxN)     1.0000     16  AZC_1052_p-235(xdhC)     1.0000     16  
+AZC_3437_p-128(bolA)     1.0000     16  AZC_1043_p-160(fdxN)     1.0000     16  
+AZC_3409_p-116(iscN)     1.0000     16  AZC_3409_p-134(iscN)     1.0000     16  
+AZC_3447_p-113(fixB)     1.0000     16  AZC_3447_p-179(fixB)     1.0000     16  
+AZC_3437_p-121(bolA)     1.0000     16  AZC_3443_p-284(nifH)     1.0000     16  
+AZC_3443_p-255(nifH)     1.0000     16  AZC_3446_p-192(nifW)     1.0000     16  
+blr2143_p-129(cpx1)      1.0000     16  blr2143_p-110(cpx1)      1.0000     16  
+blr2144_p-265(cpxP)      1.0000     16  blr2037_p-39(nifA)       1.0000     16  
+blr2036_p-126(fixR)      1.0000     16  blr2036_p-106(fixR)      1.0000     16  
+bll2060_p-194(groES3)    1.0000     16  blr1719_p-369(modB)      1.0000     16  
+blr1719_p-349(modB)      1.0000     16  blr6951_p-215(modA)      1.0000     16  
+blr6951_p-195(modA)      1.0000     16  blr1720_p-186(hupS)      1.0000     16  
+blr1720_p-34(hupS)       1.0000     16  blr1743_p-155(nifD)      1.0000     16  
+blr1771_p-495(nifW)      1.0000     16  blr1883_p-376(rpoN)      1.0000     16  
+blr1755_p-116(iscN)      1.0000     16  bll1075_p-257(fdxN)      1.0000     16  
+BBta_5884_p-139(bolA)    1.0000     16  BBta_5882_p-325(fer2)    1.0000     16  
+BBta_0121_p-184(rpoN)    1.0000     16  BBta_5925_p-262(nifH)    1.0000     16  
+BBta_5872_p-171(fixB)    1.0000     16  BBta_5880_p-168(cheY)    1.0000     16  
+BBta_2080_p-224(modA)    1.0000     16  BBta_2080_p-193(modA)    1.0000     16  
+BBta_5935_p-151(fixR)    1.0000     16  BBta_5904_p-141(nifB)    1.0000     16  
+BBta_5909_p-112(iscN)    1.0000     16  BBta_5909_p-190(iscN)    1.0000     16  
+BBta_5909_p-130(iscN)    1.0000     16  BBta_5879_p-267(nifH)    1.0000     16  
+BBta_5932_p-141(fdxN)    1.0000     16  BBta_5932_p-160(fdxN)    1.0000     16  
+BBta_5933_p-64(nifA)     1.0000     16  BBta_5936_p-255(xdhC)    1.0000     16  
+BBta_5863_p-105(ahpC)    1.0000     16  mll6127_p-194(ompW)      1.0000     16  
+mll6127_p-177(ompW)      1.0000     16  mlr6364_p-331(cpxP)      1.0000     16  
+mll5855_p-156(nifB)      1.0000     16  msr5868_p-459(PF05082)   1.0000     16  
+msr5868_p-217(PF05082)   1.0000     16  mlr5905_p-207(nifH)      1.0000     16  
+msr5928_p-77(PF05082)    1.0000     16  mll5942_p-115(iscN)      1.0000     16  
+mll5862_p-161(fixB)      1.0000     16  mll5942_p-133(iscN)      1.0000     16  
+mll5873_p-482(ahpC1)     1.0000     16  mll5873_p-462(ahpC1)     1.0000     16  
+mlr5875_p-154(mlr5875)   1.0000     16  Nwi_1312_p-112(grlA)     1.0000     16  
+RHE_PD00215_p-193(cpxA)  1.0000     16  RHE_PD00224_p-156(fixB)  1.0000     16  
+RHE_PD00229_p-139(nifB)  1.0000     16  RHE_PD00259_p-176(nifQ)  1.0000     16  
+RHE_PD00260_p-190(nifH)  1.0000     16  RHE_PD00217_p-407(ahpC1) 1.0000     16  
+RHE_PD00308_p-138(nifH)  1.0000     16  RHE_PD00308_p-195(nifH)  1.0000     16  
+RHE_PD00202_p-195(nifH)  1.0000     16  RHE_PD00202_p-138(nifH)  1.0000     16  
+pRL100162_p-202(nifH)    1.0000     16  pRL100162_p-231(nifH)    1.0000     16  
+pRL100200_p-148(fixB)    1.0000     16  NGR_a00930_p-282(nifS)   1.0000     16  
+NGR_a01190_p-228(nifQ)   1.0000     16  NGR_a01270_p-144(nifB)   1.0000     16  
+NGR_a00890_p-208(nifH)   1.0000     16  NGR_c29850_p-55(modB)    1.0000     16  
+NGR_a02700_p-183(cpxP)   1.0000     16  NGR_a01130_p-211(nifH)   1.0000     16  
+NGR_a01190_p-200(nifQ)   1.0000     16  NGR_a01200_p-273(ahpC1)  1.0000     16  
+NGR_a01200_p-245(ahpC1)  1.0000     16  NGR_a01220_p-162(fixB)   1.0000     16  
+NGR_a01210_p-114(iscN)   1.0000     16  RPA4631_p-129(fdxN)      1.0000     16  
+RPA4610_p-123(iscN)      1.0000     16  RPA4605_p-184(fixB)      1.0000     16  
+RPA4631_p-147(fdxN)      1.0000     16  RPA4620_p-252(nifH)      1.0000     16  
+RPA4610_p-140(iscN)      1.0000     16  RPA1373_p-198(nifE)      1.0000     16  
+RPA1373_p-223(nifE)      1.0000     16  RPA4633_p-161(fixR)      1.0000     16  
+RPA4633_p-118(fixR)      1.0000     16  RPA0962_p-202(hupS)      1.0000     16  
+RPA1001_p-147(cheY)      1.0000     16  RPA4634_p-111(xdhC)      1.0000     16  
+SMa0825_p-192(nifH)      1.0000     16  SMa0814_p-130(nifB)      1.0000     16  
+SMa0872_p-194(orf110)    1.0000     16  SMa0822_p-244(fixB)      1.0000     16  
+Xaut_0088_p-358(nifH)    1.0000     16  Xaut_0149_p-122(iscN)    1.0000     16  
+Xaut_0143_p-271(nifH)    1.0000     16  Xaut_0142_p-262(fixB)    1.0000     16  
+Xaut_0142_p-180(fixB)    1.0000     16  Xaut_0111_p-284(nifB)    1.0000     16  
+Xaut_0082_p-56(nifA)     1.0000     16  Xaut_0083_p-148(fdxN)    1.0000     16  
+Xaut_2332_p-163(fer2)    1.0000     16  Xaut_0124_p-103(bolA)    1.0000     16  
+Xaut_0111_p-141(nifB)    1.0000     16  Xaut_0106_p-115(iscN)    1.0000     16  
+Xaut_0106_p-133(iscN)    1.0000     16  Xaut_0088_p-233(nifH)    1.0000     16  
+Xaut_0125_p-74(xdhC)     1.0000     16  Xaut_0143_p-301(nifH)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NifA_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/NifA_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      130    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2080    N=             130
+sample: seed=            0    hsfrac=          0
+        searchsize=   2080    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.223 C 0.276 G 0.272 T 0.23 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.223 C 0.276 G 0.272 T 0.23 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTCGSRWWBSCGACA MEME-1	width =  16  sites = 130  llr = 1306  E-value = 1.5e-518
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::21533:1129:9
+pos.-specific     C  1::913212447::a:
+probability       G  :a::753112518::1
+matrix            T  9:a1111443111:::
+
+         bits    2.2                 
+                 2.0                 
+                 1.7   *          ** 
+                 1.5  **          ** 
+Relative         1.3 ***          ***
+Entropy          1.1 ****         ***
+(14.5 bits)      0.9 ****        ****
+                 0.7 *****      *****
+                 0.4 *****  *   *****
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TGTCGGATTCGCGACA
+consensus                 CGAATC     
+sequence                   C  G      
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Xaut_0149_p-122(iscN)         1  4.70e-09          . TGTCGCATTCGCGACA           
+blr6951_p-195(modA)           1  4.70e-09          . TGTCGGAAATCCGACA           
+AZC_1052_p-235(xdhC)          1  1.79e-08          . TGTCGGCTTTCCGACA           
+AZC_1051_p-161(ahpC)          1  1.79e-08          . TGTCGGAAAGCCGACA           
+blr1743_p-155(nifD)           1  2.14e-08          . TGTCGGATTCGCAACA           
+AZC_3409_p-134(iscN)          1  3.83e-08          . TGTCGCAAAGGCGACA           
+RPA4605_p-184(fixB)           1  4.69e-08          . TGTCGCCTTCCCGACA           
+BBta_5932_p-160(fdxN)         1  5.61e-08          . TGTCGCATCTGCGACA           
+NGR_a01130_p-211(nifH)        1  6.71e-08          . TGTCGGCTCCGCGACA           
+NGR_a00890_p-208(nifH)        1  6.71e-08          . TGTCGGCTCCGCGACA           
+SMa0814_p-130(nifB)           1  8.01e-08          . TGTCGGAAGTCCGACA           
+BBta_5879_p-267(nifH)         1  8.01e-08          . TGTCGGGTTTGCAACA           
+BBta_5925_p-262(nifH)         1  8.01e-08          . TGTCGGGTTTGCAACA           
+Xaut_0083_p-148(fdxN)         1  9.65e-08          . TGTCGCACTTGCGACA           
+AZC_3437_p-128(bolA)          1  1.13e-07          . TGTCGCATGTGCGACA           
+NGR_a02700_p-183(cpxP)        1  1.36e-07          . TGTCGCGTCCGCGACA           
+BBta_5936_p-255(xdhC)         1  1.36e-07          . TGTCGCATTCACGACA           
+BBta_5909_p-130(iscN)         1  1.36e-07          . TGTCGGAAAGTCGACA           
+blr1755_p-116(iscN)           1  1.36e-07          . TGTCAGGAACCCGACA           
+AZC_1043_p-160(fdxN)          1  1.36e-07          . TGTCGCAGTCGCGACA           
+BBta_5935_p-151(fixR)         1  1.90e-07          . TGTCGTGAATGCGACA           
+RPA4631_p-147(fdxN)           1  2.24e-07          . TGTCAGACTTGCGACA           
+RPA4610_p-123(iscN)           1  2.62e-07          . TGTCGGACCTCCGACA           
+SMa0872_p-194(orf110)         1  3.00e-07          . TGTCAGGTCCGCGACA           
+mll5862_p-161(fixB)           1  3.00e-07          . TGTCGAAAAGCCGACA           
+BBta_5863_p-105(ahpC)         1  3.00e-07          . TGTCGACTTTCCGACA           
+NGR_a01270_p-144(nifB)        1  3.95e-07          . TGTCGCGAATTCGACA           
+BBta_5880_p-168(cheY)         1  3.95e-07          . TGTTGCAAACCCGACA           
+AZC_3414_p-138(nifB)          1  3.95e-07          . TGTTGGCAACGCGACA           
+SMa0825_p-192(nifH)           1  4.58e-07          . TGTCGGCTTAGCGACA           
+RHE_PD00215_p-193(cpxA)       1  4.58e-07          . TGTTAGATACGCGACA           
+Xaut_0125_p-74(xdhC)          1  5.29e-07          . TGTCGCAAAGGAGACA           
+Xaut_0142_p-180(fixB)         1  5.29e-07          . TGTCGCCTTCCTGACA           
+BBta_5872_p-171(fixB)         1  5.29e-07          . TGTCGCATTCCCGACG           
+AZC_3447_p-179(fixB)          1  5.29e-07          . TGTCGCATTCCCGACG           
+Xaut_0124_p-103(bolA)         1  6.08e-07          . TGTCTCCTTTGCGACA           
+RHE_PD00202_p-195(nifH)       1  6.94e-07          . TGTCTGATCGGCGACA           
+RHE_PD00308_p-195(nifH)       1  6.94e-07          . TGTCTGATCGGCGACA           
+AZC_3443_p-255(nifH)          1  6.94e-07          . TGTCAGGTTCGAGACA           
+pRL100162_p-202(nifH)         1  7.91e-07          . TGTCGGTTACGTGACA           
+BBta_5909_p-190(iscN)         1  7.91e-07          . TGTCGGATTTGCGCCA           
+pRL100200_p-148(fixB)         1  9.02e-07          . TGTCGGCAACCCTACA           
+BBta_5904_p-141(nifB)         1  9.02e-07          . TGTTGGCAAGGCGACA           
+NGR_a01200_p-245(ahpC1)       1  1.03e-06          . TGTCGGCTCTCTGACA           
+NGR_a01190_p-228(nifQ)        1  1.03e-06          . TGTCAGAGAGCCGACA           
+AZC_1043_p-142(fdxN)          1  1.03e-06          . TGTCGGGGGCGCGACA           
+NGR_a01200_p-273(ahpC1)       1  1.34e-06          . TGTCGGAAGGACGACA           
+NGR_a01190_p-200(nifQ)        1  1.34e-06          . TGTCGTCCTTCCGACA           
+mll5942_p-133(iscN)           1  1.34e-06          . TGTCCGACATCCGACA           
+BBta_5884_p-139(bolA)         1  1.34e-06          . TGTCGCAAAGGCGACG           
+RPA1373_p-223(nifE)           1  1.52e-06          . TGTCAGATTCACAACA           
+RPA4620_p-252(nifH)           1  1.94e-06          . TGTCGGATTCTAAACA           
+AZC_1041_p-281(nifH)          1  1.94e-06          . TGTCGCGTTTGAAACA           
+NGR_a01220_p-162(fixB)        1  2.19e-06          . TGTCATGAAGCCGACA           
+mll5855_p-156(nifB)           1  2.19e-06          . TGTCGGCGACCTGACA           
+SMa0822_p-244(fixB)           1  2.77e-06          . TGTCGGCCCCTCGACA           
+RHE_PD00229_p-139(nifB)       1  2.77e-06          . TGTCGGAAGCTTGACA           
+BBta_5932_p-141(fdxN)         1  2.77e-06          . TGTCGGGAGAGCGACA           
+mll6127_p-194(ompW)           1  3.89e-06          . TGTCGGATCTTCGACG           
+RPA4634_p-111(xdhC)           1  4.86e-06          . CGTTGGCTTTGCGACA           
+mll5942_p-115(iscN)           1  4.86e-06          . TGTTGGATGTGAGACA           
+AZC_3442_p-192(cheY)          1  4.86e-06          . TGTCTCGAACCTGACA           
+RPA1001_p-147(cheY)           1  5.41e-06          . TGTCAGGTTTGCGACC           
+Xaut_0088_p-358(nifH)         1  6.72e-06          . CGTCGAACTTGCGACA           
+RPA4633_p-161(fixR)           1  6.72e-06          . TGTCGCAAAGCCAACG           
+RPA1373_p-198(nifE)           1  6.72e-06          . TGTCGGATTTTTGACG           
+Xaut_0143_p-301(nifH)         1  7.47e-06          . TGTTTTAATCCCGACA           
+Xaut_0088_p-233(nifH)         1  7.47e-06          . TGTCGGGTTCTGAACA           
+msr5868_p-459(PF05082)        1  7.47e-06          . TGTCCAATTCACGACA           
+RHE_PD00224_p-156(fixB)       1  8.30e-06          . TGTCGGGAAGCTTACA           
+Xaut_0106_p-133(iscN)         1  9.21e-06          . TGTCCGGAATCGGACA           
+AZC_3442_p-163(cheY)          1  9.21e-06          . TGTTGGAAAGGAAACA           
+BBta_5909_p-112(iscN)         1  1.13e-05          . CGTCGGAAACGCCACA           
+AZC_3409_p-116(iscN)          1  1.13e-05          . GGTCTGCTTCGCGACA           
+pRL100162_p-231(nifH)         1  1.25e-05          . GGTCAGATATTCGACA           
+BBta_0121_p-184(rpoN)         1  1.25e-05          . TGTCGCGGGTGTGACA           
+blr6951_p-215(modA)           1  1.38e-05          . TGTCAGCTTGCCGACC           
+bll2060_p-194(groES3)         1  1.38e-05          . TGTCATTTTCACGACA           
+Xaut_0143_p-271(nifH)         1  1.53e-05          . TGTCGCGTTCGACACA           
+blr2143_p-129(cpx1)           1  1.53e-05          . TGTCGGCATTGAGACT           
+Xaut_0111_p-141(nifB)         1  1.68e-05          . TGTTGTTAAGCCGACA           
+BBta_2080_p-224(modA)         1  1.68e-05          . CGTTGTGTTTGCGACA           
+blr1771_p-495(nifW)           1  1.85e-05          . TGTCGCATTTGCCACG           
+mlr5875_p-154(mlr5875)        1  2.04e-05          . TGTCATGTCCGGGACA           
+blr1719_p-369(modB)           1  2.04e-05          . TGTCCGCTTGGAAACA           
+RHE_PD00202_p-138(nifH)       1  2.24e-05          . TTTCTGAAACCCAACA           
+RHE_PD00308_p-138(nifH)       1  2.24e-05          . TTTCTGAAACCCAACA           
+AZC_3443_p-284(nifH)          1  2.24e-05          . TGTTTCCTTTCCAACA           
+AZC_3437_p-121(bolA)          1  2.24e-05          . TGTGCGACATGCGACA           
+Xaut_0106_p-115(iscN)         1  2.46e-05          . CGTCGCAAAGACAACA           
+mlr5905_p-207(nifH)           1  2.46e-05          . TGTCAGGGCCGCTACA           
+NGR_a01210_p-114(iscN)        1  2.70e-05          . TGTCGTACAAACGACA           
+AZC_3447_p-113(fixB)          1  2.70e-05          . TGTGGCATGCCAGACA           
+AZC_1051_p-206(ahpC)          1  2.70e-05          . CGGCGGGTTCCCGACA           
+blr1719_p-349(modB)           1  2.96e-05          . TGCCAGAAACCTGACA           
+blr2143_p-110(cpx1)           1  2.96e-05          . TGCCAGAAACCTGACA           
+AZC_1052_p-190(xdhC)          1  2.96e-05          . TGTCGGGAACCCGCCG           
+Xaut_0082_p-56(nifA)          1  3.24e-05          . TGTCGCTAATCATACA           
+Xaut_0142_p-262(fixB)         1  3.56e-05          . CGTCGCAATTGTGACG           
+RPA4610_p-140(iscN)           1  3.56e-05          . CGTCGGCTTCACGACG           
+mll5873_p-482(ahpC1)          1  3.56e-05          . GGTCCGACTTCCGACA           
+BBta_2080_p-193(modA)         1  3.56e-05          . TGTCGAAAGTCGAACA           
+AZC_3446_p-192(nifW)          1  3.56e-05          . TGTCGCCTTCGGGGCA           
+RHE_PD00260_p-190(nifH)       1  3.89e-05          . TGGCGGTTTCGAGACA           
+NGR_c29850_p-55(modB)         1  4.26e-05          . CGTCGTGCATCCAACA           
+BBta_5933_p-64(nifA)          1  4.26e-05          . TGTTAGAACGCCTACA           
+blr1883_p-376(rpoN)           1  4.65e-05          . TGTCTGAGTGGCGGCA           
+msr5868_p-217(PF05082)        1  5.54e-05          . CGTCGCCAAATCGACA           
+mll6127_p-177(ompW)           1  5.54e-05          . AGTCGGACATGAGACA           
+blr2036_p-126(fixR)           1  5.54e-05          . TGTCTTGAATGCGCCA           
+blr2037_p-39(nifA)            1  5.54e-05          . TGTCATCTCGTCAACA           
+RPA4631_p-129(fdxN)           1  6.04e-05          . TGTCGGGGGCCTTACA           
+blr1720_p-186(hupS)           1  6.57e-05          . CGTCGAAAACTGGACA           
+Xaut_0111_p-284(nifB)         1  8.45e-05          . TGTCCCCGTGGGGACA           
+mll5873_p-462(ahpC1)          1  9.96e-05          . TGTCCAGCTTCGGACA           
+RPA4633_p-118(fixR)           1  1.37e-04          . TGTCGTTGTGATGACA           
+BBta_5882_p-325(fer2)         1  1.37e-04          . TGTCGACATCCGAACG           
+RHE_PD00217_p-407(ahpC1)      1  1.61e-04          . TGTCGGACCTCAAACT           
+bll1075_p-257(fdxN)           1  1.61e-04          . TTTCGAGCTCGCTACA           
+RHE_PD00259_p-176(nifQ)       1  1.73e-04          . TGTCCGTTTGGCGATA           
+RPA0962_p-202(hupS)           1  1.87e-04          . TGTCAGCGCCGCAACC           
+Xaut_2332_p-163(fer2)         1  2.18e-04          . TGTCGCTTTCCCGCCC           
+Nwi_1312_p-112(grlA)          1  2.35e-04          . TGTGACAACCCCGGCA           
+blr2036_p-106(fixR)           1  2.35e-04          . TTCCGCGTGCGCGACA           
+blr2144_p-265(cpxP)           1  2.35e-04          . TATGGCGATGCCGACA           
+mlr6364_p-331(cpxP)           1  2.53e-04          . TGTCAAATCCGCATCA           
+AZC_0303_p-67(fer2)           1  2.53e-04          . TGTGGGGCCTCCGGCA           
+blr1720_p-34(hupS)            1  5.90e-04          . CGTAACGCTGGCGACA           
+msr5928_p-77(PF05082)         1  6.31e-04          . GGTCGGCGATGTGACT           
+NGR_a00930_p-282(nifS)        1  1.06e-03          . TCGCGCGAGGGCGACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Xaut_0149_p-122(iscN)             4.7e-09  [+1]
+blr6951_p-195(modA)               4.7e-09  [+1]
+AZC_1052_p-235(xdhC)              1.8e-08  [+1]
+AZC_1051_p-161(ahpC)              1.8e-08  [+1]
+blr1743_p-155(nifD)               2.1e-08  [+1]
+AZC_3409_p-134(iscN)              3.8e-08  [+1]
+RPA4605_p-184(fixB)               4.7e-08  [+1]
+BBta_5932_p-160(fdxN)             5.6e-08  [+1]
+NGR_a01130_p-211(nifH)            6.7e-08  [+1]
+NGR_a00890_p-208(nifH)            6.7e-08  [+1]
+SMa0814_p-130(nifB)                 8e-08  [+1]
+BBta_5879_p-267(nifH)               8e-08  [+1]
+BBta_5925_p-262(nifH)               8e-08  [+1]
+Xaut_0083_p-148(fdxN)             9.7e-08  [+1]
+AZC_3437_p-128(bolA)              1.1e-07  [+1]
+NGR_a02700_p-183(cpxP)            1.4e-07  [+1]
+BBta_5936_p-255(xdhC)             1.4e-07  [+1]
+BBta_5909_p-130(iscN)             1.4e-07  [+1]
+blr1755_p-116(iscN)               1.4e-07  [+1]
+AZC_1043_p-160(fdxN)              1.4e-07  [+1]
+BBta_5935_p-151(fixR)             1.9e-07  [+1]
+RPA4631_p-147(fdxN)               2.2e-07  [+1]
+RPA4610_p-123(iscN)               2.6e-07  [+1]
+SMa0872_p-194(orf110)               3e-07  [+1]
+mll5862_p-161(fixB)                 3e-07  [+1]
+BBta_5863_p-105(ahpC)               3e-07  [+1]
+NGR_a01270_p-144(nifB)              4e-07  [+1]
+BBta_5880_p-168(cheY)               4e-07  [+1]
+AZC_3414_p-138(nifB)                4e-07  [+1]
+SMa0825_p-192(nifH)               4.6e-07  [+1]
+RHE_PD00215_p-193(cpxA)           4.6e-07  [+1]
+Xaut_0125_p-74(xdhC)              5.3e-07  [+1]
+Xaut_0142_p-180(fixB)             5.3e-07  [+1]
+BBta_5872_p-171(fixB)             5.3e-07  [+1]
+AZC_3447_p-179(fixB)              5.3e-07  [+1]
+Xaut_0124_p-103(bolA)             6.1e-07  [+1]
+RHE_PD00202_p-195(nifH)           6.9e-07  [+1]
+RHE_PD00308_p-195(nifH)           6.9e-07  [+1]
+AZC_3443_p-255(nifH)              6.9e-07  [+1]
+pRL100162_p-202(nifH)             7.9e-07  [+1]
+BBta_5909_p-190(iscN)             7.9e-07  [+1]
+pRL100200_p-148(fixB)               9e-07  [+1]
+BBta_5904_p-141(nifB)               9e-07  [+1]
+NGR_a01200_p-245(ahpC1)             1e-06  [+1]
+NGR_a01190_p-228(nifQ)              1e-06  [+1]
+AZC_1043_p-142(fdxN)                1e-06  [+1]
+NGR_a01200_p-273(ahpC1)           1.3e-06  [+1]
+NGR_a01190_p-200(nifQ)            1.3e-06  [+1]
+mll5942_p-133(iscN)               1.3e-06  [+1]
+BBta_5884_p-139(bolA)             1.3e-06  [+1]
+RPA1373_p-223(nifE)               1.5e-06  [+1]
+RPA4620_p-252(nifH)               1.9e-06  [+1]
+AZC_1041_p-281(nifH)              1.9e-06  [+1]
+NGR_a01220_p-162(fixB)            2.2e-06  [+1]
+mll5855_p-156(nifB)               2.2e-06  [+1]
+SMa0822_p-244(fixB)               2.8e-06  [+1]
+RHE_PD00229_p-139(nifB)           2.8e-06  [+1]
+BBta_5932_p-141(fdxN)             2.8e-06  [+1]
+mll6127_p-194(ompW)               3.9e-06  [+1]
+RPA4634_p-111(xdhC)               4.9e-06  [+1]
+mll5942_p-115(iscN)               4.9e-06  [+1]
+AZC_3442_p-192(cheY)              4.9e-06  [+1]
+RPA1001_p-147(cheY)               5.4e-06  [+1]
+Xaut_0088_p-358(nifH)             6.7e-06  [+1]
+RPA4633_p-161(fixR)               6.7e-06  [+1]
+RPA1373_p-198(nifE)               6.7e-06  [+1]
+Xaut_0143_p-301(nifH)             7.5e-06  [+1]
+Xaut_0088_p-233(nifH)             7.5e-06  [+1]
+msr5868_p-459(PF05082)            7.5e-06  [+1]
+RHE_PD00224_p-156(fixB)           8.3e-06  [+1]
+Xaut_0106_p-133(iscN)             9.2e-06  [+1]
+AZC_3442_p-163(cheY)              9.2e-06  [+1]
+BBta_5909_p-112(iscN)             1.1e-05  [+1]
+AZC_3409_p-116(iscN)              1.1e-05  [+1]
+pRL100162_p-231(nifH)             1.3e-05  [+1]
+BBta_0121_p-184(rpoN)             1.3e-05  [+1]
+blr6951_p-215(modA)               1.4e-05  [+1]
+bll2060_p-194(groES3)             1.4e-05  [+1]
+Xaut_0143_p-271(nifH)             1.5e-05  [+1]
+blr2143_p-129(cpx1)               1.5e-05  [+1]
+Xaut_0111_p-141(nifB)             1.7e-05  [+1]
+BBta_2080_p-224(modA)             1.7e-05  [+1]
+blr1771_p-495(nifW)               1.9e-05  [+1]
+mlr5875_p-154(mlr5875)              2e-05  [+1]
+blr1719_p-369(modB)                 2e-05  [+1]
+RHE_PD00202_p-138(nifH)           2.2e-05  [+1]
+RHE_PD00308_p-138(nifH)           2.2e-05  [+1]
+AZC_3443_p-284(nifH)              2.2e-05  [+1]
+AZC_3437_p-121(bolA)              2.2e-05  [+1]
+Xaut_0106_p-115(iscN)             2.5e-05  [+1]
+mlr5905_p-207(nifH)               2.5e-05  [+1]
+NGR_a01210_p-114(iscN)            2.7e-05  [+1]
+AZC_3447_p-113(fixB)              2.7e-05  [+1]
+AZC_1051_p-206(ahpC)              2.7e-05  [+1]
+blr1719_p-349(modB)                 3e-05  [+1]
+blr2143_p-110(cpx1)                 3e-05  [+1]
+AZC_1052_p-190(xdhC)                3e-05  [+1]
+Xaut_0082_p-56(nifA)              3.2e-05  [+1]
+Xaut_0142_p-262(fixB)             3.6e-05  [+1]
+RPA4610_p-140(iscN)               3.6e-05  [+1]
+mll5873_p-482(ahpC1)              3.6e-05  [+1]
+BBta_2080_p-193(modA)             3.6e-05  [+1]
+AZC_3446_p-192(nifW)              3.6e-05  [+1]
+RHE_PD00260_p-190(nifH)           3.9e-05  [+1]
+NGR_c29850_p-55(modB)             4.3e-05  [+1]
+BBta_5933_p-64(nifA)              4.3e-05  [+1]
+blr1883_p-376(rpoN)               4.6e-05  [+1]
+msr5868_p-217(PF05082)            5.5e-05  [+1]
+mll6127_p-177(ompW)               5.5e-05  [+1]
+blr2036_p-126(fixR)               5.5e-05  [+1]
+blr2037_p-39(nifA)                5.5e-05  [+1]
+RPA4631_p-129(fdxN)                 6e-05  [+1]
+blr1720_p-186(hupS)               6.6e-05  [+1]
+Xaut_0111_p-284(nifB)             8.5e-05  [+1]
+mll5873_p-462(ahpC1)               0.0001  [+1]
+RPA4633_p-118(fixR)               0.00014  [+1]
+BBta_5882_p-325(fer2)             0.00014  [+1]
+RHE_PD00217_p-407(ahpC1)          0.00016  [+1]
+bll1075_p-257(fdxN)               0.00016  [+1]
+RHE_PD00259_p-176(nifQ)           0.00017  [+1]
+RPA0962_p-202(hupS)               0.00019  [+1]
+Xaut_2332_p-163(fer2)             0.00022  [+1]
+Nwi_1312_p-112(grlA)              0.00023  [+1]
+blr2036_p-106(fixR)               0.00023  [+1]
+blr2144_p-265(cpxP)               0.00023  [+1]
+mlr6364_p-331(cpxP)               0.00025  [+1]
+AZC_0303_p-67(fer2)               0.00025  [+1]
+blr1720_p-34(hupS)                0.00059  [+1]
+msr5928_p-77(PF05082)             0.00063  [+1]
+NGR_a00930_p-282(nifS)             0.0011  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTCGSRWWBSCGACA width=16 seqs=130
+Xaut_0149_p-122(iscN)    (    1) TGTCGCATTCGCGACA  1 
+blr6951_p-195(modA)      (    1) TGTCGGAAATCCGACA  1 
+AZC_1052_p-235(xdhC)     (    1) TGTCGGCTTTCCGACA  1 
+AZC_1051_p-161(ahpC)     (    1) TGTCGGAAAGCCGACA  1 
+blr1743_p-155(nifD)      (    1) TGTCGGATTCGCAACA  1 
+AZC_3409_p-134(iscN)     (    1) TGTCGCAAAGGCGACA  1 
+RPA4605_p-184(fixB)      (    1) TGTCGCCTTCCCGACA  1 
+BBta_5932_p-160(fdxN)    (    1) TGTCGCATCTGCGACA  1 
+NGR_a01130_p-211(nifH)   (    1) TGTCGGCTCCGCGACA  1 
+NGR_a00890_p-208(nifH)   (    1) TGTCGGCTCCGCGACA  1 
+SMa0814_p-130(nifB)      (    1) TGTCGGAAGTCCGACA  1 
+BBta_5879_p-267(nifH)    (    1) TGTCGGGTTTGCAACA  1 
+BBta_5925_p-262(nifH)    (    1) TGTCGGGTTTGCAACA  1 
+Xaut_0083_p-148(fdxN)    (    1) TGTCGCACTTGCGACA  1 
+AZC_3437_p-128(bolA)     (    1) TGTCGCATGTGCGACA  1 
+NGR_a02700_p-183(cpxP)   (    1) TGTCGCGTCCGCGACA  1 
+BBta_5936_p-255(xdhC)    (    1) TGTCGCATTCACGACA  1 
+BBta_5909_p-130(iscN)    (    1) TGTCGGAAAGTCGACA  1 
+blr1755_p-116(iscN)      (    1) TGTCAGGAACCCGACA  1 
+AZC_1043_p-160(fdxN)     (    1) TGTCGCAGTCGCGACA  1 
+BBta_5935_p-151(fixR)    (    1) TGTCGTGAATGCGACA  1 
+RPA4631_p-147(fdxN)      (    1) TGTCAGACTTGCGACA  1 
+RPA4610_p-123(iscN)      (    1) TGTCGGACCTCCGACA  1 
+SMa0872_p-194(orf110)    (    1) TGTCAGGTCCGCGACA  1 
+mll5862_p-161(fixB)      (    1) TGTCGAAAAGCCGACA  1 
+BBta_5863_p-105(ahpC)    (    1) TGTCGACTTTCCGACA  1 
+NGR_a01270_p-144(nifB)   (    1) TGTCGCGAATTCGACA  1 
+BBta_5880_p-168(cheY)    (    1) TGTTGCAAACCCGACA  1 
+AZC_3414_p-138(nifB)     (    1) TGTTGGCAACGCGACA  1 
+SMa0825_p-192(nifH)      (    1) TGTCGGCTTAGCGACA  1 
+RHE_PD00215_p-193(cpxA)  (    1) TGTTAGATACGCGACA  1 
+Xaut_0125_p-74(xdhC)     (    1) TGTCGCAAAGGAGACA  1 
+Xaut_0142_p-180(fixB)    (    1) TGTCGCCTTCCTGACA  1 
+BBta_5872_p-171(fixB)    (    1) TGTCGCATTCCCGACG  1 
+AZC_3447_p-179(fixB)     (    1) TGTCGCATTCCCGACG  1 
+Xaut_0124_p-103(bolA)    (    1) TGTCTCCTTTGCGACA  1 
+RHE_PD00202_p-195(nifH)  (    1) TGTCTGATCGGCGACA  1 
+RHE_PD00308_p-195(nifH)  (    1) TGTCTGATCGGCGACA  1 
+AZC_3443_p-255(nifH)     (    1) TGTCAGGTTCGAGACA  1 
+pRL100162_p-202(nifH)    (    1) TGTCGGTTACGTGACA  1 
+BBta_5909_p-190(iscN)    (    1) TGTCGGATTTGCGCCA  1 
+pRL100200_p-148(fixB)    (    1) TGTCGGCAACCCTACA  1 
+BBta_5904_p-141(nifB)    (    1) TGTTGGCAAGGCGACA  1 
+NGR_a01200_p-245(ahpC1)  (    1) TGTCGGCTCTCTGACA  1 
+NGR_a01190_p-228(nifQ)   (    1) TGTCAGAGAGCCGACA  1 
+AZC_1043_p-142(fdxN)     (    1) TGTCGGGGGCGCGACA  1 
+NGR_a01200_p-273(ahpC1)  (    1) TGTCGGAAGGACGACA  1 
+NGR_a01190_p-200(nifQ)   (    1) TGTCGTCCTTCCGACA  1 
+mll5942_p-133(iscN)      (    1) TGTCCGACATCCGACA  1 
+BBta_5884_p-139(bolA)    (    1) TGTCGCAAAGGCGACG  1 
+RPA1373_p-223(nifE)      (    1) TGTCAGATTCACAACA  1 
+RPA4620_p-252(nifH)      (    1) TGTCGGATTCTAAACA  1 
+AZC_1041_p-281(nifH)     (    1) TGTCGCGTTTGAAACA  1 
+NGR_a01220_p-162(fixB)   (    1) TGTCATGAAGCCGACA  1 
+mll5855_p-156(nifB)      (    1) TGTCGGCGACCTGACA  1 
+SMa0822_p-244(fixB)      (    1) TGTCGGCCCCTCGACA  1 
+RHE_PD00229_p-139(nifB)  (    1) TGTCGGAAGCTTGACA  1 
+BBta_5932_p-141(fdxN)    (    1) TGTCGGGAGAGCGACA  1 
+mll6127_p-194(ompW)      (    1) TGTCGGATCTTCGACG  1 
+RPA4634_p-111(xdhC)      (    1) CGTTGGCTTTGCGACA  1 
+mll5942_p-115(iscN)      (    1) TGTTGGATGTGAGACA  1 
+AZC_3442_p-192(cheY)     (    1) TGTCTCGAACCTGACA  1 
+RPA1001_p-147(cheY)      (    1) TGTCAGGTTTGCGACC  1 
+Xaut_0088_p-358(nifH)    (    1) CGTCGAACTTGCGACA  1 
+RPA4633_p-161(fixR)      (    1) TGTCGCAAAGCCAACG  1 
+RPA1373_p-198(nifE)      (    1) TGTCGGATTTTTGACG  1 
+Xaut_0143_p-301(nifH)    (    1) TGTTTTAATCCCGACA  1 
+Xaut_0088_p-233(nifH)    (    1) TGTCGGGTTCTGAACA  1 
+msr5868_p-459(PF05082)   (    1) TGTCCAATTCACGACA  1 
+RHE_PD00224_p-156(fixB)  (    1) TGTCGGGAAGCTTACA  1 
+Xaut_0106_p-133(iscN)    (    1) TGTCCGGAATCGGACA  1 
+AZC_3442_p-163(cheY)     (    1) TGTTGGAAAGGAAACA  1 
+BBta_5909_p-112(iscN)    (    1) CGTCGGAAACGCCACA  1 
+AZC_3409_p-116(iscN)     (    1) GGTCTGCTTCGCGACA  1 
+pRL100162_p-231(nifH)    (    1) GGTCAGATATTCGACA  1 
+BBta_0121_p-184(rpoN)    (    1) TGTCGCGGGTGTGACA  1 
+blr6951_p-215(modA)      (    1) TGTCAGCTTGCCGACC  1 
+bll2060_p-194(groES3)    (    1) TGTCATTTTCACGACA  1 
+Xaut_0143_p-271(nifH)    (    1) TGTCGCGTTCGACACA  1 
+blr2143_p-129(cpx1)      (    1) TGTCGGCATTGAGACT  1 
+Xaut_0111_p-141(nifB)    (    1) TGTTGTTAAGCCGACA  1 
+BBta_2080_p-224(modA)    (    1) CGTTGTGTTTGCGACA  1 
+blr1771_p-495(nifW)      (    1) TGTCGCATTTGCCACG  1 
+mlr5875_p-154(mlr5875)   (    1) TGTCATGTCCGGGACA  1 
+blr1719_p-369(modB)      (    1) TGTCCGCTTGGAAACA  1 
+RHE_PD00202_p-138(nifH)  (    1) TTTCTGAAACCCAACA  1 
+RHE_PD00308_p-138(nifH)  (    1) TTTCTGAAACCCAACA  1 
+AZC_3443_p-284(nifH)     (    1) TGTTTCCTTTCCAACA  1 
+AZC_3437_p-121(bolA)     (    1) TGTGCGACATGCGACA  1 
+Xaut_0106_p-115(iscN)    (    1) CGTCGCAAAGACAACA  1 
+mlr5905_p-207(nifH)      (    1) TGTCAGGGCCGCTACA  1 
+NGR_a01210_p-114(iscN)   (    1) TGTCGTACAAACGACA  1 
+AZC_3447_p-113(fixB)     (    1) TGTGGCATGCCAGACA  1 
+AZC_1051_p-206(ahpC)     (    1) CGGCGGGTTCCCGACA  1 
+blr1719_p-349(modB)      (    1) TGCCAGAAACCTGACA  1 
+blr2143_p-110(cpx1)      (    1) TGCCAGAAACCTGACA  1 
+AZC_1052_p-190(xdhC)     (    1) TGTCGGGAACCCGCCG  1 
+Xaut_0082_p-56(nifA)     (    1) TGTCGCTAATCATACA  1 
+Xaut_0142_p-262(fixB)    (    1) CGTCGCAATTGTGACG  1 
+RPA4610_p-140(iscN)      (    1) CGTCGGCTTCACGACG  1 
+mll5873_p-482(ahpC1)     (    1) GGTCCGACTTCCGACA  1 
+BBta_2080_p-193(modA)    (    1) TGTCGAAAGTCGAACA  1 
+AZC_3446_p-192(nifW)     (    1) TGTCGCCTTCGGGGCA  1 
+RHE_PD00260_p-190(nifH)  (    1) TGGCGGTTTCGAGACA  1 
+NGR_c29850_p-55(modB)    (    1) CGTCGTGCATCCAACA  1 
+BBta_5933_p-64(nifA)     (    1) TGTTAGAACGCCTACA  1 
+blr1883_p-376(rpoN)      (    1) TGTCTGAGTGGCGGCA  1 
+msr5868_p-217(PF05082)   (    1) CGTCGCCAAATCGACA  1 
+mll6127_p-177(ompW)      (    1) AGTCGGACATGAGACA  1 
+blr2036_p-126(fixR)      (    1) TGTCTTGAATGCGCCA  1 
+blr2037_p-39(nifA)       (    1) TGTCATCTCGTCAACA  1 
+RPA4631_p-129(fdxN)      (    1) TGTCGGGGGCCTTACA  1 
+blr1720_p-186(hupS)      (    1) CGTCGAAAACTGGACA  1 
+Xaut_0111_p-284(nifB)    (    1) TGTCCCCGTGGGGACA  1 
+mll5873_p-462(ahpC1)     (    1) TGTCCAGCTTCGGACA  1 
+RPA4633_p-118(fixR)      (    1) TGTCGTTGTGATGACA  1 
+BBta_5882_p-325(fer2)    (    1) TGTCGACATCCGAACG  1 
+RHE_PD00217_p-407(ahpC1) (    1) TGTCGGACCTCAAACT  1 
+bll1075_p-257(fdxN)      (    1) TTTCGAGCTCGCTACA  1 
+RHE_PD00259_p-176(nifQ)  (    1) TGTCCGTTTGGCGATA  1 
+RPA0962_p-202(hupS)      (    1) TGTCAGCGCCGCAACC  1 
+Xaut_2332_p-163(fer2)    (    1) TGTCGCTTTCCCGCCC  1 
+Nwi_1312_p-112(grlA)     (    1) TGTGACAACCCCGGCA  1 
+blr2036_p-106(fixR)      (    1) TTCCGCGTGCGCGACA  1 
+blr2144_p-265(cpxP)      (    1) TATGGCGATGCCGACA  1 
+mlr6364_p-331(cpxP)      (    1) TGTCAAATCCGCATCA  1 
+AZC_0303_p-67(fer2)      (    1) TGTGGGGCCTCCGGCA  1 
+blr1720_p-34(hupS)       (    1) CGTAACGCTGGCGACA  1 
+msr5928_p-77(PF05082)    (    1) GGTCGGCGATGTGACT  1 
+NGR_a00930_p-282(nifS)   (    1) TCGCGCGAGGGCGACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 130 bayes= 1.89148 E= 1.5e-518 
+  -485   -158   -314    192 
+  -485   -516    181   -290 
+ -1367   -358   -356    205 
+  -485    164   -282   -132 
+   -40   -199    132   -144 
+  -153      4     99   -120 
+   103    -31     -5   -190 
+    64   -108   -156     91 
+    57    -84   -144     85 
+  -285     59    -33     56 
+  -169     42     79   -132 
+  -105    136   -197    -99 
+   -46   -358    149   -209 
+   206   -316   -314   -490 
+ -1367    185  -1367   -490 
+   195   -316   -168   -332 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 130 E= 1.5e-518 
+ 0.007692  0.092308  0.030769  0.869231 
+ 0.007692  0.007692  0.953846  0.030769 
+ 0.000000  0.023077  0.023077  0.953846 
+ 0.007692  0.861538  0.038462  0.092308 
+ 0.169231  0.069231  0.676923  0.084615 
+ 0.076923  0.284615  0.538462  0.100000 
+ 0.453846  0.223077  0.261538  0.061538 
+ 0.346154  0.130769  0.092308  0.430769 
+ 0.330769  0.153846  0.100000  0.415385 
+ 0.030769  0.415385  0.215385  0.338462 
+ 0.069231  0.369231  0.469231  0.092308 
+ 0.107692  0.707692  0.069231  0.115385 
+ 0.161538  0.023077  0.761538  0.053846 
+ 0.930769  0.030769  0.030769  0.007692 
+ 0.000000  0.992308  0.000000  0.007692 
+ 0.861538  0.030769  0.084615  0.023077 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSRWWBSCGACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTCG[GC][AGC][TA][TA][CTG][GC]CGACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.39 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AZC_1051_p-161(ahpC)             1.79e-08  [+1(1.79e-08)]
+AZC_1051_p-206(ahpC)             2.70e-05  [+1(2.70e-05)]
+AZC_1041_p-281(nifH)             1.94e-06  [+1(1.94e-06)]
+AZC_3414_p-138(nifB)             3.95e-07  [+1(3.95e-07)]
+AZC_3442_p-192(cheY)             4.86e-06  [+1(4.86e-06)]
+AZC_3442_p-163(cheY)             9.21e-06  [+1(9.21e-06)]
+AZC_0303_p-67(fer2)              2.53e-04  16
+AZC_1052_p-190(xdhC)             2.96e-05  [+1(2.96e-05)]
+AZC_1043_p-142(fdxN)             1.03e-06  [+1(1.03e-06)]
+AZC_1052_p-235(xdhC)             1.79e-08  [+1(1.79e-08)]
+AZC_3437_p-128(bolA)             1.13e-07  [+1(1.13e-07)]
+AZC_1043_p-160(fdxN)             1.36e-07  [+1(1.36e-07)]
+AZC_3409_p-116(iscN)             1.13e-05  [+1(1.13e-05)]
+AZC_3409_p-134(iscN)             3.83e-08  [+1(3.83e-08)]
+AZC_3447_p-113(fixB)             2.70e-05  [+1(2.70e-05)]
+AZC_3447_p-179(fixB)             5.29e-07  [+1(5.29e-07)]
+AZC_3437_p-121(bolA)             2.24e-05  [+1(2.24e-05)]
+AZC_3443_p-284(nifH)             2.24e-05  [+1(2.24e-05)]
+AZC_3443_p-255(nifH)             6.94e-07  [+1(6.94e-07)]
+AZC_3446_p-192(nifW)             3.56e-05  [+1(3.56e-05)]
+blr2143_p-129(cpx1)              1.53e-05  [+1(1.53e-05)]
+blr2143_p-110(cpx1)              2.96e-05  [+1(2.96e-05)]
+blr2144_p-265(cpxP)              2.35e-04  16
+blr2037_p-39(nifA)               5.54e-05  [+1(5.54e-05)]
+blr2036_p-126(fixR)              5.54e-05  [+1(5.54e-05)]
+blr2036_p-106(fixR)              2.35e-04  16
+bll2060_p-194(groES3)            1.38e-05  [+1(1.38e-05)]
+blr1719_p-369(modB)              2.04e-05  [+1(2.04e-05)]
+blr1719_p-349(modB)              2.96e-05  [+1(2.96e-05)]
+blr6951_p-215(modA)              1.38e-05  [+1(1.38e-05)]
+blr6951_p-195(modA)              4.70e-09  [+1(4.70e-09)]
+blr1720_p-186(hupS)              6.57e-05  [+1(6.57e-05)]
+blr1720_p-34(hupS)               5.90e-04  16
+blr1743_p-155(nifD)              2.14e-08  [+1(2.14e-08)]
+blr1771_p-495(nifW)              1.85e-05  [+1(1.85e-05)]
+blr1883_p-376(rpoN)              4.65e-05  [+1(4.65e-05)]
+blr1755_p-116(iscN)              1.36e-07  [+1(1.36e-07)]
+bll1075_p-257(fdxN)              1.61e-04  16
+BBta_5884_p-139(bolA)            1.34e-06  [+1(1.34e-06)]
+BBta_5882_p-325(fer2)            1.37e-04  16
+BBta_0121_p-184(rpoN)            1.25e-05  [+1(1.25e-05)]
+BBta_5925_p-262(nifH)            8.01e-08  [+1(8.01e-08)]
+BBta_5872_p-171(fixB)            5.29e-07  [+1(5.29e-07)]
+BBta_5880_p-168(cheY)            3.95e-07  [+1(3.95e-07)]
+BBta_2080_p-224(modA)            1.68e-05  [+1(1.68e-05)]
+BBta_2080_p-193(modA)            3.56e-05  [+1(3.56e-05)]
+BBta_5935_p-151(fixR)            1.90e-07  [+1(1.90e-07)]
+BBta_5904_p-141(nifB)            9.02e-07  [+1(9.02e-07)]
+BBta_5909_p-112(iscN)            1.13e-05  [+1(1.13e-05)]
+BBta_5909_p-190(iscN)            7.91e-07  [+1(7.91e-07)]
+BBta_5909_p-130(iscN)            1.36e-07  [+1(1.36e-07)]
+BBta_5879_p-267(nifH)            8.01e-08  [+1(8.01e-08)]
+BBta_5932_p-141(fdxN)            2.77e-06  [+1(2.77e-06)]
+BBta_5932_p-160(fdxN)            5.61e-08  [+1(5.61e-08)]
+BBta_5933_p-64(nifA)             4.26e-05  [+1(4.26e-05)]
+BBta_5936_p-255(xdhC)            1.36e-07  [+1(1.36e-07)]
+BBta_5863_p-105(ahpC)            3.00e-07  [+1(3.00e-07)]
+mll6127_p-194(ompW)              3.89e-06  [+1(3.89e-06)]
+mll6127_p-177(ompW)              5.54e-05  [+1(5.54e-05)]
+mlr6364_p-331(cpxP)              2.53e-04  16
+mll5855_p-156(nifB)              2.19e-06  [+1(2.19e-06)]
+msr5868_p-459(PF05082)           7.47e-06  [+1(7.47e-06)]
+msr5868_p-217(PF05082)           5.54e-05  [+1(5.54e-05)]
+mlr5905_p-207(nifH)              2.46e-05  [+1(2.46e-05)]
+msr5928_p-77(PF05082)            6.31e-04  16
+mll5942_p-115(iscN)              4.86e-06  [+1(4.86e-06)]
+mll5862_p-161(fixB)              3.00e-07  [+1(3.00e-07)]
+mll5942_p-133(iscN)              1.34e-06  [+1(1.34e-06)]
+mll5873_p-482(ahpC1)             3.56e-05  [+1(3.56e-05)]
+mll5873_p-462(ahpC1)             9.96e-05  [+1(9.96e-05)]
+mlr5875_p-154(mlr5875)           2.04e-05  [+1(2.04e-05)]
+Nwi_1312_p-112(grlA)             2.35e-04  16
+RHE_PD00215_p-193(cpxA)          4.58e-07  [+1(4.58e-07)]
+RHE_PD00224_p-156(fixB)          8.30e-06  [+1(8.30e-06)]
+RHE_PD00229_p-139(nifB)          2.77e-06  [+1(2.77e-06)]
+RHE_PD00259_p-176(nifQ)          1.73e-04  16
+RHE_PD00260_p-190(nifH)          3.89e-05  [+1(3.89e-05)]
+RHE_PD00217_p-407(ahpC1)         1.61e-04  16
+RHE_PD00308_p-138(nifH)          2.24e-05  [+1(2.24e-05)]
+RHE_PD00308_p-195(nifH)          6.94e-07  [+1(6.94e-07)]
+RHE_PD00202_p-195(nifH)          6.94e-07  [+1(6.94e-07)]
+RHE_PD00202_p-138(nifH)          2.24e-05  [+1(2.24e-05)]
+pRL100162_p-202(nifH)            7.91e-07  [+1(7.91e-07)]
+pRL100162_p-231(nifH)            1.25e-05  [+1(1.25e-05)]
+pRL100200_p-148(fixB)            9.02e-07  [+1(9.02e-07)]
+NGR_a00930_p-282(nifS)           1.06e-03  16
+NGR_a01190_p-228(nifQ)           1.03e-06  [+1(1.03e-06)]
+NGR_a01270_p-144(nifB)           3.95e-07  [+1(3.95e-07)]
+NGR_a00890_p-208(nifH)           6.71e-08  [+1(6.71e-08)]
+NGR_c29850_p-55(modB)            4.26e-05  [+1(4.26e-05)]
+NGR_a02700_p-183(cpxP)           1.36e-07  [+1(1.36e-07)]
+NGR_a01130_p-211(nifH)           6.71e-08  [+1(6.71e-08)]
+NGR_a01190_p-200(nifQ)           1.34e-06  [+1(1.34e-06)]
+NGR_a01200_p-273(ahpC1)          1.34e-06  [+1(1.34e-06)]
+NGR_a01200_p-245(ahpC1)          1.03e-06  [+1(1.03e-06)]
+NGR_a01220_p-162(fixB)           2.19e-06  [+1(2.19e-06)]
+NGR_a01210_p-114(iscN)           2.70e-05  [+1(2.70e-05)]
+RPA4631_p-129(fdxN)              6.04e-05  [+1(6.04e-05)]
+RPA4610_p-123(iscN)              2.62e-07  [+1(2.62e-07)]
+RPA4605_p-184(fixB)              4.69e-08  [+1(4.69e-08)]
+RPA4631_p-147(fdxN)              2.24e-07  [+1(2.24e-07)]
+RPA4620_p-252(nifH)              1.94e-06  [+1(1.94e-06)]
+RPA4610_p-140(iscN)              3.56e-05  [+1(3.56e-05)]
+RPA1373_p-198(nifE)              6.72e-06  [+1(6.72e-06)]
+RPA1373_p-223(nifE)              1.52e-06  [+1(1.52e-06)]
+RPA4633_p-161(fixR)              6.72e-06  [+1(6.72e-06)]
+RPA4633_p-118(fixR)              1.37e-04  16
+RPA0962_p-202(hupS)              1.87e-04  16
+RPA1001_p-147(cheY)              5.41e-06  [+1(5.41e-06)]
+RPA4634_p-111(xdhC)              4.86e-06  [+1(4.86e-06)]
+SMa0825_p-192(nifH)              4.58e-07  [+1(4.58e-07)]
+SMa0814_p-130(nifB)              8.01e-08  [+1(8.01e-08)]
+SMa0872_p-194(orf110)            3.00e-07  [+1(3.00e-07)]
+SMa0822_p-244(fixB)              2.77e-06  [+1(2.77e-06)]
+Xaut_0088_p-358(nifH)            6.72e-06  [+1(6.72e-06)]
+Xaut_0149_p-122(iscN)            4.70e-09  [+1(4.70e-09)]
+Xaut_0143_p-271(nifH)            1.53e-05  [+1(1.53e-05)]
+Xaut_0142_p-262(fixB)            3.56e-05  [+1(3.56e-05)]
+Xaut_0142_p-180(fixB)            5.29e-07  [+1(5.29e-07)]
+Xaut_0111_p-284(nifB)            8.45e-05  [+1(8.45e-05)]
+Xaut_0082_p-56(nifA)             3.24e-05  [+1(3.24e-05)]
+Xaut_0083_p-148(fdxN)            9.65e-08  [+1(9.65e-08)]
+Xaut_2332_p-163(fer2)            2.18e-04  16
+Xaut_0124_p-103(bolA)            6.08e-07  [+1(6.08e-07)]
+Xaut_0111_p-141(nifB)            1.68e-05  [+1(1.68e-05)]
+Xaut_0106_p-115(iscN)            2.46e-05  [+1(2.46e-05)]
+Xaut_0106_p-133(iscN)            9.21e-06  [+1(9.21e-06)]
+Xaut_0088_p-233(nifH)            7.47e-06  [+1(7.47e-06)]
+Xaut_0125_p-74(xdhC)             5.29e-07  [+1(5.29e-07)]
+Xaut_0143_p-301(nifH)            7.47e-06  [+1(7.47e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

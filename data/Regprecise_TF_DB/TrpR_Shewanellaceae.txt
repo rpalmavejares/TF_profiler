@@ -1,0 +1,345 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/TrpR_Shewanellaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SO1361_p-119(aroF)       1.0000     20  SO3419_p-32(trpR)        1.0000     20  
+Sputcn32_2737_p-89(trpR) 1.0000     20  Sputcn32_2737_p-32(trpR) 1.0000     20  
+Sputcn32_1172_p-125(aroF 1.0000     20  Sputw3181_1275_p-32(trpR 1.0000     20  
+Sputw3181_1275_p-89(trpR 1.0000     20  Sputw3181_2992_p-125(aro 1.0000     20  
+Shewana3_1136_p-32(trpR) 1.0000     20  Shewana3_3013_p-120(aroF 1.0000     20  
+Shewmr4_1135_p-32(trpR)  1.0000     20  Shewmr4_2834_p-120(aroF) 1.0000     20  
+Shewmr7_2916_p-120(aroF) 1.0000     20  Shewmr7_1206_p-32(trpR)  1.0000     20  
+Sbal_1224_p-33(trpR)     1.0000     20  Sbal_1214_p-130(aroF)    1.0000     20  
+Sden_2743_p-33(trpR)     1.0000     20  Sden_2750_p-60(aroF)     1.0000     20  
+Sfri_2909_p-35(trpR)     1.0000     20  Sfri_2916_p-102(aroF)    1.0000     20  
+Sama_0893_p-104(aroF)    1.0000     20  Shew_1067_p-65(aroF)     1.0000     20  
+Spea_1063_p-45(trpR)     1.0000     20  Spea_1053_p-122(aroF)    1.0000     20  
+Shal_1111_p-47(trpR)     1.0000     20  Shal_1101_p-134(aroF)    1.0000     20  
+swp_3754_p-34(trpR)      1.0000     20  swp_3764_p-104(aroF)     1.0000     20  
+Ssed_1172_p-31(trpR)     1.0000     20  Ssed_1163_p-96(aroF)     1.0000     20  
+Swoo_1267_p-81(trpR)     1.0000     20  Swoo_1258_p-106(aroF)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/TrpR_Shewanellaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Shewanellaceae/TrpR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             640    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    640    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.305 C 0.133 G 0.236 T 0.327 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.304 C 0.134 G 0.236 T 0.326 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAATGSTGTAVCAKTACD MEME-1	width =  20  sites =  32  llr = 569  E-value = 4.9e-203
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::aa::211293:811a:5
+pos.-specific     C  1::::::31:1:29::::9:
+probability       G  :a::::a5:7114:23::13
+matrix            T  9:a::a::836:11:69::3
+
+         bits    2.9                     
+                 2.6                   * 
+                 2.3              *    * 
+                 2.0  *    *      *    * 
+Relative         1.7  *** **      *   ** 
+Entropy          1.5 *******      *   ** 
+(25.6 bits)      1.2 *******    * ** *** 
+                 0.9 ******* ** * ** *** 
+                 0.6 ********** * ** *** 
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           TGTAATGGTGTAGCATTACA
+consensus                   C TA A GG   G
+sequence                         C      T
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Swoo_1258_p-106(aroF)         1  4.06e-12          . TGTAATGGTGTAGCATTACA           
+Sbal_1214_p-130(aroF)         1  4.06e-12          . TGTAATGGTGTAGCATTACA           
+Shewmr4_2834_p-120(aroF)      1  4.06e-12          . TGTAATGGTGTAGCATTACA           
+Shewmr7_2916_p-120(aroF)      1  1.61e-11          . TGTAATGGTGTAGCATTACG           
+Shew_1067_p-65(aroF)          1  2.30e-11          . TGTAATGGTGTACCATTACG           
+Ssed_1163_p-96(aroF)          1  2.72e-11          . TGTAATGGTGTAGCAGTACG           
+swp_3764_p-104(aroF)          1  2.72e-11          . TGTAATGGTGTAGCAGTACG           
+Sama_0893_p-104(aroF)         1  4.19e-11          . TGTAATGGTGTAACATTACA           
+Sfri_2916_p-102(aroF)         1  6.38e-11          . TGTAATGGTGTAGCGTTACA           
+Sputw3181_2992_p-125(aro      1  6.38e-11          . TGTAATGGTGTAGCGTTACA           
+Sputcn32_1172_p-125(aroF      1  6.38e-11          . TGTAATGGTGTAGCGTTACA           
+Spea_1053_p-122(aroF)         1  9.35e-11          . TGTAATGGTGTACCGTTACA           
+Shal_1101_p-134(aroF)         1  1.63e-10          . TGTAATGGTGTACCGTTACG           
+Sden_2750_p-60(aroF)          1  2.94e-10          . TGTAATGGTGTATCATTACA           
+Shewana3_3013_p-120(aroF      1  2.94e-10          . TGTAATGGTGTATCATTACA           
+SO1361_p-119(aroF)            1  4.58e-10          . TGTAATGGTGTATCATTACG           
+Ssed_1172_p-31(trpR)          1  2.15e-09          . TGTAATGCTATACCAGTACG           
+Sbal_1224_p-33(trpR)          1  1.04e-08          . TGTAATGCTTGAACAGTACT           
+Swoo_1267_p-81(trpR)          1  1.14e-08          . TGTAATGGAGAGGCAGTACA           
+Shewmr7_1206_p-32(trpR)       1  1.14e-08          . TGTAATGCTTAAACAATACT           
+Shewmr4_1135_p-32(trpR)       1  1.14e-08          . TGTAATGCTTAAACAATACT           
+Shewana3_1136_p-32(trpR)      1  1.14e-08          . TGTAATGCTTAAACAATACT           
+SO3419_p-32(trpR)             1  1.14e-08          . TGTAATGCTTAAACAATACT           
+Sputw3181_1275_p-32(trpR      1  2.83e-08          . TGTAATGCTTTAACAGTAGT           
+Sputcn32_2737_p-32(trpR)      1  2.83e-08          . TGTAATGCTTTAACAGTAGT           
+Spea_1063_p-45(trpR)          1  5.16e-08          . TGTAATGACGCACTAGTACG           
+swp_3754_p-34(trpR)           1  7.44e-08          . CGTAATGATGCACTAGTACA           
+Sputw3181_1275_p-89(trpR      1  7.89e-08          . TGTAATGAAGAAGCGTAACA           
+Sputcn32_2737_p-89(trpR)      1  7.89e-08          . TGTAATGAAGAAGCGTAACA           
+Shal_1111_p-47(trpR)          1  1.43e-07          . CGTAATGACGCACTAGTACG           
+Sfri_2909_p-35(trpR)          1  2.22e-07          . TGTAATGTCTGGGCATTACT           
+Sden_2743_p-33(trpR)          1  3.75e-07          . TGTACTGCCATGGCATGACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Swoo_1258_p-106(aroF)             4.1e-12  [+1]
+Sbal_1214_p-130(aroF)             4.1e-12  [+1]
+Shewmr4_2834_p-120(aroF)          4.1e-12  [+1]
+Shewmr7_2916_p-120(aroF)          1.6e-11  [+1]
+Shew_1067_p-65(aroF)              2.3e-11  [+1]
+Ssed_1163_p-96(aroF)              2.7e-11  [+1]
+swp_3764_p-104(aroF)              2.7e-11  [+1]
+Sama_0893_p-104(aroF)             4.2e-11  [+1]
+Sfri_2916_p-102(aroF)             6.4e-11  [+1]
+Sputw3181_2992_p-125(aro          6.4e-11  [+1]
+Sputcn32_1172_p-125(aroF          6.4e-11  [+1]
+Spea_1053_p-122(aroF)             9.3e-11  [+1]
+Shal_1101_p-134(aroF)             1.6e-10  [+1]
+Sden_2750_p-60(aroF)              2.9e-10  [+1]
+Shewana3_3013_p-120(aroF          2.9e-10  [+1]
+SO1361_p-119(aroF)                4.6e-10  [+1]
+Ssed_1172_p-31(trpR)              2.1e-09  [+1]
+Sbal_1224_p-33(trpR)                1e-08  [+1]
+Swoo_1267_p-81(trpR)              1.1e-08  [+1]
+Shewmr7_1206_p-32(trpR)           1.1e-08  [+1]
+Shewmr4_1135_p-32(trpR)           1.1e-08  [+1]
+Shewana3_1136_p-32(trpR)          1.1e-08  [+1]
+SO3419_p-32(trpR)                 1.1e-08  [+1]
+Sputw3181_1275_p-32(trpR          2.8e-08  [+1]
+Sputcn32_2737_p-32(trpR)          2.8e-08  [+1]
+Spea_1063_p-45(trpR)              5.2e-08  [+1]
+swp_3754_p-34(trpR)               7.4e-08  [+1]
+Sputw3181_1275_p-89(trpR          7.9e-08  [+1]
+Sputcn32_2737_p-89(trpR)          7.9e-08  [+1]
+Shal_1111_p-47(trpR)              1.4e-07  [+1]
+Sfri_2909_p-35(trpR)              2.2e-07  [+1]
+Sden_2743_p-33(trpR)              3.8e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAATGSTGTAVCAKTACD width=20 seqs=32
+Swoo_1258_p-106(aroF)    (    1) TGTAATGGTGTAGCATTACA  1 
+Sbal_1214_p-130(aroF)    (    1) TGTAATGGTGTAGCATTACA  1 
+Shewmr4_2834_p-120(aroF) (    1) TGTAATGGTGTAGCATTACA  1 
+Shewmr7_2916_p-120(aroF) (    1) TGTAATGGTGTAGCATTACG  1 
+Shew_1067_p-65(aroF)     (    1) TGTAATGGTGTACCATTACG  1 
+Ssed_1163_p-96(aroF)     (    1) TGTAATGGTGTAGCAGTACG  1 
+swp_3764_p-104(aroF)     (    1) TGTAATGGTGTAGCAGTACG  1 
+Sama_0893_p-104(aroF)    (    1) TGTAATGGTGTAACATTACA  1 
+Sfri_2916_p-102(aroF)    (    1) TGTAATGGTGTAGCGTTACA  1 
+Sputw3181_2992_p-125(aro (    1) TGTAATGGTGTAGCGTTACA  1 
+Sputcn32_1172_p-125(aroF (    1) TGTAATGGTGTAGCGTTACA  1 
+Spea_1053_p-122(aroF)    (    1) TGTAATGGTGTACCGTTACA  1 
+Shal_1101_p-134(aroF)    (    1) TGTAATGGTGTACCGTTACG  1 
+Sden_2750_p-60(aroF)     (    1) TGTAATGGTGTATCATTACA  1 
+Shewana3_3013_p-120(aroF (    1) TGTAATGGTGTATCATTACA  1 
+SO1361_p-119(aroF)       (    1) TGTAATGGTGTATCATTACG  1 
+Ssed_1172_p-31(trpR)     (    1) TGTAATGCTATACCAGTACG  1 
+Sbal_1224_p-33(trpR)     (    1) TGTAATGCTTGAACAGTACT  1 
+Swoo_1267_p-81(trpR)     (    1) TGTAATGGAGAGGCAGTACA  1 
+Shewmr7_1206_p-32(trpR)  (    1) TGTAATGCTTAAACAATACT  1 
+Shewmr4_1135_p-32(trpR)  (    1) TGTAATGCTTAAACAATACT  1 
+Shewana3_1136_p-32(trpR) (    1) TGTAATGCTTAAACAATACT  1 
+SO3419_p-32(trpR)        (    1) TGTAATGCTTAAACAATACT  1 
+Sputw3181_1275_p-32(trpR (    1) TGTAATGCTTTAACAGTAGT  1 
+Sputcn32_2737_p-32(trpR) (    1) TGTAATGCTTTAACAGTAGT  1 
+Spea_1063_p-45(trpR)     (    1) TGTAATGACGCACTAGTACG  1 
+swp_3754_p-34(trpR)      (    1) CGTAATGATGCACTAGTACA  1 
+Sputw3181_1275_p-89(trpR (    1) TGTAATGAAGAAGCGTAACA  1 
+Sputcn32_2737_p-89(trpR) (    1) TGTAATGAAGAAGCGTAACA  1 
+Shal_1111_p-47(trpR)     (    1) CGTAATGACGCACTAGTACG  1 
+Sfri_2909_p-35(trpR)     (    1) TGTAATGTCTGGGCATTACT  1 
+Sden_2743_p-33(trpR)     (    1) TGTACTGCCATGGCATGACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 32 bayes= 1.58496 E= 4.9e-203 
+ -1164   -109  -1164    152 
+ -1164  -1164    208  -1164 
+ -1164  -1164  -1164    162 
+   172  -1164  -1164  -1164 
+   167   -209  -1164  -1164 
+ -1164  -1164  -1164    162 
+ -1164  -1164    208  -1164 
+   -96    107    117   -338 
+  -170    -10  -1164    126 
+  -228  -1164    154    -38 
+   -48    -51   -192     94 
+   157  -1164   -133  -1164 
+   -28     71     89   -180 
+ -1164    276  -1164   -180 
+   136  -1164    -11  -1164 
+  -128  -1164     40     79 
+  -228  -1164   -291    147 
+   172  -1164  -1164  -1164 
+ -1164    281   -192  -1164 
+    62  -1164     25    -38 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 32 E= 4.9e-203 
+ 0.000000  0.062500  0.000000  0.937500 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.968750  0.031250  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.156250  0.281250  0.531250  0.031250 
+ 0.093750  0.125000  0.000000  0.781250 
+ 0.062500  0.000000  0.687500  0.250000 
+ 0.218750  0.093750  0.062500  0.625000 
+ 0.906250  0.000000  0.093750  0.000000 
+ 0.250000  0.218750  0.437500  0.093750 
+ 0.000000  0.906250  0.000000  0.093750 
+ 0.781250  0.000000  0.218750  0.000000 
+ 0.125000  0.000000  0.312500  0.562500 
+ 0.062500  0.000000  0.031250  0.906250 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.937500  0.062500  0.000000 
+ 0.468750  0.000000  0.281250  0.250000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAATGSTGTAVCAKTACD MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTAATG[GC]T[GT][TA]A[GAC]C[AG][TG]TAC[AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SO1361_p-119(aroF)               4.58e-10  [+1(4.58e-10)]
+SO3419_p-32(trpR)                1.14e-08  [+1(1.14e-08)]
+Sputcn32_2737_p-89(trpR)         7.89e-08  [+1(7.89e-08)]
+Sputcn32_2737_p-32(trpR)         2.83e-08  [+1(2.83e-08)]
+Sputcn32_1172_p-125(aroF         6.38e-11  [+1(6.38e-11)]
+Sputw3181_1275_p-32(trpR         2.83e-08  [+1(2.83e-08)]
+Sputw3181_1275_p-89(trpR         7.89e-08  [+1(7.89e-08)]
+Sputw3181_2992_p-125(aro         6.38e-11  [+1(6.38e-11)]
+Shewana3_1136_p-32(trpR)         1.14e-08  [+1(1.14e-08)]
+Shewana3_3013_p-120(aroF         2.94e-10  [+1(2.94e-10)]
+Shewmr4_1135_p-32(trpR)          1.14e-08  [+1(1.14e-08)]
+Shewmr4_2834_p-120(aroF)         4.06e-12  [+1(4.06e-12)]
+Shewmr7_2916_p-120(aroF)         1.61e-11  [+1(1.61e-11)]
+Shewmr7_1206_p-32(trpR)          1.14e-08  [+1(1.14e-08)]
+Sbal_1224_p-33(trpR)             1.04e-08  [+1(1.04e-08)]
+Sbal_1214_p-130(aroF)            4.06e-12  [+1(4.06e-12)]
+Sden_2743_p-33(trpR)             3.75e-07  [+1(3.75e-07)]
+Sden_2750_p-60(aroF)             2.94e-10  [+1(2.94e-10)]
+Sfri_2909_p-35(trpR)             2.22e-07  [+1(2.22e-07)]
+Sfri_2916_p-102(aroF)            6.38e-11  [+1(6.38e-11)]
+Sama_0893_p-104(aroF)            4.19e-11  [+1(4.19e-11)]
+Shew_1067_p-65(aroF)             2.30e-11  [+1(2.30e-11)]
+Spea_1063_p-45(trpR)             5.16e-08  [+1(5.16e-08)]
+Spea_1053_p-122(aroF)            9.35e-11  [+1(9.35e-11)]
+Shal_1111_p-47(trpR)             1.43e-07  [+1(1.43e-07)]
+Shal_1101_p-134(aroF)            1.63e-10  [+1(1.63e-10)]
+swp_3754_p-34(trpR)              7.44e-08  [+1(7.44e-08)]
+swp_3764_p-104(aroF)             2.72e-11  [+1(2.72e-11)]
+Ssed_1172_p-31(trpR)             2.15e-09  [+1(2.15e-09)]
+Ssed_1163_p-96(aroF)             2.72e-11  [+1(2.72e-11)]
+Swoo_1267_p-81(trpR)             1.14e-08  [+1(1.14e-08)]
+Swoo_1258_p-106(aroF)            4.06e-12  [+1(4.06e-12)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

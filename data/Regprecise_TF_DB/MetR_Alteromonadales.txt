@@ -1,0 +1,259 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/MetR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CPS_4031_p-346(glyA)     1.0000     17  CPS_4359_p-17(metR)      1.0000     17  
+ATW7_06703_p-17(metR)    1.0000     17  ATW7_10333_p-100(metA)   1.0000     17  
+ATW7_04247_p-88(metF-II) 1.0000     17  ATW7_11040_p-119(glyA)   1.0000     17  
+PSHAa1181_p-17(metR)     1.0000     17  PSHAa0642_p-91(metF-II)  1.0000     17  
+PSHAa2376_p-120(glyA)    1.0000     17  PSHAa2224_p-108(metA)    1.0000     17  
+PTD2_09219_p-133(glyA)   1.0000     17  PTD2_22482_p-306(metR)   1.0000     17  
+PTD2_22482_p-17(metR)    1.0000     17  PTD2_08889_p-89(metF-II) 1.0000     17  
+PTD2_08889_p-109(metF-II 1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/MetR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/MetR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             255    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    255    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.451 C 0.0824 G 0.118 T 0.349 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.448 C 0.0849 G 0.12 T 0.347 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGAAAWWWWTTMAWT MEME-1	width =  15  sites =  15  llr = 159  E-value = 3.4e-036
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a897755::3a51
+pos.-specific     C  :::::::2:::7:21
+probability       G  :a:2:::1::::::3
+matrix            T  a:::13335aa::36
+
+         bits    3.6                
+                 3.2  *             
+                 2.8  *             
+                 2.5  *             
+Relative         2.1  *             
+Entropy          1.8  *         *   
+(15.3 bits)      1.4 **       ***   
+                 1.1 ***      ****  
+                 0.7 *****    **** *
+                 0.4 ******* *******
+                 0.0 ---------------
+
+Multilevel           TGAAAAAAATTCAAT
+consensus               G TTTT  A TG
+sequence                    C     C 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+PTD2_08889_p-89(metF-II)      3  5.99e-09         GA TGAAAAACTTTCACT           
+ATW7_04247_p-88(metF-II)      3  5.99e-09         CT TGAAAAACTTTCACT           
+PSHAa0642_p-91(metF-II)       3  1.37e-07         AT TGAAAAACTTTCATT           
+CPS_4031_p-346(glyA)          3  8.70e-07         AG TGAAAAAAATTCATG           
+PSHAa2224_p-108(metA)         3  1.59e-06         GA TGAAAAAAATTCATT           
+PSHAa2376_p-120(glyA)         3  2.86e-06         TG TGAAATAAATTCAAT           
+PTD2_08889_p-109(metF-II      3  3.98e-06         AA TGAAAAAAATTCAAC           
+ATW7_11040_p-119(glyA)        3  4.57e-06         TG TGAAATAGTTTCAAT           
+PTD2_09219_p-133(glyA)        3  4.92e-06         TG TGAAATTTTTTCAAT           
+ATW7_10333_p-100(metA)        3  7.05e-06         AA TGAATAAATTTCATT           
+PSHAa1181_p-17(metR)          3  2.37e-05         CA TGAGAATTTTTAAAG           
+PTD2_22482_p-17(metR)         3  2.87e-05         CA TGAGAATTATTAAAG           
+ATW7_06703_p-17(metR)         3  2.87e-05         CA TGAGAATTATTAAAG           
+CPS_4359_p-17(metR)           3  2.87e-05         GT TGAAATAAATTAATT           
+PTD2_22482_p-306(metR)        3  9.48e-05         TA TGAATTTAATTAACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PTD2_08889_p-89(metF-II)            6e-09  2_[+1]
+ATW7_04247_p-88(metF-II)            6e-09  2_[+1]
+PSHAa0642_p-91(metF-II)           1.4e-07  2_[+1]
+CPS_4031_p-346(glyA)              8.7e-07  2_[+1]
+PSHAa2224_p-108(metA)             1.6e-06  2_[+1]
+PSHAa2376_p-120(glyA)             2.9e-06  2_[+1]
+PTD2_08889_p-109(metF-II            4e-06  2_[+1]
+ATW7_11040_p-119(glyA)            4.6e-06  2_[+1]
+PTD2_09219_p-133(glyA)            4.9e-06  2_[+1]
+ATW7_10333_p-100(metA)              7e-06  2_[+1]
+PSHAa1181_p-17(metR)              2.4e-05  2_[+1]
+PTD2_22482_p-17(metR)             2.9e-05  2_[+1]
+ATW7_06703_p-17(metR)             2.9e-05  2_[+1]
+CPS_4359_p-17(metR)               2.9e-05  2_[+1]
+PTD2_22482_p-306(metR)            9.5e-05  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGAAAWWWWTTMAWT width=15 seqs=15
+PTD2_08889_p-89(metF-II) (    3) TGAAAAACTTTCACT  1 
+ATW7_04247_p-88(metF-II) (    3) TGAAAAACTTTCACT  1 
+PSHAa0642_p-91(metF-II)  (    3) TGAAAAACTTTCATT  1 
+CPS_4031_p-346(glyA)     (    3) TGAAAAAAATTCATG  1 
+PSHAa2224_p-108(metA)    (    3) TGAAAAAAATTCATT  1 
+PSHAa2376_p-120(glyA)    (    3) TGAAATAAATTCAAT  1 
+PTD2_08889_p-109(metF-II (    3) TGAAAAAAATTCAAC  1 
+ATW7_11040_p-119(glyA)   (    3) TGAAATAGTTTCAAT  1 
+PTD2_09219_p-133(glyA)   (    3) TGAAATTTTTTCAAT  1 
+ATW7_10333_p-100(metA)   (    3) TGAATAAATTTCATT  1 
+PSHAa1181_p-17(metR)     (    3) TGAGAATTTTTAAAG  1 
+PTD2_22482_p-17(metR)    (    3) TGAGAATTATTAAAG  1 
+ATW7_06703_p-17(metR)    (    3) TGAGAATTATTAAAG  1 
+CPS_4359_p-17(metR)      (    3) TGAAATAAATTAATT  1 
+PTD2_22482_p-306(metR)   (    3) TGAATTTAATTAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 45 bayes= 3.13465 E= 3.4e-036 
+ -1055  -1055  -1055    152 
+ -1055  -1055    306  -1055 
+   116  -1055  -1055  -1055 
+    84  -1055     74  -1055 
+    95  -1055  -1055   -138 
+    57  -1055  -1055     -6 
+    57  -1055  -1055     -6 
+     6    123    -84    -38 
+    25  -1055  -1055     43 
+ -1055  -1055  -1055    152 
+ -1055  -1055  -1055    152 
+   -43    297  -1055  -1055 
+   116  -1055  -1055  -1055 
+     6    123  -1055     -6 
+  -274    -35    116     79 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 15 E= 3.4e-036 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.866667  0.000000  0.000000  0.133333 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.466667  0.200000  0.066667  0.266667 
+ 0.533333  0.000000  0.000000  0.466667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.333333  0.666667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.466667  0.200000  0.000000  0.333333 
+ 0.066667  0.066667  0.266667  0.600000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGAAAWWWWTTMAWT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGA[AG]A[AT][AT][ATC][AT]TT[CA]A[ATC][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CPS_4031_p-346(glyA)             2.61e-06  2_[+1(8.70e-07)]
+CPS_4359_p-17(metR)              8.60e-05  2_[+1(2.87e-05)]
+ATW7_06703_p-17(metR)            8.60e-05  2_[+1(2.87e-05)]
+ATW7_10333_p-100(metA)           2.11e-05  2_[+1(7.05e-06)]
+ATW7_04247_p-88(metF-II)         1.80e-08  2_[+1(5.99e-09)]
+ATW7_11040_p-119(glyA)           1.37e-05  2_[+1(4.57e-06)]
+PSHAa1181_p-17(metR)             7.12e-05  2_[+1(2.37e-05)]
+PSHAa0642_p-91(metF-II)          4.10e-07  2_[+1(1.37e-07)]
+PSHAa2376_p-120(glyA)            8.58e-06  2_[+1(2.86e-06)]
+PSHAa2224_p-108(metA)            4.76e-06  2_[+1(1.59e-06)]
+PTD2_09219_p-133(glyA)           1.48e-05  2_[+1(4.92e-06)]
+PTD2_22482_p-306(metR)           2.84e-04  2_[+1(9.48e-05)]
+PTD2_22482_p-17(metR)            8.60e-05  2_[+1(2.87e-05)]
+PTD2_08889_p-89(metF-II)         1.80e-08  2_[+1(5.99e-09)]
+PTD2_08889_p-109(metF-II         1.19e-05  2_[+1(3.98e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

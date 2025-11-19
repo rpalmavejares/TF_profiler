@@ -1,0 +1,316 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/CueR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Aave_0033_p-110(copZ)    1.0000     21  Aave_0034_p-34(copA)     1.0000     21  
+Ajs_0018_p-140(copZ)     1.0000     21  Ajs_1372_p-64(copA2)     1.0000     21  
+Ajs_1368_p-65(copZ2)     1.0000     21  Ajs_0019_p-58(copA)      1.0000     21  
+CtesDRAFT_3915_p-80(copZ 1.0000     21  Daci_0035_p-77(copZ)     1.0000     21  
+Daci_5724_p-58(copA2)    1.0000     21  Mpe_A1644_p-81(n/a)      1.0000     21  
+Mpe_A1640_p-59(copA)     1.0000     21  Mpe_A3536_p-61(copZ2)    1.0000     21  
+Mpe_A3535_p-34(copA)     1.0000     21  Mpe_A1641_p-57(copZ2)    1.0000     21  
+Pnap_4089_p-67(copZ2)    1.0000     21  Pnap_4090_p-82(copA)     1.0000     21  
+Bpro_3497_p-26(copZ2)    1.0000     21  Bpro_4871_p-218(copZ2)   1.0000     21  
+Bpro_4872_p-84(copA)     1.0000     21  Bpro_3496_p-72(copA)     1.0000     21  
+Rfer_0024_p-35(copA)     1.0000     21  Rfer_0023_p12(cueR)      1.0000     21  
+Vapar_0031_p-34(copA)    1.0000     21  Vapar_2999_p-60(cueR2)   1.0000     21  
+Vapar_0030_p-70(copZ)    1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/CueR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/CueR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             525    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    525    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.229 C 0.28 G 0.265 T 0.227 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.229 C 0.28 G 0.265 T 0.227 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTSCCAYSRTGGSAAGGT MEME-1	width =  21  sites =  25  llr = 456  E-value = 1.1e-152
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:::::21a:14::1:a8::1
+pos.-specific     C  :a82:489:43::::5::121
+probability       G  :::::6::::65:964:288:
+matrix            T  ::28a::::6::a:31::::8
+
+         bits    2.1     *           *    
+                 1.9 **  *   *   *   *    
+                 1.7 **  *   *   *   *    
+                 1.5 **  *  **   *   *    
+Relative         1.3 ** **  **   **  ** * 
+Entropy          1.1 ***** ***   **  **** 
+(26.3 bits)      0.9 **********  **  *****
+                 0.6 *************** *****
+                 0.4 *********************
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTGCCATGGTGGCAAGGT
+consensus               C C   CCA  TG G C 
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Rfer_0023_p12(cueR)           1  8.83e-12          . ACCTTCCCACGGTGGCAAGGT           
+Pnap_4090_p-82(copA)          1  1.25e-11          . ACCCTGCCATGATGGCAAGGT           
+Mpe_A3535_p-34(copA)          1  1.57e-11          . ACTTTGCCATGATGGGAAGGT           
+Daci_0035_p-77(copZ)          1  3.39e-11          . ACCTTGCCATGGTGTCAGGGT           
+Rfer_0024_p-35(copA)          1  5.21e-11          . ACCTTGCCATGATGGGAAGGA           
+Bpro_4872_p-84(copA)          1  6.58e-11          . ACCCTGCCATGATGGTAAGGT           
+Pnap_4089_p-67(copZ2)         1  1.02e-10          . ACTTTGCCACCGTGGGAAGGT           
+Mpe_A1644_p-81(n/a)           1  6.15e-10          . ACCTTCCCACGTTGTCAAGGT           
+Aave_0034_p-34(copA)          1  1.35e-09          . ACCTTGCCATGATGTCAGGGG           
+Ajs_0019_p-58(copA)           1  1.86e-09          . ACCTTGCCAGCATGTCAGGGT           
+Ajs_0018_p-140(copZ)          1  1.86e-09          . ACCCTGACATGCTGGCAAGGT           
+Ajs_1368_p-65(copZ2)          1  2.06e-09          . ACCTTCCCACCGTGACAAGGC           
+Daci_5724_p-58(copA2)         1  3.24e-09          . ACCTTGACATGGTGGCAATCT           
+CtesDRAFT_3915_p-80(copZ      1  3.24e-09          . ACCTTGTCATGATGTTAGGGT           
+Ajs_1372_p-64(copA2)          1  3.24e-09          . ACCTTCCCACGATGGTAAGCC           
+Bpro_4871_p-218(copZ2)        1  3.80e-09          . ACCCTGCCCCCGTGGGAAGGT           
+Vapar_2999_p-60(cueR2)        1  4.54e-09          . ACTCTCCCATGGTGTGAAGGC           
+Bpro_3496_p-72(copA)          1  4.54e-09          . ACTTTCCAACAGTGGCAAGGT           
+Vapar_0030_p-70(copZ)         1  4.97e-09          . ACATTGACATCATGAGAAGGT           
+Vapar_0031_p-34(copA)         1  5.41e-09          . ACCTTGCCATGATGTGAGACT           
+Aave_0033_p-110(copZ)         1  6.77e-09          . CCCCTGACATCATGGCAAGGT           
+Mpe_A3536_p-61(copZ2)         1  1.45e-08          . ACCTTCCCACCGGGGCAACGT           
+Mpe_A1640_p-59(copA)          1  4.33e-08          . ACCTTGCCATCGTTAGAACCT           
+Mpe_A1641_p-57(copZ2)         1  4.62e-08          . ACCTTCCAACAGTAGGAGGGT           
+Bpro_3497_p-26(copZ2)         1  5.89e-08          . ACCTTCCCACAGTCGGAAGCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rfer_0023_p12(cueR)               8.8e-12  [+1]
+Pnap_4090_p-82(copA)              1.3e-11  [+1]
+Mpe_A3535_p-34(copA)              1.6e-11  [+1]
+Daci_0035_p-77(copZ)              3.4e-11  [+1]
+Rfer_0024_p-35(copA)              5.2e-11  [+1]
+Bpro_4872_p-84(copA)              6.6e-11  [+1]
+Pnap_4089_p-67(copZ2)               1e-10  [+1]
+Mpe_A1644_p-81(n/a)               6.2e-10  [+1]
+Aave_0034_p-34(copA)              1.3e-09  [+1]
+Ajs_0019_p-58(copA)               1.9e-09  [+1]
+Ajs_0018_p-140(copZ)              1.9e-09  [+1]
+Ajs_1368_p-65(copZ2)              2.1e-09  [+1]
+Daci_5724_p-58(copA2)             3.2e-09  [+1]
+CtesDRAFT_3915_p-80(copZ          3.2e-09  [+1]
+Ajs_1372_p-64(copA2)              3.2e-09  [+1]
+Bpro_4871_p-218(copZ2)            3.8e-09  [+1]
+Vapar_2999_p-60(cueR2)            4.5e-09  [+1]
+Bpro_3496_p-72(copA)              4.5e-09  [+1]
+Vapar_0030_p-70(copZ)               5e-09  [+1]
+Vapar_0031_p-34(copA)             5.4e-09  [+1]
+Aave_0033_p-110(copZ)             6.8e-09  [+1]
+Mpe_A3536_p-61(copZ2)             1.5e-08  [+1]
+Mpe_A1640_p-59(copA)              4.3e-08  [+1]
+Mpe_A1641_p-57(copZ2)             4.6e-08  [+1]
+Bpro_3497_p-26(copZ2)             5.9e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTSCCAYSRTGGSAAGGT width=21 seqs=25
+Rfer_0023_p12(cueR)      (    1) ACCTTCCCACGGTGGCAAGGT  1 
+Pnap_4090_p-82(copA)     (    1) ACCCTGCCATGATGGCAAGGT  1 
+Mpe_A3535_p-34(copA)     (    1) ACTTTGCCATGATGGGAAGGT  1 
+Daci_0035_p-77(copZ)     (    1) ACCTTGCCATGGTGTCAGGGT  1 
+Rfer_0024_p-35(copA)     (    1) ACCTTGCCATGATGGGAAGGA  1 
+Bpro_4872_p-84(copA)     (    1) ACCCTGCCATGATGGTAAGGT  1 
+Pnap_4089_p-67(copZ2)    (    1) ACTTTGCCACCGTGGGAAGGT  1 
+Mpe_A1644_p-81(n/a)      (    1) ACCTTCCCACGTTGTCAAGGT  1 
+Aave_0034_p-34(copA)     (    1) ACCTTGCCATGATGTCAGGGG  1 
+Ajs_0019_p-58(copA)      (    1) ACCTTGCCAGCATGTCAGGGT  1 
+Ajs_0018_p-140(copZ)     (    1) ACCCTGACATGCTGGCAAGGT  1 
+Ajs_1368_p-65(copZ2)     (    1) ACCTTCCCACCGTGACAAGGC  1 
+Daci_5724_p-58(copA2)    (    1) ACCTTGACATGGTGGCAATCT  1 
+CtesDRAFT_3915_p-80(copZ (    1) ACCTTGTCATGATGTTAGGGT  1 
+Ajs_1372_p-64(copA2)     (    1) ACCTTCCCACGATGGTAAGCC  1 
+Bpro_4871_p-218(copZ2)   (    1) ACCCTGCCCCCGTGGGAAGGT  1 
+Vapar_2999_p-60(cueR2)   (    1) ACTCTCCCATGGTGTGAAGGC  1 
+Bpro_3496_p-72(copA)     (    1) ACTTTCCAACAGTGGCAAGGT  1 
+Vapar_0030_p-70(copZ)    (    1) ACATTGACATCATGAGAAGGT  1 
+Vapar_0031_p-34(copA)    (    1) ACCTTGCCATGATGTGAGACT  1 
+Aave_0033_p-110(copZ)    (    1) CCCCTGACATCATGGCAAGGT  1 
+Mpe_A3536_p-61(copZ2)    (    1) ACCTTCCCACCGGGGCAACGT  1 
+Mpe_A1640_p-59(copA)     (    1) ACCTTGCCATCGTTAGAACCT  1 
+Mpe_A1641_p-57(copZ2)    (    1) ACCTTCCAACAGTAGGAGGGT  1 
+Bpro_3497_p-26(copZ2)    (    1) ACCTTCCCACAGTCGGAAGCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 25 bayes= 1.47917 E= 1.1e-152 
+   207   -280  -1129  -1129 
+ -1129    184  -1129  -1129 
+  -251    152  -1129    -50 
+ -1129    -22  -1129    174 
+ -1129  -1129  -1129    214 
+ -1129     36    127  -1129 
+   -52    152  -1129   -250 
+  -151    172  -1129  -1129 
+   207   -280  -1129  -1129 
+ -1129     52   -272    130 
+   -93     19    108  -1129 
+    94   -280     86   -250 
+ -1129  -1129   -272    208 
+  -251   -280    173   -250 
+   -93  -1129    118     30 
+ -1129     78     60    -92 
+   213  -1129  -1129  -1129 
+   173  -1129    -14  -1129 
+  -251   -180    167   -250 
+ -1129    -48    160  -1129 
+  -151   -122   -272    174 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 25 E= 1.1e-152 
+ 0.960000  0.040000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.040000  0.800000  0.000000  0.160000 
+ 0.000000  0.240000  0.000000  0.760000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.360000  0.640000  0.000000 
+ 0.160000  0.800000  0.000000  0.040000 
+ 0.080000  0.920000  0.000000  0.000000 
+ 0.960000  0.040000  0.000000  0.000000 
+ 0.000000  0.400000  0.040000  0.560000 
+ 0.120000  0.320000  0.560000  0.000000 
+ 0.440000  0.040000  0.480000  0.040000 
+ 0.000000  0.000000  0.040000  0.960000 
+ 0.040000  0.040000  0.880000  0.040000 
+ 0.120000  0.000000  0.600000  0.280000 
+ 0.000000  0.480000  0.400000  0.120000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.760000  0.000000  0.240000  0.000000 
+ 0.040000  0.080000  0.840000  0.040000 
+ 0.000000  0.200000  0.800000  0.000000 
+ 0.080000  0.120000  0.040000  0.760000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTSCCAYSRTGGSAAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACC[TC]T[GC]CCA[TC][GC][GA]TG[GT][CG]A[AG]G[GC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Aave_0033_p-110(copZ)            6.77e-09  [+1(6.77e-09)]
+Aave_0034_p-34(copA)             1.35e-09  [+1(1.35e-09)]
+Ajs_0018_p-140(copZ)             1.86e-09  [+1(1.86e-09)]
+Ajs_1372_p-64(copA2)             3.24e-09  [+1(3.24e-09)]
+Ajs_1368_p-65(copZ2)             2.06e-09  [+1(2.06e-09)]
+Ajs_0019_p-58(copA)              1.86e-09  [+1(1.86e-09)]
+CtesDRAFT_3915_p-80(copZ         3.24e-09  [+1(3.24e-09)]
+Daci_0035_p-77(copZ)             3.39e-11  [+1(3.39e-11)]
+Daci_5724_p-58(copA2)            3.24e-09  [+1(3.24e-09)]
+Mpe_A1644_p-81(n/a)              6.15e-10  [+1(6.15e-10)]
+Mpe_A1640_p-59(copA)             4.33e-08  [+1(4.33e-08)]
+Mpe_A3536_p-61(copZ2)            1.45e-08  [+1(1.45e-08)]
+Mpe_A3535_p-34(copA)             1.57e-11  [+1(1.57e-11)]
+Mpe_A1641_p-57(copZ2)            4.62e-08  [+1(4.62e-08)]
+Pnap_4089_p-67(copZ2)            1.02e-10  [+1(1.02e-10)]
+Pnap_4090_p-82(copA)             1.25e-11  [+1(1.25e-11)]
+Bpro_3497_p-26(copZ2)            5.89e-08  [+1(5.89e-08)]
+Bpro_4871_p-218(copZ2)           3.80e-09  [+1(3.80e-09)]
+Bpro_4872_p-84(copA)             6.58e-11  [+1(6.58e-11)]
+Bpro_3496_p-72(copA)             4.54e-09  [+1(4.54e-09)]
+Rfer_0024_p-35(copA)             5.21e-11  [+1(5.21e-11)]
+Rfer_0023_p12(cueR)              8.83e-12  [+1(8.83e-12)]
+Vapar_0031_p-34(copA)            5.41e-09  [+1(5.41e-09)]
+Vapar_2999_p-60(cueR2)           4.54e-09  [+1(4.54e-09)]
+Vapar_0030_p-70(copZ)            4.97e-09  [+1(4.97e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

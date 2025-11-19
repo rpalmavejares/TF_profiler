@@ -1,0 +1,945 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MetJ_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CKO_03051_p-65(metF)     1.0000     16  CKO_00171_p-177(metE)    1.0000     16  
+CKO_03907_p-43(metA)     1.0000     16  CKO_03055_p-78(metB)     1.0000     16  
+CKO_00170_p-87(metR)     1.0000     16  CKO_03166_p-99(metN)     1.0000     16  
+CKO_03975_p-35(mtnK)     1.0000     16  CKO_04402_p44(metC)      1.0000     16  
+CKO_03971_p-56(mtnB)     1.0000     16  CKO_03974_p-76(mtnA)     1.0000     16  
+CKO_03057_p-189(metJ)    1.0000     16  CKO_02554_p-10(ahpC)     1.0000     16  
+CKO_02560_p-62(ybdH)     1.0000     16  CKO_01563_p-76(metE2)    1.0000     16  
+CKO_00638_p-10(folE)     1.0000     16  CKO_04317_p-144(metK)    1.0000     16  
+CKO_02559_p-75(mtnE)     1.0000     16  CKO_03982_p11(CKO_03982) 1.0000     16  
+ETAE_3485_p-70(metF)     1.0000     16  ETAE_0142_p-59(metE)     1.0000     16  
+ETAE_3190_p-58(metA)     1.0000     16  ETAE_3430_p-74(metB)     1.0000     16  
+ETAE_0553_p-95(metN)     1.0000     16  ETAE_3431_p-209(metJ)    1.0000     16  
+ETAE_2964_p-209(metK)    1.0000     16  Ent638_1135_p-116(mtnX)  1.0000     16  
+Ent638_4033_p-64(metF)   1.0000     16  Ent638_3967_p-176(metE)  1.0000     16  
+Ent638_0217_p-43(metA)   1.0000     16  Ent638_4035_p-85(metB)   1.0000     16  
+Ent638_3968_p-87(metR)   1.0000     16  Ent638_0737_p-100(metN)  1.0000     16  
+Ent638_1139_p-44(mtnK)   1.0000     16  Ent638_3418_p-34(metC)   1.0000     16  
+Ent638_1143_p-57(mtnB)   1.0000     16  Ent638_1140_p-76(mtnA)   1.0000     16  
+Ent638_0827_p-10(mmuP)   1.0000     16  Ent638_4036_p-200(metJ)  1.0000     16  
+Ent638_1145_p-10(ahpC)   1.0000     16  Ent638_1770_p-140(mccA)  1.0000     16  
+Ent638_1987_p-70(metE2)  1.0000     16  Ent638_3346_p-144(metK)  1.0000     16  
+Ent638_4020_p-270(btuB)  1.0000     16  Ent638_1144_p-83(mtnE)   1.0000     16  
+EAM_0135_p-61(metF)      1.0000     16  EAM_0198_p-78(metE)      1.0000     16  
+EAM_0250_p-42(metA)      1.0000     16  EAM_0133_p-74(metB)      1.0000     16  
+EAM_0197_p-88(metR)      1.0000     16  EAM_0849_p-100(metN)     1.0000     16  
+EAM_0889_p-64(mtnK)      1.0000     16  EAM_0885_p-75(mtnB)      1.0000     16  
+EAM_0888_p-75(mtnA)      1.0000     16  EAM_0132_p-169(metJ)     1.0000     16  
+EAM_0952_p-84(metE2)     1.0000     16  EAM_2826_p-164(metK)     1.0000     16  
+ECA4244_p-65(metF)       1.0000     16  ECA0181_p-32(metE)       1.0000     16  
+ECA3992_p-43(metA)       1.0000     16  ECA4252_p-92(metB)       1.0000     16  
+ECA0180_p-88(metR)       1.0000     16  ECA3524_p-87(metN)       1.0000     16  
+ECA3476_p-65(mtnK)       1.0000     16  ECA3487_p-105(mtnB)      1.0000     16  
+ECA3477_p-77(mtnA)       1.0000     16  ECA2798_p-87(mmuP)       1.0000     16  
+ECA4253_p-110(metJ)      1.0000     16  ECA1113_p-126(metE2)     1.0000     16  
+ECA2719_p-82(mtnX)       1.0000     16  ECA1405_p-100(mtnZ)      1.0000     16  
+ECA3920_p-71(metK)       1.0000     16  ECA4238_p-393(btuB)      1.0000     16  
+ECA3488_p-83(mtnE)       1.0000     16  b3941_p-65(metF)         1.0000     16  
+b3829_p-165(metE)        1.0000     16  b4013_p-43(metA)         1.0000     16  
+b3939_p-87(metB)         1.0000     16  b3828_p-87(metR)         1.0000     16  
+b0199_p-98(metN)         1.0000     16  b3008_p-34(metC)         1.0000     16  
+b0260_p-34(mmuP)         1.0000     16  b3938_p-197(metJ)        1.0000     16  
+b0605_p-10(ahpC)         1.0000     16  b0599_p-42(ybdH)         1.0000     16  
+b2153_p-167(folE)        1.0000     16  b2942_p-145(metK)        1.0000     16  
+b0600_p-82(mtnE)         1.0000     16  b3966_p-318(btuB)        1.0000     16  
+KPN_00622_p-119(mtnX)    1.0000     16  KPN_04239_p-64(metF)     1.0000     16  
+KPN_04325_p-176(metE)    1.0000     16  KPN_04394_p-43(metA)     1.0000     16  
+KPN_04233_p-78(metB)     1.0000     16  KPN_04324_p-87(metR)     1.0000     16  
+KPN_00213_p-100(metN)    1.0000     16  KPN_00626_p-49(mtnK)     1.0000     16  
+KPN_03428_p-34(metC)     1.0000     16  KPN_00644_p-59(mtnC)     1.0000     16  
+KPN_00634_p-47(mtnB)     1.0000     16  KPN_00627_p-76(mtnA)     1.0000     16  
+KPN_00645_p-83(mtnE)     1.0000     16  KPN_00309_p-69(mmuP)     1.0000     16  
+KPN_04232_p-189(metJ)    1.0000     16  KPN_00650_p-10(ahpC)     1.0000     16  
+KPN_01615_p-78(metE2)    1.0000     16  KPN_02591_p-10(folE)     1.0000     16  
+KPN_03375_p-136(metK)    1.0000     16  KPN_04255_p-280(btuB)    1.0000     16  
+plu4754_p-97(metF)       1.0000     16  plu4420_p-36(metE)       1.0000     16  
+plu4397_p-44(metA)       1.0000     16  plu4756_p-69(metB)       1.0000     16  
+plu4421_p-88(metR)       1.0000     16  plu0697_p-105(metN)      1.0000     16  
+plu4757_p-214(metJ)      1.0000     16  plu0524_p-152(mccA)      1.0000     16  
+plu3683_p-64(metK)       1.0000     16  plu4735_p-245(btuB)      1.0000     16  
+PMI2932_p-92(metF)       1.0000     16  PMI3529_p-35(metE)       1.0000     16  
+PMI2765_p-33(metA)       1.0000     16  PMI3223_p-86(metB)       1.0000     16  
+PMI3528_p-88(metR)       1.0000     16  PMI2259_p-82(metN)       1.0000     16  
+PMI3222_p-215(metJ)      1.0000     16  PMI3020_p-135(metQ2)     1.0000     16  
+PMI2095_p-60(metK)       1.0000     16  PMI3246_p-321(btuB)      1.0000     16  
+STM4105_p-65(metF)       1.0000     16  STM3965_p-177(metE)      1.0000     16  
+STM4182_p-43(metA)       1.0000     16  STM4100_p-76(metB)       1.0000     16  
+STM3964_p-87(metR)       1.0000     16  STM0247_p-99(metN)       1.0000     16  
+STM3161_p-34(metC)       1.0000     16  STM4099_p-188(metJ)      1.0000     16  
+STM0608_p-10(ahpC)       1.0000     16  STM0602_p-59(ybdH)       1.0000     16  
+STM3090_p-145(metK)      1.0000     16  STM0603_p-83(mtnE)       1.0000     16  
+Spro_0941_p-82(mtnE)     1.0000     16  Spro_4784_p-68(metF)     1.0000     16  
+Spro_0242_p-33(metE)     1.0000     16  Spro_4504_p-40(metA)     1.0000     16  
+Spro_4786_p-85(metB)     1.0000     16  Spro_0241_p-88(metR)     1.0000     16  
+Spro_3753_p-96(metN)     1.0000     16  Spro_0946_p-79(mtnK)     1.0000     16  
+Spro_4212_p-89(metC)     1.0000     16  Spro_0942_p-88(mtnB)     1.0000     16  
+Spro_0945_p-80(mtnA)     1.0000     16  Spro_3470_p-32(mmuP)     1.0000     16  
+Spro_4787_p-240(metJ)    1.0000     16  Spro_1627_p-170(mccA)    1.0000     16  
+Spro_1044_p-97(metE2)    1.0000     16  Spro_3218_p-28(mtnX)     1.0000     16  
+Spro_3974_p-177(metK)    1.0000     16  Spro_4770_p-307(btuB)    1.0000     16  
+y0304_p-77(metF)         1.0000     16  y0442_p-26(metE)         1.0000     16  
+y0013_p-41(metA)         1.0000     16  y0441_p-80(metR)         1.0000     16  
+y3104_p-95(metN)         1.0000     16  y3314_p-288(metK)        1.0000     16  
+y2651_p-124(mtnZ)        1.0000     16  y0325_p-357(btuB)        1.0000     16  
+y0303_p-1245(metL)       1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MetJ_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/MetJ_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      167    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2672    N=             167
+sample: seed=            0    hsfrac=          0
+        searchsize=   2672    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.288 C 0.206 G 0.233 T 0.273 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.288 C 0.206 G 0.233 T 0.273 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AGACGTCTAGAYGTCT MEME-1	width =  16  sites = 167  llr = 2034  E-value = 4.4e-827
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  71813:1:839:1:11
+pos.-specific     C  ::27::72:::6:171
+probability       G  39::7:::17::81::
+matrix            T  :::2:918:::41828
+
+         bits    2.3                 
+                 2.1                 
+                 1.8                 
+                 1.6  *              
+Relative         1.4  *   *    *     
+Entropy          1.1  ** ** *  * *   
+(17.6 bits)      0.9 ****************
+                 0.7 ****************
+                 0.5 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           AGACGTCTAGACGTCT
+consensus            G  TA  C A T    
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Ent638_1139_p-44(mtnK)        1  2.89e-09          . AGACGTCTAAATGTCT           
+STM0603_p-83(mtnE)            1  6.74e-09          . AGACATCTAAACGTCT           
+b0600_p-82(mtnE)              1  6.74e-09          . AGACATCTAAACGTCT           
+ETAE_0553_p-95(metN)          1  6.74e-09          . AGACGTCTAGACGCCT           
+STM0602_p-59(ybdH)            1  1.31e-08          . AGACGTTTAGATGTCT           
+b0599_p-42(ybdH)              1  1.31e-08          . AGACGTTTAGATGTCT           
+y0304_p-77(metF)              1  1.59e-08          . AGACGTCTAAACGTAT           
+Spro_4784_p-68(metF)          1  1.59e-08          . AGACGTCTAAACGTAT           
+KPN_03428_p-34(metC)          1  1.59e-08          . AGACGTCCAGACGTAT           
+ECA4244_p-65(metF)            1  1.59e-08          . AGACGTCTAAACGTAT           
+ETAE_3485_p-70(metF)          1  1.59e-08          . AGACGTCTAAACGTAT           
+Spro_3753_p-96(metN)          1  2.18e-08          . GGACGTCTAGACGCCT           
+PMI2259_p-82(metN)            1  2.18e-08          . GGACGTCTAGACGCCT           
+PMI3020_p-135(metQ2)          1  2.61e-08          . AAACGTCTAGATGTCT           
+KPN_04324_p-87(metR)          1  3.00e-08          . AGACGTCCAGATGTTT           
+Ent638_1140_p-76(mtnA)        1  3.00e-08          . AGACATTTAGACGTCT           
+CKO_00170_p-87(metR)          1  3.00e-08          . AGACGTCCAGATGTTT           
+ECA1113_p-126(metE2)          1  3.99e-08          . AGACGTCCAGATGGCT           
+plu4754_p-97(metF)            1  4.58e-08          . GGACGTCTAAACGTAT           
+KPN_04239_p-64(metF)          1  4.58e-08          . GGACGTCTAAACGTAT           
+y3104_p-95(metN)              1  5.33e-08          . AGCCGTCTAGACGCCT           
+PMI2765_p-33(metA)            1  5.33e-08          . AGATGTCTAGATGTTT           
+CKO_03975_p-35(mtnK)          1  5.33e-08          . AGATGTATAGACGTCT           
+STM3964_p-87(metR)            1  6.19e-08          . AGACGTCTGGATGTTT           
+PMI3528_p-88(metR)            1  6.19e-08          . AGCCGTCTAGATGTTT           
+plu4421_p-88(metR)            1  6.19e-08          . AGCCGTCTAGATGTTT           
+ECA2798_p-87(mmuP)            1  6.19e-08          . GGAAGTCTAAACGTCT           
+PMI3223_p-86(metB)            1  7.14e-08          . AGATGTCTAGATGTAT           
+Spro_1044_p-97(metE2)         1  8.29e-08          . AGACGTCTGGATGTCC           
+b3008_p-34(metC)              1  8.29e-08          . AGACATCCAGACGTAT           
+EAM_0952_p-84(metE2)          1  8.29e-08          . AGACGTCCAGAAGTCT           
+EAM_0197_p-88(metR)           1  8.29e-08          . GGACGTCCAGATGTTT           
+Ent638_3968_p-87(metR)        1  8.29e-08          . GGACGTCCAGATGTTT           
+CKO_04402_p44(metC)           1  8.29e-08          . AGACATCCAGACGTAT           
+STM0247_p-99(metN)            1  1.22e-07          . AGACGTCTGGATGCCT           
+KPN_00645_p-83(mtnE)          1  1.22e-07          . AGACGTCTAAGCGTCT           
+KPN_00627_p-76(mtnA)          1  1.22e-07          . AGCCGTTCAGACGTCT           
+KPN_00626_p-49(mtnK)          1  1.22e-07          . AGAAGTATAGACGTCT           
+KPN_00213_p-100(metN)         1  1.22e-07          . AGACGTCTGGATGCCT           
+b0199_p-98(metN)              1  1.22e-07          . AGACGTCTGGATGCCT           
+EAM_0888_p-75(mtnA)           1  1.22e-07          . AGCCGTTCAGACGTCT           
+EAM_0849_p-100(metN)          1  1.22e-07          . AGACGTCTGGATGCCT           
+Ent638_1144_p-83(mtnE)        1  1.22e-07          . AGACGTCTAAGCGTCT           
+Ent638_0737_p-100(metN)       1  1.22e-07          . AGACGTCTGGATGCCT           
+CKO_02559_p-75(mtnE)          1  1.22e-07          . AGACGTCTAAGCGTCT           
+CKO_03166_p-99(metN)          1  1.22e-07          . AGACGTCTGGATGCCT           
+EAM_0889_p-64(mtnK)           1  1.39e-07          . GGATGTATAGACGTCT           
+Spro_4504_p-40(metA)          1  1.59e-07          . AGAAGTCTAAACGTTT           
+STM3965_p-177(metE)           1  1.59e-07          . AAACATCCAGACGTCT           
+CKO_03051_p-65(metF)          1  1.59e-07          . AGACGTCTAAACGGAT           
+Spro_0241_p-88(metR)          1  1.82e-07          . AGCCGTCCAGATGTTT           
+STM4182_p-43(metA)            1  1.82e-07          . GGATGTCTAAACGTTT           
+plu0697_p-105(metN)           1  1.82e-07          . AGACGTCTAGACACCT           
+KPN_00644_p-59(mtnC)          1  1.82e-07          . AGACGCTTAGACGTCT           
+KPN_04394_p-43(metA)          1  1.82e-07          . GGATGTCTAAACGTTT           
+b3828_p-87(metR)              1  1.82e-07          . AGCCGTCCAGATGTTT           
+ECA0180_p-88(metR)            1  1.82e-07          . AGCCGTCCAGATGTTT           
+ECA4252_p-92(metB)            1  1.82e-07          . AGAAGTTTAGATGTCT           
+ECA3992_p-43(metA)            1  1.82e-07          . GGATGTCTAAACGTTT           
+EAM_0885_p-75(mtnB)           1  1.82e-07          . AGACGCTTAGACGTCT           
+Ent638_1143_p-57(mtnB)        1  1.82e-07          . AGACGCTTAGACGTCT           
+Ent638_0217_p-43(metA)        1  1.82e-07          . GGATGTCTAAACGTTT           
+CKO_02560_p-62(ybdH)          1  1.82e-07          . AGACGCTTAGACGTCT           
+CKO_03907_p-43(metA)          1  1.82e-07          . GGATGTCTAAACGTTT           
+y0303_p-1245(metL)            1  2.06e-07          . AGATGTCCAGATGTAT           
+y0013_p-41(metA)              1  2.06e-07          . AGAAGTCTAAACGTAT           
+Spro_3470_p-32(mmuP)          1  2.06e-07          . AGCTGTTTAGACGTCT           
+Spro_4786_p-85(metB)          1  2.06e-07          . AGATGTCCAGATGTAT           
+KPN_00309_p-69(mmuP)          1  2.06e-07          . GGATGTTTAGATGTCT           
+b3939_p-87(metB)              1  2.06e-07          . AGATGTCCAGATGTAT           
+Ent638_4035_p-85(metB)        1  2.06e-07          . AGATGTCCAGATGTAT           
+b4013_p-43(metA)              1  2.33e-07          . GGATGTCTAAACGTAT           
+ECA4253_p-110(metJ)           1  2.33e-07          . AGACATCTAAACTTCT           
+EAM_0250_p-42(metA)           1  2.33e-07          . GGATGTCTAAACGTAT           
+PMI2932_p-92(metF)            1  2.61e-07          . AGACGTCTAAATGGTT           
+plu0524_p-152(mccA)           1  2.61e-07          . GGAAATCTAAACGTCT           
+KPN_04325_p-176(metE)         1  2.96e-07          . AAACATCTGGACGTCT           
+CKO_03974_p-76(mtnA)          1  2.96e-07          . AGACATGTAGACGTCT           
+CKO_00171_p-177(metE)         1  2.96e-07          . AAACATCTGGACGTCT           
+Ent638_4033_p-64(metF)        1  3.34e-07          . AGACGTCTAAATGGAT           
+CKO_03982_p11(CKO_03982)      1  3.34e-07          . AGACATCTGGATGGCT           
+y0325_p-357(btuB)             1  3.77e-07          . GGAAGTCTAGACATCT           
+STM4105_p-65(metF)            1  3.77e-07          . GGACGTCTAAACGGAT           
+b3941_p-65(metF)              1  3.77e-07          . GGACGTCTAAACGGAT           
+Ent638_3418_p-34(metC)        1  3.77e-07          . GGACGTCCAGACGGAT           
+CKO_03971_p-56(mtnB)          1  3.77e-07          . AGACGCTTAGATGTCT           
+PMI2095_p-60(metK)            1  4.25e-07          . GGACGTCTAGATGTTA           
+PMI3529_p-35(metE)            1  4.25e-07          . AAACATCTAGACGGCT           
+plu4420_p-36(metE)            1  4.25e-07          . AAACATCTAGACGGCT           
+KPN_00622_p-119(mtnX)         1  4.25e-07          . GGACATCCAGATGGCT           
+ECA3476_p-65(mtnK)            1  4.25e-07          . AGATGTATAGACGTCC           
+ECA3524_p-87(metN)            1  4.25e-07          . AGCCGTCTAGACGCCC           
+y3314_p-288(metK)             1  4.76e-07          . AGACGTCCAGATGTTA           
+Spro_3974_p-177(metK)         1  4.76e-07          . AGACGTCCAGATGTTA           
+STM3161_p-34(metC)            1  4.76e-07          . AGACATCCAGACGGTT           
+EAM_2826_p-164(metK)          1  4.76e-07          . AGACGTCCAGATGTTA           
+Ent638_3346_p-144(metK)       1  4.76e-07          . AGACGTCCAGATGTTA           
+Spro_4787_p-240(metJ)         1  5.32e-07          . GGACATCTAAACTTCT           
+STM4099_p-188(metJ)           1  5.32e-07          . GGACATCTAAACTTCT           
+KPN_04232_p-189(metJ)         1  5.32e-07          . GGACATCTAAACTTCT           
+b3938_p-197(metJ)             1  5.32e-07          . GGACATCTAAACTTCT           
+Ent638_4036_p-200(metJ)       1  5.32e-07          . GGACATCTAAACTTCT           
+CKO_03057_p-189(metJ)         1  5.32e-07          . GGACATCTAAACTTCT           
+Spro_4770_p-307(btuB)         1  7.46e-07          . AGCAGTCTAGACATCT           
+EAM_0135_p-61(metF)           1  7.46e-07          . GAATGTCTGGACGTCT           
+ECA3487_p-105(mtnB)           1  8.33e-07          . GGACGTTTAAATGGCT           
+Spro_0946_p-79(mtnK)          1  9.29e-07          . GGATGTATAGACGTCC           
+plu4756_p-69(metB)            1  9.29e-07          . AGATGTCTAGATGTGT           
+Spro_4212_p-89(metC)          1  1.03e-06          . AAACGTCTGGATGGCT           
+plu4757_p-214(metJ)           1  1.03e-06          . AGACATCTAAACCTCT           
+STM4100_p-76(metB)            1  1.15e-06          . AGATGTATTGACGTCT           
+KPN_00634_p-47(mtnB)          1  1.15e-06          . AGCCATTTAGACGGCT           
+KPN_04233_p-78(metB)          1  1.15e-06          . AGATGTATTGACGTCT           
+EAM_0133_p-74(metB)           1  1.15e-06          . AGATGTATTGACGTCT           
+ETAE_3430_p-74(metB)          1  1.15e-06          . AGATGTATTGACGTCT           
+CKO_03055_p-78(metB)          1  1.15e-06          . AGATGTATTGACGTCT           
+b0260_p-34(mmuP)              1  1.28e-06          . GGATGTTTAGATGTCC           
+ECA4238_p-393(btuB)           1  1.28e-06          . AGAAGTCTAGACTTCC           
+Ent638_0827_p-10(mmuP)        1  1.28e-06          . GGATGTTTAGATGTCC           
+ETAE_3190_p-58(metA)          1  1.28e-06          . AGCTATCTAGATGTCC           
+KPN_01615_p-78(metE2)         1  1.42e-06          . AGCCATCCAGAAGTCT           
+ECA3477_p-77(mtnA)            1  1.42e-06          . AAACGTTCGGACGTCT           
+ETAE_3431_p-209(metJ)         1  1.42e-06          . AGCCATCTAAAAGTCT           
+CKO_01563_p-76(metE2)         1  1.42e-06          . AGCCATCCAGAAGTCT           
+Spro_0242_p-33(metE)          1  1.74e-06          . AAACATCTGGACGGCT           
+b3829_p-165(metE)             1  1.74e-06          . AAACATCTGGACGGCT           
+ECA0181_p-32(metE)            1  1.74e-06          . AAACATCTGGACGGCT           
+EAM_0198_p-78(metE)           1  1.74e-06          . AAACATCTGGACGTCC           
+Ent638_3967_p-176(metE)       1  1.74e-06          . AAACATCTGGACGTCC           
+Ent638_1135_p-116(mtnX)       1  1.74e-06          . GGACATCCGGATGGCT           
+Spro_0941_p-82(mtnE)          1  1.92e-06          . AGCCATCTAAGCGTCT           
+STM3090_p-145(metK)           1  1.92e-06          . AGCCGTCCAGATGTTA           
+ETAE_2964_p-209(metK)         1  1.92e-06          . AGCCGTCCAGATGTTA           
+Spro_0942_p-88(mtnB)          1  2.13e-06          . AGACGCTTAGATGGCT           
+plu4397_p-44(metA)            1  2.13e-06          . AGAAGTCTAAACGTGT           
+Spro_3218_p-28(mtnX)          1  2.35e-06          . AAACACCTAAACGTCT           
+plu3683_p-64(metK)            1  2.59e-06          . AGCCATCTAGATGTTA           
+KPN_04255_p-280(btuB)         1  2.85e-06          . AGCAGTCTGGACATCT           
+EAM_0132_p-169(metJ)          1  2.85e-06          . GGACTTCTAAATGTCT           
+STM0608_p-10(ahpC)            1  3.14e-06          . GGAAGTATAGATGTCC           
+KPN_00650_p-10(ahpC)          1  3.14e-06          . GGAAGTATAGATGTCC           
+b0605_p-10(ahpC)              1  3.14e-06          . GGAAGTATAGATGTCC           
+ECA3488_p-83(mtnE)            1  3.14e-06          . AAACGTCCAAGCGTCT           
+CKO_02554_p-10(ahpC)          1  3.14e-06          . GGAAGTATAGATGTCC           
+b2942_p-145(metK)             1  5.48e-06          . AGCCATCCAGATGTTA           
+CKO_04317_p-144(metK)         1  5.48e-06          . AGCCATCCAGATGTTA           
+Ent638_1145_p-10(ahpC)        1  6.56e-06          . GGAAGTACAGATGTCC           
+y0442_p-26(metE)              1  7.16e-06          . AGATGTGTAAACATCT           
+Ent638_4020_p-270(btuB)       1  7.16e-06          . AGCTGTCTGGACATCC           
+ETAE_0142_p-59(metE)          1  7.16e-06          . AGATGTGTAAACATCT           
+ECA1405_p-100(mtnZ)           1  8.51e-06          . AGACATCCAGACATAA           
+Spro_0945_p-80(mtnA)          1  9.28e-06          . GGACGTCTATACATCC           
+PMI3222_p-215(metJ)           1  1.01e-05          . ATACATCTAGACATCT           
+Ent638_1987_p-70(metE2)       1  1.41e-05          . AGAAGTCTAAATATTC           
+y0441_p-80(metR)              1  1.66e-05          . AGATGTTTACACATCT           
+y2651_p-124(mtnZ)             1  2.27e-05          . GGACGTCTAGAAGCAA           
+Ent638_1770_p-140(mccA)       1  7.75e-05          . AGCCAGCTTAACGGCT           
+KPN_02591_p-10(folE)          1  8.29e-05          . AGAAACATAAATGTCA           
+PMI3246_p-321(btuB)           1  1.48e-04          . AGATGTCCAGTATTCT           
+CKO_00638_p-10(folE)          1  1.67e-04          . AGAAGAATAAATGTCA           
+b3966_p-318(btuB)             1  1.78e-04          . AGATGTCCAGATCTTG           
+b2153_p-167(folE)             1  2.26e-04          . CGATGTTTTAACATCT           
+Spro_1627_p-170(mccA)         1  2.39e-04          . AAACGGCTGCACATCT           
+ECA2719_p-82(mtnX)            1  3.01e-04          . AGCTGTATTAAATTCT           
+ECA3920_p-71(metK)            1  3.96e-04          . AGATGTTAATCCGTCT           
+plu4735_p-245(btuB)           1  5.17e-04          . AAACGGCTGACTTTCT           
+KPN_03375_p-136(metK)         1  5.44e-04          . AGAAGTTAATCCGTCT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ent638_1139_p-44(mtnK)            2.9e-09  [+1]
+STM0603_p-83(mtnE)                6.7e-09  [+1]
+b0600_p-82(mtnE)                  6.7e-09  [+1]
+ETAE_0553_p-95(metN)              6.7e-09  [+1]
+STM0602_p-59(ybdH)                1.3e-08  [+1]
+b0599_p-42(ybdH)                  1.3e-08  [+1]
+y0304_p-77(metF)                  1.6e-08  [+1]
+Spro_4784_p-68(metF)              1.6e-08  [+1]
+KPN_03428_p-34(metC)              1.6e-08  [+1]
+ECA4244_p-65(metF)                1.6e-08  [+1]
+ETAE_3485_p-70(metF)              1.6e-08  [+1]
+Spro_3753_p-96(metN)              2.2e-08  [+1]
+PMI2259_p-82(metN)                2.2e-08  [+1]
+PMI3020_p-135(metQ2)              2.6e-08  [+1]
+KPN_04324_p-87(metR)                3e-08  [+1]
+Ent638_1140_p-76(mtnA)              3e-08  [+1]
+CKO_00170_p-87(metR)                3e-08  [+1]
+ECA1113_p-126(metE2)                4e-08  [+1]
+plu4754_p-97(metF)                4.6e-08  [+1]
+KPN_04239_p-64(metF)              4.6e-08  [+1]
+y3104_p-95(metN)                  5.3e-08  [+1]
+PMI2765_p-33(metA)                5.3e-08  [+1]
+CKO_03975_p-35(mtnK)              5.3e-08  [+1]
+STM3964_p-87(metR)                6.2e-08  [+1]
+PMI3528_p-88(metR)                6.2e-08  [+1]
+plu4421_p-88(metR)                6.2e-08  [+1]
+ECA2798_p-87(mmuP)                6.2e-08  [+1]
+PMI3223_p-86(metB)                7.1e-08  [+1]
+Spro_1044_p-97(metE2)             8.3e-08  [+1]
+b3008_p-34(metC)                  8.3e-08  [+1]
+EAM_0952_p-84(metE2)              8.3e-08  [+1]
+EAM_0197_p-88(metR)               8.3e-08  [+1]
+Ent638_3968_p-87(metR)            8.3e-08  [+1]
+CKO_04402_p44(metC)               8.3e-08  [+1]
+STM0247_p-99(metN)                1.2e-07  [+1]
+KPN_00645_p-83(mtnE)              1.2e-07  [+1]
+KPN_00627_p-76(mtnA)              1.2e-07  [+1]
+KPN_00626_p-49(mtnK)              1.2e-07  [+1]
+KPN_00213_p-100(metN)             1.2e-07  [+1]
+b0199_p-98(metN)                  1.2e-07  [+1]
+EAM_0888_p-75(mtnA)               1.2e-07  [+1]
+EAM_0849_p-100(metN)              1.2e-07  [+1]
+Ent638_1144_p-83(mtnE)            1.2e-07  [+1]
+Ent638_0737_p-100(metN)           1.2e-07  [+1]
+CKO_02559_p-75(mtnE)              1.2e-07  [+1]
+CKO_03166_p-99(metN)              1.2e-07  [+1]
+EAM_0889_p-64(mtnK)               1.4e-07  [+1]
+Spro_4504_p-40(metA)              1.6e-07  [+1]
+STM3965_p-177(metE)               1.6e-07  [+1]
+CKO_03051_p-65(metF)              1.6e-07  [+1]
+Spro_0241_p-88(metR)              1.8e-07  [+1]
+STM4182_p-43(metA)                1.8e-07  [+1]
+plu0697_p-105(metN)               1.8e-07  [+1]
+KPN_00644_p-59(mtnC)              1.8e-07  [+1]
+KPN_04394_p-43(metA)              1.8e-07  [+1]
+b3828_p-87(metR)                  1.8e-07  [+1]
+ECA0180_p-88(metR)                1.8e-07  [+1]
+ECA4252_p-92(metB)                1.8e-07  [+1]
+ECA3992_p-43(metA)                1.8e-07  [+1]
+EAM_0885_p-75(mtnB)               1.8e-07  [+1]
+Ent638_1143_p-57(mtnB)            1.8e-07  [+1]
+Ent638_0217_p-43(metA)            1.8e-07  [+1]
+CKO_02560_p-62(ybdH)              1.8e-07  [+1]
+CKO_03907_p-43(metA)              1.8e-07  [+1]
+y0303_p-1245(metL)                2.1e-07  [+1]
+y0013_p-41(metA)                  2.1e-07  [+1]
+Spro_3470_p-32(mmuP)              2.1e-07  [+1]
+Spro_4786_p-85(metB)              2.1e-07  [+1]
+KPN_00309_p-69(mmuP)              2.1e-07  [+1]
+b3939_p-87(metB)                  2.1e-07  [+1]
+Ent638_4035_p-85(metB)            2.1e-07  [+1]
+b4013_p-43(metA)                  2.3e-07  [+1]
+ECA4253_p-110(metJ)               2.3e-07  [+1]
+EAM_0250_p-42(metA)               2.3e-07  [+1]
+PMI2932_p-92(metF)                2.6e-07  [+1]
+plu0524_p-152(mccA)               2.6e-07  [+1]
+KPN_04325_p-176(metE)               3e-07  [+1]
+CKO_03974_p-76(mtnA)                3e-07  [+1]
+CKO_00171_p-177(metE)               3e-07  [+1]
+Ent638_4033_p-64(metF)            3.3e-07  [+1]
+CKO_03982_p11(CKO_03982)          3.3e-07  [+1]
+y0325_p-357(btuB)                 3.8e-07  [+1]
+STM4105_p-65(metF)                3.8e-07  [+1]
+b3941_p-65(metF)                  3.8e-07  [+1]
+Ent638_3418_p-34(metC)            3.8e-07  [+1]
+CKO_03971_p-56(mtnB)              3.8e-07  [+1]
+PMI2095_p-60(metK)                4.2e-07  [+1]
+PMI3529_p-35(metE)                4.2e-07  [+1]
+plu4420_p-36(metE)                4.2e-07  [+1]
+KPN_00622_p-119(mtnX)             4.2e-07  [+1]
+ECA3476_p-65(mtnK)                4.2e-07  [+1]
+ECA3524_p-87(metN)                4.2e-07  [+1]
+y3314_p-288(metK)                 4.8e-07  [+1]
+Spro_3974_p-177(metK)             4.8e-07  [+1]
+STM3161_p-34(metC)                4.8e-07  [+1]
+EAM_2826_p-164(metK)              4.8e-07  [+1]
+Ent638_3346_p-144(metK)           4.8e-07  [+1]
+Spro_4787_p-240(metJ)             5.3e-07  [+1]
+STM4099_p-188(metJ)               5.3e-07  [+1]
+KPN_04232_p-189(metJ)             5.3e-07  [+1]
+b3938_p-197(metJ)                 5.3e-07  [+1]
+Ent638_4036_p-200(metJ)           5.3e-07  [+1]
+CKO_03057_p-189(metJ)             5.3e-07  [+1]
+Spro_4770_p-307(btuB)             7.5e-07  [+1]
+EAM_0135_p-61(metF)               7.5e-07  [+1]
+ECA3487_p-105(mtnB)               8.3e-07  [+1]
+Spro_0946_p-79(mtnK)              9.3e-07  [+1]
+plu4756_p-69(metB)                9.3e-07  [+1]
+Spro_4212_p-89(metC)                1e-06  [+1]
+plu4757_p-214(metJ)                 1e-06  [+1]
+STM4100_p-76(metB)                1.1e-06  [+1]
+KPN_00634_p-47(mtnB)              1.1e-06  [+1]
+KPN_04233_p-78(metB)              1.1e-06  [+1]
+EAM_0133_p-74(metB)               1.1e-06  [+1]
+ETAE_3430_p-74(metB)              1.1e-06  [+1]
+CKO_03055_p-78(metB)              1.1e-06  [+1]
+b0260_p-34(mmuP)                  1.3e-06  [+1]
+ECA4238_p-393(btuB)               1.3e-06  [+1]
+Ent638_0827_p-10(mmuP)            1.3e-06  [+1]
+ETAE_3190_p-58(metA)              1.3e-06  [+1]
+KPN_01615_p-78(metE2)             1.4e-06  [+1]
+ECA3477_p-77(mtnA)                1.4e-06  [+1]
+ETAE_3431_p-209(metJ)             1.4e-06  [+1]
+CKO_01563_p-76(metE2)             1.4e-06  [+1]
+Spro_0242_p-33(metE)              1.7e-06  [+1]
+b3829_p-165(metE)                 1.7e-06  [+1]
+ECA0181_p-32(metE)                1.7e-06  [+1]
+EAM_0198_p-78(metE)               1.7e-06  [+1]
+Ent638_3967_p-176(metE)           1.7e-06  [+1]
+Ent638_1135_p-116(mtnX)           1.7e-06  [+1]
+Spro_0941_p-82(mtnE)              1.9e-06  [+1]
+STM3090_p-145(metK)               1.9e-06  [+1]
+ETAE_2964_p-209(metK)             1.9e-06  [+1]
+Spro_0942_p-88(mtnB)              2.1e-06  [+1]
+plu4397_p-44(metA)                2.1e-06  [+1]
+Spro_3218_p-28(mtnX)              2.3e-06  [+1]
+plu3683_p-64(metK)                2.6e-06  [+1]
+KPN_04255_p-280(btuB)             2.9e-06  [+1]
+EAM_0132_p-169(metJ)              2.9e-06  [+1]
+STM0608_p-10(ahpC)                3.1e-06  [+1]
+KPN_00650_p-10(ahpC)              3.1e-06  [+1]
+b0605_p-10(ahpC)                  3.1e-06  [+1]
+ECA3488_p-83(mtnE)                3.1e-06  [+1]
+CKO_02554_p-10(ahpC)              3.1e-06  [+1]
+b2942_p-145(metK)                 5.5e-06  [+1]
+CKO_04317_p-144(metK)             5.5e-06  [+1]
+Ent638_1145_p-10(ahpC)            6.6e-06  [+1]
+y0442_p-26(metE)                  7.2e-06  [+1]
+Ent638_4020_p-270(btuB)           7.2e-06  [+1]
+ETAE_0142_p-59(metE)              7.2e-06  [+1]
+ECA1405_p-100(mtnZ)               8.5e-06  [+1]
+Spro_0945_p-80(mtnA)              9.3e-06  [+1]
+PMI3222_p-215(metJ)                 1e-05  [+1]
+Ent638_1987_p-70(metE2)           1.4e-05  [+1]
+y0441_p-80(metR)                  1.7e-05  [+1]
+y2651_p-124(mtnZ)                 2.3e-05  [+1]
+Ent638_1770_p-140(mccA)           7.8e-05  [+1]
+KPN_02591_p-10(folE)              8.3e-05  [+1]
+PMI3246_p-321(btuB)               0.00015  [+1]
+CKO_00638_p-10(folE)              0.00017  [+1]
+b3966_p-318(btuB)                 0.00018  [+1]
+b2153_p-167(folE)                 0.00023  [+1]
+Spro_1627_p-170(mccA)             0.00024  [+1]
+ECA2719_p-82(mtnX)                 0.0003  [+1]
+ECA3920_p-71(metK)                 0.0004  [+1]
+plu4735_p-245(btuB)               0.00052  [+1]
+KPN_03375_p-136(metK)             0.00054  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AGACGTCTAGAYGTCT width=16 seqs=167
+Ent638_1139_p-44(mtnK)   (    1) AGACGTCTAAATGTCT  1 
+STM0603_p-83(mtnE)       (    1) AGACATCTAAACGTCT  1 
+b0600_p-82(mtnE)         (    1) AGACATCTAAACGTCT  1 
+ETAE_0553_p-95(metN)     (    1) AGACGTCTAGACGCCT  1 
+STM0602_p-59(ybdH)       (    1) AGACGTTTAGATGTCT  1 
+b0599_p-42(ybdH)         (    1) AGACGTTTAGATGTCT  1 
+y0304_p-77(metF)         (    1) AGACGTCTAAACGTAT  1 
+Spro_4784_p-68(metF)     (    1) AGACGTCTAAACGTAT  1 
+KPN_03428_p-34(metC)     (    1) AGACGTCCAGACGTAT  1 
+ECA4244_p-65(metF)       (    1) AGACGTCTAAACGTAT  1 
+ETAE_3485_p-70(metF)     (    1) AGACGTCTAAACGTAT  1 
+Spro_3753_p-96(metN)     (    1) GGACGTCTAGACGCCT  1 
+PMI2259_p-82(metN)       (    1) GGACGTCTAGACGCCT  1 
+PMI3020_p-135(metQ2)     (    1) AAACGTCTAGATGTCT  1 
+KPN_04324_p-87(metR)     (    1) AGACGTCCAGATGTTT  1 
+Ent638_1140_p-76(mtnA)   (    1) AGACATTTAGACGTCT  1 
+CKO_00170_p-87(metR)     (    1) AGACGTCCAGATGTTT  1 
+ECA1113_p-126(metE2)     (    1) AGACGTCCAGATGGCT  1 
+plu4754_p-97(metF)       (    1) GGACGTCTAAACGTAT  1 
+KPN_04239_p-64(metF)     (    1) GGACGTCTAAACGTAT  1 
+y3104_p-95(metN)         (    1) AGCCGTCTAGACGCCT  1 
+PMI2765_p-33(metA)       (    1) AGATGTCTAGATGTTT  1 
+CKO_03975_p-35(mtnK)     (    1) AGATGTATAGACGTCT  1 
+STM3964_p-87(metR)       (    1) AGACGTCTGGATGTTT  1 
+PMI3528_p-88(metR)       (    1) AGCCGTCTAGATGTTT  1 
+plu4421_p-88(metR)       (    1) AGCCGTCTAGATGTTT  1 
+ECA2798_p-87(mmuP)       (    1) GGAAGTCTAAACGTCT  1 
+PMI3223_p-86(metB)       (    1) AGATGTCTAGATGTAT  1 
+Spro_1044_p-97(metE2)    (    1) AGACGTCTGGATGTCC  1 
+b3008_p-34(metC)         (    1) AGACATCCAGACGTAT  1 
+EAM_0952_p-84(metE2)     (    1) AGACGTCCAGAAGTCT  1 
+EAM_0197_p-88(metR)      (    1) GGACGTCCAGATGTTT  1 
+Ent638_3968_p-87(metR)   (    1) GGACGTCCAGATGTTT  1 
+CKO_04402_p44(metC)      (    1) AGACATCCAGACGTAT  1 
+STM0247_p-99(metN)       (    1) AGACGTCTGGATGCCT  1 
+KPN_00645_p-83(mtnE)     (    1) AGACGTCTAAGCGTCT  1 
+KPN_00627_p-76(mtnA)     (    1) AGCCGTTCAGACGTCT  1 
+KPN_00626_p-49(mtnK)     (    1) AGAAGTATAGACGTCT  1 
+KPN_00213_p-100(metN)    (    1) AGACGTCTGGATGCCT  1 
+b0199_p-98(metN)         (    1) AGACGTCTGGATGCCT  1 
+EAM_0888_p-75(mtnA)      (    1) AGCCGTTCAGACGTCT  1 
+EAM_0849_p-100(metN)     (    1) AGACGTCTGGATGCCT  1 
+Ent638_1144_p-83(mtnE)   (    1) AGACGTCTAAGCGTCT  1 
+Ent638_0737_p-100(metN)  (    1) AGACGTCTGGATGCCT  1 
+CKO_02559_p-75(mtnE)     (    1) AGACGTCTAAGCGTCT  1 
+CKO_03166_p-99(metN)     (    1) AGACGTCTGGATGCCT  1 
+EAM_0889_p-64(mtnK)      (    1) GGATGTATAGACGTCT  1 
+Spro_4504_p-40(metA)     (    1) AGAAGTCTAAACGTTT  1 
+STM3965_p-177(metE)      (    1) AAACATCCAGACGTCT  1 
+CKO_03051_p-65(metF)     (    1) AGACGTCTAAACGGAT  1 
+Spro_0241_p-88(metR)     (    1) AGCCGTCCAGATGTTT  1 
+STM4182_p-43(metA)       (    1) GGATGTCTAAACGTTT  1 
+plu0697_p-105(metN)      (    1) AGACGTCTAGACACCT  1 
+KPN_00644_p-59(mtnC)     (    1) AGACGCTTAGACGTCT  1 
+KPN_04394_p-43(metA)     (    1) GGATGTCTAAACGTTT  1 
+b3828_p-87(metR)         (    1) AGCCGTCCAGATGTTT  1 
+ECA0180_p-88(metR)       (    1) AGCCGTCCAGATGTTT  1 
+ECA4252_p-92(metB)       (    1) AGAAGTTTAGATGTCT  1 
+ECA3992_p-43(metA)       (    1) GGATGTCTAAACGTTT  1 
+EAM_0885_p-75(mtnB)      (    1) AGACGCTTAGACGTCT  1 
+Ent638_1143_p-57(mtnB)   (    1) AGACGCTTAGACGTCT  1 
+Ent638_0217_p-43(metA)   (    1) GGATGTCTAAACGTTT  1 
+CKO_02560_p-62(ybdH)     (    1) AGACGCTTAGACGTCT  1 
+CKO_03907_p-43(metA)     (    1) GGATGTCTAAACGTTT  1 
+y0303_p-1245(metL)       (    1) AGATGTCCAGATGTAT  1 
+y0013_p-41(metA)         (    1) AGAAGTCTAAACGTAT  1 
+Spro_3470_p-32(mmuP)     (    1) AGCTGTTTAGACGTCT  1 
+Spro_4786_p-85(metB)     (    1) AGATGTCCAGATGTAT  1 
+KPN_00309_p-69(mmuP)     (    1) GGATGTTTAGATGTCT  1 
+b3939_p-87(metB)         (    1) AGATGTCCAGATGTAT  1 
+Ent638_4035_p-85(metB)   (    1) AGATGTCCAGATGTAT  1 
+b4013_p-43(metA)         (    1) GGATGTCTAAACGTAT  1 
+ECA4253_p-110(metJ)      (    1) AGACATCTAAACTTCT  1 
+EAM_0250_p-42(metA)      (    1) GGATGTCTAAACGTAT  1 
+PMI2932_p-92(metF)       (    1) AGACGTCTAAATGGTT  1 
+plu0524_p-152(mccA)      (    1) GGAAATCTAAACGTCT  1 
+KPN_04325_p-176(metE)    (    1) AAACATCTGGACGTCT  1 
+CKO_03974_p-76(mtnA)     (    1) AGACATGTAGACGTCT  1 
+CKO_00171_p-177(metE)    (    1) AAACATCTGGACGTCT  1 
+Ent638_4033_p-64(metF)   (    1) AGACGTCTAAATGGAT  1 
+CKO_03982_p11(CKO_03982) (    1) AGACATCTGGATGGCT  1 
+y0325_p-357(btuB)        (    1) GGAAGTCTAGACATCT  1 
+STM4105_p-65(metF)       (    1) GGACGTCTAAACGGAT  1 
+b3941_p-65(metF)         (    1) GGACGTCTAAACGGAT  1 
+Ent638_3418_p-34(metC)   (    1) GGACGTCCAGACGGAT  1 
+CKO_03971_p-56(mtnB)     (    1) AGACGCTTAGATGTCT  1 
+PMI2095_p-60(metK)       (    1) GGACGTCTAGATGTTA  1 
+PMI3529_p-35(metE)       (    1) AAACATCTAGACGGCT  1 
+plu4420_p-36(metE)       (    1) AAACATCTAGACGGCT  1 
+KPN_00622_p-119(mtnX)    (    1) GGACATCCAGATGGCT  1 
+ECA3476_p-65(mtnK)       (    1) AGATGTATAGACGTCC  1 
+ECA3524_p-87(metN)       (    1) AGCCGTCTAGACGCCC  1 
+y3314_p-288(metK)        (    1) AGACGTCCAGATGTTA  1 
+Spro_3974_p-177(metK)    (    1) AGACGTCCAGATGTTA  1 
+STM3161_p-34(metC)       (    1) AGACATCCAGACGGTT  1 
+EAM_2826_p-164(metK)     (    1) AGACGTCCAGATGTTA  1 
+Ent638_3346_p-144(metK)  (    1) AGACGTCCAGATGTTA  1 
+Spro_4787_p-240(metJ)    (    1) GGACATCTAAACTTCT  1 
+STM4099_p-188(metJ)      (    1) GGACATCTAAACTTCT  1 
+KPN_04232_p-189(metJ)    (    1) GGACATCTAAACTTCT  1 
+b3938_p-197(metJ)        (    1) GGACATCTAAACTTCT  1 
+Ent638_4036_p-200(metJ)  (    1) GGACATCTAAACTTCT  1 
+CKO_03057_p-189(metJ)    (    1) GGACATCTAAACTTCT  1 
+Spro_4770_p-307(btuB)    (    1) AGCAGTCTAGACATCT  1 
+EAM_0135_p-61(metF)      (    1) GAATGTCTGGACGTCT  1 
+ECA3487_p-105(mtnB)      (    1) GGACGTTTAAATGGCT  1 
+Spro_0946_p-79(mtnK)     (    1) GGATGTATAGACGTCC  1 
+plu4756_p-69(metB)       (    1) AGATGTCTAGATGTGT  1 
+Spro_4212_p-89(metC)     (    1) AAACGTCTGGATGGCT  1 
+plu4757_p-214(metJ)      (    1) AGACATCTAAACCTCT  1 
+STM4100_p-76(metB)       (    1) AGATGTATTGACGTCT  1 
+KPN_00634_p-47(mtnB)     (    1) AGCCATTTAGACGGCT  1 
+KPN_04233_p-78(metB)     (    1) AGATGTATTGACGTCT  1 
+EAM_0133_p-74(metB)      (    1) AGATGTATTGACGTCT  1 
+ETAE_3430_p-74(metB)     (    1) AGATGTATTGACGTCT  1 
+CKO_03055_p-78(metB)     (    1) AGATGTATTGACGTCT  1 
+b0260_p-34(mmuP)         (    1) GGATGTTTAGATGTCC  1 
+ECA4238_p-393(btuB)      (    1) AGAAGTCTAGACTTCC  1 
+Ent638_0827_p-10(mmuP)   (    1) GGATGTTTAGATGTCC  1 
+ETAE_3190_p-58(metA)     (    1) AGCTATCTAGATGTCC  1 
+KPN_01615_p-78(metE2)    (    1) AGCCATCCAGAAGTCT  1 
+ECA3477_p-77(mtnA)       (    1) AAACGTTCGGACGTCT  1 
+ETAE_3431_p-209(metJ)    (    1) AGCCATCTAAAAGTCT  1 
+CKO_01563_p-76(metE2)    (    1) AGCCATCCAGAAGTCT  1 
+Spro_0242_p-33(metE)     (    1) AAACATCTGGACGGCT  1 
+b3829_p-165(metE)        (    1) AAACATCTGGACGGCT  1 
+ECA0181_p-32(metE)       (    1) AAACATCTGGACGGCT  1 
+EAM_0198_p-78(metE)      (    1) AAACATCTGGACGTCC  1 
+Ent638_3967_p-176(metE)  (    1) AAACATCTGGACGTCC  1 
+Ent638_1135_p-116(mtnX)  (    1) GGACATCCGGATGGCT  1 
+Spro_0941_p-82(mtnE)     (    1) AGCCATCTAAGCGTCT  1 
+STM3090_p-145(metK)      (    1) AGCCGTCCAGATGTTA  1 
+ETAE_2964_p-209(metK)    (    1) AGCCGTCCAGATGTTA  1 
+Spro_0942_p-88(mtnB)     (    1) AGACGCTTAGATGGCT  1 
+plu4397_p-44(metA)       (    1) AGAAGTCTAAACGTGT  1 
+Spro_3218_p-28(mtnX)     (    1) AAACACCTAAACGTCT  1 
+plu3683_p-64(metK)       (    1) AGCCATCTAGATGTTA  1 
+KPN_04255_p-280(btuB)    (    1) AGCAGTCTGGACATCT  1 
+EAM_0132_p-169(metJ)     (    1) GGACTTCTAAATGTCT  1 
+STM0608_p-10(ahpC)       (    1) GGAAGTATAGATGTCC  1 
+KPN_00650_p-10(ahpC)     (    1) GGAAGTATAGATGTCC  1 
+b0605_p-10(ahpC)         (    1) GGAAGTATAGATGTCC  1 
+ECA3488_p-83(mtnE)       (    1) AAACGTCCAAGCGTCT  1 
+CKO_02554_p-10(ahpC)     (    1) GGAAGTATAGATGTCC  1 
+b2942_p-145(metK)        (    1) AGCCATCCAGATGTTA  1 
+CKO_04317_p-144(metK)    (    1) AGCCATCCAGATGTTA  1 
+Ent638_1145_p-10(ahpC)   (    1) GGAAGTACAGATGTCC  1 
+y0442_p-26(metE)         (    1) AGATGTGTAAACATCT  1 
+Ent638_4020_p-270(btuB)  (    1) AGCTGTCTGGACATCC  1 
+ETAE_0142_p-59(metE)     (    1) AGATGTGTAAACATCT  1 
+ECA1405_p-100(mtnZ)      (    1) AGACATCCAGACATAA  1 
+Spro_0945_p-80(mtnA)     (    1) GGACGTCTATACATCC  1 
+PMI3222_p-215(metJ)      (    1) ATACATCTAGACATCT  1 
+Ent638_1987_p-70(metE2)  (    1) AGAAGTCTAAATATTC  1 
+y0441_p-80(metR)         (    1) AGATGTTTACACATCT  1 
+y2651_p-124(mtnZ)        (    1) GGACGTCTAGAAGCAA  1 
+Ent638_1770_p-140(mccA)  (    1) AGCCAGCTTAACGGCT  1 
+KPN_02591_p-10(folE)     (    1) AGAAACATAAATGTCA  1 
+PMI3246_p-321(btuB)      (    1) AGATGTCCAGTATTCT  1 
+CKO_00638_p-10(folE)     (    1) AGAAGAATAAATGTCA  1 
+b3966_p-318(btuB)        (    1) AGATGTCCAGATCTTG  1 
+b2153_p-167(folE)        (    1) CGATGTTTTAACATCT  1 
+Spro_1627_p-170(mccA)    (    1) AAACGGCTGCACATCT  1 
+ECA2719_p-82(mtnX)       (    1) AGCTGTATTAAATTCT  1 
+ECA3920_p-71(metK)       (    1) AGATGTTAATCCGTCT  1 
+plu4735_p-245(btuB)      (    1) AAACGGCTGACTTTCT  1 
+KPN_03375_p-136(metK)    (    1) AGAAGTTAATCCGTCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 167 bayes= 1.91511 E= 4.4e-827 
+   135   -510     14  -1403 
+  -142  -1403    193   -551 
+   155    -40  -1403  -1403 
+  -127    166  -1403    -26 
+   -16  -1403    166   -551 
+  -558   -210   -370    177 
+  -142    184   -370    -99 
+  -459     18  -1403    147 
+   149  -1403    -70   -251 
+    11   -410    150   -392 
+   172   -352   -296   -551 
+  -278    148  -1403     49 
+  -178   -410    185   -205 
+ -1403   -140    -89    155 
+  -100    168   -428    -56 
+  -178    -93   -528    156 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 167 E= 4.4e-827 
+ 0.736527  0.005988  0.257485  0.000000 
+ 0.107784  0.000000  0.886228  0.005988 
+ 0.844311  0.155689  0.000000  0.000000 
+ 0.119760  0.652695  0.000000  0.227545 
+ 0.257485  0.000000  0.736527  0.005988 
+ 0.005988  0.047904  0.017964  0.928144 
+ 0.107784  0.736527  0.017964  0.137725 
+ 0.011976  0.233533  0.000000  0.754491 
+ 0.808383  0.000000  0.143713  0.047904 
+ 0.311377  0.011976  0.658683  0.017964 
+ 0.946108  0.017964  0.029940  0.005988 
+ 0.041916  0.574850  0.000000  0.383234 
+ 0.083832  0.011976  0.838323  0.065868 
+ 0.000000  0.077844  0.125749  0.796407 
+ 0.143713  0.658683  0.011976  0.185629 
+ 0.083832  0.107784  0.005988  0.802395 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGACGTCTAGAYGTCT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]GA[CT][GA]TC[TC]A[GA]A[CT]GTCT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.60 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CKO_03051_p-65(metF)             1.59e-07  [+1(1.59e-07)]
+CKO_00171_p-177(metE)            2.96e-07  [+1(2.96e-07)]
+CKO_03907_p-43(metA)             1.82e-07  [+1(1.82e-07)]
+CKO_03055_p-78(metB)             1.15e-06  [+1(1.15e-06)]
+CKO_00170_p-87(metR)             3.00e-08  [+1(3.00e-08)]
+CKO_03166_p-99(metN)             1.22e-07  [+1(1.22e-07)]
+CKO_03975_p-35(mtnK)             5.33e-08  [+1(5.33e-08)]
+CKO_04402_p44(metC)              8.29e-08  [+1(8.29e-08)]
+CKO_03971_p-56(mtnB)             3.77e-07  [+1(3.77e-07)]
+CKO_03974_p-76(mtnA)             2.96e-07  [+1(2.96e-07)]
+CKO_03057_p-189(metJ)            5.32e-07  [+1(5.32e-07)]
+CKO_02554_p-10(ahpC)             3.14e-06  [+1(3.14e-06)]
+CKO_02560_p-62(ybdH)             1.82e-07  [+1(1.82e-07)]
+CKO_01563_p-76(metE2)            1.42e-06  [+1(1.42e-06)]
+CKO_00638_p-10(folE)             1.67e-04  16
+CKO_04317_p-144(metK)            5.48e-06  [+1(5.48e-06)]
+CKO_02559_p-75(mtnE)             1.22e-07  [+1(1.22e-07)]
+CKO_03982_p11(CKO_03982)         3.34e-07  [+1(3.34e-07)]
+ETAE_3485_p-70(metF)             1.59e-08  [+1(1.59e-08)]
+ETAE_0142_p-59(metE)             7.16e-06  [+1(7.16e-06)]
+ETAE_3190_p-58(metA)             1.28e-06  [+1(1.28e-06)]
+ETAE_3430_p-74(metB)             1.15e-06  [+1(1.15e-06)]
+ETAE_0553_p-95(metN)             6.74e-09  [+1(6.74e-09)]
+ETAE_3431_p-209(metJ)            1.42e-06  [+1(1.42e-06)]
+ETAE_2964_p-209(metK)            1.92e-06  [+1(1.92e-06)]
+Ent638_1135_p-116(mtnX)          1.74e-06  [+1(1.74e-06)]
+Ent638_4033_p-64(metF)           3.34e-07  [+1(3.34e-07)]
+Ent638_3967_p-176(metE)          1.74e-06  [+1(1.74e-06)]
+Ent638_0217_p-43(metA)           1.82e-07  [+1(1.82e-07)]
+Ent638_4035_p-85(metB)           2.06e-07  [+1(2.06e-07)]
+Ent638_3968_p-87(metR)           8.29e-08  [+1(8.29e-08)]
+Ent638_0737_p-100(metN)          1.22e-07  [+1(1.22e-07)]
+Ent638_1139_p-44(mtnK)           2.89e-09  [+1(2.89e-09)]
+Ent638_3418_p-34(metC)           3.77e-07  [+1(3.77e-07)]
+Ent638_1143_p-57(mtnB)           1.82e-07  [+1(1.82e-07)]
+Ent638_1140_p-76(mtnA)           3.00e-08  [+1(3.00e-08)]
+Ent638_0827_p-10(mmuP)           1.28e-06  [+1(1.28e-06)]
+Ent638_4036_p-200(metJ)          5.32e-07  [+1(5.32e-07)]
+Ent638_1145_p-10(ahpC)           6.56e-06  [+1(6.56e-06)]
+Ent638_1770_p-140(mccA)          7.75e-05  [+1(7.75e-05)]
+Ent638_1987_p-70(metE2)          1.41e-05  [+1(1.41e-05)]
+Ent638_3346_p-144(metK)          4.76e-07  [+1(4.76e-07)]
+Ent638_4020_p-270(btuB)          7.16e-06  [+1(7.16e-06)]
+Ent638_1144_p-83(mtnE)           1.22e-07  [+1(1.22e-07)]
+EAM_0135_p-61(metF)              7.46e-07  [+1(7.46e-07)]
+EAM_0198_p-78(metE)              1.74e-06  [+1(1.74e-06)]
+EAM_0250_p-42(metA)              2.33e-07  [+1(2.33e-07)]
+EAM_0133_p-74(metB)              1.15e-06  [+1(1.15e-06)]
+EAM_0197_p-88(metR)              8.29e-08  [+1(8.29e-08)]
+EAM_0849_p-100(metN)             1.22e-07  [+1(1.22e-07)]
+EAM_0889_p-64(mtnK)              1.39e-07  [+1(1.39e-07)]
+EAM_0885_p-75(mtnB)              1.82e-07  [+1(1.82e-07)]
+EAM_0888_p-75(mtnA)              1.22e-07  [+1(1.22e-07)]
+EAM_0132_p-169(metJ)             2.85e-06  [+1(2.85e-06)]
+EAM_0952_p-84(metE2)             8.29e-08  [+1(8.29e-08)]
+EAM_2826_p-164(metK)             4.76e-07  [+1(4.76e-07)]
+ECA4244_p-65(metF)               1.59e-08  [+1(1.59e-08)]
+ECA0181_p-32(metE)               1.74e-06  [+1(1.74e-06)]
+ECA3992_p-43(metA)               1.82e-07  [+1(1.82e-07)]
+ECA4252_p-92(metB)               1.82e-07  [+1(1.82e-07)]
+ECA0180_p-88(metR)               1.82e-07  [+1(1.82e-07)]
+ECA3524_p-87(metN)               4.25e-07  [+1(4.25e-07)]
+ECA3476_p-65(mtnK)               4.25e-07  [+1(4.25e-07)]
+ECA3487_p-105(mtnB)              8.33e-07  [+1(8.33e-07)]
+ECA3477_p-77(mtnA)               1.42e-06  [+1(1.42e-06)]
+ECA2798_p-87(mmuP)               6.19e-08  [+1(6.19e-08)]
+ECA4253_p-110(metJ)              2.33e-07  [+1(2.33e-07)]
+ECA1113_p-126(metE2)             3.99e-08  [+1(3.99e-08)]
+ECA2719_p-82(mtnX)               3.01e-04  16
+ECA1405_p-100(mtnZ)              8.51e-06  [+1(8.51e-06)]
+ECA3920_p-71(metK)               3.96e-04  16
+ECA4238_p-393(btuB)              1.28e-06  [+1(1.28e-06)]
+ECA3488_p-83(mtnE)               3.14e-06  [+1(3.14e-06)]
+b3941_p-65(metF)                 3.77e-07  [+1(3.77e-07)]
+b3829_p-165(metE)                1.74e-06  [+1(1.74e-06)]
+b4013_p-43(metA)                 2.33e-07  [+1(2.33e-07)]
+b3939_p-87(metB)                 2.06e-07  [+1(2.06e-07)]
+b3828_p-87(metR)                 1.82e-07  [+1(1.82e-07)]
+b0199_p-98(metN)                 1.22e-07  [+1(1.22e-07)]
+b3008_p-34(metC)                 8.29e-08  [+1(8.29e-08)]
+b0260_p-34(mmuP)                 1.28e-06  [+1(1.28e-06)]
+b3938_p-197(metJ)                5.32e-07  [+1(5.32e-07)]
+b0605_p-10(ahpC)                 3.14e-06  [+1(3.14e-06)]
+b0599_p-42(ybdH)                 1.31e-08  [+1(1.31e-08)]
+b2153_p-167(folE)                2.26e-04  16
+b2942_p-145(metK)                5.48e-06  [+1(5.48e-06)]
+b0600_p-82(mtnE)                 6.74e-09  [+1(6.74e-09)]
+b3966_p-318(btuB)                1.78e-04  16
+KPN_00622_p-119(mtnX)            4.25e-07  [+1(4.25e-07)]
+KPN_04239_p-64(metF)             4.58e-08  [+1(4.58e-08)]
+KPN_04325_p-176(metE)            2.96e-07  [+1(2.96e-07)]
+KPN_04394_p-43(metA)             1.82e-07  [+1(1.82e-07)]
+KPN_04233_p-78(metB)             1.15e-06  [+1(1.15e-06)]
+KPN_04324_p-87(metR)             3.00e-08  [+1(3.00e-08)]
+KPN_00213_p-100(metN)            1.22e-07  [+1(1.22e-07)]
+KPN_00626_p-49(mtnK)             1.22e-07  [+1(1.22e-07)]
+KPN_03428_p-34(metC)             1.59e-08  [+1(1.59e-08)]
+KPN_00644_p-59(mtnC)             1.82e-07  [+1(1.82e-07)]
+KPN_00634_p-47(mtnB)             1.15e-06  [+1(1.15e-06)]
+KPN_00627_p-76(mtnA)             1.22e-07  [+1(1.22e-07)]
+KPN_00645_p-83(mtnE)             1.22e-07  [+1(1.22e-07)]
+KPN_00309_p-69(mmuP)             2.06e-07  [+1(2.06e-07)]
+KPN_04232_p-189(metJ)            5.32e-07  [+1(5.32e-07)]
+KPN_00650_p-10(ahpC)             3.14e-06  [+1(3.14e-06)]
+KPN_01615_p-78(metE2)            1.42e-06  [+1(1.42e-06)]
+KPN_02591_p-10(folE)             8.29e-05  [+1(8.29e-05)]
+KPN_03375_p-136(metK)            5.44e-04  16
+KPN_04255_p-280(btuB)            2.85e-06  [+1(2.85e-06)]
+plu4754_p-97(metF)               4.58e-08  [+1(4.58e-08)]
+plu4420_p-36(metE)               4.25e-07  [+1(4.25e-07)]
+plu4397_p-44(metA)               2.13e-06  [+1(2.13e-06)]
+plu4756_p-69(metB)               9.29e-07  [+1(9.29e-07)]
+plu4421_p-88(metR)               6.19e-08  [+1(6.19e-08)]
+plu0697_p-105(metN)              1.82e-07  [+1(1.82e-07)]
+plu4757_p-214(metJ)              1.03e-06  [+1(1.03e-06)]
+plu0524_p-152(mccA)              2.61e-07  [+1(2.61e-07)]
+plu3683_p-64(metK)               2.59e-06  [+1(2.59e-06)]
+plu4735_p-245(btuB)              5.17e-04  16
+PMI2932_p-92(metF)               2.61e-07  [+1(2.61e-07)]
+PMI3529_p-35(metE)               4.25e-07  [+1(4.25e-07)]
+PMI2765_p-33(metA)               5.33e-08  [+1(5.33e-08)]
+PMI3223_p-86(metB)               7.14e-08  [+1(7.14e-08)]
+PMI3528_p-88(metR)               6.19e-08  [+1(6.19e-08)]
+PMI2259_p-82(metN)               2.18e-08  [+1(2.18e-08)]
+PMI3222_p-215(metJ)              1.01e-05  [+1(1.01e-05)]
+PMI3020_p-135(metQ2)             2.61e-08  [+1(2.61e-08)]
+PMI2095_p-60(metK)               4.25e-07  [+1(4.25e-07)]
+PMI3246_p-321(btuB)              1.48e-04  16
+STM4105_p-65(metF)               3.77e-07  [+1(3.77e-07)]
+STM3965_p-177(metE)              1.59e-07  [+1(1.59e-07)]
+STM4182_p-43(metA)               1.82e-07  [+1(1.82e-07)]
+STM4100_p-76(metB)               1.15e-06  [+1(1.15e-06)]
+STM3964_p-87(metR)               6.19e-08  [+1(6.19e-08)]
+STM0247_p-99(metN)               1.22e-07  [+1(1.22e-07)]
+STM3161_p-34(metC)               4.76e-07  [+1(4.76e-07)]
+STM4099_p-188(metJ)              5.32e-07  [+1(5.32e-07)]
+STM0608_p-10(ahpC)               3.14e-06  [+1(3.14e-06)]
+STM0602_p-59(ybdH)               1.31e-08  [+1(1.31e-08)]
+STM3090_p-145(metK)              1.92e-06  [+1(1.92e-06)]
+STM0603_p-83(mtnE)               6.74e-09  [+1(6.74e-09)]
+Spro_0941_p-82(mtnE)             1.92e-06  [+1(1.92e-06)]
+Spro_4784_p-68(metF)             1.59e-08  [+1(1.59e-08)]
+Spro_0242_p-33(metE)             1.74e-06  [+1(1.74e-06)]
+Spro_4504_p-40(metA)             1.59e-07  [+1(1.59e-07)]
+Spro_4786_p-85(metB)             2.06e-07  [+1(2.06e-07)]
+Spro_0241_p-88(metR)             1.82e-07  [+1(1.82e-07)]
+Spro_3753_p-96(metN)             2.18e-08  [+1(2.18e-08)]
+Spro_0946_p-79(mtnK)             9.29e-07  [+1(9.29e-07)]
+Spro_4212_p-89(metC)             1.03e-06  [+1(1.03e-06)]
+Spro_0942_p-88(mtnB)             2.13e-06  [+1(2.13e-06)]
+Spro_0945_p-80(mtnA)             9.28e-06  [+1(9.28e-06)]
+Spro_3470_p-32(mmuP)             2.06e-07  [+1(2.06e-07)]
+Spro_4787_p-240(metJ)            5.32e-07  [+1(5.32e-07)]
+Spro_1627_p-170(mccA)            2.39e-04  16
+Spro_1044_p-97(metE2)            8.29e-08  [+1(8.29e-08)]
+Spro_3218_p-28(mtnX)             2.35e-06  [+1(2.35e-06)]
+Spro_3974_p-177(metK)            4.76e-07  [+1(4.76e-07)]
+Spro_4770_p-307(btuB)            7.46e-07  [+1(7.46e-07)]
+y0304_p-77(metF)                 1.59e-08  [+1(1.59e-08)]
+y0442_p-26(metE)                 7.16e-06  [+1(7.16e-06)]
+y0013_p-41(metA)                 2.06e-07  [+1(2.06e-07)]
+y0441_p-80(metR)                 1.66e-05  [+1(1.66e-05)]
+y3104_p-95(metN)                 5.33e-08  [+1(5.33e-08)]
+y3314_p-288(metK)                4.76e-07  [+1(4.76e-07)]
+y2651_p-124(mtnZ)                2.27e-05  [+1(2.27e-05)]
+y0325_p-357(btuB)                3.77e-07  [+1(3.77e-07)]
+y0303_p-1245(metL)               2.06e-07  [+1(2.06e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,358 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Streptococcaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LACR_1953(bioY2)Score=7. 1.0000     33  LACR_1954,Score=7.2,Pos= 1.0000     33  
+L24031(bioY2)Score=7.4,P 1.0000     33  L24742(yhfT)Score=7.4,Po 1.0000     33  
+SAG0465(SAG0465)Score=8, 1.0000     33  SAG0397(yemC)Score=8.4,P 1.0000     33  
+SAG0464(bioB)Score=8.4,P 1.0000     33  SDEG_0560(SAG0465)Score= 1.0000     33  
+SDEG_0379(bioB)Score=7.5 1.0000     33  SDEG_1997(yemC)Score=8.7 1.0000     33  
+Sez_1400(SAG0465)Score=7 1.0000     33  Sez_0191(yemC)Score=8.1, 1.0000     33  
+GALLO_1527(bioY)Score=8. 1.0000     33  GALLO_2102(yemC)Score=8. 1.0000     33  
+GALLO_1916(bioB)Score=8, 1.0000     33  SGO_0746(bioY)Score=8.6, 1.0000     33  
+smi_0834(bioY)Score=8.3P 1.0000     33  smi_0834(bioY)Score=8.2, 1.0000     33  
+SMU.1827(bioY2)Score=8.7 1.0000     33  SP_0783(bioY)Score=8.2,P 1.0000     33  
+SP_0783(bioY)Score=7.4,P 1.0000     33  SPy0524(yhfS)Score=6.5,P 1.0000     33  
+SPy0205(yemC)Score=8.4,P 1.0000     33  SSA_1536(bioY)Score=8.6, 1.0000     33  
+SSU05_0509(bioY)Score=7. 1.0000     33  str0674(bioY)Score=7.8,P 1.0000     33  
+str1308(bioY)Score=7.9,P 1.0000     33  str0674(bioY)Score=8.7,P 1.0000     33  
+SUB1710(yemC)Score=7.9,P 1.0000     33  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Streptococcaceae.fasta -oc BirA_Streptococcaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           33
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       29    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             957    N=              29    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.307 C 0.196 G 0.198 T 0.299 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.307 C 0.196 G 0.198 T 0.298 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  33  sites =  29  llr = 456  E-value = 5.8e-140
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  728::2a6:333333333333333:::4a:574
+pos.-specific     C  :2:::::49222222222222222:::::a:11
+probability       G  :::a:::::222222222222222a2:3:::2:
+matrix            T  362:a8::1333333333333333:8a2::516
+
+         bits    2.3    *                    *    *   
+                 2.1    *                    *    *   
+                 1.9    *    *               *    *   
+                 1.6    ** * *               * * **   
+Relative         1.4    ** * *               * * **   
+Entropy          1.2    ** * *               * * **   
+(22.7 bits)      0.9   *******               *** **   
+                 0.7 * *******               *** ***  
+                 0.5 * *******               *********
+                 0.2 *********               *********
+                 0.0 ---------------------------------
+
+Multilevel           ATAGTTAACAAAAAAAAAAAAAAAGTTAACAAT
+consensus            TAT    C TTTTTTTTTTTTTTT G G  T A
+sequence                                        T     
+                                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site             
+-------------             ----- ---------            ---------------------------------
+SDEG_1997(yemC)Score=8.7      1  3.42e-10          . ATAGTTACCNNNNNNNNNNNNNNNGTTGACAAA           
+SSA_1536(bioY)Score=8.6,      1  9.26e-10          . ATAGTTACCNNNNNNNNNNNNNNNGTTTACTAT           
+SGO_0746(bioY)Score=8.6,      1  9.26e-10          . ATAGTTACCNNNNNNNNNNNNNNNGTTTACTAT           
+SMU.1827(bioY2)Score=8.7      1  1.18e-09          . ATAGTTAACNNNNNNNNNNNNNNNGTTAACTAA           
+SPy0205(yemC)Score=8.4,P      1  2.16e-09          . ACAGTTACCNNNNNNNNNNNNNNNGTTGACAAA           
+str0674(bioY)Score=8.7,P      1  3.81e-09          . TTAGTTAACNNNNNNNNNNNNNNNGTTGACTAA           
+GALLO_1527(bioY)Score=8.      1  5.81e-09          . TTAGTTAACNNNNNNNNNNNNNNNGTTAACTAA           
+smi_0834(bioY)Score=8.3P      1  6.96e-09          . TTTGTTACCNNNNNNNNNNNNNNNGTTGACAAT           
+SAG0464(bioB)Score=8.4,P      1  1.03e-08          . ATTGTTAACNNNNNNNNNNNNNNNGTTTACAAT           
+SAG0397(yemC)Score=8.4,P      1  1.03e-08          . TTTGTTAACNNNNNNNNNNNNNNNGTTGACAAT           
+GALLO_1916(bioB)Score=8,      1  1.20e-08          . ACAGTTAACNNNNNNNNNNNNNNNGTTAACTGT           
+SDEG_0560(SAG0465)Score=      1  1.32e-08          . AAAGTTAACNNNNNNNNNNNNNNNGGTGACAAT           
+Sez_0191(yemC)Score=8.1,      1  2.10e-08          . TTAGTAACCNNNNNNNNNNNNNNNGTTGACAAA           
+GALLO_2102(yemC)Score=8.      1  3.15e-08          . AGAGTTAACNNNNNNNNNNNNNNNGTTGACTAA           
+Sez_1400(SAG0465)Score=7      1  3.15e-08          . AAAGTTAACNNNNNNNNNNNNNNNGGTTACAAT           
+SAG0465(SAG0465)Score=8,      1  3.46e-08          . ATTGTAAACNNNNNNNNNNNNNNNGTTAACAAT           
+SP_0783(bioY)Score=8.2,P      1  3.88e-08          . ATAGTTACTNNNNNNNNNNNNNNNGTTAACTAT           
+smi_0834(bioY)Score=8.2,      1  3.88e-08          . ATAGTTACTNNNNNNNNNNNNNNNGTTAACTAT           
+L24742(yhfT)Score=7.4,Po      1  4.58e-08          . ACAGTAACCNNNNNNNNNNNNNNNGTTAACTGT           
+L24031(bioY2)Score=7.4,P      1  5.49e-08          . ACAGTTAACNNNNNNNNNNNNNNNGGTTACTGT           
+SUB1710(yemC)Score=7.9,P      1  7.69e-08          . TTTGTTACCNNNNNNNNNNNNNNNGTTGACACA           
+SDEG_0379(bioB)Score=7.5      1  8.21e-08          . AAAGTAAACNNNNNNNNNNNNNNNGGTAACAAT           
+str1308(bioY)Score=7.9,P      1  8.85e-08          . AAAGTTAACNNNNNNNNNNNNNNNGTTAACATA           
+LACR_1954,Score=7.2,Pos=      1  9.62e-08          . ATAGTAACCNNNNNNNNNNNNNNNGTTAACTGC           
+str0674(bioY)Score=7.8,P      1  1.19e-07          . TAAGTTAACNNNNNNNNNNNNNNNGTTAACTCA           
+LACR_1953(bioY2)Score=7.      1  1.86e-07          . GCAGTTAACNNNNNNNNNNNNNNNGGTTACTAT           
+SP_0783(bioY)Score=7.4,P      1  2.35e-07          . TTTGTTACCNNNNNNNNNNNNNNNGTTGACATC           
+SSU05_0509(bioY)Score=7.      1  2.76e-07          . TTTGTTAACNNNNNNNNNNNNNNNGATAACAAA           
+SPy0524(yhfS)Score=6.5,P      1  3.36e-07          . AAAGTCACCNNNNNNNNNNNNNNNGGTTACAGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SDEG_1997(yemC)Score=8.7          3.4e-10  [+1]
+SSA_1536(bioY)Score=8.6,          9.3e-10  [+1]
+SGO_0746(bioY)Score=8.6,          9.3e-10  [+1]
+SMU.1827(bioY2)Score=8.7          1.2e-09  [+1]
+SPy0205(yemC)Score=8.4,P          2.2e-09  [+1]
+str0674(bioY)Score=8.7,P          3.8e-09  [+1]
+GALLO_1527(bioY)Score=8.          5.8e-09  [+1]
+smi_0834(bioY)Score=8.3P            7e-09  [+1]
+SAG0464(bioB)Score=8.4,P            1e-08  [+1]
+SAG0397(yemC)Score=8.4,P            1e-08  [+1]
+GALLO_1916(bioB)Score=8,          1.2e-08  [+1]
+SDEG_0560(SAG0465)Score=          1.3e-08  [+1]
+Sez_0191(yemC)Score=8.1,          2.1e-08  [+1]
+GALLO_2102(yemC)Score=8.          3.1e-08  [+1]
+Sez_1400(SAG0465)Score=7          3.1e-08  [+1]
+SAG0465(SAG0465)Score=8,          3.5e-08  [+1]
+SP_0783(bioY)Score=8.2,P          3.9e-08  [+1]
+smi_0834(bioY)Score=8.2,          3.9e-08  [+1]
+L24742(yhfT)Score=7.4,Po          4.6e-08  [+1]
+L24031(bioY2)Score=7.4,P          5.5e-08  [+1]
+SUB1710(yemC)Score=7.9,P          7.7e-08  [+1]
+SDEG_0379(bioB)Score=7.5          8.2e-08  [+1]
+str1308(bioY)Score=7.9,P          8.9e-08  [+1]
+LACR_1954,Score=7.2,Pos=          9.6e-08  [+1]
+str0674(bioY)Score=7.8,P          1.2e-07  [+1]
+LACR_1953(bioY2)Score=7.          1.9e-07  [+1]
+SP_0783(bioY)Score=7.4,P          2.3e-07  [+1]
+SSU05_0509(bioY)Score=7.          2.8e-07  [+1]
+SPy0524(yhfS)Score=6.5,P          3.4e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=33 seqs=29
+SDEG_1997(yemC)Score=8.7 (    1) ATAGTTACCNNNNNNNNNNNNNNNGTTGACAAA  1 
+SSA_1536(bioY)Score=8.6, (    1) ATAGTTACCNNNNNNNNNNNNNNNGTTTACTAT  1 
+SGO_0746(bioY)Score=8.6, (    1) ATAGTTACCNNNNNNNNNNNNNNNGTTTACTAT  1 
+SMU.1827(bioY2)Score=8.7 (    1) ATAGTTAACNNNNNNNNNNNNNNNGTTAACTAA  1 
+SPy0205(yemC)Score=8.4,P (    1) ACAGTTACCNNNNNNNNNNNNNNNGTTGACAAA  1 
+str0674(bioY)Score=8.7,P (    1) TTAGTTAACNNNNNNNNNNNNNNNGTTGACTAA  1 
+GALLO_1527(bioY)Score=8. (    1) TTAGTTAACNNNNNNNNNNNNNNNGTTAACTAA  1 
+smi_0834(bioY)Score=8.3P (    1) TTTGTTACCNNNNNNNNNNNNNNNGTTGACAAT  1 
+SAG0464(bioB)Score=8.4,P (    1) ATTGTTAACNNNNNNNNNNNNNNNGTTTACAAT  1 
+SAG0397(yemC)Score=8.4,P (    1) TTTGTTAACNNNNNNNNNNNNNNNGTTGACAAT  1 
+GALLO_1916(bioB)Score=8, (    1) ACAGTTAACNNNNNNNNNNNNNNNGTTAACTGT  1 
+SDEG_0560(SAG0465)Score= (    1) AAAGTTAACNNNNNNNNNNNNNNNGGTGACAAT  1 
+Sez_0191(yemC)Score=8.1, (    1) TTAGTAACCNNNNNNNNNNNNNNNGTTGACAAA  1 
+GALLO_2102(yemC)Score=8. (    1) AGAGTTAACNNNNNNNNNNNNNNNGTTGACTAA  1 
+Sez_1400(SAG0465)Score=7 (    1) AAAGTTAACNNNNNNNNNNNNNNNGGTTACAAT  1 
+SAG0465(SAG0465)Score=8, (    1) ATTGTAAACNNNNNNNNNNNNNNNGTTAACAAT  1 
+SP_0783(bioY)Score=8.2,P (    1) ATAGTTACTNNNNNNNNNNNNNNNGTTAACTAT  1 
+smi_0834(bioY)Score=8.2, (    1) ATAGTTACTNNNNNNNNNNNNNNNGTTAACTAT  1 
+L24742(yhfT)Score=7.4,Po (    1) ACAGTAACCNNNNNNNNNNNNNNNGTTAACTGT  1 
+L24031(bioY2)Score=7.4,P (    1) ACAGTTAACNNNNNNNNNNNNNNNGGTTACTGT  1 
+SUB1710(yemC)Score=7.9,P (    1) TTTGTTACCNNNNNNNNNNNNNNNGTTGACACA  1 
+SDEG_0379(bioB)Score=7.5 (    1) AAAGTAAACNNNNNNNNNNNNNNNGGTAACAAT  1 
+str1308(bioY)Score=7.9,P (    1) AAAGTTAACNNNNNNNNNNNNNNNGTTAACATA  1 
+LACR_1954,Score=7.2,Pos= (    1) ATAGTAACCNNNNNNNNNNNNNNNGTTAACTGC  1 
+str0674(bioY)Score=7.8,P (    1) TAAGTTAACNNNNNNNNNNNNNNNGTTAACTCA  1 
+LACR_1953(bioY2)Score=7. (    1) GCAGTTAACNNNNNNNNNNNNNNNGGTTACTAT  1 
+SP_0783(bioY)Score=7.4,P (    1) TTTGTTACCNNNNNNNNNNNNNNNGTTGACATC  1 
+SSU05_0509(bioY)Score=7. (    1) TTTGTTAACNNNNNNNNNNNNNNNGATAACAAA  1 
+SPy0524(yhfS)Score=6.5,P (    1) AAAGTCACCNNNNNNNNNNNNNNNGGTTACAGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 33 n= 29 bayes= 1.54543 E= 5.8e-140 
+   109  -1150   -252      6 
+   -57    -19   -252     97 
+   131  -1150  -1150    -31 
+ -1150  -1150    233  -1150 
+ -1150  -1150  -1150    174 
+   -83   -251  -1150    141 
+   170  -1150  -1150  -1150 
+    85    119  -1150  -1150 
+ -1150    224  -1150   -211 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+ -1150  -1150    233  -1150 
+  -315  -1150      6    135 
+ -1150  -1150  -1150    174 
+    43  -1150     80    -31 
+   170  -1150  -1150  -1150 
+ -1150    235  -1150  -1150 
+    75  -1150  -1150     69 
+   117   -151    -20   -211 
+    31   -151  -1150     89 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 33 nsites= 29 E= 5.8e-140 
+ 0.655172  0.000000  0.034483  0.310345 
+ 0.206897  0.172414  0.034483  0.586207 
+ 0.758621  0.000000  0.000000  0.241379 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.172414  0.034483  0.000000  0.793103 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.551724  0.448276  0.000000  0.000000 
+ 0.000000  0.931034  0.000000  0.068966 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.306712  0.196410  0.198491  0.298387 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.034483  0.000000  0.206897  0.758621 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.413793  0.000000  0.344828  0.241379 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.517241  0.000000  0.000000  0.482759 
+ 0.689655  0.068966  0.172414  0.068966 
+ 0.379310  0.068966  0.000000  0.551724 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[AT][TA][AT]GTTA[AC]C[AT][AT][AT][AT][AT][AT][AT][AT][AT][AT][AT][AT][AT][AT][AT]G[TG]T[AGT]AC[AT]A[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LACR_1953(bioY2)Score=7.         1.86e-07  [+1(1.86e-07)]
+LACR_1954,Score=7.2,Pos=         9.62e-08  [+1(9.62e-08)]
+L24031(bioY2)Score=7.4,P         5.49e-08  [+1(5.49e-08)]
+L24742(yhfT)Score=7.4,Po         4.58e-08  [+1(4.58e-08)]
+SAG0465(SAG0465)Score=8,         3.46e-08  [+1(3.46e-08)]
+SAG0397(yemC)Score=8.4,P         1.03e-08  [+1(1.03e-08)]
+SAG0464(bioB)Score=8.4,P         1.03e-08  [+1(1.03e-08)]
+SDEG_0560(SAG0465)Score=         1.32e-08  [+1(1.32e-08)]
+SDEG_0379(bioB)Score=7.5         8.21e-08  [+1(8.21e-08)]
+SDEG_1997(yemC)Score=8.7         3.42e-10  [+1(3.42e-10)]
+Sez_1400(SAG0465)Score=7         3.15e-08  [+1(3.15e-08)]
+Sez_0191(yemC)Score=8.1,         2.10e-08  [+1(2.10e-08)]
+GALLO_1527(bioY)Score=8.         5.81e-09  [+1(5.81e-09)]
+GALLO_2102(yemC)Score=8.         3.15e-08  [+1(3.15e-08)]
+GALLO_1916(bioB)Score=8,         1.20e-08  [+1(1.20e-08)]
+SGO_0746(bioY)Score=8.6,         9.26e-10  [+1(9.26e-10)]
+smi_0834(bioY)Score=8.3P         6.96e-09  [+1(6.96e-09)]
+smi_0834(bioY)Score=8.2,         3.88e-08  [+1(3.88e-08)]
+SMU.1827(bioY2)Score=8.7         1.18e-09  [+1(1.18e-09)]
+SP_0783(bioY)Score=8.2,P         3.88e-08  [+1(3.88e-08)]
+SP_0783(bioY)Score=7.4,P         2.35e-07  [+1(2.35e-07)]
+SPy0524(yhfS)Score=6.5,P         3.36e-07  [+1(3.36e-07)]
+SPy0205(yemC)Score=8.4,P         2.16e-09  [+1(2.16e-09)]
+SSA_1536(bioY)Score=8.6,         9.26e-10  [+1(9.26e-10)]
+SSU05_0509(bioY)Score=7.         2.76e-07  [+1(2.76e-07)]
+str0674(bioY)Score=7.8,P         1.19e-07  [+1(1.19e-07)]
+str1308(bioY)Score=7.9,P         8.85e-08  [+1(8.85e-08)]
+str0674(bioY)Score=8.7,P         3.81e-09  [+1(3.81e-09)]
+SUB1710(yemC)Score=7.9,P         7.69e-08  [+1(7.69e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

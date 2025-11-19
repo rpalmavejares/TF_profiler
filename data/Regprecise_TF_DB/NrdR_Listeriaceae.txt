@@ -1,0 +1,268 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/NrdR_Listeriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+lin0305_p-61(nrdD)       1.0000     16  lin2259_p-176(nrdA)      1.0000     16  
+lin0305_p-29(nrdD)       1.0000     16  lin2259_p-338(nrdA)      1.0000     16  
+lmo0279_p-29(nrdD)       1.0000     16  lmo2155_p-174(nrdA)      1.0000     16  
+lmo0279_p-61(nrdD)       1.0000     16  lmo2155_p-366(nrdA)      1.0000     16  
+lse_2142_p-173(nrdA)     1.0000     16  lse_0262_p-29(nrdD)      1.0000     16  
+lse_0262_p-61(nrdD)      1.0000     16  lse_2142_p-366(nrdA)     1.0000     16  
+lwe2172_p-367(nrdA)      1.0000     16  lwe0253_p-61(nrdD)       1.0000     16  
+lwe0253_p-29(nrdD)       1.0000     16  lwe2172_p-336(nrdA)      1.0000     16  
+lwe2172_p-174(nrdA)      1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/NrdR_Listeriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/NrdR_Listeriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             272    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    272    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.412 C 0.114 G 0.103 T 0.371 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.409 C 0.116 G 0.105 T 0.37 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AHACTATATATAGTD MEME-1	width =  15  sites =  17  llr = 198  E-value = 8.8e-054
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  82a:282a17:8:14
+pos.-specific     C  24:a::1::2:::::
+probability       G  :::::::::1::a:4
+matrix            T  :4::827:9:a2:93
+
+         bits    3.3    *        *  
+                 2.9    *        *  
+                 2.6    *        *  
+                 2.3    *        *  
+Relative         2.0    *        *  
+Entropy          1.6    *        *  
+(16.8 bits)      1.3   **   *  * *  
+                 1.0 * **   ** * ** 
+                 0.7 * **** ******* 
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           ATACTATATATAGTA
+consensus             C  AT     T  G
+sequence              A            T
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+lwe2172_p-174(nrdA)           1  3.83e-07          . ATACTATATATAGTA T         
+lse_2142_p-173(nrdA)          1  3.83e-07          . ATACTATATATAGTA T         
+lmo2155_p-174(nrdA)           1  3.83e-07          . ATACTATATATAGTA T         
+lin2259_p-176(nrdA)           1  3.83e-07          . ATACTATATATAGTA T         
+lwe2172_p-336(nrdA)           1  6.05e-07          . ACACTATAAGTAGTG G         
+lin2259_p-338(nrdA)           1  6.05e-07          . ACACTATAAGTAGTG G         
+lwe0253_p-29(nrdD)            1  7.97e-07          . ACACAATATATAGTT A         
+lse_0262_p-29(nrdD)           1  7.97e-07          . ACACAATATATAGTT A         
+lmo0279_p-29(nrdD)            1  7.97e-07          . ACACAATATATAGTT A         
+lin0305_p-29(nrdD)            1  7.97e-07          . ACACAATATATAGTT A         
+lse_0262_p-61(nrdD)           1  3.07e-06          . AAACTTTATCTTGTG G         
+lin0305_p-61(nrdD)            1  3.07e-06          . AAACTTTATCTTGTG T         
+lwe2172_p-367(nrdA)           1  4.05e-06          . CTACTAAATATAGTT T         
+lwe0253_p-61(nrdD)            1  4.62e-06          . AAACTTCATATTGTG T         
+lmo0279_p-61(nrdD)            1  5.10e-06          . AAACTTCATCTTGTG T         
+lse_2142_p-366(nrdA)          1  1.67e-05          . CTACTAAATATAGAA T         
+lmo2155_p-366(nrdA)           1  1.67e-05          . CTACTAAATATAGAA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lwe2172_p-174(nrdA)               3.8e-07  [+1]_1
+lse_2142_p-173(nrdA)              3.8e-07  [+1]_1
+lmo2155_p-174(nrdA)               3.8e-07  [+1]_1
+lin2259_p-176(nrdA)               3.8e-07  [+1]_1
+lwe2172_p-336(nrdA)                 6e-07  [+1]_1
+lin2259_p-338(nrdA)                 6e-07  [+1]_1
+lwe0253_p-29(nrdD)                  8e-07  [+1]_1
+lse_0262_p-29(nrdD)                 8e-07  [+1]_1
+lmo0279_p-29(nrdD)                  8e-07  [+1]_1
+lin0305_p-29(nrdD)                  8e-07  [+1]_1
+lse_0262_p-61(nrdD)               3.1e-06  [+1]_1
+lin0305_p-61(nrdD)                3.1e-06  [+1]_1
+lwe2172_p-367(nrdA)               4.1e-06  [+1]_1
+lwe0253_p-61(nrdD)                4.6e-06  [+1]_1
+lmo0279_p-61(nrdD)                5.1e-06  [+1]_1
+lse_2142_p-366(nrdA)              1.7e-05  [+1]_1
+lmo2155_p-366(nrdA)               1.7e-05  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AHACTATATATAGTD width=15 seqs=17
+lwe2172_p-174(nrdA)      (    1) ATACTATATATAGTA  1 
+lse_2142_p-173(nrdA)     (    1) ATACTATATATAGTA  1 
+lmo2155_p-174(nrdA)      (    1) ATACTATATATAGTA  1 
+lin2259_p-176(nrdA)      (    1) ATACTATATATAGTA  1 
+lwe2172_p-336(nrdA)      (    1) ACACTATAAGTAGTG  1 
+lin2259_p-338(nrdA)      (    1) ACACTATAAGTAGTG  1 
+lwe0253_p-29(nrdD)       (    1) ACACAATATATAGTT  1 
+lse_0262_p-29(nrdD)      (    1) ACACAATATATAGTT  1 
+lmo0279_p-29(nrdD)       (    1) ACACAATATATAGTT  1 
+lin0305_p-29(nrdD)       (    1) ACACAATATATAGTT  1 
+lse_0262_p-61(nrdD)      (    1) AAACTTTATCTTGTG  1 
+lin0305_p-61(nrdD)       (    1) AAACTTTATCTTGTG  1 
+lwe2172_p-367(nrdA)      (    1) CTACTAAATATAGTT  1 
+lwe0253_p-61(nrdD)       (    1) AAACTTCATATTGTG  1 
+lmo0279_p-61(nrdD)       (    1) AAACTTCATCTTGTG  1 
+lse_2142_p-366(nrdA)     (    1) CTACTAAATATAGAA  1 
+lmo2155_p-366(nrdA)      (    1) CTACTAAATATAGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 34 bayes= 2.05364 E= 8.8e-054 
+   101     61  -1073  -1073 
+   -80    161  -1073     16 
+   129  -1073  -1073  -1073 
+ -1073    311  -1073  -1073 
+   -80  -1073  -1073    105 
+    90  -1073  -1073    -65 
+  -121      2  -1073     93 
+   129  -1073  -1073  -1073 
+  -180  -1073  -1073    126 
+    79     61     16  -1073 
+ -1073  -1073  -1073    144 
+    90  -1073  -1073    -65 
+ -1073  -1073    325  -1073 
+  -180  -1073  -1073    126 
+   -21  -1073    175    -33 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 17 E= 8.8e-054 
+ 0.823529  0.176471  0.000000  0.000000 
+ 0.235294  0.352941  0.000000  0.411765 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.235294  0.000000  0.000000  0.764706 
+ 0.764706  0.000000  0.000000  0.235294 
+ 0.176471  0.117647  0.000000  0.705882 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.705882  0.176471  0.117647  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.764706  0.000000  0.000000  0.235294 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.352941  0.000000  0.352941  0.294118 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHACTATATATAGTD MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TCA]AC[TA][AT]TATAT[AT]GT[AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lin0305_p-61(nrdD)               6.15e-06  [+1(3.07e-06)]_1
+lin2259_p-176(nrdA)              7.67e-07  [+1(3.83e-07)]_1
+lin0305_p-29(nrdD)               1.59e-06  [+1(7.97e-07)]_1
+lin2259_p-338(nrdA)              1.21e-06  [+1(6.05e-07)]_1
+lmo0279_p-29(nrdD)               1.59e-06  [+1(7.97e-07)]_1
+lmo2155_p-174(nrdA)              7.67e-07  [+1(3.83e-07)]_1
+lmo0279_p-61(nrdD)               1.02e-05  [+1(5.10e-06)]_1
+lmo2155_p-366(nrdA)              3.34e-05  [+1(1.67e-05)]_1
+lse_2142_p-173(nrdA)             7.67e-07  [+1(3.83e-07)]_1
+lse_0262_p-29(nrdD)              1.59e-06  [+1(7.97e-07)]_1
+lse_0262_p-61(nrdD)              6.15e-06  [+1(3.07e-06)]_1
+lse_2142_p-366(nrdA)             3.34e-05  [+1(1.67e-05)]_1
+lwe2172_p-367(nrdA)              8.11e-06  [+1(4.05e-06)]_1
+lwe0253_p-61(nrdD)               9.24e-06  [+1(4.62e-06)]_1
+lwe0253_p-29(nrdD)               1.59e-06  [+1(7.97e-07)]_1
+lwe2172_p-336(nrdA)              1.21e-06  [+1(6.05e-07)]_1
+lwe2172_p-174(nrdA)              7.67e-07  [+1(3.83e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

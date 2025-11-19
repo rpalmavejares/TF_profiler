@@ -1,0 +1,257 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/CueR_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSL0301_p-11(copZ)      1.0000     21  Bcep18194_A6338_p-64(cop 1.0000     21  
+Bamb_3036_p-64(copZ)     1.0000     21  Bcep1808_7262_p-32(copZ) 1.0000     21  
+Bcep1808_3075_p-64(copZ) 1.0000     21  Bcep1808_3973_p-26(cueR2 1.0000     21  
+Bcep1808_7183_p-69(cueR2 1.0000     21  Bxe_B2298_p-58(copZ)     1.0000     21  
+Bxe_A3162_p-90(copZ)     1.0000     21  Bxe_A3161_p-8(cueR)      1.0000     21  
+Bphy_1968_p-89(copZ)     1.0000     21  Bphy_1967_p-64(cueR)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/CueR_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/CueR_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             252    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    252    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.226 C 0.317 G 0.242 T 0.214 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.227 C 0.316 G 0.242 T 0.215 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTCCCAYCRTGGSAAGGT MEME-1	width =  21  sites =  12  llr = 280  E-value = 6.9e-086
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::1::9133::::aa:1:
+pos.-specific     C  :aa::8aa:66::::3::13:
+probability       G  :::::1::1:17:9a7::97:
+matrix            T  :::aa::::31:a1::::::a
+
+         bits    2.2 *  **       *   **  *
+                 2.0 *  **       * * **  *
+                 1.8 *  **   *   * * **  *
+                 1.6 ***** ***   *** *** *
+Relative         1.3 ***** ***   *** *** *
+Entropy          1.1 ***** ***  ******** *
+(33.7 bits)      0.9 *********  ******** *
+                 0.7 ********** **********
+                 0.4 ********** **********
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCTTCCCACCGTGGGAAGGT
+consensus                     TAA   C   C 
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Bphy_1967_p-64(cueR)          1  8.60e-13          . ACCTTCCCACAGTGGGAAGGT           
+Bcep1808_3973_p-26(cueR2      1  1.37e-12          . ACCTTCCCATAGTGGGAAGGT           
+Bphy_1968_p-89(copZ)          1  4.86e-12          . ACCTTCCCACTGTGGGAAGGT           
+Bcep1808_7183_p-69(cueR2      1  4.86e-12          . ACCTTCCCAACGTGGGAAGGT           
+Bcep18194_A6338_p-64(cop      1  1.08e-11          . ACCTTCCCACCGTGGCAAGCT           
+BPSL0301_p-11(copZ)           1  1.43e-11          . ACCTTCCCACAGTGGGAAGAT           
+Bxe_A3162_p-90(copZ)          1  1.83e-11          . ACCTTGCCATCATGGGAAGGT           
+Bcep1808_3075_p-64(copZ)      1  2.04e-11          . ACCTTCCCACCATGGCAAGCT           
+Bamb_3036_p-64(copZ)          1  2.04e-11          . ACCTTCCCACCATGGCAAGCT           
+Bxe_A3161_p-8(cueR)           1  3.19e-11          . ACCTTCCCATGATGGCAAGGT           
+Bxe_B2298_p-58(copZ)          1  6.69e-11          . ACCTTACCGCCGTGGGAAGGT           
+Bcep1808_7262_p-32(copZ)      1  1.19e-10          . ACCTTCCCATCGTTGGAACGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bphy_1967_p-64(cueR)              8.6e-13  [+1]
+Bcep1808_3973_p-26(cueR2          1.4e-12  [+1]
+Bphy_1968_p-89(copZ)              4.9e-12  [+1]
+Bcep1808_7183_p-69(cueR2          4.9e-12  [+1]
+Bcep18194_A6338_p-64(cop          1.1e-11  [+1]
+BPSL0301_p-11(copZ)               1.4e-11  [+1]
+Bxe_A3162_p-90(copZ)              1.8e-11  [+1]
+Bcep1808_3075_p-64(copZ)            2e-11  [+1]
+Bamb_3036_p-64(copZ)                2e-11  [+1]
+Bxe_A3161_p-8(cueR)               3.2e-11  [+1]
+Bxe_B2298_p-58(copZ)              6.7e-11  [+1]
+Bcep1808_7262_p-32(copZ)          1.2e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTCCCAYCRTGGSAAGGT width=21 seqs=12
+Bphy_1967_p-64(cueR)     (    1) ACCTTCCCACAGTGGGAAGGT  1 
+Bcep1808_3973_p-26(cueR2 (    1) ACCTTCCCATAGTGGGAAGGT  1 
+Bphy_1968_p-89(copZ)     (    1) ACCTTCCCACTGTGGGAAGGT  1 
+Bcep1808_7183_p-69(cueR2 (    1) ACCTTCCCAACGTGGGAAGGT  1 
+Bcep18194_A6338_p-64(cop (    1) ACCTTCCCACCGTGGCAAGCT  1 
+BPSL0301_p-11(copZ)      (    1) ACCTTCCCACAGTGGGAAGAT  1 
+Bxe_A3162_p-90(copZ)     (    1) ACCTTGCCATCATGGGAAGGT  1 
+Bcep1808_3075_p-64(copZ) (    1) ACCTTCCCACCATGGCAAGCT  1 
+Bamb_3036_p-64(copZ)     (    1) ACCTTCCCACCATGGCAAGCT  1 
+Bxe_A3161_p-8(cueR)      (    1) ACCTTCCCATGATGGCAAGGT  1 
+Bxe_B2298_p-58(copZ)     (    1) ACCTTACCGCCGTGGGAAGGT  1 
+Bcep1808_7262_p-32(copZ) (    1) ACCTTCCCATCGTTGGAACGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 12 bayes= 1 E= 6.9e-086 
+   214  -1023  -1023  -1023 
+ -1023    166  -1023  -1023 
+ -1023    166  -1023  -1023 
+ -1023  -1023  -1023    222 
+ -1023  -1023  -1023    222 
+  -144    140   -154  -1023 
+ -1023    166  -1023  -1023 
+ -1023    166  -1023  -1023 
+   202  -1023   -154  -1023 
+  -144     88  -1023     63 
+    14     88   -154   -136 
+    56  -1023    146  -1023 
+ -1023  -1023  -1023    222 
+ -1023  -1023    192   -136 
+ -1023  -1023    204  -1023 
+ -1023      8    146  -1023 
+   214  -1023  -1023  -1023 
+   214  -1023  -1023  -1023 
+ -1023   -192    192  -1023 
+  -144    -34    146  -1023 
+ -1023  -1023  -1023    222 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 12 E= 6.9e-086 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.083333  0.833333  0.083333  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.083333  0.583333  0.000000  0.333333 
+ 0.250000  0.583333  0.083333  0.083333 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.916667  0.083333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.333333  0.666667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.083333  0.916667  0.000000 
+ 0.083333  0.250000  0.666667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCAYCRTGGSAAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTTCCCA[CT][CA][GA]TGG[GC]AAG[GC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSL0301_p-11(copZ)              1.43e-11  [+1(1.43e-11)]
+Bcep18194_A6338_p-64(cop         1.08e-11  [+1(1.08e-11)]
+Bamb_3036_p-64(copZ)             2.04e-11  [+1(2.04e-11)]
+Bcep1808_7262_p-32(copZ)         1.19e-10  [+1(1.19e-10)]
+Bcep1808_3075_p-64(copZ)         2.04e-11  [+1(2.04e-11)]
+Bcep1808_3973_p-26(cueR2         1.37e-12  [+1(1.37e-12)]
+Bcep1808_7183_p-69(cueR2         4.86e-12  [+1(4.86e-12)]
+Bxe_B2298_p-58(copZ)             6.69e-11  [+1(6.69e-11)]
+Bxe_A3162_p-90(copZ)             1.83e-11  [+1(1.83e-11)]
+Bxe_A3161_p-8(cueR)              3.19e-11  [+1(3.19e-11)]
+Bphy_1968_p-89(copZ)             4.86e-12  [+1(4.86e-12)]
+Bphy_1967_p-64(cueR)             8.60e-13  [+1(8.60e-13)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

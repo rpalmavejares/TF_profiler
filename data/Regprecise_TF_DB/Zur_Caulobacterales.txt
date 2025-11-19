@@ -1,0 +1,263 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/Zur_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC0319_p-191(rplU)       1.0000     23  CC1517_p-97(znuK)        1.0000     23  
+CC0214_p-66(znuL)        1.0000     23  CC0320_p-35(zrpW)        1.0000     23  
+CC1518_p-73(znuG)        1.0000     23  CC0663_p-35(znuM)        1.0000     23  
+Cseg_3837_p-191(rplU)    1.0000     23  Cseg_3085_p-96(znuK)     1.0000     23  
+Cseg_3836_p-36(zrpW)     1.0000     23  Cseg_3938_p-70(znuL)     1.0000     23  
+Cseg_3084_p-65(znuG)     1.0000     23  Caul_0194_p-174(rplU)    1.0000     23  
+Caul_0195_p-35(zrpW)     1.0000     23  Caul_4694_p-62(znuL)     1.0000     23  
+PHZ_c0823_p-19(znuL)     1.0000     23  PHZ_c3369_p-75(yciC)     1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/Zur_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/Zur_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             368    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    368    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.326 C 0.168 G 0.155 T 0.351 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.325 C 0.169 G 0.156 T 0.349 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTTAYWWYATAACA MEME-1	width =  15  sites =  16  llr = 229  E-value = 1.6e-056
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::a:4328:aa:a
+pos.-specific     C  1::::4::4::::a:
+probability       G  :a::::11:3:::::
+matrix            T  9:aa:6464:a::::
+
+         bits    2.7  *           * 
+                 2.4  *           * 
+                 2.1  *           * 
+                 1.9  *           * 
+Relative         1.6  ****     *****
+Entropy          1.3 *****     *****
+(20.7 bits)      1.1 ******   ******
+                 0.8 ******   ******
+                 0.5 ****** ********
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           TGTTATATTATAACA
+consensus                 CTACG     
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+CC1517_p-97(znuK)             5  1.90e-08       GTGA TGTTATATCATAACA ATTG      
+PHZ_c0823_p-19(znuL)          5  3.14e-08       GTTA TGTTATTTCATAACA GTGA      
+Caul_4694_p-62(znuL)          5  3.14e-08       GATA TGTTATTTCATAACA CTTC      
+Cseg_3938_p-70(znuL)          5  3.14e-08       GATA TGTTATTTCATAACA GCTA      
+Cseg_3085_p-96(znuK)          5  5.43e-08       GTAA TGTTATATCGTAACA ATTA      
+PHZ_c3369_p-75(yciC)          5  7.40e-08       CATG TGTTACTTTATAACA TCCC      
+Cseg_3836_p-36(zrpW)          5  7.40e-08       GGTG TGTTACTTTATAACA CGCT      
+CC0320_p-35(zrpW)             5  7.40e-08       GGAA TGTTACTTTATAACA CGCT      
+Caul_0195_p-35(zrpW)          5  1.84e-07       GGCG TGTTACAATATAACA GTCT      
+Caul_0194_p-174(rplU)         5  1.84e-07       AGAC TGTTATATTGTAACA CGCC      
+Cseg_3084_p-65(znuG)          5  3.61e-07       TAAT TGTTACGATATAACA TTAC      
+CC1518_p-73(znuG)             5  4.40e-07       CAAT TGTTATGATATAACA TCAC      
+CC0214_p-66(znuL)             5  5.21e-07       GATA CGTTATTTCATAACA GTCT      
+Cseg_3837_p-191(rplU)         5  5.73e-07       AGCG TGTTATAAAGTAACA CACC      
+CC0319_p-191(rplU)            5  5.73e-07       AGCG TGTTATAAAGTAACA TTCC      
+CC0663_p-35(znuM)             5  6.15e-07       CCCC TGTTACAGAATAACA GGGG      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC1517_p-97(znuK)                 1.9e-08  4_[+1]_4
+PHZ_c0823_p-19(znuL)              3.1e-08  4_[+1]_4
+Caul_4694_p-62(znuL)              3.1e-08  4_[+1]_4
+Cseg_3938_p-70(znuL)              3.1e-08  4_[+1]_4
+Cseg_3085_p-96(znuK)              5.4e-08  4_[+1]_4
+PHZ_c3369_p-75(yciC)              7.4e-08  4_[+1]_4
+Cseg_3836_p-36(zrpW)              7.4e-08  4_[+1]_4
+CC0320_p-35(zrpW)                 7.4e-08  4_[+1]_4
+Caul_0195_p-35(zrpW)              1.8e-07  4_[+1]_4
+Caul_0194_p-174(rplU)             1.8e-07  4_[+1]_4
+Cseg_3084_p-65(znuG)              3.6e-07  4_[+1]_4
+CC1518_p-73(znuG)                 4.4e-07  4_[+1]_4
+CC0214_p-66(znuL)                 5.2e-07  4_[+1]_4
+Cseg_3837_p-191(rplU)             5.7e-07  4_[+1]_4
+CC0319_p-191(rplU)                5.7e-07  4_[+1]_4
+CC0663_p-35(znuM)                 6.1e-07  4_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTTAYWWYATAACA width=15 seqs=16
+CC1517_p-97(znuK)        (    5) TGTTATATCATAACA  1 
+PHZ_c0823_p-19(znuL)     (    5) TGTTATTTCATAACA  1 
+Caul_4694_p-62(znuL)     (    5) TGTTATTTCATAACA  1 
+Cseg_3938_p-70(znuL)     (    5) TGTTATTTCATAACA  1 
+Cseg_3085_p-96(znuK)     (    5) TGTTATATCGTAACA  1 
+PHZ_c3369_p-75(yciC)     (    5) TGTTACTTTATAACA  1 
+Cseg_3836_p-36(zrpW)     (    5) TGTTACTTTATAACA  1 
+CC0320_p-35(zrpW)        (    5) TGTTACTTTATAACA  1 
+Caul_0195_p-35(zrpW)     (    5) TGTTACAATATAACA  1 
+Caul_0194_p-174(rplU)    (    5) TGTTATATTGTAACA  1 
+Cseg_3084_p-65(znuG)     (    5) TGTTACGATATAACA  1 
+CC1518_p-73(znuG)        (    5) TGTTATGATATAACA  1 
+CC0214_p-66(znuL)        (    5) CGTTATTTCATAACA  1 
+Cseg_3837_p-191(rplU)    (    5) TGTTATAAAGTAACA  1 
+CC0319_p-191(rplU)       (    5) TGTTATAAAGTAACA  1 
+CC0663_p-35(znuM)        (    5) TGTTACAGAATAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 144 bayes= 3.80735 E= 1.6e-056 
+ -1064   -144  -1064    142 
+ -1064  -1064    268  -1064 
+ -1064  -1064  -1064    152 
+ -1064  -1064  -1064    152 
+   162  -1064  -1064  -1064 
+ -1064    115  -1064     84 
+    43  -1064    -32     32 
+    -6  -1064   -132     84 
+   -79    115  -1064     32 
+   120  -1064     68  -1064 
+ -1064  -1064  -1064    152 
+   162  -1064  -1064  -1064 
+   162  -1064  -1064  -1064 
+ -1064    256  -1064  -1064 
+   162  -1064  -1064  -1064 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 16 E= 1.6e-056 
+ 0.000000  0.062500  0.000000  0.937500 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.375000  0.000000  0.625000 
+ 0.437500  0.000000  0.125000  0.437500 
+ 0.312500  0.000000  0.062500  0.625000 
+ 0.187500  0.375000  0.000000  0.437500 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTAYWWYATAACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTTA[TC][AT][TA][TC][AG]TAACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC0319_p-191(rplU)               5.16e-06  4_[+1(5.73e-07)]_4
+CC1517_p-97(znuK)                1.71e-07  4_[+1(1.90e-08)]_4
+CC0214_p-66(znuL)                4.69e-06  4_[+1(5.21e-07)]_4
+CC0320_p-35(zrpW)                6.66e-07  4_[+1(7.40e-08)]_4
+CC1518_p-73(znuG)                3.96e-06  4_[+1(4.40e-07)]_4
+CC0663_p-35(znuM)                5.53e-06  4_[+1(6.15e-07)]_4
+Cseg_3837_p-191(rplU)            5.16e-06  4_[+1(5.73e-07)]_4
+Cseg_3085_p-96(znuK)             4.89e-07  4_[+1(5.43e-08)]_4
+Cseg_3836_p-36(zrpW)             6.66e-07  4_[+1(7.40e-08)]_4
+Cseg_3938_p-70(znuL)             2.83e-07  4_[+1(3.14e-08)]_4
+Cseg_3084_p-65(znuG)             3.25e-06  4_[+1(3.61e-07)]_4
+Caul_0194_p-174(rplU)            1.65e-06  4_[+1(1.84e-07)]_4
+Caul_0195_p-35(zrpW)             1.65e-06  4_[+1(1.84e-07)]_4
+Caul_4694_p-62(znuL)             2.83e-07  4_[+1(3.14e-08)]_4
+PHZ_c0823_p-19(znuL)             2.83e-07  4_[+1(3.14e-08)]_4
+PHZ_c3369_p-75(yciC)             6.66e-07  4_[+1(7.40e-08)]_4
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

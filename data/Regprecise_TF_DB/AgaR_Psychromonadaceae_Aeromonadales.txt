@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/AgaR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PCNPT3_13666_p-128(agaV) 1.0000     15  PCNPT3_13671_p-143(agaR) 1.0000     15  
+PCNPT3_13666_p-206(agaV) 1.0000     15  PCNPT3_13666_p-148(agaV) 1.0000     15  
+PCNPT3_13671_p-221(agaR) 1.0000     15  PCNPT3_13671_p-201(agaR) 1.0000     15  
+AHA_0812_p-134(agaZ)     1.0000     15  AHA_0812_p-88(agaZ)      1.0000     15  
+AHA_0813_p-50(agaR)      1.0000     15  AHA_0812_p-237(agaZ)     1.0000     15  
+AHA_0813_p-199(agaR)     1.0000     15  AHA_0813_p-153(agaR)     1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/AgaR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/AgaR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             180    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    180    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.356 C 0.144 G 0.144 T 0.356 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.353 C 0.147 G 0.147 T 0.353 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VWWWCRWWWYGWWWB MEME-1	width =  15  sites =  12  llr = 87  E-value = 6.2e-016
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3355:5653:3556:
+pos.-specific     C  51::7:1::51:::3
+probability       G  3:::15::1:7::15
+matrix            T  :6553:3565:5533
+
+         bits    2.8                
+                 2.5                
+                 2.2                
+                 1.9                
+Relative         1.7                
+Entropy          1.4     *     *    
+(10.5 bits)      1.1     **   **    
+                 0.8 *   **   **   *
+                 0.6 * **** * **** *
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           CTAACAAATCGAAAG
+consensus            AATTTGTTATATTTC
+sequence             G             T
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+AHA_0812_p-237(agaZ)          1  1.35e-05          . CTTTCACTTCGTTAC           
+AHA_0813_p-50(agaR)           1  1.35e-05          . GTAACGAAGTGAAAG           
+AHA_0813_p-153(agaR)          1  2.47e-05          . GAAATGAATCGAAAG           
+AHA_0812_p-134(agaZ)          1  2.47e-05          . CTTTCGATTCATTTC           
+PCNPT3_13671_p-201(agaR)      1  5.14e-05          . AAAACAAAACGAAAG           
+PCNPT3_13666_p-148(agaV)      1  5.14e-05          . CTTTCGTTTTGTTTT           
+AHA_0813_p-199(agaR)          1  1.55e-04          . GAAACGAAATAAAAG           
+AHA_0812_p-88(agaZ)           1  1.55e-04          . CTTTTATTTCGTTTC           
+PCNPT3_13666_p-206(agaV)      1  4.52e-04          . CTTTCATTTCCTTTT           
+PCNPT3_13671_p-143(agaR)      1  4.52e-04          . AAAAGGAAATGAAAG           
+PCNPT3_13671_p-221(agaR)      1  1.14e-03          . ACAATAAAATGAAAG           
+PCNPT3_13666_p-128(agaV)      1  1.14e-03          . CTTTCATTTTATTGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AHA_0812_p-237(agaZ)              1.4e-05  [+1]
+AHA_0813_p-50(agaR)               1.4e-05  [+1]
+AHA_0813_p-153(agaR)              2.5e-05  [+1]
+AHA_0812_p-134(agaZ)              2.5e-05  [+1]
+PCNPT3_13671_p-201(agaR)          5.1e-05  [+1]
+PCNPT3_13666_p-148(agaV)          5.1e-05  [+1]
+AHA_0813_p-199(agaR)              0.00015  [+1]
+AHA_0812_p-88(agaZ)               0.00015  [+1]
+PCNPT3_13666_p-206(agaV)          0.00045  [+1]
+PCNPT3_13671_p-143(agaR)          0.00045  [+1]
+PCNPT3_13671_p-221(agaR)           0.0011  [+1]
+PCNPT3_13666_p-128(agaV)           0.0011  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VWWWCRWWWYGWWWB width=15 seqs=12
+AHA_0812_p-237(agaZ)     (    1) CTTTCACTTCGTTAC  1 
+AHA_0813_p-50(agaR)      (    1) GTAACGAAGTGAAAG  1 
+AHA_0813_p-153(agaR)     (    1) GAAATGAATCGAAAG  1 
+AHA_0812_p-134(agaZ)     (    1) CTTTCGATTCATTTC  1 
+PCNPT3_13671_p-201(agaR) (    1) AAAACAAAACGAAAG  1 
+PCNPT3_13666_p-148(agaV) (    1) CTTTCGTTTTGTTTT  1 
+AHA_0813_p-199(agaR)     (    1) GAAACGAAATAAAAG  1 
+AHA_0812_p-88(agaZ)      (    1) CTTTTATTTCGTTTC  1 
+PCNPT3_13666_p-206(agaV) (    1) CTTTCATTTCCTTTT  1 
+PCNPT3_13671_p-143(agaR) (    1) AAAAGGAAATGAAAG  1 
+PCNPT3_13671_p-221(agaR) (    1) ACAATAAAATGAAAG  1 
+PCNPT3_13666_p-128(agaV) (    1) CTTTCATTTTATTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 12 bayes= 1 E= 6.2e-016 
+   -50    177     77  -1023 
+    -8    -82  -1023     72 
+    50  -1023  -1023     50 
+    50  -1023  -1023     50 
+ -1023    218    -82    -50 
+    50  -1023    177  -1023 
+    72    -82  -1023     -8 
+    50  -1023  -1023     50 
+    -8  -1023    -82     72 
+ -1023    177  -1023     50 
+   -50    -82    218  -1023 
+    50  -1023  -1023     50 
+    50  -1023  -1023     50 
+    72  -1023    -82     -8 
+ -1023     77    177    -50 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 12 E= 6.2e-016 
+ 0.250000  0.500000  0.250000  0.000000 
+ 0.333333  0.083333  0.000000  0.583333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.666667  0.083333  0.250000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.583333  0.083333  0.000000  0.333333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.333333  0.000000  0.083333  0.583333 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.250000  0.083333  0.666667  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.583333  0.000000  0.083333  0.333333 
+ 0.000000  0.250000  0.500000  0.250000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VWWWCRWWWYGWWWB MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CAG][TA][AT][AT][CT][AG][AT][AT][TA][CT][GA][AT][AT][AT][GCT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PCNPT3_13666_p-128(agaV)         1.14e-03  15
+PCNPT3_13671_p-143(agaR)         4.52e-04  15
+PCNPT3_13666_p-206(agaV)         4.52e-04  15
+PCNPT3_13666_p-148(agaV)         5.14e-05  [+1(5.14e-05)]
+PCNPT3_13671_p-221(agaR)         1.14e-03  15
+PCNPT3_13671_p-201(agaR)         5.14e-05  [+1(5.14e-05)]
+AHA_0812_p-134(agaZ)             2.47e-05  [+1(2.47e-05)]
+AHA_0812_p-88(agaZ)              1.55e-04  15
+AHA_0813_p-50(agaR)              1.35e-05  [+1(1.35e-05)]
+AHA_0812_p-237(agaZ)             1.35e-05  [+1(1.35e-05)]
+AHA_0813_p-199(agaR)             1.55e-04  15
+AHA_0813_p-153(agaR)             2.47e-05  [+1(2.47e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,331 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/NrdR_Bifidobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BAD_1216_p-113(nrdD)     1.0000     16  BIFANG_00874_p-129(nrdD) 1.0000     16  
+BIFANG_00874_p-98(nrdD)  1.0000     16  BLA_0313_p-88(nrdH)      1.0000     16  
+BLA_0313_p-56(nrdH)      1.0000     16  BLA_0521_p-119(nrdD)     1.0000     16  
+BLA_0521_p-151(nrdD)     1.0000     16  BbifN4_010100007467_p-12 1.0000     16  
+BbifN4_010100007467_p-89 1.0000     16  BbifN4_010100001805_p-12 1.0000     16  
+BIFBRE_00457_p-174(nrdD) 1.0000     16  BIFBRE_00457_p-142(nrdD) 1.0000     16  
+BIFBRE_00660_p-75(nrdH)  1.0000     16  BIFBRE_00660_p-43(nrdH)  1.0000     16  
+BDP_0182_p-94(nrdH)      1.0000     16  BDP_0182_p-126(nrdH)     1.0000     16  
+BDP_1694_p-112(nrdD)     1.0000     16  BIFGAL_00567_p-144(nrdD) 1.0000     16  
+BIFGAL_00567_p-113(nrdD) 1.0000     16  BL0668_p-75(nrdH)        1.0000     16  
+BL0668_p-43(nrdH)        1.0000     16  BL1752_p-174(nrdD)       1.0000     16  
+BL1752_p-142(nrdD)       1.0000     16  Blon_0612_p-174(nrdD)    1.0000     16  
+Blon_0612_p-142(nrdD)    1.0000     16  Blon_2480_p-123(nrdH)    1.0000     16  
+Blon_2480_p-91(nrdH)     1.0000     16  HMPREF0424_0179_p-129(nr 1.0000     16  
+HMPREF0424_0179_p-97(nrd 1.0000     16  HMPREF0424_1125_p-116(nr 1.0000     16  
+HMPREF0424_1125_p-148(nr 1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/NrdR_Bifidobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bifidobacteriaceae/NrdR_Bifidobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             496    N=              31
+sample: seed=            0    hsfrac=          0
+        searchsize=    496    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.306 C 0.21 G 0.198 T 0.286 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.306 C 0.21 G 0.198 T 0.286 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CACTABATATAGKGB MEME-1	width =  15  sites =  31  llr = 392  E-value = 3.4e-128
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  19:1a:915:9:::1
+pos.-specific     C  81a::3::2:::::4
+probability       G  :::::3::2::a473
+matrix            T  1::9:4:8:a1:633
+
+         bits    2.3   *        *   
+                 2.1   *        *   
+                 1.9   *        *   
+                 1.6   * *    * *   
+Relative         1.4 * * *    * *   
+Entropy          1.2 ***** *  ***** 
+(18.3 bits)      0.9 ***** ** ***** 
+                 0.7 ***** ** ***** 
+                 0.5 ************** 
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           CACTATATATAGTGC
+consensus                 C  C   GTG
+sequence                  G        T
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Blon_2480_p-91(nrdH)          2  4.52e-09          C CACTACATATAGTGC           
+BL0668_p-43(nrdH)             2  4.52e-09          C CACTACATATAGTGC           
+BIFBRE_00660_p-43(nrdH)       2  4.52e-09          C CACTACATATAGTGC           
+Blon_0612_p-142(nrdD)         2  8.79e-09          G CACTAGATATAGTGG           
+BL1752_p-142(nrdD)            2  1.49e-08          G CACTAGATATAGGGG           
+BIFBRE_00457_p-142(nrdD)      2  1.49e-08          A CACTAGATATAGGGG           
+BLA_0313_p-88(nrdH)           2  3.27e-08          A CACTAGATGTAGTGG           
+BbifN4_010100001805_p-12      2  3.89e-08          C CACTATATCTAGGGG           
+HMPREF0424_1125_p-148(nr      2  8.65e-08          T CACTATATATAGGTG           
+HMPREF0424_0179_p-97(nrd      2  1.21e-07          C CACTATAAATAGTGC           
+BbifN4_010100007467_p-12      2  1.52e-07          A CACTACATATAGTGA           
+Blon_2480_p-123(nrdH)         2  2.76e-07          T CACTATATCTAGGTT           
+BIFBRE_00660_p-75(nrdH)       2  2.76e-07          C CACTATATCTAGGTT           
+BAD_1216_p-113(nrdD)          2  2.76e-07          A CACTACATTTAGTGC           
+BDP_1694_p-112(nrdD)          2  3.47e-07          C TACTAGATATAGTGC           
+BIFGAL_00567_p-113(nrdD)      2  3.91e-07          G AACTAGATATAGGGG           
+BIFBRE_00457_p-174(nrdD)      2  4.81e-07          C CACTATAAATAGTTC           
+HMPREF0424_0179_p-129(nr      2  5.35e-07          T AACTATATATAGTGT           
+BIFANG_00874_p-98(nrdD)       2  7.54e-07          G AACTATATGTAGGGG           
+HMPREF0424_1125_p-116(nr      2  8.29e-07          G CCCTAGATATTGTGC           
+BDP_0182_p-126(nrdH)          2  9.01e-07          C CACTATATGCAGTGG           
+BLA_0521_p-119(nrdD)          2  1.15e-06          G TACTACATCTAGTGT           
+BDP_0182_p-94(nrdH)           2  1.26e-06          C CACTACAGGTAGTGT           
+BL0668_p-75(nrdH)             2  1.36e-06          A CCCTATATCTAGGTT           
+Blon_0612_p-174(nrdD)         2  1.94e-06          A CCCTATAAATAGTTC           
+BL1752_p-174(nrdD)            2  1.94e-06          A CCCTATAAATAGTTC           
+BLA_0521_p-151(nrdD)          2  9.82e-06          G CACAACATGTTGGTC           
+BIFANG_00874_p-129(nrdD)      2  9.82e-06          A CACTAGCCCTAGTGT           
+BbifN4_010100007467_p-89      2  1.10e-05          A CACGACTTGTAGGGG           
+BIFGAL_00567_p-144(nrdD)      2  2.55e-05          C CACCATATCTAGTCA           
+BLA_0313_p-56(nrdH)           2  4.09e-05          A CACAAGGTATTGTTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Blon_2480_p-91(nrdH)              4.5e-09  1_[+1]
+BL0668_p-43(nrdH)                 4.5e-09  1_[+1]
+BIFBRE_00660_p-43(nrdH)           4.5e-09  1_[+1]
+Blon_0612_p-142(nrdD)             8.8e-09  1_[+1]
+BL1752_p-142(nrdD)                1.5e-08  1_[+1]
+BIFBRE_00457_p-142(nrdD)          1.5e-08  1_[+1]
+BLA_0313_p-88(nrdH)               3.3e-08  1_[+1]
+BbifN4_010100001805_p-12          3.9e-08  1_[+1]
+HMPREF0424_1125_p-148(nr          8.7e-08  1_[+1]
+HMPREF0424_0179_p-97(nrd          1.2e-07  1_[+1]
+BbifN4_010100007467_p-12          1.5e-07  1_[+1]
+Blon_2480_p-123(nrdH)             2.8e-07  1_[+1]
+BIFBRE_00660_p-75(nrdH)           2.8e-07  1_[+1]
+BAD_1216_p-113(nrdD)              2.8e-07  1_[+1]
+BDP_1694_p-112(nrdD)              3.5e-07  1_[+1]
+BIFGAL_00567_p-113(nrdD)          3.9e-07  1_[+1]
+BIFBRE_00457_p-174(nrdD)          4.8e-07  1_[+1]
+HMPREF0424_0179_p-129(nr          5.3e-07  1_[+1]
+BIFANG_00874_p-98(nrdD)           7.5e-07  1_[+1]
+HMPREF0424_1125_p-116(nr          8.3e-07  1_[+1]
+BDP_0182_p-126(nrdH)                9e-07  1_[+1]
+BLA_0521_p-119(nrdD)              1.2e-06  1_[+1]
+BDP_0182_p-94(nrdH)               1.3e-06  1_[+1]
+BL0668_p-75(nrdH)                 1.4e-06  1_[+1]
+Blon_0612_p-174(nrdD)             1.9e-06  1_[+1]
+BL1752_p-174(nrdD)                1.9e-06  1_[+1]
+BLA_0521_p-151(nrdD)              9.8e-06  1_[+1]
+BIFANG_00874_p-129(nrdD)          9.8e-06  1_[+1]
+BbifN4_010100007467_p-89          1.1e-05  1_[+1]
+BIFGAL_00567_p-144(nrdD)          2.5e-05  1_[+1]
+BLA_0313_p-56(nrdH)               4.1e-05  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CACTABATATAGKGB width=15 seqs=31
+Blon_2480_p-91(nrdH)     (    2) CACTACATATAGTGC  1 
+BL0668_p-43(nrdH)        (    2) CACTACATATAGTGC  1 
+BIFBRE_00660_p-43(nrdH)  (    2) CACTACATATAGTGC  1 
+Blon_0612_p-142(nrdD)    (    2) CACTAGATATAGTGG  1 
+BL1752_p-142(nrdD)       (    2) CACTAGATATAGGGG  1 
+BIFBRE_00457_p-142(nrdD) (    2) CACTAGATATAGGGG  1 
+BLA_0313_p-88(nrdH)      (    2) CACTAGATGTAGTGG  1 
+BbifN4_010100001805_p-12 (    2) CACTATATCTAGGGG  1 
+HMPREF0424_1125_p-148(nr (    2) CACTATATATAGGTG  1 
+HMPREF0424_0179_p-97(nrd (    2) CACTATAAATAGTGC  1 
+BbifN4_010100007467_p-12 (    2) CACTACATATAGTGA  1 
+Blon_2480_p-123(nrdH)    (    2) CACTATATCTAGGTT  1 
+BIFBRE_00660_p-75(nrdH)  (    2) CACTATATCTAGGTT  1 
+BAD_1216_p-113(nrdD)     (    2) CACTACATTTAGTGC  1 
+BDP_1694_p-112(nrdD)     (    2) TACTAGATATAGTGC  1 
+BIFGAL_00567_p-113(nrdD) (    2) AACTAGATATAGGGG  1 
+BIFBRE_00457_p-174(nrdD) (    2) CACTATAAATAGTTC  1 
+HMPREF0424_0179_p-129(nr (    2) AACTATATATAGTGT  1 
+BIFANG_00874_p-98(nrdD)  (    2) AACTATATGTAGGGG  1 
+HMPREF0424_1125_p-116(nr (    2) CCCTAGATATTGTGC  1 
+BDP_0182_p-126(nrdH)     (    2) CACTATATGCAGTGG  1 
+BLA_0521_p-119(nrdD)     (    2) TACTACATCTAGTGT  1 
+BDP_0182_p-94(nrdH)      (    2) CACTACAGGTAGTGT  1 
+BL0668_p-75(nrdH)        (    2) CCCTATATCTAGGTT  1 
+Blon_0612_p-174(nrdD)    (    2) CCCTATAAATAGTTC  1 
+BL1752_p-174(nrdD)       (    2) CCCTATAAATAGTTC  1 
+BLA_0521_p-151(nrdD)     (    2) CACAACATGTTGGTC  1 
+BIFANG_00874_p-129(nrdD) (    2) CACTAGCCCTAGTGT  1 
+BbifN4_010100007467_p-89 (    2) CACGACTTGTAGGGG  1 
+BIFGAL_00567_p-144(nrdD) (    2) CACCATATCTAGTCA  1 
+BLA_0313_p-56(nrdH)      (    2) CACAAGGTATTGTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 62 bayes= 2.79675 E= 3.4e-128 
+  -166    200  -1160   -215 
+   151    -70  -1160  -1160 
+ -1160    225  -1160  -1160 
+  -224   -270   -262    161 
+   171  -1160  -1160  -1160 
+ -1160     47     55     55 
+   156   -270   -262   -314 
+  -125   -270   -262    150 
+    84     10     -3   -314 
+ -1160   -270  -1160    176 
+   156  -1160  -1160   -156 
+ -1160  -1160    234  -1160 
+ -1160  -1160     84    117 
+ -1160   -270    177      2 
+  -224     76     70    -15 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 31 E= 3.4e-128 
+ 0.096774  0.838710  0.000000  0.064516 
+ 0.870968  0.129032  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.064516  0.032258  0.032258  0.870968 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.290323  0.290323  0.419355 
+ 0.903226  0.032258  0.032258  0.032258 
+ 0.129032  0.032258  0.032258  0.806452 
+ 0.548387  0.225806  0.193548  0.032258 
+ 0.000000  0.032258  0.000000  0.967742 
+ 0.903226  0.000000  0.000000  0.096774 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.354839  0.645161 
+ 0.000000  0.032258  0.677419  0.290323 
+ 0.064516  0.354839  0.322581  0.258065 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CACTABATATAGKGB MEME-1 regular expression
+--------------------------------------------------------------------------------
+CACTA[TCG]AT[AC]TAG[TG][GT][CGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BAD_1216_p-113(nrdD)             5.51e-07  1_[+1(2.76e-07)]
+BIFANG_00874_p-129(nrdD)         1.96e-05  1_[+1(9.82e-06)]
+BIFANG_00874_p-98(nrdD)          1.51e-06  1_[+1(7.54e-07)]
+BLA_0313_p-88(nrdH)              6.55e-08  1_[+1(3.27e-08)]
+BLA_0313_p-56(nrdH)              8.18e-05  1_[+1(4.09e-05)]
+BLA_0521_p-119(nrdD)             2.31e-06  1_[+1(1.15e-06)]
+BLA_0521_p-151(nrdD)             1.96e-05  1_[+1(9.82e-06)]
+BbifN4_010100007467_p-12         3.04e-07  1_[+1(1.52e-07)]
+BbifN4_010100007467_p-89         2.20e-05  1_[+1(1.10e-05)]
+BbifN4_010100001805_p-12         7.79e-08  1_[+1(3.89e-08)]
+BIFBRE_00457_p-174(nrdD)         9.63e-07  1_[+1(4.81e-07)]
+BIFBRE_00457_p-142(nrdD)         2.97e-08  1_[+1(1.49e-08)]
+BIFBRE_00660_p-75(nrdH)          5.51e-07  1_[+1(2.76e-07)]
+BIFBRE_00660_p-43(nrdH)          9.05e-09  1_[+1(4.52e-09)]
+BDP_0182_p-94(nrdH)              2.52e-06  1_[+1(1.26e-06)]
+BDP_0182_p-126(nrdH)             1.80e-06  1_[+1(9.01e-07)]
+BDP_1694_p-112(nrdD)             6.94e-07  1_[+1(3.47e-07)]
+BIFGAL_00567_p-144(nrdD)         5.09e-05  1_[+1(2.55e-05)]
+BIFGAL_00567_p-113(nrdD)         7.81e-07  1_[+1(3.91e-07)]
+BL0668_p-75(nrdH)                2.73e-06  1_[+1(1.36e-06)]
+BL0668_p-43(nrdH)                9.05e-09  1_[+1(4.52e-09)]
+BL1752_p-174(nrdD)               3.87e-06  1_[+1(1.94e-06)]
+BL1752_p-142(nrdD)               2.97e-08  1_[+1(1.49e-08)]
+Blon_0612_p-174(nrdD)            3.87e-06  1_[+1(1.94e-06)]
+Blon_0612_p-142(nrdD)            1.76e-08  1_[+1(8.79e-09)]
+Blon_2480_p-123(nrdH)            5.51e-07  1_[+1(2.76e-07)]
+Blon_2480_p-91(nrdH)             9.05e-09  1_[+1(4.52e-09)]
+HMPREF0424_0179_p-129(nr         1.07e-06  1_[+1(5.35e-07)]
+HMPREF0424_0179_p-97(nrd         2.43e-07  1_[+1(1.21e-07)]
+HMPREF0424_1125_p-116(nr         1.66e-06  1_[+1(8.29e-07)]
+HMPREF0424_1125_p-148(nr         1.73e-07  1_[+1(8.65e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,247 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NifA_Rhodobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RSP_0532_p-128(iscN)     1.0000     16  RSP_3192_p-237(rnfA)     1.0000     16  
+RSP_3192_p-217(rnfA)     1.0000     16  RSP_3192_p-70(rnfA)      1.0000     16  
+RSP_0541_p-178(nifH)     1.0000     16  RSP_0538_p-142(nifE)     1.0000     16  
+RSP_0532_p-145(iscN)     1.0000     16  RSP_2791_p-343(RSP_2791) 1.0000     16  
+RSP_2501_p-227(modD)     1.0000     16  RSP_2501_p-206(modD)     1.0000     16  
+RSP_0546_p-122(nifB)     1.0000     16  RSP_0546_p-38(nifB)      1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NifA_Rhodobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodobacterales/NifA_Rhodobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             192    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    192    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.203 C 0.302 G 0.302 T 0.193 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.204 C 0.301 G 0.301 T 0.194 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTCGSAWDYSCGACA MEME-1	width =  16  sites =  12  llr = 143  E-value = 9.7e-035
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::1:1:753::::8:8
+pos.-specific     C  :11914::145921a1
+probability       G  391186313:518::2
+matrix            T  8:8:::1436::11::
+
+         bits    2.4                 
+                 2.1                 
+                 1.9                 
+                 1.7               * 
+Relative         1.4 ** *       * ** 
+Entropy          1.2 ** *     * * ***
+(17.2 bits)      0.9 ***** ** * * ***
+                 0.7 ******** *******
+                 0.5 ******** *******
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TGTCGGAAATCCGACA
+consensus            G    CGTTCG     
+sequence                     G       
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+RSP_3192_p-217(rnfA)          1  3.40e-08          . TGTCGGGAACGCGACA           
+RSP_2501_p-227(modD)          1  6.95e-08          . GGTCGCAAGTCCGACA           
+RSP_0538_p-142(nifE)          1  6.95e-08          . TGTCGCAGATGCGACA           
+RSP_0546_p-122(nifB)          1  1.34e-07          . TGTCGCATTTGCGACC           
+RSP_2501_p-206(modD)          1  8.37e-07          . GGTCGGGATTGCGACG           
+RSP_0546_p-38(nifB)           1  9.22e-07          . TCTCCGAAATCCGACA           
+RSP_0532_p-145(iscN)          1  9.22e-07          . TGTCGCGAACCCGTCA           
+RSP_3192_p-70(rnfA)           1  1.10e-06          . TGACAGATGTGCGACA           
+RSP_0541_p-178(nifH)          1  3.05e-06          . TGTCGGTTTTCGCACA           
+RSP_3192_p-237(rnfA)          1  5.55e-06          . GGGCGGAACCCCGACA           
+RSP_0532_p-128(iscN)          1  8.39e-06          . TGTCGGATTCCCTCCG           
+RSP_2791_p-343(RSP_2791)      1  2.09e-05          . TGCGGCATGCGCCACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_3192_p-217(rnfA)              3.4e-08  [+1]
+RSP_2501_p-227(modD)              6.9e-08  [+1]
+RSP_0538_p-142(nifE)              6.9e-08  [+1]
+RSP_0546_p-122(nifB)              1.3e-07  [+1]
+RSP_2501_p-206(modD)              8.4e-07  [+1]
+RSP_0546_p-38(nifB)               9.2e-07  [+1]
+RSP_0532_p-145(iscN)              9.2e-07  [+1]
+RSP_3192_p-70(rnfA)               1.1e-06  [+1]
+RSP_0541_p-178(nifH)              3.1e-06  [+1]
+RSP_3192_p-237(rnfA)              5.5e-06  [+1]
+RSP_0532_p-128(iscN)              8.4e-06  [+1]
+RSP_2791_p-343(RSP_2791)          2.1e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTCGSAWDYSCGACA width=16 seqs=12
+RSP_3192_p-217(rnfA)     (    1) TGTCGGGAACGCGACA  1 
+RSP_2501_p-227(modD)     (    1) GGTCGCAAGTCCGACA  1 
+RSP_0538_p-142(nifE)     (    1) TGTCGCAGATGCGACA  1 
+RSP_0546_p-122(nifB)     (    1) TGTCGCATTTGCGACC  1 
+RSP_2501_p-206(modD)     (    1) GGTCGGGATTGCGACG  1 
+RSP_0546_p-38(nifB)      (    1) TCTCCGAAATCCGACA  1 
+RSP_0532_p-145(iscN)     (    1) TGTCGCGAACCCGTCA  1 
+RSP_3192_p-70(rnfA)      (    1) TGACAGATGTGCGACA  1 
+RSP_0541_p-178(nifH)     (    1) TGTCGGTTTTCGCACA  1 
+RSP_3192_p-237(rnfA)     (    1) GGGCGGAACCCCGACA  1 
+RSP_0532_p-128(iscN)     (    1) TGTCGGATTCCCTCCG  1 
+RSP_2791_p-343(RSP_2791) (    1) TGCGGCATGCGCCACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 12 bayes= 1 E= 9.7e-035 
+ -1023  -1023    -27    195 
+ -1023   -185    161  -1023 
+  -129   -185   -185    195 
+ -1023    161   -185  -1023 
+  -129   -185    147  -1023 
+ -1023     47     95  -1023 
+   171  -1023    -27   -122 
+   129  -1023   -185    110 
+    71   -185    -27     78 
+ -1023     47  -1023    159 
+ -1023     73     73  -1023 
+ -1023    161   -185  -1023 
+ -1023    -85    132   -122 
+   203   -185  -1023   -122 
+ -1023    173  -1023  -1023 
+   188   -185    -85  -1023 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 12 E= 9.7e-035 
+ 0.000000  0.000000  0.250000  0.750000 
+ 0.000000  0.083333  0.916667  0.000000 
+ 0.083333  0.083333  0.083333  0.750000 
+ 0.000000  0.916667  0.083333  0.000000 
+ 0.083333  0.083333  0.833333  0.000000 
+ 0.000000  0.416667  0.583333  0.000000 
+ 0.666667  0.000000  0.250000  0.083333 
+ 0.500000  0.000000  0.083333  0.416667 
+ 0.333333  0.083333  0.250000  0.333333 
+ 0.000000  0.416667  0.000000  0.583333 
+ 0.000000  0.500000  0.500000  0.000000 
+ 0.000000  0.916667  0.083333  0.000000 
+ 0.000000  0.166667  0.750000  0.083333 
+ 0.833333  0.083333  0.000000  0.083333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.750000  0.083333  0.166667  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTCGSAWDYSCGACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TG]GTCG[GC][AG][AT][ATG][TC][CG]CGACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RSP_0532_p-128(iscN)             8.39e-06  [+1(8.39e-06)]
+RSP_3192_p-237(rnfA)             5.55e-06  [+1(5.55e-06)]
+RSP_3192_p-217(rnfA)             3.40e-08  [+1(3.40e-08)]
+RSP_3192_p-70(rnfA)              1.10e-06  [+1(1.10e-06)]
+RSP_0541_p-178(nifH)             3.05e-06  [+1(3.05e-06)]
+RSP_0538_p-142(nifE)             6.95e-08  [+1(6.95e-08)]
+RSP_0532_p-145(iscN)             9.22e-07  [+1(9.22e-07)]
+RSP_2791_p-343(RSP_2791)         2.09e-05  [+1(2.09e-05)]
+RSP_2501_p-227(modD)             6.95e-08  [+1(6.95e-08)]
+RSP_2501_p-206(modD)             8.37e-07  [+1(8.37e-07)]
+RSP_0546_p-122(nifB)             1.34e-07  [+1(1.34e-07)]
+RSP_0546_p-38(nifB)              9.22e-07  [+1(9.22e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

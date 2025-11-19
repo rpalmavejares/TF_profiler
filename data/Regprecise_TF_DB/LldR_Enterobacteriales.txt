@@ -1,0 +1,240 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/LldR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b3603_p-89(lldP)         1.0000     17  b3603_p-215(lldP)        1.0000     17  
+STM3692_p-91(lldP)       1.0000     17  STM3692_p-217(lldP)      1.0000     17  
+CKO_05059_p-89(lldP)     1.0000     17  CKO_05059_p-215(lldP)    1.0000     17  
+KPN_03947_p-88(lldP)     1.0000     17  KPN_03947_p-214(lldP)    1.0000     17  
+Ent638_0132_p-91(lldP)   1.0000     17  Ent638_0132_p-217(lldP)  1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/LldR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/LldR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             170    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    170    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.276 C 0.265 G 0.194 T 0.265 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.276 C 0.264 G 0.195 T 0.264 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WATTGGCMSDACCAMTT MEME-1	width =  17  sites =  10  llr = 178  E-value = 6.1e-049
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6a:::::4:37::a6:1
+pos.-specific     C  ::::::965::aa:4:1
+probability       G  1:::aa::543::::::
+matrix            T  3:aa::1::3:::::a8
+
+         bits    2.4     **           
+                 2.1     **           
+                 1.9  *****     *** * 
+                 1.6  *****     *** * 
+Relative         1.4  ******    *** * 
+Entropy          1.2  ****** * **** * 
+(25.7 bits)      0.9  ******** *******
+                 0.7 ********* *******
+                 0.5 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           AATTGGCCCGACCAATT
+consensus            T      AGAG   C  
+sequence                      T       
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+KPN_03947_p-88(lldP)          1  2.77e-10          . AATTGGCCGGGCCAATT           
+CKO_05059_p-215(lldP)         1  1.12e-09          . AATTGGCCCAACCAATT           
+STM3692_p-217(lldP)           1  1.12e-09          . AATTGGCCCTACCAATT           
+b3603_p-215(lldP)             1  1.12e-09          . AATTGGCCCTACCAATT           
+Ent638_0132_p-91(lldP)        1  3.13e-09          . TATTGGCAGGACCACTT           
+STM3692_p-91(lldP)            1  3.13e-09          . TATTGGCAGGACCACTT           
+b3603_p-89(lldP)              1  4.98e-09          . AATTGGCAGTGCCACTT           
+CKO_05059_p-89(lldP)          1  5.23e-09          . TATTGGCAGGGCCACTT           
+Ent638_0132_p-217(lldP)       1  1.09e-08          . AATTGGCCCAACCAATC           
+KPN_03947_p-214(lldP)         1  4.94e-08          . GATTGGTCCAACCAATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+KPN_03947_p-88(lldP)              2.8e-10  [+1]
+CKO_05059_p-215(lldP)             1.1e-09  [+1]
+STM3692_p-217(lldP)               1.1e-09  [+1]
+b3603_p-215(lldP)                 1.1e-09  [+1]
+Ent638_0132_p-91(lldP)            3.1e-09  [+1]
+STM3692_p-91(lldP)                3.1e-09  [+1]
+b3603_p-89(lldP)                    5e-09  [+1]
+CKO_05059_p-89(lldP)              5.2e-09  [+1]
+Ent638_0132_p-217(lldP)           1.1e-08  [+1]
+KPN_03947_p-214(lldP)             4.9e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WATTGGCMSDACCAMTT width=17 seqs=10
+KPN_03947_p-88(lldP)     (    1) AATTGGCCGGGCCAATT  1 
+CKO_05059_p-215(lldP)    (    1) AATTGGCCCAACCAATT  1 
+STM3692_p-217(lldP)      (    1) AATTGGCCCTACCAATT  1 
+b3603_p-215(lldP)        (    1) AATTGGCCCTACCAATT  1 
+Ent638_0132_p-91(lldP)   (    1) TATTGGCAGGACCACTT  1 
+STM3692_p-91(lldP)       (    1) TATTGGCAGGACCACTT  1 
+b3603_p-89(lldP)         (    1) AATTGGCAGTGCCACTT  1 
+CKO_05059_p-89(lldP)     (    1) TATTGGCAGGGCCACTT  1 
+Ent638_0132_p-217(lldP)  (    1) AATTGGCCCAACCAATC  1 
+KPN_03947_p-214(lldP)    (    1) GATTGGTCCAACCAATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 10 bayes= 0.830075 E= 6.1e-049 
+   112   -997    -97     18 
+   186   -997   -997   -997 
+  -997   -997   -997    192 
+  -997   -997   -997    192 
+  -997   -997    235   -997 
+  -997   -997    235   -997 
+  -997    177   -997   -140 
+    54    118   -997   -997 
+  -997     92    135   -997 
+    12   -997    103     18 
+   134   -997     62   -997 
+  -997    192   -997   -997 
+  -997    192   -997   -997 
+   186   -997   -997   -997 
+   112     60   -997   -997 
+  -997   -997   -997    192 
+  -146   -140   -997    160 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 10 E= 6.1e-049 
+ 0.600000  0.000000  0.100000  0.300000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.900000  0.000000  0.100000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.000000  0.500000  0.500000  0.000000 
+ 0.300000  0.000000  0.400000  0.300000 
+ 0.700000  0.000000  0.300000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.600000  0.400000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.100000  0.100000  0.000000  0.800000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WATTGGCMSDACCAMTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]ATTGGC[CA][CG][GAT][AG]CCA[AC]TT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b3603_p-89(lldP)                 4.98e-09  [+1(4.98e-09)]
+b3603_p-215(lldP)                1.12e-09  [+1(1.12e-09)]
+STM3692_p-91(lldP)               3.13e-09  [+1(3.13e-09)]
+STM3692_p-217(lldP)              1.12e-09  [+1(1.12e-09)]
+CKO_05059_p-89(lldP)             5.23e-09  [+1(5.23e-09)]
+CKO_05059_p-215(lldP)            1.12e-09  [+1(1.12e-09)]
+KPN_03947_p-88(lldP)             2.77e-10  [+1(2.77e-10)]
+KPN_03947_p-214(lldP)            4.94e-08  [+1(4.94e-08)]
+Ent638_0132_p-91(lldP)           3.13e-09  [+1(3.13e-09)]
+Ent638_0132_p-217(lldP)          1.09e-08  [+1(1.09e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

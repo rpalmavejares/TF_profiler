@@ -1,0 +1,309 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TrpR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VAS14_18534_p-73(aroA)   1.0000     20  VAS14_18374_p-322(aroF2) 1.0000     20  
+VAS14_21046_p-40(tnaB)   1.0000     20  VC1174_p-294(trpE)       1.0000     20  
+VC2283_p-41(COG0733)     1.0000     20  VF_0660_p-25(COG0733)    1.0000     20  
+VF_2602_p-347(trpE)      1.0000     20  VIBHAR_03257_p-41(COG073 1.0000     20  
+VIBHAR_02758_p-351(trpE) 1.0000     20  VP2337_p-41(COG0733)     1.0000     20  
+VP1956_p-352(trpE)       1.0000     20  VPA0585_p-116(trpB2)     1.0000     20  
+VSAL_I0762_p-23(COG0733) 1.0000     20  VSAL_I1154_p-339(trpE)   1.0000     20  
+VSAK1_12140_p-22(COG0733 1.0000     20  VSAK1_01022_p-333(trpE)  1.0000     20  
+VSAK1_04012_p-160(aroA)  1.0000     20  VS_1966_p-317(trpE)      1.0000     20  
+VS_0706_p-41(COG0733)    1.0000     20  VV1_1834_p-38(COG0733)   1.0000     20  
+VV20854_p-192(tnaA)      1.0000     20  VV1_3064_p-355(trpE)     1.0000     20  
+PBPRA2485_p-274(aroF2)   1.0000     20  PBPRA2452_p-71(aroA)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TrpR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TrpR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             480    N=              24
+sample: seed=            0    hsfrac=          0
+        searchsize=    480    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.302 C 0.19 G 0.192 T 0.317 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.302 C 0.19 G 0.192 T 0.316 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YGTACTAGTTAACTAGTACR MEME-1	width =  20  sites =  24  llr = 437  E-value = 2.1e-148
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  112a::a:::68::82:7:6
+pos.-specific     C  3:3:a:::21::9:::::a:
+probability       G  19:::::9:1121:28:1:4
+matrix            T  5:6::a::883::a::a2::
+
+         bits    2.4     *               
+                 2.2     *             * 
+                 1.9  *  *  *          * 
+                 1.7  * **  *    **  * * 
+Relative         1.4  * *****    ** ** * 
+Entropy          1.2  * *****   ****** * 
+(26.3 bits)      1.0  * ******  ****** * 
+                 0.7  * ******* ****** **
+                 0.5  *******************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TGTACTAGTTAACTAGTACA
+consensus            C C     C T   GA T G
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+VP1956_p-352(trpE)            1  9.97e-12          . CGCACTAGTTAACTAGTACG           
+VC1174_p-294(trpE)            1  9.97e-12          . CGCACTAGTTAACTAGTACG           
+VV1_3064_p-355(trpE)          1  1.47e-11          . TGCACTAGTTAACTAGTACA           
+VIBHAR_02758_p-351(trpE)      1  1.47e-11          . TGCACTAGTTAACTAGTACA           
+VSAL_I1154_p-339(trpE)        1  3.73e-11          . CGCACTAGTTTACTAGTACG           
+VSAK1_01022_p-333(trpE)       1  4.68e-11          . CGAACTAGTTAACTAGTACG           
+VF_2602_p-347(trpE)           1  4.68e-11          . CGCACTAGTTTACTAGTACA           
+PBPRA2485_p-274(aroF2)        1  1.59e-10          . CGAACTAGTTTACTAGTACG           
+VAS14_18374_p-322(aroF2)      1  1.85e-10          . TGAACTAGTTTACTAGTACG           
+VV1_1834_p-38(COG0733)        1  2.49e-10          . TGTACTAGCTAACTAGTTCA           
+VP2337_p-41(COG0733)          1  3.47e-10          . TGTACTAGTTAGCTAGTTCA           
+VAS14_21046_p-40(tnaB)        1  1.02e-09          . TGTACTAGTTTACTGATACG           
+VIBHAR_03257_p-41(COG073      1  2.27e-09          . TGTACTAGTCAGCTAGTTCA           
+VPA0585_p-116(trpB2)          1  4.11e-09          . CGTACTATTTAACTAGTTCA           
+VC2283_p-41(COG0733)          1  4.54e-09          . TGTACTAGTTAACTAGTGTG           
+VS_1966_p-317(trpE)           1  9.94e-09          . AAAACTAGTTAACTAGTACA           
+VAS14_18534_p-73(aroA)        1  1.14e-08          . GGTACTAGCTAACTGATGCA           
+VSAK1_12140_p-22(COG0733      1  1.41e-08          . TGTACCAGCAAACTAGTACG           
+VF_0660_p-25(COG0733)         1  1.78e-08          . TGTACTAGTTGAGTGATACA           
+VV20854_p-192(tnaA)           1  2.62e-08          . CATACTAGTTTATTAGTACA           
+PBPRA2452_p-71(aroA)          1  3.89e-08          . GGTACTAGCGAACTGATGCA           
+VSAK1_04012_p-160(aroA)       1  4.37e-08          . AGTACTAGCTGGCTAGTACT           
+VSAL_I0762_p-23(COG0733)      1  6.99e-08          . TGTACTAGTGTGGTGATACA           
+VS_0706_p-41(COG0733)         1  1.03e-07          . TGTACTTCTCAACTAGTTCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VP1956_p-352(trpE)                  1e-11  [+1]
+VC1174_p-294(trpE)                  1e-11  [+1]
+VV1_3064_p-355(trpE)              1.5e-11  [+1]
+VIBHAR_02758_p-351(trpE)          1.5e-11  [+1]
+VSAL_I1154_p-339(trpE)            3.7e-11  [+1]
+VSAK1_01022_p-333(trpE)           4.7e-11  [+1]
+VF_2602_p-347(trpE)               4.7e-11  [+1]
+PBPRA2485_p-274(aroF2)            1.6e-10  [+1]
+VAS14_18374_p-322(aroF2)          1.9e-10  [+1]
+VV1_1834_p-38(COG0733)            2.5e-10  [+1]
+VP2337_p-41(COG0733)              3.5e-10  [+1]
+VAS14_21046_p-40(tnaB)              1e-09  [+1]
+VIBHAR_03257_p-41(COG073          2.3e-09  [+1]
+VPA0585_p-116(trpB2)              4.1e-09  [+1]
+VC2283_p-41(COG0733)              4.5e-09  [+1]
+VS_1966_p-317(trpE)               9.9e-09  [+1]
+VAS14_18534_p-73(aroA)            1.1e-08  [+1]
+VSAK1_12140_p-22(COG0733          1.4e-08  [+1]
+VF_0660_p-25(COG0733)             1.8e-08  [+1]
+VV20854_p-192(tnaA)               2.6e-08  [+1]
+PBPRA2452_p-71(aroA)              3.9e-08  [+1]
+VSAK1_04012_p-160(aroA)           4.4e-08  [+1]
+VSAL_I0762_p-23(COG0733)            7e-08  [+1]
+VS_0706_p-41(COG0733)               1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YGTACTAGTTAACTAGTACR width=20 seqs=24
+VP1956_p-352(trpE)       (    1) CGCACTAGTTAACTAGTACG  1 
+VC1174_p-294(trpE)       (    1) CGCACTAGTTAACTAGTACG  1 
+VV1_3064_p-355(trpE)     (    1) TGCACTAGTTAACTAGTACA  1 
+VIBHAR_02758_p-351(trpE) (    1) TGCACTAGTTAACTAGTACA  1 
+VSAL_I1154_p-339(trpE)   (    1) CGCACTAGTTTACTAGTACG  1 
+VSAK1_01022_p-333(trpE)  (    1) CGAACTAGTTAACTAGTACG  1 
+VF_2602_p-347(trpE)      (    1) CGCACTAGTTTACTAGTACA  1 
+PBPRA2485_p-274(aroF2)   (    1) CGAACTAGTTTACTAGTACG  1 
+VAS14_18374_p-322(aroF2) (    1) TGAACTAGTTTACTAGTACG  1 
+VV1_1834_p-38(COG0733)   (    1) TGTACTAGCTAACTAGTTCA  1 
+VP2337_p-41(COG0733)     (    1) TGTACTAGTTAGCTAGTTCA  1 
+VAS14_21046_p-40(tnaB)   (    1) TGTACTAGTTTACTGATACG  1 
+VIBHAR_03257_p-41(COG073 (    1) TGTACTAGTCAGCTAGTTCA  1 
+VPA0585_p-116(trpB2)     (    1) CGTACTATTTAACTAGTTCA  1 
+VC2283_p-41(COG0733)     (    1) TGTACTAGTTAACTAGTGTG  1 
+VS_1966_p-317(trpE)      (    1) AAAACTAGTTAACTAGTACA  1 
+VAS14_18534_p-73(aroA)   (    1) GGTACTAGCTAACTGATGCA  1 
+VSAK1_12140_p-22(COG0733 (    1) TGTACCAGCAAACTAGTACG  1 
+VF_0660_p-25(COG0733)    (    1) TGTACTAGTTGAGTGATACA  1 
+VV20854_p-192(tnaA)      (    1) CATACTAGTTTATTAGTACA  1 
+PBPRA2452_p-71(aroA)     (    1) GGTACTAGCGAACTGATGCA  1 
+VSAK1_04012_p-160(aroA)  (    1) AGTACTAGCTGGCTAGTACT  1 
+VSAL_I0762_p-23(COG0733) (    1) TGTACTAGTGTGGTGATACA  1 
+VS_0706_p-41(COG0733)    (    1) TGTACTTCTCAACTAGTTCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24 bayes= 1.45943 E= 2.1e-148 
+  -185     81   -120     66 
+  -185  -1123    225  -1123 
+   -86     40  -1123     88 
+   173  -1123  -1123  -1123 
+ -1123    239  -1123  -1123 
+ -1123   -219  -1123    160 
+   167  -1123  -1123   -292 
+ -1123   -219    225   -292 
+ -1123     13  -1123    132 
+  -285   -119   -120    132 
+   105  -1123   -120    -12 
+   147  -1123    -21  -1123 
+ -1123    220   -120   -292 
+ -1123  -1123  -1123    166 
+   139  -1123     12  -1123 
+   -53  -1123    204  -1123 
+ -1123  -1123  -1123    166 
+   114  -1123    -62    -60 
+ -1123    233  -1123   -292 
+    95  -1123     96   -292 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 24 E= 2.1e-148 
+ 0.083333  0.333333  0.083333  0.500000 
+ 0.083333  0.000000  0.916667  0.000000 
+ 0.166667  0.250000  0.000000  0.583333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.041667  0.000000  0.958333 
+ 0.958333  0.000000  0.000000  0.041667 
+ 0.000000  0.041667  0.916667  0.041667 
+ 0.000000  0.208333  0.000000  0.791667 
+ 0.041667  0.083333  0.083333  0.791667 
+ 0.625000  0.000000  0.083333  0.291667 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.000000  0.875000  0.083333  0.041667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.791667  0.000000  0.208333  0.000000 
+ 0.208333  0.000000  0.791667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.666667  0.000000  0.125000  0.208333 
+ 0.000000  0.958333  0.000000  0.041667 
+ 0.583333  0.000000  0.375000  0.041667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YGTACTAGTTAACTAGTACR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]G[TC]ACTAG[TC]T[AT]ACT[AG][GA]T[AT]C[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VAS14_18534_p-73(aroA)           1.14e-08  [+1(1.14e-08)]
+VAS14_18374_p-322(aroF2)         1.85e-10  [+1(1.85e-10)]
+VAS14_21046_p-40(tnaB)           1.02e-09  [+1(1.02e-09)]
+VC1174_p-294(trpE)               9.97e-12  [+1(9.97e-12)]
+VC2283_p-41(COG0733)             4.54e-09  [+1(4.54e-09)]
+VF_0660_p-25(COG0733)            1.78e-08  [+1(1.78e-08)]
+VF_2602_p-347(trpE)              4.68e-11  [+1(4.68e-11)]
+VIBHAR_03257_p-41(COG073         2.27e-09  [+1(2.27e-09)]
+VIBHAR_02758_p-351(trpE)         1.47e-11  [+1(1.47e-11)]
+VP2337_p-41(COG0733)             3.47e-10  [+1(3.47e-10)]
+VP1956_p-352(trpE)               9.97e-12  [+1(9.97e-12)]
+VPA0585_p-116(trpB2)             4.11e-09  [+1(4.11e-09)]
+VSAL_I0762_p-23(COG0733)         6.99e-08  [+1(6.99e-08)]
+VSAL_I1154_p-339(trpE)           3.73e-11  [+1(3.73e-11)]
+VSAK1_12140_p-22(COG0733         1.41e-08  [+1(1.41e-08)]
+VSAK1_01022_p-333(trpE)          4.68e-11  [+1(4.68e-11)]
+VSAK1_04012_p-160(aroA)          4.37e-08  [+1(4.37e-08)]
+VS_1966_p-317(trpE)              9.94e-09  [+1(9.94e-09)]
+VS_0706_p-41(COG0733)            1.03e-07  [+1(1.03e-07)]
+VV1_1834_p-38(COG0733)           2.49e-10  [+1(2.49e-10)]
+VV20854_p-192(tnaA)              2.62e-08  [+1(2.62e-08)]
+VV1_3064_p-355(trpE)             1.47e-11  [+1(1.47e-11)]
+PBPRA2485_p-274(aroF2)           1.59e-10  [+1(1.59e-10)]
+PBPRA2452_p-71(aroA)             3.89e-08  [+1(3.89e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,919 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/KdgR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b3526_p-86(kdgK)         1.0000     21  b1702_p-222(ppsA)        1.0000     21  
+b1703_p-131(ppsR)        1.0000     21  b2843_p-63(kduI)         1.0000     21  
+b2843_p-130(kduI)        1.0000     21  b3909_p-140(kdgT)        1.0000     21  
+b3090_p-64(ygjV)         1.0000     21  b1676_p-286(pykF)        1.0000     21  
+b1985_p-7(yeeO)          1.0000     21  b4252_p-35(yjgK)         1.0000     21  
+b1850_p-359(eda)         1.0000     21  STM4054_p-126(rhiA)      1.0000     21  
+STM1349_p-226(ppsA)      1.0000     21  STM1348_p-131(ppsR)      1.0000     21  
+STM3018_p-58(kduI)       1.0000     21  STM3018_p-123(kduI)      1.0000     21  
+STM4395_p-34(kdgX)       1.0000     21  STM3612_p-85(kdgK)       1.0000     21  
+STM1378_p-286(pykF)      1.0000     21  STM2013_p-7(yeeO)        1.0000     21  
+STM4263_p-120(yjcB)      1.0000     21  STM4468_p-32(yjgK)       1.0000     21  
+STM1884_p-360(eda)       1.0000     21  STM1931_p-231(tpfX)      1.0000     21  
+CKO_01709_p-286(pykF)    1.0000     21  CKO_04968_p-87(kdgK)     1.0000     21  
+CKO_01725_p-249(ppsA)    1.0000     21  CKO_01727_p-107(ppsR)    1.0000     21  
+CKO_04220_p-51(kduI)     1.0000     21  CKO_04220_p-119(kduI)    1.0000     21  
+CKO_01081_p-190(rhiT)    1.0000     21  CKO_03627_p-31(kdgX)     1.0000     21  
+CKO_04218_p-38(kdgF)     1.0000     21  CKO_01753_p-99(kduD2)    1.0000     21  
+CKO_03092_p-147(kdgT)    1.0000     21  CKO_00837_p-7(yeeO)      1.0000     21  
+CKO_04899_p-138(rhiA)    1.0000     21  CKO_04899_p-50(rhiA)     1.0000     21  
+CKO_03830_p-121(yjcB)    1.0000     21  CKO_03757_p-231(kdgT)    1.0000     21  
+CKO_03553_p-33(yjgK)     1.0000     21  CKO_01049_p-199(tpfX)    1.0000     21  
+CKO_01116_p-360(eda)     1.0000     21  KPN_02133_p-285(pykF)    1.0000     21  
+KPN_03876_p-87(kdgK)     1.0000     21  KPN_02160_p-254(ppsA)    1.0000     21  
+KPN_02161_p-97(ppsR)     1.0000     21  KPN_03265_p-139(kduD)    1.0000     21  
+KPN_03265_p-207(kduD)    1.0000     21  KPN_03266_p-299(ogl)     1.0000     21  
+KPN_03256_p-211(togM)    1.0000     21  KPN_03256_p-288(togM)    1.0000     21  
+KPN_02390_p-200(rhiT)    1.0000     21  KPN_03255_p-39(kdgF)     1.0000     21  
+KPN_04658_p-33(yjgK)     1.0000     21  KPN_01240_p-104(kduD2)   1.0000     21  
+KPN_03267_p-37(kdgM)     1.0000     21  KPN_03267_p-58(kdgM)     1.0000     21  
+KPN_02398_p-46(togT)     1.0000     21  KPN_03266_p-103(ogl)     1.0000     21  
+KPN_02343_p-161(kdgR)    1.0000     21  KPN_02447_p-40(yeeO)     1.0000     21  
+KPN_04460_p-113(yjcB)    1.0000     21  KPN_02365_p-361(eda)     1.0000     21  
+KPN_02601_p-102(setC)    1.0000     21  Ent638_1768_p-286(pykF)  1.0000     21  
+Ent638_1745_p-249(ppsA)  1.0000     21  Ent638_1744_p-107(ppsR)  1.0000     21  
+Ent638_3296_p-60(kduI)   1.0000     21  Ent638_3296_p-127(kduI)  1.0000     21  
+Ent638_3297_p-105(ogl)   1.0000     21  Ent638_3289_p-226(togM)  1.0000     21  
+Ent638_2444_p-189(rhiT)  1.0000     21  Ent638_0375_p-33(kdgX)   1.0000     21  
+Ent638_3287_p-38(kdgF)   1.0000     21  Ent638_3298_p-33(kdgM)   1.0000     21  
+Ent638_3298_p-54(kdgM)   1.0000     21  Ent638_0453_p-34(yjgK)   1.0000     21  
+Ent638_1716_p-94(kduD2)  1.0000     21  Ent638_3923_p-84(kdgK)   1.0000     21  
+Ent638_2574_p-74(yeeO)   1.0000     21  Ent638_3876_p-134(rhiA)  1.0000     21  
+Ent638_3876_p-49(rhiA)   1.0000     21  Ent638_0314_p-232(kdgT)  1.0000     21  
+Ent638_4134_p-60(pelX)   1.0000     21  Ent638_4134_p-102(pelX)  1.0000     21  
+Ent638_2764_p-109(setC)  1.0000     21  Ent638_2477_p-42(tpfX)   1.0000     21  
+Ent638_0483_p-304(kdgM)  1.0000     21  Ent638_2419_p-362(eda)   1.0000     21  
+y3757_p-149(pemA)        1.0000     21  y1880_p-103(kdgM)        1.0000     21  
+y1887_p-201(kduI)        1.0000     21  y1875_p-96(ogl)          1.0000     21  
+y1885_p-76(pelW)         1.0000     21  y1885_p-152(pelW)        1.0000     21  
+y1734_p-22(kdgX)         1.0000     21  y3838_p-225(kdgK)        1.0000     21  
+y1888_p-155(kdgF)        1.0000     21  y0739_p-41(yjgK)         1.0000     21  
+y3597_p-133(ygjV)        1.0000     21  y2961_p-25(togT)         1.0000     21  
+y2961_p-47(togT)         1.0000     21  y2593_p-158(yeeO)        1.0000     21  
+y1876_p-76(kdgR)         1.0000     21  y3833_p-75(kdgM)         1.0000     21  
+Spro_2173_p-134(ppsR)    1.0000     21  Spro_4750_p-105(kdgK)    1.0000     21  
+Spro_3106_p-39(yeeO)     1.0000     21  Spro_2174_p-364(ppsA)    1.0000     21  
+Spro_2187_p-203(pykF)    1.0000     21  ECA2730_p-88(setC)       1.0000     21  
+ECA1095_p-152(pehA)      1.0000     21  ECA4123_p-66(rexZ)       1.0000     21  
+ECA1867_p-259(pykF)      1.0000     21  ECA1742_p-54(spiX)       1.0000     21  
+ECA3252_p-213(paeY)      1.0000     21  ECA1853_p-227(ppsA)      1.0000     21  
+ECA1852_p-94(ppsR)       1.0000     21  ECA2400_p-209(kduI)      1.0000     21  
+ECA3902_p-172(n/a)       1.0000     21  ECA4070_p-2(pelZ)        1.0000     21  
+ECA4067_p-77(pelC)       1.0000     21  ECA4067_p-99(pelC)       1.0000     21  
+ECA2730_p-88(sotA)       1.0000     21  ECA4123_p-138(rexZ)      1.0000     21  
+ECA2426_p-180(ogl)       1.0000     21  ECA2402_p-61(pelW)       1.0000     21  
+ECA3560_p-167(rhiT)      1.0000     21  ECA2402_p-139(pelW)      1.0000     21  
+ECA2399_p-174(kdgF)      1.0000     21  ECA4360_p-125(kdgK)      1.0000     21  
+ECA0383_p-41(yjgK)       1.0000     21  ECA1095_p-65(pehA)       1.0000     21  
+ECA1095_p-100(pehA)      1.0000     21  ECA0357_p-239(rhiA)      1.0000     21  
+ECA0817_p-38(togT)       1.0000     21  ECA0648_p-70(ygjV)       1.0000     21  
+ECA0817_p-60(togT)       1.0000     21  ECA0732_p-76(sghX)       1.0000     21  
+ECA0732_p-98(sghX)       1.0000     21  ECA2762_p-140(yeeO)      1.0000     21  
+ECA1190_p-37(pehN)       1.0000     21  ECA4069_p-102(pelC)      1.0000     21  
+ECA4069_p-289(pelC)      1.0000     21  ECA3112_p-291(pelF)      1.0000     21  
+ECA4067_p-231(pelC)      1.0000     21  ECA4510_p-66(pelX)       1.0000     21  
+ECA2407_p-153(kdgM)      1.0000     21  ECA4510_p-113(pelX)      1.0000     21  
+ECA4510_p-130(pelX)      1.0000     21  ECA2137_p-349(ECA2137)   1.0000     21  
+ECA0102_p-85(tpfX)       1.0000     21  ECA3785_p-32(dhfX)       1.0000     21  
+ETAE_1898_p-129(kduI)    1.0000     21  ETAE_3377_p-91(kdgK)     1.0000     21  
+ETAE_3112_p-39(yjgK)     1.0000     21  ETAE_1567_p-46(kdgR)     1.0000     21  
+ETAE_2529_p-70(aslB)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/KdgR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/KdgR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=      159    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            3339    N=             159
+sample: seed=            0    hsfrac=          0
+        searchsize=   3339    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.379 C 0.121 G 0.118 T 0.382 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.379 C 0.121 G 0.118 T 0.382 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAWTRAAACRNYGTTTYAWTT MEME-1	width =  21  sites = 159  llr = 1858  E-value = 1.6e-734
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  775149a9:5212::::8423
+pos.-specific     C  ::11:::18:23:::16:11:
+probability       G  ::::61:::4217::::1:::
+matrix            T  3247::::2135:aa941576
+
+         bits    3.1                      
+                 2.8                      
+                 2.5                      
+                 2.2                      
+Relative         1.9         *            
+Entropy          1.5         *   *        
+(16.9 bits)      1.2     * * *   *****    
+                 0.9     ******  *****    
+                 0.6     ******  *****    
+                 0.3 ** *************** **
+                 0.0 ---------------------
+
+Multilevel           AAATGAAACATTGTTTCATTT
+consensus            TTT A   TGACA   T AAA
+sequence                       G          
+                               C          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+ECA0648_p-70(ygjV)            1  1.17e-10          . AAATAAAACGGCGTTTCATTT           
+ECA4510_p-66(pelX)            1  1.37e-09          . AAAAGAAACAGCGTTTCATTT           
+CKO_03553_p-33(yjgK)          1  1.37e-09          . AAATGAAACGTTGTTTTATTT           
+STM3018_p-123(kduI)           1  1.37e-09          . AAATGAAACGTTGTTTTATTT           
+b3909_p-140(kdgT)             1  1.37e-09          . AAATAAAACAGCGTTTCAATT           
+b4252_p-35(yjgK)              1  1.70e-09          . AAATGAAACGTTGTTTTAATT           
+ECA1867_p-259(pykF)           1  5.64e-09          . ATACGGAACGTCGTTTCAATT           
+b2843_p-63(kduI)              1  5.64e-09          . AAACGAAACAGTGTTTCACTA           
+KPN_03255_p-39(kdgF)          1  6.79e-09          . AAATGAAACAATGTTTCACTT           
+CKO_04220_p-119(kduI)         1  6.79e-09          . AAATGAAACAACGTTTTATTT           
+Ent638_4134_p-60(pelX)        1  8.15e-09          . AAAAGAAACGACGTTTCATCT           
+b2843_p-130(kduI)             1  8.15e-09          . AAATGAAACATTGTTTTATTT           
+y2961_p-25(togT)              1  9.75e-09          . AAATGAAACATTGTTTTAATT           
+ECA0102_p-85(tpfX)            1  1.65e-08          . TAATAAAACATCGTTTCATTT           
+Spro_4750_p-105(kdgK)         1  1.96e-08          . AAATAAAACGTTGTTTTATTT           
+Ent638_1768_p-286(pykF)       1  1.96e-08          . TTTTGAAACGCCGTTTCCATT           
+KPN_03265_p-207(kduD)         1  2.30e-08          . AAATGAAACATCGTTTTAAAT           
+CKO_04220_p-51(kduI)          1  2.71e-08          . AAACGGAACGGTGTTTCGCCT           
+STM4468_p-32(yjgK)            1  2.71e-08          . AAATAAAACGCTGTTTTAACT           
+KPN_01240_p-104(kduD2)        1  3.74e-08          . AATCAAAACATTGTTTCATTT           
+ECA3785_p-32(dhfX)            1  4.38e-08          . AAAAGAAACGATGTTTTATTT           
+Ent638_0453_p-34(yjgK)        1  4.38e-08          . AAATGAAACATTGTTTTATAT           
+Ent638_0375_p-33(kdgX)        1  5.10e-08          . AATTGAAACGTCATTTTATTT           
+KPN_03266_p-299(ogl)          1  5.10e-08          . ATTTAAAACGATGTTTCATTT           
+ECA2426_p-180(ogl)            1  5.93e-08          . AAATGAAACATTGTTTCTATA           
+y1875_p-96(ogl)               1  5.93e-08          . AAATGAAACATTGTTTCTATA           
+ECA1852_p-94(ppsR)            1  7.98e-08          . TAATGAAATGGCGTTTTAATA           
+CKO_01753_p-99(kduD2)         1  7.98e-08          . TTATAAAACACTGTTTCATTT           
+CKO_03757_p-231(kdgT)         1  9.23e-08          . AACTAAAACAGTGTTTTATTT           
+y1734_p-22(kdgX)              1  1.07e-07          . TAACGAAACATCATTTCATTT           
+Ent638_2444_p-189(rhiT)       1  1.07e-07          . AAAAGAAACGCTGTTTTATAA           
+KPN_02365_p-361(eda)          1  1.07e-07          . TATTGGACCGCCGTTTCAAAA           
+KPN_04658_p-33(yjgK)          1  1.07e-07          . AAATGAAATGCTGTTTTATAT           
+CKO_04218_p-38(kdgF)          1  1.07e-07          . AGTTGAAACATTGTTTCAATA           
+STM1884_p-360(eda)            1  1.07e-07          . TATTGGACCGCCGTTTCAAAA           
+b3526_p-86(kdgK)              1  1.07e-07          . TAATGGAACACTGTTTTAATA           
+ETAE_3377_p-91(kdgK)          1  1.23e-07          . AAACAGAACGTTGTTTTATTT           
+KPN_03256_p-211(togM)         1  1.23e-07          . AATTAAAACGGTGTTTTATAA           
+KPN_03876_p-87(kdgK)          1  1.23e-07          . TAATGGAACGATGTTTTAATA           
+CKO_04968_p-87(kdgK)          1  1.23e-07          . TAATGGAACGATGTTTTAATA           
+Ent638_3296_p-127(kduI)       1  1.41e-07          . AACTGAAACAACGTTTTAAAT           
+Ent638_3296_p-60(kduI)        1  1.41e-07          . AATCGGAACATTGTTTCGTTA           
+CKO_03830_p-121(yjcB)         1  1.41e-07          . AACAGAAACGTTGTTTCATTC           
+ETAE_1898_p-129(kduI)         1  1.62e-07          . AATCAAAACAGCATTTCATTT           
+y0739_p-41(yjgK)              1  1.62e-07          . TAATAAAACAGCATTTCATTT           
+CKO_01081_p-190(rhiT)         1  1.62e-07          . AATAGAAACGCTGTTTTATAA           
+ECA2402_p-61(pelW)            1  1.86e-07          . AATCAAAACAGTGTTTCTATT           
+ECA1853_p-227(ppsA)           1  1.86e-07          . TATTAAAACGCCATTTCATTA           
+y3597_p-133(ygjV)             1  1.86e-07          . ATATGAAACGGTGTTCTGTTT           
+Ent638_3289_p-226(togM)       1  1.86e-07          . AATTAAAACGCCGTTTTACAA           
+b1850_p-359(eda)              1  1.86e-07          . TATTGGACCGGTGTTTCAAAA           
+Spro_3106_p-39(yeeO)          1  2.13e-07          . ATTTGAAATGTTGTTTCACTT           
+Ent638_2419_p-362(eda)        1  2.13e-07          . TATTGGACCGCTGTTTCAAAA           
+KPN_03256_p-288(togM)         1  2.13e-07          . TTTTGAAACATCGTTTCGACT           
+ECA4510_p-130(pelX)           1  2.43e-07          . AAATGACACGGTGTTTCATAA           
+y1888_p-155(kdgF)             1  2.43e-07          . AAATGAAATGATGTTTTATTA           
+Ent638_0314_p-232(kdgT)       1  2.43e-07          . AACTAAAACATTGTTTTATTT           
+Ent638_3287_p-38(kdgF)        1  2.43e-07          . AATTAAAACAATGTTTCACTA           
+CKO_01709_p-286(pykF)         1  2.43e-07          . TTTTGAAACGCTGTTTTCATT           
+Ent638_3923_p-84(kdgK)        1  2.77e-07          . TTATGGAACGACGTTTTAATA           
+b3090_p-64(ygjV)              1  2.77e-07          . ATAAAAAACGGCGTTTCATAA           
+ECA2400_p-209(kduI)           1  3.15e-07          . AAATAAAACATTATTTCATTT           
+KPN_04460_p-113(yjcB)         1  3.15e-07          . AACAGAAATGGCGTTTCATCA           
+STM3018_p-58(kduI)            1  3.15e-07          . AATCAAAACAGTGTTTTGATT           
+ECA2399_p-174(kdgF)           1  3.59e-07          . AAATGAAATAATGTTTTATTT           
+y3757_p-149(pemA)             1  3.59e-07          . AAATGGAATTGCGTTTCATTT           
+STM2013_p-7(yeeO)             1  3.59e-07          . TATTGAAATGTGGTTTCAACT           
+y1887_p-201(kduI)             1  4.07e-07          . TAATAAAACATCATTTCATTT           
+KPN_03265_p-139(kduD)         1  4.07e-07          . AAACGGAACTCTGTTTTATTT           
+STM4263_p-120(yjcB)           1  4.07e-07          . AATAGAAACAATGTTTCATTC           
+ECA0817_p-38(togT)            1  4.61e-07          . AACTGAAATATTGTTTCATAT           
+KPN_03266_p-103(ogl)          1  4.61e-07          . TAATGAAACAATGTTTTGATA           
+CKO_01116_p-360(eda)          1  4.61e-07          . TATTGGACCGTTGTTTCAAAA           
+ECA4360_p-125(kdgK)           1  5.21e-07          . AAATAAAACATCGTTTCAAGA           
+y1885_p-76(pelW)              1  5.21e-07          . GATTGAAACGATGTTTCTATT           
+KPN_02447_p-40(yeeO)          1  5.21e-07          . ATTTGAAATGTTGTTTCAACA           
+b1985_p-7(yeeO)               1  5.21e-07          . ATTTGAAATGTGGTTTCACTT           
+b1703_p-131(ppsR)             1  5.21e-07          . AAATGAAATGCTGTTTTCATA           
+Ent638_3297_p-105(ogl)        1  6.65e-07          . CATTGAAACGTCGTTTTGATA           
+STM1931_p-231(tpfX)           1  6.65e-07          . TTATGAAACATTGTTTCAGAT           
+STM3612_p-85(kdgK)            1  6.65e-07          . TAATGGACCGATGTTTTAATA           
+ETAE_3112_p-39(yjgK)          1  7.50e-07          . AAATAAAACGCAGTTTTATAA           
+CKO_03092_p-147(kdgT)         1  7.50e-07          . AAATGAAACATAGTTTTGTTA           
+CKO_01725_p-249(ppsA)         1  7.50e-07          . AAATGAAACGCTATTTTTATA           
+STM4054_p-126(rhiA)           1  7.50e-07          . ATGTGAAACAGGGTTTCAAAA           
+ETAE_2529_p-70(aslB)          1  8.44e-07          . ATAAGAAACATCGTTTTAAAT           
+ECA0732_p-98(sghX)            1  8.44e-07          . AAATAAAACCTCGTTTCTTTT           
+CKO_04899_p-138(rhiA)         1  8.44e-07          . TTTTAAACCATCGTTTCAATT           
+ECA0357_p-239(rhiA)           1  9.48e-07          . ATATAAAACAGCATTTCATAT           
+ECA4123_p-138(rexZ)           1  9.48e-07          . TAATAAAACTATGTTTCATTT           
+y3833_p-75(kdgM)              1  9.48e-07          . AAATAAAATACTGTTTCATAA           
+y1880_p-103(kdgM)             1  9.48e-07          . AAATGAAACATTGCTTCTTTT           
+Ent638_4134_p-102(pelX)       1  9.48e-07          . AAGCAAAACAACGTTTTAATT           
+Ent638_1745_p-249(ppsA)       1  9.48e-07          . AAATGAAATGGTGTTTTTAAT           
+KPN_03267_p-37(kdgM)          1  9.48e-07          . AAACGAAATGTCATTTTATTT           
+CKO_00837_p-7(yeeO)           1  9.48e-07          . ATTTGAAATGAGGTTTCAACT           
+y3838_p-225(kdgK)             1  1.06e-06          . ATTTAAAACACCGTTTTAATC           
+KPN_03267_p-58(kdgM)          1  1.06e-06          . AAATAAAATGATGTTTCATAA           
+KPN_02133_p-285(pykF)         1  1.06e-06          . ATTTGAAACGAGGTTTTTATT           
+ECA2137_p-349(ECA2137)        1  1.19e-06          . AAATGAAACAATGCTTCCTTT           
+ECA1190_p-37(pehN)            1  1.19e-06          . TATTAAAACGATATTTCATTA           
+ECA0383_p-41(yjgK)            1  1.19e-06          . TTGTAAAACAGGGTTTCATTT           
+Spro_2173_p-134(ppsR)         1  1.19e-06          . ATTTGAAATAGTGTTTTACTT           
+KPN_02161_p-97(ppsR)          1  1.19e-06          . AACAAAAATAGCGTTTCAATT           
+CKO_01049_p-199(tpfX)         1  1.19e-06          . TTTTGAAATGATGTTTCATAT           
+CKO_01727_p-107(ppsR)         1  1.34e-06          . TATAAAAATAGCGTTTCATTT           
+KPN_02398_p-46(togT)          1  1.49e-06          . TATAAAAACAGTGTTTCAAAA           
+STM1378_p-286(pykF)           1  1.49e-06          . TTTTGAAACAGGGTTTTCATT           
+STM4395_p-34(kdgX)            1  1.49e-06          . AAATAAAACATTATTTTAATT           
+b1676_p-286(pykF)             1  1.49e-06          . TTTTGAAACGCTGTTTTTGTT           
+Ent638_2477_p-42(tpfX)        1  1.67e-06          . GGATGAAACGCTGTTTTAAAT           
+Ent638_2574_p-74(yeeO)        1  1.67e-06          . ATTTGAAATGTAGTTTCAACT           
+Ent638_3298_p-33(kdgM)        1  1.67e-06          . AAACGAAATGACATTTTAATT           
+b1702_p-222(ppsA)             1  1.86e-06          . TATGAAAACAGCATTTCATTT           
+Ent638_1716_p-94(kduD2)       1  2.08e-06          . TTTTAAAACATCATTTCATTT           
+KPN_02601_p-102(setC)         1  2.08e-06          . TTTTGAAACGCCTTTTTAATT           
+ECA2402_p-139(pelW)           1  2.31e-06          . AATCAAAACAACGTTCCGACT           
+y1885_p-152(pelW)             1  2.31e-06          . AATCAAAACAACGTTCCGACT           
+KPN_02160_p-254(ppsA)         1  2.31e-06          . AATTGAAACGCTATTTTTGTT           
+Ent638_1744_p-107(ppsR)       1  2.57e-06          . ATTAAAAACACCATTTCATTT           
+KPN_02343_p-161(kdgR)         1  2.57e-06          . AAATGAAACGGTTTTTTGAAT           
+ECA2762_p-140(yeeO)           1  2.86e-06          . AATAGAAACGTCATTTTAAAA           
+Spro_2174_p-364(ppsA)         1  3.17e-06          . AAgTaAAACAcTaTTTCAaaT           
+ETAE_1567_p-46(kdgR)          1  4.76e-06          . TACTGAAACAGAGGTTCGTTT           
+ECA3112_p-291(pelF)           1  5.25e-06          . TAATGAAACCATGTTTTACCA           
+Ent638_3876_p-49(rhiA)        1  5.25e-06          . AACTAAAACAACGTTTTAACG           
+ECA1742_p-54(spiX)            1  6.39e-06          . AATTGAAATACAGTTTTAAAA           
+ECA3902_p-172(n/a)            1  7.03e-06          . TATTGAAACGTGATTTCTATC           
+Ent638_3876_p-134(rhiA)       1  7.03e-06          . TTTCAAACCATCGTTTCAAAA           
+KPN_02390_p-200(rhiT)         1  7.03e-06          . AAGAGAAATGCTGTTTTATAA           
+CKO_04899_p-50(rhiA)          1  8.50e-06          . AACTAAAACAATGTTTTAACG           
+STM1348_p-131(ppsR)           1  8.50e-06          . AAATGAAACACACTTTTCATT           
+ECA2407_p-153(kdgM)           1  9.33e-06          . ATTTGAAACCCTATTTTACTT           
+CKO_03627_p-31(kdgX)          1  9.33e-06          . AAATAAAACATTATTTCAAAG           
+Ent638_3298_p-54(kdgM)        1  1.02e-05          . AAATAAAATGCAGTTCCATAA           
+ECA2730_p-88(sotA)            1  1.34e-05          . TAATGAAACAAGATTTCTGTT           
+ECA2730_p-88(setC)            1  1.34e-05          . TAATGAAACAAGATTTCTGTT           
+Ent638_0483_p-304(kdgM)       1  1.34e-05          . TCTCAAAACATCATTTCATTT           
+Ent638_2764_p-109(setC)       1  1.34e-05          . TTTTGAAATGCTATTTTGATT           
+ECA3252_p-213(paeY)           1  1.61e-05          . TATTAAAATAACATTTCACTT           
+y1876_p-76(kdgR)              1  1.61e-05          . AATAAAACCATTGTTCTATTT           
+y2593_p-158(yeeO)             1  1.61e-05          . TCATGAAACTATGTTCCATTT           
+ECA4069_p-289(pelC)           1  1.91e-05          . AAACGAAATATAATTTTATTT           
+STM1349_p-226(ppsA)           1  5.50e-05          . AATGAAAAGTGTGTTTCATTT           
+ECA4069_p-102(pelC)           1  1.41e-04          . CAATAAACCTTGATTTCATTT           
+ECA3560_p-167(rhiT)           1  1.51e-04          . AGTTAAAATGCCTTTTTATAA           
+ECA0732_p-76(sghX)            1  1.62e-04          . TATCACAATAAGGTTCCATTT           
+ECA0817_p-60(togT)            1  1.73e-04          . TAAAGAAATGATAGTTCAATC           
+ECA4070_p-2(pelZ)             1  1.73e-04          . AAATGAAACGTTCTCTTCTGT           
+y2961_p-47(togT)              1  1.97e-04          . AAAGAAAACAGTTATTCATTA           
+ECA4067_p-99(pelC)            1  2.11e-04          . AGACAAACCTTAATTTCATTT           
+ECA1095_p-65(pehA)            1  2.90e-04          . AAAGGAAGCGTAATTCCTTTT           
+ECA4067_p-77(pelC)            1  2.90e-04          . TGTTGAAACAGCCATTTTATT           
+Spro_2187_p-203(pykF)         1  3.28e-04          . AAtaacAACAcatTTTCATcT           
+ECA4067_p-231(pelC)           1  3.70e-04          . AAATAGAAATCAGTTTCTATT           
+ECA4123_p-66(rexZ)            1  3.70e-04          . AAATAAATTACCGTTGCGTTA           
+ECA1095_p-100(pehA)           1  1.02e-03          . TTCTATAAAAGTGTTTTATTT           
+ECA4510_p-113(pelX)           1  1.60e-03          . ATAAAAAACAGACTTTATTTT           
+ECA1095_p-152(pehA)           1  1.68e-03          . TATGTAAATGGACTTTTATTA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ECA0648_p-70(ygjV)                1.2e-10  [+1]
+ECA4510_p-66(pelX)                1.4e-09  [+1]
+CKO_03553_p-33(yjgK)              1.4e-09  [+1]
+STM3018_p-123(kduI)               1.4e-09  [+1]
+b3909_p-140(kdgT)                 1.4e-09  [+1]
+b4252_p-35(yjgK)                  1.7e-09  [+1]
+ECA1867_p-259(pykF)               5.6e-09  [+1]
+b2843_p-63(kduI)                  5.6e-09  [+1]
+KPN_03255_p-39(kdgF)              6.8e-09  [+1]
+CKO_04220_p-119(kduI)             6.8e-09  [+1]
+Ent638_4134_p-60(pelX)            8.1e-09  [+1]
+b2843_p-130(kduI)                 8.1e-09  [+1]
+y2961_p-25(togT)                  9.8e-09  [+1]
+ECA0102_p-85(tpfX)                1.7e-08  [+1]
+Spro_4750_p-105(kdgK)               2e-08  [+1]
+Ent638_1768_p-286(pykF)             2e-08  [+1]
+KPN_03265_p-207(kduD)             2.3e-08  [+1]
+CKO_04220_p-51(kduI)              2.7e-08  [+1]
+STM4468_p-32(yjgK)                2.7e-08  [+1]
+KPN_01240_p-104(kduD2)            3.7e-08  [+1]
+ECA3785_p-32(dhfX)                4.4e-08  [+1]
+Ent638_0453_p-34(yjgK)            4.4e-08  [+1]
+Ent638_0375_p-33(kdgX)            5.1e-08  [+1]
+KPN_03266_p-299(ogl)              5.1e-08  [+1]
+ECA2426_p-180(ogl)                5.9e-08  [+1]
+y1875_p-96(ogl)                   5.9e-08  [+1]
+ECA1852_p-94(ppsR)                  8e-08  [+1]
+CKO_01753_p-99(kduD2)               8e-08  [+1]
+CKO_03757_p-231(kdgT)             9.2e-08  [+1]
+y1734_p-22(kdgX)                  1.1e-07  [+1]
+Ent638_2444_p-189(rhiT)           1.1e-07  [+1]
+KPN_02365_p-361(eda)              1.1e-07  [+1]
+KPN_04658_p-33(yjgK)              1.1e-07  [+1]
+CKO_04218_p-38(kdgF)              1.1e-07  [+1]
+STM1884_p-360(eda)                1.1e-07  [+1]
+b3526_p-86(kdgK)                  1.1e-07  [+1]
+ETAE_3377_p-91(kdgK)              1.2e-07  [+1]
+KPN_03256_p-211(togM)             1.2e-07  [+1]
+KPN_03876_p-87(kdgK)              1.2e-07  [+1]
+CKO_04968_p-87(kdgK)              1.2e-07  [+1]
+Ent638_3296_p-127(kduI)           1.4e-07  [+1]
+Ent638_3296_p-60(kduI)            1.4e-07  [+1]
+CKO_03830_p-121(yjcB)             1.4e-07  [+1]
+ETAE_1898_p-129(kduI)             1.6e-07  [+1]
+y0739_p-41(yjgK)                  1.6e-07  [+1]
+CKO_01081_p-190(rhiT)             1.6e-07  [+1]
+ECA2402_p-61(pelW)                1.9e-07  [+1]
+ECA1853_p-227(ppsA)               1.9e-07  [+1]
+y3597_p-133(ygjV)                 1.9e-07  [+1]
+Ent638_3289_p-226(togM)           1.9e-07  [+1]
+b1850_p-359(eda)                  1.9e-07  [+1]
+Spro_3106_p-39(yeeO)              2.1e-07  [+1]
+Ent638_2419_p-362(eda)            2.1e-07  [+1]
+KPN_03256_p-288(togM)             2.1e-07  [+1]
+ECA4510_p-130(pelX)               2.4e-07  [+1]
+y1888_p-155(kdgF)                 2.4e-07  [+1]
+Ent638_0314_p-232(kdgT)           2.4e-07  [+1]
+Ent638_3287_p-38(kdgF)            2.4e-07  [+1]
+CKO_01709_p-286(pykF)             2.4e-07  [+1]
+Ent638_3923_p-84(kdgK)            2.8e-07  [+1]
+b3090_p-64(ygjV)                  2.8e-07  [+1]
+ECA2400_p-209(kduI)               3.2e-07  [+1]
+KPN_04460_p-113(yjcB)             3.2e-07  [+1]
+STM3018_p-58(kduI)                3.2e-07  [+1]
+ECA2399_p-174(kdgF)               3.6e-07  [+1]
+y3757_p-149(pemA)                 3.6e-07  [+1]
+STM2013_p-7(yeeO)                 3.6e-07  [+1]
+y1887_p-201(kduI)                 4.1e-07  [+1]
+KPN_03265_p-139(kduD)             4.1e-07  [+1]
+STM4263_p-120(yjcB)               4.1e-07  [+1]
+ECA0817_p-38(togT)                4.6e-07  [+1]
+KPN_03266_p-103(ogl)              4.6e-07  [+1]
+CKO_01116_p-360(eda)              4.6e-07  [+1]
+ECA4360_p-125(kdgK)               5.2e-07  [+1]
+y1885_p-76(pelW)                  5.2e-07  [+1]
+KPN_02447_p-40(yeeO)              5.2e-07  [+1]
+b1985_p-7(yeeO)                   5.2e-07  [+1]
+b1703_p-131(ppsR)                 5.2e-07  [+1]
+Ent638_3297_p-105(ogl)            6.6e-07  [+1]
+STM1931_p-231(tpfX)               6.6e-07  [+1]
+STM3612_p-85(kdgK)                6.6e-07  [+1]
+ETAE_3112_p-39(yjgK)              7.5e-07  [+1]
+CKO_03092_p-147(kdgT)             7.5e-07  [+1]
+CKO_01725_p-249(ppsA)             7.5e-07  [+1]
+STM4054_p-126(rhiA)               7.5e-07  [+1]
+ETAE_2529_p-70(aslB)              8.4e-07  [+1]
+ECA0732_p-98(sghX)                8.4e-07  [+1]
+CKO_04899_p-138(rhiA)             8.4e-07  [+1]
+ECA0357_p-239(rhiA)               9.5e-07  [+1]
+ECA4123_p-138(rexZ)               9.5e-07  [+1]
+y3833_p-75(kdgM)                  9.5e-07  [+1]
+y1880_p-103(kdgM)                 9.5e-07  [+1]
+Ent638_4134_p-102(pelX)           9.5e-07  [+1]
+Ent638_1745_p-249(ppsA)           9.5e-07  [+1]
+KPN_03267_p-37(kdgM)              9.5e-07  [+1]
+CKO_00837_p-7(yeeO)               9.5e-07  [+1]
+y3838_p-225(kdgK)                 1.1e-06  [+1]
+KPN_03267_p-58(kdgM)              1.1e-06  [+1]
+KPN_02133_p-285(pykF)             1.1e-06  [+1]
+ECA2137_p-349(ECA2137)            1.2e-06  [+1]
+ECA1190_p-37(pehN)                1.2e-06  [+1]
+ECA0383_p-41(yjgK)                1.2e-06  [+1]
+Spro_2173_p-134(ppsR)             1.2e-06  [+1]
+KPN_02161_p-97(ppsR)              1.2e-06  [+1]
+CKO_01049_p-199(tpfX)             1.2e-06  [+1]
+CKO_01727_p-107(ppsR)             1.3e-06  [+1]
+KPN_02398_p-46(togT)              1.5e-06  [+1]
+STM1378_p-286(pykF)               1.5e-06  [+1]
+STM4395_p-34(kdgX)                1.5e-06  [+1]
+b1676_p-286(pykF)                 1.5e-06  [+1]
+Ent638_2477_p-42(tpfX)            1.7e-06  [+1]
+Ent638_2574_p-74(yeeO)            1.7e-06  [+1]
+Ent638_3298_p-33(kdgM)            1.7e-06  [+1]
+b1702_p-222(ppsA)                 1.9e-06  [+1]
+Ent638_1716_p-94(kduD2)           2.1e-06  [+1]
+KPN_02601_p-102(setC)             2.1e-06  [+1]
+ECA2402_p-139(pelW)               2.3e-06  [+1]
+y1885_p-152(pelW)                 2.3e-06  [+1]
+KPN_02160_p-254(ppsA)             2.3e-06  [+1]
+Ent638_1744_p-107(ppsR)           2.6e-06  [+1]
+KPN_02343_p-161(kdgR)             2.6e-06  [+1]
+ECA2762_p-140(yeeO)               2.9e-06  [+1]
+Spro_2174_p-364(ppsA)             3.2e-06  [+1]
+ETAE_1567_p-46(kdgR)              4.8e-06  [+1]
+ECA3112_p-291(pelF)               5.3e-06  [+1]
+Ent638_3876_p-49(rhiA)            5.3e-06  [+1]
+ECA1742_p-54(spiX)                6.4e-06  [+1]
+ECA3902_p-172(n/a)                  7e-06  [+1]
+Ent638_3876_p-134(rhiA)             7e-06  [+1]
+KPN_02390_p-200(rhiT)               7e-06  [+1]
+CKO_04899_p-50(rhiA)              8.5e-06  [+1]
+STM1348_p-131(ppsR)               8.5e-06  [+1]
+ECA2407_p-153(kdgM)               9.3e-06  [+1]
+CKO_03627_p-31(kdgX)              9.3e-06  [+1]
+Ent638_3298_p-54(kdgM)              1e-05  [+1]
+ECA2730_p-88(sotA)                1.3e-05  [+1]
+ECA2730_p-88(setC)                1.3e-05  [+1]
+Ent638_0483_p-304(kdgM)           1.3e-05  [+1]
+Ent638_2764_p-109(setC)           1.3e-05  [+1]
+ECA3252_p-213(paeY)               1.6e-05  [+1]
+y1876_p-76(kdgR)                  1.6e-05  [+1]
+y2593_p-158(yeeO)                 1.6e-05  [+1]
+ECA4069_p-289(pelC)               1.9e-05  [+1]
+STM1349_p-226(ppsA)               5.5e-05  [+1]
+ECA4069_p-102(pelC)               0.00014  [+1]
+ECA3560_p-167(rhiT)               0.00015  [+1]
+ECA0732_p-76(sghX)                0.00016  [+1]
+ECA0817_p-60(togT)                0.00017  [+1]
+ECA4070_p-2(pelZ)                 0.00017  [+1]
+y2961_p-47(togT)                   0.0002  [+1]
+ECA4067_p-99(pelC)                0.00021  [+1]
+ECA1095_p-65(pehA)                0.00029  [+1]
+ECA4067_p-77(pelC)                0.00029  [+1]
+Spro_2187_p-203(pykF)             0.00033  [+1]
+ECA4067_p-231(pelC)               0.00037  [+1]
+ECA4123_p-66(rexZ)                0.00037  [+1]
+ECA1095_p-100(pehA)                 0.001  [+1]
+ECA4510_p-113(pelX)                0.0016  [+1]
+ECA1095_p-152(pehA)                0.0017  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAWTRAAACRNYGTTTYAWTT width=21 seqs=159
+ECA0648_p-70(ygjV)       (    1) AAATAAAACGGCGTTTCATTT  1 
+ECA4510_p-66(pelX)       (    1) AAAAGAAACAGCGTTTCATTT  1 
+CKO_03553_p-33(yjgK)     (    1) AAATGAAACGTTGTTTTATTT  1 
+STM3018_p-123(kduI)      (    1) AAATGAAACGTTGTTTTATTT  1 
+b3909_p-140(kdgT)        (    1) AAATAAAACAGCGTTTCAATT  1 
+b4252_p-35(yjgK)         (    1) AAATGAAACGTTGTTTTAATT  1 
+ECA1867_p-259(pykF)      (    1) ATACGGAACGTCGTTTCAATT  1 
+b2843_p-63(kduI)         (    1) AAACGAAACAGTGTTTCACTA  1 
+KPN_03255_p-39(kdgF)     (    1) AAATGAAACAATGTTTCACTT  1 
+CKO_04220_p-119(kduI)    (    1) AAATGAAACAACGTTTTATTT  1 
+Ent638_4134_p-60(pelX)   (    1) AAAAGAAACGACGTTTCATCT  1 
+b2843_p-130(kduI)        (    1) AAATGAAACATTGTTTTATTT  1 
+y2961_p-25(togT)         (    1) AAATGAAACATTGTTTTAATT  1 
+ECA0102_p-85(tpfX)       (    1) TAATAAAACATCGTTTCATTT  1 
+Spro_4750_p-105(kdgK)    (    1) AAATAAAACGTTGTTTTATTT  1 
+Ent638_1768_p-286(pykF)  (    1) TTTTGAAACGCCGTTTCCATT  1 
+KPN_03265_p-207(kduD)    (    1) AAATGAAACATCGTTTTAAAT  1 
+CKO_04220_p-51(kduI)     (    1) AAACGGAACGGTGTTTCGCCT  1 
+STM4468_p-32(yjgK)       (    1) AAATAAAACGCTGTTTTAACT  1 
+KPN_01240_p-104(kduD2)   (    1) AATCAAAACATTGTTTCATTT  1 
+ECA3785_p-32(dhfX)       (    1) AAAAGAAACGATGTTTTATTT  1 
+Ent638_0453_p-34(yjgK)   (    1) AAATGAAACATTGTTTTATAT  1 
+Ent638_0375_p-33(kdgX)   (    1) AATTGAAACGTCATTTTATTT  1 
+KPN_03266_p-299(ogl)     (    1) ATTTAAAACGATGTTTCATTT  1 
+ECA2426_p-180(ogl)       (    1) AAATGAAACATTGTTTCTATA  1 
+y1875_p-96(ogl)          (    1) AAATGAAACATTGTTTCTATA  1 
+ECA1852_p-94(ppsR)       (    1) TAATGAAATGGCGTTTTAATA  1 
+CKO_01753_p-99(kduD2)    (    1) TTATAAAACACTGTTTCATTT  1 
+CKO_03757_p-231(kdgT)    (    1) AACTAAAACAGTGTTTTATTT  1 
+y1734_p-22(kdgX)         (    1) TAACGAAACATCATTTCATTT  1 
+Ent638_2444_p-189(rhiT)  (    1) AAAAGAAACGCTGTTTTATAA  1 
+KPN_02365_p-361(eda)     (    1) TATTGGACCGCCGTTTCAAAA  1 
+KPN_04658_p-33(yjgK)     (    1) AAATGAAATGCTGTTTTATAT  1 
+CKO_04218_p-38(kdgF)     (    1) AGTTGAAACATTGTTTCAATA  1 
+STM1884_p-360(eda)       (    1) TATTGGACCGCCGTTTCAAAA  1 
+b3526_p-86(kdgK)         (    1) TAATGGAACACTGTTTTAATA  1 
+ETAE_3377_p-91(kdgK)     (    1) AAACAGAACGTTGTTTTATTT  1 
+KPN_03256_p-211(togM)    (    1) AATTAAAACGGTGTTTTATAA  1 
+KPN_03876_p-87(kdgK)     (    1) TAATGGAACGATGTTTTAATA  1 
+CKO_04968_p-87(kdgK)     (    1) TAATGGAACGATGTTTTAATA  1 
+Ent638_3296_p-127(kduI)  (    1) AACTGAAACAACGTTTTAAAT  1 
+Ent638_3296_p-60(kduI)   (    1) AATCGGAACATTGTTTCGTTA  1 
+CKO_03830_p-121(yjcB)    (    1) AACAGAAACGTTGTTTCATTC  1 
+ETAE_1898_p-129(kduI)    (    1) AATCAAAACAGCATTTCATTT  1 
+y0739_p-41(yjgK)         (    1) TAATAAAACAGCATTTCATTT  1 
+CKO_01081_p-190(rhiT)    (    1) AATAGAAACGCTGTTTTATAA  1 
+ECA2402_p-61(pelW)       (    1) AATCAAAACAGTGTTTCTATT  1 
+ECA1853_p-227(ppsA)      (    1) TATTAAAACGCCATTTCATTA  1 
+y3597_p-133(ygjV)        (    1) ATATGAAACGGTGTTCTGTTT  1 
+Ent638_3289_p-226(togM)  (    1) AATTAAAACGCCGTTTTACAA  1 
+b1850_p-359(eda)         (    1) TATTGGACCGGTGTTTCAAAA  1 
+Spro_3106_p-39(yeeO)     (    1) ATTTGAAATGTTGTTTCACTT  1 
+Ent638_2419_p-362(eda)   (    1) TATTGGACCGCTGTTTCAAAA  1 
+KPN_03256_p-288(togM)    (    1) TTTTGAAACATCGTTTCGACT  1 
+ECA4510_p-130(pelX)      (    1) AAATGACACGGTGTTTCATAA  1 
+y1888_p-155(kdgF)        (    1) AAATGAAATGATGTTTTATTA  1 
+Ent638_0314_p-232(kdgT)  (    1) AACTAAAACATTGTTTTATTT  1 
+Ent638_3287_p-38(kdgF)   (    1) AATTAAAACAATGTTTCACTA  1 
+CKO_01709_p-286(pykF)    (    1) TTTTGAAACGCTGTTTTCATT  1 
+Ent638_3923_p-84(kdgK)   (    1) TTATGGAACGACGTTTTAATA  1 
+b3090_p-64(ygjV)         (    1) ATAAAAAACGGCGTTTCATAA  1 
+ECA2400_p-209(kduI)      (    1) AAATAAAACATTATTTCATTT  1 
+KPN_04460_p-113(yjcB)    (    1) AACAGAAATGGCGTTTCATCA  1 
+STM3018_p-58(kduI)       (    1) AATCAAAACAGTGTTTTGATT  1 
+ECA2399_p-174(kdgF)      (    1) AAATGAAATAATGTTTTATTT  1 
+y3757_p-149(pemA)        (    1) AAATGGAATTGCGTTTCATTT  1 
+STM2013_p-7(yeeO)        (    1) TATTGAAATGTGGTTTCAACT  1 
+y1887_p-201(kduI)        (    1) TAATAAAACATCATTTCATTT  1 
+KPN_03265_p-139(kduD)    (    1) AAACGGAACTCTGTTTTATTT  1 
+STM4263_p-120(yjcB)      (    1) AATAGAAACAATGTTTCATTC  1 
+ECA0817_p-38(togT)       (    1) AACTGAAATATTGTTTCATAT  1 
+KPN_03266_p-103(ogl)     (    1) TAATGAAACAATGTTTTGATA  1 
+CKO_01116_p-360(eda)     (    1) TATTGGACCGTTGTTTCAAAA  1 
+ECA4360_p-125(kdgK)      (    1) AAATAAAACATCGTTTCAAGA  1 
+y1885_p-76(pelW)         (    1) GATTGAAACGATGTTTCTATT  1 
+KPN_02447_p-40(yeeO)     (    1) ATTTGAAATGTTGTTTCAACA  1 
+b1985_p-7(yeeO)          (    1) ATTTGAAATGTGGTTTCACTT  1 
+b1703_p-131(ppsR)        (    1) AAATGAAATGCTGTTTTCATA  1 
+Ent638_3297_p-105(ogl)   (    1) CATTGAAACGTCGTTTTGATA  1 
+STM1931_p-231(tpfX)      (    1) TTATGAAACATTGTTTCAGAT  1 
+STM3612_p-85(kdgK)       (    1) TAATGGACCGATGTTTTAATA  1 
+ETAE_3112_p-39(yjgK)     (    1) AAATAAAACGCAGTTTTATAA  1 
+CKO_03092_p-147(kdgT)    (    1) AAATGAAACATAGTTTTGTTA  1 
+CKO_01725_p-249(ppsA)    (    1) AAATGAAACGCTATTTTTATA  1 
+STM4054_p-126(rhiA)      (    1) ATGTGAAACAGGGTTTCAAAA  1 
+ETAE_2529_p-70(aslB)     (    1) ATAAGAAACATCGTTTTAAAT  1 
+ECA0732_p-98(sghX)       (    1) AAATAAAACCTCGTTTCTTTT  1 
+CKO_04899_p-138(rhiA)    (    1) TTTTAAACCATCGTTTCAATT  1 
+ECA0357_p-239(rhiA)      (    1) ATATAAAACAGCATTTCATAT  1 
+ECA4123_p-138(rexZ)      (    1) TAATAAAACTATGTTTCATTT  1 
+y3833_p-75(kdgM)         (    1) AAATAAAATACTGTTTCATAA  1 
+y1880_p-103(kdgM)        (    1) AAATGAAACATTGCTTCTTTT  1 
+Ent638_4134_p-102(pelX)  (    1) AAGCAAAACAACGTTTTAATT  1 
+Ent638_1745_p-249(ppsA)  (    1) AAATGAAATGGTGTTTTTAAT  1 
+KPN_03267_p-37(kdgM)     (    1) AAACGAAATGTCATTTTATTT  1 
+CKO_00837_p-7(yeeO)      (    1) ATTTGAAATGAGGTTTCAACT  1 
+y3838_p-225(kdgK)        (    1) ATTTAAAACACCGTTTTAATC  1 
+KPN_03267_p-58(kdgM)     (    1) AAATAAAATGATGTTTCATAA  1 
+KPN_02133_p-285(pykF)    (    1) ATTTGAAACGAGGTTTTTATT  1 
+ECA2137_p-349(ECA2137)   (    1) AAATGAAACAATGCTTCCTTT  1 
+ECA1190_p-37(pehN)       (    1) TATTAAAACGATATTTCATTA  1 
+ECA0383_p-41(yjgK)       (    1) TTGTAAAACAGGGTTTCATTT  1 
+Spro_2173_p-134(ppsR)    (    1) ATTTGAAATAGTGTTTTACTT  1 
+KPN_02161_p-97(ppsR)     (    1) AACAAAAATAGCGTTTCAATT  1 
+CKO_01049_p-199(tpfX)    (    1) TTTTGAAATGATGTTTCATAT  1 
+CKO_01727_p-107(ppsR)    (    1) TATAAAAATAGCGTTTCATTT  1 
+KPN_02398_p-46(togT)     (    1) TATAAAAACAGTGTTTCAAAA  1 
+STM1378_p-286(pykF)      (    1) TTTTGAAACAGGGTTTTCATT  1 
+STM4395_p-34(kdgX)       (    1) AAATAAAACATTATTTTAATT  1 
+b1676_p-286(pykF)        (    1) TTTTGAAACGCTGTTTTTGTT  1 
+Ent638_2477_p-42(tpfX)   (    1) GGATGAAACGCTGTTTTAAAT  1 
+Ent638_2574_p-74(yeeO)   (    1) ATTTGAAATGTAGTTTCAACT  1 
+Ent638_3298_p-33(kdgM)   (    1) AAACGAAATGACATTTTAATT  1 
+b1702_p-222(ppsA)        (    1) TATGAAAACAGCATTTCATTT  1 
+Ent638_1716_p-94(kduD2)  (    1) TTTTAAAACATCATTTCATTT  1 
+KPN_02601_p-102(setC)    (    1) TTTTGAAACGCCTTTTTAATT  1 
+ECA2402_p-139(pelW)      (    1) AATCAAAACAACGTTCCGACT  1 
+y1885_p-152(pelW)        (    1) AATCAAAACAACGTTCCGACT  1 
+KPN_02160_p-254(ppsA)    (    1) AATTGAAACGCTATTTTTGTT  1 
+Ent638_1744_p-107(ppsR)  (    1) ATTAAAAACACCATTTCATTT  1 
+KPN_02343_p-161(kdgR)    (    1) AAATGAAACGGTTTTTTGAAT  1 
+ECA2762_p-140(yeeO)      (    1) AATAGAAACGTCATTTTAAAA  1 
+Spro_2174_p-364(ppsA)    (    1) AAGTAAAACACTATTTCAAAT  1 
+ETAE_1567_p-46(kdgR)     (    1) TACTGAAACAGAGGTTCGTTT  1 
+ECA3112_p-291(pelF)      (    1) TAATGAAACCATGTTTTACCA  1 
+Ent638_3876_p-49(rhiA)   (    1) AACTAAAACAACGTTTTAACG  1 
+ECA1742_p-54(spiX)       (    1) AATTGAAATACAGTTTTAAAA  1 
+ECA3902_p-172(n/a)       (    1) TATTGAAACGTGATTTCTATC  1 
+Ent638_3876_p-134(rhiA)  (    1) TTTCAAACCATCGTTTCAAAA  1 
+KPN_02390_p-200(rhiT)    (    1) AAGAGAAATGCTGTTTTATAA  1 
+CKO_04899_p-50(rhiA)     (    1) AACTAAAACAATGTTTTAACG  1 
+STM1348_p-131(ppsR)      (    1) AAATGAAACACACTTTTCATT  1 
+ECA2407_p-153(kdgM)      (    1) ATTTGAAACCCTATTTTACTT  1 
+CKO_03627_p-31(kdgX)     (    1) AAATAAAACATTATTTCAAAG  1 
+Ent638_3298_p-54(kdgM)   (    1) AAATAAAATGCAGTTCCATAA  1 
+ECA2730_p-88(sotA)       (    1) TAATGAAACAAGATTTCTGTT  1 
+ECA2730_p-88(setC)       (    1) TAATGAAACAAGATTTCTGTT  1 
+Ent638_0483_p-304(kdgM)  (    1) TCTCAAAACATCATTTCATTT  1 
+Ent638_2764_p-109(setC)  (    1) TTTTGAAATGCTATTTTGATT  1 
+ECA3252_p-213(paeY)      (    1) TATTAAAATAACATTTCACTT  1 
+y1876_p-76(kdgR)         (    1) AATAAAACCATTGTTCTATTT  1 
+y2593_p-158(yeeO)        (    1) TCATGAAACTATGTTCCATTT  1 
+ECA4069_p-289(pelC)      (    1) AAACGAAATATAATTTTATTT  1 
+STM1349_p-226(ppsA)      (    1) AATGAAAAGTGTGTTTCATTT  1 
+ECA4069_p-102(pelC)      (    1) CAATAAACCTTGATTTCATTT  1 
+ECA3560_p-167(rhiT)      (    1) AGTTAAAATGCCTTTTTATAA  1 
+ECA0732_p-76(sghX)       (    1) TATCACAATAAGGTTCCATTT  1 
+ECA0817_p-60(togT)       (    1) TAAAGAAATGATAGTTCAATC  1 
+ECA4070_p-2(pelZ)        (    1) AAATGAAACGTTCTCTTCTGT  1 
+y2961_p-47(togT)         (    1) AAAGAAAACAGTTATTCATTA  1 
+ECA4067_p-99(pelC)       (    1) AGACAAACCTTAATTTCATTT  1 
+ECA1095_p-65(pehA)       (    1) AAAGGAAGCGTAATTCCTTTT  1 
+ECA4067_p-77(pelC)       (    1) TGTTGAAACAGCCATTTTATT  1 
+Spro_2187_p-203(pykF)    (    1) AATAACAACACATTTTCATCT  1 
+ECA4067_p-231(pelC)      (    1) AAATAGAAATCAGTTTCTATT  1 
+ECA4123_p-66(rexZ)       (    1) AAATAAATTACCGTTGCGTTA  1 
+ECA1095_p-100(pehA)      (    1) TTCTATAAAAGTGTTTTATTT  1 
+ECA4510_p-113(pelX)      (    1) ATAAAAAACAGACTTTATTTT  1 
+ECA1095_p-152(pehA)      (    1) TATGTAAATGGACTTTTATTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 159 bayes= 1.91092 E= 1.6e-734 
+    80   -326   -323    -28 
+    97   -326   -191    -84 
+    43    -80   -191      3 
+  -159     13   -191     89 
+     6  -1396    234   -592 
+   121   -326    -14   -592 
+   139   -426  -1396  -1396 
+   128    -80   -423   -592 
+  -491    267   -423    -84 
+    37   -268    190   -293 
+   -74     87     94    -23 
+  -211    141    -64     43 
+   -91   -194    264   -360 
+  -491   -326   -323    133 
+ -1396   -426  -1396    138 
+ -1396   -126   -423    130 
+  -591    220  -1396     20 
+    99   -146    -42   -176 
+    13    -80   -191     34 
+   -74    -36   -323     80 
+   -30   -194   -264     75 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 159 E= 1.6e-734 
+ 0.660377  0.012579  0.012579  0.314465 
+ 0.742138  0.012579  0.031447  0.213836 
+ 0.509434  0.069182  0.031447  0.389937 
+ 0.125786  0.132075  0.031447  0.710692 
+ 0.396226  0.000000  0.597484  0.006289 
+ 0.874214  0.012579  0.106918  0.006289 
+ 0.993711  0.006289  0.000000  0.000000 
+ 0.918239  0.069182  0.006289  0.006289 
+ 0.012579  0.767296  0.006289  0.213836 
+ 0.490566  0.018868  0.440252  0.050314 
+ 0.226415  0.220126  0.226415  0.327044 
+ 0.088050  0.320755  0.075472  0.515723 
+ 0.201258  0.031447  0.735849  0.031447 
+ 0.012579  0.012579  0.012579  0.962264 
+ 0.000000  0.006289  0.000000  0.993711 
+ 0.000000  0.050314  0.006289  0.943396 
+ 0.006289  0.553459  0.000000  0.440252 
+ 0.754717  0.044025  0.088050  0.113208 
+ 0.415094  0.069182  0.031447  0.484277 
+ 0.226415  0.094340  0.012579  0.666667 
+ 0.308176  0.031447  0.018868  0.641509 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWTRAAACRNYGTTTYAWTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][AT][AT]T[GA]AAA[CT][AG][TAGC][TC][GA]TTT[CT]A[TA][TA][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.99 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b3526_p-86(kdgK)                 1.07e-07  [+1(1.07e-07)]
+b1702_p-222(ppsA)                1.86e-06  [+1(1.86e-06)]
+b1703_p-131(ppsR)                5.21e-07  [+1(5.21e-07)]
+b2843_p-63(kduI)                 5.64e-09  [+1(5.64e-09)]
+b2843_p-130(kduI)                8.15e-09  [+1(8.15e-09)]
+b3909_p-140(kdgT)                1.37e-09  [+1(1.37e-09)]
+b3090_p-64(ygjV)                 2.77e-07  [+1(2.77e-07)]
+b1676_p-286(pykF)                1.49e-06  [+1(1.49e-06)]
+b1985_p-7(yeeO)                  5.21e-07  [+1(5.21e-07)]
+b4252_p-35(yjgK)                 1.70e-09  [+1(1.70e-09)]
+b1850_p-359(eda)                 1.86e-07  [+1(1.86e-07)]
+STM4054_p-126(rhiA)              7.50e-07  [+1(7.50e-07)]
+STM1349_p-226(ppsA)              5.50e-05  [+1(5.50e-05)]
+STM1348_p-131(ppsR)              8.50e-06  [+1(8.50e-06)]
+STM3018_p-58(kduI)               3.15e-07  [+1(3.15e-07)]
+STM3018_p-123(kduI)              1.37e-09  [+1(1.37e-09)]
+STM4395_p-34(kdgX)               1.49e-06  [+1(1.49e-06)]
+STM3612_p-85(kdgK)               6.65e-07  [+1(6.65e-07)]
+STM1378_p-286(pykF)              1.49e-06  [+1(1.49e-06)]
+STM2013_p-7(yeeO)                3.59e-07  [+1(3.59e-07)]
+STM4263_p-120(yjcB)              4.07e-07  [+1(4.07e-07)]
+STM4468_p-32(yjgK)               2.71e-08  [+1(2.71e-08)]
+STM1884_p-360(eda)               1.07e-07  [+1(1.07e-07)]
+STM1931_p-231(tpfX)              6.65e-07  [+1(6.65e-07)]
+CKO_01709_p-286(pykF)            2.43e-07  [+1(2.43e-07)]
+CKO_04968_p-87(kdgK)             1.23e-07  [+1(1.23e-07)]
+CKO_01725_p-249(ppsA)            7.50e-07  [+1(7.50e-07)]
+CKO_01727_p-107(ppsR)            1.34e-06  [+1(1.34e-06)]
+CKO_04220_p-51(kduI)             2.71e-08  [+1(2.71e-08)]
+CKO_04220_p-119(kduI)            6.79e-09  [+1(6.79e-09)]
+CKO_01081_p-190(rhiT)            1.62e-07  [+1(1.62e-07)]
+CKO_03627_p-31(kdgX)             9.33e-06  [+1(9.33e-06)]
+CKO_04218_p-38(kdgF)             1.07e-07  [+1(1.07e-07)]
+CKO_01753_p-99(kduD2)            7.98e-08  [+1(7.98e-08)]
+CKO_03092_p-147(kdgT)            7.50e-07  [+1(7.50e-07)]
+CKO_00837_p-7(yeeO)              9.48e-07  [+1(9.48e-07)]
+CKO_04899_p-138(rhiA)            8.44e-07  [+1(8.44e-07)]
+CKO_04899_p-50(rhiA)             8.50e-06  [+1(8.50e-06)]
+CKO_03830_p-121(yjcB)            1.41e-07  [+1(1.41e-07)]
+CKO_03757_p-231(kdgT)            9.23e-08  [+1(9.23e-08)]
+CKO_03553_p-33(yjgK)             1.37e-09  [+1(1.37e-09)]
+CKO_01049_p-199(tpfX)            1.19e-06  [+1(1.19e-06)]
+CKO_01116_p-360(eda)             4.61e-07  [+1(4.61e-07)]
+KPN_02133_p-285(pykF)            1.06e-06  [+1(1.06e-06)]
+KPN_03876_p-87(kdgK)             1.23e-07  [+1(1.23e-07)]
+KPN_02160_p-254(ppsA)            2.31e-06  [+1(2.31e-06)]
+KPN_02161_p-97(ppsR)             1.19e-06  [+1(1.19e-06)]
+KPN_03265_p-139(kduD)            4.07e-07  [+1(4.07e-07)]
+KPN_03265_p-207(kduD)            2.30e-08  [+1(2.30e-08)]
+KPN_03266_p-299(ogl)             5.10e-08  [+1(5.10e-08)]
+KPN_03256_p-211(togM)            1.23e-07  [+1(1.23e-07)]
+KPN_03256_p-288(togM)            2.13e-07  [+1(2.13e-07)]
+KPN_02390_p-200(rhiT)            7.03e-06  [+1(7.03e-06)]
+KPN_03255_p-39(kdgF)             6.79e-09  [+1(6.79e-09)]
+KPN_04658_p-33(yjgK)             1.07e-07  [+1(1.07e-07)]
+KPN_01240_p-104(kduD2)           3.74e-08  [+1(3.74e-08)]
+KPN_03267_p-37(kdgM)             9.48e-07  [+1(9.48e-07)]
+KPN_03267_p-58(kdgM)             1.06e-06  [+1(1.06e-06)]
+KPN_02398_p-46(togT)             1.49e-06  [+1(1.49e-06)]
+KPN_03266_p-103(ogl)             4.61e-07  [+1(4.61e-07)]
+KPN_02343_p-161(kdgR)            2.57e-06  [+1(2.57e-06)]
+KPN_02447_p-40(yeeO)             5.21e-07  [+1(5.21e-07)]
+KPN_04460_p-113(yjcB)            3.15e-07  [+1(3.15e-07)]
+KPN_02365_p-361(eda)             1.07e-07  [+1(1.07e-07)]
+KPN_02601_p-102(setC)            2.08e-06  [+1(2.08e-06)]
+Ent638_1768_p-286(pykF)          1.96e-08  [+1(1.96e-08)]
+Ent638_1745_p-249(ppsA)          9.48e-07  [+1(9.48e-07)]
+Ent638_1744_p-107(ppsR)          2.57e-06  [+1(2.57e-06)]
+Ent638_3296_p-60(kduI)           1.41e-07  [+1(1.41e-07)]
+Ent638_3296_p-127(kduI)          1.41e-07  [+1(1.41e-07)]
+Ent638_3297_p-105(ogl)           6.65e-07  [+1(6.65e-07)]
+Ent638_3289_p-226(togM)          1.86e-07  [+1(1.86e-07)]
+Ent638_2444_p-189(rhiT)          1.07e-07  [+1(1.07e-07)]
+Ent638_0375_p-33(kdgX)           5.10e-08  [+1(5.10e-08)]
+Ent638_3287_p-38(kdgF)           2.43e-07  [+1(2.43e-07)]
+Ent638_3298_p-33(kdgM)           1.67e-06  [+1(1.67e-06)]
+Ent638_3298_p-54(kdgM)           1.02e-05  [+1(1.02e-05)]
+Ent638_0453_p-34(yjgK)           4.38e-08  [+1(4.38e-08)]
+Ent638_1716_p-94(kduD2)          2.08e-06  [+1(2.08e-06)]
+Ent638_3923_p-84(kdgK)           2.77e-07  [+1(2.77e-07)]
+Ent638_2574_p-74(yeeO)           1.67e-06  [+1(1.67e-06)]
+Ent638_3876_p-134(rhiA)          7.03e-06  [+1(7.03e-06)]
+Ent638_3876_p-49(rhiA)           5.25e-06  [+1(5.25e-06)]
+Ent638_0314_p-232(kdgT)          2.43e-07  [+1(2.43e-07)]
+Ent638_4134_p-60(pelX)           8.15e-09  [+1(8.15e-09)]
+Ent638_4134_p-102(pelX)          9.48e-07  [+1(9.48e-07)]
+Ent638_2764_p-109(setC)          1.34e-05  [+1(1.34e-05)]
+Ent638_2477_p-42(tpfX)           1.67e-06  [+1(1.67e-06)]
+Ent638_0483_p-304(kdgM)          1.34e-05  [+1(1.34e-05)]
+Ent638_2419_p-362(eda)           2.13e-07  [+1(2.13e-07)]
+y3757_p-149(pemA)                3.59e-07  [+1(3.59e-07)]
+y1880_p-103(kdgM)                9.48e-07  [+1(9.48e-07)]
+y1887_p-201(kduI)                4.07e-07  [+1(4.07e-07)]
+y1875_p-96(ogl)                  5.93e-08  [+1(5.93e-08)]
+y1885_p-76(pelW)                 5.21e-07  [+1(5.21e-07)]
+y1885_p-152(pelW)                2.31e-06  [+1(2.31e-06)]
+y1734_p-22(kdgX)                 1.07e-07  [+1(1.07e-07)]
+y3838_p-225(kdgK)                1.06e-06  [+1(1.06e-06)]
+y1888_p-155(kdgF)                2.43e-07  [+1(2.43e-07)]
+y0739_p-41(yjgK)                 1.62e-07  [+1(1.62e-07)]
+y3597_p-133(ygjV)                1.86e-07  [+1(1.86e-07)]
+y2961_p-25(togT)                 9.75e-09  [+1(9.75e-09)]
+y2961_p-47(togT)                 1.97e-04  21
+y2593_p-158(yeeO)                1.61e-05  [+1(1.61e-05)]
+y1876_p-76(kdgR)                 1.61e-05  [+1(1.61e-05)]
+y3833_p-75(kdgM)                 9.48e-07  [+1(9.48e-07)]
+Spro_2173_p-134(ppsR)            1.19e-06  [+1(1.19e-06)]
+Spro_4750_p-105(kdgK)            1.96e-08  [+1(1.96e-08)]
+Spro_3106_p-39(yeeO)             2.13e-07  [+1(2.13e-07)]
+Spro_2174_p-364(ppsA)            3.17e-06  [+1(3.17e-06)]
+Spro_2187_p-203(pykF)            3.28e-04  21
+ECA2730_p-88(setC)               1.34e-05  [+1(1.34e-05)]
+ECA1095_p-152(pehA)              1.68e-03  21
+ECA4123_p-66(rexZ)               3.70e-04  21
+ECA1867_p-259(pykF)              5.64e-09  [+1(5.64e-09)]
+ECA1742_p-54(spiX)               6.39e-06  [+1(6.39e-06)]
+ECA3252_p-213(paeY)              1.61e-05  [+1(1.61e-05)]
+ECA1853_p-227(ppsA)              1.86e-07  [+1(1.86e-07)]
+ECA1852_p-94(ppsR)               7.98e-08  [+1(7.98e-08)]
+ECA2400_p-209(kduI)              3.15e-07  [+1(3.15e-07)]
+ECA3902_p-172(n/a)               7.03e-06  [+1(7.03e-06)]
+ECA4070_p-2(pelZ)                1.73e-04  21
+ECA4067_p-77(pelC)               2.90e-04  21
+ECA4067_p-99(pelC)               2.11e-04  21
+ECA2730_p-88(sotA)               1.34e-05  [+1(1.34e-05)]
+ECA4123_p-138(rexZ)              9.48e-07  [+1(9.48e-07)]
+ECA2426_p-180(ogl)               5.93e-08  [+1(5.93e-08)]
+ECA2402_p-61(pelW)               1.86e-07  [+1(1.86e-07)]
+ECA3560_p-167(rhiT)              1.51e-04  21
+ECA2402_p-139(pelW)              2.31e-06  [+1(2.31e-06)]
+ECA2399_p-174(kdgF)              3.59e-07  [+1(3.59e-07)]
+ECA4360_p-125(kdgK)              5.21e-07  [+1(5.21e-07)]
+ECA0383_p-41(yjgK)               1.19e-06  [+1(1.19e-06)]
+ECA1095_p-65(pehA)               2.90e-04  21
+ECA1095_p-100(pehA)              1.02e-03  21
+ECA0357_p-239(rhiA)              9.48e-07  [+1(9.48e-07)]
+ECA0817_p-38(togT)               4.61e-07  [+1(4.61e-07)]
+ECA0648_p-70(ygjV)               1.17e-10  [+1(1.17e-10)]
+ECA0817_p-60(togT)               1.73e-04  21
+ECA0732_p-76(sghX)               1.62e-04  21
+ECA0732_p-98(sghX)               8.44e-07  [+1(8.44e-07)]
+ECA2762_p-140(yeeO)              2.86e-06  [+1(2.86e-06)]
+ECA1190_p-37(pehN)               1.19e-06  [+1(1.19e-06)]
+ECA4069_p-102(pelC)              1.41e-04  21
+ECA4069_p-289(pelC)              1.91e-05  [+1(1.91e-05)]
+ECA3112_p-291(pelF)              5.25e-06  [+1(5.25e-06)]
+ECA4067_p-231(pelC)              3.70e-04  21
+ECA4510_p-66(pelX)               1.37e-09  [+1(1.37e-09)]
+ECA2407_p-153(kdgM)              9.33e-06  [+1(9.33e-06)]
+ECA4510_p-113(pelX)              1.60e-03  21
+ECA4510_p-130(pelX)              2.43e-07  [+1(2.43e-07)]
+ECA2137_p-349(ECA2137)           1.19e-06  [+1(1.19e-06)]
+ECA0102_p-85(tpfX)               1.65e-08  [+1(1.65e-08)]
+ECA3785_p-32(dhfX)               4.38e-08  [+1(4.38e-08)]
+ETAE_1898_p-129(kduI)            1.62e-07  [+1(1.62e-07)]
+ETAE_3377_p-91(kdgK)             1.23e-07  [+1(1.23e-07)]
+ETAE_3112_p-39(yjgK)             7.50e-07  [+1(7.50e-07)]
+ETAE_1567_p-46(kdgR)             4.76e-06  [+1(4.76e-06)]
+ETAE_2529_p-70(aslB)             8.44e-07  [+1(8.44e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

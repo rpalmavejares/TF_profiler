@@ -1,0 +1,342 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Oceanospirillales_Alteromonadales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HCH_05372(COG1040)Score= 1.0000     32  HCH_05371(bioB)Score=8.1 1.0000     32  
+Maqu_2757(COG1040)Score= 1.0000     32  Maqu_2757(COG1040)Score= 1.0000     32  
+Maqu_2756(bioB)Score=7.5 1.0000     32  Maqu_2756(bioB)Score=8.1 1.0000     32  
+MELB17_04752(bioA)Score= 1.0000     32  MELB17_06979(bioB)Score= 1.0000     32  
+MELB17_06979(bioB)Score= 1.0000     32  MELB17_06974(COG1040)Sco 1.0000     32  
+MELB17_06974(COG1040)Sco 1.0000     32  RED65_04570(bioB)Score=8 1.0000     32  
+Mmwyl1_3458(COG1040)Scor 1.0000     32  Mmwyl1_3457(bioB)Score=8 1.0000     32  
+Sde_3140(COG1040)Score=9 1.0000     32  Sde_3139(bioB)Score=9,Po 1.0000     32  
+TERTU_0490(bioB)Score=8. 1.0000     32  TERTU_0489(COG1040)Score 1.0000     32  
+CJA_0426(bioB)Score=8.5, 1.0000     32  CJA_0425(COG1040)Score=8 1.0000     32  
+Csal_1167(bioB)Score=7.3 1.0000     32  Csal_1167(bioB)Score=8.8 1.0000     32  
+MED297_08751(bioB)Score= 1.0000     32  MED297_08746(COG1040)Sco 1.0000     32  
+ABO_2221(COG1040)Score=7 1.0000     32  ABO_2220(bioB)Score=7.9, 1.0000     32  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Oceanospirillales_Alteromonadales.fasta -oc BirA_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           32
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       26    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             832    N=              26    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.266 C 0.232 G 0.233 T 0.269 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.266 C 0.232 G 0.233 T 0.269 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  32  sites =  26  llr = 461  E-value = 9.4e-145
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1::3aa::333333333333332:::2a:83
+pos.-specific     C  71::4::9822222222222222::::::a::
+probability       G  ::a::::::2222222222222289::5::17
+matrix            T  38:a2:::233333333333333::aa3::11
+
+         bits    2.1   *                          *  
+                 1.9   ** **                  ** **  
+                 1.7   ** ***                *** **  
+                 1.5   ** ***                *** **  
+Relative         1.3   ** ***                *** **  
+Entropy          1.1   ** ****              **** **  
+(25.6 bits)      0.8 **** ****              **** ****
+                 0.6 **** ****              **** ****
+                 0.4 *********              *********
+                 0.2 *********              *********
+                 0.0 --------------------------------
+
+Multilevel           CTGTCAACCTTTTTTTTTTTTTTGGTTGACAG
+consensus            T   A    AAAAAAAAAAAAAA    T   A
+sequence                 T    GGGGGGGGGGGGGG    A    
+                              CCCCCCCCCCCCCC         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site            
+-------------             ----- ---------            --------------------------------
+MELB17_06979(bioB)Score=      1  5.40e-11          . CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG           
+Maqu_2756(bioB)Score=8.1      1  5.40e-11          . CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG           
+HCH_05371(bioB)Score=8.1      1  5.40e-11          . CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG           
+MELB17_06974(COG1040)Sco      1  8.18e-11          . CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG           
+Maqu_2757(COG1040)Score=      1  8.18e-11          . CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG           
+HCH_05372(COG1040)Score=      1  8.18e-11          . CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG           
+Sde_3139(bioB)Score=9,Po      1  1.44e-10          . TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+Sde_3140(COG1040)Score=9      1  2.68e-10          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA           
+RED65_04570(bioB)Score=8      1  6.94e-10          . CTGTAAACCNNNNNNNNNNNNNNGGTTGACTG           
+Csal_1167(bioB)Score=8.8      1  1.59e-09          . TTGTCAACCNNNNNNNNNNNNNNGGTTGACAT           
+MELB17_04752(bioA)Score=      1  1.59e-09          . CTGTTAACTNNNNNNNNNNNNNNGGTTAACAG           
+MELB17_06979(bioB)Score=      1  2.37e-09          . CCGTAAACCNNNNNNNNNNNNNNGGTTAACAG           
+Maqu_2756(bioB)Score=7.5      1  2.37e-09          . CCGTAAACCNNNNNNNNNNNNNNGGTTAACAG           
+CJA_0425(COG1040)Score=8      1  2.60e-09          . CTGTCAACCNNNNNNNNNNNNNNGGTTTACTA           
+CJA_0426(bioB)Score=8.5,      1  2.60e-09          . TAGTAAACCNNNNNNNNNNNNNNGGTTGACAG           
+MELB17_06974(COG1040)Sco      1  2.60e-09          . CTGTTAACCNNNNNNNNNNNNNNGGTTTACGG           
+Maqu_2757(COG1040)Score=      1  2.60e-09          . CTGTTAACCNNNNNNNNNNNNNNGGTTTACGG           
+TERTU_0490(bioB)Score=8.      1  3.20e-09          . TTGTAAACTNNNNNNNNNNNNNNGGTTGACAA           
+TERTU_0489(COG1040)Score      1  3.92e-09          . TTGTCAACCNNNNNNNNNNNNNNAGTTTACAA           
+ABO_2221(COG1040)Score=7      1  4.21e-09          . CTGTCAACCNNNNNNNNNNNNNNAGTTTACTG           
+ABO_2220(bioB)Score=7.9,      1  5.10e-09          . CAGTAAACTNNNNNNNNNNNNNNGGTTGACAG           
+Mmwyl1_3457(bioB)Score=8      1  6.01e-09          . TTGTAAACCNNNNNNNNNNNNNNTGTTGACAG           
+Mmwyl1_3458(COG1040)Scor      1  7.89e-09          . CTGTCAACANNNNNNNNNNNNNNGGTTTACAA           
+Csal_1167(bioB)Score=7.3      1  1.60e-07          . TGGTCAACCNNNNNNNNNNNNNNAGTTGACCA           
+MED297_08746(COG1040)Sco      1  8.86e-07          . TTGTCAATTNNNNNNNNNNNNNNACTTTACAT           
+MED297_08751(bioB)Score=      1  1.09e-06          . ATGTAAAGTNNNNNNNNNNNNNNAATTGACAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MELB17_06979(bioB)Score=          5.4e-11  [+1]
+Maqu_2756(bioB)Score=8.1          5.4e-11  [+1]
+HCH_05371(bioB)Score=8.1          5.4e-11  [+1]
+MELB17_06974(COG1040)Sco          8.2e-11  [+1]
+Maqu_2757(COG1040)Score=          8.2e-11  [+1]
+HCH_05372(COG1040)Score=          8.2e-11  [+1]
+Sde_3139(bioB)Score=9,Po          1.4e-10  [+1]
+Sde_3140(COG1040)Score=9          2.7e-10  [+1]
+RED65_04570(bioB)Score=8          6.9e-10  [+1]
+Csal_1167(bioB)Score=8.8          1.6e-09  [+1]
+MELB17_04752(bioA)Score=          1.6e-09  [+1]
+MELB17_06979(bioB)Score=          2.4e-09  [+1]
+Maqu_2756(bioB)Score=7.5          2.4e-09  [+1]
+CJA_0425(COG1040)Score=8          2.6e-09  [+1]
+CJA_0426(bioB)Score=8.5,          2.6e-09  [+1]
+MELB17_06974(COG1040)Sco          2.6e-09  [+1]
+Maqu_2757(COG1040)Score=          2.6e-09  [+1]
+TERTU_0490(bioB)Score=8.          3.2e-09  [+1]
+TERTU_0489(COG1040)Score          3.9e-09  [+1]
+ABO_2221(COG1040)Score=7          4.2e-09  [+1]
+ABO_2220(bioB)Score=7.9,          5.1e-09  [+1]
+Mmwyl1_3457(bioB)Score=8            6e-09  [+1]
+Mmwyl1_3458(COG1040)Scor          7.9e-09  [+1]
+Csal_1167(bioB)Score=7.3          1.6e-07  [+1]
+MED297_08746(COG1040)Sco          8.9e-07  [+1]
+MED297_08751(bioB)Score=          1.1e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=32 seqs=26
+MELB17_06979(bioB)Score= (    1) CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+Maqu_2756(bioB)Score=8.1 (    1) CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+HCH_05371(bioB)Score=8.1 (    1) CTGTTAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+MELB17_06974(COG1040)Sco (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG  1 
+Maqu_2757(COG1040)Score= (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG  1 
+HCH_05372(COG1040)Score= (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTAACAG  1 
+Sde_3139(bioB)Score=9,Po (    1) TTGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+Sde_3140(COG1040)Score=9 (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACAA  1 
+RED65_04570(bioB)Score=8 (    1) CTGTAAACCNNNNNNNNNNNNNNGGTTGACTG  1 
+Csal_1167(bioB)Score=8.8 (    1) TTGTCAACCNNNNNNNNNNNNNNGGTTGACAT  1 
+MELB17_04752(bioA)Score= (    1) CTGTTAACTNNNNNNNNNNNNNNGGTTAACAG  1 
+MELB17_06979(bioB)Score= (    1) CCGTAAACCNNNNNNNNNNNNNNGGTTAACAG  1 
+Maqu_2756(bioB)Score=7.5 (    1) CCGTAAACCNNNNNNNNNNNNNNGGTTAACAG  1 
+CJA_0425(COG1040)Score=8 (    1) CTGTCAACCNNNNNNNNNNNNNNGGTTTACTA  1 
+CJA_0426(bioB)Score=8.5, (    1) TAGTAAACCNNNNNNNNNNNNNNGGTTGACAG  1 
+MELB17_06974(COG1040)Sco (    1) CTGTTAACCNNNNNNNNNNNNNNGGTTTACGG  1 
+Maqu_2757(COG1040)Score= (    1) CTGTTAACCNNNNNNNNNNNNNNGGTTTACGG  1 
+TERTU_0490(bioB)Score=8. (    1) TTGTAAACTNNNNNNNNNNNNNNGGTTGACAA  1 
+TERTU_0489(COG1040)Score (    1) TTGTCAACCNNNNNNNNNNNNNNAGTTTACAA  1 
+ABO_2221(COG1040)Score=7 (    1) CTGTCAACCNNNNNNNNNNNNNNAGTTTACTG  1 
+ABO_2220(bioB)Score=7.9, (    1) CAGTAAACTNNNNNNNNNNNNNNGGTTGACAG  1 
+Mmwyl1_3457(bioB)Score=8 (    1) TTGTAAACCNNNNNNNNNNNNNNTGTTGACAG  1 
+Mmwyl1_3458(COG1040)Scor (    1) CTGTCAACANNNNNNNNNNNNNNGGTTTACAA  1 
+Csal_1167(bioB)Score=7.3 (    1) TGGTCAACCNNNNNNNNNNNNNNAGTTGACCA  1 
+MED297_08746(COG1040)Sco (    1) TTGTCAATTNNNNNNNNNNNNNNACTTTACAT  1 
+MED297_08751(bioB)Score= (    1) ATGTAAAGTNNNNNNNNNNNNNNAATTGACAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 32 n= 26 bayes= 1.4975 E= 9.4e-145 
+  -278    149  -1134     19 
+  -179   -159   -260    159 
+ -1134  -1134    210  -1134 
+ -1134  -1134  -1134    189 
+    38     87  -1134    -22 
+   191  -1134  -1134  -1134 
+   191  -1134  -1134  -1134 
+ -1134    199   -260   -280 
+  -278    173  -1134    -48 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+   -47  -1134    172   -280 
+  -278   -259    198  -1134 
+ -1134  -1134  -1134    189 
+ -1134  -1134  -1134    189 
+   -20  -1134     98     19 
+   191  -1134  -1134  -1134 
+ -1134    211  -1134  -1134 
+   153   -259   -160   -122 
+     2  -1134    149   -181 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 32 nsites= 26 E= 9.4e-145 
+ 0.038462  0.653846  0.000000  0.307692 
+ 0.076923  0.076923  0.038462  0.807692 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.346154  0.423077  0.000000  0.230769 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.923077  0.038462  0.038462 
+ 0.038462  0.769231  0.000000  0.192308 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.265550  0.232057  0.233254  0.269139 
+ 0.192308  0.000000  0.769231  0.038462 
+ 0.038462  0.038462  0.923077  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.230769  0.000000  0.461538  0.307692 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.769231  0.038462  0.076923  0.115385 
+ 0.269231  0.000000  0.653846  0.076923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CT]TGT[CAT]AACC[TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC][TAGC]GGTT[GTA]ACA[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HCH_05372(COG1040)Score=         8.18e-11  [+1(8.18e-11)]
+HCH_05371(bioB)Score=8.1         5.40e-11  [+1(5.40e-11)]
+Maqu_2757(COG1040)Score=         8.18e-11  [+1(8.18e-11)]
+Maqu_2757(COG1040)Score=         2.60e-09  [+1(2.60e-09)]
+Maqu_2756(bioB)Score=7.5         2.37e-09  [+1(2.37e-09)]
+Maqu_2756(bioB)Score=8.1         5.40e-11  [+1(5.40e-11)]
+MELB17_04752(bioA)Score=         1.59e-09  [+1(1.59e-09)]
+MELB17_06979(bioB)Score=         2.37e-09  [+1(2.37e-09)]
+MELB17_06979(bioB)Score=         5.40e-11  [+1(5.40e-11)]
+MELB17_06974(COG1040)Sco         8.18e-11  [+1(8.18e-11)]
+MELB17_06974(COG1040)Sco         2.60e-09  [+1(2.60e-09)]
+RED65_04570(bioB)Score=8         6.94e-10  [+1(6.94e-10)]
+Mmwyl1_3458(COG1040)Scor         7.89e-09  [+1(7.89e-09)]
+Mmwyl1_3457(bioB)Score=8         6.01e-09  [+1(6.01e-09)]
+Sde_3140(COG1040)Score=9         2.68e-10  [+1(2.68e-10)]
+Sde_3139(bioB)Score=9,Po         1.44e-10  [+1(1.44e-10)]
+TERTU_0490(bioB)Score=8.         3.20e-09  [+1(3.20e-09)]
+TERTU_0489(COG1040)Score         3.92e-09  [+1(3.92e-09)]
+CJA_0426(bioB)Score=8.5,         2.60e-09  [+1(2.60e-09)]
+CJA_0425(COG1040)Score=8         2.60e-09  [+1(2.60e-09)]
+Csal_1167(bioB)Score=7.3         1.60e-07  [+1(1.60e-07)]
+Csal_1167(bioB)Score=8.8         1.59e-09  [+1(1.59e-09)]
+MED297_08751(bioB)Score=         1.09e-06  [+1(1.09e-06)]
+MED297_08746(COG1040)Sco         8.86e-07  [+1(8.86e-07)]
+ABO_2221(COG1040)Score=7         4.21e-09  [+1(4.21e-09)]
+ABO_2220(bioB)Score=7.9,         5.10e-09  [+1(5.10e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

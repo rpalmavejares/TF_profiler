@@ -1,0 +1,261 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= LldR_Various_betaproteobacteria.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Tmz1t_1714,Score=4.6,Pos 1.0000     17  Daro_1766(lldE)Score=6,P 1.0000     17  
+Daro_1766(lldE)Score=4,P 1.0000     17  Daro_1766(lldE)Score=4.2 1.0000     17  
+Daro_1767(lldR)Score=4.8 1.0000     17  Daro_1767(lldR)Score=5.5 1.0000     17  
+Daro_1767(lldR)Score=4.5 1.0000     17  CV3030(lldE)Score=6.3,Po 1.0000     17  
+CV3037(lldR)Score=4.4,Po 1.0000     17  NMB1712(lldP)Score=5.1,P 1.0000     17  
+NMB1712(lldP)Score=5.8,P 1.0000     17  NMB0543(lldP)Score=6.3Po 1.0000     17  
+NMB1711(lldR)Score=5.3,P 1.0000     17  LHK_02843(lldE)Score=6.2 1.0000     17  
+LHK_02842(lldR)Score=5.7 1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna LldR_Various_betaproteobacteria.fasta -oc LldR_Various_betaproteobacteria 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           17
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             255    N=              15    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.302 C 0.200 G 0.188 T 0.310 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.301 C 0.201 G 0.189 T 0.309 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  16  sites =  15  llr = 224  E-value = 4.6e-063
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  78::::135:9::a71
+pos.-specific     C  1:11::17:::aa:21
+probability       G  111:aa:::71:::1:
+matrix            T  1179::91531::::9
+
+         bits    2.4     **     **   
+                 2.2     **     **   
+                 1.9     **     **   
+                 1.7     **     ***  
+Relative         1.4    ***     ***  
+Entropy          1.2    ***   * ***  
+(21.5 bits)      1.0  * ***** ***** *
+                 0.7  ***************
+                 0.5 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           AATTGGTCTGACCAAT
+consensus                   AAT    C 
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+NMB0543(lldP)Score=6.3Po      1  2.83e-09          . AATTGGTCTTACCAAT T         
+CV3030(lldE)Score=6.3,Po      1  2.83e-09          . AATTGGTCTTACCAAT T         
+Daro_1767(lldR)Score=5.5      1  5.04e-09          . AATTGGTAAGACCAAT A         
+LHK_02843(lldE)Score=6.2      1  9.83e-09          . AATTGGCCTGACCAAT T         
+LHK_02842(lldR)Score=5.7      1  1.10e-08          . AATTGGTCAGGCCAAT T         
+NMB1712(lldP)Score=5.8,P      1  1.64e-08          . AATTGGACTGACCAAT C         
+Daro_1766(lldE)Score=6,P      1  2.50e-08          . TATTGGTCTTACCAAT T         
+Tmz1t_1714,Score=4.6,Pos      1  5.56e-08          . AAGTGGTAAGACCACT T         
+NMB1712(lldP)Score=5.1,P      1  6.13e-08          . AATTGGTTTGACCACT A         
+NMB1711(lldR)Score=5.3,P      1  7.39e-08          . GATTGGTCAGTCCAAT T         
+Daro_1767(lldR)Score=4.5      1  1.03e-07          . ATGTGGTCTTACCAAT G         
+CV3037(lldR)Score=4.4,Po      1  3.02e-07          . ATCCGGTCAGACCAAT T         
+Daro_1767(lldR)Score=4.8      1  4.78e-07          . TGCTGGTCTTACCAAT C         
+Daro_1766(lldE)Score=4,P      1  6.87e-07          . GATTGGTAAGACCAGC A         
+Daro_1766(lldE)Score=4.2      1  7.70e-07          . CATTGGTAAGACCACA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NMB0543(lldP)Score=6.3Po          2.8e-09  [+1]_1
+CV3030(lldE)Score=6.3,Po          2.8e-09  [+1]_1
+Daro_1767(lldR)Score=5.5            5e-09  [+1]_1
+LHK_02843(lldE)Score=6.2          9.8e-09  [+1]_1
+LHK_02842(lldR)Score=5.7          1.1e-08  [+1]_1
+NMB1712(lldP)Score=5.8,P          1.6e-08  [+1]_1
+Daro_1766(lldE)Score=6,P          2.5e-08  [+1]_1
+Tmz1t_1714,Score=4.6,Pos          5.6e-08  [+1]_1
+NMB1712(lldP)Score=5.1,P          6.1e-08  [+1]_1
+NMB1711(lldR)Score=5.3,P          7.4e-08  [+1]_1
+Daro_1767(lldR)Score=4.5            1e-07  [+1]_1
+CV3037(lldR)Score=4.4,Po            3e-07  [+1]_1
+Daro_1767(lldR)Score=4.8          4.8e-07  [+1]_1
+Daro_1766(lldE)Score=4,P          6.9e-07  [+1]_1
+Daro_1766(lldE)Score=4.2          7.7e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=16 seqs=15
+NMB0543(lldP)Score=6.3Po (    1) AATTGGTCTTACCAAT  1 
+CV3030(lldE)Score=6.3,Po (    1) AATTGGTCTTACCAAT  1 
+Daro_1767(lldR)Score=5.5 (    1) AATTGGTAAGACCAAT  1 
+LHK_02843(lldE)Score=6.2 (    1) AATTGGCCTGACCAAT  1 
+LHK_02842(lldR)Score=5.7 (    1) AATTGGTCAGGCCAAT  1 
+NMB1712(lldP)Score=5.8,P (    1) AATTGGACTGACCAAT  1 
+Daro_1766(lldE)Score=6,P (    1) TATTGGTCTTACCAAT  1 
+Tmz1t_1714,Score=4.6,Pos (    1) AAGTGGTAAGACCACT  1 
+NMB1712(lldP)Score=5.1,P (    1) AATTGGTTTGACCACT  1 
+NMB1711(lldR)Score=5.3,P (    1) GATTGGTCAGTCCAAT  1 
+Daro_1767(lldR)Score=4.5 (    1) ATGTGGTCTTACCAAT  1 
+CV3037(lldR)Score=4.4,Po (    1) ATCCGGTCAGACCAAT  1 
+Daro_1767(lldR)Score=4.8 (    1) TGCTGGTCTTACCAAT  1 
+Daro_1766(lldE)Score=4,P (    1) GATTGGTAAGACCAGC  1 
+Daro_1766(lldE)Score=4.2 (    1) CATTGGTAAGACCACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 30 bayes= 2.46512 E= 4.6e-063 
+   115   -159    -50   -121 
+   141  -1055   -150   -121 
+ -1055    -59    -50    125 
+ -1055   -159  -1055    159 
+ -1055  -1055    240  -1055 
+ -1055  -1055    240  -1055 
+  -217   -159  -1055    149 
+   -18    173  -1055   -221 
+    63  -1055  -1055     79 
+ -1055  -1055    182     11 
+   152  -1055   -150   -221 
+ -1055    232  -1055  -1055 
+ -1055    232  -1055  -1055 
+   173  -1055  -1055  -1055 
+   128     -1   -150  -1055 
+  -217   -159  -1055    149 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 15 E= 4.6e-063 
+ 0.666667  0.066667  0.133333  0.133333 
+ 0.800000  0.000000  0.066667  0.133333 
+ 0.000000  0.133333  0.133333  0.733333 
+ 0.000000  0.066667  0.000000  0.933333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.066667  0.066667  0.000000  0.866667 
+ 0.266667  0.666667  0.000000  0.066667 
+ 0.466667  0.000000  0.000000  0.533333 
+ 0.000000  0.000000  0.666667  0.333333 
+ 0.866667  0.000000  0.066667  0.066667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.733333  0.200000  0.066667  0.000000 
+ 0.066667  0.066667  0.000000  0.866667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+AATTGGT[CA][TA][GT]ACCA[AC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tmz1t_1714,Score=4.6,Pos         1.11e-07  [+1(5.56e-08)]_1
+Daro_1766(lldE)Score=6,P         5.00e-08  [+1(2.50e-08)]_1
+Daro_1766(lldE)Score=4,P         1.37e-06  [+1(6.87e-07)]_1
+Daro_1766(lldE)Score=4.2         1.54e-06  [+1(7.70e-07)]_1
+Daro_1767(lldR)Score=4.8         9.57e-07  [+1(4.78e-07)]_1
+Daro_1767(lldR)Score=5.5         1.01e-08  [+1(5.04e-09)]_1
+Daro_1767(lldR)Score=4.5         2.06e-07  [+1(1.03e-07)]_1
+CV3030(lldE)Score=6.3,Po         5.67e-09  [+1(2.83e-09)]_1
+CV3037(lldR)Score=4.4,Po         6.05e-07  [+1(3.02e-07)]_1
+NMB1712(lldP)Score=5.1,P         1.23e-07  [+1(6.13e-08)]_1
+NMB1712(lldP)Score=5.8,P         3.28e-08  [+1(1.64e-08)]_1
+NMB0543(lldP)Score=6.3Po         5.67e-09  [+1(2.83e-09)]_1
+NMB1711(lldR)Score=5.3,P         1.48e-07  [+1(7.39e-08)]_1
+LHK_02843(lldE)Score=6.2         1.97e-08  [+1(9.83e-09)]_1
+LHK_02842(lldR)Score=5.7         2.20e-08  [+1(1.10e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

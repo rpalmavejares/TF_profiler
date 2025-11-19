@@ -1,0 +1,371 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/FadR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_0201_p-199(fadB)    1.0000     17  Patl_2492_p-31(fadE)     1.0000     17  
+Patl_1663_p-46(fadI)     1.0000     17  Patl_1688_p-31(fadE2)    1.0000     17  
+Patl_1408_p-75(acdB)     1.0000     17  MADE_02424_p-24(tesB)    1.0000     17  
+MADE_03736_p-174(fadB)   1.0000     17  MADE_02152_p-97(fadE)    1.0000     17  
+MADE_02701_p-65(fadI)    1.0000     17  MADE_01137_p-79(fadD)    1.0000     17  
+MADE_02616_p-28(fadE2)   1.0000     17  GHTCC_010100011184_p-67( 1.0000     17  
+GHTCC_010100006812_p-27( 1.0000     17  GHTCC_010100010338_p-100 1.0000     17  
+GHTCC_010100000785_p-59( 1.0000     17  CPS_3157_p-55(fadI)      1.0000     17  
+CPS_2263_p-70(acdB)      1.0000     17  CPS_0925_p-30(fadH)      1.0000     17  
+ATW7_08866_p-30(fadE)    1.0000     17  ATW7_00335_p-54(COG0596) 1.0000     17  
+ATW7_05611_p-32(fadI)    1.0000     17  ATW7_02822_p-65(tesB)    1.0000     17  
+ATW7_02937_p-22(fadE2)   1.0000     17  ATW7_07132_p-30(fadH)    1.0000     17  
+PSHAa1952_p-31(fadE)     1.0000     17  PSHAa0966_p-33(fadI)     1.0000     17  
+PSHAb0355_p-67(tesB)     1.0000     17  PSHAa1410_p-18(fadH)     1.0000     17  
+PSHAb0374_p-22(fadE2)    1.0000     17  PTD2_11739_p-32(fadI)    1.0000     17  
+PTD2_22672_p-131(fadE)   1.0000     17  PTD2_19952_p-33(fadH)    1.0000     17  
+PTD2_02811_p-20(fadE2)   1.0000     17  PTD2_02881_p-66(tesB)    1.0000     17  
+OS145_01812_p-33(fadE)   1.0000     17  OS145_12280_p-48(fadI)   1.0000     17  
+IL1827_p-67(fadD)        1.0000     17  IL1665_p-34(fadE)        1.0000     17  
+IL0994_p-42(fadI)        1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/FadR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/FadR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       39    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             663    N=              39
+sample: seed=            0    hsfrac=          0
+        searchsize=    663    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.258 C 0.228 G 0.255 T 0.259 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.258 C 0.228 G 0.255 T 0.259 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WASTGGTCWGACCWSTW MEME-1	width =  17  sites =  39  llr = 520  E-value = 3.4e-186
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  57:3:1:15:a:17::4
+pos.-specific     C  1:7:1:18:::88:321
+probability       G  :13:99::2a::2:6:1
+matrix            T  32:71:913::2:3184
+
+         bits    2.1                  
+                 1.9          **      
+                 1.7       *  **      
+                 1.5     ***  ***     
+Relative         1.3     ***  ***     
+Entropy          1.1   ****** ***** * 
+(19.2 bits)      0.9  ******* ***** * 
+                 0.6  ******* ******* 
+                 0.4 **************** 
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           AACTGGTCAGACCAGTT
+consensus            T GA    T    TC A
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+OS145_01812_p-33(fadE)        1  5.37e-09          . TACTGGTCAGACCTCTA           
+PTD2_11739_p-32(fadI)         1  6.28e-09          . AACAGGTCAGACCTGTA           
+MADE_02701_p-65(fadI)         1  6.28e-09          . TACAGGTCAGACCACTT           
+Patl_1663_p-46(fadI)          1  6.28e-09          . TACAGGTCAGACCACTT           
+PTD2_22672_p-131(fadE)        1  1.72e-08          . TAGTGGTCAGACCTCTA           
+IL0994_p-42(fadI)             1  1.96e-08          . TTGTGGTCAGACCAGTA           
+CPS_3157_p-55(fadI)           1  2.95e-08          . AAGAGGTCAGACCTCTT           
+Patl_1408_p-75(acdB)          1  3.78e-08          . AAGTGGTTAGACCAGTT           
+PSHAa0966_p-33(fadI)          1  4.32e-08          . AACAGGTCAGACCTGTC           
+ATW7_05611_p-32(fadI)         1  4.32e-08          . AACAGGTCAGACCTGTC           
+PTD2_02881_p-66(tesB)         1  6.94e-08          . AACTGGTCTGACCTTTT           
+ATW7_02822_p-65(tesB)         1  6.94e-08          . TACTGGCCTGACCAGTT           
+IL1665_p-34(fadE)             1  1.09e-07          . CACTGGTCAGACCTCCA           
+Patl_2492_p-31(fadE)          1  1.67e-07          . CTCTGGTCTGACCTCTA           
+PSHAa1952_p-31(fadE)          1  1.85e-07          . AGGTGGTCTGACCTCTA           
+ATW7_00335_p-54(COG0596)      1  1.85e-07          . TAGTGGTCTGACAACTT           
+ATW7_08866_p-30(fadE)         1  1.85e-07          . AGGTGGTCTGACCTCTA           
+GHTCC_010100000785_p-59(      1  2.04e-07          . AACTGGTCAGATGAGCT           
+PSHAa1410_p-18(fadH)          1  2.27e-07          . CACAGGTTAGACCAGTT           
+ATW7_07132_p-30(fadH)         1  2.27e-07          . CACAGGTTAGACCAGTT           
+CPS_2263_p-70(acdB)           1  2.27e-07          . TAGTGGTATGACCAGTG           
+GHTCC_010100010338_p-100      1  3.04e-07          . TAGAGGTCGGACCACTG           
+Patl_0201_p-199(fadB)         1  3.33e-07          . AACTGGCATGACCAGTT           
+OS145_12280_p-48(fadI)        1  3.67e-07          . GTGTGGTCAGACCAGTA           
+PSHAb0355_p-67(tesB)          1  3.67e-07          . TGCTGGTCTGACAAGTT           
+GHTCC_010100011184_p-67(      1  3.67e-07          . TACTTGTAAGACCAGTT           
+PTD2_19952_p-33(fadH)         1  5.30e-07          . CAGAGGTATGACCAGTA           
+PTD2_02811_p-20(fadE2)        1  5.78e-07          . ATCTGGTCGGATGAGTT           
+PSHAb0374_p-22(fadE2)         1  5.78e-07          . ATCTGGTCGGATGAGTT           
+ATW7_02937_p-22(fadE2)        1  5.78e-07          . ATCTGGTCGGATGAGTT           
+MADE_02616_p-28(fadE2)        1  6.31e-07          . AACTGGTCAGATGAGCG           
+Patl_1688_p-31(fadE2)         1  6.31e-07          . AACTGGTCAGATGAGCG           
+GHTCC_010100006812_p-27(      1  6.89e-07          . ATCTGGTCTGACCATCA           
+MADE_01137_p-79(fadD)         1  8.16e-07          . AAGTTATCAGACCAGTT           
+MADE_02152_p-97(fadE)         1  2.79e-06          . TGCTGGTCTGACCTCGA           
+MADE_03736_p-174(fadB)        1  3.21e-06          . AAGTCATCGGACCACTA           
+CPS_0925_p-30(fadH)           1  3.93e-06          . AACTGGTACGACCAATA           
+IL1827_p-67(fadD)             1  5.09e-06          . AACTGGTCGGATATGCG           
+MADE_02424_p-24(tesB)         1  1.36e-05          . AACTCATCAGACCAGAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OS145_01812_p-33(fadE)            5.4e-09  [+1]
+PTD2_11739_p-32(fadI)             6.3e-09  [+1]
+MADE_02701_p-65(fadI)             6.3e-09  [+1]
+Patl_1663_p-46(fadI)              6.3e-09  [+1]
+PTD2_22672_p-131(fadE)            1.7e-08  [+1]
+IL0994_p-42(fadI)                   2e-08  [+1]
+CPS_3157_p-55(fadI)               2.9e-08  [+1]
+Patl_1408_p-75(acdB)              3.8e-08  [+1]
+PSHAa0966_p-33(fadI)              4.3e-08  [+1]
+ATW7_05611_p-32(fadI)             4.3e-08  [+1]
+PTD2_02881_p-66(tesB)             6.9e-08  [+1]
+ATW7_02822_p-65(tesB)             6.9e-08  [+1]
+IL1665_p-34(fadE)                 1.1e-07  [+1]
+Patl_2492_p-31(fadE)              1.7e-07  [+1]
+PSHAa1952_p-31(fadE)              1.8e-07  [+1]
+ATW7_00335_p-54(COG0596)          1.8e-07  [+1]
+ATW7_08866_p-30(fadE)             1.8e-07  [+1]
+GHTCC_010100000785_p-59(            2e-07  [+1]
+PSHAa1410_p-18(fadH)              2.3e-07  [+1]
+ATW7_07132_p-30(fadH)             2.3e-07  [+1]
+CPS_2263_p-70(acdB)               2.3e-07  [+1]
+GHTCC_010100010338_p-100            3e-07  [+1]
+Patl_0201_p-199(fadB)             3.3e-07  [+1]
+OS145_12280_p-48(fadI)            3.7e-07  [+1]
+PSHAb0355_p-67(tesB)              3.7e-07  [+1]
+GHTCC_010100011184_p-67(          3.7e-07  [+1]
+PTD2_19952_p-33(fadH)             5.3e-07  [+1]
+PTD2_02811_p-20(fadE2)            5.8e-07  [+1]
+PSHAb0374_p-22(fadE2)             5.8e-07  [+1]
+ATW7_02937_p-22(fadE2)            5.8e-07  [+1]
+MADE_02616_p-28(fadE2)            6.3e-07  [+1]
+Patl_1688_p-31(fadE2)             6.3e-07  [+1]
+GHTCC_010100006812_p-27(          6.9e-07  [+1]
+MADE_01137_p-79(fadD)             8.2e-07  [+1]
+MADE_02152_p-97(fadE)             2.8e-06  [+1]
+MADE_03736_p-174(fadB)            3.2e-06  [+1]
+CPS_0925_p-30(fadH)               3.9e-06  [+1]
+IL1827_p-67(fadD)                 5.1e-06  [+1]
+MADE_02424_p-24(tesB)             1.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WASTGGTCWGACCWSTW width=17 seqs=39
+OS145_01812_p-33(fadE)   (    1) TACTGGTCAGACCTCTA  1 
+PTD2_11739_p-32(fadI)    (    1) AACAGGTCAGACCTGTA  1 
+MADE_02701_p-65(fadI)    (    1) TACAGGTCAGACCACTT  1 
+Patl_1663_p-46(fadI)     (    1) TACAGGTCAGACCACTT  1 
+PTD2_22672_p-131(fadE)   (    1) TAGTGGTCAGACCTCTA  1 
+IL0994_p-42(fadI)        (    1) TTGTGGTCAGACCAGTA  1 
+CPS_3157_p-55(fadI)      (    1) AAGAGGTCAGACCTCTT  1 
+Patl_1408_p-75(acdB)     (    1) AAGTGGTTAGACCAGTT  1 
+PSHAa0966_p-33(fadI)     (    1) AACAGGTCAGACCTGTC  1 
+ATW7_05611_p-32(fadI)    (    1) AACAGGTCAGACCTGTC  1 
+PTD2_02881_p-66(tesB)    (    1) AACTGGTCTGACCTTTT  1 
+ATW7_02822_p-65(tesB)    (    1) TACTGGCCTGACCAGTT  1 
+IL1665_p-34(fadE)        (    1) CACTGGTCAGACCTCCA  1 
+Patl_2492_p-31(fadE)     (    1) CTCTGGTCTGACCTCTA  1 
+PSHAa1952_p-31(fadE)     (    1) AGGTGGTCTGACCTCTA  1 
+ATW7_00335_p-54(COG0596) (    1) TAGTGGTCTGACAACTT  1 
+ATW7_08866_p-30(fadE)    (    1) AGGTGGTCTGACCTCTA  1 
+GHTCC_010100000785_p-59( (    1) AACTGGTCAGATGAGCT  1 
+PSHAa1410_p-18(fadH)     (    1) CACAGGTTAGACCAGTT  1 
+ATW7_07132_p-30(fadH)    (    1) CACAGGTTAGACCAGTT  1 
+CPS_2263_p-70(acdB)      (    1) TAGTGGTATGACCAGTG  1 
+GHTCC_010100010338_p-100 (    1) TAGAGGTCGGACCACTG  1 
+Patl_0201_p-199(fadB)    (    1) AACTGGCATGACCAGTT  1 
+OS145_12280_p-48(fadI)   (    1) GTGTGGTCAGACCAGTA  1 
+PSHAb0355_p-67(tesB)     (    1) TGCTGGTCTGACAAGTT  1 
+GHTCC_010100011184_p-67( (    1) TACTTGTAAGACCAGTT  1 
+PTD2_19952_p-33(fadH)    (    1) CAGAGGTATGACCAGTA  1 
+PTD2_02811_p-20(fadE2)   (    1) ATCTGGTCGGATGAGTT  1 
+PSHAb0374_p-22(fadE2)    (    1) ATCTGGTCGGATGAGTT  1 
+ATW7_02937_p-22(fadE2)   (    1) ATCTGGTCGGATGAGTT  1 
+MADE_02616_p-28(fadE2)   (    1) AACTGGTCAGATGAGCG  1 
+Patl_1688_p-31(fadE2)    (    1) AACTGGTCAGATGAGCG  1 
+GHTCC_010100006812_p-27( (    1) ATCTGGTCTGACCATCA  1 
+MADE_01137_p-79(fadD)    (    1) AAGTTATCAGACCAGTT  1 
+MADE_02152_p-97(fadE)    (    1) TGCTGGTCTGACCTCGA  1 
+MADE_03736_p-174(fadB)   (    1) AAGTCATCGGACCACTA  1 
+CPS_0925_p-30(fadH)      (    1) AACTGGTACGACCAATA  1 
+IL1827_p-67(fadD)        (    1) AACTGGTCGGATATGCG  1 
+MADE_02424_p-24(tesB)    (    1) AACTCATCAGACCAGAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 39 bayes= 1.65486 E= 3.4e-186 
+   106    -83   -331     25 
+   148  -1193   -131    -53 
+ -1193    155     39  -1193 
+    -1  -1193  -1193    152 
+ -1193   -215    182   -234 
+  -174  -1193    186  -1193 
+ -1193   -215  -1193    187 
+  -101    180  -1193   -175 
+    99   -315    -73     25 
+ -1193  -1193    197  -1193 
+   196  -1193  -1193  -1193 
+ -1193    185  -1193    -53 
+  -174    175    -73  -1193 
+   137  -1193  -1193     36 
+  -333     55    121   -234 
+  -333    -57   -331    162 
+    48   -157    -99     75 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 39 E= 3.4e-186 
+ 0.538462  0.128205  0.025641  0.307692 
+ 0.717949  0.000000  0.102564  0.179487 
+ 0.000000  0.666667  0.333333  0.000000 
+ 0.256410  0.000000  0.000000  0.743590 
+ 0.000000  0.051282  0.897436  0.051282 
+ 0.076923  0.000000  0.923077  0.000000 
+ 0.000000  0.051282  0.000000  0.948718 
+ 0.128205  0.794872  0.000000  0.076923 
+ 0.512821  0.025641  0.153846  0.307692 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.820513  0.000000  0.179487 
+ 0.076923  0.769231  0.153846  0.000000 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.025641  0.333333  0.589744  0.051282 
+ 0.025641  0.153846  0.025641  0.794872 
+ 0.358974  0.076923  0.128205  0.435897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WASTGGTCWGACCWSTW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]A[CG][TA]GGTC[AT]GACC[AT][GC]T[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_0201_p-199(fadB)            3.33e-07  [+1(3.33e-07)]
+Patl_2492_p-31(fadE)             1.67e-07  [+1(1.67e-07)]
+Patl_1663_p-46(fadI)             6.28e-09  [+1(6.28e-09)]
+Patl_1688_p-31(fadE2)            6.31e-07  [+1(6.31e-07)]
+Patl_1408_p-75(acdB)             3.78e-08  [+1(3.78e-08)]
+MADE_02424_p-24(tesB)            1.36e-05  [+1(1.36e-05)]
+MADE_03736_p-174(fadB)           3.21e-06  [+1(3.21e-06)]
+MADE_02152_p-97(fadE)            2.79e-06  [+1(2.79e-06)]
+MADE_02701_p-65(fadI)            6.28e-09  [+1(6.28e-09)]
+MADE_01137_p-79(fadD)            8.16e-07  [+1(8.16e-07)]
+MADE_02616_p-28(fadE2)           6.31e-07  [+1(6.31e-07)]
+GHTCC_010100011184_p-67(         3.67e-07  [+1(3.67e-07)]
+GHTCC_010100006812_p-27(         6.89e-07  [+1(6.89e-07)]
+GHTCC_010100010338_p-100         3.04e-07  [+1(3.04e-07)]
+GHTCC_010100000785_p-59(         2.04e-07  [+1(2.04e-07)]
+CPS_3157_p-55(fadI)              2.95e-08  [+1(2.95e-08)]
+CPS_2263_p-70(acdB)              2.27e-07  [+1(2.27e-07)]
+CPS_0925_p-30(fadH)              3.93e-06  [+1(3.93e-06)]
+ATW7_08866_p-30(fadE)            1.85e-07  [+1(1.85e-07)]
+ATW7_00335_p-54(COG0596)         1.85e-07  [+1(1.85e-07)]
+ATW7_05611_p-32(fadI)            4.32e-08  [+1(4.32e-08)]
+ATW7_02822_p-65(tesB)            6.94e-08  [+1(6.94e-08)]
+ATW7_02937_p-22(fadE2)           5.78e-07  [+1(5.78e-07)]
+ATW7_07132_p-30(fadH)            2.27e-07  [+1(2.27e-07)]
+PSHAa1952_p-31(fadE)             1.85e-07  [+1(1.85e-07)]
+PSHAa0966_p-33(fadI)             4.32e-08  [+1(4.32e-08)]
+PSHAb0355_p-67(tesB)             3.67e-07  [+1(3.67e-07)]
+PSHAa1410_p-18(fadH)             2.27e-07  [+1(2.27e-07)]
+PSHAb0374_p-22(fadE2)            5.78e-07  [+1(5.78e-07)]
+PTD2_11739_p-32(fadI)            6.28e-09  [+1(6.28e-09)]
+PTD2_22672_p-131(fadE)           1.72e-08  [+1(1.72e-08)]
+PTD2_19952_p-33(fadH)            5.30e-07  [+1(5.30e-07)]
+PTD2_02811_p-20(fadE2)           5.78e-07  [+1(5.78e-07)]
+PTD2_02881_p-66(tesB)            6.94e-08  [+1(6.94e-08)]
+OS145_01812_p-33(fadE)           5.37e-09  [+1(5.37e-09)]
+OS145_12280_p-48(fadI)           3.67e-07  [+1(3.67e-07)]
+IL1827_p-67(fadD)                5.09e-06  [+1(5.09e-06)]
+IL1665_p-34(fadE)                1.09e-07  [+1(1.09e-07)]
+IL0994_p-42(fadI)                1.96e-08  [+1(1.96e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

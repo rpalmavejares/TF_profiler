@@ -1,0 +1,272 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NorR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_3474_p-150(Patl_347 1.0000     19  Patl_3474_p-175(Patl_347 1.0000     19  
+Patl_3475_p-93(norR)     1.0000     19  Patl_3474_p-194(Patl_347 1.0000     19  
+Patl_3475_p-74(norR)     1.0000     19  Patl_3475_p-118(norR)    1.0000     19  
+CPS_0850_p-162(Patl_3474 1.0000     19  CPS_0850_p-137(Patl_3474 1.0000     19  
+CPS_0851_p-117(norR)     1.0000     19  CPS_0851_p-92(norR)      1.0000     19  
+PSHAa2882_p-163(Patl_347 1.0000     19  PSHAa2882_p-120(Patl_347 1.0000     19  
+PSHAa2883_p-15(norR)     1.0000     19  PSHAa2883_p-58(norR)     1.0000     19  
+PTD2_10348_p-123(Patl_34 1.0000     19  PTD2_10353_p-102(norR)   1.0000     19  
+PTD2_10353_p-58(norR)    1.0000     19  PTD2_10348_p-167(Patl_34 1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NorR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/NorR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             342    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    342    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.167 G 0.167 T 0.333 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.332 C 0.168 G 0.168 T 0.332 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RAGTCATWATGACTY MEME-1	width =  15  sites =  18  llr = 250  E-value = 1.4e-065
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  37:::72583:a:21
+pos.-specific     C  ::::a:::::::a26
+probability       G  62a:::::::a::::
+matrix            T  12:a:38527:::73
+
+         bits    2.6   * *     * *  
+                 2.3   * *     * *  
+                 2.1   * *     * *  
+                 1.8   * *     * *  
+Relative         1.5   ***     ***  
+Entropy          1.3   ***     ***  
+(20.0 bits)      1.0   *** * * ***  
+                 0.8 * ***** ***** *
+                 0.5 ***************
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           GAGTCATAATGACTC
+consensus            A    T T A    T
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+PTD2_10353_p-102(norR)        3  8.84e-09         AA GAGTCTTAATGACTC AT        
+PTD2_10348_p-123(Patl_34      3  8.84e-09         AT GAGTCATTAAGACTC TT        
+Patl_3475_p-93(norR)          3  8.84e-09         AT GAGTCATAAAGACTC TA        
+Patl_3474_p-175(Patl_347      3  8.84e-09         TA GAGTCTTTATGACTC AT        
+Patl_3475_p-118(norR)         3  3.14e-08         AA GAGTCATATTGACTC TA        
+Patl_3474_p-150(Patl_347      3  3.14e-08         TA GAGTCAATATGACTC TT        
+CPS_0851_p-92(norR)           3  1.76e-07         TG TGGTCATAATGACTC TA        
+CPS_0850_p-162(Patl_3474      3  1.76e-07         TA GAGTCATTATGACCA CA        
+Patl_3475_p-74(norR)          3  2.62e-07         AA AAGTCTTTATGACTT GA        
+Patl_3474_p-194(Patl_347      3  2.62e-07         TC AAGTCATAAAGACTT TT        
+PTD2_10348_p-167(Patl_34      3  5.18e-07         TT GAGTCAAAAAGACAC GT        
+PTD2_10353_p-58(norR)         3  5.18e-07         AC GTGTCTTTTTGACTC AA        
+CPS_0851_p-117(norR)          3  5.87e-07         CG TAGTCATTATGACCT TG        
+CPS_0850_p-137(Patl_3474      3  5.87e-07         CA AGGTCATAATGACTA CG        
+PSHAa2883_p-15(norR)          3  6.35e-07         AA GAGTCATTTTGACAT GA        
+PSHAa2882_p-163(Patl_347      3  6.35e-07         TC ATGTCAAAATGACTC TT        
+PSHAa2883_p-58(norR)          3  1.40e-06         TT ATGTCTTTATGACCT AC        
+PSHAa2882_p-120(Patl_347      3  1.40e-06         GT AGGTCATAAAGACAT AA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PTD2_10353_p-102(norR)            8.8e-09  2_[+1]_2
+PTD2_10348_p-123(Patl_34          8.8e-09  2_[+1]_2
+Patl_3475_p-93(norR)              8.8e-09  2_[+1]_2
+Patl_3474_p-175(Patl_347          8.8e-09  2_[+1]_2
+Patl_3475_p-118(norR)             3.1e-08  2_[+1]_2
+Patl_3474_p-150(Patl_347          3.1e-08  2_[+1]_2
+CPS_0851_p-92(norR)               1.8e-07  2_[+1]_2
+CPS_0850_p-162(Patl_3474          1.8e-07  2_[+1]_2
+Patl_3475_p-74(norR)              2.6e-07  2_[+1]_2
+Patl_3474_p-194(Patl_347          2.6e-07  2_[+1]_2
+PTD2_10348_p-167(Patl_34          5.2e-07  2_[+1]_2
+PTD2_10353_p-58(norR)             5.2e-07  2_[+1]_2
+CPS_0851_p-117(norR)              5.9e-07  2_[+1]_2
+CPS_0850_p-137(Patl_3474          5.9e-07  2_[+1]_2
+PSHAa2883_p-15(norR)              6.4e-07  2_[+1]_2
+PSHAa2882_p-163(Patl_347          6.4e-07  2_[+1]_2
+PSHAa2883_p-58(norR)              1.4e-06  2_[+1]_2
+PSHAa2882_p-120(Patl_347          1.4e-06  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RAGTCATWATGACTY width=15 seqs=18
+PTD2_10353_p-102(norR)   (    3) GAGTCTTAATGACTC  1 
+PTD2_10348_p-123(Patl_34 (    3) GAGTCATTAAGACTC  1 
+Patl_3475_p-93(norR)     (    3) GAGTCATAAAGACTC  1 
+Patl_3474_p-175(Patl_347 (    3) GAGTCTTTATGACTC  1 
+Patl_3475_p-118(norR)    (    3) GAGTCATATTGACTC  1 
+Patl_3474_p-150(Patl_347 (    3) GAGTCAATATGACTC  1 
+CPS_0851_p-92(norR)      (    3) TGGTCATAATGACTC  1 
+CPS_0850_p-162(Patl_3474 (    3) GAGTCATTATGACCA  1 
+Patl_3475_p-74(norR)     (    3) AAGTCTTTATGACTT  1 
+Patl_3474_p-194(Patl_347 (    3) AAGTCATAAAGACTT  1 
+PTD2_10348_p-167(Patl_34 (    3) GAGTCAAAAAGACAC  1 
+PTD2_10353_p-58(norR)    (    3) GTGTCTTTTTGACTC  1 
+CPS_0851_p-117(norR)     (    3) TAGTCATTATGACCT  1 
+CPS_0850_p-137(Patl_3474 (    3) AGGTCATAATGACTA  1 
+PSHAa2883_p-15(norR)     (    3) GAGTCATTTTGACAT  1 
+PSHAa2882_p-163(Patl_347 (    3) ATGTCAAAATGACTC  1 
+PSHAa2883_p-58(norR)     (    3) ATGTCTTTATGACCT  1 
+PSHAa2882_p-120(Patl_347 (    3) AGGTCATAAAGACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 90 bayes= 4.02748 E= 1.4e-065 
+     0  -1081    173   -158 
+   100  -1081     -1   -100 
+ -1081  -1081    258  -1081 
+ -1081  -1081  -1081    159 
+ -1081    258  -1081  -1081 
+   112  -1081  -1081    -26 
+  -100  -1081  -1081    133 
+    59  -1081  -1081     59 
+   133  -1081  -1081   -100 
+   -26  -1081  -1081    112 
+ -1081  -1081    258  -1081 
+   159  -1081  -1081  -1081 
+ -1081    258  -1081  -1081 
+  -100     -1  -1081    100 
+  -158    173  -1081      0 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 18 E= 1.4e-065 
+ 0.333333  0.000000  0.555556  0.111111 
+ 0.666667  0.000000  0.166667  0.166667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.722222  0.000000  0.000000  0.277778 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.277778  0.000000  0.000000  0.722222 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.166667  0.166667  0.000000  0.666667 
+ 0.111111  0.555556  0.000000  0.333333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RAGTCATWATGACTY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]AGTC[AT]T[AT]A[TA]GACT[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_3474_p-150(Patl_347         1.57e-07  2_[+1(3.14e-08)]_2
+Patl_3474_p-175(Patl_347         4.42e-08  2_[+1(8.84e-09)]_2
+Patl_3475_p-93(norR)             4.42e-08  2_[+1(8.84e-09)]_2
+Patl_3474_p-194(Patl_347         1.31e-06  2_[+1(2.62e-07)]_2
+Patl_3475_p-74(norR)             1.31e-06  2_[+1(2.62e-07)]_2
+Patl_3475_p-118(norR)            1.57e-07  2_[+1(3.14e-08)]_2
+CPS_0850_p-162(Patl_3474         8.81e-07  2_[+1(1.76e-07)]_2
+CPS_0850_p-137(Patl_3474         2.94e-06  2_[+1(5.87e-07)]_2
+CPS_0851_p-117(norR)             2.94e-06  2_[+1(5.87e-07)]_2
+CPS_0851_p-92(norR)              8.81e-07  2_[+1(1.76e-07)]_2
+PSHAa2882_p-163(Patl_347         3.18e-06  2_[+1(6.35e-07)]_2
+PSHAa2882_p-120(Patl_347         7.02e-06  2_[+1(1.40e-06)]_2
+PSHAa2883_p-15(norR)             3.18e-06  2_[+1(6.35e-07)]_2
+PSHAa2883_p-58(norR)             7.02e-06  2_[+1(1.40e-06)]_2
+PTD2_10348_p-123(Patl_34         4.42e-08  2_[+1(8.84e-09)]_2
+PTD2_10353_p-102(norR)           4.42e-08  2_[+1(8.84e-09)]_2
+PTD2_10353_p-58(norR)            2.59e-06  2_[+1(5.18e-07)]_2
+PTD2_10348_p-167(Patl_34         2.59e-06  2_[+1(5.18e-07)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

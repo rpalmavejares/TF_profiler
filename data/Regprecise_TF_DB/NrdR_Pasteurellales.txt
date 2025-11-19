@@ -1,0 +1,378 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/NrdR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HI0075_p-55(nrdD)        1.0000     16  HI0075_p-87(nrdD)        1.0000     16  
+HI0075_p-23(nrdD)        1.0000     16  HI1659_p-56(nrdA)        1.0000     16  
+HI1659_p-87(nrdA)        1.0000     16  NT05HA_0064_p-54(nrdD)   1.0000     16  
+NT05HA_0064_p-86(nrdD)   1.0000     16  NT05HA_0693_p-50(nrdA)   1.0000     16  
+NT05HA_0693_p-81(nrdA)   1.0000     16  PM0940_p-56(nrdD)        1.0000     16  
+PM0940_p-87(nrdD)        1.0000     16  PM0717_p-44(nrdA)        1.0000     16  
+PM0717_p-75(nrdA)        1.0000     16  MS0633_p-22(nrdD)        1.0000     16  
+MS0633_p-54(nrdD)        1.0000     16  MS0992_p-41(nrdA)        1.0000     16  
+MS0992_p-10(nrdA)        1.0000     16  Asuc_1407_p-139(nrdD)    1.0000     16  
+Asuc_1407_p-54(nrdD)     1.0000     16  Asuc_1407_p-22(nrdD)     1.0000     16  
+Asuc_1466_p-33(nrdA)     1.0000     16  Asuc_1466_p-64(nrdA)     1.0000     16  
+HSM_0537_p-25(nrdD)      1.0000     16  HSM_0537_p-56(nrdD)      1.0000     16  
+HSM_0537_p-87(nrdD)      1.0000     16  HSM_0366_p-47(nrdA)      1.0000     16  
+HSM_0366_p-78(nrdA)      1.0000     16  APP7_0149_p-149(nrdB)    1.0000     16  
+APP7_0149_p-180(nrdB)    1.0000     16  APP7_0167_p-30(nrdG)     1.0000     16  
+APP7_0167_p-62(nrdG)     1.0000     16  APP7_1045_p-78(nrdA)     1.0000     16  
+APP7_1045_p-47(nrdA)     1.0000     16  HD0394_p-30(nrdG)        1.0000     16  
+HD0394_p-62(nrdG)        1.0000     16  HD1731_p-78(nrdA)        1.0000     16  
+HD1731_p-47(nrdA)        1.0000     16  HAPS_1168_p-55(nrdG)     1.0000     16  
+HAPS_1168_p-23(nrdG)     1.0000     16  HAPS_1341_p-203(nrdB)    1.0000     16  
+HAPS_1341_p-172(nrdB)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/NrdR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/NrdR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       41    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             656    N=              41
+sample: seed=            0    hsfrac=          0
+        searchsize=    656    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.337 C 0.159 G 0.139 T 0.366 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.336 C 0.159 G 0.139 T 0.365 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACACWATATMTWGTRK MEME-1	width =  16  sites =  41  llr = 492  E-value = 7.8e-176
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  638:59:a:6:4::31
+pos.-specific     C  26:a::2::4:::::1
+probability       G  1:::::1:::::a163
+matrix            T  211:517:a:a6:916
+
+         bits    2.8             *   
+                 2.6    *        *   
+                 2.3    *        *   
+                 2.0    *        *   
+Relative         1.7    *   *    *   
+Entropy          1.4    *   ** * *   
+(17.3 bits)      1.1    *   ** * *   
+                 0.9  * * * **** *** 
+                 0.6  *** ****** *** 
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           ACACAATATATTGTGT
+consensus             A  T    C A  AG
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Asuc_1407_p-139(nrdD)         1  2.99e-10          . ACACAATATCTTGTGG           
+PM0940_p-87(nrdD)             1  6.25e-10          . ACACTATATCTTGTGG           
+PM0717_p-44(nrdA)             1  2.62e-09          . ACACAATATCTTGTGT           
+HI1659_p-56(nrdA)             1  4.30e-09          . ACACTATATCTTGTGT           
+HSM_0537_p-87(nrdD)           1  5.76e-09          . ACACAATATATAGTGG           
+HD0394_p-62(nrdG)             1  9.11e-09          . ACACAATATATTGTGT           
+HAPS_1341_p-203(nrdB)         1  1.42e-08          . CCACTATATCTTGTGT           
+HI0075_p-87(nrdD)             1  2.63e-08          . ACACTACATATTGTGT           
+HD1731_p-47(nrdA)             1  3.48e-08          . CCACAACATATAGTGG           
+APP7_0167_p-62(nrdG)          1  8.05e-08          . TCACAATATATTGTGT           
+HAPS_1168_p-23(nrdG)          1  9.97e-08          . CCACAAGATATAGTGG           
+APP7_1045_p-47(nrdA)          1  9.97e-08          . CCACAAGATATAGTGG           
+NT05HA_0064_p-86(nrdD)        1  1.42e-07          . ACACTATATGTTGTGT           
+HI1659_p-87(nrdA)             1  1.42e-07          . ACACATTATCTTGTGG           
+HI0075_p-23(nrdD)             1  3.88e-07          . ACACTATATATTGGAG           
+APP7_1045_p-78(nrdA)          1  5.10e-07          . AAACAATATCTTGTAT           
+HSM_0366_p-47(nrdA)           1  5.10e-07          . TAACTATATCTTGTGT           
+HSM_0366_p-78(nrdA)           1  8.32e-07          . ACACATTATCTTGTAG           
+NT05HA_0693_p-81(nrdA)        1  9.22e-07          . ACACATTATCTTGTGC           
+Asuc_1466_p-33(nrdA)          1  1.14e-06          . AATCTATATATTGTGT           
+NT05HA_0693_p-50(nrdA)        1  1.40e-06          . CAACTATATGTTGTGT           
+HAPS_1341_p-172(nrdB)         1  1.74e-06          . ACACAAGATATAGTTT           
+HAPS_1168_p-55(nrdG)          1  1.74e-06          . CTACTACATATTGTGT           
+APP7_0149_p-180(nrdB)         1  2.12e-06          . ATACAATATCTAGTAT           
+APP7_0167_p-30(nrdG)          1  2.56e-06          . ACACAACATATAGTAA           
+Asuc_1407_p-22(nrdD)          1  2.81e-06          . ACACTACATATAGGTG           
+PM0717_p-75(nrdA)             1  3.34e-06          . GCACATTATCTTGTAT           
+PM0940_p-56(nrdD)             1  3.64e-06          . TAACTATATATAGTAT           
+MS0992_p-10(nrdA)             1  4.71e-06          . CTTCTATATATTGTGT           
+HSM_0537_p-56(nrdD)           1  5.12e-06          . TAACAATATATAGTGA           
+Asuc_1466_p-64(nrdA)          1  5.12e-06          . ACCCACTATCTTGTAG           
+MS0992_p-41(nrdA)             1  5.12e-06          . ACCCACTATCTTGTAG           
+HI0075_p-55(nrdD)             1  9.96e-06          . GATCTATATATAGTGC           
+MS0633_p-54(nrdD)             1  1.07e-05          . TTTCTATATATAGTGT           
+HD1731_p-78(nrdA)             1  1.14e-05          . AAACCATATCTTGTAC           
+Asuc_1407_p-54(nrdD)          1  1.14e-05          . GATCTATATATAGTAT           
+NT05HA_0064_p-54(nrdD)        1  1.31e-05          . TATCTATATATAGTAT           
+HD0394_p-30(nrdG)             1  1.48e-05          . TAACTATATATAGTAA           
+MS0633_p-22(nrdD)             1  1.77e-05          . ACACTACATATAGATT           
+APP7_0149_p-149(nrdB)         1  1.98e-05          . ACACTAGATATGGGTT           
+HSM_0537_p-25(nrdD)           1  1.98e-05          . ACGCAACATATAGGTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Asuc_1407_p-139(nrdD)               3e-10  [+1]
+PM0940_p-87(nrdD)                 6.2e-10  [+1]
+PM0717_p-44(nrdA)                 2.6e-09  [+1]
+HI1659_p-56(nrdA)                 4.3e-09  [+1]
+HSM_0537_p-87(nrdD)               5.8e-09  [+1]
+HD0394_p-62(nrdG)                 9.1e-09  [+1]
+HAPS_1341_p-203(nrdB)             1.4e-08  [+1]
+HI0075_p-87(nrdD)                 2.6e-08  [+1]
+HD1731_p-47(nrdA)                 3.5e-08  [+1]
+APP7_0167_p-62(nrdG)              8.1e-08  [+1]
+HAPS_1168_p-23(nrdG)                1e-07  [+1]
+APP7_1045_p-47(nrdA)                1e-07  [+1]
+NT05HA_0064_p-86(nrdD)            1.4e-07  [+1]
+HI1659_p-87(nrdA)                 1.4e-07  [+1]
+HI0075_p-23(nrdD)                 3.9e-07  [+1]
+APP7_1045_p-78(nrdA)              5.1e-07  [+1]
+HSM_0366_p-47(nrdA)               5.1e-07  [+1]
+HSM_0366_p-78(nrdA)               8.3e-07  [+1]
+NT05HA_0693_p-81(nrdA)            9.2e-07  [+1]
+Asuc_1466_p-33(nrdA)              1.1e-06  [+1]
+NT05HA_0693_p-50(nrdA)            1.4e-06  [+1]
+HAPS_1341_p-172(nrdB)             1.7e-06  [+1]
+HAPS_1168_p-55(nrdG)              1.7e-06  [+1]
+APP7_0149_p-180(nrdB)             2.1e-06  [+1]
+APP7_0167_p-30(nrdG)              2.6e-06  [+1]
+Asuc_1407_p-22(nrdD)              2.8e-06  [+1]
+PM0717_p-75(nrdA)                 3.3e-06  [+1]
+PM0940_p-56(nrdD)                 3.6e-06  [+1]
+MS0992_p-10(nrdA)                 4.7e-06  [+1]
+HSM_0537_p-56(nrdD)               5.1e-06  [+1]
+Asuc_1466_p-64(nrdA)              5.1e-06  [+1]
+MS0992_p-41(nrdA)                 5.1e-06  [+1]
+HI0075_p-55(nrdD)                   1e-05  [+1]
+MS0633_p-54(nrdD)                 1.1e-05  [+1]
+HD1731_p-78(nrdA)                 1.1e-05  [+1]
+Asuc_1407_p-54(nrdD)              1.1e-05  [+1]
+NT05HA_0064_p-54(nrdD)            1.3e-05  [+1]
+HD0394_p-30(nrdG)                 1.5e-05  [+1]
+MS0633_p-22(nrdD)                 1.8e-05  [+1]
+APP7_0149_p-149(nrdB)               2e-05  [+1]
+HSM_0537_p-25(nrdD)                 2e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACACWATATMTWGTRK width=16 seqs=41
+Asuc_1407_p-139(nrdD)    (    1) ACACAATATCTTGTGG  1 
+PM0940_p-87(nrdD)        (    1) ACACTATATCTTGTGG  1 
+PM0717_p-44(nrdA)        (    1) ACACAATATCTTGTGT  1 
+HI1659_p-56(nrdA)        (    1) ACACTATATCTTGTGT  1 
+HSM_0537_p-87(nrdD)      (    1) ACACAATATATAGTGG  1 
+HD0394_p-62(nrdG)        (    1) ACACAATATATTGTGT  1 
+HAPS_1341_p-203(nrdB)    (    1) CCACTATATCTTGTGT  1 
+HI0075_p-87(nrdD)        (    1) ACACTACATATTGTGT  1 
+HD1731_p-47(nrdA)        (    1) CCACAACATATAGTGG  1 
+APP7_0167_p-62(nrdG)     (    1) TCACAATATATTGTGT  1 
+HAPS_1168_p-23(nrdG)     (    1) CCACAAGATATAGTGG  1 
+APP7_1045_p-47(nrdA)     (    1) CCACAAGATATAGTGG  1 
+NT05HA_0064_p-86(nrdD)   (    1) ACACTATATGTTGTGT  1 
+HI1659_p-87(nrdA)        (    1) ACACATTATCTTGTGG  1 
+HI0075_p-23(nrdD)        (    1) ACACTATATATTGGAG  1 
+APP7_1045_p-78(nrdA)     (    1) AAACAATATCTTGTAT  1 
+HSM_0366_p-47(nrdA)      (    1) TAACTATATCTTGTGT  1 
+HSM_0366_p-78(nrdA)      (    1) ACACATTATCTTGTAG  1 
+NT05HA_0693_p-81(nrdA)   (    1) ACACATTATCTTGTGC  1 
+Asuc_1466_p-33(nrdA)     (    1) AATCTATATATTGTGT  1 
+NT05HA_0693_p-50(nrdA)   (    1) CAACTATATGTTGTGT  1 
+HAPS_1341_p-172(nrdB)    (    1) ACACAAGATATAGTTT  1 
+HAPS_1168_p-55(nrdG)     (    1) CTACTACATATTGTGT  1 
+APP7_0149_p-180(nrdB)    (    1) ATACAATATCTAGTAT  1 
+APP7_0167_p-30(nrdG)     (    1) ACACAACATATAGTAA  1 
+Asuc_1407_p-22(nrdD)     (    1) ACACTACATATAGGTG  1 
+PM0717_p-75(nrdA)        (    1) GCACATTATCTTGTAT  1 
+PM0940_p-56(nrdD)        (    1) TAACTATATATAGTAT  1 
+MS0992_p-10(nrdA)        (    1) CTTCTATATATTGTGT  1 
+HSM_0537_p-56(nrdD)      (    1) TAACAATATATAGTGA  1 
+Asuc_1466_p-64(nrdA)     (    1) ACCCACTATCTTGTAG  1 
+MS0992_p-41(nrdA)        (    1) ACCCACTATCTTGTAG  1 
+HI0075_p-55(nrdD)        (    1) GATCTATATATAGTGC  1 
+MS0633_p-54(nrdD)        (    1) TTTCTATATATAGTGT  1 
+HD1731_p-78(nrdA)        (    1) AAACCATATCTTGTAC  1 
+Asuc_1407_p-54(nrdD)     (    1) GATCTATATATAGTAT  1 
+NT05HA_0064_p-54(nrdD)   (    1) TATCTATATATAGTAT  1 
+HD0394_p-30(nrdG)        (    1) TAACTATATATAGTAA  1 
+MS0633_p-22(nrdD)        (    1) ACACTACATATAGATT  1 
+APP7_0149_p-149(nrdB)    (    1) ACACTAGATATGGGTT  1 
+HSM_0537_p-25(nrdD)      (    1) ACGCAACATATAGGTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 41 bayes= 1.67069 E= 7.8e-176 
+    80     10    -93   -110 
+   -33    199  -1200   -190 
+   121   -170   -251   -132 
+ -1200    265  -1200  -1200 
+    54   -270  -1200     42 
+   134   -170  -1200   -190 
+ -1200     10    -51    100 
+   157  -1200  -1200  -1200 
+ -1200  -1200  -1200    145 
+    80    120   -151  -1200 
+ -1200  -1200  -1200    145 
+    30  -1200   -251     62 
+ -1200  -1200    284  -1200 
+  -378  -1200    -51    127 
+    -9  -1200    201   -158 
+  -220   -112    107     62 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 41 E= 7.8e-176 
+ 0.585366  0.170732  0.073171  0.170732 
+ 0.268293  0.634146  0.000000  0.097561 
+ 0.780488  0.048780  0.024390  0.146341 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.487805  0.024390  0.000000  0.487805 
+ 0.853659  0.048780  0.000000  0.097561 
+ 0.000000  0.170732  0.097561  0.731707 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.585366  0.365854  0.048780  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.414634  0.000000  0.024390  0.560976 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.024390  0.000000  0.097561  0.878049 
+ 0.317073  0.000000  0.560976  0.121951 
+ 0.073171  0.073171  0.292683  0.560976 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACACWATATMTWGTRK MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CA]AC[AT]ATAT[AC]T[TA]GT[GA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HI0075_p-55(nrdD)                9.96e-06  [+1(9.96e-06)]
+HI0075_p-87(nrdD)                2.63e-08  [+1(2.63e-08)]
+HI0075_p-23(nrdD)                3.88e-07  [+1(3.88e-07)]
+HI1659_p-56(nrdA)                4.30e-09  [+1(4.30e-09)]
+HI1659_p-87(nrdA)                1.42e-07  [+1(1.42e-07)]
+NT05HA_0064_p-54(nrdD)           1.31e-05  [+1(1.31e-05)]
+NT05HA_0064_p-86(nrdD)           1.42e-07  [+1(1.42e-07)]
+NT05HA_0693_p-50(nrdA)           1.40e-06  [+1(1.40e-06)]
+NT05HA_0693_p-81(nrdA)           9.22e-07  [+1(9.22e-07)]
+PM0940_p-56(nrdD)                3.64e-06  [+1(3.64e-06)]
+PM0940_p-87(nrdD)                6.25e-10  [+1(6.25e-10)]
+PM0717_p-44(nrdA)                2.62e-09  [+1(2.62e-09)]
+PM0717_p-75(nrdA)                3.34e-06  [+1(3.34e-06)]
+MS0633_p-22(nrdD)                1.77e-05  [+1(1.77e-05)]
+MS0633_p-54(nrdD)                1.07e-05  [+1(1.07e-05)]
+MS0992_p-41(nrdA)                5.12e-06  [+1(5.12e-06)]
+MS0992_p-10(nrdA)                4.71e-06  [+1(4.71e-06)]
+Asuc_1407_p-139(nrdD)            2.99e-10  [+1(2.99e-10)]
+Asuc_1407_p-54(nrdD)             1.14e-05  [+1(1.14e-05)]
+Asuc_1407_p-22(nrdD)             2.81e-06  [+1(2.81e-06)]
+Asuc_1466_p-33(nrdA)             1.14e-06  [+1(1.14e-06)]
+Asuc_1466_p-64(nrdA)             5.12e-06  [+1(5.12e-06)]
+HSM_0537_p-25(nrdD)              1.98e-05  [+1(1.98e-05)]
+HSM_0537_p-56(nrdD)              5.12e-06  [+1(5.12e-06)]
+HSM_0537_p-87(nrdD)              5.76e-09  [+1(5.76e-09)]
+HSM_0366_p-47(nrdA)              5.10e-07  [+1(5.10e-07)]
+HSM_0366_p-78(nrdA)              8.32e-07  [+1(8.32e-07)]
+APP7_0149_p-149(nrdB)            1.98e-05  [+1(1.98e-05)]
+APP7_0149_p-180(nrdB)            2.12e-06  [+1(2.12e-06)]
+APP7_0167_p-30(nrdG)             2.56e-06  [+1(2.56e-06)]
+APP7_0167_p-62(nrdG)             8.05e-08  [+1(8.05e-08)]
+APP7_1045_p-78(nrdA)             5.10e-07  [+1(5.10e-07)]
+APP7_1045_p-47(nrdA)             9.97e-08  [+1(9.97e-08)]
+HD0394_p-30(nrdG)                1.48e-05  [+1(1.48e-05)]
+HD0394_p-62(nrdG)                9.11e-09  [+1(9.11e-09)]
+HD1731_p-78(nrdA)                1.14e-05  [+1(1.14e-05)]
+HD1731_p-47(nrdA)                3.48e-08  [+1(3.48e-08)]
+HAPS_1168_p-55(nrdG)             1.74e-06  [+1(1.74e-06)]
+HAPS_1168_p-23(nrdG)             9.97e-08  [+1(9.97e-08)]
+HAPS_1341_p-203(nrdB)            1.42e-08  [+1(1.42e-08)]
+HAPS_1341_p-172(nrdB)            1.74e-06  [+1(1.74e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

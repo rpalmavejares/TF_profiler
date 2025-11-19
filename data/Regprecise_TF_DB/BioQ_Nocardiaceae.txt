@@ -1,0 +1,308 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/BioQ_Nocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+nfa18190_p-31(bioF)      1.0000     17  nfa18180_p-60(bioA)      1.0000     17  
+nfa18320_p-85(bioB)      1.0000     17  nfa18310_p-65(bioQ)      1.0000     17  
+RER_35040_p-18(bioF)     1.0000     17  RER_35050_p-37(bioA)     1.0000     17  
+RER_34880_p-58(bioB)     1.0000     17  RER_34880_p-42(bioB)     1.0000     17  
+RER_34890_p-124(bioQ)    1.0000     17  RER_34890_p-108(bioQ)    1.0000     17  
+ROP_07820_p-24(bioF)     1.0000     17  ROP_07830_p-41(bioA)     1.0000     17  
+ROP_07700_p-88(bioB)     1.0000     17  ROP_07700_p-72(bioB)     1.0000     17  
+ROP_07710_p-99(bioQ)     1.0000     17  ROP_07710_p-83(bioQ)     1.0000     17  
+ROP_53000_p-38(bioY)     1.0000     17  ROP_52960_p-38(bioY)     1.0000     17  
+RHA1_ro01054_p-26(bioF)  1.0000     17  RHA1_ro01055_p-59(bioA)  1.0000     17  
+RHA1_ro01043_p-1(bioB)   1.0000     17  RHA1_ro01043_p15(bioB)   1.0000     17  
+RHA1_ro01044_p-24(bioQ)  1.0000     17  RHA1_ro01044_p-8(bioQ)   1.0000     17  
+RHA1_ro05255_p-38(bioY)  1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/BioQ_Nocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Nocardiaceae/BioQ_Nocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             425    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    425    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.259 C 0.238 G 0.238 T 0.266 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.259 C 0.238 G 0.238 T 0.266 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CTTGAACRSYGTTCAAG MEME-1	width =  17  sites =  25  llr = 438  E-value = 5.5e-154
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:::9a:4::::1:a8:
+pos.-specific     C  61::::a:45:::a:12
+probability       G  21:a:::64:a:::::6
+matrix            T  :8a:1:::15:a9:::1
+
+         bits    2.1    *  *   *  *   
+                 1.9   ** **   ** **  
+                 1.7   ** **   ** **  
+                 1.5   *****   *****  
+Relative         1.2   *****   ****** 
+Entropy          1.0  ******* ******* 
+(25.3 bits)      0.8 ******** ********
+                 0.6 *****************
+                 0.4 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           CTTGAACGCCGTTCAAG
+consensus            G      AGT      C
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+nfa18180_p-60(bioA)           1  4.88e-10          . CTTGAACACTGTTCAAG           
+RHA1_ro01055_p-59(bioA)       1  9.56e-10          . CTTGAACGGTGTTCAAC           
+ROP_07830_p-41(bioA)          1  9.56e-10          . CTTGAACGGTGTTCAAC           
+RER_35040_p-18(bioF)          1  9.56e-10          . GTTGAACGGTGTTCAAG           
+RHA1_ro01054_p-26(bioF)       1  1.20e-09          . GTTGAACACCGTTCAAG           
+ROP_07820_p-24(bioF)          1  1.20e-09          . GTTGAACACCGTTCAAG           
+RER_35050_p-37(bioA)          1  1.20e-09          . CTTGAACACCGTTCAAC           
+RHA1_ro05255_p-38(bioY)       1  1.26e-09          . CTTGAACGTCGTTCAAG           
+ROP_52960_p-38(bioY)          1  1.26e-09          . CTTGAACGTCGTTCAAG           
+ROP_53000_p-38(bioY)          1  1.26e-09          . CTTGAACGTCGTTCAAG           
+nfa18190_p-31(bioF)           1  4.85e-09          . CCTGAACGGTGTTCAAG           
+nfa18320_p-85(bioB)           1  5.60e-09          . CCTGAACACCGTTCAAG           
+RHA1_ro01044_p-8(bioQ)        1  8.05e-09          . GTTGAACGGTGTTCACG           
+ROP_07710_p-83(bioQ)          1  8.05e-09          . GTTGAACGGTGTTCACG           
+RER_34890_p-108(bioQ)         1  8.05e-09          . GTTGAACGGTGTTCACG           
+RHA1_ro01043_p-1(bioB)        1  8.97e-09          . CGTGAACACCGTTCAAC           
+ROP_07700_p-88(bioB)          1  8.97e-09          . CGTGAACACCGTTCAAC           
+RER_34880_p-58(bioB)          1  8.97e-09          . CGTGAACACCGTTCAAC           
+nfa18310_p-65(bioQ)           1  9.75e-09          . CTTGAACGGTGTTCAGG           
+RHA1_ro01043_p15(bioB)        1  1.99e-08          . CTTGTACGGTGTTCAAT           
+ROP_07700_p-72(bioB)          1  1.99e-08          . CTTGTACGGTGTTCAAT           
+RER_34880_p-42(bioB)          1  1.99e-08          . CTTGTACGGTGTTCAAT           
+RHA1_ro01044_p-24(bioQ)       1  2.19e-08          . ATTGAACACCGTACAAG           
+ROP_07710_p-99(bioQ)          1  2.19e-08          . ATTGAACACCGTACAAG           
+RER_34890_p-124(bioQ)         1  2.19e-08          . ATTGAACACCGTACAAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nfa18180_p-60(bioA)               4.9e-10  [+1]
+RHA1_ro01055_p-59(bioA)           9.6e-10  [+1]
+ROP_07830_p-41(bioA)              9.6e-10  [+1]
+RER_35040_p-18(bioF)              9.6e-10  [+1]
+RHA1_ro01054_p-26(bioF)           1.2e-09  [+1]
+ROP_07820_p-24(bioF)              1.2e-09  [+1]
+RER_35050_p-37(bioA)              1.2e-09  [+1]
+RHA1_ro05255_p-38(bioY)           1.3e-09  [+1]
+ROP_52960_p-38(bioY)              1.3e-09  [+1]
+ROP_53000_p-38(bioY)              1.3e-09  [+1]
+nfa18190_p-31(bioF)               4.8e-09  [+1]
+nfa18320_p-85(bioB)               5.6e-09  [+1]
+RHA1_ro01044_p-8(bioQ)            8.1e-09  [+1]
+ROP_07710_p-83(bioQ)              8.1e-09  [+1]
+RER_34890_p-108(bioQ)             8.1e-09  [+1]
+RHA1_ro01043_p-1(bioB)              9e-09  [+1]
+ROP_07700_p-88(bioB)                9e-09  [+1]
+RER_34880_p-58(bioB)                9e-09  [+1]
+nfa18310_p-65(bioQ)               9.8e-09  [+1]
+RHA1_ro01043_p15(bioB)              2e-08  [+1]
+ROP_07700_p-72(bioB)                2e-08  [+1]
+RER_34880_p-42(bioB)                2e-08  [+1]
+RHA1_ro01044_p-24(bioQ)           2.2e-08  [+1]
+ROP_07710_p-99(bioQ)              2.2e-08  [+1]
+RER_34890_p-124(bioQ)             2.2e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CTTGAACRSYGTTCAAG width=17 seqs=25
+nfa18180_p-60(bioA)      (    1) CTTGAACACTGTTCAAG  1 
+RHA1_ro01055_p-59(bioA)  (    1) CTTGAACGGTGTTCAAC  1 
+ROP_07830_p-41(bioA)     (    1) CTTGAACGGTGTTCAAC  1 
+RER_35040_p-18(bioF)     (    1) GTTGAACGGTGTTCAAG  1 
+RHA1_ro01054_p-26(bioF)  (    1) GTTGAACACCGTTCAAG  1 
+ROP_07820_p-24(bioF)     (    1) GTTGAACACCGTTCAAG  1 
+RER_35050_p-37(bioA)     (    1) CTTGAACACCGTTCAAC  1 
+RHA1_ro05255_p-38(bioY)  (    1) CTTGAACGTCGTTCAAG  1 
+ROP_52960_p-38(bioY)     (    1) CTTGAACGTCGTTCAAG  1 
+ROP_53000_p-38(bioY)     (    1) CTTGAACGTCGTTCAAG  1 
+nfa18190_p-31(bioF)      (    1) CCTGAACGGTGTTCAAG  1 
+nfa18320_p-85(bioB)      (    1) CCTGAACACCGTTCAAG  1 
+RHA1_ro01044_p-8(bioQ)   (    1) GTTGAACGGTGTTCACG  1 
+ROP_07710_p-83(bioQ)     (    1) GTTGAACGGTGTTCACG  1 
+RER_34890_p-108(bioQ)    (    1) GTTGAACGGTGTTCACG  1 
+RHA1_ro01043_p-1(bioB)   (    1) CGTGAACACCGTTCAAC  1 
+ROP_07700_p-88(bioB)     (    1) CGTGAACACCGTTCAAC  1 
+RER_34880_p-58(bioB)     (    1) CGTGAACACCGTTCAAC  1 
+nfa18310_p-65(bioQ)      (    1) CTTGAACGGTGTTCAGG  1 
+RHA1_ro01043_p15(bioB)   (    1) CTTGTACGGTGTTCAAT  1 
+ROP_07700_p-72(bioB)     (    1) CTTGTACGGTGTTCAAT  1 
+RER_34880_p-42(bioB)     (    1) CTTGTACGGTGTTCAAT  1 
+RHA1_ro01044_p-24(bioQ)  (    1) ATTGAACACCGTACAAG  1 
+ROP_07710_p-99(bioQ)     (    1) ATTGAACACCGTACAAG  1 
+RER_34890_p-124(bioQ)    (    1) ATTGAACACCGTACAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 25 bayes= 1.47917 E= 5.5e-154 
+  -111    143      1  -1129 
+ -1129   -157    -99    159 
+ -1129  -1129  -1129    191 
+ -1129  -1129    207  -1129 
+   177  -1129  -1129   -115 
+   195  -1129  -1129  -1129 
+ -1129    207  -1129  -1129 
+    77  -1129    124  -1129 
+ -1129     89     89   -115 
+ -1129    113  -1129     85 
+ -1129  -1129    207  -1129 
+ -1129  -1129  -1129    191 
+  -111  -1129  -1129    173 
+ -1129    207  -1129  -1129 
+   195  -1129  -1129  -1129 
+   170    -99   -257  -1129 
+ -1129      1    143   -115 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 25 E= 5.5e-154 
+ 0.120000  0.640000  0.240000  0.000000 
+ 0.000000  0.080000  0.120000  0.800000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.880000  0.000000  0.000000  0.120000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.440000  0.000000  0.560000  0.000000 
+ 0.000000  0.440000  0.440000  0.120000 
+ 0.000000  0.520000  0.000000  0.480000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.120000  0.000000  0.000000  0.880000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.840000  0.120000  0.040000  0.000000 
+ 0.000000  0.240000  0.640000  0.120000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTGAACRSYGTTCAAG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CG]TTGAAC[GA][CG][CT]GTTCAA[GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nfa18190_p-31(bioF)              4.85e-09  [+1(4.85e-09)]
+nfa18180_p-60(bioA)              4.88e-10  [+1(4.88e-10)]
+nfa18320_p-85(bioB)              5.60e-09  [+1(5.60e-09)]
+nfa18310_p-65(bioQ)              9.75e-09  [+1(9.75e-09)]
+RER_35040_p-18(bioF)             9.56e-10  [+1(9.56e-10)]
+RER_35050_p-37(bioA)             1.20e-09  [+1(1.20e-09)]
+RER_34880_p-58(bioB)             8.97e-09  [+1(8.97e-09)]
+RER_34880_p-42(bioB)             1.99e-08  [+1(1.99e-08)]
+RER_34890_p-124(bioQ)            2.19e-08  [+1(2.19e-08)]
+RER_34890_p-108(bioQ)            8.05e-09  [+1(8.05e-09)]
+ROP_07820_p-24(bioF)             1.20e-09  [+1(1.20e-09)]
+ROP_07830_p-41(bioA)             9.56e-10  [+1(9.56e-10)]
+ROP_07700_p-88(bioB)             8.97e-09  [+1(8.97e-09)]
+ROP_07700_p-72(bioB)             1.99e-08  [+1(1.99e-08)]
+ROP_07710_p-99(bioQ)             2.19e-08  [+1(2.19e-08)]
+ROP_07710_p-83(bioQ)             8.05e-09  [+1(8.05e-09)]
+ROP_53000_p-38(bioY)             1.26e-09  [+1(1.26e-09)]
+ROP_52960_p-38(bioY)             1.26e-09  [+1(1.26e-09)]
+RHA1_ro01054_p-26(bioF)          1.20e-09  [+1(1.20e-09)]
+RHA1_ro01055_p-59(bioA)          9.56e-10  [+1(9.56e-10)]
+RHA1_ro01043_p-1(bioB)           8.97e-09  [+1(8.97e-09)]
+RHA1_ro01043_p15(bioB)           1.99e-08  [+1(1.99e-08)]
+RHA1_ro01044_p-24(bioQ)          2.19e-08  [+1(2.19e-08)]
+RHA1_ro01044_p-8(bioQ)           8.05e-09  [+1(8.05e-09)]
+RHA1_ro05255_p-38(bioY)          1.26e-09  [+1(1.26e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

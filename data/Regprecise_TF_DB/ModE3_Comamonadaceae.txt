@@ -1,0 +1,253 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE3_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ajs_3129_p-58(tupA)      1.0000     20  Ajs_3943_p-65(Ajs_3943)  1.0000     20  
+Lcho_3729_p-39(fdoX)     1.0000     20  Lcho_1816_p-91(Ajs_3943) 1.0000     20  
+Mpe_A2223_p-102(tupA)    1.0000     20  Pnap_1509_p-84(tupA)     1.0000     20  
+Pnap_0048_p-60(Ajs_3943) 1.0000     20  Bpro_0936_p-48(fdoX)     1.0000     20  
+Bpro_1758_p-85(tupA)     1.0000     20  Rfer_3262_p-41(fdoX)     1.0000     20  
+Rfer_2869_p-58(tupA)     1.0000     20  Vapar_1588_p-74(tupA)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE3_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/ModE3_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.312 C 0.217 G 0.158 T 0.312 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.311 C 0.217 G 0.16 T 0.311 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CTATGCAAAYYNTTKCATA MEME-1	width =  19  sites =  12  llr = 206  E-value = 3.1e-054
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:a:::a682222:::a:9
+pos.-specific     C  8::::a:2:4432::a:::
+probability       G  1:::a::231232:4:::1
+matrix            T  :a:a:::1:3335a6::a:
+
+         bits    2.6     *              
+                 2.4     *              
+                 2.1     **         *   
+                 1.9     **         *   
+Relative         1.6  ******      * *** 
+Entropy          1.3 *******      * ****
+(24.8 bits)      1.1 ******* *    ******
+                 0.8 ******* *    ******
+                 0.5 ******* *    ******
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           CTATGCAAACCGTTTCATA
+consensus                    GTTC  G    
+sequence                        T       
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Rfer_3262_p-41(fdoX)          1  1.07e-09          . CTATGCAAATAGTTGCATA A         
+Ajs_3943_p-65(Ajs_3943)       1  1.07e-09          . CTATGCAAATCTTTTCATA G         
+Bpro_0936_p-48(fdoX)          1  1.25e-09          . GTATGCAAACCGTTGCATA C         
+Bpro_1758_p-85(tupA)          1  1.46e-09          . CTATGCAAACCCATTCATA A         
+Pnap_1509_p-84(tupA)          1  2.33e-09          . CTATGCAAACAGCTTCATA A         
+Lcho_1816_p-91(Ajs_3943)      1  6.88e-09          . CTATGCAGATGATTGCATA G         
+Vapar_1588_p-74(tupA)         1  1.01e-08          . CTATGCAAAATCCTGCATA G         
+Pnap_0048_p-60(Ajs_3943)      1  1.01e-08          . CTATGCAAATCAATTCATA G         
+Ajs_3129_p-58(tupA)           1  1.66e-08          . CTATGCACAAGTTTTCATA T         
+Rfer_2869_p-58(tupA)          1  1.92e-08          . CTATGCACGGTGGTTCATA T         
+Mpe_A2223_p-102(tupA)         1  2.52e-08          . CTATGCATGCTCGTTCATA T         
+Lcho_3729_p-39(fdoX)          1  6.98e-08          . ATATGCAGGCCTTTGCATG G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rfer_3262_p-41(fdoX)              1.1e-09  [+1]_1
+Ajs_3943_p-65(Ajs_3943)           1.1e-09  [+1]_1
+Bpro_0936_p-48(fdoX)              1.2e-09  [+1]_1
+Bpro_1758_p-85(tupA)              1.5e-09  [+1]_1
+Pnap_1509_p-84(tupA)              2.3e-09  [+1]_1
+Lcho_1816_p-91(Ajs_3943)          6.9e-09  [+1]_1
+Vapar_1588_p-74(tupA)               1e-08  [+1]_1
+Pnap_0048_p-60(Ajs_3943)            1e-08  [+1]_1
+Ajs_3129_p-58(tupA)               1.7e-08  [+1]_1
+Rfer_2869_p-58(tupA)              1.9e-08  [+1]_1
+Mpe_A2223_p-102(tupA)             2.5e-08  [+1]_1
+Lcho_3729_p-39(fdoX)                7e-08  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CTATGCAAAYYNTTKCATA width=19 seqs=12
+Rfer_3262_p-41(fdoX)     (    1) CTATGCAAATAGTTGCATA  1 
+Ajs_3943_p-65(Ajs_3943)  (    1) CTATGCAAATCTTTTCATA  1 
+Bpro_0936_p-48(fdoX)     (    1) GTATGCAAACCGTTGCATA  1 
+Bpro_1758_p-85(tupA)     (    1) CTATGCAAACCCATTCATA  1 
+Pnap_1509_p-84(tupA)     (    1) CTATGCAAACAGCTTCATA  1 
+Lcho_1816_p-91(Ajs_3943) (    1) CTATGCAGATGATTGCATA  1 
+Vapar_1588_p-74(tupA)    (    1) CTATGCAAAATCCTGCATA  1 
+Pnap_0048_p-60(Ajs_3943) (    1) CTATGCAAATCAATTCATA  1 
+Ajs_3129_p-58(tupA)      (    1) CTATGCACAAGTTTTCATA  1 
+Rfer_2869_p-58(tupA)     (    1) CTATGCACGGTGGTTCATA  1 
+Mpe_A2223_p-102(tupA)    (    1) CTATGCATGCTCGTTCATA  1 
+Lcho_3729_p-39(fdoX)     (    1) ATATGCAGGCCTTTGCATG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 24 bayes= 2.32193 E= 3.1e-054 
+  -190    194    -94  -1023 
+ -1023  -1023  -1023    168 
+   168  -1023  -1023  -1023 
+ -1023  -1023  -1023    168 
+ -1023  -1023    264  -1023 
+ -1023    220  -1023  -1023 
+   168  -1023  -1023  -1023 
+    90    -38      6   -190 
+   127  -1023     64  -1023 
+   -90     94    -94     10 
+   -90     94      6    -32 
+   -90     20    106    -32 
+   -90    -38      6     68 
+ -1023  -1023  -1023    168 
+ -1023  -1023    138     90 
+ -1023    220  -1023  -1023 
+   168  -1023  -1023  -1023 
+ -1023  -1023  -1023    168 
+   156  -1023    -94  -1023 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 12 E= 3.1e-054 
+ 0.083333  0.833333  0.083333  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.583333  0.166667  0.166667  0.083333 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.166667  0.416667  0.083333  0.333333 
+ 0.166667  0.416667  0.166667  0.250000 
+ 0.166667  0.250000  0.333333  0.250000 
+ 0.166667  0.166667  0.166667  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.416667  0.583333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.916667  0.000000  0.083333  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTATGCAAAYYNTTKCATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+CTATGCAA[AG][CT][CT][GCT]TT[TG]CATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ajs_3129_p-58(tupA)              3.32e-08  [+1(1.66e-08)]_1
+Ajs_3943_p-65(Ajs_3943)          2.15e-09  [+1(1.07e-09)]_1
+Lcho_3729_p-39(fdoX)             1.40e-07  [+1(6.98e-08)]_1
+Lcho_1816_p-91(Ajs_3943)         1.38e-08  [+1(6.88e-09)]_1
+Mpe_A2223_p-102(tupA)            5.04e-08  [+1(2.52e-08)]_1
+Pnap_1509_p-84(tupA)             4.67e-09  [+1(2.33e-09)]_1
+Pnap_0048_p-60(Ajs_3943)         2.02e-08  [+1(1.01e-08)]_1
+Bpro_0936_p-48(fdoX)             2.49e-09  [+1(1.25e-09)]_1
+Bpro_1758_p-85(tupA)             2.92e-09  [+1(1.46e-09)]_1
+Rfer_3262_p-41(fdoX)             2.15e-09  [+1(1.07e-09)]_1
+Rfer_2869_p-58(tupA)             3.84e-08  [+1(1.92e-08)]_1
+Vapar_1588_p-74(tupA)            2.02e-08  [+1(1.01e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

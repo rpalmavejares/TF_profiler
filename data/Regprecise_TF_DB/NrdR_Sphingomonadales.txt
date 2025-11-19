@@ -1,0 +1,270 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NrdR_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ELI_11635_p-294(nrdA)    1.0000     16  ELI_11600_p-87(nrdB)     1.0000     16  
+ELI_11600_p-43(nrdB)     1.0000     16  ELI_11635_p-261(nrdA)    1.0000     16  
+NAP1_14488_p-306(nrdA)   1.0000     16  NAP1_14518_p-7(nrdB)     1.0000     16  
+Saro_0274_p-263(nrdA)    1.0000     16  Saro_0274_p-231(nrdA)    1.0000     16  
+Sala_1773_p-111(nrdA)    1.0000     16  Sala_1773_p-143(nrdA)    1.0000     16  
+SJA_C1-32220_p11(nrdA)   1.0000     16  SJA_C1-32220_p43(nrdA)   1.0000     16  
+Swit_1504_p-234(nrdA)    1.0000     16  Swit_1504_p-203(nrdA)    1.0000     16  
+Swit_1505_p-191(n/a)     1.0000     16  ZMO1039_p-204(nrdA)      1.0000     16  
+ZMO0443_p-97(nrdB)       1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NrdR_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NrdR_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             272    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    272    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.261 C 0.202 G 0.243 T 0.294 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.261 C 0.203 G 0.243 T 0.293 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VCACWATAKVTWGTGK MEME-1	width =  16  sites =  17  llr = 180  E-value = 2.2e-050
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4:6:581812:4:111
+pos.-specific     C  382a1:1124:1::::
+probability       G  3:1::22134:1a:66
+matrix            T  :22:4:5:5:a4:934
+
+         bits    2.3    *            
+                 2.1    *        *   
+                 1.8    *      * *   
+                 1.6    *      * *   
+Relative         1.4  * * *    * **  
+Entropy          1.2  * * *    * **  
+(15.3 bits)      0.9  * * * *  * **  
+                 0.7  * *** * ** ****
+                 0.5 ****** * ** ****
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           ACACAATATCTAGTGG
+consensus            CT  T G GG T  TT
+sequence             G        A      
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Swit_1504_p-234(nrdA)         1  2.86e-07          . GCACTATAGGTTGTGT           
+Swit_1505_p-191(n/a)          1  3.86e-07          . ACACAAGCTCTTGTGG           
+NAP1_14518_p-7(nrdB)          1  7.86e-07          . ACACAAGATGTCGTTG           
+ELI_11600_p-87(nrdB)          1  8.93e-07          . CCACAAGATGTCGTTG           
+ZMO1039_p-204(nrdA)           1  1.31e-06          . ATACTGTATCTAGTGG           
+Saro_0274_p-263(nrdA)         1  1.48e-06          . GCACTATGGGTTGTGG           
+ELI_11635_p-261(nrdA)         1  2.94e-06          . CCCCAAAACCTAGTTG           
+NAP1_14488_p-306(nrdA)        1  4.02e-06          . ATTCAGTATCTAGTGG           
+ELI_11635_p-294(nrdA)         1  4.02e-06          . ATTCAGTATCTAGTGG           
+Sala_1773_p-143(nrdA)         1  4.45e-06          . GCACTATGGGTGGTGG           
+ZMO0443_p-97(nrdB)            1  5.41e-06          . ATACAATATGTAGAGT           
+Sala_1773_p-111(nrdA)         1  5.41e-06          . CCCCAATAAATAGTGT           
+Saro_0274_p-231(nrdA)         1  1.30e-05          . CCTCTAAACCTAGTTT           
+Swit_1504_p-203(nrdA)         1  1.77e-05          . GCGCTAGAGATGGTGG           
+SJA_C1-32220_p43(nrdA)        1  1.91e-05          . ACCCAACAGATTGTGA           
+SJA_C1-32220_p11(nrdA)        1  2.71e-05          . GCACTATCCCTTGTAT           
+ELI_11600_p-43(nrdB)          1  7.07e-05          . CCACCACATATTGATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Swit_1504_p-234(nrdA)             2.9e-07  [+1]
+Swit_1505_p-191(n/a)              3.9e-07  [+1]
+NAP1_14518_p-7(nrdB)              7.9e-07  [+1]
+ELI_11600_p-87(nrdB)              8.9e-07  [+1]
+ZMO1039_p-204(nrdA)               1.3e-06  [+1]
+Saro_0274_p-263(nrdA)             1.5e-06  [+1]
+ELI_11635_p-261(nrdA)             2.9e-06  [+1]
+NAP1_14488_p-306(nrdA)              4e-06  [+1]
+ELI_11635_p-294(nrdA)               4e-06  [+1]
+Sala_1773_p-143(nrdA)             4.4e-06  [+1]
+ZMO0443_p-97(nrdB)                5.4e-06  [+1]
+Sala_1773_p-111(nrdA)             5.4e-06  [+1]
+Saro_0274_p-231(nrdA)             1.3e-05  [+1]
+Swit_1504_p-203(nrdA)             1.8e-05  [+1]
+SJA_C1-32220_p43(nrdA)            1.9e-05  [+1]
+SJA_C1-32220_p11(nrdA)            2.7e-05  [+1]
+ELI_11600_p-43(nrdB)              7.1e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VCACWATAKVTWGTGK width=16 seqs=17
+Swit_1504_p-234(nrdA)    (    1) GCACTATAGGTTGTGT  1 
+Swit_1505_p-191(n/a)     (    1) ACACAAGCTCTTGTGG  1 
+NAP1_14518_p-7(nrdB)     (    1) ACACAAGATGTCGTTG  1 
+ELI_11600_p-87(nrdB)     (    1) CCACAAGATGTCGTTG  1 
+ZMO1039_p-204(nrdA)      (    1) ATACTGTATCTAGTGG  1 
+Saro_0274_p-263(nrdA)    (    1) GCACTATGGGTTGTGG  1 
+ELI_11635_p-261(nrdA)    (    1) CCCCAAAACCTAGTTG  1 
+NAP1_14488_p-306(nrdA)   (    1) ATTCAGTATCTAGTGG  1 
+ELI_11635_p-294(nrdA)    (    1) ATTCAGTATCTAGTGG  1 
+Sala_1773_p-143(nrdA)    (    1) GCACTATGGGTGGTGG  1 
+ZMO0443_p-97(nrdB)       (    1) ATACAATATGTAGAGT  1 
+Sala_1773_p-111(nrdA)    (    1) CCCCAATAAATAGTGT  1 
+Saro_0274_p-231(nrdA)    (    1) CCTCTAAACCTAGTTT  1 
+Swit_1504_p-203(nrdA)    (    1) GCGCTAGAGATGGTGG  1 
+SJA_C1-32220_p43(nrdA)   (    1) ACCCAACAGATTGTGA  1 
+SJA_C1-32220_p11(nrdA)   (    1) GCACTATCCCTTGTAT  1 
+ELI_11600_p-43(nrdB)     (    1) CCACCACATATTGATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 17 bayes= 1.26303 E= 2.2e-050 
+    66     54     28  -1073 
+ -1073    191  -1073    -32 
+   117    -20   -204    -73 
+ -1073    230  -1073  -1073 
+   102   -178  -1073     49 
+   166  -1073    -46  -1073 
+  -115    -79     -5     85 
+   155    -79   -104  -1073 
+  -215    -20     28     68 
+   -15    102     54  -1073 
+ -1073  -1073  -1073    177 
+    66    -79   -104     27 
+ -1073  -1073    204  -1073 
+  -115  -1073  -1073    159 
+  -215  -1073    141      0 
+  -215  -1073    128     27 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 17 E= 2.2e-050 
+ 0.411765  0.294118  0.294118  0.000000 
+ 0.000000  0.764706  0.000000  0.235294 
+ 0.588235  0.176471  0.058824  0.176471 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.529412  0.058824  0.000000  0.411765 
+ 0.823529  0.000000  0.176471  0.000000 
+ 0.117647  0.117647  0.235294  0.529412 
+ 0.764706  0.117647  0.117647  0.000000 
+ 0.058824  0.176471  0.294118  0.470588 
+ 0.235294  0.411765  0.352941  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.411765  0.117647  0.117647  0.352941 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.058824  0.000000  0.647059  0.294118 
+ 0.058824  0.000000  0.588235  0.352941 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VCACWATAKVTWGTGK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[ACG][CT]AC[AT]A[TG]A[TG][CGA]T[AT]GT[GT][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ELI_11635_p-294(nrdA)            4.02e-06  [+1(4.02e-06)]
+ELI_11600_p-87(nrdB)             8.93e-07  [+1(8.93e-07)]
+ELI_11600_p-43(nrdB)             7.07e-05  [+1(7.07e-05)]
+ELI_11635_p-261(nrdA)            2.94e-06  [+1(2.94e-06)]
+NAP1_14488_p-306(nrdA)           4.02e-06  [+1(4.02e-06)]
+NAP1_14518_p-7(nrdB)             7.86e-07  [+1(7.86e-07)]
+Saro_0274_p-263(nrdA)            1.48e-06  [+1(1.48e-06)]
+Saro_0274_p-231(nrdA)            1.30e-05  [+1(1.30e-05)]
+Sala_1773_p-111(nrdA)            5.41e-06  [+1(5.41e-06)]
+Sala_1773_p-143(nrdA)            4.45e-06  [+1(4.45e-06)]
+SJA_C1-32220_p11(nrdA)           2.71e-05  [+1(2.71e-05)]
+SJA_C1-32220_p43(nrdA)           1.91e-05  [+1(1.91e-05)]
+Swit_1504_p-234(nrdA)            2.86e-07  [+1(2.86e-07)]
+Swit_1504_p-203(nrdA)            1.77e-05  [+1(1.77e-05)]
+Swit_1505_p-191(n/a)             3.86e-07  [+1(3.86e-07)]
+ZMO1039_p-204(nrdA)              1.31e-06  [+1(1.31e-06)]
+ZMO0443_p-97(nrdB)               5.41e-06  [+1(5.41e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

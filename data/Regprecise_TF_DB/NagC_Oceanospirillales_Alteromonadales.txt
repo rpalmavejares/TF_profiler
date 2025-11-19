@@ -1,0 +1,202 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagC_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MED297_06344_p-154(nagE) 1.0000     23  MED297_06339_p-121(nagC) 1.0000     23  
+MED297_19597_p-100(nagF) 1.0000     23  MED297_09986_p-50(mcp)   1.0000     23  
+MED297_10246_p-149(mcp2) 1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagC_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/NagC_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             115    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=    115    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.461 C 0.0696 G 0.0609 T 0.409 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.454 C 0.0756 G 0.0672 T 0.403 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TYWGAHTKA MEME-1	width =   9  sites =   5  llr = 38  E-value = 2.7e-001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::4:82::a
+pos.-specific     C  :6:::4:2:
+probability       G  :::8:::4:
+matrix            T  a46224a4:
+
+         bits    3.9          
+                 3.5          
+                 3.1          
+                 2.7    *     
+Relative         2.3    *     
+Entropy          1.9  * *     
+(11.0 bits)      1.6  * *     
+                 1.2 ** *  ***
+                 0.8 ** * ****
+                 0.4 *********
+                 0.0 ---------
+
+Multilevel           TCTGACTGA
+consensus             TATTT T 
+sequence                  A C 
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site 
+-------------             ----- ---------            ---------
+MED297_06339_p-121(nagC)      8  2.79e-05    ATAATTT TCAGAATGA ATTAAAT   
+MED297_19597_p-100(nagF)      2  5.12e-05          A TCTGATTTA AGTCAAAAAA
+MED297_10246_p-149(mcp2)      7  8.49e-05     ATTATT TTTGACTTA AATCAATT  
+MED297_09986_p-50(mcp)        2  1.71e-04          A TTTGATTCA TAAAAAATAA
+MED297_06344_p-154(nagE)      8  2.23e-04    ATTTAAT TCATTCTGA AAATTAT   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MED297_06339_p-121(nagC)          2.8e-05  7_[+1]_7
+MED297_19597_p-100(nagF)          5.1e-05  1_[+1]_13
+MED297_10246_p-149(mcp2)          8.5e-05  6_[+1]_8
+MED297_09986_p-50(mcp)            0.00017  1_[+1]_13
+MED297_06344_p-154(nagE)          0.00022  7_[+1]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TYWGAHTKA width=9 seqs=5
+MED297_06339_p-121(nagC) (    8) TCAGAATGA  1 
+MED297_19597_p-100(nagF) (    2) TCTGATTTA  1 
+MED297_10246_p-149(mcp2) (    7) TTTGACTTA  1 
+MED297_09986_p-50(mcp)   (    2) TTTGATTCA  1 
+MED297_06344_p-154(nagE) (    8) TCATTCTGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 75 bayes= 4.79941 E= 2.7e-001 
+  -897   -897   -897    131 
+  -897    299   -897     -1 
+   -18   -897   -897     57 
+  -897   -897    357   -101 
+    82   -897   -897   -101 
+  -118    240   -897     -1 
+  -897   -897   -897    131 
+  -897    140    257     -1 
+   114   -897   -897   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 5 E= 2.7e-001 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.600000  0.000000  0.400000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.200000  0.400000  0.000000  0.400000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.200000  0.400000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYWGAHTKA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[CT][TA][GT][AT][CTA]T[GTC]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MED297_06344_p-154(nagE)         3.34e-03  23
+MED297_06339_p-121(nagC)         4.19e-04  7_[+1(2.79e-05)]_7
+MED297_19597_p-100(nagF)         7.68e-04  1_[+1(5.12e-05)]_13
+MED297_09986_p-50(mcp)           2.56e-03  23
+MED297_10246_p-149(mcp2)         1.27e-03  6_[+1(8.49e-05)]_8
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

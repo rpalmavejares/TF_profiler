@@ -1,0 +1,289 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur_Chloroflexia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cagg_0322_p-52(fmdB)     1.0000     21  Cagg_0608_p-79(yciC)     1.0000     21  
+Cagg_0608_p-20(yciC)     1.0000     21  Cagg_2028_p-74(COG0701)  1.0000     21  
+Cagg_2024_p-2(zur)       1.0000     21  Cagg_2043_p-35(znuA)     1.0000     21  
+Chy400_2148_p-35(znuA)   1.0000     21  Rcas_2945_p-58(yciC)     1.0000     21  
+Rcas_1591_p-122(znuA)    1.0000     21  Haur_2074_p-286(yciC2)   1.0000     21  
+Haur_2300_p-80(Haur_2300 1.0000     21  Haur_3793_p-34(n/a)      1.0000     21  
+Haur_1311_p-47(n/a)      1.0000     21  Haur_4472_p-20(Rcas_3893 1.0000     21  
+Haur_2064_p-95(znuA)     1.0000     21  Haur_0639_p-42(yciC)     1.0000     21  
+Haur_2062_p-54(yciC3)    1.0000     21  Haur_4472_p-82(Rcas_3893 1.0000     21  
+RoseRS_1258_p-124(znuA)  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur_Chloroflexia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur_Chloroflexia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             399    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    399    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.431 C 0.108 G 0.0877 T 0.373 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.429 C 0.109 G 0.0893 T 0.372 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TAWTGATAYAWWGTATCAWTA MEME-1	width =  21  sites =  19  llr = 287  E-value = 6.1e-086
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  29511a29:8443:8::a6:9
+pos.-specific     C  1::11:1151111:1:a::1:
+probability       G  ::::9:1::1:17:::::1:1
+matrix            T  8158::7:5154:a1a::391
+
+         bits    3.5                      
+                 3.1                 *    
+                 2.8     *           *    
+                 2.4     *           *    
+Relative         2.1     *           *    
+Entropy          1.7     *       *   *    
+(21.8 bits)      1.4     **  *   ** *** * 
+                 1.0  *  ** **   ** *** * 
+                 0.7 ** *** **   ****** **
+                 0.3 **********  *********
+                 0.0 ---------------------
+
+Multilevel           TATTGATATATAGTATCAATA
+consensus              A     C ATA     T  
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Haur_2062_p-54(yciC3)         1  4.71e-10          . TATTGATATATTGTATCAATA           
+Haur_2074_p-286(yciC2)        1  7.01e-10          . TAATGATATATTGTATCAATA           
+Haur_0639_p-42(yciC)          1  9.68e-10          . TAATGATATATAGTATCAATA           
+Haur_4472_p-20(Rcas_3893      1  9.68e-10          . TAATGATATATAGTATCAATA           
+Cagg_2028_p-74(COG0701)       1  1.40e-09          . TATTGACACACTGTATCAATA           
+Haur_3793_p-34(n/a)           1  3.36e-09          . TATTGATATCAAGTATCAATA           
+Cagg_2024_p-2(zur)            1  4.18e-09          . TAATGATCCATAGTATCATTA           
+Haur_4472_p-82(Rcas_3893      1  4.77e-09          . TAATGATACATTATATCAATA           
+Haur_2300_p-80(Haur_2300      1  5.39e-09          . TAATGATACTTTGTATCAATA           
+Haur_2064_p-95(znuA)          1  1.81e-08          . TAATGATACAAAATATCATTA           
+Haur_1311_p-47(n/a)           1  6.39e-08          . TATTGATATAATATATCAGTA           
+Cagg_0608_p-79(yciC)          1  7.55e-08          . TAATGATATAACGTATCATTT           
+Cagg_2043_p-35(znuA)          1  1.66e-07          . AATTGAAACATAGTTTCATTA           
+Cagg_0322_p-52(fmdB)          1  3.32e-07          . AAATGATATATTATCTCAATA           
+Chy400_2148_p-35(znuA)        1  4.12e-07          . TTTTGAAACAATGTTTCATTA           
+Cagg_0608_p-20(yciC)          1  4.42e-07          . AATCGAGATAAGGTATCAATG           
+Rcas_1591_p-122(znuA)         1  5.47e-07          . TATCCATACCACATATCAATA           
+Rcas_2945_p-58(yciC)          1  8.06e-07          . CATTGATATACACTATCATCA           
+RoseRS_1258_p-124(znuA)       1  3.53e-06          . TATAAAAACGAAGTATCAATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Haur_2062_p-54(yciC3)             4.7e-10  [+1]
+Haur_2074_p-286(yciC2)              7e-10  [+1]
+Haur_0639_p-42(yciC)              9.7e-10  [+1]
+Haur_4472_p-20(Rcas_3893          9.7e-10  [+1]
+Cagg_2028_p-74(COG0701)           1.4e-09  [+1]
+Haur_3793_p-34(n/a)               3.4e-09  [+1]
+Cagg_2024_p-2(zur)                4.2e-09  [+1]
+Haur_4472_p-82(Rcas_3893          4.8e-09  [+1]
+Haur_2300_p-80(Haur_2300          5.4e-09  [+1]
+Haur_2064_p-95(znuA)              1.8e-08  [+1]
+Haur_1311_p-47(n/a)               6.4e-08  [+1]
+Cagg_0608_p-79(yciC)              7.6e-08  [+1]
+Cagg_2043_p-35(znuA)              1.7e-07  [+1]
+Cagg_0322_p-52(fmdB)              3.3e-07  [+1]
+Chy400_2148_p-35(znuA)            4.1e-07  [+1]
+Cagg_0608_p-20(yciC)              4.4e-07  [+1]
+Rcas_1591_p-122(znuA)             5.5e-07  [+1]
+Rcas_2945_p-58(yciC)              8.1e-07  [+1]
+RoseRS_1258_p-124(znuA)           3.5e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TAWTGATAYAWWGTATCAWTA width=21 seqs=19
+Haur_2062_p-54(yciC3)    (    1) TATTGATATATTGTATCAATA  1 
+Haur_2074_p-286(yciC2)   (    1) TAATGATATATTGTATCAATA  1 
+Haur_0639_p-42(yciC)     (    1) TAATGATATATAGTATCAATA  1 
+Haur_4472_p-20(Rcas_3893 (    1) TAATGATATATAGTATCAATA  1 
+Cagg_2028_p-74(COG0701)  (    1) TATTGACACACTGTATCAATA  1 
+Haur_3793_p-34(n/a)      (    1) TATTGATATCAAGTATCAATA  1 
+Cagg_2024_p-2(zur)       (    1) TAATGATCCATAGTATCATTA  1 
+Haur_4472_p-82(Rcas_3893 (    1) TAATGATACATTATATCAATA  1 
+Haur_2300_p-80(Haur_2300 (    1) TAATGATACTTTGTATCAATA  1 
+Haur_2064_p-95(znuA)     (    1) TAATGATACAAAATATCATTA  1 
+Haur_1311_p-47(n/a)      (    1) TATTGATATAATATATCAGTA  1 
+Cagg_0608_p-79(yciC)     (    1) TAATGATATAACGTATCATTT  1 
+Cagg_2043_p-35(znuA)     (    1) AATTGAAACATAGTTTCATTA  1 
+Cagg_0322_p-52(fmdB)     (    1) AAATGATATATTATCTCAATA  1 
+Chy400_2148_p-35(znuA)   (    1) TTTTGAAACAATGTTTCATTA  1 
+Cagg_0608_p-20(yciC)     (    1) AATCGAGATAAGGTATCAATG  1 
+Rcas_1591_p-122(znuA)    (    1) TATCCATACCACATATCAATA  1 
+Rcas_2945_p-58(yciC)     (    1) CATTGATATACACTATCATCA  1 
+RoseRS_1258_p-124(znuA)  (    1) TATAAAAACGAAGTATCAATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 19 bayes= 1.33258 E= 6.1e-086 
+  -144   -105  -1089    108 
+   114  -1089  -1089   -282 
+    14  -1089  -1089     50 
+  -302     -5  -1089    118 
+  -302   -105    332  -1089 
+   122  -1089  -1089  -1089 
+  -144   -105    -76     98 
+   114   -105  -1089  -1089 
+ -1089    212  -1089     50 
+    88     -5    -76   -282 
+    -3     -5  -1089     35 
+    -3     -5    -76     18 
+   -71   -105    294  -1089 
+ -1089  -1089  -1089    143 
+    97   -105  -1089   -182 
+ -1089  -1089  -1089    143 
+ -1089    319  -1089  -1089 
+   122  -1089  -1089  -1089 
+    56  -1089    -76    -24 
+ -1089   -105  -1089    135 
+   106  -1089    -76   -282 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 19 E= 6.1e-086 
+ 0.157895  0.052632  0.000000  0.789474 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.473684  0.000000  0.000000  0.526316 
+ 0.052632  0.105263  0.000000  0.842105 
+ 0.052632  0.052632  0.894737  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.157895  0.052632  0.052632  0.736842 
+ 0.947368  0.052632  0.000000  0.000000 
+ 0.000000  0.473684  0.000000  0.526316 
+ 0.789474  0.105263  0.052632  0.052632 
+ 0.421053  0.105263  0.000000  0.473684 
+ 0.421053  0.105263  0.052632  0.421053 
+ 0.263158  0.052632  0.684211  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.842105  0.052632  0.000000  0.105263 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.631579  0.000000  0.052632  0.315789 
+ 0.000000  0.052632  0.000000  0.947368 
+ 0.894737  0.000000  0.052632  0.052632 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWTGATAYAWWGTATCAWTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TA[TA]TGATA[TC]A[TA][AT][GA]TATCA[AT]TA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cagg_0322_p-52(fmdB)             3.32e-07  [+1(3.32e-07)]
+Cagg_0608_p-79(yciC)             7.55e-08  [+1(7.55e-08)]
+Cagg_0608_p-20(yciC)             4.42e-07  [+1(4.42e-07)]
+Cagg_2028_p-74(COG0701)          1.40e-09  [+1(1.40e-09)]
+Cagg_2024_p-2(zur)               4.18e-09  [+1(4.18e-09)]
+Cagg_2043_p-35(znuA)             1.66e-07  [+1(1.66e-07)]
+Chy400_2148_p-35(znuA)           4.12e-07  [+1(4.12e-07)]
+Rcas_2945_p-58(yciC)             8.06e-07  [+1(8.06e-07)]
+Rcas_1591_p-122(znuA)            5.47e-07  [+1(5.47e-07)]
+Haur_2074_p-286(yciC2)           7.01e-10  [+1(7.01e-10)]
+Haur_2300_p-80(Haur_2300         5.39e-09  [+1(5.39e-09)]
+Haur_3793_p-34(n/a)              3.36e-09  [+1(3.36e-09)]
+Haur_1311_p-47(n/a)              6.39e-08  [+1(6.39e-08)]
+Haur_4472_p-20(Rcas_3893         9.68e-10  [+1(9.68e-10)]
+Haur_2064_p-95(znuA)             1.81e-08  [+1(1.81e-08)]
+Haur_0639_p-42(yciC)             9.68e-10  [+1(9.68e-10)]
+Haur_2062_p-54(yciC3)            4.71e-10  [+1(4.71e-10)]
+Haur_4472_p-82(Rcas_3893         4.77e-09  [+1(4.77e-09)]
+RoseRS_1258_p-124(znuA)          3.53e-06  [+1(3.53e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

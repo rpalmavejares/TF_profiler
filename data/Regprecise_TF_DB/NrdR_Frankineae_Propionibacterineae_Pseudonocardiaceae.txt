@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/NrdR_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Acel_1477_p-122(nrdR)    1.0000     16  Francci3_3508_p-182(nrdR 1.0000     16  
+Franean1_1234_p-171(nrdR 1.0000     16  Namu_3977_p-223(nrdR)    1.0000     16  
+Noca_3812_p-201(nrdR)    1.0000     16  PPA2137_p-285(nrdD)      1.0000     16  
+PPA1025_p-128(nrdR)      1.0000     16  PPA2137_p-317(nrdD)      1.0000     16  
+PPA1025_p-97(nrdR)       1.0000     16  PPA2121_p-321(nrdA)      1.0000     16  
+Amir_1432_p-105(nrdR)    1.0000     16  Amir_3157_p-373(nrdA)    1.0000     16  
+Svir_16410_p-149(nrdA)   1.0000     16  Svir_27580_p-224(nrdR)   1.0000     16  
+Svir_16410_p-117(nrdA)   1.0000     16  SACE_1283_p-438(nrdA)    1.0000     16  
+SACE_1763_p-139(nrdR)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/NrdR_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/NrdR_Frankineae_Propionibacterineae_Pseudonocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             272    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    272    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.268 C 0.29 G 0.184 T 0.257 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.268 C 0.29 G 0.185 T 0.257 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CMCHACATSTAGTR MEME-1	width =  14  sites =  17  llr = 210  E-value = 1.8e-057
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :5:49:a11:6:14
+pos.-specific     C  95a3:6::5::::1
+probability       G  1::::2::4:1a16
+matrix            T  1::412:9:a3:8:
+
+         bits    2.4            *  
+                 2.2            *  
+                 1.9       *  * *  
+                 1.7   *   ** * *  
+Relative         1.5   * * ** * *  
+Entropy          1.2 * * * ** * ** 
+(17.8 bits)      1.0 * * * ** * ***
+                 0.7 *** **********
+                 0.5 *** **********
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           CACAACATCTAGTG
+consensus             C T    G T  A
+sequence                C          
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+Amir_3157_p-373(nrdA)         2  7.10e-09          C CACAACATGTAGTG T         
+Amir_1432_p-105(nrdR)         2  5.89e-08          C CCCCACATCTAGTG G         
+SACE_1763_p-139(nrdR)         2  1.42e-07          C CACAACATCTAGTA G         
+SACE_1283_p-438(nrdA)         2  1.42e-07          A CCCAAGATGTAGTG T         
+Noca_3812_p-201(nrdR)         2  1.42e-07          C CACTACATCTAGTA C         
+Acel_1477_p-122(nrdR)         2  1.42e-07          C CCCAACATGTAGTA G         
+Namu_3977_p-223(nrdR)         2  2.03e-07          C CCCTACATCTAGTA C         
+Svir_27580_p-224(nrdR)        2  2.24e-07          C CACCACATCTAGTA G         
+Franean1_1234_p-171(nrdR      2  3.62e-07          A CACAACATCTTGTA G         
+Francci3_3508_p-182(nrdR      2  6.00e-07          A CACAACATCTGGTG C         
+PPA2137_p-285(nrdD)           2  8.96e-07          G CACCAGATGTAGGG G         
+PPA2137_p-317(nrdD)           2  3.82e-06          A CCCTTTATCTTGTG C         
+PPA2121_p-321(nrdA)           2  4.32e-06          G CCCTTCATATAGTG A         
+PPA1025_p-128(nrdR)           2  4.32e-06          A TACCAGATGTTGTG G         
+PPA1025_p-97(nrdR)            2  5.77e-06          T CCCTATAAGTTGTG T         
+Svir_16410_p-117(nrdA)        2  7.52e-06          C CACTACATGTAGAC T         
+Svir_16410_p-149(nrdA)        2  1.28e-05          C GCCCATATCTTGGG T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Amir_3157_p-373(nrdA)             7.1e-09  1_[+1]_1
+Amir_1432_p-105(nrdR)             5.9e-08  1_[+1]_1
+SACE_1763_p-139(nrdR)             1.4e-07  1_[+1]_1
+SACE_1283_p-438(nrdA)             1.4e-07  1_[+1]_1
+Noca_3812_p-201(nrdR)             1.4e-07  1_[+1]_1
+Acel_1477_p-122(nrdR)             1.4e-07  1_[+1]_1
+Namu_3977_p-223(nrdR)               2e-07  1_[+1]_1
+Svir_27580_p-224(nrdR)            2.2e-07  1_[+1]_1
+Franean1_1234_p-171(nrdR          3.6e-07  1_[+1]_1
+Francci3_3508_p-182(nrdR            6e-07  1_[+1]_1
+PPA2137_p-285(nrdD)                 9e-07  1_[+1]_1
+PPA2137_p-317(nrdD)               3.8e-06  1_[+1]_1
+PPA2121_p-321(nrdA)               4.3e-06  1_[+1]_1
+PPA1025_p-128(nrdR)               4.3e-06  1_[+1]_1
+PPA1025_p-97(nrdR)                5.8e-06  1_[+1]_1
+Svir_16410_p-117(nrdA)            7.5e-06  1_[+1]_1
+Svir_16410_p-149(nrdA)            1.3e-05  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CMCHACATSTAGTR width=14 seqs=17
+Amir_3157_p-373(nrdA)    (    2) CACAACATGTAGTG  1 
+Amir_1432_p-105(nrdR)    (    2) CCCCACATCTAGTG  1 
+SACE_1763_p-139(nrdR)    (    2) CACAACATCTAGTA  1 
+SACE_1283_p-438(nrdA)    (    2) CCCAAGATGTAGTG  1 
+Noca_3812_p-201(nrdR)    (    2) CACTACATCTAGTA  1 
+Acel_1477_p-122(nrdR)    (    2) CCCAACATGTAGTA  1 
+Namu_3977_p-223(nrdR)    (    2) CCCTACATCTAGTA  1 
+Svir_27580_p-224(nrdR)   (    2) CACCACATCTAGTA  1 
+Franean1_1234_p-171(nrdR (    2) CACAACATCTTGTA  1 
+Francci3_3508_p-182(nrdR (    2) CACAACATCTGGTG  1 
+PPA2137_p-285(nrdD)      (    2) CACCAGATGTAGGG  1 
+PPA2137_p-317(nrdD)      (    2) CCCTTTATCTTGTG  1 
+PPA2121_p-321(nrdA)      (    2) CCCTTCATATAGTG  1 
+PPA1025_p-128(nrdR)      (    2) TACCAGATGTTGTG  1 
+PPA1025_p-97(nrdR)       (    2) CCCTATAAGTTGTG  1 
+Svir_16410_p-117(nrdA)   (    2) CACTACATGTAGAC  1 
+Svir_16410_p-149(nrdA)   (    2) GCCCATATCTTGGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 51 bayes= 3.20163 E= 1.8e-057 
+ -1073    161   -165   -213 
+    98     70  -1073  -1073 
+ -1073    179  -1073  -1073 
+    40      2  -1073     46 
+   172  -1073  -1073   -113 
+ -1073    116     -7    -54 
+   190  -1073  -1073  -1073 
+  -219  -1073  -1073    187 
+  -219     87    116  -1073 
+ -1073  -1073  -1073    196 
+   127  -1073   -165     19 
+ -1073  -1073    244  -1073 
+  -219  -1073    -65    168 
+    40   -230    167  -1073 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 17 E= 1.8e-057 
+ 0.000000  0.882353  0.058824  0.058824 
+ 0.529412  0.470588  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.352941  0.294118  0.000000  0.352941 
+ 0.882353  0.000000  0.000000  0.117647 
+ 0.000000  0.647059  0.176471  0.176471 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.058824  0.000000  0.000000  0.941176 
+ 0.058824  0.529412  0.411765  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.647059  0.000000  0.058824  0.294118 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.058824  0.000000  0.117647  0.823529 
+ 0.352941  0.058824  0.588235  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CMCHACATSTAGTR MEME-1 regular expression
+--------------------------------------------------------------------------------
+C[AC]C[ATC]ACAT[CG]T[AT]GT[GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Acel_1477_p-122(nrdR)            4.25e-07  1_[+1(1.42e-07)]_1
+Francci3_3508_p-182(nrdR         1.80e-06  1_[+1(6.00e-07)]_1
+Franean1_1234_p-171(nrdR         1.09e-06  1_[+1(3.62e-07)]_1
+Namu_3977_p-223(nrdR)            6.08e-07  1_[+1(2.03e-07)]_1
+Noca_3812_p-201(nrdR)            4.25e-07  1_[+1(1.42e-07)]_1
+PPA2137_p-285(nrdD)              2.69e-06  1_[+1(8.96e-07)]_1
+PPA1025_p-128(nrdR)              1.30e-05  1_[+1(4.32e-06)]_1
+PPA2137_p-317(nrdD)              1.15e-05  1_[+1(3.82e-06)]_1
+PPA1025_p-97(nrdR)               1.73e-05  1_[+1(5.77e-06)]_1
+PPA2121_p-321(nrdA)              1.30e-05  1_[+1(4.32e-06)]_1
+Amir_1432_p-105(nrdR)            1.77e-07  1_[+1(5.89e-08)]_1
+Amir_3157_p-373(nrdA)            2.13e-08  1_[+1(7.10e-09)]_1
+Svir_16410_p-149(nrdA)           3.85e-05  1_[+1(1.28e-05)]_1
+Svir_27580_p-224(nrdR)           6.73e-07  1_[+1(2.24e-07)]_1
+Svir_16410_p-117(nrdA)           2.26e-05  1_[+1(7.52e-06)]_1
+SACE_1283_p-438(nrdA)            4.25e-07  1_[+1(1.42e-07)]_1
+SACE_1763_p-139(nrdR)            4.25e-07  1_[+1(1.42e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

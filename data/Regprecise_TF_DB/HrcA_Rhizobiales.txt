@@ -1,0 +1,386 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/HrcA_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SMc00912_p-85(groS)      1.0000     27  SMa0745_p-83(groS)       1.0000     27  
+NGR_c04090_p-85(groS)    1.0000     27  NGR_b05110_p-175(groS)   1.0000     27  
+NGR_b05810_p-178(groS)   1.0000     27  RL0884_p-85(groS)        1.0000     27  
+RL1410_p-81(groS)        1.0000     27  pRL120643_p-172(groS)    1.0000     27  
+RHE_CH00829_p-85(groS)   1.0000     27  RHE_CH01270_p-81(groS)   1.0000     27  
+RHE_PF00329_p-169(groS)  1.0000     27  RHE_CH01238_p-177(groS)  1.0000     27  
+Atu0683_p-85(groS)       1.0000     27  Meso_0358_p-94(groS)     1.0000     27  
+Meso_3096_p-167(groS)    1.0000     27  mll8202_p-91(groS)       1.0000     27  
+msl5812_p-79(groS)       1.0000     27  msr9341_p-81(groS)       1.0000     27  
+mlr2393_p-183(groS)      1.0000     27  mll2233_p-80(groS)       1.0000     27  
+BMEII1047_p-87(groS)     1.0000     27  BQ10760_p-76(groS)       1.0000     27  
+RPA1141_p-109(groS)      1.0000     27  RPA2165_p-69(groS)       1.0000     27  
+bsr7532_p-119(groS)      1.0000     27  blr5625_p-70(groS)       1.0000     27  
+blr6978_p-59(groS)       1.0000     27  blr5226_p-137(groS)      1.0000     27  
+BBta_1672_p-126(groS)    1.0000     27  BBta_5284_p-71(groS)     1.0000     27  
+BBta_3033_p-143(groS)    1.0000     27  Nwi_2114_p-144(groS)     1.0000     27  
+Nwi_2573_p-117(groS)     1.0000     27  Nwi_2191_p-70(groS)      1.0000     27  
+AZC_2311_p-184(groS)     1.0000     27  AZC_0425_p-71(groS)      1.0000     27  
+Xaut_4265_p-138(groS)    1.0000     27  Xaut_1165_p-71(groS)     1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/HrcA_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/HrcA_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       38    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1026    N=              38
+sample: seed=            0    hsfrac=          0
+        searchsize=   1026    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.243 C 0.282 G 0.253 T 0.222 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.243 C 0.282 G 0.253 T 0.222 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1	width =  27  sites =  38  llr = 804  E-value = 4.7e-291
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::6::a:::113233421:a:::::a8
+pos.-specific     C  4:::a:9:a353333124::2::a4:1
+probability       G  1:4a::1::312332342a:8:a:::1
+matrix            T  6a:::::a:322212122::1a::6::
+
+         bits    2.2                      *     
+                 2.0  * * * *          ** **  * 
+                 1.7  * *** **         ** *** * 
+                 1.5  * *** **         ** *** * 
+Relative         1.3  * ******         ** *** * 
+Entropy          1.1  ********         ** ******
+(30.5 bits)      0.9 *********         *********
+                 0.7 *********         *********
+                 0.4 *********         *********
+                 0.2 ********* *    * **********
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCGCCGGCAGCGAGTGCTAA
+consensus            C G      CTACAAGAG      C  
+sequence                      T GACT            
+                                 T              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+Meso_0358_p-94(groS)          1  1.81e-14          . TTAGCACTCTCCTACAGCGAGTGCTAA           
+msl5812_p-79(groS)            1  8.34e-14          . TTAGCACTCCCCAATAGCGAGTGCTAA           
+pRL120643_p-172(groS)         1  1.39e-12          . CTAGCACTCGCGGGCAGGGAGTGCCAA           
+msr9341_p-81(groS)            1  1.74e-12          . TTAGCACTCGCCTCTGCCGAGTGCTAA           
+mll8202_p-91(groS)            1  2.15e-12          . TTAGCACTCGCCCTTGGTGAGTGCTAA           
+RHE_CH00829_p-85(groS)        1  3.90e-12          . CTAGCACTCACCGCAAGGGAGTGCTAA           
+RL0884_p-85(groS)             1  3.90e-12          . CTAGCACTCACCGCAAGGGAGTGCTAA           
+Meso_3096_p-167(groS)         1  9.22e-12          . TTGGCACTCTCAATAGGTGAGTGCTAA           
+BQ10760_p-76(groS)            1  1.25e-11          . TTAGCACTCTCCAACTATGAGTGCTAA           
+BBta_5284_p-71(groS)          1  1.67e-11          . CTGGCACTCGCCGGCAGCGACTGCCAA           
+BMEII1047_p-87(groS)          1  1.91e-11          . TTAGCACTCGGACGAATAGAGTGCTAA           
+mll2233_p-80(groS)            1  1.91e-11          . TTGGCACTCCTATCTATCGAGTGCCAA           
+NGR_b05810_p-178(groS)        1  2.18e-11          . GTAGCACTCTCAAGTGGCGAGTGCTAA           
+SMa0745_p-83(groS)            1  2.48e-11          . CTAGCACTCTCGCGTGAAGAGTGCTAA           
+SMc00912_p-85(groS)           1  2.48e-11          . CTAGCACTCGCTTGATATGAGTGCTAA           
+mlr2393_p-183(groS)           1  2.81e-11          . CTAGCACTCTCGCACGCCGAGTGCCAA           
+AZC_2311_p-184(groS)          1  3.58e-11          . TTGGCACTCATGGGAGAGGAGTGCTAA           
+NGR_c04090_p-85(groS)         1  3.58e-11          . CTAGCACTCTTTAAGAAGGAGTGCTAA           
+RHE_PF00329_p-169(groS)       1  4.51e-11          . TTAGCAGTCGTCGATAGAGAGTGCTAA           
+Atu0683_p-85(groS)            1  5.61e-11          . CTGGCACTCCAACAAGGGGAGTGCTAA           
+NGR_b05110_p-175(groS)        1  5.61e-11          . TTAGCACTCCATGTGATGGAGTGCTAA           
+blr5625_p-70(groS)            1  6.92e-11          . CTAGCACTCGCGGGCACAGACTGCTAA           
+Xaut_4265_p-138(groS)         1  9.34e-11          . CTAGCACTCCACATCCGCGAGTGCTAA           
+AZC_0425_p-71(groS)           1  1.79e-10          . TTGGCACTCCCATCCGGTGAGTGCCAG           
+RPA2165_p-69(groS)            1  2.52e-10          . CTGGCACTCTTCGCCCGCGACTGCCAA           
+BBta_1672_p-126(groS)         1  2.74e-10          . TTAGCACTCGGAGGGCACGATTGCTAA           
+RPA1141_p-109(groS)           1  3.23e-10          . TTAGCACTCTTGCAGTACGACTGCCAA           
+RHE_CH01270_p-81(groS)        1  3.79e-10          . TTGGCACTCCTATCAATCGAGTGCCAC           
+RL1410_p-81(groS)             1  3.79e-10          . TTGGCACTCCTATCAATCGAGTGCCAC           
+bsr7532_p-119(groS)           1  5.98e-10          . TTAGCACTCGGAAAGCCCGATTGCTAA           
+Nwi_2191_p-70(groS)           1  7.95e-10          . CTGGCACTCGCTGGTATTGACTGCCAG           
+BBta_3033_p-143(groS)         1  9.11e-10          . CTGGCAATCGTTCCCACCGAGTGCCAA           
+Xaut_1165_p-71(groS)          1  1.11e-09          . TTGGCACTCCACCTTGGAGAGTGCCAG           
+Nwi_2114_p-144(groS)          1  1.83e-09          . TTGGCGCTCCAGGGCGCGGAGTGCCAA           
+Nwi_2573_p-117(groS)          1  1.94e-09          . GTGGCACTCTCGCAATACGATTGCCAA           
+RHE_CH01238_p-177(groS)       1  2.30e-09          . TTAGCAGCCACTTCGAGTGAGTGCTAA           
+blr6978_p-59(groS)            1  7.22e-09          . TCAGCACTCGCTAGCTTCGACTGCTAT           
+blr5226_p-137(groS)           1  1.36e-08          . TTGGCAGTCAGACGGCCGGAGTGACAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Meso_0358_p-94(groS)              1.8e-14  [+1]
+msl5812_p-79(groS)                8.3e-14  [+1]
+pRL120643_p-172(groS)             1.4e-12  [+1]
+msr9341_p-81(groS)                1.7e-12  [+1]
+mll8202_p-91(groS)                2.1e-12  [+1]
+RHE_CH00829_p-85(groS)            3.9e-12  [+1]
+RL0884_p-85(groS)                 3.9e-12  [+1]
+Meso_3096_p-167(groS)             9.2e-12  [+1]
+BQ10760_p-76(groS)                1.3e-11  [+1]
+BBta_5284_p-71(groS)              1.7e-11  [+1]
+BMEII1047_p-87(groS)              1.9e-11  [+1]
+mll2233_p-80(groS)                1.9e-11  [+1]
+NGR_b05810_p-178(groS)            2.2e-11  [+1]
+SMa0745_p-83(groS)                2.5e-11  [+1]
+SMc00912_p-85(groS)               2.5e-11  [+1]
+mlr2393_p-183(groS)               2.8e-11  [+1]
+AZC_2311_p-184(groS)              3.6e-11  [+1]
+NGR_c04090_p-85(groS)             3.6e-11  [+1]
+RHE_PF00329_p-169(groS)           4.5e-11  [+1]
+Atu0683_p-85(groS)                5.6e-11  [+1]
+NGR_b05110_p-175(groS)            5.6e-11  [+1]
+blr5625_p-70(groS)                6.9e-11  [+1]
+Xaut_4265_p-138(groS)             9.3e-11  [+1]
+AZC_0425_p-71(groS)               1.8e-10  [+1]
+RPA2165_p-69(groS)                2.5e-10  [+1]
+BBta_1672_p-126(groS)             2.7e-10  [+1]
+RPA1141_p-109(groS)               3.2e-10  [+1]
+RHE_CH01270_p-81(groS)            3.8e-10  [+1]
+RL1410_p-81(groS)                 3.8e-10  [+1]
+bsr7532_p-119(groS)                 6e-10  [+1]
+Nwi_2191_p-70(groS)               7.9e-10  [+1]
+BBta_3033_p-143(groS)             9.1e-10  [+1]
+Xaut_1165_p-71(groS)              1.1e-09  [+1]
+Nwi_2114_p-144(groS)              1.8e-09  [+1]
+Nwi_2573_p-117(groS)              1.9e-09  [+1]
+RHE_CH01238_p-177(groS)           2.3e-09  [+1]
+blr6978_p-59(groS)                7.2e-09  [+1]
+blr5226_p-137(groS)               1.4e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTRGCACTCBCNNVNRRSGAGTGCYAA width=27 seqs=38
+Meso_0358_p-94(groS)     (    1) TTAGCACTCTCCTACAGCGAGTGCTAA  1 
+msl5812_p-79(groS)       (    1) TTAGCACTCCCCAATAGCGAGTGCTAA  1 
+pRL120643_p-172(groS)    (    1) CTAGCACTCGCGGGCAGGGAGTGCCAA  1 
+msr9341_p-81(groS)       (    1) TTAGCACTCGCCTCTGCCGAGTGCTAA  1 
+mll8202_p-91(groS)       (    1) TTAGCACTCGCCCTTGGTGAGTGCTAA  1 
+RHE_CH00829_p-85(groS)   (    1) CTAGCACTCACCGCAAGGGAGTGCTAA  1 
+RL0884_p-85(groS)        (    1) CTAGCACTCACCGCAAGGGAGTGCTAA  1 
+Meso_3096_p-167(groS)    (    1) TTGGCACTCTCAATAGGTGAGTGCTAA  1 
+BQ10760_p-76(groS)       (    1) TTAGCACTCTCCAACTATGAGTGCTAA  1 
+BBta_5284_p-71(groS)     (    1) CTGGCACTCGCCGGCAGCGACTGCCAA  1 
+BMEII1047_p-87(groS)     (    1) TTAGCACTCGGACGAATAGAGTGCTAA  1 
+mll2233_p-80(groS)       (    1) TTGGCACTCCTATCTATCGAGTGCCAA  1 
+NGR_b05810_p-178(groS)   (    1) GTAGCACTCTCAAGTGGCGAGTGCTAA  1 
+SMa0745_p-83(groS)       (    1) CTAGCACTCTCGCGTGAAGAGTGCTAA  1 
+SMc00912_p-85(groS)      (    1) CTAGCACTCGCTTGATATGAGTGCTAA  1 
+mlr2393_p-183(groS)      (    1) CTAGCACTCTCGCACGCCGAGTGCCAA  1 
+AZC_2311_p-184(groS)     (    1) TTGGCACTCATGGGAGAGGAGTGCTAA  1 
+NGR_c04090_p-85(groS)    (    1) CTAGCACTCTTTAAGAAGGAGTGCTAA  1 
+RHE_PF00329_p-169(groS)  (    1) TTAGCAGTCGTCGATAGAGAGTGCTAA  1 
+Atu0683_p-85(groS)       (    1) CTGGCACTCCAACAAGGGGAGTGCTAA  1 
+NGR_b05110_p-175(groS)   (    1) TTAGCACTCCATGTGATGGAGTGCTAA  1 
+blr5625_p-70(groS)       (    1) CTAGCACTCGCGGGCACAGACTGCTAA  1 
+Xaut_4265_p-138(groS)    (    1) CTAGCACTCCACATCCGCGAGTGCTAA  1 
+AZC_0425_p-71(groS)      (    1) TTGGCACTCCCATCCGGTGAGTGCCAG  1 
+RPA2165_p-69(groS)       (    1) CTGGCACTCTTCGCCCGCGACTGCCAA  1 
+BBta_1672_p-126(groS)    (    1) TTAGCACTCGGAGGGCACGATTGCTAA  1 
+RPA1141_p-109(groS)      (    1) TTAGCACTCTTGCAGTACGACTGCCAA  1 
+RHE_CH01270_p-81(groS)   (    1) TTGGCACTCCTATCAATCGAGTGCCAC  1 
+RL1410_p-81(groS)        (    1) TTGGCACTCCTATCAATCGAGTGCCAC  1 
+bsr7532_p-119(groS)      (    1) TTAGCACTCGGAAAGCCCGATTGCTAA  1 
+Nwi_2191_p-70(groS)      (    1) CTGGCACTCGCTGGTATTGACTGCCAG  1 
+BBta_3033_p-143(groS)    (    1) CTGGCAATCGTTCCCACCGAGTGCCAA  1 
+Xaut_1165_p-71(groS)     (    1) TTGGCACTCCACCTTGGAGAGTGCCAG  1 
+Nwi_2114_p-144(groS)     (    1) TTGGCGCTCCAGGGCGCGGAGTGCCAA  1 
+Nwi_2573_p-117(groS)     (    1) GTGGCACTCTCGCAATACGATTGCCAA  1 
+RHE_CH01238_p-177(groS)  (    1) TTAGCAGCCACTTCGAGTGAGTGCTAA  1 
+blr6978_p-59(groS)       (    1) TCAGCACTCGCTAGCTTCGACTGCTAT  1 
+blr5226_p-137(groS)      (    1) TTGGCAGTCAGACGGCCGGAGTGACAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 38 bayes= 1.64636 E= 4.7e-291 
+ -1189     39   -227    138 
+ -1189   -342  -1189    213 
+   132  -1189     64  -1189 
+ -1189  -1189    198  -1189 
+ -1189    183  -1189  -1189 
+   200  -1189   -326  -1189 
+  -320    167   -168  -1189 
+ -1189   -342  -1189    213 
+ -1189    183  -1189  -1189 
+   -88    -10     43     24 
+   -88     90   -127      9 
+    25     17    -27    -27 
+   -21    -10     32     -8 
+    12    -10     43    -76 
+    12     17    -46      9 
+    88   -110     19    -76 
+   -21    -61     73    -27 
+   -88     67    -10    -27 
+ -1189  -1189    198  -1189 
+   204  -1189  -1189  -1189 
+ -1189    -83    159   -149 
+ -1189  -1189  -1189    217 
+ -1189  -1189    198  -1189 
+  -320    179  -1189  -1189 
+ -1189     49  -1189    144 
+   204  -1189  -1189  -1189 
+   179   -242   -168   -308 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 38 E= 4.7e-291 
+ 0.000000  0.368421  0.052632  0.578947 
+ 0.000000  0.026316  0.000000  0.973684 
+ 0.605263  0.000000  0.394737  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.973684  0.000000  0.026316  0.000000 
+ 0.026316  0.894737  0.078947  0.000000 
+ 0.000000  0.026316  0.000000  0.973684 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.131579  0.263158  0.342105  0.263158 
+ 0.131579  0.526316  0.105263  0.236842 
+ 0.289474  0.315789  0.210526  0.184211 
+ 0.210526  0.263158  0.315789  0.210526 
+ 0.263158  0.263158  0.342105  0.131579 
+ 0.263158  0.315789  0.184211  0.236842 
+ 0.447368  0.131579  0.289474  0.131579 
+ 0.210526  0.184211  0.421053  0.184211 
+ 0.131579  0.447368  0.236842  0.184211 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.157895  0.763158  0.078947 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.026316  0.973684  0.000000  0.000000 
+ 0.000000  0.394737  0.000000  0.605263 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.842105  0.052632  0.078947  0.026316 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTRGCACTCBCNNVNRRSGAGTGCYAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]T[AG]GCACTC[GCT][CT][CAG][GCAT][GAC][CAT][AG][GA][CG]GAGTGC[TC]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.11 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc00912_p-85(groS)              2.48e-11  [+1(2.48e-11)]
+SMa0745_p-83(groS)               2.48e-11  [+1(2.48e-11)]
+NGR_c04090_p-85(groS)            3.58e-11  [+1(3.58e-11)]
+NGR_b05110_p-175(groS)           5.61e-11  [+1(5.61e-11)]
+NGR_b05810_p-178(groS)           2.18e-11  [+1(2.18e-11)]
+RL0884_p-85(groS)                3.90e-12  [+1(3.90e-12)]
+RL1410_p-81(groS)                3.79e-10  [+1(3.79e-10)]
+pRL120643_p-172(groS)            1.39e-12  [+1(1.39e-12)]
+RHE_CH00829_p-85(groS)           3.90e-12  [+1(3.90e-12)]
+RHE_CH01270_p-81(groS)           3.79e-10  [+1(3.79e-10)]
+RHE_PF00329_p-169(groS)          4.51e-11  [+1(4.51e-11)]
+RHE_CH01238_p-177(groS)          2.30e-09  [+1(2.30e-09)]
+Atu0683_p-85(groS)               5.61e-11  [+1(5.61e-11)]
+Meso_0358_p-94(groS)             1.81e-14  [+1(1.81e-14)]
+Meso_3096_p-167(groS)            9.22e-12  [+1(9.22e-12)]
+mll8202_p-91(groS)               2.15e-12  [+1(2.15e-12)]
+msl5812_p-79(groS)               8.34e-14  [+1(8.34e-14)]
+msr9341_p-81(groS)               1.74e-12  [+1(1.74e-12)]
+mlr2393_p-183(groS)              2.81e-11  [+1(2.81e-11)]
+mll2233_p-80(groS)               1.91e-11  [+1(1.91e-11)]
+BMEII1047_p-87(groS)             1.91e-11  [+1(1.91e-11)]
+BQ10760_p-76(groS)               1.25e-11  [+1(1.25e-11)]
+RPA1141_p-109(groS)              3.23e-10  [+1(3.23e-10)]
+RPA2165_p-69(groS)               2.52e-10  [+1(2.52e-10)]
+bsr7532_p-119(groS)              5.98e-10  [+1(5.98e-10)]
+blr5625_p-70(groS)               6.92e-11  [+1(6.92e-11)]
+blr6978_p-59(groS)               7.22e-09  [+1(7.22e-09)]
+blr5226_p-137(groS)              1.36e-08  [+1(1.36e-08)]
+BBta_1672_p-126(groS)            2.74e-10  [+1(2.74e-10)]
+BBta_5284_p-71(groS)             1.67e-11  [+1(1.67e-11)]
+BBta_3033_p-143(groS)            9.11e-10  [+1(9.11e-10)]
+Nwi_2114_p-144(groS)             1.83e-09  [+1(1.83e-09)]
+Nwi_2573_p-117(groS)             1.94e-09  [+1(1.94e-09)]
+Nwi_2191_p-70(groS)              7.95e-10  [+1(7.95e-10)]
+AZC_2311_p-184(groS)             3.58e-11  [+1(3.58e-11)]
+AZC_0425_p-71(groS)              1.79e-10  [+1(1.79e-10)]
+Xaut_4265_p-138(groS)            9.34e-11  [+1(9.34e-11)]
+Xaut_1165_p-71(groS)             1.11e-09  [+1(1.11e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

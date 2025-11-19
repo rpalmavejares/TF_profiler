@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/GulR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AZC_2640_p-304(gudP)     1.0000     23  AZC_2638_p-70(kdgD)      1.0000     23  
+BBta_6485_p-105(gudP)    1.0000     23  BBta_6486_p-21(gulR)     1.0000     23  
+BBta_6487_p-141(kdgD)    1.0000     23  BBta_6297_p-103(uxuF)    1.0000     23  
+BBta_0128_p-183(uxuP)    1.0000     23  bll6551_p-130(uxuP2)     1.0000     23  
+bll6551_p-151(uxuP2)     1.0000     23  blr5869_p-107(gudP)      1.0000     23  
+blr5870_p-21(gulR)       1.0000     23  blr5871_p-128(kdgD)      1.0000     23  
+blr0368_p-42(uxuF)       1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/GulR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/GulR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             299    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    299    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.318 C 0.231 G 0.181 T 0.271 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.317 C 0.231 G 0.182 T 0.271 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATCVATVCMRRWHHKGCATCGAT MEME-1	width =  23  sites =  13  llr = 229  E-value = 9.1e-061
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::4a:3:4554431::a1:19:
+pos.-specific     C  :272::5851:1342:7::8:::
+probability       G  :::4::2:13421:3a2:::91:
+matrix            T  :83::a:21124235:1:92::a
+
+         bits    2.5                *       
+                 2.2                *       
+                 2.0      *         *    * *
+                 1.7 *   **         * *  * *
+Relative         1.5 *   ** *       * ** * *
+Entropy          1.2 *** ** *       * ******
+(25.5 bits)      1.0 *** ** *       ********
+                 0.7 *** ** *       ********
+                 0.5 ******** **    ********
+                 0.2 ************ **********
+                 0.0 -----------------------
+
+Multilevel           ATCAATCCCAAAACTGCATCGAT
+consensus              TG  A AGGTCAG G  T   
+sequence                C  G     TT         
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+blr5869_p-107(gudP)           1  2.83e-11          . ATCAATCCAAAAACGGCATCGAT           
+BBta_6297_p-103(uxuF)         1  2.83e-11          . ATCAATACCGATCCTGCATCGAT           
+BBta_0128_p-183(uxuP)         1  1.87e-10          . ATCGATGCAAGTCTTGCATTGAT           
+BBta_6486_p-21(gulR)          1  5.53e-10          . ATCCATGCCGGGGAGGCATCGAT           
+BBta_6485_p-105(gudP)         1  1.01e-09          . ATCAATCCAATAATTGGATCGAT           
+blr0368_p-42(uxuF)            1  1.56e-09          . ACCGATACCATTTCGGCATCGAT           
+bll6551_p-130(uxuP2)          1  2.86e-09          . ATCCATACCTGAATTGGATCGAT           
+AZC_2638_p-70(kdgD)           1  2.86e-09          . ACTGATCCCAAAAACGCATCGAT           
+AZC_2640_p-304(gudP)          1  2.28e-08          . ATCAATCCAAAAAATGGAATGAT           
+blr5871_p-128(kdgD)           1  3.13e-08          . ATTGATGCTGATTTCGCATCGGT           
+blr5870_p-21(gulR)            1  3.13e-08          . ATTCATCTAAGGCATGTATCGAT           
+bll6551_p-151(uxuP2)          1  3.13e-08          . ATCAATCTGCGTTCGGCATTGAT           
+BBta_6487_p-141(kdgD)         1  6.52e-08          . ATTGATACCGACCCAGCATCAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+blr5869_p-107(gudP)               2.8e-11  [+1]
+BBta_6297_p-103(uxuF)             2.8e-11  [+1]
+BBta_0128_p-183(uxuP)             1.9e-10  [+1]
+BBta_6486_p-21(gulR)              5.5e-10  [+1]
+BBta_6485_p-105(gudP)               1e-09  [+1]
+blr0368_p-42(uxuF)                1.6e-09  [+1]
+bll6551_p-130(uxuP2)              2.9e-09  [+1]
+AZC_2638_p-70(kdgD)               2.9e-09  [+1]
+AZC_2640_p-304(gudP)              2.3e-08  [+1]
+blr5871_p-128(kdgD)               3.1e-08  [+1]
+blr5870_p-21(gulR)                3.1e-08  [+1]
+bll6551_p-151(uxuP2)              3.1e-08  [+1]
+BBta_6487_p-141(kdgD)             6.5e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATCVATVCMRRWHHKGCATCGAT width=23 seqs=13
+blr5869_p-107(gudP)      (    1) ATCAATCCAAAAACGGCATCGAT  1 
+BBta_6297_p-103(uxuF)    (    1) ATCAATACCGATCCTGCATCGAT  1 
+BBta_0128_p-183(uxuP)    (    1) ATCGATGCAAGTCTTGCATTGAT  1 
+BBta_6486_p-21(gulR)     (    1) ATCCATGCCGGGGAGGCATCGAT  1 
+BBta_6485_p-105(gudP)    (    1) ATCAATCCAATAATTGGATCGAT  1 
+blr0368_p-42(uxuF)       (    1) ACCGATACCATTTCGGCATCGAT  1 
+bll6551_p-130(uxuP2)     (    1) ATCCATACCTGAATTGGATCGAT  1 
+AZC_2638_p-70(kdgD)      (    1) ACTGATCCCAAAAACGCATCGAT  1 
+AZC_2640_p-304(gudP)     (    1) ATCAATCCAAAAAATGGAATGAT  1 
+blr5871_p-128(kdgD)      (    1) ATTGATGCTGATTTCGCATCGGT  1 
+blr5870_p-21(gulR)       (    1) ATTCATCTAAGGCATGTATCGAT  1 
+bll6551_p-151(uxuP2)     (    1) ATCAATCTGCGTTCGGCATTGAT  1 
+BBta_6487_p-141(kdgD)    (    1) ATTGATACCGACCCAGCATCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 13 bayes= 1.06711 E= 9.1e-061 
+   166  -1035  -1035  -1035 
+ -1035    -59  -1035    164 
+ -1035    158  -1035     19 
+    28      0    108  -1035 
+   166  -1035  -1035  -1035 
+ -1035  -1035  -1035    188 
+    -4    100     35  -1035 
+ -1035    187  -1035    -81 
+    28    100   -124   -181 
+    76   -158     76   -181 
+    54  -1035    108    -81 
+    28   -158    -24     51 
+    28     41   -124    -23 
+    -4     73  -1035     19 
+  -204    -59     76     77 
+ -1035  -1035    246  -1035 
+ -1035    158     35   -181 
+   166  -1035  -1035  -1035 
+  -204  -1035  -1035    177 
+ -1035    173  -1035    -23 
+  -204  -1035    235  -1035 
+   154  -1035   -124  -1035 
+ -1035  -1035  -1035    188 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 13 E= 9.1e-061 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.153846  0.000000  0.846154 
+ 0.000000  0.692308  0.000000  0.307692 
+ 0.384615  0.230769  0.384615  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.307692  0.461538  0.230769  0.000000 
+ 0.000000  0.846154  0.000000  0.153846 
+ 0.384615  0.461538  0.076923  0.076923 
+ 0.538462  0.076923  0.307692  0.076923 
+ 0.461538  0.000000  0.384615  0.153846 
+ 0.384615  0.076923  0.153846  0.384615 
+ 0.384615  0.307692  0.076923  0.230769 
+ 0.307692  0.384615  0.000000  0.307692 
+ 0.076923  0.153846  0.307692  0.461538 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.692308  0.230769  0.076923 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.076923  0.000000  0.000000  0.923077 
+ 0.000000  0.769231  0.000000  0.230769 
+ 0.076923  0.000000  0.923077  0.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATCVATVCMRRWHHKGCATCGAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[CT][AGC]AT[CAG]C[CA][AG][AG][AT][ACT][CAT][TG]G[CG]AT[CT]GAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AZC_2640_p-304(gudP)             2.28e-08  [+1(2.28e-08)]
+AZC_2638_p-70(kdgD)              2.86e-09  [+1(2.86e-09)]
+BBta_6485_p-105(gudP)            1.01e-09  [+1(1.01e-09)]
+BBta_6486_p-21(gulR)             5.53e-10  [+1(5.53e-10)]
+BBta_6487_p-141(kdgD)            6.52e-08  [+1(6.52e-08)]
+BBta_6297_p-103(uxuF)            2.83e-11  [+1(2.83e-11)]
+BBta_0128_p-183(uxuP)            1.87e-10  [+1(1.87e-10)]
+bll6551_p-130(uxuP2)             2.86e-09  [+1(2.86e-09)]
+bll6551_p-151(uxuP2)             3.13e-08  [+1(3.13e-08)]
+blr5869_p-107(gudP)              2.83e-11  [+1(2.83e-11)]
+blr5870_p-21(gulR)               3.13e-08  [+1(3.13e-08)]
+blr5871_p-128(kdgD)              3.13e-08  [+1(3.13e-08)]
+blr0368_p-42(uxuF)               1.56e-09  [+1(1.56e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

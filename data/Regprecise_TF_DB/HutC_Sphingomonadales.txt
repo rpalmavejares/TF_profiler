@@ -1,0 +1,208 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/HutC_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sala_1687_p-31(hutF)     1.0000     18  Sala_2411_p-61(omp)      1.0000     18  
+Sala_1688_p-16(hutI)     1.0000     18  Swit_4633_p-61(hutI)     1.0000     18  
+Swit_4634_p-32(hutF)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/HutC_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/HutC_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              90    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=     90    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.378 C 0.111 G 0.111 T 0.4 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.372 C 0.117 G 0.117 T 0.394 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATGTMTAKACAT MEME-1	width =  12  sites =   5  llr = 68  E-value = 2.6e-009
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:::4:a:a:a:
+pos.-specific     C  2:::6::::a::
+probability       G  ::a::::6::::
+matrix            T  :a:a:a:4:::a
+
+         bits    3.1   *      *  
+                 2.8   *      *  
+                 2.5   *      *  
+                 2.2   *      *  
+Relative         1.9   *      *  
+Entropy          1.5   * * ***** 
+(19.8 bits)      1.2  ***********
+                 0.9 ************
+                 0.6 ************
+                 0.3 ************
+                 0.0 ------------
+
+Multilevel           ATGTCTAGACAT
+consensus            C   A  T    
+sequence                         
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+Sala_1688_p-16(hutI)          4  8.65e-08        ATT ATGTCTAGACAT AAT       
+Sala_1687_p-31(hutF)          4  8.65e-08        ATT ATGTCTAGACAT AAT       
+Swit_4634_p-32(hutF)          4  6.80e-07        ATA ATGTATAGACAT TAT       
+Swit_4633_p-61(hutI)          4  6.80e-07        ATA ATGTCTATACAT TAT       
+Sala_2411_p-61(omp)           4  2.08e-06        GAC CTGTATATACAT TTG       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sala_1688_p-16(hutI)              8.6e-08  3_[+1]_3
+Sala_1687_p-31(hutF)              8.6e-08  3_[+1]_3
+Swit_4634_p-32(hutF)              6.8e-07  3_[+1]_3
+Swit_4633_p-61(hutI)              6.8e-07  3_[+1]_3
+Sala_2411_p-61(omp)               2.1e-06  3_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATGTMTAKACAT width=12 seqs=5
+Sala_1688_p-16(hutI)     (    4) ATGTCTAGACAT  1 
+Sala_1687_p-31(hutF)     (    4) ATGTCTAGACAT  1 
+Swit_4634_p-32(hutF)     (    4) ATGTATAGACAT  1 
+Swit_4633_p-61(hutI)     (    4) ATGTCTATACAT  1 
+Sala_2411_p-61(omp)      (    4) CTGTATATACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 35 bayes= 3.63941 E= 2.6e-009 
+   110     77   -897   -897 
+  -897   -897   -897    134 
+  -897   -897    309   -897 
+  -897   -897   -897    134 
+    10    236   -897   -897 
+  -897   -897   -897    134 
+   142   -897   -897   -897 
+  -897   -897    236      2 
+   142   -897   -897   -897 
+  -897    309   -897   -897 
+   142   -897   -897   -897 
+  -897   -897   -897    134 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 5 E= 2.6e-009 
+ 0.800000  0.200000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.600000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATGTMTAKACAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AC]TGT[CA]TA[GT]ACAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sala_1687_p-31(hutF)             6.05e-07  3_[+1(8.65e-08)]_3
+Sala_2411_p-61(omp)              1.45e-05  3_[+1(2.08e-06)]_3
+Sala_1688_p-16(hutI)             6.05e-07  3_[+1(8.65e-08)]_3
+Swit_4633_p-61(hutI)             4.76e-06  3_[+1(6.80e-07)]_3
+Swit_4634_p-32(hutF)             4.76e-06  3_[+1(6.80e-07)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

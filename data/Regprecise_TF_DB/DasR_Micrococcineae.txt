@@ -1,0 +1,292 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/DasR_Micrococcineae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AAur_2055_p-38(dasR)     1.0000     16  AAur_2054_p-281(nagK2)   1.0000     16  
+AAur_2054_p-257(nagK2)   1.0000     16  AAur_4092_p-160(nagT)    1.0000     16  
+AAur_4092_p-183(nagT)    1.0000     16  AAur_2055_p-14(dasR)     1.0000     16  
+AAur_2212_p-14(ptsH)     1.0000     16  AAur_2211_p-65(dasR)     1.0000     16  
+Achl_1951_p-127(ptsH)    1.0000     16  Achl_1950_p-56(dasR)     1.0000     16  
+Arth_3515_p-7(nagE_B)    1.0000     16  Arth_3516_p-187(nagE_A)  1.0000     16  
+Arth_3514_p-80(nagE)     1.0000     16  Arth_3514_p-195(nagE)    1.0000     16  
+Arth_3516_p-72(nagE_A)   1.0000     16  Arth_2214_p-116(ptsH)    1.0000     16  
+Arth_2213_p-66(dasR)     1.0000     16  Arth_3515_p-122(nagE_B)  1.0000     16  
+Bcav_0434_p-232(namT)    1.0000     16  Bcav_0434_p-112(namT)    1.0000     16  
+Bcav_0433_p-154(dasR)    1.0000     16  Bcav_0433_p-34(dasR)     1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/DasR_Micrococcineae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Micrococcineae/DasR_Micrococcineae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             352    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    352    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.29 C 0.23 G 0.233 T 0.247 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.289 C 0.23 G 0.233 T 0.247 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ABTGGTCTAGACCAVW MEME-1	width =  16  sites =  22  llr = 272  E-value = 3.8e-086
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:3::213728::843
+pos.-specific     C  :4::::7::::aa:22
+probability       G  23:aa::::8::::4:
+matrix            T  137::7273:2::2:5
+
+         bits    2.1    **      **   
+                 1.9    **      **   
+                 1.7    **      **   
+                 1.5    **      **   
+Relative         1.3    **      **   
+Entropy          1.1   *** *  * ***  
+(17.9 bits)      0.8   ************  
+                 0.6   ************  
+                 0.4 * **************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           ACTGGTCTAGACCAAT
+consensus            GTA  A AT     GA
+sequence              G            CC
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+AAur_2212_p-14(ptsH)          1  5.43e-08          . GGAGGTCTAGACCAGT           
+AAur_2211_p-65(dasR)          1  8.47e-08          . ACTGGTCTAGACCTCC           
+AAur_2055_p-38(dasR)          1  8.47e-08          . ATTGGTTTAGACCAAC           
+AAur_2054_p-257(nagK2)        1  1.10e-07          . GTTGGTCTAAACCAAT           
+Achl_1950_p-56(dasR)          1  1.43e-07          . GCTGGTCTAGACCTGA           
+Bcav_0434_p-112(namT)         1  1.81e-07          . AGTGGACTAGACCTAT           
+Arth_2213_p-66(dasR)          1  1.81e-07          . GGTGGTCTAGACCTGC           
+Bcav_0433_p-154(dasR)         1  2.04e-07          . ATAGGTCTAGTCCACT           
+Arth_2214_p-116(ptsH)         1  2.04e-07          . GCAGGTCTAGACCACC           
+Achl_1951_p-127(ptsH)         1  2.52e-07          . TCAGGTCTAGACCAGC           
+Bcav_0434_p-232(namT)         1  3.59e-07          . AGTGGTCTGGACCAGA           
+Bcav_0433_p-34(dasR)          1  9.67e-07          . TCTGGTCCAGACCACT           
+Arth_3515_p-122(nagE_B)       1  1.51e-06          . ACTGGTTATAACCAGT           
+Arth_3514_p-80(nagE)          1  1.51e-06          . ACTGGTTATAACCAGT           
+Arth_3516_p-187(nagE_A)       1  1.51e-06          . ACTGGTTATAACCAGT           
+AAur_2055_p-14(dasR)          1  2.27e-06          . ATTGGCATAGACCAAT           
+Arth_3516_p-72(nagE_A)        1  2.84e-06          . AGTGGACATGTCCAAA           
+Arth_3515_p-7(nagE_B)         1  2.84e-06          . AGTGGACATGTCCAAA           
+AAur_4092_p-183(nagT)         1  3.05e-06          . AAAGGACTAGACCAAA           
+AAur_2054_p-281(nagK2)        1  3.05e-06          . ATTGGTCTATGCCAAT           
+Arth_3514_p-195(nagE)         1  5.32e-06          . TTTGGACATGTCCACT           
+AAur_4092_p-160(nagT)         1  7.63e-06          . CTAGGTATAGACCAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AAur_2212_p-14(ptsH)              5.4e-08  [+1]
+AAur_2211_p-65(dasR)              8.5e-08  [+1]
+AAur_2055_p-38(dasR)              8.5e-08  [+1]
+AAur_2054_p-257(nagK2)            1.1e-07  [+1]
+Achl_1950_p-56(dasR)              1.4e-07  [+1]
+Bcav_0434_p-112(namT)             1.8e-07  [+1]
+Arth_2213_p-66(dasR)              1.8e-07  [+1]
+Bcav_0433_p-154(dasR)               2e-07  [+1]
+Arth_2214_p-116(ptsH)               2e-07  [+1]
+Achl_1951_p-127(ptsH)             2.5e-07  [+1]
+Bcav_0434_p-232(namT)             3.6e-07  [+1]
+Bcav_0433_p-34(dasR)              9.7e-07  [+1]
+Arth_3515_p-122(nagE_B)           1.5e-06  [+1]
+Arth_3514_p-80(nagE)              1.5e-06  [+1]
+Arth_3516_p-187(nagE_A)           1.5e-06  [+1]
+AAur_2055_p-14(dasR)              2.3e-06  [+1]
+Arth_3516_p-72(nagE_A)            2.8e-06  [+1]
+Arth_3515_p-7(nagE_B)             2.8e-06  [+1]
+AAur_4092_p-183(nagT)             3.1e-06  [+1]
+AAur_2054_p-281(nagK2)            3.1e-06  [+1]
+Arth_3514_p-195(nagE)             5.3e-06  [+1]
+AAur_4092_p-160(nagT)             7.6e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ABTGGTCTAGACCAVW width=16 seqs=22
+AAur_2212_p-14(ptsH)     (    1) GGAGGTCTAGACCAGT  1 
+AAur_2211_p-65(dasR)     (    1) ACTGGTCTAGACCTCC  1 
+AAur_2055_p-38(dasR)     (    1) ATTGGTTTAGACCAAC  1 
+AAur_2054_p-257(nagK2)   (    1) GTTGGTCTAAACCAAT  1 
+Achl_1950_p-56(dasR)     (    1) GCTGGTCTAGACCTGA  1 
+Bcav_0434_p-112(namT)    (    1) AGTGGACTAGACCTAT  1 
+Arth_2213_p-66(dasR)     (    1) GGTGGTCTAGACCTGC  1 
+Bcav_0433_p-154(dasR)    (    1) ATAGGTCTAGTCCACT  1 
+Arth_2214_p-116(ptsH)    (    1) GCAGGTCTAGACCACC  1 
+Achl_1951_p-127(ptsH)    (    1) TCAGGTCTAGACCAGC  1 
+Bcav_0434_p-232(namT)    (    1) AGTGGTCTGGACCAGA  1 
+Bcav_0433_p-34(dasR)     (    1) TCTGGTCCAGACCACT  1 
+Arth_3515_p-122(nagE_B)  (    1) ACTGGTTATAACCAGT  1 
+Arth_3514_p-80(nagE)     (    1) ACTGGTTATAACCAGT  1 
+Arth_3516_p-187(nagE_A)  (    1) ACTGGTTATAACCAGT  1 
+AAur_2055_p-14(dasR)     (    1) ATTGGCATAGACCAAT  1 
+Arth_3516_p-72(nagE_A)   (    1) AGTGGACATGTCCAAA  1 
+Arth_3515_p-7(nagE_B)    (    1) AGTGGACATGTCCAAA  1 
+AAur_4092_p-183(nagT)    (    1) AAAGGACTAGACCAAA  1 
+AAur_2054_p-281(nagK2)   (    1) ATTGGTCTATGCCAAT  1 
+Arth_3514_p-195(nagE)    (    1) TTTGGACATGTCCACT  1 
+AAur_4092_p-160(nagT)    (    1) CTAGGTATAGACCAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 22 bayes= 1.41504 E= 3.8e-086 
+   103   -234     -4    -86 
+  -267     66     23     36 
+    -9  -1110  -1110    156 
+ -1110  -1110    210  -1110 
+ -1110  -1110    210  -1110 
+   -35   -234  -1110    156 
+  -167    166  -1110    -44 
+    -9   -234  -1110    146 
+   124  -1110   -236     14 
+   -67  -1110    173   -244 
+   142  -1110   -236    -44 
+ -1110    212  -1110  -1110 
+ -1110    212  -1110  -1110 
+   150  -1110  -1110    -44 
+    50     -2     64  -1110 
+    -9     -2  -1110    102 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 22 E= 3.8e-086 
+ 0.590909  0.045455  0.227273  0.136364 
+ 0.045455  0.363636  0.272727  0.318182 
+ 0.272727  0.000000  0.000000  0.727273 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.227273  0.045455  0.000000  0.727273 
+ 0.090909  0.727273  0.000000  0.181818 
+ 0.272727  0.045455  0.000000  0.681818 
+ 0.681818  0.000000  0.045455  0.272727 
+ 0.181818  0.000000  0.772727  0.045455 
+ 0.772727  0.000000  0.045455  0.181818 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.818182  0.000000  0.000000  0.181818 
+ 0.409091  0.227273  0.363636  0.000000 
+ 0.272727  0.227273  0.000000  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABTGGTCTAGACCAVW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][CTG][TA]GG[TA]C[TA][AT]GACCA[AGC][TAC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AAur_2055_p-38(dasR)             8.47e-08  [+1(8.47e-08)]
+AAur_2054_p-281(nagK2)           3.05e-06  [+1(3.05e-06)]
+AAur_2054_p-257(nagK2)           1.10e-07  [+1(1.10e-07)]
+AAur_4092_p-160(nagT)            7.63e-06  [+1(7.63e-06)]
+AAur_4092_p-183(nagT)            3.05e-06  [+1(3.05e-06)]
+AAur_2055_p-14(dasR)             2.27e-06  [+1(2.27e-06)]
+AAur_2212_p-14(ptsH)             5.43e-08  [+1(5.43e-08)]
+AAur_2211_p-65(dasR)             8.47e-08  [+1(8.47e-08)]
+Achl_1951_p-127(ptsH)            2.52e-07  [+1(2.52e-07)]
+Achl_1950_p-56(dasR)             1.43e-07  [+1(1.43e-07)]
+Arth_3515_p-7(nagE_B)            2.84e-06  [+1(2.84e-06)]
+Arth_3516_p-187(nagE_A)          1.51e-06  [+1(1.51e-06)]
+Arth_3514_p-80(nagE)             1.51e-06  [+1(1.51e-06)]
+Arth_3514_p-195(nagE)            5.32e-06  [+1(5.32e-06)]
+Arth_3516_p-72(nagE_A)           2.84e-06  [+1(2.84e-06)]
+Arth_2214_p-116(ptsH)            2.04e-07  [+1(2.04e-07)]
+Arth_2213_p-66(dasR)             1.81e-07  [+1(1.81e-07)]
+Arth_3515_p-122(nagE_B)          1.51e-06  [+1(1.51e-06)]
+Bcav_0434_p-232(namT)            3.59e-07  [+1(3.59e-07)]
+Bcav_0434_p-112(namT)            1.81e-07  [+1(1.81e-07)]
+Bcav_0433_p-154(dasR)            2.04e-07  [+1(2.04e-07)]
+Bcav_0433_p-34(dasR)             9.67e-07  [+1(9.67e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

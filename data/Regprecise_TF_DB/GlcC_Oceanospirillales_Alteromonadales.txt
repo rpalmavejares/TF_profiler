@@ -1,0 +1,240 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/GlcC_Oceanospirillales_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Maqu_3306_p-140(glcC)    1.0000     17  Maqu_3306_p-25(glcC)     1.0000     17  
+Maqu_3305_p-215(glcG)    1.0000     17  Maqu_3305_p-100(glcG)    1.0000     17  
+MELB17_21735_p-89(glcC)  1.0000     17  MELB17_21735_p6(glcC)    1.0000     17  
+MELB17_21740_p-165(glcP) 1.0000     17  MELB17_21740_p-260(glcP) 1.0000     17  
+MED92_02414_p-154(lldE)  1.0000     17  MED92_02419_p-43(glcC)   1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/GlcC_Oceanospirillales_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Oceanospirillales_Alteromonadales/GlcC_Oceanospirillales_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             170    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    170    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.241 C 0.259 G 0.259 T 0.241 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.241 C 0.259 G 0.259 T 0.241 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WRCTGGTCWGACCAGYW MEME-1	width =  17  sites =  10  llr = 186  E-value = 1.6e-051
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  66::::::4:a::a1:4
+pos.-specific     C  :19::::a1::aa::3:
+probability       G  :3::aa::1a::::91:
+matrix            T  4:1a::a:4::::::66
+
+         bits    2.1    ***** *****   
+                 1.8    ***** *****   
+                 1.6    ***** *****   
+                 1.4   ****** ******  
+Relative         1.2   ****** ******  
+Entropy          1.0 * ****** ****** *
+(26.8 bits)      0.8 * ****** ****** *
+                 0.6 ******** ********
+                 0.4 *****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           AACTGGTCAGACCAGTT
+consensus            TG      T      CA
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+MELB17_21740_p-260(glcP)      1  5.72e-10          . AACTGGTCAGACCAGCT           
+MELB17_21735_p6(glcC)         1  5.72e-10          . AGCTGGTCTGACCAGTT           
+MELB17_21740_p-165(glcP)      1  1.16e-09          . AACTGGTCTGACCAGCA           
+MELB17_21735_p-89(glcC)       1  1.16e-09          . TGCTGGTCAGACCAGTT           
+Maqu_3305_p-215(glcG)         1  1.16e-09          . TGCTGGTCTGACCAGTT           
+Maqu_3306_p-25(glcC)          1  1.16e-09          . AACTGGTCAGACCAGCA           
+Maqu_3305_p-100(glcG)         1  2.12e-09          . AACTGGTCGGACCAGTA           
+Maqu_3306_p-140(glcC)         1  2.12e-09          . TACTGGTCCGACCAGTT           
+MED92_02419_p-43(glcC)        1  1.43e-08          . AACTGGTCTGACCAAGA           
+MED92_02414_p-154(lldE)       1  1.43e-08          . TCTTGGTCAGACCAGTT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MELB17_21740_p-260(glcP)          5.7e-10  [+1]
+MELB17_21735_p6(glcC)             5.7e-10  [+1]
+MELB17_21740_p-165(glcP)          1.2e-09  [+1]
+MELB17_21735_p-89(glcC)           1.2e-09  [+1]
+Maqu_3305_p-215(glcG)             1.2e-09  [+1]
+Maqu_3306_p-25(glcC)              1.2e-09  [+1]
+Maqu_3305_p-100(glcG)             2.1e-09  [+1]
+Maqu_3306_p-140(glcC)             2.1e-09  [+1]
+MED92_02419_p-43(glcC)            1.4e-08  [+1]
+MED92_02414_p-154(lldE)           1.4e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WRCTGGTCWGACCAGYW width=17 seqs=10
+MELB17_21740_p-260(glcP) (    1) AACTGGTCAGACCAGCT  1 
+MELB17_21735_p6(glcC)    (    1) AGCTGGTCTGACCAGTT  1 
+MELB17_21740_p-165(glcP) (    1) AACTGGTCTGACCAGCA  1 
+MELB17_21735_p-89(glcC)  (    1) TGCTGGTCAGACCAGTT  1 
+Maqu_3305_p-215(glcG)    (    1) TGCTGGTCTGACCAGTT  1 
+Maqu_3306_p-25(glcC)     (    1) AACTGGTCAGACCAGCA  1 
+Maqu_3305_p-100(glcG)    (    1) AACTGGTCGGACCAGTA  1 
+Maqu_3306_p-140(glcC)    (    1) TACTGGTCCGACCAGTT  1 
+MED92_02419_p-43(glcC)   (    1) AACTGGTCTGACCAAGA  1 
+MED92_02414_p-154(lldE)  (    1) TCTTGGTCAGACCAGTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 10 bayes= 0.830075 E= 1.6e-051 
+   131   -997   -997     73 
+   131   -137     21   -997 
+  -997    180   -997   -127 
+  -997   -997   -997    205 
+  -997   -997    195   -997 
+  -997   -997    195   -997 
+  -997   -997   -997    205 
+  -997    195   -997   -997 
+    73   -137   -137     73 
+  -997   -997    195   -997 
+   205   -997   -997   -997 
+  -997    195   -997   -997 
+  -997    195   -997   -997 
+   205   -997   -997   -997 
+  -127   -997    180   -997 
+  -997     21   -137    131 
+    73   -997   -997    131 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 10 E= 1.6e-051 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.600000  0.100000  0.300000  0.000000 
+ 0.000000  0.900000  0.000000  0.100000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.400000  0.100000  0.100000  0.400000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.100000  0.000000  0.900000  0.000000 
+ 0.000000  0.300000  0.100000  0.600000 
+ 0.400000  0.000000  0.000000  0.600000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRCTGGTCWGACCAGYW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][AG]CTGGTC[AT]GACCAG[TC][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Maqu_3306_p-140(glcC)            2.12e-09  [+1(2.12e-09)]
+Maqu_3306_p-25(glcC)             1.16e-09  [+1(1.16e-09)]
+Maqu_3305_p-215(glcG)            1.16e-09  [+1(1.16e-09)]
+Maqu_3305_p-100(glcG)            2.12e-09  [+1(2.12e-09)]
+MELB17_21735_p-89(glcC)          1.16e-09  [+1(1.16e-09)]
+MELB17_21735_p6(glcC)            5.72e-10  [+1(5.72e-10)]
+MELB17_21740_p-165(glcP)         1.16e-09  [+1(1.16e-09)]
+MELB17_21740_p-260(glcP)         5.72e-10  [+1(5.72e-10)]
+MED92_02414_p-154(lldE)          1.43e-08  [+1(1.43e-08)]
+MED92_02419_p-43(glcC)           1.43e-08  [+1(1.43e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/PaaR_Mycobacteriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MAB_0902_p-48(paaJ)      1.0000     22  MAB_0902_p-44(paaJ)      1.0000     22  
+MAB_0901c_p-92(paaR)     1.0000     22  MAB_0901c_p-88(paaR)     1.0000     22  
+MAB_0906_p-37(paaA)      1.0000     22  MAB_0906_p-33(paaA)      1.0000     22  
+MAB_0900c_p-108(paaZ)    1.0000     22  MAB_0900c_p-35(paaZ)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/PaaR_Mycobacteriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Mycobacteriaceae/PaaR_Mycobacteriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             176    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    176    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.244 C 0.267 G 0.273 T 0.216 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.244 C 0.267 G 0.272 T 0.217 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AMYRACCGWWCGDTCGGTYRKT MEME-1	width =  22  sites =   8  llr = 148  E-value = 1.0e-030
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  94:4a3:164:133::1:14:1
+pos.-specific     C  :66::6a::19:::a::15:13
+probability       G  1::6:::9:::95::a9::65:
+matrix            T  ::4::1::451:38:::94:46
+
+         bits    2.2                       
+                 2.0     * *       **      
+                 1.8     * *       **      
+                 1.5 *   * *       ** *    
+Relative         1.3 *   * **  ** *****    
+Entropy          1.1 *** * *** ** *****    
+(26.7 bits)      0.9 ***** *** ** ***** * *
+                 0.7 ************ *********
+                 0.4 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ACCGACCGATCGGTCGGTCGGT
+consensus             ATA A  TA  AA    TATC
+sequence                         T         
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+MAB_0902_p-44(paaJ)           1  2.59e-11          . ACCGACCGAACGATCGGTTATT           
+MAB_0901c_p-92(paaR)          1  3.11e-11          . AATAACCGATCGTTCGGTCGGT           
+MAB_0901c_p-88(paaR)          1  3.57e-10          . ACCGATCGTTCGGTCGGTTGTC           
+MAB_0906_p-37(paaA)           1  9.72e-10          . AATAACCGAACATTCGGTCGGT           
+MAB_0900c_p-35(paaZ)          1  1.39e-09          . ACCGAACGAATGGACGGTTGGT           
+MAB_0906_p-33(paaA)           1  7.30e-09          . ACCGAACATTCGGTCGGTAATC           
+MAB_0900c_p-108(paaZ)         1  1.05e-08          . ACTGACCGTTCGGTCGGCCACA           
+MAB_0902_p-48(paaJ)           1  2.85e-08          . GACAACCGACCGAACGATCGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MAB_0902_p-44(paaJ)               2.6e-11  [+1]
+MAB_0901c_p-92(paaR)              3.1e-11  [+1]
+MAB_0901c_p-88(paaR)              3.6e-10  [+1]
+MAB_0906_p-37(paaA)               9.7e-10  [+1]
+MAB_0900c_p-35(paaZ)              1.4e-09  [+1]
+MAB_0906_p-33(paaA)               7.3e-09  [+1]
+MAB_0900c_p-108(paaZ)             1.1e-08  [+1]
+MAB_0902_p-48(paaJ)               2.9e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AMYRACCGWWCGDTCGGTYRKT width=22 seqs=8
+MAB_0902_p-44(paaJ)      (    1) ACCGACCGAACGATCGGTTATT  1 
+MAB_0901c_p-92(paaR)     (    1) AATAACCGATCGTTCGGTCGGT  1 
+MAB_0901c_p-88(paaR)     (    1) ACCGATCGTTCGGTCGGTTGTC  1 
+MAB_0906_p-37(paaA)      (    1) AATAACCGAACATTCGGTCGGT  1 
+MAB_0900c_p-35(paaZ)     (    1) ACCGAACGAATGGACGGTTGGT  1 
+MAB_0906_p-33(paaA)      (    1) ACCGAACATTCGGTCGGTAATC  1 
+MAB_0900c_p-108(paaZ)    (    1) ACTGACCGTTCGGTCGGCCACA  1 
+MAB_0902_p-48(paaJ)      (    1) GACAACCGACCGAACGATCGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 8 bayes= 0.584963 E= 1.0e-030 
+   184   -965   -112   -965 
+    62    123   -965   -965 
+  -965    123   -965     79 
+    62   -965    120   -965 
+   203   -965   -965   -965 
+     3    123   -965    -79 
+  -965    191   -965   -965 
+   -97   -965    168   -965 
+   135   -965   -965     79 
+    62   -109   -965    121 
+  -965    171   -965    -79 
+   -97   -965    168   -965 
+     3   -965     88     21 
+     3   -965   -965    179 
+  -965    191   -965   -965 
+  -965   -965    188   -965 
+   -97   -965    168   -965 
+  -965   -109   -965    201 
+   -97     91   -965     79 
+    62   -965    120   -965 
+  -965   -109     88     79 
+   -97     -9   -965    153 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 8 E= 1.0e-030 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.375000  0.625000  0.000000  0.000000 
+ 0.000000  0.625000  0.000000  0.375000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.625000  0.000000  0.125000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.375000  0.125000  0.000000  0.500000 
+ 0.000000  0.875000  0.000000  0.125000 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.250000  0.000000  0.500000  0.250000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.125000  0.500000  0.000000  0.375000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 0.000000  0.125000  0.500000  0.375000 
+ 0.125000  0.250000  0.000000  0.625000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMYRACCGWWCGDTCGGTYRKT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CA][CT][GA]A[CA]CG[AT][TA]CG[GAT][TA]CGGT[CT][GA][GT][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MAB_0902_p-48(paaJ)              2.85e-08  [+1(2.85e-08)]
+MAB_0902_p-44(paaJ)              2.59e-11  [+1(2.59e-11)]
+MAB_0901c_p-92(paaR)             3.11e-11  [+1(3.11e-11)]
+MAB_0901c_p-88(paaR)             3.57e-10  [+1(3.57e-10)]
+MAB_0906_p-37(paaA)              9.72e-10  [+1(9.72e-10)]
+MAB_0906_p-33(paaA)              7.30e-09  [+1(7.30e-09)]
+MAB_0900c_p-108(paaZ)            1.05e-08  [+1(1.05e-08)]
+MAB_0900c_p-35(paaZ)             1.39e-09  [+1(1.39e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

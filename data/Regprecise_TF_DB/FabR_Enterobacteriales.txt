@@ -1,0 +1,377 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/FabR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b2323_p-65(fabB)         1.0000     18  b0954_p-56(fabA)         1.0000     18  
+b2899_p-81(hyIII)        1.0000     18  STM2378_p-66(fabB)       1.0000     18  
+STM1067_p-56(fabA)       1.0000     18  STM3049_p-82(hyIII)      1.0000     18  
+CKO_00462_p-65(fabB)     1.0000     18  CKO_02114_p-56(fabA)     1.0000     18  
+CKO_04262_p-80(hyIII)    1.0000     18  KPN_02713_p-65(fabB)     1.0000     18  
+KPN_00983_p-57(fabA)     1.0000     18  KPN_03327_p-80(hyIII)    1.0000     18  
+Ent638_2871_p-64(fabB)   1.0000     18  Ent638_1466_p-56(fabA)   1.0000     18  
+Ent638_3317_p-86(hyIII)  1.0000     18  EAM_2336_p-64(fabB)      1.0000     18  
+EAM_1374_p-57(fabA)      1.0000     18  EAM_2786_p-108(hyIII)    1.0000     18  
+y1591_p-67(fabB)         1.0000     18  y2740_p-56(fabA)         1.0000     18  
+y3641_p-84(lcfH)         1.0000     18  y3285_p-121(hyIII)       1.0000     18  
+Spro_3368_p-66(fabB)     1.0000     18  Spro_1751_p-56(fabA)     1.0000     18  
+Spro_0747_p-82(lcfH)     1.0000     18  Spro_3900_p-89(hyIII)    1.0000     18  
+ECA3063_p-68(fabB)       1.0000     18  ECA1748_p-56(fabA)       1.0000     18  
+ECA3830_p-60(lcfH)       1.0000     18  ECA0757_p-157(hyIII)     1.0000     18  
+ETAE_2421_p-92(fabB)     1.0000     18  ETAE_1264_p-56(fabA)     1.0000     18  
+ETAE_0624_p-82(lcfH)     1.0000     18  ETAE_2937_p-139(hyIII)   1.0000     18  
+PMI1795_p-71(fabB)       1.0000     18  PMI0782_p-56(fabA)       1.0000     18  
+PMI2081_p-92(lcfH)       1.0000     18  plu3184_p-78(fabB)       1.0000     18  
+plu1772_p-57(fabA)       1.0000     18  plu3671_p-114(lcfH)      1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/FabR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/FabR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       40    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             720    N=              40
+sample: seed=            0    hsfrac=          0
+        searchsize=    720    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.26 C 0.233 G 0.256 T 0.251 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.26 C 0.233 G 0.256 T 0.251 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AGCGTACAVGTGTACGCT MEME-1	width =  18  sites =  40  llr = 751  E-value = 2.2e-285
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  8:::2a:a4::::732::
+pos.-specific     C  ::9:::a:33::::7:a:
+probability       G  2a:7::::37:a:::7::
+matrix            T  ::138:::1:a:a3:1:a
+
+         bits    2.1       *         * 
+                 1.9  *   ***  ***   **
+                 1.7  **  ***  ***   **
+                 1.5  **  ***  ***   **
+Relative         1.3  **  *** ****   **
+Entropy          1.0 ******** ****** **
+(27.1 bits)      0.8 ******** *********
+                 0.6 ******** *********
+                 0.4 ******** *********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           AGCGTACAAGTGTACGCT
+consensus            G  TA   CC   TAA  
+sequence                     G         
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+plu3184_p-78(fabB)            1  2.90e-11          . AGCGTACAAGTGTACGCT           
+PMI1795_p-71(fabB)            1  2.90e-11          . AGCGTACAAGTGTACGCT           
+Ent638_2871_p-64(fabB)        1  2.90e-11          . AGCGTACAAGTGTACGCT           
+ECA1748_p-56(fabA)            1  4.40e-11          . AGCGTACAGGTGTACGCT           
+PMI0782_p-56(fabA)            1  1.31e-10          . AGCGTACAAGTGTAAGCT           
+Spro_1751_p-56(fabA)          1  1.31e-10          . AGCGTACACGTGTAAGCT           
+y2740_p-56(fabA)              1  2.04e-10          . AGCGTACAGCTGTACGCT           
+ETAE_2937_p-139(hyIII)        1  2.78e-10          . AGCGTACACGTGTACACT           
+Spro_3900_p-89(hyIII)         1  2.78e-10          . AGCGTACACGTGTACACT           
+KPN_02713_p-65(fabB)          1  3.07e-10          . GGCGTACAAGTGTACGCT           
+CKO_00462_p-65(fabB)          1  3.07e-10          . GGCGTACAAGTGTACGCT           
+STM2378_p-66(fabB)            1  3.07e-10          . GGCGTACAAGTGTACGCT           
+b2323_p-65(fabB)              1  3.07e-10          . GGCGTACAAGTGTACGCT           
+y3285_p-121(hyIII)            1  3.38e-10          . AGCGTACAGGTGTACACT           
+ETAE_2421_p-92(fabB)          1  3.53e-10          . GGCGTACAGGTGTACGCT           
+ECA3063_p-68(fabB)            1  4.40e-10          . AGCTTACAACTGTACGCT           
+Ent638_1466_p-56(fabA)        1  5.38e-10          . AGCGTACACGTGTTAGCT           
+CKO_02114_p-56(fabA)          1  5.38e-10          . AGCGTACACGTGTTAGCT           
+STM1067_p-56(fabA)            1  5.38e-10          . AGCGTACACGTGTTAGCT           
+b0954_p-56(fabA)              1  5.38e-10          . AGCGTACACGTGTTAGCT           
+ECA0757_p-157(hyIII)          1  8.06e-10          . AGCTTACACGTGTACACT           
+y1591_p-67(fabB)              1  9.49e-10          . GGCGTACAACTGTACGCT           
+PMI2081_p-92(lcfH)            1  1.10e-09          . AGCGAACAGGTGTAAGCT           
+plu1772_p-57(fabA)            1  1.40e-09          . AGCGTACAAGTGTACTCT           
+ETAE_1264_p-56(fabA)          1  1.53e-09          . AGCGTACACCTGTTAGCT           
+KPN_00983_p-57(fabA)          1  1.53e-09          . AGCTTACACGTGTTAGCT           
+EAM_2336_p-64(fabB)           1  2.08e-09          . GGCGTACAACTGTAAGCT           
+EAM_2786_p-108(hyIII)         1  3.44e-09          . AGCTTACAAGTGTACTCT           
+plu3671_p-114(lcfH)           1  3.91e-09          . AGCTAACACCTGTAAGCT           
+Spro_3368_p-66(fabB)          1  4.54e-09          . GGCGTACATCTGTACGCT           
+y3641_p-84(lcfH)              1  6.01e-09          . AGTGAACACCTGTACGCT           
+Ent638_3317_p-86(hyIII)       1  6.48e-09          . AGCTAACAGGTGTTCACT           
+KPN_03327_p-80(hyIII)         1  6.48e-09          . AGCTAACAGGTGTTCACT           
+CKO_04262_p-80(hyIII)         1  6.48e-09          . AGCTAACAGGTGTTCACT           
+b2899_p-81(hyIII)             1  6.48e-09          . AGCTAACAGGTGTTCACT           
+EAM_1374_p-57(fabA)           1  1.67e-08          . TGCTTACAACTGTAAGCT           
+STM3049_p-82(hyIII)           1  1.67e-08          . AGCTAACATGTGTTCACT           
+ETAE_0624_p-82(lcfH)          1  2.25e-08          . AGTGCACAGCTGTACGCT           
+ECA3830_p-60(lcfH)            1  2.67e-08          . AATGTACAGCTGTACGCT           
+Spro_0747_p-82(lcfH)          1  3.32e-08          . AGTAAACACGTGTAAGCT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+plu3184_p-78(fabB)                2.9e-11  [+1]
+PMI1795_p-71(fabB)                2.9e-11  [+1]
+Ent638_2871_p-64(fabB)            2.9e-11  [+1]
+ECA1748_p-56(fabA)                4.4e-11  [+1]
+PMI0782_p-56(fabA)                1.3e-10  [+1]
+Spro_1751_p-56(fabA)              1.3e-10  [+1]
+y2740_p-56(fabA)                    2e-10  [+1]
+ETAE_2937_p-139(hyIII)            2.8e-10  [+1]
+Spro_3900_p-89(hyIII)             2.8e-10  [+1]
+KPN_02713_p-65(fabB)              3.1e-10  [+1]
+CKO_00462_p-65(fabB)              3.1e-10  [+1]
+STM2378_p-66(fabB)                3.1e-10  [+1]
+b2323_p-65(fabB)                  3.1e-10  [+1]
+y3285_p-121(hyIII)                3.4e-10  [+1]
+ETAE_2421_p-92(fabB)              3.5e-10  [+1]
+ECA3063_p-68(fabB)                4.4e-10  [+1]
+Ent638_1466_p-56(fabA)            5.4e-10  [+1]
+CKO_02114_p-56(fabA)              5.4e-10  [+1]
+STM1067_p-56(fabA)                5.4e-10  [+1]
+b0954_p-56(fabA)                  5.4e-10  [+1]
+ECA0757_p-157(hyIII)              8.1e-10  [+1]
+y1591_p-67(fabB)                  9.5e-10  [+1]
+PMI2081_p-92(lcfH)                1.1e-09  [+1]
+plu1772_p-57(fabA)                1.4e-09  [+1]
+ETAE_1264_p-56(fabA)              1.5e-09  [+1]
+KPN_00983_p-57(fabA)              1.5e-09  [+1]
+EAM_2336_p-64(fabB)               2.1e-09  [+1]
+EAM_2786_p-108(hyIII)             3.4e-09  [+1]
+plu3671_p-114(lcfH)               3.9e-09  [+1]
+Spro_3368_p-66(fabB)              4.5e-09  [+1]
+y3641_p-84(lcfH)                    6e-09  [+1]
+Ent638_3317_p-86(hyIII)           6.5e-09  [+1]
+KPN_03327_p-80(hyIII)             6.5e-09  [+1]
+CKO_04262_p-80(hyIII)             6.5e-09  [+1]
+b2899_p-81(hyIII)                 6.5e-09  [+1]
+EAM_1374_p-57(fabA)               1.7e-08  [+1]
+STM3049_p-82(hyIII)               1.7e-08  [+1]
+ETAE_0624_p-82(lcfH)              2.3e-08  [+1]
+ECA3830_p-60(lcfH)                2.7e-08  [+1]
+Spro_0747_p-82(lcfH)              3.3e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AGCGTACAVGTGTACGCT width=18 seqs=40
+plu3184_p-78(fabB)       (    1) AGCGTACAAGTGTACGCT  1 
+PMI1795_p-71(fabB)       (    1) AGCGTACAAGTGTACGCT  1 
+Ent638_2871_p-64(fabB)   (    1) AGCGTACAAGTGTACGCT  1 
+ECA1748_p-56(fabA)       (    1) AGCGTACAGGTGTACGCT  1 
+PMI0782_p-56(fabA)       (    1) AGCGTACAAGTGTAAGCT  1 
+Spro_1751_p-56(fabA)     (    1) AGCGTACACGTGTAAGCT  1 
+y2740_p-56(fabA)         (    1) AGCGTACAGCTGTACGCT  1 
+ETAE_2937_p-139(hyIII)   (    1) AGCGTACACGTGTACACT  1 
+Spro_3900_p-89(hyIII)    (    1) AGCGTACACGTGTACACT  1 
+KPN_02713_p-65(fabB)     (    1) GGCGTACAAGTGTACGCT  1 
+CKO_00462_p-65(fabB)     (    1) GGCGTACAAGTGTACGCT  1 
+STM2378_p-66(fabB)       (    1) GGCGTACAAGTGTACGCT  1 
+b2323_p-65(fabB)         (    1) GGCGTACAAGTGTACGCT  1 
+y3285_p-121(hyIII)       (    1) AGCGTACAGGTGTACACT  1 
+ETAE_2421_p-92(fabB)     (    1) GGCGTACAGGTGTACGCT  1 
+ECA3063_p-68(fabB)       (    1) AGCTTACAACTGTACGCT  1 
+Ent638_1466_p-56(fabA)   (    1) AGCGTACACGTGTTAGCT  1 
+CKO_02114_p-56(fabA)     (    1) AGCGTACACGTGTTAGCT  1 
+STM1067_p-56(fabA)       (    1) AGCGTACACGTGTTAGCT  1 
+b0954_p-56(fabA)         (    1) AGCGTACACGTGTTAGCT  1 
+ECA0757_p-157(hyIII)     (    1) AGCTTACACGTGTACACT  1 
+y1591_p-67(fabB)         (    1) GGCGTACAACTGTACGCT  1 
+PMI2081_p-92(lcfH)       (    1) AGCGAACAGGTGTAAGCT  1 
+plu1772_p-57(fabA)       (    1) AGCGTACAAGTGTACTCT  1 
+ETAE_1264_p-56(fabA)     (    1) AGCGTACACCTGTTAGCT  1 
+KPN_00983_p-57(fabA)     (    1) AGCTTACACGTGTTAGCT  1 
+EAM_2336_p-64(fabB)      (    1) GGCGTACAACTGTAAGCT  1 
+EAM_2786_p-108(hyIII)    (    1) AGCTTACAAGTGTACTCT  1 
+plu3671_p-114(lcfH)      (    1) AGCTAACACCTGTAAGCT  1 
+Spro_3368_p-66(fabB)     (    1) GGCGTACATCTGTACGCT  1 
+y3641_p-84(lcfH)         (    1) AGTGAACACCTGTACGCT  1 
+Ent638_3317_p-86(hyIII)  (    1) AGCTAACAGGTGTTCACT  1 
+KPN_03327_p-80(hyIII)    (    1) AGCTAACAGGTGTTCACT  1 
+CKO_04262_p-80(hyIII)    (    1) AGCTAACAGGTGTTCACT  1 
+b2899_p-81(hyIII)        (    1) AGCTAACAGGTGTTCACT  1 
+EAM_1374_p-57(fabA)      (    1) TGCTTACAACTGTAAGCT  1 
+STM3049_p-82(hyIII)      (    1) AGCTAACATGTGTTCACT  1 
+ETAE_0624_p-82(lcfH)     (    1) AGTGCACAGCTGTACGCT  1 
+ECA3830_p-60(lcfH)       (    1) AATGTACAGCTGTACGCT  1 
+Spro_0747_p-82(lcfH)     (    1) AGTAAACACGTGTAAGCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 40 bayes= 1.66297 E= 2.2e-285 
+   158  -1197    -35   -333 
+  -337  -1197    193  -1197 
+ -1197    195  -1197   -133 
+  -337  -1197    145     13 
+   -21   -322  -1197    158 
+   194  -1197  -1197  -1197 
+ -1197    210  -1197  -1197 
+   194  -1197  -1197  -1197 
+    43     48     11   -233 
+ -1197     24    150  -1197 
+ -1197  -1197  -1197    199 
+ -1197  -1197    197  -1197 
+ -1197  -1197  -1197    199 
+   148  -1197  -1197     13 
+    32    153  -1197  -1197 
+   -21  -1197    150   -233 
+ -1197    210  -1197  -1197 
+ -1197  -1197  -1197    199 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 40 E= 2.2e-285 
+ 0.775000  0.000000  0.200000  0.025000 
+ 0.025000  0.000000  0.975000  0.000000 
+ 0.000000  0.900000  0.000000  0.100000 
+ 0.025000  0.000000  0.700000  0.275000 
+ 0.225000  0.025000  0.000000  0.750000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.350000  0.325000  0.275000  0.050000 
+ 0.000000  0.275000  0.725000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.725000  0.000000  0.000000  0.275000 
+ 0.325000  0.675000  0.000000  0.000000 
+ 0.225000  0.000000  0.725000  0.050000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCGTACAVGTGTACGCT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]GC[GT][TA]ACA[ACG][GC]TGT[AT][CA][GA]CT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b2323_p-65(fabB)                 3.07e-10  [+1(3.07e-10)]
+b0954_p-56(fabA)                 5.38e-10  [+1(5.38e-10)]
+b2899_p-81(hyIII)                6.48e-09  [+1(6.48e-09)]
+STM2378_p-66(fabB)               3.07e-10  [+1(3.07e-10)]
+STM1067_p-56(fabA)               5.38e-10  [+1(5.38e-10)]
+STM3049_p-82(hyIII)              1.67e-08  [+1(1.67e-08)]
+CKO_00462_p-65(fabB)             3.07e-10  [+1(3.07e-10)]
+CKO_02114_p-56(fabA)             5.38e-10  [+1(5.38e-10)]
+CKO_04262_p-80(hyIII)            6.48e-09  [+1(6.48e-09)]
+KPN_02713_p-65(fabB)             3.07e-10  [+1(3.07e-10)]
+KPN_00983_p-57(fabA)             1.53e-09  [+1(1.53e-09)]
+KPN_03327_p-80(hyIII)            6.48e-09  [+1(6.48e-09)]
+Ent638_2871_p-64(fabB)           2.90e-11  [+1(2.90e-11)]
+Ent638_1466_p-56(fabA)           5.38e-10  [+1(5.38e-10)]
+Ent638_3317_p-86(hyIII)          6.48e-09  [+1(6.48e-09)]
+EAM_2336_p-64(fabB)              2.08e-09  [+1(2.08e-09)]
+EAM_1374_p-57(fabA)              1.67e-08  [+1(1.67e-08)]
+EAM_2786_p-108(hyIII)            3.44e-09  [+1(3.44e-09)]
+y1591_p-67(fabB)                 9.49e-10  [+1(9.49e-10)]
+y2740_p-56(fabA)                 2.04e-10  [+1(2.04e-10)]
+y3641_p-84(lcfH)                 6.01e-09  [+1(6.01e-09)]
+y3285_p-121(hyIII)               3.38e-10  [+1(3.38e-10)]
+Spro_3368_p-66(fabB)             4.54e-09  [+1(4.54e-09)]
+Spro_1751_p-56(fabA)             1.31e-10  [+1(1.31e-10)]
+Spro_0747_p-82(lcfH)             3.32e-08  [+1(3.32e-08)]
+Spro_3900_p-89(hyIII)            2.78e-10  [+1(2.78e-10)]
+ECA3063_p-68(fabB)               4.40e-10  [+1(4.40e-10)]
+ECA1748_p-56(fabA)               4.40e-11  [+1(4.40e-11)]
+ECA3830_p-60(lcfH)               2.67e-08  [+1(2.67e-08)]
+ECA0757_p-157(hyIII)             8.06e-10  [+1(8.06e-10)]
+ETAE_2421_p-92(fabB)             3.53e-10  [+1(3.53e-10)]
+ETAE_1264_p-56(fabA)             1.53e-09  [+1(1.53e-09)]
+ETAE_0624_p-82(lcfH)             2.25e-08  [+1(2.25e-08)]
+ETAE_2937_p-139(hyIII)           2.78e-10  [+1(2.78e-10)]
+PMI1795_p-71(fabB)               2.90e-11  [+1(2.90e-11)]
+PMI0782_p-56(fabA)               1.31e-10  [+1(1.31e-10)]
+PMI2081_p-92(lcfH)               1.10e-09  [+1(1.10e-09)]
+plu3184_p-78(fabB)               2.90e-11  [+1(2.90e-11)]
+plu1772_p-57(fabA)               1.40e-09  [+1(1.40e-09)]
+plu3671_p-114(lcfH)              3.91e-09  [+1(3.91e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,323 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/UxuR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VV21067_p-169(uxuQ)      1.0000     18  VV21066_p-182(uxuP)      1.0000     18  
+VV21066_p-78(uxuP)       1.0000     18  VV21066_p-216(uxuP)      1.0000     18  
+VV21067_p-54(uxuQ)       1.0000     18  VV21065_p-50(uxuR)       1.0000     18  
+VV21067_p-203(uxuQ)      1.0000     18  VPA1702_p-33(uxuP)       1.0000     18  
+VPA1702_p-136(uxuP)      1.0000     18  VPA1701_p-50(uxuR)       1.0000     18  
+VPA1700_p-140(uxuA)      1.0000     18  VPA1703_p-163(uxuQ)      1.0000     18  
+VPA1703_p-197(uxuQ)      1.0000     18  VPA1703_p-48(uxuQ)       1.0000     18  
+VPA1702_p-170(uxuP)      1.0000     18  VSAK1_20694_p-77(uxuR)   1.0000     18  
+VSAK1_20694_p-65(uxuR)   1.0000     18  VSAK1_20684_p-158(uxuP)  1.0000     18  
+VSAK1_20684_p-66(uxuP)   1.0000     18  VSAK1_20679_p-168(uxuQ)  1.0000     18  
+PBPRB1875_p-153(uxuR)    1.0000     18  PBPRB1878_p-54(uxuQ)     1.0000     18  
+PBPRB1877_p-192(uxuP)    1.0000     18  PBPRB1877_p-45(uxuP)     1.0000     18  
+PBPRB1877_p-79(uxuP)     1.0000     18  PBPRB1878_p-167(uxuQ)    1.0000     18  
+PBPRB1878_p-201(uxuQ)    1.0000     18  PBPRB1515_p-61(uxaC)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/UxuR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/UxuR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             504    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    504    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.353 C 0.167 G 0.157 T 0.323 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.352 C 0.167 G 0.157 T 0.323 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWATTGGTTAACCAATTT MEME-1	width =  18  sites =  28  llr = 415  E-value = 4.5e-142
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  759:2:1116a::9a21:
+pos.-specific     C  12::::::3::9a:::22
+probability       G  11:1:a9::3::::::12
+matrix            T  13198::97::1:::866
+
+         bits    2.7      *      *     
+                 2.4      *      *     
+                 2.1      **    **     
+                 1.9      **    **     
+Relative         1.6      **   ***     
+Entropy          1.3      ***  *** *   
+(21.4 bits)      1.1   ** ***  *****   
+                 0.8   **************  
+                 0.5   ************** *
+                 0.3 * ****************
+                 0.0 ------------------
+
+Multilevel           AAATTGGTTAACCAATTT
+consensus             T      CG       G
+sequence              C                
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+VPA1703_p-163(uxuQ)           1  1.03e-09          . AAATTGGTTAACCAATTC           
+VV21067_p-169(uxuQ)           1  1.35e-09          . AAATTGGTTAACCAATCT           
+VSAK1_20694_p-65(uxuR)        1  1.55e-09          . CAATTGGTTGACCAATTT           
+VSAK1_20684_p-158(uxuP)       1  1.94e-09          . ACATTGGTCAACCAATTC           
+VPA1702_p-170(uxuP)           1  2.63e-09          . GAATTGGTTAACCAATTT           
+VV21066_p-216(uxuP)           1  2.63e-09          . AGATTGGTTAACCAATTT           
+PBPRB1878_p-167(uxuQ)         1  4.17e-09          . ATATTGGTCAACCAATTC           
+VSAK1_20679_p-168(uxuQ)       1  1.51e-08          . GAATTGGTTGACCAATGT           
+PBPRB1877_p-79(uxuP)          1  1.71e-08          . GAATTGGTTGACCAATAT           
+PBPRB1878_p-54(uxuQ)          1  1.71e-08          . ACATTGGTTAACCAAACG           
+VPA1703_p-48(uxuQ)            1  1.94e-08          . ACATTGGTAAACCAATTG           
+VV21067_p-54(uxuQ)            1  1.94e-08          . ACATTGGTAAACCAATTG           
+PBPRB1877_p-45(uxuP)          1  2.33e-08          . ATATAGGTCAACCAATTG           
+VSAK1_20694_p-77(uxuR)        1  2.33e-08          . TAATTGGTCAACCAATTG           
+PBPRB1875_p-153(uxuR)         1  3.96e-08          . AAAGAGGTTGACCAATTT           
+VV21066_p-78(uxuP)            1  8.54e-08          . ACATTGGACAACCAATCC           
+VPA1701_p-50(uxuR)            1  9.42e-08          . ATAGAGGTTGACCAATTG           
+VPA1702_p-33(uxuP)            1  1.03e-07          . ATATTGGATAACCAATCC           
+VV21065_p-50(uxuR)            1  1.71e-07          . ATATAGGTTGACCAATTA           
+PBPRB1515_p-61(uxaC)          1  2.17e-07          . CCATAGGTTCACCAATCT           
+PBPRB1878_p-201(uxuQ)         1  2.76e-07          . CAATTGGTTGACCTATAT           
+PBPRB1877_p-192(uxuP)         1  2.76e-07          . CGTTTGGTTAACCAATGT           
+VSAK1_20684_p-66(uxuP)        1  4.98e-07          . TAATTGGTTAACCGAATT           
+VPA1702_p-136(uxuP)           1  4.98e-07          . ATTTTGGTCAATCAATTT           
+VV21066_p-182(uxuP)           1  4.98e-07          . ATTTTGGTCAATCAATTT           
+VPA1703_p-197(uxuQ)           1  5.76e-07          . AAATTGATTGACCAAAAT           
+VV21067_p-203(uxuQ)           1  5.76e-07          . AAATTGATTGACCAAAAT           
+VPA1700_p-140(uxuA)           1  4.71e-06          . AAAACGGTTAACCACATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VPA1703_p-163(uxuQ)                 1e-09  [+1]
+VV21067_p-169(uxuQ)               1.3e-09  [+1]
+VSAK1_20694_p-65(uxuR)            1.6e-09  [+1]
+VSAK1_20684_p-158(uxuP)           1.9e-09  [+1]
+VPA1702_p-170(uxuP)               2.6e-09  [+1]
+VV21066_p-216(uxuP)               2.6e-09  [+1]
+PBPRB1878_p-167(uxuQ)             4.2e-09  [+1]
+VSAK1_20679_p-168(uxuQ)           1.5e-08  [+1]
+PBPRB1877_p-79(uxuP)              1.7e-08  [+1]
+PBPRB1878_p-54(uxuQ)              1.7e-08  [+1]
+VPA1703_p-48(uxuQ)                1.9e-08  [+1]
+VV21067_p-54(uxuQ)                1.9e-08  [+1]
+PBPRB1877_p-45(uxuP)              2.3e-08  [+1]
+VSAK1_20694_p-77(uxuR)            2.3e-08  [+1]
+PBPRB1875_p-153(uxuR)               4e-08  [+1]
+VV21066_p-78(uxuP)                8.5e-08  [+1]
+VPA1701_p-50(uxuR)                9.4e-08  [+1]
+VPA1702_p-33(uxuP)                  1e-07  [+1]
+VV21065_p-50(uxuR)                1.7e-07  [+1]
+PBPRB1515_p-61(uxaC)              2.2e-07  [+1]
+PBPRB1878_p-201(uxuQ)             2.8e-07  [+1]
+PBPRB1877_p-192(uxuP)             2.8e-07  [+1]
+VSAK1_20684_p-66(uxuP)              5e-07  [+1]
+VPA1702_p-136(uxuP)                 5e-07  [+1]
+VV21066_p-182(uxuP)                 5e-07  [+1]
+VPA1703_p-197(uxuQ)               5.8e-07  [+1]
+VV21067_p-203(uxuQ)               5.8e-07  [+1]
+VPA1700_p-140(uxuA)               4.7e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWATTGGTTAACCAATTT width=18 seqs=28
+VPA1703_p-163(uxuQ)      (    1) AAATTGGTTAACCAATTC  1 
+VV21067_p-169(uxuQ)      (    1) AAATTGGTTAACCAATCT  1 
+VSAK1_20694_p-65(uxuR)   (    1) CAATTGGTTGACCAATTT  1 
+VSAK1_20684_p-158(uxuP)  (    1) ACATTGGTCAACCAATTC  1 
+VPA1702_p-170(uxuP)      (    1) GAATTGGTTAACCAATTT  1 
+VV21066_p-216(uxuP)      (    1) AGATTGGTTAACCAATTT  1 
+PBPRB1878_p-167(uxuQ)    (    1) ATATTGGTCAACCAATTC  1 
+VSAK1_20679_p-168(uxuQ)  (    1) GAATTGGTTGACCAATGT  1 
+PBPRB1877_p-79(uxuP)     (    1) GAATTGGTTGACCAATAT  1 
+PBPRB1878_p-54(uxuQ)     (    1) ACATTGGTTAACCAAACG  1 
+VPA1703_p-48(uxuQ)       (    1) ACATTGGTAAACCAATTG  1 
+VV21067_p-54(uxuQ)       (    1) ACATTGGTAAACCAATTG  1 
+PBPRB1877_p-45(uxuP)     (    1) ATATAGGTCAACCAATTG  1 
+VSAK1_20694_p-77(uxuR)   (    1) TAATTGGTCAACCAATTG  1 
+PBPRB1875_p-153(uxuR)    (    1) AAAGAGGTTGACCAATTT  1 
+VV21066_p-78(uxuP)       (    1) ACATTGGACAACCAATCC  1 
+VPA1701_p-50(uxuR)       (    1) ATAGAGGTTGACCAATTG  1 
+VPA1702_p-33(uxuP)       (    1) ATATTGGATAACCAATCC  1 
+VV21065_p-50(uxuR)       (    1) ATATAGGTTGACCAATTA  1 
+PBPRB1515_p-61(uxaC)     (    1) CCATAGGTTCACCAATCT  1 
+PBPRB1878_p-201(uxuQ)    (    1) CAATTGGTTGACCTATAT  1 
+PBPRB1877_p-192(uxuP)    (    1) CGTTTGGTTAACCAATGT  1 
+VSAK1_20684_p-66(uxuP)   (    1) TAATTGGTTAACCGAATT  1 
+VPA1702_p-136(uxuP)      (    1) ATTTTGGTCAATCAATTT  1 
+VV21066_p-182(uxuP)      (    1) ATTTTGGTCAATCAATTT  1 
+VPA1703_p-197(uxuQ)      (    1) AAATTGATTGACCAAAAT  1 
+VV21067_p-203(uxuQ)      (    1) AAATTGATTGACCAAAAT  1 
+VPA1700_p-140(uxuA)      (    1) AAAACGGTTAACCACATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 28 bayes= 1.53051 E= 4.5e-142 
+    95    -23    -56   -217 
+    40     36   -114    -37 
+   134  -1145  -1145   -159 
+  -330  -1145   -114    147 
+   -98   -223  -1145    128 
+ -1145  -1145    267  -1145 
+  -230  -1145    256  -1145 
+  -230  -1145  -1145    152 
+  -230     58  -1145    107 
+    87   -223    103  -1145 
+   150  -1145  -1145  -1145 
+ -1145    247  -1145   -217 
+ -1145    258  -1145  -1145 
+   140  -1145   -214   -317 
+   145   -223  -1145  -1145 
+   -98  -1145  -1145    135 
+  -130      9   -114     91 
+  -330      9     44     82 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 28 E= 4.5e-142 
+ 0.678571  0.142857  0.107143  0.071429 
+ 0.464286  0.214286  0.071429  0.250000 
+ 0.892857  0.000000  0.000000  0.107143 
+ 0.035714  0.000000  0.071429  0.892857 
+ 0.178571  0.035714  0.000000  0.785714 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.071429  0.000000  0.928571  0.000000 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.071429  0.250000  0.000000  0.678571 
+ 0.642857  0.035714  0.321429  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.928571  0.000000  0.071429 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.928571  0.000000  0.035714  0.035714 
+ 0.964286  0.035714  0.000000  0.000000 
+ 0.178571  0.000000  0.000000  0.821429 
+ 0.142857  0.178571  0.071429  0.607143 
+ 0.035714  0.178571  0.214286  0.571429 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWATTGGTTAACCAATTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[ATC]ATTGGT[TC][AG]ACCAATT[TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VV21067_p-169(uxuQ)              1.35e-09  [+1(1.35e-09)]
+VV21066_p-182(uxuP)              4.98e-07  [+1(4.98e-07)]
+VV21066_p-78(uxuP)               8.54e-08  [+1(8.54e-08)]
+VV21066_p-216(uxuP)              2.63e-09  [+1(2.63e-09)]
+VV21067_p-54(uxuQ)               1.94e-08  [+1(1.94e-08)]
+VV21065_p-50(uxuR)               1.71e-07  [+1(1.71e-07)]
+VV21067_p-203(uxuQ)              5.76e-07  [+1(5.76e-07)]
+VPA1702_p-33(uxuP)               1.03e-07  [+1(1.03e-07)]
+VPA1702_p-136(uxuP)              4.98e-07  [+1(4.98e-07)]
+VPA1701_p-50(uxuR)               9.42e-08  [+1(9.42e-08)]
+VPA1700_p-140(uxuA)              4.71e-06  [+1(4.71e-06)]
+VPA1703_p-163(uxuQ)              1.03e-09  [+1(1.03e-09)]
+VPA1703_p-197(uxuQ)              5.76e-07  [+1(5.76e-07)]
+VPA1703_p-48(uxuQ)               1.94e-08  [+1(1.94e-08)]
+VPA1702_p-170(uxuP)              2.63e-09  [+1(2.63e-09)]
+VSAK1_20694_p-77(uxuR)           2.33e-08  [+1(2.33e-08)]
+VSAK1_20694_p-65(uxuR)           1.55e-09  [+1(1.55e-09)]
+VSAK1_20684_p-158(uxuP)          1.94e-09  [+1(1.94e-09)]
+VSAK1_20684_p-66(uxuP)           4.98e-07  [+1(4.98e-07)]
+VSAK1_20679_p-168(uxuQ)          1.51e-08  [+1(1.51e-08)]
+PBPRB1875_p-153(uxuR)            3.96e-08  [+1(3.96e-08)]
+PBPRB1878_p-54(uxuQ)             1.71e-08  [+1(1.71e-08)]
+PBPRB1877_p-192(uxuP)            2.76e-07  [+1(2.76e-07)]
+PBPRB1877_p-45(uxuP)             2.33e-08  [+1(2.33e-08)]
+PBPRB1877_p-79(uxuP)             1.71e-08  [+1(1.71e-08)]
+PBPRB1878_p-167(uxuQ)            4.17e-09  [+1(4.17e-09)]
+PBPRB1878_p-201(uxuQ)            2.76e-07  [+1(2.76e-07)]
+PBPRB1515_p-61(uxaC)             2.17e-07  [+1(2.17e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

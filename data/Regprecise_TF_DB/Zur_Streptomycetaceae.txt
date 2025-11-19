@@ -1,0 +1,289 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/Zur_Streptomycetaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SCAB_41531_p-64(rpmF2)   1.0000     21  SCAB_40011_p-66(rpmB2)   1.0000     21  
+SCAB_40001_p-31(rpmG2)   1.0000     21  SCAB_61981_p-17(znuA)    1.0000     21  
+SCAB_61981_p-39(znuA)    1.0000     21  SGR_545_p-58(rpmB2)      1.0000     21  
+SGR_546_p-31(rpmG2)      1.0000     21  SGR_5019_p-39(znuA)      1.0000     21  
+SGR_5019_p-17(znuA)      1.0000     21  SCO0436_p-56(rpmF2)      1.0000     21  
+SCO0475_p-34(znuB2)      1.0000     21  SCO3429_p-62(rpmB2)      1.0000     21  
+SCO3428_p-31(rpmG2)      1.0000     21  SCO2505_p-17(znuA)       1.0000     21  
+SCO2505_p-39(znuA)       1.0000     21  SAV_5634_p-39(znuA)      1.0000     21  
+SAV_4642_p-75(rpmB2)     1.0000     21  SAV_4643_p-31(rpmG2)     1.0000     21  
+SAV_5634_p-17(znuA)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/Zur_Streptomycetaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/Zur_Streptomycetaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             399    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    399    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.313 C 0.14 G 0.18 T 0.366 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.313 C 0.141 G 0.181 T 0.365 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WRWTGAAAATSRTTTYCATKW MEME-1	width =  21  sites =  19  llr = 300  E-value = 5.0e-089
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  444::7798::61::::a:24
+pos.-specific     C  :12:::31:25:2::5a:1::
+probability       G  :5::a31:1:541:3:::331
+matrix            T  614a::::28::6a75::755
+
+         bits    2.8                 *    
+                 2.5     *           *    
+                 2.3     *           *    
+                 2.0     *           *    
+Relative         1.7     *     *     **   
+Entropy          1.4    **  *  *  *  **   
+(22.7 bits)      1.1    *** * *** * ***   
+                 0.8    ********* *****   
+                 0.6 ** ********* ******  
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TGATGAAAATGATTTTCATTT
+consensus            AAT  GC  CCG  GC  GGA
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+SAV_5634_p-39(znuA)           1  6.14e-10          . TGTTGACAATCGTTTCCAGTT           
+SAV_5634_p-17(znuA)           1  6.48e-09          . TGTTGAAAATGACTGTCATGA           
+SAV_4642_p-75(rpmB2)          1  6.48e-09          . TACTGAAAACGACTTCCATTT           
+SCAB_61981_p-39(znuA)         1  6.48e-09          . TGTTGACAATCGTTTCCAGAT           
+SCO2505_p-39(znuA)            1  8.72e-09          . TGTTGACAACGGTTTCCATAT           
+SCAB_61981_p-17(znuA)         1  8.72e-09          . AGATGAAAATGACTGTCATGA           
+SGR_5019_p-39(znuA)           1  1.01e-08          . TGTTGACAATCGTTTCCACTT           
+SCO2505_p-17(znuA)            1  1.68e-08          . TGTTGAAAATGAGTGTCATGA           
+SCO3429_p-62(rpmB2)           1  2.11e-08          . TACTGAAAATGAATTCCATTA           
+SCAB_40011_p-66(rpmB2)        1  2.11e-08          . TACTGAAAATGAATTCCATTT           
+SGR_5019_p-17(znuA)           1  2.61e-08          . AGTTGAAAATGAGTGTCATGA           
+SGR_546_p-31(rpmG2)           1  3.92e-08          . AAATGGAAACCATTGCCATAT           
+SCO3428_p-31(rpmG2)           1  7.36e-08          . TAATGGAATTCATTTTCAGTA           
+SGR_545_p-58(rpmB2)           1  7.97e-08          . ATATGGCAATGGTTTCCATTT           
+SCO0475_p-34(znuB2)           1  9.97e-08          . TGTTGAACATGATTTTCATTG           
+SCAB_40001_p-31(rpmG2)        1  9.97e-08          . AAATGGAATTCATTTTCAGTA           
+SCO0436_p-56(rpmF2)           1  1.22e-07          . ACATGAACATCGTTTTCATGT           
+SAV_4643_p-31(rpmG2)          1  1.39e-07          . AAATGGAAGTCGTTTTCAGTA           
+SCAB_41531_p-64(rpmF2)        1  2.65e-07          . TAATGGGATCCATTTTCATGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SAV_5634_p-39(znuA)               6.1e-10  [+1]
+SAV_5634_p-17(znuA)               6.5e-09  [+1]
+SAV_4642_p-75(rpmB2)              6.5e-09  [+1]
+SCAB_61981_p-39(znuA)             6.5e-09  [+1]
+SCO2505_p-39(znuA)                8.7e-09  [+1]
+SCAB_61981_p-17(znuA)             8.7e-09  [+1]
+SGR_5019_p-39(znuA)                 1e-08  [+1]
+SCO2505_p-17(znuA)                1.7e-08  [+1]
+SCO3429_p-62(rpmB2)               2.1e-08  [+1]
+SCAB_40011_p-66(rpmB2)            2.1e-08  [+1]
+SGR_5019_p-17(znuA)               2.6e-08  [+1]
+SGR_546_p-31(rpmG2)               3.9e-08  [+1]
+SCO3428_p-31(rpmG2)               7.4e-08  [+1]
+SGR_545_p-58(rpmB2)                 8e-08  [+1]
+SCO0475_p-34(znuB2)                 1e-07  [+1]
+SCAB_40001_p-31(rpmG2)              1e-07  [+1]
+SCO0436_p-56(rpmF2)               1.2e-07  [+1]
+SAV_4643_p-31(rpmG2)              1.4e-07  [+1]
+SCAB_41531_p-64(rpmF2)            2.6e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WRWTGAAAATSRTTTYCATKW width=21 seqs=19
+SAV_5634_p-39(znuA)      (    1) TGTTGACAATCGTTTCCAGTT  1 
+SAV_5634_p-17(znuA)      (    1) TGTTGAAAATGACTGTCATGA  1 
+SAV_4642_p-75(rpmB2)     (    1) TACTGAAAACGACTTCCATTT  1 
+SCAB_61981_p-39(znuA)    (    1) TGTTGACAATCGTTTCCAGAT  1 
+SCO2505_p-39(znuA)       (    1) TGTTGACAACGGTTTCCATAT  1 
+SCAB_61981_p-17(znuA)    (    1) AGATGAAAATGACTGTCATGA  1 
+SGR_5019_p-39(znuA)      (    1) TGTTGACAATCGTTTCCACTT  1 
+SCO2505_p-17(znuA)       (    1) TGTTGAAAATGAGTGTCATGA  1 
+SCO3429_p-62(rpmB2)      (    1) TACTGAAAATGAATTCCATTA  1 
+SCAB_40011_p-66(rpmB2)   (    1) TACTGAAAATGAATTCCATTT  1 
+SGR_5019_p-17(znuA)      (    1) AGTTGAAAATGAGTGTCATGA  1 
+SGR_546_p-31(rpmG2)      (    1) AAATGGAAACCATTGCCATAT  1 
+SCO3428_p-31(rpmG2)      (    1) TAATGGAATTCATTTTCAGTA  1 
+SGR_545_p-58(rpmB2)      (    1) ATATGGCAATGGTTTCCATTT  1 
+SCO0475_p-34(znuB2)      (    1) TGTTGAACATGATTTTCATTG  1 
+SCAB_40001_p-31(rpmG2)   (    1) AAATGGAATTCATTTTCAGTA  1 
+SCO0436_p-56(rpmF2)      (    1) ACATGAACATCGTTTTCATGT  1 
+SAV_4643_p-31(rpmG2)     (    1) AAATGGAAGTCGTTTTCAGTA  1 
+SCAB_41531_p-64(rpmF2)   (    1) TAATGGGATCCATTTTCATGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 19 bayes= 1.33258 E= 5.0e-089 
+    24  -1089  -1089     79 
+    43   -142    139   -279 
+    43     16  -1089     21 
+ -1089  -1089  -1089    145 
+ -1089  -1089    246  -1089 
+   113  -1089     80  -1089 
+   113     90   -178  -1089 
+   152    -43  -1089  -1089 
+   134  -1089   -178   -121 
+ -1089     57  -1089    111 
+ -1089    174    154  -1089 
+   101  -1089    102  -1089 
+  -157     16    -78     79 
+ -1089  -1089  -1089    145 
+ -1089  -1089     54    101 
+ -1089    174  -1089     53 
+ -1089    282  -1089  -1089 
+   168  -1089  -1089  -1089 
+ -1089   -142     54     91 
+   -98  -1089     80     53 
+    43  -1089   -178     53 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 19 E= 5.0e-089 
+ 0.368421  0.000000  0.000000  0.631579 
+ 0.421053  0.052632  0.473684  0.052632 
+ 0.421053  0.157895  0.000000  0.421053 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.684211  0.000000  0.315789  0.000000 
+ 0.684211  0.263158  0.052632  0.000000 
+ 0.894737  0.105263  0.000000  0.000000 
+ 0.789474  0.000000  0.052632  0.157895 
+ 0.000000  0.210526  0.000000  0.789474 
+ 0.000000  0.473684  0.526316  0.000000 
+ 0.631579  0.000000  0.368421  0.000000 
+ 0.105263  0.157895  0.105263  0.631579 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.263158  0.736842 
+ 0.000000  0.473684  0.000000  0.526316 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.052632  0.263158  0.684211 
+ 0.157895  0.000000  0.315789  0.526316 
+ 0.421053  0.000000  0.052632  0.526316 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRWTGAAAATSRTTTYCATKW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][GA][AT]TG[AG][AC]AA[TC][GC][AG]TT[TG][TC]CA[TG][TG][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SCAB_41531_p-64(rpmF2)           2.65e-07  [+1(2.65e-07)]
+SCAB_40011_p-66(rpmB2)           2.11e-08  [+1(2.11e-08)]
+SCAB_40001_p-31(rpmG2)           9.97e-08  [+1(9.97e-08)]
+SCAB_61981_p-17(znuA)            8.72e-09  [+1(8.72e-09)]
+SCAB_61981_p-39(znuA)            6.48e-09  [+1(6.48e-09)]
+SGR_545_p-58(rpmB2)              7.97e-08  [+1(7.97e-08)]
+SGR_546_p-31(rpmG2)              3.92e-08  [+1(3.92e-08)]
+SGR_5019_p-39(znuA)              1.01e-08  [+1(1.01e-08)]
+SGR_5019_p-17(znuA)              2.61e-08  [+1(2.61e-08)]
+SCO0436_p-56(rpmF2)              1.22e-07  [+1(1.22e-07)]
+SCO0475_p-34(znuB2)              9.97e-08  [+1(9.97e-08)]
+SCO3429_p-62(rpmB2)              2.11e-08  [+1(2.11e-08)]
+SCO3428_p-31(rpmG2)              7.36e-08  [+1(7.36e-08)]
+SCO2505_p-17(znuA)               1.68e-08  [+1(1.68e-08)]
+SCO2505_p-39(znuA)               8.72e-09  [+1(8.72e-09)]
+SAV_5634_p-39(znuA)              6.14e-10  [+1(6.14e-10)]
+SAV_4642_p-75(rpmB2)             6.48e-09  [+1(6.48e-09)]
+SAV_4643_p-31(rpmG2)             1.39e-07  [+1(1.39e-07)]
+SAV_5634_p-17(znuA)              6.48e-09  [+1(6.48e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

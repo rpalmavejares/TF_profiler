@@ -1,0 +1,247 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/MntR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NGR_b14390_p-141(mntR)   1.0000     20  NGR_b14390_p-61(mntR)    1.0000     20  
+NGR_b14380_p-153(COG2132 1.0000     20  NGR_b14380_p-73(COG2132) 1.0000     20  
+Meso_4423_p-46(mntR)     1.0000     20  Meso_4423_p-109(mntR)    1.0000     20  
+Meso_4422_p-73(COG2132)  1.0000     20  Meso_4422_p-136(COG2132) 1.0000     20  
+mlr2501_p-195(mntH)      1.0000     20  mll2499_p-55(mntR)       1.0000     20  
+BBta_1556_p-92(mntH)     1.0000     20  BBta_1555_p-127(mntR)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/MntR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/MntR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    240    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.167 G 0.167 T 0.333 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.332 C 0.168 G 0.168 T 0.332 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATAGCMNNKGCTATA MEME-1	width =  16  sites =  12  llr = 171  E-value = 5.1e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  29:a::5332:::9:7
+pos.-specific     C  2::::a332::a:11:
+probability       G  :11:a::233a::::2
+matrix            T  7:9:::2335::a:92
+
+         bits    2.6     **    **    
+                 2.3     **    **    
+                 2.1     **    **    
+                 1.8     **    **    
+Relative         1.5    ***    ***   
+Entropy          1.3  *****    ***** 
+(20.5 bits)      1.0  *****    ***** 
+                 0.8  *****    ***** 
+                 0.5 *******  *******
+                 0.3 *******  *******
+                 0.0 ----------------
+
+Multilevel           TATAGCATATGCTATA
+consensus                  CAGG      
+sequence                    CT       
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+NGR_b14380_p-73(COG2132)      3  1.53e-08         AT TATAGCACTTGCTATA TT        
+NGR_b14390_p-141(mntR)        3  1.53e-08         AA TATAGCAAGTGCTATA AT        
+Meso_4422_p-136(COG2132)      3  2.76e-08         AT TATAGCCTCGGCTATG GA        
+Meso_4423_p-46(mntR)          3  2.76e-08         TC CATAGCCGAGGCTATA AT        
+mll2499_p-55(mntR)            3  1.77e-07         AT CAGAGCCCGTGCTATA AA        
+mlr2501_p-195(mntH)           3  1.77e-07         TT TATAGCACGGGCTCTG AT        
+Meso_4422_p-73(COG2132)       3  2.28e-07         GA AATAGCATTTGCTATA AT        
+Meso_4423_p-109(mntR)         3  2.28e-07         AT TATAGCAAATGCTATT TC        
+NGR_b14380_p-153(COG2132      3  4.72e-07         AA TATAGCTAAGGCTATT TT        
+NGR_b14390_p-61(mntR)         3  4.72e-07         AA AATAGCCTTAGCTATA TT        
+BBta_1555_p-127(mntR)         3  5.95e-07         GA TATAGCTTCTGCTACA TT        
+BBta_1556_p-92(mntH)          3  5.95e-07         AA TGTAGCAGAAGCTATA TC        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NGR_b14380_p-73(COG2132)          1.5e-08  2_[+1]_2
+NGR_b14390_p-141(mntR)            1.5e-08  2_[+1]_2
+Meso_4422_p-136(COG2132)          2.8e-08  2_[+1]_2
+Meso_4423_p-46(mntR)              2.8e-08  2_[+1]_2
+mll2499_p-55(mntR)                1.8e-07  2_[+1]_2
+mlr2501_p-195(mntH)               1.8e-07  2_[+1]_2
+Meso_4422_p-73(COG2132)           2.3e-07  2_[+1]_2
+Meso_4423_p-109(mntR)             2.3e-07  2_[+1]_2
+NGR_b14380_p-153(COG2132          4.7e-07  2_[+1]_2
+NGR_b14390_p-61(mntR)             4.7e-07  2_[+1]_2
+BBta_1555_p-127(mntR)               6e-07  2_[+1]_2
+BBta_1556_p-92(mntH)                6e-07  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATAGCMNNKGCTATA width=16 seqs=12
+NGR_b14380_p-73(COG2132) (    3) TATAGCACTTGCTATA  1 
+NGR_b14390_p-141(mntR)   (    3) TATAGCAAGTGCTATA  1 
+Meso_4422_p-136(COG2132) (    3) TATAGCCTCGGCTATG  1 
+Meso_4423_p-46(mntR)     (    3) CATAGCCGAGGCTATA  1 
+mll2499_p-55(mntR)       (    3) CAGAGCCCGTGCTATA  1 
+mlr2501_p-195(mntH)      (    3) TATAGCACGGGCTCTG  1 
+Meso_4422_p-73(COG2132)  (    3) AATAGCATTTGCTATA  1 
+Meso_4423_p-109(mntR)    (    3) TATAGCAAATGCTATT  1 
+NGR_b14380_p-153(COG2132 (    3) TATAGCTAAGGCTATT  1 
+NGR_b14390_p-61(mntR)    (    3) AATAGCCTTAGCTATA  1 
+BBta_1555_p-127(mntR)    (    3) TATAGCTTCTGCTACA  1 
+BBta_1556_p-92(mntH)     (    3) TGTAGCAGAAGCTATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 60 bayes= 3.80735 E= 5.1e-039 
+   -99     -1  -1023    101 
+   146  -1023   -101  -1023 
+ -1023  -1023   -101    146 
+   159  -1023  -1023  -1023 
+ -1023  -1023    257  -1023 
+ -1023    257  -1023  -1023 
+    59     99  -1023    -99 
+   -41     57     -1      1 
+     1     -1     57    -41 
+   -99  -1023     99     59 
+ -1023  -1023    257  -1023 
+ -1023    257  -1023  -1023 
+ -1023  -1023  -1023    159 
+   146   -101  -1023  -1023 
+ -1023   -101  -1023    146 
+   101  -1023     -1    -99 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 12 E= 5.1e-039 
+ 0.166667  0.166667  0.000000  0.666667 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.000000  0.083333  0.916667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.333333  0.000000  0.166667 
+ 0.250000  0.250000  0.166667  0.333333 
+ 0.333333  0.166667  0.250000  0.250000 
+ 0.166667  0.000000  0.333333  0.500000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.916667  0.083333  0.000000  0.000000 
+ 0.000000  0.083333  0.000000  0.916667 
+ 0.666667  0.000000  0.166667  0.166667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAGCMNNKGCTATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TATAGC[AC][TAC][AGT][TG]GCTATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NGR_b14390_p-141(mntR)           7.65e-08  2_[+1(1.53e-08)]_2
+NGR_b14390_p-61(mntR)            2.36e-06  2_[+1(4.72e-07)]_2
+NGR_b14380_p-153(COG2132         2.36e-06  2_[+1(4.72e-07)]_2
+NGR_b14380_p-73(COG2132)         7.65e-08  2_[+1(1.53e-08)]_2
+Meso_4423_p-46(mntR)             1.38e-07  2_[+1(2.76e-08)]_2
+Meso_4423_p-109(mntR)            1.14e-06  2_[+1(2.28e-07)]_2
+Meso_4422_p-73(COG2132)          1.14e-06  2_[+1(2.28e-07)]_2
+Meso_4422_p-136(COG2132)         1.38e-07  2_[+1(2.76e-08)]_2
+mlr2501_p-195(mntH)              8.85e-07  2_[+1(1.77e-07)]_2
+mll2499_p-55(mntR)               8.85e-07  2_[+1(1.77e-07)]_2
+BBta_1556_p-92(mntH)             2.98e-06  2_[+1(5.95e-07)]_2
+BBta_1555_p-127(mntR)            2.98e-06  2_[+1(5.95e-07)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

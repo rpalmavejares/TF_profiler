@@ -1,0 +1,305 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= HrcA_Clostridia-1.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CAC1280(hrcA)Score=7.6,P 1.0000     27  CAC2704(groES)Score=7.7, 1.0000     27  
+CAC3315(htpG)Score=7.7,P 1.0000     27  Cbei_0828(hrcA)Score=7.6 1.0000     27  
+Cbei_0328(groES)Score=7. 1.0000     27  CBO2961(hrcA)Score=7.6,P 1.0000     27  
+CBO3299(groES)Score=8.1, 1.0000     27  CBO1985(htpG)Score=7,Pos 1.0000     27  
+CBY_3533(hrcA)Score=7.6, 1.0000     27  CBY_3050(groES)Score=7.7 1.0000     27  
+CKL_0900(hrcA)Score=7.6, 1.0000     27  CKL_0463(groES)Score=7.9 1.0000     27  
+CKL_2212(htpG)Score=7.1, 1.0000     27  NT01CX_0059(hrcA)Score=7 1.0000     27  
+NT01CX_0463(groES)Score= 1.0000     27  CPF_2292(hrcA)Score=7.5, 1.0000     27  
+CPF_2574(groES)Score=7.9 1.0000     27  CPF_0417(htpG)Score=7.1, 1.0000     27  
+CTC02033(hrcA)Score=7.7, 1.0000     27  CTC01489(htpG)Score=6.9, 1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna HrcA_Clostridia-1.fasta -oc HrcA_Clostridia-1 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           27
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             540    N=              20    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.322 C 0.174 G 0.207 T 0.296 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.322 C 0.175 G 0.208 T 0.296 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  27  sites =  20  llr = 542  E-value = 1.7e-182
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::a:::6714517521a:::::aa
+pos.-specific     C  ::::a:a:a:12121::2:::::a:::
+probability       G  :::a:::::4124121319:a:a::::
+matrix            T  aa:::::a:125247237:::a::a::
+
+         bits    2.5     * * *              *   
+                 2.3    ** * *           * **   
+                 2.0    ** * *           * **   
+                 1.8 ** ** ***         * *****  
+Relative         1.5 *********         *********
+Entropy          1.3 *********         *********
+(39.1 bits)      1.0 *********         *********
+                 0.8 **********        *********
+                 0.5 **********    ** **********
+                 0.3 ***************************
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCAATAATAATGAGTGCTAA
+consensus                     GTCGTGTG          
+sequence                        G    T          
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+CBO3299(groES)Score=8.1,      1  4.23e-15          . TTAGCACTCAATATTAATGAGTGCTAA           
+NT01CX_0463(groES)Score=      1  5.05e-15          . TTAGCACTCGATGTTATTGAGTGCTAA           
+Cbei_0828(hrcA)Score=7.6      1  5.05e-15          . TTAGCACTCGAGGTTAATGAGTGCTAA           
+CBY_3050(groES)Score=7.7      1  2.22e-14          . TTAGCACTCGATGATGATGAGTGCTAA           
+CKL_0900(hrcA)Score=7.6,      1  3.63e-14          . TTAGCACTCAATGCTAGCGAGTGCTAA           
+CBY_3533(hrcA)Score=7.6,      1  3.63e-14          . TTAGCACTCGCTGCTAATGAGTGCTAA           
+CBO2961(hrcA)Score=7.6,P      1  4.27e-14          . TTAGCACTCGTTGCTAGTGAGTGCTAA           
+CTC02033(hrcA)Score=7.7,      1  4.98e-14          . TTAGCACTCAACAAGAGTGAGTGCTAA           
+CAC2704(groES)Score=7.7,      1  6.77e-14          . TTAGCACTCAAGATTAACGAGTGCTAA           
+Cbei_0328(groES)Score=7.      1  7.75e-14          . TTAGCACTCGACAATGATGAGTGCTAA           
+CAC1280(hrcA)Score=7.6,P      1  1.83e-13          . TTAGCACTCAAAGAGAGTGAGTGCTAA           
+CPF_2574(groES)Score=7.9      1  2.05e-13          . TTAGCACTCTATATTAATGAGTGCTAA           
+CAC3315(htpG)Score=7.7,P      1  2.84e-13          . TTAGCACTCGTTGATATAGAGTGCTAA           
+CKL_0463(groES)Score=7.9      1  3.48e-13          . TTAGCACTCATAATTAATGAGTGCTAA           
+CPF_2292(hrcA)Score=7.5,      1  6.67e-13          . TTAGCACTCGTTCAGAGTGAGTGCTAA           
+NT01CX_0059(hrcA)Score=7      1  1.09e-12          . TTAGCACTCAACTAAAACGAGTGCTAA           
+CKL_2212(htpG)Score=7.1,      1  2.44e-12          . TTAGCACTCAAGTATTATAAGTGCTAA           
+CPF_0417(htpG)Score=7.1,      1  3.40e-12          . TTAGCACTCAAGTTGTTAGAGTGCTAA           
+CTC01489(htpG)Score=6.9,      1  1.02e-11          . TTAGCACTCAGCAAATTGGAGTGCTAA           
+CBO1985(htpG)Score=7,Pos      1  2.39e-11          . TTAGCACTCACTAGCTTAAAGTGCTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CBO3299(groES)Score=8.1,          4.2e-15  [+1]
+NT01CX_0463(groES)Score=            5e-15  [+1]
+Cbei_0828(hrcA)Score=7.6            5e-15  [+1]
+CBY_3050(groES)Score=7.7          2.2e-14  [+1]
+CKL_0900(hrcA)Score=7.6,          3.6e-14  [+1]
+CBY_3533(hrcA)Score=7.6,          3.6e-14  [+1]
+CBO2961(hrcA)Score=7.6,P          4.3e-14  [+1]
+CTC02033(hrcA)Score=7.7,            5e-14  [+1]
+CAC2704(groES)Score=7.7,          6.8e-14  [+1]
+Cbei_0328(groES)Score=7.          7.8e-14  [+1]
+CAC1280(hrcA)Score=7.6,P          1.8e-13  [+1]
+CPF_2574(groES)Score=7.9          2.1e-13  [+1]
+CAC3315(htpG)Score=7.7,P          2.8e-13  [+1]
+CKL_0463(groES)Score=7.9          3.5e-13  [+1]
+CPF_2292(hrcA)Score=7.5,          6.7e-13  [+1]
+NT01CX_0059(hrcA)Score=7          1.1e-12  [+1]
+CKL_2212(htpG)Score=7.1,          2.4e-12  [+1]
+CPF_0417(htpG)Score=7.1,          3.4e-12  [+1]
+CTC01489(htpG)Score=6.9,            1e-11  [+1]
+CBO1985(htpG)Score=7,Pos          2.4e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=27 seqs=20
+CBO3299(groES)Score=8.1, (    1) TTAGCACTCAATATTAATGAGTGCTAA  1 
+NT01CX_0463(groES)Score= (    1) TTAGCACTCGATGTTATTGAGTGCTAA  1 
+Cbei_0828(hrcA)Score=7.6 (    1) TTAGCACTCGAGGTTAATGAGTGCTAA  1 
+CBY_3050(groES)Score=7.7 (    1) TTAGCACTCGATGATGATGAGTGCTAA  1 
+CKL_0900(hrcA)Score=7.6, (    1) TTAGCACTCAATGCTAGCGAGTGCTAA  1 
+CBY_3533(hrcA)Score=7.6, (    1) TTAGCACTCGCTGCTAATGAGTGCTAA  1 
+CBO2961(hrcA)Score=7.6,P (    1) TTAGCACTCGTTGCTAGTGAGTGCTAA  1 
+CTC02033(hrcA)Score=7.7, (    1) TTAGCACTCAACAAGAGTGAGTGCTAA  1 
+CAC2704(groES)Score=7.7, (    1) TTAGCACTCAAGATTAACGAGTGCTAA  1 
+Cbei_0328(groES)Score=7. (    1) TTAGCACTCGACAATGATGAGTGCTAA  1 
+CAC1280(hrcA)Score=7.6,P (    1) TTAGCACTCAAAGAGAGTGAGTGCTAA  1 
+CPF_2574(groES)Score=7.9 (    1) TTAGCACTCTATATTAATGAGTGCTAA  1 
+CAC3315(htpG)Score=7.7,P (    1) TTAGCACTCGTTGATATAGAGTGCTAA  1 
+CKL_0463(groES)Score=7.9 (    1) TTAGCACTCATAATTAATGAGTGCTAA  1 
+CPF_2292(hrcA)Score=7.5, (    1) TTAGCACTCGTTCAGAGTGAGTGCTAA  1 
+NT01CX_0059(hrcA)Score=7 (    1) TTAGCACTCAACTAAAACGAGTGCTAA  1 
+CKL_2212(htpG)Score=7.1, (    1) TTAGCACTCAAGTATTATAAGTGCTAA  1 
+CPF_0417(htpG)Score=7.1, (    1) TTAGCACTCAAGTTGTTAGAGTGCTAA  1 
+CTC01489(htpG)Score=6.9, (    1) TTAGCACTCAGCAAATTGGAGTGCTAA  1 
+CBO1985(htpG)Score=7,Pos (    1) TTAGCACTCACTAGCTTAAAGTGCTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 20 bayes= 1.36257 E= 1.7e-182 
+ -1097  -1097  -1097    176 
+ -1097  -1097  -1097    176 
+   164  -1097  -1097  -1097 
+ -1097  -1097    227  -1097 
+ -1097    252  -1097  -1097 
+   164  -1097  -1097  -1097 
+ -1097    252  -1097  -1097 
+ -1097  -1097  -1097    176 
+ -1097    252  -1097  -1097 
+    77  -1097     95   -256 
+   101    -80   -205    -57 
+  -168     20     -5     76 
+    31   -180     95    -98 
+    48    -22   -205     24 
+  -168   -180     -5    113 
+   112  -1097   -105    -57 
+    64  -1097     27    -24 
+  -110    -22   -205    113 
+  -168  -1097    211  -1097 
+   164  -1097  -1097  -1097 
+ -1097  -1097    227  -1097 
+ -1097  -1097  -1097    176 
+ -1097  -1097    227  -1097 
+ -1097    252  -1097  -1097 
+ -1097  -1097  -1097    176 
+   164  -1097  -1097  -1097 
+   164  -1097  -1097  -1097 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 20 E= 1.7e-182 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.550000  0.000000  0.400000  0.050000 
+ 0.650000  0.100000  0.050000  0.200000 
+ 0.100000  0.200000  0.200000  0.500000 
+ 0.400000  0.050000  0.400000  0.150000 
+ 0.450000  0.150000  0.050000  0.350000 
+ 0.100000  0.050000  0.200000  0.650000 
+ 0.700000  0.000000  0.100000  0.200000 
+ 0.500000  0.000000  0.250000  0.250000 
+ 0.150000  0.150000  0.050000  0.650000 
+ 0.100000  0.000000  0.900000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACTC[AG][AT][TCG][AG][AT][TG][AT][AGT]TGAGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CAC1280(hrcA)Score=7.6,P         1.83e-13  [+1(1.83e-13)]
+CAC2704(groES)Score=7.7,         6.77e-14  [+1(6.77e-14)]
+CAC3315(htpG)Score=7.7,P         2.84e-13  [+1(2.84e-13)]
+Cbei_0828(hrcA)Score=7.6         5.05e-15  [+1(5.05e-15)]
+Cbei_0328(groES)Score=7.         7.75e-14  [+1(7.75e-14)]
+CBO2961(hrcA)Score=7.6,P         4.27e-14  [+1(4.27e-14)]
+CBO3299(groES)Score=8.1,         4.23e-15  [+1(4.23e-15)]
+CBO1985(htpG)Score=7,Pos         2.39e-11  [+1(2.39e-11)]
+CBY_3533(hrcA)Score=7.6,         3.63e-14  [+1(3.63e-14)]
+CBY_3050(groES)Score=7.7         2.22e-14  [+1(2.22e-14)]
+CKL_0900(hrcA)Score=7.6,         3.63e-14  [+1(3.63e-14)]
+CKL_0463(groES)Score=7.9         3.48e-13  [+1(3.48e-13)]
+CKL_2212(htpG)Score=7.1,         2.44e-12  [+1(2.44e-12)]
+NT01CX_0059(hrcA)Score=7         1.09e-12  [+1(1.09e-12)]
+NT01CX_0463(groES)Score=         5.05e-15  [+1(5.05e-15)]
+CPF_2292(hrcA)Score=7.5,         6.67e-13  [+1(6.67e-13)]
+CPF_2574(groES)Score=7.9         2.05e-13  [+1(2.05e-13)]
+CPF_0417(htpG)Score=7.1,         3.40e-12  [+1(3.40e-12)]
+CTC02033(hrcA)Score=7.7,         4.98e-14  [+1(4.98e-14)]
+CTC01489(htpG)Score=6.9,         1.02e-11  [+1(1.02e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,309 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SoxR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VCA0085_p-60(PF07690)    1.0000     20  VCA0084_p-138(soxR)      1.0000     20  
+VV20936_p-80(soxR)       1.0000     20  VV20937_p-68(PF07690)    1.0000     20  
+VV20607_p-58(PF00903)    1.0000     20  VV21129_p-80(wrbA)       1.0000     20  
+VIBHAR_06555_p-48(soxR)  1.0000     20  VIBHAR_07059_p-152(wrbA) 1.0000     20  
+VIBHAR_04755_p-67(PF0090 1.0000     20  VIBHAR_06924_p-64(nhoA)  1.0000     20  
+VPA0335_p-60(soxR)       1.0000     20  VPA0333_p-160(PF07690)   1.0000     20  
+VPA0391_p-69(PF00903)    1.0000     20  VPA1738_p-70(wrbA)       1.0000     20  
+VPA1685_p-67(PF00903)    1.0000     20  VSAK1_19649_p-52(soxR)   1.0000     20  
+VSAK1_19654_p-59(PF07690 1.0000     20  VSAK1_17857_p-60(PF00903 1.0000     20  
+VS_II1117_p-28(PF00903)  1.0000     20  VAS14_15449_p-60(PF00903 1.0000     20  
+VAS14_10824_p-63(wrbA)   1.0000     20  VAS14_11599_p-89(nhoA)   1.0000     20  
+PBPRB1506_p-62(PF07690)  1.0000     20  PBPRB1505_p-46(soxR)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SoxR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SoxR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             480    N=              24
+sample: seed=            0    hsfrac=          0
+        searchsize=    480    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.298 C 0.217 G 0.2 T 0.285 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.298 C 0.217 G 0.2 T 0.285 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTCAASTTAACTTGAGGT MEME-1	width =  20  sites =  24  llr = 510  E-value = 1.1e-180
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a:::1a9::188::::a::2
+pos.-specific     C  :aa:8::41:::9:::::::
+probability       G  ::::::15:::11::a:aa:
+matrix            T  :::a:::1981::aa::::8
+
+         bits    2.3   *              *  
+                 2.1   *            * ** 
+                 1.9  ***           **** 
+                 1.6 **** *      ******* 
+Relative         1.4 *******     ******* 
+Entropy          1.2 ******* *   ******* 
+(30.6 bits)      0.9 ******************* 
+                 0.7 ********************
+                 0.5 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTCAAGTTAACTTGAGGT
+consensus                   C            
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+VS_II1117_p-28(PF00903)       1  2.78e-12          . ACCTCAACTTAACTTGAGGT           
+VSAK1_17857_p-60(PF00903      1  5.06e-12          . ACCTCAAGTTAACTTGAGGA           
+VV21129_p-80(wrbA)            1  5.06e-12          . ACCTCAAGTTAACTTGAGGA           
+VPA0333_p-160(PF07690)        1  1.14e-11          . ACCTCAAGTTTACTTGAGGT           
+VPA0335_p-60(soxR)            1  1.14e-11          . ACCTCAAGTAAACTTGAGGT           
+VAS14_10824_p-63(wrbA)        1  1.23e-11          . ACCTCAGGTTAACTTGAGGT           
+VV20607_p-58(PF00903)         1  1.71e-11          . ACCTCAATTTAACTTGAGGT           
+VCA0085_p-60(PF07690)         1  1.71e-11          . ACCTAAAGTTAACTTGAGGT           
+VAS14_11599_p-89(nhoA)        1  3.40e-11          . ACCTCAACTTAACTTGAGGG           
+VV20936_p-80(soxR)            1  6.28e-11          . AGCTCAACTTAACTTGAGGT           
+VCA0084_p-138(soxR)           1  6.64e-11          . ACCTCAAGTTAACTTTAGGT           
+VIBHAR_04755_p-67(PF0090      1  7.63e-11          . ACCTTAACTTAACTTGAGGT           
+VIBHAR_07059_p-152(wrbA)      1  9.85e-11          . ACCTCAACCTAGCTTGAGGT           
+VPA0391_p-69(PF00903)         1  1.14e-10          . ACCTAAACTTAGCTTGAGGT           
+VIBHAR_06555_p-48(soxR)       1  1.23e-10          . ACCTCAAGTGAACTTGAGGA           
+PBPRB1505_p-46(soxR)          1  1.89e-10          . GCCTCAGGTTAACTTGAGGT           
+VPA1685_p-67(PF00903)         1  2.38e-10          . ACCTCGATTTAACTTGAGGT           
+VV20937_p-68(PF07690)         1  3.15e-10          . ACCTCAAGTTAAGTTGAGCT           
+VSAK1_19649_p-52(soxR)        1  3.69e-10          . ACCTCAACATTACTTGAGGT           
+PBPRB1506_p-62(PF07690)       1  4.40e-10          . ACCTCAAGTTAACCTGAGGC           
+VAS14_15449_p-60(PF00903      1  7.50e-10          . ACCTCAAGTTTACTCGAGGA           
+VPA1738_p-70(wrbA)            1  8.62e-10          . ACCTAAACCAAACTTGAGGT           
+VIBHAR_06924_p-64(nhoA)       1  8.62e-10          . ACCTCAACTTCGGTTGAGGT           
+VSAK1_19654_p-59(PF07690      1  1.08e-09          . ACCTCAAGTAATGTTGAGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VS_II1117_p-28(PF00903)           2.8e-12  [+1]
+VSAK1_17857_p-60(PF00903          5.1e-12  [+1]
+VV21129_p-80(wrbA)                5.1e-12  [+1]
+VPA0333_p-160(PF07690)            1.1e-11  [+1]
+VPA0335_p-60(soxR)                1.1e-11  [+1]
+VAS14_10824_p-63(wrbA)            1.2e-11  [+1]
+VV20607_p-58(PF00903)             1.7e-11  [+1]
+VCA0085_p-60(PF07690)             1.7e-11  [+1]
+VAS14_11599_p-89(nhoA)            3.4e-11  [+1]
+VV20936_p-80(soxR)                6.3e-11  [+1]
+VCA0084_p-138(soxR)               6.6e-11  [+1]
+VIBHAR_04755_p-67(PF0090          7.6e-11  [+1]
+VIBHAR_07059_p-152(wrbA)          9.9e-11  [+1]
+VPA0391_p-69(PF00903)             1.1e-10  [+1]
+VIBHAR_06555_p-48(soxR)           1.2e-10  [+1]
+PBPRB1505_p-46(soxR)              1.9e-10  [+1]
+VPA1685_p-67(PF00903)             2.4e-10  [+1]
+VV20937_p-68(PF07690)             3.2e-10  [+1]
+VSAK1_19649_p-52(soxR)            3.7e-10  [+1]
+PBPRB1506_p-62(PF07690)           4.4e-10  [+1]
+VAS14_15449_p-60(PF00903          7.5e-10  [+1]
+VPA1738_p-70(wrbA)                8.6e-10  [+1]
+VIBHAR_06924_p-64(nhoA)           8.6e-10  [+1]
+VSAK1_19654_p-59(PF07690          1.1e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTCAASTTAACTTGAGGT width=20 seqs=24
+VS_II1117_p-28(PF00903)  (    1) ACCTCAACTTAACTTGAGGT  1 
+VSAK1_17857_p-60(PF00903 (    1) ACCTCAAGTTAACTTGAGGA  1 
+VV21129_p-80(wrbA)       (    1) ACCTCAAGTTAACTTGAGGA  1 
+VPA0333_p-160(PF07690)   (    1) ACCTCAAGTTTACTTGAGGT  1 
+VPA0335_p-60(soxR)       (    1) ACCTCAAGTAAACTTGAGGT  1 
+VAS14_10824_p-63(wrbA)   (    1) ACCTCAGGTTAACTTGAGGT  1 
+VV20607_p-58(PF00903)    (    1) ACCTCAATTTAACTTGAGGT  1 
+VCA0085_p-60(PF07690)    (    1) ACCTAAAGTTAACTTGAGGT  1 
+VAS14_11599_p-89(nhoA)   (    1) ACCTCAACTTAACTTGAGGG  1 
+VV20936_p-80(soxR)       (    1) AGCTCAACTTAACTTGAGGT  1 
+VCA0084_p-138(soxR)      (    1) ACCTCAAGTTAACTTTAGGT  1 
+VIBHAR_04755_p-67(PF0090 (    1) ACCTTAACTTAACTTGAGGT  1 
+VIBHAR_07059_p-152(wrbA) (    1) ACCTCAACCTAGCTTGAGGT  1 
+VPA0391_p-69(PF00903)    (    1) ACCTAAACTTAGCTTGAGGT  1 
+VIBHAR_06555_p-48(soxR)  (    1) ACCTCAAGTGAACTTGAGGA  1 
+PBPRB1505_p-46(soxR)     (    1) GCCTCAGGTTAACTTGAGGT  1 
+VPA1685_p-67(PF00903)    (    1) ACCTCGATTTAACTTGAGGT  1 
+VV20937_p-68(PF07690)    (    1) ACCTCAAGTTAAGTTGAGCT  1 
+VSAK1_19649_p-52(soxR)   (    1) ACCTCAACATTACTTGAGGT  1 
+PBPRB1506_p-62(PF07690)  (    1) ACCTCAAGTTAACCTGAGGC  1 
+VAS14_15449_p-60(PF00903 (    1) ACCTCAAGTTTACTCGAGGA  1 
+VPA1738_p-70(wrbA)       (    1) ACCTAAACCAAACTTGAGGT  1 
+VIBHAR_06924_p-64(nhoA)  (    1) ACCTCAACTTCGGTTGAGGT  1 
+VSAK1_19654_p-59(PF07690 (    1) ACCTCAAGTAATGTTGAGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24 bayes= 1.45943 E= 1.1e-180 
+   169  -1123   -226  -1123 
+ -1123    214   -226  -1123 
+ -1123    220  -1123  -1123 
+ -1123  -1123  -1123    181 
+  -125    194  -1123   -277 
+   169  -1123   -226  -1123 
+   162  -1123   -127  -1123 
+ -1123     79    143   -177 
+  -283   -138  -1123    162 
+  -125  -1123   -226    155 
+   149   -238  -1123   -119 
+   149  -1123    -68   -277 
+ -1123    201    -68  -1123 
+ -1123   -238  -1123    175 
+ -1123   -238  -1123    175 
+ -1123  -1123    226   -277 
+   175  -1123  -1123  -1123 
+ -1123  -1123    232  -1123 
+ -1123   -238    226  -1123 
+   -84   -238   -226    139 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 24 E= 1.1e-180 
+ 0.958333  0.000000  0.041667  0.000000 
+ 0.000000  0.958333  0.041667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.125000  0.833333  0.000000  0.041667 
+ 0.958333  0.000000  0.041667  0.000000 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.375000  0.541667  0.083333 
+ 0.041667  0.083333  0.000000  0.875000 
+ 0.125000  0.000000  0.041667  0.833333 
+ 0.833333  0.041667  0.000000  0.125000 
+ 0.833333  0.000000  0.125000  0.041667 
+ 0.000000  0.875000  0.125000  0.000000 
+ 0.000000  0.041667  0.000000  0.958333 
+ 0.000000  0.041667  0.000000  0.958333 
+ 0.000000  0.000000  0.958333  0.041667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.041667  0.958333  0.000000 
+ 0.166667  0.041667  0.041667  0.750000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCAASTTAACTTGAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTCAA[GC]TTAACTTGAGGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0085_p-60(PF07690)            1.71e-11  [+1(1.71e-11)]
+VCA0084_p-138(soxR)              6.64e-11  [+1(6.64e-11)]
+VV20936_p-80(soxR)               6.28e-11  [+1(6.28e-11)]
+VV20937_p-68(PF07690)            3.15e-10  [+1(3.15e-10)]
+VV20607_p-58(PF00903)            1.71e-11  [+1(1.71e-11)]
+VV21129_p-80(wrbA)               5.06e-12  [+1(5.06e-12)]
+VIBHAR_06555_p-48(soxR)          1.23e-10  [+1(1.23e-10)]
+VIBHAR_07059_p-152(wrbA)         9.85e-11  [+1(9.85e-11)]
+VIBHAR_04755_p-67(PF0090         7.63e-11  [+1(7.63e-11)]
+VIBHAR_06924_p-64(nhoA)          8.62e-10  [+1(8.62e-10)]
+VPA0335_p-60(soxR)               1.14e-11  [+1(1.14e-11)]
+VPA0333_p-160(PF07690)           1.14e-11  [+1(1.14e-11)]
+VPA0391_p-69(PF00903)            1.14e-10  [+1(1.14e-10)]
+VPA1738_p-70(wrbA)               8.62e-10  [+1(8.62e-10)]
+VPA1685_p-67(PF00903)            2.38e-10  [+1(2.38e-10)]
+VSAK1_19649_p-52(soxR)           3.69e-10  [+1(3.69e-10)]
+VSAK1_19654_p-59(PF07690         1.08e-09  [+1(1.08e-09)]
+VSAK1_17857_p-60(PF00903         5.06e-12  [+1(5.06e-12)]
+VS_II1117_p-28(PF00903)          2.78e-12  [+1(2.78e-12)]
+VAS14_15449_p-60(PF00903         7.50e-10  [+1(7.50e-10)]
+VAS14_10824_p-63(wrbA)           1.23e-11  [+1(1.23e-11)]
+VAS14_11599_p-89(nhoA)           3.40e-11  [+1(3.40e-11)]
+PBPRB1506_p-62(PF07690)          4.40e-10  [+1(4.40e-10)]
+PBPRB1505_p-46(soxR)             1.89e-10  [+1(1.89e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

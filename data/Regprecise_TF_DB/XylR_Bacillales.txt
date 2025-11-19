@@ -1,0 +1,337 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/XylR_Bacillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BSU17570_p-320(xynP)     1.0000     25  BSU17590_p-268(xylR)     1.0000     25  
+BSU17600_p-100(xylA)     1.0000     25  RBAM_017320_p-304(xynP)  1.0000     25  
+RBAM_017340_p-187(xylR)  1.0000     25  RBAM_017350_p-101(xylA)  1.0000     25  
+BPUM_1832_p-231(xynP)    1.0000     25  BPUM_1830_p-191(xylR)    1.0000     25  
+BPUM_1829_p-47(xylA)     1.0000     25  BLi04049_p-147(xylR)     1.0000     25  
+BLi04048_p-69(xylA)      1.0000     25  BLi01880_p-202(gunA)     1.0000     25  
+BLi03540_p-52(n/a)       1.0000     25  GK2422_p-230(xylR)       1.0000     25  
+GK1881_p-89(xylF)        1.0000     25  GK1875_p-87(xylA)        1.0000     25  
+GK1880_p-44(xylG)        1.0000     25  BH2120_p-192(xynA)       1.0000     25  
+BH2758_p-151(xylR)       1.0000     25  BH3678_p-165(BH3678)     1.0000     25  
+BH2757_p-102(xylA)       1.0000     25  ABC0572_p-45(xylA)       1.0000     25  
+ABC3215_p-56(n/a)        1.0000     25  OB3124_p-87(xylR)        1.0000     25  
+OB3119_p-44(xylA)        1.0000     25  OB3123_p-90(n/a)         1.0000     25  
+Pjdr2_5182_p-113(xylR)   1.0000     25  Pjdr2_5159_p-123(xylA)   1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/XylR_Bacillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/XylR_Bacillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           25
+nsites: minsites=        2    maxsites=       28    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             700    N=              28
+sample: seed=            0    hsfrac=          0
+        searchsize=    700    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.373 C 0.131 G 0.131 T 0.364 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.372 C 0.132 G 0.132 T 0.364 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ASTTWGTTTATTNRATAAACWAACW MEME-1	width =  25  sites =  28  llr = 505  E-value = 1.1e-165
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:::4::::631356178a:6aa:3
+pos.-specific     C  :4:::::1::122::32::a:::7:
+probability       G  :5:::a::131:341::1:::::3:
+matrix            T  1:aa6:a98:6731361:::4:::6
+
+         bits    2.9      *                   
+                 2.6      *             *     
+                 2.3      *             *     
+                 2.0      *             *   * 
+Relative         1.8  *   *             *   * 
+Entropy          1.5  *** **           ** * * 
+(26.0 bits)      1.2 **** **           ** *** 
+                 0.9 **** ****        *** *** 
+                 0.6 ********** * * ********* 
+                 0.3 ********** * ************
+                 0.0 -------------------------
+
+Multilevel           AGTTTGTTTATTTAATAAACAAACT
+consensus             C  A    GA AGTCC   T  GA
+sequence                         G            
+                                 C            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+RBAM_017320_p-304(xynP)       1  4.96e-12          . AGTTAGTTTGTTCGGTCAACAAACT           
+BSU17570_p-320(xynP)          1  6.57e-12          . AGTTAGTTTGTTTGATCAACAAACT           
+OB3119_p-44(xylA)             1  2.77e-11          . ACTTTGTTTGTTAGATAAACAAACA           
+BH2758_p-151(xylR)            1  7.45e-11          . ACTTAGTTTATTCAATAGACAAACT           
+BLi04048_p-69(xylA)           1  1.73e-10          . AGTTAGTTTAATGGTTAAACAAACA           
+Pjdr2_5159_p-123(xylA)        1  2.32e-10          . AGTTTGTTTAATAGACAAACTAAGT           
+BH2757_p-102(xylA)            1  2.66e-10          . AGTTTGTCTATTGAATAAACTAAGT           
+OB3123_p-90(n/a)              1  5.72e-10          . ACTTTGTTTAACCGGTAGACAAACA           
+RBAM_017350_p-101(xylA)       1  5.72e-10          . AGTTAGTTTGTTTGGGCAACAAACT           
+BPUM_1832_p-231(xynP)         1  6.44e-10          . AGTTTGTTTGGTCAATAAACTAAGA           
+Pjdr2_5182_p-113(xylR)        1  8.06e-10          . AGTTTGTCTATTAAACAAACTAAGT           
+BH2120_p-192(xynA)            1  8.99e-10          . AGTTTGTTCACTGGATCAACTAAGT           
+BSU17600_p-100(xylA)          1  1.00e-09          . AGTTAGTTTGTTTAAACAACAAACT           
+ABC3215_p-56(n/a)             1  1.53e-09          . ACTTAGTTTATTTCATAAACAAACA           
+GK1875_p-87(xylA)             1  1.53e-09          . ACTTTGTTTATATGATAGACAAACA           
+BH3678_p-165(BH3678)          1  2.06e-09          . ACTTTGTTTAATGGTAAAACAAAGT           
+BLi01880_p-202(gunA)          1  4.38e-09          . ACTTAGTTTATTGAACAAATAAACT           
+BLi03540_p-52(n/a)            1  4.78e-09          . ACTTAGTTTAGCTATTAAACTAACA           
+RBAM_017340_p-187(xylR)       1  5.70e-09          . AGTTTGTTGCCCAAACAAACTAACT           
+BLi04049_p-147(xylR)          1  6.21e-09          . TGTTTGTTTAACCATTAAACTAACT           
+OB3124_p-87(xylR)             1  6.76e-09          . TGTTTGTCTACCGGTTAAACAAAGT           
+BSU17590_p-268(xylR)          1  6.76e-09          . AGTTTGTTGTTTAAACAAACTAACT           
+ABC0572_p-45(xylA)            1  1.10e-08          . ACTTAGTTTAAATAATAAACAAACC           
+BPUM_1830_p-191(xylR)         1  3.23e-08          . ACTTTGTAAGTTGATTCAACAAACT           
+BPUM_1829_p-47(xylA)          1  4.78e-08          . AGTTTGTTGAATCAACTTACAAAGT           
+GK1881_p-89(xylF)             1  5.42e-08          . ACTTTGTTTGTATTATGGACAAACA           
+GK1880_p-44(xylG)             1  6.12e-08          . ACTTAGTTTATTAATCTAACTATCT           
+GK2422_p-230(xylR)            1  8.73e-08          . AATTAGTTTATTATATAAACTAAGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RBAM_017320_p-304(xynP)             5e-12  [+1]
+BSU17570_p-320(xynP)              6.6e-12  [+1]
+OB3119_p-44(xylA)                 2.8e-11  [+1]
+BH2758_p-151(xylR)                7.4e-11  [+1]
+BLi04048_p-69(xylA)               1.7e-10  [+1]
+Pjdr2_5159_p-123(xylA)            2.3e-10  [+1]
+BH2757_p-102(xylA)                2.7e-10  [+1]
+OB3123_p-90(n/a)                  5.7e-10  [+1]
+RBAM_017350_p-101(xylA)           5.7e-10  [+1]
+BPUM_1832_p-231(xynP)             6.4e-10  [+1]
+Pjdr2_5182_p-113(xylR)            8.1e-10  [+1]
+BH2120_p-192(xynA)                  9e-10  [+1]
+BSU17600_p-100(xylA)                1e-09  [+1]
+ABC3215_p-56(n/a)                 1.5e-09  [+1]
+GK1875_p-87(xylA)                 1.5e-09  [+1]
+BH3678_p-165(BH3678)              2.1e-09  [+1]
+BLi01880_p-202(gunA)              4.4e-09  [+1]
+BLi03540_p-52(n/a)                4.8e-09  [+1]
+RBAM_017340_p-187(xylR)           5.7e-09  [+1]
+BLi04049_p-147(xylR)              6.2e-09  [+1]
+OB3124_p-87(xylR)                 6.8e-09  [+1]
+BSU17590_p-268(xylR)              6.8e-09  [+1]
+ABC0572_p-45(xylA)                1.1e-08  [+1]
+BPUM_1830_p-191(xylR)             3.2e-08  [+1]
+BPUM_1829_p-47(xylA)              4.8e-08  [+1]
+GK1881_p-89(xylF)                 5.4e-08  [+1]
+GK1880_p-44(xylG)                 6.1e-08  [+1]
+GK2422_p-230(xylR)                8.7e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ASTTWGTTTATTNRATAAACWAACW width=25 seqs=28
+RBAM_017320_p-304(xynP)  (    1) AGTTAGTTTGTTCGGTCAACAAACT  1 
+BSU17570_p-320(xynP)     (    1) AGTTAGTTTGTTTGATCAACAAACT  1 
+OB3119_p-44(xylA)        (    1) ACTTTGTTTGTTAGATAAACAAACA  1 
+BH2758_p-151(xylR)       (    1) ACTTAGTTTATTCAATAGACAAACT  1 
+BLi04048_p-69(xylA)      (    1) AGTTAGTTTAATGGTTAAACAAACA  1 
+Pjdr2_5159_p-123(xylA)   (    1) AGTTTGTTTAATAGACAAACTAAGT  1 
+BH2757_p-102(xylA)       (    1) AGTTTGTCTATTGAATAAACTAAGT  1 
+OB3123_p-90(n/a)         (    1) ACTTTGTTTAACCGGTAGACAAACA  1 
+RBAM_017350_p-101(xylA)  (    1) AGTTAGTTTGTTTGGGCAACAAACT  1 
+BPUM_1832_p-231(xynP)    (    1) AGTTTGTTTGGTCAATAAACTAAGA  1 
+Pjdr2_5182_p-113(xylR)   (    1) AGTTTGTCTATTAAACAAACTAAGT  1 
+BH2120_p-192(xynA)       (    1) AGTTTGTTCACTGGATCAACTAAGT  1 
+BSU17600_p-100(xylA)     (    1) AGTTAGTTTGTTTAAACAACAAACT  1 
+ABC3215_p-56(n/a)        (    1) ACTTAGTTTATTTCATAAACAAACA  1 
+GK1875_p-87(xylA)        (    1) ACTTTGTTTATATGATAGACAAACA  1 
+BH3678_p-165(BH3678)     (    1) ACTTTGTTTAATGGTAAAACAAAGT  1 
+BLi01880_p-202(gunA)     (    1) ACTTAGTTTATTGAACAAATAAACT  1 
+BLi03540_p-52(n/a)       (    1) ACTTAGTTTAGCTATTAAACTAACA  1 
+RBAM_017340_p-187(xylR)  (    1) AGTTTGTTGCCCAAACAAACTAACT  1 
+BLi04049_p-147(xylR)     (    1) TGTTTGTTTAACCATTAAACTAACT  1 
+OB3124_p-87(xylR)        (    1) TGTTTGTCTACCGGTTAAACAAAGT  1 
+BSU17590_p-268(xylR)     (    1) AGTTTGTTGTTTAAACAAACTAACT  1 
+ABC0572_p-45(xylA)       (    1) ACTTAGTTTAAATAATAAACAAACC  1 
+BPUM_1830_p-191(xylR)    (    1) ACTTTGTAAGTTGATTCAACAAACT  1 
+BPUM_1829_p-47(xylA)     (    1) AGTTTGTTGAATCAACTTACAAAGT  1 
+GK1881_p-89(xylF)        (    1) ACTTTGTTTGTATTATGGACAAACA  1 
+GK1880_p-44(xylG)        (    1) ACTTAGTTTATTAATCTAACTATCT  1 
+GK2422_p-230(xylR)       (    1) AATTAGTTTATTATATAAACTAAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 28 bayes= 1.53051 E= 1.1e-165 
+   132  -1145  -1145   -235 
+  -338    170    202  -1145 
+ -1145  -1145  -1145    146 
+ -1145  -1145  -1145    146 
+    20  -1145  -1145     65 
+ -1145  -1145    292  -1145 
+ -1145  -1145  -1145    146 
+  -338    -30  -1145    124 
+  -338   -189    -30    118 
+    79   -189    111   -334 
+   -57    -30    -89     65 
+  -180     43  -1145     97 
+   -57     70     92    -35 
+    43   -189    157   -235 
+    79  -1145    -30    -54 
+  -238     92   -189     82 
+    87     70   -189   -235 
+   114  -1145     11   -334 
+   143  -1145  -1145  -1145 
+ -1145    287  -1145   -334 
+    71  -1145  -1145     11 
+   143  -1145  -1145  -1145 
+   137  -1145  -1145   -334 
+ -1145    236    128  -1145 
+   -21   -189  -1145     82 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 28 E= 1.1e-165 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.035714  0.428571  0.535714  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.428571  0.000000  0.000000  0.571429 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.035714  0.107143  0.000000  0.857143 
+ 0.035714  0.035714  0.107143  0.821429 
+ 0.642857  0.035714  0.285714  0.035714 
+ 0.250000  0.107143  0.071429  0.571429 
+ 0.107143  0.178571  0.000000  0.714286 
+ 0.250000  0.214286  0.250000  0.285714 
+ 0.500000  0.035714  0.392857  0.071429 
+ 0.642857  0.000000  0.107143  0.250000 
+ 0.071429  0.250000  0.035714  0.642857 
+ 0.678571  0.214286  0.035714  0.071429 
+ 0.821429  0.000000  0.142857  0.035714 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.964286  0.000000  0.035714 
+ 0.607143  0.000000  0.000000  0.392857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.964286  0.000000  0.000000  0.035714 
+ 0.000000  0.678571  0.321429  0.000000 
+ 0.321429  0.035714  0.000000  0.642857 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTTWGTTTATTNRATAAACWAACW MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[GC]TT[TA]GTTT[AG][TA]T[TAGC][AG][AT][TC][AC]AAC[AT]AA[CG][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BSU17570_p-320(xynP)             6.57e-12  [+1(6.57e-12)]
+BSU17590_p-268(xylR)             6.76e-09  [+1(6.76e-09)]
+BSU17600_p-100(xylA)             1.00e-09  [+1(1.00e-09)]
+RBAM_017320_p-304(xynP)          4.96e-12  [+1(4.96e-12)]
+RBAM_017340_p-187(xylR)          5.70e-09  [+1(5.70e-09)]
+RBAM_017350_p-101(xylA)          5.72e-10  [+1(5.72e-10)]
+BPUM_1832_p-231(xynP)            6.44e-10  [+1(6.44e-10)]
+BPUM_1830_p-191(xylR)            3.23e-08  [+1(3.23e-08)]
+BPUM_1829_p-47(xylA)             4.78e-08  [+1(4.78e-08)]
+BLi04049_p-147(xylR)             6.21e-09  [+1(6.21e-09)]
+BLi04048_p-69(xylA)              1.73e-10  [+1(1.73e-10)]
+BLi01880_p-202(gunA)             4.38e-09  [+1(4.38e-09)]
+BLi03540_p-52(n/a)               4.78e-09  [+1(4.78e-09)]
+GK2422_p-230(xylR)               8.73e-08  [+1(8.73e-08)]
+GK1881_p-89(xylF)                5.42e-08  [+1(5.42e-08)]
+GK1875_p-87(xylA)                1.53e-09  [+1(1.53e-09)]
+GK1880_p-44(xylG)                6.12e-08  [+1(6.12e-08)]
+BH2120_p-192(xynA)               8.99e-10  [+1(8.99e-10)]
+BH2758_p-151(xylR)               7.45e-11  [+1(7.45e-11)]
+BH3678_p-165(BH3678)             2.06e-09  [+1(2.06e-09)]
+BH2757_p-102(xylA)               2.66e-10  [+1(2.66e-10)]
+ABC0572_p-45(xylA)               1.10e-08  [+1(1.10e-08)]
+ABC3215_p-56(n/a)                1.53e-09  [+1(1.53e-09)]
+OB3124_p-87(xylR)                6.76e-09  [+1(6.76e-09)]
+OB3119_p-44(xylA)                2.77e-11  [+1(2.77e-11)]
+OB3123_p-90(n/a)                 5.72e-10  [+1(5.72e-10)]
+Pjdr2_5182_p-113(xylR)           8.06e-10  [+1(8.06e-10)]
+Pjdr2_5159_p-123(xylA)           2.32e-10  [+1(2.32e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

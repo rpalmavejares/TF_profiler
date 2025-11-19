@@ -1,0 +1,279 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/IscR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA0665_p-81(erpA)        1.0000     25  PA3815_p-71(iscR)        1.0000     25  
+PSEEN0461_p-79(erpA)     1.0000     25  PSEEN1009_p-70(iscR)     1.0000     25  
+PP0433_p-32(erpA)        1.0000     25  PP0841_p-70(iscR)        1.0000     25  
+PSPTO1422_p-65(iscR)     1.0000     25  PSPTO0605_p-93(erpA)     1.0000     25  
+PFL_4966_p-66(iscR)      1.0000     25  PFL_5610_p-81(erpA)      1.0000     25  
+Pmen_3930_p-77(erpA)     1.0000     25  Pmen_3512_p-64(iscR)     1.0000     25  
+PST_3043_p-4(iscR)       1.0000     25  PST_0755_p-76(erpA)      1.0000     25  
+Avin_40410_p-65(iscR)    1.0000     25  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/IscR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/IscR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           25
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             375    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    375    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.28 C 0.152 G 0.227 T 0.341 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.28 C 0.153 G 0.227 T 0.34 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATAGTTGACYDAWTTWCTCGGRNAW MEME-1	width =  25  sites =  15  llr = 346  E-value = 1.9e-106
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:9::::a::2743:3::11:34a5
+pos.-specific     C  :::1::::9711::::9:8:::2::
+probability       G  :::9::a:::311::21:19a72::
+matrix            T  1a1:aa::133157a5:a::::2:5
+
+         bits    2.7                          
+                 2.4                          
+                 2.2       * *       *   *    
+                 1.9       ***       *  **  * 
+Relative         1.6  * ******     * *****  * 
+Entropy          1.4 **********    * *****  * 
+(33.2 bits)      1.1 **********    * ****** * 
+                 0.8 **********   ** ****** **
+                 0.5 ********** **** ****** **
+                 0.3 ********** *********** **
+                 0.0 -------------------------
+
+Multilevel           ATAGTTGACCGATTTTCTCGGGAAA
+consensus                     TT AA A     AC T
+sequence                       A    G      G  
+                                           T  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+Pmen_3930_p-77(erpA)          1  5.07e-14          . ATAGTTGACCAATTTTCTCGGGCAA           
+PA3815_p-71(iscR)             1  1.92e-12          . ATAGTTGACCTAATTACTCGGATAA           
+PSPTO1422_p-65(iscR)          1  2.43e-12          . ATAGTTGACTAATTTGCTCGGGAAT           
+Pmen_3512_p-64(iscR)          1  4.83e-12          . ATAGTTGACTTAAATACTCGGGAAT           
+PST_3043_p-4(iscR)            1  5.42e-12          . ATAGTTGACTCAAATACTCGGGAAT           
+PFL_4966_p-66(iscR)           1  5.42e-12          . ATAGTTGACCTGATTACTCGGGTAT           
+PP0841_p-70(iscR)             1  5.42e-12          . ATAGTTGACTTAAATGCTCGGGAAT           
+PP0433_p-32(erpA)             1  5.42e-12          . ATTCTTGACCGATTTTCTCGGGAAA           
+PSEEN1009_p-70(iscR)          1  5.42e-12          . ATAGTTGACTTAAATGCTCGGGAAT           
+PSPTO0605_p-93(erpA)          1  1.46e-11          . ATAGTTGACCGATTTTCTAGGAGAA           
+PSEEN0461_p-79(erpA)          1  2.29e-11          . ATTCTTGACCGATTTTCTCGGAGAA           
+PFL_5610_p-81(erpA)           1  3.23e-11          . ATAGTTGACCGCTTTTCTGGGAGAA           
+PST_0755_p-76(erpA)           1  1.08e-10          . ATAGTTGACCGGTTTTGTCAGGCAA           
+PA0665_p-81(erpA)             1  3.52e-10          . TTAGTTGACCATTTTTCTGGGACAA           
+Avin_40410_p-65(iscR)         1  1.28e-09          . ATAGTTGATCCTGTTTGTCGGGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pmen_3930_p-77(erpA)              5.1e-14  [+1]
+PA3815_p-71(iscR)                 1.9e-12  [+1]
+PSPTO1422_p-65(iscR)              2.4e-12  [+1]
+Pmen_3512_p-64(iscR)              4.8e-12  [+1]
+PST_3043_p-4(iscR)                5.4e-12  [+1]
+PFL_4966_p-66(iscR)               5.4e-12  [+1]
+PP0841_p-70(iscR)                 5.4e-12  [+1]
+PP0433_p-32(erpA)                 5.4e-12  [+1]
+PSEEN1009_p-70(iscR)              5.4e-12  [+1]
+PSPTO0605_p-93(erpA)              1.5e-11  [+1]
+PSEEN0461_p-79(erpA)              2.3e-11  [+1]
+PFL_5610_p-81(erpA)               3.2e-11  [+1]
+PST_0755_p-76(erpA)               1.1e-10  [+1]
+PA0665_p-81(erpA)                 3.5e-10  [+1]
+Avin_40410_p-65(iscR)             1.3e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATAGTTGACYDAWTTWCTCGGRNAW width=25 seqs=15
+Pmen_3930_p-77(erpA)     (    1) ATAGTTGACCAATTTTCTCGGGCAA  1 
+PA3815_p-71(iscR)        (    1) ATAGTTGACCTAATTACTCGGATAA  1 
+PSPTO1422_p-65(iscR)     (    1) ATAGTTGACTAATTTGCTCGGGAAT  1 
+Pmen_3512_p-64(iscR)     (    1) ATAGTTGACTTAAATACTCGGGAAT  1 
+PST_3043_p-4(iscR)       (    1) ATAGTTGACTCAAATACTCGGGAAT  1 
+PFL_4966_p-66(iscR)      (    1) ATAGTTGACCTGATTACTCGGGTAT  1 
+PP0841_p-70(iscR)        (    1) ATAGTTGACTTAAATGCTCGGGAAT  1 
+PP0433_p-32(erpA)        (    1) ATTCTTGACCGATTTTCTCGGGAAA  1 
+PSEEN1009_p-70(iscR)     (    1) ATAGTTGACTTAAATGCTCGGGAAT  1 
+PSPTO0605_p-93(erpA)     (    1) ATAGTTGACCGATTTTCTAGGAGAA  1 
+PSEEN0461_p-79(erpA)     (    1) ATTCTTGACCGATTTTCTCGGAGAA  1 
+PFL_5610_p-81(erpA)      (    1) ATAGTTGACCGCTTTTCTGGGAGAA  1 
+PST_0755_p-76(erpA)      (    1) ATAGTTGACCGGTTTTGTCAGGCAA  1 
+PA0665_p-81(erpA)        (    1) TTAGTTGACCATTTTTCTGGGACAA  1 
+Avin_40410_p-65(iscR)    (    1) ATAGTTGATCCTGTTTGTCGGGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 15 bayes= 1.17688 E= 1.9e-106 
+   174  -1055  -1055   -235 
+ -1055  -1055  -1055    155 
+   163  -1055  -1055   -135 
+ -1055    -20    193  -1055 
+ -1055  -1055  -1055    155 
+ -1055  -1055  -1055    155 
+ -1055  -1055    214  -1055 
+   184  -1055  -1055  -1055 
+ -1055    261  -1055   -235 
+ -1055    212  -1055     -3 
+   -48    -20     55     -3 
+   125   -120    -77   -135 
+    52  -1055   -176     65 
+    -7  -1055  -1055    111 
+ -1055  -1055  -1055    155 
+    -7  -1055    -18     65 
+ -1055    250    -77  -1055 
+ -1055  -1055  -1055    155 
+  -207    239    -77  -1055 
+  -207  -1055    204  -1055 
+ -1055  -1055    214  -1055 
+    25  -1055    155  -1055 
+    52     39    -18    -77 
+   184  -1055  -1055  -1055 
+    93  -1055  -1055     46 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 15 E= 1.9e-106 
+ 0.933333  0.000000  0.000000  0.066667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.866667  0.000000  0.000000  0.133333 
+ 0.000000  0.133333  0.866667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.933333  0.000000  0.066667 
+ 0.000000  0.666667  0.000000  0.333333 
+ 0.200000  0.133333  0.333333  0.333333 
+ 0.666667  0.066667  0.133333  0.133333 
+ 0.400000  0.000000  0.066667  0.533333 
+ 0.266667  0.000000  0.000000  0.733333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.266667  0.000000  0.200000  0.533333 
+ 0.000000  0.866667  0.133333  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.066667  0.800000  0.133333  0.000000 
+ 0.066667  0.000000  0.933333  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.400000  0.200000  0.200000  0.200000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.533333  0.000000  0.000000  0.466667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGTTGACYDAWTTWCTCGGRNAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATAGTTGAC[CT][GTA]A[TA][TA]T[TAG]CTCGG[GA][ACGT]A[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA0665_p-81(erpA)                3.52e-10  [+1(3.52e-10)]
+PA3815_p-71(iscR)                1.92e-12  [+1(1.92e-12)]
+PSEEN0461_p-79(erpA)             2.29e-11  [+1(2.29e-11)]
+PSEEN1009_p-70(iscR)             5.42e-12  [+1(5.42e-12)]
+PP0433_p-32(erpA)                5.42e-12  [+1(5.42e-12)]
+PP0841_p-70(iscR)                5.42e-12  [+1(5.42e-12)]
+PSPTO1422_p-65(iscR)             2.43e-12  [+1(2.43e-12)]
+PSPTO0605_p-93(erpA)             1.46e-11  [+1(1.46e-11)]
+PFL_4966_p-66(iscR)              5.42e-12  [+1(5.42e-12)]
+PFL_5610_p-81(erpA)              3.23e-11  [+1(3.23e-11)]
+Pmen_3930_p-77(erpA)             5.07e-14  [+1(5.07e-14)]
+Pmen_3512_p-64(iscR)             4.83e-12  [+1(4.83e-12)]
+PST_3043_p-4(iscR)               5.42e-12  [+1(5.42e-12)]
+PST_0755_p-76(erpA)              1.08e-10  [+1(1.08e-10)]
+Avin_40410_p-65(iscR)            1.28e-09  [+1(1.28e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

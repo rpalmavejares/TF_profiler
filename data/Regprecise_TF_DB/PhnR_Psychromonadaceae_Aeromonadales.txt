@@ -1,0 +1,271 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/PhnR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Ping_2746_p-52(phnS)     1.0000     20  Ping_2747_p-227(phnW)    1.0000     20  
+Ping_2747_p-39(phnW)     1.0000     20  Ping_2746_p-240(phnS)    1.0000     20  
+PCNPT3_11559_p-253(phnS) 1.0000     20  PCNPT3_11564_p-32(phnW)  1.0000     20  
+PE36_23507_p-228(phnW)   1.0000     20  PE36_23512_p-50(phnS)    1.0000     20  
+PE36_23512_p-261(phnS)   1.0000     20  PE36_23517_p-24(phnT)    1.0000     20  
+PE36_23507_p-17(phnW)    1.0000     20  AHA_1937_p-18(phnR)      1.0000     20  
+AHA_1936_p-39(phnS)      1.0000     20  AHA_1935_p-36(phnT)      1.0000     20  
+AHA_1938_p-166(phnW)     1.0000     20  AHA_1938_p-30(phnW)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/PhnR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/PhnR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             320    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    320    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.338 C 0.175 G 0.169 T 0.319 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.336 C 0.176 G 0.17 T 0.318 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWWYTGGTATAKACCARAW MEME-1	width =  19  sites =  16  llr = 260  E-value = 1.8e-072
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  753::::16:9:9::a574
+pos.-specific     C  11:6::::31:1:aa:::1
+probability       G  ::1::aa:1113::::51:
+matrix            T  2464a::918:61::::35
+
+         bits    2.6      **      **    
+                 2.3      **      **    
+                 2.0      **      **    
+                 1.8      **      **    
+Relative         1.5     ***      ***   
+Entropy          1.3    *****  *  ***   
+(23.4 bits)      1.0    ***** ** *****  
+                 0.8    ***** ********  
+                 0.5 ******** **********
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           AATCTGGTATATACCAAAT
+consensus             TAT    C  G    GTA
+sequence                                
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+AHA_1938_p-30(phnW)           1  5.00e-10          . ATTCTGGTATATACCAAAA G         
+AHA_1935_p-36(phnT)           1  1.03e-09          . AAACTGGTATATACCAAAT C         
+PE36_23512_p-50(phnS)         1  1.40e-09          . AATCTGGTACAGACCAGAA T         
+PE36_23507_p-228(phnW)        1  1.40e-09          . ATTCTGGTCTGTACCAGAT T         
+PCNPT3_11564_p-32(phnW)       1  2.34e-09          . ATTCTGGTCTACACCAAAT A         
+Ping_2747_p-39(phnW)          1  3.83e-09          . ATTCTGGTCTACACCAAAA A         
+AHA_1937_p-18(phnR)           1  6.21e-09          . CTTTTGGTATATACCAGAA T         
+PE36_23507_p-17(phnW)         1  1.75e-08          . AAACTGGTATAGTCCAAAT G         
+PE36_23517_p-24(phnT)         1  1.92e-08          . ATACTGGTATAGTCCAAAT A         
+PCNPT3_11559_p-253(phnS)      1  1.92e-08          . TATTTGGTGTAGACCAGAA T         
+Ping_2746_p-240(phnS)         1  2.11e-08          . TTTTTGGTGTAGACCAGAA T         
+Ping_2746_p-52(phnS)          1  2.31e-08          . AAACTGGTACATACCAATT A         
+Ping_2747_p-227(phnW)         1  9.36e-08          . TAATTGGTATGTACCAGTT T         
+AHA_1936_p-39(phnS)           1  1.48e-07          . AATCTGGTTTATACCAAGC C         
+PE36_23512_p-261(phnS)        1  1.48e-07          . CATTTGGACTATACCAGTT T         
+AHA_1938_p-166(phnW)          1  2.89e-07          . ACGTTGGTAGATACCAGTA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AHA_1938_p-30(phnW)                 5e-10  [+1]_1
+AHA_1935_p-36(phnT)                 1e-09  [+1]_1
+PE36_23512_p-50(phnS)             1.4e-09  [+1]_1
+PE36_23507_p-228(phnW)            1.4e-09  [+1]_1
+PCNPT3_11564_p-32(phnW)           2.3e-09  [+1]_1
+Ping_2747_p-39(phnW)              3.8e-09  [+1]_1
+AHA_1937_p-18(phnR)               6.2e-09  [+1]_1
+PE36_23507_p-17(phnW)             1.7e-08  [+1]_1
+PE36_23517_p-24(phnT)             1.9e-08  [+1]_1
+PCNPT3_11559_p-253(phnS)          1.9e-08  [+1]_1
+Ping_2746_p-240(phnS)             2.1e-08  [+1]_1
+Ping_2746_p-52(phnS)              2.3e-08  [+1]_1
+Ping_2747_p-227(phnW)             9.4e-08  [+1]_1
+AHA_1936_p-39(phnS)               1.5e-07  [+1]_1
+PE36_23512_p-261(phnS)            1.5e-07  [+1]_1
+AHA_1938_p-166(phnW)              2.9e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWWYTGGTATAKACCARAW width=19 seqs=16
+AHA_1938_p-30(phnW)      (    1) ATTCTGGTATATACCAAAA  1 
+AHA_1935_p-36(phnT)      (    1) AAACTGGTATATACCAAAT  1 
+PE36_23512_p-50(phnS)    (    1) AATCTGGTACAGACCAGAA  1 
+PE36_23507_p-228(phnW)   (    1) ATTCTGGTCTGTACCAGAT  1 
+PCNPT3_11564_p-32(phnW)  (    1) ATTCTGGTCTACACCAAAT  1 
+Ping_2747_p-39(phnW)     (    1) ATTCTGGTCTACACCAAAA  1 
+AHA_1937_p-18(phnR)      (    1) CTTTTGGTATATACCAGAA  1 
+PE36_23507_p-17(phnW)    (    1) AAACTGGTATAGTCCAAAT  1 
+PE36_23517_p-24(phnT)    (    1) ATACTGGTATAGTCCAAAT  1 
+PCNPT3_11559_p-253(phnS) (    1) TATTTGGTGTAGACCAGAA  1 
+Ping_2746_p-240(phnS)    (    1) TTTTTGGTGTAGACCAGAA  1 
+Ping_2746_p-52(phnS)     (    1) AAACTGGTACATACCAATT  1 
+Ping_2747_p-227(phnW)    (    1) TAATTGGTATGTACCAGTT  1 
+AHA_1936_p-39(phnS)      (    1) AATCTGGTTTATACCAAGC  1 
+PE36_23512_p-261(phnS)   (    1) CATTTGGACTATACCAGTT  1 
+AHA_1938_p-166(phnW)     (    1) ACGTTGGTAGATACCAGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 32 bayes= 2.5025 E= 1.8e-072 
+   103    -49  -1064    -76 
+    57   -149  -1064     46 
+   -11  -1064   -144     97 
+ -1064    183  -1064     24 
+ -1064  -1064  -1064    165 
+ -1064  -1064    256  -1064 
+ -1064  -1064    256  -1064 
+  -242  -1064  -1064    156 
+    74     51    -44   -234 
+ -1064    -49   -144    135 
+   138  -1064    -44  -1064 
+ -1064    -49     88     82 
+   138  -1064  -1064   -135 
+ -1064    251  -1064  -1064 
+ -1064    251  -1064  -1064 
+   157  -1064  -1064  -1064 
+    57  -1064    156  -1064 
+   103  -1064   -144    -35 
+    38   -149  -1064     65 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 16 E= 1.8e-072 
+ 0.687500  0.125000  0.000000  0.187500 
+ 0.500000  0.062500  0.000000  0.437500 
+ 0.312500  0.000000  0.062500  0.625000 
+ 0.000000  0.625000  0.000000  0.375000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.062500  0.000000  0.000000  0.937500 
+ 0.562500  0.250000  0.125000  0.062500 
+ 0.000000  0.125000  0.062500  0.812500 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.000000  0.125000  0.312500  0.562500 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.687500  0.000000  0.062500  0.250000 
+ 0.437500  0.062500  0.000000  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWWYTGGTATAKACCARAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT][TA][CT]TGGT[AC]TA[TG]ACCA[AG][AT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Ping_2746_p-52(phnS)             4.63e-08  [+1(2.31e-08)]_1
+Ping_2747_p-227(phnW)            1.87e-07  [+1(9.36e-08)]_1
+Ping_2747_p-39(phnW)             7.65e-09  [+1(3.83e-09)]_1
+Ping_2746_p-240(phnS)            4.22e-08  [+1(2.11e-08)]_1
+PCNPT3_11559_p-253(phnS)         3.83e-08  [+1(1.92e-08)]_1
+PCNPT3_11564_p-32(phnW)          4.68e-09  [+1(2.34e-09)]_1
+PE36_23507_p-228(phnW)           2.80e-09  [+1(1.40e-09)]_1
+PE36_23512_p-50(phnS)            2.80e-09  [+1(1.40e-09)]_1
+PE36_23512_p-261(phnS)           2.97e-07  [+1(1.48e-07)]_1
+PE36_23517_p-24(phnT)            3.83e-08  [+1(1.92e-08)]_1
+PE36_23507_p-17(phnW)            3.49e-08  [+1(1.75e-08)]_1
+AHA_1937_p-18(phnR)              1.24e-08  [+1(6.21e-09)]_1
+AHA_1936_p-39(phnS)              2.97e-07  [+1(1.48e-07)]_1
+AHA_1935_p-36(phnT)              2.07e-09  [+1(1.03e-09)]_1
+AHA_1938_p-166(phnW)             5.78e-07  [+1(2.89e-07)]_1
+AHA_1938_p-30(phnW)              1.00e-09  [+1(5.00e-10)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

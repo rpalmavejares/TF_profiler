@@ -1,0 +1,274 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/TyrR_Psychromonadaceae_Aeromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PE36_13494_p-78(tyrP)    1.0000     20  PE36_13494_p-196(tyrP)   1.0000     20  
+PE36_04363_p-58(tyrR)    1.0000     20  AHA_1654_p-59(aroF)      1.0000     20  
+AHA_1654_p-238(aroF)     1.0000     20  AHA_1980_p-82(aroG)      1.0000     20  
+AHA_1883_p-146(phhA)     1.0000     20  AHA_2663_p-180(hpd)      1.0000     20  
+AHA_2663_p-91(hpd)       1.0000     20  ASA_2704_p-60(aroF)      1.0000     20  
+ASA_2420_p-136(phhA)     1.0000     20  ASA_2704_p-239(aroF)     1.0000     20  
+ASA_1860_p-82(aroG)      1.0000     20  ASA_2519_p-112(hpd)      1.0000     20  
+ASA_2519_p-201(hpd)      1.0000     20  Tola_1376_p-32(aroF)     1.0000     20  
+Tola_1376_p-69(aroF)     1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/TyrR_Psychromonadaceae_Aeromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Psychromonadaceae_Aeromonadales/TyrR_Psychromonadaceae_Aeromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             340    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    340    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.388 C 0.132 G 0.124 T 0.356 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.387 C 0.134 G 0.125 T 0.355 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAAMWATHTRTTTACA MEME-1	width =  18  sites =  17  llr = 205  E-value = 3.0e-048
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::1794482434112918
+pos.-specific     C  1::3:42:131::::19:
+probability       G  :91:::1:2::6:1:::2
+matrix            T  918:1242536:998:::
+
+         bits    3.0                   
+                 2.7  *                
+                 2.4  *              * 
+                 2.1  *              * 
+Relative         1.8  *              * 
+Entropy          1.5  *         *    * 
+(17.4 bits)      1.2 **  *      *   ** 
+                 0.9 ** **      *******
+                 0.6 ****** *   *******
+                 0.3 ****** ***********
+                 0.0 ------------------
+
+Multilevel           TGTAAATATATGTTTACA
+consensus               C CA ACAA      
+sequence                      T        
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+ASA_2519_p-201(hpd)           2  7.20e-09          A TGTCACAATCTATTTACA T         
+AHA_2663_p-180(hpd)           2  7.20e-09          A TGTCACAATCTATTTACA T         
+ASA_2420_p-136(phhA)          2  1.62e-08          T TGTCACAAATTGTTTACA A         
+PE36_13494_p-78(tyrP)         2  4.83e-08          T TGTAAACATAAGTTTACA C         
+ASA_2704_p-239(aroF)          2  6.53e-08          A TGTAACTATATATTTACG A         
+AHA_1883_p-146(phhA)          2  1.59e-07          T TGTCACAAATTATTTACA A         
+Tola_1376_p-32(aroF)          2  2.08e-07          G TGTAAAGATAAGTTTACA G         
+PE36_13494_p-196(tyrP)        2  6.79e-07          C TGTAAATATTAGTTTCCA A         
+AHA_1654_p-238(aroF)          2  7.46e-07          G CGTAATCATATGTTTACG T         
+ASA_1860_p-82(aroG)           2  8.98e-07          A TGTAATTTTCTATTTACA C         
+AHA_1980_p-82(aroG)           2  8.98e-07          A TGTAATTTTCTATTTACA C         
+ASA_2519_p-112(hpd)           2  9.89e-07          A TGAAACAAGTTGTTAACA A         
+AHA_2663_p-91(hpd)            2  9.89e-07          A TGAAACAAGTTGTTAACA A         
+ASA_2704_p-60(aroF)           2  9.16e-06          G TGTAAATAAATGAATACA C         
+AHA_1654_p-59(aroF)           2  2.22e-05          G TGTAAATAAAAATGAACG G         
+Tola_1376_p-69(aroF)          2  3.28e-05          A TGTCAATACAAGATTAAA A         
+PE36_04363_p-58(tyrR)         2  1.13e-04          G TTGATACTGCCGTTTACA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ASA_2519_p-201(hpd)               7.2e-09  1_[+1]_1
+AHA_2663_p-180(hpd)               7.2e-09  1_[+1]_1
+ASA_2420_p-136(phhA)              1.6e-08  1_[+1]_1
+PE36_13494_p-78(tyrP)             4.8e-08  1_[+1]_1
+ASA_2704_p-239(aroF)              6.5e-08  1_[+1]_1
+AHA_1883_p-146(phhA)              1.6e-07  1_[+1]_1
+Tola_1376_p-32(aroF)              2.1e-07  1_[+1]_1
+PE36_13494_p-196(tyrP)            6.8e-07  1_[+1]_1
+AHA_1654_p-238(aroF)              7.5e-07  1_[+1]_1
+ASA_1860_p-82(aroG)                 9e-07  1_[+1]_1
+AHA_1980_p-82(aroG)                 9e-07  1_[+1]_1
+ASA_2519_p-112(hpd)               9.9e-07  1_[+1]_1
+AHA_2663_p-91(hpd)                9.9e-07  1_[+1]_1
+ASA_2704_p-60(aroF)               9.2e-06  1_[+1]_1
+AHA_1654_p-59(aroF)               2.2e-05  1_[+1]_1
+Tola_1376_p-69(aroF)              3.3e-05  1_[+1]_1
+PE36_04363_p-58(tyrR)             0.00011  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAAMWATHTRTTTACA width=18 seqs=17
+ASA_2519_p-201(hpd)      (    2) TGTCACAATCTATTTACA  1 
+AHA_2663_p-180(hpd)      (    2) TGTCACAATCTATTTACA  1 
+ASA_2420_p-136(phhA)     (    2) TGTCACAAATTGTTTACA  1 
+PE36_13494_p-78(tyrP)    (    2) TGTAAACATAAGTTTACA  1 
+ASA_2704_p-239(aroF)     (    2) TGTAACTATATATTTACG  1 
+AHA_1883_p-146(phhA)     (    2) TGTCACAAATTATTTACA  1 
+Tola_1376_p-32(aroF)     (    2) TGTAAAGATAAGTTTACA  1 
+PE36_13494_p-196(tyrP)   (    2) TGTAAATATTAGTTTCCA  1 
+AHA_1654_p-238(aroF)     (    2) CGTAATCATATGTTTACG  1 
+ASA_1860_p-82(aroG)      (    2) TGTAATTTTCTATTTACA  1 
+AHA_1980_p-82(aroG)      (    2) TGTAATTTTCTATTTACA  1 
+ASA_2519_p-112(hpd)      (    2) TGAAACAAGTTGTTAACA  1 
+AHA_2663_p-91(hpd)       (    2) TGAAACAAGTTGTTAACA  1 
+ASA_2704_p-60(aroF)      (    2) TGTAAATAAATGAATACA  1 
+AHA_1654_p-59(aroF)      (    2) TGTAAATAAAAATGAACG  1 
+Tola_1376_p-69(aroF)     (    2) TGTCAATACAAGATTAAA  1 
+PE36_04363_p-58(tyrR)    (    2) TTGATACTGCCGTTTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 51 bayes= 3.20163 E= 3.0e-048 
+ -1073   -118  -1073    141 
+ -1073  -1073    291   -259 
+  -171  -1073   -109    121 
+    87    114  -1073  -1073 
+   128  -1073  -1073   -259 
+     9    162  -1073   -101 
+   -13     40   -109     22 
+   109  -1073  -1073   -101 
+   -72   -118     50     58 
+     9    114  -1073    -27 
+   -39   -118  -1073     87 
+     9  -1073    223  -1073 
+  -171  -1073  -1073    131 
+  -271  -1073   -109    131 
+  -113  -1073  -1073    121 
+   128   -118  -1073  -1073 
+  -271    281  -1073  -1073 
+   109  -1073     50  -1073 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 17 E= 3.0e-048 
+ 0.000000  0.058824  0.000000  0.941176 
+ 0.000000  0.000000  0.941176  0.058824 
+ 0.117647  0.000000  0.058824  0.823529 
+ 0.705882  0.294118  0.000000  0.000000 
+ 0.941176  0.000000  0.000000  0.058824 
+ 0.411765  0.411765  0.000000  0.176471 
+ 0.352941  0.176471  0.058824  0.411765 
+ 0.823529  0.000000  0.000000  0.176471 
+ 0.235294  0.058824  0.176471  0.529412 
+ 0.411765  0.294118  0.000000  0.294118 
+ 0.294118  0.058824  0.000000  0.647059 
+ 0.411765  0.000000  0.588235  0.000000 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.058824  0.000000  0.058824  0.882353 
+ 0.176471  0.000000  0.000000  0.823529 
+ 0.941176  0.058824  0.000000  0.000000 
+ 0.058824  0.941176  0.000000  0.000000 
+ 0.823529  0.000000  0.176471  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAMWATHTRTTTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGT[AC]A[AC][TA]A[TA][ACT][TA][GA]TTTACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PE36_13494_p-78(tyrP)            1.45e-07  1_[+1(4.83e-08)]_1
+PE36_13494_p-196(tyrP)           2.04e-06  1_[+1(6.79e-07)]_1
+PE36_04363_p-58(tyrR)            3.38e-04  20
+AHA_1654_p-59(aroF)              6.65e-05  1_[+1(2.22e-05)]_1
+AHA_1654_p-238(aroF)             2.24e-06  1_[+1(7.46e-07)]_1
+AHA_1980_p-82(aroG)              2.69e-06  1_[+1(8.98e-07)]_1
+AHA_1883_p-146(phhA)             4.77e-07  1_[+1(1.59e-07)]_1
+AHA_2663_p-180(hpd)              2.16e-08  1_[+1(7.20e-09)]_1
+AHA_2663_p-91(hpd)               2.97e-06  1_[+1(9.89e-07)]_1
+ASA_2704_p-60(aroF)              2.75e-05  1_[+1(9.16e-06)]_1
+ASA_2420_p-136(phhA)             4.87e-08  1_[+1(1.62e-08)]_1
+ASA_2704_p-239(aroF)             1.96e-07  1_[+1(6.53e-08)]_1
+ASA_1860_p-82(aroG)              2.69e-06  1_[+1(8.98e-07)]_1
+ASA_2519_p-112(hpd)              2.97e-06  1_[+1(9.89e-07)]_1
+ASA_2519_p-201(hpd)              2.16e-08  1_[+1(7.20e-09)]_1
+Tola_1376_p-32(aroF)             6.24e-07  1_[+1(2.08e-07)]_1
+Tola_1376_p-69(aroF)             9.85e-05  1_[+1(3.28e-05)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

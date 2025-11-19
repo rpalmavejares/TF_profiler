@@ -1,0 +1,842 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/Fur_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_1596_p-32(fbpA)     1.0000     21  Patl_0493_p-260(yfeK)    1.0000     21  
+Patl_2402_p-27(Patl_2402 1.0000     21  Patl_3803_p-59(COG4774)  1.0000     21  
+Patl_3109_p-105(fecA)    1.0000     21  Patl_2076_p-147(bfr2)    1.0000     21  
+Patl_1397_p-46(bfd)      1.0000     21  Patl_0311_p-97(fhuE)     1.0000     21  
+Patl_3414_p-51(piu)      1.0000     21  Patl_2259_p-83(Patl_0871 1.0000     21  
+Patl_1443_p-93(n/a)      1.0000     21  Patl_1443_p-87(n/a)      1.0000     21  
+Patl_1058_p-41(ftr1)     1.0000     21  Patl_0749_p-139(COG3205) 1.0000     21  
+Patl_1142_p-72(Patl_1142 1.0000     21  Patl_2287_p-70(fpr)      1.0000     21  
+Patl_1486_p-66(COG4771)  1.0000     21  Patl_1398_p-241(ahpCB)   1.0000     21  
+MADE_00161_p5(n/a)       1.0000     21  MADE_02744_p-57(bfd)     1.0000     21  
+MADE_00133_p-102(fhuE)   1.0000     21  MADE_03816_p-53(Patl_087 1.0000     21  
+MADE_02492_p-72(Patl_181 1.0000     21  MADE_02392_p-65(COG3205) 1.0000     21  
+MADE_01602_p-8(n/a)      1.0000     21  MADE_01534_p-33(COG4771) 1.0000     21  
+MADE_01534_p-39(COG4771) 1.0000     21  MADE_02743_p-251(ahpCB)  1.0000     21  
+MADE_02662_p-117(n/a)    1.0000     21  GHTCC_010100005814_p-61( 1.0000     21  
+GHTCC_010100005799_p-85( 1.0000     21  GHTCC_010100007522_p-46( 1.0000     21  
+GHTCC_010100007527_p-171 1.0000     21  CPS_1012_p-86(fbpA)      1.0000     21  
+CPS_4213_p-66(Patl_2402) 1.0000     21  CPS_0262_p-148(ATW7_0089 1.0000     21  
+CPS_1347_p-62(COG4774)   1.0000     21  CPS_1347_p-296(COG4774)  1.0000     21  
+CPS_1169_p-76(bfd)       1.0000     21  CPS_1167_p-155(bfr1)     1.0000     21  
+CPS_1167_p-149(bfr1)     1.0000     21  CPS_1855_p-155(CPS_1855) 1.0000     21  
+CPS_2724_p-85(fhuE)      1.0000     21  CPS_2724_p-79(fhuE)      1.0000     21  
+CPS_1858_p-43(hugA)      1.0000     21  CPS_3425_p-104(n/a)      1.0000     21  
+ATW7_12358_p-31(fbpA)    1.0000     21  ATW7_13138_p-48(n/a)     1.0000     21  
+ATW7_00890_p-87(ATW7_008 1.0000     21  ATW7_00380_p-20(COG4774) 1.0000     21  
+ATW7_00380_p-59(COG4774) 1.0000     21  ATW7_00380_p-53(COG4774) 1.0000     21  
+ATW7_15529_p-67(CPS_4959 1.0000     21  ATW7_03447_p-74(fecA)    1.0000     21  
+ATW7_15879_p-48(CPS_1855 1.0000     21  ATW7_15829_p-51(pepSY)   1.0000     21  
+ATW7_04502_p-67(n/a)     1.0000     21  ATW7_05436_p-89(n/a)     1.0000     21  
+ATW7_09161_p-54(Patl_114 1.0000     21  ATW7_16530_p-116(n/a)    1.0000     21  
+ATW7_13233_p-68(PF11449) 1.0000     21  ATW7_02487_p-66(bfd)     1.0000     21  
+ATW7_11686_p-257(CPS_476 1.0000     21  ATW7_00730_p-61(ATW7_007 1.0000     21  
+PSHAa2663_p-32(fbpA)     1.0000     21  PSHAa1611_p-45(n/a)      1.0000     21  
+PSHAb0286_p-49(Patl_2402 1.0000     21  PSHAb0287_p-149(pepSY)   1.0000     21  
+PSHAb0512_p-22(COG4774)  1.0000     21  PSHAa2478_p-78(fecA)     1.0000     21  
+PSHAa0108_p-62(CPS_4959) 1.0000     21  PSHAb0251_p-47(irgA)     1.0000     21  
+PSHAa2970_p-49(CPS_1855) 1.0000     21  PSHAa0695_p-65(fhuE)     1.0000     21  
+PSHAa2961_p-52(pepSY)    1.0000     21  PSHAa0951_p-34(n/a)      1.0000     21  
+PSHAa0951_p-37(n/a)      1.0000     21  PSHAb0279_p-56(Patl_1142 1.0000     21  
+PSHAa0048_p-147(fumC)    1.0000     21  PSHAa1629_p-67(PF11449)  1.0000     21  
+PSHAb0512_p-55(COG4774)  1.0000     21  PTD2_06379_p6(n/a)       1.0000     21  
+PTD2_08484_p-33(fbpA)    1.0000     21  PTD2_01521_p-23(Patl_240 1.0000     21  
+PTD2_01631_p-83(ATW7_008 1.0000     21  PTD2_20667_p-47(COG4774) 1.0000     21  
+PTD2_20667_p-92(COG4774) 1.0000     21  PTD2_09069_p-29(n/a)     1.0000     21  
+PTD2_15697_p-82(n/a)     1.0000     21  PTD2_15697_p-158(n/a)    1.0000     21  
+PTD2_15697_p-155(n/a)    1.0000     21  PTD2_02826_p-157(bfr2)   1.0000     21  
+PTD2_16666_p-162(CPS_185 1.0000     21  PTD2_04291_p-66(fhuE)    1.0000     21  
+PTD2_05440_p-75(n/a)     1.0000     21  PTD2_05935_p-2(n/a)      1.0000     21  
+PTD2_00706_p-128(n/a)    1.0000     21  PTD2_00731_p-43(n/a)     1.0000     21  
+PTD2_10208_p-94(n/a)     1.0000     21  PTD2_08349_p-64(bfd)     1.0000     21  
+PTD2_10203_p-76(hmuT)    1.0000     21  PTD2_19380_p-66(PF11449) 1.0000     21  
+PTD2_05445_p-123(ATW7_00 1.0000     21  PTD2_01211_p4(n/a)       1.0000     21  
+PTD2_09069_p-85(n/a)     1.0000     21  OS145_11901_p-83(fbpA)   1.0000     21  
+OS145_08648_p-64(fecA)   1.0000     21  OS145_11871_p-136(n/a)   1.0000     21  
+OS145_04633_p-39(irgA)   1.0000     21  OS145_01627_p-190(fhuE)  1.0000     21  
+OS145_01627_p-184(fhuE)  1.0000     21  OS145_01627_p-162(fhuE)  1.0000     21  
+OS145_01627_p-63(fhuE)   1.0000     21  OS145_11766_p-63(n/a)    1.0000     21  
+OS145_07332_p-39(piuC)   1.0000     21  OS145_09243_p-103(fpr)   1.0000     21  
+OS145_09243_p-74(fpr)    1.0000     21  OS145_06449_p-81(hmuT)   1.0000     21  
+OS145_03090_p-52(Patl_24 1.0000     21  OS145_03090_p-17(Patl_24 1.0000     21  
+IL2393_p-88(fecA)        1.0000     21  IL1065_p-57(bfd)         1.0000     21  
+IL2502_p-89(CPS_1855)    1.0000     21  IL2502_p-60(CPS_1855)    1.0000     21  
+IL2490_p-42(irgA)        1.0000     21  IL1059_p-84(fbpA)        1.0000     21  
+IL2514_p-66(fhuA)        1.0000     21  IL0798_p-52(sodA)        1.0000     21  
+IL0798_p-46(sodA)        1.0000     21  IL0069_p-52(piu)         1.0000     21  
+IL1578_p-105(n/a)        1.0000     21  IL1577_p-59(Patl_1817)   1.0000     21  
+IL0795_p-67(n/a)         1.0000     21  IL2512_p-58(n/a)         1.0000     21  
+IL0111_p-85(ftr1)        1.0000     21  IL2512_p-85(n/a)         1.0000     21  
+IL0759_p-36(piuC)        1.0000     21  IL2501_p-104(fpr)        1.0000     21  
+IL2501_p-75(fpr)         1.0000     21  IL0113_p-87(hmuT)        1.0000     21  
+IL0109_p-177(n/a)        1.0000     21  IL1581_p-66(fhuE_1)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/Fur_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/Fur_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=      142    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2982    N=             142
+sample: seed=            0    hsfrac=          0
+        searchsize=   2982    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.41 C 0.0976 G 0.0872 T 0.405 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.41 C 0.0978 G 0.0874 T 0.405 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAATGATAATNATTMTCATTW MEME-1	width =  21  sites = 142  llr = 1592  E-value = 1.9e-619
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  798:282a9:37::6::a113
+pos.-specific     C  :::1:11::22:1:317:::1
+probability       G  ::::7:2:::22:::2:::::
+matrix            T  3129::5:183:9a172:996
+
+         bits    3.5                      
+                 3.2                      
+                 2.8                      
+                 2.5                      
+Relative         2.1                      
+Entropy          1.8     *           *    
+(16.2 bits)      1.4     *           *    
+                 1.1    **  *     *  **   
+                 0.7  * *** *** *** ***** 
+                 0.4 ******************** 
+                 0.0 ---------------------
+
+Multilevel           AAATGATAATTATTATCATTT
+consensus            T T A A   AG  C T   A
+sequence                   G   G          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+MADE_01602_p-8(n/a)           1  2.69e-10          . AAATGCTAATGGTTATCATTT           
+IL1059_p-84(fbpA)             1  2.58e-09          . AAATGAGAATGGCTATCATTA           
+OS145_11901_p-83(fbpA)        1  2.58e-09          . AAATGAGAATGGCTATCATTA           
+CPS_3425_p-104(n/a)           1  5.46e-09          . AAATGATAATGATTACCATTA           
+PSHAb0279_p-56(Patl_1142      1  8.68e-09          . AAATGAGAGTGGTTAGCATTC           
+IL1578_p-105(n/a)             1  1.23e-08          . AAATGATAATGGTTTTCATTA           
+PTD2_19380_p-66(PF11449)      1  2.51e-08          . AAATGATATTGATTATCATTT           
+PTD2_00706_p-128(n/a)         1  2.51e-08          . AAATGATAACAATTACCATTT           
+PSHAa1629_p-67(PF11449)       1  2.51e-08          . AAATGATATTGATTATCATTT           
+ATW7_13233_p-68(PF11449)      1  2.51e-08          . AAATGATATTGATTATCATTT           
+GHTCC_010100005799_p-85(      1  2.51e-08          . AATTGAGATTGATTCTCATTT           
+Patl_2402_p-27(Patl_2402      1  2.51e-08          . AAATGATAATAATTAGCATTA           
+IL1577_p-59(Patl_1817)        1  2.91e-08          . TAATGAAAACCATTATCATTT           
+ATW7_00380_p-20(COG4774)      1  2.91e-08          . AAATGCGAATGGTTATCATAA           
+IL2514_p-66(fhuA)             1  3.94e-08          . AAACGCGAATCGTTTTCATTT           
+OS145_01627_p-63(fhuE)        1  3.94e-08          . AAACGCGAATCGTTTTCATTT           
+IL2490_p-42(irgA)             1  4.71e-08          . TAATGAAAATAATTCGCATTT           
+IL1065_p-57(bfd)              1  4.71e-08          . TATTGCAAATCGTTCGCATTT           
+Patl_1142_p-72(Patl_1142      1  4.71e-08          . AATTGAAAATCATTCTCATTA           
+OS145_03090_p-17(Patl_24      1  5.47e-08          . AAATGATAAGGATTCTCATGT           
+PTD2_10208_p-94(n/a)          1  5.47e-08          . AAATGATAATACTTCTCATTA           
+ATW7_16530_p-116(n/a)         1  5.47e-08          . TAATGATAACTATTATCATTA           
+MADE_02392_p-65(COG3205)      1  5.47e-08          . AATTGATAATAATTCTCATTA           
+IL0795_p-67(n/a)              1  6.37e-08          . AATTGATAATAGTTATCATTA           
+PTD2_01211_p4(n/a)            1  6.37e-08          . AAATGATAACAGTTATCATGC           
+PTD2_04291_p-66(fhuE)         1  6.37e-08          . AATTGATAATAATTATCATTT           
+ATW7_09161_p-54(Patl_114      1  6.37e-08          . TAATGATAGTCGTTATCATTT           
+PSHAb0512_p-55(COG4774)       1  7.33e-08          . TAACGATAACCATTATCATTC           
+MADE_01534_p-39(COG4771)      1  7.33e-08          . AAACGCAAATCATTATCATTT           
+PSHAb0251_p-47(irgA)          1  8.49e-08          . AAATGCTAATCATTATCAATT           
+CPS_1347_p-62(COG4774)        1  1.00e-07          . TATTGATAATCATTATCATTA           
+Patl_1486_p-66(COG4771)       1  1.00e-07          . AAATGATAACGATTACTATTT           
+Patl_1058_p-41(ftr1)          1  1.00e-07          . AAATAATAATTATTCTCATTT           
+Patl_1443_p-87(n/a)           1  1.00e-07          . AAATGATATTCATTATCATTA           
+CPS_1169_p-76(bfd)            1  1.34e-07          . TATTGATAATTGTTATCATTA           
+Patl_3414_p-51(piu)           1  1.34e-07          . TAATGAGAATGCTTCTTATTT           
+OS145_03090_p-52(Patl_24      1  1.55e-07          . TAATGAGAACAATTATCATCT           
+PTD2_10203_p-76(hmuT)         1  1.55e-07          . TAATGAGAAGTATTATCATTT           
+CPS_0262_p-148(ATW7_0089      1  1.76e-07          . AAATGATAATGGTTTTTATTT           
+GHTCC_010100007527_p-171      1  1.76e-07          . TAATAATAATAGTTCTCATTT           
+IL0113_p-87(hmuT)             1  2.02e-07          . AAACGAAAATGATTTGCATTT           
+IL0798_p-46(sodA)             1  2.36e-07          . AAATGATAATGATTACCGTTA           
+PTD2_00731_p-43(n/a)          1  2.36e-07          . AAATGATAATTGATATCATTT           
+PSHAa2961_p-52(pepSY)         1  2.36e-07          . AATTGATAATTGTTATCATGC           
+GHTCC_010100007522_p-46(      1  2.36e-07          . AAATGAGAACTATTATTATTA           
+IL2512_p-85(n/a)              1  2.71e-07          . AAATGAGAATTGTTCGCAACA           
+PTD2_09069_p-85(n/a)          1  2.71e-07          . AAATGATATTTATTATCATTA           
+ATW7_15879_p-48(CPS_1855      1  2.71e-07          . TAATGCAAATCATTATCATGT           
+IL0109_p-177(n/a)             1  3.14e-07          . TATTGATACTGATTCTCATTT           
+OS145_04633_p-39(irgA)        1  3.14e-07          . AAATAAAAACTATTCTCATTT           
+PTD2_05935_p-2(n/a)           1  3.14e-07          . AAATGATAACGATTAACATTA           
+PSHAb0287_p-149(pepSY)        1  3.14e-07          . AATTGAAAACTGCTCTCATTA           
+Patl_1596_p-32(fbpA)          1  3.14e-07          . AATTGATAATTATTCTCAATT           
+IL0759_p-36(piuC)             1  3.54e-07          . AAATGATAACTATTCGCAAGT           
+IL2393_p-88(fecA)             1  3.54e-07          . TATTGCGAATCATTCTTATTT           
+OS145_08648_p-64(fecA)        1  3.54e-07          . AATTGCGAATTATTCGTATTT           
+ATW7_00380_p-53(COG4774)      1  3.54e-07          . AAATAATAATCATTACCATTA           
+PTD2_08349_p-64(bfd)          1  4.03e-07          . TATTGAAAATGATTGTCATTT           
+PSHAa0108_p-62(CPS_4959)      1  4.03e-07          . AAATGATACTGGTTTTCATTA           
+IL2502_p-89(CPS_1855)         1  4.62e-07          . AAATGAGAATTTTTATCATTA           
+PTD2_15697_p-82(n/a)          1  5.22e-07          . TAATGAGATTGATTATCATTG           
+CPS_2724_p-85(fhuE)           1  5.22e-07          . TAACGATAATGATTAGTATTT           
+CPS_4213_p-66(Patl_2402)      1  6.02e-07          . AAATAATAACAATTATCATTA           
+Patl_3803_p-59(COG4774)       1  6.02e-07          . AAATGATATTAATTACCATTC           
+IL2501_p-75(fpr)              1  7.66e-07          . TAATGATAAAAATTCTCATTT           
+ATW7_00890_p-87(ATW7_008      1  7.66e-07          . AAATGAGAATCACTATCTTTT           
+GHTCC_010100005814_p-61(      1  7.66e-07          . TATTGAGAATTATTCTCAATA           
+OS145_06449_p-81(hmuT)        1  8.66e-07          . AAACGAAAACTATTTGCATTT           
+OS145_09243_p-74(fpr)         1  8.66e-07          . AAATGAAAAAAATTCTCATTT           
+OS145_11871_p-136(n/a)        1  8.66e-07          . TGTTGAAAATCGTTCGCATTA           
+PTD2_20667_p-47(COG4774)      1  8.66e-07          . AACTGATAATTATTATCATTC           
+Patl_2259_p-83(Patl_0871      1  8.66e-07          . AAATAGTAATAATTCTCATTT           
+ATW7_04502_p-67(n/a)          1  9.78e-07          . AAATGATAATTGTTGCTATTT           
+IL1581_p-66(fhuE_1)           1  1.11e-06          . AAATGATAACGATTCGTAGTT           
+IL0111_p-85(ftr1)             1  1.11e-06          . AAACAACAATAGTTATCATTT           
+OS145_09243_p-103(fpr)        1  1.11e-06          . ATATGCGATTTATTCTCATTT           
+OS145_07332_p-39(piuC)        1  1.11e-06          . AAATGATAACTATTCGCAAAT           
+PTD2_16666_p-162(CPS_185      1  1.11e-06          . AAATAATAACCATTATCAATT           
+ATW7_03447_p-74(fecA)         1  1.11e-06          . TAATAATATTGATTCGCATTC           
+Patl_3109_p-105(fecA)         1  1.11e-06          . TATTGATAATAGTTTGCATTA           
+PTD2_09069_p-29(n/a)          1  1.25e-06          . AAATAAGATTTATTATCATTT           
+ATW7_11686_p-257(CPS_476      1  1.25e-06          . TAATGACAATAGCTATCATCT           
+IL2501_p-104(fpr)             1  1.40e-06          . ATATAAAAACCGTTCTCATTT           
+IL2502_p-60(CPS_1855)         1  1.40e-06          . AAATGAGAACGGTTTTTATAT           
+PTD2_01521_p-23(Patl_240      1  1.58e-06          . AAATAAAAACAATTATCATTA           
+Patl_1397_p-46(bfd)           1  1.58e-06          . AAACAACAATTATTATCATTT           
+PTD2_01631_p-83(ATW7_008      1  1.77e-06          . AAATGAGAATTACTATCTTTT           
+MADE_00161_p5(n/a)            1  1.77e-06          . TAATGATAATAAGTATCATTT           
+OS145_01627_p-162(fhuE)       1  1.98e-06          . AGTTGATAATCATTCTTATTT           
+PSHAa2663_p-32(fbpA)          1  2.49e-06          . TATTGATAATAGTTATTATTC           
+Patl_0311_p-97(fhuE)          1  2.49e-06          . GAATGCAAATAGTTATCATAT           
+PSHAa0695_p-65(fhuE)          1  2.78e-06          . AATTGCAAATCAATATCATTT           
+PSHAb0512_p-22(COG4774)       1  3.11e-06          . AAATACGAATACTTACCATTA           
+MADE_00133_p-102(fhuE)        1  3.11e-06          . AAATAGCAATAATTATCATTT           
+Patl_0749_p-139(COG3205)      1  3.11e-06          . AAATGAGAATTAATCGTATTA           
+PSHAa2478_p-78(fecA)          1  3.47e-06          . GAATAACATTGATTCTCATTC           
+MADE_02743_p-251(ahpCB)       1  3.47e-06          . AAATGATAATAATTGCTATTC           
+PSHAa2970_p-49(CPS_1855)      1  3.88e-06          . TAATACAAATCATTATCATGT           
+ATW7_02487_p-66(bfd)          1  3.88e-06          . TATTGATAACTATTACTATTT           
+IL2512_p-58(n/a)              1  4.32e-06          . ATTTGATAATTGTTCGTATTT           
+CPS_1012_p-86(fbpA)           1  4.32e-06          . TAATGAGAGTGATTCGTATAT           
+PSHAa0048_p-147(fumC)         1  4.80e-06          . TAATGATAACTATTATCAAAT           
+ATW7_00730_p-61(ATW7_007      1  4.80e-06          . AAATAGAAATCATTACCATTA           
+ATW7_12358_p-31(fbpA)         1  4.80e-06          . TATTGATAATAATTACTATTT           
+PSHAa1611_p-45(n/a)           1  5.35e-06          . ATATGATAATACCTATCATTT           
+PSHAb0286_p-49(Patl_2402      1  5.93e-06          . TATTGTTAATAGTTATCATTA           
+ATW7_15829_p-51(pepSY)        1  5.93e-06          . AAATAACAATTGATATCATTT           
+MADE_02662_p-117(n/a)         1  5.93e-06          . AAATAACAACTATTATTATTT           
+OS145_11766_p-63(n/a)         1  7.33e-06          . ATTTGATAATTGTTCTTATTA           
+ATW7_13138_p-48(n/a)          1  7.33e-06          . ATATGATAATGTCTATCATTT           
+PTD2_08484_p-33(fbpA)         1  8.97e-06          . ATTTGATAATAATTCTTATTT           
+MADE_02744_p-57(bfd)          1  8.97e-06          . GAATAGCAATTATTATCATTT           
+CPS_1855_p-155(CPS_1855)      1  1.09e-05          . AAATGTAAATTGTTATCAATC           
+Patl_1398_p-241(ahpCB)        1  1.47e-05          . AAATGATAATAATTGTTGTTT           
+ATW7_15529_p-67(CPS_4959      1  1.62e-05          . AAATGATATTTATTTTTATTA           
+CPS_1858_p-43(hugA)           1  1.62e-05          . AGATCATAATGATTCTTATTT           
+Patl_2287_p-70(fpr)           1  2.36e-05          . AAATAAGAATTATTACTATTG           
+PTD2_20667_p-92(COG4774)      1  2.59e-05          . AAATAATAATTATTCGTATAA           
+IL0798_p-52(sodA)             1  2.84e-05          . AAATGCAAATGATAATGATTA           
+MADE_03816_p-53(Patl_087      1  2.84e-05          . TAATGAGAATCATTAACAAAT           
+PTD2_02826_p-157(bfr2)        1  3.10e-05          . AAATAACAATAATTGTTATTC           
+PSHAa0951_p-37(n/a)           1  4.43e-05          . AAATAATAATAATTATTAATA           
+CPS_2724_p-79(fhuE)           1  4.43e-05          . TAATGATTAGTATTTGCATTT           
+OS145_01627_p-190(fhuE)       1  4.83e-05          . AAATAAGAATGATTATGTTTT           
+CPS_1167_p-149(bfr1)          1  4.83e-05          . AAATACAAATTATTTTCACTT           
+Patl_2076_p-147(bfr2)         1  4.83e-05          . AATCATCAATTATTCTCATTT           
+OS145_01627_p-184(fhuE)       1  6.25e-05          . GAATGATTATGTTTTTCATTT           
+MADE_01534_p-33(COG4771)      1  9.48e-05          . AAATCATTATCATTTGCATTA           
+ATW7_05436_p-89(n/a)          1  1.12e-04          . AAATAATAACAACTATTAATA           
+PTD2_05440_p-75(n/a)          1  1.21e-04          . AAATGAGAATATATACTATTC           
+ATW7_00380_p-59(COG4774)      1  1.78e-04          . TTTTGCAAATAATAATCATTA           
+PTD2_05445_p-123(ATW7_00      1  1.93e-04          . GAATAGTATATATTCTCATTT           
+PTD2_06379_p6(n/a)            1  1.93e-04          . AAATTAAATTTATTAGCAATT           
+Patl_1443_p-93(n/a)           1  2.08e-04          . AAATTCAAATGATATTCATTA           
+Patl_0493_p-260(yfeK)         1  2.41e-04          . TAATAATAACAATACTCACCT           
+PTD2_15697_p-158(n/a)         1  3.23e-04          . AAATAAAAATAATACTTATCA           
+IL0069_p-52(piu)              1  3.47e-04          . ACAATATAATCATTCTCATTT           
+PTD2_15697_p-155(n/a)         1  4.30e-04          . TAAAAATAATACTTATCATAT           
+CPS_1167_p-155(bfr1)          1  6.05e-04          . TAATGAAAATACAAATTATTT           
+PSHAa0951_p-34(n/a)           1  6.47e-04          . TAATAATAATTATTAATAATA           
+MADE_02492_p-72(Patl_181      1  1.88e-03          . AAGTATAAATTATTTTTATTT           
+CPS_1347_p-296(COG4774)       1  3.49e-03          . AAATGAAAAATATTATAAAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MADE_01602_p-8(n/a)               2.7e-10  [+1]
+IL1059_p-84(fbpA)                 2.6e-09  [+1]
+OS145_11901_p-83(fbpA)            2.6e-09  [+1]
+CPS_3425_p-104(n/a)               5.5e-09  [+1]
+PSHAb0279_p-56(Patl_1142          8.7e-09  [+1]
+IL1578_p-105(n/a)                 1.2e-08  [+1]
+PTD2_19380_p-66(PF11449)          2.5e-08  [+1]
+PTD2_00706_p-128(n/a)             2.5e-08  [+1]
+PSHAa1629_p-67(PF11449)           2.5e-08  [+1]
+ATW7_13233_p-68(PF11449)          2.5e-08  [+1]
+GHTCC_010100005799_p-85(          2.5e-08  [+1]
+Patl_2402_p-27(Patl_2402          2.5e-08  [+1]
+IL1577_p-59(Patl_1817)            2.9e-08  [+1]
+ATW7_00380_p-20(COG4774)          2.9e-08  [+1]
+IL2514_p-66(fhuA)                 3.9e-08  [+1]
+OS145_01627_p-63(fhuE)            3.9e-08  [+1]
+IL2490_p-42(irgA)                 4.7e-08  [+1]
+IL1065_p-57(bfd)                  4.7e-08  [+1]
+Patl_1142_p-72(Patl_1142          4.7e-08  [+1]
+OS145_03090_p-17(Patl_24          5.5e-08  [+1]
+PTD2_10208_p-94(n/a)              5.5e-08  [+1]
+ATW7_16530_p-116(n/a)             5.5e-08  [+1]
+MADE_02392_p-65(COG3205)          5.5e-08  [+1]
+IL0795_p-67(n/a)                  6.4e-08  [+1]
+PTD2_01211_p4(n/a)                6.4e-08  [+1]
+PTD2_04291_p-66(fhuE)             6.4e-08  [+1]
+ATW7_09161_p-54(Patl_114          6.4e-08  [+1]
+PSHAb0512_p-55(COG4774)           7.3e-08  [+1]
+MADE_01534_p-39(COG4771)          7.3e-08  [+1]
+PSHAb0251_p-47(irgA)              8.5e-08  [+1]
+CPS_1347_p-62(COG4774)              1e-07  [+1]
+Patl_1486_p-66(COG4771)             1e-07  [+1]
+Patl_1058_p-41(ftr1)                1e-07  [+1]
+Patl_1443_p-87(n/a)                 1e-07  [+1]
+CPS_1169_p-76(bfd)                1.3e-07  [+1]
+Patl_3414_p-51(piu)               1.3e-07  [+1]
+OS145_03090_p-52(Patl_24          1.5e-07  [+1]
+PTD2_10203_p-76(hmuT)             1.5e-07  [+1]
+CPS_0262_p-148(ATW7_0089          1.8e-07  [+1]
+GHTCC_010100007527_p-171          1.8e-07  [+1]
+IL0113_p-87(hmuT)                   2e-07  [+1]
+IL0798_p-46(sodA)                 2.4e-07  [+1]
+PTD2_00731_p-43(n/a)              2.4e-07  [+1]
+PSHAa2961_p-52(pepSY)             2.4e-07  [+1]
+GHTCC_010100007522_p-46(          2.4e-07  [+1]
+IL2512_p-85(n/a)                  2.7e-07  [+1]
+PTD2_09069_p-85(n/a)              2.7e-07  [+1]
+ATW7_15879_p-48(CPS_1855          2.7e-07  [+1]
+IL0109_p-177(n/a)                 3.1e-07  [+1]
+OS145_04633_p-39(irgA)            3.1e-07  [+1]
+PTD2_05935_p-2(n/a)               3.1e-07  [+1]
+PSHAb0287_p-149(pepSY)            3.1e-07  [+1]
+Patl_1596_p-32(fbpA)              3.1e-07  [+1]
+IL0759_p-36(piuC)                 3.5e-07  [+1]
+IL2393_p-88(fecA)                 3.5e-07  [+1]
+OS145_08648_p-64(fecA)            3.5e-07  [+1]
+ATW7_00380_p-53(COG4774)          3.5e-07  [+1]
+PTD2_08349_p-64(bfd)                4e-07  [+1]
+PSHAa0108_p-62(CPS_4959)            4e-07  [+1]
+IL2502_p-89(CPS_1855)             4.6e-07  [+1]
+PTD2_15697_p-82(n/a)              5.2e-07  [+1]
+CPS_2724_p-85(fhuE)               5.2e-07  [+1]
+CPS_4213_p-66(Patl_2402)            6e-07  [+1]
+Patl_3803_p-59(COG4774)             6e-07  [+1]
+IL2501_p-75(fpr)                  7.7e-07  [+1]
+ATW7_00890_p-87(ATW7_008          7.7e-07  [+1]
+GHTCC_010100005814_p-61(          7.7e-07  [+1]
+OS145_06449_p-81(hmuT)            8.7e-07  [+1]
+OS145_09243_p-74(fpr)             8.7e-07  [+1]
+OS145_11871_p-136(n/a)            8.7e-07  [+1]
+PTD2_20667_p-47(COG4774)          8.7e-07  [+1]
+Patl_2259_p-83(Patl_0871          8.7e-07  [+1]
+ATW7_04502_p-67(n/a)              9.8e-07  [+1]
+IL1581_p-66(fhuE_1)               1.1e-06  [+1]
+IL0111_p-85(ftr1)                 1.1e-06  [+1]
+OS145_09243_p-103(fpr)            1.1e-06  [+1]
+OS145_07332_p-39(piuC)            1.1e-06  [+1]
+PTD2_16666_p-162(CPS_185          1.1e-06  [+1]
+ATW7_03447_p-74(fecA)             1.1e-06  [+1]
+Patl_3109_p-105(fecA)             1.1e-06  [+1]
+PTD2_09069_p-29(n/a)              1.2e-06  [+1]
+ATW7_11686_p-257(CPS_476          1.2e-06  [+1]
+IL2501_p-104(fpr)                 1.4e-06  [+1]
+IL2502_p-60(CPS_1855)             1.4e-06  [+1]
+PTD2_01521_p-23(Patl_240          1.6e-06  [+1]
+Patl_1397_p-46(bfd)               1.6e-06  [+1]
+PTD2_01631_p-83(ATW7_008          1.8e-06  [+1]
+MADE_00161_p5(n/a)                1.8e-06  [+1]
+OS145_01627_p-162(fhuE)             2e-06  [+1]
+PSHAa2663_p-32(fbpA)              2.5e-06  [+1]
+Patl_0311_p-97(fhuE)              2.5e-06  [+1]
+PSHAa0695_p-65(fhuE)              2.8e-06  [+1]
+PSHAb0512_p-22(COG4774)           3.1e-06  [+1]
+MADE_00133_p-102(fhuE)            3.1e-06  [+1]
+Patl_0749_p-139(COG3205)          3.1e-06  [+1]
+PSHAa2478_p-78(fecA)              3.5e-06  [+1]
+MADE_02743_p-251(ahpCB)           3.5e-06  [+1]
+PSHAa2970_p-49(CPS_1855)          3.9e-06  [+1]
+ATW7_02487_p-66(bfd)              3.9e-06  [+1]
+IL2512_p-58(n/a)                  4.3e-06  [+1]
+CPS_1012_p-86(fbpA)               4.3e-06  [+1]
+PSHAa0048_p-147(fumC)             4.8e-06  [+1]
+ATW7_00730_p-61(ATW7_007          4.8e-06  [+1]
+ATW7_12358_p-31(fbpA)             4.8e-06  [+1]
+PSHAa1611_p-45(n/a)               5.3e-06  [+1]
+PSHAb0286_p-49(Patl_2402          5.9e-06  [+1]
+ATW7_15829_p-51(pepSY)            5.9e-06  [+1]
+MADE_02662_p-117(n/a)             5.9e-06  [+1]
+OS145_11766_p-63(n/a)             7.3e-06  [+1]
+ATW7_13138_p-48(n/a)              7.3e-06  [+1]
+PTD2_08484_p-33(fbpA)               9e-06  [+1]
+MADE_02744_p-57(bfd)                9e-06  [+1]
+CPS_1855_p-155(CPS_1855)          1.1e-05  [+1]
+Patl_1398_p-241(ahpCB)            1.5e-05  [+1]
+ATW7_15529_p-67(CPS_4959          1.6e-05  [+1]
+CPS_1858_p-43(hugA)               1.6e-05  [+1]
+Patl_2287_p-70(fpr)               2.4e-05  [+1]
+PTD2_20667_p-92(COG4774)          2.6e-05  [+1]
+IL0798_p-52(sodA)                 2.8e-05  [+1]
+MADE_03816_p-53(Patl_087          2.8e-05  [+1]
+PTD2_02826_p-157(bfr2)            3.1e-05  [+1]
+PSHAa0951_p-37(n/a)               4.4e-05  [+1]
+CPS_2724_p-79(fhuE)               4.4e-05  [+1]
+OS145_01627_p-190(fhuE)           4.8e-05  [+1]
+CPS_1167_p-149(bfr1)              4.8e-05  [+1]
+Patl_2076_p-147(bfr2)             4.8e-05  [+1]
+OS145_01627_p-184(fhuE)           6.3e-05  [+1]
+MADE_01534_p-33(COG4771)          9.5e-05  [+1]
+ATW7_05436_p-89(n/a)              0.00011  [+1]
+PTD2_05440_p-75(n/a)              0.00012  [+1]
+ATW7_00380_p-59(COG4774)          0.00018  [+1]
+PTD2_05445_p-123(ATW7_00          0.00019  [+1]
+PTD2_06379_p6(n/a)                0.00019  [+1]
+Patl_1443_p-93(n/a)               0.00021  [+1]
+Patl_0493_p-260(yfeK)             0.00024  [+1]
+PTD2_15697_p-158(n/a)             0.00032  [+1]
+IL0069_p-52(piu)                  0.00035  [+1]
+PTD2_15697_p-155(n/a)             0.00043  [+1]
+CPS_1167_p-155(bfr1)              0.00061  [+1]
+PSHAa0951_p-34(n/a)               0.00065  [+1]
+MADE_02492_p-72(Patl_181           0.0019  [+1]
+CPS_1347_p-296(COG4774)            0.0035  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAATGATAATNATTMTCATTW width=21 seqs=142
+MADE_01602_p-8(n/a)      (    1) AAATGCTAATGGTTATCATTT  1 
+IL1059_p-84(fbpA)        (    1) AAATGAGAATGGCTATCATTA  1 
+OS145_11901_p-83(fbpA)   (    1) AAATGAGAATGGCTATCATTA  1 
+CPS_3425_p-104(n/a)      (    1) AAATGATAATGATTACCATTA  1 
+PSHAb0279_p-56(Patl_1142 (    1) AAATGAGAGTGGTTAGCATTC  1 
+IL1578_p-105(n/a)        (    1) AAATGATAATGGTTTTCATTA  1 
+PTD2_19380_p-66(PF11449) (    1) AAATGATATTGATTATCATTT  1 
+PTD2_00706_p-128(n/a)    (    1) AAATGATAACAATTACCATTT  1 
+PSHAa1629_p-67(PF11449)  (    1) AAATGATATTGATTATCATTT  1 
+ATW7_13233_p-68(PF11449) (    1) AAATGATATTGATTATCATTT  1 
+GHTCC_010100005799_p-85( (    1) AATTGAGATTGATTCTCATTT  1 
+Patl_2402_p-27(Patl_2402 (    1) AAATGATAATAATTAGCATTA  1 
+IL1577_p-59(Patl_1817)   (    1) TAATGAAAACCATTATCATTT  1 
+ATW7_00380_p-20(COG4774) (    1) AAATGCGAATGGTTATCATAA  1 
+IL2514_p-66(fhuA)        (    1) AAACGCGAATCGTTTTCATTT  1 
+OS145_01627_p-63(fhuE)   (    1) AAACGCGAATCGTTTTCATTT  1 
+IL2490_p-42(irgA)        (    1) TAATGAAAATAATTCGCATTT  1 
+IL1065_p-57(bfd)         (    1) TATTGCAAATCGTTCGCATTT  1 
+Patl_1142_p-72(Patl_1142 (    1) AATTGAAAATCATTCTCATTA  1 
+OS145_03090_p-17(Patl_24 (    1) AAATGATAAGGATTCTCATGT  1 
+PTD2_10208_p-94(n/a)     (    1) AAATGATAATACTTCTCATTA  1 
+ATW7_16530_p-116(n/a)    (    1) TAATGATAACTATTATCATTA  1 
+MADE_02392_p-65(COG3205) (    1) AATTGATAATAATTCTCATTA  1 
+IL0795_p-67(n/a)         (    1) AATTGATAATAGTTATCATTA  1 
+PTD2_01211_p4(n/a)       (    1) AAATGATAACAGTTATCATGC  1 
+PTD2_04291_p-66(fhuE)    (    1) AATTGATAATAATTATCATTT  1 
+ATW7_09161_p-54(Patl_114 (    1) TAATGATAGTCGTTATCATTT  1 
+PSHAb0512_p-55(COG4774)  (    1) TAACGATAACCATTATCATTC  1 
+MADE_01534_p-39(COG4771) (    1) AAACGCAAATCATTATCATTT  1 
+PSHAb0251_p-47(irgA)     (    1) AAATGCTAATCATTATCAATT  1 
+CPS_1347_p-62(COG4774)   (    1) TATTGATAATCATTATCATTA  1 
+Patl_1486_p-66(COG4771)  (    1) AAATGATAACGATTACTATTT  1 
+Patl_1058_p-41(ftr1)     (    1) AAATAATAATTATTCTCATTT  1 
+Patl_1443_p-87(n/a)      (    1) AAATGATATTCATTATCATTA  1 
+CPS_1169_p-76(bfd)       (    1) TATTGATAATTGTTATCATTA  1 
+Patl_3414_p-51(piu)      (    1) TAATGAGAATGCTTCTTATTT  1 
+OS145_03090_p-52(Patl_24 (    1) TAATGAGAACAATTATCATCT  1 
+PTD2_10203_p-76(hmuT)    (    1) TAATGAGAAGTATTATCATTT  1 
+CPS_0262_p-148(ATW7_0089 (    1) AAATGATAATGGTTTTTATTT  1 
+GHTCC_010100007527_p-171 (    1) TAATAATAATAGTTCTCATTT  1 
+IL0113_p-87(hmuT)        (    1) AAACGAAAATGATTTGCATTT  1 
+IL0798_p-46(sodA)        (    1) AAATGATAATGATTACCGTTA  1 
+PTD2_00731_p-43(n/a)     (    1) AAATGATAATTGATATCATTT  1 
+PSHAa2961_p-52(pepSY)    (    1) AATTGATAATTGTTATCATGC  1 
+GHTCC_010100007522_p-46( (    1) AAATGAGAACTATTATTATTA  1 
+IL2512_p-85(n/a)         (    1) AAATGAGAATTGTTCGCAACA  1 
+PTD2_09069_p-85(n/a)     (    1) AAATGATATTTATTATCATTA  1 
+ATW7_15879_p-48(CPS_1855 (    1) TAATGCAAATCATTATCATGT  1 
+IL0109_p-177(n/a)        (    1) TATTGATACTGATTCTCATTT  1 
+OS145_04633_p-39(irgA)   (    1) AAATAAAAACTATTCTCATTT  1 
+PTD2_05935_p-2(n/a)      (    1) AAATGATAACGATTAACATTA  1 
+PSHAb0287_p-149(pepSY)   (    1) AATTGAAAACTGCTCTCATTA  1 
+Patl_1596_p-32(fbpA)     (    1) AATTGATAATTATTCTCAATT  1 
+IL0759_p-36(piuC)        (    1) AAATGATAACTATTCGCAAGT  1 
+IL2393_p-88(fecA)        (    1) TATTGCGAATCATTCTTATTT  1 
+OS145_08648_p-64(fecA)   (    1) AATTGCGAATTATTCGTATTT  1 
+ATW7_00380_p-53(COG4774) (    1) AAATAATAATCATTACCATTA  1 
+PTD2_08349_p-64(bfd)     (    1) TATTGAAAATGATTGTCATTT  1 
+PSHAa0108_p-62(CPS_4959) (    1) AAATGATACTGGTTTTCATTA  1 
+IL2502_p-89(CPS_1855)    (    1) AAATGAGAATTTTTATCATTA  1 
+PTD2_15697_p-82(n/a)     (    1) TAATGAGATTGATTATCATTG  1 
+CPS_2724_p-85(fhuE)      (    1) TAACGATAATGATTAGTATTT  1 
+CPS_4213_p-66(Patl_2402) (    1) AAATAATAACAATTATCATTA  1 
+Patl_3803_p-59(COG4774)  (    1) AAATGATATTAATTACCATTC  1 
+IL2501_p-75(fpr)         (    1) TAATGATAAAAATTCTCATTT  1 
+ATW7_00890_p-87(ATW7_008 (    1) AAATGAGAATCACTATCTTTT  1 
+GHTCC_010100005814_p-61( (    1) TATTGAGAATTATTCTCAATA  1 
+OS145_06449_p-81(hmuT)   (    1) AAACGAAAACTATTTGCATTT  1 
+OS145_09243_p-74(fpr)    (    1) AAATGAAAAAAATTCTCATTT  1 
+OS145_11871_p-136(n/a)   (    1) TGTTGAAAATCGTTCGCATTA  1 
+PTD2_20667_p-47(COG4774) (    1) AACTGATAATTATTATCATTC  1 
+Patl_2259_p-83(Patl_0871 (    1) AAATAGTAATAATTCTCATTT  1 
+ATW7_04502_p-67(n/a)     (    1) AAATGATAATTGTTGCTATTT  1 
+IL1581_p-66(fhuE_1)      (    1) AAATGATAACGATTCGTAGTT  1 
+IL0111_p-85(ftr1)        (    1) AAACAACAATAGTTATCATTT  1 
+OS145_09243_p-103(fpr)   (    1) ATATGCGATTTATTCTCATTT  1 
+OS145_07332_p-39(piuC)   (    1) AAATGATAACTATTCGCAAAT  1 
+PTD2_16666_p-162(CPS_185 (    1) AAATAATAACCATTATCAATT  1 
+ATW7_03447_p-74(fecA)    (    1) TAATAATATTGATTCGCATTC  1 
+Patl_3109_p-105(fecA)    (    1) TATTGATAATAGTTTGCATTA  1 
+PTD2_09069_p-29(n/a)     (    1) AAATAAGATTTATTATCATTT  1 
+ATW7_11686_p-257(CPS_476 (    1) TAATGACAATAGCTATCATCT  1 
+IL2501_p-104(fpr)        (    1) ATATAAAAACCGTTCTCATTT  1 
+IL2502_p-60(CPS_1855)    (    1) AAATGAGAACGGTTTTTATAT  1 
+PTD2_01521_p-23(Patl_240 (    1) AAATAAAAACAATTATCATTA  1 
+Patl_1397_p-46(bfd)      (    1) AAACAACAATTATTATCATTT  1 
+PTD2_01631_p-83(ATW7_008 (    1) AAATGAGAATTACTATCTTTT  1 
+MADE_00161_p5(n/a)       (    1) TAATGATAATAAGTATCATTT  1 
+OS145_01627_p-162(fhuE)  (    1) AGTTGATAATCATTCTTATTT  1 
+PSHAa2663_p-32(fbpA)     (    1) TATTGATAATAGTTATTATTC  1 
+Patl_0311_p-97(fhuE)     (    1) GAATGCAAATAGTTATCATAT  1 
+PSHAa0695_p-65(fhuE)     (    1) AATTGCAAATCAATATCATTT  1 
+PSHAb0512_p-22(COG4774)  (    1) AAATACGAATACTTACCATTA  1 
+MADE_00133_p-102(fhuE)   (    1) AAATAGCAATAATTATCATTT  1 
+Patl_0749_p-139(COG3205) (    1) AAATGAGAATTAATCGTATTA  1 
+PSHAa2478_p-78(fecA)     (    1) GAATAACATTGATTCTCATTC  1 
+MADE_02743_p-251(ahpCB)  (    1) AAATGATAATAATTGCTATTC  1 
+PSHAa2970_p-49(CPS_1855) (    1) TAATACAAATCATTATCATGT  1 
+ATW7_02487_p-66(bfd)     (    1) TATTGATAACTATTACTATTT  1 
+IL2512_p-58(n/a)         (    1) ATTTGATAATTGTTCGTATTT  1 
+CPS_1012_p-86(fbpA)      (    1) TAATGAGAGTGATTCGTATAT  1 
+PSHAa0048_p-147(fumC)    (    1) TAATGATAACTATTATCAAAT  1 
+ATW7_00730_p-61(ATW7_007 (    1) AAATAGAAATCATTACCATTA  1 
+ATW7_12358_p-31(fbpA)    (    1) TATTGATAATAATTACTATTT  1 
+PSHAa1611_p-45(n/a)      (    1) ATATGATAATACCTATCATTT  1 
+PSHAb0286_p-49(Patl_2402 (    1) TATTGTTAATAGTTATCATTA  1 
+ATW7_15829_p-51(pepSY)   (    1) AAATAACAATTGATATCATTT  1 
+MADE_02662_p-117(n/a)    (    1) AAATAACAACTATTATTATTT  1 
+OS145_11766_p-63(n/a)    (    1) ATTTGATAATTGTTCTTATTA  1 
+ATW7_13138_p-48(n/a)     (    1) ATATGATAATGTCTATCATTT  1 
+PTD2_08484_p-33(fbpA)    (    1) ATTTGATAATAATTCTTATTT  1 
+MADE_02744_p-57(bfd)     (    1) GAATAGCAATTATTATCATTT  1 
+CPS_1855_p-155(CPS_1855) (    1) AAATGTAAATTGTTATCAATC  1 
+Patl_1398_p-241(ahpCB)   (    1) AAATGATAATAATTGTTGTTT  1 
+ATW7_15529_p-67(CPS_4959 (    1) AAATGATATTTATTTTTATTA  1 
+CPS_1858_p-43(hugA)      (    1) AGATCATAATGATTCTTATTT  1 
+Patl_2287_p-70(fpr)      (    1) AAATAAGAATTATTACTATTG  1 
+PTD2_20667_p-92(COG4774) (    1) AAATAATAATTATTCGTATAA  1 
+IL0798_p-52(sodA)        (    1) AAATGCAAATGATAATGATTA  1 
+MADE_03816_p-53(Patl_087 (    1) TAATGAGAATCATTAACAAAT  1 
+PTD2_02826_p-157(bfr2)   (    1) AAATAACAATAATTGTTATTC  1 
+PSHAa0951_p-37(n/a)      (    1) AAATAATAATAATTATTAATA  1 
+CPS_2724_p-79(fhuE)      (    1) TAATGATTAGTATTTGCATTT  1 
+OS145_01627_p-190(fhuE)  (    1) AAATAAGAATGATTATGTTTT  1 
+CPS_1167_p-149(bfr1)     (    1) AAATACAAATTATTTTCACTT  1 
+Patl_2076_p-147(bfr2)    (    1) AATCATCAATTATTCTCATTT  1 
+OS145_01627_p-184(fhuE)  (    1) GAATGATTATGTTTTTCATTT  1 
+MADE_01534_p-33(COG4771) (    1) AAATCATTATCATTTGCATTA  1 
+ATW7_05436_p-89(n/a)     (    1) AAATAATAACAACTATTAATA  1 
+PTD2_05440_p-75(n/a)     (    1) AAATGAGAATATATACTATTC  1 
+ATW7_00380_p-59(COG4774) (    1) TTTTGCAAATAATAATCATTA  1 
+PTD2_05445_p-123(ATW7_00 (    1) GAATAGTATATATTCTCATTT  1 
+PTD2_06379_p6(n/a)       (    1) AAATTAAATTTATTAGCAATT  1 
+Patl_1443_p-93(n/a)      (    1) AAATTCAAATGATATTCATTA  1 
+Patl_0493_p-260(yfeK)    (    1) TAATAATAACAATACTCACCT  1 
+PTD2_15697_p-158(n/a)    (    1) AAATAAAAATAATACTTATCA  1 
+IL0069_p-52(piu)         (    1) ACAATATAATCATTCTCATTT  1 
+PTD2_15697_p-155(n/a)    (    1) TAAAAATAATACTTATCATAT  1 
+CPS_1167_p-155(bfr1)     (    1) TAATGAAAATACAAATTATTT  1 
+PSHAa0951_p-34(n/a)      (    1) TAATAATAATTATTAATAATA  1 
+MADE_02492_p-72(Patl_181 (    1) AAGTATAAATTATTTTTATTT  1 
+CPS_1347_p-296(COG4774)  (    1) AAATGAAAAATATTATAAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 142 bayes= 1.90046 E= 1.9e-619 
+    75  -1379   -131    -56 
+   116   -379   -205   -285 
+    93   -379   -363    -99 
+  -486    -47  -1379    118 
+   -73   -279    304   -426 
+    97     45   -131   -385 
+  -100    -47    122     36 
+   126  -1379  -1379   -426 
+   107   -279   -205   -194 
+  -386     85   -205     93 
+   -58     85    145    -39 
+    75   -121    145   -385 
+  -328    -63   -363    113 
+  -328  -1379  -1379    124 
+    44    160   -131   -185 
+  -428      1     83     84 
+  -586    292   -263    -76 
+   124  -1379   -263   -426 
+  -195   -279   -363    111 
+  -254   -147   -105    107 
+   -40    -10   -263     53 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 142 E= 1.9e-619 
+ 0.690141  0.000000  0.035211  0.274648 
+ 0.915493  0.007042  0.021127  0.056338 
+ 0.781690  0.007042  0.007042  0.204225 
+ 0.014085  0.070423  0.000000  0.915493 
+ 0.246479  0.014085  0.718310  0.021127 
+ 0.802817  0.133803  0.035211  0.028169 
+ 0.204225  0.070423  0.204225  0.521127 
+ 0.978873  0.000000  0.000000  0.021127 
+ 0.859155  0.014085  0.021127  0.105634 
+ 0.028169  0.176056  0.021127  0.774648 
+ 0.274648  0.176056  0.239437  0.309859 
+ 0.690141  0.042254  0.239437  0.028169 
+ 0.042254  0.063380  0.007042  0.887324 
+ 0.042254  0.000000  0.000000  0.957746 
+ 0.556338  0.295775  0.035211  0.112676 
+ 0.021127  0.098592  0.154930  0.725352 
+ 0.007042  0.739437  0.014085  0.239437 
+ 0.964789  0.000000  0.014085  0.021127 
+ 0.105634  0.014085  0.007042  0.873239 
+ 0.070423  0.035211  0.042254  0.852113 
+ 0.309859  0.091549  0.014085  0.584507 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAATGATAATNATTMTCATTW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT]A[AT]T[GA]A[TAG]AAT[TAG][AG]TT[AC]T[CT]ATT[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.71 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_1596_p-32(fbpA)             3.14e-07  [+1(3.14e-07)]
+Patl_0493_p-260(yfeK)            2.41e-04  21
+Patl_2402_p-27(Patl_2402         2.51e-08  [+1(2.51e-08)]
+Patl_3803_p-59(COG4774)          6.02e-07  [+1(6.02e-07)]
+Patl_3109_p-105(fecA)            1.11e-06  [+1(1.11e-06)]
+Patl_2076_p-147(bfr2)            4.83e-05  [+1(4.83e-05)]
+Patl_1397_p-46(bfd)              1.58e-06  [+1(1.58e-06)]
+Patl_0311_p-97(fhuE)             2.49e-06  [+1(2.49e-06)]
+Patl_3414_p-51(piu)              1.34e-07  [+1(1.34e-07)]
+Patl_2259_p-83(Patl_0871         8.66e-07  [+1(8.66e-07)]
+Patl_1443_p-93(n/a)              2.08e-04  21
+Patl_1443_p-87(n/a)              1.00e-07  [+1(1.00e-07)]
+Patl_1058_p-41(ftr1)             1.00e-07  [+1(1.00e-07)]
+Patl_0749_p-139(COG3205)         3.11e-06  [+1(3.11e-06)]
+Patl_1142_p-72(Patl_1142         4.71e-08  [+1(4.71e-08)]
+Patl_2287_p-70(fpr)              2.36e-05  [+1(2.36e-05)]
+Patl_1486_p-66(COG4771)          1.00e-07  [+1(1.00e-07)]
+Patl_1398_p-241(ahpCB)           1.47e-05  [+1(1.47e-05)]
+MADE_00161_p5(n/a)               1.77e-06  [+1(1.77e-06)]
+MADE_02744_p-57(bfd)             8.97e-06  [+1(8.97e-06)]
+MADE_00133_p-102(fhuE)           3.11e-06  [+1(3.11e-06)]
+MADE_03816_p-53(Patl_087         2.84e-05  [+1(2.84e-05)]
+MADE_02492_p-72(Patl_181         1.88e-03  21
+MADE_02392_p-65(COG3205)         5.47e-08  [+1(5.47e-08)]
+MADE_01602_p-8(n/a)              2.69e-10  [+1(2.69e-10)]
+MADE_01534_p-33(COG4771)         9.48e-05  [+1(9.48e-05)]
+MADE_01534_p-39(COG4771)         7.33e-08  [+1(7.33e-08)]
+MADE_02743_p-251(ahpCB)          3.47e-06  [+1(3.47e-06)]
+MADE_02662_p-117(n/a)            5.93e-06  [+1(5.93e-06)]
+GHTCC_010100005814_p-61(         7.66e-07  [+1(7.66e-07)]
+GHTCC_010100005799_p-85(         2.51e-08  [+1(2.51e-08)]
+GHTCC_010100007522_p-46(         2.36e-07  [+1(2.36e-07)]
+GHTCC_010100007527_p-171         1.76e-07  [+1(1.76e-07)]
+CPS_1012_p-86(fbpA)              4.32e-06  [+1(4.32e-06)]
+CPS_4213_p-66(Patl_2402)         6.02e-07  [+1(6.02e-07)]
+CPS_0262_p-148(ATW7_0089         1.76e-07  [+1(1.76e-07)]
+CPS_1347_p-62(COG4774)           1.00e-07  [+1(1.00e-07)]
+CPS_1347_p-296(COG4774)          3.49e-03  21
+CPS_1169_p-76(bfd)               1.34e-07  [+1(1.34e-07)]
+CPS_1167_p-155(bfr1)             6.05e-04  21
+CPS_1167_p-149(bfr1)             4.83e-05  [+1(4.83e-05)]
+CPS_1855_p-155(CPS_1855)         1.09e-05  [+1(1.09e-05)]
+CPS_2724_p-85(fhuE)              5.22e-07  [+1(5.22e-07)]
+CPS_2724_p-79(fhuE)              4.43e-05  [+1(4.43e-05)]
+CPS_1858_p-43(hugA)              1.62e-05  [+1(1.62e-05)]
+CPS_3425_p-104(n/a)              5.46e-09  [+1(5.46e-09)]
+ATW7_12358_p-31(fbpA)            4.80e-06  [+1(4.80e-06)]
+ATW7_13138_p-48(n/a)             7.33e-06  [+1(7.33e-06)]
+ATW7_00890_p-87(ATW7_008         7.66e-07  [+1(7.66e-07)]
+ATW7_00380_p-20(COG4774)         2.91e-08  [+1(2.91e-08)]
+ATW7_00380_p-59(COG4774)         1.78e-04  21
+ATW7_00380_p-53(COG4774)         3.54e-07  [+1(3.54e-07)]
+ATW7_15529_p-67(CPS_4959         1.62e-05  [+1(1.62e-05)]
+ATW7_03447_p-74(fecA)            1.11e-06  [+1(1.11e-06)]
+ATW7_15879_p-48(CPS_1855         2.71e-07  [+1(2.71e-07)]
+ATW7_15829_p-51(pepSY)           5.93e-06  [+1(5.93e-06)]
+ATW7_04502_p-67(n/a)             9.78e-07  [+1(9.78e-07)]
+ATW7_05436_p-89(n/a)             1.12e-04  21
+ATW7_09161_p-54(Patl_114         6.37e-08  [+1(6.37e-08)]
+ATW7_16530_p-116(n/a)            5.47e-08  [+1(5.47e-08)]
+ATW7_13233_p-68(PF11449)         2.51e-08  [+1(2.51e-08)]
+ATW7_02487_p-66(bfd)             3.88e-06  [+1(3.88e-06)]
+ATW7_11686_p-257(CPS_476         1.25e-06  [+1(1.25e-06)]
+ATW7_00730_p-61(ATW7_007         4.80e-06  [+1(4.80e-06)]
+PSHAa2663_p-32(fbpA)             2.49e-06  [+1(2.49e-06)]
+PSHAa1611_p-45(n/a)              5.35e-06  [+1(5.35e-06)]
+PSHAb0286_p-49(Patl_2402         5.93e-06  [+1(5.93e-06)]
+PSHAb0287_p-149(pepSY)           3.14e-07  [+1(3.14e-07)]
+PSHAb0512_p-22(COG4774)          3.11e-06  [+1(3.11e-06)]
+PSHAa2478_p-78(fecA)             3.47e-06  [+1(3.47e-06)]
+PSHAa0108_p-62(CPS_4959)         4.03e-07  [+1(4.03e-07)]
+PSHAb0251_p-47(irgA)             8.49e-08  [+1(8.49e-08)]
+PSHAa2970_p-49(CPS_1855)         3.88e-06  [+1(3.88e-06)]
+PSHAa0695_p-65(fhuE)             2.78e-06  [+1(2.78e-06)]
+PSHAa2961_p-52(pepSY)            2.36e-07  [+1(2.36e-07)]
+PSHAa0951_p-34(n/a)              6.47e-04  21
+PSHAa0951_p-37(n/a)              4.43e-05  [+1(4.43e-05)]
+PSHAb0279_p-56(Patl_1142         8.68e-09  [+1(8.68e-09)]
+PSHAa0048_p-147(fumC)            4.80e-06  [+1(4.80e-06)]
+PSHAa1629_p-67(PF11449)          2.51e-08  [+1(2.51e-08)]
+PSHAb0512_p-55(COG4774)          7.33e-08  [+1(7.33e-08)]
+PTD2_06379_p6(n/a)               1.93e-04  21
+PTD2_08484_p-33(fbpA)            8.97e-06  [+1(8.97e-06)]
+PTD2_01521_p-23(Patl_240         1.58e-06  [+1(1.58e-06)]
+PTD2_01631_p-83(ATW7_008         1.77e-06  [+1(1.77e-06)]
+PTD2_20667_p-47(COG4774)         8.66e-07  [+1(8.66e-07)]
+PTD2_20667_p-92(COG4774)         2.59e-05  [+1(2.59e-05)]
+PTD2_09069_p-29(n/a)             1.25e-06  [+1(1.25e-06)]
+PTD2_15697_p-82(n/a)             5.22e-07  [+1(5.22e-07)]
+PTD2_15697_p-158(n/a)            3.23e-04  21
+PTD2_15697_p-155(n/a)            4.30e-04  21
+PTD2_02826_p-157(bfr2)           3.10e-05  [+1(3.10e-05)]
+PTD2_16666_p-162(CPS_185         1.11e-06  [+1(1.11e-06)]
+PTD2_04291_p-66(fhuE)            6.37e-08  [+1(6.37e-08)]
+PTD2_05440_p-75(n/a)             1.21e-04  21
+PTD2_05935_p-2(n/a)              3.14e-07  [+1(3.14e-07)]
+PTD2_00706_p-128(n/a)            2.51e-08  [+1(2.51e-08)]
+PTD2_00731_p-43(n/a)             2.36e-07  [+1(2.36e-07)]
+PTD2_10208_p-94(n/a)             5.47e-08  [+1(5.47e-08)]
+PTD2_08349_p-64(bfd)             4.03e-07  [+1(4.03e-07)]
+PTD2_10203_p-76(hmuT)            1.55e-07  [+1(1.55e-07)]
+PTD2_19380_p-66(PF11449)         2.51e-08  [+1(2.51e-08)]
+PTD2_05445_p-123(ATW7_00         1.93e-04  21
+PTD2_01211_p4(n/a)               6.37e-08  [+1(6.37e-08)]
+PTD2_09069_p-85(n/a)             2.71e-07  [+1(2.71e-07)]
+OS145_11901_p-83(fbpA)           2.58e-09  [+1(2.58e-09)]
+OS145_08648_p-64(fecA)           3.54e-07  [+1(3.54e-07)]
+OS145_11871_p-136(n/a)           8.66e-07  [+1(8.66e-07)]
+OS145_04633_p-39(irgA)           3.14e-07  [+1(3.14e-07)]
+OS145_01627_p-190(fhuE)          4.83e-05  [+1(4.83e-05)]
+OS145_01627_p-184(fhuE)          6.25e-05  [+1(6.25e-05)]
+OS145_01627_p-162(fhuE)          1.98e-06  [+1(1.98e-06)]
+OS145_01627_p-63(fhuE)           3.94e-08  [+1(3.94e-08)]
+OS145_11766_p-63(n/a)            7.33e-06  [+1(7.33e-06)]
+OS145_07332_p-39(piuC)           1.11e-06  [+1(1.11e-06)]
+OS145_09243_p-103(fpr)           1.11e-06  [+1(1.11e-06)]
+OS145_09243_p-74(fpr)            8.66e-07  [+1(8.66e-07)]
+OS145_06449_p-81(hmuT)           8.66e-07  [+1(8.66e-07)]
+OS145_03090_p-52(Patl_24         1.55e-07  [+1(1.55e-07)]
+OS145_03090_p-17(Patl_24         5.47e-08  [+1(5.47e-08)]
+IL2393_p-88(fecA)                3.54e-07  [+1(3.54e-07)]
+IL1065_p-57(bfd)                 4.71e-08  [+1(4.71e-08)]
+IL2502_p-89(CPS_1855)            4.62e-07  [+1(4.62e-07)]
+IL2502_p-60(CPS_1855)            1.40e-06  [+1(1.40e-06)]
+IL2490_p-42(irgA)                4.71e-08  [+1(4.71e-08)]
+IL1059_p-84(fbpA)                2.58e-09  [+1(2.58e-09)]
+IL2514_p-66(fhuA)                3.94e-08  [+1(3.94e-08)]
+IL0798_p-52(sodA)                2.84e-05  [+1(2.84e-05)]
+IL0798_p-46(sodA)                2.36e-07  [+1(2.36e-07)]
+IL0069_p-52(piu)                 3.47e-04  21
+IL1578_p-105(n/a)                1.23e-08  [+1(1.23e-08)]
+IL1577_p-59(Patl_1817)           2.91e-08  [+1(2.91e-08)]
+IL0795_p-67(n/a)                 6.37e-08  [+1(6.37e-08)]
+IL2512_p-58(n/a)                 4.32e-06  [+1(4.32e-06)]
+IL0111_p-85(ftr1)                1.11e-06  [+1(1.11e-06)]
+IL2512_p-85(n/a)                 2.71e-07  [+1(2.71e-07)]
+IL0759_p-36(piuC)                3.54e-07  [+1(3.54e-07)]
+IL2501_p-104(fpr)                1.40e-06  [+1(1.40e-06)]
+IL2501_p-75(fpr)                 7.66e-07  [+1(7.66e-07)]
+IL0113_p-87(hmuT)                2.02e-07  [+1(2.02e-07)]
+IL0109_p-177(n/a)                3.14e-07  [+1(3.14e-07)]
+IL1581_p-66(fhuE_1)              1.11e-06  [+1(1.11e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

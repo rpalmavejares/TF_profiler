@@ -1,0 +1,328 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TyrR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+APP7_0857_p-80(tyrR)     1.0000     20  APP7_0187_p-34(aroF)     1.0000     20  
+APP7_0642_p-97(tyrP)     1.0000     20  Asuc_0958_p-80(tyrR)     1.0000     20  
+Asuc_1570_p-41(aroF)     1.0000     20  NT05HA_0604_p-83(tyrR)   1.0000     20  
+NT05HA_0124_p-170(tpl)   1.0000     20  HD1229_p-80(tyrR)        1.0000     20  
+HD0444_p-32(aroF)        1.0000     20  HI0410_p-74(tyrR)        1.0000     20  
+HI1290_p-43(tyrA)        1.0000     20  HI1290_p-20(tyrA)        1.0000     20  
+HAPS_1204_p-84(tyrR)     1.0000     20  HAPS_1274_p-35(aroF)     1.0000     20  
+HAPS_0526_p-174(tyrP)    1.0000     20  HAPS_0525_p-89(tyrP)     1.0000     20  
+HSM_1080_p-57(tyrA)      1.0000     20  HSM_1080_p-34(tyrA)      1.0000     20  
+HSM_1247_p-99(tyrP)      1.0000     20  HSM_1247_p-78(tyrP)      1.0000     20  
+MS0762_p-30(tyrR)        1.0000     20  MS1104_p-47(aroF)        1.0000     20  
+MS0977_p-40(tyrP)        1.0000     20  PM0908_p-85(tyrR)        1.0000     20  
+PM0665_p-86(aroF)        1.0000     20  PM0665_p-63(aroF)        1.0000     20  
+PM0732_p-101(tyrP)       1.0000     20  PM0732_p-82(tyrP)        1.0000     20  
+PM0811_p-134(tpl)        1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TyrR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/TyrR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       29    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             580    N=              29
+sample: seed=            0    hsfrac=          0
+        searchsize=    580    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.434 C 0.0948 G 0.1 T 0.371 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.433 C 0.0959 G 0.101 T 0.37 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAAAWAAAWDTTTACA MEME-1	width =  18  sites =  29  llr = 345  E-value = 2.5e-098
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a873778632:18:9
+pos.-specific     C  1:::1:1::::::::2a:
+probability       G  :a:::11::::3::1:::
+matrix            T  9:a:124232438a8:::
+
+         bits    3.4                 * 
+                 3.0  *              * 
+                 2.7  *              * 
+                 2.4  *              * 
+Relative         2.0  *              * 
+Entropy          1.7  *              * 
+(17.1 bits)      1.4 ****         *  * 
+                 1.0 ****         * ***
+                 0.7 ****     *  ******
+                 0.3 ****** ***********
+                 0.0 ------------------
+
+Multilevel           TGTAAATAAAAATTTACA
+consensus                 TATTTTGA  C  
+sequence                        T      
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+HD1229_p-80(tyrR)             2  7.71e-11          T TGTAAACAAAAGTTTCCA A         
+APP7_0857_p-80(tyrR)          2  7.71e-11          A TGTAAACAAAAGTTTCCA A         
+MS0762_p-30(tyrR)             2  1.07e-08          A TGTAAATAAAAGTTGCCA T         
+NT05HA_0604_p-83(tyrR)        2  1.07e-08          C TGTAAATAAAAGTTGCCA A         
+HAPS_1204_p-84(tyrR)          2  1.81e-08          T TGTAAACAAAAATTTCCA A         
+PM0665_p-63(aroF)             2  1.25e-07          G TGTATATAAATGTTTACA T         
+APP7_0642_p-97(tyrP)          2  2.83e-07          G TGTAATAATATGTTTACA G         
+PM0732_p-82(tyrP)             2  3.33e-07          C TGTAAAAAAATGGTTACA T         
+PM0811_p-134(tpl)             2  3.85e-07          G TGTAAATAATAATTTACA A         
+MS1104_p-47(aroF)             2  6.92e-07          A TGTACATATAAATTTACA T         
+HI0410_p-74(tyrR)             2  6.92e-07          A TGTAAAATAATATTTACA C         
+HSM_1247_p-99(tyrP)           2  8.83e-07          A TGTAAACATAATATTACA T         
+Asuc_1570_p-41(aroF)          2  1.40e-06          T CGTACATAAAAATTTACA G         
+HI1290_p-43(tyrA)             2  1.55e-06          T TGTAATTAATTTTTTACA A         
+PM0908_p-85(tyrR)             2  1.72e-06          A TGTAAATTTATCTTTCCA G         
+HSM_1247_p-78(tyrP)           2  1.91e-06          T TGTAAAAATAAAATTACA C         
+Asuc_0958_p-80(tyrR)          2  1.91e-06          G TGTAAAGATAAGTTGACG T         
+APP7_0187_p-34(aroF)          2  1.91e-06          C TGTATTTAAAATTTTACA G         
+HAPS_0525_p-89(tyrP)          2  2.79e-06          G TGTAATTATTTTTTTACA T         
+HSM_1080_p-57(tyrA)           2  3.06e-06          T TGTAAGTTATTTTTTACA A         
+MS0977_p-40(tyrP)             2  3.94e-06          C CGTAAAAAAATAATTACA T         
+HD0444_p-32(aroF)             2  4.26e-06          A TGTATCAAAAATTTTACA C         
+PM0665_p-86(aroF)             2  4.96e-06          A TGTAAATTATTTATTACA T         
+HI1290_p-20(tyrA)             2  4.96e-06          A TGTAAGATAAAAATTACA G         
+HAPS_0526_p-174(tyrP)         2  5.73e-06          T TGTAAAAGAAAGTTTACT A         
+HSM_1080_p-34(tyrA)           2  7.05e-06          T TGTAATAATAAATGTACA A         
+HAPS_1274_p-35(aroF)          2  1.16e-05          C TGTATTGATTTTTTTACA A         
+PM0732_p-101(tyrP)            2  1.70e-05          C TGTAAAATAATAATAACA C         
+NT05HA_0124_p-170(tpl)        2  5.16e-05          A TTTAAATTAAATTTAACA A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HD1229_p-80(tyrR)                 7.7e-11  1_[+1]_1
+APP7_0857_p-80(tyrR)              7.7e-11  1_[+1]_1
+MS0762_p-30(tyrR)                 1.1e-08  1_[+1]_1
+NT05HA_0604_p-83(tyrR)            1.1e-08  1_[+1]_1
+HAPS_1204_p-84(tyrR)              1.8e-08  1_[+1]_1
+PM0665_p-63(aroF)                 1.2e-07  1_[+1]_1
+APP7_0642_p-97(tyrP)              2.8e-07  1_[+1]_1
+PM0732_p-82(tyrP)                 3.3e-07  1_[+1]_1
+PM0811_p-134(tpl)                 3.8e-07  1_[+1]_1
+MS1104_p-47(aroF)                 6.9e-07  1_[+1]_1
+HI0410_p-74(tyrR)                 6.9e-07  1_[+1]_1
+HSM_1247_p-99(tyrP)               8.8e-07  1_[+1]_1
+Asuc_1570_p-41(aroF)              1.4e-06  1_[+1]_1
+HI1290_p-43(tyrA)                 1.6e-06  1_[+1]_1
+PM0908_p-85(tyrR)                 1.7e-06  1_[+1]_1
+HSM_1247_p-78(tyrP)               1.9e-06  1_[+1]_1
+Asuc_0958_p-80(tyrR)              1.9e-06  1_[+1]_1
+APP7_0187_p-34(aroF)              1.9e-06  1_[+1]_1
+HAPS_0525_p-89(tyrP)              2.8e-06  1_[+1]_1
+HSM_1080_p-57(tyrA)               3.1e-06  1_[+1]_1
+MS0977_p-40(tyrP)                 3.9e-06  1_[+1]_1
+HD0444_p-32(aroF)                 4.3e-06  1_[+1]_1
+PM0665_p-86(aroF)                   5e-06  1_[+1]_1
+HI1290_p-20(tyrA)                   5e-06  1_[+1]_1
+HAPS_0526_p-174(tyrP)             5.7e-06  1_[+1]_1
+HSM_1080_p-34(tyrA)               7.1e-06  1_[+1]_1
+HAPS_1274_p-35(aroF)              1.2e-05  1_[+1]_1
+PM0732_p-101(tyrP)                1.7e-05  1_[+1]_1
+NT05HA_0124_p-170(tpl)            5.2e-05  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAAAWAAAWDTTTACA width=18 seqs=29
+HD1229_p-80(tyrR)        (    2) TGTAAACAAAAGTTTCCA  1 
+APP7_0857_p-80(tyrR)     (    2) TGTAAACAAAAGTTTCCA  1 
+MS0762_p-30(tyrR)        (    2) TGTAAATAAAAGTTGCCA  1 
+NT05HA_0604_p-83(tyrR)   (    2) TGTAAATAAAAGTTGCCA  1 
+HAPS_1204_p-84(tyrR)     (    2) TGTAAACAAAAATTTCCA  1 
+PM0665_p-63(aroF)        (    2) TGTATATAAATGTTTACA  1 
+APP7_0642_p-97(tyrP)     (    2) TGTAATAATATGTTTACA  1 
+PM0732_p-82(tyrP)        (    2) TGTAAAAAAATGGTTACA  1 
+PM0811_p-134(tpl)        (    2) TGTAAATAATAATTTACA  1 
+MS1104_p-47(aroF)        (    2) TGTACATATAAATTTACA  1 
+HI0410_p-74(tyrR)        (    2) TGTAAAATAATATTTACA  1 
+HSM_1247_p-99(tyrP)      (    2) TGTAAACATAATATTACA  1 
+Asuc_1570_p-41(aroF)     (    2) CGTACATAAAAATTTACA  1 
+HI1290_p-43(tyrA)        (    2) TGTAATTAATTTTTTACA  1 
+PM0908_p-85(tyrR)        (    2) TGTAAATTTATCTTTCCA  1 
+HSM_1247_p-78(tyrP)      (    2) TGTAAAAATAAAATTACA  1 
+Asuc_0958_p-80(tyrR)     (    2) TGTAAAGATAAGTTGACG  1 
+APP7_0187_p-34(aroF)     (    2) TGTATTTAAAATTTTACA  1 
+HAPS_0525_p-89(tyrP)     (    2) TGTAATTATTTTTTTACA  1 
+HSM_1080_p-57(tyrA)      (    2) TGTAAGTTATTTTTTACA  1 
+MS0977_p-40(tyrP)        (    2) CGTAAAAAAATAATTACA  1 
+HD0444_p-32(aroF)        (    2) TGTATCAAAAATTTTACA  1 
+PM0665_p-86(aroF)        (    2) TGTAAATTATTTATTACA  1 
+HI1290_p-20(tyrA)        (    2) TGTAAGATAAAAATTACA  1 
+HAPS_0526_p-174(tyrP)    (    2) TGTAAAAGAAAGTTTACT  1 
+HSM_1080_p-34(tyrA)      (    2) TGTAATAATAAATGTACA  1 
+HAPS_1274_p-35(aroF)     (    2) TGTATTGATTTTTTTACA  1 
+PM0732_p-101(tyrP)       (    2) TGTAAAATAATAATAACA  1 
+NT05HA_0124_p-170(tpl)   (    2) TTTAAATTAAATTTAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 87 bayes= 3.42717 E= 2.5e-098 
+ -1150    -48  -1150    133 
+ -1150  -1150    326   -342 
+ -1150  -1150  -1150    143 
+   121  -1150  -1150  -1150 
+    87    -48  -1150   -142 
+    67   -147    -55    -84 
+   -33     52    -55     28 
+    74  -1150   -155    -62 
+    67  -1150  -1150    -25 
+    87  -1150  -1150    -84 
+    44  -1150  -1150     16 
+   -33   -147    162    -25 
+  -107  -1150   -155    104 
+ -1150  -1150   -155    138 
+  -265  -1150      3    116 
+    87    111  -1150  -1150 
+ -1150    338  -1150  -1150 
+   110  -1150   -155   -342 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 29 E= 2.5e-098 
+ 0.000000  0.068966  0.000000  0.931034 
+ 0.000000  0.000000  0.965517  0.034483 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.793103  0.068966  0.000000  0.137931 
+ 0.689655  0.034483  0.068966  0.206897 
+ 0.344828  0.137931  0.068966  0.448276 
+ 0.724138  0.000000  0.034483  0.241379 
+ 0.689655  0.000000  0.000000  0.310345 
+ 0.793103  0.000000  0.000000  0.206897 
+ 0.586207  0.000000  0.000000  0.413793 
+ 0.344828  0.034483  0.310345  0.310345 
+ 0.206897  0.000000  0.034483  0.758621 
+ 0.000000  0.000000  0.034483  0.965517 
+ 0.068966  0.000000  0.103448  0.827586 
+ 0.793103  0.206897  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.931034  0.000000  0.034483  0.034483 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAAWAAAWDTTTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTAA[AT][TA][AT][AT][AT][AT][AGT][TA]TT[AC]CA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+APP7_0857_p-80(tyrR)             2.31e-10  1_[+1(7.71e-11)]_1
+APP7_0187_p-34(aroF)             5.72e-06  1_[+1(1.91e-06)]_1
+APP7_0642_p-97(tyrP)             8.50e-07  1_[+1(2.83e-07)]_1
+Asuc_0958_p-80(tyrR)             5.72e-06  1_[+1(1.91e-06)]_1
+Asuc_1570_p-41(aroF)             4.19e-06  1_[+1(1.40e-06)]_1
+NT05HA_0604_p-83(tyrR)           3.22e-08  1_[+1(1.07e-08)]_1
+NT05HA_0124_p-170(tpl)           1.55e-04  1_[+1(5.16e-05)]_1
+HD1229_p-80(tyrR)                2.31e-10  1_[+1(7.71e-11)]_1
+HD0444_p-32(aroF)                1.28e-05  1_[+1(4.26e-06)]_1
+HI0410_p-74(tyrR)                2.08e-06  1_[+1(6.92e-07)]_1
+HI1290_p-43(tyrA)                4.65e-06  1_[+1(1.55e-06)]_1
+HI1290_p-20(tyrA)                1.49e-05  1_[+1(4.96e-06)]_1
+HAPS_1204_p-84(tyrR)             5.43e-08  1_[+1(1.81e-08)]_1
+HAPS_1274_p-35(aroF)             3.48e-05  1_[+1(1.16e-05)]_1
+HAPS_0526_p-174(tyrP)            1.72e-05  1_[+1(5.73e-06)]_1
+HAPS_0525_p-89(tyrP)             8.37e-06  1_[+1(2.79e-06)]_1
+HSM_1080_p-57(tyrA)              9.18e-06  1_[+1(3.06e-06)]_1
+HSM_1080_p-34(tyrA)              2.12e-05  1_[+1(7.05e-06)]_1
+HSM_1247_p-99(tyrP)              2.65e-06  1_[+1(8.83e-07)]_1
+HSM_1247_p-78(tyrP)              5.72e-06  1_[+1(1.91e-06)]_1
+MS0762_p-30(tyrR)                3.22e-08  1_[+1(1.07e-08)]_1
+MS1104_p-47(aroF)                2.08e-06  1_[+1(6.92e-07)]_1
+MS0977_p-40(tyrP)                1.18e-05  1_[+1(3.94e-06)]_1
+PM0908_p-85(tyrR)                5.17e-06  1_[+1(1.72e-06)]_1
+PM0665_p-86(aroF)                1.49e-05  1_[+1(4.96e-06)]_1
+PM0665_p-63(aroF)                3.74e-07  1_[+1(1.25e-07)]_1
+PM0732_p-101(tyrP)               5.11e-05  1_[+1(1.70e-05)]_1
+PM0732_p-82(tyrP)                1.00e-06  1_[+1(3.33e-07)]_1
+PM0811_p-134(tpl)                1.15e-06  1_[+1(3.85e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

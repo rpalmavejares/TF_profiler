@@ -1,0 +1,226 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NrtR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PMI2395_p-115(nrtR)      1.0000     21  PMI2395_p-80(nrtR)       1.0000     21  
+PMI2395_p-140(nrtR)      1.0000     21  PMI2396_p-33(nrtX)       1.0000     21  
+PMI2396_p-58(nrtX)       1.0000     21  PMI2396_p-93(nrtX)       1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NrtR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NrtR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             126    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=    126    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.365 C 0.135 G 0.135 T 0.365 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.362 C 0.138 G 0.138 T 0.362 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TAKTGTCHTWADGACAMTA MEME-1	width =  19  sites =   6  llr = 108  E-value = 9.1e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :82::::32583:a:a32a
+pos.-specific     C  ::::::a3::::::a:5::
+probability       G  ::5:a::::::3a::::::
+matrix            T  a23a:a:38523::::28:
+
+         bits    2.9     * *     * *    
+                 2.6     * *     * *    
+                 2.3     * *     * *    
+                 2.0     * *     * *    
+Relative         1.7     * *     * *    
+Entropy          1.4 *  ****     ****  *
+(26.0 bits)      1.1 *  ****     ****  *
+                 0.9 ** **** * * **** **
+                 0.6 ******* *** *******
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           TAGTGTCATAAAGACACTA
+consensus              T    C T G    A  
+sequence                    T   T       
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+PMI2396_p-33(nrtX)            2  8.59e-10          T TAATGTCATAAGGACACTA A         
+PMI2395_p-140(nrtR)           2  8.59e-10          T TAGTGTCCTTATGACATTA A         
+PMI2396_p-58(nrtX)            2  3.02e-09          A TAGTGTCCATAAGACAATA T         
+PMI2395_p-115(nrtR)           2  3.02e-09          A TATTGTCTTATGGACACTA T         
+PMI2396_p-93(nrtX)            2  8.21e-09          A TTTTGTCATAAAGACACTA A         
+PMI2395_p-80(nrtR)            2  8.21e-09          T TAGTGTCTTTATGACAAAA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PMI2396_p-33(nrtX)                8.6e-10  1_[+1]_1
+PMI2395_p-140(nrtR)               8.6e-10  1_[+1]_1
+PMI2396_p-58(nrtX)                  3e-09  1_[+1]_1
+PMI2395_p-115(nrtR)                 3e-09  1_[+1]_1
+PMI2396_p-93(nrtX)                8.2e-09  1_[+1]_1
+PMI2395_p-80(nrtR)                8.2e-09  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TAKTGTCHTWADGACAMTA width=19 seqs=6
+PMI2396_p-33(nrtX)       (    2) TAATGTCATAAGGACACTA  1 
+PMI2395_p-140(nrtR)      (    2) TAGTGTCCTTATGACATTA  1 
+PMI2396_p-58(nrtX)       (    2) TAGTGTCCATAAGACAATA  1 
+PMI2395_p-115(nrtR)      (    2) TATTGTCTTATGGACACTA  1 
+PMI2396_p-93(nrtX)       (    2) TTTTGTCATAAAGACACTA  1 
+PMI2395_p-80(nrtR)       (    2) TAGTGTCTTTATGACAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 18 bayes= 2.44057 E= 9.1e-017 
+  -923   -923   -923    147 
+   120   -923   -923   -111 
+  -111   -923    185    -12 
+  -923   -923   -923    147 
+  -923   -923    285   -923 
+  -923   -923   -923    147 
+  -923    285   -923   -923 
+   -12    127   -923    -12 
+  -111   -923   -923    120 
+    47   -923   -923     47 
+   120   -923   -923   -111 
+   -12   -923    127    -12 
+  -923   -923    285   -923 
+   147   -923   -923   -923 
+  -923    285   -923   -923 
+   147   -923   -923   -923 
+   -12    185   -923   -111 
+  -111   -923   -923    120 
+   147   -923   -923   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 6 E= 9.1e-017 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.166667  0.000000  0.500000  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.333333  0.333333  0.000000  0.333333 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.333333  0.000000  0.333333  0.333333 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.500000  0.000000  0.166667 
+ 0.166667  0.000000  0.000000  0.833333 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAKTGTCHTWADGACAMTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TA[GT]TGTC[ACT]T[AT]A[AGT]GACA[CA]TA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PMI2395_p-115(nrtR)              9.07e-09  1_[+1(3.02e-09)]_1
+PMI2395_p-80(nrtR)               2.46e-08  1_[+1(8.21e-09)]_1
+PMI2395_p-140(nrtR)              2.58e-09  1_[+1(8.59e-10)]_1
+PMI2396_p-33(nrtX)               2.58e-09  1_[+1(8.59e-10)]_1
+PMI2396_p-58(nrtX)               9.07e-09  1_[+1(3.02e-09)]_1
+PMI2396_p-93(nrtX)               2.46e-08  1_[+1(8.21e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

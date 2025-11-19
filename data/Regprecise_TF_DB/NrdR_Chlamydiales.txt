@@ -1,0 +1,256 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/NrdR_Chlamydiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TC0214_p-201(nrdA)       1.0000     16  TC0214_p-169(nrdA)       1.0000     16  
+CT827_p-201(nrdA)        1.0000     16  CT827_p-169(nrdA)        1.0000     16  
+CAB745_p-211(nrdA)       1.0000     16  CAB745_p-179(nrdA)       1.0000     16  
+CCA00777_p-178(nrdA)     1.0000     16  CCA00777_p-210(nrdA)     1.0000     16  
+CF0237_p-210(nrdA)       1.0000     16  CF0237_p-178(nrdA)       1.0000     16  
+CP0872_p-180(nrdA)       1.0000     16  CP0872_p-212(nrdA)       1.0000     16  
+pc0111_p-137(nrdD)       1.0000     16  pc0111_p-44(nrdD)        1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/NrdR_Chlamydiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chlamydiales/NrdR_Chlamydiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             224    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    224    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.268 C 0.152 G 0.152 T 0.429 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.268 C 0.154 G 0.154 T 0.425 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TYMCTATATATKGKRT MEME-1	width =  16  sites =  14  llr = 188  E-value = 5.2e-053
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::613a:a18::::5:
+pos.-specific     C  2439::3::2::1:::
+probability       G  ::::::1::::49451
+matrix            T  861:7:6:9:a6:6:9
+
+         bits    2.7                 
+                 2.4             *   
+                 2.2    *        *   
+                 1.9    * * *    *   
+Relative         1.6    * * *    *   
+Entropy          1.4    * * * ** * * 
+(19.4 bits)      1.1    * * * ** * **
+                 0.8 ** * * *********
+                 0.5 ****************
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           TTACTATATATTGTAT
+consensus            CCC A C  C G GG 
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+CP0872_p-180(nrdA)            1  4.18e-09          . TCACTACATATTGGGT           
+CF0237_p-178(nrdA)            1  4.18e-09          . TCACTACATATTGGGT           
+CCA00777_p-178(nrdA)          1  4.18e-09          . TCACTACATATTGGGT           
+CAB745_p-179(nrdA)            1  4.18e-09          . TCACTACATATTGGGT           
+CT827_p-169(nrdA)             1  1.09e-07          . TCACAATATCTTGGGT           
+TC0214_p-169(nrdA)            1  1.09e-07          . TCACAATATCTTGGGT           
+CF0237_p-210(nrdA)            1  1.60e-07          . TTCCTATATATGGTAT           
+CCA00777_p-210(nrdA)          1  1.60e-07          . TTCCTATATATGGTAT           
+CAB745_p-211(nrdA)            1  1.60e-07          . TTCCTATATATGGTAT           
+CP0872_p-212(nrdA)            1  7.04e-07          . TTCCTATATATGGTAG           
+CT827_p-201(nrdA)             1  1.01e-06          . CTTCTATATATGGTAT           
+TC0214_p-201(nrdA)            1  1.01e-06          . CTTCTATATATGGTAT           
+pc0111_p-44(nrdD)             1  2.32e-06          . CTACAAGATCTTGTAT           
+pc0111_p-137(nrdD)            1  1.41e-05          . TTAAAATAAATTCTGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CP0872_p-180(nrdA)                4.2e-09  [+1]
+CF0237_p-178(nrdA)                4.2e-09  [+1]
+CCA00777_p-178(nrdA)              4.2e-09  [+1]
+CAB745_p-179(nrdA)                4.2e-09  [+1]
+CT827_p-169(nrdA)                 1.1e-07  [+1]
+TC0214_p-169(nrdA)                1.1e-07  [+1]
+CF0237_p-210(nrdA)                1.6e-07  [+1]
+CCA00777_p-210(nrdA)              1.6e-07  [+1]
+CAB745_p-211(nrdA)                1.6e-07  [+1]
+CP0872_p-212(nrdA)                  7e-07  [+1]
+CT827_p-201(nrdA)                   1e-06  [+1]
+TC0214_p-201(nrdA)                  1e-06  [+1]
+pc0111_p-44(nrdD)                 2.3e-06  [+1]
+pc0111_p-137(nrdD)                1.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TYMCTATATATKGKRT width=16 seqs=14
+CP0872_p-180(nrdA)       (    1) TCACTACATATTGGGT  1 
+CF0237_p-178(nrdA)       (    1) TCACTACATATTGGGT  1 
+CCA00777_p-178(nrdA)     (    1) TCACTACATATTGGGT  1 
+CAB745_p-179(nrdA)       (    1) TCACTACATATTGGGT  1 
+CT827_p-169(nrdA)        (    1) TCACAATATCTTGGGT  1 
+TC0214_p-169(nrdA)       (    1) TCACAATATCTTGGGT  1 
+CF0237_p-210(nrdA)       (    1) TTCCTATATATGGTAT  1 
+CCA00777_p-210(nrdA)     (    1) TTCCTATATATGGTAT  1 
+CAB745_p-211(nrdA)       (    1) TTCCTATATATGGTAT  1 
+CP0872_p-212(nrdA)       (    1) TTCCTATATATGGTAG  1 
+CT827_p-201(nrdA)        (    1) CTTCTATATATGGTAT  1 
+TC0214_p-201(nrdA)       (    1) CTTCTATATATGGTAT  1 
+pc0111_p-44(nrdD)        (    1) CTACAAGATCTTGTAT  1 
+pc0111_p-137(nrdD)       (    1) TTAAAATAAATTCTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 14 bayes= 1.12553 E= 5.2e-053 
+ -1045     48  -1045     88 
+ -1045    148  -1045     43 
+   109     90  -1045   -157 
+  -190    260  -1045  -1045 
+     9  -1045  -1045     75 
+   190  -1045  -1045  -1045 
+ -1045     90   -110     60 
+   190  -1045  -1045  -1045 
+  -190  -1045  -1045    113 
+   155     48  -1045  -1045 
+ -1045  -1045  -1045    123 
+ -1045  -1045    148     43 
+ -1045   -110    260  -1045 
+ -1045  -1045    148     43 
+    90  -1045    170  -1045 
+ -1045  -1045   -110    113 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 14 E= 5.2e-053 
+ 0.000000  0.214286  0.000000  0.785714 
+ 0.000000  0.428571  0.000000  0.571429 
+ 0.571429  0.285714  0.000000  0.142857 
+ 0.071429  0.928571  0.000000  0.000000 
+ 0.285714  0.000000  0.000000  0.714286 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.285714  0.071429  0.642857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.785714  0.214286  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.428571  0.571429 
+ 0.000000  0.071429  0.928571  0.000000 
+ 0.000000  0.000000  0.428571  0.571429 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.000000  0.071429  0.928571 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYMCTATATATKGKRT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC][TC][AC]C[TA]A[TC]AT[AC]T[TG]G[TG][AG]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TC0214_p-201(nrdA)               1.01e-06  [+1(1.01e-06)]
+TC0214_p-169(nrdA)               1.09e-07  [+1(1.09e-07)]
+CT827_p-201(nrdA)                1.01e-06  [+1(1.01e-06)]
+CT827_p-169(nrdA)                1.09e-07  [+1(1.09e-07)]
+CAB745_p-211(nrdA)               1.60e-07  [+1(1.60e-07)]
+CAB745_p-179(nrdA)               4.18e-09  [+1(4.18e-09)]
+CCA00777_p-178(nrdA)             4.18e-09  [+1(4.18e-09)]
+CCA00777_p-210(nrdA)             1.60e-07  [+1(1.60e-07)]
+CF0237_p-210(nrdA)               1.60e-07  [+1(1.60e-07)]
+CF0237_p-178(nrdA)               4.18e-09  [+1(4.18e-09)]
+CP0872_p-180(nrdA)               4.18e-09  [+1(4.18e-09)]
+CP0872_p-212(nrdA)               7.04e-07  [+1(7.04e-07)]
+pc0111_p-137(nrdD)               1.41e-05  [+1(1.41e-05)]
+pc0111_p-44(nrdD)                2.32e-06  [+1(2.32e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

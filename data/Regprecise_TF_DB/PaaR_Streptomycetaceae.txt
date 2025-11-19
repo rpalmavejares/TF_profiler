@@ -1,0 +1,313 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/PaaR_Streptomycetaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SCO7471_p-157(paaA)      1.0000     22  SCO7470_p-152(paaI)      1.0000     22  
+SCO3835_p-106(paaZ)      1.0000     22  SCO3834_p-74(paaH)       1.0000     22  
+SCO3831_p-78(bkdA)       1.0000     22  SCO7471_p-34(paaA)       1.0000     22  
+SCO7470_p-29(paaI)       1.0000     22  SAV_4358_p-96(paaZ)      1.0000     22  
+SAV_4362_p-77(bkdA)      1.0000     22  SAV_1257_p-56(paaK)      1.0000     22  
+SAV_4359_p-74(paaH)      1.0000     22  SAV_4354_p-48(paaA)      1.0000     22  
+SCAB_82281_p-34(paaA)    1.0000     22  SCAB_45351_p-155(paaZ)   1.0000     22  
+SCAB_45341_p-74(paaH)    1.0000     22  SCAB_45311_p-77(bkdA)    1.0000     22  
+SCAB_82281_p-166(paaA)   1.0000     22  SCAB_82261_p-184(paaK)   1.0000     22  
+SCAB_82261_p-52(paaK)    1.0000     22  SGR_3741_p-34(paaA)      1.0000     22  
+SGR_3745_p-72(paaZ)      1.0000     22  SGR_6814_p-77(paaK)      1.0000     22  
+SGR_3746_p-106(paaR)     1.0000     22  SGR_3748_p-127(bkdA)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/PaaR_Streptomycetaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Streptomycetaceae/PaaR_Streptomycetaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             528    N=              24
+sample: seed=            0    hsfrac=          0
+        searchsize=    528    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.22 C 0.29 G 0.309 T 0.182 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.22 C 0.289 G 0.308 T 0.182 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VSCRACCGAACRWTCGGTYGGK MEME-1	width =  22  sites =  24  llr = 466  E-value = 4.1e-156
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  41:4a1::a6:35:::::22::
+pos.-specific     C  458::9a::28:::a:::5:32
+probability       G  23:6:::a:::72::a9::873
+matrix            T  ::2::::::23:3a::1a3::5
+
+         bits    2.5              *   *    
+                 2.2     *   *    *   *    
+                 2.0     *   *    *   *    
+                 1.7     * ***    *** *    
+Relative         1.5     * ***    *** *    
+Entropy          1.2     ***** *  *****    
+(28.0 bits)      1.0   * ***** ** ***** *  
+                 0.7   ********************
+                 0.5 * ********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ACCGACCGAACGATCGGTCGGT
+consensus            CGTA     TTAT     TACG
+sequence             G           G         
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+SGR_3748_p-127(bkdA)          1  7.46e-11          . CGCGACCGAACAATCGGTAGGT           
+SGR_3746_p-106(paaR)          1  1.19e-10          . AGTAACCGAACGATCGGTCGGG           
+SCAB_45311_p-77(bkdA)         1  1.19e-10          . AACGACCGAACAATCGGTAGGT           
+SCAB_45341_p-74(paaH)         1  1.19e-10          . AGTAACCGAACGATCGGTCGGG           
+SAV_4359_p-74(paaH)           1  1.19e-10          . AGTAACCGAACGATCGGTCGGG           
+SCO3834_p-74(paaH)            1  1.19e-10          . AGTAACCGAACGATCGGTCGGG           
+SGR_3745_p-72(paaZ)           1  4.60e-10          . CCCGACCGATCGTTCGGTTACT           
+SCAB_45351_p-155(paaZ)        1  4.60e-10          . CCCGACCGATCGTTCGGTTACT           
+SAV_4358_p-96(paaZ)           1  4.60e-10          . CCCGACCGATCGTTCGGTTACT           
+SCO3835_p-106(paaZ)           1  4.60e-10          . CCCGACCGATCGTTCGGTTACT           
+SAV_4362_p-77(bkdA)           1  5.16e-10          . GACGACCGAACAATCGGTAGGT           
+SCO3831_p-78(bkdA)            1  5.16e-10          . GACGACCGAACAATCGGTAGGT           
+SGR_3741_p-34(paaA)           1  5.76e-10          . AGGAACCGAACGATCGGTCGGT           
+SAV_4354_p-48(paaA)           1  7.93e-10          . ACCGAACGATCGGTCGGTCGGT           
+SCAB_82261_p-52(paaK)         1  9.73e-10          . AGCAACCGAATGGTCGGTCGGC           
+SCAB_82281_p-166(paaA)        1  1.08e-09          . GCCGACCGACCATTCGGTTGCT           
+SCO7471_p-34(paaA)            1  1.54e-09          . ACCGAACGAATGGTCGGTTGGG           
+SCO7470_p-152(paaI)           1  1.68e-09          . CCCAACCGACCATTCGTTCGGT           
+SCO7470_p-29(paaI)            1  1.98e-09          . GCTAACCGAATGGTCGGTCGGG           
+SCAB_82281_p-34(paaA)         1  2.14e-09          . CCCGAACGAATGGTCGGTTGGG           
+SGR_6814_p-77(paaK)           1  2.70e-09          . ATCGACCGAATGATCGGTCGCC           
+SCO7471_p-157(paaA)           1  2.70e-09          . CCCGACCGACCATTCGGTTAGC           
+SCAB_82261_p-184(paaK)        1  3.55e-09          . CCCAACCGACCATTCGTTCGGG           
+SAV_1257_p-56(paaK)           1  7.40e-09          . GGCTACCGAATGATCGGTCGCC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SGR_3748_p-127(bkdA)              7.5e-11  [+1]
+SGR_3746_p-106(paaR)              1.2e-10  [+1]
+SCAB_45311_p-77(bkdA)             1.2e-10  [+1]
+SCAB_45341_p-74(paaH)             1.2e-10  [+1]
+SAV_4359_p-74(paaH)               1.2e-10  [+1]
+SCO3834_p-74(paaH)                1.2e-10  [+1]
+SGR_3745_p-72(paaZ)               4.6e-10  [+1]
+SCAB_45351_p-155(paaZ)            4.6e-10  [+1]
+SAV_4358_p-96(paaZ)               4.6e-10  [+1]
+SCO3835_p-106(paaZ)               4.6e-10  [+1]
+SAV_4362_p-77(bkdA)               5.2e-10  [+1]
+SCO3831_p-78(bkdA)                5.2e-10  [+1]
+SGR_3741_p-34(paaA)               5.8e-10  [+1]
+SAV_4354_p-48(paaA)               7.9e-10  [+1]
+SCAB_82261_p-52(paaK)             9.7e-10  [+1]
+SCAB_82281_p-166(paaA)            1.1e-09  [+1]
+SCO7471_p-34(paaA)                1.5e-09  [+1]
+SCO7470_p-152(paaI)               1.7e-09  [+1]
+SCO7470_p-29(paaI)                  2e-09  [+1]
+SCAB_82281_p-34(paaA)             2.1e-09  [+1]
+SGR_6814_p-77(paaK)               2.7e-09  [+1]
+SCO7471_p-157(paaA)               2.7e-09  [+1]
+SCAB_82261_p-184(paaK)            3.6e-09  [+1]
+SAV_1257_p-56(paaK)               7.4e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VSCRACCGAACRWTCGGTYGGK width=22 seqs=24
+SGR_3748_p-127(bkdA)     (    1) CGCGACCGAACAATCGGTAGGT  1 
+SGR_3746_p-106(paaR)     (    1) AGTAACCGAACGATCGGTCGGG  1 
+SCAB_45311_p-77(bkdA)    (    1) AACGACCGAACAATCGGTAGGT  1 
+SCAB_45341_p-74(paaH)    (    1) AGTAACCGAACGATCGGTCGGG  1 
+SAV_4359_p-74(paaH)      (    1) AGTAACCGAACGATCGGTCGGG  1 
+SCO3834_p-74(paaH)       (    1) AGTAACCGAACGATCGGTCGGG  1 
+SGR_3745_p-72(paaZ)      (    1) CCCGACCGATCGTTCGGTTACT  1 
+SCAB_45351_p-155(paaZ)   (    1) CCCGACCGATCGTTCGGTTACT  1 
+SAV_4358_p-96(paaZ)      (    1) CCCGACCGATCGTTCGGTTACT  1 
+SCO3835_p-106(paaZ)      (    1) CCCGACCGATCGTTCGGTTACT  1 
+SAV_4362_p-77(bkdA)      (    1) GACGACCGAACAATCGGTAGGT  1 
+SCO3831_p-78(bkdA)       (    1) GACGACCGAACAATCGGTAGGT  1 
+SGR_3741_p-34(paaA)      (    1) AGGAACCGAACGATCGGTCGGT  1 
+SAV_4354_p-48(paaA)      (    1) ACCGAACGATCGGTCGGTCGGT  1 
+SCAB_82261_p-52(paaK)    (    1) AGCAACCGAATGGTCGGTCGGC  1 
+SCAB_82281_p-166(paaA)   (    1) GCCGACCGACCATTCGGTTGCT  1 
+SCO7471_p-34(paaA)       (    1) ACCGAACGAATGGTCGGTTGGG  1 
+SCO7470_p-152(paaI)      (    1) CCCAACCGACCATTCGTTCGGT  1 
+SCO7470_p-29(paaI)       (    1) GCTAACCGAATGGTCGGTCGGG  1 
+SCAB_82281_p-34(paaA)    (    1) CCCGAACGAATGGTCGGTTGGG  1 
+SGR_6814_p-77(paaK)      (    1) ATCGACCGAATGATCGGTCGCC  1 
+SCO7471_p-157(paaA)      (    1) CCCGACCGACCATTCGGTTAGC  1 
+SCAB_82261_p-184(paaK)   (    1) CCCAACCGACCATTCGTTCGGG  1 
+SAV_1257_p-56(paaK)      (    1) GGCTACCGAATGATCGGTCGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 24 bayes= 1.45943 E= 4.1e-156 
+    92     37    -57  -1123 
+   -81     79     11   -213 
+ -1123    137   -288     19 
+    77  -1123     92   -213 
+   218  -1123  -1123  -1123 
+   -81    160  -1123  -1123 
+ -1123    179  -1123  -1123 
+ -1123  -1123    170  -1123 
+   218  -1123  -1123  -1123 
+   151    -80  -1123     19 
+ -1123    137  -1123     46 
+    60  -1123    111  -1123 
+   106  -1123    -57     87 
+ -1123  -1123  -1123    245 
+ -1123    179  -1123  -1123 
+ -1123  -1123    170  -1123 
+ -1123  -1123    157   -113 
+ -1123  -1123  -1123    245 
+   -40     79  -1123     87 
+    -8  -1123    136  -1123 
+ -1123      1    120  -1123 
+ -1123    -80     11    145 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 24 E= 4.1e-156 
+ 0.416667  0.375000  0.208333  0.000000 
+ 0.125000  0.500000  0.333333  0.041667 
+ 0.000000  0.750000  0.041667  0.208333 
+ 0.375000  0.000000  0.583333  0.041667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.125000  0.875000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.166667  0.000000  0.208333 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.458333  0.000000  0.208333  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.916667  0.083333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.166667  0.500000  0.000000  0.333333 
+ 0.208333  0.000000  0.791667  0.000000 
+ 0.000000  0.291667  0.708333  0.000000 
+ 0.000000  0.166667  0.333333  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VSCRACCGAACRWTCGGTYGGK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[ACG][CG][CT][GA]ACCGA[AT][CT][GA][ATG]TCGGT[CT][GA][GC][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SCO7471_p-157(paaA)              2.70e-09  [+1(2.70e-09)]
+SCO7470_p-152(paaI)              1.68e-09  [+1(1.68e-09)]
+SCO3835_p-106(paaZ)              4.60e-10  [+1(4.60e-10)]
+SCO3834_p-74(paaH)               1.19e-10  [+1(1.19e-10)]
+SCO3831_p-78(bkdA)               5.16e-10  [+1(5.16e-10)]
+SCO7471_p-34(paaA)               1.54e-09  [+1(1.54e-09)]
+SCO7470_p-29(paaI)               1.98e-09  [+1(1.98e-09)]
+SAV_4358_p-96(paaZ)              4.60e-10  [+1(4.60e-10)]
+SAV_4362_p-77(bkdA)              5.16e-10  [+1(5.16e-10)]
+SAV_1257_p-56(paaK)              7.40e-09  [+1(7.40e-09)]
+SAV_4359_p-74(paaH)              1.19e-10  [+1(1.19e-10)]
+SAV_4354_p-48(paaA)              7.93e-10  [+1(7.93e-10)]
+SCAB_82281_p-34(paaA)            2.14e-09  [+1(2.14e-09)]
+SCAB_45351_p-155(paaZ)           4.60e-10  [+1(4.60e-10)]
+SCAB_45341_p-74(paaH)            1.19e-10  [+1(1.19e-10)]
+SCAB_45311_p-77(bkdA)            1.19e-10  [+1(1.19e-10)]
+SCAB_82281_p-166(paaA)           1.08e-09  [+1(1.08e-09)]
+SCAB_82261_p-184(paaK)           3.55e-09  [+1(3.55e-09)]
+SCAB_82261_p-52(paaK)            9.73e-10  [+1(9.73e-10)]
+SGR_3741_p-34(paaA)              5.76e-10  [+1(5.76e-10)]
+SGR_3745_p-72(paaZ)              4.60e-10  [+1(4.60e-10)]
+SGR_6814_p-77(paaK)              2.70e-09  [+1(2.70e-09)]
+SGR_3746_p-106(paaR)             1.19e-10  [+1(1.19e-10)]
+SGR_3748_p-127(bkdA)             7.46e-11  [+1(7.46e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

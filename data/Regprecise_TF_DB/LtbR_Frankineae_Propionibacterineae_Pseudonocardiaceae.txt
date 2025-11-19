@@ -1,0 +1,307 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/LtbR_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Acel_1591_p-43(leuC)     1.0000     19  Acel_1592_p-32(ltbR)     1.0000     19  
+Noca_3298_p-99(leuC)     1.0000     19  Noca_3299_p-32(ltbR)     1.0000     19  
+Amir_6006_p-86(leuC)     1.0000     19  Amir_6006_p-65(leuC)     1.0000     19  
+Amir_6007_p-32(ltbR)     1.0000     19  Amir_6007_p-11(ltbR)     1.0000     19  
+Svir_09060_p-100(leuC)   1.0000     19  Svir_09060_p-79(leuC)    1.0000     19  
+Svir_09050_p-107(ltbR)   1.0000     19  Svir_09050_p-86(ltbR)    1.0000     19  
+SACE_6144_p-97(leuC)     1.0000     19  SACE_6144_p-76(leuC)     1.0000     19  
+SACE_6145_p-80(ltbR)     1.0000     19  SACE_6145_p-59(ltbR)     1.0000     19  
+Namu_1478_p-98(leuC)     1.0000     19  Namu_1478_p-77(leuC)     1.0000     19  
+Namu_1477_p-32(ltbR)     1.0000     19  Namu_1477_p-11(ltbR)     1.0000     19  
+Francci3_3621_p-78(leuC) 1.0000     19  Francci3_3622_p-32(ltbR) 1.0000     19  
+Franean1_1113_p-154(leuC 1.0000     19  Franean1_1112_p79(ltbR)  1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/LtbR_Frankineae_Propionibacterineae_Pseudonocardiaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Frankineae_Propionibacterineae_Pseudonocardiaceae/LtbR_Frankineae_Propionibacterineae_Pseudonocardiaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       24    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             456    N=              24
+sample: seed=            0    hsfrac=          0
+        searchsize=    456    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.254 C 0.246 G 0.246 T 0.254 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.254 C 0.246 G 0.246 T 0.254 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF HRTCYCABDWHVTGRGAYD MEME-1	width =  19  sites =  24  llr = 299  E-value = 4.5e-092
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  33:2::8:4523::5:a23
+pos.-specific     C  5::85a:52:333::::5:
+probability       G  :5::::333:25:a58::5
+matrix            T  32a:5::3254:8::2:33
+
+         bits    2.0   *  *       *  *  
+                 1.8   *  *       *  *  
+                 1.6   *  *       *  *  
+                 1.4   ** *       * **  
+Relative         1.2   ** **     ** **  
+Entropy          1.0   *****     *****  
+(17.9 bits)      0.8   *****     *****  
+                 0.6   *****  *  *****  
+                 0.4  ******  *  ****** 
+                 0.2 ******** * ********
+                 0.0 -------------------
+
+Multilevel           CGTCTCACAATGTGAGACG
+consensus            AA  C GGGTCAC G  TA
+sequence             TT     TT AC     AT
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Francci3_3622_p-32(ltbR)      1  2.79e-08          . TGTCTCATGATGTGGGATG           
+Francci3_3621_p-78(leuC)      1  2.79e-08          . CATCCCACATCATGAGACA           
+Noca_3299_p-32(ltbR)          1  2.79e-08          . CATCCCATGATCTGAGACG           
+Noca_3298_p-99(leuC)          1  2.79e-08          . CGTCTCAGATCATGGGATG           
+Namu_1477_p-32(ltbR)          1  6.04e-08          . CATCTCACTATGTGGGAAT           
+Namu_1478_p-77(leuC)          1  6.04e-08          . ATTCCCACATAGTGAGATG           
+Acel_1592_p-32(ltbR)          1  1.18e-07          . CGTCTCACATTGTGAGATC           
+Acel_1591_p-43(leuC)          1  1.18e-07          . GATCTCACAATGTGAGACG           
+Franean1_1112_p79(ltbR)       1  1.82e-07          . CATCTCAGGAGATGAGATG           
+Franean1_1113_p-154(leuC      1  1.82e-07          . CATCTCATCTCCTGAGATG           
+Svir_09050_p-86(ltbR)         1  1.21e-06          . AGTATCGCTTTGTGGGACA           
+Svir_09060_p-100(leuC)        1  1.21e-06          . TGTCCCACAAAGCGATACT           
+SACE_6145_p-80(ltbR)          1  1.44e-06          . CTTCCCAGATGACGAGAAG           
+SACE_6144_p-76(leuC)          1  1.44e-06          . CTTCTCGTCATCTGGGAAG           
+Amir_6007_p-11(ltbR)          1  2.50e-06          . AGTATCGGCTTGTGGGACA           
+Amir_6006_p-86(leuC)          1  2.50e-06          . TGTCCCACAAGCCGATACT           
+SACE_6145_p-59(ltbR)          1  2.88e-06          . AGTATCGGTACGTGGGACA           
+SACE_6144_p-97(leuC)          1  2.88e-06          . TGTCCCACGTACCGATACT           
+Namu_1477_p-11(ltbR)          1  3.30e-06          . AGTATCGCCTCATGGGACA           
+Namu_1478_p-98(leuC)          1  3.30e-06          . TGTCCCATGAGGCGATACT           
+Svir_09050_p-107(ltbR)        1  3.75e-06          . TATCCCAAATCGCGAGATT           
+Svir_09060_p-79(leuC)         1  3.75e-06          . AATCTCGCGATTTGGGATA           
+Amir_6007_p-32(ltbR)          1  5.36e-06          . CTTCCCAGTCAATGGGAAG           
+Amir_6006_p-65(leuC)          1  5.36e-06          . CTTCCCATTGACTGGGAAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Francci3_3622_p-32(ltbR)          2.8e-08  [+1]
+Francci3_3621_p-78(leuC)          2.8e-08  [+1]
+Noca_3299_p-32(ltbR)              2.8e-08  [+1]
+Noca_3298_p-99(leuC)              2.8e-08  [+1]
+Namu_1477_p-32(ltbR)                6e-08  [+1]
+Namu_1478_p-77(leuC)                6e-08  [+1]
+Acel_1592_p-32(ltbR)              1.2e-07  [+1]
+Acel_1591_p-43(leuC)              1.2e-07  [+1]
+Franean1_1112_p79(ltbR)           1.8e-07  [+1]
+Franean1_1113_p-154(leuC          1.8e-07  [+1]
+Svir_09050_p-86(ltbR)             1.2e-06  [+1]
+Svir_09060_p-100(leuC)            1.2e-06  [+1]
+SACE_6145_p-80(ltbR)              1.4e-06  [+1]
+SACE_6144_p-76(leuC)              1.4e-06  [+1]
+Amir_6007_p-11(ltbR)              2.5e-06  [+1]
+Amir_6006_p-86(leuC)              2.5e-06  [+1]
+SACE_6145_p-59(ltbR)              2.9e-06  [+1]
+SACE_6144_p-97(leuC)              2.9e-06  [+1]
+Namu_1477_p-11(ltbR)              3.3e-06  [+1]
+Namu_1478_p-98(leuC)              3.3e-06  [+1]
+Svir_09050_p-107(ltbR)            3.8e-06  [+1]
+Svir_09060_p-79(leuC)             3.8e-06  [+1]
+Amir_6007_p-32(ltbR)              5.4e-06  [+1]
+Amir_6006_p-65(leuC)              5.4e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF HRTCYCABDWHVTGRGAYD width=19 seqs=24
+Francci3_3622_p-32(ltbR) (    1) TGTCTCATGATGTGGGATG  1 
+Francci3_3621_p-78(leuC) (    1) CATCCCACATCATGAGACA  1 
+Noca_3299_p-32(ltbR)     (    1) CATCCCATGATCTGAGACG  1 
+Noca_3298_p-99(leuC)     (    1) CGTCTCAGATCATGGGATG  1 
+Namu_1477_p-32(ltbR)     (    1) CATCTCACTATGTGGGAAT  1 
+Namu_1478_p-77(leuC)     (    1) ATTCCCACATAGTGAGATG  1 
+Acel_1592_p-32(ltbR)     (    1) CGTCTCACATTGTGAGATC  1 
+Acel_1591_p-43(leuC)     (    1) GATCTCACAATGTGAGACG  1 
+Franean1_1112_p79(ltbR)  (    1) CATCTCAGGAGATGAGATG  1 
+Franean1_1113_p-154(leuC (    1) CATCTCATCTCCTGAGATG  1 
+Svir_09050_p-86(ltbR)    (    1) AGTATCGCTTTGTGGGACA  1 
+Svir_09060_p-100(leuC)   (    1) TGTCCCACAAAGCGATACT  1 
+SACE_6145_p-80(ltbR)     (    1) CTTCCCAGATGACGAGAAG  1 
+SACE_6144_p-76(leuC)     (    1) CTTCTCGTCATCTGGGAAG  1 
+Amir_6007_p-11(ltbR)     (    1) AGTATCGGCTTGTGGGACA  1 
+Amir_6006_p-86(leuC)     (    1) TGTCCCACAAGCCGATACT  1 
+SACE_6145_p-59(ltbR)     (    1) AGTATCGGTACGTGGGACA  1 
+SACE_6144_p-97(leuC)     (    1) TGTCCCACGTACCGATACT  1 
+Namu_1477_p-11(ltbR)     (    1) AGTATCGCCTCATGGGACA  1 
+Namu_1478_p-98(leuC)     (    1) TGTCCCATGAGGCGATACT  1 
+Svir_09050_p-107(ltbR)   (    1) TATCCCAAATCGCGAGATT  1 
+Svir_09060_p-79(leuC)    (    1) AATCTCGCGATTTGGGATA  1 
+Amir_6007_p-32(ltbR)     (    1) CTTCCCAGTCAATGGGAAG  1 
+Amir_6006_p-65(leuC)     (    1) CTTCCCATTGACTGGGAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 24 bayes= 1.45943 E= 4.5e-092 
+    -2     90   -256     -2 
+    39  -1123     90    -29 
+ -1123  -1123  -1123    197 
+   -61    176  -1123  -1123 
+ -1123     90  -1123    109 
+ -1123    202  -1123  -1123 
+   156  -1123      3  -1123 
+  -261     90      3     -2 
+    56    -56      3    -29 
+    85   -256   -256     85 
+   -29      3    -56     56 
+    -2      3     90   -261 
+ -1123      3  -1123    156 
+ -1123  -1123    202  -1123 
+   109  -1123     90  -1123 
+ -1123  -1123    176    -61 
+   197  -1123  -1123  -1123 
+   -29     90  -1123     39 
+    -2   -256     90     -2 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 24 E= 4.5e-092 
+ 0.250000  0.458333  0.041667  0.250000 
+ 0.333333  0.000000  0.458333  0.208333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.166667  0.833333  0.000000  0.000000 
+ 0.000000  0.458333  0.000000  0.541667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.041667  0.458333  0.250000  0.250000 
+ 0.375000  0.166667  0.250000  0.208333 
+ 0.458333  0.041667  0.041667  0.458333 
+ 0.208333  0.250000  0.166667  0.375000 
+ 0.250000  0.250000  0.458333  0.041667 
+ 0.000000  0.250000  0.000000  0.750000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.541667  0.000000  0.458333  0.000000 
+ 0.000000  0.000000  0.833333  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.208333  0.458333  0.000000  0.333333 
+ 0.250000  0.041667  0.458333  0.250000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HRTCYCABDWHVTGRGAYD MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CAT][GAT]TC[TC]C[AG][CGT][AGT][AT][TCA][GAC][TC]G[AG]GA[CTA][GAT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Acel_1591_p-43(leuC)             1.18e-07  [+1(1.18e-07)]
+Acel_1592_p-32(ltbR)             1.18e-07  [+1(1.18e-07)]
+Noca_3298_p-99(leuC)             2.79e-08  [+1(2.79e-08)]
+Noca_3299_p-32(ltbR)             2.79e-08  [+1(2.79e-08)]
+Amir_6006_p-86(leuC)             2.50e-06  [+1(2.50e-06)]
+Amir_6006_p-65(leuC)             5.36e-06  [+1(5.36e-06)]
+Amir_6007_p-32(ltbR)             5.36e-06  [+1(5.36e-06)]
+Amir_6007_p-11(ltbR)             2.50e-06  [+1(2.50e-06)]
+Svir_09060_p-100(leuC)           1.21e-06  [+1(1.21e-06)]
+Svir_09060_p-79(leuC)            3.75e-06  [+1(3.75e-06)]
+Svir_09050_p-107(ltbR)           3.75e-06  [+1(3.75e-06)]
+Svir_09050_p-86(ltbR)            1.21e-06  [+1(1.21e-06)]
+SACE_6144_p-97(leuC)             2.88e-06  [+1(2.88e-06)]
+SACE_6144_p-76(leuC)             1.44e-06  [+1(1.44e-06)]
+SACE_6145_p-80(ltbR)             1.44e-06  [+1(1.44e-06)]
+SACE_6145_p-59(ltbR)             2.88e-06  [+1(2.88e-06)]
+Namu_1478_p-98(leuC)             3.30e-06  [+1(3.30e-06)]
+Namu_1478_p-77(leuC)             6.04e-08  [+1(6.04e-08)]
+Namu_1477_p-32(ltbR)             6.04e-08  [+1(6.04e-08)]
+Namu_1477_p-11(ltbR)             3.30e-06  [+1(3.30e-06)]
+Francci3_3621_p-78(leuC)         2.79e-08  [+1(2.79e-08)]
+Francci3_3622_p-32(ltbR)         2.79e-08  [+1(2.79e-08)]
+Franean1_1113_p-154(leuC         1.82e-07  [+1(1.82e-07)]
+Franean1_1112_p79(ltbR)          1.82e-07  [+1(1.82e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

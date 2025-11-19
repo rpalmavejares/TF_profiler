@@ -1,0 +1,264 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CzrA_Clostridia-3.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BACPEC_01957(PF00403)Sco 1.0000     22  BRYFOR_04019(PF00403)Sco 1.0000     22  
+Cbac1_010100022152(czrA) 1.0000     22  CLOBOL_01424(czrA)Score= 1.0000     22  
+CLONEX_04065(cadA)Score= 1.0000     22  CLONEX_04065(cadA)Score= 1.0000     22  
+CLOSCI_04034(cadA)Score= 1.0000     22  DORLON_02327(PF00403)Sco 1.0000     22  
+EUBELI_01434(PF00403)Sco 1.0000     22  EUBREC_2969(PF00403)Scor 1.0000     22  
+ROSINTL182_01065(czrA)Sc 1.0000     22  ROSINTL182_01062(cadA)Sc 1.0000     22  
+RUMGNA_00975(cadA)Score= 1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CzrA_Clostridia-3.fasta -oc CzrA_Clostridia-3 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           22
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             286    N=              13    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.399 C 0.136 G 0.136 T 0.329 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.397 C 0.138 G 0.138 T 0.328 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  22  sites =  13  llr = 267  E-value = 1.9e-076
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1a:a::99:874:5221a:9:1
+pos.-specific     C  9:::::::5:123:1:9:::::
+probability       G  :::::a1::22::5:1:::1:9
+matrix            T  ::a:a::15:147:78::a:a:
+
+         bits    2.9      *                
+                 2.6      *                
+                 2.3 *    *          *    *
+                 2.0 *    *          *    *
+Relative         1.7 * * **          * * **
+Entropy          1.4 ******          *** **
+(29.6 bits)      1.1 ******* *   **  ******
+                 0.9 **********  **  ******
+                 0.6 **********  **********
+                 0.3 **********************
+                 0.0 ----------------------
+
+Multilevel           CATATGAATAAATGTTCATATG
+consensus                    C  TCAA       
+sequence                        C          
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+CLOSCI_04034(cadA)Score=      1  3.46e-12          . CATATGAATAACTGTTCATATG           
+BRYFOR_04019(PF00403)Sco      1  1.01e-11          . CATATGAATAAATGTTCATATG           
+EUBREC_2969(PF00403)Scor      1  1.52e-11          . CATATGAACAATCATTCATATG           
+CLOBOL_01424(czrA)Score=      1  1.52e-11          . CATATGAACAATCATTCATATG           
+Cbac1_010100022152(czrA)      1  1.52e-11          . CATATGAACAATCATTCATATG           
+BACPEC_01957(PF00403)Sco      1  2.15e-11          . CATATGAATGATTGTTCATATG           
+EUBELI_01434(PF00403)Sco      1  2.94e-11          . CATATGAATGAATGTTCATATG           
+CLONEX_04065(cadA)Score=      1  1.02e-10          . CATATGAACAATCACTCATATG           
+RUMGNA_00975(cadA)Score=      1  1.12e-10          . CATATGAACAGCTATTCATGTG           
+DORLON_02327(PF00403)Sco      1  3.84e-10          . CATATGAATAACTGTTCATATA           
+ROSINTL182_01062(cadA)Sc      1  1.02e-09          . CATATGAATACATGAACATATG           
+ROSINTL182_01065(czrA)Sc      1  6.71e-09          . CATATGAACAGATAAGAATATG           
+CLONEX_04065(cadA)Score=      1  8.05e-08          . AATATGGTTATATGAACATATG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CLOSCI_04034(cadA)Score=          3.5e-12  [+1]
+BRYFOR_04019(PF00403)Sco            1e-11  [+1]
+EUBREC_2969(PF00403)Scor          1.5e-11  [+1]
+CLOBOL_01424(czrA)Score=          1.5e-11  [+1]
+Cbac1_010100022152(czrA)          1.5e-11  [+1]
+BACPEC_01957(PF00403)Sco          2.1e-11  [+1]
+EUBELI_01434(PF00403)Sco          2.9e-11  [+1]
+CLONEX_04065(cadA)Score=            1e-10  [+1]
+RUMGNA_00975(cadA)Score=          1.1e-10  [+1]
+DORLON_02327(PF00403)Sco          3.8e-10  [+1]
+ROSINTL182_01062(cadA)Sc            1e-09  [+1]
+ROSINTL182_01065(czrA)Sc          6.7e-09  [+1]
+CLONEX_04065(cadA)Score=            8e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=22 seqs=13
+CLOSCI_04034(cadA)Score= (    1) CATATGAATAACTGTTCATATG  1 
+BRYFOR_04019(PF00403)Sco (    1) CATATGAATAAATGTTCATATG  1 
+EUBREC_2969(PF00403)Scor (    1) CATATGAACAATCATTCATATG  1 
+CLOBOL_01424(czrA)Score= (    1) CATATGAACAATCATTCATATG  1 
+Cbac1_010100022152(czrA) (    1) CATATGAACAATCATTCATATG  1 
+BACPEC_01957(PF00403)Sco (    1) CATATGAATGATTGTTCATATG  1 
+EUBELI_01434(PF00403)Sco (    1) CATATGAATGAATGTTCATATG  1 
+CLONEX_04065(cadA)Score= (    1) CATATGAACAATCACTCATATG  1 
+RUMGNA_00975(cadA)Score= (    1) CATATGAACAGCTATTCATGTG  1 
+DORLON_02327(PF00403)Sco (    1) CATATGAATAACTGTTCATATA  1 
+ROSINTL182_01062(cadA)Sc (    1) CATATGAATACATGAACATATG  1 
+ROSINTL182_01065(czrA)Sc (    1) CATATGAACAGATAAGAATATG  1 
+CLONEX_04065(cadA)Score= (    1) AATATGGTTATATGAACATATG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 13 bayes= 1.06711 E= 1.9e-076 
+  -236    274  -1035  -1035 
+   133  -1035  -1035  -1035 
+ -1035  -1035  -1035    161 
+   133  -1035  -1035  -1035 
+ -1035  -1035  -1035    161 
+ -1035  -1035    286  -1035 
+   122  -1035    -84  -1035 
+   122  -1035  -1035   -209 
+ -1035    174  -1035     72 
+   109  -1035     16  -1035 
+    80    -84     16   -209 
+    -4     74  -1035     23 
+ -1035    116  -1035    108 
+    22  -1035    196  -1035 
+   -78    -84  -1035    108 
+  -136  -1035    -84    123 
+  -236    274  -1035  -1035 
+   133  -1035  -1035  -1035 
+ -1035  -1035  -1035    161 
+   122  -1035    -84  -1035 
+ -1035  -1035  -1035    161 
+  -236  -1035    274  -1035 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 13 E= 1.9e-076 
+ 0.076923  0.923077  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.923077  0.000000  0.000000  0.076923 
+ 0.000000  0.461538  0.000000  0.538462 
+ 0.846154  0.000000  0.153846  0.000000 
+ 0.692308  0.076923  0.153846  0.076923 
+ 0.384615  0.230769  0.000000  0.384615 
+ 0.000000  0.307692  0.000000  0.692308 
+ 0.461538  0.000000  0.538462  0.000000 
+ 0.230769  0.076923  0.000000  0.692308 
+ 0.153846  0.000000  0.076923  0.769231 
+ 0.076923  0.923077  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.076923  0.000000  0.923077  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+CATATGAA[TC]AA[ATC][TC][GA][TA]TCATATG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACPEC_01957(PF00403)Sco         2.15e-11  [+1(2.15e-11)]
+BRYFOR_04019(PF00403)Sco         1.01e-11  [+1(1.01e-11)]
+Cbac1_010100022152(czrA)         1.52e-11  [+1(1.52e-11)]
+CLOBOL_01424(czrA)Score=         1.52e-11  [+1(1.52e-11)]
+CLONEX_04065(cadA)Score=         8.05e-08  [+1(8.05e-08)]
+CLONEX_04065(cadA)Score=         1.02e-10  [+1(1.02e-10)]
+CLOSCI_04034(cadA)Score=         3.46e-12  [+1(3.46e-12)]
+DORLON_02327(PF00403)Sco         3.84e-10  [+1(3.84e-10)]
+EUBELI_01434(PF00403)Sco         2.94e-11  [+1(2.94e-11)]
+EUBREC_2969(PF00403)Scor         1.52e-11  [+1(1.52e-11)]
+ROSINTL182_01065(czrA)Sc         6.71e-09  [+1(6.71e-09)]
+ROSINTL182_01062(cadA)Sc         1.02e-09  [+1(1.02e-09)]
+RUMGNA_00975(cadA)Score=         1.12e-10  [+1(1.12e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

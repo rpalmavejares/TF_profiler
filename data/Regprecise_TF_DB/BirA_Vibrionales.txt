@@ -1,0 +1,317 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Vibrionales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC1112(bioB)Score=8.2,Po 1.0000     33  VC1111(bioA)Score=8.2Pos 1.0000     33  
+VV1_2943(bioB)Score=7.8, 1.0000     33  VV1_2944(bioA)Score=7.8, 1.0000     33  
+VIBHAR_01807(bioB)Score= 1.0000     33  VIBHAR_01806(bioA)Score= 1.0000     33  
+VP1113(bioB)Score=7.8,Po 1.0000     33  VP1112(bioA)Score=7.8,Po 1.0000     33  
+VSAK1_00085(bioB)Score=7 1.0000     33  VSAK1_00080(bioA)Score=7 1.0000     33  
+VS_2040(bioB)Score=7.8,P 1.0000     33  VS_2041(bioA)Score=7.8,P 1.0000     33  
+VF_A1189(bioB)Score=8.6, 1.0000     33  VF_A0748(bioA)Score=8.6, 1.0000     33  
+VSAL_II0861(bioA)Score=8 1.0000     33  VSAL_II0860(bioB)Score=8 1.0000     33  
+VAS14_01401(bioB)Score=8 1.0000     33  VAS14_01396(bioA)Score=8 1.0000     33  
+PBPRA2330(bioA)Score=5.8 1.0000     33  PBPRA2329(bioB)Score=7.5 1.0000     33  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Vibrionales.fasta -oc BirA_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           33
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             660    N=              20    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.291 C 0.211 G 0.215 T 0.283 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.291 C 0.211 G 0.215 T 0.283 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  33  sites =  20  llr = 354  E-value = 7.3e-102
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4:1:6aa:333333333333333341:::a1a1
+pos.-specific     C  5:::5::a3222222222222222::::::a:1
+probability       G  11a::::::2222222222222223a::6:::6
+matrix            T  1a:a:::143333333333333334:aa5:::3
+
+         bits    2.2                                  
+                 2.0        *                      *  
+                 1.8   ** ***                 *** *** 
+                 1.6  *** ***                 *** *** 
+Relative         1.3  *** ***                 *** *** 
+Entropy          1.1  *** ***                 ******* 
+(25.6 bits)      0.9  *******                 ******* 
+                 0.7  *******                 ******* 
+                 0.4 *********               *********
+                 0.2 *********               *********
+                 0.0 ---------------------------------
+
+Multilevel           CTGTAAACTAAAAAAAAAAAAAAAAGTTGACAG
+consensus            A   C   ATTTTTTTTTTTTTTTT   T   T
+sequence                     CGGGGGGGGGGGGGGGG        
+                              CCCCCCCCCCCCCCC         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site             
+-------------             ----- ---------            ---------------------------------
+VAS14_01401(bioB)Score=8      1  7.26e-10          . ATGTAAACCNNNNNNNNNNNNNNNAGTTGACAG           
+VS_2040(bioB)Score=7.8,P      1  8.83e-10          . ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG           
+VP1113(bioB)Score=7.8,Po      1  8.83e-10          . ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG           
+VIBHAR_01807(bioB)Score=      1  8.83e-10          . ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG           
+VV1_2943(bioB)Score=7.8,      1  8.83e-10          . ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG           
+VC1112(bioB)Score=8.2,Po      1  8.83e-10          . ATGTAAACCNNNNNNNNNNNNNNNTGTTGACAG           
+VAS14_01396(bioA)Score=8      1  2.14e-09          . CTGTCAACTNNNNNNNNNNNNNNNGGTTTACAT           
+VS_2041(bioA)Score=7.8,P      1  2.32e-09          . CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT           
+VP1112(bioA)Score=7.8,Po      1  2.32e-09          . CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT           
+VIBHAR_01806(bioA)Score=      1  2.32e-09          . CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT           
+VV1_2944(bioA)Score=7.8,      1  2.32e-09          . CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT           
+VC1111(bioA)Score=8.2Pos      1  2.70e-09          . CTGTCAACANNNNNNNNNNNNNNNGGTTTACAT           
+VSAL_II0860(bioB)Score=8      1  3.92e-09          . TTGTAAACTNNNNNNNNNNNNNNNGGTTGACAG           
+VF_A1189(bioB)Score=8.6,      1  3.92e-09          . TTGTAAACTNNNNNNNNNNNNNNNGGTTGACAG           
+VSAL_II0861(bioA)Score=8      1  4.59e-09          . CTGTCAACCNNNNNNNNNNNNNNNAGTTTACAA           
+VF_A0748(bioA)Score=8.6,      1  4.59e-09          . CTGTCAACCNNNNNNNNNNNNNNNAGTTTACAA           
+VSAK1_00085(bioB)Score=7      1  4.96e-09          . GTGTAAACTNNNNNNNNNNNNNNNTGTTGACAG           
+VSAK1_00080(bioA)Score=7      1  7.65e-09          . CTGTCAACANNNNNNNNNNNNNNNAGTTTACAC           
+PBPRA2329(bioB)Score=7.5      1  1.77e-08          . aTGTAAACCNNNNNNNNNNNNNNNtaTTgACAg           
+PBPRA2330(bioA)Score=5.8      1  9.53e-07          . cgaTAAAtCNNNNNNNNNNNNNNNGGTTgAaAg           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VAS14_01401(bioB)Score=8          7.3e-10  [+1]
+VS_2040(bioB)Score=7.8,P          8.8e-10  [+1]
+VP1113(bioB)Score=7.8,Po          8.8e-10  [+1]
+VIBHAR_01807(bioB)Score=          8.8e-10  [+1]
+VV1_2943(bioB)Score=7.8,          8.8e-10  [+1]
+VC1112(bioB)Score=8.2,Po          8.8e-10  [+1]
+VAS14_01396(bioA)Score=8          2.1e-09  [+1]
+VS_2041(bioA)Score=7.8,P          2.3e-09  [+1]
+VP1112(bioA)Score=7.8,Po          2.3e-09  [+1]
+VIBHAR_01806(bioA)Score=          2.3e-09  [+1]
+VV1_2944(bioA)Score=7.8,          2.3e-09  [+1]
+VC1111(bioA)Score=8.2Pos          2.7e-09  [+1]
+VSAL_II0860(bioB)Score=8          3.9e-09  [+1]
+VF_A1189(bioB)Score=8.6,          3.9e-09  [+1]
+VSAL_II0861(bioA)Score=8          4.6e-09  [+1]
+VF_A0748(bioA)Score=8.6,          4.6e-09  [+1]
+VSAK1_00085(bioB)Score=7            5e-09  [+1]
+VSAK1_00080(bioA)Score=7          7.7e-09  [+1]
+PBPRA2329(bioB)Score=7.5          1.8e-08  [+1]
+PBPRA2330(bioA)Score=5.8          9.5e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=33 seqs=20
+VAS14_01401(bioB)Score=8 (    1) ATGTAAACCNNNNNNNNNNNNNNNAGTTGACAG  1 
+VS_2040(bioB)Score=7.8,P (    1) ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG  1 
+VP1113(bioB)Score=7.8,Po (    1) ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG  1 
+VIBHAR_01807(bioB)Score= (    1) ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG  1 
+VV1_2943(bioB)Score=7.8, (    1) ATGTAAACTNNNNNNNNNNNNNNNTGTTGACAG  1 
+VC1112(bioB)Score=8.2,Po (    1) ATGTAAACCNNNNNNNNNNNNNNNTGTTGACAG  1 
+VAS14_01396(bioA)Score=8 (    1) CTGTCAACTNNNNNNNNNNNNNNNGGTTTACAT  1 
+VS_2041(bioA)Score=7.8,P (    1) CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT  1 
+VP1112(bioA)Score=7.8,Po (    1) CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT  1 
+VIBHAR_01806(bioA)Score= (    1) CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT  1 
+VV1_2944(bioA)Score=7.8, (    1) CTGTCAACANNNNNNNNNNNNNNNAGTTTACAT  1 
+VC1111(bioA)Score=8.2Pos (    1) CTGTCAACANNNNNNNNNNNNNNNGGTTTACAT  1 
+VSAL_II0860(bioB)Score=8 (    1) TTGTAAACTNNNNNNNNNNNNNNNGGTTGACAG  1 
+VF_A1189(bioB)Score=8.6, (    1) TTGTAAACTNNNNNNNNNNNNNNNGGTTGACAG  1 
+VSAL_II0861(bioA)Score=8 (    1) CTGTCAACCNNNNNNNNNNNNNNNAGTTTACAA  1 
+VF_A0748(bioA)Score=8.6, (    1) CTGTCAACCNNNNNNNNNNNNNNNAGTTTACAA  1 
+VSAK1_00085(bioB)Score=7 (    1) GTGTAAACTNNNNNNNNNNNNNNNTGTTGACAG  1 
+VSAK1_00080(bioA)Score=7 (    1) CTGTCAACANNNNNNNNNNNNNNNAGTTTACAC  1 
+PBPRA2329(bioB)Score=7.5 (    1) ATGTAAACCNNNNNNNNNNNNNNNTATTGACAG  1 
+PBPRA2330(bioA)Score=5.8 (    1) CGATAAATCNNNNNNNNNNNNNNNGGTTGAAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 33 n= 20 bayes= 1.36257 E= 7.3e-102 
+    27    125   -210   -150 
+ -1097  -1097   -210    175 
+  -254  -1097    214  -1097 
+ -1097  -1097  -1097    182 
+    92    109  -1097  -1097 
+   178  -1097  -1097  -1097 
+   178  -1097  -1097  -1097 
+ -1097    217  -1097   -250 
+     5     51  -1097     50 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+    46  -1097     22     31 
+  -254  -1097    214  -1097 
+ -1097  -1097  -1097    182 
+ -1097  -1097  -1097    182 
+ -1097  -1097    135     67 
+   178  -1097  -1097  -1097 
+  -254    217  -1097  -1097 
+   178  -1097  -1097  -1097 
+  -154   -207    135      8 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 33 nsites= 20 E= 7.3e-102 
+ 0.350000  0.500000  0.050000  0.100000 
+ 0.000000  0.000000  0.050000  0.950000 
+ 0.050000  0.000000  0.950000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.550000  0.450000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.950000  0.000000  0.050000 
+ 0.300000  0.300000  0.000000  0.400000 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.290663  0.210843  0.215361  0.283133 
+ 0.400000  0.000000  0.250000  0.350000 
+ 0.050000  0.000000  0.950000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.550000  0.450000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.050000  0.950000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.100000  0.050000  0.550000  0.300000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[CA]TGT[AC]AAC[TAC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATGC][ATG]GTT[GT]ACA[GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC1112(bioB)Score=8.2,Po         8.83e-10  [+1(8.83e-10)]
+VC1111(bioA)Score=8.2Pos         2.70e-09  [+1(2.70e-09)]
+VV1_2943(bioB)Score=7.8,         8.83e-10  [+1(8.83e-10)]
+VV1_2944(bioA)Score=7.8,         2.32e-09  [+1(2.32e-09)]
+VIBHAR_01807(bioB)Score=         8.83e-10  [+1(8.83e-10)]
+VIBHAR_01806(bioA)Score=         2.32e-09  [+1(2.32e-09)]
+VP1113(bioB)Score=7.8,Po         8.83e-10  [+1(8.83e-10)]
+VP1112(bioA)Score=7.8,Po         2.32e-09  [+1(2.32e-09)]
+VSAK1_00085(bioB)Score=7         4.96e-09  [+1(4.96e-09)]
+VSAK1_00080(bioA)Score=7         7.65e-09  [+1(7.65e-09)]
+VS_2040(bioB)Score=7.8,P         8.83e-10  [+1(8.83e-10)]
+VS_2041(bioA)Score=7.8,P         2.32e-09  [+1(2.32e-09)]
+VF_A1189(bioB)Score=8.6,         3.92e-09  [+1(3.92e-09)]
+VF_A0748(bioA)Score=8.6,         4.59e-09  [+1(4.59e-09)]
+VSAL_II0861(bioA)Score=8         4.59e-09  [+1(4.59e-09)]
+VSAL_II0860(bioB)Score=8         3.92e-09  [+1(3.92e-09)]
+VAS14_01401(bioB)Score=8         7.26e-10  [+1(7.26e-10)]
+VAS14_01396(bioA)Score=8         2.14e-09  [+1(2.14e-09)]
+PBPRA2330(bioA)Score=5.8         9.53e-07  [+1(9.53e-07)]
+PBPRA2329(bioB)Score=7.5         1.77e-08  [+1(1.77e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

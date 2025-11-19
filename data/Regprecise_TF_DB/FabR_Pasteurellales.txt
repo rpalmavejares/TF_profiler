@@ -1,0 +1,283 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/FabR_Pasteurellales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+HI1325_p-96(fabA)        1.0000     18  HI0002_p-20(lcfH)        1.0000     18  
+NT05HA_1266_p-51(fabB)   1.0000     18  NT05HA_0871_p-101(fabA)  1.0000     18  
+NT05HA_0066_p-36(lcfH)   1.0000     18  PM0484_p-98(fabA)        1.0000     18  
+PM0925_p-56(lcfH)        1.0000     18  MS1591_p-60(fabB)        1.0000     18  
+MS1194_p-111(fabA)       1.0000     18  MS2265_p-44(lcfH)        1.0000     18  
+Asuc_0888_p-50(fabB)     1.0000     18  Asuc_1443_p-107(fabA)    1.0000     18  
+APP7_1976_p-98(fabA)     1.0000     18  APP7_1520_p-41(lcfH)     1.0000     18  
+HD0612_p-65(fabB)        1.0000     18  HD0181_p-98(fabA)        1.0000     18  
+HAPS_1695_p-90(lcfH)     1.0000     18  HAPS_2242_p-109(fabA)    1.0000     18  
+HAPS_1695_p-37(lcfH)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/FabR_Pasteurellales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pasteurellales/FabR_Pasteurellales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             342    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    342    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.31 C 0.187 G 0.231 T 0.272 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.309 C 0.188 G 0.231 T 0.272 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AGCKWACAAKTGTWAGCT MEME-1	width =  18  sites =  19  llr = 342  E-value = 5.4e-115
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:::5a:a62:::481:1
+pos.-specific     C  ::a:1:a:12::::2:81
+probability       G  1a:6::::24:a:::91:
+matrix            T  1::44:::23a:a6::19
+
+         bits    2.4   *   *           
+                 2.2  **   *    *      
+                 1.9  **   *   ***     
+                 1.7  **  ***  ***  *  
+Relative         1.4  **  ***  ***  ** 
+Entropy          1.2 ***  ***  *** ****
+(26.0 bits)      1.0 **** ***  *** ****
+                 0.7 **** ***  ********
+                 0.5 ********  ********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           AGCGAACAAGTGTTAGCT
+consensus               TT    T   A    
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+HD0612_p-65(fabB)             1  1.12e-10          . AGCGAACAAGTGTAAGCT           
+PM0484_p-98(fabA)             1  2.50e-10          . AGCTTACAAGTGTTAGCT           
+PM0925_p-56(lcfH)             1  2.92e-10          . AGCTAACAAGTGTAAGCT           
+HAPS_2242_p-109(fabA)         1  6.32e-10          . AGCTTACAACTGTTAGCT           
+Asuc_1443_p-107(fabA)         1  8.77e-10          . AGCGTACATGTGTTAGCT           
+NT05HA_0066_p-36(lcfH)        1  1.00e-09          . AGCGCACAACTGTTAGCT           
+HD0181_p-98(fabA)             1  1.22e-09          . AGCTAACAGTTGTTAGCT           
+APP7_1520_p-41(lcfH)          1  1.22e-09          . AGCGAACAGTTGTAAGCT           
+HAPS_1695_p-37(lcfH)          1  1.48e-09          . AGCGAACATTTGTAAGCT           
+MS1194_p-111(fabA)            1  1.93e-09          . AGCGAACACTTGTTAGCT           
+APP7_1976_p-98(fabA)          1  2.34e-09          . AGCGAACAGTTGTTCGCT           
+HI1325_p-96(fabA)             1  2.66e-09          . TGCGAACAAGTGTTAGCT           
+NT05HA_0871_p-101(fabA)       1  2.92e-09          . GGCGTACAAGTGTTAGCT           
+HI0002_p-20(lcfH)             1  3.45e-09          . AGCGCACAACTGTTCGCT           
+Asuc_0888_p-50(fabB)          1  9.75e-09          . AGCTTACAAGTGTAAGGT           
+MS1591_p-60(fabB)             1  1.22e-08          . AGCTAACAAATGTAAGTT           
+MS2265_p-44(lcfH)             1  1.86e-08          . AGCGTACAAATGTAAACT           
+HAPS_1695_p-90(lcfH)          1  4.36e-08          . AGCTTACATTTGTTCGCA           
+NT05HA_1266_p-51(fabB)        1  5.48e-08          . AGCTAACAAATGTAAGTC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HD0612_p-65(fabB)                 1.1e-10  [+1]
+PM0484_p-98(fabA)                 2.5e-10  [+1]
+PM0925_p-56(lcfH)                 2.9e-10  [+1]
+HAPS_2242_p-109(fabA)             6.3e-10  [+1]
+Asuc_1443_p-107(fabA)             8.8e-10  [+1]
+NT05HA_0066_p-36(lcfH)              1e-09  [+1]
+HD0181_p-98(fabA)                 1.2e-09  [+1]
+APP7_1520_p-41(lcfH)              1.2e-09  [+1]
+HAPS_1695_p-37(lcfH)              1.5e-09  [+1]
+MS1194_p-111(fabA)                1.9e-09  [+1]
+APP7_1976_p-98(fabA)              2.3e-09  [+1]
+HI1325_p-96(fabA)                 2.7e-09  [+1]
+NT05HA_0871_p-101(fabA)           2.9e-09  [+1]
+HI0002_p-20(lcfH)                 3.4e-09  [+1]
+Asuc_0888_p-50(fabB)              9.8e-09  [+1]
+MS1591_p-60(fabB)                 1.2e-08  [+1]
+MS2265_p-44(lcfH)                 1.9e-08  [+1]
+HAPS_1695_p-90(lcfH)              4.4e-08  [+1]
+NT05HA_1266_p-51(fabB)            5.5e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AGCKWACAAKTGTWAGCT width=18 seqs=19
+HD0612_p-65(fabB)        (    1) AGCGAACAAGTGTAAGCT  1 
+PM0484_p-98(fabA)        (    1) AGCTTACAAGTGTTAGCT  1 
+PM0925_p-56(lcfH)        (    1) AGCTAACAAGTGTAAGCT  1 
+HAPS_2242_p-109(fabA)    (    1) AGCTTACAACTGTTAGCT  1 
+Asuc_1443_p-107(fabA)    (    1) AGCGTACATGTGTTAGCT  1 
+NT05HA_0066_p-36(lcfH)   (    1) AGCGCACAACTGTTAGCT  1 
+HD0181_p-98(fabA)        (    1) AGCTAACAGTTGTTAGCT  1 
+APP7_1520_p-41(lcfH)     (    1) AGCGAACAGTTGTAAGCT  1 
+HAPS_1695_p-37(lcfH)     (    1) AGCGAACATTTGTAAGCT  1 
+MS1194_p-111(fabA)       (    1) AGCGAACACTTGTTAGCT  1 
+APP7_1976_p-98(fabA)     (    1) AGCGAACAGTTGTTCGCT  1 
+HI1325_p-96(fabA)        (    1) TGCGAACAAGTGTTAGCT  1 
+NT05HA_0871_p-101(fabA)  (    1) GGCGTACAAGTGTTAGCT  1 
+HI0002_p-20(lcfH)        (    1) AGCGCACAACTGTTCGCT  1 
+Asuc_0888_p-50(fabB)     (    1) AGCTTACAAGTGTAAGGT  1 
+MS1591_p-60(fabB)        (    1) AGCTAACAAATGTAAGTT  1 
+MS2265_p-44(lcfH)        (    1) AGCGTACAAATGTAAACT  1 
+HAPS_1695_p-90(lcfH)     (    1) AGCTTACATTTGTTCGCA  1 
+NT05HA_1266_p-51(fabB)   (    1) AGCTAACAAATGTAAGTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 19 bayes= 1.33258 E= 5.4e-115 
+   153  -1089   -213   -236 
+ -1089  -1089    211  -1089 
+ -1089    241  -1089  -1089 
+ -1089  -1089    132     63 
+    77    -84  -1089     44 
+   169  -1089  -1089  -1089 
+ -1089    241  -1089  -1089 
+   169  -1089  -1089  -1089 
+   103   -183    -55    -78 
+   -97    -25     67     22 
+ -1089  -1089  -1089    188 
+ -1089  -1089    211  -1089 
+ -1089  -1089  -1089    188 
+    45  -1089  -1089    109 
+   144    -25  -1089  -1089 
+  -255  -1089    203  -1089 
+ -1089    216   -213   -137 
+  -255   -183  -1089    172 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 19 E= 5.4e-115 
+ 0.894737  0.000000  0.052632  0.052632 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.578947  0.421053 
+ 0.526316  0.105263  0.000000  0.368421 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.631579  0.052632  0.157895  0.157895 
+ 0.157895  0.157895  0.368421  0.315789 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.421053  0.000000  0.000000  0.578947 
+ 0.842105  0.157895  0.000000  0.000000 
+ 0.052632  0.000000  0.947368  0.000000 
+ 0.000000  0.842105  0.052632  0.105263 
+ 0.052632  0.052632  0.000000  0.894737 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGCKWACAAKTGTWAGCT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AGC[GT][AT]ACAA[GT]TGT[TA]AGCT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+HI1325_p-96(fabA)                2.66e-09  [+1(2.66e-09)]
+HI0002_p-20(lcfH)                3.45e-09  [+1(3.45e-09)]
+NT05HA_1266_p-51(fabB)           5.48e-08  [+1(5.48e-08)]
+NT05HA_0871_p-101(fabA)          2.92e-09  [+1(2.92e-09)]
+NT05HA_0066_p-36(lcfH)           1.00e-09  [+1(1.00e-09)]
+PM0484_p-98(fabA)                2.50e-10  [+1(2.50e-10)]
+PM0925_p-56(lcfH)                2.92e-10  [+1(2.92e-10)]
+MS1591_p-60(fabB)                1.22e-08  [+1(1.22e-08)]
+MS1194_p-111(fabA)               1.93e-09  [+1(1.93e-09)]
+MS2265_p-44(lcfH)                1.86e-08  [+1(1.86e-08)]
+Asuc_0888_p-50(fabB)             9.75e-09  [+1(9.75e-09)]
+Asuc_1443_p-107(fabA)            8.77e-10  [+1(8.77e-10)]
+APP7_1976_p-98(fabA)             2.34e-09  [+1(2.34e-09)]
+APP7_1520_p-41(lcfH)             1.22e-09  [+1(1.22e-09)]
+HD0612_p-65(fabB)                1.12e-10  [+1(1.12e-10)]
+HD0181_p-98(fabA)                1.22e-09  [+1(1.22e-09)]
+HAPS_1695_p-90(lcfH)             4.36e-08  [+1(4.36e-08)]
+HAPS_2242_p-109(fabA)            6.32e-10  [+1(6.32e-10)]
+HAPS_1695_p-37(lcfH)             1.48e-09  [+1(1.48e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

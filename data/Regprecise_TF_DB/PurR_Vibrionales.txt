@@ -1,0 +1,864 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/PurR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VCA0614_p-47(fhs)        1.0000     16  VC1129_p-93(gsk)         1.0000     16  
+VC2712_p-273(xanP)       1.0000     16  VC2712_p-216(xanP)       1.0000     16  
+VC0276_p-187(purH)       1.0000     16  VC2174_p-262(ushA)       1.0000     16  
+VC0941_p-71(glyA)        1.0000     16  VC2225_p-103(upp)        1.0000     16  
+VC1942_p-10(folD)        1.0000     16  VC0052_p-89(purE)        1.0000     16  
+VC1190_p-10(purC)        1.0000     16  VC0768_p-106(guaA)       1.0000     16  
+VC2226_p-79(purM)        1.0000     16  VC1228_p-80(purT)        1.0000     16  
+VC0869_p-170(purL)       1.0000     16  VC1003_p-64(cvpA)        1.0000     16  
+VV1_2924_p-93(gsk)       1.0000     16  VV1_0856_p-184(xanP)     1.0000     16  
+VV1_2928_p-89(purB)      1.0000     16  VV1_0248_p-244(ushA)     1.0000     16  
+VV1_1227_p-201(purH)     1.0000     16  VV1_0286_p-73(glyA)      1.0000     16  
+VV1_1901_p-107(upp)      1.0000     16  VV1_2022_p-86(folD)      1.0000     16  
+VV1_1054_p-89(purE)      1.0000     16  VV1_2797_p-134(purC)     1.0000     16  
+VV1_1900_p-81(purM)      1.0000     16  VV1_2378_p-83(purT)      1.0000     16  
+VV1_0340_p-159(purL)     1.0000     16  VV1_1996_p-63(cvpA)      1.0000     16  
+VV20217_p-38(fhs)        1.0000     16  VIBHAR_00623_p-190(xanP) 1.0000     16  
+VIBHAR_01822_p-23(purB)  1.0000     16  VIBHAR_01208_p-74(glyA)  1.0000     16  
+VIBHAR_03199_p-106(upp)  1.0000     16  VIBHAR_01826_p-93(gsk)   1.0000     16  
+VIBHAR_01391_p-88(folD)  1.0000     16  VIBHAR_02039_p-134(purC) 1.0000     16  
+VIBHAR_01077_p-91(guaA)  1.0000     16  VIBHAR_00385_p-73(purE)  1.0000     16  
+VIBHAR_01256_p-232(ushA) 1.0000     16  VIBHAR_02115_p-83(purT)  1.0000     16  
+VIBHAR_01150_p-182(purL) 1.0000     16  VIBHAR_03200_p-82(purM)  1.0000     16  
+VIBHAR_03096_p-63(cvpA)  1.0000     16  VIBHAR_02339_p-194(pyrD) 1.0000     16  
+VIBHAR_05943_p-83(fhs)   1.0000     16  VIBHAR_00210_p-198(purH) 1.0000     16  
+VP0156_p-166(xanP)       1.0000     16  VP2284_p-114(upp)        1.0000     16  
+VP0715_p-74(glyA)        1.0000     16  VP0879_p-87(folD)        1.0000     16  
+VP1263_p-134(purC)       1.0000     16  VP1128_p-89(purB)        1.0000     16  
+VP0617_p-91(guaA)        1.0000     16  VP3036_p-88(purE)        1.0000     16  
+VP1297_p-83(purT)        1.0000     16  VP0666_p-159(purL)       1.0000     16  
+VP2285_p-82(purM)        1.0000     16  VP2186_p-63(cvpA)        1.0000     16  
+VPA0834_p-85(fhs)        1.0000     16  VP1132_p-94(gsk)         1.0000     16  
+VP2896_p-196(purH)       1.0000     16  VSAK1_15352_p-46(fhs)    1.0000     16  
+VSAK1_00170_p-93(gsk)    1.0000     16  VSAK1_00155_p-89(purB)   1.0000     16  
+VSAK1_10503_p-73(glyA)   1.0000     16  VSAK1_13483_p-217(purH)  1.0000     16  
+VSAK1_07359_p-179(upp)   1.0000     16  VSAK1_08676_p-89(folD)   1.0000     16  
+VSAK1_06165_p-126(purC)  1.0000     16  VSAK1_12010_p-91(guaA)   1.0000     16  
+VSAK1_24370_p-82(purE)   1.0000     16  VSAK1_07354_p-82(purM)   1.0000     16  
+VSAK1_25795_p-77(purT)   1.0000     16  VSAK1_11820_p-158(purL)  1.0000     16  
+VSAK1_10118_p-63(cvpA)   1.0000     16  VSAK1_05275_p-107(pyrD)  1.0000     16  
+VS_II0809_p-48(fhs)      1.0000     16  VS_2030_p-92(gsk)        1.0000     16  
+VS_2034_p-90(purB)       1.0000     16  VS_0757_p-203(ushA)      1.0000     16  
+VS_2951_p-237(purH)      1.0000     16  VS_2373_p-73(glyA)       1.0000     16  
+VS_2317_p-89(upp)        1.0000     16  VS_0889_p-96(folD)       1.0000     16  
+VS_3120_p-88(purE)       1.0000     16  VS_1205_p-116(purC)      1.0000     16  
+VS_0629_p-90(guaA)       1.0000     16  VS_2318_p-81(purM)       1.0000     16  
+VS_1717_p-83(purT)       1.0000     16  VS_0664_p-192(purL)      1.0000     16  
+VS_0907_p-63(cvpA)       1.0000     16  VS_1422_p-145(pyrD)      1.0000     16  
+VF_0911_p-105(gsk)       1.0000     16  VF_0116_p-188(xanP)      1.0000     16  
+VF_0778_p-220(ushA)      1.0000     16  VF_0695_p-64(glyA)       1.0000     16  
+VF_1927_p-143(upp)       1.0000     16  VF_1770_p-86(folD)       1.0000     16  
+VF_2537_p-86(purE)       1.0000     16  VF_1498_p-90(purC)       1.0000     16  
+VF_2394_p-206(purH)      1.0000     16  VF_1928_p-80(purM)       1.0000     16  
+VF_1487_p-72(purT)       1.0000     16  VF_0652_p-182(purL)      1.0000     16  
+VF_1692_p-63(cvpA)       1.0000     16  VF_1285_p-245(pyrD)      1.0000     16  
+VF_1793_p45(fhs)         1.0000     16  VSAL_I1847_p-106(gsk)    1.0000     16  
+VSAL_I0800_p-216(ushA)   1.0000     16  VSAL_I0864_p-64(glyA)    1.0000     16  
+VSAL_I2389_p-161(upp)    1.0000     16  VSAL_I2209_p-85(folD)    1.0000     16  
+VSAL_I0081_p-36(purE)    1.0000     16  VSAL_I1698_p-92(purC)    1.0000     16  
+VSAL_I2390_p-80(purM)    1.0000     16  VSAL_I1079_p-63(cvpA)    1.0000     16  
+VSAL_I1686_p-74(purT)    1.0000     16  VSAL_I0750_p-183(purL)   1.0000     16  
+VSAL_I1549_p-246(pyrD)   1.0000     16  VSAL_I2184_p45(fhs)      1.0000     16  
+VAS14_00453_p-129(upp)   1.0000     16  VAS14_16581_p-93(glyA)   1.0000     16  
+VAS14_06223_p-87(folD)   1.0000     16  VAS14_04588_p-138(purC)  1.0000     16  
+VAS14_16521_p-82(guaB)   1.0000     16  VAS14_22662_p-83(purE)   1.0000     16  
+VAS14_03168_p-82(purT)   1.0000     16  VAS14_16561_p-193(purL)  1.0000     16  
+VAS14_00448_p-79(purM)   1.0000     16  VAS14_06263_p-64(cvpA)   1.0000     16  
+VAS14_02903_p-185(pyrD)  1.0000     16  VAS14_19086_p-206(purH)  1.0000     16  
+PBPRA2764_p-96(fhs)      1.0000     16  PBPRA1026_p-124(gsk)     1.0000     16  
+PBPRA0186_p-187(xanP)    1.0000     16  PBPRA3419_p-168(purH)    1.0000     16  
+PBPRA0795_p-94(glyA)     1.0000     16  PBPRA2909_p-126(upp)     1.0000     16  
+PBPRA2641_p-86(folD)     1.0000     16  PBPRA1469_p-143(purC)    1.0000     16  
+PBPRA0780_p-82(guaB)     1.0000     16  PBPRA0781_p-91(guaA)     1.0000     16  
+PBPRA2910_p-79(purM)     1.0000     16  PBPRA1685_p-73(purT)     1.0000     16  
+PBPRA0788_p-198(purL)    1.0000     16  PBPRA2649_p-63(cvpA)     1.0000     16  
+PBPRA1767_p-184(pyrD)    1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/PurR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/PurR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=      149    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2384    N=             149
+sample: seed=            0    hsfrac=          0
+        searchsize=   2384    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.272 C 0.221 G 0.232 T 0.276 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.221 G 0.232 T 0.276 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AMGCAAACGTTTGCKT MEME-1	width =  16  sites = 149  llr = 2338  E-value = 2.2e-964
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  73:2aa9::1:::::1
+pos.-specific     C  :417:::a:::::a11
+probability       G  229:::::a1::9:4:
+matrix            T  1::1::1::8aa1:48
+
+         bits    2.2        **    *  
+                 2.0      * ** ** *  
+                 1.7     ** ** ** *  
+                 1.5   * ***** ****  
+Relative         1.3   * ***** ****  
+Entropy          1.1   * **********  
+(22.6 bits)      0.9   ************ *
+                 0.7 * ************ *
+                 0.4 ****************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           ACGCAAACGTTTGCGT
+consensus             A            T 
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+VAS14_03168_p-82(purT)        1  4.81e-10          . ACGCAAACGTTTGCTT           
+VP3036_p-88(purE)             1  4.81e-10          . ACGCAAACGTTTGCTT           
+VAS14_19086_p-206(purH)       1  7.51e-10          . AAGCAAACGTTTGCGT           
+VSAL_I2209_p-85(folD)         1  7.51e-10          . AAGCAAACGTTTGCGT           
+VIBHAR_01391_p-88(folD)       1  7.51e-10          . AAGCAAACGTTTGCGT           
+VV1_2022_p-86(folD)           1  7.51e-10          . AAGCAAACGTTTGCGT           
+VS_0889_p-96(folD)            1  1.07e-09          . AAGCAAACGTTTGCTT           
+VP1297_p-83(purT)             1  1.07e-09          . AAGCAAACGTTTGCTT           
+VIBHAR_00623_p-190(xanP)      1  1.07e-09          . AAGCAAACGTTTGCTT           
+VV1_2378_p-83(purT)           1  1.07e-09          . AAGCAAACGTTTGCTT           
+VV1_1054_p-89(purE)           1  1.07e-09          . AAGCAAACGTTTGCTT           
+VC1190_p-10(purC)             1  1.07e-09          . AAGCAAACGTTTGCTT           
+VC0052_p-89(purE)             1  1.07e-09          . AAGCAAACGTTTGCTT           
+VC2712_p-273(xanP)            1  1.07e-09          . AAGCAAACGTTTGCTT           
+PBPRA1685_p-73(purT)          1  1.30e-09          . AGGCAAACGTTTGCGT           
+VP0879_p-87(folD)             1  1.30e-09          . AGGCAAACGTTTGCGT           
+PBPRA1469_p-143(purC)         1  1.97e-09          . AGGCAAACGTTTGCTT           
+VP1263_p-134(purC)            1  1.97e-09          . AGGCAAACGTTTGCTT           
+VV1_2797_p-134(purC)          1  1.97e-09          . AGGCAAACGTTTGCTT           
+VS_1717_p-83(purT)            1  2.37e-09          . GCGCAAACGTTTGCTT           
+VSAK1_25795_p-77(purT)        1  2.37e-09          . GCGCAAACGTTTGCTT           
+VIBHAR_00385_p-73(purE)       1  2.37e-09          . GCGCAAACGTTTGCTT           
+PBPRA0795_p-94(glyA)          1  3.11e-09          . ACGAAAACGTTTGCGT           
+VAS14_16581_p-93(glyA)        1  3.11e-09          . ACGAAAACGTTTGCGT           
+VF_1770_p-86(folD)            1  3.11e-09          . ACGCAAACGTTTGCTC           
+VSAK1_11820_p-158(purL)       1  3.11e-09          . ACGAAAACGTTTGCGT           
+VP0715_p-74(glyA)             1  3.11e-09          . ACGAAAACGTTTGCGT           
+VIBHAR_01208_p-74(glyA)       1  3.11e-09          . ACGAAAACGTTTGCGT           
+VV1_0286_p-73(glyA)           1  3.11e-09          . ACGAAAACGTTTGCGT           
+VC1942_p-10(folD)             1  3.11e-09          . AAGCAAACGTTTGCCT           
+VC0941_p-71(glyA)             1  3.11e-09          . ACGAAAACGTTTGCGT           
+PBPRA3419_p-168(purH)         1  3.78e-09          . GAGCAAACGTTTGCGT           
+VS_0629_p-90(guaA)            1  4.10e-09          . ACGAAAACGTTTGCTT           
+VSAK1_10503_p-73(glyA)        1  4.10e-09          . ACGAAAACGTTTGCTT           
+PBPRA2641_p-86(folD)          1  5.11e-09          . AAGCAAACGTTTGCGC           
+VAS14_06223_p-87(folD)        1  5.11e-09          . AAGCAAACGTTTGCGC           
+VSAL_I1079_p-63(cvpA)         1  6.39e-09          . AAGAAAACGTTTGCGT           
+VF_1692_p-63(cvpA)            1  6.39e-09          . AAGAAAACGTTTGCGT           
+VF_0695_p-64(glyA)            1  6.39e-09          . ACGTAAACGTTTGCGT           
+VS_0907_p-63(cvpA)            1  6.39e-09          . AAGAAAACGTTTGCGT           
+VSAK1_10118_p-63(cvpA)        1  6.39e-09          . AAGAAAACGTTTGCGT           
+VP2186_p-63(cvpA)             1  6.39e-09          . AAGAAAACGTTTGCGT           
+VIBHAR_03096_p-63(cvpA)       1  6.39e-09          . AAGAAAACGTTTGCGT           
+VV1_1996_p-63(cvpA)           1  6.39e-09          . AAGAAAACGTTTGCGT           
+VC1003_p-64(cvpA)             1  6.39e-09          . AAGAAAACGTTTGCGT           
+VAS14_16561_p-193(purL)       1  7.51e-09          . ACGCAAACGGTTGCGT           
+VF_1487_p-72(purT)            1  7.51e-09          . TAGCAAACGTTTGCGT           
+VP2284_p-114(upp)             1  7.51e-09          . TAGCAAACGTTTGCGT           
+VSAK1_12010_p-91(guaA)        1  9.13e-09          . ACGTAAACGTTTGCTT           
+VSAK1_08676_p-89(folD)        1  9.13e-09          . ATGCAAACGTTTGCGT           
+VP0617_p-91(guaA)             1  9.13e-09          . ACGTAAACGTTTGCTT           
+VIBHAR_02115_p-83(purT)       1  9.13e-09          . ACGTAAACGTTTGCTT           
+VIBHAR_01077_p-91(guaA)       1  9.13e-09          . ACGTAAACGTTTGCTT           
+VSAL_I0750_p-183(purL)        1  1.04e-08          . ACGCAAACGGTTGCTT           
+VF_0652_p-182(purL)           1  1.04e-08          . ACGCAAACGGTTGCTT           
+VF_0116_p-188(xanP)           1  1.04e-08          . AAGCAAACGATTGCTT           
+VS_0664_p-192(purL)           1  1.04e-08          . ACGCAAACGGTTGCTT           
+VP2285_p-82(purM)             1  1.04e-08          . ACGCAAACGTTTGCTA           
+VP0666_p-159(purL)            1  1.04e-08          . ACGCAAACGGTTGCTT           
+VIBHAR_01150_p-182(purL)      1  1.04e-08          . ACGCAAACGGTTGCTT           
+VIBHAR_03199_p-106(upp)       1  1.04e-08          . TAGCAAACGTTTGCTT           
+VV1_0340_p-159(purL)          1  1.04e-08          . ACGCAAACGGTTGCTT           
+VC0869_p-170(purL)            1  1.04e-08          . ACGCAAACGGTTGCTT           
+VAS14_00453_p-129(upp)        1  1.19e-08          . AGGAAAACGTTTGCGT           
+VSAK1_07359_p-179(upp)        1  1.19e-08          . AGGAAAACGTTTGCGT           
+VSAK1_00155_p-89(purB)        1  1.19e-08          . GCGCAAACGTTTGCGC           
+VPA0834_p-85(fhs)             1  1.19e-08          . GCGCAAACGTTTGCGC           
+VP1128_p-89(purB)             1  1.19e-08          . GCGCAAACGTTTGCGC           
+VIBHAR_05943_p-83(fhs)        1  1.19e-08          . GCGCAAACGTTTGCGC           
+VIBHAR_01822_p-23(purB)       1  1.19e-08          . GCGCAAACGTTTGCGC           
+VV1_2928_p-89(purB)           1  1.19e-08          . GCGCAAACGTTTGCGC           
+VC2225_p-103(upp)             1  1.19e-08          . AGGAAAACGTTTGCGT           
+PBPRA0781_p-91(guaA)          1  1.32e-08          . ACGAAAACGTTTGCCT           
+VAS14_06263_p-64(cvpA)        1  1.32e-08          . AAGTAAACGTTTGCGT           
+VS_2318_p-81(purM)            1  1.54e-08          . GCGCAAACGTTTGCTC           
+VV1_1900_p-81(purM)           1  1.54e-08          . GCGCAAACGTTTGCTC           
+PBPRA2764_p-96(fhs)           1  1.70e-08          . GCGCAAACGATTGCGT           
+VIBHAR_02039_p-134(purC)      1  1.70e-08          . TGGCAAACGTTTGCTT           
+PBPRA0186_p-187(xanP)         1  1.85e-08          . AAGCAAACGTTTGCTA           
+VIBHAR_03200_p-82(purM)       1  1.85e-08          . AAGCAAACGTTTGCTA           
+PBPRA2649_p-63(cvpA)          1  2.02e-08          . AGGTAAACGTTTGCGT           
+VS_2317_p-89(upp)             1  2.02e-08          . GAGCAAACGTTTGCGC           
+VS_2034_p-90(purB)            1  2.02e-08          . ACGCAAACGATTGCGC           
+VV1_1901_p-107(upp)           1  2.02e-08          . GAGCAAACGTTTGCGC           
+VSAL_I1686_p-74(purT)         1  2.22e-08          . AAGCAATCGTTTGCGT           
+VS_2373_p-73(glyA)            1  2.22e-08          . ACGGAAACGTTTGCTT           
+VSAL_I1847_p-106(gsk)         1  2.57e-08          . TAGCAAACGTTTGCCT           
+VC1228_p-80(purT)             1  2.57e-08          . AAGCAAACGTTTTCTT           
+PBPRA0788_p-198(purL)         1  2.80e-08          . GCGCAAACGGTTGCGT           
+VAS14_04588_p-138(purC)       1  2.80e-08          . AGGCAAACGTTTGCTA           
+VSAL_I1698_p-92(purC)         1  2.80e-08          . AAGCAATCGTTTGCTT           
+VAS14_16521_p-82(guaB)        1  3.11e-08          . AGCCAAACGTTTGCTT           
+VC0768_p-106(guaA)            1  3.11e-08          . GCGTAAACGTTTGCTT           
+VAS14_00448_p-79(purM)        1  3.39e-08          . ACGCAAACGTTTTCCT           
+VAS14_22662_p-83(purE)        1  3.39e-08          . ACGCAAACGTTTTCCT           
+VSAL_I0081_p-36(purE)         1  3.39e-08          . ACGCAAACGTTTTCCT           
+VF_2537_p-86(purE)            1  3.39e-08          . ACGCAAACGTTTTCCT           
+VS_3120_p-88(purE)            1  3.39e-08          . ACGCAAACGTTTTCCT           
+VSAK1_07354_p-82(purM)        1  3.39e-08          . ACGCAAACGTTTTCCT           
+VSAK1_24370_p-82(purE)        1  3.39e-08          . ACGCAAACGTTTTCCT           
+VSAK1_06165_p-126(purC)       1  3.39e-08          . GCGCAAACGTTTGCTA           
+VSAK1_15352_p-46(fhs)         1  3.39e-08          . ACGCAAACGTTTTCCT           
+VV20217_p-38(fhs)             1  3.39e-08          . CCGCAAACGTTTGCGT           
+VC2226_p-79(purM)             1  3.39e-08          . ACGCAAACGTTTTCCT           
+VC1129_p-93(gsk)              1  3.77e-08          . GTGCAAACGTTTGCTT           
+PBPRA2909_p-126(upp)          1  4.62e-08          . AGGGAAACGTTTGCGT           
+VSAL_I2389_p-161(upp)         1  4.62e-08          . AGGGAAACGTTTGCGT           
+VF_1927_p-143(upp)            1  4.62e-08          . AGGGAAACGTTTGCGT           
+VAS14_02903_p-185(pyrD)       1  5.14e-08          . AAGAAAACGATTGCTT           
+VF_0911_p-105(gsk)            1  5.72e-08          . GAGCAAACGTTTGCTA           
+VP0156_p-166(xanP)            1  5.72e-08          . TAGCAAACGATTGCTT           
+VV1_0856_p-184(xanP)          1  5.72e-08          . TAGCAAACGATTGCTT           
+VS_II0809_p-48(fhs)           1  6.30e-08          . ACGCAAACGTTTACGT           
+VF_0778_p-220(ushA)           1  6.91e-08          . ACGTAAACGGTTGCGT           
+PBPRA2910_p-79(purM)          1  9.13e-08          . ACGCAAACGTTTCCCT           
+VSAL_I2390_p-80(purM)         1  9.13e-08          . ACGCAAACGTTTCCCT           
+VF_1928_p-80(purM)            1  9.13e-08          . ACGCAAACGTTTCCCT           
+VS_2030_p-92(gsk)             1  9.13e-08          . TAGCAAACGTTTGCTA           
+VV1_2924_p-93(gsk)            1  9.13e-08          . TAGCAAACGTTTGCTA           
+VSAL_I0864_p-64(glyA)         1  9.98e-08          . ACGTAATCGTTTGCGT           
+VCA0614_p-47(fhs)             1  9.98e-08          . GCGCAAACGTTTTCCT           
+VF_1285_p-245(pyrD)           1  1.10e-07          . AGCCAAACGTTTGCTC           
+VF_1498_p-90(purC)            1  1.30e-07          . TAGCAATCGTTTGCTT           
+VS_1205_p-116(purC)           1  1.30e-07          . TAGCAATCGTTTGCTT           
+PBPRA0780_p-82(guaB)          1  1.41e-07          . AGCCAAACGATTGCTT           
+VS_0757_p-203(ushA)           1  1.65e-07          . AAGTAAACGATTGCCT           
+PBPRA1767_p-184(pyrD)         1  1.91e-07          . ACGGAATCGTTTGCGT           
+VSAL_I2184_p45(fhs)           1  1.91e-07          . ATGAAAACGATTGCGT           
+VF_1793_p45(fhs)              1  1.91e-07          . ATGAAAACGATTGCGT           
+VSAK1_00170_p-93(gsk)         1  2.07e-07          . GCGTAAACGTTTGCTA           
+VIBHAR_01826_p-93(gsk)        1  2.44e-07          . GTGCAAACGTTTGCTA           
+VIBHAR_01256_p-232(ushA)      1  2.61e-07          . AGCCAAACGATTGCCT           
+VV1_0248_p-244(ushA)          1  3.03e-07          . AGTCAAACGTTTGCCT           
+VC2174_p-262(ushA)            1  3.03e-07          . AGTCAAACGTTTGCCT           
+VC2712_p-216(xanP)            1  3.55e-07          . GCGCAAACGTTTACCT           
+VS_1422_p-145(pyrD)           1  3.82e-07          . ACGATAACGTTTGCTT           
+VP1132_p-94(gsk)              1  3.82e-07          . CAGCAAACGTTTGCTA           
+VIBHAR_02339_p-194(pyrD)      1  4.42e-07          . ATGAAATCGTTTGCTT           
+PBPRA1026_p-124(gsk)          1  5.06e-07          . TAGCAAAGGTTTGCGT           
+VF_2394_p-206(purH)           1  9.65e-07          . ATGCAATCGATTGCGC           
+VS_2951_p-237(purH)           1  9.65e-07          . TGCCAAACGATTGCGC           
+VSAK1_13483_p-217(purH)       1  9.65e-07          . TGCCAAACGATTGCGC           
+VP2896_p-196(purH)            1  9.65e-07          . TGCCAAACGATTGCGC           
+VIBHAR_00210_p-198(purH)      1  9.65e-07          . TGCCAAACGATTGCGC           
+VV1_1227_p-201(purH)          1  9.65e-07          . TGCCAAACGATTGCGC           
+VC0276_p-187(purH)            1  9.65e-07          . TGCCAAACGATTGCGC           
+VSAK1_05275_p-107(pyrD)       1  1.09e-06          . GCCTAATCGTTTGCGT           
+VSAL_I0800_p-216(ushA)        1  1.56e-06          . AAGTGAACGATTGCGT           
+VSAL_I1549_p-246(pyrD)        1  2.65e-06          . AGACAAACGTTTGCAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VAS14_03168_p-82(purT)            4.8e-10  [+1]
+VP3036_p-88(purE)                 4.8e-10  [+1]
+VAS14_19086_p-206(purH)           7.5e-10  [+1]
+VSAL_I2209_p-85(folD)             7.5e-10  [+1]
+VIBHAR_01391_p-88(folD)           7.5e-10  [+1]
+VV1_2022_p-86(folD)               7.5e-10  [+1]
+VS_0889_p-96(folD)                1.1e-09  [+1]
+VP1297_p-83(purT)                 1.1e-09  [+1]
+VIBHAR_00623_p-190(xanP)          1.1e-09  [+1]
+VV1_2378_p-83(purT)               1.1e-09  [+1]
+VV1_1054_p-89(purE)               1.1e-09  [+1]
+VC1190_p-10(purC)                 1.1e-09  [+1]
+VC0052_p-89(purE)                 1.1e-09  [+1]
+VC2712_p-273(xanP)                1.1e-09  [+1]
+PBPRA1685_p-73(purT)              1.3e-09  [+1]
+VP0879_p-87(folD)                 1.3e-09  [+1]
+PBPRA1469_p-143(purC)               2e-09  [+1]
+VP1263_p-134(purC)                  2e-09  [+1]
+VV1_2797_p-134(purC)                2e-09  [+1]
+VS_1717_p-83(purT)                2.4e-09  [+1]
+VSAK1_25795_p-77(purT)            2.4e-09  [+1]
+VIBHAR_00385_p-73(purE)           2.4e-09  [+1]
+PBPRA0795_p-94(glyA)              3.1e-09  [+1]
+VAS14_16581_p-93(glyA)            3.1e-09  [+1]
+VF_1770_p-86(folD)                3.1e-09  [+1]
+VSAK1_11820_p-158(purL)           3.1e-09  [+1]
+VP0715_p-74(glyA)                 3.1e-09  [+1]
+VIBHAR_01208_p-74(glyA)           3.1e-09  [+1]
+VV1_0286_p-73(glyA)               3.1e-09  [+1]
+VC1942_p-10(folD)                 3.1e-09  [+1]
+VC0941_p-71(glyA)                 3.1e-09  [+1]
+PBPRA3419_p-168(purH)             3.8e-09  [+1]
+VS_0629_p-90(guaA)                4.1e-09  [+1]
+VSAK1_10503_p-73(glyA)            4.1e-09  [+1]
+PBPRA2641_p-86(folD)              5.1e-09  [+1]
+VAS14_06223_p-87(folD)            5.1e-09  [+1]
+VSAL_I1079_p-63(cvpA)             6.4e-09  [+1]
+VF_1692_p-63(cvpA)                6.4e-09  [+1]
+VF_0695_p-64(glyA)                6.4e-09  [+1]
+VS_0907_p-63(cvpA)                6.4e-09  [+1]
+VSAK1_10118_p-63(cvpA)            6.4e-09  [+1]
+VP2186_p-63(cvpA)                 6.4e-09  [+1]
+VIBHAR_03096_p-63(cvpA)           6.4e-09  [+1]
+VV1_1996_p-63(cvpA)               6.4e-09  [+1]
+VC1003_p-64(cvpA)                 6.4e-09  [+1]
+VAS14_16561_p-193(purL)           7.5e-09  [+1]
+VF_1487_p-72(purT)                7.5e-09  [+1]
+VP2284_p-114(upp)                 7.5e-09  [+1]
+VSAK1_12010_p-91(guaA)            9.1e-09  [+1]
+VSAK1_08676_p-89(folD)            9.1e-09  [+1]
+VP0617_p-91(guaA)                 9.1e-09  [+1]
+VIBHAR_02115_p-83(purT)           9.1e-09  [+1]
+VIBHAR_01077_p-91(guaA)           9.1e-09  [+1]
+VSAL_I0750_p-183(purL)              1e-08  [+1]
+VF_0652_p-182(purL)                 1e-08  [+1]
+VF_0116_p-188(xanP)                 1e-08  [+1]
+VS_0664_p-192(purL)                 1e-08  [+1]
+VP2285_p-82(purM)                   1e-08  [+1]
+VP0666_p-159(purL)                  1e-08  [+1]
+VIBHAR_01150_p-182(purL)            1e-08  [+1]
+VIBHAR_03199_p-106(upp)             1e-08  [+1]
+VV1_0340_p-159(purL)                1e-08  [+1]
+VC0869_p-170(purL)                  1e-08  [+1]
+VAS14_00453_p-129(upp)            1.2e-08  [+1]
+VSAK1_07359_p-179(upp)            1.2e-08  [+1]
+VSAK1_00155_p-89(purB)            1.2e-08  [+1]
+VPA0834_p-85(fhs)                 1.2e-08  [+1]
+VP1128_p-89(purB)                 1.2e-08  [+1]
+VIBHAR_05943_p-83(fhs)            1.2e-08  [+1]
+VIBHAR_01822_p-23(purB)           1.2e-08  [+1]
+VV1_2928_p-89(purB)               1.2e-08  [+1]
+VC2225_p-103(upp)                 1.2e-08  [+1]
+PBPRA0781_p-91(guaA)              1.3e-08  [+1]
+VAS14_06263_p-64(cvpA)            1.3e-08  [+1]
+VS_2318_p-81(purM)                1.5e-08  [+1]
+VV1_1900_p-81(purM)               1.5e-08  [+1]
+PBPRA2764_p-96(fhs)               1.7e-08  [+1]
+VIBHAR_02039_p-134(purC)          1.7e-08  [+1]
+PBPRA0186_p-187(xanP)             1.9e-08  [+1]
+VIBHAR_03200_p-82(purM)           1.9e-08  [+1]
+PBPRA2649_p-63(cvpA)                2e-08  [+1]
+VS_2317_p-89(upp)                   2e-08  [+1]
+VS_2034_p-90(purB)                  2e-08  [+1]
+VV1_1901_p-107(upp)                 2e-08  [+1]
+VSAL_I1686_p-74(purT)             2.2e-08  [+1]
+VS_2373_p-73(glyA)                2.2e-08  [+1]
+VSAL_I1847_p-106(gsk)             2.6e-08  [+1]
+VC1228_p-80(purT)                 2.6e-08  [+1]
+PBPRA0788_p-198(purL)             2.8e-08  [+1]
+VAS14_04588_p-138(purC)           2.8e-08  [+1]
+VSAL_I1698_p-92(purC)             2.8e-08  [+1]
+VAS14_16521_p-82(guaB)            3.1e-08  [+1]
+VC0768_p-106(guaA)                3.1e-08  [+1]
+VAS14_00448_p-79(purM)            3.4e-08  [+1]
+VAS14_22662_p-83(purE)            3.4e-08  [+1]
+VSAL_I0081_p-36(purE)             3.4e-08  [+1]
+VF_2537_p-86(purE)                3.4e-08  [+1]
+VS_3120_p-88(purE)                3.4e-08  [+1]
+VSAK1_07354_p-82(purM)            3.4e-08  [+1]
+VSAK1_24370_p-82(purE)            3.4e-08  [+1]
+VSAK1_06165_p-126(purC)           3.4e-08  [+1]
+VSAK1_15352_p-46(fhs)             3.4e-08  [+1]
+VV20217_p-38(fhs)                 3.4e-08  [+1]
+VC2226_p-79(purM)                 3.4e-08  [+1]
+VC1129_p-93(gsk)                  3.8e-08  [+1]
+PBPRA2909_p-126(upp)              4.6e-08  [+1]
+VSAL_I2389_p-161(upp)             4.6e-08  [+1]
+VF_1927_p-143(upp)                4.6e-08  [+1]
+VAS14_02903_p-185(pyrD)           5.1e-08  [+1]
+VF_0911_p-105(gsk)                5.7e-08  [+1]
+VP0156_p-166(xanP)                5.7e-08  [+1]
+VV1_0856_p-184(xanP)              5.7e-08  [+1]
+VS_II0809_p-48(fhs)               6.3e-08  [+1]
+VF_0778_p-220(ushA)               6.9e-08  [+1]
+PBPRA2910_p-79(purM)              9.1e-08  [+1]
+VSAL_I2390_p-80(purM)             9.1e-08  [+1]
+VF_1928_p-80(purM)                9.1e-08  [+1]
+VS_2030_p-92(gsk)                 9.1e-08  [+1]
+VV1_2924_p-93(gsk)                9.1e-08  [+1]
+VSAL_I0864_p-64(glyA)               1e-07  [+1]
+VCA0614_p-47(fhs)                   1e-07  [+1]
+VF_1285_p-245(pyrD)               1.1e-07  [+1]
+VF_1498_p-90(purC)                1.3e-07  [+1]
+VS_1205_p-116(purC)               1.3e-07  [+1]
+PBPRA0780_p-82(guaB)              1.4e-07  [+1]
+VS_0757_p-203(ushA)               1.7e-07  [+1]
+PBPRA1767_p-184(pyrD)             1.9e-07  [+1]
+VSAL_I2184_p45(fhs)               1.9e-07  [+1]
+VF_1793_p45(fhs)                  1.9e-07  [+1]
+VSAK1_00170_p-93(gsk)             2.1e-07  [+1]
+VIBHAR_01826_p-93(gsk)            2.4e-07  [+1]
+VIBHAR_01256_p-232(ushA)          2.6e-07  [+1]
+VV1_0248_p-244(ushA)                3e-07  [+1]
+VC2174_p-262(ushA)                  3e-07  [+1]
+VC2712_p-216(xanP)                3.5e-07  [+1]
+VS_1422_p-145(pyrD)               3.8e-07  [+1]
+VP1132_p-94(gsk)                  3.8e-07  [+1]
+VIBHAR_02339_p-194(pyrD)          4.4e-07  [+1]
+PBPRA1026_p-124(gsk)              5.1e-07  [+1]
+VF_2394_p-206(purH)               9.7e-07  [+1]
+VS_2951_p-237(purH)               9.7e-07  [+1]
+VSAK1_13483_p-217(purH)           9.7e-07  [+1]
+VP2896_p-196(purH)                9.7e-07  [+1]
+VIBHAR_00210_p-198(purH)          9.7e-07  [+1]
+VV1_1227_p-201(purH)              9.7e-07  [+1]
+VC0276_p-187(purH)                9.7e-07  [+1]
+VSAK1_05275_p-107(pyrD)           1.1e-06  [+1]
+VSAL_I0800_p-216(ushA)            1.6e-06  [+1]
+VSAL_I1549_p-246(pyrD)            2.7e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AMGCAAACGTTTGCKT width=16 seqs=149
+VAS14_03168_p-82(purT)   (    1) ACGCAAACGTTTGCTT  1 
+VP3036_p-88(purE)        (    1) ACGCAAACGTTTGCTT  1 
+VAS14_19086_p-206(purH)  (    1) AAGCAAACGTTTGCGT  1 
+VSAL_I2209_p-85(folD)    (    1) AAGCAAACGTTTGCGT  1 
+VIBHAR_01391_p-88(folD)  (    1) AAGCAAACGTTTGCGT  1 
+VV1_2022_p-86(folD)      (    1) AAGCAAACGTTTGCGT  1 
+VS_0889_p-96(folD)       (    1) AAGCAAACGTTTGCTT  1 
+VP1297_p-83(purT)        (    1) AAGCAAACGTTTGCTT  1 
+VIBHAR_00623_p-190(xanP) (    1) AAGCAAACGTTTGCTT  1 
+VV1_2378_p-83(purT)      (    1) AAGCAAACGTTTGCTT  1 
+VV1_1054_p-89(purE)      (    1) AAGCAAACGTTTGCTT  1 
+VC1190_p-10(purC)        (    1) AAGCAAACGTTTGCTT  1 
+VC0052_p-89(purE)        (    1) AAGCAAACGTTTGCTT  1 
+VC2712_p-273(xanP)       (    1) AAGCAAACGTTTGCTT  1 
+PBPRA1685_p-73(purT)     (    1) AGGCAAACGTTTGCGT  1 
+VP0879_p-87(folD)        (    1) AGGCAAACGTTTGCGT  1 
+PBPRA1469_p-143(purC)    (    1) AGGCAAACGTTTGCTT  1 
+VP1263_p-134(purC)       (    1) AGGCAAACGTTTGCTT  1 
+VV1_2797_p-134(purC)     (    1) AGGCAAACGTTTGCTT  1 
+VS_1717_p-83(purT)       (    1) GCGCAAACGTTTGCTT  1 
+VSAK1_25795_p-77(purT)   (    1) GCGCAAACGTTTGCTT  1 
+VIBHAR_00385_p-73(purE)  (    1) GCGCAAACGTTTGCTT  1 
+PBPRA0795_p-94(glyA)     (    1) ACGAAAACGTTTGCGT  1 
+VAS14_16581_p-93(glyA)   (    1) ACGAAAACGTTTGCGT  1 
+VF_1770_p-86(folD)       (    1) ACGCAAACGTTTGCTC  1 
+VSAK1_11820_p-158(purL)  (    1) ACGAAAACGTTTGCGT  1 
+VP0715_p-74(glyA)        (    1) ACGAAAACGTTTGCGT  1 
+VIBHAR_01208_p-74(glyA)  (    1) ACGAAAACGTTTGCGT  1 
+VV1_0286_p-73(glyA)      (    1) ACGAAAACGTTTGCGT  1 
+VC1942_p-10(folD)        (    1) AAGCAAACGTTTGCCT  1 
+VC0941_p-71(glyA)        (    1) ACGAAAACGTTTGCGT  1 
+PBPRA3419_p-168(purH)    (    1) GAGCAAACGTTTGCGT  1 
+VS_0629_p-90(guaA)       (    1) ACGAAAACGTTTGCTT  1 
+VSAK1_10503_p-73(glyA)   (    1) ACGAAAACGTTTGCTT  1 
+PBPRA2641_p-86(folD)     (    1) AAGCAAACGTTTGCGC  1 
+VAS14_06223_p-87(folD)   (    1) AAGCAAACGTTTGCGC  1 
+VSAL_I1079_p-63(cvpA)    (    1) AAGAAAACGTTTGCGT  1 
+VF_1692_p-63(cvpA)       (    1) AAGAAAACGTTTGCGT  1 
+VF_0695_p-64(glyA)       (    1) ACGTAAACGTTTGCGT  1 
+VS_0907_p-63(cvpA)       (    1) AAGAAAACGTTTGCGT  1 
+VSAK1_10118_p-63(cvpA)   (    1) AAGAAAACGTTTGCGT  1 
+VP2186_p-63(cvpA)        (    1) AAGAAAACGTTTGCGT  1 
+VIBHAR_03096_p-63(cvpA)  (    1) AAGAAAACGTTTGCGT  1 
+VV1_1996_p-63(cvpA)      (    1) AAGAAAACGTTTGCGT  1 
+VC1003_p-64(cvpA)        (    1) AAGAAAACGTTTGCGT  1 
+VAS14_16561_p-193(purL)  (    1) ACGCAAACGGTTGCGT  1 
+VF_1487_p-72(purT)       (    1) TAGCAAACGTTTGCGT  1 
+VP2284_p-114(upp)        (    1) TAGCAAACGTTTGCGT  1 
+VSAK1_12010_p-91(guaA)   (    1) ACGTAAACGTTTGCTT  1 
+VSAK1_08676_p-89(folD)   (    1) ATGCAAACGTTTGCGT  1 
+VP0617_p-91(guaA)        (    1) ACGTAAACGTTTGCTT  1 
+VIBHAR_02115_p-83(purT)  (    1) ACGTAAACGTTTGCTT  1 
+VIBHAR_01077_p-91(guaA)  (    1) ACGTAAACGTTTGCTT  1 
+VSAL_I0750_p-183(purL)   (    1) ACGCAAACGGTTGCTT  1 
+VF_0652_p-182(purL)      (    1) ACGCAAACGGTTGCTT  1 
+VF_0116_p-188(xanP)      (    1) AAGCAAACGATTGCTT  1 
+VS_0664_p-192(purL)      (    1) ACGCAAACGGTTGCTT  1 
+VP2285_p-82(purM)        (    1) ACGCAAACGTTTGCTA  1 
+VP0666_p-159(purL)       (    1) ACGCAAACGGTTGCTT  1 
+VIBHAR_01150_p-182(purL) (    1) ACGCAAACGGTTGCTT  1 
+VIBHAR_03199_p-106(upp)  (    1) TAGCAAACGTTTGCTT  1 
+VV1_0340_p-159(purL)     (    1) ACGCAAACGGTTGCTT  1 
+VC0869_p-170(purL)       (    1) ACGCAAACGGTTGCTT  1 
+VAS14_00453_p-129(upp)   (    1) AGGAAAACGTTTGCGT  1 
+VSAK1_07359_p-179(upp)   (    1) AGGAAAACGTTTGCGT  1 
+VSAK1_00155_p-89(purB)   (    1) GCGCAAACGTTTGCGC  1 
+VPA0834_p-85(fhs)        (    1) GCGCAAACGTTTGCGC  1 
+VP1128_p-89(purB)        (    1) GCGCAAACGTTTGCGC  1 
+VIBHAR_05943_p-83(fhs)   (    1) GCGCAAACGTTTGCGC  1 
+VIBHAR_01822_p-23(purB)  (    1) GCGCAAACGTTTGCGC  1 
+VV1_2928_p-89(purB)      (    1) GCGCAAACGTTTGCGC  1 
+VC2225_p-103(upp)        (    1) AGGAAAACGTTTGCGT  1 
+PBPRA0781_p-91(guaA)     (    1) ACGAAAACGTTTGCCT  1 
+VAS14_06263_p-64(cvpA)   (    1) AAGTAAACGTTTGCGT  1 
+VS_2318_p-81(purM)       (    1) GCGCAAACGTTTGCTC  1 
+VV1_1900_p-81(purM)      (    1) GCGCAAACGTTTGCTC  1 
+PBPRA2764_p-96(fhs)      (    1) GCGCAAACGATTGCGT  1 
+VIBHAR_02039_p-134(purC) (    1) TGGCAAACGTTTGCTT  1 
+PBPRA0186_p-187(xanP)    (    1) AAGCAAACGTTTGCTA  1 
+VIBHAR_03200_p-82(purM)  (    1) AAGCAAACGTTTGCTA  1 
+PBPRA2649_p-63(cvpA)     (    1) AGGTAAACGTTTGCGT  1 
+VS_2317_p-89(upp)        (    1) GAGCAAACGTTTGCGC  1 
+VS_2034_p-90(purB)       (    1) ACGCAAACGATTGCGC  1 
+VV1_1901_p-107(upp)      (    1) GAGCAAACGTTTGCGC  1 
+VSAL_I1686_p-74(purT)    (    1) AAGCAATCGTTTGCGT  1 
+VS_2373_p-73(glyA)       (    1) ACGGAAACGTTTGCTT  1 
+VSAL_I1847_p-106(gsk)    (    1) TAGCAAACGTTTGCCT  1 
+VC1228_p-80(purT)        (    1) AAGCAAACGTTTTCTT  1 
+PBPRA0788_p-198(purL)    (    1) GCGCAAACGGTTGCGT  1 
+VAS14_04588_p-138(purC)  (    1) AGGCAAACGTTTGCTA  1 
+VSAL_I1698_p-92(purC)    (    1) AAGCAATCGTTTGCTT  1 
+VAS14_16521_p-82(guaB)   (    1) AGCCAAACGTTTGCTT  1 
+VC0768_p-106(guaA)       (    1) GCGTAAACGTTTGCTT  1 
+VAS14_00448_p-79(purM)   (    1) ACGCAAACGTTTTCCT  1 
+VAS14_22662_p-83(purE)   (    1) ACGCAAACGTTTTCCT  1 
+VSAL_I0081_p-36(purE)    (    1) ACGCAAACGTTTTCCT  1 
+VF_2537_p-86(purE)       (    1) ACGCAAACGTTTTCCT  1 
+VS_3120_p-88(purE)       (    1) ACGCAAACGTTTTCCT  1 
+VSAK1_07354_p-82(purM)   (    1) ACGCAAACGTTTTCCT  1 
+VSAK1_24370_p-82(purE)   (    1) ACGCAAACGTTTTCCT  1 
+VSAK1_06165_p-126(purC)  (    1) GCGCAAACGTTTGCTA  1 
+VSAK1_15352_p-46(fhs)    (    1) ACGCAAACGTTTTCCT  1 
+VV20217_p-38(fhs)        (    1) CCGCAAACGTTTGCGT  1 
+VC2226_p-79(purM)        (    1) ACGCAAACGTTTTCCT  1 
+VC1129_p-93(gsk)         (    1) GTGCAAACGTTTGCTT  1 
+PBPRA2909_p-126(upp)     (    1) AGGGAAACGTTTGCGT  1 
+VSAL_I2389_p-161(upp)    (    1) AGGGAAACGTTTGCGT  1 
+VF_1927_p-143(upp)       (    1) AGGGAAACGTTTGCGT  1 
+VAS14_02903_p-185(pyrD)  (    1) AAGAAAACGATTGCTT  1 
+VF_0911_p-105(gsk)       (    1) GAGCAAACGTTTGCTA  1 
+VP0156_p-166(xanP)       (    1) TAGCAAACGATTGCTT  1 
+VV1_0856_p-184(xanP)     (    1) TAGCAAACGATTGCTT  1 
+VS_II0809_p-48(fhs)      (    1) ACGCAAACGTTTACGT  1 
+VF_0778_p-220(ushA)      (    1) ACGTAAACGGTTGCGT  1 
+PBPRA2910_p-79(purM)     (    1) ACGCAAACGTTTCCCT  1 
+VSAL_I2390_p-80(purM)    (    1) ACGCAAACGTTTCCCT  1 
+VF_1928_p-80(purM)       (    1) ACGCAAACGTTTCCCT  1 
+VS_2030_p-92(gsk)        (    1) TAGCAAACGTTTGCTA  1 
+VV1_2924_p-93(gsk)       (    1) TAGCAAACGTTTGCTA  1 
+VSAL_I0864_p-64(glyA)    (    1) ACGTAATCGTTTGCGT  1 
+VCA0614_p-47(fhs)        (    1) GCGCAAACGTTTTCCT  1 
+VF_1285_p-245(pyrD)      (    1) AGCCAAACGTTTGCTC  1 
+VF_1498_p-90(purC)       (    1) TAGCAATCGTTTGCTT  1 
+VS_1205_p-116(purC)      (    1) TAGCAATCGTTTGCTT  1 
+PBPRA0780_p-82(guaB)     (    1) AGCCAAACGATTGCTT  1 
+VS_0757_p-203(ushA)      (    1) AAGTAAACGATTGCCT  1 
+PBPRA1767_p-184(pyrD)    (    1) ACGGAATCGTTTGCGT  1 
+VSAL_I2184_p45(fhs)      (    1) ATGAAAACGATTGCGT  1 
+VF_1793_p45(fhs)         (    1) ATGAAAACGATTGCGT  1 
+VSAK1_00170_p-93(gsk)    (    1) GCGTAAACGTTTGCTA  1 
+VIBHAR_01826_p-93(gsk)   (    1) GTGCAAACGTTTGCTA  1 
+VIBHAR_01256_p-232(ushA) (    1) AGCCAAACGATTGCCT  1 
+VV1_0248_p-244(ushA)     (    1) AGTCAAACGTTTGCCT  1 
+VC2174_p-262(ushA)       (    1) AGTCAAACGTTTGCCT  1 
+VC2712_p-216(xanP)       (    1) GCGCAAACGTTTACCT  1 
+VS_1422_p-145(pyrD)      (    1) ACGATAACGTTTGCTT  1 
+VP1132_p-94(gsk)         (    1) CAGCAAACGTTTGCTA  1 
+VIBHAR_02339_p-194(pyrD) (    1) ATGAAATCGTTTGCTT  1 
+PBPRA1026_p-124(gsk)     (    1) TAGCAAAGGTTTGCGT  1 
+VF_2394_p-206(purH)      (    1) ATGCAATCGATTGCGC  1 
+VS_2951_p-237(purH)      (    1) TGCCAAACGATTGCGC  1 
+VSAK1_13483_p-217(purH)  (    1) TGCCAAACGATTGCGC  1 
+VP2896_p-196(purH)       (    1) TGCCAAACGATTGCGC  1 
+VIBHAR_00210_p-198(purH) (    1) TGCCAAACGATTGCGC  1 
+VV1_1227_p-201(purH)     (    1) TGCCAAACGATTGCGC  1 
+VC0276_p-187(purH)       (    1) TGCCAAACGATTGCGC  1 
+VSAK1_05275_p-107(pyrD)  (    1) GCCTAATCGTTTGCGT  1 
+VSAL_I0800_p-216(ushA)   (    1) AAGTGAACGATTGCGT  1 
+VSAL_I1549_p-246(pyrD)   (    1) AGACAAACGTTTGCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 149 bayes= 1.90505 E= 2.2e-964 
+   136   -404    -46   -119 
+    27    101    -35   -255 
+  -534   -158    197   -436 
+   -64    166   -279   -155 
+   186  -1386   -511   -536 
+   188  -1386  -1386  -1386 
+   179  -1386  -1386   -219 
+ -1386    217   -511  -1386 
+ -1386  -1386    211  -1386 
+  -109  -1386   -179    155 
+ -1386  -1386  -1386    186 
+ -1386  -1386  -1386    186 
+  -434   -345    195   -190 
+ -1386    218  -1386  -1386 
+  -534    -65     94     57 
+  -188    -58  -1386    150 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 149 E= 2.2e-964 
+ 0.697987  0.013423  0.167785  0.120805 
+ 0.328859  0.442953  0.181208  0.046980 
+ 0.006711  0.073826  0.906040  0.013423 
+ 0.174497  0.697987  0.033557  0.093960 
+ 0.986577  0.000000  0.006711  0.006711 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.939597  0.000000  0.000000  0.060403 
+ 0.000000  0.993289  0.006711  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.127517  0.000000  0.067114  0.805369 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.013423  0.020134  0.892617  0.073826 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.006711  0.140940  0.442953  0.409396 
+ 0.073826  0.147651  0.000000  0.778523 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AMGCAAACGTTTGCKT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CA]GCAAACGTTTGC[GT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.43 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0614_p-47(fhs)                9.98e-08  [+1(9.98e-08)]
+VC1129_p-93(gsk)                 3.77e-08  [+1(3.77e-08)]
+VC2712_p-273(xanP)               1.07e-09  [+1(1.07e-09)]
+VC2712_p-216(xanP)               3.55e-07  [+1(3.55e-07)]
+VC0276_p-187(purH)               9.65e-07  [+1(9.65e-07)]
+VC2174_p-262(ushA)               3.03e-07  [+1(3.03e-07)]
+VC0941_p-71(glyA)                3.11e-09  [+1(3.11e-09)]
+VC2225_p-103(upp)                1.19e-08  [+1(1.19e-08)]
+VC1942_p-10(folD)                3.11e-09  [+1(3.11e-09)]
+VC0052_p-89(purE)                1.07e-09  [+1(1.07e-09)]
+VC1190_p-10(purC)                1.07e-09  [+1(1.07e-09)]
+VC0768_p-106(guaA)               3.11e-08  [+1(3.11e-08)]
+VC2226_p-79(purM)                3.39e-08  [+1(3.39e-08)]
+VC1228_p-80(purT)                2.57e-08  [+1(2.57e-08)]
+VC0869_p-170(purL)               1.04e-08  [+1(1.04e-08)]
+VC1003_p-64(cvpA)                6.39e-09  [+1(6.39e-09)]
+VV1_2924_p-93(gsk)               9.13e-08  [+1(9.13e-08)]
+VV1_0856_p-184(xanP)             5.72e-08  [+1(5.72e-08)]
+VV1_2928_p-89(purB)              1.19e-08  [+1(1.19e-08)]
+VV1_0248_p-244(ushA)             3.03e-07  [+1(3.03e-07)]
+VV1_1227_p-201(purH)             9.65e-07  [+1(9.65e-07)]
+VV1_0286_p-73(glyA)              3.11e-09  [+1(3.11e-09)]
+VV1_1901_p-107(upp)              2.02e-08  [+1(2.02e-08)]
+VV1_2022_p-86(folD)              7.51e-10  [+1(7.51e-10)]
+VV1_1054_p-89(purE)              1.07e-09  [+1(1.07e-09)]
+VV1_2797_p-134(purC)             1.97e-09  [+1(1.97e-09)]
+VV1_1900_p-81(purM)              1.54e-08  [+1(1.54e-08)]
+VV1_2378_p-83(purT)              1.07e-09  [+1(1.07e-09)]
+VV1_0340_p-159(purL)             1.04e-08  [+1(1.04e-08)]
+VV1_1996_p-63(cvpA)              6.39e-09  [+1(6.39e-09)]
+VV20217_p-38(fhs)                3.39e-08  [+1(3.39e-08)]
+VIBHAR_00623_p-190(xanP)         1.07e-09  [+1(1.07e-09)]
+VIBHAR_01822_p-23(purB)          1.19e-08  [+1(1.19e-08)]
+VIBHAR_01208_p-74(glyA)          3.11e-09  [+1(3.11e-09)]
+VIBHAR_03199_p-106(upp)          1.04e-08  [+1(1.04e-08)]
+VIBHAR_01826_p-93(gsk)           2.44e-07  [+1(2.44e-07)]
+VIBHAR_01391_p-88(folD)          7.51e-10  [+1(7.51e-10)]
+VIBHAR_02039_p-134(purC)         1.70e-08  [+1(1.70e-08)]
+VIBHAR_01077_p-91(guaA)          9.13e-09  [+1(9.13e-09)]
+VIBHAR_00385_p-73(purE)          2.37e-09  [+1(2.37e-09)]
+VIBHAR_01256_p-232(ushA)         2.61e-07  [+1(2.61e-07)]
+VIBHAR_02115_p-83(purT)          9.13e-09  [+1(9.13e-09)]
+VIBHAR_01150_p-182(purL)         1.04e-08  [+1(1.04e-08)]
+VIBHAR_03200_p-82(purM)          1.85e-08  [+1(1.85e-08)]
+VIBHAR_03096_p-63(cvpA)          6.39e-09  [+1(6.39e-09)]
+VIBHAR_02339_p-194(pyrD)         4.42e-07  [+1(4.42e-07)]
+VIBHAR_05943_p-83(fhs)           1.19e-08  [+1(1.19e-08)]
+VIBHAR_00210_p-198(purH)         9.65e-07  [+1(9.65e-07)]
+VP0156_p-166(xanP)               5.72e-08  [+1(5.72e-08)]
+VP2284_p-114(upp)                7.51e-09  [+1(7.51e-09)]
+VP0715_p-74(glyA)                3.11e-09  [+1(3.11e-09)]
+VP0879_p-87(folD)                1.30e-09  [+1(1.30e-09)]
+VP1263_p-134(purC)               1.97e-09  [+1(1.97e-09)]
+VP1128_p-89(purB)                1.19e-08  [+1(1.19e-08)]
+VP0617_p-91(guaA)                9.13e-09  [+1(9.13e-09)]
+VP3036_p-88(purE)                4.81e-10  [+1(4.81e-10)]
+VP1297_p-83(purT)                1.07e-09  [+1(1.07e-09)]
+VP0666_p-159(purL)               1.04e-08  [+1(1.04e-08)]
+VP2285_p-82(purM)                1.04e-08  [+1(1.04e-08)]
+VP2186_p-63(cvpA)                6.39e-09  [+1(6.39e-09)]
+VPA0834_p-85(fhs)                1.19e-08  [+1(1.19e-08)]
+VP1132_p-94(gsk)                 3.82e-07  [+1(3.82e-07)]
+VP2896_p-196(purH)               9.65e-07  [+1(9.65e-07)]
+VSAK1_15352_p-46(fhs)            3.39e-08  [+1(3.39e-08)]
+VSAK1_00170_p-93(gsk)            2.07e-07  [+1(2.07e-07)]
+VSAK1_00155_p-89(purB)           1.19e-08  [+1(1.19e-08)]
+VSAK1_10503_p-73(glyA)           4.10e-09  [+1(4.10e-09)]
+VSAK1_13483_p-217(purH)          9.65e-07  [+1(9.65e-07)]
+VSAK1_07359_p-179(upp)           1.19e-08  [+1(1.19e-08)]
+VSAK1_08676_p-89(folD)           9.13e-09  [+1(9.13e-09)]
+VSAK1_06165_p-126(purC)          3.39e-08  [+1(3.39e-08)]
+VSAK1_12010_p-91(guaA)           9.13e-09  [+1(9.13e-09)]
+VSAK1_24370_p-82(purE)           3.39e-08  [+1(3.39e-08)]
+VSAK1_07354_p-82(purM)           3.39e-08  [+1(3.39e-08)]
+VSAK1_25795_p-77(purT)           2.37e-09  [+1(2.37e-09)]
+VSAK1_11820_p-158(purL)          3.11e-09  [+1(3.11e-09)]
+VSAK1_10118_p-63(cvpA)           6.39e-09  [+1(6.39e-09)]
+VSAK1_05275_p-107(pyrD)          1.09e-06  [+1(1.09e-06)]
+VS_II0809_p-48(fhs)              6.30e-08  [+1(6.30e-08)]
+VS_2030_p-92(gsk)                9.13e-08  [+1(9.13e-08)]
+VS_2034_p-90(purB)               2.02e-08  [+1(2.02e-08)]
+VS_0757_p-203(ushA)              1.65e-07  [+1(1.65e-07)]
+VS_2951_p-237(purH)              9.65e-07  [+1(9.65e-07)]
+VS_2373_p-73(glyA)               2.22e-08  [+1(2.22e-08)]
+VS_2317_p-89(upp)                2.02e-08  [+1(2.02e-08)]
+VS_0889_p-96(folD)               1.07e-09  [+1(1.07e-09)]
+VS_3120_p-88(purE)               3.39e-08  [+1(3.39e-08)]
+VS_1205_p-116(purC)              1.30e-07  [+1(1.30e-07)]
+VS_0629_p-90(guaA)               4.10e-09  [+1(4.10e-09)]
+VS_2318_p-81(purM)               1.54e-08  [+1(1.54e-08)]
+VS_1717_p-83(purT)               2.37e-09  [+1(2.37e-09)]
+VS_0664_p-192(purL)              1.04e-08  [+1(1.04e-08)]
+VS_0907_p-63(cvpA)               6.39e-09  [+1(6.39e-09)]
+VS_1422_p-145(pyrD)              3.82e-07  [+1(3.82e-07)]
+VF_0911_p-105(gsk)               5.72e-08  [+1(5.72e-08)]
+VF_0116_p-188(xanP)              1.04e-08  [+1(1.04e-08)]
+VF_0778_p-220(ushA)              6.91e-08  [+1(6.91e-08)]
+VF_0695_p-64(glyA)               6.39e-09  [+1(6.39e-09)]
+VF_1927_p-143(upp)               4.62e-08  [+1(4.62e-08)]
+VF_1770_p-86(folD)               3.11e-09  [+1(3.11e-09)]
+VF_2537_p-86(purE)               3.39e-08  [+1(3.39e-08)]
+VF_1498_p-90(purC)               1.30e-07  [+1(1.30e-07)]
+VF_2394_p-206(purH)              9.65e-07  [+1(9.65e-07)]
+VF_1928_p-80(purM)               9.13e-08  [+1(9.13e-08)]
+VF_1487_p-72(purT)               7.51e-09  [+1(7.51e-09)]
+VF_0652_p-182(purL)              1.04e-08  [+1(1.04e-08)]
+VF_1692_p-63(cvpA)               6.39e-09  [+1(6.39e-09)]
+VF_1285_p-245(pyrD)              1.10e-07  [+1(1.10e-07)]
+VF_1793_p45(fhs)                 1.91e-07  [+1(1.91e-07)]
+VSAL_I1847_p-106(gsk)            2.57e-08  [+1(2.57e-08)]
+VSAL_I0800_p-216(ushA)           1.56e-06  [+1(1.56e-06)]
+VSAL_I0864_p-64(glyA)            9.98e-08  [+1(9.98e-08)]
+VSAL_I2389_p-161(upp)            4.62e-08  [+1(4.62e-08)]
+VSAL_I2209_p-85(folD)            7.51e-10  [+1(7.51e-10)]
+VSAL_I0081_p-36(purE)            3.39e-08  [+1(3.39e-08)]
+VSAL_I1698_p-92(purC)            2.80e-08  [+1(2.80e-08)]
+VSAL_I2390_p-80(purM)            9.13e-08  [+1(9.13e-08)]
+VSAL_I1079_p-63(cvpA)            6.39e-09  [+1(6.39e-09)]
+VSAL_I1686_p-74(purT)            2.22e-08  [+1(2.22e-08)]
+VSAL_I0750_p-183(purL)           1.04e-08  [+1(1.04e-08)]
+VSAL_I1549_p-246(pyrD)           2.65e-06  [+1(2.65e-06)]
+VSAL_I2184_p45(fhs)              1.91e-07  [+1(1.91e-07)]
+VAS14_00453_p-129(upp)           1.19e-08  [+1(1.19e-08)]
+VAS14_16581_p-93(glyA)           3.11e-09  [+1(3.11e-09)]
+VAS14_06223_p-87(folD)           5.11e-09  [+1(5.11e-09)]
+VAS14_04588_p-138(purC)          2.80e-08  [+1(2.80e-08)]
+VAS14_16521_p-82(guaB)           3.11e-08  [+1(3.11e-08)]
+VAS14_22662_p-83(purE)           3.39e-08  [+1(3.39e-08)]
+VAS14_03168_p-82(purT)           4.81e-10  [+1(4.81e-10)]
+VAS14_16561_p-193(purL)          7.51e-09  [+1(7.51e-09)]
+VAS14_00448_p-79(purM)           3.39e-08  [+1(3.39e-08)]
+VAS14_06263_p-64(cvpA)           1.32e-08  [+1(1.32e-08)]
+VAS14_02903_p-185(pyrD)          5.14e-08  [+1(5.14e-08)]
+VAS14_19086_p-206(purH)          7.51e-10  [+1(7.51e-10)]
+PBPRA2764_p-96(fhs)              1.70e-08  [+1(1.70e-08)]
+PBPRA1026_p-124(gsk)             5.06e-07  [+1(5.06e-07)]
+PBPRA0186_p-187(xanP)            1.85e-08  [+1(1.85e-08)]
+PBPRA3419_p-168(purH)            3.78e-09  [+1(3.78e-09)]
+PBPRA0795_p-94(glyA)             3.11e-09  [+1(3.11e-09)]
+PBPRA2909_p-126(upp)             4.62e-08  [+1(4.62e-08)]
+PBPRA2641_p-86(folD)             5.11e-09  [+1(5.11e-09)]
+PBPRA1469_p-143(purC)            1.97e-09  [+1(1.97e-09)]
+PBPRA0780_p-82(guaB)             1.41e-07  [+1(1.41e-07)]
+PBPRA0781_p-91(guaA)             1.32e-08  [+1(1.32e-08)]
+PBPRA2910_p-79(purM)             9.13e-08  [+1(9.13e-08)]
+PBPRA1685_p-73(purT)             1.30e-09  [+1(1.30e-09)]
+PBPRA0788_p-198(purL)            2.80e-08  [+1(2.80e-08)]
+PBPRA2649_p-63(cvpA)             2.02e-08  [+1(2.02e-08)]
+PBPRA1767_p-184(pyrD)            1.91e-07  [+1(1.91e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

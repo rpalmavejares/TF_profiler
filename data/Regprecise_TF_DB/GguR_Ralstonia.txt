@@ -1,0 +1,335 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/GguR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RALTA_B0133_p-109(gudD)  1.0000     17  RALTA_B0782_p-155(garD)  1.0000     17  
+RALTA_B0782_p-54(garD)   1.0000     17  RALTA_B0137_p-94(kdgD)   1.0000     17  
+RALTA_B0132_p-91(gguR)   1.0000     17  H16_B0127_p-90(gudD)     1.0000     17  
+H16_B0965_p-57(garD)     1.0000     17  H16_B0965_p-157(garD)    1.0000     17  
+H16_B0131_p-94(kdgD)     1.0000     17  H16_B0131_p-289(kdgD)    1.0000     17  
+H16_B0126_p-81(gguR)     1.0000     17  Reut_B3715_p-87(gudD)    1.0000     17  
+Reut_A1006_p-45(tctC1)   1.0000     17  Reut_A1006_p-180(tctC1)  1.0000     17  
+Reut_B3689_p-67(gudP1)   1.0000     17  Reut_B3689_p-283(gudP1)  1.0000     17  
+Reut_B3714_p-80(gguR)    1.0000     17  Reut_B3688_p-102(kdgD)   1.0000     17  
+Reut_B3713_p-97(kgsD)    1.0000     17  Rmet_0834_p-80(gudD)     1.0000     17  
+Rmet_0971_p-161(tctC1)   1.0000     17  Rmet_0971_p-44(tctC1)    1.0000     17  
+Rmet_4735_p-78(gudP1)    1.0000     17  Rmet_0832_p-91(kgsD)     1.0000     17  
+Rmet_0832_p-98(kgsD)     1.0000     17  Rmet_0833_p-30(gguR)     1.0000     17  
+Rmet_4736_p-109(kdgD)    1.0000     17  Rpic_0946_p-17(gudD)     1.0000     17  
+Rpic_0945_p-85(gguR)     1.0000     17  RSc1079_p-26(gudD)       1.0000     17  
+RS04109_p-90(gguR)       1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/GguR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/GguR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       31    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             527    N=              31
+sample: seed=            0    hsfrac=          0
+        searchsize=    527    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.273 C 0.216 G 0.224 T 0.287 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.273 C 0.217 G 0.224 T 0.286 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MWGTYRTMSKAYGACWK MEME-1	width =  17  sites =  31  llr = 409  E-value = 3.0e-141
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  54:::5:51:a:39:31
+pos.-specific     C  31::6::55::6::a11
+probability       G  11a::5::36::7::14
+matrix            T  25:a4:a:24:4:1:54
+
+         bits    2.2   *           *  
+                 2.0   *           *  
+                 1.8   *   *   *   *  
+                 1.5   **  *   *   *  
+Relative         1.3   **  *   *  **  
+Entropy          1.1   ****** ******  
+(19.0 bits)      0.9   ****** ******  
+                 0.7   ****** ******  
+                 0.4   ****** ****** *
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ATGTCGTACGACGACTG
+consensus            CA  TA CGT TA  AT
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Rmet_0971_p-161(tctC1)        1  7.97e-10          . AAGTCATCCGACGACTG           
+Reut_B3715_p-87(gudD)         1  1.02e-09          . AAGTCATACGACGACTG           
+RSc1079_p-26(gudD)            1  2.76e-09          . ATGTTGTACGACGACTG           
+Reut_B3689_p-67(gudP1)        1  1.39e-08          . CAGTCATACGACGACAT           
+Rmet_0834_p-80(gudD)          1  3.01e-08          . AAGTCATACGACGACCG           
+H16_B0127_p-90(gudD)          1  3.62e-08          . CAGTCATACGATGACAG           
+RALTA_B0137_p-94(kdgD)        1  3.62e-08          . TTGTCGTACGATGACTG           
+RALTA_B0133_p-109(gudD)       1  3.62e-08          . CAGTCATACGATGACAG           
+Rmet_4735_p-78(gudP1)         1  5.07e-08          . AAGTCGTATGACGACAT           
+Reut_A1006_p-45(tctC1)        1  5.07e-08          . ATGTTGTATGACGACTG           
+H16_B0131_p-94(kdgD)          1  6.86e-08          . TTGTCATACGATGACTG           
+Rpic_0946_p-17(gudD)          1  1.07e-07          . GTGTTGTACGACGACTG           
+Reut_B3714_p-80(gguR)         1  1.21e-07          . CAGTCGTCGTATGACTT           
+H16_B0126_p-81(gguR)          1  1.21e-07          . CTGTCATCGTATGACTG           
+RALTA_B0132_p-91(gguR)        1  1.21e-07          . CTGTCATCGTATGACTG           
+RS04109_p-90(gguR)            1  2.57e-07          . CAGTCGTCGTACAACAT           
+Reut_A1006_p-180(tctC1)       1  3.20e-07          . ATGTCATCAGACAACAG           
+Rmet_0833_p-30(gguR)          1  7.61e-07          . CGGTCGTCGTATGACTT           
+Reut_B3688_p-102(kdgD)        1  8.99e-07          . TAGTTGTACGATGACGT           
+Rmet_4736_p-109(kdgD)         1  1.06e-06          . TGGTTGTACGATGACTT           
+Rpic_0945_p-85(gguR)          1  1.23e-06          . CAGTCGTCGTACAACAC           
+H16_B0131_p-289(kdgD)         1  1.23e-06          . ACGTTGTCCTACAACAT           
+Rmet_0832_p-98(kgsD)          1  1.42e-06          . ATGTCATATGATGTCTT           
+RALTA_B0782_p-54(garD)        1  1.52e-06          . ATGTTGTCAGACAACGT           
+H16_B0965_p-57(garD)          1  1.63e-06          . AAGTTGTCAGACAACGT           
+RALTA_B0782_p-155(garD)       1  1.63e-06          . ATGTTGTCGTACAACAC           
+Reut_B3689_p-283(gudP1)       1  2.66e-06          . ACGTCATCGTACAACTA           
+Reut_B3713_p-97(kgsD)         1  3.30e-06          . ATGTCATATGATGTCCT           
+Rmet_0971_p-44(tctC1)         1  4.19e-06          . TAGTTGTACGACATCCT           
+H16_B0965_p-157(garD)         1  4.19e-06          . GTGTTATCGTACAACTA           
+Rmet_0832_p-91(kgsD)          1  7.43e-06          . ATGATGTCTTACGACAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rmet_0971_p-161(tctC1)              8e-10  [+1]
+Reut_B3715_p-87(gudD)               1e-09  [+1]
+RSc1079_p-26(gudD)                2.8e-09  [+1]
+Reut_B3689_p-67(gudP1)            1.4e-08  [+1]
+Rmet_0834_p-80(gudD)                3e-08  [+1]
+H16_B0127_p-90(gudD)              3.6e-08  [+1]
+RALTA_B0137_p-94(kdgD)            3.6e-08  [+1]
+RALTA_B0133_p-109(gudD)           3.6e-08  [+1]
+Rmet_4735_p-78(gudP1)             5.1e-08  [+1]
+Reut_A1006_p-45(tctC1)            5.1e-08  [+1]
+H16_B0131_p-94(kdgD)              6.9e-08  [+1]
+Rpic_0946_p-17(gudD)              1.1e-07  [+1]
+Reut_B3714_p-80(gguR)             1.2e-07  [+1]
+H16_B0126_p-81(gguR)              1.2e-07  [+1]
+RALTA_B0132_p-91(gguR)            1.2e-07  [+1]
+RS04109_p-90(gguR)                2.6e-07  [+1]
+Reut_A1006_p-180(tctC1)           3.2e-07  [+1]
+Rmet_0833_p-30(gguR)              7.6e-07  [+1]
+Reut_B3688_p-102(kdgD)              9e-07  [+1]
+Rmet_4736_p-109(kdgD)             1.1e-06  [+1]
+Rpic_0945_p-85(gguR)              1.2e-06  [+1]
+H16_B0131_p-289(kdgD)             1.2e-06  [+1]
+Rmet_0832_p-98(kgsD)              1.4e-06  [+1]
+RALTA_B0782_p-54(garD)            1.5e-06  [+1]
+H16_B0965_p-57(garD)              1.6e-06  [+1]
+RALTA_B0782_p-155(garD)           1.6e-06  [+1]
+Reut_B3689_p-283(gudP1)           2.7e-06  [+1]
+Reut_B3713_p-97(kgsD)             3.3e-06  [+1]
+Rmet_0971_p-44(tctC1)             4.2e-06  [+1]
+H16_B0965_p-157(garD)             4.2e-06  [+1]
+Rmet_0832_p-91(kgsD)              7.4e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MWGTYRTMSKAYGACWK width=17 seqs=31
+Rmet_0971_p-161(tctC1)   (    1) AAGTCATCCGACGACTG  1 
+Reut_B3715_p-87(gudD)    (    1) AAGTCATACGACGACTG  1 
+RSc1079_p-26(gudD)       (    1) ATGTTGTACGACGACTG  1 
+Reut_B3689_p-67(gudP1)   (    1) CAGTCATACGACGACAT  1 
+Rmet_0834_p-80(gudD)     (    1) AAGTCATACGACGACCG  1 
+H16_B0127_p-90(gudD)     (    1) CAGTCATACGATGACAG  1 
+RALTA_B0137_p-94(kdgD)   (    1) TTGTCGTACGATGACTG  1 
+RALTA_B0133_p-109(gudD)  (    1) CAGTCATACGATGACAG  1 
+Rmet_4735_p-78(gudP1)    (    1) AAGTCGTATGACGACAT  1 
+Reut_A1006_p-45(tctC1)   (    1) ATGTTGTATGACGACTG  1 
+H16_B0131_p-94(kdgD)     (    1) TTGTCATACGATGACTG  1 
+Rpic_0946_p-17(gudD)     (    1) GTGTTGTACGACGACTG  1 
+Reut_B3714_p-80(gguR)    (    1) CAGTCGTCGTATGACTT  1 
+H16_B0126_p-81(gguR)     (    1) CTGTCATCGTATGACTG  1 
+RALTA_B0132_p-91(gguR)   (    1) CTGTCATCGTATGACTG  1 
+RS04109_p-90(gguR)       (    1) CAGTCGTCGTACAACAT  1 
+Reut_A1006_p-180(tctC1)  (    1) ATGTCATCAGACAACAG  1 
+Rmet_0833_p-30(gguR)     (    1) CGGTCGTCGTATGACTT  1 
+Reut_B3688_p-102(kdgD)   (    1) TAGTTGTACGATGACGT  1 
+Rmet_4736_p-109(kdgD)    (    1) TGGTTGTACGATGACTT  1 
+Rpic_0945_p-85(gguR)     (    1) CAGTCGTCGTACAACAC  1 
+H16_B0131_p-289(kdgD)    (    1) ACGTTGTCCTACAACAT  1 
+Rmet_0832_p-98(kgsD)     (    1) ATGTCATATGATGTCTT  1 
+RALTA_B0782_p-54(garD)   (    1) ATGTTGTCAGACAACGT  1 
+H16_B0965_p-57(garD)     (    1) AAGTTGTCAGACAACGT  1 
+RALTA_B0782_p-155(garD)  (    1) ATGTTGTCGTACAACAC  1 
+Reut_B3689_p-283(gudP1)  (    1) ACGTCATCGTACAACTA  1 
+Reut_B3713_p-97(kgsD)    (    1) ATGTCATATGATGTCCT  1 
+Rmet_0971_p-44(tctC1)    (    1) TAGTTGTACGACATCCT  1 
+H16_B0965_p-157(garD)    (    1) GTGTTATCGTACAACTA  1 
+Rmet_0832_p-91(kgsD)     (    1) ATGATGTCTTACGACAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 31 bayes= 1.57258 E= 3.0e-141 
+    83     42   -180    -83 
+    62   -175   -180     66 
+ -1160  -1160    216  -1160 
+  -308  -1160  -1160    176 
+ -1160    150  -1160     44 
+    73  -1160    129  -1160 
+ -1160  -1160  -1160    180 
+    92    116  -1160  -1160 
+  -150    106     37    -83 
+ -1160  -1160    153     31 
+   187  -1160  -1160  -1160 
+ -1160    150  -1160     44 
+    24  -1160    160  -1160 
+   173  -1160  -1160   -156 
+ -1160    221  -1160  -1160 
+    24   -116   -121     76 
+  -150   -175     90     55 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 31 E= 3.0e-141 
+ 0.483871  0.290323  0.064516  0.161290 
+ 0.419355  0.064516  0.064516  0.451613 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.032258  0.000000  0.000000  0.967742 
+ 0.000000  0.612903  0.000000  0.387097 
+ 0.451613  0.000000  0.548387  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.516129  0.483871  0.000000  0.000000 
+ 0.096774  0.451613  0.290323  0.161290 
+ 0.000000  0.000000  0.645161  0.354839 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.612903  0.000000  0.387097 
+ 0.322581  0.000000  0.677419  0.000000 
+ 0.903226  0.000000  0.000000  0.096774 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.322581  0.096774  0.096774  0.483871 
+ 0.096774  0.064516  0.419355  0.419355 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGTYRTMSKAYGACWK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AC][TA]GT[CT][GA]T[AC][CG][GT]A[CT][GA]AC[TA][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RALTA_B0133_p-109(gudD)          3.62e-08  [+1(3.62e-08)]
+RALTA_B0782_p-155(garD)          1.63e-06  [+1(1.63e-06)]
+RALTA_B0782_p-54(garD)           1.52e-06  [+1(1.52e-06)]
+RALTA_B0137_p-94(kdgD)           3.62e-08  [+1(3.62e-08)]
+RALTA_B0132_p-91(gguR)           1.21e-07  [+1(1.21e-07)]
+H16_B0127_p-90(gudD)             3.62e-08  [+1(3.62e-08)]
+H16_B0965_p-57(garD)             1.63e-06  [+1(1.63e-06)]
+H16_B0965_p-157(garD)            4.19e-06  [+1(4.19e-06)]
+H16_B0131_p-94(kdgD)             6.86e-08  [+1(6.86e-08)]
+H16_B0131_p-289(kdgD)            1.23e-06  [+1(1.23e-06)]
+H16_B0126_p-81(gguR)             1.21e-07  [+1(1.21e-07)]
+Reut_B3715_p-87(gudD)            1.02e-09  [+1(1.02e-09)]
+Reut_A1006_p-45(tctC1)           5.07e-08  [+1(5.07e-08)]
+Reut_A1006_p-180(tctC1)          3.20e-07  [+1(3.20e-07)]
+Reut_B3689_p-67(gudP1)           1.39e-08  [+1(1.39e-08)]
+Reut_B3689_p-283(gudP1)          2.66e-06  [+1(2.66e-06)]
+Reut_B3714_p-80(gguR)            1.21e-07  [+1(1.21e-07)]
+Reut_B3688_p-102(kdgD)           8.99e-07  [+1(8.99e-07)]
+Reut_B3713_p-97(kgsD)            3.30e-06  [+1(3.30e-06)]
+Rmet_0834_p-80(gudD)             3.01e-08  [+1(3.01e-08)]
+Rmet_0971_p-161(tctC1)           7.97e-10  [+1(7.97e-10)]
+Rmet_0971_p-44(tctC1)            4.19e-06  [+1(4.19e-06)]
+Rmet_4735_p-78(gudP1)            5.07e-08  [+1(5.07e-08)]
+Rmet_0832_p-91(kgsD)             7.43e-06  [+1(7.43e-06)]
+Rmet_0832_p-98(kgsD)             1.42e-06  [+1(1.42e-06)]
+Rmet_0833_p-30(gguR)             7.61e-07  [+1(7.61e-07)]
+Rmet_4736_p-109(kdgD)            1.06e-06  [+1(1.06e-06)]
+Rpic_0946_p-17(gudD)             1.07e-07  [+1(1.07e-07)]
+Rpic_0945_p-85(gguR)             1.23e-06  [+1(1.23e-06)]
+RSc1079_p-26(gudD)               2.76e-09  [+1(2.76e-09)]
+RS04109_p-90(gguR)               2.57e-07  [+1(2.57e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

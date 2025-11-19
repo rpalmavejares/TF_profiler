@@ -1,0 +1,288 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NrdR_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC0260_p-108(nrdB)       1.0000     16  CC1889_p-44(nrdJ)        1.0000     16  
+CC1889_p-76(nrdJ)        1.0000     16  CC3492_p-88(nrdA)        1.0000     16  
+CC0260_p-76(nrdB)        1.0000     16  Cseg_3903_p-72(nrdA)     1.0000     16  
+Cseg_2178_p-134(nrdJ)    1.0000     16  Cseg_3897_p-129(nrdB)    1.0000     16  
+Cseg_3897_p-98(nrdB)     1.0000     16  Cseg_2178_p-166(nrdJ)    1.0000     16  
+Cseg_3903_p-303(nrdA)    1.0000     16  Caul_4661_p-94(nrdA)     1.0000     16  
+Caul_2560_p-118(nrdJ)    1.0000     16  Caul_2560_p-86(nrdJ)     1.0000     16  
+Caul_4709_p-87(nrdB)     1.0000     16  Caul_4709_p-118(nrdB)    1.0000     16  
+PHZ_c1855_p-61(nrdJ)     1.0000     16  PHZ_c0341_p-71(nrdA)     1.0000     16  
+PHZ_c1855_p-93(nrdJ)     1.0000     16  PHZ_c0344_p-89(nrdB)     1.0000     16  
+PHZ_c0344_p-57(nrdB)     1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NrdR_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/NrdR_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             336    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    336    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.253 C 0.274 G 0.223 T 0.25 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.253 C 0.274 G 0.224 T 0.25 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCWCAASATSTWGYGG MEME-1	width =  16  sites =  21  llr = 258  E-value = 3.6e-080
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:5:7a:a:1:4:::2
+pos.-specific     C  882a::5::51::3::
+probability       G  ::1:::4::4:181a6
+matrix            T  :22:2:1:a:9426:1
+
+         bits    2.2                 
+                 1.9    *   **     * 
+                 1.7    * * **     * 
+                 1.5    * * **     * 
+Relative         1.3    * * ** *   * 
+Entropy          1.1    * * ** * * * 
+(17.7 bits)      0.9 ** * * ** * * * 
+                 0.6 ** *************
+                 0.4 ** *************
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           CCACAACATCTAGTGG
+consensus              T T G  G T C  
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Caul_4661_p-94(nrdA)          1  4.74e-09          . CCACAAGATGTAGCGG           
+Cseg_3903_p-303(nrdA)         1  9.19e-09          . CCCCAACATCTTGTGG           
+Caul_4709_p-118(nrdB)         1  2.01e-08          . CCACAACATGTTGTGT           
+PHZ_c0341_p-71(nrdA)          1  2.58e-08          . CCACAACATGTAGGGG           
+Caul_2560_p-118(nrdJ)         1  4.43e-08          . CTTCAACATCTTGTGG           
+Cseg_2178_p-166(nrdJ)         1  4.43e-08          . CTTCAACATCTTGTGG           
+CC1889_p-76(nrdJ)             1  4.43e-08          . CTTCAACATCTTGTGG           
+PHZ_c0344_p-57(nrdB)          1  6.51e-08          . CCACAAGATGTTGCGT           
+Cseg_3903_p-72(nrdA)          1  7.94e-08          . CCACAAGATATAGCGG           
+CC3492_p-88(nrdA)             1  7.94e-08          . CCACAAGATATAGCGG           
+CC0260_p-108(nrdB)            1  1.27e-07          . TCACAACATCTTGTGG           
+Cseg_3897_p-98(nrdB)          1  2.84e-07          . ACACTAGATGTGGTGG           
+Cseg_2178_p-134(nrdJ)         1  8.30e-07          . CCGCAACATCTATTGA           
+CC1889_p-44(nrdJ)             1  8.30e-07          . CCGCAACATCTATTGA           
+PHZ_c1855_p-61(nrdJ)          1  2.09e-06          . CCCCAACATCTATTGC           
+Caul_2560_p-86(nrdJ)          1  1.39e-05          . ACCCCACATCTATTGA           
+Cseg_3897_p-129(nrdB)         1  1.56e-05          . CTCCTCTATCTTGTGG           
+Caul_4709_p-87(nrdB)          1  1.65e-05          . CCACTAGATGCGGCCG           
+PHZ_c0344_p-89(nrdB)          1  1.94e-05          . ACTCTAGATGCGGCGT           
+CC0260_p-76(nrdB)             1  2.51e-05          . CCACTAGATGAACCGA           
+PHZ_c1855_p-93(nrdJ)          1  5.00e-05          . AGTCGATATGTTGGGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Caul_4661_p-94(nrdA)              4.7e-09  [+1]
+Cseg_3903_p-303(nrdA)             9.2e-09  [+1]
+Caul_4709_p-118(nrdB)               2e-08  [+1]
+PHZ_c0341_p-71(nrdA)              2.6e-08  [+1]
+Caul_2560_p-118(nrdJ)             4.4e-08  [+1]
+Cseg_2178_p-166(nrdJ)             4.4e-08  [+1]
+CC1889_p-76(nrdJ)                 4.4e-08  [+1]
+PHZ_c0344_p-57(nrdB)              6.5e-08  [+1]
+Cseg_3903_p-72(nrdA)              7.9e-08  [+1]
+CC3492_p-88(nrdA)                 7.9e-08  [+1]
+CC0260_p-108(nrdB)                1.3e-07  [+1]
+Cseg_3897_p-98(nrdB)              2.8e-07  [+1]
+Cseg_2178_p-134(nrdJ)             8.3e-07  [+1]
+CC1889_p-44(nrdJ)                 8.3e-07  [+1]
+PHZ_c1855_p-61(nrdJ)              2.1e-06  [+1]
+Caul_2560_p-86(nrdJ)              1.4e-05  [+1]
+Cseg_3897_p-129(nrdB)             1.6e-05  [+1]
+Caul_4709_p-87(nrdB)              1.6e-05  [+1]
+PHZ_c0344_p-89(nrdB)              1.9e-05  [+1]
+CC0260_p-76(nrdB)                 2.5e-05  [+1]
+PHZ_c1855_p-93(nrdJ)                5e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCWCAASATSTWGYGG width=16 seqs=21
+Caul_4661_p-94(nrdA)     (    1) CCACAAGATGTAGCGG  1 
+Cseg_3903_p-303(nrdA)    (    1) CCCCAACATCTTGTGG  1 
+Caul_4709_p-118(nrdB)    (    1) CCACAACATGTTGTGT  1 
+PHZ_c0341_p-71(nrdA)     (    1) CCACAACATGTAGGGG  1 
+Caul_2560_p-118(nrdJ)    (    1) CTTCAACATCTTGTGG  1 
+Cseg_2178_p-166(nrdJ)    (    1) CTTCAACATCTTGTGG  1 
+CC1889_p-76(nrdJ)        (    1) CTTCAACATCTTGTGG  1 
+PHZ_c0344_p-57(nrdB)     (    1) CCACAAGATGTTGCGT  1 
+Cseg_3903_p-72(nrdA)     (    1) CCACAAGATATAGCGG  1 
+CC3492_p-88(nrdA)        (    1) CCACAAGATATAGCGG  1 
+CC0260_p-108(nrdB)       (    1) TCACAACATCTTGTGG  1 
+Cseg_3897_p-98(nrdB)     (    1) ACACTAGATGTGGTGG  1 
+Cseg_2178_p-134(nrdJ)    (    1) CCGCAACATCTATTGA  1 
+CC1889_p-44(nrdJ)        (    1) CCGCAACATCTATTGA  1 
+PHZ_c1855_p-61(nrdJ)     (    1) CCCCAACATCTATTGC  1 
+Caul_2560_p-86(nrdJ)     (    1) ACCCCACATCTATTGA  1 
+Cseg_3897_p-129(nrdB)    (    1) CTCCTCTATCTTGTGG  1 
+Caul_4709_p-87(nrdB)     (    1) CCACTAGATGCGGCCG  1 
+PHZ_c0344_p-89(nrdB)     (    1) ACTCTAGATGCGGCGT  1 
+CC0260_p-76(nrdB)        (    1) CCACTAGATGAACCGA  1 
+PHZ_c1855_p-93(nrdJ)     (    1) AGTCGATATGTTGGGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 21 bayes= 1.38995 E= 3.6e-080 
+   -41    148  -1104   -239 
+ -1104    148   -223    -39 
+    91    -52   -123     -7 
+ -1104    187  -1104  -1104 
+   140   -252   -223     -7 
+   191   -252  -1104  -1104 
+ -1104     94     77   -139 
+   198  -1104  -1104  -1104 
+ -1104  -1104  -1104    200 
+  -141     80     94  -1104 
+  -241   -152  -1104    178 
+    76  -1104    -65     78 
+ -1104   -252    177    -39 
+ -1104     29   -123    119 
+ -1104   -252    209  -1104 
+   -41   -252    147    -81 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 21 E= 3.6e-080 
+ 0.190476  0.761905  0.000000  0.047619 
+ 0.000000  0.761905  0.047619  0.190476 
+ 0.476190  0.190476  0.095238  0.238095 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.666667  0.047619  0.047619  0.238095 
+ 0.952381  0.047619  0.000000  0.000000 
+ 0.000000  0.523810  0.380952  0.095238 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.095238  0.476190  0.428571  0.000000 
+ 0.047619  0.095238  0.000000  0.857143 
+ 0.428571  0.000000  0.142857  0.428571 
+ 0.000000  0.047619  0.761905  0.190476 
+ 0.000000  0.333333  0.095238  0.571429 
+ 0.000000  0.047619  0.952381  0.000000 
+ 0.190476  0.047619  0.619048  0.142857 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCWCAASATSTWGYGG MEME-1 regular expression
+--------------------------------------------------------------------------------
+CC[AT]C[AT]A[CG]AT[CG]T[AT]G[TC]GG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC0260_p-108(nrdB)               1.27e-07  [+1(1.27e-07)]
+CC1889_p-44(nrdJ)                8.30e-07  [+1(8.30e-07)]
+CC1889_p-76(nrdJ)                4.43e-08  [+1(4.43e-08)]
+CC3492_p-88(nrdA)                7.94e-08  [+1(7.94e-08)]
+CC0260_p-76(nrdB)                2.51e-05  [+1(2.51e-05)]
+Cseg_3903_p-72(nrdA)             7.94e-08  [+1(7.94e-08)]
+Cseg_2178_p-134(nrdJ)            8.30e-07  [+1(8.30e-07)]
+Cseg_3897_p-129(nrdB)            1.56e-05  [+1(1.56e-05)]
+Cseg_3897_p-98(nrdB)             2.84e-07  [+1(2.84e-07)]
+Cseg_2178_p-166(nrdJ)            4.43e-08  [+1(4.43e-08)]
+Cseg_3903_p-303(nrdA)            9.19e-09  [+1(9.19e-09)]
+Caul_4661_p-94(nrdA)             4.74e-09  [+1(4.74e-09)]
+Caul_2560_p-118(nrdJ)            4.43e-08  [+1(4.43e-08)]
+Caul_2560_p-86(nrdJ)             1.39e-05  [+1(1.39e-05)]
+Caul_4709_p-87(nrdB)             1.65e-05  [+1(1.65e-05)]
+Caul_4709_p-118(nrdB)            2.01e-08  [+1(2.01e-08)]
+PHZ_c1855_p-61(nrdJ)             2.09e-06  [+1(2.09e-06)]
+PHZ_c0341_p-71(nrdA)             2.58e-08  [+1(2.58e-08)]
+PHZ_c1855_p-93(nrdJ)             5.00e-05  [+1(5.00e-05)]
+PHZ_c0344_p-89(nrdB)             1.94e-05  [+1(1.94e-05)]
+PHZ_c0344_p-57(nrdB)             6.51e-08  [+1(6.51e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

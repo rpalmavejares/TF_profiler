@@ -1,0 +1,248 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CadR-PbrR_Shewanellaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sputcn32_0229(czcD)Score 1.0000     21  Sputcn32_1972(czcD)Score 1.0000     21  
+Sputcn32_0195(czcD2)Scor 1.0000     21  Sputcn32_0221(czcD2)Scor 1.0000     21  
+Sputw3181_1169(czcD)Scor 1.0000     21  Sputw3181_0414(czcD2)Sco 1.0000     21  
+Sputw3181_0520(czcD2)Sco 1.0000     21  Sputw3181_0439(czcD2)Sco 1.0000     21  
+Shewana3_4157(czcD)Score 1.0000     21  Sfri_3462(cadA)Score=5.8 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CadR-PbrR_Shewanellaceae.fasta -oc CadR-PbrR_Shewanellaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           21
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             210    N=              10    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.333 C 0.157 G 0.148 T 0.362 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.332 C 0.159 G 0.150 T 0.360 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  21  sites =  10  llr = 231  E-value = 1.5e-064
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::a:a::4a::5:a:a:1
+pos.-specific     C  :a55::::::::a::3:::::
+probability       G  ::::::::a:6::::::5:a:
+matrix            T  ::55a:a::a:::a57:5::9
+
+         bits    2.7  *      *   *      * 
+                 2.5  *      *   *      * 
+                 2.2  *      *   *      * 
+                 1.9  *      *   *      * 
+Relative         1.6 **   * **  **   * ** 
+Entropy          1.4 **  **********  * ** 
+(33.3 bits)      1.1 **************  *****
+                 0.8 ************** ******
+                 0.5 *********************
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCCTATAGTGACTATAGAGT
+consensus              TT      A   TC T   
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+Sputw3181_0439(czcD2)Sco      1  2.46e-11          . ACCTTATAGTGACTTTATAGT           
+Sputw3181_0520(czcD2)Sco      1  2.46e-11          . ACCTTATAGTGACTTTATAGT           
+Sputw3181_0414(czcD2)Sco      1  2.46e-11          . ACCTTATAGTGACTTTATAGT           
+Sputcn32_0221(czcD2)Scor      1  2.46e-11          . ACCTTATAGTGACTTTATAGT           
+Sputcn32_0195(czcD2)Scor      1  2.46e-11          . ACCTTATAGTGACTTTATAGT           
+Shewana3_4157(czcD)Score      1  2.91e-11          . ACTCTATAGTAACTATAGAGT           
+Sputw3181_1169(czcD)Scor      1  2.91e-11          . ACTCTATAGTAACTACAGAGT           
+Sputcn32_1972(czcD)Score      1  2.91e-11          . ACTCTATAGTAACTACAGAGT           
+Sputcn32_0229(czcD)Score      1  2.91e-11          . ACTCTATAGTAACTACAGAGT           
+Sfri_3462(cadA)Score=5.8      1  8.67e-11          . ACTCTATAGTGACTATAGAGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputw3181_0439(czcD2)Sco          2.5e-11  [+1]
+Sputw3181_0520(czcD2)Sco          2.5e-11  [+1]
+Sputw3181_0414(czcD2)Sco          2.5e-11  [+1]
+Sputcn32_0221(czcD2)Scor          2.5e-11  [+1]
+Sputcn32_0195(czcD2)Scor          2.5e-11  [+1]
+Shewana3_4157(czcD)Score          2.9e-11  [+1]
+Sputw3181_1169(czcD)Scor          2.9e-11  [+1]
+Sputcn32_1972(czcD)Score          2.9e-11  [+1]
+Sputcn32_0229(czcD)Score          2.9e-11  [+1]
+Sfri_3462(cadA)Score=5.8          8.7e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=21 seqs=10
+Sputw3181_0439(czcD2)Sco (    1) ACCTTATAGTGACTTTATAGT  1 
+Sputw3181_0520(czcD2)Sco (    1) ACCTTATAGTGACTTTATAGT  1 
+Sputw3181_0414(czcD2)Sco (    1) ACCTTATAGTGACTTTATAGT  1 
+Sputcn32_0221(czcD2)Scor (    1) ACCTTATAGTGACTTTATAGT  1 
+Sputcn32_0195(czcD2)Scor (    1) ACCTTATAGTGACTTTATAGT  1 
+Shewana3_4157(czcD)Score (    1) ACTCTATAGTAACTATAGAGT  1 
+Sputw3181_1169(czcD)Scor (    1) ACTCTATAGTAACTACAGAGT  1 
+Sputcn32_1972(czcD)Score (    1) ACTCTATAGTAACTACAGAGT  1 
+Sputcn32_0229(czcD)Score (    1) ACTCTATAGTAACTACAGAGT  1 
+Sfri_3462(cadA)Score=5.8 (    1) ACTCTATAGTGACTATAGAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 10 bayes= 0.830075 E= 1.5e-064 
+   159   -997   -997   -997 
+  -997    265   -997   -997 
+  -997    165   -997     47 
+  -997    165   -997     47 
+  -997   -997   -997    147 
+   159   -997   -997   -997 
+  -997   -997   -997    147 
+   159   -997   -997   -997 
+  -997   -997    274   -997 
+  -997   -997   -997    147 
+    27   -997    200   -997 
+   159   -997   -997   -997 
+  -997    265   -997   -997 
+  -997   -997   -997    147 
+    59   -997   -997     47 
+  -997     92   -997     96 
+   159   -997   -997   -997 
+  -997   -997    174     47 
+   159   -997   -997   -997 
+  -997   -997    274   -997 
+  -173   -997   -997    132 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 10 E= 1.5e-064 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.400000  0.000000  0.600000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.300000  0.000000  0.700000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.100000  0.000000  0.000000  0.900000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+AC[CT][CT]TATAGT[GA]ACT[AT][TC]A[GT]AGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sputcn32_0229(czcD)Score         2.91e-11  [+1(2.91e-11)]
+Sputcn32_1972(czcD)Score         2.91e-11  [+1(2.91e-11)]
+Sputcn32_0195(czcD2)Scor         2.46e-11  [+1(2.46e-11)]
+Sputcn32_0221(czcD2)Scor         2.46e-11  [+1(2.46e-11)]
+Sputw3181_1169(czcD)Scor         2.91e-11  [+1(2.91e-11)]
+Sputw3181_0414(czcD2)Sco         2.46e-11  [+1(2.46e-11)]
+Sputw3181_0520(czcD2)Sco         2.46e-11  [+1(2.46e-11)]
+Sputw3181_0439(czcD2)Sco         2.46e-11  [+1(2.46e-11)]
+Shewana3_4157(czcD)Score         2.91e-11  [+1(2.91e-11)]
+Sfri_3462(cadA)Score=5.8         8.67e-11  [+1(8.67e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

@@ -1,0 +1,258 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NikR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b3476_p-65(nikA)         1.0000     28  STM1255_p-101(yntA)      1.0000     28  
+STM2783_p-79(nxiA)       1.0000     28  CKO_04926_p-207(nikA)    1.0000     28  
+KPN_03850_p-52(nikA)     1.0000     28  Ent638_1834_p-64(nikA)   1.0000     28  
+ETAE_1379_p-59(nikA)     1.0000     28  ETAE_1580_p-171(yntA)    1.0000     28  
+ETAE_2654_p-120(nxiA)    1.0000     28  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NikR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/NikR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           28
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             252    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    252    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.377 C 0.143 G 0.171 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.375 C 0.145 G 0.172 T 0.309 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1	width =  28  sites =   9  llr = 223  E-value = 1.1e-052
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::9::82187:1461789a2:3::a:a:
+pos.-specific     C  :::::23::::221:1::::7::a:1:a
+probability       G  a:1:a::9::1:::1221::361:::::
+matrix            T  :a:a::4:2397338::::8:19::9::
+
+         bits    2.8                        *   *
+                 2.5 *   *                  *   *
+                 2.2 *   *                  *   *
+                 2.0 *   *  *               *   *
+Relative         1.7 ** **  *            *  *   *
+Entropy          1.4 ** **  *  *       * * ******
+(35.8 bits)      1.1 *****  *  *      ** * ******
+                 0.8 ****** ** *   * ************
+                 0.6 ************  **************
+                 0.3 ****************************
+                 0.0 ----------------------------
+
+Multilevel           GTATGATGAATTAATAAAATCGTCATAC
+consensus                 CC TT CTT GG  AGA      
+sequence                   A     C               
+                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+KPN_03850_p-52(nikA)          1  3.84e-14          . GTATGATGAATCACTAAAATCGTCATAC           
+CKO_04926_p-207(nikA)         1  5.51e-14          . GTATGATGAATCTTTAGAATCGTCATAC           
+b3476_p-65(nikA)              1  1.30e-13          . GTATGACGAATACTTAAAATCGTCATAC           
+Ent638_1834_p-64(nikA)        1  2.66e-13          . GTATGATGAATTATTAGAATCGTCACAC           
+ETAE_1379_p-59(nikA)          1  5.15e-13          . GTATGCAGAATTTATAAAATCATCATAC           
+STM1255_p-101(yntA)           1  8.87e-12          . GTATGATGTTTTTAAAAGATCGTCATAC           
+STM2783_p-79(nxiA)            1  1.11e-11          . GTGTGACGTTTTAATCAAATGATCATAC           
+ETAE_2654_p-120(nxiA)         1  2.61e-11          . GTATGACAATTTCATGAAAAGATCATAC           
+ETAE_1580_p-171(yntA)         1  1.76e-10          . GTATGCAGAAGTAAGGAAAAGTGCATAC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+KPN_03850_p-52(nikA)              3.8e-14  [+1]
+CKO_04926_p-207(nikA)             5.5e-14  [+1]
+b3476_p-65(nikA)                  1.3e-13  [+1]
+Ent638_1834_p-64(nikA)            2.7e-13  [+1]
+ETAE_1379_p-59(nikA)              5.2e-13  [+1]
+STM1255_p-101(yntA)               8.9e-12  [+1]
+STM2783_p-79(nxiA)                1.1e-11  [+1]
+ETAE_2654_p-120(nxiA)             2.6e-11  [+1]
+ETAE_1580_p-171(yntA)             1.8e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTATGAHGAWTTWWTAAAATSRTCATAC width=28 seqs=9
+KPN_03850_p-52(nikA)     (    1) GTATGATGAATCACTAAAATCGTCATAC  1 
+CKO_04926_p-207(nikA)    (    1) GTATGATGAATCTTTAGAATCGTCATAC  1 
+b3476_p-65(nikA)         (    1) GTATGACGAATACTTAAAATCGTCATAC  1 
+Ent638_1834_p-64(nikA)   (    1) GTATGATGAATTATTAGAATCGTCACAC  1 
+ETAE_1379_p-59(nikA)     (    1) GTATGCAGAATTTATAAAATCATCATAC  1 
+STM1255_p-101(yntA)      (    1) GTATGATGTTTTTAAAAGATCGTCATAC  1 
+STM2783_p-79(nxiA)       (    1) GTGTGACGTTTTAATCAAATGATCATAC  1 
+ETAE_2654_p-120(nxiA)    (    1) GTATGACAATTTCATGAAAAGATCATAC  1 
+ETAE_1580_p-171(yntA)    (    1) GTATGCAGAAGTAAGGAAAAGTGCATAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 9 bayes= 0.719892 E= 1.1e-052 
+  -982   -982    254   -982 
+  -982   -982   -982    170 
+   124   -982    -63   -982 
+  -982   -982   -982    170 
+  -982   -982    254   -982 
+   105     62   -982   -982 
+   -75    120   -982     53 
+  -175   -982    237   -982 
+   105   -982   -982    -47 
+    83   -982   -982     11 
+  -982   -982    -63    153 
+  -175     62   -982    111 
+    24     62   -982     11 
+    57    -38   -982     11 
+  -175   -982    -63    133 
+    83    -38     37   -982 
+   105   -982     37   -982 
+   124   -982    -63   -982 
+   141   -982   -982   -982 
+   -75   -982   -982    133 
+  -982    220     95   -982 
+   -17   -982    169   -147 
+  -982   -982    -63    153 
+  -982    279   -982   -982 
+   141   -982   -982   -982 
+  -982    -38   -982    153 
+   141   -982   -982   -982 
+  -982    279   -982   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 9 E= 1.1e-052 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.888889  0.000000  0.111111  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.777778  0.222222  0.000000  0.000000 
+ 0.222222  0.333333  0.000000  0.444444 
+ 0.111111  0.000000  0.888889  0.000000 
+ 0.777778  0.000000  0.000000  0.222222 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.000000  0.000000  0.111111  0.888889 
+ 0.111111  0.222222  0.000000  0.666667 
+ 0.444444  0.222222  0.000000  0.333333 
+ 0.555556  0.111111  0.000000  0.333333 
+ 0.111111  0.000000  0.111111  0.777778 
+ 0.666667  0.111111  0.222222  0.000000 
+ 0.777778  0.000000  0.222222  0.000000 
+ 0.888889  0.000000  0.111111  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.222222  0.000000  0.000000  0.777778 
+ 0.000000  0.666667  0.333333  0.000000 
+ 0.333333  0.000000  0.555556  0.111111 
+ 0.000000  0.000000  0.111111  0.888889 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.111111  0.000000  0.888889 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTATGAHGAWTTWWTAAAATSRTCATAC MEME-1 regular expression
+--------------------------------------------------------------------------------
+GTATG[AC][TCA]G[AT][AT]T[TC][ATC][AT]T[AG][AG]AA[TA][CG][GA]TCATAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b3476_p-65(nikA)                 1.30e-13  [+1(1.30e-13)]
+STM1255_p-101(yntA)              8.87e-12  [+1(8.87e-12)]
+STM2783_p-79(nxiA)               1.11e-11  [+1(1.11e-11)]
+CKO_04926_p-207(nikA)            5.51e-14  [+1(5.51e-14)]
+KPN_03850_p-52(nikA)             3.84e-14  [+1(3.84e-14)]
+Ent638_1834_p-64(nikA)           2.66e-13  [+1(2.66e-13)]
+ETAE_1379_p-59(nikA)             5.15e-13  [+1(5.15e-13)]
+ETAE_1580_p-171(yntA)            1.76e-10  [+1(1.76e-10)]
+ETAE_2654_p-120(nxiA)            2.61e-11  [+1(2.61e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

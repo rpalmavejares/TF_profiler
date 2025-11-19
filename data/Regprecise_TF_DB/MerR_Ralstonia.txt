@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MerR_Ralstonia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rpic_1784_p-63(merT)     1.0000     22  Rmet_2313_p-63(n/a)      1.0000     22  
+Rmet_5991_p-62(merT)     1.0000     22  pMOL30_053_p-62(merT)    1.0000     22  
+RMe0107_p-63(merT)       1.0000     22  pMOL30_107_p-63(merT)    1.0000     22  
+Rmet_6172_p-63(merT)     1.0000     22  Rmet_6345_p-63(merT)     1.0000     22  
+Reut_D6497_p-63(merT)    1.0000     22  pJP4_52_p-63(merT)       1.0000     22  
+H16_B0904_p-142(h16_B090 1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MerR_Ralstonia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Ralstonia/MerR_Ralstonia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             242    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    242    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.289 C 0.252 G 0.264 T 0.194 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.289 C 0.252 G 0.264 T 0.195 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACTCCGTACATGAGTACGGAAG MEME-1	width =  22  sites =  11  llr = 274  E-value = 3.3e-082
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::::a:6127::a:::89:
+pos.-specific     C  :a:aa:::9121:1::a:::11
+probability       G  :::::a::1::639:::aa2:7
+matrix            T  ::a:::a::371::a::::::2
+
+         bits    2.4   *   *       *       
+                 2.1   *   *       *       
+                 1.9 ********      *****   
+                 1.7 *********     *****   
+Relative         1.4 *********    ****** * 
+Entropy          1.2 ********* *  ******** 
+(35.9 bits)      0.9 ********* * **********
+                 0.7 *********** **********
+                 0.5 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ACTCCGTACATGAGTACGGAAG
+consensus                     T  G         
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+pJP4_52_p-63(merT)            1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+Reut_D6497_p-63(merT)         1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+Rmet_6345_p-63(merT)          1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+Rmet_6172_p-63(merT)          1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+pMOL30_107_p-63(merT)         1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+RMe0107_p-63(merT)            1  8.38e-14          . ACTCCGTACATGAGTACGGAAG           
+Rpic_1784_p-63(merT)          1  1.12e-11          . ACTCCGTACAACAGTACGGAAG           
+Rmet_2313_p-63(n/a)           1  1.84e-11          . ACTCCGTAGTTGACTACGGAAG           
+pMOL30_053_p-62(merT)         1  5.31e-11          . ACTCCGTACTCAGGTACGGGAT           
+Rmet_5991_p-62(merT)          1  5.31e-11          . ACTCCGTACTCAGGTACGGGAT           
+H16_B0904_p-142(h16_B090      1  1.11e-10          . ACTCCGTACCTTGGTACGGACC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+pJP4_52_p-63(merT)                8.4e-14  [+1]
+Reut_D6497_p-63(merT)             8.4e-14  [+1]
+Rmet_6345_p-63(merT)              8.4e-14  [+1]
+Rmet_6172_p-63(merT)              8.4e-14  [+1]
+pMOL30_107_p-63(merT)             8.4e-14  [+1]
+RMe0107_p-63(merT)                8.4e-14  [+1]
+Rpic_1784_p-63(merT)              1.1e-11  [+1]
+Rmet_2313_p-63(n/a)               1.8e-11  [+1]
+pMOL30_053_p-62(merT)             5.3e-11  [+1]
+Rmet_5991_p-62(merT)              5.3e-11  [+1]
+H16_B0904_p-142(h16_B090          1.1e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACTCCGTACATGAGTACGGAAG width=22 seqs=11
+pJP4_52_p-63(merT)       (    1) ACTCCGTACATGAGTACGGAAG  1 
+Reut_D6497_p-63(merT)    (    1) ACTCCGTACATGAGTACGGAAG  1 
+Rmet_6345_p-63(merT)     (    1) ACTCCGTACATGAGTACGGAAG  1 
+Rmet_6172_p-63(merT)     (    1) ACTCCGTACATGAGTACGGAAG  1 
+pMOL30_107_p-63(merT)    (    1) ACTCCGTACATGAGTACGGAAG  1 
+RMe0107_p-63(merT)       (    1) ACTCCGTACATGAGTACGGAAG  1 
+Rpic_1784_p-63(merT)     (    1) ACTCCGTACAACAGTACGGAAG  1 
+Rmet_2313_p-63(n/a)      (    1) ACTCCGTAGTTGACTACGGAAG  1 
+pMOL30_053_p-62(merT)    (    1) ACTCCGTACTCAGGTACGGGAT  1 
+Rmet_5991_p-62(merT)     (    1) ACTCCGTACTCAGGTACGGGAT  1 
+H16_B0904_p-142(h16_B090 (    1) ACTCCGTACCTTGGTACGGACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 11 bayes= 0.921997 E= 3.3e-082 
+   179  -1010  -1010  -1010 
+ -1010    199  -1010  -1010 
+ -1010  -1010  -1010    236 
+ -1010    199  -1010  -1010 
+ -1010    199  -1010  -1010 
+ -1010  -1010    192  -1010 
+ -1010  -1010  -1010    236 
+   179  -1010  -1010  -1010 
+ -1010    185   -154  -1010 
+   114   -147  -1010     48 
+  -166    -47  -1010    190 
+   -67   -147    127   -110 
+   133  -1010      5  -1010 
+ -1010   -147    178  -1010 
+ -1010  -1010  -1010    236 
+   179  -1010  -1010  -1010 
+ -1010    199  -1010  -1010 
+ -1010  -1010    192  -1010 
+ -1010  -1010    192  -1010 
+   150  -1010    -54  -1010 
+   165   -147  -1010  -1010 
+ -1010   -147    146    -10 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 11 E= 3.3e-082 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.909091  0.090909  0.000000 
+ 0.636364  0.090909  0.000000  0.272727 
+ 0.090909  0.181818  0.000000  0.727273 
+ 0.181818  0.090909  0.636364  0.090909 
+ 0.727273  0.000000  0.272727  0.000000 
+ 0.000000  0.090909  0.909091  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.818182  0.000000  0.181818  0.000000 
+ 0.909091  0.090909  0.000000  0.000000 
+ 0.000000  0.090909  0.727273  0.181818 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTCCGTACATGAGTACGGAAG MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACTCCGTAC[AT]TG[AG]GTACGGAAG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rpic_1784_p-63(merT)             1.12e-11  [+1(1.12e-11)]
+Rmet_2313_p-63(n/a)              1.84e-11  [+1(1.84e-11)]
+Rmet_5991_p-62(merT)             5.31e-11  [+1(5.31e-11)]
+pMOL30_053_p-62(merT)            5.31e-11  [+1(5.31e-11)]
+RMe0107_p-63(merT)               8.38e-14  [+1(8.38e-14)]
+pMOL30_107_p-63(merT)            8.38e-14  [+1(8.38e-14)]
+Rmet_6172_p-63(merT)             8.38e-14  [+1(8.38e-14)]
+Rmet_6345_p-63(merT)             8.38e-14  [+1(8.38e-14)]
+Reut_D6497_p-63(merT)            8.38e-14  [+1(8.38e-14)]
+pJP4_52_p-63(merT)               8.38e-14  [+1(8.38e-14)]
+H16_B0904_p-142(h16_B090         1.11e-10  [+1(1.11e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

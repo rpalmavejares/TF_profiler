@@ -1,0 +1,256 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/DesT_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA1610_p-153(fabA)       1.0000     18  PA4889_p-73(desC)        1.0000     18  
+PSEEN3622_p-150(fabA)    1.0000     18  PSEEN1546_p-48(plsC)     1.0000     18  
+PP4174_p-149(fabA)       1.0000     18  PP1844_p-48(plsC)        1.0000     18  
+PSPTO2211_p-163(fabA)    1.0000     18  PFL_1737_p-150(fabA)     1.0000     18  
+PFL_1839_p-51(plsC)      1.0000     18  Pmen_2469_p-144(fabA)    1.0000     18  
+Pmen_2584_p-47(plsC)     1.0000     18  Pmen_0668_p-71(desC)     1.0000     18  
+Pmen_0668_p-29(desC)     1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/DesT_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/DesT_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             234    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    234    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.269 C 0.265 G 0.205 T 0.261 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.269 C 0.265 G 0.206 T 0.261 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AGTGMACAMCTGTACWCT MEME-1	width =  18  sites =  13  llr = 223  E-value = 1.3e-065
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:1:3a:83::::7:6:1
+pos.-specific     C  ::::5:a:573:::8:82
+probability       G  :a:a:::212:a::21::
+matrix            T  1:9:2:::217:a3:328
+
+         bits    2.3  * *       *      
+                 2.1  * *       **     
+                 1.8  * * **    **     
+                 1.6 **** **    **     
+Relative         1.4 **** ***   ** *   
+Entropy          1.1 **** ***  *** * * 
+(24.7 bits)      0.9 **** *** ****** **
+                 0.7 **** *** *********
+                 0.5 ******** *********
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           AGTGCACACCTGTACACT
+consensus                A   AGC  T TT 
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PSEEN3622_p-150(fabA)         1  7.92e-11          . AGTGCACACCTGTACTCT           
+PP1844_p-48(plsC)             1  1.18e-10          . AGTGCACACCCGTACACT           
+PSEEN1546_p-48(plsC)          1  1.18e-10          . AGTGCACACCCGTACACT           
+PFL_1839_p-51(plsC)           1  8.51e-10          . AGTGCACATCCGTACACT           
+PFL_1737_p-150(fabA)          1  2.12e-09          . AGTGCACAAGTGTACATT           
+Pmen_2584_p-47(plsC)          1  3.32e-09          . AGTGAACGCCCGTACACT           
+Pmen_0668_p-71(desC)          1  5.62e-09          . AGTGAACAACTGTTGACT           
+PP4174_p-149(fabA)            1  6.12e-09          . AGTGCACACCTGTACTTC           
+Pmen_0668_p-29(desC)          1  2.02e-08          . TGTGCACAAGTGTTCACT           
+PSPTO2211_p-163(fabA)         1  3.78e-08          . AGTGTACAGGTGTACTTT           
+PA1610_p-153(fabA)            1  5.12e-08          . AGTGAACATCTGTTCGCC           
+PA4889_p-73(desC)             1  7.48e-08          . AGTGAACGCTTGTTGACT           
+Pmen_2469_p-144(fabA)         1  1.04e-07          . AGAGTACAACTGTACTCA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSEEN3622_p-150(fabA)             7.9e-11  [+1]
+PP1844_p-48(plsC)                 1.2e-10  [+1]
+PSEEN1546_p-48(plsC)              1.2e-10  [+1]
+PFL_1839_p-51(plsC)               8.5e-10  [+1]
+PFL_1737_p-150(fabA)              2.1e-09  [+1]
+Pmen_2584_p-47(plsC)              3.3e-09  [+1]
+Pmen_0668_p-71(desC)              5.6e-09  [+1]
+PP4174_p-149(fabA)                6.1e-09  [+1]
+Pmen_0668_p-29(desC)                2e-08  [+1]
+PSPTO2211_p-163(fabA)             3.8e-08  [+1]
+PA1610_p-153(fabA)                5.1e-08  [+1]
+PA4889_p-73(desC)                 7.5e-08  [+1]
+Pmen_2469_p-144(fabA)               1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AGTGMACAMCTGTACWCT width=18 seqs=13
+PSEEN3622_p-150(fabA)    (    1) AGTGCACACCTGTACTCT  1 
+PP1844_p-48(plsC)        (    1) AGTGCACACCCGTACACT  1 
+PSEEN1546_p-48(plsC)     (    1) AGTGCACACCCGTACACT  1 
+PFL_1839_p-51(plsC)      (    1) AGTGCACATCCGTACACT  1 
+PFL_1737_p-150(fabA)     (    1) AGTGCACAAGTGTACATT  1 
+Pmen_2584_p-47(plsC)     (    1) AGTGAACGCCCGTACACT  1 
+Pmen_0668_p-71(desC)     (    1) AGTGAACAACTGTTGACT  1 
+PP4174_p-149(fabA)       (    1) AGTGCACACCTGTACTTC  1 
+Pmen_0668_p-29(desC)     (    1) TGTGCACAAGTGTTCACT  1 
+PSPTO2211_p-163(fabA)    (    1) AGTGTACAGGTGTACTTT  1 
+PA1610_p-153(fabA)       (    1) AGTGAACATCTGTTCGCC  1 
+PA4889_p-73(desC)        (    1) AGTGAACGCTTGTTGACT  1 
+Pmen_2469_p-144(fabA)    (    1) AGAGTACAACTGTACTCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 13 bayes= 1.06711 E= 1.3e-065 
+   178  -1035  -1035   -176 
+ -1035  -1035    228  -1035 
+  -180  -1035  -1035    182 
+ -1035  -1035    228  -1035 
+    19    102  -1035    -76 
+   189  -1035  -1035  -1035 
+ -1035    192  -1035  -1035 
+   165  -1035    -42  -1035 
+    19     80   -142    -76 
+ -1035    139     16   -176 
+ -1035     22  -1035    141 
+ -1035  -1035    228  -1035 
+ -1035  -1035  -1035    194 
+   136  -1035  -1035     24 
+ -1035    168    -42  -1035 
+   119  -1035   -142     24 
+ -1035    154  -1035    -17 
+  -180    -78  -1035    156 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 13 E= 1.3e-065 
+ 0.923077  0.000000  0.000000  0.076923 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.076923  0.000000  0.000000  0.923077 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.307692  0.538462  0.000000  0.153846 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.846154  0.000000  0.153846  0.000000 
+ 0.307692  0.461538  0.076923  0.153846 
+ 0.000000  0.692308  0.230769  0.076923 
+ 0.000000  0.307692  0.000000  0.692308 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.692308  0.000000  0.000000  0.307692 
+ 0.000000  0.846154  0.153846  0.000000 
+ 0.615385  0.000000  0.076923  0.307692 
+ 0.000000  0.769231  0.000000  0.230769 
+ 0.076923  0.153846  0.000000  0.769231 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AGTGMACAMCTGTACWCT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AGTG[CA]ACA[CA][CG][TC]GT[AT]C[AT][CT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA1610_p-153(fabA)               5.12e-08  [+1(5.12e-08)]
+PA4889_p-73(desC)                7.48e-08  [+1(7.48e-08)]
+PSEEN3622_p-150(fabA)            7.92e-11  [+1(7.92e-11)]
+PSEEN1546_p-48(plsC)             1.18e-10  [+1(1.18e-10)]
+PP4174_p-149(fabA)               6.12e-09  [+1(6.12e-09)]
+PP1844_p-48(plsC)                1.18e-10  [+1(1.18e-10)]
+PSPTO2211_p-163(fabA)            3.78e-08  [+1(3.78e-08)]
+PFL_1737_p-150(fabA)             2.12e-09  [+1(2.12e-09)]
+PFL_1839_p-51(plsC)              8.51e-10  [+1(8.51e-10)]
+Pmen_2469_p-144(fabA)            1.04e-07  [+1(1.04e-07)]
+Pmen_2584_p-47(plsC)             3.32e-09  [+1(3.32e-09)]
+Pmen_0668_p-71(desC)             5.62e-09  [+1(5.62e-09)]
+Pmen_0668_p-29(desC)             2.02e-08  [+1(2.02e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

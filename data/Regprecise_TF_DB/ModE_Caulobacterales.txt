@@ -1,0 +1,222 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/ModE_Caulobacterales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CC0327_p23(modE)         1.0000     21  CC0328_p-49(modA)        1.0000     21  
+Caul_2732_p-102(modB)    1.0000     21  Caul_2731_p-64(modE)     1.0000     21  
+Caul_1837_p-89(modA)     1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/ModE_Caulobacterales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Caulobacterales/ModE_Caulobacterales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             105    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=    105    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.362 C 0.152 G 0.143 T 0.343 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.358 C 0.156 G 0.147 T 0.339 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATGYAGYYWRRCTACATA MEME-1	width =  19  sites =   5  llr = 92  E-value = 1.6e-012
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a:::a:::4662:8:a:a
+pos.-specific     C  ::::4:244:::8::a:::
+probability       G  ::2a::6::244::2::::
+matrix            T  a:8:6:2664:::a:::a:
+
+         bits    2.8    *           *   
+                 2.5    *           *   
+                 2.2    *           *   
+                 1.9    *           *   
+Relative         1.7 *  *        ** * * 
+Entropy          1.4 ** * *      ** ****
+(26.4 bits)      1.1 ********* *********
+                 0.8 ********* *********
+                 0.6 ********* *********
+                 0.3 *******************
+                 0.0 -------------------
+
+Multilevel           TATGTAGTTAAACTACATA
+consensus              G C CCCTGGA G    
+sequence                   T  G         
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+CC0327_p23(modE)              2  2.06e-10          T TATGCAGCCAAACTACATA A         
+CC0328_p-49(modA)             2  9.48e-10          T TATGTAGTTTGGCTGCATA A         
+Caul_2731_p-64(modE)          2  5.25e-09          A TATGTATCTTGACTACATA A         
+Caul_1837_p-89(modA)          2  6.02e-09          T TAGGCACTTGAACTACATA A         
+Caul_2732_p-102(modB)         2  7.05e-09          T TATGTAGTCAAGATACATA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC0327_p23(modE)                  2.1e-10  1_[+1]_1
+CC0328_p-49(modA)                 9.5e-10  1_[+1]_1
+Caul_2731_p-64(modE)              5.2e-09  1_[+1]_1
+Caul_1837_p-89(modA)                6e-09  1_[+1]_1
+Caul_2732_p-102(modB)               7e-09  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATGYAGYYWRRCTACATA width=19 seqs=5
+CC0327_p23(modE)         (    2) TATGCAGCCAAACTACATA  1 
+CC0328_p-49(modA)        (    2) TATGTAGTTTGGCTGCATA  1 
+Caul_2731_p-64(modE)     (    2) TATGTATCTTGACTACATA  1 
+Caul_1837_p-89(modA)     (    2) TAGGCACTTGAACTACATA  1 
+Caul_2732_p-102(modB)    (    2) TATGTAGTCAAGATACATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 15 bayes= 2.25376 E= 1.6e-012 
+  -897   -897   -897    156 
+   148   -897   -897   -897 
+  -897   -897     45    124 
+  -897   -897    277   -897 
+  -897    136   -897     82 
+   148   -897   -897   -897 
+  -897     36    203    -76 
+  -897    136   -897     82 
+  -897    136   -897     82 
+    16   -897     45     24 
+    74   -897    144   -897 
+    74   -897    144   -897 
+   -84    236   -897   -897 
+  -897   -897   -897    156 
+   116   -897     45   -897 
+  -897    268   -897   -897 
+   148   -897   -897   -897 
+  -897   -897   -897    156 
+   148   -897   -897   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 5 E= 1.6e-012 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.200000  0.800000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.200000  0.600000  0.200000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.400000  0.000000  0.200000  0.400000 
+ 0.600000  0.000000  0.400000  0.000000 
+ 0.600000  0.000000  0.400000  0.000000 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATGYAGYYWRRCTACATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TA[TG]G[TC]A[GCT][TC][TC][ATG][AG][AG][CA]T[AG]CATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CC0327_p23(modE)                 6.19e-10  1_[+1(2.06e-10)]_1
+CC0328_p-49(modA)                2.84e-09  1_[+1(9.48e-10)]_1
+Caul_2732_p-102(modB)            2.11e-08  1_[+1(7.05e-09)]_1
+Caul_2731_p-64(modE)             1.57e-08  1_[+1(5.25e-09)]_1
+Caul_1837_p-89(modA)             1.81e-08  1_[+1(6.02e-09)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,308 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacteroidaceae/Zur_Bacteroidaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BACCELL_03973_p-61(zntA) 1.0000     17  BACCELL_01043_p-71(czcB) 1.0000     17  
+BACCELL_04342_p-62(omp_Z 1.0000     17  BACCOPRO_03123_p-59(zur) 1.0000     17  
+BACCOPRO_03244_p-102(czc 1.0000     17  BACDOR_04615_p-69(copA)  1.0000     17  
+BACDOR_03936_p-58(zntA)  1.0000     17  BACDOR_03390_p-141(czcB) 1.0000     17  
+BACEGG_01379_p-115(zntA) 1.0000     17  BACEGG_00329_p-71(czcB)  1.0000     17  
+BF1283_p-64(zntA)        1.0000     17  BACOVA_04045_p-61(omp_Zn 1.0000     17  
+BACOVA_01601_p-46(zntA)  1.0000     17  BACOVA_00676_p-80(czcB)  1.0000     17  
+BACPLE_01608_p-20(czcB)  1.0000     17  BACSTE_01593_p-56(zntA)  1.0000     17  
+BACSTE_03132_p-70(czcB)  1.0000     17  BT1139_p-77(omp_Zn)      1.0000     17  
+BT2512_p-56(zntA)        1.0000     17  BT2038_p-78(czcB)        1.0000     17  
+BACUNI_04663_p-67(zntA)  1.0000     17  BACUNI_01632_p-70(czcB)  1.0000     17  
+BVU_3023_p-69(copA)      1.0000     17  BVU_2484_p-58(zntA)      1.0000     17  
+BVU_2035_p-70(czcB)      1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacteroidaceae/Zur_Bacteroidaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacteroidaceae/Zur_Bacteroidaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             425    N=              25
+sample: seed=            0    hsfrac=          0
+        searchsize=    425    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.247 C 0.221 G 0.193 T 0.339 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.247 C 0.221 G 0.193 T 0.338 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTGCAACYTDGTTGCAT MEME-1	width =  17  sites =  25  llr = 417  E-value = 6.3e-147
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:::aa:1231::::a2
+pos.-specific     C  11:a::842:::::a:2
+probability       G  ::a::::::48::a:::
+matrix            T  69::::1663:aa:::6
+
+         bits    2.4   *          *   
+                 2.1   ****       *** 
+                 1.9   ****       *** 
+                 1.7   ****     ***** 
+Relative         1.4   ****     ***** 
+Entropy          1.2  ******   ****** 
+(24.0 bits)      0.9  ******   ****** 
+                 0.7  ******   ****** 
+                 0.5 **************** 
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TTGCAACTTGGTTGCAT
+consensus            A      CAA      C
+sequence                      T       
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+BACSTE_01593_p-56(zntA)       1  1.88e-10          . TTGCAACCTGGTTGCAT           
+BACEGG_01379_p-115(zntA)      1  1.88e-10          . TTGCAACTTGGTTGCAT           
+BACOVA_01601_p-46(zntA)       1  1.16e-09          . TTGCAACTTTGTTGCAT           
+BACCELL_04342_p-62(omp_Z      1  1.16e-09          . TTGCAACCTTGTTGCAT           
+BACEGG_00329_p-71(czcB)       1  1.84e-09          . ATGCAACTTGGTTGCAC           
+BACUNI_04663_p-67(zntA)       1  2.48e-09          . TTGCAACCAAGTTGCAT           
+BACCELL_03973_p-61(zntA)      1  2.73e-09          . TTGCAACCCAGTTGCAT           
+BT2512_p-56(zntA)             1  3.31e-09          . TTGCAACTTTGTTGCAC           
+BF1283_p-64(zntA)             1  3.31e-09          . TTGCAACTTTGTTGCAC           
+BACOVA_04045_p-61(omp_Zn      1  4.33e-09          . ATGCAACTAAGTTGCAT           
+BACCOPRO_03123_p-59(zur)      1  5.55e-09          . TTGCAACCCGGTTGCAA           
+BACSTE_03132_p-70(czcB)       1  6.18e-09          . ATGCAACCCGGTTGCAC           
+BVU_2484_p-58(zntA)           1  1.13e-08          . TTGCAATTTAGTTGCAT           
+BACDOR_03936_p-58(zntA)       1  1.13e-08          . TTGCAATTTAGTTGCAT           
+BT1139_p-77(omp_Zn)           1  1.34e-08          . ATGCAACTCAGTTGCAA           
+BACUNI_01632_p-70(czcB)       1  2.04e-08          . ATGCAATTTGGTTGCAC           
+BVU_2035_p-70(czcB)           1  3.81e-08          . CCGCAACTTTGTTGCAT           
+BACOVA_00676_p-80(czcB)       1  3.81e-08          . ATGCAAATTAGTTGCAT           
+BACDOR_03390_p-141(czcB)      1  3.81e-08          . CCGCAACTTTGTTGCAT           
+BACCOPRO_03244_p-102(czc      1  4.09e-08          . TTGCAACCTGCTTGCAA           
+BVU_3023_p-69(copA)           1  5.89e-08          . TTGCAACAAGATTGCAT           
+BT2038_p-78(czcB)             1  5.89e-08          . ATGCAAGCAAGTTGCAT           
+BACPLE_01608_p-20(czcB)       1  5.89e-08          . TTGCAACCTGTTTGCAA           
+BACDOR_04615_p-69(copA)       1  5.89e-08          . TTGCAACAAGATTGCAT           
+BACCELL_01043_p-71(czcB)      1  1.70e-07          . CTGCAACTTTATTGCAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACSTE_01593_p-56(zntA)           1.9e-10  [+1]
+BACEGG_01379_p-115(zntA)          1.9e-10  [+1]
+BACOVA_01601_p-46(zntA)           1.2e-09  [+1]
+BACCELL_04342_p-62(omp_Z          1.2e-09  [+1]
+BACEGG_00329_p-71(czcB)           1.8e-09  [+1]
+BACUNI_04663_p-67(zntA)           2.5e-09  [+1]
+BACCELL_03973_p-61(zntA)          2.7e-09  [+1]
+BT2512_p-56(zntA)                 3.3e-09  [+1]
+BF1283_p-64(zntA)                 3.3e-09  [+1]
+BACOVA_04045_p-61(omp_Zn          4.3e-09  [+1]
+BACCOPRO_03123_p-59(zur)          5.5e-09  [+1]
+BACSTE_03132_p-70(czcB)           6.2e-09  [+1]
+BVU_2484_p-58(zntA)               1.1e-08  [+1]
+BACDOR_03936_p-58(zntA)           1.1e-08  [+1]
+BT1139_p-77(omp_Zn)               1.3e-08  [+1]
+BACUNI_01632_p-70(czcB)             2e-08  [+1]
+BVU_2035_p-70(czcB)               3.8e-08  [+1]
+BACOVA_00676_p-80(czcB)           3.8e-08  [+1]
+BACDOR_03390_p-141(czcB)          3.8e-08  [+1]
+BACCOPRO_03244_p-102(czc          4.1e-08  [+1]
+BVU_3023_p-69(copA)               5.9e-08  [+1]
+BT2038_p-78(czcB)                 5.9e-08  [+1]
+BACPLE_01608_p-20(czcB)           5.9e-08  [+1]
+BACDOR_04615_p-69(copA)           5.9e-08  [+1]
+BACCELL_01043_p-71(czcB)          1.7e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTGCAACYTDGTTGCAT width=17 seqs=25
+BACSTE_01593_p-56(zntA)  (    1) TTGCAACCTGGTTGCAT  1 
+BACEGG_01379_p-115(zntA) (    1) TTGCAACTTGGTTGCAT  1 
+BACOVA_01601_p-46(zntA)  (    1) TTGCAACTTTGTTGCAT  1 
+BACCELL_04342_p-62(omp_Z (    1) TTGCAACCTTGTTGCAT  1 
+BACEGG_00329_p-71(czcB)  (    1) ATGCAACTTGGTTGCAC  1 
+BACUNI_04663_p-67(zntA)  (    1) TTGCAACCAAGTTGCAT  1 
+BACCELL_03973_p-61(zntA) (    1) TTGCAACCCAGTTGCAT  1 
+BT2512_p-56(zntA)        (    1) TTGCAACTTTGTTGCAC  1 
+BF1283_p-64(zntA)        (    1) TTGCAACTTTGTTGCAC  1 
+BACOVA_04045_p-61(omp_Zn (    1) ATGCAACTAAGTTGCAT  1 
+BACCOPRO_03123_p-59(zur) (    1) TTGCAACCCGGTTGCAA  1 
+BACSTE_03132_p-70(czcB)  (    1) ATGCAACCCGGTTGCAC  1 
+BVU_2484_p-58(zntA)      (    1) TTGCAATTTAGTTGCAT  1 
+BACDOR_03936_p-58(zntA)  (    1) TTGCAATTTAGTTGCAT  1 
+BT1139_p-77(omp_Zn)      (    1) ATGCAACTCAGTTGCAA  1 
+BACUNI_01632_p-70(czcB)  (    1) ATGCAATTTGGTTGCAC  1 
+BVU_2035_p-70(czcB)      (    1) CCGCAACTTTGTTGCAT  1 
+BACOVA_00676_p-80(czcB)  (    1) ATGCAAATTAGTTGCAT  1 
+BACDOR_03390_p-141(czcB) (    1) CCGCAACTTTGTTGCAT  1 
+BACCOPRO_03244_p-102(czc (    1) TTGCAACCTGCTTGCAA  1 
+BVU_3023_p-69(copA)      (    1) TTGCAACAAGATTGCAT  1 
+BT2038_p-78(czcB)        (    1) ATGCAAGCAAGTTGCAT  1 
+BACPLE_01608_p-20(czcB)  (    1) TTGCAACCTGTTTGCAA  1 
+BACDOR_04615_p-69(copA)  (    1) TTGCAACAAGATTGCAT  1 
+BACCELL_01043_p-71(czcB) (    1) CTGCAACTTTATTGCAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 25 bayes= 1.47917 E= 6.3e-147 
+    18    -88  -1129     83 
+ -1129   -147  -1129    144 
+ -1129  -1129    237  -1129 
+ -1129    217  -1129  -1129 
+   202  -1129  -1129  -1129 
+   202  -1129  -1129  -1129 
+  -262    185   -227   -149 
+  -163     70  -1129     73 
+   -30    -47  -1129     92 
+    37  -1129    105    -27 
+  -104   -247    205   -307 
+ -1129  -1129  -1129    156 
+ -1129  -1129  -1129    156 
+ -1129  -1129    237  -1129 
+ -1129    217  -1129  -1129 
+   202  -1129  -1129  -1129 
+   -63    -15   -227     83 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 25 E= 6.3e-147 
+ 0.280000  0.120000  0.000000  0.600000 
+ 0.000000  0.080000  0.000000  0.920000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.040000  0.800000  0.040000  0.120000 
+ 0.080000  0.360000  0.000000  0.560000 
+ 0.200000  0.160000  0.000000  0.640000 
+ 0.320000  0.000000  0.400000  0.280000 
+ 0.120000  0.040000  0.800000  0.040000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.160000  0.200000  0.040000  0.600000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGCAACYTDGTTGCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TGCAAC[TC][TA][GAT]GTTGCA[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BACCELL_03973_p-61(zntA)         2.73e-09  [+1(2.73e-09)]
+BACCELL_01043_p-71(czcB)         1.70e-07  [+1(1.70e-07)]
+BACCELL_04342_p-62(omp_Z         1.16e-09  [+1(1.16e-09)]
+BACCOPRO_03123_p-59(zur)         5.55e-09  [+1(5.55e-09)]
+BACCOPRO_03244_p-102(czc         4.09e-08  [+1(4.09e-08)]
+BACDOR_04615_p-69(copA)          5.89e-08  [+1(5.89e-08)]
+BACDOR_03936_p-58(zntA)          1.13e-08  [+1(1.13e-08)]
+BACDOR_03390_p-141(czcB)         3.81e-08  [+1(3.81e-08)]
+BACEGG_01379_p-115(zntA)         1.88e-10  [+1(1.88e-10)]
+BACEGG_00329_p-71(czcB)          1.84e-09  [+1(1.84e-09)]
+BF1283_p-64(zntA)                3.31e-09  [+1(3.31e-09)]
+BACOVA_04045_p-61(omp_Zn         4.33e-09  [+1(4.33e-09)]
+BACOVA_01601_p-46(zntA)          1.16e-09  [+1(1.16e-09)]
+BACOVA_00676_p-80(czcB)          3.81e-08  [+1(3.81e-08)]
+BACPLE_01608_p-20(czcB)          5.89e-08  [+1(5.89e-08)]
+BACSTE_01593_p-56(zntA)          1.88e-10  [+1(1.88e-10)]
+BACSTE_03132_p-70(czcB)          6.18e-09  [+1(6.18e-09)]
+BT1139_p-77(omp_Zn)              1.34e-08  [+1(1.34e-08)]
+BT2512_p-56(zntA)                3.31e-09  [+1(3.31e-09)]
+BT2038_p-78(czcB)                5.89e-08  [+1(5.89e-08)]
+BACUNI_04663_p-67(zntA)          2.48e-09  [+1(2.48e-09)]
+BACUNI_01632_p-70(czcB)          2.04e-08  [+1(2.04e-08)]
+BVU_3023_p-69(copA)              5.89e-08  [+1(5.89e-08)]
+BVU_2484_p-58(zntA)              1.13e-08  [+1(1.13e-08)]
+BVU_2035_p-70(czcB)              3.81e-08  [+1(3.81e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

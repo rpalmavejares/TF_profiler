@@ -1,0 +1,309 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= BirA_Clostridia-1.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CAC0212(birA)Score=9.1,P 1.0000     31  CAC0211(bioY1)Score=9.1, 1.0000     31  
+CAC1360(bioY1)Score=8.9, 1.0000     31  CAC3456(bioY2)Score=9.1, 1.0000     31  
+Cbei_1914(bioB)Score=9,P 1.0000     31  Cbei_1756(CAC3455)Score= 1.0000     31  
+CBO2260(bioY1)Score=9,Po 1.0000     31  CBY_3768(bioY1)Score=9,P 1.0000     31  
+CBY_0442(CAC3455)Score=8 1.0000     31  CBY_1671(bioY2)Score=9,P 1.0000     31  
+CKL_1696(bioB)Score=9.1, 1.0000     31  CKL_0936(bioY1)Score=8.5 1.0000     31  
+CKL_2248(bioY2)Score=9,P 1.0000     31  NT01CX_0019(bioY2)Score= 1.0000     31  
+NT01CX_0019(bioY2)Score= 1.0000     31  NT01CX_1467(bioY1)Score= 1.0000     31  
+CTC01861(bioY1)Score=9,P 1.0000     31  CTC00151(bioB)Score=8.3, 1.0000     31  
+CTC02091(bioY2)Score=8.3 1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna BirA_Clostridia-1.fasta -oc BirA_Clostridia-1 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           31
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             589    N=              19    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.298 C 0.192 G 0.202 T 0.308 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.297 C 0.193 G 0.203 T 0.307 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  31  sites =  19  llr = 345  E-value = 2.2e-101
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1::599:333333333333333:::1a:9a
+pos.-specific     C  1:::2::a222222222222222:::::a::
+probability       G  ::a:::::222222222222222a::5::::
+matrix            T  99:a411:333333333333333:aa4::1:
+
+         bits    2.4   *    *               *    *  
+                 2.1   *    *               *    *  
+                 1.9   *    *               *    *  
+                 1.7   **   *               *** ** *
+Relative         1.4 **** ***               *** ****
+Entropy          1.2 **** ***               *** ****
+(26.2 bits)      1.0 **** ***               *** ****
+                 0.7 **** ***               ********
+                 0.5 ********               ********
+                 0.2 ********               ********
+                 0.0 -------------------------------
+
+Multilevel           TTGTAAACTTTTTTTTTTTTTTTGTTGACAA
+consensus                T   AAAAAAAAAAAAAAA   T    
+sequence                     GGGGGGGGGGGGGGG        
+                                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                         Site            
+-------------             ----- ---------            -------------------------------
+CTC01861(bioY1)Score=9,P      1  5.83e-10          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+CKL_2248(bioY2)Score=9,P      1  5.83e-10          . TTGTAAACNNNNNNNNNNNNNNNGTTGACAA           
+NT01CX_0019(bioY2)Score=      1  1.19e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+CBY_1671(bioY2)Score=9,P      1  1.19e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+CBY_3768(bioY1)Score=9,P      1  1.19e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+Cbei_1914(bioB)Score=9,P      1  1.19e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTGACAA           
+CBO2260(bioY1)Score=9,Po      1  1.57e-09          . TTGTCAACNNNNNNNNNNNNNNNGTTGACAA           
+NT01CX_1467(bioY1)Score=      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+NT01CX_0019(bioY2)Score=      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+CKL_1696(bioB)Score=9.1,      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+CAC3456(bioY2)Score=9.1,      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+CAC0211(bioY1)Score=9.1,      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+CAC0212(birA)Score=9.1,P      1  2.45e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTTACAA           
+CAC1360(bioY1)Score=8.9,      1  5.67e-09          . TTGTTAACNNNNNNNNNNNNNNNGTTAACAA           
+CKL_0936(bioY1)Score=8.5      1  9.34e-09          . TTGTAAACNNNNNNNNNNNNNNNGTTGACTA           
+CBY_0442(CAC3455)Score=8      1  1.26e-08          . TTGTTTACNNNNNNNNNNNNNNNGTTGACAA           
+CTC00151(bioB)Score=8.3,      1  1.32e-08          . CTGTTAACNNNNNNNNNNNNNNNGTTTACAA           
+Cbei_1756(CAC3455)Score=      1  1.35e-08          . TAGTCAACNNNNNNNNNNNNNNNGTTGACAA           
+CTC02091(bioY2)Score=8.3      1  3.73e-08          . TTGTCATCNNNNNNNNNNNNNNNGTTAACAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CTC01861(bioY1)Score=9,P          5.8e-10  [+1]
+CKL_2248(bioY2)Score=9,P          5.8e-10  [+1]
+NT01CX_0019(bioY2)Score=          1.2e-09  [+1]
+CBY_1671(bioY2)Score=9,P          1.2e-09  [+1]
+CBY_3768(bioY1)Score=9,P          1.2e-09  [+1]
+Cbei_1914(bioB)Score=9,P          1.2e-09  [+1]
+CBO2260(bioY1)Score=9,Po          1.6e-09  [+1]
+NT01CX_1467(bioY1)Score=          2.4e-09  [+1]
+NT01CX_0019(bioY2)Score=          2.4e-09  [+1]
+CKL_1696(bioB)Score=9.1,          2.4e-09  [+1]
+CAC3456(bioY2)Score=9.1,          2.4e-09  [+1]
+CAC0211(bioY1)Score=9.1,          2.4e-09  [+1]
+CAC0212(birA)Score=9.1,P          2.4e-09  [+1]
+CAC1360(bioY1)Score=8.9,          5.7e-09  [+1]
+CKL_0936(bioY1)Score=8.5          9.3e-09  [+1]
+CBY_0442(CAC3455)Score=8          1.3e-08  [+1]
+CTC00151(bioB)Score=8.3,          1.3e-08  [+1]
+Cbei_1756(CAC3455)Score=          1.4e-08  [+1]
+CTC02091(bioY2)Score=8.3          3.7e-08  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=31 seqs=19
+CTC01861(bioY1)Score=9,P (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CKL_2248(bioY2)Score=9,P (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACAA  1 
+NT01CX_0019(bioY2)Score= (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CBY_1671(bioY2)Score=9,P (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CBY_3768(bioY1)Score=9,P (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+Cbei_1914(bioB)Score=9,P (    1) TTGTTAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CBO2260(bioY1)Score=9,Po (    1) TTGTCAACNNNNNNNNNNNNNNNGTTGACAA  1 
+NT01CX_1467(bioY1)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+NT01CX_0019(bioY2)Score= (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+CKL_1696(bioB)Score=9.1, (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+CAC3456(bioY2)Score=9.1, (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+CAC0211(bioY1)Score=9.1, (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+CAC0212(birA)Score=9.1,P (    1) TTGTAAACNNNNNNNNNNNNNNNGTTTACAA  1 
+CAC1360(bioY1)Score=8.9, (    1) TTGTTAACNNNNNNNNNNNNNNNGTTAACAA  1 
+CKL_0936(bioY1)Score=8.5 (    1) TTGTAAACNNNNNNNNNNNNNNNGTTGACTA  1 
+CBY_0442(CAC3455)Score=8 (    1) TTGTTTACNNNNNNNNNNNNNNNGTTGACAA  1 
+CTC00151(bioB)Score=8.3, (    1) CTGTTAACNNNNNNNNNNNNNNNGTTTACAA  1 
+Cbei_1756(CAC3455)Score= (    1) TAGTCAACNNNNNNNNNNNNNNNGTTGACAA  1 
+CTC02091(bioY2)Score=8.3 (    1) TTGTCATCNNNNNNNNNNNNNNNGTTAACAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 31 n= 19 bayes= 1.33258 E= 2.2e-101 
+ -1089   -187  -1089    162 
+  -249  -1089  -1089    162 
+ -1089  -1089    230  -1089 
+ -1089  -1089  -1089    170 
+    67    -29  -1089     26 
+   167  -1089  -1089   -254 
+   167  -1089  -1089   -254 
+ -1089    238  -1089  -1089 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+ -1089  -1089    230  -1089 
+ -1089  -1089  -1089    170 
+ -1089  -1089  -1089    170 
+  -150  -1089    138     26 
+   175  -1089  -1089  -1089 
+ -1089    238  -1089  -1089 
+   167  -1089  -1089   -254 
+   175  -1089  -1089  -1089 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 31 nsites= 19 E= 2.2e-101 
+ 0.000000  0.052632  0.000000  0.947368 
+ 0.052632  0.000000  0.000000  0.947368 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.473684  0.157895  0.000000  0.368421 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.297218  0.192664  0.202782  0.307336 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.105263  0.000000  0.526316  0.368421 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.947368  0.000000  0.000000  0.052632 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+TTGT[AT]AAC[TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG][TAG]GTT[GT]ACAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CAC0212(birA)Score=9.1,P         2.45e-09  [+1(2.45e-09)]
+CAC0211(bioY1)Score=9.1,         2.45e-09  [+1(2.45e-09)]
+CAC1360(bioY1)Score=8.9,         5.67e-09  [+1(5.67e-09)]
+CAC3456(bioY2)Score=9.1,         2.45e-09  [+1(2.45e-09)]
+Cbei_1914(bioB)Score=9,P         1.19e-09  [+1(1.19e-09)]
+Cbei_1756(CAC3455)Score=         1.35e-08  [+1(1.35e-08)]
+CBO2260(bioY1)Score=9,Po         1.57e-09  [+1(1.57e-09)]
+CBY_3768(bioY1)Score=9,P         1.19e-09  [+1(1.19e-09)]
+CBY_0442(CAC3455)Score=8         1.26e-08  [+1(1.26e-08)]
+CBY_1671(bioY2)Score=9,P         1.19e-09  [+1(1.19e-09)]
+CKL_1696(bioB)Score=9.1,         2.45e-09  [+1(2.45e-09)]
+CKL_0936(bioY1)Score=8.5         9.34e-09  [+1(9.34e-09)]
+CKL_2248(bioY2)Score=9,P         5.83e-10  [+1(5.83e-10)]
+NT01CX_0019(bioY2)Score=         1.19e-09  [+1(1.19e-09)]
+NT01CX_0019(bioY2)Score=         2.45e-09  [+1(2.45e-09)]
+NT01CX_1467(bioY1)Score=         2.45e-09  [+1(2.45e-09)]
+CTC01861(bioY1)Score=9,P         5.83e-10  [+1(5.83e-10)]
+CTC00151(bioB)Score=8.3,         1.32e-08  [+1(1.32e-08)]
+CTC02091(bioY2)Score=8.3         3.73e-08  [+1(3.73e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

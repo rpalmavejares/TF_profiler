@@ -1,0 +1,268 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/PaaR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RPA4019_p-144(livK)      1.0000     22  RPA1724_p-138(paaY)      1.0000     22  
+RPA3768_p-53(paaA)       1.0000     22  RPA1725_p-108(paaZ)      1.0000     22  
+RPA3769_p-91(paaR)       1.0000     22  NGR_c26200_p-53(blr2890) 1.0000     22  
+NGR_c26090_p-70(paaF)    1.0000     22  NGR_c26080_p-51(paaG)    1.0000     22  
+Xaut_0903_p-60(paaF)     1.0000     22  Xaut_0904_p-166(paaZ)    1.0000     22  
+Xaut_0894_p-118(paaR)    1.0000     22  Xaut_0893_p-175(livK)    1.0000     22  
+Xaut_0893_p-117(livK)    1.0000     22  Xaut_0894_p-60(paaR)     1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/PaaR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/PaaR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             308    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    308    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.273 C 0.218 G 0.224 T 0.286 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.218 G 0.224 T 0.285 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTGACCGAYCGGTCGGTYAAT MEME-1	width =  22  sites =  14  llr = 299  E-value = 8.1e-091
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:1291:18::132:111:9a:
+pos.-specific     C  :1:::99::69:::9:::6:::
+probability       G  :::8:::9:::96::99::::1
+matrix            T  199:111:241:181:1941:9
+
+         bits    2.2                       
+                 2.0                     * 
+                 1.8                     * 
+                 1.5 *** * **  **  ** * ***
+Relative         1.3 ********  **  **** ***
+Entropy          1.1 ************ *********
+(30.8 bits)      0.9 **********************
+                 0.7 **********************
+                 0.4 **********************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ATTGACCGACCGGTCGGTCAAT
+consensus               A    TT  AA    T   
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+Xaut_0893_p-117(livK)         1  4.12e-12          . ATTGACCATCCGGTCGGTCAAT           
+Xaut_0894_p-118(paaR)         1  4.76e-12          . ATTGACCGACCGGATGGTCAAT           
+Xaut_0904_p-166(paaZ)         1  1.33e-11          . ATTAACCGATCGATCGGTTAAT           
+Xaut_0903_p-60(paaF)          1  1.33e-11          . ATTAACCGATCGATCGGTTAAT           
+NGR_c26090_p-70(paaF)         1  5.47e-11          . ATTGACTGACCGGTCGGTTTAT           
+RPA1725_p-108(paaZ)           1  5.47e-11          . ATTGAACGATCGGTCAGTCAAT           
+RPA4019_p-144(livK)           1  6.03e-11          . ATTGACCGACCGTTCGGTTAAG           
+RPA1724_p-138(paaY)           1  7.24e-11          . ATTGACTGACCGATCGTTCAAT           
+NGR_c26080_p-51(paaG)         1  9.17e-11          . ATAAACCGACCGGTCAGTCAAT           
+RPA3769_p-91(paaR)            1  1.09e-10          . ATTGACCAATTGGACGGTCAAT           
+RPA3768_p-53(paaA)            1  1.18e-10          . ATTGACCGTCCAATTGGTCAAT           
+NGR_c26200_p-53(blr2890)      1  1.63e-10          . TCTGACCGATCGGTCGGTTAAT           
+Xaut_0894_p-60(paaR)          1  8.31e-10          . ATTGATCGACCAGACGGACAAT           
+Xaut_0893_p-175(livK)         1  8.90e-10          . ATTGTCCGTCTGGTCGATCAAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Xaut_0893_p-117(livK)             4.1e-12  [+1]
+Xaut_0894_p-118(paaR)             4.8e-12  [+1]
+Xaut_0904_p-166(paaZ)             1.3e-11  [+1]
+Xaut_0903_p-60(paaF)              1.3e-11  [+1]
+NGR_c26090_p-70(paaF)             5.5e-11  [+1]
+RPA1725_p-108(paaZ)               5.5e-11  [+1]
+RPA4019_p-144(livK)                 6e-11  [+1]
+RPA1724_p-138(paaY)               7.2e-11  [+1]
+NGR_c26080_p-51(paaG)             9.2e-11  [+1]
+RPA3769_p-91(paaR)                1.1e-10  [+1]
+RPA3768_p-53(paaA)                1.2e-10  [+1]
+NGR_c26200_p-53(blr2890)          1.6e-10  [+1]
+Xaut_0894_p-60(paaR)              8.3e-10  [+1]
+Xaut_0893_p-175(livK)             8.9e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTGACCGAYCGGTCGGTYAAT width=22 seqs=14
+Xaut_0893_p-117(livK)    (    1) ATTGACCATCCGGTCGGTCAAT  1 
+Xaut_0894_p-118(paaR)    (    1) ATTGACCGACCGGATGGTCAAT  1 
+Xaut_0904_p-166(paaZ)    (    1) ATTAACCGATCGATCGGTTAAT  1 
+Xaut_0903_p-60(paaF)     (    1) ATTAACCGATCGATCGGTTAAT  1 
+NGR_c26090_p-70(paaF)    (    1) ATTGACTGACCGGTCGGTTTAT  1 
+RPA1725_p-108(paaZ)      (    1) ATTGAACGATCGGTCAGTCAAT  1 
+RPA4019_p-144(livK)      (    1) ATTGACCGACCGTTCGGTTAAG  1 
+RPA1724_p-138(paaY)      (    1) ATTGACTGACCGATCGTTCAAT  1 
+NGR_c26080_p-51(paaG)    (    1) ATAAACCGACCGGTCAGTCAAT  1 
+RPA3769_p-91(paaR)       (    1) ATTGACCAATTGGACGGTCAAT  1 
+RPA3768_p-53(paaA)       (    1) ATTGACCGTCCAATTGGTCAAT  1 
+NGR_c26200_p-53(blr2890) (    1) TCTGACCGATCGGTCGGTTAAT  1 
+Xaut_0894_p-60(paaR)     (    1) ATTGATCGACCAGACGGACAAT  1 
+Xaut_0893_p-175(livK)    (    1) ATTGTCCGTCTGGTCGATCAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 14 bayes= 1.12553 E= 8.1e-091 
+   177  -1045  -1045   -199 
+ -1045   -161  -1045    170 
+  -193  -1045  -1045    170 
+   -35  -1045    181  -1045 
+   177  -1045  -1045   -199 
+  -193    197  -1045   -199 
+ -1045    197  -1045   -100 
+   -93  -1045    193  -1045 
+   153  -1045  -1045    -41 
+ -1045    156  -1045     32 
+ -1045    197  -1045   -100 
+   -93  -1045    193  -1045 
+     7  -1045    152   -199 
+   -35  -1045  -1045    146 
+ -1045    197  -1045   -100 
+   -93  -1045    193  -1045 
+  -193  -1045    193   -199 
+  -193  -1045  -1045    170 
+ -1045    156  -1045     32 
+   177  -1045  -1045   -199 
+   188  -1045  -1045  -1045 
+ -1045  -1045   -165    170 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 14 E= 8.1e-091 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.000000  0.071429  0.000000  0.928571 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.214286  0.000000  0.785714  0.000000 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.071429  0.857143  0.000000  0.071429 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.785714  0.000000  0.000000  0.214286 
+ 0.000000  0.642857  0.000000  0.357143 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.285714  0.000000  0.642857  0.071429 
+ 0.214286  0.000000  0.000000  0.785714 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.071429  0.000000  0.857143  0.071429 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.000000  0.642857  0.000000  0.357143 
+ 0.928571  0.000000  0.000000  0.071429 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.071429  0.928571 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTGACCGAYCGGTCGGTYAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATT[GA]ACCG[AT][CT]CG[GA][TA]CGGT[CT]AAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RPA4019_p-144(livK)              6.03e-11  [+1(6.03e-11)]
+RPA1724_p-138(paaY)              7.24e-11  [+1(7.24e-11)]
+RPA3768_p-53(paaA)               1.18e-10  [+1(1.18e-10)]
+RPA1725_p-108(paaZ)              5.47e-11  [+1(5.47e-11)]
+RPA3769_p-91(paaR)               1.09e-10  [+1(1.09e-10)]
+NGR_c26200_p-53(blr2890)         1.63e-10  [+1(1.63e-10)]
+NGR_c26090_p-70(paaF)            5.47e-11  [+1(5.47e-11)]
+NGR_c26080_p-51(paaG)            9.17e-11  [+1(9.17e-11)]
+Xaut_0903_p-60(paaF)             1.33e-11  [+1(1.33e-11)]
+Xaut_0904_p-166(paaZ)            1.33e-11  [+1(1.33e-11)]
+Xaut_0894_p-118(paaR)            4.76e-12  [+1(4.76e-12)]
+Xaut_0893_p-175(livK)            8.90e-10  [+1(8.90e-10)]
+Xaut_0893_p-117(livK)            4.12e-12  [+1(4.12e-12)]
+Xaut_0894_p-60(paaR)             8.31e-10  [+1(8.31e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

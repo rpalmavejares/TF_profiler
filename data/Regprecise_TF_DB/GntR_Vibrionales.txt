@@ -1,0 +1,350 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/GntR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VC0286_p-80(gntU)        1.0000     20  VC0286_p-66(gntU)        1.0000     20  
+VC0289_p-40(gntR)        1.0000     20  VC0287_p-93(gntK)        1.0000     20  
+VC0287_p-107(gntK)       1.0000     20  VV1_1101_p-79(gntU)      1.0000     20  
+VV1_1101_p-65(gntU)      1.0000     20  VV1_1098_p-37(gntR)      1.0000     20  
+VV1_1100_p-107(gntK)     1.0000     20  VV1_1100_p-93(gntK)      1.0000     20  
+VIBHAR_00513_p-106(gntK) 1.0000     20  VIBHAR_00513_p-92(gntK)  1.0000     20  
+VIBHAR_00514_p-80(gntU)  1.0000     20  VIBHAR_00514_p-66(gntU)  1.0000     20  
+VIBHAR_00507_p-38(gntR)  1.0000     20  VP0063_p-107(gntK)       1.0000     20  
+VP0063_p-93(gntK)        1.0000     20  VP0064_p-80(gntU)        1.0000     20  
+VP0064_p-66(gntU)        1.0000     20  VSAK1_19439_p-129(gntK)  1.0000     20  
+VSAK1_19439_p-115(gntK)  1.0000     20  VS_II0405_p-85(gntX)     1.0000     20  
+VS_II0405_p-61(gntX)     1.0000     20  VS_II0411_p-43(gntR)     1.0000     20  
+VSAL_II0665_p-87(gntU)   1.0000     20  VSAL_II0665_p-73(gntU)   1.0000     20  
+VSAL_II0668_p-32(gntR)   1.0000     20  VSAL_II0666_p-92(gntK)   1.0000     20  
+VSAL_II0666_p-106(gntK)  1.0000     20  VAS14_06893_p-107(gntU)  1.0000     20  
+VAS14_06893_p-93(gntU)   1.0000     20  VAS14_06898_p-75(gntK)   1.0000     20  
+VAS14_06898_p-89(gntK)   1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/GntR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/GntR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       33    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             660    N=              33
+sample: seed=            0    hsfrac=          0
+        searchsize=    660    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.324 C 0.186 G 0.173 T 0.317 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.324 C 0.187 G 0.173 T 0.316 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WCATGTTACCGGTAACATGW MEME-1	width =  20  sites =  33  llr = 587  E-value = 4.1e-210
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5292:::a:122:aa:8:24
+pos.-specific     C  16:1::::972::::a::1:
+probability       G  ::::a::::278::::::51
+matrix            T  4217:aa:11::a:::2925
+
+         bits    2.5     *          *    
+                 2.3     *          *    
+                 2.0     *          *    
+                 1.8     *** *  **  *    
+Relative         1.5     *****  *****    
+Entropy          1.3     *****  *****    
+(25.7 bits)      1.0   * ************ *  
+                 0.8   ****************  
+                 0.5  ****************** 
+                 0.3 ********************
+                 0.0 --------------------
+
+Multilevel           ACATGTTACCGGTAACATGT
+consensus            TA A              TA
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+VAS14_06898_p-75(gntK)        1  6.56e-11          . ACATGTTACCCGTAACATGG           
+VAS14_06893_p-107(gntU)       1  7.67e-11          . CCATGTTACGGGTAACATGT           
+VP0064_p-80(gntU)             1  1.08e-10          . TCATGTTATCGGTAACATGT           
+VIBHAR_00514_p-80(gntU)       1  1.08e-10          . TCATGTTATCGGTAACATGT           
+VV1_1101_p-79(gntU)           1  1.08e-10          . TCATGTTATCGGTAACATGT           
+VP0063_p-93(gntK)             1  1.38e-10          . ACATGTTACCGATAACATGA           
+VIBHAR_00513_p-92(gntK)       1  1.38e-10          . ACATGTTACCGATAACATGA           
+VV1_1100_p-93(gntK)           1  1.38e-10          . ACATGTTACCGATAACATGA           
+VAS14_06898_p-89(gntK)        1  5.02e-10          . CAATGTTACGGGTAACATGT           
+VAS14_06893_p-93(gntU)        1  5.02e-10          . ACATGTTACCCGTAACATTG           
+VV1_1100_p-107(gntK)          1  6.51e-10          . TTACGTTACCGGTAACATGT           
+VC0286_p-66(gntU)             1  6.51e-10          . ACATGTTACCGGTAACTTCA           
+VC0286_p-80(gntU)             1  7.18e-10          . TCATGTTATGGGTAACATGT           
+VC0287_p-93(gntK)             1  8.00e-10          . ACATGTTACCCATAACATGA           
+VC0287_p-107(gntK)            1  9.08e-10          . TGAAGTTACCGGTAACATGT           
+VSAL_II0665_p-87(gntU)        1  1.57e-09          . TTAAGTTACGGGTAACATGT           
+VSAK1_19439_p-115(gntK)       1  1.92e-09          . TCATGTTACCAGTAACATCG           
+VV1_1101_p-65(gntU)           1  2.14e-09          . ACATGTTACCGGTAACGTAA           
+VSAL_II0666_p-92(gntK)        1  3.16e-09          . ACATGTTACCCGTAACTTAA           
+VIBHAR_00513_p-106(gntK)      1  5.10e-09          . TTTAGTTACCGGTAACATGT           
+VP0063_p-107(gntK)            1  5.58e-09          . TTCAGTTACCGGTAACATGT           
+VS_II0405_p-61(gntX)          1  6.73e-09          . CAACGTTACCGGTAACATAT           
+VSAK1_19439_p-129(gntK)       1  6.73e-09          . AAAAGTTACCGGTATCATGT           
+VS_II0411_p-43(gntR)          1  1.13e-08          . CTATGTTACCAGTAACATTA           
+VP0064_p-66(gntU)             1  1.13e-08          . ACATGTTACCGGTAACTGAA           
+VSAL_II0666_p-106(gntK)       1  1.23e-08          . AAGAGTTACGGGTAACATGT           
+VS_II0405_p-85(gntX)          1  1.34e-08          . TAAAGTTACCGGTAACATCC           
+VSAL_II0665_p-73(gntU)        1  2.01e-08          . ACATGTTACCCGTAACTCTT           
+VIBHAR_00514_p-66(gntU)       1  2.01e-08          . ACATGTTACCGGTAACTAAA           
+VIBHAR_00507_p-38(gntR)       1  5.23e-08          . TAATGTTACTAGTAACATTA           
+VV1_1098_p-37(gntR)           1  5.23e-08          . TAATGTTACAAGTAACATTA           
+VC0289_p-40(gntR)             1  1.15e-07          . TAATGTTACTCATAACATTT           
+VSAL_II0668_p-32(gntR)        1  1.37e-07          . ACTTGTTACAAGTAACATTG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VAS14_06898_p-75(gntK)            6.6e-11  [+1]
+VAS14_06893_p-107(gntU)           7.7e-11  [+1]
+VP0064_p-80(gntU)                 1.1e-10  [+1]
+VIBHAR_00514_p-80(gntU)           1.1e-10  [+1]
+VV1_1101_p-79(gntU)               1.1e-10  [+1]
+VP0063_p-93(gntK)                 1.4e-10  [+1]
+VIBHAR_00513_p-92(gntK)           1.4e-10  [+1]
+VV1_1100_p-93(gntK)               1.4e-10  [+1]
+VAS14_06898_p-89(gntK)              5e-10  [+1]
+VAS14_06893_p-93(gntU)              5e-10  [+1]
+VV1_1100_p-107(gntK)              6.5e-10  [+1]
+VC0286_p-66(gntU)                 6.5e-10  [+1]
+VC0286_p-80(gntU)                 7.2e-10  [+1]
+VC0287_p-93(gntK)                   8e-10  [+1]
+VC0287_p-107(gntK)                9.1e-10  [+1]
+VSAL_II0665_p-87(gntU)            1.6e-09  [+1]
+VSAK1_19439_p-115(gntK)           1.9e-09  [+1]
+VV1_1101_p-65(gntU)               2.1e-09  [+1]
+VSAL_II0666_p-92(gntK)            3.2e-09  [+1]
+VIBHAR_00513_p-106(gntK)          5.1e-09  [+1]
+VP0063_p-107(gntK)                5.6e-09  [+1]
+VS_II0405_p-61(gntX)              6.7e-09  [+1]
+VSAK1_19439_p-129(gntK)           6.7e-09  [+1]
+VS_II0411_p-43(gntR)              1.1e-08  [+1]
+VP0064_p-66(gntU)                 1.1e-08  [+1]
+VSAL_II0666_p-106(gntK)           1.2e-08  [+1]
+VS_II0405_p-85(gntX)              1.3e-08  [+1]
+VSAL_II0665_p-73(gntU)              2e-08  [+1]
+VIBHAR_00514_p-66(gntU)             2e-08  [+1]
+VIBHAR_00507_p-38(gntR)           5.2e-08  [+1]
+VV1_1098_p-37(gntR)               5.2e-08  [+1]
+VC0289_p-40(gntR)                 1.1e-07  [+1]
+VSAL_II0668_p-32(gntR)            1.4e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WCATGTTACCGGTAACATGW width=20 seqs=33
+VAS14_06898_p-75(gntK)   (    1) ACATGTTACCCGTAACATGG  1 
+VAS14_06893_p-107(gntU)  (    1) CCATGTTACGGGTAACATGT  1 
+VP0064_p-80(gntU)        (    1) TCATGTTATCGGTAACATGT  1 
+VIBHAR_00514_p-80(gntU)  (    1) TCATGTTATCGGTAACATGT  1 
+VV1_1101_p-79(gntU)      (    1) TCATGTTATCGGTAACATGT  1 
+VP0063_p-93(gntK)        (    1) ACATGTTACCGATAACATGA  1 
+VIBHAR_00513_p-92(gntK)  (    1) ACATGTTACCGATAACATGA  1 
+VV1_1100_p-93(gntK)      (    1) ACATGTTACCGATAACATGA  1 
+VAS14_06898_p-89(gntK)   (    1) CAATGTTACGGGTAACATGT  1 
+VAS14_06893_p-93(gntU)   (    1) ACATGTTACCCGTAACATTG  1 
+VV1_1100_p-107(gntK)     (    1) TTACGTTACCGGTAACATGT  1 
+VC0286_p-66(gntU)        (    1) ACATGTTACCGGTAACTTCA  1 
+VC0286_p-80(gntU)        (    1) TCATGTTATGGGTAACATGT  1 
+VC0287_p-93(gntK)        (    1) ACATGTTACCCATAACATGA  1 
+VC0287_p-107(gntK)       (    1) TGAAGTTACCGGTAACATGT  1 
+VSAL_II0665_p-87(gntU)   (    1) TTAAGTTACGGGTAACATGT  1 
+VSAK1_19439_p-115(gntK)  (    1) TCATGTTACCAGTAACATCG  1 
+VV1_1101_p-65(gntU)      (    1) ACATGTTACCGGTAACGTAA  1 
+VSAL_II0666_p-92(gntK)   (    1) ACATGTTACCCGTAACTTAA  1 
+VIBHAR_00513_p-106(gntK) (    1) TTTAGTTACCGGTAACATGT  1 
+VP0063_p-107(gntK)       (    1) TTCAGTTACCGGTAACATGT  1 
+VS_II0405_p-61(gntX)     (    1) CAACGTTACCGGTAACATAT  1 
+VSAK1_19439_p-129(gntK)  (    1) AAAAGTTACCGGTATCATGT  1 
+VS_II0411_p-43(gntR)     (    1) CTATGTTACCAGTAACATTA  1 
+VP0064_p-66(gntU)        (    1) ACATGTTACCGGTAACTGAA  1 
+VSAL_II0666_p-106(gntK)  (    1) AAGAGTTACGGGTAACATGT  1 
+VS_II0405_p-85(gntX)     (    1) TAAAGTTACCGGTAACATCC  1 
+VSAL_II0665_p-73(gntU)   (    1) ACATGTTACCCGTAACTCTT  1 
+VIBHAR_00514_p-66(gntU)  (    1) ACATGTTACCGGTAACTAAA  1 
+VIBHAR_00507_p-38(gntR)  (    1) TAATGTTACTAGTAACATTA  1 
+VV1_1098_p-37(gntR)      (    1) TAATGTTACAAGTAACATTA  1 
+VC0289_p-40(gntR)        (    1) TAATGTTACTCATAACATTT  1 
+VSAL_II0668_p-32(gntR)   (    1) ACTTGTTACAAGTAACATTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 33 bayes= 1.59664 E= 4.1e-210 
+    49    -62  -1169     42 
+   -42    162   -251   -106 
+   144   -262   -251   -238 
+   -61   -162  -1169    120 
+ -1169  -1169    253  -1169 
+ -1169  -1169  -1169    166 
+ -1169  -1169  -1169    166 
+   163  -1169  -1169  -1169 
+ -1169    223  -1169   -138 
+  -242    196    -19   -238 
+  -110     -4    194  -1169 
+  -110  -1169    229  -1169 
+ -1169  -1169  -1169    166 
+   163  -1169  -1169  -1169 
+   158  -1169  -1169   -338 
+ -1169    242  -1169  -1169 
+   134  -1169   -251   -106 
+  -341   -262   -251    152 
+  -110   -104    165    -58 
+    17   -262    -51     62 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 33 E= 4.1e-210 
+ 0.454545  0.121212  0.000000  0.424242 
+ 0.242424  0.575758  0.030303  0.151515 
+ 0.878788  0.030303  0.030303  0.060606 
+ 0.212121  0.060606  0.000000  0.727273 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.878788  0.000000  0.121212 
+ 0.060606  0.727273  0.151515  0.060606 
+ 0.151515  0.181818  0.666667  0.000000 
+ 0.151515  0.000000  0.848485  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.969697  0.000000  0.000000  0.030303 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.818182  0.000000  0.030303  0.151515 
+ 0.030303  0.030303  0.030303  0.909091 
+ 0.151515  0.090909  0.545455  0.212121 
+ 0.363636  0.030303  0.121212  0.484848 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WCATGTTACCGGTAACATGW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][CA]A[TA]GTTACCGGTAACAT[GT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VC0286_p-80(gntU)                7.18e-10  [+1(7.18e-10)]
+VC0286_p-66(gntU)                6.51e-10  [+1(6.51e-10)]
+VC0289_p-40(gntR)                1.15e-07  [+1(1.15e-07)]
+VC0287_p-93(gntK)                8.00e-10  [+1(8.00e-10)]
+VC0287_p-107(gntK)               9.08e-10  [+1(9.08e-10)]
+VV1_1101_p-79(gntU)              1.08e-10  [+1(1.08e-10)]
+VV1_1101_p-65(gntU)              2.14e-09  [+1(2.14e-09)]
+VV1_1098_p-37(gntR)              5.23e-08  [+1(5.23e-08)]
+VV1_1100_p-107(gntK)             6.51e-10  [+1(6.51e-10)]
+VV1_1100_p-93(gntK)              1.38e-10  [+1(1.38e-10)]
+VIBHAR_00513_p-106(gntK)         5.10e-09  [+1(5.10e-09)]
+VIBHAR_00513_p-92(gntK)          1.38e-10  [+1(1.38e-10)]
+VIBHAR_00514_p-80(gntU)          1.08e-10  [+1(1.08e-10)]
+VIBHAR_00514_p-66(gntU)          2.01e-08  [+1(2.01e-08)]
+VIBHAR_00507_p-38(gntR)          5.23e-08  [+1(5.23e-08)]
+VP0063_p-107(gntK)               5.58e-09  [+1(5.58e-09)]
+VP0063_p-93(gntK)                1.38e-10  [+1(1.38e-10)]
+VP0064_p-80(gntU)                1.08e-10  [+1(1.08e-10)]
+VP0064_p-66(gntU)                1.13e-08  [+1(1.13e-08)]
+VSAK1_19439_p-129(gntK)          6.73e-09  [+1(6.73e-09)]
+VSAK1_19439_p-115(gntK)          1.92e-09  [+1(1.92e-09)]
+VS_II0405_p-85(gntX)             1.34e-08  [+1(1.34e-08)]
+VS_II0405_p-61(gntX)             6.73e-09  [+1(6.73e-09)]
+VS_II0411_p-43(gntR)             1.13e-08  [+1(1.13e-08)]
+VSAL_II0665_p-87(gntU)           1.57e-09  [+1(1.57e-09)]
+VSAL_II0665_p-73(gntU)           2.01e-08  [+1(2.01e-08)]
+VSAL_II0668_p-32(gntR)           1.37e-07  [+1(1.37e-07)]
+VSAL_II0666_p-92(gntK)           3.16e-09  [+1(3.16e-09)]
+VSAL_II0666_p-106(gntK)          1.23e-08  [+1(1.23e-08)]
+VAS14_06893_p-107(gntU)          7.67e-11  [+1(7.67e-11)]
+VAS14_06893_p-93(gntU)           5.02e-10  [+1(5.02e-10)]
+VAS14_06898_p-75(gntK)           6.56e-11  [+1(6.56e-11)]
+VAS14_06898_p-89(gntK)           5.02e-10  [+1(5.02e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,335 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/LiuQ_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BPSS1448_p-155(liuA)     1.0000     15  BPSS1448_p-55(liuA)      1.0000     15  
+BPSS1449_p-167(liuQ)     1.0000     15  BPSS1449_p-67(liuQ)      1.0000     15  
+BMAA0802_p-155(liuA)     1.0000     15  BMAA0802_p-55(liuA)      1.0000     15  
+BMAA0801_p-167(liuQ)     1.0000     15  BMAA0801_p-67(liuQ)      1.0000     15  
+Bcep18194_B0423_p-94(liu 1.0000     15  Bcep18194_B0423_p7(liuA) 1.0000     15  
+Bcep18194_B0422_p-129(li 1.0000     15  Bcep18194_B0422_p-28(liu 1.0000     15  
+Bamb_4588_p-158(liuA)    1.0000     15  Bamb_4588_p-56(liuA)     1.0000     15  
+Bamb_4589_p-28(liuQ)     1.0000     15  Bamb_4589_p-130(liuQ)    1.0000     15  
+Bcep1808_3495_p-156(liuA 1.0000     15  Bcep1808_3495_p-54(liuA) 1.0000     15  
+Bcep1808_3496_p-131(liuQ 1.0000     15  Bcep1808_3496_p-29(liuQ) 1.0000     15  
+bglu_2g11310_p-175(liuQ) 1.0000     15  bglu_2g11310_p-74(liuQ)  1.0000     15  
+bglu_2g11300_p-172(liuA) 1.0000     15  bglu_2g11300_p-71(liuA)  1.0000     15  
+Bxe_A1394_p-139(atuB)    1.0000     15  Bxe_A1394_p-53(atuB)     1.0000     15  
+Bxe_B0960_p-186(liuA)    1.0000     15  Bxe_A1393_p-136(liuQ2)   1.0000     15  
+Bxe_A1393_p-50(liuQ2)    1.0000     15  Bxe_B0959_p-126(liuQ1)   1.0000     15  
+Bphy_3562_p-210(liuA)    1.0000     15  Bphy_3563_p-104(liuQ)    1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/LiuQ_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/LiuQ_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             480    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    480    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.283 C 0.217 G 0.217 T 0.283 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.283 C 0.217 G 0.217 T 0.283 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTGAGTGWCACTCAR MEME-1	width =  15  sites =  32  llr = 472  E-value = 5.9e-171
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a::2527:::a6
+pos.-specific     C  3::::31:5:a:a::
+probability       G  ::a:a:5:13::::3
+matrix            T  6a:::7252::a:::
+
+         bits    2.2   * *     * *  
+                 2.0   * *     * *  
+                 1.8  ****     **** 
+                 1.5  ****     **** 
+Relative         1.3  ****     **** 
+Entropy          1.1  *****   ***** 
+(21.3 bits)      0.9 ****** * ******
+                 0.7 ****** * ******
+                 0.4 ****** * ******
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           TTGAGTGACACTCAA
+consensus            C    CTTAG    G
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Bphy_3563_p-104(liuQ)         1  2.43e-09          . TTGAGTGTCACTCAA           
+Bphy_3562_p-210(liuA)         1  2.43e-09          . TTGAGTGACACTCAA           
+bglu_2g11300_p-172(liuA)      1  2.43e-09          . TTGAGTGTCACTCAA           
+bglu_2g11310_p-74(liuQ)       1  2.43e-09          . TTGAGTGACACTCAA           
+Bcep1808_3496_p-29(liuQ)      1  6.16e-09          . TTGAGTGACACTCAG           
+Bcep1808_3495_p-156(liuA      1  6.16e-09          . CTGAGTGTCACTCAA           
+Bcep18194_B0422_p-28(liu      1  6.16e-09          . TTGAGTGACACTCAG           
+Bcep18194_B0423_p-94(liu      1  6.16e-09          . CTGAGTGTCACTCAA           
+BPSS1449_p-67(liuQ)           1  1.70e-08          . TTGAGCGACACTCAG           
+BPSS1448_p-155(liuA)          1  1.70e-08          . CTGAGTGTCGCTCAA           
+Bxe_B0959_p-126(liuQ1)        1  5.58e-08          . TTGAGTATCACTCAG           
+Bxe_B0960_p-186(liuA)         1  5.58e-08          . CTGAGTGATACTCAA           
+Bamb_4589_p-28(liuQ)          1  5.58e-08          . TTGAGTGATACTCAG           
+Bamb_4588_p-158(liuA)         1  5.58e-08          . CTGAGTATCACTCAA           
+Bcep1808_3496_p-131(liuQ      1  1.03e-07          . CTGAGTTTCGCTCAA           
+Bcep1808_3495_p-54(liuA)      1  1.03e-07          . TTGAGCGAAACTCAG           
+Bamb_4589_p-130(liuQ)         1  1.03e-07          . CTGAGTTTCGCTCAA           
+Bamb_4588_p-56(liuA)          1  1.03e-07          . TTGAGCGAAACTCAG           
+Bcep18194_B0422_p-129(li      1  1.03e-07          . CTGAGTTTCGCTCAA           
+Bcep18194_B0423_p7(liuA)      1  1.03e-07          . TTGAGCGAAACTCAG           
+BMAA0801_p-67(liuQ)           1  1.25e-07          . TTGAGCAACACTCAG           
+BMAA0802_p-155(liuA)          1  1.25e-07          . CTGAGTGTTGCTCAA           
+Bxe_A1393_p-50(liuQ2)         1  3.72e-07          . TTGAGCTAGACTCAA           
+Bxe_A1394_p-139(atuB)         1  3.72e-07          . TTGAGTCTAGCTCAA           
+bglu_2g11300_p-71(liuA)       1  4.05e-07          . CTGAGCAAAACTCAG           
+bglu_2g11310_p-175(liuQ)      1  4.05e-07          . CTGAGTTTTGCTCAG           
+BMAA0801_p-167(liuQ)          1  4.05e-07          . TTGAGTCTTGCTCAA           
+BMAA0802_p-55(liuA)           1  4.05e-07          . TTGAGCAAGACTCAA           
+BPSS1449_p-167(liuQ)          1  4.05e-07          . TTGAGTCTTGCTCAA           
+BPSS1448_p-55(liuA)           1  4.05e-07          . TTGAGCAAGACTCAA           
+Bxe_A1393_p-136(liuQ2)        1  7.90e-07          . TTGAGTTTAGCTCAT           
+Bxe_A1394_p-53(atuB)          1  7.90e-07          . ATGAGCTAAACTCAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bphy_3563_p-104(liuQ)             2.4e-09  [+1]
+Bphy_3562_p-210(liuA)             2.4e-09  [+1]
+bglu_2g11300_p-172(liuA)          2.4e-09  [+1]
+bglu_2g11310_p-74(liuQ)           2.4e-09  [+1]
+Bcep1808_3496_p-29(liuQ)          6.2e-09  [+1]
+Bcep1808_3495_p-156(liuA          6.2e-09  [+1]
+Bcep18194_B0422_p-28(liu          6.2e-09  [+1]
+Bcep18194_B0423_p-94(liu          6.2e-09  [+1]
+BPSS1449_p-67(liuQ)               1.7e-08  [+1]
+BPSS1448_p-155(liuA)              1.7e-08  [+1]
+Bxe_B0959_p-126(liuQ1)            5.6e-08  [+1]
+Bxe_B0960_p-186(liuA)             5.6e-08  [+1]
+Bamb_4589_p-28(liuQ)              5.6e-08  [+1]
+Bamb_4588_p-158(liuA)             5.6e-08  [+1]
+Bcep1808_3496_p-131(liuQ            1e-07  [+1]
+Bcep1808_3495_p-54(liuA)            1e-07  [+1]
+Bamb_4589_p-130(liuQ)               1e-07  [+1]
+Bamb_4588_p-56(liuA)                1e-07  [+1]
+Bcep18194_B0422_p-129(li            1e-07  [+1]
+Bcep18194_B0423_p7(liuA)            1e-07  [+1]
+BMAA0801_p-67(liuQ)               1.2e-07  [+1]
+BMAA0802_p-155(liuA)              1.2e-07  [+1]
+Bxe_A1393_p-50(liuQ2)             3.7e-07  [+1]
+Bxe_A1394_p-139(atuB)             3.7e-07  [+1]
+bglu_2g11300_p-71(liuA)           4.1e-07  [+1]
+bglu_2g11310_p-175(liuQ)          4.1e-07  [+1]
+BMAA0801_p-167(liuQ)              4.1e-07  [+1]
+BMAA0802_p-55(liuA)               4.1e-07  [+1]
+BPSS1449_p-167(liuQ)              4.1e-07  [+1]
+BPSS1448_p-55(liuA)               4.1e-07  [+1]
+Bxe_A1393_p-136(liuQ2)            7.9e-07  [+1]
+Bxe_A1394_p-53(atuB)              7.9e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTGAGTGWCACTCAR width=15 seqs=32
+Bphy_3563_p-104(liuQ)    (    1) TTGAGTGTCACTCAA  1 
+Bphy_3562_p-210(liuA)    (    1) TTGAGTGACACTCAA  1 
+bglu_2g11300_p-172(liuA) (    1) TTGAGTGTCACTCAA  1 
+bglu_2g11310_p-74(liuQ)  (    1) TTGAGTGACACTCAA  1 
+Bcep1808_3496_p-29(liuQ) (    1) TTGAGTGACACTCAG  1 
+Bcep1808_3495_p-156(liuA (    1) CTGAGTGTCACTCAA  1 
+Bcep18194_B0422_p-28(liu (    1) TTGAGTGACACTCAG  1 
+Bcep18194_B0423_p-94(liu (    1) CTGAGTGTCACTCAA  1 
+BPSS1449_p-67(liuQ)      (    1) TTGAGCGACACTCAG  1 
+BPSS1448_p-155(liuA)     (    1) CTGAGTGTCGCTCAA  1 
+Bxe_B0959_p-126(liuQ1)   (    1) TTGAGTATCACTCAG  1 
+Bxe_B0960_p-186(liuA)    (    1) CTGAGTGATACTCAA  1 
+Bamb_4589_p-28(liuQ)     (    1) TTGAGTGATACTCAG  1 
+Bamb_4588_p-158(liuA)    (    1) CTGAGTATCACTCAA  1 
+Bcep1808_3496_p-131(liuQ (    1) CTGAGTTTCGCTCAA  1 
+Bcep1808_3495_p-54(liuA) (    1) TTGAGCGAAACTCAG  1 
+Bamb_4589_p-130(liuQ)    (    1) CTGAGTTTCGCTCAA  1 
+Bamb_4588_p-56(liuA)     (    1) TTGAGCGAAACTCAG  1 
+Bcep18194_B0422_p-129(li (    1) CTGAGTTTCGCTCAA  1 
+Bcep18194_B0423_p7(liuA) (    1) TTGAGCGAAACTCAG  1 
+BMAA0801_p-67(liuQ)      (    1) TTGAGCAACACTCAG  1 
+BMAA0802_p-155(liuA)     (    1) CTGAGTGTTGCTCAA  1 
+Bxe_A1393_p-50(liuQ2)    (    1) TTGAGCTAGACTCAA  1 
+Bxe_A1394_p-139(atuB)    (    1) TTGAGTCTAGCTCAA  1 
+bglu_2g11300_p-71(liuA)  (    1) CTGAGCAAAACTCAG  1 
+bglu_2g11310_p-175(liuQ) (    1) CTGAGTTTTGCTCAG  1 
+BMAA0801_p-167(liuQ)     (    1) TTGAGTCTTGCTCAA  1 
+BMAA0802_p-55(liuA)      (    1) TTGAGCAAGACTCAA  1 
+BPSS1449_p-167(liuQ)     (    1) TTGAGTCTTGCTCAA  1 
+BPSS1448_p-55(liuA)      (    1) TTGAGCAAGACTCAA  1 
+Bxe_A1393_p-136(liuQ2)   (    1) TTGAGTTTAGCTCAT  1 
+Bxe_A1394_p-53(atuB)     (    1) ATGAGCTAAACTCAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 32 bayes= 1.58496 E= 5.9e-171 
+  -318     66  -1164    114 
+ -1164  -1164  -1164    182 
+ -1164  -1164    220  -1164 
+   182  -1164  -1164  -1164 
+ -1164  -1164    220  -1164 
+ -1164     53  -1164    128 
+   -59   -121    120    -37 
+    82  -1164  -1164     82 
+   -37    120   -121    -59 
+   128  -1164     53  -1164 
+ -1164    220  -1164  -1164 
+ -1164  -1164  -1164    182 
+ -1164    220  -1164  -1164 
+   182  -1164  -1164  -1164 
+   114  -1164     66   -318 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 32 E= 5.9e-171 
+ 0.031250  0.343750  0.000000  0.625000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.312500  0.000000  0.687500 
+ 0.187500  0.093750  0.500000  0.218750 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.218750  0.500000  0.093750  0.187500 
+ 0.687500  0.000000  0.312500  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.625000  0.000000  0.343750  0.031250 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTGAGTGWCACTCAR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]TGAG[TC][GT][AT][CA][AG]CTCA[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BPSS1448_p-155(liuA)             1.70e-08  [+1(1.70e-08)]
+BPSS1448_p-55(liuA)              4.05e-07  [+1(4.05e-07)]
+BPSS1449_p-167(liuQ)             4.05e-07  [+1(4.05e-07)]
+BPSS1449_p-67(liuQ)              1.70e-08  [+1(1.70e-08)]
+BMAA0802_p-155(liuA)             1.25e-07  [+1(1.25e-07)]
+BMAA0802_p-55(liuA)              4.05e-07  [+1(4.05e-07)]
+BMAA0801_p-167(liuQ)             4.05e-07  [+1(4.05e-07)]
+BMAA0801_p-67(liuQ)              1.25e-07  [+1(1.25e-07)]
+Bcep18194_B0423_p-94(liu         6.16e-09  [+1(6.16e-09)]
+Bcep18194_B0423_p7(liuA)         1.03e-07  [+1(1.03e-07)]
+Bcep18194_B0422_p-129(li         1.03e-07  [+1(1.03e-07)]
+Bcep18194_B0422_p-28(liu         6.16e-09  [+1(6.16e-09)]
+Bamb_4588_p-158(liuA)            5.58e-08  [+1(5.58e-08)]
+Bamb_4588_p-56(liuA)             1.03e-07  [+1(1.03e-07)]
+Bamb_4589_p-28(liuQ)             5.58e-08  [+1(5.58e-08)]
+Bamb_4589_p-130(liuQ)            1.03e-07  [+1(1.03e-07)]
+Bcep1808_3495_p-156(liuA         6.16e-09  [+1(6.16e-09)]
+Bcep1808_3495_p-54(liuA)         1.03e-07  [+1(1.03e-07)]
+Bcep1808_3496_p-131(liuQ         1.03e-07  [+1(1.03e-07)]
+Bcep1808_3496_p-29(liuQ)         6.16e-09  [+1(6.16e-09)]
+bglu_2g11310_p-175(liuQ)         4.05e-07  [+1(4.05e-07)]
+bglu_2g11310_p-74(liuQ)          2.43e-09  [+1(2.43e-09)]
+bglu_2g11300_p-172(liuA)         2.43e-09  [+1(2.43e-09)]
+bglu_2g11300_p-71(liuA)          4.05e-07  [+1(4.05e-07)]
+Bxe_A1394_p-139(atuB)            3.72e-07  [+1(3.72e-07)]
+Bxe_A1394_p-53(atuB)             7.90e-07  [+1(7.90e-07)]
+Bxe_B0960_p-186(liuA)            5.58e-08  [+1(5.58e-08)]
+Bxe_A1393_p-136(liuQ2)           7.90e-07  [+1(7.90e-07)]
+Bxe_A1393_p-50(liuQ2)            3.72e-07  [+1(3.72e-07)]
+Bxe_B0959_p-126(liuQ1)           5.58e-08  [+1(5.58e-08)]
+Bphy_3562_p-210(liuA)            2.43e-09  [+1(2.43e-09)]
+Bphy_3563_p-104(liuQ)            2.43e-09  [+1(2.43e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

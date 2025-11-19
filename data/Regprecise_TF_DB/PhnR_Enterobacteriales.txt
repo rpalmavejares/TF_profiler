@@ -1,0 +1,224 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PhnR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+STM0431_p-28(phnW)       1.0000     20  STM0429_p-48(phnS)       1.0000     20  
+STM0430_p-131(phnR)      1.0000     20  KPN_04063_p-29(phnW)     1.0000     20  
+KPN_04061_p-45(phnS)     1.0000     20  KPN_04062_p-153(phnR)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PhnR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PhnR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             120    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=    120    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.2 G 0.192 T 0.275 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.331 C 0.202 G 0.194 T 0.274 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MATYTGGTMTAKACCARA MEME-1	width =  18  sites =   6  llr = 117  E-value = 4.4e-023
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  78::::::5:a:8::a3a
+pos.-specific     C  3227::::5::2:aa:::
+probability       G  :::::aa::::52:::7:
+matrix            T  ::83a::a:a:3::::::
+
+         bits    2.4      **      **   
+                 2.1      **      **   
+                 1.9     **** *   **   
+                 1.7     **** **  *** *
+Relative         1.4     **** **  *** *
+Entropy          1.2   ****** ** ******
+(28.2 bits)      0.9 *********** ******
+                 0.7 ******************
+                 0.5 ******************
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           AATCTGGTATAGACCAGA
+consensus            C  T    C  T    A 
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+KPN_04061_p-45(phnS)          1  1.91e-10          . AATCTGGTCTACACCAGA AT        
+KPN_04063_p-29(phnW)          1  5.68e-10          . AATCTGGTATAGACCAAA TG        
+STM0431_p-28(phnW)            1  5.68e-10          . AATCTGGTATAGACCAAA GG        
+KPN_04062_p-153(phnR)         1  6.98e-10          . CATTTGGTCTATACCAGA TT        
+STM0429_p-48(phnS)            1  2.07e-09          . AACCTGGTATAGGCCAGA AA        
+STM0430_p-131(phnR)           1  2.38e-09          . CCTTTGGTCTATACCAGA TT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+KPN_04061_p-45(phnS)              1.9e-10  [+1]_2
+KPN_04063_p-29(phnW)              5.7e-10  [+1]_2
+STM0431_p-28(phnW)                5.7e-10  [+1]_2
+KPN_04062_p-153(phnR)               7e-10  [+1]_2
+STM0429_p-48(phnS)                2.1e-09  [+1]_2
+STM0430_p-131(phnR)               2.4e-09  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MATYTGGTMTAKACCARA width=18 seqs=6
+KPN_04061_p-45(phnS)     (    1) AATCTGGTCTACACCAGA  1 
+KPN_04063_p-29(phnW)     (    1) AATCTGGTATAGACCAAA  1 
+STM0431_p-28(phnW)       (    1) AATCTGGTATAGACCAAA  1 
+KPN_04062_p-153(phnR)    (    1) CATTTGGTCTATACCAGA  1 
+STM0429_p-48(phnS)       (    1) AACCTGGTATAGGCCAGA  1 
+STM0430_p-131(phnR)      (    1) CCTTTGGTCTATACCAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 18 bayes= 2.44057 E= 4.4e-023 
+   101     72   -923   -923 
+   133    -27   -923   -923 
+  -923    -27   -923    160 
+  -923    172   -923     28 
+  -923   -923   -923    186 
+  -923   -923    237   -923 
+  -923   -923    237   -923 
+  -923   -923   -923    186 
+    60    131   -923   -923 
+  -923   -923   -923    186 
+   160   -923   -923   -923 
+  -923    -27    137     28 
+   133   -923    -22   -923 
+  -923    231   -923   -923 
+  -923    231   -923   -923 
+   160   -923   -923   -923 
+     1   -923    178   -923 
+   160   -923   -923   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 6 E= 4.4e-023 
+ 0.666667  0.333333  0.000000  0.000000 
+ 0.833333  0.166667  0.000000  0.000000 
+ 0.000000  0.166667  0.000000  0.833333 
+ 0.000000  0.666667  0.000000  0.333333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.166667  0.500000  0.333333 
+ 0.833333  0.000000  0.166667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.000000  0.666667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MATYTGGTMTAKACCARA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AC]AT[CT]TGGT[AC]TA[GT]ACCA[GA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.00 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+STM0431_p-28(phnW)               1.71e-09  [+1(5.68e-10)]_2
+STM0429_p-48(phnS)               6.20e-09  [+1(2.07e-09)]_2
+STM0430_p-131(phnR)              7.14e-09  [+1(2.38e-09)]_2
+KPN_04063_p-29(phnW)             1.71e-09  [+1(5.68e-10)]_2
+KPN_04061_p-45(phnS)             5.74e-10  [+1(1.91e-10)]_2
+KPN_04062_p-153(phnR)            2.09e-09  [+1(6.98e-10)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

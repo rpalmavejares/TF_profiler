@@ -1,0 +1,220 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Variousbetaproteobacteria/NsrR_Neisseriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NMB1365_p-59(dnrN)       1.0000     19  NMB0577_p2(nosR1)        1.0000     19  
+NMB1623_p-115(nirK)      1.0000     19  NMB1622_p-50(norB)       1.0000     19  
+NMB1249_p-148(narQ)      1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Variousbetaproteobacteria/NsrR_Neisseriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Variousbetaproteobacteria/NsrR_Neisseriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=        5    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              95    N=               5
+sample: seed=            0    hsfrac=          0
+        searchsize=     95    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.358 C 0.0842 G 0.105 T 0.453 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.354 C 0.0909 G 0.111 T 0.444 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RATTCATATWWTATGAAT MEME-1	width =  18  sites =   5  llr = 77  E-value = 5.0e-010
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  48:::8:a244:6::aa:
+pos.-specific     C  2:::a:::::::2:2:::
+probability       G  42::::::::2:2:8:::
+matrix            T  ::aa:2a:864a:a:::a
+
+         bits    3.5     *             
+                 3.1     *             
+                 2.8     *             
+                 2.4     *         *   
+Relative         2.1     *         *   
+Entropy          1.7     *         *   
+(22.2 bits)      1.4     *  *      *** 
+                 1.0 ***** **   * *****
+                 0.7 ********   *******
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           AATTCATATTATATGAAT
+consensus            GG   T  AAT C C   
+sequence             C         G G     
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+NMB1622_p-50(norB)            1  1.92e-08          . CATTCATATTTTGTGAAT T         
+NMB1249_p-148(narQ)           1  2.46e-08          . AATTCATATTATCTGAAT T         
+NMB0577_p2(nosR1)             1  6.09e-08          . GATTCATATAATATCAAT A         
+NMB1623_p-115(nirK)           1  8.14e-08          . AGTTCATATTTTATGAAT T         
+NMB1365_p-59(dnrN)            1  1.61e-07          . GATTCTTAAAGTATGAAT G         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NMB1622_p-50(norB)                1.9e-08  [+1]_1
+NMB1249_p-148(narQ)               2.5e-08  [+1]_1
+NMB0577_p2(nosR1)                 6.1e-08  [+1]_1
+NMB1623_p-115(nirK)               8.1e-08  [+1]_1
+NMB1365_p-59(dnrN)                1.6e-07  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RATTCATATWWTATGAAT width=18 seqs=5
+NMB1622_p-50(norB)       (    1) CATTCATATTTTGTGAAT  1 
+NMB1249_p-148(narQ)      (    1) AATTCATATTATCTGAAT  1 
+NMB0577_p2(nosR1)        (    1) GATTCATATAATATCAAT  1 
+NMB1623_p-115(nirK)      (    1) AGTTCATATTTTATGAAT  1 
+NMB1365_p-59(dnrN)       (    1) GATTCTTAAAGTATGAAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 10 bayes= 1.50901 E= 5.0e-010 
+    18    114    185   -897 
+   118   -897     85   -897 
+  -897   -897   -897    117 
+  -897   -897   -897    117 
+  -897    346   -897   -897 
+   118   -897   -897   -115 
+  -897   -897   -897    117 
+   150   -897   -897   -897 
+   -82   -897   -897     85 
+    18   -897   -897     43 
+    18   -897     85    -15 
+  -897   -897   -897    117 
+    76    114     85   -897 
+  -897   -897   -897    117 
+  -897    114    285   -897 
+   150   -897   -897   -897 
+   150   -897   -897   -897 
+  -897   -897   -897    117 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 5 E= 5.0e-010 
+ 0.400000  0.200000  0.400000  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.400000  0.000000  0.000000  0.600000 
+ 0.400000  0.000000  0.200000  0.400000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.600000  0.200000  0.200000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.200000  0.800000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RATTCATATWWTATGAAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AGC][AG]TTC[AT]TA[TA][TA][ATG]T[ACG]T[GC]AAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NMB1365_p-59(dnrN)               3.22e-07  [+1(1.61e-07)]_1
+NMB0577_p2(nosR1)                1.22e-07  [+1(6.09e-08)]_1
+NMB1623_p-115(nirK)              1.63e-07  [+1(8.14e-08)]_1
+NMB1622_p-50(norB)               3.84e-08  [+1(1.92e-08)]_1
+NMB1249_p-148(narQ)              4.92e-08  [+1(2.46e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

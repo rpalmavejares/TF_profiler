@@ -1,0 +1,244 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur2_Chloroflexia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rcas_3900_p-157(Rcas_390 1.0000     23  Rcas_3894_p-33(COG0701)  1.0000     23  
+Rcas_2945_p-59(yciC)     1.0000     23  Rcas_2948_p-50(fmdB)     1.0000     23  
+Rcas_3893_p-63(Rcas_3893 1.0000     23  RoseRS_0598_p-159(Rcas_3 1.0000     23  
+RoseRS_3105_p-40(yciC)   1.0000     23  RoseRS_0845_p-61(Rcas_38 1.0000     23  
+RoseRS_3107_p-3(fmdB)    1.0000     23  RoseRS_0592_p-33(COG0701 1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur2_Chloroflexia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/Zur2_Chloroflexia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           23
+nsites: minsites=        2    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             230    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    230    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.378 C 0.143 G 0.143 T 0.335 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.376 C 0.145 G 0.145 T 0.333 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AANTGATAGWWWMTATCAT MEME-1	width =  19  sites =  10  llr = 159  E-value = 1.3e-031
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  793::91a:3554:a::a:
+pos.-specific     C  3:2::::::22:6:::a:2
+probability       G  :13:a1::71:2:2:::::
+matrix            T  ::2a::9:3433:8:a::8
+
+         bits    2.8     *           *  
+                 2.5     *           *  
+                 2.2     *           *  
+                 1.9     *           *  
+Relative         1.7    **   *      **  
+Entropy          1.4    **  **   * **** 
+(22.9 bits)      1.1  * ******   *******
+                 0.8 ** ******   *******
+                 0.6 ** ******   *******
+                 0.3 ********* *********
+                 0.0 -------------------
+
+Multilevel           AAATGATAGTAACTATCAT
+consensus            C G     TATTAG    C
+sequence               C      CCG       
+                       T                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+Rcas_3894_p-33(COG0701)       2  1.45e-10          T AAGTGATAGTAACTATCAT TTA       
+RoseRS_3107_p-3(fmdB)         2  1.49e-08          T AAGTGATAGCATATATCAC ACT       
+Rcas_2948_p-50(fmdB)          2  1.49e-08          C AAGTGATAGCATATATCAC AAA       
+RoseRS_0845_p-61(Rcas_38      2  2.29e-08          A AAATGGTAGTTGCTATCAT TGA       
+RoseRS_0592_p-33(COG0701      2  3.85e-08          A CAATGATATTTACTATCAT TTA       
+RoseRS_3105_p-40(yciC)        2  4.36e-08          G AACTGATATGATCTATCAT TTG       
+RoseRS_0598_p-159(Rcas_3      2  4.36e-08          C AAATGATAGACGAGATCAT TTG       
+Rcas_3900_p-157(Rcas_390      2  4.36e-08          C AACTGATAGATAAGATCAT TTG       
+Rcas_2945_p-59(yciC)          2  5.07e-08          T CATTGATATACACTATCAT CAA       
+Rcas_3893_p-63(Rcas_3893      2  1.71e-07          T CGTTGAAAGTAACTATCAT CTG       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rcas_3894_p-33(COG0701)           1.4e-10  1_[+1]_3
+RoseRS_3107_p-3(fmdB)             1.5e-08  1_[+1]_3
+Rcas_2948_p-50(fmdB)              1.5e-08  1_[+1]_3
+RoseRS_0845_p-61(Rcas_38          2.3e-08  1_[+1]_3
+RoseRS_0592_p-33(COG0701          3.9e-08  1_[+1]_3
+RoseRS_3105_p-40(yciC)            4.4e-08  1_[+1]_3
+RoseRS_0598_p-159(Rcas_3          4.4e-08  1_[+1]_3
+Rcas_3900_p-157(Rcas_390          4.4e-08  1_[+1]_3
+Rcas_2945_p-59(yciC)              5.1e-08  1_[+1]_3
+Rcas_3893_p-63(Rcas_3893          1.7e-07  1_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AANTGATAGWWWMTATCAT width=19 seqs=10
+Rcas_3894_p-33(COG0701)  (    2) AAGTGATAGTAACTATCAT  1 
+RoseRS_3107_p-3(fmdB)    (    2) AAGTGATAGCATATATCAC  1 
+Rcas_2948_p-50(fmdB)     (    2) AAGTGATAGCATATATCAC  1 
+RoseRS_0845_p-61(Rcas_38 (    2) AAATGGTAGTTGCTATCAT  1 
+RoseRS_0592_p-33(COG0701 (    2) CAATGATATTTACTATCAT  1 
+RoseRS_3105_p-40(yciC)   (    2) AACTGATATGATCTATCAT  1 
+RoseRS_0598_p-159(Rcas_3 (    2) AAATGATAGACGAGATCAT  1 
+Rcas_3900_p-157(Rcas_390 (    2) AACTGATAGATAAGATCAT  1 
+Rcas_2945_p-59(yciC)     (    2) CATTGATATACACTATCAT  1 
+Rcas_3893_p-63(Rcas_3893 (    2) CGTTGAAAGTAACTATCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 50 bayes= 3.68806 E= 1.3e-031 
+    90    105   -997   -997 
+   126   -997    -54   -997 
+   -33     46    105    -74 
+  -997   -997   -997    158 
+  -997   -997    278   -997 
+   126   -997    -54   -997 
+  -191   -997   -997    143 
+   141   -997   -997   -997 
+  -997   -997    227    -15 
+   -33     46    -54     26 
+    41     46   -997    -15 
+    41   -997     46    -15 
+     9    204   -997   -997 
+  -997   -997     46    126 
+   141   -997   -997   -997 
+  -997   -997   -997    158 
+  -997    278   -997   -997 
+   141   -997   -997   -997 
+  -997     46   -997    126 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 10 E= 1.3e-031 
+ 0.700000  0.300000  0.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.300000  0.200000  0.300000  0.200000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.700000  0.300000 
+ 0.300000  0.200000  0.100000  0.400000 
+ 0.500000  0.200000  0.000000  0.300000 
+ 0.500000  0.000000  0.200000  0.300000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.000000  0.000000  0.200000  0.800000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AANTGATAGWWWMTATCAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AC]A[AGCT]TGATA[GT][TAC][ATC][ATG][CA][TG]ATCA[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rcas_3900_p-157(Rcas_390         2.18e-07  1_[+1(4.36e-08)]_3
+Rcas_3894_p-33(COG0701)          7.25e-10  1_[+1(1.45e-10)]_3
+Rcas_2945_p-59(yciC)             2.54e-07  1_[+1(5.07e-08)]_3
+Rcas_2948_p-50(fmdB)             7.44e-08  1_[+1(1.49e-08)]_3
+Rcas_3893_p-63(Rcas_3893         8.56e-07  1_[+1(1.71e-07)]_3
+RoseRS_0598_p-159(Rcas_3         2.18e-07  1_[+1(4.36e-08)]_3
+RoseRS_3105_p-40(yciC)           2.18e-07  1_[+1(4.36e-08)]_3
+RoseRS_0845_p-61(Rcas_38         1.14e-07  1_[+1(2.29e-08)]_3
+RoseRS_3107_p-3(fmdB)            7.44e-08  1_[+1(1.49e-08)]_3
+RoseRS_0592_p-33(COG0701         1.93e-07  1_[+1(3.85e-08)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

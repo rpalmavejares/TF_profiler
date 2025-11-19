@@ -1,0 +1,266 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= CadR-PbrR_Pseudomonadaceae.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA3690(cadA)Score=6.4,Po 1.0000     21  PSEEN4285(czcR)Score=5.1 1.0000     21  
+PSEEN5232(cadA)Score=6.5 1.0000     21  PP1438(czcR)Score=5.8,Po 1.0000     21  
+PP5139(cadA)Score=6.5,Po 1.0000     21  PSPTO5279(cadA)Score=6.5 1.0000     21  
+PFL_3147(czcR)Score=5.8, 1.0000     21  Pmen_4225(cadA)Score=6.6 1.0000     21  
+Pmen_1174(czcR)Score=6.3 1.0000     21  PST_0664(cadA)Score=6.2, 1.0000     21  
+PST_1619(czcD)Score=6.6, 1.0000     21  PST_3416(czcD2)Score=5.9 1.0000     21  
+Avin_18520(cadA)Score=6. 1.0000     21  Avin_24510(czcD)Score=6. 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna CadR-PbrR_Pseudomonadaceae.fasta -oc CadR-PbrR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           21
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             294    N=              14    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.245 C 0.245 G 0.262 T 0.248 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.245 C 0.245 G 0.262 T 0.248 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  21  sites =  14  llr = 313  E-value = 3.6e-097
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::4291:23::9:a:1:1
+pos.-specific     C  :a99:::::21:a::9:::11
+probability       G  :::::6::9:47:::::a99:
+matrix            T  ::11a:81:82::a11::::9
+
+         bits    2.0 **  *       **  **   
+                 1.8 **  *       **  **   
+                 1.6 ** **   *   *** ** * 
+                 1.4 *****  **   ******** 
+Relative         1.2 ***** ****  *********
+Entropy          1.0 ********** **********
+(32.2 bits)      0.8 ********** **********
+                 0.6 ********** **********
+                 0.4 ********** **********
+                 0.2 *********************
+                 0.0 ---------------------
+
+Multilevel           ACCCTGTAGTGGCTACAGGGT
+consensus                 AA  CAA         
+sequence                       T          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+PSPTO5279(cadA)Score=6.5      1  4.89e-13          . ACCCTATAGTGGCTACAGGGT           
+PP5139(cadA)Score=6.5,Po      1  4.89e-13          . ACCCTATAGTGGCTACAGGGT           
+PSEEN5232(cadA)Score=6.5      1  4.89e-13          . ACCCTATAGTGGCTACAGGGT           
+PST_1619(czcD)Score=6.6,      1  9.65e-13          . ACCCTGTAGTTGCTACAGGGT           
+Pmen_4225(cadA)Score=6.6      1  2.60e-12          . ACCCTATAGTGACTACAGGGT           
+PA3690(cadA)Score=6.4,Po      1  1.12e-11          . ACTCTGTAGTTGCTACAGGGT           
+Avin_18520(cadA)Score=6.      1  3.36e-11          . ACTCTGTAGTGGCTACAGAGT           
+Avin_24510(czcD)Score=6.      1  3.93e-11          . ACCCTGAAGCCGCTACAGGGT           
+Pmen_1174(czcR)Score=6.3      1  5.43e-11          . ACCCTGTAGTAACTACAGGGA           
+PST_0664(cadA)Score=6.2,      1  8.27e-11          . ACCCTGTAGTGGCTTTAGGGT           
+PP1438(czcR)Score=5.8,Po      1  1.40e-10          . ACCCTGATGTCACTACAGGGT           
+PST_3416(czcD2)Score=5.9      1  7.34e-10          . ACCTTGTAGTAGCTATAGGGC           
+PFL_3147(czcR)Score=5.8,      1  7.34e-10          . ACCCTATAGCTACTACAGACT           
+PSEEN4285(czcR)Score=5.1      1  7.34e-10          . ACCCTGATACAGCTACAGGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PSPTO5279(cadA)Score=6.5          4.9e-13  [+1]
+PP5139(cadA)Score=6.5,Po          4.9e-13  [+1]
+PSEEN5232(cadA)Score=6.5          4.9e-13  [+1]
+PST_1619(czcD)Score=6.6,          9.7e-13  [+1]
+Pmen_4225(cadA)Score=6.6          2.6e-12  [+1]
+PA3690(cadA)Score=6.4,Po          1.1e-11  [+1]
+Avin_18520(cadA)Score=6.          3.4e-11  [+1]
+Avin_24510(czcD)Score=6.          3.9e-11  [+1]
+Pmen_1174(czcR)Score=6.3          5.4e-11  [+1]
+PST_0664(cadA)Score=6.2,          8.3e-11  [+1]
+PP1438(czcR)Score=5.8,Po          1.4e-10  [+1]
+PST_3416(czcD2)Score=5.9          7.3e-10  [+1]
+PFL_3147(czcR)Score=5.8,          7.3e-10  [+1]
+PSEEN4285(czcR)Score=5.1          7.3e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=21 seqs=14
+PSPTO5279(cadA)Score=6.5 (    1) ACCCTATAGTGGCTACAGGGT  1 
+PP5139(cadA)Score=6.5,Po (    1) ACCCTATAGTGGCTACAGGGT  1 
+PSEEN5232(cadA)Score=6.5 (    1) ACCCTATAGTGGCTACAGGGT  1 
+PST_1619(czcD)Score=6.6, (    1) ACCCTGTAGTTGCTACAGGGT  1 
+Pmen_4225(cadA)Score=6.6 (    1) ACCCTATAGTGACTACAGGGT  1 
+PA3690(cadA)Score=6.4,Po (    1) ACTCTGTAGTTGCTACAGGGT  1 
+Avin_18520(cadA)Score=6. (    1) ACTCTGTAGTGGCTACAGAGT  1 
+Avin_24510(czcD)Score=6. (    1) ACCCTGAAGCCGCTACAGGGT  1 
+Pmen_1174(czcR)Score=6.3 (    1) ACCCTGTAGTAACTACAGGGA  1 
+PST_0664(cadA)Score=6.2, (    1) ACCCTGTAGTGGCTTTAGGGT  1 
+PP1438(czcR)Score=5.8,Po (    1) ACCCTGATGTCACTACAGGGT  1 
+PST_3416(czcD2)Score=5.9 (    1) ACCTTGTAGTAGCTATAGGGC  1 
+PFL_3147(czcR)Score=5.8, (    1) ACCCTATAGCTACTACAGACT  1 
+PSEEN4285(czcR)Score=5.1 (    1) ACCCTGATACAGCTACAGGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 14 bayes= 1.12553 E= 3.6e-097 
+   203  -1045  -1045  -1045 
+ -1045    203  -1045  -1045 
+ -1045    181  -1045    -80 
+ -1045    192  -1045   -180 
+ -1045  -1045  -1045    201 
+    54  -1045    130  -1045 
+   -19  -1045  -1045    166 
+   181  -1045  -1045    -80 
+  -178  -1045    183  -1045 
+ -1045    -19  -1045    166 
+   -19    -78     71    -21 
+    22  -1045    145  -1045 
+ -1045    203  -1045  -1045 
+ -1045  -1045  -1045    201 
+   192  -1045  -1045   -180 
+ -1045    181  -1045    -80 
+   203  -1045  -1045  -1045 
+ -1045  -1045    193  -1045 
+   -78  -1045    171  -1045 
+ -1045   -178    183  -1045 
+  -178   -178  -1045    179 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 14 E= 3.6e-097 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.000000  0.928571  0.000000  0.071429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.357143  0.000000  0.642857  0.000000 
+ 0.214286  0.000000  0.000000  0.785714 
+ 0.857143  0.000000  0.000000  0.142857 
+ 0.071429  0.000000  0.928571  0.000000 
+ 0.000000  0.214286  0.000000  0.785714 
+ 0.214286  0.142857  0.428571  0.214286 
+ 0.285714  0.000000  0.714286  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.000000  0.857143  0.000000  0.142857 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.000000  0.071429  0.928571  0.000000 
+ 0.071429  0.071429  0.000000  0.857143 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+ACCCT[GA][TA]AG[TC][GAT][GA]CTACAGGGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA3690(cadA)Score=6.4,Po         1.12e-11  [+1(1.12e-11)]
+PSEEN4285(czcR)Score=5.1         7.34e-10  [+1(7.34e-10)]
+PSEEN5232(cadA)Score=6.5         4.89e-13  [+1(4.89e-13)]
+PP1438(czcR)Score=5.8,Po         1.40e-10  [+1(1.40e-10)]
+PP5139(cadA)Score=6.5,Po         4.89e-13  [+1(4.89e-13)]
+PSPTO5279(cadA)Score=6.5         4.89e-13  [+1(4.89e-13)]
+PFL_3147(czcR)Score=5.8,         7.34e-10  [+1(7.34e-10)]
+Pmen_4225(cadA)Score=6.6         2.60e-12  [+1(2.60e-12)]
+Pmen_1174(czcR)Score=6.3         5.43e-11  [+1(5.43e-11)]
+PST_0664(cadA)Score=6.2,         8.27e-11  [+1(8.27e-11)]
+PST_1619(czcD)Score=6.6,         9.65e-13  [+1(9.65e-13)]
+PST_3416(czcD2)Score=5.9         7.34e-10  [+1(7.34e-10)]
+Avin_18520(cadA)Score=6.         3.36e-11  [+1(3.36e-11)]
+Avin_24510(czcD)Score=6.         3.93e-11  [+1(3.93e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************

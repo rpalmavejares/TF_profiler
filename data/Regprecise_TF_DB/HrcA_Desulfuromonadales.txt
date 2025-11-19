@@ -1,0 +1,346 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/HrcA_Desulfuromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Gmet_2854_p-64(rpoH)     1.0000     27  Gmet_0028_p-81(groS)     1.0000     27  
+Gmet_3534_p-46(hrcA)     1.0000     27  GSU0655_p-52(rpoH)       1.0000     27  
+GSU3339_p-80(groS)       1.0000     27  GSU0031_p-48(hrcA)       1.0000     27  
+Gura_3950_p-92(rpoH)     1.0000     27  Gura_4306_p-85(groS)     1.0000     27  
+Gura_0209_p-47(hrcA)     1.0000     27  Geob_0795_p-58(rpoH)     1.0000     27  
+Geob_1105_p-49(hrcA)     1.0000     27  Geob_0399_p-81(groS)     1.0000     27  
+GM21_0586_p-69(rpoH)     1.0000     27  GM21_0232_p-78(groS)     1.0000     27  
+GM21_3576_p-47(hrcA)     1.0000     27  Glov_0181_p-56(rpoH)     1.0000     27  
+Glov_1330_p-51(rpoH)     1.0000     27  Glov_2928_p-79(groS)     1.0000     27  
+Glov_2831_p-79(hrcA)     1.0000     27  Ppro_0114_p-56(rpoH)     1.0000     27  
+Ppro_0664_p-63(rpoH)     1.0000     27  Ppro_2803_p-77(groS)     1.0000     27  
+Ppro_1406_p-44(hrcA)     1.0000     27  Pcar_0109_p-42(hrcA)     1.0000     27  
+Pcar_2382_p-59(rpoH)     1.0000     27  Pcar_2771_p-159(groS)    1.0000     27  
+Dace_0267_p-86(hrcA)     1.0000     27  Dace_1569_p-63(rpoH)     1.0000     27  
+Dace_1149_p-105(groS)    1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/HrcA_Desulfuromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/HrcA_Desulfuromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           27
+nsites: minsites=        2    maxsites=       29    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             783    N=              29
+sample: seed=            0    hsfrac=          0
+        searchsize=    783    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.275 C 0.222 G 0.221 T 0.282 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.274 C 0.222 G 0.221 T 0.282 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1	width =  27  sites =  29  llr = 714  E-value = 1.4e-256
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::a:::623321313:a:::::a9
+pos.-specific     C  ::::a:9:a133223222:::::a:::
+probability       G  :::a::1::242131111a:a:a::::
+matrix            T  aa:::::a:112424354:::a::a::
+
+         bits    2.2    **   *         * * **   
+                 2.0    **   *         *** ** * 
+                 1.7 ****** **         ****** * 
+                 1.5 *********         *********
+Relative         1.3 *********         *********
+Entropy          1.1 *********         *********
+(35.5 bits)      0.9 *********         *********
+                 0.7 *********         *********
+                 0.4 **********        *********
+                 0.2 ***********   * ***********
+                 0.0 ---------------------------
+
+Multilevel           TTAGCACTCAGCTGTATTGAGTGCTAA
+consensus                     GCAACCTCA         
+sequence                       AGCT C C         
+                                  A             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+Gmet_0028_p-81(groS)          1  4.58e-16          . TTAGCACTCAGCTGTATCGAGTGCTAA           
+GM21_0232_p-78(groS)          1  1.42e-15          . TTAGCACTCAGCAGTTTTGAGTGCTAA           
+GSU3339_p-80(groS)            1  9.93e-14          . TTAGCACTCAGTCGTATCGAGTGCTAA           
+GSU0031_p-48(hrcA)            1  1.25e-13          . TTAGCACTCACGTCCCTTGAGTGCTAA           
+GSU0655_p-52(rpoH)            1  1.56e-13          . TTAGCACTCAGACGTACCGAGTGCTAA           
+Glov_2831_p-79(hrcA)          1  2.89e-13          . TTAGCACTCAAGTTTATAGAGTGCTAA           
+Geob_1105_p-49(hrcA)          1  4.16e-13          . TTAGCACTCAAATTCTTTGAGTGCTAA           
+Gmet_3534_p-46(hrcA)          1  5.81e-13          . TTAGCACTCACCAACTCTGAGTGCTAA           
+Glov_0181_p-56(rpoH)          1  1.06e-12          . TTAGCAGTCAGCACCATAGAGTGCTAA           
+Gura_0209_p-47(hrcA)          1  1.06e-12          . TTAGCACTCGAATTCCTTGAGTGCTAA           
+Gura_4306_p-85(groS)          1  1.06e-12          . TTAGCACTCGGCAGCTTGGAGTGCTAA           
+GM21_3576_p-47(hrcA)          1  1.39e-12          . TTAGCACTCGAACTTTTTGAGTGCTAA           
+Pcar_2382_p-59(rpoH)          1  2.78e-12          . TTAGCACTCGCCATCAACGAGTGCTAA           
+Gmet_2854_p-64(rpoH)          1  2.78e-12          . TTAGCACTCAGACAAACCGAGTGCTAA           
+Geob_0399_p-81(groS)          1  3.08e-12          . TTAGCACTCAGCTACAAGGAGTGCTAA           
+Pcar_0109_p-42(hrcA)          1  3.41e-12          . TTAGCACTCAATAAGCTAGAGTGCTAA           
+Ppro_2803_p-77(groS)          1  3.76e-12          . TTAGCACTCGGTCATCGTGAGTGCTAA           
+Dace_0267_p-86(hrcA)          1  6.40e-12          . TTAGCACTCCGGATGTTTGAGTGCTAA           
+Geob_0795_p-58(rpoH)          1  8.14e-12          . TTAGCACTCGATTCTGAAGAGTGCTAA           
+Pcar_2771_p-159(groS)         1  9.48e-12          . TTAGCACTCATGTAAACCGAGTGCTAA           
+Dace_1569_p-63(rpoH)          1  1.02e-11          . TTAGCACTCAAGGCAAGAGAGTGCTAA           
+Dace_1149_p-105(groS)         1  1.18e-11          . TTAGCACTCCCTTTTGCTGAGTGCTAA           
+Glov_2928_p-79(groS)          1  1.26e-11          . TTAGCACTCACCGCTTTAGAGTGCTAG           
+Ppro_0114_p-56(rpoH)          1  2.14e-11          . TTAGCAGTCACCGCACGAGAGTGCTAA           
+GM21_0586_p-69(rpoH)          1  2.88e-11          . TTAGCGCTCACATGGGCAGAGTGCTAA           
+Glov_1330_p-51(rpoH)          1  3.22e-11          . TTAGCAGTCTTGTGTGTCGAGTGCTAA           
+Ppro_1406_p-44(hrcA)          1  4.00e-11          . TTAGCACTCTCCAGTCATGAGTGCTAT           
+Ppro_0664_p-63(rpoH)          1  5.15e-11          . TTGGCAGTCGGACGGCTTGAGTGCTAA           
+Gura_3950_p-92(rpoH)          1  9.85e-11          . TTAGCACTCTTAACTTGAGAGTGCCAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gmet_0028_p-81(groS)              4.6e-16  [+1]
+GM21_0232_p-78(groS)              1.4e-15  [+1]
+GSU3339_p-80(groS)                9.9e-14  [+1]
+GSU0031_p-48(hrcA)                1.3e-13  [+1]
+GSU0655_p-52(rpoH)                1.6e-13  [+1]
+Glov_2831_p-79(hrcA)              2.9e-13  [+1]
+Geob_1105_p-49(hrcA)              4.2e-13  [+1]
+Gmet_3534_p-46(hrcA)              5.8e-13  [+1]
+Glov_0181_p-56(rpoH)              1.1e-12  [+1]
+Gura_0209_p-47(hrcA)              1.1e-12  [+1]
+Gura_4306_p-85(groS)              1.1e-12  [+1]
+GM21_3576_p-47(hrcA)              1.4e-12  [+1]
+Pcar_2382_p-59(rpoH)              2.8e-12  [+1]
+Gmet_2854_p-64(rpoH)              2.8e-12  [+1]
+Geob_0399_p-81(groS)              3.1e-12  [+1]
+Pcar_0109_p-42(hrcA)              3.4e-12  [+1]
+Ppro_2803_p-77(groS)              3.8e-12  [+1]
+Dace_0267_p-86(hrcA)              6.4e-12  [+1]
+Geob_0795_p-58(rpoH)              8.1e-12  [+1]
+Pcar_2771_p-159(groS)             9.5e-12  [+1]
+Dace_1569_p-63(rpoH)                1e-11  [+1]
+Dace_1149_p-105(groS)             1.2e-11  [+1]
+Glov_2928_p-79(groS)              1.3e-11  [+1]
+Ppro_0114_p-56(rpoH)              2.1e-11  [+1]
+GM21_0586_p-69(rpoH)              2.9e-11  [+1]
+Glov_1330_p-51(rpoH)              3.2e-11  [+1]
+Ppro_1406_p-44(hrcA)                4e-11  [+1]
+Ppro_0664_p-63(rpoH)              5.2e-11  [+1]
+Gura_3950_p-92(rpoH)              9.8e-11  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTAGCACTCAVNHNYHTHGAGTGCTAA width=27 seqs=29
+Gmet_0028_p-81(groS)     (    1) TTAGCACTCAGCTGTATCGAGTGCTAA  1 
+GM21_0232_p-78(groS)     (    1) TTAGCACTCAGCAGTTTTGAGTGCTAA  1 
+GSU3339_p-80(groS)       (    1) TTAGCACTCAGTCGTATCGAGTGCTAA  1 
+GSU0031_p-48(hrcA)       (    1) TTAGCACTCACGTCCCTTGAGTGCTAA  1 
+GSU0655_p-52(rpoH)       (    1) TTAGCACTCAGACGTACCGAGTGCTAA  1 
+Glov_2831_p-79(hrcA)     (    1) TTAGCACTCAAGTTTATAGAGTGCTAA  1 
+Geob_1105_p-49(hrcA)     (    1) TTAGCACTCAAATTCTTTGAGTGCTAA  1 
+Gmet_3534_p-46(hrcA)     (    1) TTAGCACTCACCAACTCTGAGTGCTAA  1 
+Glov_0181_p-56(rpoH)     (    1) TTAGCAGTCAGCACCATAGAGTGCTAA  1 
+Gura_0209_p-47(hrcA)     (    1) TTAGCACTCGAATTCCTTGAGTGCTAA  1 
+Gura_4306_p-85(groS)     (    1) TTAGCACTCGGCAGCTTGGAGTGCTAA  1 
+GM21_3576_p-47(hrcA)     (    1) TTAGCACTCGAACTTTTTGAGTGCTAA  1 
+Pcar_2382_p-59(rpoH)     (    1) TTAGCACTCGCCATCAACGAGTGCTAA  1 
+Gmet_2854_p-64(rpoH)     (    1) TTAGCACTCAGACAAACCGAGTGCTAA  1 
+Geob_0399_p-81(groS)     (    1) TTAGCACTCAGCTACAAGGAGTGCTAA  1 
+Pcar_0109_p-42(hrcA)     (    1) TTAGCACTCAATAAGCTAGAGTGCTAA  1 
+Ppro_2803_p-77(groS)     (    1) TTAGCACTCGGTCATCGTGAGTGCTAA  1 
+Dace_0267_p-86(hrcA)     (    1) TTAGCACTCCGGATGTTTGAGTGCTAA  1 
+Geob_0795_p-58(rpoH)     (    1) TTAGCACTCGATTCTGAAGAGTGCTAA  1 
+Pcar_2771_p-159(groS)    (    1) TTAGCACTCATGTAAACCGAGTGCTAA  1 
+Dace_1569_p-63(rpoH)     (    1) TTAGCACTCAAGGCAAGAGAGTGCTAA  1 
+Dace_1149_p-105(groS)    (    1) TTAGCACTCCCTTTTGCTGAGTGCTAA  1 
+Glov_2928_p-79(groS)     (    1) TTAGCACTCACCGCTTTAGAGTGCTAG  1 
+Ppro_0114_p-56(rpoH)     (    1) TTAGCAGTCACCGCACGAGAGTGCTAA  1 
+GM21_0586_p-69(rpoH)     (    1) TTAGCGCTCACATGGGCAGAGTGCTAA  1 
+Glov_1330_p-51(rpoH)     (    1) TTAGCAGTCTTGTGTGTCGAGTGCTAA  1 
+Ppro_1406_p-44(hrcA)     (    1) TTAGCACTCTCCAGTCATGAGTGCTAT  1 
+Ppro_0664_p-63(rpoH)     (    1) TTGGCAGTCGGACGGCTTGAGTGCTAA  1 
+Gura_3950_p-92(rpoH)     (    1) TTAGCACTCTTAACTTGAGAGTGCCAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 29 bayes= 1.54543 E= 1.4e-256 
+ -1150  -1150  -1150    183 
+ -1150  -1150  -1150    183 
+   181  -1150   -268  -1150 
+ -1150  -1150    218  -1150 
+ -1150    217  -1150  -1150 
+   181  -1150   -268  -1150 
+ -1150    195    -68  -1150 
+ -1150  -1150  -1150    183 
+ -1150    217  -1150  -1150 
+   109   -169     13   -145 
+   -19     31     78   -145 
+     1     63    -10    -71 
+    18    -10   -110     43 
+   -41     12     49    -22 
+   -99     31    -68     67 
+    33     12    -68     -3 
+   -99    -10    -68     87 
+    18     12   -168     43 
+ -1150  -1150    218  -1150 
+   186  -1150  -1150  -1150 
+ -1150  -1150    218  -1150 
+ -1150  -1150  -1150    183 
+ -1150  -1150    218  -1150 
+ -1150    217  -1150  -1150 
+ -1150   -269  -1150    177 
+   186  -1150  -1150  -1150 
+   176  -1150   -268   -303 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 29 E= 1.4e-256 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.965517  0.000000  0.034483  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.965517  0.000000  0.034483  0.000000 
+ 0.000000  0.862069  0.137931  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.586207  0.068966  0.241379  0.103448 
+ 0.241379  0.275862  0.379310  0.103448 
+ 0.275862  0.344828  0.206897  0.172414 
+ 0.310345  0.206897  0.103448  0.379310 
+ 0.206897  0.241379  0.310345  0.241379 
+ 0.137931  0.275862  0.137931  0.448276 
+ 0.344828  0.241379  0.137931  0.275862 
+ 0.137931  0.206897  0.137931  0.517241 
+ 0.310345  0.241379  0.068966  0.379310 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.034483  0.000000  0.965517 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.931034  0.000000  0.034483  0.034483 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTAGCACTCAVNHNYHTHGAGTGCTAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTAGCACTC[AG][GCA][CAG][TAC][GCTA][TC][ATC][TC][TAC]GAGTGCTAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gmet_2854_p-64(rpoH)             2.78e-12  [+1(2.78e-12)]
+Gmet_0028_p-81(groS)             4.58e-16  [+1(4.58e-16)]
+Gmet_3534_p-46(hrcA)             5.81e-13  [+1(5.81e-13)]
+GSU0655_p-52(rpoH)               1.56e-13  [+1(1.56e-13)]
+GSU3339_p-80(groS)               9.93e-14  [+1(9.93e-14)]
+GSU0031_p-48(hrcA)               1.25e-13  [+1(1.25e-13)]
+Gura_3950_p-92(rpoH)             9.85e-11  [+1(9.85e-11)]
+Gura_4306_p-85(groS)             1.06e-12  [+1(1.06e-12)]
+Gura_0209_p-47(hrcA)             1.06e-12  [+1(1.06e-12)]
+Geob_0795_p-58(rpoH)             8.14e-12  [+1(8.14e-12)]
+Geob_1105_p-49(hrcA)             4.16e-13  [+1(4.16e-13)]
+Geob_0399_p-81(groS)             3.08e-12  [+1(3.08e-12)]
+GM21_0586_p-69(rpoH)             2.88e-11  [+1(2.88e-11)]
+GM21_0232_p-78(groS)             1.42e-15  [+1(1.42e-15)]
+GM21_3576_p-47(hrcA)             1.39e-12  [+1(1.39e-12)]
+Glov_0181_p-56(rpoH)             1.06e-12  [+1(1.06e-12)]
+Glov_1330_p-51(rpoH)             3.22e-11  [+1(3.22e-11)]
+Glov_2928_p-79(groS)             1.26e-11  [+1(1.26e-11)]
+Glov_2831_p-79(hrcA)             2.89e-13  [+1(2.89e-13)]
+Ppro_0114_p-56(rpoH)             2.14e-11  [+1(2.14e-11)]
+Ppro_0664_p-63(rpoH)             5.15e-11  [+1(5.15e-11)]
+Ppro_2803_p-77(groS)             3.76e-12  [+1(3.76e-12)]
+Ppro_1406_p-44(hrcA)             4.00e-11  [+1(4.00e-11)]
+Pcar_0109_p-42(hrcA)             3.41e-12  [+1(3.41e-12)]
+Pcar_2382_p-59(rpoH)             2.78e-12  [+1(2.78e-12)]
+Pcar_2771_p-159(groS)            9.48e-12  [+1(9.48e-12)]
+Dace_0267_p-86(hrcA)             6.40e-12  [+1(6.40e-12)]
+Dace_1569_p-63(rpoH)             1.02e-11  [+1(1.02e-11)]
+Dace_1149_p-105(groS)            1.18e-11  [+1(1.18e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

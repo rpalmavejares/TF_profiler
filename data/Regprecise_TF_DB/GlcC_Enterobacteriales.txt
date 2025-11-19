@@ -1,0 +1,197 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/GlcC_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b2980_p-148(glcC)        1.0000     17  b2979_p-119(glcD)        1.0000     17  
+b2980_p-31(glcC)         1.0000     17  b2979_p-236(glcD)        1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/GlcC_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/GlcC_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           17
+nsites: minsites=        2    maxsites=        4    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              68    N=               4
+sample: seed=            0    hsfrac=          0
+        searchsize=     68    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.265 C 0.235 G 0.235 T 0.265 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.264 C 0.236 G 0.236 T 0.264 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTCNGACC MEME-1	width =   9  sites =   4  llr = 41  E-value = 1.2e-003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::33:a::
+pos.-specific     C  :::83::aa
+probability       G  aa::38:::
+matrix            T  ::a:33:::
+
+         bits    2.1 **     **
+                 1.9 ***   ***
+                 1.7 ***   ***
+                 1.5 ***   ***
+Relative         1.2 **** ****
+Entropy          1.0 **** ****
+(14.6 bits)      0.8 **** ****
+                 0.6 **** ****
+                 0.4 **** ****
+                 0.2 **** ****
+                 0.0 ---------
+
+Multilevel           GGTCAGACC
+consensus               ACT   
+sequence                 G    
+                         T    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site 
+-------------             ----- ---------            ---------
+b2979_p-119(glcD)             5  1.20e-05       AAAT GGTCTGACC GGTA      
+b2980_p-148(glcC)             5  1.20e-05       TACC GGTCAGACC ATTT      
+b2979_p-236(glcD)             5  2.48e-05       CACA GGTAGGACC AATT      
+b2980_p-31(glcC)              5  2.48e-05       AATT GGTCCTACC TGTG      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b2979_p-119(glcD)                 1.2e-05  4_[+1]_4
+b2980_p-148(glcC)                 1.2e-05  4_[+1]_4
+b2979_p-236(glcD)                 2.5e-05  4_[+1]_4
+b2980_p-31(glcC)                  2.5e-05  4_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTCNGACC width=9 seqs=4
+b2979_p-119(glcD)        (    5) GGTCTGACC  1 
+b2980_p-148(glcC)        (    5) GGTCAGACC  1 
+b2979_p-236(glcD)        (    5) GGTAGGACC  1 
+b2980_p-31(glcC)         (    5) GGTCCTACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 36 bayes= 3.80735 E= 1.2e-003 
+  -865   -865    208   -865 
+  -865   -865    208   -865 
+  -865   -865   -865    192 
+    -8    166   -865   -865 
+    -8      8      8     -8 
+  -865   -865    166     -8 
+   192   -865   -865   -865 
+  -865    208   -865   -865 
+  -865    208   -865   -865 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 4 E= 1.2e-003 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.250000  0.750000  0.000000  0.000000 
+ 0.250000  0.250000  0.250000  0.250000 
+ 0.000000  0.000000  0.750000  0.250000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTCNGACC MEME-1 regular expression
+--------------------------------------------------------------------------------
+GGT[CA][ACGT][GT]ACC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b2980_p-148(glcC)                1.08e-04  4_[+1(1.20e-05)]_4
+b2979_p-119(glcD)                1.08e-04  4_[+1(1.20e-05)]_4
+b2980_p-31(glcC)                 2.23e-04  4_[+1(2.48e-05)]_4
+b2979_p-236(glcD)                2.23e-04  4_[+1(2.48e-05)]_4
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,339 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GntR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA2321_p-34(gntK)        1.0000     20  PA2321_p-162(gntK)       1.0000     20  
+PA2320_p-52(gntR)        1.0000     20  PA2322_p-78(gntT)        1.0000     20  
+PA2320_p-180(gntR)       1.0000     20  PSEEN2421_p-166(gntK)    1.0000     20  
+PSEEN2421_p-36(gntK)     1.0000     20  PSEEN2422_p-192(gntR)    1.0000     20  
+PSEEN2422_p-62(gntR)     1.0000     20  PSEEN2420_p-82(gntT)     1.0000     20  
+PP3415_p-191(gntR)       1.0000     20  PP3415_p-62(gntR)        1.0000     20  
+PP3416_p-164(gntK)       1.0000     20  PP3416_p-35(gntK)        1.0000     20  
+PP3417_p-88(gntT)        1.0000     20  PSPTO3564_p-238(gntK)    1.0000     20  
+PSPTO3564_p-74(gntK)     1.0000     20  PSPTO3565_p-82(gntT)     1.0000     20  
+PSPTO3563_p-229(gntR)    1.0000     20  PSPTO3563_p-65(gntR)     1.0000     20  
+PFL_4580_p-185(gntK)     1.0000     20  PFL_4580_p-34(gntK)      1.0000     20  
+PFL_4581_p-201(gntR)     1.0000     20  PFL_4581_p-50(gntR)      1.0000     20  
+PFL_4579_p-72(gntT)      1.0000     20  Pmen_2569_p-67(gntKZ)    1.0000     20  
+PST_2201_p-104(gntKZ)    1.0000     20  Avin_27300_p-167(gntR)   1.0000     20  
+Avin_27310_p-177(gntK)   1.0000     20  Avin_22480_p-30(gntK)    1.0000     20  
+Avin_22480_p-176(gntK)   1.0000     20  Avin_22470_p-57(gntT)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GntR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/GntR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             640    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    640    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.252 C 0.277 G 0.256 T 0.216 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.252 C 0.276 G 0.256 T 0.216 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WAAGAYAGCGCTRTCTY MEME-1	width =  17  sites =  32  llr = 530  E-value = 4.1e-173
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  368:8:a:::::51:1:
+pos.-specific     C  2::::5::a:a::3a24
+probability       G  131a2::a:a::5::::
+matrix            T  41:::5:::::a:7:85
+
+         bits    2.2            *     
+                 2.0    *  ** * *     
+                 1.8    *  ******  *  
+                 1.5    *  ******  *  
+Relative         1.3   *** ******  *  
+Entropy          1.1   **********  ** 
+(23.9 bits)      0.9   ************** 
+                 0.7  ****************
+                 0.4  ****************
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TAAGATAGCGCTATCTT
+consensus            AG  GC      GC  C
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Avin_22480_p-176(gntK)        2  7.34e-11          A TAAGATAGCGCTGTCTT TA        
+PSPTO3565_p-82(gntT)          2  6.50e-10          A AAAGACAGCGCTGTCTT GC        
+PSEEN2420_p-82(gntT)          2  6.50e-10          C AAAGACAGCGCTGTCTT AA        
+PSEEN2422_p-192(gntR)         2  6.50e-10          G TGAGATAGCGCTGTCTT GG        
+Avin_22470_p-57(gntT)         2  7.60e-10          G AAAGATAGCGCTGTCTC GC        
+PA2321_p-34(gntK)             2  7.60e-10          C AAAGATAGCGCTGTCTC AC        
+PA2320_p-180(gntR)            2  8.55e-10          G TGAGACAGCGCTATCTT TG        
+PSPTO3564_p-74(gntK)          2  1.44e-09          C AAAGACAGCGCTGTCTC CA        
+PP3415_p-191(gntR)            2  1.44e-09          G TGAGATAGCGCTGTCTC GC        
+PSPTO3564_p-238(gntK)         2  2.85e-09          A TAAGGTAGCGCTGTCTC AT        
+PP3416_p-164(gntK)            2  2.85e-09          C TAAGGTAGCGCTGTCTC AG        
+PSEEN2421_p-166(gntK)         2  2.85e-09          C TAAGGTAGCGCTGTCTC AG        
+PA2321_p-162(gntK)            2  2.85e-09          C TAAGGTAGCGCTGTCTC GC        
+PSEEN2421_p-36(gntK)          2  3.55e-09          C CAAGACAGCGCTATCTC AC        
+PSPTO3563_p-65(gntR)          2  5.69e-09          A TGAGACAGCGCTACCTT AT        
+PP3415_p-62(gntR)             2  5.69e-09          C TGAGACAGCGCTACCTT AG        
+PSEEN2422_p-62(gntR)          2  5.69e-09          C TGAGACAGCGCTACCTT AG        
+PSPTO3563_p-229(gntR)         2  6.51e-09          T GGAGACAGCGCTGTCTT TG        
+PP3416_p-35(gntK)             2  9.99e-09          G CGAGACAGCGCTATCTC AC        
+PFL_4580_p-185(gntK)          2  1.17e-08          C TAAGGTAGCGCTGTCCT GA        
+Avin_22480_p-30(gntK)         2  2.04e-08          A AAAGATAGCGCTATCTA CC        
+PA2320_p-52(gntR)             2  2.18e-08          G CGAGACAGCGCTACCTT AG        
+PA2322_p-78(gntT)             2  2.87e-08          C AAAGATAGCGCTACCCC GA        
+PFL_4579_p-72(gntT)           2  3.09e-08          A AAAGGTAGCGCTATCCC AC        
+PP3417_p-88(gntT)             2  3.67e-08          C AAAGACAGCGCTACCCC AA        
+PFL_4581_p-50(gntR)           2  5.39e-08          T CAGGACAGCGCTACCTT AG        
+Avin_27310_p-177(gntK)        2  5.76e-08          A CAGGATAGCGCTGTCCT CG        
+Avin_27300_p-167(gntR)        2  7.53e-08          C GAGGACAGCGCTATCCT GT        
+PFL_4580_p-34(gntK)           2  1.02e-07          C GAAGGTAGCGCTGTCTG CG        
+PFL_4581_p-201(gntR)          2  1.29e-07          C GCAGACAGCGCTACCTT CG        
+Pmen_2569_p-67(gntKZ)         2  4.79e-07          T TTGGATAGCGCTAACAT CC        
+PST_2201_p-104(gntKZ)         2  6.70e-07          G TTTGATAGCGCTAACAT CC        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Avin_22480_p-176(gntK)            7.3e-11  1_[+1]_2
+PSPTO3565_p-82(gntT)              6.5e-10  1_[+1]_2
+PSEEN2420_p-82(gntT)              6.5e-10  1_[+1]_2
+PSEEN2422_p-192(gntR)             6.5e-10  1_[+1]_2
+Avin_22470_p-57(gntT)             7.6e-10  1_[+1]_2
+PA2321_p-34(gntK)                 7.6e-10  1_[+1]_2
+PA2320_p-180(gntR)                8.6e-10  1_[+1]_2
+PSPTO3564_p-74(gntK)              1.4e-09  1_[+1]_2
+PP3415_p-191(gntR)                1.4e-09  1_[+1]_2
+PSPTO3564_p-238(gntK)             2.9e-09  1_[+1]_2
+PP3416_p-164(gntK)                2.9e-09  1_[+1]_2
+PSEEN2421_p-166(gntK)             2.9e-09  1_[+1]_2
+PA2321_p-162(gntK)                2.9e-09  1_[+1]_2
+PSEEN2421_p-36(gntK)              3.6e-09  1_[+1]_2
+PSPTO3563_p-65(gntR)              5.7e-09  1_[+1]_2
+PP3415_p-62(gntR)                 5.7e-09  1_[+1]_2
+PSEEN2422_p-62(gntR)              5.7e-09  1_[+1]_2
+PSPTO3563_p-229(gntR)             6.5e-09  1_[+1]_2
+PP3416_p-35(gntK)                   1e-08  1_[+1]_2
+PFL_4580_p-185(gntK)              1.2e-08  1_[+1]_2
+Avin_22480_p-30(gntK)               2e-08  1_[+1]_2
+PA2320_p-52(gntR)                 2.2e-08  1_[+1]_2
+PA2322_p-78(gntT)                 2.9e-08  1_[+1]_2
+PFL_4579_p-72(gntT)               3.1e-08  1_[+1]_2
+PP3417_p-88(gntT)                 3.7e-08  1_[+1]_2
+PFL_4581_p-50(gntR)               5.4e-08  1_[+1]_2
+Avin_27310_p-177(gntK)            5.8e-08  1_[+1]_2
+Avin_27300_p-167(gntR)            7.5e-08  1_[+1]_2
+PFL_4580_p-34(gntK)                 1e-07  1_[+1]_2
+PFL_4581_p-201(gntR)              1.3e-07  1_[+1]_2
+Pmen_2569_p-67(gntKZ)             4.8e-07  1_[+1]_2
+PST_2201_p-104(gntKZ)             6.7e-07  1_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WAAGAYAGCGCTRTCTY width=17 seqs=32
+Avin_22480_p-176(gntK)   (    2) TAAGATAGCGCTGTCTT  1 
+PSPTO3565_p-82(gntT)     (    2) AAAGACAGCGCTGTCTT  1 
+PSEEN2420_p-82(gntT)     (    2) AAAGACAGCGCTGTCTT  1 
+PSEEN2422_p-192(gntR)    (    2) TGAGATAGCGCTGTCTT  1 
+Avin_22470_p-57(gntT)    (    2) AAAGATAGCGCTGTCTC  1 
+PA2321_p-34(gntK)        (    2) AAAGATAGCGCTGTCTC  1 
+PA2320_p-180(gntR)       (    2) TGAGACAGCGCTATCTT  1 
+PSPTO3564_p-74(gntK)     (    2) AAAGACAGCGCTGTCTC  1 
+PP3415_p-191(gntR)       (    2) TGAGATAGCGCTGTCTC  1 
+PSPTO3564_p-238(gntK)    (    2) TAAGGTAGCGCTGTCTC  1 
+PP3416_p-164(gntK)       (    2) TAAGGTAGCGCTGTCTC  1 
+PSEEN2421_p-166(gntK)    (    2) TAAGGTAGCGCTGTCTC  1 
+PA2321_p-162(gntK)       (    2) TAAGGTAGCGCTGTCTC  1 
+PSEEN2421_p-36(gntK)     (    2) CAAGACAGCGCTATCTC  1 
+PSPTO3563_p-65(gntR)     (    2) TGAGACAGCGCTACCTT  1 
+PP3415_p-62(gntR)        (    2) TGAGACAGCGCTACCTT  1 
+PSEEN2422_p-62(gntR)     (    2) TGAGACAGCGCTACCTT  1 
+PSPTO3563_p-229(gntR)    (    2) GGAGACAGCGCTGTCTT  1 
+PP3416_p-35(gntK)        (    2) CGAGACAGCGCTATCTC  1 
+PFL_4580_p-185(gntK)     (    2) TAAGGTAGCGCTGTCCT  1 
+Avin_22480_p-30(gntK)    (    2) AAAGATAGCGCTATCTA  1 
+PA2320_p-52(gntR)        (    2) CGAGACAGCGCTACCTT  1 
+PA2322_p-78(gntT)        (    2) AAAGATAGCGCTACCCC  1 
+PFL_4579_p-72(gntT)      (    2) AAAGGTAGCGCTATCCC  1 
+PP3417_p-88(gntT)        (    2) AAAGACAGCGCTACCCC  1 
+PFL_4581_p-50(gntR)      (    2) CAGGACAGCGCTACCTT  1 
+Avin_27310_p-177(gntK)   (    2) CAGGATAGCGCTGTCCT  1 
+Avin_27300_p-167(gntR)   (    2) GAGGACAGCGCTATCCT  1 
+PFL_4580_p-34(gntK)      (    2) GAAGGTAGCGCTGTCTG  1 
+PFL_4581_p-201(gntR)     (    2) GCAGACAGCGCTACCTT  1 
+Pmen_2569_p-67(gntKZ)    (    2) TTGGATAGCGCTAACAT  1 
+PST_2201_p-104(gntKZ)    (    2) TTTGATAGCGCTAACAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 128 bayes= 3.90689 E= 4.1e-173 
+    16    -82   -103    102 
+   131   -314     13   -179 
+   175  -1164   -103   -279 
+ -1164  -1164    196  -1164 
+   163  -1164    -23  -1164 
+ -1164     76  -1164    130 
+   199  -1164  -1164  -1164 
+ -1164  -1164    196  -1164 
+ -1164    185  -1164  -1164 
+ -1164  -1164    196  -1164 
+ -1164    185  -1164  -1164 
+ -1164  -1164  -1164    221 
+    99  -1164     96  -1164 
+  -201    -14  -1164    167 
+ -1164    185  -1164  -1164 
+  -201    -56  -1164    180 
+  -301     56   -303    130 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 32 E= 4.1e-173 
+ 0.281250  0.156250  0.125000  0.437500 
+ 0.625000  0.031250  0.281250  0.062500 
+ 0.843750  0.000000  0.125000  0.031250 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.781250  0.000000  0.218750  0.000000 
+ 0.000000  0.468750  0.000000  0.531250 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.062500  0.250000  0.000000  0.687500 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.062500  0.187500  0.000000  0.750000 
+ 0.031250  0.406250  0.031250  0.531250 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WAAGAYAGCGCTRTCTY MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][AG]AG[AG][TC]AGCGCT[AG][TC]CT[TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA2321_p-34(gntK)                3.04e-09  1_[+1(7.60e-10)]_2
+PA2321_p-162(gntK)               1.14e-08  1_[+1(2.85e-09)]_2
+PA2320_p-52(gntR)                8.73e-08  1_[+1(2.18e-08)]_2
+PA2322_p-78(gntT)                1.15e-07  1_[+1(2.87e-08)]_2
+PA2320_p-180(gntR)               3.42e-09  1_[+1(8.55e-10)]_2
+PSEEN2421_p-166(gntK)            1.14e-08  1_[+1(2.85e-09)]_2
+PSEEN2421_p-36(gntK)             1.42e-08  1_[+1(3.55e-09)]_2
+PSEEN2422_p-192(gntR)            2.60e-09  1_[+1(6.50e-10)]_2
+PSEEN2422_p-62(gntR)             2.28e-08  1_[+1(5.69e-09)]_2
+PSEEN2420_p-82(gntT)             2.60e-09  1_[+1(6.50e-10)]_2
+PP3415_p-191(gntR)               5.76e-09  1_[+1(1.44e-09)]_2
+PP3415_p-62(gntR)                2.28e-08  1_[+1(5.69e-09)]_2
+PP3416_p-164(gntK)               1.14e-08  1_[+1(2.85e-09)]_2
+PP3416_p-35(gntK)                4.00e-08  1_[+1(9.99e-09)]_2
+PP3417_p-88(gntT)                1.47e-07  1_[+1(3.67e-08)]_2
+PSPTO3564_p-238(gntK)            1.14e-08  1_[+1(2.85e-09)]_2
+PSPTO3564_p-74(gntK)             5.76e-09  1_[+1(1.44e-09)]_2
+PSPTO3565_p-82(gntT)             2.60e-09  1_[+1(6.50e-10)]_2
+PSPTO3563_p-229(gntR)            2.60e-08  1_[+1(6.51e-09)]_2
+PSPTO3563_p-65(gntR)             2.28e-08  1_[+1(5.69e-09)]_2
+PFL_4580_p-185(gntK)             4.67e-08  1_[+1(1.17e-08)]_2
+PFL_4580_p-34(gntK)              4.08e-07  1_[+1(1.02e-07)]_2
+PFL_4581_p-201(gntR)             5.15e-07  1_[+1(1.29e-07)]_2
+PFL_4581_p-50(gntR)              2.15e-07  1_[+1(5.39e-08)]_2
+PFL_4579_p-72(gntT)              1.24e-07  1_[+1(3.09e-08)]_2
+Pmen_2569_p-67(gntKZ)            1.92e-06  1_[+1(4.79e-07)]_2
+PST_2201_p-104(gntKZ)            2.68e-06  1_[+1(6.70e-07)]_2
+Avin_27300_p-167(gntR)           3.01e-07  1_[+1(7.53e-08)]_2
+Avin_27310_p-177(gntK)           2.30e-07  1_[+1(5.76e-08)]_2
+Avin_22480_p-30(gntK)            8.14e-08  1_[+1(2.04e-08)]_2
+Avin_22480_p-176(gntK)           2.94e-10  1_[+1(7.34e-11)]_2
+Avin_22470_p-57(gntT)            3.04e-09  1_[+1(7.60e-10)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,220 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NifA_Sphingomonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ZMO1832_p-143(iscN)      1.0000     16  ZMO1817_p-145(nifB)      1.0000     16  
+ZMO1817_p-427(nifB)      1.0000     16  ZMO1823_p-179(nifH)      1.0000     16  
+ZMO1817_p-125(nifB)      1.0000     16  ZMO1814_p-213(rnfA)      1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NifA_Sphingomonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Sphingomonadales/NifA_Sphingomonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=              96    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=     96    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.281 C 0.25 G 0.198 T 0.271 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.28 C 0.25 G 0.2 T 0.27 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTMMSRNTKCMKACA MEME-1	width =  16  sites =   6  llr = 68  E-value = 6.3e-010
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::35233222328:a
+pos.-specific     C  :::535:3::75:2a:
+probability       G  :8::2352:3225:::
+matrix            T  a2a2::2285::3:::
+
+         bits    2.3                 
+                 2.1               * 
+                 1.9 * *           **
+                 1.6 ***           **
+Relative         1.4 ***           **
+Entropy          1.2 ***     *    ***
+(16.5 bits)      0.9 ***     *    ***
+                 0.7 ***  ** * * ****
+                 0.5 ******* ********
+                 0.2 ******* ********
+                 0.0 ----------------
+
+Multilevel           TGTCACGATTCCGACA
+consensus               ACGAC G AT   
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+ZMO1823_p-179(nifH)           1  8.50e-07          . TGTCGCGCTTCGAACA           
+ZMO1817_p-427(nifB)           1  8.50e-07          . TGTCAGGCTGCATCCA           
+ZMO1814_p-213(rnfA)           1  9.47e-07          . TGTCACTTTTGCGACA           
+ZMO1817_p-125(nifB)           1  2.47e-06          . TGTAAGAGTTAAGACA           
+ZMO1817_p-145(nifB)           1  2.47e-06          . TTTACCGATACCGACA           
+ZMO1832_p-143(iscN)           1  1.43e-05          . TGTTCAAAAGCCTACA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ZMO1823_p-179(nifH)               8.5e-07  [+1]
+ZMO1817_p-427(nifB)               8.5e-07  [+1]
+ZMO1814_p-213(rnfA)               9.5e-07  [+1]
+ZMO1817_p-125(nifB)               2.5e-06  [+1]
+ZMO1817_p-145(nifB)               2.5e-06  [+1]
+ZMO1832_p-143(iscN)               1.4e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTMMSRNTKCMKACA width=16 seqs=6
+ZMO1823_p-179(nifH)      (    1) TGTCGCGCTTCGAACA  1 
+ZMO1817_p-427(nifB)      (    1) TGTCAGGCTGCATCCA  1 
+ZMO1814_p-213(rnfA)      (    1) TGTCACTTTTGCGACA  1 
+ZMO1817_p-125(nifB)      (    1) TGTAAGAGTTAAGACA  1 
+ZMO1817_p-145(nifB)      (    1) TTTACCGATACCGACA  1 
+ZMO1832_p-143(iscN)      (    1) TGTTCAAAAGCCTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 6 bayes= 0.192645 E= 6.3e-010 
+  -923   -923   -923    189 
+  -923   -923    206    -69 
+  -923   -923   -923    189 
+    25    100   -923    -69 
+    84     41    -26   -923 
+   -75    100     74   -923 
+    25   -923    132    -69 
+    25     41    -26    -69 
+   -75   -923   -923    162 
+   -75   -923     74     89 
+   -75    141    -26   -923 
+    25    100    -26   -923 
+   -75   -923    132     30 
+   157    -58   -923   -923 
+  -923    200   -923   -923 
+   183   -923   -923   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 6 E= 6.3e-010 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.833333  0.166667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.333333  0.500000  0.000000  0.166667 
+ 0.500000  0.333333  0.166667  0.000000 
+ 0.166667  0.500000  0.333333  0.000000 
+ 0.333333  0.000000  0.500000  0.166667 
+ 0.333333  0.333333  0.166667  0.166667 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.166667  0.000000  0.333333  0.500000 
+ 0.166667  0.666667  0.166667  0.000000 
+ 0.333333  0.500000  0.166667  0.000000 
+ 0.166667  0.000000  0.500000  0.333333 
+ 0.833333  0.166667  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTMMSRNTKCMKACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGT[CA][AC][CG][GA][AC]T[TG]C[CA][GT]ACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ZMO1832_p-143(iscN)              1.43e-05  [+1(1.43e-05)]
+ZMO1817_p-145(nifB)              2.47e-06  [+1(2.47e-06)]
+ZMO1817_p-427(nifB)              8.50e-07  [+1(8.50e-07)]
+ZMO1823_p-179(nifH)              8.50e-07  [+1(8.50e-07)]
+ZMO1817_p-125(nifB)              2.47e-06  [+1(2.47e-06)]
+ZMO1814_p-213(rnfA)              9.47e-07  [+1(9.47e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

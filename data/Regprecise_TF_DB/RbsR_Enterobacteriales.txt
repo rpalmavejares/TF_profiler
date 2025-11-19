@@ -1,0 +1,278 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RbsR_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+b3748_p-31(rbsD)         1.0000     20  STM3881_p-32(rbsD)       1.0000     20  
+STM3881_p-111(rbsD)      1.0000     20  CKO_00088_p-155(rbsD)    1.0000     20  
+KPN_04153_p-116(rbsD)    1.0000     20  KPN_04153_p-38(rbsD)     1.0000     20  
+Ent638_4116_p-32(rbsD)   1.0000     20  EAM_0015_p-108(rbsD)     1.0000     20  
+EAM_0015_p-30(rbsD)      1.0000     20  Spro_4901_p-117(rbsD)    1.0000     20  
+Spro_4901_p-37(rbsD)     1.0000     20  ECA0010_p-32(rbsD)       1.0000     20  
+ECA0010_p-109(rbsD)      1.0000     20  ETAE_3516_p-31(rbsD)     1.0000     20  
+PMI0093_p-30(rbsD)       1.0000     20  plu0055_p-32(rbsD)       1.0000     20  
+plu0055_p-110(rbsD)      1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RbsR_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/RbsR_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             340    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    340    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.256 C 0.232 G 0.265 T 0.247 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.256 C 0.233 G 0.265 T 0.247 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YYAGCGAAACGTTTCGMTRG MEME-1	width =  20  sites =  17  llr = 386  E-value = 2.6e-130
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  219::1aaa:::::::4:42
+pos.-specific     C  541:a::::a::::a:61::
+probability       G  ::19:9::::a::::a::68
+matrix            T  45:1:::::::aaa:::9:1
+
+         bits    2.1     *    * ****     
+                 1.9     * **********    
+                 1.7    ************* *  
+                 1.5    ************* *  
+Relative         1.3   ************** *  
+Entropy          1.1   ******************
+(32.7 bits)      0.8  *******************
+                 0.6 ********************
+                 0.4 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           CTAGCGAAACGTTTCGCTGG
+consensus            TC              A A 
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+ECA0010_p-32(rbsD)            1  3.73e-12          . TTAGCGAAACGTTTCGCTGG           
+CKO_00088_p-155(rbsD)         1  5.52e-12          . CCAGCGAAACGTTTCGCTAG           
+STM3881_p-32(rbsD)            1  5.52e-12          . CCAGCGAAACGTTTCGCTAG           
+KPN_04153_p-38(rbsD)          1  7.52e-12          . TTAGCGAAACGTTTCGCTAG           
+Ent638_4116_p-32(rbsD)        1  9.40e-12          . TCAGCGAAACGTTTCGCTAG           
+ECA0010_p-109(rbsD)           1  1.15e-11          . TTAGCGAAACGTTTCGATGG           
+ETAE_3516_p-31(rbsD)          1  1.25e-11          . ATAGCGAAACGTTTCGCTGG           
+Spro_4901_p-117(rbsD)         1  1.45e-11          . CCAGCGAAACGTTTCGATAG           
+b3748_p-31(rbsD)              1  2.70e-11          . TCAGCGAAACGTTTCGCTGA           
+Spro_4901_p-37(rbsD)          1  3.10e-11          . CAAGCGAAACGTTTCGCTGG           
+PMI0093_p-30(rbsD)            1  4.87e-11          . ACAGCGAAACGTTTCGCTGA           
+plu0055_p-32(rbsD)            1  5.97e-11          . ATAGCGAAACGTTTCGCTAA           
+KPN_04153_p-116(rbsD)         1  8.72e-11          . CTCGCGAAACGTTTCGATGG           
+STM3881_p-111(rbsD)           1  9.67e-11          . CTAGCGAAACGTTTCGACGG           
+EAM_0015_p-108(rbsD)          1  1.10e-10          . CCAGCAAAACGTTTCGATGG           
+plu0055_p-110(rbsD)           1  1.59e-10          . TTATCGAAACGTTTCGATAG           
+EAM_0015_p-30(rbsD)           1  2.81e-10          . CTGGCGAAACGTTTCGCTGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ECA0010_p-32(rbsD)                3.7e-12  [+1]
+CKO_00088_p-155(rbsD)             5.5e-12  [+1]
+STM3881_p-32(rbsD)                5.5e-12  [+1]
+KPN_04153_p-38(rbsD)              7.5e-12  [+1]
+Ent638_4116_p-32(rbsD)            9.4e-12  [+1]
+ECA0010_p-109(rbsD)               1.1e-11  [+1]
+ETAE_3516_p-31(rbsD)              1.3e-11  [+1]
+Spro_4901_p-117(rbsD)             1.4e-11  [+1]
+b3748_p-31(rbsD)                  2.7e-11  [+1]
+Spro_4901_p-37(rbsD)              3.1e-11  [+1]
+PMI0093_p-30(rbsD)                4.9e-11  [+1]
+plu0055_p-32(rbsD)                  6e-11  [+1]
+KPN_04153_p-116(rbsD)             8.7e-11  [+1]
+STM3881_p-111(rbsD)               9.7e-11  [+1]
+EAM_0015_p-108(rbsD)              1.1e-10  [+1]
+plu0055_p-110(rbsD)               1.6e-10  [+1]
+EAM_0015_p-30(rbsD)               2.8e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YYAGCGAAACGTTTCGMTRG width=20 seqs=17
+ECA0010_p-32(rbsD)       (    1) TTAGCGAAACGTTTCGCTGG  1 
+CKO_00088_p-155(rbsD)    (    1) CCAGCGAAACGTTTCGCTAG  1 
+STM3881_p-32(rbsD)       (    1) CCAGCGAAACGTTTCGCTAG  1 
+KPN_04153_p-38(rbsD)     (    1) TTAGCGAAACGTTTCGCTAG  1 
+Ent638_4116_p-32(rbsD)   (    1) TCAGCGAAACGTTTCGCTAG  1 
+ECA0010_p-109(rbsD)      (    1) TTAGCGAAACGTTTCGATGG  1 
+ETAE_3516_p-31(rbsD)     (    1) ATAGCGAAACGTTTCGCTGG  1 
+Spro_4901_p-117(rbsD)    (    1) CCAGCGAAACGTTTCGATAG  1 
+b3748_p-31(rbsD)         (    1) TCAGCGAAACGTTTCGCTGA  1 
+Spro_4901_p-37(rbsD)     (    1) CAAGCGAAACGTTTCGCTGG  1 
+PMI0093_p-30(rbsD)       (    1) ACAGCGAAACGTTTCGCTGA  1 
+plu0055_p-32(rbsD)       (    1) ATAGCGAAACGTTTCGCTAA  1 
+KPN_04153_p-116(rbsD)    (    1) CTCGCGAAACGTTTCGATGG  1 
+STM3881_p-111(rbsD)      (    1) CTAGCGAAACGTTTCGACGG  1 
+EAM_0015_p-108(rbsD)     (    1) CCAGCAAAACGTTTCGATGG  1 
+plu0055_p-110(rbsD)      (    1) TTATCGAAACGTTTCGATAG  1 
+EAM_0015_p-30(rbsD)      (    1) CTGGCGAAACGTTTCGCTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 17 bayes= 1.26303 E= 2.6e-130 
+   -54    102  -1073     51 
+  -212     82  -1073    110 
+   179   -198   -217  -1073 
+ -1073  -1073    183   -207 
+ -1073    210  -1073  -1073 
+  -212  -1073    183  -1073 
+   197  -1073  -1073  -1073 
+   197  -1073  -1073  -1073 
+   197  -1073  -1073  -1073 
+ -1073    210  -1073  -1073 
+ -1073  -1073    192  -1073 
+ -1073  -1073  -1073    202 
+ -1073  -1073  -1073    202 
+ -1073  -1073  -1073    202 
+ -1073    210  -1073  -1073 
+ -1073  -1073    192  -1073 
+    46    148  -1073  -1073 
+ -1073   -198  -1073    193 
+    69  -1073    115  -1073 
+   -54  -1073    153   -207 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 17 E= 2.6e-130 
+ 0.176471  0.470588  0.000000  0.352941 
+ 0.058824  0.411765  0.000000  0.529412 
+ 0.882353  0.058824  0.058824  0.000000 
+ 0.000000  0.000000  0.941176  0.058824 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.058824  0.000000  0.941176  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.352941  0.647059  0.000000  0.000000 
+ 0.000000  0.058824  0.000000  0.941176 
+ 0.411765  0.000000  0.588235  0.000000 
+ 0.176471  0.000000  0.764706  0.058824 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYAGCGAAACGTTTCGMTRG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][TC]AGCGAAACGTTTCG[CA]T[GA]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+b3748_p-31(rbsD)                 2.70e-11  [+1(2.70e-11)]
+STM3881_p-32(rbsD)               5.52e-12  [+1(5.52e-12)]
+STM3881_p-111(rbsD)              9.67e-11  [+1(9.67e-11)]
+CKO_00088_p-155(rbsD)            5.52e-12  [+1(5.52e-12)]
+KPN_04153_p-116(rbsD)            8.72e-11  [+1(8.72e-11)]
+KPN_04153_p-38(rbsD)             7.52e-12  [+1(7.52e-12)]
+Ent638_4116_p-32(rbsD)           9.40e-12  [+1(9.40e-12)]
+EAM_0015_p-108(rbsD)             1.10e-10  [+1(1.10e-10)]
+EAM_0015_p-30(rbsD)              2.81e-10  [+1(2.81e-10)]
+Spro_4901_p-117(rbsD)            1.45e-11  [+1(1.45e-11)]
+Spro_4901_p-37(rbsD)             3.10e-11  [+1(3.10e-11)]
+ECA0010_p-32(rbsD)               3.73e-12  [+1(3.73e-12)]
+ECA0010_p-109(rbsD)              1.15e-11  [+1(1.15e-11)]
+ETAE_3516_p-31(rbsD)             1.25e-11  [+1(1.25e-11)]
+PMI0093_p-30(rbsD)               4.87e-11  [+1(4.87e-11)]
+plu0055_p-32(rbsD)               5.97e-11  [+1(5.97e-11)]
+plu0055_p-110(rbsD)              1.59e-10  [+1(1.59e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

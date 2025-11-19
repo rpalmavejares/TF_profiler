@@ -1,0 +1,247 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/RbsR_Bacillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BSU35910_p-36(rbsR)      1.0000     20  RBAM_033080_p-35(rbsR)   1.0000     20  
+BPUM_3263_p-40(rbsR)     1.0000     20  BLi03840_p17(rbsR)       1.0000     20  
+Aflv_2673_p-36(rbsR)     1.0000     20  GK3231_p-43(rbsR)        1.0000     20  
+BC0659_p-37(rbsR)        1.0000     20  BH3727_p-35(rbsR)        1.0000     20  
+ABC3549_p-35(rbsR)       1.0000     20  OB2577_p-42(rbsR)        1.0000     20  
+Pjdr2_3988_p-37(rbsR)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/RbsR_Bacillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Bacillales/RbsR_Bacillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             220    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    220    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.327 C 0.177 G 0.182 T 0.314 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.326 C 0.179 G 0.183 T 0.312 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TVTGTAAMCGGTTACAYA MEME-1	width =  18  sites =  11  llr = 226  E-value = 5.6e-062
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :4::1aa5:::::8:a:8
+pos.-specific     C  :4:::::5a::::2a:5:
+probability       G  :3:a:::::aa:::::12
+matrix            T  a:a:9::::::aa:::5:
+
+         bits    2.5    *    ***   *   
+                 2.2    *    ***   *   
+                 2.0    *    ***   *   
+                 1.7 * ** ** ***** **  
+Relative         1.5 * ** ** ***** **  
+Entropy          1.2 * ***** ***** **  
+(29.7 bits)      1.0 * ************** *
+                 0.7 * ****************
+                 0.5 ******************
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           TATGTAAACGGTTACACA
+consensus             C     C        T 
+sequence              G                
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+BH3727_p-35(rbsR)             2  1.23e-11          A TCTGTAACCGGTTACACA T         
+GK3231_p-43(rbsR)             2  2.48e-11          A TGTGTAACCGGTTACACA T         
+BPUM_3263_p-40(rbsR)          2  1.14e-10          T TGTGTAAACGGTTACACA T         
+BLi03840_p17(rbsR)            2  2.29e-10          T TATGTAAACGGTTACACA A         
+ABC3549_p-35(rbsR)            2  4.66e-10          A TCTGTAACCGGTTACATG T         
+RBAM_033080_p-35(rbsR)        2  4.66e-10          T TATGTAAACGGTTACATA G         
+BSU35910_p-36(rbsR)           2  4.66e-10          C TATGTAAACGGTTACATA A         
+Pjdr2_3988_p-37(rbsR)         2  4.78e-10          A TGTGTAAACGGTTCCACA T         
+BC0659_p-37(rbsR)             2  6.54e-10          T TCTGTAAACGGTTACATG A         
+Aflv_2673_p-36(rbsR)          2  7.70e-10          A TATGTAACCGGTTACAGA A         
+OB2577_p-42(rbsR)             2  1.56e-09          A TCTGAAACCGGTTCCATA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BH3727_p-35(rbsR)                 1.2e-11  1_[+1]_1
+GK3231_p-43(rbsR)                 2.5e-11  1_[+1]_1
+BPUM_3263_p-40(rbsR)              1.1e-10  1_[+1]_1
+BLi03840_p17(rbsR)                2.3e-10  1_[+1]_1
+ABC3549_p-35(rbsR)                4.7e-10  1_[+1]_1
+RBAM_033080_p-35(rbsR)            4.7e-10  1_[+1]_1
+BSU35910_p-36(rbsR)               4.7e-10  1_[+1]_1
+Pjdr2_3988_p-37(rbsR)             4.8e-10  1_[+1]_1
+BC0659_p-37(rbsR)                 6.5e-10  1_[+1]_1
+Aflv_2673_p-36(rbsR)              7.7e-10  1_[+1]_1
+OB2577_p-42(rbsR)                 1.6e-09  1_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TVTGTAAMCGGTTACAYA width=18 seqs=11
+BH3727_p-35(rbsR)        (    2) TCTGTAACCGGTTACACA  1 
+GK3231_p-43(rbsR)        (    2) TGTGTAACCGGTTACACA  1 
+BPUM_3263_p-40(rbsR)     (    2) TGTGTAAACGGTTACACA  1 
+BLi03840_p17(rbsR)       (    2) TATGTAAACGGTTACACA  1 
+ABC3549_p-35(rbsR)       (    2) TCTGTAACCGGTTACATG  1 
+RBAM_033080_p-35(rbsR)   (    2) TATGTAAACGGTTACATA  1 
+BSU35910_p-36(rbsR)      (    2) TATGTAAACGGTTACATA  1 
+Pjdr2_3988_p-37(rbsR)    (    2) TGTGTAAACGGTTCCACA  1 
+BC0659_p-37(rbsR)        (    2) TCTGTAAACGGTTACATG  1 
+Aflv_2673_p-36(rbsR)     (    2) TATGTAACCGGTTACAGA  1 
+OB2577_p-42(rbsR)        (    2) TCTGAAACCGGTTCCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 33 bayes= 2.9419 E= 5.6e-062 
+ -1010  -1010  -1010    168 
+    16    103     57  -1010 
+ -1010  -1010  -1010    168 
+ -1010  -1010    245  -1010 
+  -184  -1010  -1010    154 
+   162  -1010  -1010  -1010 
+   162  -1010  -1010  -1010 
+    74    135  -1010  -1010 
+ -1010    248  -1010  -1010 
+ -1010  -1010    245  -1010 
+ -1010  -1010    245  -1010 
+ -1010  -1010  -1010    168 
+ -1010  -1010  -1010    168 
+   133      3  -1010  -1010 
+ -1010    248  -1010  -1010 
+   162  -1010  -1010  -1010 
+ -1010    135   -101     54 
+   133  -1010     -1  -1010 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 11 E= 5.6e-062 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.363636  0.363636  0.272727  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.090909  0.000000  0.000000  0.909091 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.545455  0.454545  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.818182  0.181818  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.454545  0.090909  0.454545 
+ 0.818182  0.000000  0.181818  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TVTGTAAMCGGTTACAYA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[ACG]TGTAA[AC]CGGTTACA[CT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BSU35910_p-36(rbsR)              1.40e-09  1_[+1(4.66e-10)]_1
+RBAM_033080_p-35(rbsR)           1.40e-09  1_[+1(4.66e-10)]_1
+BPUM_3263_p-40(rbsR)             3.41e-10  1_[+1(1.14e-10)]_1
+BLi03840_p17(rbsR)               6.86e-10  1_[+1(2.29e-10)]_1
+Aflv_2673_p-36(rbsR)             2.31e-09  1_[+1(7.70e-10)]_1
+GK3231_p-43(rbsR)                7.44e-11  1_[+1(2.48e-11)]_1
+BC0659_p-37(rbsR)                1.96e-09  1_[+1(6.54e-10)]_1
+BH3727_p-35(rbsR)                3.68e-11  1_[+1(1.23e-11)]_1
+ABC3549_p-35(rbsR)               1.40e-09  1_[+1(4.66e-10)]_1
+OB2577_p-42(rbsR)                4.69e-09  1_[+1(1.56e-09)]_1
+Pjdr2_3988_p-37(rbsR)            1.43e-09  1_[+1(4.78e-10)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

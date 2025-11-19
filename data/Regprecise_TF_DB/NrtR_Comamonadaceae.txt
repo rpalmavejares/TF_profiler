@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrtR_Comamonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Aave_0977_p-63(pncA)     1.0000     21  Daci_5758_p-58(nrtX)     1.0000     21  
+Daci_5758_p-35(nrtX)     1.0000     21  Daci_5757_p-74(nrtR)     1.0000     21  
+Daci_5757_p-51(nrtR)     1.0000     21  Pnap_3720_p-48(pncA)     1.0000     21  
+Pnap_3720_p-73(pncA)     1.0000     21  Pnap_3721_p-104(nrtR)    1.0000     21  
+Pnap_3721_p-79(nrtR)     1.0000     21  Vapar_6282_p-61(pncA)    1.0000     21  
+Vapar_6282_p-38(pncA)    1.0000     21  Vapar_6281_p-41(nrtR)    1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrtR_Comamonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Comamonadaceae/NrtR_Comamonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             252    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    252    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.329 C 0.194 G 0.19 T 0.286 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.328 C 0.195 G 0.191 T 0.285 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RRGTTGYACWRTRCAACYHA MEME-1	width =  20  sites =  12  llr = 219  E-value = 9.9e-057
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  45:::::8:63361aa::38
+pos.-specific     C  ::::::4:8::::9::a63:
+probability       G  45a::a::::7:3::::::1
+matrix            T  2::aa:6334:81::::442
+
+         bits    2.4   *  *          *   
+                 2.1   *  *          *   
+                 1.9   ****       *  *   
+                 1.7   ****       ****   
+Relative         1.4   ****  *    ****   
+Entropy          1.2   ****  * *  *****  
+(26.3 bits)      1.0  ******** ** *****  
+                 0.7  ***************** *
+                 0.5 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           AAGTTGTACAGTACAACCTA
+consensus            GG    CTTTAAG    TC 
+sequence                               A 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Pnap_3720_p-48(pncA)          2  1.79e-10          A AGGTTGTTCAGTACAACCTA           
+Vapar_6281_p-41(nrtR)         2  2.10e-10          A GAGTTGTTCTGTACAACCCA           
+Vapar_6282_p-38(pncA)         2  3.37e-10          A GAGTTGCACAGTACAACTAA           
+Vapar_6282_p-61(pncA)         2  4.54e-10          A TGGTTGTACAGTGCAACCAA           
+Daci_5757_p-51(nrtR)          2  6.62e-10          T GGGTTGCATAGTGCAACTTA           
+Daci_5758_p-58(nrtX)          2  7.54e-10          T AAGTTGCACTATGCAACCCA           
+Daci_5758_p-35(nrtX)          2  9.63e-10          C GAGTTGTACAGAACAACTTA           
+Pnap_3721_p-104(nrtR)         2  2.78e-09          T AGGTTGTACTGAACAACCTT           
+Pnap_3720_p-73(pncA)          2  2.78e-09          A AGGTTGTATTATGCAACCCA           
+Pnap_3721_p-79(nrtR)          2  5.05e-09          T GGGTTGCATAATACAACCTT           
+Daci_5757_p-74(nrtR)          2  7.85e-09          T AAGTTGTTCTGTACAACTCG           
+Aave_0977_p-63(pncA)          2  9.61e-08          T TAGTTGCACAAATAAACTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Pnap_3720_p-48(pncA)              1.8e-10  1_[+1]
+Vapar_6281_p-41(nrtR)             2.1e-10  1_[+1]
+Vapar_6282_p-38(pncA)             3.4e-10  1_[+1]
+Vapar_6282_p-61(pncA)             4.5e-10  1_[+1]
+Daci_5757_p-51(nrtR)              6.6e-10  1_[+1]
+Daci_5758_p-58(nrtX)              7.5e-10  1_[+1]
+Daci_5758_p-35(nrtX)              9.6e-10  1_[+1]
+Pnap_3721_p-104(nrtR)             2.8e-09  1_[+1]
+Pnap_3720_p-73(pncA)              2.8e-09  1_[+1]
+Pnap_3721_p-79(nrtR)              5.1e-09  1_[+1]
+Daci_5757_p-74(nrtR)              7.8e-09  1_[+1]
+Aave_0977_p-63(pncA)              9.6e-08  1_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RRGTTGYACWRTRCAACYHA width=20 seqs=12
+Pnap_3720_p-48(pncA)     (    2) AGGTTGTTCAGTACAACCTA  1 
+Vapar_6281_p-41(nrtR)    (    2) GAGTTGTTCTGTACAACCCA  1 
+Vapar_6282_p-38(pncA)    (    2) GAGTTGCACAGTACAACTAA  1 
+Vapar_6282_p-61(pncA)    (    2) TGGTTGTACAGTGCAACCAA  1 
+Daci_5757_p-51(nrtR)     (    2) GGGTTGCATAGTGCAACTTA  1 
+Daci_5758_p-58(nrtX)     (    2) AAGTTGCACTATGCAACCCA  1 
+Daci_5758_p-35(nrtX)     (    2) GAGTTGTACAGAACAACTTA  1 
+Pnap_3721_p-104(nrtR)    (    2) AGGTTGTACTGAACAACCTT  1 
+Pnap_3720_p-73(pncA)     (    2) AGGTTGTATTATGCAACCCA  1 
+Pnap_3721_p-79(nrtR)     (    2) GGGTTGCATAATACAACCTT  1 
+Daci_5757_p-74(nrtR)     (    2) AAGTTGTTCTGTACAACTCG  1 
+Aave_0977_p-63(pncA)     (    2) TAGTTGCACAAATAAACTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24 bayes= 2.32193 E= 9.9e-057 
+    34  -1023    112    -77 
+    61  -1023    138  -1023 
+ -1023  -1023    238  -1023 
+ -1023  -1023  -1023    181 
+ -1023  -1023  -1023    181 
+ -1023  -1023    238  -1023 
+ -1023    109  -1023    103 
+   119  -1023  -1023    -19 
+ -1023    194  -1023    -19 
+    83  -1023  -1023     55 
+     2  -1023    180  -1023 
+   -39  -1023  -1023    139 
+    83  -1023     80   -177 
+  -197    223  -1023  -1023 
+   161  -1023  -1023  -1023 
+   161  -1023  -1023  -1023 
+ -1023    236  -1023  -1023 
+ -1023    158  -1023     55 
+   -39     77  -1023     55 
+   119  -1023   -120    -77 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 12 E= 9.9e-057 
+ 0.416667  0.000000  0.416667  0.166667 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.416667  0.000000  0.583333 
+ 0.750000  0.000000  0.000000  0.250000 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.583333  0.000000  0.000000  0.416667 
+ 0.333333  0.000000  0.666667  0.000000 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.583333  0.000000  0.333333  0.083333 
+ 0.083333  0.916667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.583333  0.000000  0.416667 
+ 0.250000  0.333333  0.000000  0.416667 
+ 0.750000  0.000000  0.083333  0.166667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RRGTTGYACWRTRCAACYHA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][AG]GTTG[TC][AT][CT][AT][GA][TA][AG]CAAC[CT][TCA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Aave_0977_p-63(pncA)             1.92e-07  1_[+1(9.61e-08)]
+Daci_5758_p-58(nrtX)             1.51e-09  1_[+1(7.54e-10)]
+Daci_5758_p-35(nrtX)             1.93e-09  1_[+1(9.63e-10)]
+Daci_5757_p-74(nrtR)             1.57e-08  1_[+1(7.85e-09)]
+Daci_5757_p-51(nrtR)             1.32e-09  1_[+1(6.62e-10)]
+Pnap_3720_p-48(pncA)             3.58e-10  1_[+1(1.79e-10)]
+Pnap_3720_p-73(pncA)             5.56e-09  1_[+1(2.78e-09)]
+Pnap_3721_p-104(nrtR)            5.56e-09  1_[+1(2.78e-09)]
+Pnap_3721_p-79(nrtR)             1.01e-08  1_[+1(5.05e-09)]
+Vapar_6282_p-61(pncA)            9.09e-10  1_[+1(4.54e-10)]
+Vapar_6282_p-38(pncA)            6.74e-10  1_[+1(3.37e-10)]
+Vapar_6281_p-41(nrtR)            4.21e-10  1_[+1(2.10e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

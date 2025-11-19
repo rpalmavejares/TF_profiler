@@ -1,0 +1,256 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Sulfolobales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Msed_2221_p-42(thi4)     1.0000     20  Msed_0906_p-18(thiC)     1.0000     20  
+Saci_0854_p-38(thi4)     1.0000     20  Saci_0137_p-30(thiC)     1.0000     20  
+Saci_2110_p-42(thiT)     1.0000     20  YN1551_2514_p-42(thiT)   1.0000     20  
+YN1551_1140_p-41(thi4)   1.0000     20  YN1551_2613_p-41(tenA)   1.0000     20  
+SSO1593_p-42(thiT)       1.0000     20  SSO0436_p-41(thi4)       1.0000     20  
+SSO2089_p-41(tenA)       1.0000     20  ST0361_p-31(thi4)        1.0000     20  
+ST1132_p-42(thiT)        1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Sulfolobales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/ThiR_Sulfolobales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             260    N=              13
+sample: seed=            0    hsfrac=          0
+        searchsize=    260    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.431 C 0.0577 G 0.0962 T 0.415 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.428 C 0.0606 G 0.0985 T 0.413 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATAAGTTAVTTTATAAK MEME-1	width =  18  sites =  13  llr = 164  E-value = 3.5e-035
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2a29a22283:::a:991
+pos.-specific     C  :::::22::3:::::::2
+probability       G  :::::5:224::::::15
+matrix            T  8:81:176::aaa:a1:3
+
+         bits    4.0                   
+                 3.6                   
+                 3.2                   
+                 2.8                   
+Relative         2.4                   
+Entropy          2.0                   
+(18.2 bits)      1.6                   
+                 1.2  *  **   ******   
+                 0.8 ******  **********
+                 0.4 ******************
+                 0.0 ------------------
+
+Multilevel           TATAAGTTAGTTTATAAG
+consensus                 C G A       T
+sequence                      C        
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Saci_0854_p-38(thi4)          3  8.19e-09         CA TATAAGTGAGTTTATAAC           
+Msed_2221_p-42(thi4)          3  1.15e-08         TT TATAACTTAGTTTATAAG           
+SSO1593_p-42(thiT)            3  2.12e-08         AA AATAAGTGACTTTATAAG           
+YN1551_2514_p-42(thiT)        3  2.12e-08         AA AATAAGTGACTTTATAAG           
+ST1132_p-42(thiT)             3  7.38e-08         CA TATAAGTAGGTTTATAAG           
+Msed_0906_p-18(thiC)          3  1.02e-07         CT TATAACTTACTTTATAAT           
+Saci_2110_p-42(thiT)          3  1.39e-07         AA TATAACTAACTTTATAAC           
+SSO0436_p-41(thi4)            3  5.96e-07         TA TAAAAGTTAATTTATAAG           
+YN1551_1140_p-41(thi4)        3  5.96e-07         TA TAAAAGTTAATTTATAAG           
+ST0361_p-31(thi4)             3  8.79e-07         TA TATTAGCTAGTTTATAAT           
+SSO2089_p-41(tenA)            3  1.61e-05         GT TATAAAATAATTTATAAT           
+YN1551_2613_p-41(tenA)        3  1.87e-05         CT TATAAAATGATTTATAAT           
+Saci_0137_p-30(thiC)          3  4.17e-05         TT TATAATCTAGTTTATTGA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saci_0854_p-38(thi4)              8.2e-09  2_[+1]
+Msed_2221_p-42(thi4)              1.2e-08  2_[+1]
+SSO1593_p-42(thiT)                2.1e-08  2_[+1]
+YN1551_2514_p-42(thiT)            2.1e-08  2_[+1]
+ST1132_p-42(thiT)                 7.4e-08  2_[+1]
+Msed_0906_p-18(thiC)                1e-07  2_[+1]
+Saci_2110_p-42(thiT)              1.4e-07  2_[+1]
+SSO0436_p-41(thi4)                  6e-07  2_[+1]
+YN1551_1140_p-41(thi4)              6e-07  2_[+1]
+ST0361_p-31(thi4)                 8.8e-07  2_[+1]
+SSO2089_p-41(tenA)                1.6e-05  2_[+1]
+YN1551_2613_p-41(tenA)            1.9e-05  2_[+1]
+Saci_0137_p-30(thiC)              4.2e-05  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TATAAGTTAVTTTATAAK width=18 seqs=13
+Saci_0854_p-38(thi4)     (    3) TATAAGTGAGTTTATAAC  1 
+Msed_2221_p-42(thi4)     (    3) TATAACTTAGTTTATAAG  1 
+SSO1593_p-42(thiT)       (    3) AATAAGTGACTTTATAAG  1 
+YN1551_2514_p-42(thiT)   (    3) AATAAGTGACTTTATAAG  1 
+ST1132_p-42(thiT)        (    3) TATAAGTAGGTTTATAAG  1 
+Msed_0906_p-18(thiC)     (    3) TATAACTTACTTTATAAT  1 
+Saci_2110_p-42(thiT)     (    3) TATAACTAACTTTATAAC  1 
+SSO0436_p-41(thi4)       (    3) TAAAAGTTAATTTATAAG  1 
+YN1551_1140_p-41(thi4)   (    3) TAAAAGTTAATTTATAAG  1 
+ST0361_p-31(thi4)        (    3) TATTAGCTAGTTTATAAT  1 
+SSO2089_p-41(tenA)       (    3) TATAAAATAATTTATAAT  1 
+YN1551_2613_p-41(tenA)   (    3) TATAAAATGATTTATAAT  1 
+Saci_0137_p-30(thiC)     (    3) TATAATCTAGTTTATTGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 39 bayes= 3.05063 E= 3.5e-035 
+  -147  -1035  -1035    103 
+   122  -1035  -1035  -1035 
+  -147  -1035  -1035    103 
+   111  -1035  -1035   -242 
+   122  -1035  -1035  -1035 
+  -147    193    245   -242 
+  -147    134  -1035     75 
+  -147  -1035    123     58 
+    98  -1035     64  -1035 
+   -48    234    196  -1035 
+ -1035  -1035  -1035    128 
+ -1035  -1035  -1035    128 
+ -1035  -1035  -1035    128 
+   122  -1035  -1035  -1035 
+ -1035  -1035  -1035    128 
+   111  -1035  -1035   -242 
+   111  -1035    -36  -1035 
+  -247    134    223    -42 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 13 E= 3.5e-035 
+ 0.153846  0.000000  0.000000  0.846154 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.153846  0.000000  0.000000  0.846154 
+ 0.923077  0.000000  0.000000  0.076923 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.153846  0.230769  0.538462  0.076923 
+ 0.153846  0.153846  0.000000  0.692308 
+ 0.153846  0.000000  0.230769  0.615385 
+ 0.846154  0.000000  0.153846  0.000000 
+ 0.307692  0.307692  0.384615  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.923077  0.000000  0.000000  0.076923 
+ 0.923077  0.000000  0.076923  0.000000 
+ 0.076923  0.153846  0.461538  0.307692 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATAAGTTAVTTTATAAK MEME-1 regular expression
+--------------------------------------------------------------------------------
+TATAA[GC]T[TG]A[GAC]TTTATAA[GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Msed_2221_p-42(thi4)             3.46e-08  2_[+1(1.15e-08)]
+Msed_0906_p-18(thiC)             3.07e-07  2_[+1(1.02e-07)]
+Saci_0854_p-38(thi4)             2.46e-08  2_[+1(8.19e-09)]
+Saci_0137_p-30(thiC)             1.25e-04  2_[+1(4.17e-05)]
+Saci_2110_p-42(thiT)             4.18e-07  2_[+1(1.39e-07)]
+YN1551_2514_p-42(thiT)           6.37e-08  2_[+1(2.12e-08)]
+YN1551_1140_p-41(thi4)           1.79e-06  2_[+1(5.96e-07)]
+YN1551_2613_p-41(tenA)           5.61e-05  2_[+1(1.87e-05)]
+SSO1593_p-42(thiT)               6.37e-08  2_[+1(2.12e-08)]
+SSO0436_p-41(thi4)               1.79e-06  2_[+1(5.96e-07)]
+SSO2089_p-41(tenA)               4.82e-05  2_[+1(1.61e-05)]
+ST0361_p-31(thi4)                2.64e-06  2_[+1(8.79e-07)]
+ST1132_p-42(thiT)                2.21e-07  2_[+1(7.38e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

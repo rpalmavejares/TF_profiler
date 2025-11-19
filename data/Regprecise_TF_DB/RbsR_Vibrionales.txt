@@ -1,0 +1,269 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/RbsR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VCA0127_p-86(rbsD)       1.0000     20  VV20061_p-72(rbsD)       1.0000     20  
+VIBHAR_06146_p-222(rbsD) 1.0000     20  VIBHAR_06146_p-95(rbsD)  1.0000     20  
+VPA1087_p-226(rbsD)      1.0000     20  VPA1087_p-96(rbsD)       1.0000     20  
+VSAK1_16182_p-170(rbsD)  1.0000     20  VSAK1_16182_p-87(rbsD)   1.0000     20  
+VS_II0940_p-26(rbsD)     1.0000     20  VS_II0940_p-104(rbsD)    1.0000     20  
+VF_1444_p-71(rbsD)       1.0000     20  VSAL_I1372_p-70(rbsD)    1.0000     20  
+VAS14_09005_p-226(rbsD)  1.0000     20  VAS14_09005_p-96(rbsD)   1.0000     20  
+PBPRB1556_p-118(rbsD)    1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/RbsR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/RbsR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             300    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    300    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.28 C 0.207 G 0.21 T 0.303 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.28 C 0.207 G 0.211 T 0.303 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YYATCGAAACGTTTCGATGR MEME-1	width =  20  sites =  15  llr = 335  E-value = 1.7e-109
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a:::aaa:::::::9:15
+pos.-specific     C  46:191:::a::::91::::
+probability       G  1:::19::::a:::191:83
+matrix            T  54:9:::::::aaa:::a12
+
+         bits    2.3          **         
+                 2.0          **         
+                 1.8   *   ********** *  
+                 1.6   * **************  
+Relative         1.4   * *************** 
+Entropy          1.1  ****************** 
+(32.2 bits)      0.9  ****************** 
+                 0.7 ******************* 
+                 0.5 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           TCATCGAAACGTTTCGATGA
+consensus            CT                 G
+sequence                                T
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+VS_II0940_p-104(rbsD)         1  9.27e-13          . CCATCGAAACGTTTCGATGA           
+VPA1087_p-226(rbsD)           1  9.27e-13          . CCATCGAAACGTTTCGATGA           
+VSAK1_16182_p-87(rbsD)        1  2.28e-12          . TCATCGAAACGTTTCGATGA           
+VV20061_p-72(rbsD)            1  2.28e-12          . TCATCGAAACGTTTCGATGA           
+VIBHAR_06146_p-95(rbsD)       1  9.82e-12          . TCATCGAAACGTTTCGATGT           
+VCA0127_p-86(rbsD)            1  9.82e-12          . TCATCGAAACGTTTCGATGT           
+VAS14_09005_p-96(rbsD)        1  1.08e-11          . CTATCGAAACGTTTCGATGG           
+VS_II0940_p-26(rbsD)          1  1.08e-11          . CTATCGAAACGTTTCGATGG           
+VAS14_09005_p-226(rbsD)       1  1.23e-11          . TTATCGAAACGTTTCGATGG           
+VPA1087_p-96(rbsD)            1  1.82e-11          . GCATCGAAACGTTTCGATGA           
+VSAK1_16182_p-170(rbsD)       1  3.93e-11          . TCATCGAAACGTTTCGATAG           
+VIBHAR_06146_p-222(rbsD)      1  2.49e-10          . CTATCGAAACGTTTCGATTT           
+VSAL_I1372_p-70(rbsD)         1  5.70e-10          . TTACGCAAACGTTTCGATGA           
+VF_1444_p-71(rbsD)            1  5.70e-10          . TTACGCAAACGTTTCGATGA           
+PBPRB1556_p-118(rbsD)         1  2.47e-09          . CCATCGAAACGTTTGCGTAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VS_II0940_p-104(rbsD)             9.3e-13  [+1]
+VPA1087_p-226(rbsD)               9.3e-13  [+1]
+VSAK1_16182_p-87(rbsD)            2.3e-12  [+1]
+VV20061_p-72(rbsD)                2.3e-12  [+1]
+VIBHAR_06146_p-95(rbsD)           9.8e-12  [+1]
+VCA0127_p-86(rbsD)                9.8e-12  [+1]
+VAS14_09005_p-96(rbsD)            1.1e-11  [+1]
+VS_II0940_p-26(rbsD)              1.1e-11  [+1]
+VAS14_09005_p-226(rbsD)           1.2e-11  [+1]
+VPA1087_p-96(rbsD)                1.8e-11  [+1]
+VSAK1_16182_p-170(rbsD)           3.9e-11  [+1]
+VIBHAR_06146_p-222(rbsD)          2.5e-10  [+1]
+VSAL_I1372_p-70(rbsD)             5.7e-10  [+1]
+VF_1444_p-71(rbsD)                5.7e-10  [+1]
+PBPRB1556_p-118(rbsD)             2.5e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YYATCGAAACGTTTCGATGR width=20 seqs=15
+VS_II0940_p-104(rbsD)    (    1) CCATCGAAACGTTTCGATGA  1 
+VPA1087_p-226(rbsD)      (    1) CCATCGAAACGTTTCGATGA  1 
+VSAK1_16182_p-87(rbsD)   (    1) TCATCGAAACGTTTCGATGA  1 
+VV20061_p-72(rbsD)       (    1) TCATCGAAACGTTTCGATGA  1 
+VIBHAR_06146_p-95(rbsD)  (    1) TCATCGAAACGTTTCGATGT  1 
+VCA0127_p-86(rbsD)       (    1) TCATCGAAACGTTTCGATGT  1 
+VAS14_09005_p-96(rbsD)   (    1) CTATCGAAACGTTTCGATGG  1 
+VS_II0940_p-26(rbsD)     (    1) CTATCGAAACGTTTCGATGG  1 
+VAS14_09005_p-226(rbsD)  (    1) TTATCGAAACGTTTCGATGG  1 
+VPA1087_p-96(rbsD)       (    1) GCATCGAAACGTTTCGATGA  1 
+VSAK1_16182_p-170(rbsD)  (    1) TCATCGAAACGTTTCGATAG  1 
+VIBHAR_06146_p-222(rbsD) (    1) CTATCGAAACGTTTCGATTT  1 
+VSAL_I1372_p-70(rbsD)    (    1) TTACGCAAACGTTTCGATGA  1 
+VF_1444_p-71(rbsD)       (    1) TTACGCAAACGTTTCGATGA  1 
+PBPRB1556_p-118(rbsD)    (    1) CCATCGAAACGTTTGCGTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 15 bayes= 1.17688 E= 1.7e-109 
+ -1055     95   -166     82 
+ -1055    153  -1055     40 
+   184  -1055  -1055  -1055 
+ -1055    -64  -1055    152 
+ -1055    206    -66  -1055 
+ -1055    -64    204  -1055 
+   184  -1055  -1055  -1055 
+   184  -1055  -1055  -1055 
+   184  -1055  -1055  -1055 
+ -1055    227  -1055  -1055 
+ -1055  -1055    225  -1055 
+ -1055  -1055  -1055    172 
+ -1055  -1055  -1055    172 
+ -1055  -1055  -1055    172 
+ -1055    217   -166  -1055 
+ -1055   -163    215  -1055 
+   174  -1055   -166  -1055 
+ -1055  -1055  -1055    172 
+  -107  -1055    193   -218 
+    93  -1055     34    -60 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 15 E= 1.7e-109 
+ 0.000000  0.400000  0.066667  0.533333 
+ 0.000000  0.600000  0.000000  0.400000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.133333  0.000000  0.866667 
+ 0.000000  0.866667  0.133333  0.000000 
+ 0.000000  0.133333  0.866667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.933333  0.066667  0.000000 
+ 0.000000  0.066667  0.933333  0.000000 
+ 0.933333  0.000000  0.066667  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.133333  0.000000  0.800000  0.066667 
+ 0.533333  0.000000  0.266667  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YYATCGAAACGTTTCGATGR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC][CT]ATCGAAACGTTTCGATG[AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VCA0127_p-86(rbsD)               9.82e-12  [+1(9.82e-12)]
+VV20061_p-72(rbsD)               2.28e-12  [+1(2.28e-12)]
+VIBHAR_06146_p-222(rbsD)         2.49e-10  [+1(2.49e-10)]
+VIBHAR_06146_p-95(rbsD)          9.82e-12  [+1(9.82e-12)]
+VPA1087_p-226(rbsD)              9.27e-13  [+1(9.27e-13)]
+VPA1087_p-96(rbsD)               1.82e-11  [+1(1.82e-11)]
+VSAK1_16182_p-170(rbsD)          3.93e-11  [+1(3.93e-11)]
+VSAK1_16182_p-87(rbsD)           2.28e-12  [+1(2.28e-12)]
+VS_II0940_p-26(rbsD)             1.08e-11  [+1(1.08e-11)]
+VS_II0940_p-104(rbsD)            9.27e-13  [+1(9.27e-13)]
+VF_1444_p-71(rbsD)               5.70e-10  [+1(5.70e-10)]
+VSAL_I1372_p-70(rbsD)            5.70e-10  [+1(5.70e-10)]
+VAS14_09005_p-226(rbsD)          1.23e-11  [+1(1.23e-11)]
+VAS14_09005_p-96(rbsD)           1.08e-11  [+1(1.08e-11)]
+PBPRB1556_p-118(rbsD)            2.47e-09  [+1(2.47e-09)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

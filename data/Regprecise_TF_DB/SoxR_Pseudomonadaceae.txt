@@ -1,0 +1,273 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/SoxR_Pseudomonadaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PA2274_p-67(PF03992)     1.0000     20  PA4205_p-125(mexG)       1.0000     20  
+PA3718_p-83(PF07690)     1.0000     20  PA2273_p-30(soxR)        1.0000     20  
+PSEEN3529_p-71(PF03992)  1.0000     20  PSEEN3530_p-34(soxR)     1.0000     20  
+PSEEN2338_p-59(PF01042)  1.0000     20  PP2235_p-71(PF03992)     1.0000     20  
+PP2064_p-76(mexH)        1.0000     20  PP2506_p-26(PF09933)     1.0000     20  
+PP3522_p-60(PF01042)     1.0000     20  PP2060_p-29(soxR)        1.0000     20  
+PFL_4160_p-50(soxR)      1.0000     20  PFL_4159_p-78(PF03992)   1.0000     20  
+Pmen_1341_p-35(soxR)     1.0000     20  Pmen_1342_p-63(PF03358)  1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/SoxR_Pseudomonadaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Pseudomonadaceae/SoxR_Pseudomonadaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             320    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=    320    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.291 C 0.219 G 0.197 T 0.294 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.219 G 0.198 T 0.293 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTCRASTTAACTTRAGGT MEME-1	width =  20  sites =  16  llr = 331  E-value = 9.9e-107
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::5a::199::13a:::
+pos.-specific     C  :9a:81:41:::813:::1:
+probability       G  :1:::4:6:::13:16:a9:
+matrix            T  :::a31::991::961:::a
+
+         bits    2.3                  *  
+                 2.1   *              *  
+                 1.9 ****  *         ****
+                 1.6 ****  *         ****
+Relative         1.4 ****  ***  ***  ****
+Entropy          1.2 ***** ********  ****
+(29.9 bits)      0.9 ***** ******** *****
+                 0.7 ***** ******** *****
+                 0.5 ********************
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTCAAGTTAACTTGAGGT
+consensus                TG C    G CA    
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+PA4205_p-125(mexG)            1  6.39e-12          . ACCTCAACTTAACTTGAGGT           
+PP3522_p-60(PF01042)          1  9.74e-12          . ACCTCGAGTTAACTTAAGGT           
+Pmen_1341_p-35(soxR)          1  2.64e-11          . ACCTCAACTTAACTTAAGGT           
+PA3718_p-83(PF07690)          1  4.57e-11          . ACCTCAAGTTAACTTGAGCT           
+Pmen_1342_p-63(PF03358)       1  6.59e-11          . ACCTTAAGTTAAGTTGAGGT           
+PP2506_p-26(PF09933)          1  8.46e-11          . ACCTCGAGTTAAGTCAAGGT           
+PSEEN3529_p-71(PF03992)       1  1.67e-10          . ACCTTGAGTTAACTGGAGGT           
+PSEEN3530_p-34(soxR)          1  2.18e-10          . ACCTCCAGTTAACTCAAGGT           
+PSEEN2338_p-59(PF01042)       1  2.37e-10          . ACCTCGACTTAACCCGAGGT           
+PP2235_p-71(PF03992)          1  3.28e-10          . ACCTTGACTTTACTTGAGGT           
+PFL_4159_p-78(PF03992)        1  4.18e-10          . ACCTTGACTTAACTAGAGGT           
+PA2273_p-30(soxR)             1  4.57e-10          . ACCTCAAGCAAACTTGAGGT           
+PA2274_p-67(PF03992)          1  4.57e-10          . ACCTCAAGTTTGCTTGAGGT           
+PFL_4160_p-50(soxR)           1  6.65e-10          . ACCTCTAGTTAAGTCAAGGT           
+PP2064_p-76(mexH)             1  7.66e-10          . ACCTCAAGTAAAGTTGAGCT           
+PP2060_p-29(soxR)             1  1.58e-09          . AGCTCAACTTAACTTTAGGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA4205_p-125(mexG)                6.4e-12  [+1]
+PP3522_p-60(PF01042)              9.7e-12  [+1]
+Pmen_1341_p-35(soxR)              2.6e-11  [+1]
+PA3718_p-83(PF07690)              4.6e-11  [+1]
+Pmen_1342_p-63(PF03358)           6.6e-11  [+1]
+PP2506_p-26(PF09933)              8.5e-11  [+1]
+PSEEN3529_p-71(PF03992)           1.7e-10  [+1]
+PSEEN3530_p-34(soxR)              2.2e-10  [+1]
+PSEEN2338_p-59(PF01042)           2.4e-10  [+1]
+PP2235_p-71(PF03992)              3.3e-10  [+1]
+PFL_4159_p-78(PF03992)            4.2e-10  [+1]
+PA2273_p-30(soxR)                 4.6e-10  [+1]
+PA2274_p-67(PF03992)              4.6e-10  [+1]
+PFL_4160_p-50(soxR)               6.7e-10  [+1]
+PP2064_p-76(mexH)                 7.7e-10  [+1]
+PP2060_p-29(soxR)                 1.6e-09  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTCRASTTAACTTRAGGT width=20 seqs=16
+PA4205_p-125(mexG)       (    1) ACCTCAACTTAACTTGAGGT  1 
+PP3522_p-60(PF01042)     (    1) ACCTCGAGTTAACTTAAGGT  1 
+Pmen_1341_p-35(soxR)     (    1) ACCTCAACTTAACTTAAGGT  1 
+PA3718_p-83(PF07690)     (    1) ACCTCAAGTTAACTTGAGCT  1 
+Pmen_1342_p-63(PF03358)  (    1) ACCTTAAGTTAAGTTGAGGT  1 
+PP2506_p-26(PF09933)     (    1) ACCTCGAGTTAAGTCAAGGT  1 
+PSEEN3529_p-71(PF03992)  (    1) ACCTTGAGTTAACTGGAGGT  1 
+PSEEN3530_p-34(soxR)     (    1) ACCTCCAGTTAACTCAAGGT  1 
+PSEEN2338_p-59(PF01042)  (    1) ACCTCGACTTAACCCGAGGT  1 
+PP2235_p-71(PF03992)     (    1) ACCTTGACTTTACTTGAGGT  1 
+PFL_4159_p-78(PF03992)   (    1) ACCTTGACTTAACTAGAGGT  1 
+PA2273_p-30(soxR)        (    1) ACCTCAAGCAAACTTGAGGT  1 
+PA2274_p-67(PF03992)     (    1) ACCTCAAGTTTGCTTGAGGT  1 
+PFL_4160_p-50(soxR)      (    1) ACCTCTAGTTAAGTCAAGGT  1 
+PP2064_p-76(mexH)        (    1) ACCTCAAGTAAAGTTGAGCT  1 
+PP2060_p-29(soxR)        (    1) AGCTCAACTTAACTTTAGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 16 bayes= 1.22239 E= 9.9e-107 
+   178  -1064  -1064  -1064 
+ -1064    210   -166  -1064 
+ -1064    219  -1064  -1064 
+ -1064  -1064  -1064    177 
+ -1064    177  -1064    -23 
+    78   -181     92   -223 
+   178  -1064  -1064  -1064 
+ -1064     77    166  -1064 
+ -1064   -181  -1064    168 
+  -121  -1064  -1064    158 
+   159  -1064  -1064   -123 
+   169  -1064   -166  -1064 
+ -1064    177     34  -1064 
+ -1064   -181  -1064    168 
+  -221     19   -166    109 
+    11  -1064    166   -223 
+   178  -1064  -1064  -1064 
+ -1064  -1064    234  -1064 
+ -1064    -81    215  -1064 
+ -1064  -1064  -1064    177 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 16 E= 9.9e-107 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.937500  0.062500  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.750000  0.000000  0.250000 
+ 0.500000  0.062500  0.375000  0.062500 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.375000  0.625000  0.000000 
+ 0.000000  0.062500  0.000000  0.937500 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.937500  0.000000  0.062500  0.000000 
+ 0.000000  0.750000  0.250000  0.000000 
+ 0.000000  0.062500  0.000000  0.937500 
+ 0.062500  0.250000  0.062500  0.625000 
+ 0.312500  0.000000  0.625000  0.062500 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.125000  0.875000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTCRASTTAACTTRAGGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCT[CT][AG]A[GC]TTAA[CG]T[TC][GA]AGGT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PA2274_p-67(PF03992)             4.57e-10  [+1(4.57e-10)]
+PA4205_p-125(mexG)               6.39e-12  [+1(6.39e-12)]
+PA3718_p-83(PF07690)             4.57e-11  [+1(4.57e-11)]
+PA2273_p-30(soxR)                4.57e-10  [+1(4.57e-10)]
+PSEEN3529_p-71(PF03992)          1.67e-10  [+1(1.67e-10)]
+PSEEN3530_p-34(soxR)             2.18e-10  [+1(2.18e-10)]
+PSEEN2338_p-59(PF01042)          2.37e-10  [+1(2.37e-10)]
+PP2235_p-71(PF03992)             3.28e-10  [+1(3.28e-10)]
+PP2064_p-76(mexH)                7.66e-10  [+1(7.66e-10)]
+PP2506_p-26(PF09933)             8.46e-11  [+1(8.46e-11)]
+PP3522_p-60(PF01042)             9.74e-12  [+1(9.74e-12)]
+PP2060_p-29(soxR)                1.58e-09  [+1(1.58e-09)]
+PFL_4160_p-50(soxR)              6.65e-10  [+1(6.65e-10)]
+PFL_4159_p-78(PF03992)           4.18e-10  [+1(4.18e-10)]
+Pmen_1341_p-35(soxR)             2.64e-11  [+1(2.64e-11)]
+Pmen_1342_p-63(PF03358)          6.59e-11  [+1(6.59e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

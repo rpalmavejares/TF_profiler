@@ -1,0 +1,236 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TtrR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PBPRB0006_p-106(ttrC)    1.0000     24  PBPRB0007_p-175(ttrS)    1.0000     24  
+VP2011_p-89(ttrC)        1.0000     24  VP2010_p-215(ttrS)       1.0000     24  
+VSAK1_06455_p-84(ttrC)   1.0000     24  VSAK1_06450_p-110(ttrS)  1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TtrR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/TtrR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           24
+nsites: minsites=        2    maxsites=        6    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             144    N=               6
+sample: seed=            0    hsfrac=          0
+        searchsize=    144    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.292 C 0.208 G 0.208 T 0.292 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.291 C 0.209 G 0.209 T 0.291 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GRKWWWGTGGAWWTCCACWWWMYC MEME-1	width =  24  sites =   6  llr = 129  E-value = 3.9e-021
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :3:553::::8552::a:7555:2
+pos.-specific     C  22::::::::::::aa:a:::557
+probability       G  755:::a:aa::::::::::::22
+matrix            T  2:5557:a::2558::::355:3:
+
+         bits    2.3       * **    ** *      
+                 2.0       * **    ** *      
+                 1.8       ****    ****      
+                 1.6       ****    ****      
+Relative         1.4       ****    ****      
+Entropy          1.1   *   *****  *****   *  
+(31.0 bits)      0.9 * *  ******  ******  * *
+                 0.7 ************************
+                 0.5 ************************
+                 0.2 ************************
+                 0.0 ------------------------
+
+Multilevel           GGGAATGTGGAAATCCACAAAACC
+consensus             ATTTA     TT     TTTCT 
+sequence                                     
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+VP2010_p-215(ttrS)            1  1.57e-11          . GATATAGTGGATTTCCACATACCC           
+VP2011_p-89(ttrC)             1  1.57e-11          . GGGTATGTGGAAATCCACTATATC           
+VSAK1_06450_p-110(ttrS)       1  1.56e-10          . GATATAGTGGATTTCCACATACCA           
+VSAK1_06455_p-84(ttrC)        1  1.56e-10          . TGGTATGTGGAAATCCACTATATC           
+PBPRB0007_p-175(ttrS)         1  3.09e-10          . CCTATTGTGGTTTTCCACATACCC           
+PBPRB0006_p-106(ttrC)         1  3.09e-10          . GGGTATGTGGAAAACCACAATAGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VP2010_p-215(ttrS)                1.6e-11  [+1]
+VP2011_p-89(ttrC)                 1.6e-11  [+1]
+VSAK1_06450_p-110(ttrS)           1.6e-10  [+1]
+VSAK1_06455_p-84(ttrC)            1.6e-10  [+1]
+PBPRB0007_p-175(ttrS)             3.1e-10  [+1]
+PBPRB0006_p-106(ttrC)             3.1e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GRKWWWGTGGAWWTCCACWWWMYC width=24 seqs=6
+VP2010_p-215(ttrS)       (    1) GATATAGTGGATTTCCACATACCC  1 
+VP2011_p-89(ttrC)        (    1) GGGTATGTGGAAATCCACTATATC  1 
+VSAK1_06450_p-110(ttrS)  (    1) GATATAGTGGATTTCCACATACCA  1 
+VSAK1_06455_p-84(ttrC)   (    1) TGGTATGTGGAAATCCACTATATC  1 
+PBPRB0007_p-175(ttrS)    (    1) CCTATTGTGGTTTTCCACATACCC  1 
+PBPRB0006_p-106(ttrC)    (    1) GGGTATGTGGAAAACCACAATAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 6 bayes= 0.192645 E= 3.9e-021 
+  -923    -33    167    -80 
+    20    -33    125   -923 
+  -923   -923    125     78 
+    78   -923   -923     78 
+    78   -923   -923     78 
+    20   -923   -923    120 
+  -923   -923    225   -923 
+  -923   -923   -923    178 
+  -923   -923    225   -923 
+  -923   -923    225   -923 
+   152   -923   -923    -80 
+    78   -923   -923     78 
+    78   -923   -923     78 
+   -80   -923   -923    152 
+  -923    225   -923   -923 
+  -923    225   -923   -923 
+   178   -923   -923   -923 
+  -923    225   -923   -923 
+   120   -923   -923     20 
+    78   -923   -923     78 
+    78   -923   -923     78 
+    78    125   -923   -923 
+  -923    125    -33     20 
+   -80    167    -33   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 6 E= 3.9e-021 
+ 0.000000  0.166667  0.666667  0.166667 
+ 0.333333  0.166667  0.500000  0.000000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.833333  0.000000  0.000000  0.166667 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.000000  0.500000  0.166667  0.333333 
+ 0.166667  0.666667  0.166667  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GRKWWWGTGGAWWTCCACWWWMYC MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[GA][GT][AT][AT][TA]GTGGA[AT][AT]TCCAC[AT][AT][AT][AC][CT]C
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PBPRB0006_p-106(ttrC)            3.09e-10  [+1(3.09e-10)]
+PBPRB0007_p-175(ttrS)            3.09e-10  [+1(3.09e-10)]
+VP2011_p-89(ttrC)                1.57e-11  [+1(1.57e-11)]
+VP2010_p-215(ttrS)               1.57e-11  [+1(1.57e-11)]
+VSAK1_06455_p-84(ttrC)           1.56e-10  [+1(1.56e-10)]
+VSAK1_06450_p-110(ttrS)          1.56e-10  [+1(1.56e-10)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

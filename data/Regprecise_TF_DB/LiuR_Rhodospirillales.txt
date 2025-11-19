@@ -1,0 +1,274 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/LiuR_Rhodospirillales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rru_A1948_p-194(liuA)    1.0000     18  Rru_A1948_p-188(liuA)    1.0000     18  
+Rru_A1835_p-132(ivdC)    1.0000     18  Rru_A1835_p-126(ivdC)    1.0000     18  
+Rru_A3510_p-108(livG)    1.0000     18  Rru_A1994_p-26(liuR2)    1.0000     18  
+AZL_c00460_p-39(liuR)    1.0000     18  AZL_c00460_p-33(liuR)    1.0000     18  
+AZL_012740_p-133(fadD)   1.0000     18  AZL_012740_p-127(fadD)   1.0000     18  
+AZL_009620_p-60(fadL)    1.0000     18  RC1_1949_p-80(liuR)      1.0000     18  
+RC1_1949_p-74(liuR)      1.0000     18  RC1_4110_p-263(etfB)     1.0000     18  
+RC1_4110_p-257(etfB)     1.0000     18  RC1_2763_p-39(n/a)       1.0000     18  
+RC1_2763_p-33(n/a)       1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/LiuR_Rhodospirillales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhodospirillales/LiuR_Rhodospirillales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             306    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    306    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.307 C 0.209 G 0.16 T 0.324 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.306 C 0.21 G 0.161 T 0.323 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CTTTACGTWWACGTAAAC MEME-1	width =  18  sites =  17  llr = 265  E-value = 1.9e-081
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  11::9::1459:::7a71
+pos.-specific     C  51::1a2:1::9::2:15
+probability       G  2::2::8:::11a1::22
+matrix            T  18a8:::955:::91:11
+
+         bits    2.6             *     
+                 2.4      *      *     
+                 2.1      *      *     
+                 1.8      **    **     
+Relative         1.6   *  **    **  *  
+Entropy          1.3   * ****  **** *  
+(22.5 bits)      1.1   ******  **** *  
+                 0.8  ******* *******  
+                 0.5 ******************
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           CTTTACGTTTACGTAAAC
+consensus            G     C AA    C  G
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+RC1_1949_p-74(liuR)           1  1.88e-10          . CTTTACGTAAACGTAAAC           
+AZL_c00460_p-33(liuR)         1  5.35e-09          . CTTTACGTAAACGTCAGG           
+AZL_012740_p-133(fadD)        1  7.03e-09          . CATTACGTTTACGTCAAC           
+RC1_4110_p-257(etfB)          1  9.62e-09          . GATTACGTAAACGTAAAC           
+RC1_4110_p-263(etfB)          1  9.62e-09          . CTTTACGATTACGTAAAC           
+Rru_A1835_p-132(ivdC)         1  1.11e-08          . TTTGACGTTTACGTAAAC           
+Rru_A1948_p-194(liuA)         1  1.11e-08          . TTTGACGTTTACGTAAAC           
+AZL_c00460_p-39(liuR)         1  1.24e-08          . CCTTACCTTTACGTAAAC           
+RC1_2763_p-39(n/a)            1  3.15e-08          . ATTTACCTTTACGTAAAG           
+AZL_009620_p-60(fadL)         1  5.25e-08          . CTTTACGTAAGCGTCAAT           
+Rru_A3510_p-108(livG)         1  6.09e-08          . CTTTACGTTTGCGTTAAG           
+RC1_1949_p-80(liuR)           1  8.13e-08          . ACTTACCTTTACGTAAAC           
+Rru_A1948_p-188(liuA)         1  8.13e-08          . GTTTACGTAAACGGAAGA           
+Rru_A1835_p-126(ivdC)         1  8.82e-08          . GTTTACGTAAACGGAAGT           
+RC1_2763_p-33(n/a)            1  9.46e-08          . CTTTACGTAAAGGTAACC           
+Rru_A1994_p-26(liuR2)         1  1.08e-07          . CTTGCCCTTTACGTAAAG           
+AZL_012740_p-127(fadD)        1  5.37e-07          . GTTTACGTCAACGTCATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RC1_1949_p-74(liuR)               1.9e-10  [+1]
+AZL_c00460_p-33(liuR)             5.3e-09  [+1]
+AZL_012740_p-133(fadD)              7e-09  [+1]
+RC1_4110_p-257(etfB)              9.6e-09  [+1]
+RC1_4110_p-263(etfB)              9.6e-09  [+1]
+Rru_A1835_p-132(ivdC)             1.1e-08  [+1]
+Rru_A1948_p-194(liuA)             1.1e-08  [+1]
+AZL_c00460_p-39(liuR)             1.2e-08  [+1]
+RC1_2763_p-39(n/a)                3.2e-08  [+1]
+AZL_009620_p-60(fadL)             5.3e-08  [+1]
+Rru_A3510_p-108(livG)             6.1e-08  [+1]
+RC1_1949_p-80(liuR)               8.1e-08  [+1]
+Rru_A1948_p-188(liuA)             8.1e-08  [+1]
+Rru_A1835_p-126(ivdC)             8.8e-08  [+1]
+RC1_2763_p-33(n/a)                9.5e-08  [+1]
+Rru_A1994_p-26(liuR2)             1.1e-07  [+1]
+AZL_012740_p-127(fadD)            5.4e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CTTTACGTWWACGTAAAC width=18 seqs=17
+RC1_1949_p-74(liuR)      (    1) CTTTACGTAAACGTAAAC  1 
+AZL_c00460_p-33(liuR)    (    1) CTTTACGTAAACGTCAGG  1 
+AZL_012740_p-133(fadD)   (    1) CATTACGTTTACGTCAAC  1 
+RC1_4110_p-257(etfB)     (    1) GATTACGTAAACGTAAAC  1 
+RC1_4110_p-263(etfB)     (    1) CTTTACGATTACGTAAAC  1 
+Rru_A1835_p-132(ivdC)    (    1) TTTGACGTTTACGTAAAC  1 
+Rru_A1948_p-194(liuA)    (    1) TTTGACGTTTACGTAAAC  1 
+AZL_c00460_p-39(liuR)    (    1) CCTTACCTTTACGTAAAC  1 
+RC1_2763_p-39(n/a)       (    1) ATTTACCTTTACGTAAAG  1 
+AZL_009620_p-60(fadL)    (    1) CTTTACGTAAGCGTCAAT  1 
+Rru_A3510_p-108(livG)    (    1) CTTTACGTTTGCGTTAAG  1 
+RC1_1949_p-80(liuR)      (    1) ACTTACCTTTACGTAAAC  1 
+Rru_A1948_p-188(liuA)    (    1) GTTTACGTAAACGGAAGA  1 
+Rru_A1835_p-126(ivdC)    (    1) GTTTACGTAAACGGAAGT  1 
+RC1_2763_p-33(n/a)       (    1) CTTTACGTAAAGGTAACC  1 
+Rru_A1994_p-26(liuR2)    (    1) CTTGCCCTTTACGTAAAG  1 
+AZL_012740_p-127(fadD)   (    1) GTTTACGTCAACGTCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 17 bayes= 1.26303 E= 1.9e-081 
+  -138    134     54   -145 
+  -138    -83  -1073    124 
+ -1073  -1073  -1073    163 
+ -1073  -1073     13    135 
+   162   -183  -1073  -1073 
+ -1073    225  -1073  -1073 
+ -1073     17    224  -1073 
+  -238  -1073  -1073    154 
+    43   -183  -1073     71 
+    62  -1073  -1073     71 
+   153  -1073    -45  -1073 
+ -1073    217   -145  -1073 
+ -1073  -1073    263  -1073 
+ -1073  -1073    -45    145 
+   120     17  -1073   -245 
+   171  -1073  -1073  -1073 
+   120   -183     13   -245 
+  -138    134     54   -145 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 17 E= 1.9e-081 
+ 0.117647  0.529412  0.235294  0.117647 
+ 0.117647  0.117647  0.000000  0.764706 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.176471  0.823529 
+ 0.941176  0.058824  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.235294  0.764706  0.000000 
+ 0.058824  0.000000  0.000000  0.941176 
+ 0.411765  0.058824  0.000000  0.529412 
+ 0.470588  0.000000  0.000000  0.529412 
+ 0.882353  0.000000  0.117647  0.000000 
+ 0.000000  0.941176  0.058824  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.117647  0.882353 
+ 0.705882  0.235294  0.000000  0.058824 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.705882  0.058824  0.176471  0.058824 
+ 0.117647  0.529412  0.235294  0.117647 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CTTTACGTWWACGTAAAC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CG]TTTAC[GC]T[TA][TA]ACGT[AC]AA[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rru_A1948_p-194(liuA)            1.11e-08  [+1(1.11e-08)]
+Rru_A1948_p-188(liuA)            8.13e-08  [+1(8.13e-08)]
+Rru_A1835_p-132(ivdC)            1.11e-08  [+1(1.11e-08)]
+Rru_A1835_p-126(ivdC)            8.82e-08  [+1(8.82e-08)]
+Rru_A3510_p-108(livG)            6.09e-08  [+1(6.09e-08)]
+Rru_A1994_p-26(liuR2)            1.08e-07  [+1(1.08e-07)]
+AZL_c00460_p-39(liuR)            1.24e-08  [+1(1.24e-08)]
+AZL_c00460_p-33(liuR)            5.35e-09  [+1(5.35e-09)]
+AZL_012740_p-133(fadD)           7.03e-09  [+1(7.03e-09)]
+AZL_012740_p-127(fadD)           5.37e-07  [+1(5.37e-07)]
+AZL_009620_p-60(fadL)            5.25e-08  [+1(5.25e-08)]
+RC1_1949_p-80(liuR)              8.13e-08  [+1(8.13e-08)]
+RC1_1949_p-74(liuR)              1.88e-10  [+1(1.88e-10)]
+RC1_4110_p-263(etfB)             9.62e-09  [+1(9.62e-09)]
+RC1_4110_p-257(etfB)             9.62e-09  [+1(9.62e-09)]
+RC1_2763_p-39(n/a)               3.15e-08  [+1(3.15e-08)]
+RC1_2763_p-33(n/a)               9.46e-08  [+1(9.46e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

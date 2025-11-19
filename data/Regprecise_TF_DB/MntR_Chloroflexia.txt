@@ -1,0 +1,238 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/MntR_Chloroflexia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cagg_3553_p-38(mntA)     1.0000     20  Cagg_1154_p-74(mntH)     1.0000     20  
+Chy400_0210_p-40(mntA)   1.0000     20  Rcas_1724_p-55(mntA)     1.0000     20  
+Rcas_3322_p-9(mntR)      1.0000     20  Haur_4030_p-51(mntA)     1.0000     20  
+RoseRS_3070_p-42(mntA)   1.0000     20  RoseRS_4512_p-85(MntR2)  1.0000     20  
+RoseRS_3986_p-29(mntR)   1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/MntR_Chloroflexia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Chloroflexi/MntR_Chloroflexia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             180    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    180    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.372 C 0.0944 G 0.172 T 0.361 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.37 C 0.0978 G 0.174 T 0.359 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RWTTTAGGWAWGCCTAAA MEME-1	width =  18  sites =   9  llr = 148  E-value = 5.3e-032
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  43:::a::37412:2aaa
+pos.-specific     C  1:::::::11::6a::::
+probability       G  4:::::aa1::72:::::
+matrix            T  :7aaa:::4262::8:::
+
+         bits    3.4              *    
+                 3.0              *    
+                 2.7       **     *    
+                 2.3       **     *    
+Relative         2.0       **     *    
+Entropy          1.7       **     *    
+(23.8 bits)      1.3   ******    ** ***
+                 1.0   ******   *** ***
+                 0.7 ********   *******
+                 0.3 ******** *********
+                 0.0 ------------------
+
+Multilevel           ATTTTAGGTATGCCTAAA
+consensus            GA      ATATA A   
+sequence                         G     
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Rcas_3322_p-9(mntR)           1  1.69e-10          . GTTTTAGGAATGCCTAAA TA        
+Haur_4030_p-51(mntA)          1  5.23e-10          . CTTTTAGGTATGCCTAAA TA        
+RoseRS_4512_p-85(MntR2)       1  9.75e-10          . ATTTTAGGAATGCCTAAA TT        
+Chy400_0210_p-40(mntA)        1  6.84e-09          . GATTTAGGTAAGGCTAAA AT        
+RoseRS_3986_p-29(mntR)        1  1.35e-08          . GTTTTAGGTCTACCTAAA TT        
+Cagg_3553_p-38(mntA)          1  2.53e-08          . ATTTTAGGTTAGGCTAAA AT        
+RoseRS_3070_p-42(mntA)        1  6.01e-08          . GATTTAGGCAAGACAAAA TT        
+Rcas_1724_p-55(mntA)          1  9.91e-08          . ATTTTAGGATTTCCAAAA TT        
+Cagg_1154_p-74(mntH)          1  1.79e-07          . AATTTAGGGAATACTAAA AA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rcas_3322_p-9(mntR)               1.7e-10  [+1]_2
+Haur_4030_p-51(mntA)              5.2e-10  [+1]_2
+RoseRS_4512_p-85(MntR2)           9.7e-10  [+1]_2
+Chy400_0210_p-40(mntA)            6.8e-09  [+1]_2
+RoseRS_3986_p-29(mntR)            1.4e-08  [+1]_2
+Cagg_3553_p-38(mntA)              2.5e-08  [+1]_2
+RoseRS_3070_p-42(mntA)              6e-08  [+1]_2
+Rcas_1724_p-55(mntA)              9.9e-08  [+1]_2
+Cagg_1154_p-74(mntH)              1.8e-07  [+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RWTTTAGGWAWGCCTAAA width=18 seqs=9
+Rcas_3322_p-9(mntR)      (    1) GTTTTAGGAATGCCTAAA  1 
+Haur_4030_p-51(mntA)     (    1) CTTTTAGGTATGCCTAAA  1 
+RoseRS_4512_p-85(MntR2)  (    1) ATTTTAGGAATGCCTAAA  1 
+Chy400_0210_p-40(mntA)   (    1) GATTTAGGTAAGGCTAAA  1 
+RoseRS_3986_p-29(mntR)   (    1) GTTTTAGGTCTACCTAAA  1 
+Cagg_3553_p-38(mntA)     (    1) ATTTTAGGTTAGGCTAAA  1 
+RoseRS_3070_p-42(mntA)   (    1) GATTTAGGCAAGACAAAA  1 
+Rcas_1724_p-55(mntA)     (    1) ATTTTAGGATTTCCAAAA  1 
+Cagg_1154_p-74(mntH)     (    1) AATTTAGGGAATACTAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 27 bayes= 2.79518 E= 5.3e-032 
+    27     18    135   -982 
+   -15   -982   -982     89 
+  -982   -982   -982    148 
+  -982   -982   -982    148 
+  -982   -982   -982    148 
+   144   -982   -982   -982 
+  -982   -982    252   -982 
+  -982   -982    252   -982 
+   -15     18    -65     31 
+    85     18   -982    -69 
+    27   -982   -982     63 
+  -173   -982    194    -69 
+   -73    250     35   -982 
+  -982    335   -982   -982 
+   -73   -982   -982    112 
+   144   -982   -982   -982 
+   144   -982   -982   -982 
+   144   -982   -982   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 9 E= 5.3e-032 
+ 0.444444  0.111111  0.444444  0.000000 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.333333  0.111111  0.111111  0.444444 
+ 0.666667  0.111111  0.000000  0.222222 
+ 0.444444  0.000000  0.000000  0.555556 
+ 0.111111  0.000000  0.666667  0.222222 
+ 0.222222  0.555556  0.222222  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.222222  0.000000  0.000000  0.777778 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RWTTTAGGWAWGCCTAAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG][TA]TTTAGG[TA][AT][TA][GT][CAG]C[TA]AAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cagg_3553_p-38(mntA)             7.59e-08  [+1(2.53e-08)]_2
+Cagg_1154_p-74(mntH)             5.37e-07  [+1(1.79e-07)]_2
+Chy400_0210_p-40(mntA)           2.05e-08  [+1(6.84e-09)]_2
+Rcas_1724_p-55(mntA)             2.97e-07  [+1(9.91e-08)]_2
+Rcas_3322_p-9(mntR)              5.07e-10  [+1(1.69e-10)]_2
+Haur_4030_p-51(mntA)             1.57e-09  [+1(5.23e-10)]_2
+RoseRS_3070_p-42(mntA)           1.80e-07  [+1(6.01e-08)]_2
+RoseRS_4512_p-85(MntR2)          2.92e-09  [+1(9.75e-10)]_2
+RoseRS_3986_p-29(mntR)           4.06e-08  [+1(1.35e-08)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

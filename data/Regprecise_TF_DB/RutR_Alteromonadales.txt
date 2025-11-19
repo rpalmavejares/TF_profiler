@@ -1,0 +1,287 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/RutR_Alteromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Patl_0536_p-127(omp1)    1.0000     20  Patl_0533_p-180(udk)     1.0000     20  
+Patl_2222_p-27(add2)     1.0000     20  Patl_2225_p-112(omp2)    1.0000     20  
+Patl_2423_p-242(rutR)    1.0000     20  Patl_2421_p-98(pbuT)     1.0000     20  
+Patl_2424_p-91(xdhA)     1.0000     20  MADE_02502_p-124(omp2)   1.0000     20  
+MADE_00730_p-183(udk)    1.0000     20  MADE_02501_p-353(pbuT2)  1.0000     20  
+MADE_00733_p-207(omp1)   1.0000     20  MADE_02510_p-71(pbuT)    1.0000     20  
+MADE_02515_p-83(xdhA)    1.0000     20  CPS_1969_p-70(cdd)       1.0000     20  
+CPS_1974_p-182(udk)      1.0000     20  CPS_4864_p-94(xdhA)      1.0000     20  
+ATW7_02067_p-61(rutR)    1.0000     20  ATW7_02017_p-148(xdhA)   1.0000     20  
+ATW7_02017_p-328(xdhA)   1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/RutR_Alteromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Alteromonadales/RutR_Alteromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             380    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    380    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.276 C 0.218 G 0.221 T 0.284 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.276 C 0.219 G 0.221 T 0.284 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AVYTGACCAWTTGGTCARST MEME-1	width =  20  sites =  19  llr = 292  E-value = 2.2e-088
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  831219:1832:1:1:8512
+pos.-specific     C  144:::a81121:::91:31
+probability       G  12::9:::12119a:1:55:
+matrix            T  1158:1:115681:911:17
+
+         bits    2.2       *      *      
+                 2.0       *      *      
+                 1.8     * *      *      
+                 1.5     ***     ** *    
+Relative         1.3     ****    ****    
+Entropy          1.1    *****   *******  
+(22.2 bits)      0.9 *  ******  ******* *
+                 0.7 * *******  ******* *
+                 0.4 * ******* **********
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACTTGACCATTTGGTCAAGT
+consensus             AC      A       GCA
+sequence              G                  
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+MADE_00733_p-207(omp1)        1  2.36e-10          . ACTTGACCATGTGGTCAGGT           
+Patl_2225_p-112(omp2)         1  2.78e-10          . ACCTGACCATTTGGACAAGT           
+Patl_2423_p-242(rutR)         1  3.74e-10          . ACCAGACCAGTTGGTCAGGT           
+CPS_1969_p-70(cdd)            1  8.24e-10          . ACTTGACCATATGGTCAGCA           
+MADE_02515_p-83(xdhA)         1  1.34e-09          . AATTGACCATTTGGTCTACT           
+Patl_2424_p-91(xdhA)          1  1.92e-09          . ACCTGACCAACTGGTCTGGT           
+Patl_2222_p-27(add2)          1  4.66e-09          . GACTGACCATTTGGTCAAAT           
+MADE_02501_p-353(pbuT2)       1  9.70e-09          . AACAGACCAGTTGGTCAACA           
+MADE_02510_p-71(pbuT)         1  1.07e-08          . AGTTGACTAATTGGTCAGTT           
+MADE_02502_p-124(omp2)        1  1.30e-08          . AGTTGACCAACTGGTTAAGT           
+Patl_0533_p-180(udk)          1  2.11e-08          . ACTTGACCATATGGTCCACA           
+CPS_1974_p-182(udk)           1  8.55e-08          . CTATGACCAACTGGTCAAGT           
+Patl_2421_p-98(pbuT)          1  1.09e-07          . GCTAGACTAAATGGTCAGGT           
+ATW7_02067_p-61(rutR)         1  1.18e-07          . AATTGACCTTTCGGTCAGTA           
+MADE_00730_p-183(udk)         1  2.03e-07          . AACTGACCACTTGGAGAACT           
+ATW7_02017_p-328(xdhA)        1  3.40e-07          . ACATATCCTTTTGGTCAGGT           
+ATW7_02017_p-148(xdhA)        1  8.24e-07          . AGTTAACCGATCGGTCAGGC           
+Patl_0536_p-127(omp1)         1  8.79e-07          . TTTTGACCAGTTAGTCAAAT           
+CPS_4864_p-94(xdhA)           1  3.82e-06          . AGCTGACACTTGTGTCAACT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MADE_00733_p-207(omp1)            2.4e-10  [+1]
+Patl_2225_p-112(omp2)             2.8e-10  [+1]
+Patl_2423_p-242(rutR)             3.7e-10  [+1]
+CPS_1969_p-70(cdd)                8.2e-10  [+1]
+MADE_02515_p-83(xdhA)             1.3e-09  [+1]
+Patl_2424_p-91(xdhA)              1.9e-09  [+1]
+Patl_2222_p-27(add2)              4.7e-09  [+1]
+MADE_02501_p-353(pbuT2)           9.7e-09  [+1]
+MADE_02510_p-71(pbuT)             1.1e-08  [+1]
+MADE_02502_p-124(omp2)            1.3e-08  [+1]
+Patl_0533_p-180(udk)              2.1e-08  [+1]
+CPS_1974_p-182(udk)               8.5e-08  [+1]
+Patl_2421_p-98(pbuT)              1.1e-07  [+1]
+ATW7_02067_p-61(rutR)             1.2e-07  [+1]
+MADE_00730_p-183(udk)               2e-07  [+1]
+ATW7_02017_p-328(xdhA)            3.4e-07  [+1]
+ATW7_02017_p-148(xdhA)            8.2e-07  [+1]
+Patl_0536_p-127(omp1)             8.8e-07  [+1]
+CPS_4864_p-94(xdhA)               3.8e-06  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AVYTGACCAWTTGGTCARST width=20 seqs=19
+MADE_00733_p-207(omp1)   (    1) ACTTGACCATGTGGTCAGGT  1 
+Patl_2225_p-112(omp2)    (    1) ACCTGACCATTTGGACAAGT  1 
+Patl_2423_p-242(rutR)    (    1) ACCAGACCAGTTGGTCAGGT  1 
+CPS_1969_p-70(cdd)       (    1) ACTTGACCATATGGTCAGCA  1 
+MADE_02515_p-83(xdhA)    (    1) AATTGACCATTTGGTCTACT  1 
+Patl_2424_p-91(xdhA)     (    1) ACCTGACCAACTGGTCTGGT  1 
+Patl_2222_p-27(add2)     (    1) GACTGACCATTTGGTCAAAT  1 
+MADE_02501_p-353(pbuT2)  (    1) AACAGACCAGTTGGTCAACA  1 
+MADE_02510_p-71(pbuT)    (    1) AGTTGACTAATTGGTCAGTT  1 
+MADE_02502_p-124(omp2)   (    1) AGTTGACCAACTGGTTAAGT  1 
+Patl_0533_p-180(udk)     (    1) ACTTGACCATATGGTCCACA  1 
+CPS_1974_p-182(udk)      (    1) CTATGACCAACTGGTCAAGT  1 
+Patl_2421_p-98(pbuT)     (    1) GCTAGACTAAATGGTCAGGT  1 
+ATW7_02067_p-61(rutR)    (    1) AATTGACCTTTCGGTCAGTA  1 
+MADE_00730_p-183(udk)    (    1) AACTGACCACTTGGAGAACT  1 
+ATW7_02017_p-328(xdhA)   (    1) ACATATCCTTTTGGTCAGGT  1 
+ATW7_02017_p-148(xdhA)   (    1) AGTTAACCGATCGGTCAGGC  1 
+Patl_0536_p-127(omp1)    (    1) TTTTGACCAGTTAGTCAAAT  1 
+CPS_4864_p-94(xdhA)      (    1) AGCTGACACTTGTGTCAACT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 19 bayes= 1.33258 E= 2.2e-088 
+   152   -205   -107   -243 
+    -7     94     -7   -143 
+  -139     75  -1089     89 
+   -81  -1089  -1089    157 
+  -139  -1089    201  -1089 
+   178  -1089  -1089   -243 
+ -1089    219  -1089  -1089 
+  -239    194  -1089   -143 
+   152   -205   -207   -143 
+    19   -205    -49     74 
+   -81    -47   -207    115 
+ -1089   -105   -207    157 
+  -239  -1089    201   -243 
+ -1089  -1089    217  -1089 
+  -139  -1089  -1089    166 
+ -1089    203   -207   -243 
+   161   -205  -1089   -143 
+    93  -1089    110  -1089 
+  -139     53    110   -143 
+   -39   -205  -1089    138 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 19 E= 2.2e-088 
+ 0.789474  0.052632  0.105263  0.052632 
+ 0.263158  0.421053  0.210526  0.105263 
+ 0.105263  0.368421  0.000000  0.526316 
+ 0.157895  0.000000  0.000000  0.842105 
+ 0.105263  0.000000  0.894737  0.000000 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.052632  0.842105  0.000000  0.105263 
+ 0.789474  0.052632  0.052632  0.105263 
+ 0.315789  0.052632  0.157895  0.473684 
+ 0.157895  0.157895  0.052632  0.631579 
+ 0.000000  0.105263  0.052632  0.842105 
+ 0.052632  0.000000  0.894737  0.052632 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.105263  0.000000  0.000000  0.894737 
+ 0.000000  0.894737  0.052632  0.052632 
+ 0.842105  0.052632  0.000000  0.105263 
+ 0.526316  0.000000  0.473684  0.000000 
+ 0.105263  0.315789  0.473684  0.105263 
+ 0.210526  0.052632  0.000000  0.736842 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVYTGACCAWTTGGTCARST MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CAG][TC]TGACCA[TA]TTGGTCA[AG][GC][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Patl_0536_p-127(omp1)            8.79e-07  [+1(8.79e-07)]
+Patl_0533_p-180(udk)             2.11e-08  [+1(2.11e-08)]
+Patl_2222_p-27(add2)             4.66e-09  [+1(4.66e-09)]
+Patl_2225_p-112(omp2)            2.78e-10  [+1(2.78e-10)]
+Patl_2423_p-242(rutR)            3.74e-10  [+1(3.74e-10)]
+Patl_2421_p-98(pbuT)             1.09e-07  [+1(1.09e-07)]
+Patl_2424_p-91(xdhA)             1.92e-09  [+1(1.92e-09)]
+MADE_02502_p-124(omp2)           1.30e-08  [+1(1.30e-08)]
+MADE_00730_p-183(udk)            2.03e-07  [+1(2.03e-07)]
+MADE_02501_p-353(pbuT2)          9.70e-09  [+1(9.70e-09)]
+MADE_00733_p-207(omp1)           2.36e-10  [+1(2.36e-10)]
+MADE_02510_p-71(pbuT)            1.07e-08  [+1(1.07e-08)]
+MADE_02515_p-83(xdhA)            1.34e-09  [+1(1.34e-09)]
+CPS_1969_p-70(cdd)               8.24e-10  [+1(8.24e-10)]
+CPS_1974_p-182(udk)              8.55e-08  [+1(8.55e-08)]
+CPS_4864_p-94(xdhA)              3.82e-06  [+1(3.82e-06)]
+ATW7_02067_p-61(rutR)            1.18e-07  [+1(1.18e-07)]
+ATW7_02017_p-148(xdhA)           8.24e-07  [+1(8.24e-07)]
+ATW7_02017_p-328(xdhA)           3.40e-07  [+1(3.40e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

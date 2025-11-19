@@ -1,0 +1,274 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PdxR2_Enterobacteriales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CKO_00371_p-39(pdxR2)    1.0000     16  CKO_00371_p-17(pdxR2)    1.0000     16  
+CKO_00372_p-81(pdxK)     1.0000     16  CKO_00372_p-59(pdxK)     1.0000     16  
+Ent638_4213_p-36(pdxR2)  1.0000     16  Ent638_4213_p-14(pdxR2)  1.0000     16  
+Ent638_4212_p-71(COG0325 1.0000     16  Ent638_4212_p-49(COG0325 1.0000     16  
+KPN_02767_p-39(pdxR2)    1.0000     16  KPN_02767_p-17(pdxR2)    1.0000     16  
+KPN_02766_p-81(pdxK)     1.0000     16  KPN_02766_p-59(pdxK)     1.0000     16  
+STM2436_p-39(pdxR2)      1.0000     16  STM2436_p-17(pdxR2)      1.0000     16  
+STM2435_p-81(pdxK)       1.0000     16  STM2435_p-59(pdxK)       1.0000     16  
+Spro_2563_p-28(pdxR2)    1.0000     16  Spro_2564_p-56(pdxZ)     1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PdxR2_Enterobacteriales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Enterobacteriales/PdxR2_Enterobacteriales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           16
+nsites: minsites=        2    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             288    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    288    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.344 C 0.156 G 0.156 T 0.344 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.342 C 0.158 G 0.158 T 0.342 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTTGWCMTAKGWCAAW MEME-1	width =  16  sites =  18  llr = 229  E-value = 2.9e-069
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4::2324:91:4:9a6
+pos.-specific     C  ::1::851:::28:::
+probability       G  :::82:::158::1::
+matrix            T  6a9:4:19:4232::4
+
+         bits    2.7                 
+                 2.4                 
+                 2.1                 
+                 1.9      *    *     
+Relative         1.6  * * *    * * * 
+Entropy          1.3  * * * ** * * * 
+(18.4 bits)      1.1  *** * ** * *** 
+                 0.8  *** ****** *** 
+                 0.5 **** ****** ****
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           TTTGTCCTAGGACAAA
+consensus            A  AA A  T TT  T
+sequence                 G      C    
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+STM2435_p-81(pdxK)            1  3.60e-08          . ATTGACCTATGACAAA           
+STM2436_p-17(pdxR2)           1  3.60e-08          . TTTGTCATAGGTCAAT           
+KPN_02766_p-81(pdxK)          1  3.60e-08          . ATTGACCTATGACAAA           
+KPN_02767_p-17(pdxR2)         1  3.60e-08          . TTTGTCATAGGTCAAT           
+CKO_00372_p-81(pdxK)          1  3.60e-08          . ATTGACCTATGACAAA           
+CKO_00371_p-17(pdxR2)         1  3.60e-08          . TTTGTCATAGGTCAAT           
+Ent638_4212_p-49(COG0325      1  1.00e-07          . TTTAGCCTAGGACAAT           
+Ent638_4213_p-36(pdxR2)       1  1.00e-07          . ATTGTCCTAGGCTAAA           
+STM2435_p-59(pdxK)            1  6.98e-07          . TTTAGCATATGACAAT           
+STM2436_p-39(pdxR2)           1  6.98e-07          . ATTGTCATATGCTAAA           
+KPN_02766_p-59(pdxK)          1  6.98e-07          . TTTAGCATAGGACGAA           
+KPN_02767_p-39(pdxR2)         1  6.98e-07          . TTCGTCCTATGCTAAA           
+CKO_00372_p-59(pdxK)          1  2.02e-06          . TTTAGCATATGACGAT           
+CKO_00371_p-39(pdxR2)         1  2.02e-06          . ATCGTCATATGCTAAA           
+Ent638_4212_p-71(COG0325      1  2.31e-06          . ATTGACCTGGTTCAAA           
+Ent638_4213_p-14(pdxR2)       1  2.31e-06          . TTTGAACCAGGTCAAT           
+Spro_2564_p-56(pdxZ)          1  1.20e-05          . TTTGTATTAGTTCAAA           
+Spro_2563_p-28(pdxR2)         1  1.20e-05          . TTTGAACTAATACAAA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+STM2435_p-81(pdxK)                3.6e-08  [+1]
+STM2436_p-17(pdxR2)               3.6e-08  [+1]
+KPN_02766_p-81(pdxK)              3.6e-08  [+1]
+KPN_02767_p-17(pdxR2)             3.6e-08  [+1]
+CKO_00372_p-81(pdxK)              3.6e-08  [+1]
+CKO_00371_p-17(pdxR2)             3.6e-08  [+1]
+Ent638_4212_p-49(COG0325            1e-07  [+1]
+Ent638_4213_p-36(pdxR2)             1e-07  [+1]
+STM2435_p-59(pdxK)                  7e-07  [+1]
+STM2436_p-39(pdxR2)                 7e-07  [+1]
+KPN_02766_p-59(pdxK)                7e-07  [+1]
+KPN_02767_p-39(pdxR2)               7e-07  [+1]
+CKO_00372_p-59(pdxK)                2e-06  [+1]
+CKO_00371_p-39(pdxR2)               2e-06  [+1]
+Ent638_4212_p-71(COG0325          2.3e-06  [+1]
+Ent638_4213_p-14(pdxR2)           2.3e-06  [+1]
+Spro_2564_p-56(pdxZ)              1.2e-05  [+1]
+Spro_2563_p-28(pdxR2)             1.2e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTTGWCMTAKGWCAAW width=16 seqs=18
+STM2435_p-81(pdxK)       (    1) ATTGACCTATGACAAA  1 
+STM2436_p-17(pdxR2)      (    1) TTTGTCATAGGTCAAT  1 
+KPN_02766_p-81(pdxK)     (    1) ATTGACCTATGACAAA  1 
+KPN_02767_p-17(pdxR2)    (    1) TTTGTCATAGGTCAAT  1 
+CKO_00372_p-81(pdxK)     (    1) ATTGACCTATGACAAA  1 
+CKO_00371_p-17(pdxR2)    (    1) TTTGTCATAGGTCAAT  1 
+Ent638_4212_p-49(COG0325 (    1) TTTAGCCTAGGACAAT  1 
+Ent638_4213_p-36(pdxR2)  (    1) ATTGTCCTAGGCTAAA  1 
+STM2435_p-59(pdxK)       (    1) TTTAGCATATGACAAT  1 
+STM2436_p-39(pdxR2)      (    1) ATTGTCATATGCTAAA  1 
+KPN_02766_p-59(pdxK)     (    1) TTTAGCATAGGACGAA  1 
+KPN_02767_p-39(pdxR2)    (    1) TTCGTCCTATGCTAAA  1 
+CKO_00372_p-59(pdxK)     (    1) TTTAGCATATGACGAT  1 
+CKO_00371_p-39(pdxR2)    (    1) ATCGTCATATGCTAAA  1 
+Ent638_4212_p-71(COG0325 (    1) ATTGACCTGGTTCAAA  1 
+Ent638_4213_p-14(pdxR2)  (    1) TTTGAACCAGGTCAAT  1 
+Spro_2564_p-56(pdxZ)     (    1) TTTGTATTAGTTCAAA  1 
+Spro_2563_p-28(pdxR2)    (    1) TTTGAACTAATACAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 18 bayes= 1.29956 E= 2.9e-069 
+    18  -1081  -1081     84 
+ -1081  -1081  -1081    155 
+ -1081    -50  -1081    138 
+   -62  -1081    230  -1081 
+    -4  -1081     50     38 
+  -104    240  -1081  -1081 
+    38    167  -1081   -262 
+ -1081   -150  -1081    146 
+   146  -1081   -150  -1081 
+  -262  -1081    167     38 
+ -1081  -1081    240   -104 
+    38     50  -1081     -4 
+ -1081    230  -1081    -62 
+   138  -1081    -50  -1081 
+   155  -1081  -1081  -1081 
+    84  -1081  -1081     18 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 18 E= 2.9e-069 
+ 0.388889  0.000000  0.000000  0.611111 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.111111  0.000000  0.888889 
+ 0.222222  0.000000  0.777778  0.000000 
+ 0.333333  0.000000  0.222222  0.444444 
+ 0.166667  0.833333  0.000000  0.000000 
+ 0.444444  0.500000  0.000000  0.055556 
+ 0.000000  0.055556  0.000000  0.944444 
+ 0.944444  0.000000  0.055556  0.000000 
+ 0.055556  0.000000  0.500000  0.444444 
+ 0.000000  0.000000  0.833333  0.166667 
+ 0.444444  0.222222  0.000000  0.333333 
+ 0.000000  0.777778  0.000000  0.222222 
+ 0.888889  0.000000  0.111111  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.611111  0.000000  0.000000  0.388889 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTTGWCMTAKGWCAAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TT[GA][TAG]C[CA]TA[GT]G[ATC][CT]AA[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CKO_00371_p-39(pdxR2)            2.02e-06  [+1(2.02e-06)]
+CKO_00371_p-17(pdxR2)            3.60e-08  [+1(3.60e-08)]
+CKO_00372_p-81(pdxK)             3.60e-08  [+1(3.60e-08)]
+CKO_00372_p-59(pdxK)             2.02e-06  [+1(2.02e-06)]
+Ent638_4213_p-36(pdxR2)          1.00e-07  [+1(1.00e-07)]
+Ent638_4213_p-14(pdxR2)          2.31e-06  [+1(2.31e-06)]
+Ent638_4212_p-71(COG0325         2.31e-06  [+1(2.31e-06)]
+Ent638_4212_p-49(COG0325         1.00e-07  [+1(1.00e-07)]
+KPN_02767_p-39(pdxR2)            6.98e-07  [+1(6.98e-07)]
+KPN_02767_p-17(pdxR2)            3.60e-08  [+1(3.60e-08)]
+KPN_02766_p-81(pdxK)             3.60e-08  [+1(3.60e-08)]
+KPN_02766_p-59(pdxK)             6.98e-07  [+1(6.98e-07)]
+STM2436_p-39(pdxR2)              6.98e-07  [+1(6.98e-07)]
+STM2436_p-17(pdxR2)              3.60e-08  [+1(3.60e-08)]
+STM2435_p-81(pdxK)               3.60e-08  [+1(3.60e-08)]
+STM2435_p-59(pdxK)               6.98e-07  [+1(6.98e-07)]
+Spro_2563_p-28(pdxR2)            1.20e-05  [+1(1.20e-05)]
+Spro_2564_p-56(pdxZ)             1.20e-05  [+1(1.20e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

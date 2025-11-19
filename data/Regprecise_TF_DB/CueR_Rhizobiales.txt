@@ -1,0 +1,300 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/CueR_Rhizobiales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SMc02279_p-147(PF11162)  1.0000     21  SMb21578_p-55(copA)      1.0000     21  
+SMa1013_p-57(copA)       1.0000     21  SMb20560_p-57(copZ)      1.0000     21  
+SMa1009_p-59(copZ)       1.0000     21  NGR_b08300_p-135(PF11162 1.0000     21  
+NGR_b08430_p-57(copA)    1.0000     21  NGR_b12440_p-58(copA)    1.0000     21  
+NGR_b07400_p-58(copA)    1.0000     21  NGR_b08480_p-57(copZ)    1.0000     21  
+pRL110010_p-64(copA)     1.0000     21  pRL110331_p-56(copA)     1.0000     21  
+RHE_PE00007_p-63(copA)   1.0000     21  Atu1195_p-54(copA)       1.0000     21  
+Atu0937_p-110(copA)      1.0000     21  Meso_2667_p-49(copA)     1.0000     21  
+Meso_3894_p-35(copZ)     1.0000     21  Meso_3893_p-66(copA)     1.0000     21  
+Meso_3893_p-115(copA)    1.0000     21  mlr5325_p-62(copA)       1.0000     21  
+BMEI1730_p-77(copA)      1.0000     21  BMEI1032_p-59(copZ)      1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/CueR_Rhizobiales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Rhizobiales/CueR_Rhizobiales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           21
+nsites: minsites=        2    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             462    N=              22
+sample: seed=            0    hsfrac=          0
+        searchsize=    462    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.238 C 0.299 G 0.236 T 0.227 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.238 C 0.298 G 0.236 T 0.227 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCTTCCCATCGTTGGAAGS MEME-1	width =  20  sites =  22  llr = 443  E-value = 1.9e-145
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a::::1:38::3::::aa1:
+pos.-specific     C  :aa::6a7:35:2::::::6
+probability       G  :::::3::2:27:2a9::94
+matrix            T  :::aa::::72:88:1::::
+
+         bits    2.1     *         * **  
+                 1.9    **         * **  
+                 1.7 * *** *       ***** 
+                 1.5 ***** *       ***** 
+Relative         1.3 ***** * *  ******** 
+Entropy          1.1 ***** * ** ******** 
+(29.0 bits)      0.9 ***** **** *********
+                 0.6 ***** **** *********
+                 0.4 ********** *********
+                 0.2 ********************
+                 0.0 --------------------
+
+Multilevel           ACCTTCCCATCGTTGGAAGC
+consensus                 G A CTA       G
+sequence                                 
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Meso_3893_p-66(copA)          1  1.25e-12          . ACCTTCCCATCGTTGGAAGC C         
+SMb20560_p-57(copZ)           1  4.19e-12          . ACCTTGCCATCGTTGGAAGC T         
+NGR_b12440_p-58(copA)         1  1.32e-11          . ACCTTCCCACCGTTGGAAGC C         
+SMb21578_p-55(copA)           1  2.47e-11          . ACCTTCCCATTATTGGAAGG A         
+NGR_b08430_p-57(copA)         1  5.05e-11          . ACCTTACCATTGTTGGAAGG A         
+SMa1013_p-57(copA)            1  5.05e-11          . ACCTTACCATTGTTGGAAGG A         
+Atu0937_p-110(copA)           1  8.09e-11          . ACCTTCCCATCATGGGAAGC C         
+BMEI1730_p-77(copA)           1  1.39e-10          . ACCTTCCAACGGTTGGAAGG G         
+SMc02279_p-147(PF11162)       1  1.55e-10          . ACCTTGCCATCGTTGTAAGC C         
+SMa1009_p-59(copZ)            1  1.75e-10          . ACCTTGCCATCGTTGGAAAC G         
+NGR_b08300_p-135(PF11162      1  3.47e-10          . ACCTTACCATCGTTGGAAAC A         
+pRL110331_p-56(copA)          1  4.17e-10          . ACCTTCCCATCATAGGAAGG A         
+NGR_b08480_p-57(copZ)         1  5.07e-10          . ACCCTGCCATCGTTGGAAGC C         
+Meso_3894_p-35(copZ)          1  5.94e-10          . ACCTTCCAACGGTGGGAAGC C         
+pRL110010_p-64(copA)          1  6.48e-10          . ACCTTCCAGTCGCTGGAAGG T         
+BMEI1032_p-59(copZ)           1  9.64e-10          . ACCTTGCCACGATGGGAAGC T         
+Atu1195_p-54(copA)            1  9.64e-10          . ACCTTGCCACGATGGGAAGC C         
+RHE_PE00007_p-63(copA)        1  1.04e-09          . ACCTTCCAGTTGCTGGAAGG T         
+mlr5325_p-62(copA)            1  1.71e-09          . ACCTTCCAGTTACTGGAAGC A         
+NGR_b07400_p-58(copA)         1  2.21e-09          . ACCTTCCGACCGTTGTAAGC C         
+Meso_3893_p-115(copA)         1  5.02e-09          . GGCTTCCCACCGTTGGAAGG T         
+Meso_2667_p-49(copA)          1  5.31e-09          . ACCTTCCAGTAACTGGAAGG A         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Meso_3893_p-66(copA)              1.3e-12  [+1]_1
+SMb20560_p-57(copZ)               4.2e-12  [+1]_1
+NGR_b12440_p-58(copA)             1.3e-11  [+1]_1
+SMb21578_p-55(copA)               2.5e-11  [+1]_1
+NGR_b08430_p-57(copA)             5.1e-11  [+1]_1
+SMa1013_p-57(copA)                5.1e-11  [+1]_1
+Atu0937_p-110(copA)               8.1e-11  [+1]_1
+BMEI1730_p-77(copA)               1.4e-10  [+1]_1
+SMc02279_p-147(PF11162)           1.5e-10  [+1]_1
+SMa1009_p-59(copZ)                1.8e-10  [+1]_1
+NGR_b08300_p-135(PF11162          3.5e-10  [+1]_1
+pRL110331_p-56(copA)              4.2e-10  [+1]_1
+NGR_b08480_p-57(copZ)             5.1e-10  [+1]_1
+Meso_3894_p-35(copZ)              5.9e-10  [+1]_1
+pRL110010_p-64(copA)              6.5e-10  [+1]_1
+BMEI1032_p-59(copZ)               9.6e-10  [+1]_1
+Atu1195_p-54(copA)                9.6e-10  [+1]_1
+RHE_PE00007_p-63(copA)              1e-09  [+1]_1
+mlr5325_p-62(copA)                1.7e-09  [+1]_1
+NGR_b07400_p-58(copA)             2.2e-09  [+1]_1
+Meso_3893_p-115(copA)               5e-09  [+1]_1
+Meso_2667_p-49(copA)              5.3e-09  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCTTCCCATCGTTGGAAGS width=20 seqs=22
+Meso_3893_p-66(copA)     (    1) ACCTTCCCATCGTTGGAAGC  1 
+SMb20560_p-57(copZ)      (    1) ACCTTGCCATCGTTGGAAGC  1 
+NGR_b12440_p-58(copA)    (    1) ACCTTCCCACCGTTGGAAGC  1 
+SMb21578_p-55(copA)      (    1) ACCTTCCCATTATTGGAAGG  1 
+NGR_b08430_p-57(copA)    (    1) ACCTTACCATTGTTGGAAGG  1 
+SMa1013_p-57(copA)       (    1) ACCTTACCATTGTTGGAAGG  1 
+Atu0937_p-110(copA)      (    1) ACCTTCCCATCATGGGAAGC  1 
+BMEI1730_p-77(copA)      (    1) ACCTTCCAACGGTTGGAAGG  1 
+SMc02279_p-147(PF11162)  (    1) ACCTTGCCATCGTTGTAAGC  1 
+SMa1009_p-59(copZ)       (    1) ACCTTGCCATCGTTGGAAAC  1 
+NGR_b08300_p-135(PF11162 (    1) ACCTTACCATCGTTGGAAAC  1 
+pRL110331_p-56(copA)     (    1) ACCTTCCCATCATAGGAAGG  1 
+NGR_b08480_p-57(copZ)    (    1) ACCCTGCCATCGTTGGAAGC  1 
+Meso_3894_p-35(copZ)     (    1) ACCTTCCAACGGTGGGAAGC  1 
+pRL110010_p-64(copA)     (    1) ACCTTCCAGTCGCTGGAAGG  1 
+BMEI1032_p-59(copZ)      (    1) ACCTTGCCACGATGGGAAGC  1 
+Atu1195_p-54(copA)       (    1) ACCTTGCCACGATGGGAAGC  1 
+RHE_PE00007_p-63(copA)   (    1) ACCTTCCAGTTGCTGGAAGG  1 
+mlr5325_p-62(copA)       (    1) ACCTTCCAGTTACTGGAAGC  1 
+NGR_b07400_p-58(copA)    (    1) ACCTTCCGACCGTTGTAAGC  1 
+Meso_3893_p-115(copA)    (    1) GGCTTCCCACCGTTGGAAGG  1 
+Meso_2667_p-49(copA)     (    1) ACCTTCCAGTAACTGGAAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 44 bayes= 2.66297 E= 1.9e-145 
+   200  -1110   -237  -1110 
+ -1110    168   -237  -1110 
+ -1110    174  -1110  -1110 
+ -1110   -271  -1110    207 
+ -1110  -1110  -1110    214 
+   -80     99     21  -1110 
+ -1110    174  -1110  -1110 
+    20    119   -237  -1110 
+   178  -1110    -38  -1110 
+ -1110      9  -1110    158 
+  -239     87    -38      0 
+    42  -1110    153  -1110 
+ -1110    -71  -1110    185 
+  -239  -1110    -38    176 
+ -1110  -1110    208  -1110 
+ -1110  -1110    194   -132 
+   207  -1110  -1110  -1110 
+   207  -1110  -1110  -1110 
+  -139  -1110    194  -1110 
+ -1110     99     79  -1110 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 22 E= 1.9e-145 
+ 0.954545  0.000000  0.045455  0.000000 
+ 0.000000  0.954545  0.045455  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.045455  0.000000  0.954545 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.136364  0.590909  0.272727  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.272727  0.681818  0.045455  0.000000 
+ 0.818182  0.000000  0.181818  0.000000 
+ 0.000000  0.318182  0.000000  0.681818 
+ 0.045455  0.545455  0.181818  0.227273 
+ 0.318182  0.000000  0.681818  0.000000 
+ 0.000000  0.181818  0.000000  0.818182 
+ 0.045455  0.000000  0.181818  0.772727 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.909091  0.090909 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.000000  0.590909  0.409091  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCTTCCCATCGTTGGAAGS MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACCTT[CG]C[CA]A[TC][CT][GA]TTGGAAG[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SMc02279_p-147(PF11162)          3.10e-10  [+1(1.55e-10)]_1
+SMb21578_p-55(copA)              4.95e-11  [+1(2.47e-11)]_1
+SMa1013_p-57(copA)               1.01e-10  [+1(5.05e-11)]_1
+SMb20560_p-57(copZ)              8.38e-12  [+1(4.19e-12)]_1
+SMa1009_p-59(copZ)               3.50e-10  [+1(1.75e-10)]_1
+NGR_b08300_p-135(PF11162         6.93e-10  [+1(3.47e-10)]_1
+NGR_b08430_p-57(copA)            1.01e-10  [+1(5.05e-11)]_1
+NGR_b12440_p-58(copA)            2.64e-11  [+1(1.32e-11)]_1
+NGR_b07400_p-58(copA)            4.42e-09  [+1(2.21e-09)]_1
+NGR_b08480_p-57(copZ)            1.01e-09  [+1(5.07e-10)]_1
+pRL110010_p-64(copA)             1.30e-09  [+1(6.48e-10)]_1
+pRL110331_p-56(copA)             8.35e-10  [+1(4.17e-10)]_1
+RHE_PE00007_p-63(copA)           2.08e-09  [+1(1.04e-09)]_1
+Atu1195_p-54(copA)               1.93e-09  [+1(9.64e-10)]_1
+Atu0937_p-110(copA)              1.62e-10  [+1(8.09e-11)]_1
+Meso_2667_p-49(copA)             1.06e-08  [+1(5.31e-09)]_1
+Meso_3894_p-35(copZ)             1.19e-09  [+1(5.94e-10)]_1
+Meso_3893_p-66(copA)             2.50e-12  [+1(1.25e-12)]_1
+Meso_3893_p-115(copA)            1.00e-08  [+1(5.02e-09)]_1
+mlr5325_p-62(copA)               3.42e-09  [+1(1.71e-09)]_1
+BMEI1730_p-77(copA)              2.79e-10  [+1(1.39e-10)]_1
+BMEI1032_p-59(copZ)              1.93e-09  [+1(9.64e-10)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

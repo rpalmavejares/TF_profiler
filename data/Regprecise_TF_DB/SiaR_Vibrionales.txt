@@ -1,0 +1,272 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SiaR_Vibrionales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+VF_0665_p-51(nagA2)      1.0000     19  VF_0663_p-42(nanA)       1.0000     19  
+VF_0663_p-91(nanA)       1.0000     19  VF_0664_p-80(siaR)       1.0000     19  
+VF_0666_p-43(nanE)       1.0000     19  VF_0666_p-195(nanE)      1.0000     19  
+VF_A0786_p-88(ptsG2)     1.0000     19  VF_A0786_p-116(ptsG2)    1.0000     19  
+VSAL_I0899_p-41(nanA)    1.0000     19  VSAL_I0899_p-90(nanA)    1.0000     19  
+VSAL_I0898_p-80(siaR)    1.0000     19  PBPRA2281_p-118(siaP)    1.0000     19  
+PBPRA2287_p-38(nanA)     1.0000     19  PBPRA2286_p-83(siaR)     1.0000     19  
+PBPRA2285_p-78(nanE)     1.0000     19  PBPRA2285_p-105(nanE)    1.0000     19  
+PBPRA2285_p-226(nanE)    1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SiaR_Vibrionales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Vibrionales/SiaR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           19
+nsites: minsites=        2    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             323    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    323    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.334 C 0.173 G 0.164 T 0.328 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.333 C 0.174 G 0.165 T 0.327 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGRAGTWWAACTYCATW MEME-1	width =  17  sites =  17  llr = 243  E-value = 1.1e-065
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::5a124558::::826
+pos.-specific     C  1::::1::21a:4a:21
+probability       G  :a5:9:1:11::::2::
+matrix            T  9::::7652::a6::64
+
+         bits    2.6  *        *  *   
+                 2.3  *        *  *   
+                 2.1  *  *     *  *   
+                 1.8  *  *     *  *   
+Relative         1.6  * **     ** *   
+Entropy          1.3 ** **     ** *   
+(20.6 bits)      1.0 *****    ******  
+                 0.8 *****    ******  
+                 0.5 ******** ********
+                 0.3 *****************
+                 0.0 -----------------
+
+Multilevel           TGAAGTTTAACTTCATA
+consensus              G   AA    C GCT
+sequence                              
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+VF_A0786_p-88(ptsG2)          3  3.76e-09         TT TGGAGTATAACTTCATA           
+PBPRA2285_p-78(nanE)          3  5.92e-09         GG TGGAGTTAAACTTCATT           
+VF_A0786_p-116(ptsG2)         3  8.21e-09         CT TGAAGTTAAACTCCGTA           
+VF_0664_p-80(siaR)            3  8.21e-09         TA TGGAGTTACACTTCACA           
+PBPRA2286_p-83(siaR)          3  2.48e-08         TA TGGAGTTTAGCTTCACA           
+PBPRA2287_p-38(nanA)          3  4.56e-08         TG TGAAGTTTAACTTCGCT           
+VF_0666_p-195(nanE)           3  5.85e-08         AT TGGAGTTACACTCCGAA           
+VSAL_I0898_p-80(siaR)         3  8.47e-08         CA CGGAGTTACACTTCACA           
+PBPRA2285_p-226(nanE)         3  1.09e-07         TA TGGAGTTAGGCTCCATT           
+PBPRA2285_p-105(nanE)         3  1.75e-07         GT TGAAGTAAAACTTCATC           
+VF_0666_p-43(nanE)            3  1.75e-07         AT TGAAGTATTACTCCGTT           
+VF_0663_p-42(nanA)            3  1.94e-07         AA TGAAGAATAACTTCATT           
+VSAL_I0899_p-41(nanA)         3  6.10e-07         AA TGAAGAATGACTTCAAA           
+VF_0665_p-51(nagA2)           3  6.10e-07         TT CGGAGTGTAACTCCAAT           
+PBPRA2281_p-118(siaP)         3  6.46e-07         TT TGAAGAAAACCTTCATA           
+VSAL_I0899_p-90(nanA)         3  9.86e-07         AA TGAAACTTTACTCCATA           
+VF_0663_p-91(nanA)            3  9.86e-07         AA TGAAACTTTACTCCATA           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VF_A0786_p-88(ptsG2)              3.8e-09  2_[+1]
+PBPRA2285_p-78(nanE)              5.9e-09  2_[+1]
+VF_A0786_p-116(ptsG2)             8.2e-09  2_[+1]
+VF_0664_p-80(siaR)                8.2e-09  2_[+1]
+PBPRA2286_p-83(siaR)              2.5e-08  2_[+1]
+PBPRA2287_p-38(nanA)              4.6e-08  2_[+1]
+VF_0666_p-195(nanE)               5.9e-08  2_[+1]
+VSAL_I0898_p-80(siaR)             8.5e-08  2_[+1]
+PBPRA2285_p-226(nanE)             1.1e-07  2_[+1]
+PBPRA2285_p-105(nanE)             1.8e-07  2_[+1]
+VF_0666_p-43(nanE)                1.8e-07  2_[+1]
+VF_0663_p-42(nanA)                1.9e-07  2_[+1]
+VSAL_I0899_p-41(nanA)             6.1e-07  2_[+1]
+VF_0665_p-51(nagA2)               6.1e-07  2_[+1]
+PBPRA2281_p-118(siaP)             6.5e-07  2_[+1]
+VSAL_I0899_p-90(nanA)             9.9e-07  2_[+1]
+VF_0663_p-91(nanA)                9.9e-07  2_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGRAGTWWAACTYCATW width=17 seqs=17
+VF_A0786_p-88(ptsG2)     (    3) TGGAGTATAACTTCATA  1 
+PBPRA2285_p-78(nanE)     (    3) TGGAGTTAAACTTCATT  1 
+VF_A0786_p-116(ptsG2)    (    3) TGAAGTTAAACTCCGTA  1 
+VF_0664_p-80(siaR)       (    3) TGGAGTTACACTTCACA  1 
+PBPRA2286_p-83(siaR)     (    3) TGGAGTTTAGCTTCACA  1 
+PBPRA2287_p-38(nanA)     (    3) TGAAGTTTAACTTCGCT  1 
+VF_0666_p-195(nanE)      (    3) TGGAGTTACACTCCGAA  1 
+VSAL_I0898_p-80(siaR)    (    3) CGGAGTTACACTTCACA  1 
+PBPRA2285_p-226(nanE)    (    3) TGGAGTTAGGCTCCATT  1 
+PBPRA2285_p-105(nanE)    (    3) TGAAGTAAAACTTCATC  1 
+VF_0666_p-43(nanE)       (    3) TGAAGTATTACTCCGTT  1 
+VF_0663_p-42(nanA)       (    3) TGAAGAATAACTTCATT  1 
+VSAL_I0899_p-41(nanA)    (    3) TGAAGAATGACTTCAAA  1 
+VF_0665_p-51(nagA2)      (    3) CGGAGTGTAACTCCAAT  1 
+PBPRA2281_p-118(siaP)    (    3) TGAAGAAAACCTTCATA  1 
+VSAL_I0899_p-90(nanA)    (    3) TGAAACTTTACTCCATA  1 
+VF_0663_p-91(nanA)       (    3) TGAAACTTTACTCCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 51 bayes= 3.20163 E= 1.1e-065 
+ -1073    -57  -1073    143 
+ -1073  -1073    260  -1073 
+    67  -1073    151  -1073 
+   158  -1073  -1073  -1073 
+  -150  -1073    242  -1073 
+   -92    -57  -1073    111 
+     8  -1073   -149     85 
+    50  -1073  -1073     69 
+    67      2    -49    -89 
+   130   -157    -49  -1073 
+ -1073    252  -1073  -1073 
+ -1073  -1073  -1073    161 
+ -1073    124  -1073     85 
+ -1073    252  -1073  -1073 
+   120  -1073     51  -1073 
+   -92     43  -1073     85 
+    82   -157  -1073     11 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 17 E= 1.1e-065 
+ 0.000000  0.117647  0.000000  0.882353 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.529412  0.000000  0.470588  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.117647  0.000000  0.882353  0.000000 
+ 0.176471  0.117647  0.000000  0.705882 
+ 0.352941  0.000000  0.058824  0.588235 
+ 0.470588  0.000000  0.000000  0.529412 
+ 0.529412  0.176471  0.117647  0.176471 
+ 0.823529  0.058824  0.117647  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.411765  0.000000  0.588235 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.764706  0.000000  0.235294  0.000000 
+ 0.176471  0.235294  0.000000  0.588235 
+ 0.588235  0.058824  0.000000  0.352941 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGRAGTWWAACTYCATW MEME-1 regular expression
+--------------------------------------------------------------------------------
+TG[AG]AGT[TA][TA]AACT[TC]C[AG][TC][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+VF_0665_p-51(nagA2)              1.83e-06  2_[+1(6.10e-07)]
+VF_0663_p-42(nanA)               5.81e-07  2_[+1(1.94e-07)]
+VF_0663_p-91(nanA)               2.96e-06  2_[+1(9.86e-07)]
+VF_0664_p-80(siaR)               2.46e-08  2_[+1(8.21e-09)]
+VF_0666_p-43(nanE)               5.26e-07  2_[+1(1.75e-07)]
+VF_0666_p-195(nanE)              1.76e-07  2_[+1(5.85e-08)]
+VF_A0786_p-88(ptsG2)             1.13e-08  2_[+1(3.76e-09)]
+VF_A0786_p-116(ptsG2)            2.46e-08  2_[+1(8.21e-09)]
+VSAL_I0899_p-41(nanA)            1.83e-06  2_[+1(6.10e-07)]
+VSAL_I0899_p-90(nanA)            2.96e-06  2_[+1(9.86e-07)]
+VSAL_I0898_p-80(siaR)            2.54e-07  2_[+1(8.47e-08)]
+PBPRA2281_p-118(siaP)            1.94e-06  2_[+1(6.46e-07)]
+PBPRA2287_p-38(nanA)             1.37e-07  2_[+1(4.56e-08)]
+PBPRA2286_p-83(siaR)             7.43e-08  2_[+1(2.48e-08)]
+PBPRA2285_p-78(nanE)             1.78e-08  2_[+1(5.92e-09)]
+PBPRA2285_p-105(nanE)            5.26e-07  2_[+1(1.75e-07)]
+PBPRA2285_p-226(nanE)            3.26e-07  2_[+1(1.09e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

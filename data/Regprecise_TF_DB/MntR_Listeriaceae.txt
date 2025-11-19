@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/MntR_Listeriaceae.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+lin1463_p-51(mntH)       1.0000     22  lin1963_p-68(mntB)       1.0000     22  
+lmo1424_p-51(mntH)       1.0000     22  lmo1849_p-68(mntB)       1.0000     22  
+lse_1343_p-51(mntH)      1.0000     22  lse_1829_p-69(mntB)      1.0000     22  
+lwe1441_p-51(mntH)       1.0000     22  lwe1868_p-68(mntB)       1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/MntR_Listeriaceae.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Listeriaceae/MntR_Listeriaceae 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           22
+nsites: minsites=        2    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             176    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    176    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.347 C 0.153 G 0.159 T 0.341 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.344 C 0.156 G 0.161 T 0.339 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAWGTTKCYCKWAGKAAACWTT MEME-1	width =  22  sites =   8  llr = 187  E-value = 6.3e-046
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  aa5:::::1::5a::aaa:5::
+pos.-specific     C  :::::::a59::::::::a:::
+probability       G  :::a::5:::5::a5:::::::
+matrix            T  ::5:aa5:4155::5::::5aa
+
+         bits    2.7    *   *     *    *   
+                 2.4    *   *     *    *   
+                 2.1    *   *     *    *   
+                 1.9    *   * *   *    *   
+Relative         1.6 ** *** * *  ** **** **
+Entropy          1.3 ** *** * *  ** **** **
+(33.8 bits)      1.1 ** ***** ** ******* **
+                 0.8 ** ******** ******* **
+                 0.5 **********************
+                 0.3 **********************
+                 0.0 ----------------------
+
+Multilevel           AAAGTTGCCCGAAGGAAACATT
+consensus              T   T T TT  T    T  
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+lwe1441_p-51(mntH)            1  1.02e-11          . AATGTTTCCCGTAGTAAACTTT           
+lse_1343_p-51(mntH)           1  1.02e-11          . AATGTTTCCCGTAGTAAACTTT           
+lmo1424_p-51(mntH)            1  1.02e-11          . AATGTTTCCCGTAGTAAACTTT           
+lin1463_p-51(mntH)            1  1.02e-11          . AATGTTTCCCGTAGTAAACTTT           
+lwe1868_p-68(mntB)            1  1.63e-11          . AAAGTTGCTCTAAGGAAACATT           
+lse_1829_p-69(mntB)           1  1.63e-11          . AAAGTTGCTCTAAGGAAACATT           
+lmo1849_p-68(mntB)            1  1.63e-11          . AAAGTTGCTCTAAGGAAACATT           
+lin1963_p-68(mntB)            1  1.60e-10          . AAAGTTGCATTAAGGAAACATT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lwe1441_p-51(mntH)                  1e-11  [+1]
+lse_1343_p-51(mntH)                 1e-11  [+1]
+lmo1424_p-51(mntH)                  1e-11  [+1]
+lin1463_p-51(mntH)                  1e-11  [+1]
+lwe1868_p-68(mntB)                1.6e-11  [+1]
+lse_1829_p-69(mntB)               1.6e-11  [+1]
+lmo1849_p-68(mntB)                1.6e-11  [+1]
+lin1963_p-68(mntB)                1.6e-10  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAWGTTKCYCKWAGKAAACWTT width=22 seqs=8
+lwe1441_p-51(mntH)       (    1) AATGTTTCCCGTAGTAAACTTT  1 
+lse_1343_p-51(mntH)      (    1) AATGTTTCCCGTAGTAAACTTT  1 
+lmo1424_p-51(mntH)       (    1) AATGTTTCCCGTAGTAAACTTT  1 
+lin1463_p-51(mntH)       (    1) AATGTTTCCCGTAGTAAACTTT  1 
+lwe1868_p-68(mntB)       (    1) AAAGTTGCTCTAAGGAAACATT  1 
+lse_1829_p-69(mntB)      (    1) AAAGTTGCTCTAAGGAAACATT  1 
+lmo1849_p-68(mntB)       (    1) AAAGTTGCTCTAAGGAAACATT  1 
+lin1963_p-68(mntB)       (    1) AAAGTTGCATTAAGGAAACATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 8 bayes= 0.584963 E= 6.3e-046 
+   154   -965   -965   -965 
+   154   -965   -965   -965 
+    54   -965   -965     56 
+  -965   -965    263   -965 
+  -965   -965   -965    156 
+  -965   -965   -965    156 
+  -965   -965    163     56 
+  -965    268   -965   -965 
+  -146    168   -965     15 
+  -965    249   -965   -144 
+  -965   -965    163     56 
+    54   -965   -965     56 
+   154   -965   -965   -965 
+  -965   -965    263   -965 
+  -965   -965    163     56 
+   154   -965   -965   -965 
+   154   -965   -965   -965 
+   154   -965   -965   -965 
+  -965    268   -965   -965 
+    54   -965   -965     56 
+  -965   -965   -965    156 
+  -965   -965   -965    156 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 8 E= 6.3e-046 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.125000  0.500000  0.000000  0.375000 
+ 0.000000  0.875000  0.000000  0.125000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAWGTTKCYCKWAGKAAACWTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AA[AT]GTT[GT]C[CT]C[GT][AT]AG[GT]AAAC[AT]TT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+lin1463_p-51(mntH)               1.02e-11  [+1(1.02e-11)]
+lin1963_p-68(mntB)               1.60e-10  [+1(1.60e-10)]
+lmo1424_p-51(mntH)               1.02e-11  [+1(1.02e-11)]
+lmo1849_p-68(mntB)               1.63e-11  [+1(1.63e-11)]
+lse_1343_p-51(mntH)              1.02e-11  [+1(1.02e-11)]
+lse_1829_p-69(mntB)              1.63e-11  [+1(1.63e-11)]
+lwe1441_p-51(mntH)               1.02e-11  [+1(1.02e-11)]
+lwe1868_p-68(mntB)               1.63e-11  [+1(1.63e-11)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

@@ -1,0 +1,286 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/GlcC_Burkholderia.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Bcep18194_B0034_p-121(gl 1.0000     15  Bcep18194_B0034_p-15(glc 1.0000     15  
+Bcep18194_B0033_p-219(n/ 1.0000     15  Bcep18194_B0033_p-113(n/ 1.0000     15  
+Bamb_4938_p-117(glcD)    1.0000     15  Bamb_4938_p-223(glcD)    1.0000     15  
+Bamb_4937_p-121(glcC)    1.0000     15  Bamb_4937_p-15(glcC)     1.0000     15  
+Bxe_A2218_p-136(glcC)    1.0000     15  Bxe_A2218_p-27(glcC)     1.0000     15  
+Bxe_A2219_p-146(glcD)    1.0000     15  Bxe_A2219_p-255(glcD)    1.0000     15  
+Bphy_7453_p-120(glcC)    1.0000     15  Bphy_5644_p-109(glcC)    1.0000     15  
+Bphy_5644_p-1(glcC)      1.0000     15  Bphy_6609_p-188(glcG)    1.0000     15  
+Bphy_7454_p-113(glcD)    1.0000     15  Bphy_7454_p-220(glcD)    1.0000     15  
+Bphy_5643_p-234(glcD)    1.0000     15  Bphy_5643_p-126(glcD)    1.0000     15  
+Bphy_7453_p-13(glcC)     1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/GlcC_Burkholderia.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Burkholderia/GlcC_Burkholderia 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           15
+nsites: minsites=        2    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             315    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    315    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.254 C 0.244 G 0.248 T 0.254 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.254 C 0.245 G 0.248 T 0.254 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ASTGGTMNKACCAST MEME-1	width =  15  sites =  21  llr = 334  E-value = 3.8e-115
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:::::63:a::a::
+pos.-specific     C  :5::::42::aa:5:
+probability       G  :5:aa::25::::5:
+matrix            T  ::a::a:35:::::9
+
+         bits    2.0   ****   ****  
+                 1.8   ****   ****  
+                 1.6   ****   ****  
+                 1.4 * ****   **** *
+Relative         1.2 * ****   **** *
+Entropy          1.0 ******* *******
+(23.0 bits)      0.8 ******* *******
+                 0.6 ******* *******
+                 0.4 ******* *******
+                 0.2 ******* *******
+                 0.0 ---------------
+
+Multilevel           ACTGGTATTACCAGT
+consensus             G    CAG    C 
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Bphy_6609_p-188(glcG)         1  1.95e-09          . ACTGGTATGACCAGT           
+Bphy_5643_p-126(glcD)         1  7.80e-09          . ACTGGTATTACCACT           
+Bphy_5643_p-234(glcD)         1  7.80e-09          . ACTGGTATGACCACT           
+Bphy_7454_p-220(glcD)         1  7.80e-09          . ACTGGTATGACCACT           
+Bamb_4938_p-223(glcD)         1  7.80e-09          . ACTGGTATGACCACT           
+Bcep18194_B0033_p-219(n/      1  7.80e-09          . ACTGGTATGACCACT           
+Bphy_5644_p-109(glcC)         1  1.55e-08          . AGTGGTAATACCAGT           
+Bphy_7453_p-13(glcC)          1  2.88e-08          . AGTGGTCATACCAGT           
+Bphy_5644_p-1(glcC)           1  2.88e-08          . AGTGGTCATACCAGT           
+Bamb_4937_p-15(glcC)          1  2.88e-08          . AGTGGTCATACCAGT           
+Bcep18194_B0034_p-15(glc      1  2.88e-08          . AGTGGTCATACCAGT           
+Bphy_7454_p-113(glcD)         1  4.20e-08          . ACTGGTACGACCACT           
+Bxe_A2219_p-255(glcD)         1  4.20e-08          . ACTGGTACGACCACT           
+Bxe_A2219_p-146(glcD)         1  4.20e-08          . ACTGGTACGACCACT           
+Bphy_7453_p-120(glcC)         1  5.68e-08          . AGTGGTCGTACCAGT           
+Bxe_A2218_p-27(glcC)          1  5.68e-08          . AGTGGTCGTACCAGT           
+Bxe_A2218_p-136(glcC)         1  5.68e-08          . AGTGGTCGTACCAGT           
+Bcep18194_B0033_p-113(n/      1  9.12e-08          . ACTGGTATGACCACA           
+Bcep18194_B0034_p-121(gl      1  1.74e-07          . TGTGGTCATACCAGT           
+Bamb_4938_p-117(glcD)         1  2.26e-07          . ACTGGTACGACCACG           
+Bamb_4937_p-121(glcC)         1  2.84e-07          . CGTGGTCGTACCAGT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bphy_6609_p-188(glcG)               2e-09  [+1]
+Bphy_5643_p-126(glcD)             7.8e-09  [+1]
+Bphy_5643_p-234(glcD)             7.8e-09  [+1]
+Bphy_7454_p-220(glcD)             7.8e-09  [+1]
+Bamb_4938_p-223(glcD)             7.8e-09  [+1]
+Bcep18194_B0033_p-219(n/          7.8e-09  [+1]
+Bphy_5644_p-109(glcC)             1.6e-08  [+1]
+Bphy_7453_p-13(glcC)              2.9e-08  [+1]
+Bphy_5644_p-1(glcC)               2.9e-08  [+1]
+Bamb_4937_p-15(glcC)              2.9e-08  [+1]
+Bcep18194_B0034_p-15(glc          2.9e-08  [+1]
+Bphy_7454_p-113(glcD)             4.2e-08  [+1]
+Bxe_A2219_p-255(glcD)             4.2e-08  [+1]
+Bxe_A2219_p-146(glcD)             4.2e-08  [+1]
+Bphy_7453_p-120(glcC)             5.7e-08  [+1]
+Bxe_A2218_p-27(glcC)              5.7e-08  [+1]
+Bxe_A2218_p-136(glcC)             5.7e-08  [+1]
+Bcep18194_B0033_p-113(n/          9.1e-08  [+1]
+Bcep18194_B0034_p-121(gl          1.7e-07  [+1]
+Bamb_4938_p-117(glcD)             2.3e-07  [+1]
+Bamb_4937_p-121(glcC)             2.8e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ASTGGTMNKACCAST width=15 seqs=21
+Bphy_6609_p-188(glcG)    (    1) ACTGGTATGACCAGT  1 
+Bphy_5643_p-126(glcD)    (    1) ACTGGTATTACCACT  1 
+Bphy_5643_p-234(glcD)    (    1) ACTGGTATGACCACT  1 
+Bphy_7454_p-220(glcD)    (    1) ACTGGTATGACCACT  1 
+Bamb_4938_p-223(glcD)    (    1) ACTGGTATGACCACT  1 
+Bcep18194_B0033_p-219(n/ (    1) ACTGGTATGACCACT  1 
+Bphy_5644_p-109(glcC)    (    1) AGTGGTAATACCAGT  1 
+Bphy_7453_p-13(glcC)     (    1) AGTGGTCATACCAGT  1 
+Bphy_5644_p-1(glcC)      (    1) AGTGGTCATACCAGT  1 
+Bamb_4937_p-15(glcC)     (    1) AGTGGTCATACCAGT  1 
+Bcep18194_B0034_p-15(glc (    1) AGTGGTCATACCAGT  1 
+Bphy_7454_p-113(glcD)    (    1) ACTGGTACGACCACT  1 
+Bxe_A2219_p-255(glcD)    (    1) ACTGGTACGACCACT  1 
+Bxe_A2219_p-146(glcD)    (    1) ACTGGTACGACCACT  1 
+Bphy_7453_p-120(glcC)    (    1) AGTGGTCGTACCAGT  1 
+Bxe_A2218_p-27(glcC)     (    1) AGTGGTCGTACCAGT  1 
+Bxe_A2218_p-136(glcC)    (    1) AGTGGTCGTACCAGT  1 
+Bcep18194_B0033_p-113(n/ (    1) ACTGGTATGACCACA  1 
+Bcep18194_B0034_p-121(gl (    1) TGTGGTCATACCAGT  1 
+Bamb_4938_p-117(glcD)    (    1) ACTGGTACGACCACG  1 
+Bamb_4937_p-121(glcC)    (    1) CGTGGTCGTACCAGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 21 bayes= 1.38995 E= 3.8e-115 
+   183   -236  -1104   -241 
+ -1104    110     94  -1104 
+ -1104  -1104  -1104    198 
+ -1104  -1104    201  -1104 
+ -1104  -1104    201  -1104 
+ -1104  -1104  -1104    198 
+   117     81  -1104  -1104 
+    17    -36    -38     39 
+ -1104  -1104     94    104 
+   198  -1104  -1104  -1104 
+ -1104    203  -1104  -1104 
+ -1104    203  -1104  -1104 
+   198  -1104  -1104  -1104 
+ -1104     96    108  -1104 
+  -241  -1104   -238    183 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 21 E= 3.8e-115 
+ 0.904762  0.047619  0.000000  0.047619 
+ 0.000000  0.523810  0.476190  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.571429  0.428571  0.000000  0.000000 
+ 0.285714  0.190476  0.190476  0.333333 
+ 0.000000  0.000000  0.476190  0.523810 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.476190  0.523810  0.000000 
+ 0.047619  0.000000  0.047619  0.904762 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASTGGTMNKACCAST MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CG]TGGT[AC][TA][TG]ACCA[GC]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.02 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Bcep18194_B0034_p-121(gl         1.74e-07  [+1(1.74e-07)]
+Bcep18194_B0034_p-15(glc         2.88e-08  [+1(2.88e-08)]
+Bcep18194_B0033_p-219(n/         7.80e-09  [+1(7.80e-09)]
+Bcep18194_B0033_p-113(n/         9.12e-08  [+1(9.12e-08)]
+Bamb_4938_p-117(glcD)            2.26e-07  [+1(2.26e-07)]
+Bamb_4938_p-223(glcD)            7.80e-09  [+1(7.80e-09)]
+Bamb_4937_p-121(glcC)            2.84e-07  [+1(2.84e-07)]
+Bamb_4937_p-15(glcC)             2.88e-08  [+1(2.88e-08)]
+Bxe_A2218_p-136(glcC)            5.68e-08  [+1(5.68e-08)]
+Bxe_A2218_p-27(glcC)             5.68e-08  [+1(5.68e-08)]
+Bxe_A2219_p-146(glcD)            4.20e-08  [+1(4.20e-08)]
+Bxe_A2219_p-255(glcD)            4.20e-08  [+1(4.20e-08)]
+Bphy_7453_p-120(glcC)            5.68e-08  [+1(5.68e-08)]
+Bphy_5644_p-109(glcC)            1.55e-08  [+1(1.55e-08)]
+Bphy_5644_p-1(glcC)              2.88e-08  [+1(2.88e-08)]
+Bphy_6609_p-188(glcG)            1.95e-09  [+1(1.95e-09)]
+Bphy_7454_p-113(glcD)            4.20e-08  [+1(4.20e-08)]
+Bphy_7454_p-220(glcD)            7.80e-09  [+1(7.80e-09)]
+Bphy_5643_p-234(glcD)            7.80e-09  [+1(7.80e-09)]
+Bphy_5643_p-126(glcD)            7.80e-09  [+1(7.80e-09)]
+Bphy_7453_p-13(glcC)             2.88e-08  [+1(2.88e-08)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

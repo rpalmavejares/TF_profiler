@@ -1,0 +1,247 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LexA_Desulfuromonadales.Xml.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Gmet_1439_p-35(lexA)     1.0000     18  GSU0041_p-44(lexA)       1.0000     18  
+GSU1617_p-36(lexA)       1.0000     18  Gura_1142_p-30(lexA)     1.0000     18  
+Gura_0162_p-168(Gura_016 1.0000     18  GM21_2490_p-33(lexA)     1.0000     18  
+GM21_2490_p-49(lexA)     1.0000     18  Glov_1232_p-9(lexA)      1.0000     18  
+Glov_1070_p-26(dinB)     1.0000     18  Pcar_1739_p-32(lexA)     1.0000     18  
+Pcar_0121_p-115(Gura_016 1.0000     18  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LexA_Desulfuromonadales.Xml.fasta -oc /home/dtravisany/gitrepo/RegPrecise/Motif_PWM/Desulfuromonadales/LexA_Desulfuromonadales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           18
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             198    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    198    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.273 C 0.192 G 0.242 T 0.293 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.193 G 0.243 T 0.292 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTTGTCATATGWHAACC MEME-1	width =  18  sites =  11  llr = 170  E-value = 3.2e-045
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::311:9:7215489::
+pos.-specific     C  1:1:::a:3:::12::98
+probability       G  9a::82::1::921::11
+matrix            T  ::9717:1638:3421:1
+
+         bits    2.4       *           
+                 2.1  *    *           
+                 1.9  *    *         * 
+                 1.7 **    *    *    * 
+Relative         1.4 ***   **   *   ***
+Entropy          1.2 *** * **  **  ****
+(22.3 bits)      0.9 ***** ** ***  ****
+                 0.7 ************  ****
+                 0.5 ************  ****
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           GGTTGTCATATGAAAACC
+consensus               A    CT  TT    
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+GM21_2490_p-33(lexA)          1  5.96e-10          . GGTTGTCATAAGAAAACC           
+Glov_1232_p-9(lexA)           1  2.90e-09          . GGTAGTCATATGAATACC           
+GSU0041_p-44(lexA)            1  3.20e-09          . GGTTGTCACATGTATACC           
+Glov_1070_p-26(dinB)          1  4.07e-09          . GGTAGTCATTTGGTAACC           
+GSU1617_p-36(lexA)            1  5.60e-09          . GGTTGACATATGTCAACC           
+Gmet_1439_p-35(lexA)          1  9.50e-09          . GGTTGGCACATGTGAACC           
+Pcar_1739_p-32(lexA)          1  7.99e-08          . GGCAGGCATAAGATAACC           
+Pcar_0121_p-115(Gura_016      1  1.35e-07          . CGTTGTCACATGCTATCC           
+Gura_1142_p-30(lexA)          1  1.56e-07          . GGTTATCATTTGACAACT           
+GM21_2490_p-49(lexA)          1  2.19e-07          . GGTTGTCATTTGGTAAGG           
+Gura_0162_p-168(Gura_016      1  9.13e-07          . GGTTTTCTGATAAAAACC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GM21_2490_p-33(lexA)                6e-10  [+1]
+Glov_1232_p-9(lexA)               2.9e-09  [+1]
+GSU0041_p-44(lexA)                3.2e-09  [+1]
+Glov_1070_p-26(dinB)              4.1e-09  [+1]
+GSU1617_p-36(lexA)                5.6e-09  [+1]
+Gmet_1439_p-35(lexA)              9.5e-09  [+1]
+Pcar_1739_p-32(lexA)                8e-08  [+1]
+Pcar_0121_p-115(Gura_016          1.4e-07  [+1]
+Gura_1142_p-30(lexA)              1.6e-07  [+1]
+GM21_2490_p-49(lexA)              2.2e-07  [+1]
+Gura_0162_p-168(Gura_016          9.1e-07  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTTGTCATATGWHAACC width=18 seqs=11
+GM21_2490_p-33(lexA)     (    1) GGTTGTCATAAGAAAACC  1 
+Glov_1232_p-9(lexA)      (    1) GGTAGTCATATGAATACC  1 
+GSU0041_p-44(lexA)       (    1) GGTTGTCACATGTATACC  1 
+Glov_1070_p-26(dinB)     (    1) GGTAGTCATTTGGTAACC  1 
+GSU1617_p-36(lexA)       (    1) GGTTGACATATGTCAACC  1 
+Gmet_1439_p-35(lexA)     (    1) GGTTGGCACATGTGAACC  1 
+Pcar_1739_p-32(lexA)     (    1) GGCAGGCATAAGATAACC  1 
+Pcar_0121_p-115(Gura_016 (    1) CGTTGTCACATGCTATCC  1 
+Gura_1142_p-30(lexA)     (    1) GGTTATCATTTGACAACT  1 
+GM21_2490_p-49(lexA)     (    1) GGTTGTCATTTGGTAAGG  1 
+Gura_0162_p-168(Gura_016 (    1) GGTTTTCTGATAAAAACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 11 bayes= 0.921997 E= 3.2e-045 
+ -1010   -109    191  -1010 
+ -1010  -1010    204  -1010 
+ -1010   -109  -1010    164 
+     0  -1010  -1010    132 
+  -158  -1010    175   -168 
+  -158  -1010    -42    132 
+ -1010    237  -1010  -1010 
+   174  -1010  -1010   -168 
+ -1010     50   -141    112 
+   142  -1010  -1010    -10 
+   -58  -1010  -1010    149 
+  -158  -1010    191  -1010 
+    74   -109    -42    -10 
+    42     -9   -141     32 
+   159  -1010  -1010    -68 
+   174  -1010  -1010   -168 
+ -1010    223   -141  -1010 
+ -1010    208   -141   -168 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 11 E= 3.2e-045 
+ 0.000000  0.090909  0.909091  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.090909  0.000000  0.909091 
+ 0.272727  0.000000  0.000000  0.727273 
+ 0.090909  0.000000  0.818182  0.090909 
+ 0.090909  0.000000  0.181818  0.727273 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.000000  0.272727  0.090909  0.636364 
+ 0.727273  0.000000  0.000000  0.272727 
+ 0.181818  0.000000  0.000000  0.818182 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.454545  0.090909  0.181818  0.272727 
+ 0.363636  0.181818  0.090909  0.363636 
+ 0.818182  0.000000  0.000000  0.181818 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.000000  0.909091  0.090909  0.000000 
+ 0.000000  0.818182  0.090909  0.090909 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTTGTCATATGWHAACC MEME-1 regular expression
+--------------------------------------------------------------------------------
+GGT[TA]GTCA[TC][AT]TG[AT][AT]AACC
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.01 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Gmet_1439_p-35(lexA)             9.50e-09  [+1(9.50e-09)]
+GSU0041_p-44(lexA)               3.20e-09  [+1(3.20e-09)]
+GSU1617_p-36(lexA)               5.60e-09  [+1(5.60e-09)]
+Gura_1142_p-30(lexA)             1.56e-07  [+1(1.56e-07)]
+Gura_0162_p-168(Gura_016         9.13e-07  [+1(9.13e-07)]
+GM21_2490_p-33(lexA)             5.96e-10  [+1(5.96e-10)]
+GM21_2490_p-49(lexA)             2.19e-07  [+1(2.19e-07)]
+Glov_1232_p-9(lexA)              2.90e-09  [+1(2.90e-09)]
+Glov_1070_p-26(dinB)             4.07e-09  [+1(4.07e-09)]
+Pcar_1739_p-32(lexA)             7.99e-08  [+1(7.99e-08)]
+Pcar_0121_p-115(Gura_016         1.35e-07  [+1(1.35e-07)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: optimus
+
+********************************************************************************

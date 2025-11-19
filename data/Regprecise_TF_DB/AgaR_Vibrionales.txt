@@ -1,0 +1,265 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= AgaR_Vibrionales.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+XVV21025(agaR)Score=7.4, 1.0000     27  VV21025(agaR)Score=7,Pos 1.0000     27  
+VF_A0989(agaY)Score=6.5P 1.0000     27  VF_A1006(agaR2)Score=6.4 1.0000     27  
+VAS14_15564(agaR)Score=7 1.0000     27  VAS14_15564(agaR)Score=7 1.0000     27  
+XPBPRB1036(agaR)Score=7. 1.0000     27  PBPRB0157(agaY)Score=6.6 1.0000     27  
+PBPRB1036(agaR)Score=7.4 1.0000     27  PBPRB0140(agaR2)Score=6. 1.0000     27  
+XPBPRB0140(agaR2)Score=7 1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna AgaR_Vibrionales.fasta -oc AgaR_Vibrionales 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            8    maxw=           27
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=             297    N=              11    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.378 C 0.176 G 0.284 T 0.162 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.376 C 0.177 G 0.283 T 0.164 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  27  sites =  11  llr = 114  E-value = 5.2e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  19aa:54444444444444441:9aa:
+pos.-specific     C  ::::312222222222222226:::::
+probability       G  9:::75333333333333333:a:::8
+matrix            T  :1::::2222222222222223:1::2
+
+         bits    2.6                            
+                 2.4                            
+                 2.1                            
+                 1.8                       *    
+Relative         1.6                       *    
+Entropy          1.3 * **                 ** ***
+(14.9 bits)      1.0 *****                ******
+                 0.8 *****                ******
+                 0.5 *****                ******
+                 0.3 ******               ******
+                 0.0 ---------------------------
+
+Multilevel           GAAAGAAAAAAAAAAAAAAAACGAAAG
+consensus                CGGGGGGGGGGGGGGGGT     
+sequence                                        
+                                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                       Site          
+-------------             ----- ---------            ---------------------------
+PBPRB1036(agaR)Score=7.4      1  9.08e-07          . GAAAGGNNNNNNNNNNNNNNNCGAAAG           
+XVV21025(agaR)Score=7.4,      1  9.08e-07          . GAAAGGNNNNNNNNNNNNNNNCGAAAG           
+VAS14_15564(agaR)Score=7      1  2.11e-06          . GAAAGANNNNNNNNNNNNNNNCGAAAG           
+XPBPRB0140(agaR2)Score=7      1  4.28e-06          . GAAAGGNNNNNNNNNNNNNNNTGAAAG           
+VF_A1006(agaR2)Score=6.4      1  9.53e-06          . GTAAGGNNNNNNNNNNNNNNNCGAAAG           
+XPBPRB1036(agaR)Score=7.      1  1.08e-05          . GAAACANNNNNNNNNNNNNNNCGAAAT           
+PBPRB0140(agaR2)Score=6.      1  1.19e-05          . GAAAGANNNNNNNNNNNNNNNCGTAAG           
+VV21025(agaR)Score=7,Pos      1  1.30e-05          . GAAAGCNNNNNNNNNNNNNNNTGAAAG           
+VAS14_15564(agaR)Score=7      1  1.68e-05          . GAAACANNNNNNNNNNNNNNNTGAAAT           
+PBPRB0157(agaY)Score=6.6      1  2.26e-05          . GAAAGGNNNNNNNNNNNNNNNAGAAAG           
+VF_A0989(agaY)Score=6.5P      1  3.48e-05          . AAAACANNNNNNNNNNNNNNNCGAAAG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PBPRB1036(agaR)Score=7.4          9.1e-07  [+1]
+XVV21025(agaR)Score=7.4,          9.1e-07  [+1]
+VAS14_15564(agaR)Score=7          2.1e-06  [+1]
+XPBPRB0140(agaR2)Score=7          4.3e-06  [+1]
+VF_A1006(agaR2)Score=6.4          9.5e-06  [+1]
+XPBPRB1036(agaR)Score=7.          1.1e-05  [+1]
+PBPRB0140(agaR2)Score=6.          1.2e-05  [+1]
+VV21025(agaR)Score=7,Pos          1.3e-05  [+1]
+VAS14_15564(agaR)Score=7          1.7e-05  [+1]
+PBPRB0157(agaY)Score=6.6          2.3e-05  [+1]
+VF_A0989(agaY)Score=6.5P          3.5e-05  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=27 seqs=11
+PBPRB1036(agaR)Score=7.4 (    1) GAAAGGNNNNNNNNNNNNNNNCGAAAG  1 
+XVV21025(agaR)Score=7.4, (    1) GAAAGGNNNNNNNNNNNNNNNCGAAAG  1 
+VAS14_15564(agaR)Score=7 (    1) GAAAGANNNNNNNNNNNNNNNCGAAAG  1 
+XPBPRB0140(agaR2)Score=7 (    1) GAAAGGNNNNNNNNNNNNNNNTGAAAG  1 
+VF_A1006(agaR2)Score=6.4 (    1) GTAAGGNNNNNNNNNNNNNNNCGAAAG  1 
+XPBPRB1036(agaR)Score=7. (    1) GAAACANNNNNNNNNNNNNNNCGAAAT  1 
+PBPRB0140(agaR2)Score=6. (    1) GAAAGANNNNNNNNNNNNNNNCGTAAG  1 
+VV21025(agaR)Score=7,Pos (    1) GAAAGCNNNNNNNNNNNNNNNTGAAAG  1 
+VAS14_15564(agaR)Score=7 (    1) GAAACANNNNNNNNNNNNNNNTGAAAT  1 
+PBPRB0157(agaY)Score=6.6 (    1) GAAAGGNNNNNNNNNNNNNNNAGAAAG  1 
+VF_A0989(agaY)Score=6.5P (    1) AAAACANNNNNNNNNNNNNNNCGAAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 27 n= 11 bayes= 0.921997 E= 5.2e-019 
+  -205  -1010    168  -1010 
+   127  -1010  -1010    -85 
+   141  -1010  -1010  -1010 
+   141  -1010  -1010  -1010 
+ -1010     62    136  -1010 
+    27    -96     68  -1010 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+     0      0      0      0 
+  -205    185  -1010     74 
+ -1010  -1010    182  -1010 
+   127  -1010  -1010    -85 
+   141  -1010  -1010  -1010 
+   141  -1010  -1010  -1010 
+ -1010  -1010    153     15 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 27 nsites= 11 E= 5.2e-019 
+ 0.090909  0.000000  0.909091  0.000000 
+ 0.909091  0.000000  0.000000  0.090909 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.272727  0.727273  0.000000 
+ 0.454545  0.090909  0.454545  0.000000 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.376246  0.176910  0.283223  0.163621 
+ 0.090909  0.636364  0.000000  0.272727 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.909091  0.000000  0.000000  0.090909 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.818182  0.181818 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+GAAA[GC][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][AG][CT]GAAAG
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+XVV21025(agaR)Score=7.4,         9.08e-07  [+1(9.08e-07)]
+VV21025(agaR)Score=7,Pos         1.30e-05  [+1(1.30e-05)]
+VF_A0989(agaY)Score=6.5P         3.48e-05  [+1(3.48e-05)]
+VF_A1006(agaR2)Score=6.4         9.53e-06  [+1(9.53e-06)]
+VAS14_15564(agaR)Score=7         2.11e-06  [+1(2.11e-06)]
+VAS14_15564(agaR)Score=7         1.68e-05  [+1(1.68e-05)]
+XPBPRB1036(agaR)Score=7.         1.08e-05  [+1(1.08e-05)]
+PBPRB0157(agaY)Score=6.6         2.26e-05  [+1(2.26e-05)]
+PBPRB1036(agaR)Score=7.4         9.08e-07  [+1(9.08e-07)]
+PBPRB0140(agaR2)Score=6.         1.19e-05  [+1(1.19e-05)]
+XPBPRB0140(agaR2)Score=7         4.28e-06  [+1(4.28e-06)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: leftraru1
+
+********************************************************************************
