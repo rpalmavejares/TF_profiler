@@ -19,7 +19,16 @@ Once all operons are generated, we mark the PRR or Potential Regulatory Region, 
 The size of the PRR is shown in the model as 300bp upstream of the first CDS in the operon, and 30bp downstrean of the first CDS in the operon.
 This PRR is also generated with operon with only 1 CDS of size.
 
+### TF Profile: Stage 2.
+
+### TF Profile: Stage 3.
 
 <br>
 
 ![A descriptive alt text for your image](imgs/TF_profiler_Full_Model.jpg)
+
+
+### TF Profile: Regulatory Profile.
+
+### Running the Pipeline.
+
