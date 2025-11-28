@@ -1,13 +1,13 @@
 # TF profiler
 TF profiler is a tool created to search TF motifs into genomic material (MetaG, MAGs, etc) given a simplified regulation model. The tool will calculate de abundace of Motifs that regulate CDS inside marked operons on the genomic source.
 
-## TF Profiler Pipeline
+## TF Profiler Pipeline and What it does.
 
 The pipeline is based on 3 Stages, which are described on the image below.
 
 As a short explanation:
 
-### TF Profile: Stage 1
+### TF Profile: Stage 1.
 
 We obtain all the CDS from contigs in Metagenomes or Single Genomes (MAGs) provided by the user.
 These contigs must not contain "N" or "unknown" base pairs, so is imperative to not use scaffolds with uncertain nucleotides.
@@ -19,9 +19,6 @@ Once all operons are generated, we mark the PRR or Potential Regulatory Region, 
 The size of the PRR is shown in the model as 300bp upstream of the first CDS in the operon, and 30bp downstrean of the first CDS in the operon.
 This PRR is also generated with operon with only 1 CDS of size.
 
-
-
-The 
 
 <br>
 
