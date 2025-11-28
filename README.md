@@ -28,7 +28,7 @@ This PRR is also generated with operon with only 1 CDS of size.
 ![A descriptive alt text for your image](imgs/TF_profiler_Full_Model.jpg)
 
 
-### TF Profile: Regulatory Matrix.
+### TF Profile: Regulation Abundance Matrix.
 
 ### Running the Pipeline.
 
