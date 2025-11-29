@@ -19,7 +19,10 @@ Once all operons are generated, we mark the PRR or Potential Regulatory Region, 
 The size of the PRR is shown in the model as 300bp upstream of the first CDS in the operon, and 30bp downstrean of the first CDS in the operon.
 This PRR is also generated with operon with only 1 CDS of size.
 
+Finally, with the use of MAST (MEME suite) we map a set of Transcriptipn Factor motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
+
 ### TF Profile: Stage 2.
+
 
 ### TF Profile: Stage 3.
 
