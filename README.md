@@ -30,7 +30,8 @@ These Stages are run togheter, but they are easier to explain on 2 separated way
 #### Stage 2:
 
 This step takes the file created in the previous step (motif profile) and parses it together with 2 new input. 
-* CDS Features:
+* CDS Features File:
+  <br>
   A tab separated file containing the CDS IDs and a genomic description. This could be gene_names, COG categories, KO pathways, EC numbers, OG, etc.
 
 ```
