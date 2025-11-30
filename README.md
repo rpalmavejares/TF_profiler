@@ -21,13 +21,32 @@ This PRR is also generated with operon with only 1 CDS of size.
 
 Finally, with the use of MAST (MEME suite) we map a set of Transcriptipn Factor (TF) motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
 These motifs are categorised in 88 macro groups or TF.
+Once the mapping of all motifs is finished, a final file wit core information is generated called "motif profile".
 
-### TF Profile: Stage 2.
+### TF Profile: Stage 2 and Stage 3
 
-This stage 
+These Stages are run togheter, but they are easier to explain on 2 separated ways.
+
+#### Stage 2:
+
+This step takes the file created in the previous step (motif profile) and parses it together with 2 new input. 
+* CDS Features:
+  A tab separated file containing the CDS IDs and a genomic description. This could be gene_names, COG categories, KO pathways, EC numbers, OG, etc.
+
+```
+CDS_IDs                              GENE_NAME
+sample_1_contig_Nº_cds_Nº                    -
+sample_1_contig_Nº_cds_Nº+1                liga
+sample_1_contig_Nº_cds_Nº+2                 pkg
+sample_1_contig_Nº_cds_Nº+3                 fur
+sample_1_contig_Nº_cds_Nº+4                  -
+
+```
 
 
-### TF Profile: Stage 3.
+
+  * Contigs / CDS Coverage
+
 
 <br>
 
