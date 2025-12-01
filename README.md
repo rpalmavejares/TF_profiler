@@ -9,6 +9,8 @@ As a short explanation:
 
 ### TF Profile: Stage 1.
 
+#### Description
+
 We obtain all the CDS from contigs in Metagenomes or Single Genomes (MAGs) provided by the user.
 These contigs must not contain "N" or "unknown" base pairs, so is imperative to not use scaffolds with uncertain nucleotides.
 
@@ -23,6 +25,17 @@ Finally, with the use of MAST (MEME suite) we map a set of Transcriptipn Factor 
 These motifs are categorised in 88 macro groups or TF.
 Once the mapping of all motifs is finished, a final file wit core information is generated called "motif profile".
 
+#### Inputs.
+
+At this stage we require 2 different files
+* Fasta File with Contigs
+  
+```
+>
+```
+
+* PTT File with CDS positions
+ 
 ### TF Profile: Stage 2 and Stage 3
 
 These Stages are run togheter, but they are easier to explain on 2 separated ways.
@@ -36,13 +49,13 @@ This step takes the file created in the previous step (motif profile) and parses
 
 ```
 CDS_IDs                              GENE_NAME
-sample_1_contig_Nº_cds_Nº                    -
-sample_1_contig_Nº_cds_Nº+1                liga
-sample_1_contig_Nº_cds_Nº+2                 pkg
-sample_1_contig_Nº_cds_Nº+3                 fur
-sample_1_contig_Nº_cds_Nº+4                  -
-
+sample-1_contig-Nº_cds-Nº                    -
+sample-1_contig-Nº_cds-Nº+1                liga
+sample-1_contig-Nº_cds-Nº+2                 pkg
+sample-1_contig-Nº_cds-Nº+3                 fur
+sample-1_contig-Nº_cds-Nº+4                  -
 ```
+
 
 
 
