@@ -2,6 +2,7 @@ import sys
 from Bio import SeqIO
 from Bio.Seq import Seq
 import argparse
+import os
 
 
 def get_inter_left_start(current_tuple):
@@ -116,38 +117,61 @@ def get_paired_inter_left_stop(current_tuple):
     return int(current_tuple[0])+prr_stop
 
 
+def check_extension_fasta(choices):
+    class Act(argparse.Action):
+        def __call__(self, parser, namespace, fname, option_string=None):
+            # Extract the extension
+            ext = os.path.splitext(fname)[1][1:].lower()
+            if ext not in choices:
+                parser.error(f"File must be the correct format: {choices}")
+            setattr(namespace, self.dest, fname)
+    return Act
+
+
+def check_extension_pos(choices):
+    class Act(argparse.Action):
+        def __call__(self, parser, namespace, fname, option_string=None):
+            # Extract the extension
+            ext = os.path.splitext(fname)[1][1:].lower()
+            if ext not in choices:
+                parser.error(f"File must be the correct format: {choices}")
+            setattr(namespace, self.dest, fname)
+    return Act
+
 def main():
 
 
-    parser = argparser.ArgumentParser(
+    parser = argparse.ArgumentParser(
         description="",
         usage="")
 
+# Output == <Sample_Name>_operon_model.csv
 
-    parser.add_argument("cds_positions_file",metavar="",help="")
-    parser.add_argument("assembly_file",metavar="",help="")
-    parser.add_argument("prr_start",metavar="",type=int,default=300,required=True,help="")
-    parser.add_argument("prr_stop",metavar="",type=int,default=30,required=True,help="")
-    parser.add_argument("cds_operon_distance",metavar="",type=int,default=50,required=True,help="")
-    parser.add_argument("prr_edge_offset",metavar="",type=int,default=50,required=True,help="")
+    parser.add_argument("--cds_file",metavar="",action=check_extension_pos({'ptt','gff','gff3'}),required=True,help="Path to file containing the positions of all CDS along your genomic sample. (PTT or GFF format)")
+    parser.add_argument("--assembly",metavar="",action=check_extension_fasta({'fasta','fa','fna'}),required=True,help="Path to fasta formated genome")
+    parser.add_argument("--prr_start",metavar="",type=int,default=300,required=True,help="Distance upstream of first CDS from operon start to consider for your PRR")
+    parser.add_argument("--prr_stop",metavar="",type=int,default=30,required=True,help="Distance downtream of first CDS from operon start to consider for your PRR")
+    parser.add_argument("--cds_dist",metavar="",type=int,default=50,required=True,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
+    parser.add_argument("--offset",metavar="",type=int,default=50,required=True,help="Distance from the edge of contigs to consider as offset")
 
     if len(sys.argv) == 1:
+        print("\n")
         parser.print_help()
         sys.exit(1)
 
-    args = parser.parser_args()
+    args = parser.parse_args()
 
     #cds_positions_file = open(sys.argv[1],"r")
     #prr_start = int(sys.argv[3])          #150
     #prr_stop = int(sys.argv[4])            #10)
-    #prr_edge_offset = int(sys.argv[5])   #50
-    #minimal_intergenic_zone = prr_edge_offset + prr_stop
-    #cds_operon_distance = int(sys.argv[6])+1             #50
+    #offset = int(sys.argv[5])   #50
+    #minimal_intergenic_zone = offset + prr_stop
+    #cds_dist = int(sys.argv[6])+1             #50
 
 
 
-    global cds_positions_file
-    global prr_start, prr_stop, prr_edge_offset, minimal_intergenic_zone, cds_operon_distance
+    global cds_file
+    global prr_start, prr_stop, offset, minimal_intergenic_zone, cds_dist
     global contigs_size, contigs_dna 
     global contigs_with_gene_names
     global contigs_with_gene_positions
@@ -155,15 +179,15 @@ def main():
     
     prr_start = args.prr_start
     prr_stop = args.prr_stop
-    prr_edge_offset = args.prr_edge_offset
-    minimal_intergenic_zone = prr_edge_offset + prr_stop
-    cds_operon_distance = args.cds_operon_distance + 1
+    offset = args.offset
+    minimal_intergenic_zone = offset + prr_stop
+    cds_dist = args.cds_dist + 1
 
 
     contigs_size=dict()
     contigs_dna=dict()
 
-    with open(args.assembly_file) as handle:
+    with open(args.assembly) as handle:
         for record in SeqIO.parse(handle,"fasta"):
             contigs_size[record.id]=len(record.seq)
             contigs_dna[record.id]=record.seq
@@ -175,7 +199,7 @@ def main():
     contigs_with_gene_strand = dict()
 
     line_counter=1
-    with open(args.cds_position_file) as cpf:
+    with open(args.cds_file) as cpf:
         for lines in cpf:
             aux=lines.split("\t")
             if(line_counter==2 or line_counter==3):
@@ -291,7 +315,7 @@ def main():
                         
                         new_operon.append(new_plus_array_names[id_tuples])
                         current_tuple=new_plus_array_positions[id_tuples]
-                        if (id_tuples+1<=(len(new_plus_array_strand)-1) and (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1])) >=cds_operon_distance):
+                        if (id_tuples+1<=(len(new_plus_array_strand)-1) and (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1])) >=cds_dist):
                             if(no_start==True):
                                 no_start=False
                                 id_tuples+=1
@@ -321,7 +345,7 @@ def main():
                                 flag=True
 
 
-                        if ( id_tuples+1 <= (len(new_plus_array_strand)-1)  and  (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1]) )<cds_operon_distance):
+                        if ( id_tuples+1 <= (len(new_plus_array_strand)-1)  and  (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1]) )<cds_dist):
                             if(id_tuples < len(new_plus_array_strand)-1 and no_start==True):
                                 id_tuples+=1
                                 continue
@@ -374,7 +398,7 @@ def main():
                     while (id_tuples >= 0):
                         current_tuple=new_minus_array_positions[id_tuples]
                         new_operon.insert(0,new_minus_array_names[id_tuples])
-                        if (id_tuples-1>=0 and  (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))>=cds_operon_distance):
+                        if (id_tuples-1>=0 and  (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))>=cds_dist):
                             if(no_start==True):
                                 no_start=False
                                 id_tuples-=1
@@ -403,7 +427,7 @@ def main():
                             if(id_tuples-1==0):
                                     flag=True
 
-                        if ( no_start==False and id_tuples-1 >= 0 and (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))<cds_operon_distance):
+                        if ( no_start==False and id_tuples-1 >= 0 and (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))<cds_dist):
                             if(id_tuples > 0 and no_start==True):
                                 id_tuples-=1
                                 continue
@@ -491,7 +515,7 @@ def main():
                 while id_tuples < (len(contigs_with_gene_positions[keys])):
                     new_operon.append(contigs_with_gene_names[keys][id_tuples])
                     current_tuple=contigs_with_gene_positions[keys][id_tuples]
-                    if (id_tuples+1<=(len(contigs_with_gene_strand[keys])-1) and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))>=cds_operon_distance):
+                    if (id_tuples+1<=(len(contigs_with_gene_strand[keys])-1) and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))>=cds_dist):
                         if(no_start==True):
                             no_start=False
                             id_tuples+=1
@@ -522,7 +546,7 @@ def main():
                             flag=True
 
                         
-                    if ( id_tuples+1 <= (len(contigs_with_gene_strand[keys])-1)  and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))<cds_operon_distance):
+                    if ( id_tuples+1 <= (len(contigs_with_gene_strand[keys])-1)  and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))<cds_dist):
                         if(id_tuples < len(contigs_with_gene_strand[keys])-1 and no_start==True):
                             id_tuples+=1
                             continue
@@ -577,7 +601,7 @@ def main():
                     current_tuple=contigs_with_gene_positions[keys][id_tuples]
                     new_operon.insert(0,contigs_with_gene_names[keys][id_tuples])
 
-                    if (id_tuples-1>=0 and (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))>=cds_operon_distance):
+                    if (id_tuples-1>=0 and (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))>=cds_dist):
                         if(no_start==True):
                             no_start=False
                             id_tuples-=1
@@ -609,7 +633,7 @@ def main():
 
 
 
-                    if ( no_start==False and id_tuples-1 >= 0   and   (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))<cds_operon_distance  ):
+                    if ( no_start==False and id_tuples-1 >= 0   and   (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))<cds_dist  ):
                         if(id_tuples > 0 and no_start==True):
                             id_tuples-=1
                             continue
