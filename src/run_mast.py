@@ -31,22 +31,22 @@ def main ():
     with open(args.motif_list, 'r') as motif_file:
         jobs = []
         # Remove the output file if it exists and create a new one
-        if os.path.exists(output):
-            os.remove(output)
-        open(args.output_file+".txt", 'a').close()  # Create the output file
+        if os.path.exists(args.output_file):
+            os.remove(args.output_file)
         
         motif_db_path = (args.motif_db).rstrip("/")        
 
         for line in motif_file:
             line = line.strip()
             mast_map = motif_db_path+"/"+line+".txt"
-            stringjob = f"mast mast_map {args.prr_fasta} -norc -nostatus -hit_list -best >> {args.output_file}.txt"
-            jobs.append(stringjob)
-            print(stringjob)  # Print the job command (optional, to mimic STDERR print in Perl)
+            cmd_job = ["mast", mast_map, args.prr_fasta, "-norc", "-nostatus", "-hit_list", "-best"]
+            jobs.append(cmd_job)
+            print(cmd_job)  # Print the job command (optional, to mimic STDERR print in Perl)
 
     # Execute each job command
-    for job in jobs:
-        subprocess.run(job)
+    with open(args.output_file, "a") as outfile:  # Create the output file
+        for job in jobs:
+            subprocess.run(job, stdout=outfile, check=True)
 
 if __name__ == "__main__":
     main()
