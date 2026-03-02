@@ -1,38 +1,32 @@
 import sys
 from Bio import SeqIO
 from Bio.Seq import Seq
-
-ptt_gene_file = open(sys.argv[1],"r")
-intergenic_start = int(sys.argv[3])          #150
-intergenic_stop = int(sys.argv[4])            #10)
-default_intergenic_zone = int(sys.argv[5])   #50
-minimal_intergenic_zone = default_intergenic_zone + intergenic_stop
-gene_distance = int(sys.argv[6])+1             #50
+import argparse
 
 
 def get_inter_left_start(current_tuple):
     value=int()
     if(int(current_tuple[0])>=minimal_intergenic_zone):
-        value=int(current_tuple[0])-intergenic_start
+        value=int(current_tuple[0])-prr_start
         if(value<0):
             value=0
     return value
 
 def get_inter_left_stop(current_tuple):
-    return int(current_tuple[0])+intergenic_stop
+    return int(current_tuple[0])+prr_stop
 
 
 def get_inter_right_start(current_tuple,keys):
     value2=int()
     if((contigs_size[keys]-(int(current_tuple[1])-int(minimal_intergenic_zone)))>=minimal_intergenic_zone):
-        value2=int(current_tuple[1])+intergenic_start
+        value2=int(current_tuple[1])+prr_start
         if(value2>=contigs_size[keys]):
             value2=contigs_size[keys]
     return value2
         
 
 def get_inter_right_stop(current_tuple):
-    return int(current_tuple[1])-intergenic_stop
+    return int(current_tuple[1])-prr_stop
 
 
 #############################################################################################################
@@ -45,12 +39,12 @@ def get_paired_inter_right_start(current_tuple,keys,id_tuples):
     
     if(id_tuples==len(contigs_with_gene_positions[keys])-1):
         if((contigs_size[keys]-(int(current_tuple[1])-int(minimal_intergenic_zone)))>=minimal_intergenic_zone):
-            value2=int(current_tuple[1])+intergenic_start
+            value2=int(current_tuple[1])+prr_start
             if(value2>=contigs_size[keys]):
                 value2=contigs_size[keys]
                 #print("value1")
     if(id_tuples!=len(contigs_with_gene_positions[keys])-1):
-        value2=int(current_tuple[1])+intergenic_start
+        value2=int(current_tuple[1])+prr_start
         if(index==len(contigs_with_gene_positions[keys])-1 and value2>=contigs_size[keys]):
             value2=contigs_size[keys]
             #print("value2")
@@ -68,11 +62,11 @@ def get_paired_inter_right_start_multi(current_tuple,keys,id_tuples,new_minus_ar
 
     if(id_tuples==len(new_minus_array_positions)-1):
         if((contigs_size[keys]-(int(current_tuple[1])-int(minimal_intergenic_zone)))>=minimal_intergenic_zone):
-            value2=int(current_tuple[1])+intergenic_start
+            value2=int(current_tuple[1])+prr_start
             if(value2>=contigs_size[keys]):
                 value2=contigs_size[keys]
     if(id_tuples!=len(new_minus_array_positions)-1):
-        value2=int(current_tuple[1])+intergenic_start
+        value2=int(current_tuple[1])+prr_start
         if(index==len(new_minus_array_positions)-1 and value2>=contigs_size[keys]):
             value2=contigs_size[keys]
         if(index<len(new_minus_array_positions)-1 and value2>int(new_minus_array_positions[index+1][0])):
@@ -81,19 +75,19 @@ def get_paired_inter_right_start_multi(current_tuple,keys,id_tuples,new_minus_ar
 
 
 def get_paired_inter_right_stop(current_tuple):
-    return int(current_tuple[1])-intergenic_stop
+    return int(current_tuple[1])-prr_stop
 
 
-def get_paired_inter_left_start(current_tuple,position):
+def get_paired_inter_left_start(keys,current_tuple,position):
     value2=int()
     #print("current_tuple ",current_tuple)
     index=contigs_with_gene_positions[keys].index(current_tuple)
     if(position==0):
-        value2=int(current_tuple[0])-intergenic_start
+        value2=int(current_tuple[0])-prr_start
         if(value2<0):
             value2=0
     if(position>0):
-        value2=int(current_tuple[0])-intergenic_start
+        value2=int(current_tuple[0])-prr_start
         if(index>0 and value2<int(contigs_with_gene_positions[keys][index-1][1])):
             value2=int(contigs_with_gene_positions[keys][index-1][1])+1
         if(index==0 and value2<0):
@@ -105,11 +99,11 @@ def get_paired_inter_left_start_multi(current_tuple,position,new_plus_array_posi
     #print("current_tuple ",current_tuple)
     index=new_plus_array_positions.index(current_tuple)
     if(position==0):
-        value2=int(current_tuple[0])-intergenic_start
+        value2=int(current_tuple[0])-prr_start
         if(value2<0):
             value2=0
     if(position>0):
-        value2=int(current_tuple[0])-intergenic_start
+        value2=int(current_tuple[0])-prr_start
         if(index>0 and value2<int(new_plus_array_positions[index-1][1])):
             value2=int(new_plus_array_positions[index-1][1])+1
         if(index==0 and value2<0):
@@ -119,31 +113,57 @@ def get_paired_inter_left_start_multi(current_tuple,position,new_plus_array_posi
 
 
 def get_paired_inter_left_stop(current_tuple):
-    return int(current_tuple[0])+intergenic_stop
+    return int(current_tuple[0])+prr_stop
 
 
 def main():
 
 
-    #ptt_gene_file = open(sys.argv[1],"r")
-    #intergenic_start = int(sys.argv[3])          #150
-    #intergenic_stop = int(sys.argv[4])            #10)
-    #default_intergenic_zone = int(sys.argv[5])   #50
-    #minimal_intergenic_zone = default_intergenic_zone + intergenic_stop
-    #gene_distance = int(sys.argv[6])+1             #50
+    parser = argparser.ArgumentParser(
+        description="",
+        usage="")
 
-    global ptt_gene_file
-    global intergenic_start, intergenic_stop, default_intergenic_zone, minimal_intergenic_zone, gene_distance
+
+    parser.add_argument("cds_positions_file",metavar="",help="")
+    parser.add_argument("assembly_file",metavar="",help="")
+    parser.add_argument("prr_start",metavar="",type=int,default=300,required=True,help="")
+    parser.add_argument("prr_stop",metavar="",type=int,default=30,required=True,help="")
+    parser.add_argument("cds_operon_distance",metavar="",type=int,default=50,required=True,help="")
+    parser.add_argument("prr_edge_offset",metavar="",type=int,default=50,required=True,help="")
+
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
+
+    args = parser.parser_args()
+
+    #cds_positions_file = open(sys.argv[1],"r")
+    #prr_start = int(sys.argv[3])          #150
+    #prr_stop = int(sys.argv[4])            #10)
+    #prr_edge_offset = int(sys.argv[5])   #50
+    #minimal_intergenic_zone = prr_edge_offset + prr_stop
+    #cds_operon_distance = int(sys.argv[6])+1             #50
+
+
+
+    global cds_positions_file
+    global prr_start, prr_stop, prr_edge_offset, minimal_intergenic_zone, cds_operon_distance
     global contigs_size, contigs_dna 
     global contigs_with_gene_names
     global contigs_with_gene_positions
     global contigs_with_gene_strand
+    
+    prr_start = args.prr_start
+    prr_stop = args.prr_stop
+    prr_edge_offset = args.prr_edge_offset
+    minimal_intergenic_zone = prr_edge_offset + prr_stop
+    cds_operon_distance = args.cds_operon_distance + 1
 
 
     contigs_size=dict()
     contigs_dna=dict()
 
-    with open(sys.argv[2]) as handle:
+    with open(args.assembly_file) as handle:
         for record in SeqIO.parse(handle,"fasta"):
             contigs_size[record.id]=len(record.seq)
             contigs_dna[record.id]=record.seq
@@ -155,29 +175,30 @@ def main():
     contigs_with_gene_strand = dict()
 
     line_counter=1
-    for lines in ptt_gene_file:
-        aux=lines.split("\t")
-        if(line_counter==2 or line_counter==3):
+    with open(args.cds_position_file) as cpf:
+        for lines in cpf:
+            aux=lines.split("\t")
+            if(line_counter==2 or line_counter==3):
+                line_counter+=1
+                continue
+            if("Marine metagenome" in lines or "length=" in lines):
+                line_counter=1
+            if(line_counter>=4):
+                if(aux[0] not in contigs_with_gene_positions):
+                    contigs_with_gene_positions.setdefault(aux[0],[])
+                    contigs_with_gene_names.setdefault(aux[0],[])
+                    contigs_with_gene_strand.setdefault(aux[0],[])
+                    
+                if(aux[0] in contigs_with_gene_positions):
+                    position=aux[1].split("..")
+                    position=list(position)
+                    position[0]=int(position[0])+1
+                    contigs_with_gene_positions[aux[0]].append(tuple(position))
+                    contigs_with_gene_names[aux[0]].append(aux[4])
+                    contigs_with_gene_strand[aux[0]].append(aux[2])
             line_counter+=1
-            continue
-        if("Marine metagenome" in lines or "length=" in lines):
-            line_counter=1
-        if(line_counter>=4):
-            if(aux[0] not in contigs_with_gene_positions):
-                contigs_with_gene_positions.setdefault(aux[0],[])
-                contigs_with_gene_names.setdefault(aux[0],[])
-                contigs_with_gene_strand.setdefault(aux[0],[])
-                
-            if(aux[0] in contigs_with_gene_positions):
-                position=aux[1].split("..")
-                position=list(position)
-                position[0]=int(position[0])+1
-                contigs_with_gene_positions[aux[0]].append(tuple(position))
-                contigs_with_gene_names[aux[0]].append(aux[4])
-                contigs_with_gene_strand[aux[0]].append(aux[2])
-        line_counter+=1
 
-    global_operon_counter=0
+        global_operon_counter=0
 
 
 
@@ -215,7 +236,7 @@ def main():
 
             if(len(new_plus_array_strand)==1):
                 if(new_plus_array_strand[0]=="+"):
-                    if((int(new_plus_array_positions[0][0]) + intergenic_stop ) >= minimal_intergenic_zone):
+                    if((int(new_plus_array_positions[0][0]) + prr_stop ) >= minimal_intergenic_zone):
                         current_tuple=new_plus_array_positions[0]
                         inter_left_start=get_inter_left_start(current_tuple)
                         inter_left_stop=get_inter_left_stop(current_tuple)
@@ -229,7 +250,7 @@ def main():
             
             if(len(new_minus_array_strand)==1):
                 if(new_minus_array_strand[0]=="-"):
-                    if( contigs_size[keys] - (int(new_minus_array_positions[0][1])  - intergenic_stop) >= minimal_intergenic_zone):
+                    if( contigs_size[keys] - (int(new_minus_array_positions[0][1])  - prr_stop) >= minimal_intergenic_zone):
                         current_tuple=new_minus_array_positions[0]
                         inter_right_start=get_inter_right_start(current_tuple,keys)
                         inter_right_stop=get_inter_right_stop(current_tuple)
@@ -270,18 +291,18 @@ def main():
                         
                         new_operon.append(new_plus_array_names[id_tuples])
                         current_tuple=new_plus_array_positions[id_tuples]
-                        if (id_tuples+1<=(len(new_plus_array_strand)-1) and (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1])) >=gene_distance):
+                        if (id_tuples+1<=(len(new_plus_array_strand)-1) and (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1])) >=cds_operon_distance):
                             if(no_start==True):
                                 no_start=False
                                 id_tuples+=1
                                 position_calculation=id_tuples
                                 new_operon=[]
                                 continue
-                            if(id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                            if(id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + prr_stop ) < minimal_intergenic_zone):
                                 position_calculation+=1
                                 new_operon=[]
                                 flag=True
-                            if not (id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                            if not (id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + prr_stop ) < minimal_intergenic_zone):
                                 if(len(new_operon)>1):
                                     print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+contigs_dna[keys][inter_left_start:inter_left_stop]+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon)) )
                                     secondary_operon_counter+=1
@@ -300,16 +321,16 @@ def main():
                                 flag=True
 
 
-                        if ( id_tuples+1 <= (len(new_plus_array_strand)-1)  and  (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1]) )<gene_distance):
+                        if ( id_tuples+1 <= (len(new_plus_array_strand)-1)  and  (int(new_plus_array_positions[id_tuples+1][0]) - int(current_tuple[1]) )<cds_operon_distance):
                             if(id_tuples < len(new_plus_array_strand)-1 and no_start==True):
                                 id_tuples+=1
                                 continue
 
-                            if(id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                            if(id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + prr_stop ) < minimal_intergenic_zone):
                                 position_calculation+=1
                                 new_operon=[]
                                 no_start=True
-                            if not (id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                            if not (id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + prr_stop ) < minimal_intergenic_zone):
                                 current_tuple=new_plus_array_positions[position_calculation]
                                 inter_left_start=get_paired_inter_left_start_multi(current_tuple,position_calculation,new_plus_array_positions)
                                 inter_left_stop=get_paired_inter_left_stop(current_tuple)
@@ -353,18 +374,18 @@ def main():
                     while (id_tuples >= 0):
                         current_tuple=new_minus_array_positions[id_tuples]
                         new_operon.insert(0,new_minus_array_names[id_tuples])
-                        if (id_tuples-1>=0 and  (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))>=gene_distance):
+                        if (id_tuples-1>=0 and  (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))>=cds_operon_distance):
                             if(no_start==True):
                                 no_start=False
                                 id_tuples-=1
                                 position_calculation=id_tuples
                                 new_operon=[]
                                 continue
-                            if(id_tuples == len(new_minus_array_positions)-1 and  contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - intergenic_stop) < minimal_intergenic_zone):
+                            if(id_tuples == len(new_minus_array_positions)-1 and  contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - prr_stop) < minimal_intergenic_zone):
                                 position_calculation-=1
                                 new_operon=[]
                                 flag=True
-                            if not (id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - intergenic_stop) < minimal_intergenic_zone):
+                            if not (id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - prr_stop) < minimal_intergenic_zone):
                                 if(len(new_operon)>1):
                                     print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement()+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon)) )
                                     secondary_operon_counter+=1
@@ -382,15 +403,15 @@ def main():
                             if(id_tuples-1==0):
                                     flag=True
 
-                        if ( no_start==False and id_tuples-1 >= 0 and (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))<gene_distance):
+                        if ( no_start==False and id_tuples-1 >= 0 and (int(current_tuple[0])-int(new_minus_array_positions[id_tuples-1][1]))<cds_operon_distance):
                             if(id_tuples > 0 and no_start==True):
                                 id_tuples-=1
                                 continue
-                            if( id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - intergenic_stop) < minimal_intergenic_zone):
+                            if( id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - prr_stop) < minimal_intergenic_zone):
                                 position_calculation-=1
                                 new_operon=[]
                                 no_start=True
-                            if not ( id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - intergenic_stop)  < minimal_intergenic_zone):
+                            if not ( id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - prr_stop)  < minimal_intergenic_zone):
                                 current_tuple=new_minus_array_positions[position_calculation]
                                 inter_right_start=get_paired_inter_right_start_multi(current_tuple,keys,position_calculation,new_minus_array_positions)
                                 inter_right_stop=get_paired_inter_right_stop(current_tuple)
@@ -429,7 +450,7 @@ def main():
 
         if(len(contigs_with_gene_strand[keys])==1):
             if(contigs_with_gene_strand[keys][0]=="+"):
-                if not ((int(contigs_with_gene_positions[keys][0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                if not ((int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                     current_tuple=contigs_with_gene_positions[keys][0]
                     inter_left_start=get_inter_left_start(current_tuple)
                     inter_left_stop=get_inter_left_stop(current_tuple)
@@ -445,7 +466,7 @@ def main():
 
         if(len(contigs_with_gene_strand[keys])==1):
             if(contigs_with_gene_strand[keys][0]=="-"):
-                if not ( contigs_size[keys] - (int(contigs_with_gene_positions[keys][0][1]) - intergenic_stop) < minimal_intergenic_zone):
+                if not ( contigs_size[keys] - (int(contigs_with_gene_positions[keys][0][1]) - prr_stop) < minimal_intergenic_zone):
                     current_tuple=contigs_with_gene_positions[keys][0]
                     inter_right_start=get_inter_right_start(current_tuple,keys)
                     inter_right_stop=get_inter_right_stop(current_tuple)
@@ -470,18 +491,18 @@ def main():
                 while id_tuples < (len(contigs_with_gene_positions[keys])):
                     new_operon.append(contigs_with_gene_names[keys][id_tuples])
                     current_tuple=contigs_with_gene_positions[keys][id_tuples]
-                    if (id_tuples+1<=(len(contigs_with_gene_strand[keys])-1) and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))>=gene_distance):
+                    if (id_tuples+1<=(len(contigs_with_gene_strand[keys])-1) and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))>=cds_operon_distance):
                         if(no_start==True):
                             no_start=False
                             id_tuples+=1
                             position_calculation=id_tuples
                             new_operon=[]
                             continue
-                        if(id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                        if(id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                             position_calculation+=1
                             new_operon=[]
                             flag=True
-                        if not (id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                        if not (id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                             if(len(new_operon)>1):
                                 print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+contigs_dna[keys][inter_left_start:inter_left_stop]+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon)) )
                                 secondary_operon_counter+=1
@@ -490,7 +511,7 @@ def main():
                                 position_calculation=id_tuples+1
                                 #print(flag)
                             else:
-                                inter_left_start=get_paired_inter_left_start(current_tuple,position_calculation)
+                                inter_left_start=get_paired_inter_left_start(keys,current_tuple,position_calculation)
                                 inter_left_stop=get_paired_inter_left_stop(current_tuple)
                                 print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+contigs_dna[keys][inter_left_start:inter_left_stop]+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon)) )
                                 secondary_operon_counter+=1
@@ -501,18 +522,18 @@ def main():
                             flag=True
 
                         
-                    if ( id_tuples+1 <= (len(contigs_with_gene_strand[keys])-1)  and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))<gene_distance):
+                    if ( id_tuples+1 <= (len(contigs_with_gene_strand[keys])-1)  and  (int(contigs_with_gene_positions[keys][id_tuples+1][0]) - int(current_tuple[1]))<cds_operon_distance):
                         if(id_tuples < len(contigs_with_gene_strand[keys])-1 and no_start==True):
                             id_tuples+=1
                             continue
 
-                        if(id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                        if(id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                             position_calculation+=1
                             new_operon=[]
                             no_start=True
-                        if not (id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + intergenic_stop ) < minimal_intergenic_zone):
+                        if not (id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                             current_tuple=contigs_with_gene_positions[keys][position_calculation]
-                            inter_left_start=get_paired_inter_left_start(current_tuple,position_calculation)
+                            inter_left_start=get_paired_inter_left_start(keys,current_tuple,position_calculation)
                             inter_left_stop=get_paired_inter_left_stop(current_tuple)
                             flag=False
                         
@@ -521,7 +542,7 @@ def main():
                         if(no_start==False and len(new_operon)==1 and flag==False):
                             flag=True
                         if(flag):
-                            inter_left_start=get_paired_inter_left_start(current_tuple,position_calculation)
+                            inter_left_start=get_paired_inter_left_start(keys,current_tuple,position_calculation)
                             inter_left_stop=get_paired_inter_left_stop(current_tuple)
                             print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+contigs_dna[keys][inter_left_start:inter_left_stop]+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon)) )
                             secondary_operon_counter+=1
@@ -556,18 +577,18 @@ def main():
                     current_tuple=contigs_with_gene_positions[keys][id_tuples]
                     new_operon.insert(0,contigs_with_gene_names[keys][id_tuples])
 
-                    if (id_tuples-1>=0 and (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))>=gene_distance):
+                    if (id_tuples-1>=0 and (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))>=cds_operon_distance):
                         if(no_start==True):
                             no_start=False
                             id_tuples-=1
                             position_calculation=id_tuples
                             new_operon=[]
                             continue
-                        if(id_tuples == len(contigs_with_gene_positions[keys])-1 and  contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - intergenic_stop) < minimal_intergenic_zone):
+                        if(id_tuples == len(contigs_with_gene_positions[keys])-1 and  contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - prr_stop) < minimal_intergenic_zone):
                             position_calculation-=1
                             new_operon=[]
                             flag=True
-                        if not (id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - intergenic_stop) < minimal_intergenic_zone):
+                        if not (id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - prr_stop) < minimal_intergenic_zone):
                             if(len(new_operon)>1):
                                 print(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement()+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon)) )
                                 secondary_operon_counter+=1
@@ -588,15 +609,15 @@ def main():
 
 
 
-                    if ( no_start==False and id_tuples-1 >= 0   and   (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))<gene_distance  ):
+                    if ( no_start==False and id_tuples-1 >= 0   and   (int(current_tuple[0])-int(contigs_with_gene_positions[keys][id_tuples-1][1]))<cds_operon_distance  ):
                         if(id_tuples > 0 and no_start==True):
                             id_tuples-=1
                             continue
-                        if( id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - intergenic_stop) < minimal_intergenic_zone):
+                        if( id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - prr_stop) < minimal_intergenic_zone):
                             position_calculation-=1
                             new_operon=[]
                             no_start=True
-                        if not ( id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - intergenic_stop) < minimal_intergenic_zone):
+                        if not ( id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - prr_stop) < minimal_intergenic_zone):
                             current_tuple=contigs_with_gene_positions[keys][position_calculation]
                             inter_right_start=get_paired_inter_right_start(current_tuple,keys,position_calculation)
                             inter_right_stop=get_paired_inter_right_stop(current_tuple)
