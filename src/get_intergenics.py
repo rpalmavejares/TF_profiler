@@ -160,16 +160,7 @@ def main():
         sys.exit(1)
 
     args = parser.parse_args()
-
-    #cds_positions_file = open(sys.argv[1],"r")
-    #prr_start = int(sys.argv[3])          #150
-    #prr_stop = int(sys.argv[4])            #10)
-    #offset = int(sys.argv[5])   #50
-    #minimal_intergenic_zone = offset + prr_stop
-    #cds_dist = int(sys.argv[6])+1             #50
-
-
-
+    
     global cds_file
     global prr_start, prr_stop, offset, minimal_intergenic_zone, cds_dist
     global contigs_size, contigs_dna 
