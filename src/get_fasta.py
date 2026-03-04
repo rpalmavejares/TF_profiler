@@ -10,11 +10,12 @@ import argparse
 def main():
 
     parser = argparse.ArgumentParser(
-        description="",
-        usage="")
+        description="Extract the Potential Regulatory Region from the Simplified Operon Model output",
+        usage="python %(prog)s --sample_id <ID> --operon_model <FILE> --output_folder <DIR>")
 
-    parser.add_argument("--sample_id",metavar="",help="Sample ID or Name for creating the temporary files")
-    parser.add_argument("--prr_model",metavar="",help="Path to file containing the prr model")
+    parser.add_argument("--sample_id",metavar="ID",help="Sample ID or Name for creating the temporary files")
+    parser.add_argument("--operon_model",metavar="FILE",help="Path to file containing the prr model")
+    parser.add_argument("--output_folder",metavar="DIR",help="Output folder for all intermediate files")    
 
     if len(sys.argv) == 1:
         print("\n")
@@ -23,9 +24,10 @@ def main():
 
     args = parser.parse_args()
     
-    output_fasta = open(args.sample_id+".prr.fasta","w")
+    output_folder=args.output_folder.rstrip("/")
+    output_fasta = open(output_folder+"/"+args.sample_id+"_prr.fasta","w")
 
-    with open(args.prr_model) as prr_file:
+    with open(args.output_folder+"/"+args.operon_model) as prr_file:
         all_records = []
         for lines in prr_file:
             genes=list()

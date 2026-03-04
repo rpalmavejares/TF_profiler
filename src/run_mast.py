@@ -7,8 +7,8 @@ import subprocess
 def main ():
 
     parser = argparse.ArgumentParser(
-        description="",
-        usage="")
+        description="Maps Regprecise motif database agains the PRR fasta file",
+        usage="python %(prog)s ")
 
 
     parser.add_argument("--motif_list",metavar="",help="")

@@ -142,19 +142,19 @@ def main():
 
 
     parser = argparse.ArgumentParser(
-        description="",
-        usage="")
+        description="Computes a Simplified Operon Model to extract a portion of intergenic region with potential usage in regulation. These regions called Potential Regulatory Regions are follow a fixed size in bp nucleotides",
+        usage="python %(prog)s --sample_id <ID> --cds_pos <FILE> --assembly <FILE> --prr_start <INT> --prr_stop <INT> --cds_dist <INT> --offset <INT> --output_folder <DIR>")
 
 # Output == <Sample_Name>_operon_model.csv
 
     
-    parser.add_argument("--sample_id",metavar="",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
-    parser.add_argument("--cds_pos",metavar="",action=check_extension_pos({'ptt','gff','gff3'}),required=True,help="Path to file containing the positions of all CDS along your genomic sample. (PTT or GFF format)")
-    parser.add_argument("--assembly",metavar="",action=check_extension_fasta({'fasta','fa','fna'}),required=True,help="Path to fasta formated genome")
-    parser.add_argument("--prr_start",metavar="",type=int,default=300,required=True,help="Distance upstream of first CDS from operon start to consider for your PRR")
-    parser.add_argument("--prr_stop",metavar="",type=int,default=30,required=True,help="Distance downtream of first CDS from operon start to consider for your PRR")
-    parser.add_argument("--cds_dist",metavar="",type=int,default=50,required=True,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
-    parser.add_argument("--offset",metavar="",type=int,default=50,required=True,help="Distance from the edge of contigs to consider as offset")
+    parser.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
+    parser.add_argument("--cds_pos",metavar="FILE",action=check_extension_pos({'ptt','gff','gff3'}),required=True,help="Path to file containing the positions of all CDS along your genomic sample. (PTT or GFF format)")
+    parser.add_argument("--assembly",metavar="FILE",action=check_extension_fasta({'fasta','fa','fna'}),required=True,help="Path to fasta formated genome")
+    parser.add_argument("--prr_start",metavar="INT",type=int,default=300,required=True,help="Distance upstream of first CDS from operon start to consider for your PRR")
+    parser.add_argument("--prr_stop",metavar="INT",type=int,default=30,required=True,help="Distance downtream of first CDS from operon start to consider for your PRR")
+    parser.add_argument("--cds_dist",metavar="INT",type=int,default=50,required=True,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
+    parser.add_argument("--offset",metavar="INT",type=int,default=50,required=True,help="Distance from the edge of contigs to consider as offset")
     parser.add_argument("--output_folder",metavar="DIR",help="Output Folder for all intermediate files")
 
     if len(sys.argv) == 1:
@@ -221,8 +221,8 @@ def main():
     cpf.close()
     
     output_folder = str(args.output_folder).rstrip("/")
-    out_prr_model = (output_folder+"/"+args.sample_id+"_prr_model.csv")
-    out_prr_model = open(out_prr_model, "w")
+    out_operon_model = (output_folder+"/"+args.sample_id+"_operon_model.csv")
+    out_operon_model = open(out_operon_model, "w")
 
     for keys in contigs_with_gene_strand.keys():
 
@@ -264,7 +264,7 @@ def main():
                         inter_left_stop=get_inter_left_stop(current_tuple)
                         contig_base_name=new_plus_array_names[0].split("_")
                         contig_base_name="_".join(contig_base_name[:-1])
-                        out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(new_plus_array_names[0]+"\n") )
+                        out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(new_plus_array_names[0]+"\n") )
                         secondary_operon_counter+=1
 
     ### CASE 2 , SINGLE GENE - STRAIN , MULTITHREAD ###
@@ -278,7 +278,7 @@ def main():
                         inter_right_stop=get_inter_right_stop(current_tuple)
                         contig_base_name=new_minus_array_names[0].split("_")
                         contig_base_name="_".join(contig_base_name[:-1])
-                        out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(new_minus_array_names[0])+"\n")
+                        out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(new_minus_array_names[0])+"\n")
                         secondary_operon_counter+=1
     ### CASE 3 , MULTI GENE ALL + STRAIN , MULTITHREAD ###
 
@@ -326,7 +326,7 @@ def main():
                                 flag=True
                             if not (id_tuples == 0 and ( int(new_plus_array_positions[0][0]) + prr_stop ) < minimal_intergenic_zone):
                                 if(len(new_operon)>1):
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                     new_operon=[]
                                     no_start=False
@@ -334,7 +334,7 @@ def main():
                                 else:
                                     inter_left_start=get_paired_inter_left_start_multi(current_tuple,position_calculation,new_plus_array_positions)
                                     inter_left_stop=get_paired_inter_left_stop(current_tuple)
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                     new_operon=[]
                                     position_calculation=id_tuples+1
@@ -365,11 +365,11 @@ def main():
                             if(flag):
                                 inter_left_start=get_paired_inter_left_start_multi(current_tuple,position_calculation,new_plus_array_positions)
                                 inter_left_stop=get_paired_inter_left_stop(current_tuple)
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                             else:
                                 if(len(new_operon)!=0 and no_start==False):
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_plus_array_strand[0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                 if (len(new_operon)==1 and no_start==True):
                                     pass
@@ -409,7 +409,7 @@ def main():
                                 flag=True
                             if not (id_tuples == len(new_minus_array_positions)-1 and contigs_size[keys] - (int(new_minus_array_positions[len(new_minus_array_strand)-1][1])  - prr_stop) < minimal_intergenic_zone):
                                 if(len(new_operon)>1):
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                     new_operon=[]
                                     no_start=False
@@ -417,7 +417,7 @@ def main():
                                 else:
                                     inter_right_start=get_paired_inter_right_start_multi(current_tuple,keys,position_calculation,new_minus_array_positions)
                                     inter_right_stop=get_paired_inter_right_stop(current_tuple)
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                     new_operon=[]
                                     position_calculation=id_tuples-1
@@ -446,12 +446,12 @@ def main():
                             if(flag):
                                 inter_right_start=get_paired_inter_right_start_multi(current_tuple,keys,position_calculation,new_minus_array_positions)
                                 inter_right_stop=get_paired_inter_right_stop(current_tuple)
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                             
                             else:
                                 if(len(new_operon)!=0 and no_start==False):
-                                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(new_minus_array_strand[0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                     secondary_operon_counter+=1
                                 if(len(new_operon)==1 and no_start==True):
                                     pass
@@ -478,7 +478,7 @@ def main():
                     inter_left_stop=get_inter_left_stop(current_tuple)
                     contig_base_name=contigs_with_gene_names[keys][0].split("_")
                     contig_base_name="_".join(contig_base_name[:-1])
-                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_0,"+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(contigs_with_gene_names[keys][0])+"\n")
+                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_0,"+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(contigs_with_gene_names[keys][0])+"\n")
                     global_operon_counter+=1
 
 
@@ -494,7 +494,7 @@ def main():
                     inter_right_stop=get_inter_right_stop(current_tuple)
                     contig_base_name=contigs_with_gene_names[keys][0].split("_")
                     contig_base_name="_".join(contig_base_name[:-1])
-                    out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_0,"+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(contigs_with_gene_names[keys][0])+"\n")
+                    out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_0,"+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(contigs_with_gene_names[keys][0])+"\n")
                     global_operon_counter+=1
 
 
@@ -526,7 +526,7 @@ def main():
                             flag=True
                         if not (id_tuples == 0 and ( int(contigs_with_gene_positions[keys][0][0]) + prr_stop ) < minimal_intergenic_zone):
                             if(len(new_operon)>1):
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                                 new_operon=[]
                                 no_start=False
@@ -534,7 +534,7 @@ def main():
                             else:
                                 inter_left_start=get_paired_inter_left_start(keys,current_tuple,position_calculation)
                                 inter_left_stop=get_paired_inter_left_stop(current_tuple)
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                                 new_operon=[]
                                 position_calculation=id_tuples+1
@@ -565,11 +565,11 @@ def main():
                         if(flag):
                             inter_left_start=get_paired_inter_left_start(keys,current_tuple,position_calculation)
                             inter_left_stop=get_paired_inter_left_stop(current_tuple)
-                            out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                            out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                             secondary_operon_counter+=1
                         else:
                             if(len(new_operon)!=0 and no_start==False):
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_left_start:inter_left_stop])+","+str(inter_left_start+1)+","+str(inter_left_stop+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                                 1+1
                             if (len(new_operon)==1 and no_start==True):
@@ -610,7 +610,7 @@ def main():
                             flag=True
                         if not (id_tuples == len(contigs_with_gene_positions[keys])-1 and contigs_size[keys] - (int(contigs_with_gene_positions[keys][len(contigs_with_gene_strand[keys])-1][1]) - prr_stop) < minimal_intergenic_zone):
                             if(len(new_operon)>1):
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                                 new_operon=[]
                                 no_start=False
@@ -618,7 +618,7 @@ def main():
                             else:
                                 inter_right_start=get_paired_inter_right_start(current_tuple,keys,position_calculation)
                                 inter_right_stop=get_paired_inter_right_stop(current_tuple)
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                                 new_operon=[]
                                 position_calculation=id_tuples-1
@@ -649,14 +649,14 @@ def main():
                         if(flag):
                             inter_right_start=get_paired_inter_right_start(current_tuple,keys,position_calculation)
                             inter_right_stop=get_paired_inter_right_stop(current_tuple)
-                            out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                            out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                             secondary_operon_counter+=1
                         else:
                             if(len(new_operon)!=0 and no_start==False):
                                 if(len(new_operon)==1):
                                     inter_right_start=get_paired_inter_right_start(current_tuple,keys,position_calculation)
                                     inter_right_stop=get_paired_inter_right_stop(current_tuple)
-                                out_prr_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
+                                out_operon_model.write(str(contig_base_name)+",O_"+str(global_operon_counter)+"_"+str(secondary_operon_counter)+","+str(contigs_with_gene_strand[keys][0])+","+str(contigs_dna[keys][inter_right_stop:inter_right_start].reverse_complement())+","+str(inter_right_stop+1)+","+str(inter_right_start+1)+","+str(",".join(new_operon))+"\n")
                                 secondary_operon_counter+=1
                             if(len(new_operon)==1 and no_start==True):
                                 pass
@@ -665,7 +665,7 @@ def main():
                         new_operon=[]
                     id_tuples-=1
         global_operon_counter+=1
-    out_prr_model.close()
+    out_operon_model.close()
 if __name__ == "__main__":
     main()
 
