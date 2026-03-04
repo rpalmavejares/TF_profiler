@@ -155,6 +155,7 @@ def main():
     parser.add_argument("--prr_stop",metavar="",type=int,default=30,required=True,help="Distance downtream of first CDS from operon start to consider for your PRR")
     parser.add_argument("--cds_dist",metavar="",type=int,default=50,required=True,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
     parser.add_argument("--offset",metavar="",type=int,default=50,required=True,help="Distance from the edge of contigs to consider as offset")
+    parser.add_argument("--output_folder",metavar="DIR",help="Output Folder for all intermediate files")
 
     if len(sys.argv) == 1:
         print("\n")
@@ -218,9 +219,10 @@ def main():
 
         global_operon_counter=0
     cpf.close()
-
-    out_prr_model = Path(args.sample_id+"_prr_model.csv")
-    out_prr_model = open(args.sample_id+"_prr_model.csv", "w")
+    
+    output_folder = str(args.output_folder).rstrip("/")
+    out_prr_model = (output_folder+"/"+args.sample_id+"_prr_model.csv")
+    out_prr_model = open(out_prr_model, "w")
 
     for keys in contigs_with_gene_strand.keys():
 

@@ -2,7 +2,7 @@ import sys
 import argparse
 import subprocess
 import os
-
+from pathlib import Path
 
 def check_extension_fasta(choices):
     class Act(argparse.Action):
@@ -35,8 +35,12 @@ def execute_calculate(args):
     "--prr_start",str(args.prr_start),
     "--prr_stop",str(args.prr_stop),
     "--cds_dist",str(args.cds_dist),
-    "--offset",str(args.offset)]
+    "--offset",str(args.offset),
+    "--output_folder",str(args.output_folder)]
     print(" ".join(call_command_calculate))
+   
+    folder_path = Path(args.output_folder)    
+    folder_path.mkdir(parents=True, exist_ok=True) 
     subprocess.run(call_command_calculate,check=True)
 
 def execute_profiling(args):
@@ -44,7 +48,6 @@ def execute_profiling(args):
 
 def execute_matrix(args):
     pass
-
 
 
 
@@ -64,6 +67,7 @@ def main():
     parser_c.add_argument("--prr_stop",metavar="INT",type=int,default=30,help="Distance downtream of first CDS from operon start to consider for your PRR")
     parser_c.add_argument("--cds_dist",metavar="INT",type=int,default=50,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
     parser_c.add_argument("--offset",metavar="INT",type=int,default=50,help="Distance from the edge of contigs to consider as offset")
+    parser_c.add_argument("--output_folder",metavar="DIR",help="Output Folder for all intermediate files")
     
     parser_c.set_defaults(func=execute_calculate)    
 
