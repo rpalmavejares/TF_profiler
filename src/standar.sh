@@ -40,7 +40,6 @@ mkdir $output_folder
 
 #echo "succesull $1"
 
-python tf_profiler.py calculate --sample_id S9_Z05 --cds_pos ../Tara_Chile_all_ptt/S9_Z05.ptt --assembly ../Tara_Chile_all_fasta/S9_Z05_500bp.fasta --output_folder ../map_ou
-
+python tf_profiler.py calculate --sample_id S9_Z05 --cds_pos ../Tara_Chile_all_ptt/S9_Z05.ptt --assembly ../Tara_Chile_all_fasta/S9_Z05_500bp.fasta --output_folder ../map_out --motif_list src/motifs.list
 
 

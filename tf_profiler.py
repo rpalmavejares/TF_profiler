@@ -28,7 +28,7 @@ def check_extension_pos(choices):
 
 def execute_calculate(args):
 
-    call_command_calculate_a = ["python", "src/get_intergenics.py",
+    call_command_calculate_a = ["python", str(Path("src/get_intergenics.py")),
     "--sample_id", str(args.sample_id),
     "--cds_pos",str(args.cds_pos),
     "--assembly",str(args.assembly),
@@ -48,12 +48,25 @@ def execute_calculate(args):
     print("Done")
     output_folder = str(args.output_folder).rstrip("/")    
     out_operon_model = (output_folder+"/"+args.sample_id+"_operon_model.csv")   
-    call_command_calculate_b = ["python", "src/get_fasta.py",
+    call_command_calculate_b = ["python", str(Path("src/get_fasta.py")),
     "--sample_id",str(args.sample_id),
     "--operon_model",str(out_operon_model),
     "--output_folder",str(args.output_folder)]
     print("Command Call: "+" ".join(call_command_calculate_b))
     subprocess.run(call_command_calculate_b,check=True)
+    print("Done")
+    output_prr_fasta = output_folder+"/"+args.sample_id+"_prr.fasta"
+    call_command_calculate_c = ["python", str(Path("src/run_mast.py")),
+    "--motif_list",str(args.motif_list),
+    "--motif_db",str(args.motif_db),
+    "--sample_id",str(args.sample_id),
+    "--prr_fasta",str(output_prr_fasta),
+    "--output_folder",str(args.output_folder)]
+    print("Command Call: "+" ".join(call_command_calculate_c))
+    subprocess.run(call_command_calculate_c,check=True)
+    print("Done")
+    
+
 
 
 def execute_profiling(args):
@@ -80,6 +93,8 @@ def main():
     parser_c.add_argument("--prr_stop",metavar="INT",type=int,default=30,help="Distance downtream of first CDS from operon start to consider for your PRR")
     parser_c.add_argument("--cds_dist",metavar="INT",type=int,default=50,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
     parser_c.add_argument("--offset",metavar="INT",type=int,default=50,help="Distance from the edge of contigs to consider as offset")
+    parser_c.add_argument("--motif_list",metavar="FILE",type=Path,default=Path("data/Regprecise_TF_DB/motifs.list"),help="List of motifs files to map agains the PRR fasta file")
+    parser_c.add_argument("--motif_db",metavar="DIR",type=Path,default=Path("data/Regprecise_TF_DB/"),help="Path to Regprecise motifs DB")
     parser_c.add_argument("--output_folder",metavar="DIR",help="Output folder for all intermediate files")
     
     parser_c.set_defaults(func=execute_calculate)    

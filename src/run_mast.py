@@ -1,3 +1,4 @@
+from pathlib import Path
 import os
 import sys
 import argparse
@@ -15,7 +16,7 @@ def main ():
     parser.add_argument("--motif_db",metavar="",help="")
     parser.add_argument("--sample_id",metavar="",help="")
     parser.add_argument("--prr_fasta",metavar="",help="")
-    parser.add_argument("--output_file",metavar="",help="")
+    parser.add_argument("--output_folder",metavar="",help="")
     
     if len(sys.argv) == 1:
         print("\n")
@@ -31,8 +32,8 @@ def main ():
     with open(args.motif_list, 'r') as motif_file:
         jobs = []
         # Remove the output file if it exists and create a new one
-        if os.path.exists(args.output_file):
-            os.remove(args.output_file)
+        if os.path.exists((args.output_folder).rstrip("/")+args.sample_id+"_prr_map.txt"):
+            os.remove((args.output_folder).rstrip("/")+args.sample_id+"_prr_map.txt")
         
         motif_db_path = (args.motif_db).rstrip("/")        
 
@@ -41,12 +42,14 @@ def main ():
             mast_map = motif_db_path+"/"+line+".txt"
             cmd_job = ["mast", mast_map, args.prr_fasta, "-norc", "-nostatus", "-hit_list", "-best"]
             jobs.append(cmd_job)
-            print(cmd_job)  # Print the job command (optional, to mimic STDERR print in Perl)
-
+            print("Command Call: "+" ".join(cmd_job))
     # Execute each job command
-    with open(args.output_file, "a") as outfile:  # Create the output file
+    output_path = Path(args.output_folder) / f"{args.sample_id}_prr_map.txt"
+    with open(output_path, "a") as outfile:  # Create the output file
         for job in jobs:
             subprocess.run(job, stdout=outfile, check=True)
+
+    outfile.close()
 
 if __name__ == "__main__":
     main()
