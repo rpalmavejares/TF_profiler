@@ -15,8 +15,8 @@ def main ():
     parser.add_argument("--motif_list",metavar="FILE",required=True,type=Path,default=Path("data/Regprecise_TF_DB/motifs.list"),help="List of motifs files to map agains the PRR fasta file")
     parser.add_argument("--motif_db",metavar="DIR",required=True,type=Path,default=Path("data/Regprecise_TF_DB/"),help="Path to Regprecise motifs DB")
     parser.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
-    parser.add_argument("--prr_fasta",metavar="FILE",help="Path to file containing PRR sequences")
-    parser.add_argument("--output_folder",metavar="DIR",help="Output folder for all intermediate files")
+    parser.add_argument("--prr_fasta",metavar="FILE",required=True,help="Path to file containing PRR sequences")
+    parser.add_argument("--output_folder",metavar="DIR",required=True,help="Output folder for all intermediate files")
     
     if len(sys.argv) == 1:
         print("\n")

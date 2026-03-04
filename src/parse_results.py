@@ -6,12 +6,12 @@ def main ():
 
     parser = argparse.ArgumentParser(
         description="Parser the results of motifs mapping and convert them to a simplified csv format",
-        usage="python %(prog)s --prr_fasta <> ")
+        usage="python %(prog)s --sample_id <ID> --prr_fasta <FILE> --motif_alignment <FILE> --output <FILE>")
 
-    parser.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
-    parser.add_argument("--prr_fasta",metavar="FILE",type=Path,help="Path to file containing PRR sequences")
-    parser.add_argument("--motif_alignment",metavar="FILE",help="Path to file containing the MAST aligment output")
-    parser.add_argument("--output",metavar="FILE",help="Output file of parsed results")
+    parser.add_argument("--sample_id",metavar="ID",required=True,required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
+    parser.add_argument("--prr_fasta",metavar="FILE",type=Path,required=True,help="Path to file containing PRR sequences")
+    parser.add_argument("--motif_alignment",metavar="FILE",required=True,help="Path to file containing the MAST aligment output")
+    parser.add_argument("--output",metavar="FILE",required=True,help="Output file of parsed results")
 
     if len(sys.argv) == 1:
         print("\n")

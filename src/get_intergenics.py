@@ -155,7 +155,7 @@ def main():
     parser.add_argument("--prr_stop",metavar="INT",type=int,default=30,required=True,help="Distance downtream of first CDS from operon start to consider for your PRR")
     parser.add_argument("--cds_dist",metavar="INT",type=int,default=50,required=True,help="Maximum distance between 2 CDS to consider to be part of the same CDS")
     parser.add_argument("--offset",metavar="INT",type=int,default=50,required=True,help="Distance from the edge of contigs to consider as offset")
-    parser.add_argument("--output_folder",metavar="DIR",help="Output Folder for all intermediate files")
+    parser.add_argument("--output_folder",metavar="DIR",required=True,help="Output Folder for all intermediate files")
 
     if len(sys.argv) == 1:
         print("\n")

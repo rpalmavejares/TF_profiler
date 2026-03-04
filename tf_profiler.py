@@ -72,8 +72,8 @@ def execute_calculate(args):
     "--prr_fasta",str(output_prr_fasta),
     "--motif_alignment",str(output_prr_map),
     "--output",str(output_prr_results)]
-    subprocess.run(call_command_calculate_d,check=True)
     print("Command Call: "+" ".join(call_command_calculate_c))
+    subprocess.run(call_command_calculate_d,check=True)
     print("Done")
 
 
