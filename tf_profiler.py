@@ -65,7 +65,16 @@ def execute_calculate(args):
     print("Command Call: "+" ".join(call_command_calculate_c))
     subprocess.run(call_command_calculate_c,check=True)
     print("Done")
-    
+    output_prr_map = output_folder+"/"+args.sample_id+"_prr.map"
+    output_prr_results = output_folder+"/"+args.sample_id+"_prr.results"
+    call_command_calculate_d = ["python", str(Path("src/parse_results.py")),
+    "--sample_id",str(args.sample_id),
+    "--prr_fasta",str(output_prr_fasta),
+    "--motif_alignment",str(output_prr_map),
+    "--output",str(output_prr_results)]
+    subprocess.run(call_command_calculate_d,check=True)
+    print("Command Call: "+" ".join(call_command_calculate_c))
+    print("Done")
 
 
 

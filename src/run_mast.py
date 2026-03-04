@@ -9,14 +9,14 @@ def main ():
 
     parser = argparse.ArgumentParser(
         description="Maps Regprecise motif database agains the PRR fasta file",
-        usage="python %(prog)s ")
+        usage="python %(prog)s --motifs_list <FILE> --motif_db <DIR> --sample_id <ID> --prr_fasta <FILE> --output_folder <DIR> ")
 
 
-    parser.add_argument("--motif_list",metavar="",help="")
-    parser.add_argument("--motif_db",metavar="",help="")
-    parser.add_argument("--sample_id",metavar="",help="")
-    parser.add_argument("--prr_fasta",metavar="",help="")
-    parser.add_argument("--output_folder",metavar="",help="")
+    parser.add_argument("--motif_list",metavar="FILE",required=True,type=Path,default=Path("data/Regprecise_TF_DB/motifs.list"),help="List of motifs files to map agains the PRR fasta file")
+    parser.add_argument("--motif_db",metavar="DIR",required=True,type=Path,default=Path("data/Regprecise_TF_DB/"),help="Path to Regprecise motifs DB")
+    parser.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
+    parser.add_argument("--prr_fasta",metavar="FILE",help="Path to file containing PRR sequences")
+    parser.add_argument("--output_folder",metavar="DIR",help="Output folder for all intermediate files")
     
     if len(sys.argv) == 1:
         print("\n")
@@ -32,19 +32,19 @@ def main ():
     with open(args.motif_list, 'r') as motif_file:
         jobs = []
         # Remove the output file if it exists and create a new one
-        if os.path.exists((args.output_folder).rstrip("/")+args.sample_id+"_prr_map.txt"):
-            os.remove((args.output_folder).rstrip("/")+args.sample_id+"_prr_map.txt")
+        if os.path.exists((args.output_folder).rstrip("/")+args.sample_id+"_prr.map"):
+            os.remove((args.output_folder).rstrip("/")+args.sample_id+"_prr.map")
         
-        motif_db_path = (args.motif_db).rstrip("/")        
+        motif_db_path = str(args.motif_db).rstrip("/")        
 
         for line in motif_file:
             line = line.strip()
             mast_map = motif_db_path+"/"+line+".txt"
             cmd_job = ["mast", mast_map, args.prr_fasta, "-norc", "-nostatus", "-hit_list", "-best"]
             jobs.append(cmd_job)
-            print("Command Call: "+" ".join(cmd_job))
+            #print("Command Call: "+" ".join(cmd_job))
     # Execute each job command
-    output_path = Path(args.output_folder) / f"{args.sample_id}_prr_map.txt"
+    output_path = Path(args.output_folder) / f"{args.sample_id}_prr.map"
     with open(output_path, "a") as outfile:  # Create the output file
         for job in jobs:
             subprocess.run(job, stdout=outfile, check=True)

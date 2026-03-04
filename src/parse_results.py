@@ -1,17 +1,17 @@
 import sys
 import argparse
+from pathlib import Path
 
 def main ():
 
     parser = argparse.ArgumentParser(
-        description="",
-        usage="")
+        description="Parser the results of motifs mapping and convert them to a simplified csv format",
+        usage="python %(prog)s --prr_fasta <> ")
 
-    parser.add_argument("--prr_fasta",metavar="",help="")    
-    parser.add_argument("--motif_alignment",metavar="",help="")
-    parser.add_argument("--sample_id",metavar="",help="")
-    parser.add_argument("--motif_db",metavar="",help="")
-    parser.add_argument("--output",metavar="",help="")
+    parser.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
+    parser.add_argument("--prr_fasta",metavar="FILE",type=Path,help="Path to file containing PRR sequences")
+    parser.add_argument("--motif_alignment",metavar="FILE",help="Path to file containing the MAST aligment output")
+    parser.add_argument("--output",metavar="FILE",help="Output file of parsed results")
 
     if len(sys.argv) == 1:
         print("\n")
@@ -39,7 +39,6 @@ def main ():
 
     all_data=[]
 
-    motif_db_dir=(args.motif_db).rstrip("/")
    
     outfile = open(args.output,"a")
  
@@ -48,7 +47,8 @@ def main ():
             if("# mast -norc -nostatus -hit_list -best" in mast):
                 if(len(all_data)>0):
                     TFBS_taxa=mast.split(" ")
-                    TFBS_taxa=TFBS_taxa[6].replace(motif_db_dir+"/","")
+                    TFBS_taxa = TFBS_taxa[6].split("/")
+                    TFBS_taxa = TFBS_taxa[-1]
                     for data in all_data:
                         outfile.write(TFBS_taxa+","+data+"\n")	
                     all_data=[] 
