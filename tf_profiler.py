@@ -109,7 +109,7 @@ def main():
 
     #### Calculate Menu Options ####
 
-    parser_c = subparsers.add_parser("calculate",help ="")
+    parser_c = subparsers.add_parser("calculate",help ="Computes a Simplified Operon Model to extract Potential Regulatory Regions (PRR) on genomic contigs")
     parser_c.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
     parser_c.add_argument("--cds_pos",metavar="FILE",action=check_extension_pos({'ptt','gff','gff3'}),required=True, help="Path to file containing the positions of all CDS along your genomic sample. (PTT or GFF format)")
     parser_c.add_argument("--assembly",metavar="FILE",action=check_extension_fasta({'fasta','fa','fna'}),required=True, help="Path to fasta formated genome")
@@ -127,11 +127,23 @@ def main():
     #### Calculate Menu Options ####
 
 
-    parser_p = subparsers.add_parser("profiling",help ="")
-    parser_p.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS and Contigs nomenclature")
+    parser_p = subparsers.add_parser("profiling",help ="Combines the PRR model with the Annotation and Coverage of CDS to comput a Regulation Profile on a single Sample")
+    parser_p.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or N ame. It must be contained on your CDS, Contigs, Coverage and Annotation nomenclature")
+    parser_p.add_argument("--annotation",metavar="FILE",required=True,help="Annotation file containing your cds names and a feature (gene_name, COG, KO, EC_Number, etc. Must be a 2 column tab-separated file")
+    parser_p.add_argument("--coverage",metavar="FILE",required=True,help="")
+    parser_p.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default=
+ "cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
+    #parser.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=T rue,help="E-value cutoff for mapped motifs agains PRR")
+    parser_p.add_argument("--targets",metavar="FILE",required=True,help="")
+    parser_p.add_argument("--output",metavar="DIR",required=True,help="")
 
 
     parser_p.set_defaults(func=execute_profiling)    
+
+
+    parser_m = subparsers.add_parser("matrix",help ="Combines multiple Profile outputs and generates a single Matrix Regulatory Profile of a cohort of samples")
+    parser_m.add_argument("--profile_folder",metavar="ID",required=True,help="DIR of profile folder")
+    parser_m.set_defaults(func=execute_matrix)    
 
 
     if len(sys.argv) == 1:
