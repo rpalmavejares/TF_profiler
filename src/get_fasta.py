@@ -24,10 +24,10 @@ def main():
 
     args = parser.parse_args()
     
-    output_folder=args.output_folder.rstrip("/")
+    output_folder = args.output_folder.rstrip("/")
     output_fasta = open(output_folder+"/"+args.sample_id+"_prr.fasta","w")
 
-    with open(args.output_folder+"/"+args.operon_model) as prr_file:
+    with open(args.operon_model) as prr_file:
         all_records = []
         for lines in prr_file:
             genes=list()

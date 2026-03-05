@@ -32,8 +32,8 @@ def main ():
     with open(args.motif_list, 'r') as motif_file:
         jobs = []
         # Remove the output file if it exists and create a new one
-        if os.path.exists((args.output_folder).rstrip("/")+args.sample_id+"_prr.map"):
-            os.remove((args.output_folder).rstrip("/")+args.sample_id+"_prr.map")
+        if os.path.exists(args.sample_id+"_prr.map"):
+            os.remove(args.sample_id+"_prr.map")
         
         motif_db_path = str(args.motif_db).rstrip("/")        
 
@@ -47,7 +47,12 @@ def main ():
     output_path = Path(args.output_folder) / f"{args.sample_id}_prr.map"
     with open(output_path, "a") as outfile:  # Create the output file
         for job in jobs:
-            subprocess.run(job, stdout=outfile, check=True)
+            try:
+                subprocess.run(job, stdout=outfile, check=True)
+            except FileNotFoundError:
+                print("Error: The program MAST from the MEME Suite has not been found")
+            except subprocess.CalledProcessError as e:
+                print(f"Error: The command ran but exited with an error code: {e.returncode}")
 
     outfile.close()
 
