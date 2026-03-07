@@ -14,7 +14,6 @@ def main():
     parser.add_argument("--annotation",metavar="FILE",required=True,help="Annotation file containing your cds names and a feature (gene_name, COG, KO, EC_Number, etc. Must be a 2 column tab-separated file")
     parser.add_argument("--coverage",metavar="FILE",required=True,help="")
     parser.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default="cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
-    #parser.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=True,help="E-value cutoff for mapped motifs agains PRR")
     parser.add_argument("--targets",metavar="FILE",required=True,help="")
     parser.add_argument("--output",metavar="DIR",required=True,help="")
 
@@ -149,7 +148,7 @@ def main():
     
     profiling_folder_only_feature = Path(args.output+"/P_Features")
     profiling_folder_only_feature.mkdir(parents=True, exist_ok=True)
-    output_tf_gen = open(str(profiling_folder_only_feature)+"/"+args.sample_id+".tsv","w")
+    output_tf_gen = open(str(profiling_folder_only_feature)+"/"+args.sample_id+"_feature_profile.tsv","w")
 
     output_tf_gen.write("Feature\t"+str(args.sample_id)+"\n")
     for item in all_data:

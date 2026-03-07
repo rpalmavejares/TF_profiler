@@ -141,8 +141,8 @@ def main():
     parser_p.set_defaults(func=execute_profiling)    
 
 
-    parser_m = subparsers.add_parser("matrix",help ="Combines multiple Profile outputs and generates a single Matrix Regulatory Profile of a cohort of samples")
-    parser_m.add_argument("--profile_folder",metavar="ID",required=True,help="DIR of profile folder")
+    
+    
     parser_m.set_defaults(func=execute_matrix)    
 
 
