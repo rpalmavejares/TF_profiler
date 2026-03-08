@@ -140,101 +140,150 @@ def main ():
     #tara_genen_name[operon_id]
     #tara_genen_name[operon_id]
 
-    cds_feature= dict()
 
-    with open(args.annotation) as annotation:
-        for annot in annotation:
-            aux_annot=annot.split("\t")
-            cds_id=aux_annot[0]
-            feature_name=aux_annot[1].rstrip("\n")
-            if(args.sample_id in cds_id and feature_name not in ("_", "", " ", "-", "*", ".")):
-                cds_feature[cds_id]=feature_name.lower()
-            
-    #print(cds_feature)
-
-    operon_and_cds = dict()
-    operon_and_tf = dict()
-    operon_and_test = dict()
-    count_call=0
-    count_pre_call=0
+    geneTF=dict()
+    operonTF=dict()
+    gene_operonTF=dict()
+    operon_dict_cds=dict()
+    operon_dict_tf = dict()   
+ 
     with open(args.prr_results) as prr_tfs:
         for prr_line in prr_tfs:
-            aux_array=""
             aux=prr_line.split(",")
-            tf_name=aux[0].replace(".txt","")
-            if(tf_name in TFMs_dict):
-                simple_TFMs=TFMs_dict[tf_name]
-                aux_opr=aux[1]
-                aux_cds=aux[2]
-                evalue=float(aux[-1].rstrip("\n"))
-                aux_eva = aux[-1].rstrip("\n")
-                aux_eva = aux_eva.split("e-")
-                if(int(aux_eva[1])>=6):
-                    count_pre_call+=1
-                #print("heuheuheuh")
-                if(evalue>=float(args.cutoff)):
-                    count_call+=1
-                    if(aux_opr not in operon_and_cds): # works for both dicts
-                        operon_and_cds.setdefault(aux_opr,[])
-                        operon_and_tf.setdefault(aux_opr,[])
-                        operon_and_cds[aux_opr].append(aux_cds)
-                        operon_and_tf[aux_opr].append(simple_TFMs)
-                    else:
-                        operon_and_cds[aux_opr].append(aux_cds)
-                        operon_and_tf[aux_opr].append(simple_TFMs)
-    
-        
-    counting_TFMs=dict()
-    for t_array in TFMs_array:
-        counting_TFMs[t_array]=0
-    
-    counter = 0
+            geneTF.setdefault(aux[2],[])
+            operonTF.setdefault(aux[1],[])
+            gene_operonTF.setdefault(aux[2])
+            gene_operonTF[aux[2]]=aux[1]
+            operon_dict_cds.setdefault(aux[1],[])
+            print(aux[0],aux[1],aux[2])
+            operon_dict_cds[aux[1]].append(float(coverage_dict[aux[2]]))
+            aux_TFMs=aux[0].replace(".txt","")
+            evalue=float(aux[-1].rstrip("\n"))
 
 
-    for key, values in operon_and_tf.items():
-        all_tfs_list = list(set(values))
-        all_cds_list = list(set(operon_and_cds[key]))
-        cds_check=False
-        if(args.cov_mode == "contig"):
-            parent_contig=all_cds_list[0].split("_")
-            parent_contig="_".join(parent_contig[:-1])
-            for any_cds in all_cds_list:
-                if(any_cds in cds_feature.keys()):
-                    if cds_feature[any_cds] in genes.keys():
-                        cds_check=True
-            if(cds_check and len(all_cds_list)>1):
-                for any_tfs in all_tfs_list:
-                    counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(coverage_dict[parent_contig])
-                cds_check=False
-                #print(key, all_tfs_list)
-                #print(key, all_cds_list)
-                #break
-
-    for key, values in counting_TFMs.items():
-        print(key,values)
+            if (evalue>=float(args.cutoff)): 
+                if(aux_TFMs in TFMs_dict):
+                    simple_TFMs=TFMs_dict[aux_TFMs]
+                    geneTF[aux[2]].append(simple_TFMs)
+                    operonTF[aux[1]].append(simple_TFMs)
+            else:
+                continue
+            #geneTF[aux[2]]=aux[0].replace(".txt","")   
+            #print(len(aux))
 
 
-        #print(key, all_tfs_list)
-        #print(key, all_cds_list)
-        #for tfs_s in all_tfs_single:
-        #    print(key)        
+    ##################################################################
+    # Step 5. Read all annotation data from eggnogmapper
+    ##################################################################
+    #print("Initiate annotation dictionary")
+    #The list should be in a format like:
+    #query[tab]seed_ortholog[tab]evalue[tab]score[tab]eggnog_ogs[tab]max_annot_lvl[tab]cog[tab]description[tab]preferred_name[tab]gos[tab]ec
+    #or#
+    #query[tab]prefered_name
+    #The all_annot dictionary should be:
+    #query(tara_gene)=preferred_name
+    #query(tara_gene)=preferred_name
+    #query(tara_gene)=preferred_name
+    #The annotation_excluded dictionary should be:
+    #If the evalue leaves a preferred_name out, then is stored as:
+    #query(tara_gene)=preferred_name
+    #query(tara_gene)=preferred_name
+    #print(annotation_excluded)
 
-   
-    print("count_pre_calls",count_pre_call)
-    print("count_calls",count_call)
- 
-    sys.exit(0)
+    all_data = geneTF.items()
+    geneTFMs=dict()
 
- 
+    #print("geneTF : ",geneTF)
+    for item in all_data:
+            #print(str(item[0])+"\t"+str(item[1]))
+        uniqs = list(set(list(item[1])))
+        geneTFMs[item[0]]=uniqs
+        if(len(uniqs)==0):
+            geneTFMs.pop(item[0])
+        #print(item[0],uniqs)
+
+    all_data_operon = operonTF.items()
+    operonTFMs=dict()
+    operon_once=dict()
+    for item in all_data_operon:
+        uniqss = list(set(list(item[1])))
+        operonTFMs[item[0]]=uniqss
+        operon_once[item[0]]=uniqss
+
+    #print("######################")
+    #print(geneTFMs) # PAIRS OF TARA GENE AND TF
+    #print("######################")
+    #print(operonTFMs) # PAIRS OF OPERON AND TF
+    #print("######################")
+    #print(gene_operonTF) # PAIRS OF OPERON AND GENE
+    #print("######################")
+
+    core=""
+    depth=0
+    tf_per_gene = [0] * len(TFMs_array)
+    gene_array=[]
+
+
+
     ##################################################################
     # Step 7. Create matrix for the TFMs and Gene Vector
     ##################################################################
     gene_array = [[0 for x in range(len(TFMs_array))] for y in range(len(genes_array_tf)) ]
     TF_array = [[0 for x in range(len(TFMs_array))] for y in range(len(genes_array_tf)) ]
 
+    coverage_pairs=[]
+    core_flag=False
 
+    with open(args.annotation) as annotation:
+        for lines in annotation:
 
+            aux=lines.split("\t")
+            cds_name=aux[0]
+            responce_gene=aux[1].rstrip("\n").lower()
+            scaffold_pair=cds_name.split("_")
+            scaffold_pair="_".join(scaffold_pair[:-1])
 
+            if(args.cov_mode=="contig"):
+                if(cds_name in geneTFMs and responce_gene in genes):
+                    genes[responce_gene]=genes[responce_gene]+float(coverage_dict[scaffold_pair])
+                    
+                    operon_value=gene_operonTF[cds_name]
+                    for TFMs in geneTFMs[cds_name]:
+                        operon_value=gene_operonTF[cds_name]
+                        TF_ID=TFMs_array.index(TFMs)
+                        GENE_ID=genes_array_tf.index(responce_gene)
+                        gene_array[GENE_ID][TF_ID]= gene_array[GENE_ID][TF_ID] + float(coverage_dict[scaffold_pair])
+                    if(operon_value in operon_once.keys()):
+                        for TFMs in geneTFMs[cds_name]:
+                            operon_value=gene_operonTF[cds_name]    
+                            TF_ID=TFMs_array.index(TFMs)
+                            GENE_ID=genes_array_tf.index(responce_gene)
+                            TF_array[GENE_ID][TF_ID]=TF_array[GENE_ID][TF_ID] + float(coverage_dict[scaffold_pair])
+                        operon_once.pop(operon_value)
+                else:
+                    continue
+            if(args.cov_mode=="cds"):
+
+                if(cds_name in geneTFMs and responce_gene in genes):
+                    
+                    operon_value=gene_operonTF[cds_name]
+                    new_avg_coverage=np.mean(np.array(operon_dict_cds[operon_value]))
+                    genes[responce_gene]=genes[responce_gene]+float(new_avg_coverage)
+                    operon_value=gene_operonTF[cds_name]
+                    for TFMs in geneTFMs[cds_name]:
+                        operon_value=gene_operonTF[cds_name]
+                        TF_ID=TFMs_array.index(TFMs)
+                        GENE_ID=genes_array_tf.index(responce_gene)
+                        gene_array[GENE_ID][TF_ID]= gene_array[GENE_ID][TF_ID] + float(new_avg_coverage)
+                    if(operon_value in operon_once.keys()):
+                        for TFMs in geneTFMs[cds_name]:
+                            operon_value=gene_operonTF[cds_name]
+                            TF_ID=TFMs_array.index(TFMs)
+                            GENE_ID=genes_array_tf.index(responce_gene)
+                            TF_array[GENE_ID][TF_ID]=TF_array[GENE_ID][TF_ID] + float(new_avg_coverage)
+                        operon_once.pop(operon_value)
+                else:
+                    continue
 
     final_count_TFMs=[0] * len(TFMs_array)
 

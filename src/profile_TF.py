@@ -4,14 +4,6 @@ import numpy as np
 import argparse
 from pathlib import Path
 
-
-#coverage_file = open(sys.argv[1],"r")
-#tfm_list = open(sys.argv[2],"r") 
-#operon_tfs = open(sys.argv[3],"r")
-#station= str(sys.argv[4])
-#eva_cutoff= str(sys.argv[5])
-#coverage_mode = str(sys.argv[6])
-
 def main ():
 
     parser = argparse.ArgumentParser(
