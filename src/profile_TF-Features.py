@@ -172,7 +172,7 @@ def main ():
                 if(int(aux_eva[1])>=6):
                     count_pre_call+=1
                 #print("heuheuheuh")
-                if(evalue>=float(args.cutoff)):
+                if(evalue<=float(args.cutoff)):
                     count_call+=1
                     if(aux_opr not in operon_and_cds): # works for both dicts
                         operon_and_cds.setdefault(aux_opr,[])
@@ -198,20 +198,25 @@ def main ():
         if(args.cov_mode == "contig"):
             parent_contig=all_cds_list[0].split("_")
             parent_contig="_".join(parent_contig[:-1])
+
+
             for any_cds in all_cds_list:
                 if(any_cds in cds_feature.keys()):
                     if cds_feature[any_cds] in genes.keys():
+                        #print("Check-True",key, parent_contig, all_cds_list)
                         cds_check=True
-            if(cds_check and len(all_cds_list)>1):
+            if(cds_check and len(all_cds_list)>=1):
                 for any_tfs in all_tfs_list:
-                    counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(coverage_dict[parent_contig])
+                    if(parent_contig in coverage_dict.keys()):
+                        #print(parent_contig)
+                        counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(coverage_dict[parent_contig])
                 cds_check=False
                 #print(key, all_tfs_list)
                 #print(key, all_cds_list)
                 #break
 
     for key, values in counting_TFMs.items():
-        print(key,values)
+        print(f'{key}\t{values}')
 
 
         #print(key, all_tfs_list)
