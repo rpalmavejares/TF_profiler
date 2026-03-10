@@ -3,6 +3,7 @@ import sys
 import numpy as np
 import argparse
 from pathlib import Path
+import numpy as np
 
 #coverage_file = open(sys.argv[1],"r")
 #station = str(sys.argv[2]) 
@@ -41,7 +42,7 @@ def main ():
     args = parser.parse_args()
 
     all_annot= dict()
-    genes = dict()
+    counting_Features = dict()
 
     ##################################################################
     # Step 1. Read all genes of interest (must be on annotation)
@@ -56,19 +57,19 @@ def main ():
     #gen1=0
     #gen2=0
     #gen3=0
-    #The genes_array_tf should be:
+    #The feature_array_tf should be:
     #[gen1,gen2,gen3]
 
-    genes_array_tf = []
+    feature_array_tf = []
     with open(args.feature_list) as gene_list:
         for gen in gene_list:
             aux_g=gen.replace("\n","").lower()
-            genes[aux_g]=0
-            genes_array_tf.append(aux_g)
+            counting_Features[aux_g]=0
+            feature_array_tf.append(aux_g)
 
 
-    genes_array_tf=list(genes_array_tf)
-    genes_array_tf.sort()
+    feature_array_tf=list(feature_array_tf)
+    feature_array_tf.sort()
 
 
     ##################################################################
@@ -171,7 +172,6 @@ def main ():
                 aux_eva = aux_eva.split("e-")
                 if(int(aux_eva[1])>=6):
                     count_pre_call+=1
-                #print("heuheuheuh")
                 if(evalue<=float(args.cutoff)):
                     count_call+=1
                     if(aux_opr not in operon_and_cds): # works for both dicts
@@ -187,9 +187,9 @@ def main ():
     counting_TFMs=dict()
     for t_array in TFMs_array:
         counting_TFMs[t_array]=0
-    
     counter = 0
 
+    TF_Feature_vectors = np.zeros((len(counting_Features),len(counting_TFMs))) 
 
     for key, values in operon_and_tf.items():
         all_tfs_list = list(set(values))
@@ -198,25 +198,82 @@ def main ():
         if(args.cov_mode == "contig"):
             parent_contig=all_cds_list[0].split("_")
             parent_contig="_".join(parent_contig[:-1])
-
-
             for any_cds in all_cds_list:
                 if(any_cds in cds_feature.keys()):
-                    if cds_feature[any_cds] in genes.keys():
-                        #print("Check-True",key, parent_contig, all_cds_list)
-                        cds_check=True
+                    if cds_feature[any_cds] in counting_Features.keys():
+                        if(parent_contig in coverage_dict.keys()):
+                            #print("Check-True",key, parent_contig, all_cds_list)
+                            cds_check=True
+                        else:
+                            print(f'An error has ocurred {parent_contig} not in coverage files')
             if(cds_check and len(all_cds_list)>=1):
+                # Countig all TFs in an Operon
                 for any_tfs in all_tfs_list:
-                    if(parent_contig in coverage_dict.keys()):
-                        #print(parent_contig)
-                        counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(coverage_dict[parent_contig])
+                    counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(coverage_dict[parent_contig])
                 cds_check=False
+                
+                # Countig all cds Features in an Operon
+                
+                for any_cds in all_cds_list:
+                    if any_cds in cds_feature.keys():
+                        feature_name = cds_feature[any_cds]
+                        counting_Features[feature_name]= float(counting_Features[feature_name]) + float(coverage_dict[parent_contig])
+                        for any_ffs_m in all_tfs_list:
+                            TFMs_index = TFMs_array.index(any_ffs_m)
+                            Feature_index = feature_array_tf.index(feature_name)
+                            TF_Feature_vectors[Feature_index][TFMs_index]=float(TF_Feature_vectors[Feature_index][TFMs_index]) + float(coverage_dict[parent_contig])
+                
+
                 #print(key, all_tfs_list)
                 #print(key, all_cds_list)
                 #break
+        
+        if(args.cov_mode == "cds"):
+            operon_cds_coverages=[]
+            for any_cds in all_cds_list:
+                if(any_cds in cds_features.keys()):
+                    if(cds_feature[any_cds] in counting_Features.keys()):
+                        if(any_cds in coverage_dict.keys()):
+                            operon_cds_coverages.append(float(coverage_dict[any_cds]))
+                            cds_check=True
+                        else:
+                            print(f'An error has ocurred {any_cds} not in coverage files')
+            if(cds_check and len(all_cds_list)>=1):
+                mean_coverage = np.mean(operon_cds_coverages) 
+                # Countig all TFs in an Operon
+                for any_tfs in all_tfs_list:
+                    counting_TFMs[any_tfs]= float(counting_TFMs[any_tfs]) + float(mean_coverage)
+            
+                # Countig all cds Features in an Operon
+                
+                for any_cds in all_cds_list:
+                    if any_cds in cds_feature.keys():
+                        feature_name = cds_feature[any_cds]
+                        counting_Features[feature_name]= float(counting_Feature[feature_name]) + float(coverage_dict[any_cds])
+                        for any_ffs_m in all_tfs_list:
+                            TFMs_index = TFMs_array.index(any_ffs_m)
+                            Feature_index = feature_array_tf.index(feature_name)
+                            TF_Feature_vectors[Feature_index][TFMs_index]=float(TF_Feature_vectors[Feature_index][TFMs_index]) + float(coverage_dict[any_cds])
 
-    for key, values in counting_TFMs.items():
-        print(f'{key}\t{values}')
+
+
+
+    #for key, values in counting_TFMs.items():
+    #    print(f'{key}\t{values}')
+
+    #for key, values in counting_Features.items():
+    #    print(f'{key}\t{values}')
+
+
+    print("Feature/TF\t"+str("\t".join(TFMs_array)))
+    for rows in range(len(TF_Feature_vectors)):
+        if(np.sum(TF_Feature_vectors[rows])>0):
+            #print(np.sum(rows))
+            Feature_index = feature_array_tf[rows]
+            rows_parsed = "\t".join(map(str,TF_Feature_vectors[rows]))
+            print(f'{Feature_index}\t{rows_parsed}')
+
+
 
 
         #print(key, all_tfs_list)
@@ -231,18 +288,6 @@ def main ():
     sys.exit(0)
 
  
-    ##################################################################
-    # Step 7. Create matrix for the TFMs and Gene Vector
-    ##################################################################
-    gene_array = [[0 for x in range(len(TFMs_array))] for y in range(len(genes_array_tf)) ]
-    TF_array = [[0 for x in range(len(TFMs_array))] for y in range(len(genes_array_tf)) ]
-
-
-
-
-
-    final_count_TFMs=[0] * len(TFMs_array)
-
 
     ############     V E C T O R     T F M S      BY     G E N    ############
 
@@ -258,7 +303,7 @@ def main ():
     ocurrences=len(gene_array[0])
     for data in range(len(gene_array)):
         if(gene_array[data].count(0)!=ocurrences):
-            output_tf_feature_vectors.write(str(genes_array_tf[data])+"\t"+"\t".join(str(v) for v in gene_array[data]))
+            output_tf_feature_vectors.write(str(feature_array_tf[data])+"\t"+"\t".join(str(v) for v in gene_array[data]))
             output_tf_feature_vectors.write("\n")      # VECTOR DE TFMS POR GEN
         for TFMs_pos in range(len(gene_array[data])):   
             final_count_TFMs[TFMs_pos]=float(final_count_TFMs[TFMs_pos]+TF_array[data][TFMs_pos])
@@ -288,7 +333,7 @@ def main ():
     #print("TOTAL SUM PER INSTANCES")
 
 
-    all_data = genes.items()
+    all_data = counting_Features.items()
     output_tf_gen = open(tf_gen_results,"w")
 
     profiling_folder_tf_feature_feat = Path(args.output+"/P_TF-Features/By_Feature")
