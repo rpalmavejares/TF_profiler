@@ -90,7 +90,7 @@ def main ():
                 evalue=float(aux[-1].rstrip("\n"))
                 #print(evalue)
                 if(args.cov_mode=="contig"):
-                    if (evalue>=float(args.cutoff)):  
+                    if (evalue<=float(args.cutoff)):  
                         aux_array=simple_TFMs+","+aux_opr+","+aux_contig
                         #print(aux_array)
                         all_operon_data.append(aux_array)

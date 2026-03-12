@@ -31,8 +31,8 @@ def main ():
     parser.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default="cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
     parser.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=True,help="E-value cutoff for mapped motifs agains PRR")
     parser.add_argument("--tf_list",metavar="FILE",required=True,help="")
-    parser.add_argument("--prr_results",metavar="FILE",required=True,help="")
-    parser.add_argument("--output",metavar="DIR",required=True,help="")
+    parser.add_argument("--prr_results",metavar="FILE",type=Path,default=None,help="PRR Results file from the Calculate step")
+    parser.add_argument("--output_folder",metavar="DIR",required=True,help="")
 
     if len(sys.argv) == 1:
         print("\n")
@@ -258,20 +258,18 @@ def main ():
 
 
 
-    #for key, values in counting_TFMs.items():
-    #    print(f'{key}\t{values}')
 
     #for key, values in counting_Features.items():
     #    print(f'{key}\t{values}')
 
 
-    print("Feature/TF\t"+str("\t".join(TFMs_array)))
-    for rows in range(len(TF_Feature_vectors)):
-        if(np.sum(TF_Feature_vectors[rows])>0):
+    #print("Feature/TF\t"+str("\t".join(TFMs_array)))
+    #for rows in range(len(TF_Feature_vectors)):
+        #if(np.sum(TF_Feature_vectors[rows])>0):
             #print(np.sum(rows))
-            Feature_index = feature_array_tf[rows]
-            rows_parsed = "\t".join(map(str,TF_Feature_vectors[rows]))
-            print(f'{Feature_index}\t{rows_parsed}')
+            #Feature_index = feature_array_tf[rows]
+            #rows_parsed = "\t".join(map(str,TF_Feature_vectors[rows]))
+            #print(f'{Feature_index}\t{rows_parsed}')
 
 
 
@@ -282,10 +280,9 @@ def main ():
         #    print(key)        
 
    
-    print("count_pre_calls",count_pre_call)
-    print("count_calls",count_call)
+    #print("count_pre_calls",count_pre_call)
+    #print("count_calls",count_call)
  
-    sys.exit(0)
 
  
 
@@ -295,54 +292,42 @@ def main ():
     #print("TFMs VECTOR PER FEATURE")
 
 
-    profiling_folder_tf_feature_vectors = Path(args.output+"/P_TF-Features/Vectors")
+    profiling_folder_tf_feature_vectors = Path(args.output_folder+"/P_TF-Features/By_Vectors")
     profiling_folder_tf_feature_vectors.mkdir(parents=True, exist_ok=True)
-    output_tf_feature_vectors = open(str(profiling_folder_tf_feature_vectors)+"/"+args.sample_id+"_tf-feature_vectors_profile.tsv","w")
-    output_tf_feature_vectors.write("TF_Group\t"+str("\t".join(TFMs_array)))
+    output_folder_tf_feature_vectors = open(str(profiling_folder_tf_feature_vectors)+"/"+args.sample_id+"_tf-feature_vectors_profile.tsv","w")
+    output_folder_tf_feature_vectors.write(str(args.sample_id)+"_Feature/TF_Group\t"+str("\t".join(TFMs_array)))
     
-    ocurrences=len(gene_array[0])
-    for data in range(len(gene_array)):
-        if(gene_array[data].count(0)!=ocurrences):
-            output_tf_feature_vectors.write(str(feature_array_tf[data])+"\t"+"\t".join(str(v) for v in gene_array[data]))
-            output_tf_feature_vectors.write("\n")      # VECTOR DE TFMS POR GEN
-        for TFMs_pos in range(len(gene_array[data])):   
-            final_count_TFMs[TFMs_pos]=float(final_count_TFMs[TFMs_pos]+TF_array[data][TFMs_pos])
-
-    output_tf-feature_vectors.close()
-
-    #print("#############################")
-    #print("SUM OF TFMs")
-
+    for rows in range(len(TF_Feature_vectors)):
+        if(np.sum(TF_Feature_vectors[rows])>0):
+            #print(np.sum(rows))
+            Feature_index = feature_array_tf[rows]
+            rows_parsed = "\t".join(map(str,TF_Feature_vectors[rows]))
+            output_folder_tf_feature_vectors.write(f'{Feature_index}\t{rows_parsed}\n')
 
     ###########          S U M       O F       T F M S        ############
 
-    profiling_folder_tf_feature_tfms = Path(args.output+"/P_TF-Features/By_TF")
+    profiling_folder_tf_feature_tfms = Path(args.output_folder+"/P_TF-Features/By_TF")
     profiling_folder_tf_feature_tfms.mkdir(parents=True, exist_ok=True)
-    output_tf_feature_tfms = open(str(profiling_folder_tf_feature_tfms)+"/"+args.sample_id+"_tf_profile.tsv","w")
-    output_tf_feature_tfms.write("TF_Group\t"+str(args.sample_id)+"\n")
+    output_folder_tf_feature_tfms = open(str(profiling_folder_tf_feature_tfms)+"/"+args.sample_id+"_tf_profile.tsv","w")
+    output_folder_tf_feature_tfms.write("TF_Group\t"+str(args.sample_id)+"\n")
 
-    for values in range(len(final_count_TFMs)):
-        output_tf_feature_tfms.write(str(TFMs_array[values])+"\t"+str(final_count_TFMs[values])+"\n")
-    output_tf_feature_tfms.close()
+    for key, values in counting_TFMs.items():
+        output_folder_tf_feature_tfms.write(f'{key}\t{values}\n')
 
-
-
-    #################  S U M      O F       G E N E S          ################
+    #################  S U M      O F       F E A T U R E S          ################
 
     #print("#############################")
     #print("TOTAL SUM PER INSTANCES")
 
 
-    all_data = counting_Features.items()
-    output_tf_gen = open(tf_gen_results,"w")
 
-    profiling_folder_tf_feature_feat = Path(args.output+"/P_TF-Features/By_Feature")
+    profiling_folder_tf_feature_feat = Path(args.output_folder+"/P_TF-Features/By_Feature")
     profiling_folder_tf_feature_feat.mkdir(parents=True, exist_ok=True)
-    output_tf_feature_feat = open(str(profiling_folder_tf_feature_feat)+"/"+args.sample_id+"_tf_profile.tsv","w")
-    
-    output_tf_feature_tfms.write("TF_Group\t"+str(args.sample_id)+"\n")
-    for item in all_data:    # RESULTADO DE SUMA DE COVERTURAS POR GEN
-        output_tf_feature_feat.write(str(item[0])+"\t"+str(item[1])+"\n")
+    output_folder_tf_feature_feat = open(str(profiling_folder_tf_feature_feat)+"/"+args.sample_id+"_feature_profile.tsv","w")
+    output_folder_tf_feature_feat.write("Feature\t"+str(args.sample_id)+"\n")
+
+    for key, values in counting_Features.items():
+        output_folder_tf_feature_feat.write(f'{key}\t{values}\n')
 
 if __name__ == "__main__":
     main()

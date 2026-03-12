@@ -44,5 +44,4 @@ mkdir $output_folder
 
 #python profile_Features.py --sample_id S9_Z05 --annotation ../../map_out/annotation_simple.tsv --coverage ../../map_out/coverage_simple.tsv --cov_mode contig --targets ../../map_out/all_gene_list.tsv --output M4
 
-
-#python profile_TF-Features.py --sample_id S9_Z05 --coverage ../../map_out/coverage_simple.tsv --cov_mode contig --tf_list ../../map_out/TF_Regprecise_list.txt --output M4 --cutoff 1e-05 --prr_results ../../map_out/calculate/S9_Z05_prr.results --annotation ../../map_out/annotation_simple.tsv --feature_list ../../map_out/all_gene_list.tsv > aux.txt
+#python profile_TF-Features.py --sample_id S9_Z05 --coverage ../../map_out/coverage_simple.tsv --cov_mode contig --tf_list ../../map_out/TF_Regprecise_list.txt --output M4 --cutoff 1e-05 --prr_results ../../map_out/calculate/S9_Z05_prr.results --annotation ../../map_out/annotation_simple.tsv --feature_list ../../map_out/all_gene_list.tsv

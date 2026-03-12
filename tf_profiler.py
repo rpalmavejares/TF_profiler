@@ -89,7 +89,24 @@ def execute_profiling(args):
     profiling_folder = Path(output_folder+"/profiling")
     profiling_folder.mkdir(parents=True, exist_ok=True)
 
+    run_profile_tf_feature= ["python", str(Path("src/profile_TF-Features.py")),
+    "--sample_id",str(args.sample_id),
+    "--annotation",str(args.annotation),
+    "--feature_list",str(args.feature_list),
+    "--coverage",str(args.coverage),
+    "--cov_mode",str(args.cov_mode),
+    "--cutoff",str(args.cutoff),
+    "--tf_list",str(args.tf_list),
+    "--prr_results",str(args.prr_results),
+    "--output_folder",str(profiling_folder)]
+    print("Command Call: "+" ".join(run_profile_tf_feature))
+    subprocess.run(run_profile_tf_feature,check=True)
+    print("Done")
 
+
+    #run_profile_tf=
+
+    #run_profile_feature=
 
 
 
@@ -124,26 +141,25 @@ def main():
     parser_c.set_defaults(func=execute_calculate)    
 
 
-    #### Calculate Menu Options ####
-
+    #### Profile Menu Options ####
 
     parser_p = subparsers.add_parser("profiling",help ="Combines the PRR model with the Annotation and Coverage of CDS to comput a Regulation Profile on a single Sample")
-    parser_p.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or N ame. It must be contained on your CDS, Contigs, Coverage and Annotation nomenclature")
+    parser_p.add_argument("--sample_id",metavar="ID",required=True,help="Sample ID or Name. It must be contained on your CDS, Contigs, Coverage and Annotation nomenclature")
     parser_p.add_argument("--annotation",metavar="FILE",required=True,help="Annotation file containing your cds names and a feature (gene_name, COG, KO, EC_Number, etc. Must be a 2 column tab-separated file")
+    parser_p.add_argument("--feature_list",metavar="FILE",required=True,help="")
     parser_p.add_argument("--coverage",metavar="FILE",required=True,help="")
-    parser_p.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default=
- "cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
-    #parser.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=T rue,help="E-value cutoff for mapped motifs agains PRR")
-    parser_p.add_argument("--targets",metavar="FILE",required=True,help="")
-    parser_p.add_argument("--output",metavar="DIR",required=True,help="")
-
+    parser_p.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default="cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
+    parser_p.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=True,help="E-value cutoff for mapped motifs agains PRR")
+    parser_p.add_argument("--tf_list",metavar="FILE",default=str(Path("data/TF_Regprecise_list.txt")),help="List of all TFs to analize in the pipeline")
+    parser_p.add_argument("--prr_results",metavar="FILE",type=Path,default=None,help="PRR Results file from the Calculate step")
+    parser_p.add_argument("--output_folder",metavar="DIR",required=True,help="")
 
     parser_p.set_defaults(func=execute_profiling)    
 
-
     
     
-    parser_m.set_defaults(func=execute_matrix)    
+    
+    #parser_m.set_defaults(func=execute_matrix)    
 
 
     if len(sys.argv) == 1:
@@ -152,7 +168,16 @@ def main():
         sys.exit(1)
 
     args = parser.parse_args()
+
+    if (args.prr_results is None):
+        output_folder = str(args.output_folder).rstrip("/")    
+        calculate_folder = Path(output_folder+"/calculate")
+        args.prr_results = str(calculate_folder)+"/"+args.sample_id+"_prr.results"
+
     args.func(args)
     
+
+
+
 if __name__ == "__main__":
     main()
