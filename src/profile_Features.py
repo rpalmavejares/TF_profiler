@@ -15,7 +15,7 @@ def main():
     parser.add_argument("--coverage",metavar="FILE",required=True,help="")
     parser.add_argument("--cov_mode",metavar="MODE",choices=['cds','contig'],default="cds",required=True,help="Format of your genomic coverage. It can be used as 'Coverage per Contigs' or 'Coverage per CDS' ")
     parser.add_argument("--feature_list",metavar="FILE",required=True,help="")
-    parser.add_argument("--output",metavar="DIR",required=True,help="")
+    parser.add_argument("--output_folder",metavar="DIR",required=True,help="")
 
 
     if len(sys.argv) == 1:
@@ -146,13 +146,13 @@ def main():
 
     all_data = genes.items()
     
-    profiling_folder_only_feature = Path(args.output+"/P_Features")
+    profiling_folder_only_feature = Path(args.output_folder+"/P_Features")
     profiling_folder_only_feature.mkdir(parents=True, exist_ok=True)
-    output_tf_gen = open(str(profiling_folder_only_feature)+"/"+args.sample_id+"_feature_profile.tsv","w")
+    output_folder_tf_gen = open(str(profiling_folder_only_feature)+"/"+args.sample_id+"_feature_profile.tsv","w")
 
-    output_tf_gen.write("Feature\t"+str(args.sample_id)+"\n")
+    output_folder_tf_gen.write("Feature\t"+str(args.sample_id)+"\n")
     for item in all_data:
-        output_tf_gen.write(str(item[0])+"\t"+str(item[1])+"\n")
+        output_folder_tf_gen.write(str(item[0])+"\t"+str(item[1])+"\n")
 
 if __name__ == "__main__":
     main()

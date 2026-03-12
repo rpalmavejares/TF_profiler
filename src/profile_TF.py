@@ -16,7 +16,7 @@ def main ():
     parser.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=True,help="E-value cutoff for mapped motifs agains PRR")
     parser.add_argument("--tf_list",metavar="FILE",required=True,help="")
     parser.add_argument("--prr_results",metavar="FILE",required=True,help="")
-    parser.add_argument("--output",metavar="DIR",required=True,help="")
+    parser.add_argument("--output_folder",metavar="DIR",required=True,help="")
 
     if len(sys.argv) == 1:
         print("\n")
@@ -95,7 +95,7 @@ def main ():
                         #print(aux_array)
                         all_operon_data.append(aux_array)
                 if(args.cov_mode=="cds"): 
-                    if (evalue>=float(args.cutoff)):  
+                    if (evalue<=float(args.cutoff)):  
                         if(aux_opr not in operon_dict_cds.keys()):
                             operon_dict_cds.setdefault(aux_opr,[])
                             operon_dict_cds[aux_opr].append(aux[2])
@@ -141,13 +141,13 @@ def main ():
             #print(coverage_operon_mean)
 
 
-    profiling_folder_only_tf = Path(args.output+"/P_TF")
+    profiling_folder_only_tf = Path(args.output_folder+"/P_TF")
     profiling_folder_only_tf.mkdir(parents=True, exist_ok=True)
-    output_tf_gen = open(str(profiling_folder_only_tf)+"/"+args.sample_id+
+    output_folder_tf_gen = open(str(profiling_folder_only_tf)+"/"+args.sample_id+
  ".tsv","w")
-    output_tf_gen.write("TF_Group\t"+str(args.sample_id)+"\n")
+    output_folder_tf_gen.write("TF_Group\t"+str(args.sample_id)+"\n")
     for keys in counting_TFMs.keys():
-        output_tf_gen.write(keys+"\t"+str(counting_TFMs[keys])+"\n")
+        output_folder_tf_gen.write(keys+"\t"+str(counting_TFMs[keys])+"\n")
 
 if __name__ == "__main__":
     main()

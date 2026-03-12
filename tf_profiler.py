@@ -104,10 +104,32 @@ def execute_profiling(args):
     print("Done")
 
 
-    #run_profile_tf=
 
-    #run_profile_feature=
+    run_profile_tf= ["python", str(Path("src/profile_TF.py")),
+    "--sample_id",str(args.sample_id),
+    "--coverage",str(args.coverage),
+    "--cov_mode",str(args.cov_mode),
+    "--cutoff",str(args.cutoff),
+    "--tf_list",str(args.tf_list),
+    "--prr_results",str(args.prr_results),
+    "--output_folder",str(profiling_folder)]
+    print("Command Call: "+" ".join(run_profile_tf))
+    subprocess.run(run_profile_tf,check=True)
+    print("Done")
 
+
+    run_profile_feature= ["python", str(Path("src/profile_Features.py")),
+    "--sample_id",str(args.sample_id),
+    "--annotation",str(args.annotation),
+    "--feature_list",str(args.feature_list),
+    "--coverage",str(args.coverage),
+    "--cov_mode",str(args.cov_mode),
+    "--output_folder",str(profiling_folder)]
+    print("Command Call: "+" ".join(run_profile_feature))
+    subprocess.run(run_profile_feature,check=True)
+    print("Done")
+
+    print("All profiles completed at "+str(profiling_folder))
 
 
 
