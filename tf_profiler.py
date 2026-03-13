@@ -3,6 +3,7 @@ import argparse
 import subprocess
 import os
 from pathlib import Path
+import glob
 
 def check_extension_fasta(choices):
     class Act(argparse.Action):
@@ -29,9 +30,9 @@ def check_extension_pos(choices):
 def execute_calculate(args):
 
 
-    folder_path = Path(args.output_folder)    
+    folder_path = Path(args.working_folder)    
     folder_path.mkdir(parents=True, exist_ok=True)
-    output_folder = str(args.output_folder).rstrip("/")    
+    output_folder = str(args.working_folder).rstrip("/")    
     calculate_folder = Path(output_folder+"/calculate")
     calculate_folder.mkdir(parents=True, exist_ok=True)
     call_command_calculate_a = ["python", str(Path("src/get_intergenics.py")),
@@ -42,7 +43,7 @@ def execute_calculate(args):
     "--prr_stop",str(args.prr_stop),
     "--cds_dist",str(args.cds_dist),
     "--offset",str(args.offset),
-    "--output_folder",str(calculate_folder)]
+    "--working_folder",str(calculate_folder)]
     print("############################")
     print("### Running TF Profiler ####")
     print("############################")
@@ -54,7 +55,7 @@ def execute_calculate(args):
     call_command_calculate_b = ["python", str(Path("src/get_fasta.py")),
     "--sample_id",str(args.sample_id),
     "--operon_model",str(out_operon_model),
-    "--output_folder",str(calculate_folder)]
+    "--working_folder",str(calculate_folder)]
     print("Command Call: "+" ".join(call_command_calculate_b))
     subprocess.run(call_command_calculate_b,check=True)
     print("Done")
@@ -64,7 +65,7 @@ def execute_calculate(args):
     "--motif_db",str(args.motif_db),
     "--sample_id",str(args.sample_id),
     "--prr_fasta",str(output_prr_fasta),
-    "--output_folder",str(calculate_folder)]
+    "--working_folder",str(calculate_folder)]
     print("Command Call: "+" ".join(call_command_calculate_c))
     subprocess.run(call_command_calculate_c,check=True)
     print("Done")
@@ -78,14 +79,15 @@ def execute_calculate(args):
     print("Command Call: "+" ".join(call_command_calculate_c))
     subprocess.run(call_command_calculate_d,check=True)
     print("Done")
+    print("All calculations completed at "+str(calculate_folder))
 
 
 
 def execute_profiling(args):
 
-    folder_path = Path(args.output_folder)    
+    folder_path = Path(args.working_folder)    
     folder_path.mkdir(parents=True, exist_ok=True)
-    output_folder = str(args.output_folder).rstrip("/")    
+    output_folder = str(args.working_folder).rstrip("/")    
     profiling_folder = Path(output_folder+"/profiling")
     profiling_folder.mkdir(parents=True, exist_ok=True)
 
@@ -98,7 +100,7 @@ def execute_profiling(args):
     "--cutoff",str(args.cutoff),
     "--tf_list",str(args.tf_list),
     "--prr_results",str(args.prr_results),
-    "--output_folder",str(profiling_folder)]
+    "--working_folder",str(profiling_folder)]
     print("Command Call: "+" ".join(run_profile_tf_feature))
     subprocess.run(run_profile_tf_feature,check=True)
     print("Done")
@@ -112,7 +114,7 @@ def execute_profiling(args):
     "--cutoff",str(args.cutoff),
     "--tf_list",str(args.tf_list),
     "--prr_results",str(args.prr_results),
-    "--output_folder",str(profiling_folder)]
+    "--working_folder",str(profiling_folder)]
     print("Command Call: "+" ".join(run_profile_tf))
     subprocess.run(run_profile_tf,check=True)
     print("Done")
@@ -124,7 +126,7 @@ def execute_profiling(args):
     "--feature_list",str(args.feature_list),
     "--coverage",str(args.coverage),
     "--cov_mode",str(args.cov_mode),
-    "--output_folder",str(profiling_folder)]
+    "--working_folder",str(profiling_folder)]
     print("Command Call: "+" ".join(run_profile_feature))
     subprocess.run(run_profile_feature,check=True)
     print("Done")
@@ -134,8 +136,61 @@ def execute_profiling(args):
 
 
 def execute_matrix(args):
-    pass
 
+    folder_path = Path(args.working_folder)    
+    folder_path.mkdir(parents=True, exist_ok=True)
+    output_folder = str(args.working_folder).rstrip("/")    
+    profiling_folder = Path(output_folder+"/profiling")
+    matrix_folder = Path(output_folder+"/matrix")
+    matrix_folder.mkdir(parents=True, exist_ok=True)
+    working_cohort = output_folder.split("/")
+    working_cohort = working_cohort[-1]
+
+
+    ### PASTE PROFILES FEATURES ###
+
+    p_features_folder = Path(str(profiling_folder)+"/P_Features")
+    p_tf_folder = Path(str(matrix_folder)+"/P_TF")
+
+    p_features_files = glob.glob(str(p_features_folder / "*.tsv"))    
+    
+    if(len(p_features_files) <=1):
+        print("You need at least 2 profiles in the working folders to procced")
+        sys.exit(1)
+
+    temporal_feature_matrix = matrix_folder / "tmp_feature_matrix.tsv"
+
+    run_paste_profiles_feature = ["paste"] + p_features_files + ["-d","\t"]
+
+    try:
+        with open(temporal_feature_matrix, "w") as out_file_feature:
+            subprocess.run(run_paste_profiles_feature, stdout=out_file_feature, check=True)
+        print("Command executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred: {e}")
+ 
+    ### MATRIX PROFILES FEATURES ###
+ 
+    
+
+    run_matrix_feature= ["python", str(Path("src/create_matrix.py")),
+    "--input",str(temporal_feature_matrix),
+    "--output",str(matrix_folder)+"/Matrix_"+str(working_cohort)+"_P_Features.tsv"]
+
+    print("Command Call: "+" ".join(run_matrix_feature))
+    subprocess.run(run_matrix_feature,check=True)
+    print("Done")
+
+   
+
+    #print("Command Call: "+" ".join(run_paste_profiles))
+    #subprocess.run(run_paste_profiles,check=True)
+    #print("Done")
+    
+    #run_create_matrix=[]
+    #print("Command Call: "+" ".join(run_create_matrix))
+    #subprocess.run(run_create_matrix,check=True)
+    #print("Done")
 
 
 def main():
@@ -158,7 +213,7 @@ def main():
     parser_c.add_argument("--offset",metavar="INT",type=int,default=50,help="Distance from the edge of contigs to consider as offset")
     parser_c.add_argument("--motif_list",metavar="FILE",type=Path,default=Path("data/Regprecise_TF_DB/motifs.list"),help="List of motifs files to map agains the PRR fasta file")
     parser_c.add_argument("--motif_db",metavar="DIR",type=Path,default=Path("data/Regprecise_TF_DB/"),help="Path to Regprecise motifs DB")
-    parser_c.add_argument("--output_folder",metavar="DIR",help="Output folder for all intermediate files")
+    parser_c.add_argument("--working_folder",metavar="DIR",help="Output folder for all intermediate files")
     
     parser_c.set_defaults(func=execute_calculate)    
 
@@ -174,14 +229,18 @@ def main():
     parser_p.add_argument("--cutoff",metavar="FLOAT",type=float,default=1e6,required=True,help="E-value cutoff for mapped motifs agains PRR")
     parser_p.add_argument("--tf_list",metavar="FILE",default=str(Path("data/TF_Regprecise_list.txt")),help="List of all TFs to analize in the pipeline")
     parser_p.add_argument("--prr_results",metavar="FILE",type=Path,default=None,help="PRR Results file from the Calculate step")
-    parser_p.add_argument("--output_folder",metavar="DIR",required=True,help="")
+    parser_p.add_argument("--working_folder",metavar="DIR",required=True,help="")
 
     parser_p.set_defaults(func=execute_profiling)    
 
     
+    #### Matrix Menu Options ####
     
     
-    #parser_m.set_defaults(func=execute_matrix)    
+    parser_m = subparsers.add_parser("matrix",help ="Merge the output profiles of many samples or a cohort and convert the results into an abundance matrix")
+    parser_m.add_argument("--working_folder",metavar="DIR",required=True,help="")
+    
+    parser_m.set_defaults(func=execute_matrix)    
 
 
     if len(sys.argv) == 1:
@@ -191,10 +250,11 @@ def main():
 
     args = parser.parse_args()
 
-    if (args.prr_results is None):
-        output_folder = str(args.output_folder).rstrip("/")    
-        calculate_folder = Path(output_folder+"/calculate")
-        args.prr_results = str(calculate_folder)+"/"+args.sample_id+"_prr.results"
+    if (args.command == "profiling"):
+        if (args.prr_results is None):
+            output_folder = str(args.working_folder).rstrip("/")    
+            calculate_folder = Path(output_folder+"/calculate")
+            args.prr_results = str(calculate_folder)+"/"+args.sample_id+"_prr.results"
 
     args.func(args)
     

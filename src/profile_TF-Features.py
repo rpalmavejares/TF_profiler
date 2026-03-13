@@ -224,9 +224,6 @@ def main ():
                             TF_Feature_vectors[Feature_index][TFMs_index]=float(TF_Feature_vectors[Feature_index][TFMs_index]) + float(coverage_dict[parent_contig])
                 
 
-                #print(key, all_tfs_list)
-                #print(key, all_cds_list)
-                #break
         
         if(args.cov_mode == "cds"):
             operon_cds_coverages=[]
@@ -256,35 +253,6 @@ def main ():
                             TF_Feature_vectors[Feature_index][TFMs_index]=float(TF_Feature_vectors[Feature_index][TFMs_index]) + float(coverage_dict[any_cds])
 
 
-
-
-
-    #for key, values in counting_Features.items():
-    #    print(f'{key}\t{values}')
-
-
-    #print("Feature/TF\t"+str("\t".join(TFMs_array)))
-    #for rows in range(len(TF_Feature_vectors)):
-        #if(np.sum(TF_Feature_vectors[rows])>0):
-            #print(np.sum(rows))
-            #Feature_index = feature_array_tf[rows]
-            #rows_parsed = "\t".join(map(str,TF_Feature_vectors[rows]))
-            #print(f'{Feature_index}\t{rows_parsed}')
-
-
-
-
-        #print(key, all_tfs_list)
-        #print(key, all_cds_list)
-        #for tfs_s in all_tfs_single:
-        #    print(key)        
-
-   
-    #print("count_pre_calls",count_pre_call)
-    #print("count_calls",count_call)
- 
-
- 
 
     ############     V E C T O R     T F M S      BY     G E N    ############
 
