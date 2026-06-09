@@ -13,17 +13,28 @@ The pipeline is based on 3 Stages, which are described on the image below.
 
 ### TF Profile: Stage 1.
 
-The first step is to obtain all CDS from contigs in Metagenomes or Single Genomes (MAGs) provided by the user.
-These contigs must not contain "N" or "unknown" base pairs, so is imperative to not use scaffolds with uncertain nucleotides.
+The first stage is to mark down all the positions of the CDS in the contigs of interest. These positions need to be passed down as a GFF3 file format. In the case of the CDS, contigs and the GFF3 file, some rules need to be followed.
 
-For each all CDS marked on the contigs we build a operons model based on their Intergenic distance. If 2 CDS are separated by less than 50 bp, we consider them part of the same operon.
-This calculation is made by "contigs strand" which means that the model makes a 2 pass caltulation, 3' to 5' and 5' to 3'.
+  1) Contigs sequences from all parent CDS can not contain unknown characters such as "N". Be carefull to continue if you have uncomplete scaffold.
+  2) CDS sequences need to be built using Prodigal v2.6.3.
+  3) In the case of the GFF3 file, we provide a companion script to built this input. If you already have a file of your own, make sure to follow the same format as the example files.
 
-Once all operons are generated, we mark the PRR or Potential Regulatory Region, defined as the nucleotide segment in the intergenic region in front of the operon. This process is tied to each strand, same as before.
-The size of the PRR is shown in the model as 300bp upstream of the first CDS in the operon, and 30bp downstrean of the first CDS in the operon.
-This PRR is also generated with operon with only 1 CDS of size.
 
-Finally, with the use of MAST (MEME suite) we map a set of Transcriptipn Factor (TF) motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
+For all CDS on the GFF3 file, we build a operons model based on their Intergenic distance. If 2 CDS are separated by less than 50 bp, we consider them part of the same operon, otherwise, a new operon must be created.
+This calculation is made by "contig strand" which means that the model makes a 2 pass caltulation, 3' to 5' and 5' to 3'.
+
+Once all operons are generated, we mark the PRR (Potential Regulatory Region), defined as a nucleotide segment in the intergenic region in front of the operon. This process is tied to each strand, same as before.
+The size of the PRR is shown in the model as 300bp upstream of the first CDS in the operon, and 30bp downstrean of the first CDS in the operon. In addition, all PRR have a minimal offset of 50bp from the edge of each contigs, to avoid the frequency if incomplete operon models.
+The PRR wil also be generated for operons with only 1 CDS of size.
+
+All the operon model and PRR distances can be changed by the user, that is:
+  - The offset distance from contig edge.
+  - The gap between 2 CDS to be consider as an operon unit.
+  - The distance of the upstream and downstream PRR regions. 
+
+
+
+Finally, once all operon have been modeled and the PRR have been  with the use of MAST (MEME suite) we map a set of Transcriptipn Factor (TF) motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
 These motifs are categorised in 88 macro groups or TF.
 Once the mapping of all motifs is finished, a final file wit core information is generated called "motif profile".
 
