@@ -16,7 +16,7 @@ To run all stages of this pipeline you need the following files:
   1) A Contig file in FASTA format. This file must not contain "N" or "unknown" characters, be carefull when using incomplete scaffolds.
   2) A CDS file in FASTA format made with Prodigal version 2.6.3.
   3) A GFF3 file with all CDS position from the previuos file. In the case you don't have such file, you can use our helper script.
-  4) A LIST of Transcription Factor Groups to calculate the Transcriptional Profile for. By default, this list comprises all 88 TF coming from RegPrecise. We recommend you run the pipeline with the default list and filter out only for TF you might need.
+  4) A LIST of Transcription Factor to calculate the Transcriptional Profile for. By default, this list comprises all 88 TF coming from RegPrecise. We recommend you run the pipeline with the default list and filter out only for TF you might need.
   5) A COVERAGE file built for each CDS or Contigs. The format of this file is a tab separated file with 2 columns, the first one with "sequence id" and the second with the "coverage".
   6) An ANNOTATION file for your CDS. The format of this file is a tab separated file with 2 columns, the first one with "sequence id" and the second with the "feature" description. We recommend features like "gene_name", "go_terms", "ko", "cog_number", "ec_number", etc.
   7) A LIST of FEATURES to calculate the Transcriptional Profile for. This may be the list of all FEATURES from point 5 (uniq names).
@@ -28,10 +28,10 @@ To run all stages of this pipeline you need the following files:
 ## TF Profile: Stage 1.
 
 ### Inputs:  
-* Contigs File *
-* CDS File *
-* GFF3 File *
-* LIST of Transcription Factor Groups *
+* Contigs File 
+* CDS File 
+* GFF3 File 
+* LIST of Transcription Factor
 
 The first stage is to mark down all the positions of the CDS in the contigs of interest. These positions need to be passed down as a GFF3 file format.
 
