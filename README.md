@@ -1,7 +1,7 @@
 # TF profiler
 TF profiler is a tool created to search TF motifs into genomic material (MetaG, MAGs, etc) given a simplified regulation model. The tool will calculate de abundace of Motifs that regulate CDS inside marked operons on the genomic source.
 
-## TF Profiler Pipeline.
+# TF Profiler Pipeline.
 
 The pipeline is based on 3 Stages, which are described on the image below.
 
@@ -9,18 +9,33 @@ The pipeline is based on 3 Stages, which are described on the image below.
 
 ![A descriptive alt text for your image](imgs/TF_profiler_Full_Model.jpg)
 
-## Pipeline description:
+# Pipeline Inputs:
 
-### TF Profile: Stage 1.
+To run all stages of this pipeline you need the following files:
 
-The first stage is to mark down all the positions of the CDS in the contigs of interest. These positions need to be passed down as a GFF3 file format. In the case of the CDS, contigs and the GFF3 file, some rules need to be followed.
+  1) A Contig file in FASTA format. This file must not contain "N" or "unknown" characters, be carefull when using incomplete scaffolds.
+  2) A CDS file in FASTA format made with Prodigal version 2.6.3.
+  3) A GFF3 file with all CDS position from the previuos file. In the case you don't have such file, you can use our helper script.
+  4) A LIST of Transcription Factor Groups to calculate the Transcriptional Profile for. By default, this list comprises all 88 TF coming from RegPrecise. We recommend you run the pipeline with the default list and filter out only for TF you might need.
+  5) A COVERAGE file built for each CDS or Contigs. The format of this file is a tab separated file with 2 columns, the first one with "sequence id" and the second with the "coverage".
+  6) An ANNOTATION file for your CDS. The format of this file is a tab separated file with 2 columns, the first one with "sequence id" and the second with the "feature" description. We recommend features like "gene_name", "go_terms", "ko", "cog_number", "ec_number", etc.
+  7) A LIST of FEATURES to calculate the Transcriptional Profile for. This may be the list of all FEATURES from point 5 (uniq names).
+   
+<br>
 
-  1) Contigs sequences from all parent CDS can not contain unknown characters such as "N". Be carefull to continue if you have uncomplete scaffold.
-  2) CDS sequences need to be built using Prodigal v2.6.3.
-  3) In the case of the GFF3 file, we provide a companion script to built this input. If you already have a file of your own, make sure to follow the same format as the example files.
+# Pipeline description:
 
+## TF Profile: Stage 1.
 
-For all CDS on the GFF3 file, we build a operons model based on their Intergenic distance. If 2 CDS are separated by less than 50 bp, we consider them part of the same operon, otherwise, a new operon must be created.
+### Inputs:  
+* Contigs File *
+* CDS File *
+* GFF3 File *
+* LIST of Transcription Factor Groups *
+
+The first stage is to mark down all the positions of the CDS in the contigs of interest. These positions need to be passed down as a GFF3 file format.
+
+For all CDS on the GFF3 file, we build an operon model based on their intergenic distance. If 2 CDS are separated by less than 50 bp, we consider them part of the same operon, otherwise, a new operon must be created.
 This calculation is made by "contig strand" which means that the model makes a 2 pass caltulation, 3' to 5' and 5' to 3'.
 
 Once all operons are generated, we mark the PRR (Potential Regulatory Region), defined as a nucleotide segment in the intergenic region in front of the operon. This process is tied to each strand, same as before.
@@ -32,13 +47,11 @@ All the operon model and PRR distances can be changed by the user, that is:
   - The gap between 2 CDS to be consider as an operon unit.
   - The distance of the upstream and downstream PRR regions. 
 
-
-
-Finally, once all operon have been modeled and the PRR have been  with the use of MAST (MEME suite) we map a set of Transcriptipn Factor (TF) motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
+Finally, once all operon have been modeled and the PRR have been marked, their sequences are extracted to a temporary custom file for post procesing. with the use of MAST (MEME suite) we map a set of Transcriptipn Factor (TF) motifs coming from the database RegPrecise. https://regprecise.lbl.gov/collections_tf.jsp to all our PRR created on the previous steps.
 These motifs are categorised in 88 macro groups or TF.
 Once the mapping of all motifs is finished, a final file wit core information is generated called "motif profile".
 
-### TF Profile: Stage 2.
+## TF Profile: Stage 2.
 
 The second step in the pipeline is to filter for (or select) the TF motifs that bind to all PRRs based on a given E-value cutoff from the MAST mappings in the previous step. The highest E-value reported by MAST is $10^{-4}$; however, those values represent less than 0.01% of the total hits, as most fall within the $10^{-5}$ cutoff. On the other hand, even though the lowest value can theoretically be 0, our observations show a minimum value of $10^{-20}$. We strongly recommend using an E-value cutoff between $10^{-5}$ and $10^{-7}$, as lower values are too strict for filtering purposes. Once an E-value cutoff is chosen, the TF motif hits and their respective PRRs are merged with the CDS Annotation File, which contains descriptive features. This data integration follows this structure:
 
@@ -49,7 +62,7 @@ The second step in the pipeline is to filter for (or select) the TF motifs that 
 
 Finally, after all the data is combined, a **TARGET File** is used to select relevant features. This TARGET File must contain features already present in the CDS Annotation File.
 
-### TF Profile: Stage 3.
+## TF Profile: Stage 3.
 
 The last step of the pipeline consists of adding the Coverage File (for Contigs or CDS) to calculate the total abundance of each TF motif and each TARGET feature in our sample.
 
@@ -71,21 +84,6 @@ Those 2 rules try to minimize the impact of:
 *  **Operon Size Bias:** Small and large operons should be treated as a single regulated unit, rather than being counted once per CDS
 
 
-
-
-##  TF Profile Inputs.
-
-For running all 3 Stages we require the following files:
-
-*  A Fasta file containing the genomic data.
-*  A PTT file containing the positions of all CDS.
-*  An Annotation file containing the features of each CDS.
-*  A Coverage file containing a metric of abundance by Contig or CDS.
-*  A TARGET file containing the features to keep in our data structure.
-
-
-At this stage we require 2 different files
-<br>
 
 * Fasta File with Contigs
   
@@ -150,8 +148,6 @@ sample-1_contig-Nº_cds-Nº+2                 pkg
 sample-1_contig-Nº_cds-Nº+3                 fur
 sample-1_contig-Nº_cds-Nº+4                  -
 ```
-
-
 
 
   * Contigs / CDS Coverage
